@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer sm a pop-vwapprgchc" id="pop-vwapprgchc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">진행상태 조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="ut-tbl a">
+						<table class="tblist a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">진행상태 조회</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 60%;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">진행상태</th>
+									<th scope="col">처리일자</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l">Step1. 중도인출 결재요청</td>
+									<td>2021.07.16</td>
+								</tr>
+								<tr>
+									<td class="txt-l">Step2. 중도인출 결재완료</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="txt-l">Step3. 교보생명 접수완료</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="txt-l">Step4. 교보생명 접수승인(상품매도 시작)</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="txt-l">Steo5. 상품매도 완료</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="txt-l">Step6. 입금예정</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-vwapprgchc');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-vwapprgchc');
+	</script>
+
+
+	</div>
+</body>
+</html>

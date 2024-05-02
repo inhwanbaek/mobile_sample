@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-notify" id="pop-notify">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">댓글 신고</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="sect">
+						<h2 class="hd-tit3">신고하려는 이유를 선택해 주세요.</h2>
+						<div class="form-group">		
+							<label class="checkbox cv"><input type="radio" name="rdo-mn"><span class="txt">음란성, 욕설 등 부적절한 내용</span></label>
+							<label class="checkbox cv"><input type="radio" name="rdo-mn"><span class="txt">부적절한 홍보 또는 광고</span></label>
+							<label class="checkbox cv"><input type="radio" name="rdo-mn"><span class="txt">개인정보 유출 위험</span></label>
+							<label class="checkbox cv"><input type="radio" name="rdo-mn"><span class="txt">저작권 도용 의심</span></label>
+							<label class="checkbox cv"><input type="radio" name="rdo-mn"><span class="txt">기타 (직접 입력)</span></label>
+						</div>
+						<span class="textarea a">
+							<textarea placeholder="신고 내용 입력" title="신고 내용 입력" id="textarea-1"></textarea>
+							<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">300</i>자)</span>
+						</span>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" id="next02">신고하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-notify');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

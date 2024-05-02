@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt sc-saver" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">디지털캐릭터</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">소개</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">다운로드</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit3">화면보호기</h3>
+
+			<ul class="saver-list">
+				<li>
+					<div class="cover"><img src="../../img/abt/saver_01.png" alt=""></div>
+					<p class="txt">가족사랑 LOVE를 표현하는 <br>러버스 친구들이 내 PC에!</p>
+					<div class="btn-set">
+						<button type="button" class="btn md ico-down ico-r">Windows용 다운로드</button>
+					</div>
+				</li>
+				<li>
+					<div class="cover"><img src="../../img/abt/saver_02.png" alt=""></div>
+					<p class="txt">2019년 새해를 맞이해 러버스 친구들이 福을 전합니다.생기 넘치는 러버스와 함께 통통 튀는 한 해 보내세요!</p>
+					<div class="btn-set">
+						<button type="button" class="btn md ico-down ico-r">Windows용 다운로드</button>
+					</div>
+				</li>
+			</ul>
+			<!-- [웹접근성] 1st 수정 -->
+			<dl class="saver-qna">
+				<dt><span class="blind">질문</span> Q. 화면보호기 설정은 어떻게 하나요?</dt>
+				<dd><span class="blind">답변</span>원하시는 화면보호기를 다운로드 받으신 후 실행 파일을 더블 클릭하시면 화면보호기가 자동으로 설정됩니다.</dd>
+			</dl>
+			<!--// [웹접근성] 1st 수정 -->
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+</div>
+</body>
+</html>

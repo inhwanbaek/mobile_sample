@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"다원서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page etp retire" id="container">
+			<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-05-25 마크업 수정 -->
+			<div class="etp-item">
+				<div class="dtbox">
+					<h2 class="hd-tit2">다윈서비스는 고객사의 성장발전을 도와드리는 <i class="line">기업교육서비스</i>입니다.</h2>
+					<p class="desc">교보생명의 고객만족경영철학을 실천하기 위해, 고객에 대한 이해와 분석을 토대로 다양한 맞춤형 교육 프로그램을 제공합니다.</p>
+				</div>
+			</div>
+			<!--//[D] 2022-05-25 마크업 수정 -->
+
+			<div class="etp-item a">
+				<div class="amp-desc">
+					<p>다윈(DA-Win)서비스<br>교보생명과 고객사 모두 다(多) 함께<br>성장하고 발전(Win)한다는 의미입니다.</p><!-- [D] 2022-04-15 띄어쓰기 수정 -->
+				</div>
+			</div>
+			<div class="etp-item a">
+				<div class="diagram-box v1">
+					<!-- [D] 2022-05-25 대체 텍스트 추가 -->  
+					<div class="blind">
+						<h3>다윈(DA-Win) 서비스</h3>
+						<ul>
+							<li>activity 교육 실습을 통해 함께 참여</li>
+							<li>Reality 교육 다양한 실제 사례 활용</li>
+							<li>Fun 교육 재미와 감동이 있는 교육</li>
+							<li>맞춤식 교육 고객사 분석 및 니즈 반영</li>
+						</ul>
+					</div>																					
+				</div>
+			</div>
+			<div class="tb-sbox">
+				<div class="ut-tbl a">
+					<table class="tbform" cellpadding="0" cellspacing="0">
+						<caption><span class="tit"></span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width:35%">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">CS품질향상</th>
+								<td>고객응대 능력을 향상시켜 기업의 서비스 경쟁력 강화
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">조직활성화</th>
+								<td>건전한 조직문화, 즐거운 일터를 만들어 기업의 인적 경쟁력 강화</td>
+							</tr>
+							<tr>
+								<th scope="row">법정의무교육</th>
+								<td>기업에서 매년 진행해야 하는 법정의무교육 지원</td>
+							</tr>						
+						</tbody>
+					</table>
+				</div>
+				<a href="http://www.kyobodawin.co.kr" role="button" target="_blank" title="교보 다윈서비스 모바일 홈페이지 바로가기" class="btn md ico-r ico-elink">다윈서비스 홈페이지 바로가기
+				</a>
+				<!-- [D] 2022-05-27 bold 적용 -->
+				<p class="t-dsc etp-txt2 mt08">자세한 사항은 <strong class="bold">담당 사원 또는 법인콜센터(1588-0770)</strong>로 문의해 주세요.</p>
+			</div>
+		</div>
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<!-- [D] 2022-05-26 버튼명 변경 -->
+					<button type="button" class="btn rd lg a">목록</button>
+				</div>
+			</div>
+		</nav>			
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

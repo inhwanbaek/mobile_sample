@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a lg pop-dcs" id="pop-calc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보장내용</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="dcs-calc-top">
+					<div class="ut-bdgs">
+						<em class="bdg r">방카슈랑스</em>
+					</div>
+					<div class="hdt"><h2 class="tit hd-tit3">(무)교보실속있는평생든든종신보험(보증비용부과형)</h2></div>
+				</div>
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">예상보장내용</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">해지환급금</a></li>
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">예상연금</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<div class="ut-optset optset mt50 a-bot">
+						<div class="opt pl">
+							<span class="hd-tit5">연금액 예시표</span>
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위:천원, %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a mt20 dcs-tbl scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">해지환급금 예시표</span><span class="cap"></span></caption>
+							<!-- <colgroup>
+								<col style="width: 25%">
+								<col style="width: auto">
+								<col style="width: 20%">
+							</colgroup> -->
+							<thead>
+								<tr>
+									<th scope="row" rowspan="2">구분</th>
+									<th scope="row" rowspan="2">연금기준금액(A)</th>
+									<th scope="row" rowspan="2">계약자적립금</th>
+									<th scope="row" colspan="4">실적배당 종신연금 지급률(E)</th>
+									<th scope="row" rowspan="2">연금 <br> 월지급액 <br>(A×E)</th>
+								</tr>
+								<tr>
+									<th scope="row">기본지급률 (B)</th>
+									<th scope="row">장기유지 가산율 (C)</th>
+									<th scope="row">투자실적 가산율 (D)</th>
+									<th scope="row">연금지급률<br> (E=B×(1+C+D))</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>최저연금기준금액 가정</td>
+									<td>26,587</td>
+									<td>-</td>
+									<td>0.29</td>
+									<td>0</td>
+									<td>-</td>
+									<td>0.2900</td>
+									<td>77</td>
+								</tr>
+								<tr>
+									<td>투자수익율 -1.0% 가정</td>
+									<td>26,587</td>
+									<td>13,470</td>
+									<td>0.29</td>
+									<td>0</td>
+									<td>-</td>
+									<td>0.2900</td>
+									<td>77</td>
+								</tr>
+								<tr>
+									<td>투자수익율 2.25% 가정</td>
+									<td>26,587</td>
+									<td>19,961</td>
+									<td>0.29</td>
+									<td>0</td>
+									<td>15</td>
+									<td>0.3335</td>
+									<td>88</td>
+								</tr>
+								<tr>
+									<td>투자수익율 3.375% 가정</td>
+									<td>26,587</td>
+									<td>22,794</td>
+									<td>0.29</td>
+									<td>0</td>
+									<td>15</td>
+									<td>0.3335</td>
+									<td>88</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>연금 수령 중 사망할 경우 사망 당시의 계약자적립금과 최저사망적립금 중 큰 금액을 지급합니다.</li>
+								<li>월지급액은 해당 연도의 매월 초 기준이며, 계약자적립금은 해당 연도 말 기준의 금액입니다.</li>
+								<li>연금개시 후 보험기간에 인출할 경우 연금지급기준금액은 감소하며, 이에 따라 월지급액도 감소합니다.</li>
+								<li>변액보험은 운용 결과에 따라 원금 손실이 발생할 수 있으며, 그 손실은 가입자에게 귀속됩니다.</li>
+								<li>위 예시금액은 비용 차감 전 기준으로 투자수익률 -1%, 「보험업감독규정」에 따른 평균공시이율 2.25%, 평균공시이율의 1.5배인 3.375%로 가정하고 계산한 금액이므로 실제금액은 펀드의 실제 투자수익률에 따라 달라질 수 있습니다.</li>
+								<li>위 예시금액은 세전 금액이며 미래의 수익을 보장하는 것은 아닙니다.</li>
+								<li>관련 세법에 따라 보험차익에 대한 세금이 부과될 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-calc');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

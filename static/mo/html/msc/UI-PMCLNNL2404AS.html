@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용대출 만기 연장신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng apex" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">4. 상환필요금액 계좌 확인</div><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-04-15 문구수정 --><!-- [D] 2022-05-26 수정 -->
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">6</b></span><!-- [D] 2022-04-15 문구수정 --><!-- [D] 2022-05-26 수정 -->
+									<span class="num"><b class="b">4</b></span><!-- [D] 2022-04-15 문구수정 --><!-- [D] 2022-05-26 수정 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3"><i class="line">상환필요금액</i> 납입 계좌를 <br>선택해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="lomng-hinfo">
+				<div class="ut-dcard b mltype">
+					<div class="ut-bdgs">
+						<em class="bdg j">신용대출</em>
+					</div>
+					<div class="hdt">
+						<div class="tit">교보e프라임신용대출(A형)</div>
+					</div>
+					<!-- [D] 2022-05-26 수정-->
+					<div class="dls">
+						<div class="dl">
+							<div class="dt">상환필요금액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">105,000</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">대출번호</div>
+							<div class="dd">103*****23024</div>
+						</div>
+						<div class="dl">
+							<div class="dt">원금상환액</div>
+							<div class="dd">100,000원</div>
+						</div>
+						<div class="dl">
+							<div class="dt">정상이자</div>
+							<div class="dd">5,000원</div>
+						</div>
+						<div class="dl">
+							<div class="dt">환출이자</div>
+							<div class="dd">0원</div>
+						</div>
+					</div>
+					<!-- //end [D] 2022-05-26 수정-->
+				</div>
+			</div>
+
+			<div class="msect">
+				<div class="hdbox">
+					<h3 class="hd-tit4">출금계좌</h3>
+					<div class="addon">
+						<button type="button" class="ico plus">새로운 출금계좌 등록</button>
+					</div>
+				</div>
+				<span class="select a">
+					<select title="출금계좌선택">
+						<option selected>예금주 : 남약단, 계좌 : (국민은행)927621123123123123</option>
+						<option>선택2</option>
+						<option>선택3</option>
+					</select>
+				</span>
+				<div class="ttit">
+					<span class="tt">등록 가능한 은행</span>
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<!-- [D] 2022-04-07 수정 -->
+								<ul class="bullet a">
+									<li>SC제일은행, KB국민은행, 우리은행, 한국씨티은행, IBK기업은행, 농협중앙회, 농협조합, DGB대구은행, 신한은행, BNK부산은행, 하나은행, BNK경남은행, 우체국, 광주은행, 전북은행, Sh수협은행, KDB산업은행, 제주은행, 케이뱅크, 새마을금고 (총 20개)</li><!--[D] 2022-06-28 은행추가-->
+									<li>가상계좌는 즉시이체로 보험료 수납이 불가능한 계좌입니다.(증권사 연계계좌, CMA, MMF, MMDA 등)</li>
+									<li>은행 사정에 따라 이용시간에 제한이 있을 수 있습니다.</li>
+								</ul>
+								<p class="bullet b">평생계좌란?<br>
+									고객이 전화번호 등으로 임의 생성한 번호를 계좌번호로 이용하는 입금 전용 계좌입니다.(자동이체 및 즉시이체 불가)
+								</p>
+								<!-- //end [D] 2022-04-07 수정 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="lomng-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<!-- [D] 2022-04-07 수정 -->
+						<ul class="bullet a">
+							<li>출금계좌는 반드시 본인명의여야 합니다.</li>
+							<li>2007년 1월 1일 「전자금융거래법」 개정에 따라 출금 가능한 계좌를 제한하고 있습니다.</li>
+							<li>선택 가능한 출금계좌는 고객님이 고객PLAZA에서 등록하신 계좌와 인증서로 등록하신 계좌입니다.</li>
+							<li>선택할 출금계좌가 없는 경우 인증서로 출금계좌를 신규 등록하시면 바로 이용 가능합니다.</li>
+							<li>농협 계열사 계좌를 등록하려면 통장 확인 후 은행명을 정확히 선택해 주세요.</li>
+						</ul>
+						<!-- //end [D] 2022-04-07 수정 -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">위 내용과 같이 대출 만기 연장 내용에 동의하며, 상환필요금액 즉시이체 출금에 동의하십니까?</div><!-- [D] 2022-04-07 문구수정 -->
+					<div class="rdos">
+						<label class="radio"><input type="radio" name="radio9" checked><span class="txt">동의</span></label>
+						<label class="radio"><input type="radio" name="radio9"><span class="txt">동의안함</span></label>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

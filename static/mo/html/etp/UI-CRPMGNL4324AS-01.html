@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"부담금 납입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+	<main class="container page etp" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 부담금 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="etp-tit-box">
+				<h2 class="hd-tit3">납입하실 부담금을 입력해 주세요.</h2>
+			</div>
+			<div class="etp-item">
+				<h3 class="etp-tit">부담금이 입력되지 않은 가입자가 <em class="t-blue">2명</em> 있습니다.</h3>
+				<p class="etp-txt">해당 가입자의 부담금을 납입하시려면 금액을 입력해 주세요.<br>납입하지 않으실 경우 미납사유를 선택해 주세요.</p>
+			</div>
+			<div class="etp-item a">
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">미납사유 선택 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>부담금을 납입하지 않는 경우 아래 미납사유 3개 중 1개를 선택해 주세요. 
+								선택에 따라 지연이자 발생 여부가 결정됩니다.</li>
+						</ul>
+						<ol class="bullet f">
+							<li>
+								<dl class="b-cont">
+									<dt>부담금 납입대상 <em class="t-blue">※지연이자 발생</em></dt>
+									<dd>법정휴직으로 부담금을 반드시 납입해야 함에도 불구하고 납입하지 않은 경우.<br>
+										예) 육아휴직, 출산전후휴가, 산재휴업기간, 사용자귀책휴업, 수습기간, 적법한 쟁의기간, 사용자의 승인을 받은 휴업기간</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="b-cont">
+									<dt>부담금 납입 미대상 <em class="t-blue">※지연이자 발생안함</em></dt>
+									<dd>법정휴직을 제외하고 별도로 사규에서 ‘휴직을 근속기간에 포함하지 않을 것’을 명시한 경우.<br>
+										예) “회사의 휴직 중 자기계발 휴직은 근속기간에 포함하지 않기로 정한다.” 등의 사규에 해당하는 경우.</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="b-cont">
+									<dt>육아휴직(복귀 시 일시 납입) <em class="t-blue">※지연이자 발생안함</em></dt>
+									<dd>일시에 납부하기로 사규에 명시한 경우.<br>
+										단, 육아휴직기간의 부담금을 업무복귀 시점에 일시에 납부하기로 정했음에도 불구하고 복귀 시점에 납부하지 않은 경우에는 육아휴직기간 동안의 부담금과 지연이자를 함께 납입해야 함.</dd>
+								</dl>
+							</li>															
+						</ol>
+					</div>
+				</div>
+				<div class="ut-dcard e etpcard">
+					<div class="inr">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">이든든(630725-2)</div>
+							</div>
+							<div class="line b"></div>
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">부담금</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" placeholder="숫자로 입력"><i class="w">원</i></span><!-- [D] 2022-03-31 placeholder text 변경 -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>		
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">임금총액</div><!-- [D] 2022-03-31 text 오타 수정 -->
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" title="부담금 금액" value="10,000,000"><i class="w">원</i></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt b">미납사유</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="select def no-lb">
+															<label class="lb blind" for="select-2">미납사유 선택안내</label>
+															<select name="select-2" id="select-2">
+																<option selected="">선택</option>
+																<option>부담금납입 대상</option>
+																<option>부담금납입 미대상</option>
+																<option>육아휴직(복귀시 일시 납입)</option>
+															</select>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>										
+							</div>
+						</div>
+					</div>
+				</div>										
+			</div>						
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot ">
+					<div class="ftotal-box">
+						<dl>
+							<dt class="tit">합계</dt>
+							<dd class="cont">
+								<p class="dsc">(납입대상 <strong class="t-red">1</strong>명)</p>
+								<p class="num"><strong class="t-red">10,000,000</strong><span class="won">원</span></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>		
+		<!--// 하단 고정영역 -->
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

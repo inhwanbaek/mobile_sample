@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-confirm pop-chcstinfrm" id="pop-chcstinfrm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">근저당권말소 신청 유의사항</h1><!-- [D] 2022-04-07 문구수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="confirm-box">
+						<!-- [D] 2022-04-07 수정 -->
+						<ul class="bullet a">
+							<li>고객님은 <span class="fn-point01">{0000년 00월 00일}</span> 교보생명에서 받으신 부동산담보대출금을 <span class="fn-point01">{0000년 00월 00일 전액상환}</span>하셨습니다.</li>
+							<li>고객님은 담보로 제공하신 <span class="fn-point01">{서울 영등포구 영등포로 96, 1층}</span>에 교보생명이 설정한 {○} 건의 근저당권 해지를 요청하셨습니다.</li>
+							<li>근저당권 설정 등기의 말소 처리 기간은 신청일로부터 3~5일(영업일 기준)입니다. </li>
+							<li>담보 해지 완료 여부는 해당 부동산의 등기부등본으로 확인하실 수 있습니다.</li>
+							<li>담보 해지 접수 후에는 ‘전액상환’을 취소할 수 없습니다.</li>
+						</ul>
+						<div class="line-box"><strong class="qst">담보대출 근저당권말소 절차에 대해 이해하시고, 이에 동의하십니까?</strong></div>
+						<!-- //end [D] 2022-04-07 수정 -->
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<!-- <button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-chcstinfrm');">동의안 함</button> --><!-- [D] 2022-04-07 삭제 -->
+					<button type="button" class="btn lg rd a">내용을 이해하고 동의함</button><!-- [D] 2022-04-07 문구수정 -->
+				</div>
+			</div>
+			<!-- <button type="button" class="btn-pop-close">닫기</button> -->
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chcstinfrm');
+	</script>
+
+</div>
+</body>
+</html>

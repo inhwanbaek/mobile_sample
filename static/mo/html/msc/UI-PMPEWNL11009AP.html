@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-mdw pop-bitmInfo" id="pop-bitmInfo">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">과세항목 선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="tbl-over">
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">과세항목 선택</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">선택</th>
+										<th scope="col">과세대상 (대표문건)</th>
+										<th scope="col">세목코드</th>
+										<th scope="col">세목명</th>
+										<th scope="col">부가연월</th>
+										<th scope="col">기분</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="chk"><label class="checkbox"><input type="checkbox"><span class="txt"></span></label></td>
+										<td>58소5879(비영업용 배기량1461)</td>
+										<td>106001</td>
+										<td>자동차세</td>
+										<td>2015.02</td>
+										<td>정기분</td>
+									</tr>
+
+									<tr>
+										<td class="chk"><label class="checkbox"><input type="checkbox"><span class="txt"></span></label></td>
+										<td>58소5879(비영업용 배기량1461)</td>
+										<td>106001</td>
+										<td>자동차세</td>
+										<td>2015.02</td>
+										<td>정기분</td>
+									</tr>
+
+									<tr>
+										<td class="chk"><label class="checkbox"><input type="checkbox"><span class="txt"></span></label></td>
+										<td>58소5879(비영업용 배기량1461)</td>
+										<td>106001</td>
+										<td>자동차세</td>
+										<td>2015.02</td>
+										<td>정기분</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</main>
+			</div>
+
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a lg">확인</button>
+				</div>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-bitmInfo');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

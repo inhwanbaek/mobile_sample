@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="dcs-sect">
+				<section class="sect">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<h3 class="hd-tit3">제도별 분기적립금 및 기간수익률</h3>
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">제도별 분기적립금 및 기간수익률 확정급여형(DB)</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2" colspan="2">구분</th>
+									<th scope="col" colspan="2">1분기 (03.31 기준 직전 1년)</th>
+									<th scope="col" colspan="2">2분기 (06.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">3분기 (09.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">4분기 (12.31 기준 직전 1년)</th>
+								</tr>
+								<tr>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l" rowspan="5"><strong>확정급여형(DB)</strong></td>
+									<td class="txt-l">원리금보장형 상품</td>
+									<td class="txt-r">1,130,897,323</td>
+									<td class="txt-c">1.18</td>
+									<td class="txt-r">1,256,296,683</td>
+									<td class="txt-c">1.19</td>
+									<td class="txt-r">1,288,445,802</td>
+									<td class="txt-c">1.22</td>
+									<td class="txt-r">1,743,572,166</td>
+									<td class="txt-c">1.22</td>
+								</tr>
+								<tr>
+									<td class="txt-l">원리금비보장형 상품</td>
+									<td class="txt-r">3,490,682</td>
+									<td class="txt-c">1.78</td>
+									<td class="txt-r">6,140,448	</td>
+									<td class="txt-c">-0.56</td>
+									<td class="txt-r">5,638,224</td>
+									<td class="txt-c">-10.02</td>
+									<td class="txt-r">6,042,214</td>
+									<td class="txt-c">3.12</td>
+								</tr>
+								<tr>
+									<td class="txt-l">기타</td>
+									<td class="txt-r">3,102</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">7,236</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">13,706</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">11,151</td>
+									<td class="txt-c"></td>
+								</tr>
+								<tr>
+									<td class="txt-l bg-a"><strong>합계</strong></td>
+									<td class="txt-r bg-a">1,134,391,107</td>
+									<td class="txt-c bg-a">1.19</td>
+									<td class="txt-r bg-a">1,262,444,367</td>
+									<td class="txt-c bg-a">1.18</td>
+									<td class="txt-r bg-a">1,294,097,732</td>
+									<td class="txt-c bg-a">1.17</td>
+									<td class="txt-r bg-a">1,749,625,531</td>
+									<td class="txt-c bg-a">1.23</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ut-optset optset mt30">
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">제도별 분기적립금 및 기간수익률 확정기여형(DC)</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2" colspan="2">구분</th>
+									<th scope="col" colspan="2">1분기 (03.31 기준 직전 1년)</th>
+									<th scope="col" colspan="2">2분기 (06.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">3분기 (09.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">4분기 (12.31 기준 직전 1년)</th>
+								</tr>
+								<tr>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l" rowspan="5"><strong>확정기여형(DC)</strong></td>
+									<td class="txt-l">원리금보장형 상품</td>
+									<td class="txt-r">193,821,488</td>
+									<td class="txt-c">1.19</td>
+									<td class="txt-r">203,140,334</td>
+									<td class="txt-c">1.18</td>
+									<td class="txt-r">221,515,875</td>
+									<td class="txt-c">1.23</td>
+									<td class="txt-r">250,058,174</td>
+									<td class="txt-c">1.22</td>
+								</tr>
+								<tr>
+									<td class="txt-l">원리금비보장형 상품</td>
+									<td class="txt-r">40,903,930</td>
+									<td class="txt-c">1.75</td>
+									<td class="txt-r">48,792,543</td>
+									<td class="txt-c">0.52</td>
+									<td class="txt-r">58,353,107</td>
+									<td class="txt-c">-3.87</td>
+									<td class="txt-r">67,949,269</td>
+									<td class="txt-c">3.05</td>
+								</tr>	
+								<tr>
+									<td class="txt-l">기타</td>
+									<td class="txt-r">146,287</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">120,475</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">160,299</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">224,847</td>
+									<td class="txt-c"></td>
+								</tr>							
+								<tr>
+									<td class="txt-l bg-a"><strong>합계</strong></td>
+									<td class="txt-r bg-a">234,871,705</td>
+									<td class="txt-c bg-a">1.29</td>
+									<td class="txt-r bg-a">252,053,352</td>
+									<td class="txt-c bg-a">1.06</td>
+									<td class="txt-r bg-a">280,029,281</td>
+									<td class="txt-c bg-a">0.15</td>
+									<td class="txt-r bg-a">318,232,290</td>
+									<td class="txt-c bg-a">1.59</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ut-optset optset mt30">
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">제도별 분기적립금 및 기간수익률 개인형퇴직연금(IRP)</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2" colspan="2">구분</th>
+									<th scope="col" colspan="2">1분기 (03.31 기준 직전 1년)</th>
+									<th scope="col" colspan="2">2분기 (06.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">3분기 (09.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">4분기 (12.31 기준 직전 1년)</th>
+								</tr>
+								<tr>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l" rowspan="5"><strong>개인형퇴직연금(IRP)</strong></td>
+									<td class="txt-l">원리금보장형 상품</td>
+									<td class="txt-r">84,514,583</td>
+									<td class="txt-c">1.19</td>
+									<td class="txt-r">84,813,458</td>
+									<td class="txt-c">1.17</td>
+									<td class="txt-r">83,702,745</td>
+									<td class="txt-c">1.18</td>
+									<td class="txt-r">89,132,971</td>
+									<td class="txt-c">1.19</td>
+								</tr>
+								<tr>
+									<td class="txt-l">원리금비보장형 상품</td>
+									<td class="txt-r">32,626,351</td>
+									<td class="txt-c">0.58</td>
+									<td class="txt-r">31,874,773</td>
+									<td class="txt-c">0.18</td>
+									<td class="txt-r">30,232,572</td>
+									<td class="txt-c">-5.45</td>
+									<td class="txt-r">30,842,989</td>
+									<td class="txt-c">1.8</td>
+								</tr>	
+								<tr>
+									<td class="txt-l">기타</td>
+									<td class="txt-r">563</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">328</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">420</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">9,043</td>
+									<td class="txt-c"></td>
+								</tr>							
+								<tr>
+									<td class="txt-l bg-a"><strong>합계</strong></td>
+									<td class="txt-r bg-a">117,141,497</td>
+									<td class="txt-c bg-a">1.02</td>
+									<td class="txt-r bg-a">116,688,559</td>
+									<td class="txt-c bg-a">0.89</td>
+									<td class="txt-r bg-a">113,935,737</td>
+									<td class="txt-c bg-a">-0.66</td>
+									<td class="txt-r bg-a">119,985,003</td>
+									<td class="txt-c bg-a">1.37</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ut-optset optset mt30">
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">제도별 분기적립금 및 기간수익률 제도전체</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2" colspan="2">구분</th>
+									<th scope="col" colspan="2">1분기 (03.31 기준 직전 1년)</th>
+									<th scope="col" colspan="2">2분기 (06.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">3분기 (09.30 기준 직전 1년)</th>
+									<th scope="col" colspan="2">4분기 (12.31 기준 직전 1년)</th>
+								</tr>
+								<tr>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+									<th scope="col">적립금</th>
+									<th scope="col">수익률</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l" rowspan="5"><strong>제도전체</strong></td>
+									<td class="txt-l">원리금보장형 상품</td>
+									<td class="txt-r">1,409,233,394</td>
+									<td class="txt-c">1.19</td>
+									<td class="txt-r">1,544,250,475</td>
+									<td class="txt-c">1.18</td>
+									<td class="txt-r">1,593,664,422</td>
+									<td class="txt-c">1.22</td>
+									<td class="txt-r">2,082,763,311</td>
+									<td class="txt-c">1.22</td>
+								</tr>
+								<tr>
+									<td class="txt-l">원리금비보장형 상품</td>
+									<td class="txt-r">77,020,963</td>
+									<td class="txt-c">1.22</td>
+									<td class="txt-r">86,807,764</td>
+									<td class="txt-c">0.33</td>
+									<td class="txt-r">94,223,903
+									</td>
+									<td class="txt-c">-4.85</td>
+									<td class="txt-r">104,834,472
+									</td>
+									<td class="txt-c">2.68
+									</td>
+								</tr>
+								<tr>
+									<td class="txt-l">기타</td>
+									<td class="txt-r">149,952</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">128,039</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">174,425</td>
+									<td class="txt-c"></td>
+									<td class="txt-r">245,041</td>
+									<td class="txt-c"></td>
+								</tr>							
+								<tr>
+									<td class="txt-l bg-a"><strong>합계</strong></td>
+									<td class="txt-r bg-a">1,486,404,309
+									</td>
+									<td class="txt-c bg-a">1.19</td>
+									<td class="txt-r bg-a">1,631,186,278</td>
+									<td class="txt-c bg-a">1.14</td>
+									<td class="txt-r bg-a">1,688,062,750</td>
+									<td class="txt-c bg-a">0.88</td>
+									<td class="txt-r bg-a">2,187,842,824</td>
+									<td class="txt-c bg-a">1.30</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

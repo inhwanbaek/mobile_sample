@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a pop-dgnrslt pop-futr" id="pop-futr">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향진단결과</h1>
+					</div>
+				</div>
+				<div class="pct ipdgn-q">
+					<main class="poptents">
+						<div class="dgnrslt-msg">
+							<div class="msg">
+								김교보 님의 투자성향은<br> <span>안정형</span> <button type="button" class="ico help">투자성향 열기</button> 입니다.
+							</div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<ul class="bullet a">
+						<li>고객님이 질문에 대답하신 내용을 바탕으로 투자성향을 진단한 내용입니다.</li>
+						<li>위 투자성향은 총 5가지 유형 중 고객님에게 해당하는 유형입니다. </li>
+						<li>투자성향에 따른 자산배분은 투자상품 선택 시 참고하시기 바랍니다.</li>
+					</ul>
+					<div class="btn-set mt10">
+						<!-- [D] 2022-04-20 onclick 추가 -->
+						<!-- [D] 2022-05-10 onclick 삭제 -->
+						<button type="button" class="btn a rd lg">다음</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<!-- [D] 2022-04-20 alert 추가 -->
+		<script>
+			ui.popup.open('pop-futr');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-dgnrslt',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+
+			var alert = function(){
+				// 알럿창 띄우기
+				ui.alert("고객님은 고객확인의무 대상입니다. 상품 가입을 위해 [고객확인의무(CDD/EDD)] 페이지로 이동합니다.",{
+					ycb:function(){
+						//console.log("알럿1확인결과");
+					},
+					ybt:"확인"
+				});
+			}
+		</script>
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-loanDoc" id="pop-loanDoc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대출서류 이미지 열람</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+						<!-- 본문 영영 -->
+						<div class="msect">
+							<div class="readloandocimg-head">
+								<h2 class="hd-tit3">대출신청 시 작성하신 서류입니다. <br>확인해 보세요.</h2>
+							</div>
+							<div class="loan-tbox">
+								<div class="txt">대출 상품명</div>
+								<h3 class="hd-tit3">교보e프라임신용대출(A형)</h3>
+							</div>
+
+							<div class="btn-set bvt">
+								<button type="button" class="btn md">대출신청서</button>
+								<button type="button" class="btn md">대출거래약정서</button>
+								<button type="button" class="btn md">추가약정서</button>
+							</div>
+
+							<div class="ref-tbox">
+								<ul class="bullet a">
+									<li>대출신청 시 작성하신 서류만 확인 가능합니다.</li>
+									<li>확인이 필요한 서류가 목록에 없는 경우 융자센터로 문의해 주세요.</li>
+								</ul>
+							</div>
+
+						</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-loanDoc');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-loanDoc');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

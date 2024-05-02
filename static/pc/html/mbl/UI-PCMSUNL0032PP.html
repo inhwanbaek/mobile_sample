@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-woncert" id="pop-woncert">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계좌번호 입력</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<section class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit3"><i class="line">계좌번호</i>를 입력해 주세요.</h2>
+							</div>
+						</div>
+
+						<div class="ut-form a forms">
+							<ul class="form">
+								<li>
+									<span class="input a">
+										<label class="lb" for="input_id2">계좌번호</label>
+										<input id="input_id2" type="number" placeholder="- 없이 숫자만 입력"  value="">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-woncert');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

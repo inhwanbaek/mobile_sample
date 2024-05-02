@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-handicap" id="pop-handicap">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">장애인 상담 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect sect-csc">
+						<h2 class="hd-tit3">청각장애인을 위한 상담 서비스</h2>
+						<h3 class="hd-tit4">수어상담</h3>
+						<p class="tit-txt">손말이음센터(한국정보화진흥원 산하) 통신중계서비스를 통한 상담</p>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>이용방법
+									<ul class="bullet c">
+										<li>청각장애고객이 영상이나 문자메시지를 손말이음센터 수어통역중계사에게 보내면, 수어통역중계사가 교보생명 콜센터 상담사원에게 전달해 상담 진행</li>
+									</ul>
+								</li>
+								<li>전화번호
+									<ul class="bullet c">
+										<li>국번없이 <a href="tel:107" title="전화 앱으로 전환됩니다.">107</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect sect-csc">
+						<h3 class="hd-tit4">전화상담</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>교보생명 콜센터(1588-1001) + 7번(장애인 전용 단축번호)</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect sect-csc">
+						<h3 class="hd-tit4">채팅상담</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>교보생명 홈페이지/웹/앱 [고객센터 &gt; 고객상담 &gt; 채팅상담]
+									<ul class="bullet c">
+										<li>채팅상담 운영시간: 평일 10:00~17:00</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect sect-csc">
+						<h3 class="hd-tit4">이메일상담</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>교보생명 홈페이지/웹/앱 [고객센터 &gt; 고객상담 &gt; 상담신청]</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" id="next01">확인</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-handicap');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"아파트 담보대출"}'></include>
+	<include class="gnb" src="../inc/gnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan bank step s5" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">5.계좌등록</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">8</b></span>
+								<span class="num"><b class="b">5</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="prd-tbox hdt">
+				<h2 class="hd-tit3">대출금 입금 및 상환에 사용할<br>계좌를 등록해 주세요.</h2>
+			</div>
+			
+			<section class="sect ut-form a certibk">
+				<ul class="form">
+					<li>
+						<span class="input a"><label class="lb">은행/증권사</label><input type="button" value="선택" onclick="console.log('fsdsfd')"></span>
+					</li>
+					<li>
+						<span class="input a"><label class="lb" for="input_num_1">계좌번호</label><input id="input_num_1" type="tel" pattern="\d*" value="" placeholder="계좌번호를 입력하세요"></span>
+					</li>
+					<li>
+						<div class="ut-certi">
+							<span class="input a">
+								<label class="lb" for="certi-2">인증번호 확인</label>
+								<div class="ctt ibts">
+									<i class="tt">입력시간</i><i class="ts">05:32</i>
+								</div>
+								<input type="number" class="cnm" pattern="\d*" placeholder="숫자 4자리 입력" id="certi-2">
+							</span>
+							<div class="ext"><a href="javascript:;" class="link-text">시간연장</a></div><!-- [웹접근성] 1st 수정 -->
+							<div class="bts"><button type="button" class="btn sm">인증번호 재요청</button></div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg a">1원 인증요청</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

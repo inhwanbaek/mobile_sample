@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-mdw pop-category pop-mdwcode" id="pop-bitmInfo">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">영업종목 검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- 1단계 -->
+					<div class="tit"><span class="dep">코드명</span><span class="dep">가구 및 기타 제품 제조업</span><span class="dep">가구 및 기타 제품 제조업</span><span class="dep now">가구 및 기타 제품 제조업</span></div>
+					<div class="form-group">		
+						<label class="checkbox cv"><input type="radio" name="radio01" aria-hidden="true"><span class="txt">가구 및 기타 제품 제조업</span></label>
+						<label class="checkbox cv"><input type="radio" name="radio01" aria-hidden="true"><span class="txt">가사 서비스업</span></label>
+						<label class="checkbox cv"><input type="radio" name="radio01" aria-hidden="true"><span class="txt">금가죽, 가방 및 신발 제조업</span></label>
+						<label class="checkbox cv"><input type="radio" name="radio01" aria-hidden="true"><span class="txt">고무 및 플라스틱제품 제조업</span></label>
+						<label class="checkbox cv"><input type="radio" name="radio01" aria-hidden="true"><span class="txt">공공행정, 국방 및 사회보장 행정</span></label>
+					</div>
+				</main>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-bitmInfo');  // 팝업 열기
+
+		
+	</script>
+
+</div>
+</body>
+</html>

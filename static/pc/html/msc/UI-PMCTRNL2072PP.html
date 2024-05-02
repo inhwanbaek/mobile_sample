@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-mo-account" id="pop-mo-account">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신탁 모바일통장</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="ut-dcard a account">
+						<div class="top">
+							<span class="img_trust_kyobo"><em class="blind">KYOBO 교보생명</em></span>
+						</div>
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">김교보 님</div>
+							</div>
+							<div class="cdt">
+								<div class="bxs">
+									<div class="dt">계좌번호</div>
+									<div class="dd">2001621354106</div>
+								</div>
+								<div class="bxs">
+									<div class="dt">상품명</div>
+									<div class="dd">수시입출금신탁(MMT)</div>
+								</div>
+								<div class="bxs">
+									<div class="dt">계약일</div>
+									<div class="dd">2021.02.14</div>
+								</div>
+								<div class="bxs">
+									<div class="dt">유지서비스점포</div>
+									<div class="dd">노블리에지원팀</div>
+								</div>
+							</div>
+						</div>
+						<div class="etc">
+							<div class="ut-unprotected">
+								<!--[D] 2022-07-27 텍스트 수정 <p class="txt">이 금융상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</p> -->
+								<p class="txt">예금자보호법 상 보호상품 아님</p>
+							</div>
+							<div class="official-seal">
+								교보생명보험 주식회사
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">PDF 저장</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-mo-account');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

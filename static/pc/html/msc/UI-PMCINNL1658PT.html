@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer sm a pop-caseDetails" id="pop-caseDetails">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">해지공제비용(경과기간 기준)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-tbl a">
+						<table class="tblist nl" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">해지공제비용(경과기간 기준)</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">해지공제<br>경과기간</th>
+									<th scope="col">해지공제금<br>(만원)</th>
+									<th scope="col">해지공제<br>비율(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>									
+									<td>1년</td>
+									<td>380</td>
+									<td>10.6</td>
+								</tr>        
+								<tr>									
+									<td>2년</td>
+									<td>190</td>
+									<td>2.6</td>
+								</tr>        
+								<tr>									
+									<td>3년</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+								<tr>									
+									<td>4년</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+								<tr>									
+									<td>5년</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+								<tr>									
+									<td>6년</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+								<tr>									
+									<td>7년</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+								<tr>									
+									<td>7년 이상</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>        
+							</tbody>
+						</table>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-caseDetails');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<script>
+		ui.popup.open('pop-caseDetails');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

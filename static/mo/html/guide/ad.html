@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"페이지타이틀"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page myp " id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<section class="sect" data-sid="ui-swipers">
+				<h2 class="hd-tit2 mt30 t-blue">모바일 배너 타입</h2>
+
+				<!--[D] Type A타입-->
+				<h3 class="hd-tit3 mt30 mb30">Type A타입(내용 이미지 없는 타입)<br><span class="t-blue">배너 1개</span></h3>
+				<div class="ut-slide-play type-a">
+					<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+					<div class="swiper-container swiper" data-slide-id="slide-play-a-1"> 
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide color-1">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+						</ul> 
+					</div>
+				</div>
+
+				<h3 class="hd-tit3 mt30 mb30">Type A타입(내용 아이콘 없는 타입)<br><span class="t-blue">배너1개 이상</span></h3>
+				<div class="ut-slide-play type-a">
+					<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+					<div class="swiper-container swiper" data-slide-id="slide-play-a-more">
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide color-1">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-2">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+									</div>
+								</a> 
+							</li>
+							<li class="swiper-slide color-3">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-4">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-5">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-6">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-7">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-8">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide color-9">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--[D] Type B타입-->
+				<h3 class="hd-tit3 mt30 mb30">Type B타입(내용 아이콘 있는 타입)<br><span class="t-blue">배너1개</span><br><span class="t-red">아이콘사이즈 192px X 192px(2배수)</span></h3>
+
+				<div class="ut-slide-play type-b">
+					<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+					<div class="swiper-container swiper" data-slide-id="slide-play-b-1">
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide color-1">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+									<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 class="hd-tit3 mt30 mb30">Type B타입(내용 아이콘 있는 타입)<br><span class="t-blue">배너1개 이상</span><br><span class="t-red">아이콘사이즈 192px X 192px(2배수)</span></h3>
+				
+				<div class="ut-slide-play type-b">
+					<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide color-1">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+									</div>
+									<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+								</a>
+							</li>
+							<li class="swiper-slide color-2">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+									</div>
+									<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+								</a>
+							</li>
+							<li class="swiper-slide color-3">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+									</div>
+									<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+								</a>
+							</li>
+							<li class="swiper-slide color-3">
+								<a href="javascript:;">
+									<div class="txtbox">
+										<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+									</div>
+									<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 class="hd-tit3 mt30 mb30">Type C타입(Only Mobile)<br><span class="t-blue">배너1개</span><br><span class="t-red">이미지사이즈 640px X 240px(2배수)</span></h3>
+				<div class="ut-slide-play type-c">
+					<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+					<div class="swiper-container swiper" data-slide-id="slide-play-c-1">
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide color-1">
+								<a href="javascript:;">
+									<div class="imgbox"><img class="img" src="../../img/temp/type_c_mo.png" alt="우주인 내친구(이미지 설명은 필수로 넣으셔야합니다.)"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 class="hd-tit3 mt30 mb30">Type C타입(Common)<br><span class="t-blue">배너1개 이상</span><br><span class="t-red">이미지사이즈 640px X 240px(2배수)</span></h3>
+				<div class="ut-slide-play type-c">
+					<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+					<div class="swiper-container swiper" data-slide-id="slide-play-c-more">
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+								<a href="javascript:;">
+									<div class="imgbox"><img class="img" src="../../img/temp/type_c_mo.png" alt="우주인 내친구(이미지 설명은 필수로 넣으셔야합니다.)"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;">
+									<div class="imgbox"><img class="img" src="../../img/temp/type_c_mo.png" alt="우주인 내친구(이미지 설명은 필수로 넣으셔야합니다.)"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+
+				<script>
+				$(document).ready(function(){
+					// http://idangero.us/swiper/api/
+					// ui.slides.sample1.slide.on('slideChange', function () {
+					// 	console.log('cmRecom slideChange');
+					// });
+				});
+				</script>
+			</section>
+			
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- <div class="floatbots">  
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<!-- <include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include> -->
+
+	<!-- 푸터 -->
+	<!-- <include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include> -->
+
+</div>
+</body>
+</html>

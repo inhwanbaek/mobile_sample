@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-infoentry" id="pop-infoentry">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고객확인정보등록(CDD/EDD)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="infoentry-tit">
+						<h2 class="hd-tit3">거래목적 및 자금출처를 선택해 주세요.</h2>
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">가입자 본인확인</h3>
+						<div>
+							<!-- [D] 2022-05-10 클래스 'cr' 삭제 -->
+							<label class="radio"><input type="radio" name="radio5"><span class="txt">본인</span></label>
+							<label class="radio"><input type="radio" name="radio5"><span class="txt">본인아님</span></label>
+						</div>
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">거래목적</h3>
+						<span class="select db">
+							<label class="lb" for="select-4">거래목적 선택</label>
+							<select name="select-4" id="select-4">
+								<option value="s-1" selected>급여 및 생활비</option>
+								<option value="s-2">저축 및 투자</option>
+								<option value="s-3">보험료 납부</option>
+								<option value="s-4">공과금 납부</option>
+								<option value="s-5">카드대금 결제</option>
+								<option value="s-6">대출원리금 상환</option>
+								<option value="s-7">사업상 거래</option>
+								<option value="s-8">보장</option>
+								<option value="s-9">상속</option>
+								<option value="s-10">기타 </option>
+							</select>
+						</span>
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">자금출처</h3>
+						<span class="select db">
+							<label class="lb" for="select-5">자금출처 선택</label>
+							<select name="select-5" id="select-5">
+								<option value="s-1" selected>근로소득</option>
+								<option value="s-2">연금소득 </option>
+								<option value="s-3">퇴직소득 </option>
+								<option value="s-4">사업소득</option>
+								<option value="s-5">부동산임대소득</option>
+								<option value="s-6">부동산양도소득</option>
+								<option value="s-7">금융소득(이자 및 배당)</option>
+								<option value="s-8">상속·증여</option>
+								<option value="s-9">일시 재산양도로 인한 소득</option>
+								<option value="s-10">기타 </option>
+							</select>
+						</span>
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">가족중에 외국의 정치적 주요 인물에 해당함 </h3>
+						<div>
+							<!-- [D] 2022-05-10 클래스 'cr' 삭제 -->
+							<label class="radio"><input type="radio" name="radio6"><span class="txt">예</span></label>
+							<label class="radio"><input type="radio" name="radio6"><span class="txt">아니요</span></label>
+						</div>
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">해외 납세의무자 여부 확인</h3>
+						<div>
+							<!-- [D] 2022-05-10 클래스 'cr' 삭제 -->
+							<label class="radio"><input type="radio" name="radio7"><span class="txt">해당함</span></label>
+							<label class="radio"><input type="radio" name="radio7"><span class="txt">해당사항없음</span></label>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-infoentry');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

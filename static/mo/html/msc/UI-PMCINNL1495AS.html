@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"배당/중도/만기/휴면보험금 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<!-- <div class="tit"></div> -->
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">2</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="hd-tit3">일반보험금을 신청할 계약을 선택해 주세요.</h2>
+			<div class="ut-dtds f dtds">
+				<ul class="dlist between">
+					<li class="total">
+						<div class="dt point">총 건수</div>
+						<div class="dd point">20건</div>
+					</li>
+					<li>
+						<div class="dt">배당금 신청</div>
+						<div class="dd">5건</div>
+					</li>
+					<li>
+						<div class="dt">중도보험금/연금 신청</div>
+						<div class="dd">5건</div>
+					</li>
+					<li>
+						<div class="dt">만기보험금 신청</div>
+						<div class="dd">5건</div>
+					</li>
+					<li>
+						<div class="dt">휴면보험금 신청</div>
+						<div class="dd">5건</div>
+					</li>
+					<li>
+						<div class="dt">사고전미지급금 신청</div>
+						<div class="dd">5건</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 탭 -->
+			<div class="ut-tabs a mt24">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">배당금 신청</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">중도보험금/연금 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">만기보험금 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">휴면보험금 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">사고전미지급금 신청</a></li>
+				</ul>
+			</div>
+			<!-- //탭 -->
+
+			<!-- 중도보험금/연금 신청 -->
+			<h3 class="hd-tit4" id="ball_2">계약선택</h3>
+			<span data-ui-balloon="right,top" aria-describedby="ball_2" class="tip-msc0188">최대 5건까지 선택할 수 있어요</span>
+			<!-- 체크시 class="ut-dcard a dcard checked" 클래스추가 -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox"><span class="txt">무배당교보큰사랑교육보험(출생후3인보장)</span></label>
+						</div>
+					</div>
+
+					<!-- [D] 2022-03-03 클래스변경 -->
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">실수령액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">70,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">주보험자</div>
+								<div class="dd">홍길동</div>
+							</div>
+						</li>
+						<li data-tog-cls="box">
+							<div class="dl">
+								<div class="dt">지급금<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+								<div class="dd"><span class="fn-point01">158,951원</span></div>
+							</div>
+							<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+								<div class="ut-tbl b" aria-describedby="">
+									<table class="tblist" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">지급금</span><span class="cap"></span></caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="left">분할기본금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">배당금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">기타지급금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">지급금 합계</td>
+												<td class="right">0원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li data-tog-cls="box">
+							<div class="dl">
+								<div class="dt">공제금액<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+								<div class="dd"><span class="fn-point01">158,951원</span></div>
+							</div>
+							<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+								<div class="ut-tbl b" aria-describedby="">
+									<table class="tblist" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">공제금액</span><span class="cap"></span></caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="left">보험계약대출 상환</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">미납보험료</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">이자</td>
+												<td class="right">0원</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td class="left">공제금 합계</td>
+												<td class="right"><span class="fn-point01">0원</span></td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">지급사유</div>
+								<div class="dd"><span class="fn-point01">중도</span></div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>연금저축보험의 연금소득세 및 기타소득세는 소득(세액)공제를 받지 않은 경우 환급받을 수 있습니다. 자세한 사항은 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)로 문의해 주세요. </li>
+						<li>중도보험금을 받지 않은 경우 해당 보험의 적용금리로 적립됩니다. </li>
+						<li>중도보험금을 신청할 수 있는 보험금은 생존연금, 학자금, 축하금, 생활안전자금, 건강진단자금 등이며, 보험계약대출이 있는 경우 최소상환금을 공제한 나머지 금액을 받을 수 있습니다.
+							<div class="btn-set">
+								<button type="button" class="btn sm">적립금리 안내</button>
+							</div>
+						</li>
+						<li>지급금 합계는 중도보험금, 배당금, 기타지급금이 포함된 금액입니다.(기타지급금: 가산금, 증액연금, 가산연금)</li>
+						<li>자세한 사항은 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)로 문의해 주세요.</li>
+						<!-- [D] 2022-07-13 텍스트수정 -->	
+						<li>중도보험금 수령 대상<br>
+							생존연금, 학자금, 축하금, 생활안전자금, 건강진단자금 등이며, 보험계약대출이 있는 경우 최소상환금을 공제한 나머지 금액을 받을 수 있습니다.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+			<!-- //중도보험금/연금 신청 -->
+
+
+		</div><!-- contents -->
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">신청</button>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

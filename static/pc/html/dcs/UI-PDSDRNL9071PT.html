@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">실적배당형 특별계정</h2> <!-- 2022-04-18 수정: 텍스트 수정 -->
+			</div>
+
+			<div class="dcs-sect">
+				
+				<p class="hd-txt mb20">수익률, 자산 구성 및 부채 현황, 결산서 등 실적배당형 특별계정에 대한 현재 정보입니다.</p> <!-- 2022-04-18 수정: 텍스트 수정 -->
+
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">기준가 및 수익률 현황</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">자산구성 현황</a></li> <!-- [D] 2022-05-20 텍스트 수정 / 자산구성 현황 -->
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">자산/부채 현황</a></li> <!-- 2022-04-18 수정: 텍스트 수정 -->
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">수수료 지급내역</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">계약결산서</a></li> <!-- 2022-04-18 수정: 텍스트 수정 -->
+					</ul>
+				</div>
+
+
+				<section class="sect">
+					
+					<div class="ut-optset optset a-bot mt40">
+						<div class="opt pl">
+							<span class="date">기준일: 2021.12.31 현재</span>
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+
+					<div class="ut-tbl a">
+						<table class="tblist">
+							<caption><span class="tit">펀드별 수수료 지급내역</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:auto;">
+								<col style="width:17%">
+								<col style="width:17%">
+								<col style="width:17%">
+								<col style="width:17%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">운영보수</th>
+									<th scope="col">투자일임보수</th>
+									<th scope="col">수탁보수</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">사무관리보수</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c"><strong>주식형</strong></td>
+									<td class="txt-c">0.00</td>
+									<td class="txt-c">0.00</td>
+									<td class="txt-c">0.00</td>
+									<td class="txt-c">0.00</td>
+								</tr>
+									
+								<tr>
+									<td class="txt-c"><strong>채권형</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권혼합형</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>인덱스혼합형</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br>(주식형)</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br>(채권혼합형)</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br>(주식형)</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br>(채권혼합형)</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 안정자산 Focus 펀드<br>(채권혼합형)</strong></td>
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+									<td class="txt-c">0.00</td>	
+								</tr>
+																
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<!-- 2022-04-18 수정: 텍스트 수정 -->
+				<ul class="bullet lg a mt40">
+					<li>각 보수는 다음의 용도로 쓰입니다.
+						<ul class="bullet c">
+							<li>운영보수: 특별계정에 속한 재산의 운용, 관리 등</li>
+							<li>투자일임보수: 특별계정에 속한 재산을 맡겨서 운용하는 경우</li>
+							<li>수탁보수: 특별계정에 속한 재산의 보관 등</li>
+							<li>사무관리보수: 특별계정의 기준가 산정 업무 등</li>
+						</ul>
+					</li>
+					<li>투자일임보수, 수탁보수, 사무관리보수는 사업방법서에 명시된 한도 내에서 변동될 수 있습니다. </li>
+					<li>특별계정의 자산운용은 투자일임 또는 다른 집합투자기구(수익증권 및 증권투자회사(뮤추얼펀드)) 투자 형태로 외부에 위탁할 수 있습니다.</li>
+					<li>다른 집합투자기구에 투자할 경우 해당 집합투자기구에서 정한 수수료가 부과될 수 있고, 투자일임계약 또는 집합투자기구 투자로의 위탁 운용은 교보생명의 투자 정책에 따라 변경될 수 있습니다.</li>
+				</ul>
+				<!--// 2022-04-18 수정: 텍스트 수정 -->
+			</div>
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

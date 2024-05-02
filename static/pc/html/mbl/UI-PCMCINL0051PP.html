@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-cardcert" id="pop-cardcert">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카드번호 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<section class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit3">선택하신 <i class="line">$카드사명$</i><br> 카드번호를 입력해 주세요.</h2>
+							</div>
+						</div>
+
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<div class="ut-cdnum input a w100p">
+										<span class="lb">카드번호</span>
+										<div class="set">
+											<!-- [D] 2022-07-06 카드번호 입력 영역 수정 -->
+											<input type="password" class="cd c1" title="1~4자리" placeholder="****">
+											<i class="ds">-</i>
+											<input type="password" class="cd c2" title="5~8자리" placeholder="****"><!-- [웹접근성] 1st 수정 -->
+											<i class="ds">-</i>
+											<input type="number" class="cd c3" title="9~12자리" placeholder="4자리"><!-- [웹접근성] 1st 수정 -->
+											<i class="ds">-</i>
+											<input type="number" class="cd c4" title="13~16자리" placeholder="4자리"><!-- [웹접근성] 1st 수정 -->
+											<!--// [D] 2022-07-06 카드번호 입력 영역 수정 -->
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">이전</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-cardcert');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

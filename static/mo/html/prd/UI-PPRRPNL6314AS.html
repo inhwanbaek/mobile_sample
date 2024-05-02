@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"IRP 가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd retire irp" id="container">
+	
+		<!-- 본문 영영 -->
+		<div class="contents" id="contents">
+			
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">7. 운용상품 선택</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">9</b></span>
+								<span class="num"><b class="b">7</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>   
+			<h2 class="hd-tit3">회사와 개인의 투자비율을<br>각각 100%로 맞춰 주세요.</h2>
+			
+			<div class="pop-terms-detail">
+				<dl class="rating-box stage5">
+					<dt>투자성향 분석
+						<a href="javascript:;" class="link-ar">투자성향진단</a>
+					</dt>
+					<dd class="graph-area" role="img" aria-label="안정형, 안정추구형, 중립형, 수익추구형, 고수익추구형 투자성향 중 고수익추구형 투자성향"><!-- [웹접근성] 1st 수정 -->
+						<ol class="graph">
+							<li><span>안정형</span></li>
+							<li><span>안정<br>추구형</span></li>
+							<li><span>중립형</span></li>
+							<li><span>수익<br>추구형</span></li>
+							<li><span>고수익<br>추구형</span></li>
+						</ol>
+						<strong class="blind">중 고수익추구형 </strong>
+					</dd>	
+					
+					<!-- 투자성향 미진단 시 -->
+					<dd>
+						<div class="list-empty">
+							<p>
+								<strong>투자성향진단을 하지 않았거나 진단 결과<br>유효기간이 만료된 상태입니다. </strong>
+								투자성향진단 후 상품운용이 가능합니다
+							</p>
+						</div>
+					</dd>
+				</dl>
+				<div class="cont-area">
+					<p>적합한 상품을 확인하고 더 안전하게<br>투자해 보세요!</p>
+					<ul class="ut-bnr-lst irp">
+						<li>
+							<a href="javascript:;" class="lk">
+								<strong class="tit">추천 포트폴리오 투자</strong>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<!-- 탭 -->
+			<div class="ut-tabs a">
+				<ul class="menu" role="tablist">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;" role="tab" aria-selected="true">전체</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;" role="tab" aria-selected="false">비율 입력 상품</a></li>
+				</ul>
+			</div>
+
+			<!-- 전체 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="tab-cont-wrap">
+					<section class="forms">
+						<span class="input a">
+							<label class="lb blind" for="input_kwd">상품명 검색</label>
+							<div class="ibts"><button type="button" class="btn sm b bt-sch">검색</button></div>
+							<input id="input_kwd" type="search" placeholder="키워드 또는 상품명 입력">
+						</span>
+					</section>
+
+					<div class="bg-gray">
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">70</i>개</span>  <span class="date">2020.01.01 기준</span>
+							</div>
+							<div class="opt pr">
+								<span class="select sort no-lb set">
+									<button class="btsel" type="button" title="정렬선택" aria-expanded="false">예금형</button>
+									<select name="select-4" title="정렬선택" tabindex="-1" aria-hidden="true">										
+										<option>예금형</option>
+										<option>수익률</option>
+									</select>
+								</span>
+							</div>
+						</div>
+		
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg m">투자성향대비 부적합</em>
+										<em class="bdg i">위험자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">AB미국그로스증권(주식-재간접형)</button></div>
+									</div>
+									<div class="line"></div>
+									<div class="cdt">
+										<div class="bxs">
+											<div class="dt">수익률</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">32.90</strong><i class="w">%</i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="0~70" onclick="ui.popup.open('pop-buyrt-kpad');"><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="0~70" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg h">투자성향대비 적합</em>
+										<em class="bdg h">안전자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">(무)교보 IRP개인형 금리연동형</button></div>
+									</div>
+									<div class="line"></div>
+									<div class="cdt">
+										<div class="bxs">
+											<div class="dt">적용금리</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">1.39</strong><i class="w">%</i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="30" onclick="ui.popup.open('pop-buyrt-kpad');"><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="0~100" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg h">투자성향대비 적합</em>
+										<em class="bdg h">안전자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">(무)교보 IRP개인형 금리연동형</button></div>
+									</div>
+									<div class="line"></div>
+									
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="0~100" onclick="ui.popup.open('pop-buyrt-kpad');"><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="0~100" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="list-empty">
+								<p>검색 결과가 없습니다.</p>
+								<div class="btn-set">
+									<button type="button" class="btn md">상품 다시 검색하기</button>
+								</div>
+								<p>혹시 찾는 상품이 없으신가요?<br>IRP 가입 후에 더 다양한 상품을<br>선택해 투자하실 수 있어요.</p>
+							</div>
+
+							
+						</div>
+		
+						
+					</div>
+
+				</div>
+			</div>
+			<!-- // 전체 -->
+			
+			<!-- 비율 입력 상품 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				<div class="tab-cont-wrap">
+					<section class="forms">
+						<span class="input a">
+							<label class="lb blind" for="input_kwd2">상품명 검색</label>
+							<div class="ibts"><button type="button" class="btn sm b bt-sch">검색</button></div>
+							<input id="input_kwd2" type="search" placeholder="키워드 또는 상품명 입력">
+						</span>
+					</section>
+
+					<div class="bg-gray">
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">3</i>개</span>  <span class="date">2020.01.01 기준</span>
+							</div>
+							<div class="opt pr">
+								<span class="select sort no-lb set">
+									<button class="btsel" type="button" title="정렬선택" aria-expanded="false">예금형</button>
+									<select name="select-4" title="정렬선택" tabindex="-1" aria-hidden="true">										
+										<option>예금형</option>
+										<option>수익률</option>
+									</select>
+								</span>
+							</div>
+						</div>
+		
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg m">투자성향대비 부적합</em>
+										<em class="bdg i">위험자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">AB미국그로스증권AB미국그로스증권AB미국그로스증권AB미국그로스증권AB미국그로스증권AB미국그로스증권(주식-재간접형)</button></div>
+									</div>
+									<div class="line"></div>
+									<div class="cdt">
+										<div class="bxs">
+											<div class="dt">수익률</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">32.90</strong><i class="w">%</i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="10" ><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="0" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg h">투자성향대비 적합</em>
+										<em class="bdg h">안전자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">(무)교보 IRP개인형 금리연동형</button></div>
+									</div>
+									<div class="line"></div>
+									<div class="cdt">
+										<div class="bxs">
+											<div class="dt">적용금리</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">1.39</strong><i class="w">%</i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="70"><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="100" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg h">투자성향대비 적합</em>
+										<em class="bdg h">안전자산</em>
+									</div>
+									<div class="hdt">
+										<div class="tit"><button type="button">(무)교보 IRP개인형 금리연동형</button></div>
+									</div>
+									<div class="line"></div>
+									
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt c">회사입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="회사입금액" placeholder="20"><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt c">개인입금액</div>
+													<div class="dd">
+														<div class="fmset">
+															<div class="fm">
+																<span class="input a won"><input type="tel" pattern="\d*" title="개인입금액" placeholder="0~100" disabled><i class="w">%</i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ut-dcard e">
+							<div class="list-empty">
+								<p>검색 결과가 없습니다</p>
+								<div class="btn-set">
+									<button type="button" class="btn md">상품 다시 검색하기</button>
+								</div>
+								<p>혹시 찾는 상품이 없으신가요?<br>IRP 가입 후에 더 다양한 상품을<br>선택해 투자하실 수 있어요.</p>
+							</div>							
+						</div>
+		
+						
+					</div>
+
+				</div>
+			</div>
+			<!-- // 비율 입력 상품 -->
+			
+
+			
+
+		</div>
+
+		<!-- 하단 고정영역 -->	
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set box-flex">
+					<div class="hd-tit3">투자비율</div>
+					<div class="cont">
+						<span>회사<strong>30</strong><span>%</span></span>
+						<span>개인<strong>0</strong><span>%</span></span>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+		
+		<script>
+			//ui.popup.open('pop-buyrt-kpad');
+		</script>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!--[D] 2022-04-26 테스트용 input focus scrollTop이동시 팝업이 안뜬다는 현상 확인-->
+	<article class="pop-layer c pop-buyrt-kpad no-focus" id="pop-buyrt-kpad">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">위험자산현황</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="rskast-stat">
+						<div class="graph">
+							<div class="prgbar">
+								<div class="bar" style="width:40%;"><!-- [D] 70% 초과시 over클래스 추가 <div class="bar over"> -->
+									<span class="val">40</span>
+								</div>
+								<span class="maxval">최대 70%</span>
+								<span class="maxpos" style="width:70%;" aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="buyrt-fldset">
+						<div class="inp-buyrt">
+							<button type="button" class="c-btn c-down" data-num="-10">- 10</button>
+							<div class="inpset" aria-live="polite">
+								<!-- <div class="inp-value" title="매수비율">
+									<div class="val">40</div>
+								</div> -->
+								<span class="input a">
+									<input type="tel" title="매수비율" pattern="\d*" value="40" readonly>
+								</span>
+								<i class="unit">%</i>
+							</div>
+							<button type="button" class="c-btn c-up" data-num="10">+ 10</button>
+						</div>
+					</div>
+
+					<div class="kpad brtype" data-ui="kpad">
+						<div class="kpad-numset">
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="1"><span>1</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="2"><span>2</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="3"><span>3</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="4"><span>4</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="5"><span>5</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="6"><span>6</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="7"><span>7</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="8"><span>8</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="9"><span>9</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="0"><span>0</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="clear"><span>지우기</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="confirm"><span>완료</span></button>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

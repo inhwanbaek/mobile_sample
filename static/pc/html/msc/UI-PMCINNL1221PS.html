@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page result" id="container">	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="complate-msg icon1">
+				<div class="msg">
+					<p class="p1">
+						추가납입보험료 자동이체가 <strong class="bold">등록</strong>되었습니다. <br>
+						등록 후 첫 이체 여부를 꼭 확인해 주세요.
+					</p>
+				</div>
+				<div class="btn-set ct">
+					<button type="button" class="btn wm md">상세내역 보기</button>
+				</div>
+				
+				<div class="rst-area">
+					<h2 class="hd-tit4">추가납입보험료 자동이체 안내
+						<div class="ut-tooltip">
+							<button type="button" class="ico help bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<ul class="bullet a">
+										<!-- CASE : 신청/변경 -->
+										<li>보험료가 해당 이체일 은행 영업시간까지 계좌에 입금되어 있어야 자동이체됩니다.</li>
+										<li>계좌 잔액 부족, 지급제한, 약정대출금 연체 등으로 대체납부 불가능한 경우 자동이체가 실행되지 않습니다.</li>
+										<li><strong class="fn-point01">추가납입보험료 자동이체 신청 시 매월 지정한 이체희망일에 1회만 청구 및 자동이체됩니다.</strong></li>
+										<li>지정된 이체희망일에 이체되지 않아 다음 이체일에 이체되는 경우 기본보험료만 자동이체되고, 추가납입보험료는 청구되지 않습니다.</li>
+
+										<!-- CASE : 해지 -->
+										<!-- 
+											<li>추가납입보험료 자동이체를 해지해도 기본보험료 자동이체는 해지되지 않습니다.</li>
+											<li>기본보험료 자동이체도 해지하시려면 [보험료 자동이체] 메뉴를 이용해 주세요.</li>
+										-->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</h2>
+					<div class="btn-set group b4">
+						<button type="button" class="btn md">보험료 자동이체</button>
+						<button type="button" class="btn md">UL자유납입보험료 자동이체</button>
+					</div>
+					<div class="btn-set group b4">
+						<button type="button" class="btn md">보험계약대출이자 자동이체</button>
+						<button type="button" class="btn md">신용담보대출 자동이체</button>
+					</div>
+				</div>
+			</div>
+			
+
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">확인</button>
+					</div>
+				</div>
+			</nav>
+
+			
+		</div>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

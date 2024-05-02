@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"퇴직금 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+	<main class="container page etp" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 신청정보 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">5</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="etp-tit-box">
+				<h2 class="hd-tit3">퇴직금을 신청하는<br>가입자의 정보를 입력해 주세요.</h2><!--[D] 2022-02-16 br 태그 추가 -->
+			</div>
+			<div class="ut-dtds c inf-list">
+				<div class="etp-item a">
+					<!--[D] 2022-02-15 그룹핑 타이틀 명 수정 -->
+					<h3 class="etp-tit">
+						<span class="tt">퇴직급여총액</span>
+						<div class="ut-tooltip">
+							<button type="button" class="ico help bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<p>퇴직소득원천징수영수증의 퇴직급여와 일치해야 합니다.</p>
+								</div>
+							</div>
+						</div>
+					</h3>
+					<span class="input a won coms">
+						<label class="lb blind" for="input-01">퇴직급여총액 입력</label>
+						<input type="tel" patter="\d*" id="input-01" title="퇴직급여총액 입력" value="128억 5,825만 8,552"><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+					</span>
+					<div class="ext"><p>128억 5,825만 8,552원</p></div>
+				</div>
+				<div class="etp-item a">
+					<!--[D] 2022-02-15 그룹핑 타이틀 명 수정 -->
+					<h3 class="etp-tit">
+						<span class="tt">퇴직금 지급방식</span>
+						<div class="ut-tooltip">
+							<button type="button" class="ico help bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<ul class="bullet a">
+										<li>'전액 지급'은 교보생명에서 퇴직금 전액을 지급하는 것 입니다.</li>
+										<li>'적립비율 지급'은 교보생명에 적립된 금액만 지급하는 것입니다.</li>
+										<li>'적립비율 지급'의 경우 단체 지급 금액(사내충당금)도 퇴직자의 퇴직급여 수령계좌로 입금되어야 합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</h3>
+					<!-- [D] 2022-06-17 마크업 수정 
+					<span class="input a coms">
+						<label class="lb blind" for="input-02">퇴직금 지급방식</label>
+						<input type="text" readonly="" value="전액지급" title="퇴직금 지급방식" id="input-02">
+					</span>-->
+					<!-- [D] 2022-06-17 마크업 수정 -->
+					<div class="ut-dtds c bd">
+						<ul class="dlist"><!-- [D] 2022-06-29 클래스 'left' 삭제 -->
+							<li>
+								<div class="dt">지급방식</div>
+								<div class="dd bold">전액지급</div>
+							</li>
+						</ul>
+						<!-- “적립비율 지급” 선택 시
+						<ul class="dlist list">
+							<li>
+								<div class="dt">지급방식</div>
+								<div class="dd bold">적립비율 지급</div>
+							</li>
+							<li>
+								<div class="dt">적립금액</div>
+								<div class="dd bold"><span class="color6">1,000,000,000</span>원</div>
+							</li>
+							<li>
+								<div class="dt">적립비율</div>
+								<div class="dd bold"><span class="color6">52.52</span>%</div>
+							</li>
+						</ul> -->
+					</div>
+					<!--//[D] 2022-06-17 마크업 수정 -->
+				</div>
+				<div class="etp-item a">
+					<!--[D] 2022-02-15 그룹핑 타이틀 명 수정 -->
+					<h3 class="etp-tit">퇴직금 수령</h3>
+					<!--[D] 2022-02-15 라디오 레이아웃 변경 -->
+					<div class="etp-radio_box"><!--[D] 2022-02-24 클래스명변경 -->
+						<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->		
+						<label class="radio" for="radio1">
+							<input type="radio" id="radio1" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_1">
+							<span class="txt">교보생명 IRP로 받기</span>
+						</label>
+						<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_1">
+							<!-- <div class="ut-addfile">
+								<ul class="addfile">
+									<li>
+										<div class="fbox">
+											<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+											<div class="bts">
+												<label class="btn sm f btn-attach" for="btn_001" title="원천징수영수증">
+													<em class="btx">첨부하기</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_001">
+												</label>
+											</div>
+											서류 첨부후 <div class="bts btn2"> 
+												<button type="button" class="btn sm f comp" title="원천징수영수증">미리보기</button>
+												<label class="btn sm f comp btn-attach" for="btn_002" title="원천징수영수증">
+													<em class="btx">다시첨부</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+												</label>
+												
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							-->
+							<h4 class="hd-tit5">입금계좌 금융기관</h4>
+							<!-- [D] 2022-03-07 버튼으로 변경 -->
+							<span class="input a">
+								<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+							</span>
+							<!--// [D] 2022-03-07 버튼으로 변경 -->
+							<h4 class="hd-tit5 mt24">계좌번호</h4>
+							<span class="input a no-lb readonly">
+								<label class="lb blind" for="input-12ss">계좌번호 입력</label>
+								<input type="tel" patter="\d*" title="계좌번호 입력" placeholder="입력하세요." id="input-12ss">
+							</span>
+							<h4 class="hd-tit5 mt24">예금주</h4>
+							<span class="input a no-lb readonly">
+								<label class="lb blind" for="input-12sss">예금주</label>
+								<input type="text" patter="\d*" title="입력" value="김교보" readonly id="input-12sss">
+							</span>	
+							<div class="ut-addfile">
+								<ul class="addfile">
+									<li>
+										<div class="fbox">
+											<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+											<div class="bts">
+												<label class="btn sm f btn-attach" for="btn_001" title="원천징수영수증">
+													<em class="btx">첨부하기</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_001">
+												</label>
+											</div>
+											<!-- 서류 첨부후 <div class="bts btn2">
+												<button type="button" class="btn sm f comp" title="원천징수영수증">미리보기</button>
+												<label class="btn sm f comp btn-attach" for="btn_002" title="원천징수영수증">
+													<em class="btx">다시첨부</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+												</label>
+											</div> -->
+										</div>
+									</li>
+								</ul>
+							</div>																		
+						</div>		
+						<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->							
+						<label class="radio" for="radio2">
+							<input type="radio" id="radio2" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_2">
+							<span class="txt">타사 IRP로 받기</span>
+						</label>
+						<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_2">
+							<h4 class="hd-tit5">
+								<span class="tt">타사 IRP 연금사업자(금융기관)</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<p>IRP 계좌를 만든 다른 금융기관을 선택해 주세요.</p>
+										</div>
+									</div>
+								</div>	
+							</h4>
+							<!-- [D] 2022-03-07 버튼으로 변경 -->
+							<span class="input a">
+								<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+							</span>
+							<!--// [D] 2022-03-07 버튼으로 변경 -->
+							<h4 class="hd-tit5 mt24">
+								<span class="tt">입금계좌 금융기관</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<p>IRP 계좌 사본(확인서)에 있는 입금계좌의 금융기관을 선택해 주세요.</p>
+										</div>
+									</div>
+								</div>	
+							</h4>
+							<!-- [D] 2022-03-07 버튼으로 변경 -->
+							<span class="input a">
+								<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+							</span>
+							<!--// [D] 2022-03-07 버튼으로 변경 -->
+							<h4 class="hd-tit5 mt24">계좌번호</h4>
+							<span class="input a no-lb">
+								<label class="lb blind" for="input-20">계좌번호</label>
+								<input type="tel" patter="\d*" title="입력" placeholder="입력하세요" id="input-20"><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<h4 class="hd-tit5 mt24">예금주</h4>
+							<span class="input a no-lb readonly">
+								<label class="lb blind" for="input-21">계좌번호</label>
+								<input type="text" title="입력" readonly placeholder="김교보" id="input-21">
+							</span>	
+							<div class="ut-addfile a">
+								<ul class="addfile">
+									<li>
+										<div class="fbox">
+											<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+											<div class="bts">
+												<label class="btn sm f btn-attach" for="btn_0111" title="원천징수영수증 제출">
+													<em class="btx">첨부하기</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_0111">
+												</label>
+											</div>
+										</div>
+									</li>								
+									<li>
+										<div class="fbox">
+											<div class="hdt"><span class="tit">타사 IRP 계좌 사본<br>(확인서)</span></div>
+											<div class="bts">
+												<label class="btn sm f btn-attach" for="btn_011" title="타사 IRP 계좌 사본">
+													<em class="btx">첨부하기</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_011">
+												</label>
+											</div>
+										</div>
+									</li>							
+								</ul>
+							</div>										
+						</div>	
+						<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->								
+						<label class="radio" for="radio3">
+							<input type="radio" id="radio3" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_3">
+							<span class="txt">일시금 받기</span>
+						</label>
+						<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_3">
+							<h4 class="hd-tit5">입금계좌 금융기관</h4>
+							<!-- [D] 2022-03-07 버튼으로 변경 -->
+							<span class="input a">
+								<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+							</span>
+							<!--// [D] 2022-03-07 버튼으로 변경 -->
+							<h4 class="hd-tit5 mt24">계좌번호</h4>
+							<span class="input a no-lb">
+								<label class="lb blind" for="input-22">계좌번호</label>
+								<input type="text" title="입력" placeholder="입력하세요" id="input-22">
+							</span>
+							<h4 class="hd-tit5 mt24">예금주</h4>
+							<span class="input a no-lb readonly">
+								<label class="lb blind" for="input-2ss">계좌번호</label>
+								<input type="tel" patter="\d*" title="입력" readonly value="김교보" id="input-2ss"><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<div class="ut-addfile">
+								<ul class="addfile">
+									<li>
+										<div class="fbox">
+											<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+											<div class="bts">
+												<label class="btn sm f btn-attach" for="btn_00122" title="원천징수영수증">
+													<em class="btx">첨부하기</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_00122">
+												</label>
+											</div>
+											<!-- 서류 첨부후 <div class="bts btn2">
+												<button type="button" class="btn sm f comp" title="원천징수영수증">미리보기</button>
+												<label class="btn sm f comp btn-attach" for="btn_002" title="원천징수영수증">
+													<em class="btx">다시첨부</em>
+													<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+												</label>
+											</div> -->
+										</div>
+									</li>
+								</ul>
+							</div>
+							<h3 class="etp-tit mt24">
+								<span class="tt">퇴직급여 공제정보</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<p>퇴직금을 일시금으로 받는 경우에는 퇴직소득세를 뺀 나머지 금액이 가입자에게 지급되며 회사는 퇴직소득세 원천징수 의무자가 됩니다. 해당 세금을 회사로 반환받을지 결정하셔야 합니다. 단체 반환 시 교보생명에 이미 등록되어 있는 계좌로 지급됩니다.
+											</p>
+										</div>
+									</div>
+								</div>
+							</h3>
+							<h4 class="hd-tit5">퇴직소득세<span class="amp">(필수)</span></h4>								
+							<span class="input a won no-lb">
+								<label class="lb blind" for="input-226">퇴직소득세 입력</label>
+								<input type="tel" patter="\d*" placeholder="입력하세요" value="" id="input-226"><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<div class="ext"><p>128억 5,825만 8,552원</p></div>
+							<h4 class="hd-tit5 mt24">국민연금전환금<span>(선택)</span></h4>								
+							<span class="input a won no-lb">
+								<label class="lb blind" for="input-227">국민연금전환금 입력</label>
+								<input type="tel" patter="\d*" placeholder="입력하세요" value="" id="input-227"><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<div class="ext"><p>128억 5,825만 8,552원</p></div>
+							<div class="btn-set mt30">
+								<button type="button" class="btn md">세금 검증</button>
+							</div>	
+							<!-- 세금 검증 후 결과영역 -->
+							<h4 class="hd-tit5 mt30">지방소득세</h4>								
+							<span class="input a won no-lb">
+								<label class="lb blind" for="input-228">지방소득세 입력</label>
+								<input type="tel" patter="\d*" placeholder="입력하세요" value="10,000" id="input-228" readonly><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<div class="ext"><p>1만원</p></div>	
+							<h4 class="hd-tit5 mt24">실공제금액</h4>								
+							<span class="input a won no-lb">
+								<label class="lb blind" for="input-229">국민연금전환금 입력</label>
+								<input type="tel" patter="\d*" placeholder="입력하세요" value="210,000" id="input-229" readonly><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+							</span>
+							<div class="ext"><p>21만원</p></div>
+							<h4 class="hd-tit5 mt24">공제금액 처리방법</h4>	
+							<div class="radiobox c">
+								<label class="radio">
+									<input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_12" checked>
+									<span class="txt">회사로 반환</span>
+								</label>
+								<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_22" class="active">
+									<span class="txt">적립금에 포함</span>
+								</label>
+							</div>										
+							<!--// 세금 검증 후 결과영역 -->
+						</div>							
+					</div>
+					<!--//[D] 2022-02-15 라디오 레이아웃 변경 -->			
+				</div>		
+			</div>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">					
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

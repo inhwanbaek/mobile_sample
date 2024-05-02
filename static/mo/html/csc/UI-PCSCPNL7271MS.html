@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"금융소비자보호실태평가"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc protect" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect inf-bunch">
+				<div class="choice-year">
+					<span class="select def">
+						<select name="sel-year" id="sel-year" title="연도선택">
+							<option>2017년</option>
+							<option>2018년</option>
+							<option selected>2020년</option>
+						</select>
+					</span>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">금융감독원 「금융소비자보호실태평가」 개요</h2>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>「금융소비자보호실태평가」는 기존 민원건수 위주로 평가하였던 '민원발생평가'를 대체하여 총10개 부문에 대해 금융회사의 소비자보호 역량을 종합적으로 평가하는 제도임</li>
+						<li>평가기준
+							<ul class="bullet c">
+								<li>평가항목: 계량지표(5개) + 비계량지표(5개)</li>
+								<li>평가등급: 부분 · 종합등급 5등급 체계(우수-양호-보통-미흡-취약)</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">「금융소비자보호실태평가」 결과</h2>
+				<div class="ut-tbl a ty01">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">「금융소비자보호실태평가」 결과 </span><span class="cap">구분, 평가등급, 2020년, 2019년, 2018년 으로 이루어진 표</span></caption>
+						<colgroup>
+							<col style="width:40%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">구분</th>
+								<th scope="col" colspan="3">평가등급</th>
+							</tr>
+							<tr>
+								<th scope="col">2020년</th>
+								<th scope="col">2019년</th>
+								<th scope="col">2018년</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>종합등급</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h3 class="hd-tit4">계량항목</h3>
+				<div class="ut-tbl a ty01">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">「금융소비자보호실태평가」 결과 계량항목 </span><span class="cap">구분, 평가등급, 2020년, 2019년, 2018년 으로 이루어진 표</span></caption>
+						<colgroup>
+							<col style="width:40%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">구분</th>
+								<th scope="col" colspan="3">평가등급</th>
+							</tr>
+							<tr>
+								<th scope="col">2020년</th>
+								<th scope="col">2019년</th>
+								<th scope="col">2018년</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">1. 민원발생건수</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>양호</td>
+							</tr>
+							<tr>
+								<td class="txt-l">2. 민원처리노력</td>
+								<td>보통</td>
+								<td>양호</td>
+								<td>양호</td>
+							</tr>
+							<tr>
+								<td class="txt-l">3. 소송건수</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>보통</td>
+							</tr>
+							<tr>
+								<td class="txt-l">4. 영업 지속가능성</td>
+								<td>우수</td>
+								<td>우수</td>
+								<td>양호</td>
+							</tr>
+							<tr>
+								<td class="txt-l">5. 금융사고</td>
+								<td>우수</td>
+								<td>우수</td>
+								<td>양호</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h3 class="hd-tit4">비계량항목</h3>
+				<div class="ut-tbl a ty02">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">「금융소비자보호실태평가」 평가항목 비계량항목 </span><span class="cap">구분, 평가등급, 2020년, 2019년, 2018년 으로 이루어진 표</span></caption>
+						<colgroup>
+							<col style="width:40%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">구분</th>
+								<th scope="col" colspan="3">평가등급</th>
+							</tr>
+							<tr>
+								<th scope="col">2020년</th>
+								<th scope="col">2019년</th>
+								<th scope="col">2018년</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">6. 소비자보호 조직 및 제도</td>
+								<td>우수</td>
+								<td>양호</td>
+								<td>양호</td>
+							</tr>
+							<tr>
+								<td class="txt-l">7. 상품개발과정의 소비자보호체계 구축 · 운용</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>양호</td>
+							</tr>
+							<tr>
+								<td class="txt-l">8. 상품판매과정의 소비자보호체계 구축 · 운용</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>우수</td>
+							</tr>
+							<tr>
+								<td class="txt-l">9. 민원관리시스템 구축 · 운용</td>
+								<td>양호</td>
+								<td>보통</td>
+								<td>보통</td>
+							</tr>
+							<tr>
+								<td class="txt-l">10. 소비자정보 공시 등</td>
+								<td>양호</td>
+								<td>양호</td>
+								<td>양호</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>금융소비자보호 모범규준에 따라 금융회사는 금융감독원이 주관하는 '금융소비자보호실태평가 제도'를 통해 소비자보호 수준을 종합적으로 평가받음
+						</li>
+						<li>평가대상은 영업규모 및 민원건수가 업권 전체의 1% 이상인 회사로, 민원건수가 적거나 영업규모가 작은 회사는 해당 연도 평가에서 제외될 수 있음
+						</li>
+						<li>회사별 평가결과 조회는 생명보험협회의 공시사이트를 통해 제공하고 있음
+							<div class="btn-wrp">
+								<a href="https://consumer.insure.or.kr/disclosure/item/view.do" title="새창열림" target="_blank" role="button" class="btn sm ico-elink ico-r">생명보험협회 공시 바로가기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">「금융소비자보호실태평가」 평가항목</h2>
+				<h3 class="hd-tit4">계량항목</h3>
+				<div class="ut-tbl a ty02">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">「금융소비자보호실태평가」 평가항목 계량항목 </span><span class="cap">평가부문, 세부평가기준 으로 이루어진 표</span></caption>
+						<colgroup>
+							<col style="width:43%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">평가부문</th>
+								<th scope="col">세부평가기준</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">1. 민원발생건수
+								</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>금융감독원에 접수된 민원건수 및 증감률 (중 · 반복 및 악성민원 등은 제외)</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">2. 민원처리노력
+								</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>금융감독원에 접수된 민원 평균처리기간 (중 · 반복 및 악성민원 등은 제외)</li>
+										<li>금융회사에 자율조정처리 의뢰된 민원건 중 조정성립 민원건수 비율</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">3. 소송건수</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>소송건수(패소율)와 금융감독원 분쟁조정 중 금융회사의 소송제기건수</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">4. 영업 지속가능성
+								</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>금융회사의 재무건전성 지표 (RBC비율 등)</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">5. 금융사고
+								</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>금융회사의 금융사고 건수와 금액</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+
+				<h3 class="hd-tit4">비계량항목</h3>
+				<div class="ut-tbl a ty02">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">「금융소비자보호실태평가」 평가항목 비계량항목 </span><span class="cap">평가부문, 세부평가기준 으로 이루어진 표</span></caption>
+						<colgroup>
+							<col style="width:43%">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">평가부문</th>
+								<th scope="col">세부평가기준</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">6. 소비자보호 조직 및 제도</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>금융소비자보호 총괄책임자(CCO) 직무의 적정성</li>
+										<li>금융소비자보호 총괄부서 업무 및 권한의 적정성</li>
+										<li>금융소비자보호협의회 운영의 적정성</li>
+										<li>금융소비자보호 관련 규정화 여부</li>
+										<li>금융소비자보호 업무전담자 인력 구성의 적정성</li>
+										<li>금융소비자보호 업무전담자 인사 및 보상의 적정성</li>
+										<li>금융소비자보호 관련 교육의 적정성</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">7. 상품개발과정의 소비자보호체계 구축 · 운용</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>상품개발 관련 사전협의 프로세스의 적정성</li>
+										<li>상품개발 관련 내부준칙 운영의 적정성</li>
+										<li>금융소비자 의견 반영 프로세스 운영의 적정성</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">8. 상품판매과정의 소비자보호체계 구축 · 운용</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>상품판매 과정에서 준수해야 할 기준의 적정성</li>
+										<li>상품판매 프로세스 구축 및 운영 적정성</li>
+										<li>고객정보 보호를 위한 제도 및 시스템의 적정성</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">9. 민원관리시스템 구축 · 운용</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>민원관리시스템 구축과 운영의 적정성</li>
+										<li>민원업무 관련 규정 및 매뉴얼 마련 여부</li>
+										<li>민원을 통한 제도개선 시스템의 적정성</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">10. 소비자정보 공시 등</td>
+								<td class="txt-l">
+									<ul class="bullet a">
+										<li>소비자정보의 접근성과 적정성</li>
+										<li>금융소비자 대상의 금융교육 프로그램 운영 적정성</li>
+										<li>금융사기 예방 관련 조직 운영 및 예방 안내의 적정성</li>
+										<li>휴면 금융재산 발생 예방 안내 프로세스의 적정성</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<div class="floatbots"> 
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">홈으로</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

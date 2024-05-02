@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-sample1 no-focus" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">댓글</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire invtm vspace">
+					<div class="pop-cont-sect">
+						<!-- 22-05-24 이미지url 변경 -->
+						<div class="comment-list">
+							<ul>
+								<li>
+									<div class="info">
+										<div class="tit">
+											<img src="../../img/prd/img_03@3x.png" alt="프로필사진">
+											필승투자
+											<div class="date">2020.01.01(화) 23:25</div>
+											<button type="button" class="btn-declare">신고</button>
+										</div>
+										
+									</div>
+									<div class="cont">좋은 글 잘보고 갑니다. </div>
+								</li>
+								<li>
+									<div class="info">
+										<div class="tit">
+											<img src="../../img/prd/img_01@3x.png" alt="프로필사진">
+											필승투자
+											<div class="date">2020.01.01(화) 23:25</div>
+											<button type="button" class="btn-declare">신고</button>
+										</div>
+										
+									</div>
+									<div class="cont">좋은 글 잘보고 갑니다. </div>
+								</li>
+								<li>
+									<div class="info">
+										<div class="tit">
+											<img src="../../img/prd/img_02@3x.png" alt="프로필사진">
+											필승투자
+											<div class="date">2020.01.01(화) 23:25</div>
+											<button type="button" class="btn-declare">신고</button>
+										</div>
+										
+									</div>
+									<div class="cont">좋은 글 잘보고 갑니다. 좋은 글 잘보고 갑니다. 좋은 글 잘보고 갑니다.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ut-more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="comment-write full-bg gray">
+						<h2 class="hd-tit4">댓글</h2>
+						<div class="comm">
+							<span class="input a"><input type="text" class="" placeholder="댓글을 남겨보세요." value="" ></span>
+							<a href="javascript:;" role="button" class="btn md">등록</a>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

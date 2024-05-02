@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-chngspacf" id="pop-chngspacf">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">부적합 특별계정 펀드변경</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="chngspacf-msg">
+						<div class="msg">
+							<p>본인은 교보생명이 실시한 ‘펀드변경 적합성 진단’ 결과, 본인의 투자성향보다 위험도가 높고, 본인에게 적합하지 않은 특별계정(펀드)임에도 불구하고 본인의 판단에 따라 자발적으로 특별계정(펀드)을 선택하고자 합니다. 또한, 교보생명으로부터 해당 특별계정(펀드) 선택에 따른 원금손실 등 모든 손해는 보험계약자 본인의 책임이라는 점을 충분히 안내 받았습니다.</p>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt b">
+				<div class="box-set">
+					<div class="hd-tit4">위 사항에 동의하십니까?</div>
+				</div>
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chngspacf');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-chngspacf',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

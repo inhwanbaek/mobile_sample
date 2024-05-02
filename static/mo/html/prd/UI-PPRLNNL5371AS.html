@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"아파트담보대출"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan new" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="loan-tit">
+				<h2 class="hd-tit3">아파트담보대출의 담보물 근저당권 설정 문서를 확인해 주세요.</h2>
+				<!-- <h2 class="hd-tit3">전자서명이 완료된 근저당권 설정 문서입니다.</h2> --><!-- [D] 2022-07-07 문구 추가 -->
+			</div>
+
+			<!-- [D] 2022-06-10 마크업 수정 -->
+			<div class="loan-lst">
+				<div class="ut-dcard a">
+					<div class="dtds">
+						<div class="ddt">
+							<div class="bxm chk">
+								<p class="dt">담보소재지</p>
+								<p class="dd">대전 서구 둔산북로21, 둔지아파트 103동 505호</p>
+							</div>
+						</div>
+						<ul class="dlt">
+							<li>
+								<div class="dl">
+									<p class="dt">차주명</p>
+									<p class="dd">김교보</p>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<p class="dt">채권최고액</p>
+									<p class="dd">500,000,000원</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn-set vt btnbot">
+						<button type="button" class="btn md ico-r ico-check">근저당권 설정계약서 (동의완료)</button>
+						<button type="button" class="btn md ico-r">근저당권 설정 위임장</button>
+						<button type="button" class="btn md ico-r">등기명의인 표시변경 위임장</button>
+					</div>
+				</div>
+			</div>
+			<!-- // [D] 2022-06-10 마크업 수정 -->
+
+			<div class="ut-gudbox b open mt40" data-tog-cls="box">
+				<div class="gtit">안내사항</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>근저당권 설정 시, 세부내용을 충분히 확인하고 진행하시기 바랍니다.</li>
+						<li>모든 문서를 확인 및 동의해야 전자서명이 가능합니다.</li>
+						<li>공동인증서로 전자서명이 진행됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg a">전자서명하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

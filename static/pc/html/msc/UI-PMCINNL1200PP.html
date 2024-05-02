@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-result" id="pop-result">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">인증서인증</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">					
+
+						<div class="complate-msg icon1">
+							<div class="msg">
+								<p class="p1">인증 완료 후 현재화면으로 돌아와<br>
+									<strong class="bold">[인증 완료]를 눌러</strong> 주세요.
+								</p>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set">					
+						<button type="button" class="btn rd lg a" onclick="ui.popup.close('pop-result');">인증 완료</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-result');
+		</script>
+
+	</div>
+</body>
+</html>

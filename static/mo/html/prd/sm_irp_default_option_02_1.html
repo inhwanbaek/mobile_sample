@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+  <!-- pop-layer -->
+	<article class="pop-layer c pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변경상품 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents default-option">
+          <!-- ut-dtds -->
+          <div class="ut-dtds">
+						<ul class="dlist">
+							<li>
+								<div class="hdt">
+									<div class="tit">내 디폴트 옵션</div>
+								</div>
+								<div class="cdt">
+                  <div class="sbtit">교보생명 디폴트옵션 초저위험 GIC</div>
+                  <dl>
+                    <dt>투자성향</dt>
+                    <dd>투자성향대비적합</dd>
+                  </dl>
+                  <dl>
+                    <dt>위험등급</dt>
+                    <dd>안전자산</dd>
+                  </dl>
+                </div>
+							</li>
+							<li>
+								<div class="hdt">
+									<div class="tit">변경 디폴트 옵션</div>
+								</div>
+								<div class="cdt">
+                  <div class="sbtit">교보생명 디폴트옵션 고위험 포트폴리오 1</div>
+                  <dl>
+                    <dt>투자성향</dt>
+                    <dd>투자성향대비적합</dd>
+                  </dl>
+                  <dl>
+                    <dt>위험등급</dt>
+                    <dd>안전자산</dd>
+                  </dl>
+                </div>
+							</li>
+							<li>
+								<div class="hdt">
+									<div class="tit">특정기간 입금상품 비율</div>
+									<dl>
+                    <dt>적용기간</dt>
+                    <dd>2022.12.23~2022.12.13</dd>
+                  </dl>
+								</div>
+								<div class="cdt">
+                  <div class="sbtit">교보생명 디폴트옵션 고위험 포트폴리오 1</div>
+                  <dl>
+                    <dt>투자성향</dt>
+                    <dd>투자성향대비적합</dd>
+                  </dl>
+                  <dl>
+                    <dt>위험등급</dt>
+                    <dd>안전자산</dd>
+                  </dl>
+                </div>
+							</li>
+						</ul>
+					</div>
+					<!-- //ut-dtds -->
+				</main>
+			</div>
+			<div class="pbt">
+        <div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+  <!-- pop-layer -->
+
+	<script>
+		ui.popup.open('pop-sample1');
+	</script>
+
+</div>
+</body>
+</html>

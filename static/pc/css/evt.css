@@ -1,0 +1,242 @@
+﻿@charset "utf-8";
+
+/* evt : 이벤트/공지 */
+
+
+
+/*** 공지사항 ***/
+.page .page-hdt + .board-wrp {margin-top: -20rem;}
+.page .page-hdt + .board-view {margin-top: -20rem;}
+
+
+/** 기타 **/
+.page.evt , 
+.page.csc [data-ui-tab-ctn] .board-wrp .ut-optset.optset {min-height: 24rem;}
+
+/* 옵션 */
+.page .board-wrp .ut-optset.optset {margin: 0; align-items: flex-end;}
+.page .board-wrp .ut-optset .link-dict {margin-right: 18rem;}
+.page .board-wrp .ut-optset.optset .input.ipsch input {padding-left: 15rem;}
+.page.event .board-wrp .ut-optset .link-dict {margin-right: 18rem;}
+.page.event .board-wrp .ut-optset.optset + .ut-optset.optset {margin: 30rem 0 12rem;}
+
+/* 검색결과 */
+.page.notice ul > li .list-empty {background: #fff; margin-top: 0; border-radius: 0;}
+.page.event ul > li .list-empty {background: #fff; margin-top: 0; border-radius: 0;}
+.page.notice .ut-paging {margin-top: 40rem;}
+.page.evt .ut-paging {margin-top: 40rem;}
+
+
+/** 목록 **/
+.page .notice-lst .new {display: inline-block; width: 18rem; height: 18rem; background: url(../img/common/ico_new.png) no-repeat center top; background-size: 18rem; vertical-align: -4rem; margin-left: 8rem;}
+.page .notice-lst {margin-top: 20rem; border-top: 1rem solid #555;}
+.page .notice-lst > li {position: relative; border-bottom: 1rem solid #ddd; }
+.page .notice-lst > li.fix {background-color: #f0f8ff;}
+.page .notice-lst > li.fix .tit {font-weight: 700; }
+.page .notice-lst .item {position: relative; display: block; width: 100%; min-height: 61rem; text-align: left; }
+.page .notice-lst a.item,
+.page .notice-lst button.item {text-align: left; color: inherit;}
+.page .notice-lst .box {position: relative; display: flex; justify-content: space-between; text-align: left;}
+.page .notice-lst .box .cont {text-align: left; padding: 18rem 12rem 16rem; width: 100%; }
+.page .notice-lst .tit {width: 100%; word-break: keep-all; font-size: 18rem; color: #242424; line-height: 1.31; overflow: hidden; display:-webkit-box; word-wrap: break-word; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; max-height: 70rem; white-space: normal;}
+.page .notice-lst .txt {display: block;}
+.page .notice-lst .cont .add {display: flex; align-items: center;}
+.page .notice-lst .cont .add .t {position: relative; font: var(--font13); line-height: 1.31; color: #808080;}
+.page .notice-lst .cont .add .t + .t {margin-left: 8rem; padding-left: 8rem; }
+.page .notice-lst .cont .add .t + .t:before {content:""; display:block; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1rem; height: 10rem; background: #808080; }
+.page .notice-lst .cont .add .ut-bdgs + * {margin-left: 8rem;}
+.page .notice-lst .cont .add + .tit {margin-top: 10rem; }
+.page .notice-lst .tit + .add {margin-top: 10rem; }
+.page .notice-lst .tit + .add .date {font: var(--font15);}
+
+.page .notice-lst .etc {position: relative; width: 100rem;}
+.page .notice-lst .etc .date {position: absolute; right: 12rem; top: 50%; transform: translateY(-50%); font: var(--font14);color: #555;}
+.page .notice-lst .opinion {width: 100rem; text-align: right; padding-top: 18rem;}
+.page .notice-lst .opinion .it {display: inline-block; position: relative;}
+.page .notice-lst .opinion .it + .it {margin-left: 16rem; }
+.page .notice-lst .opinion .it + .it::before {content:""; position: absolute; left: -10rem; top: 5rem; display: block; width: 1rem; height: 12rem; background-color: #ccc;}
+.page .notice-lst .opinion .bt-act { display: inline-block; font: var(--font15); color: #555;}
+.page .notice-lst .atta_file {position: relative; width: 122rem; flex-shrink: 0;}
+.page .notice-lst .atta_file .btn.sm {position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+.page .notice-lst .list-empty {border:0;}
+
+
+/* 게시글 제목 */
+@media all and (-ms-high-contrast:none)
+{
+*::-ms-backdrop, .page .notice-lst .tit { display: block;} /* IE11 */
+}
+
+/* 게시글 제목 */
+.page.notice .notice-lst .tit {display: block; max-height: inherit; text-overflow: unset; -webkit-line-clamp: unset;}
+
+/* 공지사항-상세 */
+.page.notice.detail .board-view .tit-area {display: block; min-height: 124rem;}
+
+
+/** 상세 **/
+.page.detail .board-view .tit-area {position: relative; width: 100%; display: flex; align-items: flex-end; justify-content: space-between; min-height: 92rem; padding: 30rem 0 28rem; border-bottom: 1rem solid #ccc; border-top: 1rem solid #ccc; }
+.page.detail .board-view .tit-area .board-tit {width: 100%; font-weight: 700; font-size: 24rem; line-height: 1.31; }
+.page.detail .board-view .tit-area .info {position: relative; margin-top: 15rem; display: flex; align-items: center; justify-content: space-between; }
+.page.detail .board-view .tit-area .lang {text-align: center;  font: var(--font15); color: #555; }
+.page.detail .board-view .tit-area .info .add > span {display: inline-block; color: #555; font: var(--font15); line-height: 1.6; }
+.page.detail .board-view .tit-area .info .add > span + span {margin-left: 18rem; }
+.page.detail .board-view .tit-area .info .add .num {padding-left: 25rem;}
+
+.page.detail .board-view .tit-area .perform {position: relative; width: 180rem; height: 48rem; text-align: right; }
+.page.detail .board-view .tit-area .perform > button {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.page.detail .board-view .tit-area .perform > button + button {margin-left: 3rem; }
+.page.detail .board-view .tit-area .ut-tooltip.fnsize {position: absolute !important; right: 55rem; bottom: 0;}
+/* .page.detail .board-view .tit-area .ut-tooltip.fnsize .toolctn {left: -310rem !important; top: 48rem;} */
+
+.page.detail .board-view .cnt-area {overflow: hidden; padding: 40rem 0 0; }
+.page.detail .board-view .cnt-area .cnt {font-size: 16rem; color: #555; }
+.page.detail .board-view .cnt-area .cnt .text-box + .text-box {margin-top: 40rem;}
+.page.detail .board-view .cnt-area .cnt .hd-tit4 + ul.bullet.a {margin-top: 20rem;}
+.page.detail .board-view .cnt-area .cnt .point-area {width: 100%; margin:0 0 60rem; padding: 20rem; background:#f2f7ff; border-radius: 16rem;}
+.page.detail .board-view .cnt-area .cnt .point-area .bullet.a li {color:#242424;}
+.page.detail .board-view .cnt-area .sub-cnt {margin-top: 10rem; }
+.page.detail .board-view .cnt-area .sub-cnt .bullet.c {margin-top: 10rem; }
+.page.detail .board-view .hash-cnt {margin-top: 40rem; }
+.page.detail .board-view .hash-cnt .tit {margin-top: 16rem; font-weight: 700; font-size: 16rem; line-height: 1.31; }
+.page.detail .board-view .hash-cnt .txt {margin: 16rem -2rem 0; color: #555555; font: var(--font15); }
+.page.detail .board-view .hash-cnt .txt .it {position: relative; display: inline-block; margin: 0 2rem; }
+.page.detail .board-view .btn-set {margin-top: 30rem;}
+
+/* 파일첨부 */
+.page.detail .board-view .cnt-area * + .atta_file {margin-top: 70rem; }
+.page.detail .board-view .cnt-area .atta_file {min-height: 48rem; border-radius: 8rem; background-color: #f8f8f8; padding: 12rem; display: flex; width: 100%; flex-direction: column;}
+.page.detail .board-view .cnt-area .atta_file .ico.file {position: relative; padding-left: 30rem; font: var(--font14); line-height: 1.8; color: #555555; font-weight: normal; }
+.page.detail .board-view .cnt-area .atta_file .ico.file::before{position: absolute; left: 0; top: 0; width: 24rem; height: 24rem; background: url(../img/common/ico_file02.png) no-repeat left top;background-size: 100% auto;font-size: 1rem; color: transparent; }
+.page.detail .board-view .cnt-area .atta_file .file-lst > li + li {margin-top: 16rem;}
+
+
+/** 이벤트 **/
+.page.event .hd-tit3 + .text-box {margin-top: 10rem;}
+.page.event .sect.top .hd-tit3 {padding-bottom: 20rem; border-bottom: 1rem solid #ccc;}
+.page.event .sect .hd-tit3 + .ut-form.a {margin-top: 20rem; }
+.page.event .sect + .sect {margin-top: 60rem; }
+.page.event .sect .tit-area {display: flex; align-items: center; justify-content: space-between; }
+.page.event .sect .tit-area .hd-tit4 {line-height: 1.31; padding: 0; }
+.page.event .sect .tit-area .hd-tit4 .noraml {font-weight: normal;}
+.page.event .sect .ut-form.a {margin-top: 20rem; }
+.page.event .sect .ut-form.a .info-ast {text-align: right; color: #808080; }
+.page.event .sect .ut-form.a .info-ast + .form {margin-top: 20rem; }
+.page.event .sect .ut-form.a .rdo-grp .radio + .radio {margin-left: 32rem; }
+.page.event .sect .ut-form.a .radio.cu>.txt {padding: 24rem 16rem 24rem 45rem; }
+.page.event .sect .ut-form.a .radio.cu>input {top: 22rem; }
+.page.event .sect .ut-form.a .radio.cu>.txt::before {top: 22rem; }
+.page.event .sect:last-child {margin-bottom: 0rem; }
+.page.event .sect .input.a {width: 100%;}
+
+.page.event .period {margin-top: 5rem; font: var(--font15); color:#555;}
+
+/* 종료된 이벤트 */
+.page.event .evt-end {position: absolute; width: 100%; height: 100%; background-color: rgba(227, 228, 231, .9); z-index: 1; display: flex; align-items: center; justify-content: center; border-radius: 16rem;}
+.page.event .evt-end .t {font: var(--font15); font-weight: 700; color: #242424; background: url(../img/common/ic_dcard_dis.png) no-repeat center top; background-size: 24rem; padding-top: 32rem;}
+
+/* 이벤트 개요 영역 */
+.page.event .ut-dtds.a>.dlist>li>.dt {min-width: 112rem;}
+.page.event .guide-cnt {background: #fafafa; padding: 30rem 40rem; border-radius: 8rem; margin-top: 40rem;}
+
+/* 목록 
+.page.event.list .top {margin-top: 32rem;}
+.page.event.list .ut-tabs::after {content:""; display: block; width: 100%; height: 1rem; position: absolute; left: 0; bottom: 0; background: #ddd;}
+.page.event.list .ut-optset .select.sort .btsel {border-color: #e6e6e6;}
+.page.event.list .item-lst {display: flex; flex-flow: row wrap; margin: -15rem ;}
+.page.event.list .item-lst > li {width: 33.33%; padding: 15rem;}
+.page.event.list .item-lst .item { display: block; overflow: hidden; width: 100%; height: 330rem; text-align: left; border-radius: 16rem; }
+.page.event.list .item-lst .box {position: relative; display: block; height: 100%; border-radius: 16rem;background-color: #f5f5f5;}
+.page.event.list .item-lst .thumb {position: relative; padding-bottom: 80rem; overflow: hidden; display: block; height: 189rem; min-width: 189rem; width: 100%;}
+.page.event.list .item-lst .thumb .img {display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50% , -50%); width: 100%;  min-width: 100%; height: 100%; object-fit: cover; max-width: inherit;}
+.page.event.list .item-lst .cont {display: block; height: calc(100% - 189rem); position: relative; padding: 20rem;}
+.page.event.list .item-lst .cont .tit {overflow: hidden; display: block;  font-size: 18rem; font-weight: 700; line-height: 1.17; color: #242424; word-break: keep-all; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; max-height: 62rem;}
+.page.event.list .item-lst .cont .add {display: block; margin-top: 8rem; color: #555; }
+*/
+/* etc */
+.page.event.list .evt-txt {margin-top: 30rem; font-size: 16rem; text-align: center;}
+.page.event.list .evt-txt + .btn-set {margin-top: 30rem;}
+
+/* 상세 */
+.page.event.detail .board-view .tit-area .perform {width: 100rem;}
+.page.event .board-view + .board-wrp {margin-top: 60rem;}
+.page.event.detail .board-view .img {position: relative; text-align: center;}
+.page.event.detail .board-view .ut-dtds.a {margin-top: 40rem;}
+.page.event.detail .board-view .desc {margin-top: 30rem; font-size: 16rem;}
+.page.event.detail .board-view .guide-cnt {margin-top: 30rem;}
+.page.event.detail .board-view .guide-cnt + .hash-cnt {margin-top: 24rem;font-size: 14rem;}
+.page.event.detail .btn-set + .btn-set {margin-top: 30rem;}
+.page.event.detail .board-view .cnt-area .cnt {text-align: center; }
+.page.event.detail .board-view .img {display: inline-block; margin: 0 auto; }
+.page.event.detail .board-view .ut-dtds.a>.dlist>li {text-align: left;}
+.page.event.detail .board-view .cnt-area .cnt p {text-align: left;}
+.page.event.detail .board-view .cnt-area .cnt li {text-align: left;}
+
+/* 상세 - 댓글 */
+.page.event .sect .ut-form.a .radio.cu>.txt {background: #fff;}
+.page.event.detail .cmt-wrp {border-top: 1rem solid #e6e6e6; background-color: #f2f2f2; margin: 60rem 0 30rem; padding: 30rem 0; }
+.page.event.detail .cmt-wrp .write-cnt .sect {padding:0 20rem; }
+.page.event.detail .cmt-wrp .write-cnt .sect + .sect {margin-top: 40rem;}
+.page.event.detail .cmt-wrp .write-cnt .tit-area {display: flex; justify-content: space-between;}
+.page.event.detail .cmt-wrp .write-cnt .tit-area .checkbox>.txt {color: #555555; font: var(--font15);}
+.page.event.detail .cmt-wrp .write-cnt .name {margin-top: 16rem; font: var(--font15); color: #555555; margin-right: 20rem;}
+.page.event.detail .cmt-wrp .write-cnt .inp-area {margin-top: 20rem;}
+.page.event.detail .cmt-wrp .write-cnt .textarea {margin-top: 20rem;}
+.page.event.detail .cmt-wrp .write-cnt .text-box {margin-top: 10rem;}
+.page.event.detail .cmt-wrp + .btn-set {margin-top: 60rem;}
+.page.event.detail .cmt-wrp + .board-wrp {margin-top: 40rem;}
+.page.event.detail .board-wrp + .btn-set {margin-top: 30rem;}
+.page.event.detail .notice-lst .tit {display: block; max-height: inherit; text-overflow: unset; -webkit-line-clamp: unset;}
+
+/* 응모하기 */
+.page.event.enter .board-tit-area {position: relative; min-height: 92rem; padding: 30rem 0 28rem; border-bottom: 1rem solid #ccc; border-top: 1rem solid #ccc; }
+.page.event.enter .board-tit-area .board-tit {font-weight: 700; font-size: 24rem; line-height: 1.31; }
+.page.event.enter .sect + .sect {margin-top: 60rem ;}
+.page.event.enter * + .text-box {margin-top: 10rem; }
+.page.event.enter .text-box .bullet.b>li { font: var(--font12); }
+.page.event.enter .text-box .bullet.b>li .btn-wrp {margin-top: 16rem; }
+.page.event.enter .chk-grp .ut-form {margin-top: 16rem; /*display: flex ; flex-wrap: wrap;*/}
+.page.event.enter .chk-grp .ut-form .radio ,
+.page.event.enter .chk-grp .ut-form .checkbox {margin: 10rem 0 ;display: block;}
+.page.event.enter .chk-grp .ut-form .radio + .radio ,
+.page.event.enter .chk-grp .ut-form .checkbox + .checkbox {/*margin-left: 30rem ;*/}
+.page.event .complate-msg.icon-event::before {background-image: url(../img/common/icon_box.png);}
+.page.event .complate-msg .result-info {display: inline-block; margin: 24rem 10rem 16rem; padding:19rem 20rem 16rem; background:#fff; border-radius: 8rem; border: solid 1px #e6e6e6; line-height: 1.4; font: var(--font15); }
+.page.event .complate-msg .result-info .date {display: inline-block; color: #555;}
+.page.event .complate-msg .result-info .date .val {padding-left: 8rem; color: #242424;}
+/* 완료 */
+.page.event .complate-msg { }
+.page.event .complate-msg .msg .p2 {font: var(--font15);}
+
+/* 댓글 신고 */
+.pop-notify .hd-tit3 {margin-top: 32rem; }
+.pop-notify .form-group {margin-top: 32rem; }
+.pop-notify .form-group .checkbox.cv>.txt {font: var(--font15); color: #555; }
+.pop-notify .form-group .checkbox.cv>input:checked+.txt {color: #242424; }
+.pop-notify .textarea.a {margin-top: 40rem;}
+
+/* 당첨자확인 */
+.page.detail.winners .board-view .cnt-area {padding: 0;}
+.page.detail.winners .board-view .cnt-area .ut-dtds.a{margin-top: 0;}
+.page.detail.winners .board-view .inf-cnt {margin-top: 40rem;}
+.page.detail.winners .board-view .bullet.a>li {font: var(--font15);}
+.page.detail.winners .board-view .bullet.a>li:before {width: 5rem; height: 5rem; }
+.page.detail.winners .board-view .bullet.a>li + li {margin-top: 16rem; }
+.page.detail.winners .board-view .winners-cnt {margin: 40rem 0;}
+.page.detail.winners .board-view .winners-cnt .ut-tbl {margin-top: 16rem;}
+.page.detail.winners .board-view .winners-cnt .ut-tbl + .hd-tit5 {margin-top: 40rem;}
+.page.detail.winners .board-view .ut-tbl.a table.tblist.nl {table-layout: fixed;}
+.page.detail.winners .board-view .hd-tit4 + .hd-tit5 {margin-top: 20rem;}
+
+/* 동의여부 */
+.page.event .sect .unity-chk {margin-top: 16rem; }
+.page.event .sect .unity-chk .checkbox.cd {display: block;}
+.page.event .sect .unity-chk .checkbox.cd>input {left: 40rem; top: 28rem; }
+.page.event .sect .unity-chk .checkbox.cd>.txt {display: block; background-color: #fff; border: 1px solid #ccc; border-radius: 8rem; position: relative; padding: 26rem 40rem 24rem 72rem; min-height: 84rem; }
+.page.event .sect .unity-chk .checkbox.cd>.txt::before {left: 40rem; top: 28rem;}
+.page.event .sect .unity-chk .checkbox.cd>.txt .t {font-weight: 500; font: var(--font15); color:#555;}
+.page.event .sect .unity-chk .checkbox.cd::after {content:""; display: block; width: 24rem; height: 24rem; background: url(../img/common/ico_arr_unity@2x.png) no-repeat 50%; background-size: 24rem; position: absolute; right: 40rem; top:50%; transform: translateY(-50%); }
+.page.event .sect + .btn-set {margin-top: 40rem;}
+
+
+

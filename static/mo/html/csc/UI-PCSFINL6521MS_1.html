@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"금융Q&amp;A"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc qna detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<section class="board-view">
+				<div class="tit-area">
+					<div class="perform">
+						<button data-ui-fsize="btn" type="button" class="btn-fsize"><i class="blind">글자크기 조정하기</i></button>
+						<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+					</div>
+					<h2 class="board-tit">연령대별 필수보험 우선순위 체크리스트 </h2>
+					<div class="info">
+						<div class="add">
+							<em class="date">2020.01.01</em>
+							<em class="view">조회수:<span>100</span></em>
+						</div>
+					</div>
+				</div>
+				<div class="font-size">
+					<div class="cnt-area" data-ui-fsize="ctn">
+						<div class="txt-area">
+							<p class="txt">평화로운 일상에서도 질병과 사고는 예고 없이 다가옵니다. 그렇기에 급박한 상황을 대비하여 필수적인 보험을 평소에 준비해두는 것이 중요합니다. <br><br>
+								부담해야 하는 지출을 줄이고, 보장은 늘리기 위해 재정적 상황과 병력 사항 등을 잘 파악하여 자신에게 적합한 상품에 가입해야 합니다. 각 연령대에 필수적으로 가입해야 하는 보험을 체크해보며 내일을 현명하게 준비하세요.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="font-size">
+				<div data-ui-fsize="ctn">
+
+					<section>
+						<div class="table-area">
+							<p class="bg-chk"><span>바쁜 당신을 위한 핵심체크</span></p>
+							<h3 class="hd-tit3">연령대별 필수보험 체크리스트</h3>
+							<div class="ut-tbl a ty01">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">연령대별 필수보험 체크리스트 </span><span class="cap">연령(20대, 30대, 40대, 5-60대), 필수 가입 보험 으로 이루어진 표</span></caption>
+									<colgroup>
+										<col style="width:33%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">연령</th>
+											<th scope="col">필수 가입 보험</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">20대</th>
+											<td class="txt-l">실손의료보험:다양한 사고와 질병에 대비하기 위한 보험</td>
+										</tr>
+										<tr>
+											<th scope="row">30대</th>
+											<td class="txt-l">연금저축보험/연금보험: 절세와 노후준비를 위한 보험 <br>생명보험 &amp;어린이보험:나와 소중한 가족을 위한 보험</td>
+										</tr>
+										<tr>
+											<th scope="row">40대</th>
+											<td class="txt-l">건강 보험: 3대 질병(암, 급성 심근경색, 뇌출혈)과 같은 큰 질병에 대비하기 위한 보험</td>
+										</tr>
+										<tr>
+											<th scope="row">5-60대</th>
+											<td class="txt-l">유병자 보험:부족한 건강 보장을 위한 보험 <br>즉시연금보험:충분히 이루어지지 않은 노후 준비를 위한 보험</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h3 class="hd-tit3">20대 필수보험: 실손의료보험</h3>
+							<p>
+								20대는 체력이 좋은 시기이기만큼 병원에 방문하는 일이 적습니다. 그러나 크고 작은 상해사고와 질병 대비를 위해 실손의료보험은 필수적으로 가입해두어야 합니다. 한 번 가입해두면 연 5,000만 원 한도에서 다양한 의료비를 보장받을 수 있습니다. 월 1만 원 정도의 보험료가 발생하기 때문에, 지갑이 얇은 대학생과 사회초년생에게 부담이 크지 않습니다.
+							</p>
+							<p class="img2">20대필수 보험: 실손 의료 보험</p>
+							<p>실손의료보험은 단독형과 종합형으로 나누어집니다. 단독형의 보험료는 대체로 월 1 만 원대로 저렴하지만, 종합형은 구성에 따라 10만원 이상의  보험료가 나오기도 합니다.수입이 적은 20대에게 월 10만 원 이상의 고정지출은 커다란 부담이 될 수 있습니다. 단독형으로도 다양한 사고와 질병에 충분히 대비할 수 있기에, 20대라면 단독형 실손의료보험을 고려해보세요. </p>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h3 class="hd-tit3">30대 필수보험: 생명보험과 연금보험</h3>
+							<p>
+								30대는 경제활동이 왕성해지는 시기이며, 결혼하여 가족 구성원이 늘어나기도 합니다. 연금보험 가입으로 절세와 노후준비를 시작하고, 가족이 있다면 생명보험과 어린이보험으로 소중한 가족의 안전을 챙기는 것이 현명합니다. 
+							</p>
+							<p class="img3">30대 필수 보험: 연금 보험,생명 보험그리고 어린이 보험</p>
+						</div>
+						<div class="txt-area">
+							<h4 class="hd-tit4">나와 가족을 위한 생명보험</h4>
+							<p>가정을 꾸려가는  30대는 사랑하는 가족에 대한 책임감 또한 무거워지기 시작합니다. 예상치 못한 가장의 조기 사망으로 가족의 생계가 불안정해질 수 있다는 생각을 해보셨나요? 혹시 모를 사고에 대비하여 생명보험에가입해둔다면, 사망보험금 지급으로 유가족의 경제적 안정을 보장받을 수 있습니다.  <br><br>
+								종신보험과 정기보험의 가장 큰 차이는 보장 기간의 길이입니다. 보장 만기 시점과 가입자의 사망 시점을 어떻게 설정하는지에 따라 차이가 생깁니다. 종신보험은 가입자의 사망 시기와 원인에 상관없이 정해진 보험금을 무조건 보장받을 수 있습니다.  <br><br>
+								정기보험은 가입 시 보장기간을 명시하기 때문에, 사망 시기에 따라 보험금을 지급받지 못하는 경우가 생기기도 합니다. 보장 내용은 종신보험과 동일하지만, 평생을 보장받는 종신보험과 달리 65세에서 70세 정도에 보장기간이 종료됩니다. 또한 정기보험은 종신보험보다 자녀의 독립, 은퇴, 연금 수령 시기 등에 따라 유연하고 합리적으로 가입할 수 있다는 점이 있습니다. <br><br>
+								일반적으로는 월 고정지출 부담이 적은 정기보험을 고려합니다. 그러나 납입료절감만을 고려한다면, 실질적으로 보장받을 수 있는 금액 또한 줄어들 수 있다는 점도 고려해야 합니다. 생명보험 가입은 납입료의 정도보다는, 사망 시 위험이 발생하는 시기와 기회비용 등을 고민하여 고르는 것이 현명합니다. 
+							</p>
+						</div>
+						<div class="table-area mt32">
+							<h4 class="hd-tit4">종신보험과 정기보험의 차이점 한눈에 보기</h4>
+							<div class="ut-tbl a ty01">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">종신보험과 정기보험의 차이점 한눈에 보기 </span><span class="cap">구분(보장 기간, 보장 내용, 보험료), 필수 가입 보험 으로 이루어진 표</span></caption>
+									<colgroup>
+										<col style="width:33%">
+										<col style="width:33%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">정기보험</th>
+											<th scope="col">종신보험</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보장 기간</th>
+											<td>정해진 기간 <br> 보장</td>
+											<td>평생 보장</td>
+										</tr>
+										<tr>
+											<th scope="row">보장 내용</th>
+											<td>설정한 기간 내
+												사망 시
+												보험금 발생</td>
+											<td>사망 시 <br>
+												보험금 발생</td>
+										</tr>
+										<tr>
+											<th scope="row">보험료</th>
+											<td>상대적으로 낮음</td>
+											<td>상대적으로 높음</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="alert-box">
+							실속있게 가입하여 실속있게 보장받을 수 있는 교보생명의 <strong class="point">'실속있는 New 건강플러스 종신보험'</strong>과 필요한 보장을 합리적으로 설계할 수 있는 <strong class="point">'교보하나로정기보험'</strong>에 대해 알아보세요.
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit4">소중한 자녀를 위한 어린이보험</h4>
+							<p>
+								자녀가 태어나면 어린이보험에 가입해야 합니다. 성장하는 아이들이 맞닥뜨리는 각종 질병과 생활 위험, 안전사고 등에 대비하기 위해 어린이보험은 필수적입니다. 특히 면역력이 약한 어린이는 각종 질병에 취약하며,  소아암과 백혈병 등 중대한 질병의 치료비용은 부담이 크기도 합니다. 또한 최근에는 출산 평균 연령이 높아지면서 어린이보험의 필요성 또한 더욱 높아지고 있기도 합니다
+							</p>
+							<p class="img4">어린이 보험: 자녀의 각종 질병과 생활 위험, 안전사고 등에 대비하기 위한 보험</p>
+							<p>
+								어린이보험 중 출생 전후 보장되는 특약이 존재하는 상품을 '태아보험'이라고 부르기도 합니다. 보장 내용은 비슷하지만 가입시기에 따른 차이가 있습니다. 가입 시점부터 보장이 시작되는 어린이보험과 달리 태아보험은 출생 전 가입이 가능합니다. 출산 직후 발생하는 질병과 인큐베이터 비용 등을 보장받을 수 있고, 출생 이후에는 어린이보험으로 전환할 수 있습니다. <br><br>
+								태아와 임산부를 든든하게 지켜주는 교보생명의어린이보험은 유아 및 청소년기에 걸리기 쉬운 다양한 질병을 보장하고, 30세 이후에는 성인 주요질병을 보장하는 보험으로 전환하여 라이프사이클에 맞게 보장합니다.
+							</p>
+							<div class="alert-box">
+								자녀 계획이 있거나 현재 임신 중이라면, 아이의 성장 단계에 맞게 보장해주는 교보생명의 <strong class="point">어린이보험</strong>에 대해 알아보세요.
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit4">100세 시대 준비를 위한 연금저축보험과 연금보험</h4>
+							<p>
+								고령화 사회로 접어들며 노후대책의 중요성이 커지고 있습니다. 특히 30대부터는 본격적으로 인생의 큰 그림을 그려나가는 시기인데요, 이때 든든한 재무적 안전장치가 되어주는 보험을 들어두는 것이 좋습니다. 국민연금만으로는 완벽한 노후 설계가 어려울 수 있기 때문입니다. 이를 위해 연금저축보험 혹은 연금보험에 가입하는 것이 현명합니다. <br><br>
+								연금보험과 연금저축보험은 납입한 보험료를 연금으로 받는다는 공통점을 지니지만, 보험료 납입과 수령 시 적용되는 세제 혜택에 큰 차이가 존재하는 엄연히 다른 상품입니다. 우선 세제 혜택이 적용되는 시점이 다릅니다. 연금보험은 최종 연금 수령 시 면세가 적용되는 비과세 상품이며, 생명보험회사에서 가입할 수 있습니다. 연금저축보험은 매년 연말정산 때 면세가 적용되는 세액공제 상품이며,보험차익을이자소득으로 분류하여 수령할 수 있습니다.   <br><br>
+								연금저축보험과 연금보험은 장기금융상품인 만큼 신중하게 결정하여 가입해야 합니다. 중도해약 시 부담해야 하는 손해가 크기 때문입니다. 연금저축보험은 가입 5년 이내에 해지 시 그동안 세액공제를 받은 보험료 총액에 대해 16.5%의 기타소득세를 내야 합니다. 해지 환급금이납입완금보다 적은 상황에서도 부과될 수 있습니다. <br><br>
+								연금보험은 세액공제가 이루어지지 않았기에 10년 이내에 해지 시 기타소득세가 부과되지는 않습니다. 그러나 납입원금보다 해지 환급금이 많은 경우 이자수익이 발생한 것으로 간주하기 때문에, 그 차액에 대한 이자소득세가 부과됩니다.
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="table-area mt32">
+							<h4 class="hd-tit4">연금저축보험, 연금보험 차이점 한눈에 보기</h4>
+							<div class="ut-tbl a ty01">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">연금저축보험, 연금보험 차이점 한눈에 보기 </span><span class="cap">구분( 세액공제 혜택, 중도 해지 시 과세, 연금 수령시 과세, 납입 한도, 연금 수령 시기), 연금저축보험, 연금보험 으로 이루어진 표</span></caption>
+									<colgroup>
+										<col style="width:33%">
+										<col style="width:34%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">연금저축보험</th>
+											<th scope="col">연금보험</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">세액공제 혜택</th>
+											<td><p class="f12">연간 300~400만 원 한도</p>1년 보험료 납입액의 13.2%~1.65%</td>
+											<td>x</td>
+										</tr>
+										<tr>
+											<th scope="row">중도 해지 시 과세</th>
+											<td><p class="f12">5년 내 해지 시</p>기타소득세 16.5%</td>
+											<td>x</td>
+										</tr>
+										<tr>
+											<th scope="row">연금 수령시 과세</th>
+											<td><p class="f12">5년 내 해지 시</p>연금 소득세 3.3%~5.5%</td>
+											<td>x</td>
+										</tr>
+										<tr>
+											<th scope="row">납입 한도</th>
+											<td>연간 1,800만 원</td>
+											<td>한도 없음</td>
+										</tr>
+										<tr>
+											<th scope="row">연금 수령 시기</th>
+											<td>만 45세 이후<p class="f12">선택가능</p></td>
+											<td>만 45세 이후<p class="f12">선택가능</p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="alert-box">
+								노후대비와 세액공제까지 일석이조! <strong class="point">교보생명</strong>의 <strong class="point">연금저축보험</strong>에 대해 알아보세요.
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<div class="txt-area">
+							<h3 class="hd-tit3">40대 필수보험: 건강보험 </h3>
+							<p>
+								40대는 자녀교육 등으로 수입보다 지출이 커지는 시기이자 건강이 급격히 나빠지는 시기이기도 합니다. 무리한 업무와 스트레스, 과도한 흡연과 음주 등 건강하지 못한 생활패턴으로 3대 질병(암, 급성 심근경색, 뇌출혈)과 같은 큰 질병에 노출되기도 합니다.
+							</p>
+							<p class="img5">40대 필수 보험: 추가적인 건강 보험 (암보험)</p>
+							<p>흔히 건강보험은 실손보험으로 충분하다고 생각하기도 합니다. 그러나 치료비만큼 무서운 것이 있습니다. 바로 생활비인데요, 과거의 환자들은 암에 걸리면 당장의 치료에 대한 걱정이 컸지만, 생존율이 높아지면서 암 진단으로 인한 경력 단절과 소득 상실 또한 환자들의 커다란 짐이 되는 추세입니다. </p>
+							<p class="img6">
+								<span class="blind">
+									일자리 유지 여부(단위:%) - 전체 암환자중 암진단후 실직한 사람 16.5%, 일자리 유지한 사람 83.5% , 암환자중 의료급여 대상자(저소득층)인경우 암 진단 후 실직한 사람이 8.5%, 일자리 유지한 사람이 91.5% 이며,
+									병원비 때문에 치료 포기함 경험(단위:%) - 전체 암환자중 암 진단후 실직한 사람 13.7%, 일자리 유지한 사람 86.3%, 의료급여 대상자(저소득층)인경우 암 진단 후 실직한 사람 22.2%, 일자리 유지한 사람 77.8% 를 나타낸 표
+									자료: 보건복지부-국립암센터 원릐목 의원실
+								</span>
+								(차트 출처 : &quot;암 걸리면 10명 중 8명이 직장 잃어&quot;, 조선일보)
+							</p>
+							<p> <strong class="point"> 보건복지부와 중앙암등록본부에 따르면</strong> 암 생존율이 1993년~1995년 42.9%에서 2014~2018년 70.3%로 크게 높아졌음을 볼 수 있습니다. 또한 <strong class="point">국내 암 생존자 중 46.8% 가 암 진단 후 휴직과 실직 등을 경험</strong>했던 것으로 나타났습니다. 특히 가정을 책임지던 40~60대 가장의 소득상실은 환자 개인의 문제뿐 아니라 가계 파탄으로까지 이어지며, 하나의 사회문제로까지 떠오르기도 합니다. <br><br>
+							암 진단 후에도 생활비 걱정 없이 치료에 집중할 수 있도록 대비해야 합니다. 암 보험에 가입되어 있다면 진단비를 생활비 등으로 활용할 수 있습니다. 가족력 질병이 있다면 관련 질병에 대한 보장을 최대한으로 늘려 가입하는 것이 좋겠습니다.</p>
+							<div class="alert-box">
+								나를 위해서, 그리고 가족을 위해서 건강보험 가입은 필수적입니다. 가입자의 니즈에 맞게 탄력적으로 설계할 수 있어 더욱더 <strong class="point">든든한 교보생명암보험</strong>에 대해 알아보세요.
+							</div>
+						</div>
+					</section>
+			
+					<section>
+						<div class="txt-area">
+							<h3 class="hd-tit3">5,60대 필수보험: 노후보장성보험</h3>
+							<p>
+								50대와 60대는 이전의 병력 때문에 보험 가입이 어렵거나, 부담해야 하는 보험료가 커질 수 있습니다. 그러나 생애 의료비의 절반이 60대 이상에서 발생하기 때문에, 보험 가입을 포기하거나 보류하는 건 좋지 않습니다. 
+							</p>
+							<p class="img7">5-60대 필수 보험: 유병자 보험과 즉시연금보험</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit4">건강보장이 부족하다면, 유병자보험</h4>
+							<p>
+								유병자보험은 유병자가 병력과 관계없이 가입할 수 있는 보험을 말합니다. 계약 심사 과정과 서류 절차 등이 복잡하지 않은 상품입니다.  당뇨나 고혈압 유병자도 3대 질병 (암, 뇌출혈, 급성 심근경색 등)에 대한 진단비 등을 보장받을 수 있습니다. 사망보험금보다는 진단비와 노후 생활자금 등에 집중된 것이 특징이기도 합니다. <br><br>
+								교보생명은 업계에서 가장 많은 총 6종의 유병자보험을 갖추고 있습니다. 그동안 보험의 사각지대에 놓여있던 고령자와 유병력자도 쉽고 간편하게 가입이 가능합니다. 
+							</p>
+							<div class="alert-box">
+								유병자 보험이 필요하다면, 세 가지 질문으로 간단하게 가입할 수 있는 교보생명의 <strong class="point"> '실속있는간편가입건강플러스종신보험'</strong>을 준비해보세요.
+							</div>
+						</div>
+					</section>	
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit4">노후 연금이 충분하지 않다면, 즉시연금보험</h4>
+							<p>
+								50대 이후 노후 준비가 이루어지지 않은 경우를 대비하여 연금보험에 가입하기도 합니다. 퇴직금과 부동산 매각 등으로 목돈이 생긴 경우, 목돈을 맡기고 천천히 연금을 받는 형태인 일시납 즉시연금보험에 가입을 고려하는 것이 좋습니다. <br><br>
+								즉시연금보험의 보험금(연금)은 시중금리와 연동된 공시이율이 적용되며, 이자소득세가 면제됩니다. 또한 사망 때까지 지급된다는 특징이 있습니다. 
+							</p>
+							<div class="alert-box">
+								교보생명의 일시납 연금보험은 가입 후 바로 보장받을 수 있으며, 노후계획에 따라 다양한 연금설계가 가능합니다. 자유롭고 유연하게 노후자금을 활용할 수 있는 교보생명  <strong class="point"> '뉴플랜연금보험'</strong>에 대해 알아보세요.
+							</div>
+						</div>
+					</section>
+
+					<hr class="chick">
+
+					<section>
+						<div class="txt-area">
+							<p>지금까지 각 연령대에 필수적으로 가입해야 할 보험들을 알아보았습니다. 보험에 가입하기 가장 좋은 시기는 보험이 필요 없을 때라는 것을 기억해두세요. 사고와 질병은 늘 소리 없이 다가오기 때문에, 평소 질병 유무와 상관없이 필수 보험을 미리 가입하여 만일의 사태에 준비하여야 하겠습니다. <br><br>
+								성장기부터 노년기까지- 생애 모든 순간과 함께하는 교보생명으로, 여러분과 사랑하는 가족의 행복을 단단하게 챙기세요!
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">목록</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<script>
+		$(document).ready(function(){		  
+				
+			var swiper = new Swiper(".qna-swiper .swiper", {
+				slidesPerView: 1.08,//auto
+				spaceBetween: 0,
+				pagination: {
+					el: '.pagination',
+					clickable: true
+				},
+				slidesOffsetAfter: 0
+			});
+		});
+	</script>
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

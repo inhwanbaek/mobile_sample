@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc use app" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">서비스/앱설치 안내</h2>
+				<div class="desc">교보생명 앱 하나로 보험 및 금융업무부터 마이데이터 서비스까지 편리하게 이용하세요!</div>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">서비스 안내</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">마이데이터 안내</a></li>
+				</ul>
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+
+				<section class="sect">
+					<h3 class="blind">서비스 안내</h3>
+					
+					<h4 class="hd-tit3">앱 다운로드 및 설치방법</h4> 
+					<ul class="bullet a mt20">
+						<li>구글플레이스토어 : &quot;교보생명&quot;으로 검색 후 앱다운로드</li>
+						<li>애플앱스토어 : &quot;교보생명&quot;으로 검색 후 앱다운로드</li>
+					</ul>
+					
+					<h4 class="hd-tit3 mt60">앱 다운로드</h4>
+					<div class="app-download">
+						<div class="text-box">
+							<p class="bg-logo">교보생명</p>
+						</div> 
+						<ul class="qrcode-info">
+							<li>
+								<div class="qrcode google">
+									<span class="blind">교보생명 Google Play (안드로이드) QR 바로가기 http://www.naver.com/</span>
+								</div>
+							</li>
+							<li>
+								<div class="qrcode apple">
+									<span class="blind">교보생명 App Store (iOS) QR 바로가기 http://www.naver.com/</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<h4 class="hd-tit3 mt60">앱 로그인 방법</h4>
+					<div class="text-box">
+						<p class="txt">회원가입 시 원하는 인증수단을 선택해 로그인</p>
+					</div>
+					<a href="javascript:;" class="btn md ico-nlink ico-r mt20" target="_blank" title="새창열림">스마트폰 금융거래 10계명</a>
+					<h4 class="hd-tit3 mt60">주요서비스</h4>
+					<div class="ut-slide-play m-service-slide">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic">
+										<img class="img" src="../../img/csc/m-service1.png" alt="교보생명 주요서비스(보험/퇴직연금/대출/펀드/신탁)를 표현한 모바일 화면이미지">
+										<p class="tit">금융서비스를 하나로</p>
+										<p class="txt">보험에서 퇴직연금, 대출, 펀드/신탁까지</p> 
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic">
+										<img class="img" src="../../img/csc/m-service2.png" alt="교보생명 앱로그인 후, 모바일APP 메인 화면 이미지">
+										<p class="tit">누구에게나 열린 서비스</p>
+										<p class="txt">회원/비회원 <strong>누구든 이용</strong>할 수 있는 공간</p> 
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic">
+										<a href="javascript:;"><img class="img" src="../../img/csc/m-service3.png" alt="교보생명 MY교보 계약정보 화면이미지">
+											<p class="tit">계약정보를 한눈에</p>
+											<p class="txt">나의 금융 계약정보를 <strong>한번에 간편하게</strong> 조회</p> 
+										</a>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic">
+										<img class="img" src="../../img/csc/m-service4.png" alt="교보생명 모바일웹/APP/PC 화면이미지">
+										<p class="tit">어디서나 동일한 서비스</p>
+										<p class="txt">PC, 모바일(웹, 앱)에서 <strong>동일한 경험을</strong></p> 
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic">
+										<img class="img" src="../../img/csc/m-service5.png" alt="교보생명 다양한 본인확인 인증(카카오페이, 패스, 토스)화면이미지">
+										<p class="tit">다양한 인증</p>
+										<p class="txt">내게 맞는 방법으로 <strong>간편한 인증</strong></p> 
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic">
+										<img class="img" src="../../img/csc/m-service6.png" alt="교보생명 마이데이터(Peach)서비스 화면이미지">
+										<p class="tit">마이데이터</p>
+										<p class="txt"><strong>자산관리</strong>는 이제 교보생명에서</p> 
+									</div>
+								</li>
+							</ul>
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+
+				<section class="sect">
+					<h4 class="hd-tit3">흩어진 내 금융정보를 한 곳에서! <br>교보생명 마이데이터 서비스 Peach!</h4>
+					<div class="csc-info-box">
+						<h4 class="hd-tit4"> <strong class="point">Peach</strong>는  무엇인가요?</h4> 
+						<p class="txt">금융자산 관리는 물론 교육, 예술문화, 건강관리 서비스까지 모두 제공하는 교보생명 마이데이터 서비스입니다. </p>
+					</div>
+					<h4 class="hd-tit3 mt60">Peach는 교보생명 앱에서 만나실 수 있습니다.</h4>
+					<div class="app-download mt32">
+						<div class="text-box">
+							<p class="bg-logo-peach">Peach 서비스</p>
+							<p class="txt">교보생명 마이데이터 서비스</p>
+							<ul class="bullet b">
+								<li>QR코드를 찍어서 교보생명 앱을 설치해 보세요.</li>
+							</ul>
+						</div> 
+						<ul class="qrcode-info">
+							<li>
+								<div class="qrcode google">
+									<span class="blind">교보생명 Google Play (안드로이드) QR 바로가기 http://www.naver.com/</span>
+								</div>
+							</li>
+							<li>
+								<div class="qrcode apple">
+									<span class="blind">교보생명 App Store (iOS) QR 바로가기 http://www.naver.com/</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<ul class="peach-img">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</section>
+			</div>
+
+			<div class="banner-award">
+				<div class="txtbox">
+					<strong class="tit">교보생명 통합 디지털 채널</strong>
+					<p class="txt">스마트앱어워드 2022
+						보험분야 대상 수상!</p>
+				</div>
+				<div class="imgbox"><img src="../../img/csc/img-award.png" width="96rem" height="96rem" alt="스마트앱어워드 2022 이미지" ></div>
+			</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

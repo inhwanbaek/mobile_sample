@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">금융상품공시 이용매뉴얼</h2>
+			</div>
+
+			<div class="dcs-sect">
+				<section class="dcs-sky-box">
+					<h3 class="hd-tit3">‘금융상품공시’란?</h3>
+					<div class="txt">금융상품공시는 금융소비자가 금융상품을 이해하고 선택하는 데 유용한 정보를 제공함으로써 금융소비자를 보호하기 위한 
+						제도입니다. 특히 금융투자상품은 운용 결과에 따라 원금 손실 등의 위험이 있으니 가입 전에 상품공시실의 상품정보, 핵심설명서, 투자설명서, 약관 등으로 상품 내용을 꼭 확인하셔야 합니다.</div>
+					<div class="ico"><img src="../../img/dcs/img_prd2@2x.png" alt="금융상품공시 이용매뉴얼 이미지" class="img"></div> <!-- [D] 2022-05-27 이미지 변경  -->
+				</section>
+
+				<section class="sect">
+					<h3 class="hd-tit3">다른 금융회사 상품과 비교해 보세요.</h3>
+					<div class="dcs-link-box">
+						<!-- [웹접근성] 1st 수정 -->
+						<a href="javascript:;" target="_blank" class="link2 ext bt target">
+						<!--// [웹접근성] 1st 수정 -->
+							<span class="tt">금융투자협회</span>
+							<span class="ts">전자공시서비스</span>
+						</a>
+						<!-- [웹접근성] 1st 수정 -->
+						<a href="javascript:;" target="_blank" class="link2 ext bt target">
+						<!--// [웹접근성] 1st 수정 -->
+							<span class="tt">금융감독원</span>
+							<span class="ts">금융소비자정보포털시스템</span>
+						</a>
+					</div>
+				</section>
+				
+				<!-- 2022-04-14 삭제: 내용 삭제 -->
+				<!-- <section class="sect">
+					<h3 class="hd-tit3">펀드수익비용계산기로 만기예상금액을 설계해 보세요.</h3>
+					<p class="hd-txt">투자금액, 적립식/거치식, 투자기간, 예상수익률 등을 선택해 환매예상금액을 직접 계산해 볼 수 있습니다.</p>	
+					<div class="dcs-link-box">
+						<a href="javascript:;" class="link ext">
+							<span class="tt">금융투자협회</span>
+							<span class="ts">전자공시서비스</span>
+						</a>
+						<a href="javascript:;" class="link ext">
+							<span class="tt">금융감독원</span>
+							<span class="ts">금융소비자정보포털시스템</span>
+						</a>
+					</div>
+				</section> -->
+				<!--// 2022-04-14 삭제: 내용 삭제 -->
+				
+
+				<section class="sect">
+					<h3 class="hd-tit3">자격 있는 금융상품 모집인과 거래하세요.</h3>
+					<p class="hd-txt">자격이 없는 모집인과 거래하면 문제가 발생할 수 있고, 피해를 구제하기 어려울 수 있으니 거래 전에 자격 여부를 꼭 확인하시기 바랍니다.</p>	
+					<div class="dcs-link-box">
+						<!-- [웹접근성] 1st 수정 -->
+						<a href="javascript:;" target="_blank" class="link ext bt target">
+						<!--// [웹접근성] 1st 수정 -->
+							<span class="tt">금융투자협회</span>
+							<span class="ts">금융투자전문인력조회</span>
+						</a>
+					</div>
+				</section>
+				
+				
+				
+				<!-- 2022-04-14 텍스트변경: 금융상품계약 체결 시 단계별로 상품 정보를 제공받고, 그 중요 내용에 대해 설명 들으실 수 있습니다. -->
+				<section class="sect">
+					<h3 class="hd-tit3">상품 구매 과정에서 정보를 제공받을 수 있어요.</h3>
+					<p class="hd-txt">금융상품계약 체결 시 단계별로 상품 정보를 제공받고, 그 중요 내용에 대해 설명 들으실 수 있습니다.</p>
+				</section>
+				<!--// 2022-04-14 텍스트변경: 금융상품계약 체결 시 단계별로 상품 정보를 제공받고, 그 중요 내용에 대해 설명 들으실 수 있습니다. -->
+				
+				
+				<section class="sect">
+					<h3 class="hd-tit3">상품 구매 후 자산운용 현황, 수익률 등을 확인해 보세요.</h3>
+					<div class="dcs-link-box">
+						<!-- [웹접근성] 1st 수정 -->
+						<a href="javascript:;" target="_blank" class="link2 bt target">
+						<!--// [웹접근성] 1st 수정 -->
+							<span class="tt">MY교보</span>
+							<span class="ts">나의 펀드 가입내역조회</span>
+						</a>
+					</div>
+				</section>
+				
+				
+				
+				
+				<section class="sect">
+					<h3 class="hd-tit3">금융회사, 금융투자협회, 금융감독원에 상담 및 분쟁조정을 신청할 수 있어요.</h3>
+					<p class="hd-txt">금융상품에 대해 상담이 필요하거나 불만이 있는 경우 금융회사 및 금융투자협회에 문의할 수 있으며, 처리 결과에 이의가 있으면 금융감독원에 민원 또는 분쟁조정을 신청할 수 있습니다.</p>
+					<div class="ut-tbl a">
+						<table class="tblist" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">금융회사, 금융투자협회, 금융감독원</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">기관</th>
+									<th scope="col">전화번호</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l"><a href="javascript:;" class="link-ext">교보생명 콜센터(펀드/신탁)</a></td>
+									<td class="txt-l">1599-7899</td>
+								</tr>
+								<tr>
+									<td class="txt-l"><a href="javascript:;" class="link-ext">금융투자협회 분쟁조정센터 </a></td>
+									<td class="txt-l">02-2003-9427</td><!-- [D] 2022-08-16 텍스트 수정 -->
+								</tr>
+								<tr>
+									<td class="txt-l"><a href="javascript:;" class="link-ext">금융감독원 금융민원센터</a></td>
+									<td class="txt-l">1332</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				
+				
+				
+				
+			</div>
+			
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

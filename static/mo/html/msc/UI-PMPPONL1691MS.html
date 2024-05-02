@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"든든포인트"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc reliable" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect have">
+				<i class="big pt"><em class="blind">Point</em></i>
+				<div class="result">
+					<h2 class="hd-tit3">보유 포인트</h2>
+					<p class="total">
+						<strong class="num">99,000</strong>
+						<i class="pt"><em class="blind">Point</em></i>
+					</p>
+				</div>
+				<div class="each">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">적립 포인트</div>
+								<div class="dd">
+									<span class="num">100,000</span>
+									<i class="pt"><em class="blind">Point</em></i>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">사용 포인트</div>
+								<div class="dd">
+									<span class="num">-1,000</span>
+									<i class="pt"><em class="blind">Point</em></i>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="point-srch">
+				<div class="optset">
+					<button type="button" class="btn-select btn-setup">조회설정</button>
+				</div>
+				<div class="option">
+					<ul class="item-lst">
+						<li>
+							<h4 class="hd-tit5">구분</h4>
+							<div class="radiobox c col3">
+								<label class="radio"><input type="radio" name="radio_c3" checked><span class="txt">전체</span></label>
+								<label class="radio"><input type="radio" name="radio_c3"><span class="txt">적립</span></label>
+								<label class="radio"><input type="radio" name="radio_c3"><span class="txt">사용</span></label>
+							</div>
+						</li>
+						<li>
+							<h4 class="hd-tit5">기간</h4>
+							<div class="ut-range">
+								<div class="rag">
+									<label class="radio"><input type="radio" name="r_range" checked><span class="txt">당일</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">1개월</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">6개월</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+								</div>
+								<div class="rcs">
+									<span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+									<i class="ds">~</i>
+									<span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btn-set">
+						<button type="button" class="btn md btn-act">조회</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="point-wrp"><!-- 활성화 class="active" -->
+				<ul class="point-lst">
+					<li>
+						<div class="item">
+							<div class="add">
+								<div class="ut-bdgs"><em class="bdg q">적립</em></div>
+							</div>
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험계약 대출</div>
+										<div class="dd">
+											<span class="num">1,000</span>
+											<i class="pt"><em class="blind">Point</em></i>
+										</div>
+									</div>
+									<div class="etc">
+										<ul class="lst">
+											<li>(무)교보내맘쏙건강보험</li>
+											<li>2021.10.15</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<div class="add">
+								<div class="ut-bdgs"><em class="bdg q">적립</em></div>
+							</div>
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">이벤트 참여</div>
+										<div class="dd">
+											<span class="num">1,000</span>
+											<i class="pt"><em class="blind">Point</em></i>
+										</div>
+									</div>
+									<div class="etc">
+										<ul class="lst">
+											<li>연락처 변경 777 행운 이벤트</li>
+											<li>2021.10.15</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<div class="add">
+								<div class="ut-bdgs"><em class="bdg q">적립</em></div>
+							</div>
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험계약 대출</div>
+										<div class="dd">
+											<span class="num">3,000</span>
+											<i class="pt"><em class="blind">Point</em></i>
+										</div>
+									</div>
+									<div class="etc">
+										<ul class="lst">
+											<li>(무)교보내맘쏙건강보험</li>
+											<li>2021.10.15</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="item used">
+							<div class="add">
+								<div class="ut-bdgs"><em class="bdg a">사용</em></div>
+							</div>
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">결제 사용</div>
+										<div class="dd">
+											<span class="num">-1,000</span>
+											<i class="pt"><em class="blind">Point</em></i>
+										</div>
+									</div>
+									<div class="etc">
+										<ul class="lst">
+											<li>포인트몰 사용</li>
+											<li>2021.10.15</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<div class="add">
+								<div class="ut-bdgs"><em class="bdg q">적립</em></div>
+							</div>
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험계약 대출</div>
+										<div class="dd">
+											<span class="num">3,000</span>
+											<i class="pt"><em class="blind">Point</em></i>
+										</div>
+									</div>
+									<div class="etc">
+										<ul class="lst">
+											<li>(무)교보내맘쏙건강보험</li>
+											<li>2021.10.15</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="list-empty bd"><!-- 검색결과 없는 경우 -->
+					<p>
+						조회된 포인트 내역이 없습니다.
+					</p>
+				</div>
+				<div class="ut-more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>
+			</div>
+			<div class="ut-gudbox a open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>든든포인트는 평생든든서비스를 이용하시는 고객님에게 제공되는 포인트 혜택입니다.</li>
+						<li>포인트 적립 안내
+							<ul class="bullet c">
+								<li>비대면 평생든든서비스 이용 시 적립
+									<div class="gudbox-btn">
+										<a href="javascript:;" class="btn sm wm">평생든든서비스 안내</a>                     
+									</div>
+								</li>
+								<li>FP를 통한 대면 서비스 이용 시 적립</li>
+								<li>FP를 통한 보장 분석 서비스 이용 시 적립 </li>
+								<li>FP에게 지인 또는 친인척 소개 시 적립</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<script>
+		$('.btn-setup').click (function () {
+			$(this).parents().find('.option').addClass('active');
+		});
+		$('.btn-act').click (function () {
+			$(this).parents().find('.option').removeClass('active');
+			$(this).parents().find('.btn-setup').html("전체");
+			$('.point-wrp').removeClass('active');
+		});
+	</script>
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

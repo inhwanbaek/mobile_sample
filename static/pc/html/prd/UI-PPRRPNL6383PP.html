@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a md pop-cprdt" id="pop-cprdt"><!-- 22-07-04 수정 -->
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">기준가 조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="cprd-wrp mt0">
+						<div class="cprd-box type2">
+							<div class="ut-range">
+								<div class="rag w100p blue"><!-- 22-07-04 수정 -->
+									<label class="radio" role="radio"><input type="radio" name="r_range" checked="checked"><span class="txt">1개월</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">3년</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">5년</span></label>
+								</div>
+							</div>
+							
+							<!-- 차트영역-->
+							<div class="ut-chart">
+								<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+								<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+							</div>
+							<!--// 차트영역-->
+						</div>
+						<div class="cprd-box mt40">
+							<h2 class="hd-tit4">일자별 기준가</h2>
+							<div class="ut-tbl a fixed">
+								<table class="tblist nl" cellpadding="0" cellspacing="0">
+									<caption>일자별 기준가의 기준일, 기준가(원), 등락(비율%) 의 목록표</caption>
+									<colgroup>
+										<col style="width:30%">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">기준일</th>
+											<th scope="col">기준가(원)</th>
+											<th scope="col">등락(비율%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2021.10.01</td>
+											<td>1,309.67</td>
+											<td><span class="down"><span class="blind">하락</span>-19.0(-1.44)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.30</td>
+											<td>1,328.76</td>
+											<td><span class="down"><span class="blind">하락</span>-13.0(-0.97)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.29</td>
+											<td>1,341.77</td>
+											<td><span class="down"><span class="blind">하락</span>-11.8(-0.88)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.28</td>
+											<td>1,353.63</td>
+											<td><span class="up"><span class="blind">상승</span>-11.8(-0.88)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.27</td>
+											<td>1,323.24</td>
+											<td><span class="down"><span class="blind">하락</span>-7.13(-0.54)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>									
+										<tr>
+											<td>2021.09.24</td>
+											<td>1,330.37</td>
+											<td><span class="down"><span class="blind">하락</span>-26.0(-1.92)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.23</td>
+											<td>1,356.42</td>
+											<td><span class="down"><span class="blind">하락</span>-9.61(-0.70)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.17</td>
+											<td>1,366.03</td>
+											<td><span class="up"><span class="blind">상승</span>19.79(1.45)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.16</td>
+											<td>1,361.46</td>
+											<td><span class="up"><span class="blind">상승</span>0.69(0.05)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.14</td>
+											<td>1,360.77</td>
+											<td><span class="up"><span class="blind">상승</span>25.88(1.94)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.13</td>
+											<td>1,334.89</td>
+											<td><span class="down"><span class="blind">하락</span>-5.94(-0.44)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+										<tr>
+											<td>2021.09.10</td>
+											<td>1,340.83</td>
+											<td><span class="up"><span class="blind">상승</span>19.57(1.48)</span></td><!-- [웹접근성] 1st 수정 -->
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="ut-more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cprdt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

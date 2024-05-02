@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"주간 VOC타운미팅"}'></include><!-- [D] 2022-05-11 UI/UX 변경 -->
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc voc" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">교보생명은 소비자보호를 위해 <br>다양한 노력을 기울이고 있습니다.</h2>
+				<p class="tit-txt">
+					다양한 경로로 수집된 VOC의 제도/프로세스 개선을 검토하고, 민원 예방 및 업무 개선의 적시성을 확보하기 위해 2020년 1월부터 소비자보호 전담 부서(소비자보호센터)에서 매주 ‘VOC타운미팅’을 실시하고 있습니다. 
+					<br><br>
+					VOC타운미팅을 통해 선정된 주요 VOC는 현업부서 검토 후 경영진 의사결정 필요 건에 대해 소비자보호실무협의회에 상정됩니다. 
+					<br><br>
+					교보생명은 VOC, 즉 ‘고객의 소리’를 고객이 회사에게 주는 소중한 선물로 여기고 고객의 니즈를 경영에 적극 반영해 차별화된 상품과 서비스를 제공할 수 있도록 계속 노력할 것입니다.
+				</p>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>운영시기: 매주 목요일</li>
+						<li>운영방식: 조직원이 특정 안건에 대한 토의에 참여해 의사결정함</li>
+					</ul>
+				</div>
+				<h3 class="hd-tit4">VOC 이슈 단계별 개선 과정</h3>
+				<div class="procedure-area"><!-- [D] 2022-05-25 UI/UX 변경 -->
+					<ol class="lst blind">
+						<li>
+							<div class="item">
+								<div class="tit"><i>01.</i> 주간 VOC 타운미팅</div>
+								<div class="text-box">
+									<ul class="bullet a">
+										<li>소비자보호센터 1차 이슈 선별
+											<ul class="bullet c">
+												<li>제안, 콜센터 상담, 일반상담, 채팅상담 등</li>
+												<li>매주 목요일 미팅 실시</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="etc">현업 부서 검토 후 수용 불가 건</p>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>02.</i> 소비자보호실무협의회</div>
+								<div class="text-box">
+									<ul class="bullet a">
+										<li>중요한 VOC 이슈 및 팀장급 의사결정 필요 건
+											<ul class="bullet c">
+												<li>실무협의회 논의 후 개선 여부 검토</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="etc">소비자보호 실무협의회 수용 불가 건</p>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>03.</i> 소비자보호위원회</div>
+								<div class="text-box">
+									<ul class="bullet a">
+										<li>소비자보호실무협의회 수용 불가 건</li>
+										<li>경영진 의사결정 필요 건
+											<ul class="bullet c">
+												<li>실무협의회 논의 후 개선 여부 검토</li>
+											</ul>
+										</li>
+										<li>소비자보호실무협의회 개선 건 보고</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<div class="floatbots"> 
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">홈으로</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

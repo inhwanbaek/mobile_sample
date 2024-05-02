@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"공동소유자 대출약정"}'></include>
+	
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan new  no-gudbox" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 담보제공자 안내</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">5</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="loan-tit">
+				<h2 class="hd-tit3">담보제공자가 꼭 알아두어야 할 내용입니다.</h2>
+			</div>
+
+			<div class="text-group">
+				<h3 class="hd-tit4">저당권이란?</h3>
+				<div class="text-box">
+					<ul class="bullet a glst">
+						<li>채무자가 기일에 채무를 상환하지 않을 경우, 채권자가 설정자 제공 담보물을 처분하여 우선적으로 변제받는 권리입니다.</li>
+						<li>따라서 본인 소유의 부동산에 타인을 위하여 저당권을 설정하는 것은 타인의 채무불이행으로 인해 자기 재산을 잃게 될 수도 있는 위험을 부담하는 행위입니다.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="ut-dtds e dtds">
+				<ul class="dlist">
+					<li>
+						<div class="hdt">
+							<div class="dt">근저당권 설정금액
+								<br> (채권최고액)</div>
+							<div class="dd">대출금액의 120%</div>
+						</div>
+						<div class="cdt"><p>근저당권 설정금액은 만원 단위로 절상합니다.</p></div>
+					</li>
+					<li>
+						<div class="hdt">
+							<div class="dt">피담보채무의 범위</div>
+							<div class="dd">한정근담보</div>
+						</div>
+						<div class="cdt">
+							<p>비대면 아파트담보대출은 ‘특정근담보’, ‘한정근담보’ 중 ‘한정근담보’를 피담보채무의 범위로 합니다.</p>
+							<div class="bts">
+								<a href="javascript:;" class="link-text">피담보채무의 범위 안내</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="hdt">
+							<div class="dt">근저당권 결산기</div>
+							<div class="dd">장래지정형</div>
+						</div>
+						<div class="cdt">
+							<p>비대면 아파트담보대출은 ‘지정형’, ‘자동확정형’, ‘장래지정형’ 중 ‘장래지정형’을 결산기로 합니다.</p>
+							<div class="bts">
+								<a href="javascript:;" class="link-text">근저당권 결산기 안내</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="btn-set vt">
+				<button type="button" class="btn ico-down ico-r">근저당권설정계약서 양식 다운로드</button>
+			</div>	
+		
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

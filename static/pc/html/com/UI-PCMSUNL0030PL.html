@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-bankcerti" id="pop-bankcerti">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">보험 ・ 은행 ・ 증권사 선택</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="ut-tabs c lg tabs">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_bankcerti" aria-controls="tab_bankcerti_1" href="javascript:;">보험</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_bankcerti" aria-controls="tab_bankcerti_2" href="javascript:;">은행</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_bankcerti" aria-controls="tab_bankcerti_3" href="javascript:;">증권사</a></li>
+							</ul>
+						</div>
+						<section class="sect bank">
+							<div data-ui-tab-ctn="tab_bankcerti" aria-labelledby="tab_bankcerti_1" class="box bank active">
+								<ul class="list">
+									<!-- [웹접근성] 1st 수정 -->
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_kyobo.png" class="img" alt=""><em class="t">교보생명보험(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_hanwha.png" class="img" alt=""><em class="t">한화생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_samsung.png" class="img" alt=""><em class="t">삼성생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_heungkuk.png" class="img" alt=""><em class="t">흥국생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_shinhan.png" class="img" alt=""><em class="t">신한생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_fb.png" class="img" alt=""><em class="t">푸본현대생명</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_kdb.png" class="img" alt=""><em class="t">KDB생명보험(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_mirae.png" class="img" alt=""><em class="t">미래에셋생명보험(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_ibk.png" class="img" alt=""><em class="t">IBK연금보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_ing.png" class="img" alt=""><em class="t">ING생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_dongbu.png" class="img" alt=""><em class="t">동부생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_metlife.png" class="img" alt=""><em class="t">매트라이프</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_dongyang.png" class="img" alt=""><em class="t">동양생명보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_meritz.png" class="img" alt=""><em class="t">메리츠화재보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_lotte.png" class="img" alt=""><em class="t">롯데손해보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insufire_samsung.png" class="img" alt=""><em class="t">삼성화재보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_hyundai.png" class="img" alt=""><em class="t">현대해상보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_kb.png" class="img" alt=""><em class="t">KB손해보험</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_insu_db.png" class="img" alt=""><em class="t">DB손해보험</em></button></li>
+									<!--// [웹접근성] 1st 수정 -->
+								</ul>
+								
+							</div>						
+							<div data-ui-tab-ctn="tab_bankcerti" aria-labelledby="tab_bankcerti_2" class="box bank">
+								<ul class="list">
+									<!-- [웹접근성] 1st 수정 -->
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kdb.png" class="img" alt=""><em class="t">KDB산업은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_ibk.png" class="img" alt=""><em class="t">기업은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kb.png" class="img" alt=""><em class="t">KB국민은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_hana.png" class="img" alt=""><em class="t">하나은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_suhyup.png" class="img" alt=""><em class="t">수협은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_NH.png" class="img" alt=""><em class="t">농협은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_woori.png" class="img" alt=""><em class="t">우리은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_sc.png" class="img" alt=""><em class="t">스텐다드차타드은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_dgb.png" class="img" alt=""><em class="t">대구은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_bnk.png" class="img" alt=""><em class="t">부산은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kwangju.png" class="img" alt=""><em class="t">광주은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_jeju.png" class="img" alt=""><em class="t">제주은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_jeonbook.png" class="img" alt=""><em class="t">전북은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kyungnam.png" class="img" alt=""><em class="t">경남은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_z.png" class="img" alt=""><em class="t">한국씨티은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_shinhan2.png" class="img" alt=""><em class="t">신한은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_wooriib.png" class="img" alt=""><em class="t">우리종합금융</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_sbi.png" class="img" alt=""><em class="t">SBI저축은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_yujin.png" class="img" alt=""><em class="t">유진저축은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_ok.png" class="img" alt=""><em class="t">오케이저축은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kium.png" class="img" alt=""><em class="t">키움저축은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_paper.png" class="img" alt=""><em class="t">페퍼저축은행</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_shinhan.png" class="img" alt=""><em class="t">신한저축은행</em></button></li>
+									<!--// [웹접근성] 1st 수정 -->
+								</ul>
+							</div>
+							<div data-ui-tab-ctn="tab_bankcerti" aria-labelledby="tab_bankcerti_3" class="box stok">
+								<ul class="list">
+									<!-- [웹접근성] 1st 수정 -->
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_kyobo.png" class="img" alt=""><em class="t">교보증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_shinhan.png" class="img" alt=""><em class="t">신한금융투자</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_korea.png" class="img" alt=""><em class="t">한국투자증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_daishin.png" class="img" alt=""><em class="t">대신증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_mirae.png" class="img" alt=""><em class="t">미래에셋대우증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_shinyoung.png" class="img" alt=""><em class="t">신영증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_yujin.png" class="img" alt=""><em class="t">유진투자증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_NH.png" class="img" alt=""><em class="t">NH투자증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_hanadaeto.png" class="img" alt=""><em class="t">하나대투증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_kb.png" class="img" alt=""><em class="t">KB증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_hanwha.png" class="img" alt=""><em class="t">한화투자증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_hyundai.png" class="img" alt=""><em class="t">현대차증권(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_yuanta.png" class="img" alt=""><em class="t">유안타증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_samsung.png" class="img" alt=""><em class="t">삼성증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_dgb.png" class="img" alt=""><em class="t">하이투자증권(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_mirae.png" class="img" alt=""><em class="t">(구)미래에셋증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_kium.png" class="img" alt=""><em class="t">키움증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_korea.png" class="img" alt=""><em class="t">한국투자증권</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_294@2x.png" class="img" alt=""><em class="t">한국포스증권(주)</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_stock_korea2.png" class="img" alt=""><em class="t">근로복지공단</em></button></li>
+									<li><button type="button" class="bt"><img src="../../img/bank/ic_bank_hana.png" class="img" alt=""><em class="t">하나금융투자</em></button></li>
+									<!--// [웹접근성] 1st 수정 -->
+								</ul>
+							</div>
+						</section>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-bankcerti');
+		</script>
+	</div>
+</body>
+</html>

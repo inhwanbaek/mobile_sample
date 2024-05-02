@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"퇴직금 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금) -->
+	<main class="container page etp bg" id="container"><!-- [D] 2022-01-21 클래스 .bg 추가 -->
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">1. 대상자 선택</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [D] 2022-01-28 감싸는 영역 클래스 inr-white a 추가 -->
+			<div class="inr-white a">
+				<div class="etp-tit-box">
+					<h2 class="hd-tit3">퇴직금 신청 대상자를 선택해 주세요.</h2>
+				</div>
+				<!-- [D] 2022-01-24 불필요 속성 제거 -->				
+				<div class="ut-price choice">
+					<div class="radiobox c">
+						<label class="radio">
+							<input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked class="active">
+							<span class="txt">이름</span>
+						</label>
+						<label class="radio">
+							<input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2">
+							<span class="txt">주민등록번호</span>
+						</label>
+					</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active">
+						<span class="input a no coms">
+							<label class="lb" for="input-name">이름</label>
+							<input type="text" title="입력" placeholder="이름을 입력하시오" id="input-name">
+						</span>
+						<div class="vald-msg show no">이름을 입력하세요.</div>
+					</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2">
+							<!-- [D] 2022-02-21 주민등록번호 영역 변경 -->
+							<div class="txt-inp-box">
+								<span class="input a nobg ut-rsnum">
+									<label class="lb" for="rsnum_2">주민등록번호</label>
+									<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민등록번호 앞 6자리" placeholder="앞 6자리" value="830000"> <!-- [웹접근성] 1st 수정 -->
+									<i class="ds">-</i>
+									<input type="tel" class="mn" pattern="\d*" title="주민등록번호 뒤 1자리" value="1" ><!-- [웹접근성] 1st 수정 -->
+									<input type="tel" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" value="******" readonly><!-- [웹접근성] 1st 수정 -->
+								</span>
+							</div>
+							<!--// [D] 2022-02-21 주민등록번호 영역 변경 -->
+					</div>
+				</div>
+				<!--// [D] 2020.01.24 불필요 속성 제거 -->
+				<div class="btn-set vt">
+					<button type="button" class="btn md">조회</button>
+				</div>
+			</div>
+			<!--// [D] 2020.01.28 감싸는 영역 클래스 inr-white a 추가 -->
+			<div class="join-list-box">
+				<div class="inner">
+					<div class="card-count">
+						<h3 class="count">총 <strong>400</strong>명</h3><!-- [D] 2022-06-29 띄어쓰기 수정 -->
+					</div>
+					<ul class="lst-join-wrp">
+						<li>
+							<div class="chk-arr-wrp">
+								<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보 <span class="tinr">820312-1</span></span></label>
+								<div class="bcharr"><button type="button" class="ck-arr">가입자 정보 보기</button></div>
+							</div>
+						</li>
+						<li>
+							<div class="chk-arr-wrp">
+								<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보 <span class="tinr">820312-1</span></span></label>
+								<div class="bcharr"><button type="button" class="ck-arr">가입자 정보 보기</button></div>
+							</div>					
+						</li>
+						<li>
+							<div class="chk-arr-wrp">
+								<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보 <span class="tinr">820312-1</span></span></label>
+								<div class="bcharr"><button type="button" class="ck-arr">가입자 정보 보기</button></div>
+							</div>						
+						</li>
+						<li>
+							<div class="chk-arr-wrp">
+								<label class="checkbox ck"><input type="radio" name="radio01"><span class="txt">최교보 <span class="tinr">820312-1</span></span></label>
+								<div class="bcharr"><button type="button" class="ck-arr">가입자 정보 보기</button></div>
+							</div>						
+						</li>
+					</ul>
+
+					<!-- 더보기 -->
+					<div class="ut-more more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm"><i class="n">1</i><i class="t">34</i></em>
+							</span>
+						</button>
+					</div>
+					<!--// 더보기 -->
+				</div>
+			</div>
+			<!-- [D] 2022-01-28 감싸는 영역 클래스 inr-white 추가 -->
+			<div class="inr-white">
+				<!-- 가이드박스 -->
+				<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li><span class="t-blue">DC 퇴직금 신청 당일 접수 마감 시간은 09:00~16:00입니다.</span></li>
+							<li>관리자의 최종 결재 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+							<li>퇴직금 수령방법별 필요서류
+								<ul>
+									<li>- 퇴직위로금 또는 중간정산 원천세 합산 요청 시: 퇴직소득원천징수영수증(회사직인 찍은 것만 가능)
+									</li>
+									<li>- 다른 금융기관 IRP(개인형퇴직연금)로 수령 시: 타사 IRP 계좌 사본(확인서)
+									</li>
+									<li>※ 퇴직금 수령방법별 <span class="bold">필요서류를 제출</span>하셔야 신청이 접수됩니다.</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="txt">자세한 사항은 <span class="bold">법인콜센터(<a href="tel:1588-0770" title="전화 앱으로 전환됩니다.">1588-0770</a>)</span>로 문의해 주세요.</p>
+					</div>
+				</div>
+				<!-- DB제도 안내문구일 때
+				<div class="ut-gudbox b open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li><span class="t-blue">DB 퇴직금 신청 당일 접수 마감 시간은 09:00~16:00입니다.</span></li>
+							<li>관리자의 최종승인 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+							<li>퇴직금 수령방법별 필요서류
+								<ul>
+									<li>- 교보생명 IRP(개인형퇴직연금) 또는 일시금 수령 시 : 퇴직소득원천징수영수증(회사직인 찍은 것만 가능)</li>
+									<li>- 다른 금융기관 IRP(개인형퇴직연금)로 수령 시: 퇴직소득원천징수영수증(회사직인 찍은 것만 가능) 및 타사 IRP 계좌 사본(확인서)</li>
+									<li>※ 퇴직금 수령방법별 <span class="bold">필요서류를 제출</span>하셔야 신청이 접수됩니다.</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="txt">자세한 사항은 <span class="bold">법인콜센터(<a href="tel:1588-0770" title="전화 앱으로 전환됩니다.">1588-0770</a>)</span>로 문의해 주세요.</p>
+					</div>
+				</div>
+				-->
+				<!-- //가이드박스 -->
+			</div>
+			<!--// [D] 2020.01.28 감싸는 영역 클래스 inr-white 추가 -->
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">					
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

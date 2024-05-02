@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-nncprd" id="pop-nncprd"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">피드 작성</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire invtm">
+
+					<div class="pop-cont-sect2 mt0">
+						<div class="cont-wrap textarea-wrap mt0">
+							<div class="tit">
+								<img src="../../img/prd/img_03@3x.png" alt="프로필사진"><!-- 22-05-24 이미지url 변경 -->
+								<div class="writer">필승투자</div>
+							</div>
+
+							<span class="textarea a">
+								<label for="textarea-1" class="lb blind">내용</label>
+								<textarea placeholder="내용을 입력해 주세요." id="textarea-1"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">00</i>/<i class="n" title="최대 입력 글자">1,300</i>자)</span>
+							</span>
+						</div>	
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-layer');">취소</button>
+					<button type="button" class="btn lg rd a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-nncprd');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

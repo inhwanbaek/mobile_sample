@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"매수신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc fund deal" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">4. 매수신청 정보 확인</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">4</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="fund-tit">
+				<h2 class="hd-tit3">매수신청정보를 확인해 주세요.</h2>
+			</div>
+
+			<div class="ut-dcard b">
+				<div class="dls">
+					<div class="hdt">
+						<div class="tit">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</div>
+					</div>
+					<div class="dl left">
+						<div class="dt">계좌번호</div>
+						<div class="dd">200***-001-02</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sec">
+				<h3 class="blind">매수신청 정보</h3>
+				<div class="ut-dtds c bd">
+					<ul class="dlist left">
+						<li>
+							<div class="dt">거래구분</div>
+							<div class="dd">매수신청</div>
+						</li>
+						<li>
+							<div class="dt">거래금액</div>
+							<div class="dd">100,000원</div>
+						</li>
+						<li>
+							<div class="dt">신청일시</div>
+							<div class="dd">2022.01.14 19:00:00</div>
+						</li>
+						<li>
+							<div class="dt">기준가적용일</div>
+							<div class="dd">2020.01.16</div>
+						</li>
+						<li>
+							<div class="dt">출금계좌</div>
+							<div class="dd">(우리은행) 34861354684</div>
+						</li>
+						<li>
+							<div class="dt">예금주</div>
+							<div class="dd">김*보</div>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+			
+		</div>
+
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

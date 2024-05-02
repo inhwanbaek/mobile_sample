@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"자회사 현황"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="box-rd branch-condition">
+				<h3 class="tit-kyobo"><span class="blind">교보생명</span></h3>
+				<div class="ut-optset optset">
+					<div class="opt pr">
+						<span class="date">(2022년 2월 기준)</span><!-- [D] 2022-07-22 수정 -->
+					</div>
+				</div>
+				<img src="../../img/abt/branch_condition.png" alt="">
+				<ul class="blind">
+					<li>교보증권 : 73.1%</li>
+					<li>교보악사자산운용 : 50%</li>
+					<li>교보라이프플래닛 생명보험 : 100%</li>
+					<li>교보자산신탁 : 100%</li>
+					<li>KCA손해사정 : 100%</li>
+					<li>A&D신용정보 : 19.5%</li>
+					<li>교보생명자산운용 (미국현지법인) : 100%</li>
+					<li>교보생명자산운용 (일본현지법인) : 100%</li>
+					<li>교보문고 : 100%</li>
+					<li>교보리얼코 : 100%</li>
+					<li>교보정보통신 : 100%</li>
+					<li>KCA서비스 : 66.7%</li>
+				</ul>
+			</div>
+			<div class="ut-optset optset">
+				<div class="opt pl">
+					<h3 class="hd-tit3">금융 자회사</h3>
+				</div>
+				<div class="opt pr">
+					<span class="date">(2022년 2월 기준)</span><!-- [D] 2022-07-22 수정 -->
+				</div>
+			</div>
+			<!-- [D] 2022-07-28 지분/자본금 수정  -->
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">금융 자회사 현황</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:20%">
+						<col>
+						<col style="width:20%">
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">회사명</th>
+							<th scope="col">주요업무</th>
+							<th scope="col">설립일</th>
+							<th scope="col">자본금(억원)</th>
+							<th scope="col">지분(%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>교보증권</td>
+							<td>증권중개업</td>
+							<td>1949.11.22</td>
+							<td class="txt-r">323.3</td>
+							<td class="txt-r">73.1%</td>
+						</tr>
+						<tr>
+							<td>교보악사자산운용</td>
+							<td>자산운용업</td>
+							<td>1988.07.07</td>
+							<td class="txt-r">30</td>
+							<td class="txt-r">50%</td>
+						</tr>
+						<tr>
+							<td>교보라이프플래닛<br>생명보험</td>
+							<td>생명보험업</td>
+							<td>2013.09.27</td>
+							<td class="txt-r">244</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>교보자산신탁</td>
+							<td>부동산신탁</td>
+							<td>1998.12.08</td>
+							<td class="txt-r">16.5</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>KCA손해사정</td>
+							<td>손해사정업</td>
+							<td>2002.07.05</td>
+							<td class="txt-r">2</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>A&D신용정보</td>
+							<td>신용조사 및 추심대행업</td>
+							<td>2002.02.28</td>
+							<td class="txt-r">5</td>
+							<td class="txt-r">19.5%</td>
+						</tr>
+						<tr>
+							<td>교보생명자산운용<br>(미국현지법인)</td>
+							<td>유가증권투자</td>
+							<td>1996.10.21</td>
+							<td class="txt-r">USD $0.10</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>교보생명자산운용<br>(일본현지법인)</td>
+							<td>투자자문업</td>
+							<td>2016.08.26</td>
+							<td class="txt-r">JPY 0.1Bn</td>
+							<td class="txt-r">100%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="ut-optset optset mt40">
+				<div class="opt pl">
+					<h3 class="hd-tit3">비금융 자회사</h3>
+				</div>
+				<div class="opt pr">
+					<span class="date">(2022년 2월 기준)</span><!-- [D] 2022-07-22 수정 -->
+				</div>
+			</div>
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">비금융 자회사 현황</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:20%">
+						<col>
+						<col style="width:20%">
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">회사명</th>
+							<th scope="col">주요업무</th>
+							<th scope="col">설립일</th>
+							<th scope="col">자본금(억원)</th>
+							<th scope="col">지분(%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>교보문고</td>
+							<td>서적 및 잡지류 소매업</td>
+							<td>1980.12.24</td>
+							<td class="txt-r">4.9</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>교보리얼코</td>
+							<td>비 주거용 부동산 관리업</td>
+							<td>1979.11.15</td>
+							<td class="txt-r">2.4</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>교보정보통신</td>
+							<td>컴퓨터시스템 통합자문 및 구축서비스업</td>
+							<td>1971.07.24</td>
+							<td class="txt-r">15.4</td>
+							<td class="txt-r">100%</td>
+						</tr>
+						<tr>
+							<td>KCA서비스</td>
+							<td>콜센터 운영 대행 및 콜센터 용역 제공업</td>
+							<td>2008.11.30</td>
+							<td class="txt-r">3</td>
+							<td class="txt-r">66.7%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // [D] 2022-07-28 지분/자본금 수정  -->
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

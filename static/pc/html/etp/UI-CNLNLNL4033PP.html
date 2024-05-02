@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a md pop-svcusegud" id="pop-svcusegud">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">서비스 이용안내</h1><!-- [D] 2022-04-18 문구수정 -->
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="svcusegud-msg">
+							<div class="msg">
+								<p class="p1">현재 권한으로 이용하실 수 없습니다.</p><!-- [D] 2022-04-18 문구수정 -->
+								<div class="p2">
+									고객님이 선택하신 메뉴(화면)는 현재 권한으로는 이용하실 수 없습니다.<br><!-- [D] 2022-04-18 문구수정 -->
+									권한별 이용안내
+									<div class="ut-tooltip">
+										<button type="button" class="ico help sm bt-tooltip">도움말</button>
+										<div class="toolctn">
+											<div class="tptit">권한별 이용안내</div>
+											<div class="tpmsg">
+												<ul class="bullet a">
+													<li>기업관리자 : 전체화면 조회/관리 및 결제</li>
+													<li>업무담당자 : 전체화면 조회/관리</li>
+													<li>인사담당자 : 인사관련(가입자 관리, 부담금 납입 등) 조회/관리</li>
+													<li>재무담당자 : 재무관련(적립금 조회 등) 조회/관리</li>
+													<li>조회담당자 : 전체화면 조회</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									를 확인해 주세요.
+								</div>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-svcusegud');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-svcusegud',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

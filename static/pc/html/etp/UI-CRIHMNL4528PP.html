@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-pay" id="pop-pay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">지급내역 상세보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-tbl a">
+						<table class="tbform" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">지급내역 상세보기</span><span class="cap">보험증권번호, 단체명, 피보험자번호, 이름으로 구성된 테이블입니다.</span></caption>
+							<colgroup>
+								<col style="width: 22%">
+								<col style="width: 28%">
+								<col style="width: 22%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">보험증권번호</th>
+									<td>0001575</td>
+									<th scope="row">단체명</th>
+									<td>진방스틸코리아(주)</td>
+								</tr>																													
+								<tr>
+									<th scope="row">피보험자번호</th>
+									<td>000001</td>
+									<th scope="row">이름</th>
+									<td>인*형</td>
+								</tr>									
+							</tbody>
+						</table>
+					</div>
+					<div class="ut-tbl a mt25">
+						<table class="tbform" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">지급내역 상세보기</span><span class="cap">퇴직(중간)정산일, 지급일, 지급사유, 은행, 예금주, 계좌번호로 구성된 테이블입니다.</span></caption>
+							<colgroup>
+								<col style="width: 22%">
+								<col style="width: 28%">
+								<col style="width: 22%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">퇴직(중간)정산일</th>
+									<td>2013-12-31</td>
+									<th scope="row">지급일</th>
+									<td>2014-05-15</td>
+								</tr>																													
+								<tr>
+									<th scope="row">지급사유</th>
+									<td colspan="3">퇴직(중간정산)</td>
+								</tr>
+								<tr>
+									<th scope="row">은행</th>
+									<td>농협</td>
+									<th scope="row">예금주</th>
+									<td>인타형</td>
+								</tr>
+								<tr>
+									<th scope="row">계좌번호</th>
+									<td colspan="3">4127****34561258</td>
+								</tr>																								
+							</tbody>
+						</table>
+					</div>					
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pay');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

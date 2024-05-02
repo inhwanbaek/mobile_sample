@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<!--[D] 공지-가로418 .pop-layer.e 타이틀안나옴, 없는 타입 	-->
+	<article class="pop-layer xs e pop-etpMain" id="pop-etpMain">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">공지</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="noti-head">
+						<h2 class="ptit txt-l">교보정보통신 회사 가입자 혜택 안내</h2>
+					</div>
+					<div class="noti-cont pb50">IRP제도는 근로자(퇴직연금제도가입자, 퇴직금제도 근로자, 1년 미만 및 단시간 근로자), 자영업자, 공무원(사학, 군인, 별정우체국연금 등 직영연금 가입자) 모두 가입 가능합니다.</div>
+				</main>
+			</div>  
+			<div class="pbt">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">다시 보지 않기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-etpMain');">닫기</button><!-- [D] 2022-08-19 버튼 클래스 'pop-close'/id 삭제 onclick 추가 -->
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-etpMain');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

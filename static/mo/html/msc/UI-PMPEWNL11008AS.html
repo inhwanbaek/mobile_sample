@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"증명서제출"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc mdw iss" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="hd-box">
+				<h2 class="hd-tit3">지방세세목별과세증명서</h2>
+			</div>
+			<div class="hd-box c">
+				<h3 class="hd-tit4">주민등록번호 표기방법</h3>
+			</div>
+			<div class="sec">
+				<div class="radiobox a">
+					<label class="radio"><input type="radio" name="radio_c0" checked><span class="txt">전체표기</span></label>
+					<label class="radio"><input type="radio" name="radio_c0"><span class="txt">일부표기</span></label>
+				</div>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">과세물건지 주소선택</h3>
+			</div>
+			<div class="sec">
+				<div class="ut-addrs addrs">
+					<span class="input a adr1">
+						<label class="lb blind" for="adr_id1" role="text">과세물건지 주소선택</label>
+						<div class="ibts"><button type="button" class="btn sm b sch">주소찾기</button></div>
+						<input id="adr_id1" type="text" placeholder="주소를 입력해주세요" readonly>
+					</span>
+				</div>
+			</div>
+
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">과세연도</h3>
+			</div>
+			<div class="sec">
+				<div class="select-set">
+					<span class="select a">
+						<label class="lb blind" for="sel_id1">조회 시작일</label>
+						<select id="sel_id1" name="sel_id1">
+							<option>선택 하세요</option>
+							<option>2021</option>
+							<option>2022</option>
+						</select>
+					</span>
+					<i class="ds">~</i>
+					<span class="select a">
+						<!-- [D] 2022-04-25 label의 for 값 수정 -->
+						<label class="lb blind" for="sel_id2">조회 종료일</label>
+						<select id="sel_id2" name="sel_id2">
+							<option>선택 하세요</option>
+							<option>2021</option>
+							<option>2022</option>
+						</select>
+					</span>
+				</div>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">영업장</h3>
+			</div>
+			<div class="sec bp-inputs">
+				<h4 class="hd-tit5">상호</h4>
+				<span class="input a">
+					<label class="lb blind" for="input_id1">상호</label>
+					<input id="input_id1" type="text">
+				</span>
+
+				<h4 class="hd-tit5">영업종목</h4>
+				<span class="input a">
+					<label class="lb blind" for="input-id2">영업종목</label>
+					<input type="text" id="input-id2" readonly>
+					<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+				</span>
+
+				<h4 class="hd-tit5">영업장소</h4>
+				<span class="input a">
+					<label class="lb blind" for="input-id3">영업장소</label>
+					<input type="text" id="input-id3" readonly>
+					<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+				</span>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">과세항목</h3>
+			</div>
+			<div class="sec">
+				<div class="btn-set">
+					<button type="button" class="btn c">과세항목조회</button>
+				</div>
+				<div class="tax-tbl">
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">과세항목조회</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">과세대상</th>
+									<th scope="col">세목</th>
+									<th scope="col">부가년월</th>
+									<th scope="col">기분</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>58소5879(비영업용 배기량1461)</td>
+									<td>자동차세</td>
+									<td>2015.02</td>
+									<td>정기분</td>
+								</tr>
+								<tr>
+									<td>58소5879(비영업용 배기량1461)</td>
+									<td>자동차세</td>
+									<td>2015.02</td>
+									<td>정기분</td>
+								</tr>
+								<tr>
+									<td>58소5879(비영업용 배기량1461)</td>
+									<td>자동차세</td>
+									<td>2015.02</td>
+									<td>정기분</td>
+								</tr>
+								<tr>
+									<td>58소5879(비영업용 배기량1461)</td>
+									<td>자동차세</td>
+									<td>2015.02</td>
+									<td>정기분</td>
+								</tr>
+								<tr>
+									<td>58소5879(비영업용 배기량1461)</td>
+									<td>자동차세</td>
+									<td>2015.02</td>
+									<td>정기분</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b" onclick="confirm_sample_1();">장바구니</button>
+					<button type="button" class="btn rd lg a">제출</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+<script>
+	var confirm_sample_1 = function () {
+		ui.confirm("증명서를 장바구니에 담았습니다.<br>[장바구니]로 이동하시겠습니까?",{ // 컨펌 창 옵션들
+			//tit:"타이틀",
+			ycb:function(){
+				console.log("컨펌확인결과");
+			},
+			ncb:function(){
+				console.log("컨펌취소결과");
+			},
+			ybt:"확인", 
+			nbt:"취소"
+		});
+	}
+</script>
+</body>
+</html>

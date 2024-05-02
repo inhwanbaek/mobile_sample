@@ -1,0 +1,2507 @@
+@charset "utf-8";
+
+/* insurance : 상품 -> 보험 */
+
+
+.page.prd .ut-terms .plbox .plist>li .checkbox .txt{word-break:break-all}
+
+.page.prd.insurance {}
+
+.page.prd .t-b16{font-size:16rem !important;font-weight:700 !important;}
+.page.prd .t-m15{font-size:15rem !important; font-weight:400;}
+.page.prd .t-m14{font-size:14rem !important; font-weight:400;}
+.page.prd .t-m12{font-size:12rem !important; font-weight:400;}
+.page.prd .c555{color:#555555 !important;}
+.page.prd .c80{color:#808080 !important;}
+
+/* 건강/암 카테고리 템플릿 */
+.page.prd.insurance.view-list .hd-tit4{padding:40rem 0 16rem 0;line-height:21rem;}
+.page.prd.insurance.view-list .hd-tit4:first-child{padding-top:32rem;}
+
+.page.prd.insurance.view-list .ut-dtds.c{border-top:1rem solid #242424;}
+.page.prd.insurance.view-list .ut-dtds.c>.dlist>li{padding:12rem 0;}
+.page.prd.insurance.view-list .ut-dtds.c>.dlist>li>.dt,
+.page.prd.insurance.view-list .ut-dtds.c>.dlist>li>.dd{font-size:15rem;line-height:21rem;}
+
+.page.prd.insurance.view-list .ut-dtds.c>.dlist>li>.dd .flex.btw{display:flex;justify-content:space-between;}
+.page.prd.insurance.view-list .ut-dtds.c>.dlist>li>.dd .flex.btw strong{font-weight:600;padding-right:20rem;}
+/* 팝업 - 다이렉트 수집 이용 동의 */
+.poptents.dir-agr .t-txt{margin-top:32rem;font-size:15rem;line-height:21rem;color:#555;}
+.poptents.dir-agr .hd-tit4{padding:40rem 0 16rem;line-height:21rem;}
+.poptents.dir-agr .bullet{margin-bottom:0rem;}
+.poptents.dir-agr ul.bullet.a.lg > li .bullet{font-size:14rem;color:#555;/*margin-left:-10rem;*/}/*블릿 수정 테스트 중*/
+.poptents.dir-agr ul.bullet.a.lg > li .bullet>li+li{margin-top:15rem;}
+.poptents.dir-agr ul.bullet.a.lg > li .bullet>li:first-child{margin-top:8rem;}
+.poptents.dir-agr .blue{color: #2a81eb;}
+
+/* 팝업 - 보장내용 */
+.poptents.ensure .hd-tit3{padding:0;line-height:24rem;margin:32rem 0 16rem;}
+
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td{vertical-align:top;color:#555;line-height:21rem;padding:9rem 8rem;}
+
+.poptents.ensure .ut-tbl.a + .ut-gudbox.a{margin-top:40rem;}
+.poptents.ensure .c-txt{font-size:15rem;color:#555;line-height:21rem;}
+
+.poptents.ensure .tbl-tit{display:flex;justify-content:space-between;margin:24rem 0 8rem;}
+.poptents.ensure .tbl-tit .hd-tit4{padding:0;line-height:21rem;}
+.poptents.ensure .tbl-tit span{padding-top:12rem;color:#767676;font-size:12rem;line-height:18rem;}
+
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td.right{text-align:right;}
+
+.poptents.ensure .ut-tbl.a + .tbl-tit{margin-top:40rem;}
+.poptents.ensure .ut-tbl.a + .bullet.b{margin-top:19rem;}
+.poptents.ensure .ut-tbl.a + .bullet.b > li{font-size:12rem;line-height:18rem;}
+
+/* 토스트팝업-어린이 카테고리 템플릿 */
+.pop-layer.c.child-cate .phd.phd-line2{height:unset;padding:26rem 20rem 28rem;}
+.pop-layer.c.child-cate .phd.phd-line2>.in{padding:0;}
+
+.pop-layer.c.child-cate .ut-form.a{margin-top: 24rem;}
+.pop-layer.c.child-cate .ut-form.a .form>li{/* margin-top:24rem; */}
+.pop-layer.c.child-cate .ut-form.a .form>li:first-child{margin-top:0;}
+.pop-layer.c.child-cate .ut-form.a .form>li > *:nth-child(2){margin-top:8rem;}
+
+
+
+
+/* 보험료계산 결과 */
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2>dl{margin-top: 20rem;}
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2>dl>dd>.dlst{margin-top: 0;}
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 dt{font-size:14rem;color:#242424;font-weight:700;padding-bottom:6rem;}
+
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 dd + dt{margin-top:27rem;}
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 .dlst>li .prc .p{font-size:18rem;}
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 .dlst>li .prc .w{font-size:16rem;}
+
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 .desc{padding-left:0;}
+
+.page.prd.calc.rest .sect.info .pbox .cdt.cdt2 .dlst>li .dl{align-items:center;}
+
+.page.prd.calc.rest .m-top-txt14{margin:-10rem 0 6rem;color:#555555;font-size:14rem;}
+
+/* 보험료계산 결과 어린이 */
+.page.prd.calc.rest .sect.info .pbox.pbox-child .tdt{padding:0 32rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child .tdt > dl dt{font-size:18rem;font-weight:700;color:#242424;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child .tdt > dl dd{font-size:26rem;font-weight:700;line-height:32rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child .tdt > dl dd.blue{color:#2a81eb;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child .tdt dl{display:flex;justify-content:space-between;align-items:center;margin-top:37rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child .cdt{border-top:0;padding-top:0;}
+
+.page.prd.calc.rest .sect.data .opts .cdt .dbox .dds .list{padding:20rem 10rem 20rem 11rem;border-bottom:1rem solid #e6e6e6; margin-bottom:-1rem;}
+.page.prd.calc.rest .sect.data .opts .cdt .dbox .dds .list .flex{display:flex;justify-content:space-between;margin-top:16rem;color:#242424;}
+.page.prd.calc.rest .sect.data .opts .cdt .dbox .dds .list .flex b{font-weight:700;}
+
+.page.prd.calc.rest .sect.data .opts .cdt .dbox .dds .list .t-right{text-align:right;margin-top:16rem;}
+.page.prd.calc.rest .sect.data .opts .cdt .dbox .dds .list .t-right b{font-weight:700;}
+
+.page.prd.calc.rest .sect.info .pbox.pbox-child.pbox-child2 .tdt{padding:0 40rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child.pbox-child2 .tdt .hd-tit3{margin-top:24rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child.pbox-child2 .tdt dl{margin-top:16rem;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child.pbox-child2 .tdt > dl dt{font-weight:normal;}
+.page.prd.calc.rest .sect.info .pbox.pbox-child.pbox-child2 .tdt dl + dl{margin-top:12rem;}
+
+/* 팝업 - 가입 */
+.pop-layer.a.pop-join .pct .poptents .sect{margin-top:32rem;}
+.pop-layer.a.pop-join .pct .poptents .sect+.sect{margin-top:40rem;}
+.pop-layer.a.pop-join .pct .poptents .sect .tit{margin-bottom:16rem;font-size:16rem;line-height:21rem;color:#242424;font-weight:700;}
+
+ul.bullet.b.lg>li{font-size:12rem;line-height: 1.5;}
+
+
+.ut-tbl.a table.tblist>thead>tr>th.bl:first-child{border-left:1rem solid #e9ebef;}
+.poptents.ensure .ut-tbl.a.ver-md table.tblist>tbody>tr>td{vertical-align:middle;}
+
+.poptents.ensure .tblist + .tblist{margin-top:24rem;}
+
+.poptents.ensure .c-txt + .ut-tbl.a{margin-top:24rem;}
+
+/* 상품상세 */
+.page.prd.detail{}
+.page.prd.detail .blue{color:#2a81eb}
+.page.prd.detail .sect.htop{position: relative;border-bottom: #3667cd solid 1rem;margin: 0rem -20rem;padding: 0rem 20rem;}
+.page.prd.detail .sect.htop .bdg{padding: 0rem 0rem 0rem 0rem;}
+.page.prd.detail .sect.htop .bdg{padding: 0rem 0rem 0rem 0rem;}
+.page.prd.detail .sect.htop .bdg .bd{display: inline-flex;align-items: center;vertical-align: middle;height: 23rem;line-height: 1rem;margin: 3rem 4rem 3rem 0rem;padding: 5rem 9rem 5rem;border-radius: 4rem;background-color: #e6753e;color: #ffffff;font-size: 12rem;}
+.page.prd.detail .sect.htop .bdg+.hdt{padding-top:5rem;}
+.page.prd.detail .sect.htop .tbtn{display: flex;justify-content: space-between;padding-top: 10rem;}
+.page.prd.detail .sect.htop .tbtn .bts{margin-right: 0rem;display: flex;}
+.page.prd.detail .sect.htop .tbtn .bts .bt{width: 32rem;height: 32rem;background: no-repeat center;background-size: 32rem auto;padding-right: 32rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem}
+.page.prd.detail .sect.htop .tbtn .bts .bt+.bt{margin-left:4rem;}
+.page.prd.detail .sect.htop .tbtn .bts .bt.fsize{background-image: url(../img/prd/ic_txtsize_2@2x.png);}
+.page.prd.detail .sect.htop .tbtn .bts .bt.fav{background-image: url(../img/prd/ic_bookmark_solid_2@2x.png);}
+.page.prd.detail .sect.htop .tbtn .bts .bt.share {background-image: url(../img/prd/ic_share_solid_2@2x.png);}
+
+.page.prd.detail .sect.htop .hdt{position: relative;display: flex;justify-content: space-between;align-items: center;padding: 13rem 0 15rem 0;}
+.page.prd.detail .sect.htop .hdt .tit{font-size: 18rem;font-weight: 700;word-break: keep-all;}
+.page.prd.detail .sect.htop .hdt .bts{}
+.page.prd.detail .sect.htop .hdt .bts .bt-tog{width:24rem;height: 24rem;background:url(../img/prd/ic_chevron_down@2x.png) no-repeat center;background-size:24rem auto;font-size: 1rem;white-space: nowrap;/* text-indent: 100%; */color: transparent;/* padding-top: 24rem; */overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;}
+.page.prd.detail .sect.visual{margin:0 -20rem 23rem;}
+.page.prd.detail .sect.visual .img{width: 100%;}
+
+.page.prd.detail .ut-bnr-lst.img{margin:24rem 0 18rem;}
+.page.prd.detail .ut-bnr-lst.img a.lk.b{padding-left:84rem;background-image:url(../img/prd/ban-icon_calc@2x.png);background-position:20rem 20rem;background-repeat:no-repeat;background-size: 48rem;}
+.page.prd.detail .ut-bnr-lst.img + .banner-box.bt{margin-top: 24rem;}
+/* 220404 보험상품 */
+.page.prd.detail .ut-slide-play.product .swiper{padding-bottom:54rem;background-color:#f8f8f8;border-radius:0;}
+.page.prd.detail .ut-slide-play.product .swiper .control{left:0;right:0;bottom:0;top:unset;}
+
+.page.prd.detail .cont-sec .img-cont-bg.img-cont1{margin:40rem 10rem 24rem;}
+.page.prd.detail .cont-sec .img-cont-bg.img-cont2{margin:32rem 0 24rem;}
+.page.prd.detail .cont-sec .img-cont-bg.img-cont3{margin:30rem 10rem 40rem;}
+.page.prd.detail .img-banner-wrap + .txt-banner-wrap{margin-top:-16rem;}
+.page.prd.detail .txt-banner-wrap{min-height:90rem;padding:18rem 16rem;margin-bottom:17rem;background-color:#e4f4f7;border-radius:8rem;}
+.page.prd.detail .txt-banner-wrap .s-txt{font-size:12rem;color:#555555;margin-bottom:4rem;}
+.page.prd.detail .txt-banner-wrap .b-txt{font-size:18rem;font-weight:700;}
+
+.page.prd.detail .cont-sec.sec1 .dtbox{margin:28rem 10rem 0;}
+.page.prd.detail .cont-sec.sec1 .dtbox li{position:relative;padding:16rem 73rem 16rem 16rem;border-radius:12rem;background-color:#f9f9f9;}
+.page.prd.detail .cont-sec.sec1 .dtbox li + li{margin-top:16rem;}
+.page.prd.detail .cont-sec.sec1 .dtbox dt{font-size:16rem;font-weight:700;margin-bottom:4rem;}
+.page.prd.detail .cont-sec.sec1 .dtbox dd{font-size:14rem;color:#555;}
+.page.prd.detail .cont-sec.sec1 .dtbox li:after{display:block;content:'';width:42rem;height:42rem;position:absolute;bottom:16rem;right:16rem;background-repeat:no-repeat;background-position:0 0;background-size:100%;}
+.page.prd.detail .cont-sec.sec1 .dtbox li.li01:after{background-image:url(../img/prd/ic73@2x.png);}
+.page.prd.detail .cont-sec.sec1 .dtbox li.li02:after{background-image:url(../img/prd/ic72@2x.png);}
+
+/* 220222 수정 */
+.page.prd.detail .top-sect{background-color:#f8f8f8;margin:0 -20rem 23rem;padding:20rem;}
+.page.prd.detail .top-sect .tit{font-weight:700;}
+.page.prd.detail .top-sect .tit .t1{font-size:1.6em;color:#555;margin-bottom:16rem;}
+.page.prd.detail .top-sect .tit .t2{font-size:2.6em;color:#2a81eb;line-height:1.4;margin-bottom:2rem;}
+.page.prd.detail .top-sect .tit .t3{font-size:1.6em;font-weight:700;}
+
+.page.prd.detail .top-sect .box-area{margin-top:24rem;background-color:#e9eaed;border-radius:16rem;padding:20rem;}
+
+.page.prd.detail .top-sect .box-area dl{display:flex;justify-content:space-between;}
+.page.prd.detail .top-sect .box-area dl dd{text-align:right;}
+.page.prd.detail .top-sect .box-area .btn-set{margin:16rem 0;}
+.btn.ico-calculator::before, .btn.ico-calculator::after{background-image:url(../img/common/ic_calculator@2x.png);width:20rem;height:20rem;min-width:unset;margin-right:8rem;}
+
+.page.prd.detail .top-sect .box-area dl.insurance dt{font-size:1.4em;color:#242424;font-weight:700;min-width:72rem;line-height:17rem;}
+.page.prd.detail .top-sect .box-area dl.insurance dd .t1{font-size:2.2em;font-weight:700;}
+.page.prd.detail .top-sect .box-area dl.insurance dd .t2{margin-top:8rem;font-size:1.2em;}
+.page.prd.detail .top-sect .box-area dl.ensure dt{font-size:1.4em;}
+.page.prd.detail .top-sect .box-area dl.ensure dd{font-size:1.4em;line-height:1.8;}
+.page.prd.detail .top-sect .box-area dl.ensure dd span{display:inline-block;margin-left:5rem;}
+.page.prd.detail .top-sect .blue{color:#2a81eb;}
+.page.prd.detail .top-sect .box-area dl.insurance dt span{font-size:12rem;font-weight:normal;}
+.page.prd.detail .top-sect .box-area > .btn-set.right{position:relative;height:32rem;margin-bottom:0;}
+.page.prd.detail .top-sect .box-area > .btn-set.right > .btn.sm.ico-arrow{position:absolute;right:0;width:202rem;margin:0;}
+.btn.ico-arrow::before, .btn.ico-arrow::after {background-image: url(../img/common/ic_chevron_sm_right_b.png);}
+
+.page.prd.detail .top-sect .dw-btn{text-align:right;margin-top:16rem;font-size:14rem;font-weight:500;margin-right:16rem;}
+.page.prd.detail .top-sect .dw-btn .dwld-btn{height:24rem;display:inline-flex;align-items:center;}
+.page.prd.detail .top-sect .dw-btn .dwld-btn:before{display:inline-block;content:'';background:url(../img/common/ic_doc_down@2x.png) no-repeat 0 0;width:24rem;height:24rem;background-size:100% auto;margin-right:4rem;}
+.page.prd.detail .prd-banner {margin: 32rem 0 42rem;}
+.page.prd.detail .prd-banner > a {display:block}
+
+.page.prd.detail .ut-gudbox > .gctn > p>strong{font-weight:600;}
+.page.prd.detail .ut-gudbox > .gctn .font-red{color:#d65d1c;}
+/* (무)교보실속있는평생든든종신보험 */
+.page.prd.detail .ut-slide-play.product.ca1 .swiper{min-height:120rem !important;}
+
+.page.prd.detail .cont-sec .img-cont-bg{text-align:center;}
+
+.page.prd.detail .cont-sec.sec1 .s-tit{margin:28rem 30rem 19rem;font-size:16rem;font-weight:700;text-align:center;}
+.page.prd.detail .cont-sec.sec1 .s-tit span{font-weight:400;font-size:14rem;}
+.page.prd.detail .cont-sec.sec1 .xs-tit{font-size:14rem;color:#555555;text-align:center;margin-bottom:20rem;}
+.page.prd.detail .cont-sec.sec1 .xs-tit span{color:#767676;}
+
+.page.prd.detail .cont-sec.sec1 .img-cont-bg img{padding:0 30rem;}
+.page.prd.detail .cont-sec.sec1 .img-cont-bg .img-explain{margin-top:-1rem;border:2rem solid #b3d9ff;padding:11rem 20rem;border-radius:8rem;box-shadow:0 3rem 6rem 0 rgba(0, 0, 0, 0.16);text-align:left;}
+.page.prd.detail .cont-sec.sec1 .img-cont-bg .img-explain dt{font-size:14rem;font-weight:700;margin-bottom:4rem;}
+.page.prd.detail .cont-sec.sec1 .img-cont-bg .img-explain dd{font-size:14rem;color:#555;line-height:21rem;}
+
+.page.prd.detail .cont-sec.sec2 .img-cont-bg{margin-top:32rem;}
+.page.prd.detail .cont-sec.sec2 .img-cont-bg img{padding:0 10rem;}
+
+.page.prd.detail .cont-sec.sec3 .txt{font-size:1.6em;line-height:1.6;color:#555555;}
+.page.prd.detail .cont-sec.sec3 .txt.strong{font-weight:600; color:#242424;margin-top: 20rem;}
+.page.prd.detail .cont-sec.sec3 .s-tit{text-align:center;margin:32rem 0 15rem;font-weight:700;font-size:16rem;}
+.page.prd.detail .cont-sec.sec3 .xs-tit{text-align:center;font-size:14rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont{padding:0 10rem;margin-top:24rem;text-align:center;}
+.page.prd.detail .cont-sec.sec3 .img-cont.mlr0{margin-top:24rem;padding:0;}
+.page.prd.detail .cont-sec.sec3 .img-cont.w66 img{padding:0 54rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont > div{text-align:right;color:#808080;font-size:12rem;margin-top:16rem;}
+
+.page.prd.detail .cont-sec.sec3 .img-cont > div.ml5{margin-left:5rem !important;}
+.page.prd.detail .cont-sec.sec3 .box-blue{margin-top:16rem;text-align:center;background-color:#ebf5ff;border-radius:12rem;padding:20rem;font-size:12rem;}
+.page.prd.detail .cont-sec.sec3 .box-blue b{font-size:14rem;font-weight:700;}
+
+.page.prd.detail .cont-sec .box-cont{margin:40rem 10rem;}
+.page.prd.detail .cont-sec .box-cont .box-gray{margin-bottom:16rem;text-align:center;font-size:16rem;}
+.page.prd.detail .cont-sec .box-cont .box-gray strong{font-size:32rem;font-weight:700;}
+.page.prd.detail .cont-sec .box-cont .right{text-align:right;}
+
+.page.prd.detail .cont-sec.sec3 .img-cont + .bullet.b.border-dash{margin-top:30rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + .bullet.b.border-dash li {border-bottom:2rem dashed #c8cbcc;margin:20rem 0 20rem;padding-bottom:20rem;font-size:13rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + .bullet.b.border-dash li:last-child{border-bottom:none;padding-bottom:0;margin-bottom:0;}
+
+.page.prd.detail .cont-sec .box-cont.img-bg{margin:32rem 10rem 0;}
+.page.prd.detail .cont-sec .s-tit + .box-cont.img-bg{margin-top:24rem;}
+.page.prd.detail .cont-sec .box-cont.img-bg .box-gray{padding:20rem 20rem 115rem;background:#f5f5f5 url(../img/prd/img_prod43_2@2x.png) no-repeat center 120rem;background-size:159rem;}
+
+.page.prd.detail .cont-sec .box-cont.img-bg .box-gray .btm-txt{margin-top:60rem;font-size:14rem;}
+
+.page.prd.detail .cont-sec .box-cont.img-bg.person .box-gray{padding-bottom:20rem;background-color:#f5f5f5;background-repeat:no-repeat;}
+.page.prd.detail .cont-sec .box-cont.img-bg.person .box-gray.p2{background-image:url(../img/prd/icon_person02@2x.png);background-position:center 102rem;background-size:39rem 29rem;}
+.page.prd.detail .cont-sec .box-cont.img-bg.person .box-gray.p7{background-image:url(../img/prd/icon_person07@2x.png);background-position:center 100rem;background-size:149rem 29rem;}
+.page.prd.detail .cont-sec .box-cont.img-bg.person .box-gray.p-n{min-height:265rem;padding:32rem 20rem;background-image:url(../img/prd/icon_person-n@2x.png);background-position:center 83rem;background-size:222rem 150rem;}
+
+
+.page.prd.detail .cont-sec .box-cont.img-bg.person .box-gray + .box-gray{margin-top:16rem;}
+.page.prd.detail .cont-sec .box-cont.img-bg.person .right{text-align:right;color: rgb(128, 128, 128);font-size:12rem;margin-top:16rem;}
+
+.page.prd.detail .cont-sec.sec3 .img-cont + ul.bullet.b.lg{margin-top:16rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + ul.bullet.b.lg li{margin-top:8rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + ul.bullet.b li strong{font-weight:600;}
+
+.page.prd.detail .cont-sec.sec3 .img-cont + .icon-bg-list{margin:24rem 10rem 0;}
+.page.prd.detail .cont-sec.sec3 .img-cont + .icon-bg-list li{position:relative;padding-left:77rem;font-size:14rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + .icon-bg-list li + li{margin-top:10rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont + .icon-bg-list li .icon{position:absolute;top:0;left:0;display:block;font-size:12rem;text-align:center;width:69rem;height:23rem;line-height:23rem;border:1rem solid #2a81eb;border-radius:4rem;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.16);}
+.page.prd.detail .cont-sec.sec3 .img-cont + .icon-bg-list li .icon.ln-g{border-color:#00b04a;}
+
+
+.page.prd.detail .cont-sec.sec3 ul.box-list{margin:32rem 10rem 0;padding:0;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li{background-color:#f9f9f9;border-radius:12rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li + li{margin-top:16rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-left > li{padding:16rem 20rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li dt{font-size:16rem;font-weight:700;margin-bottom:10rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li dd,
+.page.prd.detail .cont-sec.sec3 ul.box-list > li dt span{font-size:15rem;color:#555555;font-weight:400;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li dd.flex{display:flex;justify-content:space-between;width:85%;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex{display:flex;flex-wrap:wrap;margin-top:6rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex > li{width: calc(100% / 2);height:40rem;margin-top:8rem;font-size:1rem;color:transparent;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex > li.l01{background:url(../img/prd/img_prod188_3@2x.png) no-repeat 0 0;background-size:121rem 40rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex > li.l02{background:url(../img/prd/img_prod188_4@2x.png) no-repeat 0 0;background-size:121rem 40rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex > li.l03{background:url(../img/prd/img_prod188_5@2x.png) no-repeat 0 0;background-size:121rem 40rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list > li .img-flex > li.l04{background:url(../img/prd/img_prod188_6@2x.png) no-repeat 0 0;background-size:121rem 40rem;}
+
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li{padding:30rem 20rem;text-align:center;font-size:14rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li + li{margin-top:16rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dt{padding-bottom:72rem;margin-bottom:16rem;background:url(../img/prd/img_prod188_bg1@2x.png) no-repeat center bottom;background-size:48rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li.l02 dt{background:url(../img/prd/img_prod188_bg2@2x.png) no-repeat center bottom;background-size:48rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li.l03 dt{background:url(../img/prd/img_prod188_bg3@2x.png) no-repeat center bottom;background-size:48rem;}
+
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd + dd{margin-top:20rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd .service{font-size:1rem;color:transparent;height:44rem;margin-top:12rem;background:url(../img/prd/img_prod188_txt1-1@2x.png) no-repeat center 0;background-size:172rem 44rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd .service.img02{background:url(../img/prd/img_prod188_txt2-1@2x.png) no-repeat center 0;background-size:172rem 44rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd .service.img03{background:url(../img/prd/img_prod188_txt3-1@2x.png) no-repeat center 0;background-size:172rem 44rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd .service.img04{background:url(../img/prd/img_prod188_txt3-2@2x.png) no-repeat center 0;background-size:172rem 44rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center > li dd .service.img05{background:url(../img/prd/img_prod188_txt3-3@2x.png) no-repeat center 0;background-size:172rem 44rem;}
+
+/* 6055 */
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dt{background-position:center top;margin:0 0 16rem 0;padding:0;min-height:48rem;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd{font-size:14rem;color:#242424;}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd + dd{margin-top:24rem;}
+
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img01{background:url(../img/prd/img_prod055_txt1@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img02{background:url(../img/prd/img_prod055_txt2@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img03{background:url(../img/prd/img_prod055_txt3@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img04{background:url(../img/prd/img_prod055_txt4@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img05{background:url(../img/prd/img_prod055_txt5@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img06{background:url(../img/prd/img_prod055_txt6@2x.png) no-repeat center 0;background-size:200rem 44rem}
+.page.prd.detail .cont-sec.sec3 ul.box-list.t-center.p-055 > li dd .service.img07{background:url(../img/prd/img_prod055_txt7@2x.png) no-repeat center 0;background-size:200rem 44rem}
+
+
+.page.prd.detail .cont-sec .balloon-txt-bg{text-align:center;margin:25rem 0;}
+.page.prd.detail .cont-sec .balloon-txt-bg > div{width:300rem;height:67rem;margin:0 auto;background:url(../img/prd/img_bal_@2x.png) no-repeat 0 0;background-size:100%;font-size:14rem;font-weight:700;padding-top:10rem;}
+
+.page.prd.detail .cont-sec ul.bullet.b.lg.mg-cust{margin-top:18rem;}
+.page.prd.detail .cont-sec ul.bullet.b.lg.mg-cust>li{margin-top:9rem;}
+
+
+.page.prd.detail .cont-sec .bg-chk-list{margin-top:30rem;}
+.page.prd.detail .cont-sec .bg-chk-list li+li{margin-top:10rem;}
+.page.prd.detail .cont-sec .bg-chk-list li{border:1rem solid #242424;border-radius:8rem;}
+.page.prd.detail .cont-sec .bg-chk-list li div{min-height:58rem;padding:8rem 12rem 12rem 46rem;background:#f1f4fd url(../img/prd/bg-chk.png) no-repeat 25rem 10rem;background-size:12rem 9rem;border:4rem solid #fff;border-width:4rem 4rem 0 0;border-radius:8rem;font-size:14rem;}
+.page.prd.detail .cont-sec .bg-chk-list li div strong{display:block;font-size:14rem;font-weight:700;}
+
+.page.prd.detail .cont-sec .bg-chk-list.type2{margin-top:40rem;}
+.page.prd.detail .cont-sec .bg-chk-list.type2 li+li{margin-top:10rem;}
+.page.prd.detail .cont-sec .bg-chk-list.type2 li{border:1.2rem solid #242424;border-radius:8rem;}
+.page.prd.detail .cont-sec .bg-chk-list.type2 li dl{min-height:58rem;padding:16rem 30rem 20rem 40rem;background:#f1f4fd url(../img/prd/bg-chk.png) no-repeat 20rem 22rem;background-size:12rem 9rem;border:4rem solid #fff;border-width:4rem 4rem 0 0;border-radius:8rem;font: var(--font16);}
+.page.prd.detail .cont-sec .bg-chk-list.type2 li dl > dt{font-size:16rem;font-weight:600;color:#242424;margin-bottom:4rem;}
+.page.prd.detail .cont-sec .bg-chk-list.type2 li dl > dd{font-size:14rem;color:#555555;line-height:21rem;}
+
+
+.page.prd.detail .cont-sec.sec3 .img-cont-bg img{padding:0 10rem 0 30rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont-bg .img-explain{position:relative;top:-4rem;border:1rem solid #e6753e;background-color:#fff;padding:11rem 20rem;border-radius:8rem;box-shadow:0 3rem 6rem 0 rgba(0, 0, 0, 0.16);text-align:left;}
+.page.prd.detail .cont-sec.sec3 .img-cont-bg .img-explain dt{font-size:14rem;font-weight:700;margin-bottom:4rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont-bg .img-explain dd{font-size:14rem;color:#555;line-height:21rem;}
+.page.prd.detail .cont-sec.sec3 .img-cont-bg .img-explain strong{font-size:14rem;font-weight:700;}
+
+.page.prd.detail .cont-sec.sec3 .img-cont-bg.cont-bt2 img{padding:0 10rem 0 15rem;}
+.page.prd.detail .cont-sec.sec3 .ut-balloon.top >.ball{bottom:-30rem;}
+.page.prd.detail .cont-sec.sec3 .ut-balloon.left >.ball{left:20rem;}
+
+.page.prd.detail .cont-sec.sec3 .cont-bg{margin-top:24rem;padding-top:135rem;font-size:18rem;font-weight:700;text-align:center;
+background:url(../img/prd/Ellipse_561@2x.png) no-repeat center 0;background-size:120rem;;}
+
+.page.prd.detail .cont-sec .box-blue-call{position:relative;border-radius:8rem;background-color:#f2f7fa;padding:100rem 20rem 20rem;text-align:center;}
+.page.prd.detail .cont-sec .box-blue-call:before{position:absolute;top:20rem;left:50%;transform:translate(-50%, 0);display:block;content:'';width:64rem;height:64rem;background:#ffffff url(../img/prd/ic_complete_gift@2x.png) no-repeat center center;background-size:48rem;;border-radius:50%;}
+.page.prd.detail .cont-sec .box-blue-call .t-tit{font-size:14rem;font-weight:700;color:#121c72}
+.page.prd.detail .cont-sec .box-blue-call .t-call{margin:12rem 0 24rem;color:#555555;font-size:14rem;}
+.page.prd.detail .cont-sec .box-blue-call .p-star{color:#767676;margin-top:4rem;font-size:12rem;}
+.page.prd.detail .cont-sec .box-blue-call .p-star span{position:relative;top:-2rem;display:inline-block;width:7rem;height:7rem;padding-right:12rem;background: url(../img/common/bul_star.png) no-repeat 0 0;background-size: 7px 7px;}
+
+
+.page.prd.detail .cont-sec .call-numb-list li{position:relative;padding:0 10rem 0 72rem;}
+.page.prd.detail .cont-sec .call-numb-list li:before{position:absolute;top:0;left:10rem;display:block;content:'';width:48rem;height:48rem;background:#ffffff url(../img/prd/img_avatar_1@2x.png) no-repeat 0 0;background-size:48rem;border-radius:50%;overflow:hidden;}
+.page.prd.detail .cont-sec .call-numb-list li.bg:before{background-color:#555555;}
+.page.prd.detail .cont-sec .call-numb-list li > div{padding:0 0 14rem;border-bottom:1rem solid #e5e5e5;font-size:15rem;font-weight:700;color:#555555;}
+.page.prd.detail .cont-sec .call-numb-list li > div .blue-link-txt{display:block;margin-top:12rem;font-weight:400;color:#2a81eb;}
+.page.prd.detail .cont-sec .call-numb-list li + li{margin-top:10rem;}
+
+
+.page.prd.detail .cont-sec.sec4 .img-account{margin:16rem 10rem 0;}
+.page.prd.detail .cont-sec.sec4 .img-account dt{padding-left:16rem;font-size:14rem;color:#d77b4b;background:url(../img/prd/icon_ring@2x.png) no-repeat 0 4rem;background-size:12rem;}
+.page.prd.detail .cont-sec.sec4 .img-account dd{font-size:14rem;margin-top:4rem;}
+.page.prd.detail .cont-sec.sec4 .img-account  + .img-cont-sm{text-align:center;margin-top:16rem;}
+.page.prd.detail .cont-sec.sec4 .img-account dd + dt{margin-top:16rem;}
+
+/* 상품상세 말풍선 추가 */
+.page.prd.detail .cont-sec .tit.balloon + .ut-balloon.top >.ball{bottom:52rem;}
+.page.prd.detail .img-banner-wrap .ut-balloon.top >.ball{bottom:93rem;font-weight:400;}
+
+/* .page.prd.detail .cont-sec .tit.balloon.bt86 + .ut-balloon.top >.ball{bottom:86rem;} */
+
+.page.prd.detail .cont-sec .s-tit.balloon + .ut-balloon.top >.ball{bottom:45rem;}
+.page.prd.detail .cont-sec .s-tit.balloon + .ut-balloon.left >.ball{left:70rem;}
+
+.page.prd.detail .ut-tabs.c{margin-bottom:60rem;}
+
+.page.prd.detail .cont-sec{color:#242424;margin-top:60rem;}
+.page.prd.detail .cont-sec:first-child{margin-top:0;}
+
+.page.prd.detail .tab-area{margin-bottom:40rem;}
+
+.page.prd.detail .cont-sec .tit{margin-bottom:16rem;font-size: 2.2em;/* font-size: 22rem; */font-weight:700;}
+.page.prd.detail .cont-sec .txt{/* font-size:16rem; */font-size: 1.6em;line-height: 1.4;}
+.page.prd.detail .cont-sec .img.type1{margin-top:24rem;text-align:center;}
+.page.prd.detail .cont-sec .img.type2{margin-top:32rem;text-align:center;}
+.page.prd.detail .cont-sec ul.bullet.b.lg>li{margin-top:16rem;/*font-size: 12rem;*/font-size:1.2em;line-height: 1.5;}
+
+.page.prd.detail .ut-gudbox{margin:32rem 0;}
+.page.prd.detail .ut-gudbox.a .gtit{font-size:1.4em;}
+
+.page.prd.detail .cont-sec + .btn-set{margin-top:35rem;}
+
+.page.prd.detail .img-banner-wrap{display:flex;font-weight:700;line-height:21rem;}
+.page.prd.detail .img-banner-wrap .img-banner{width:100%;border-radius:16rem;background-color:#f5f5f5;}
+
+/* 상품상세 mo 하단 */
+/* 수정 전 */
+.page.prd.detail .img-banner-wrap{display:flex;font-weight:700;line-height:21rem;}
+.page.prd.detail .img-banner-wrap .img-banner{width:100%;border-radius:16rem;background-color:#f5f5f5;}
+
+.page.prd.detail .img-banner-wrap.gray{font-size:16rem;margin:0 -9rem 40rem;}
+.page.prd.detail .img-banner-wrap.gray .img-banner{position:relative;padding:116rem 20rem 20rem;margin:0 9rem;}
+.page.prd.detail .img-banner-wrap.gray .img-banner:after{content:"";display:block;position:absolute;top:20rem;left:50%;}
+.page.prd.detail .img-banner-wrap.gray .img-banner.ban1:after{background:url(../img/prd/img_thumbnail1@2x.png) no-repeat 0 0;background-size:110rem 80rem;width:110rem;height:80rem;transform:translate(-50%, 0);}
+.page.prd.detail .img-banner-wrap.gray .img-banner.ban2:after{background:url(../img/prd/img_thumbnail2@2x.png) no-repeat 0 0;background-size:110rem 80rem;width:110rem;height:80rem;transform:translate(-50%, 0);}
+
+.page.prd.detail .img-banner-wrap.color{font-size:14rem;margin:0 -8rem 24rem;}
+.page.prd.detail .img-banner-wrap.color .img-banner{position:relative;padding:20rem 20rem 33rem 20rem;margin:0 8rem;}
+.page.prd.detail .img-banner-wrap.color .img-banner:after{content:"";display:block;position:absolute;bottom:8rem;right:12rem;width:32rem;height:32rem;}
+.page.prd.detail .img-banner-wrap.color .img-banner.blue{background:#ebf5ff;color:#242424;}
+.page.prd.detail .img-banner-wrap.color .img-banner.blue:after{background:url(../img/prd/ic_doubleheart@2x.png) no-repeat 0 0;background-size:32rem;}
+.page.prd.detail .img-banner-wrap.color .img-banner.green{background:#e4f5f7;}
+.page.prd.detail .img-banner-wrap.color .img-banner.green:after{background:url(../img/prd/ic_double_triangle@2x.png) no-repeat 0 0;background-size:32rem;}
+
+/* 상품상세 mo 하단 수정 */
+.page.prd.detail .additional-service{display:flex;flex-wrap:wrap;font-size:14rem;margin:-9rem -8rem 16rem;font-weight:600;}
+.page.prd.detail .additional-service .img-banner{margin:9rem 8rem;width:calc(50% - 20rem);}
+.page.prd.detail .additional-service .img-banner a.box{display:block;position:relative;min-height:90rem;height:100%;padding:20rem;border-radius: 16px;}
+.page.prd.detail .additional-service .img-banner a.box:after{content:"";display:block;position:absolute;bottom:8rem;right:12rem;width:32rem;height:32rem;background-repeat:no-repeat;background-position:0 0;background-size:32rem;}
+.page.prd.detail .additional-service .img-banner.bn1 a.box{background:#ebf5ff;}
+.page.prd.detail .additional-service .img-banner.bn2 a.box{background:#e4f5f7;}
+.page.prd.detail .additional-service .img-banner.bn3 a.box{background:#fcf2e8;}
+.page.prd.detail .additional-service .img-banner.bn4 a.box{background:#e4f5f7;}
+.page.prd.detail .additional-service .img-banner.bn5 a.box{background:#e4f5eb;}
+.page.prd.detail .additional-service .img-banner.bn6 a.box{background:#e6e8ff;}
+.page.prd.detail .additional-service .img-banner.bn7 a.box{background:#f0f2f5;}
+.page.prd.detail .additional-service .img-banner.bn8 a.box{background:#f0f2f5;}
+.page.prd.detail .additional-service .img-banner.bn9 a.box{background:#fcf2e8;}
+.page.prd.detail .additional-service .img-banner.bn10 a.box{background:#e4f5eb;}
+.page.prd.detail .additional-service .img-banner.bn11 a.box{background:#e4f5f7;}
+.page.prd.detail .additional-service .img-banner.bn12 a.box{background:#e4f5f7;}
+.page.prd.detail .additional-service .img-banner.bn1 a.box:after{background-image:url(../img/prd/additional_ic_01@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn2 a.box:after{background-image:url(../img/prd/additional_ic_02@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn3 a.box:after{background-image:url(../img/prd/additional_ic_12@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn4 a.box:after{background-image:url(../img/prd/additional_ic_03@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn5 a.box:after{background-image:url(../img/prd/additional_ic_09@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn6 a.box:after{background-image:url(../img/prd/additional_ic_04@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn7 a.box:after{background-image:url(../img/prd/additional_ic_06@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn8 a.box:after{background-image:url(../img/prd/additional_ic_07@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn9 a.box:after{background-image:url(../img/prd/additional_ic_08@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn10 a.box:after{background-image:url(../img/prd/additional_ic_05@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn11 a.box:after{background-image:url(../img/prd/additional_ic_11@2x.png);}
+.page.prd.detail .additional-service .img-banner.bn12 a.box:after{background-image:url(../img/prd/additional_ic_10@2x.png);}
+
+
+.page.prd.detail .additional-service .ut-balloon.top >.ball{bottom:90rem;}
+.page.prd.detail .additional-service .ut-balloon.left >.ball{left:40rem;}
+
+.banner-box.additional .ut-bnr-lst > li + li{margin-top:0;}
+.page.prd.detail .banner-box.additional .ut-bnr-lst.img{margin:0;}
+
+
+.page.prd.detail .box-gray{margin-top:32rem;padding:31rem 23rem;background-color:#f5f5f5;border-radius:8rem;}
+.page.prd.detail .box-gray > dt{text-align:center;font-size:18rem;font-weight:700;line-height:24rem;color:#242424;margin-bottom:24rem;}
+.page.prd.detail .box-gray > dd{color:#555;}
+.page.prd.detail .box-gray > dd .img-list{display:flex;margin:0 -8rem;}
+.page.prd.detail .box-gray > dd .img-list li{position:relative;width:100%;text-align:center;padding:92rem 8rem 0;}
+.page.prd.detail .box-gray > dd .img-list li:after{display:block;content:"";position:absolute;top:0;left:50%;width:80rem;transform:translate(-40rem, 0);height:80rem;background:#fff url(../img/prd/ic_cancer@2x.png) no-repeat center center;background-size:54rem;border-radius:100%;}
+.page.prd.detail .box-gray > dd .img-list li.brain:after{background:#fff url(../img/prd/ic_brain@2x.png) no-repeat center center;background-size:54rem;}
+.page.prd.detail .box-gray > dd .img-list li.heart:after{background:#fff url(../img/prd/ic_heart2@2x.png) no-repeat center center;background-size:54rem;}
+
+/* 결과공유하기 추가 */
+.page.prd.detail .sect.shar{ margin-top: 10rem; }
+.page.prd.detail .sect.shar .hdt{ margin-bottom: 16rem; }
+.page.prd.detail .sect.shar .hdt .tit{ font-size: 16rem; font-weight: 700; }
+.page.prd.detail .sect.shar .slst{ display: flex; justify-content: center; padding: 0rem 20rem; }
+.page.prd.detail .sect.shar .slst>li{ margin: 0rem 16rem 22rem; }
+.page.prd.detail .sect.shar .slst>li .bt{width:42rem; height:42rem; background: no-repeat center; background-size:42rem auto; padding-right: 42rem; color: transparent; font-size:1rem; white-space: nowrap; overflow:hidden; display:inline-block; vertical-align:middle; content:''; margin: 0rem 0rem 0rem 0rem}
+.page.prd.detail .sect.shar .slst>li.kao .bt{background-image: url(../img/prd/ic_kakao_solid@2x.png);}
+.page.prd.detail .sect.shar .slst>li.sms .bt{background-image: url(../img/prd/ic_message_solid@2x.png);}
+.page.prd.detail .sect.shar .slst>li.eml .bt{background-image: url(../img/prd/ic_email_solid@2x.png);}
+.page.prd.detail .sect.shar .slst>li.fav .bt{background-image: url(../img/prd/ic_bookmark_solid@2x.png);}
+
+.page.prd.detail .sect.shar .slst>li.share .bt {background-image: url(../img/prd/ic_share_solid@2x.png);}
+.poptents.ensure .tbl-tit-right{text-align:right;margin:16rem 0 8rem}
+.poptents.ensure .tbl-tit-right span{color:#767676;font-size:12rem;line-height:18rem;}
+
+.poptents.ensure .hd-tit4{padding:0;line-height:21rem;margin-bottom:16rem;}
+.poptents.ensure .hd-tit3 + .hd-tit4{margin-top:24rem;}
+.poptents.ensure .ut-tbl.a + .hd-tit4{margin-top:40rem;}
+
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td.ver-md{vertical-align:middle;}
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td.tl-left{text-align:left;}
+
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td > span{display:inline-block;font-size:12rem;line-height:18rem;color:#767676;margin-top:10rem;}
+
+
+.poptents.ensure .ut-tbl.a .tbform td span{display:inline-block;font-size:12rem;line-height:18rem;color:#767676;margin-top:10rem;}
+.poptents.ensure .ut-tbl.a .tbform td .bullet{margin-bottom:10rem}
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td .bullet{margin-bottom:10rem}
+.poptents.ensure .ut-tbl.a table.tblist>tbody>tr>td .bullet + span{margin-top:0;}
+
+.poptents.ensure .hd-tit3 > span{font-weight:300;}
+.poptents.ensure .sec-wrap{margin:40rem 24rem 0 20rem;}
+.poptents.ensure .sec-wrap .hd-tit4{margin-left:-20rem;padding-bottom:24rem;}
+.poptents.ensure .sec-wrap > img {padding-bottom:24rem;}
+.poptents.ensure .sec-wrap > .txt-15{font-size:15rem;line-height:21rem;color:#555;}
+.poptents.ensure .sec-wrap > .txt-12{margin-top:11rem;font-size:12rem;line-height:18rem;color:#767676;}
+.poptents.ensure .sec-wrap > .txt-12 > span{font-size:16rem;}
+
+
+/* 지급사례 목록 전체 수정 */
+.page.prd.payment .sec-top{margin:32rem 0;}
+.page.prd.payment .sec-top > .txt-tit{font-size:22rem;line-height:32rem;color:#242424;font-weight:700;}
+.page.prd.payment .sec-top > .txt-cont{margin-top:16rem;font-size:15rem;line-height:21rem;color:#242424;}
+.page.prd.payment .sec-top > .select{margin-top:24rem;}
+
+.page.prd.payment .sec-list .payment-list{margin:16rem 0 34rem;}
+.page.prd.payment .sec-list .payment-list li + li{margin-top:16rem;}
+.page.prd.payment .sec-list .payment-list li > a.box{display:block;border-radius:16rem;background-color:#f5f5f5;}
+.page.prd.payment .sec-list .payment-list li > a.box .pic{background-color:#fff;width:100%;height:180rem;text-align:center;overflow:hidden;text-align:center;border:1rem solid #f5f5f5;border-radius:16rem 16rem 0 0;}
+.page.prd.payment .sec-list .payment-list li > a.box .pic > img{padding-top:8rem;height:168rem;width:auto;max-width:unset;}
+.page.prd.payment .sec-list .payment-list li > a.box .txt-area{padding:30rem 20rem 45rem 20rem;}
+.page.prd.payment .sec-list .payment-list li > a.box .pic + .txt-area{padding-top:20rem;}
+.page.prd.payment .sec-list .payment-list li > a.box .txt-area .tit{font-size:18rem;line-height:24rem;font-weight:600;overflow:hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.page.prd.payment .sec-list .payment-list li > a.box .txt-area .txt{margin:8rem 0 0;font-size:14rem;line-height:21rem;color:#555555;font-weight:normal;overflow:hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+
+.page.prd.payment .sec-list .ut-more{margin-bottom:20rem;}
+
+.page.prd.calc .sect.prds .pbox .dise>li .pic:before{display:block;content:"";position:absolute;top:50%;left:50%;width:54rem;height:54rem;transform:translate(-50%,-50%);}
+.page.prd.calc .sect.prds .pbox .dise>li .pic.pic1:before{background:url(../img/dise/ic_cancer@2x.png);background-size:100%;width:80rem;height:80rem}
+.page.prd.calc .sect.prds .pbox .dise>li .pic.pic2:before{background:url(../img/dise/ic_brain@2x.png);background-size:54rem;}
+.page.prd.calc .sect.prds .pbox .dise>li .pic.pic3:before{background:url(../img/dise/ic_heart@2x.png);background-size:54rem;}
+
+
+/* 지급사례 상세페이지 전체수정 */
+.page.prd.payment.detail .sect.htop{border:none;}
+.page.prd.payment.detail .sect.htop .tbtn{justify-content:flex-end;}
+
+.page.prd.payment.detail .sect.cont .board{margin-top:8rem;color:#555;}
+.page.prd.payment.detail .sect.cont .board .title .txt-area{margin-top:8rem;font-size:1.4em;font-weight:600;}
+.page.prd.payment.detail .sect.cont .board .title .date{margin-top:24rem;font-size:1.4em;}
+
+.page.prd.payment.detail .ut-tbl.b .tbform tbody tr:first-child th,
+.page.prd.payment.detail .ut-tbl.b .tbform tbody tr:first-child td{border-color:#cccccc;padding-top:24rem;}
+.page.prd.payment.detail .ut-tbl.b .tbform tbody th,.page.prd.payment.detail .ut-tbl.b .tbform tbody td{font-size:1.5em;}
+.page.prd.payment.detail .ut-tbl.b table.tl-right>tbody>tr>td{text-align:right;}
+
+.page.prd.payment.detail .sect.cont .board .contents{margin-top:24rem;}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap{margin-top:40rem; }
+.page.prd.payment.detail .sect.cont .board .txt-wrap .sec{font-size:1.5em;}
+.page.prd.payment.detail .sect.cont .board .txt-wrap .sec + .sec{margin-top:16rem;}
+.page.prd.payment.detail .sect.cont .board .txt-wrap .txt-tit{margin-bottom:40rem;font-weight:600;color:#2eab2e;font-size:1.6em;text-align:center;line-height:1.4}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.bg{margin-top:29rem;padding-top:252rem;background:url(../img/prd/img_keyvisual_payment@2x.png) no-repeat center top;background-size:320rem 220rem;}
+.page.prd.payment.detail .sect.cont .board .txt-wrap .txt-tit.bg{padding-top:58rem;background-repeat:no-repeat;background-position:center top;background-size:50rem 50rem;}
+.page.prd.payment.detail .sect.cont .board .txt-wrap .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m11@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m12@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg2.bg{background-image:url(../img/prd/img_keyvisual_payment2@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg2 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m21@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg2 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m22@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg3.bg{background-image:url(../img/prd/img_keyvisual_payment3@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg3 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m31@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg3 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m32@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg4.bg{background-image:url(../img/prd/img_keyvisual_payment4@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg4 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m41@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg4 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m42@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg5.bg{background-image:url(../img/prd/img_keyvisual_payment5@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg5 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m51@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg5 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m52@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg6.bg{background-image:url(../img/prd/img_keyvisual_payment6@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg6 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m61@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg6 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m62@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg7.bg{background-image:url(../img/prd/img_keyvisual_payment7@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg7 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m71@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg7 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m72@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg8.bg{background-image:url(../img/prd/img_keyvisual_payment8@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg8 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m81@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg8 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m82@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg9.bg{background-image:url(../img/prd/img_keyvisual_payment9@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg9 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m91@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg9 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m92@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg10.bg{background-image:url(../img/prd/img_keyvisual_payment10@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg10 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m101@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg10 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m102@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg11.bg{background-image:url(../img/prd/img_keyvisual_payment11@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg11 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m111@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg11 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m112@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg12.bg{background-image:url(../img/prd/img_keyvisual_payment12@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg12 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m121@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg12 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m122@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg13.bg{background-image:url(../img/prd/img_keyvisual_payment13@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg13 .txt-tit.bg.bg-img1{background-image:url(../img/prd/img_small_m131@2x.png);}
+.page.prd.payment.detail .sect.cont .board .txt-wrap.pg13 .txt-tit.bg.bg-img2{background-image:url(../img/prd/img_small_m132@2x.png);}
+
+.page.prd.payment.detail .sect.cont .board .txt-wrap .sec.last-bg:after{position:relative;top:4rem;left:3rem;display:inline-block;content:'';width:16rem;height:18rem;background:url(../img/prd/last-bg-icon@2x.png) no-repeat 0 0;background-size:16rem 18rem;}
+
+.page.prd.payment.detail .blue{color: #2a81eb;}
+
+.page.prd.payment.detail .hashtag{margin:24rem 0 40rem;font-size:1.4em;}
+.page.prd.payment.detail .tail{font-size:1.5em;}
+
+.page.prd.payment.detail .ut-bnr-ico{margin-top:48rem;}
+
+.page.prd.payment.detail .board-btm{margin-top:80rem;}
+.page.prd.payment.detail .board-btm .hd-tit4{padding:0;line-height:21rem;margin-bottom:16rem;}
+
+/* 슬라이드 */
+.page.prd.payment.detail .invest-sect .ut-slide-dot{position:relative;margin:0 -20rem;}
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li{background-color:#f5f5f5;border-radius:16rem;overflow:hidden;}
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li .pic{width:100%;height:175rem;overflow:hidden;text-align:center;border:1rem solid #f5f5f5;border-radius:16rem 16rem 0 0;background-color:#fff;}
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li .pic img{padding-top:8rem;height:160rem;width:auto;max-width:unset;}
+
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li .txt-area{height:160rem;padding:20rem 30rem 20rem 20rem ;position:relative;}
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li .txt-area .tit{font-size:18rem;line-height:24rem;font-weight:600;overflow:hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.page.prd.payment.detail .invest-sect .ut-slide-dot .slide>li .txt-area .txt{margin:8rem 0 0;font-size:14rem;line-height:21rem;color:#555555;font-weight:normal;overflow:hidden;text-overflow: ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+
+
+
+
+/* 보험상품권 */
+
+.page.prd.gtoken{font-size:15rem;color:#555;line-height:21rem;}
+.page.prd.gtoken .hd-tit4{padding:40rem 0 16rem;line-height:21rem;font-size:18rem;}
+.page.prd.gtoken .blue{color:#2a81eb;}
+.page.prd.gtoken .hd-tit4.sm{padding-bottom:6rem;font-size:16rem;}
+.page.prd.gtoken .top-area + .hd-tit4{padding-top:32rem;}
+.page.prd.gtoken .top-area{margin-top:32rem;padding-bottom:252rem;}
+.page.prd.gtoken .top-area.type1{background: url(../img/prd/gtoken_bg_01@2x.png) no-repeat center bottom;background-size:300rem 192rem;}
+.page.prd.gtoken .top-area.type1 > strong{display:block;font-size:14rem;color:#242424;font-weight:700;margin-bottom:8rem;}
+.page.prd.gtoken .top-area .hd-tit2{line-height:32rem;padding-bottom:16rem;}
+.page.prd.gtoken .top-area .txt{line-height:21rem;}
+.page.prd.gtoken .btn-set.vt .btn+.btn {margin-top:8rem;}
+
+.page.prd.gtoken .btn-set .btn .call{font-size:15rem;line-height:24rem;}
+.page.prd.gtoken .btn-set .btn .call:after{content:'';display:inline-block;width:18rem;height:18rem;margin-left:13rem;background:url(../img/prd/btn_ic_call@2x.png) no-repeat 0 0;background-size:18rem;vertical-align:middle;position:relative;top:-1rem;}
+
+.page.prd.gtoken ul.bullet.c>li{color:#555;}
+.page.prd.gtoken ul.bullet.c>li .inner-bullet{font-size:12rem;color:#767676;line-height:18rem;display:block;text-indent:-8rem;margin-top:8rem;}
+.page.prd.gtoken ul.bullet.c>li .inner-bullet:before{content:'※';display:inline-block;font-size:16rem;margin-right:6rem;}
+
+.page.prd.gtoken .list-type01{margin-bottom:40rem;}
+.page.prd.gtoken .list-type01 li{position:relative;border-radius:12rem;padding:20rem;border:1px solid #e9eaed}
+.page.prd.gtoken .list-type01 li + li{margin-top:32rem;}
+.page.prd.gtoken .list-type01 li + li:before{position:absolute;top:-24rem;left:50%;content: "";display:block;width:16rem;height:16rem;background-color:#f5f5f5;border-radius:50%;transform:translate(-50%, 0);}
+.page.prd.gtoken .list-type01 li + li:after{position:absolute;top:-22rem;left:50%;content: "";display:block;border: 1rem solid #242424;width:5rem;height:5rem;border-width: 0 0 1rem 1rem;transform: rotate(-45deg) translate(-50%, 0);}
+.page.prd.gtoken .list-type01 li dt{font-weight:700;font-size:16rem;line-height:21rem;margin-bottom:8rem;}
+.page.prd.gtoken .list-type01 li dd{color:#555;font-size:15rem;line-height:21rem;}
+
+.page.prd.gtoken .list-type02{display:flex;justify-content:space-between;margin:0 -8rem;}
+.page.prd.gtoken .list-type02 li{margin:0 8rem;border:1px solid #e9eaed;width:33.3%;text-align:center;border-radius:8rem;}
+.page.prd.gtoken .list-type02 li > button{display:block;width:100%;padding:61rem 0 20rem;}
+.page.prd.gtoken .list-type02 + .list-type02{margin-top:16rem;}
+.page.prd.gtoken .list-type02 li.naver{background:url(../img/prd/naver_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+.page.prd.gtoken .list-type02 li.gmarket{background:url(../img/prd/gmarket_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+.page.prd.gtoken .list-type02 li.st11{background:url(../img/prd/11st_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+.page.prd.gtoken .list-type02 li.auction{background:url(../img/prd/auction_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+.page.prd.gtoken .list-type02 li.wemakep{background:url(../img/prd/wemakeprice_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+.page.prd.gtoken .list-type02 li.tmon{background:url(../img/prd/tmon_logo@2x.png) no-repeat 50% 21rem;background-size:68rem 30rem;}
+
+.page.prd.gtoken .ut-gudbox{margin:40rem 0 18rem;}
+
+
+.pct > .page.prd.gtoken{padding:0 20rem 20rem 20rem;}
+.page.prd.gtoken .top-area + .input.a{margin-top:32rem;}
+.page.prd.gtoken .top-area + .input.a .btn{width:68rem;}
+
+.poptents.page.prd.gtoken .bullet {margin-bottom:0;}
+.page.prd.gtoken .top-area.type2{background:url(../img/prd/gtoken_bg_02@2x.png) no-repeat center bottom;background-size:300rem 192rem;}
+
+
+
+
+/* 상품부가서비스 */
+.page.prd.add-service{}
+.page.prd.add-service .top-area.type1{position:relative;margin:24rem 0 32rem;background:#e4eff2;border-radius:8rem;padding:20rem 20rem 140rem;}
+.page.prd.add-service .top-area.type1:after{content:'';display:block;width:120rem;height:120rem;background:url(../img/temp/img_whc_120x120@2x.png) no-repeat 0 0;background-size:120rem;position:absolute;bottom:20rem;right:20rem;}
+
+/* .page.prd.add-service .top-area .hd-tit2{margin-bottom:27rem;} */
+.page.prd.add-service .top-area .bt{width:32rem;height:32rem;background:no-repeat center;background-size:32rem auto;color:transparent;font-size:1rem;white-space:nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin:0rem 0rem 0rem 0rem;}
+.page.prd.add-service .top-area .bt.share{background-image:url(../img/prd/ic_share_solid2@2x.png);position:absolute;top:20rem;right:20rem;}
+
+.page.prd.add-service .app-btn-wrap{margin:16rem -6rem 32rem; text-align: center;}
+.page.prd.add-service .app-btn-wrap .btn{display: block; max-width:180rem;height:unset;min-height:40rem;margin:0 auto;padding:0;border:none;}
+.page.prd.add-service .app-btn-wrap .btn+.btn{margin-top:8rem;}
+
+.page.prd.add-service .list-btn{margin-bottom:40rem;}
+.page.prd.add-service .list-btn li + li{margin-top:16rem;}
+.page.prd.add-service .list-btn li .box-btn{position:relative;display:block;border:1px solid #e9eaed;width:100%;border-radius:8rem;padding:20rem 50rem 20rem 20rem;text-align:left;}
+.page.prd.add-service .list-btn li .box-btn:after{display:block;content:'';width:24rem;height:24rem;position:absolute;top:50%;right:20rem;transform:translate(0, -50%);background:url(../img/prd/ic_chevron_sm@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.add-service .list-btn li .box-btn dt{font-weight:700;font-size:18rem;color:#242424;line-height:24rem;margin-bottom:16rem;}
+.page.prd.add-service .list-btn li .box-btn dd{font-size:15rem;line-height:21rem;color:#555555;}
+
+/* 상품설명 추가 */
+.page.prd.detail .list-btn{margin-bottom:40rem;}
+.page.prd.detail .list-btn li + li{margin-top:16rem;}
+.page.prd.detail .list-btn li .box-btn{position:relative;display:block;border:1px solid #e9eaed;width:100%;border-radius:8rem;padding:20rem 50rem 20rem 20rem;text-align:left;}
+.page.prd.detail .list-btn li .box-btn:after{display:block;content:'';width:24rem;height:24rem;position:absolute;top:50%;right:20rem;transform:translate(0, -50%);background:url(../img/prd/ic_chevron_sm@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.detail .list-btn li .box-btn dt{font-weight:700;font-size:18rem;color:#242424;line-height:24rem;margin-bottom:16rem;}
+.page.prd.detail .list-btn li .box-btn dd{font-size:15rem;line-height:21rem;color:#555555;}
+
+
+.page.prd.add-service.btm{margin-bottom:80rem;}
+
+.page.prd.add-service .top-area.type2{position:relative;padding:48rem 0 60rem;color:#555555;background:url(../img/prd/img_whc_120x120@2x.png) no-repeat right bottom;background-size:120rem;}
+.page.prd.add-service .top-area.type2 .top-btn-area{position:absolute;right:0;top:0;}
+.page.prd.add-service .top-area.type2 .hd-tit2{margin-bottom:10rem;}
+.page.prd.add-service .top-area.type2 .tit{font-size:1.4em;font-weight:700;display:inline-flex;align-items:center;line-height:24rem;}
+.page.prd.add-service .top-area.type2 .tit:before{display:inline-block;width:24rem;height:24rem;content:'';margin-right:5rem;background:url(../img/prd/ic_star@2x.png) no-repeat 0 0;background-size:100%;}
+
+.page.prd.add-service .top-area.type2 .top_cont{margin-top:10rem;font-size:1.5em;line-height:1.4}
+.page.prd.add-service .top-area.type2 .top_cont strong{font-weight:700;}
+
+.page.prd.add-service .sec-wrap{margin-top:32rem;}
+.page.prd.add-service .sec-wrap .hd-tit4{padding:0;margin-bottom:16rem;font-size:1.6em;line-height:1;}
+.page.prd.add-service .sec-wrap .btn-set.vt .btn+.btn{margin-top:8rem;}
+
+.page.prd.add-service .sec-wrap.adds-btn{margin:50rem 0;}
+
+.page.prd.add-service .ut-tabs.a{margin:32rem -20rem;}
+.page.prd.add-service .sec-box .hd-tit2{text-align:center;}
+.page.prd.add-service .sec-box .hd-tit2 + p{margin-top:24rem;font-size:1.5em;line-height:1.5;color:#555;}
+
+.page.prd.add-service .sec-box .hd-tit4{margin-top:40rem;padding:0;font-size:1.6em;}
+.page.prd.add-service .sec-box .ut-slide-dot{margin-top:32rem;}
+.page.prd.add-service .sec-box .ut-slide-dot .slide>li .pic{text-align:center;}
+.page.prd.add-service .sec-box .ut-slide-dot .slide>li .pic .img{width:60%;}
+.page.prd.add-service .sec-box .ut-slide-dot .swiper-container .pagination.swiper-pagination-bullets{height:unset;bottom:0;}
+.page.prd.add-service .sec-box + .sec-box{margin-top:40rem;}
+
+.page.prd.add-service .sec-box .balloon-box-wrap{position:relative;padding:256rem 0 24rem;}
+.page.prd.add-service .sec-box .balloon-box-wrap:before{position:absolute;top:40rem;left:50%;transform:translate(-50%, 0);display:block;content:'';width:300rem;height:192rem;background:url(../img/prd/mask_group@2x.png) no-repeat 0 0;background-size:300rem 192rem;z-index:1;}
+
+.page.prd.add-service .sec-box .balloon-box{padding:12rem 20rem;border:1px solid #e6e6e6;border-radius:8rem;background-color:#fff;position:relative;z-index:10;}
+.page.prd.add-service .sec-box .balloon-box .un-bullet li{font-size:1.5em;line-height:2;color:#555;}
+.page.prd.add-service .sec-box .balloon-box .un-bullet li>.sm-txt{position:relative; margin-left:10rem; padding-left:10rem; font-size: 13rem;}
+.page.prd.add-service .sec-box .balloon-box .un-bullet li>.sm-txt::before{content:""; position:absolute; top:10rem; left:0; width:3rem; height:3rem; background: #555; border-radius: 50%;}
+.page.prd.add-service .sec-box .balloon-box-wrap .ut-balloon.top >.ball{bottom:unset;top:-30rem;}
+
+.page.prd.add-service .sec-box .balloon-box .un-bullet + .bullet{margin-top:10rem;}
+.page.prd.add-service .sec-box .balloon-box .un-bullet + p{font-size:1.5em;margin:8rem 0 6rem;color:#555555;}
+
+.page.prd.add-service .ut-gudbox.b .gtit{margin-top:40rem;font-size:1.4em;}
+.page.prd.add-service .ut-gudbox.b .gctn .bullet + .bullet{margin-top:10rem;}
+
+.page.prd.add-service .s-section{margin-top:32rem;}
+.page.prd.add-service .s-section + .s-section{margin-top:40rem;}
+
+.page.prd.add-service .s-section .balloon-box-wrap2 .ut-balloon.top >.ball{bottom:unset;top:-25rem;}
+.page.prd.add-service .s-section .ut-slide-dot .slide>li .pic .img{width:63%;}
+.page.prd.add-service .s-section .cont-box{margin-top:32rem;border:1px solid #e6e6e6;border-radius:8rem;padding:20rem;}
+.page.prd.add-service .s-section .cont-box .hd-tit4{margin:0 0 8rem;}
+.page.prd.add-service .s-section .cont-box ul.bullet.a.lg > li + li{margin-top:6rem;}
+.page.prd.add-service .s-section .cont-box .bullet + .hd-tit4{margin-top:32rem;}
+.page.prd.add-service .s-section .txt{margin-top:16rem;font-size:1.5em;line-height:1.5;color:#555;}
+
+.page.prd.add-service .s-section .balloon-box-wrap3 .cont-box{margin-top:20rem;}
+.page.prd.add-service .s-section .balloon-box-wrap3 .ut-balloon.top >.ball {bottom:unset;top:-36rem;}
+
+.page.prd.add-service .s-section .balloon-box-wrap4 .img{margin-top:50rem;}
+.page.prd.add-service .s-section .balloon-box-wrap4 .ut-balloon.top >.ball {bottom:unset;top:0;}
+
+.page.prd.add-service .tab-cont-wrap .ut-tabs.c.lg>.menu{margin-top:37rem;}
+
+.page.prd.add-service .s-section.s-section2{margin-top:44rem;}
+.page.prd.add-service .s-section.s-section2 .cont-box{margin-top:24rem;color:#555;}
+.page.prd.add-service .s-section.s-section2 .cont-box + .cont-box{margin-top:16rem;}
+.page.prd.add-service .s-section.s-section2 .ut-balloon.top >.ball{bottom:unset;top:-16rem;}
+
+.page.prd.add-service .s-section.s-section2 .cont-box + .hd-tit3{margin-top:40rem;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box{background-color:#fafafa; padding:30rem 18rem;margin:16rem 10rem 0;border-radius:8rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box ul{display:flex;justify-content:space-between;text-align:center;}
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.cont{width:30%;min-width:62rem;color:#808080;font-size:12rem;padding-top:72rem;background-repeat:no-repeat;background-position:center 0;background-size:48rem;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-line{border-bottom:1rem solid #e6e6e6;margin:16rem 0 32rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul{background-color:#fafafa;padding:30rem 18rem;margin:0 10rem 32rem 10rem;display:flex;justify-content:space-between;text-align:center;border-radius:8rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.cont{width:30%;min-width:62rem;color:#808080;font-size:12rem;padding-top:72rem;background-repeat:no-repeat;background-position:center 0;background-size:48rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.cont.img1{background-image:url(../img/prd/cont-img01@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.cont.img2{background-image:url(../img/prd/cont-img02@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.cont.img3{background-image:url(../img/prd/cont-img03@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.cont.img4{background-image:url(../img/prd/cont-img04@2x.png);}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-line.noline{border-bottom:none;margin-bottom:0;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.arr{width:5%;background:url('../img/prd/ic_step@2x.png') no-repeat center 20rem;background-size:18rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box-line ul li.plus{width:5%;background:url('../img/prd/ic_circle_18@2x.png') no-repeat center 20rem;background-size:18rem;}
+
+
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.arr{width:5%;background:url('../img/prd/ic_step@2x.png') no-repeat center 20rem;background-size:18rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.plus{width:5%;background:url('../img/prd/ic_circle_18@2x.png') no-repeat center 20rem;background-size:18rem;}
+.page.prd.add-service .s-section.s-section2 .bullet li > .bullet{margin:8rem 0 0;}
+.page.prd.add-service .s-section.s-section2 .bullet li span{font-size:12rem;color:#808080;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box.evenly ul{justify-content:space-evenly;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-vt{margin:16rem  10rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box-vt li{position:relative;background-color:#fafafa;padding:20rem;margin-top:26rem;text-align:center;border-radius:8rem;font-size:14rem;color:#555555;}
+.page.prd.add-service .s-section.s-section2 .inr-box-vt li:before{position:absolute;top:-22rem;left:50%;display:block;content:'';width:18rem;height:18rem;background:url('../img/prd/ic_step1@2x.png') no-repeat 0 0;background-size:18rem;transform:translate(-50%, 0);}
+.page.prd.add-service .s-section.s-section2 .inr-box-vt li.plus:before{background:url('../img/prd/ic_circle_18@2x.png') no-repeat 0 0;background-size:18rem;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-vt li:first-child{margin-top:0;}
+.page.prd.add-service .s-section.s-section2 .inr-box-vt li:first-child:before{display:none;}
+
+.page.prd.add-service .s-section.s-section2 .inr-cont{margin-top:16rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont ul.wrap{display:flex;justify-content:space-between;margin:0 10rem}
+.page.prd.add-service .s-section.s-section2 .inr-cont ul.wrap li.cont{width:45%;}
+.page.prd.add-service .s-section.s-section2 .inr-cont ul.wrap li.arr{width:10%;background:url('../img/prd/ic_step@2x.png') no-repeat center 16rem;background-size:18rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont ul.wrap li.cont dt{background:#fafafa;border-radius:8rem;padding:16rem;text-align:center;margin-bottom:15rem;font-size:15rem;color:#555;}
+
+.page.prd.add-service .s-section.s-section2 .inr-cont2{margin-top:20rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap{display:flex;justify-content:center;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap li.cont{width:50%;background:#fafafa;border-radius:8rem;padding:10rem 10rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap li.plus{width:26rem;background:url('../img/prd/ic_circle_18@2x.png') no-repeat center center;background-size:18rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap li.cont dt{margin-bottom:8rem;font-size: 14rem;color:#242424;font-weight:600;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap li.cont dd > ul.bullet.a>li{font-size: 13rem;}
+.page.prd.add-service .s-section.s-section2 .inr-cont2 ul.wrap li.cont dd > ul.bullet.a > li + li{margin-top:6rem;}
+
+.page.prd.add-service .s-section.s-section2 .lnr-cont-vt{margin:16rem 10rem 0;}
+.page.prd.add-service .s-section.s-section2 .lnr-cont-vt ul.wrap+.hd-tit4{margin: 32rem 0 16rem}
+.page.prd.add-service .s-section.s-section2 .lnr-cont-vt ul.wrap > li{position:relative;background-color:#fafafa;padding:20rem;margin-top:26rem;border-radius:8rem;}
+.page.prd.add-service .s-section.s-section2 .lnr-cont-vt ul.wrap > li:first-child{margin-top:0;}
+
+/* .page.prd.add-service .s-section.s-section2 .lnr-cont-vt ul.wrap > li:before{position:absolute;top:-22rem;left:50%;display:block;content:'';width:18rem;height:18rem;background:url('../img/prd/ic_circle_18@2x.png') no-repeat 0 0;background-size:18rem;transform:translate(-50%, 0);}
+.page.prd.add-service .s-section.s-section2 .lnr-cont-vt ul.wrap > li:first-child:before{display:none;} */
+
+.page.prd.add-service .s-section.s-section2 .bullet.c{font-size:1.4em;}
+.page.prd.add-service .s-section.s-section2 .bullet + .bullet.c{margin-top:8rem;}
+
+.page.prd.add-service .s-section.s-section2 .dw-tit{padding-top:104rem;background:url('../img/prd/bg_bic_plus@2x.png') no-repeat center 32rem;background-size:41rem;}
+.page.prd.add-service .s-section.s-section2 .dw-tit + .cont-box{margin-top:16rem;}
+
+.page.prd.add-service .s-section.s-section2 .img-cont-wrap{margin-top:40rem;}
+.page.prd.add-service .s-section.s-section2 .img-cont-wrap .balloon-box-wrap4 .img{margin:42rem 0 24rem;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box-vt.mg20{margin:0 20rem 24rem;}
+
+.page.prd.add-service .s-section.s-section2 .p-txt15{font-size:1.5em;line-height:1.4;color:#555;}
+.page.prd.add-service .s-section.s-section2 .p-txt14{font-size:1.4em;margin:8rem 0 16rem;color:#555;}
+
+.page.prd.add-service .s-section.s-section2 ul.bullet.b.lg-14 li{font-size:14rem;color:#555;}
+
+.page.prd.add-service .s-section.s-section2 .cont-box > .right{text-align:right;font-size:1.5em;color:#242424;padding-top:12rem;}
+
+.page.prd.add-service .s-section.s-section2 .cont-box.gray{color:#242424;border:none;background-color:#f5f5f5;margin:16rem 10rem 0;}
+.page.prd.add-service .s-section.s-section2 .cont-box.gray > .right{color:#555;}
+.page.prd.add-service .s-section.s-section2 .cont-box ul.bullet.not > li{font-size:1.5em;line-height: 1.5;word-break:break-all;}
+.page.prd.add-service .s-section.s-section2 .cont-box.gray .strong{font-weight:600;font-size:16rem;color:#242424;margin-bottom:16rem;}
+
+/* 22-05-31 수정 */
+.page.prd.add-service .s-section > .hd-tit3{margin-top:60rem;}
+.page.prd.add-service .s-section > .hd-tit3 + .cont-box,
+.page.prd.add-service .s-section > .hd-tit3 + span + .cont-box{margin-top:24rem;}
+
+/* 말풍선 */
+.page.prd.add-service .s-section > .hd-tit3.ball-tit{margin-top:80rem;}
+.page.prd.add-service .s-section > .explain{font-size: 15rem;margin-top: 16rem;    border-bottom: 1rem solid #e6e6e6;padding-bottom: 28rem;}
+.bottom30{bottom: 30rem;}
+.page.prd.add-service .s-section.s-section2 .cont-box + .hd-tit3.ball-tit{margin-top:80rem;}
+.page.prd.add-service .s-section .ut-balloon.left >.ball{left:0;}
+.page.prd.add-service .s-section > .hd-tit3.ball-tit + .ut-balloon.top >.ball{bottom:30rem;}
+.page.prd.add-service .s-section.s-section2 > .hd-tit3.ball-tit + .ut-balloon.top >.ball{bottom:30rem;top:unset;}
+.page.prd.add-service .s-section.s-section2 > .hd-tit3.ball-tit + .ut-balloon.top >.ball2{bottom:50rem;}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.ball-tit + .ut-balloon.top >.ball{top:unset;bottom:54rem;}
+
+.page.prd.add-service .s-section.s-section2 .hd-tit4.ball-tit + .ut-balloon.top >.ball{top:-94rem}
+
+/* 박스 라인삭제 */
+.page.prd.add-service .s-section .cont-box.revise{border:none;padding:0;}
+.page.prd.add-service .s-section .cont-box.revise > .bullet.a.lg + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;}
+.page.prd.add-service .s-section .cont-box.revise > .inr-cont + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+.page.prd.add-service .s-section .cont-box.revise > .inr-box-vt + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+.page.prd.add-service .s-section .cont-box.revise > .inr-box.evenly + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+.page.prd.add-service .s-section.s-section2 .cost-tit + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+.page.prd.add-service .s-section.s-section2 .bg-area + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+
+.page.prd.add-service .s-section .cont-box > .bullet.a.lg + .hd-tit4{border-top:1rem solid #e6e6e6;padding-top:32rem;}
+
+.page.prd.add-service .s-section .cont-box > .bullet.a.lg + .hd-tit5{border-top:1rem solid #e6e6e6;padding-top:32rem;margin-top:32rem;}
+.page.prd.add-service .s-section .cont-box > .hd-tit5{margin-bottom:16rem;}
+
+.mt8{margin-top:8rem !important;}
+
+.page.prd.add-service .s-section .cont-box.revise .img-box{display: block; width: 300rem; height:192rem; margin: 24rem auto;}
+.page.prd.add-service .s-section .cont-box.revise .img-box1{ background:url(../img/prd/img_6783_1@2x.png) no-repeat center 0; background-size:300rem 192rem;}
+.page.prd.add-service .s-section .cont-box.revise .img-box2{ background:url(../img/prd/img_6783_2@2x.png) no-repeat center 0; background-size:300rem 192rem;}
+/* .page.prd.add-service .s-section .cont-box.revise .img-box3{width: 300rem; height:192rem; background:url(../img/prd/img_6783_3@2x.png) no-repeat center 0; background-size:300rem 192rem;} */
+
+/* 아이콘 타이틀 */
+.page.prd.add-service .s-section > .hd-tit3.icon-tit{margin-bottom:16rem;padding-left:48rem;line-height:32rem;background:url(../img/prd/tit_ic_01@2x.png) no-repeat 0 0;background-size:32rem;}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit2{background-image:url(../img/prd/tit_ic_02@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit3{background-image:url(../img/prd/tit_ic_03@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit4{background-image:url(../img/prd/tit_ic_04@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit5{background-image:url(../img/prd/tit_ic_05@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit6{background-image:url(../img/prd/tit_ic_06@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit7{background-image:url(../img/prd/tit_ic_07@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit8{background-image:url(../img/prd/tit_ic_08@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit9{background-image:url(../img/prd/tit_ic_09@2x.png)}
+.page.prd.add-service .s-section > .hd-tit3.icon-tit.tit10{background-image:url(../img/prd/tit_ic_10@2x.png)}
+
+.page.prd.add-service .s-section.s-section2 .p-txt15.strong{font-weight:600;margin-top:24rem;color:#242424;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box.evenly{margin:16rem 10rem 0;border-radius:8rem;}
+.page.prd.add-service .s-section.s-section2 .inr-box.evenly ul li.cont.img1{background-image:url(../img/prd/cont-img01@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box.evenly ul li.cont.img5{background-image:url(../img/prd/cont-img05@2x.png);}
+
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.cont.img6{background-image:url(../img/prd/cont-img06@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.cont.img7{background-image:url(../img/prd/cont-img07@2x.png);}
+.page.prd.add-service .s-section.s-section2 .inr-box ul li.cont.img2{background-image:url(../img/prd/cont-img02@2x.png);}
+
+.page.prd.add-service .s-section.s-section2 .cost-tit{font-size:15rem;color:#242424;margin-top:16rem;}
+
+.page.prd.add-service .s-section.s-section2 .cho-list{margin-top:32rem;}
+.page.prd.add-service .s-section.s-section2 .cho-list > li + li{margin-top:32rem;padding-top:32rem;border-top:1rem solid #e6e6e6;}
+.page.prd.add-service .s-section.s-section2 .cho-list .tit{font-size:16rem;font-weight:600;}
+.page.prd.add-service .s-section.s-section2 .cho-list .tit span{color:#2a81eb;}
+.page.prd.add-service .s-section.s-section2 .cho-list .s-tit{margin:15rem 0 16rem;font-size:14rem;font-weight:600;}
+.page.prd.add-service .s-section.s-section2 .cho-list .bullet.a.lg + .s-tit{margin-top:22rem;}
+
+.page.prd.add-service .cont-box.revise > .bg-area{margin:24rem auto 0;width:248rem;height:195rem;background:url(../img/prd/Group_29246@2x.png) no-repeat center 0;background-size:248rem 195rem;}
+
+/*  탑 배경아이콘 */
+.page.prd.add-service .top-area.type2.bg2{background-image:url(../img/prd/img_whc2_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg3{background-image:url(../img/prd/img_whc3_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg4{background-image:url(../img/prd/img_whc4_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg5{background-image:url(../img/prd/img_whc5_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg6{background-image:url(../img/prd/img_whc6_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg7{background-image:url(../img/prd/img_whc7_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg8{background-image:url(../img/prd/img_whc8_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg9{background-image:url(../img/prd/img_whc9_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg10{background-image:url(../img/prd/img_whc10_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg11{background-image:url(../img/prd/img_whc11_120x120@2x.png);}
+.page.prd.add-service .top-area.type2.bg12{background-image:url(../img/prd/img_whc12_120x120@2x.png);}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* 치매케어서비스 */
+.page.prd.add-service .s-section .cont-box-noline{margin-bottom:40rem;}
+.page.prd.add-service .s-section .cont-box-noline .hd-tit4{margin:0 0 8rem;}
+.page.prd.add-service .s-section .cont-box-noline > .lnr-cont-vt{margin-top:24rem;}
+
+/* .page.prd.add-service .s-section.s-section2 .cont-box-noline .lnr-cont-vt ul.wrap > li:before{background-image:url(../img/prd/ic_step1@2x.png);} */
+.page.prd.add-service .s-section.s-section2 .cont-box-noline .lnr-cont-vt + .bullet.b.lg li{font-size:14rem;margin-top:16rem;}
+
+.page.prd.add-service .s-section.s-section2 .inr-box + .bullet.a.lg{margin-top:16rem;}
+
+
+/* 보험 다이렉트 수정 */
+/* 상품상세 아이콘, 말풍선 수정 22-05-13 */
+.page.prd.detail .cont-sec.sec3 .cont-bg.icon6182_2{background:url(../img/prd/icon100se@2x.png) no-repeat center 0;background-size:120rem;}
+
+.page.prd.detail .tit + .prd-icon-bnr,.page.prd.detail .txt + .prd-icon-bnr{margin-top:32rem;}
+.page.prd.detail .s-tit + .prd-icon-bnr,.page.prd.detail .xs-tit + .prd-icon-bnr{margin-top:24rem;}
+
+.page.prd.detail .prd-icon-bnr{margin:0 10rem;}
+.page.prd.detail .prd-icon-bnr li{min-height:88rem;border-radius:8rem;padding:20rem 20rem 20rem 84rem;font-size:14rem;color:#555;background-color:#f9f9f9;background-repeat:no-repeat;background-position:20rem 20rem;background-size:48rem;}
+.page.prd.detail .prd-icon-bnr li strong{font-weight:700;}
+.page.prd.detail .prd-icon-bnr li + li{margin-top:16rem;}
+
+/* 상품상세 아이콘 이미지 */
+.page.prd.detail .prd-icon-bnr li.bg1{background-image:url(../img/prd/icon_bg01@2x.png);} /* 6073,6158 손바닥위에 사람 */
+.page.prd.detail .prd-icon-bnr li.bg2{background-image:url(../img/prd/icon_bg02@2x.png);} /* 6073 동전 상승 */
+.page.prd.detail .prd-icon-bnr li.bg3{background-image:url(../img/prd/icon_bg03@2x.png);} /* 6170 우산 */
+.page.prd.detail .prd-icon-bnr li.bg4{background-image:url(../img/prd/icon_bg04@2x.png);} /* 6170 배 */
+.page.prd.detail .prd-icon-bnr li.bg5{background-image:url(../img/prd/icon_bg05@2x.png);} /* 6170 연두색 청진기 */
+.page.prd.detail .prd-icon-bnr li.bg6{background-image:url(../img/prd/icon_bg06@2x.png);} /* 6067,6230 손바닥위에 돈주머니 */
+.page.prd.detail .prd-icon-bnr li.bg7{background-image:url(../img/prd/icon_bg07@2x.png);} /* 6067,6230 지갑 */
+.page.prd.detail .prd-icon-bnr li.bg8{background-image:url(../img/prd/icon_bg08@2x.png);} /* 6067,6230 연두색 %시계 */
+.page.prd.detail .prd-icon-bnr li.bg9{background-image:url(../img/prd/icon_bg09@2x.png);} /* 6158 목마 */
+.page.prd.detail .prd-icon-bnr li.bg10{background-image:url(../img/prd/icon_bg10@2x.png);} /* 6182 심장박동 */
+.page.prd.detail .prd-icon-bnr li.bg11{background-image:url(../img/prd/icon_bg11@2x.png);} /* 6182 노랑생 청진기 */
+.page.prd.detail .prd-icon-bnr li.bg12{background-image:url(../img/prd/icon_bg12@2x.png);} /* 6182 왕진가방 */
+.page.prd.detail .prd-icon-bnr li.bg13{background-image:url(../img/prd/icon_bg13@2x.png);} /* 6007 하늘색 %시계 */
+.page.prd.detail .prd-icon-bnr li.bg14{background-image:url(../img/prd/icon_bg14@2x.png);} /* 6007 손바닥위에 돈 */
+.page.prd.detail .prd-icon-bnr li.bg15{background-image:url(../img/prd/icon_bg15@2x.png);} /* 6007 새싹 */
+
+.page.prd.detail .prd-icon-bnr li.bgn1{background-image:url(../img/prd/icon_bg_n01@2x.png);}
+.page.prd.detail .prd-icon-bnr li.bgn2{background-image:url(../img/prd/icon_bg_n02@2x.png);}
+.page.prd.detail .prd-icon-bnr li.bgn3{background-image:url(../img/prd/icon_bg_n03@2x.png);}
+.page.prd.detail .prd-icon-bnr li.bgn4{background-image:url(../img/prd/icon_bg_n04@2x.png);}
+.page.prd.detail .prd-icon-bnr li.bgn5{background-image:url(../img/prd/icon_bg_n05@2x.png);}
+
+.page.prd.detail .prd-icon-bnr li dt{font-size:16rem;font-weight:700;color:#242424;margin-bottom:4rem;}
+.page.prd.detail .prd-icon-bnr li dd + dt{margin-bottom:0;margin-top:8rem;}
+.page.prd.detail .prd-icon-bnr li.line1 dd + dt{margin-top:24rem;}
+
+
+
+.page.prd.detail .disease-cont-list1{display:flex;justify-content:space-between;width:100%;margin-bottom:19rem;}
+.page.prd.detail .disease-cont-list1 li.left{width:46%;}
+.page.prd.detail .disease-cont-list1 li.right{width:54%;padding-left:44rem;}
+.page.prd.detail .disease-cont-list1 li{flex:1;height:100%;}
+.page.prd.detail .disease-cont-list1 li dl{position:relative;background-color:#f8f8f8;border-radius:12px;padding:75rem 12rem 12rem;;text-align:center;min-height:160rem;}
+.page.prd.detail .disease-cont-list1 li dl dt{font-size:16rem;font-weight:700;padding-bottom:3rem;}
+.page.prd.detail .disease-cont-list1 li dl dd{font-size:14rem;color:#555555;}
+.page.prd.detail .disease-cont-list1 li.left dl{margin-left:10rem;background:#f8f8f8 url(../img/prd/disease-bg01@2x.png) no-repeat center 23rem;background-size:112rem 32rem;}
+.page.prd.detail .disease-cont-list1 li.right dl{margin-right:10rem;background:#f8f8f8 url(../img/prd/disease-bg02@2x.png) no-repeat center 26rem;background-size:72rem 32rem;}
+.page.prd.detail .disease-cont-list1 li.right dl:before{position:absolute;top:50%;left:-29rem;transform:translate(0, -50%);display:block;content:'';width:13rem;height:13rem;background:url(../img/prd/bg-plus-icon.png) no-repeat 0 0;background-size:13rem;}
+
+.page.prd.detail .disease-cont-list2 li{margin:0 10rem;border:1rem solid #e6e6e6;border-radius:12rem;padding:20rem 20rem 20rem 70rem;font-size:14rem;color:#555555;}
+.page.prd.detail .disease-cont-list2 li + li{margin-top:14rem;}
+.page.prd.detail .disease-cont-list2 li dt{font-size:14rem;font-weight:700;margin-bottom:4rem;color:#242424;}
+.page.prd.detail .disease-cont-list2 li dt span{font-weight:400;}
+.page.prd.detail .disease-cont-list2 li.n9{background:url(../img/prd/disease-bg-n9@2x.png) no-repeat 20rem 21rem;background-size:38rem;}
+.page.prd.detail .disease-cont-list2 li.n8{background:url(../img/prd/disease-bg-n8@2x.png) no-repeat 20rem 21rem;background-size:38rem;}
+.page.prd.detail .disease-cont-list2 li.n1{background:url(../img/prd/disease-bg-n1@2x.png) no-repeat 20rem 21rem;background-size:38rem;}
+.page.prd.detail .disease-cont-list2 li.n2{background:url(../img/prd/disease-bg-n2-sm@2x.png) no-repeat 20rem 21rem;background-size:38rem;}
+.page.prd.detail .disease-cont-list2 li.n3{background:url(../img/prd/disease-bg-n3-sm@2x.png) no-repeat 20rem 21rem;background-size:38rem;}
+
+.page.prd.detail .disease-cont-list4{margin:0 10rem;}
+.page.prd.detail .disease-cont-list4 li{display:flex;align-items:center;border:1rem solid #e6e6e6;border-radius:12rem;padding:20rem;font-size:14rem;color:#555555;min-height:78rem;}
+.page.prd.detail .disease-cont-list4 li + li{margin-top:16rem;}
+.page.prd.detail .disease-cont-list4 li .no{display:block;width:38rem;height:38rem;margin-right:12rem;font-size:1rem;color:transparent;background:url(../img/prd/disease-bg-n1@2x.png) no-repeat 0 0;background-size:100%;}
+.page.prd.detail .disease-cont-list4 li .no.n2{background:url(../img/prd/disease-bg-n2-sm@2x.png) no-repeat 0 0;background-size:100%;}
+.page.prd.detail .disease-cont-list4 li .no.n3{background:url(../img/prd/disease-bg-n3-sm@2x.png) no-repeat 0 0;background-size:100%;}
+
+/* 수정 : 22-05-23 상품상세 일괄수정 */
+.page.prd.detail .copy-right{text-align:right;padding-right:10rem;font-size:12rem;color:#808080;margin-bottom:40rem;}
+.page.prd.detail .disease-cont{margin:0 10rem;}
+
+/* 6025 6001 6037 6158 6194 */
+.page.prd.detail .disease-cont.bic-num{margin-top:32rem;}
+.page.prd.detail .s-tit + .disease-cont.bic-num{margin-top:24rem;}
+
+.page.prd.detail .disease-cont.bic-num li{padding-left:95rem;min-height:70rem;}
+.page.prd.detail .disease-cont.bic-num li dt{font-size:16rem;font-weight:700;margin-bottom:4rem;}
+.page.prd.detail .disease-cont.bic-num li dd{font-size:15rem;color:#555555;}
+.page.prd.detail .disease-cont.bic-num li + li{margin-top:16rem;}
+
+.page.prd.detail .disease-cont.bic-num li.n2{background:url(../img/prd/disease-bg-n2@2x.png) no-repeat 0 0;background-size:70rem;}
+.page.prd.detail .disease-cont.bic-num li.n3{background:url(../img/prd/disease-bg-n3@2x.png) no-repeat 0 0;background-size:70rem;}
+.page.prd.detail .disease-cont.bic-num li.n5{background:url(../img/prd/disease-bg-n5@2x.png) no-repeat 0 0;background-size:70rem;}
+
+/* 6049 6212 6176 */
+.page.prd.detail .box-gray.icon-flex3{margin-top:24rem;padding:31rem 20rem;text-align:center;}
+.page.prd.detail .box-gray.icon-flex3 .box-tit{font-size:16rem;font-weight:600;margin-bottom:22rem;}
+.page.prd.detail .box-gray.icon-flex3 ul{display:flex;justify-content:center;margin:0 -10rem;}
+.page.prd.detail .box-gray.icon-flex3 ul li{width:100rem;padding-top:91rem;font-size:14rem;color:#555555;text-align:center;background-repeat:no-repeat;background-position:center top;background-size:80rem;}
+
+.page.prd.detail .box-gray.icon-flex3 ul li.ico1{background-image:url(../img/prd/icon-flex3_1@2x.png);}
+.page.prd.detail .box-gray.icon-flex3 ul li.ico2{background-image:url(../img/prd/icon-flex3_2@2x.png);}
+.page.prd.detail .box-gray.icon-flex3 ul li.ico3{background-image:url(../img/prd/icon-flex3_3@2x.png);}
+
+/* 6067 6061 6188 6200 6224 */
+.page.prd.detail .cont-sec .box-gray-list{margin:0 10rem;}
+
+.page.prd.detail .cont-sec .box-gray-list > li{border-radius:12rem;padding:20rem;background-color:#f9f9f9;}
+.page.prd.detail .cont-sec .box-gray-list > li + li{margin-top:16rem;}
+.page.prd.detail .cont-sec .box-gray-list > li dt{position:relative;font-size:16rem;font-weight:700;}
+.page.prd.detail .cont-sec .box-gray-list > li dd{margin-top:10rem;font-size:15rem;color:#555555;}
+.page.prd.detail .cont-sec .box-gray-list > li dt span{font-weight:400;font-size:15rem;color:#555555;}
+
+.page.prd.detail .cont-sec .box-gray-list.center > li{text-align:center;}
+.page.prd.detail .cont-sec .box-gray-list.center > li dt{font-size:18rem;color:#2a81eb}
+.page.prd.detail .cont-sec .box-gray-list.center > li dt span{display:block;}
+.page.prd.detail .cont-sec .box-gray-list.center > li dd.flex{justify-content:center;}
+
+
+.page.prd.detail .cont-sec.sec1 .box-gray-list{margin:40rem 0 0 0;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li{background-color:#fafafa;padding-left:48rem;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li dt:before{display:block;content:"";position:absolute;top:0;left:-28rem;width:24rem;height:24rem;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li .type1 dt:before{background:url(../img/prd/icon_01@2x.png) no-repeat 0 -1rem;background-size:24rem;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li .type2 dt:before{background:url(../img/prd/icon_02@2x.png) no-repeat 0 -1rem;background-size:24rem;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li dd{margin-top:4rem;font-size:14rem;color:#555;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li dd > ul.bullet.a>li{margin-top:4rem;}
+.page.prd.detail .cont-sec.sec1 .box-gray-list > li dd > ul.bullet.a>li:before{width:3rem;height:3rem;}
+
+.page.prd.detail .compliance{text-align:right;font-size:12rem;color: #767676;margin-top:16rem;margin-bottom:40rem;}
+
+.page.prd.detail .cont-sec.sec4 .box-gray-list{margin-top:32rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list > li dd.flex{display:flex;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list > li dd.flex ul{margin-right:36rem;}
+
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li div strong{font-weight:700;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li .mr8{display:inline-block;margin-right:8rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li .inline-wrap + .inline-wrap{margin-left:16rem;}
+
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li div.t-one{display:flex;align-items:center;font-size:18rem;font-weight:700;margin:4rem 0 8rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li div.t-one .icon{font-size:1rem;color:transparent;display:inline-block;width:20rem;height:20rem;background:url(../img/prd/icon_won@2x.png) no-repeat 0 0;background-size:20rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li div.t-one .icon + .icon{margin-left:4rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type1 > li div.t-one  > div:first-child{margin-right:7rem}
+
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type2{margin-top:32rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.type2 > li{position:relative;}
+.mt6{margin-top:6rem !important;}
+
+.page.prd.detail .cont-sec.sec4 .box-gray-list.flex{display:flex;margin:24rem -2rem;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.flex li{width:50%;margin:0 8rem;text-align:center;}
+.page.prd.detail .cont-sec.sec4 .box-gray-list.flex li .t-b16{margin-top:8rem;line-height:21rem;}
+
+
+/* 6101 */
+.page.prd.add-service .bts {margin-right: 0rem;display: flex;justify-content: right;}
+.page.prd.add-service .bts .bt {width: 32rem;height: 32rem;background: no-repeat center;background-size: 32rem auto;padding-right: 32rem;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin: 0rem 0rem 0rem 0rem;}
+.page.prd.add-service .bts .bt.fsize {background-image: url(../img/prd/ic_txtsize_2@2x.png);}
+.page.prd.add-service .bts .bt.share {background-image: url(../img/prd/ic_share_solid_2@2x.png);}
+
+.page.prd.add-service .top-area.ads{margin-top:8rem;padding-bottom:252rem;background:url(../img/prd/add-service_top@2x.png) no-repeat center bottom;background-size:320rem 192rem;}
+.page.prd.add-service .top-area .hd-tit2{font-size:2.2em;}
+.page.prd.add-service .hd-tit4{padding:0;margin:32rem 0 16rem;font-size:1.6em;}
+
+.page.prd.add-service .list-btn.ads li{background-repeat:no-repeat;background-position:20rem 20rem;background-size:48rem;}
+.page.prd.add-service .list-btn.ads li .box-btn{display:block;border:1px solid #e9eaed;width:100%;border-radius:8rem;padding:20rem 20rem 20rem 84rem;text-align:left;}
+.page.prd.add-service .list-btn.ads li .box-btn:after{display:none;}
+.page.prd.add-service .list-btn.ads li .box-btn dt{position:relative;font-weight:700;font-size:16rem;color:#242424;line-height:24rem;margin-bottom:16rem;}
+.page.prd.add-service .list-btn.ads li .box-btn dt:after{display:block;content:'';width:24rem;height:24rem;position:absolute;top:50%;right:0;transform:translate(0, -50%);background:url(../img/prd/ic_chevron_sm@2x.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.add-service .list-btn.ads li .box-btn dd{font-size:14rem;line-height:21rem;color:#555555;}
+
+.page.prd.add-service .list-btn.ads li.ic01{background-image:url(../img/prd/ic_01@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic02{background-image:url(../img/prd/ic_02@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic03{background-image:url(../img/prd/ic_12@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic04{background-image:url(../img/prd/ic_03@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic05{background-image:url(../img/prd/ic_04@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic06{background-image:url(../img/prd/ic_05@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic07{background-image:url(../img/prd/ic_06@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic08{background-image:url(../img/prd/ic_07@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic09{background-image:url(../img/prd/ic_08@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic10{background-image:url(../img/prd/ic_09@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic11{background-image:url(../img/prd/ic_10@2x.png);}
+.page.prd.add-service .list-btn.ads li.ic12{background-image:url(../img/prd/ic_11@2x.png);}
+
+
+/* 상품 설명 추가*/
+.page.prd.detail .list-btn.ads li{background-repeat:no-repeat;background-position:20rem 20rem;background-size:48rem;}
+.page.prd.detail .list-btn.ads li .box-btn{display:block;border:1px solid #e9eaed;width:100%;border-radius:8rem;padding:20rem 20rem 20rem 84rem;text-align:left;}
+.page.prd.detail .list-btn.ads li .box-btn:after{display:none;}
+.page.prd.detail .list-btn.ads li .box-btn dt{position:relative;font-weight:700;font-size:16rem;color:#242424;line-height:24rem;margin-bottom:16rem;}
+.page.prd.detail .list-btn.ads li .box-btn dt:after{display:block;content:'';width:24rem;height:24rem;position:absolute;top:50%;right:0;transform:translate(0, -50%);background:url(../img/prd/ic_chevron_sm@2x.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.detail.list-btn.ads li .box-btn dd{font-size:14rem;line-height:21rem;color:#555555;}
+
+.page.prd.detail .list-btn.ads li.ic01{background-image:url(../img/prd/ic_01@2x.png);}
+.page.prd.detail .list-btn.ads li.ic02{background-image:url(../img/prd/ic_02@2x.png);}
+.page.prd.detail .list-btn.ads li.ic03{background-image:url(../img/prd/ic_12@2x.png);}
+.page.prd.detail .list-btn.ads li.ic04{background-image:url(../img/prd/ic_03@2x.png);}
+.page.prd.detail .list-btn.ads li.ic05{background-image:url(../img/prd/ic_04@2x.png);}
+.page.prd.detail .list-btn.ads li.ic06{background-image:url(../img/prd/ic_05@2x.png);}
+.page.prd.detail .list-btn.ads li.ic07{background-image:url(../img/prd/ic_06@2x.png);}
+.page.prd.detail .list-btn.ads li.ic08{background-image:url(../img/prd/ic_07@2x.png);}
+.page.prd.detail .list-btn.ads li.ic09{background-image:url(../img/prd/ic_08@2x.png);}
+.page.prd.detail .list-btn.ads li.ic10{background-image:url(../img/prd/ic_09@2x.png);}
+.page.prd.detail .list-btn.ads li.ic11{background-image:url(../img/prd/ic_10@2x.png);}
+.page.prd.detail .list-btn.ads li.ic12{background-image:url(../img/prd/ic_11@2x.png);}
+
+
+/* ===================== 퇴직연금 ===================== */
+/* 팝업 */
+/* IRP 가입 */
+.page.prd.retire.irp{}
+.page.prd.retire.irp .contents>.hd-tit3:first-child{margin-top: 32rem;}
+.page.prd.retire.irp .cont-box{padding:24rem 0;}
+
+.page.prd.retire.irp .cont-box > .radiobox{margin-bottom:36rem;}
+.page.prd.retire.irp .cont-box .hd-tit5{margin-bottom:16rem;}
+
+.page.prd.retire.irp .cont-box .hd-tit5.center{text-align:center;}
+.page.prd.retire.irp .cont-box .ut-addfile + .bullet{margin:16rem 0 24rem;}
+
+.page.prd.retire.irp .chk-list-wrap.irp .ut-terms .ckall .checkbox .txt{font-weight:400;font-size:15rem;}
+
+/* 가입안내 */
+.page.prd.retire.irp .main .visual-area{position:relative;margin-top:36rem;}
+.page.prd.retire.irp .main .visual-area .hd-tit2{line-height:32rem;}
+.page.prd.retire.irp .main .visual-area .hd-tit2 .blue{color:#2a81eb;}
+.page.prd.retire.irp .main .visual-area .bt-share{position:absolute;top:0;right:0;width: 42rem;height: 42rem;background: no-repeat center;background-image: url(../img/prd/ic_share_solid@2x.png);background-size: 42rem auto;padding-right: 42rem;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin: 0rem 0rem 0rem 0rem;}
+
+.page.prd.retire.irp .main .visual-area .chk-list{padding-top:324rem;background:url(../img/prd/img_insurance@2x.png) no-repeat center 120rem;background-size:320rem 180rem;}
+.page.prd.retire.irp .main .visual-area .chk-list dt{font-size:16rem;font-weight:700;margin-bottom:16rem;}
+.page.prd.retire.irp .main .visual-area .chk-list dd li{padding-left:27rem;font-size:16rem;line-height:1.8;color:#242424;background:url(../img/common/bullet_ic_check@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.retire.irp .main .visual-area .chk-list dd li:first-child{margin-top:0;}
+
+.page.prd.retire.irp .main .bilmain-list{margin: 40rem -20rem 40rem 0;}
+.page.prd.retire.irp .main .bilmain-list li {border-bottom: 1rem solid #e6e6e6;}
+.page.prd.retire.irp .main .bilmain-list li button {position: relative;display: block;width: 100%;padding: 20rem 0;text-align: left;font-size: 16rem;line-height: 1.31;font-weight: 700;color: #242424;}
+.page.prd.retire.irp .main .bilmain-list li button::before {content: "";display: inline-block;width: 24rem;height: 24rem;padding-left: 32rem;vertical-align: middle;}
+.page.prd.retire.irp .main .bilmain-list li.lst1 button::before {background: url(../img/msc/ic_currency_dollar01.png) no-repeat left center;background-size: 24rem 24rem;}
+.page.prd.retire.irp .main .bilmain-list li.lst2 button::before {background: url(../img/msc/ic_currency_dollar02.png) no-repeat left center;background-size: 24rem 24rem;}
+.page.prd.retire.irp .main .bilmain-list li.lst3 button::before {background: url(../img/prd/ic_credit_card@2x.png) no-repeat left center;background-size: 24rem 24rem;}
+.page.prd.retire.irp .main .bilmain-list li.lst4 button::before {background: url(../img/prd/ic_chield_check@2x.png) no-repeat left center;background-size: 24rem 24rem;}
+.page.prd.retire.irp .main .bilmain-list li button::after {content: "";position: absolute;right: 30rem;top: 28rem;width: 8rem;height: 8rem;transform: rotate(-45deg);border: 1rem solid #242424;border-width: 0 1rem 1rem 0;}
+
+/* IRP 가입 6301 */
+/* .page.join-page{margin-top:32rem;} */
+
+.page.join-page .ico-list{margin:16rem 0 40rem;}
+.page.prd.retire.irp .ico-list>li{position:relative;padding-left:64rem;min-height:48rem;font-size:15rem;color:#555555;}
+.page.prd.retire.irp .ico-list>li strong{display:block;margin-bottom:2rem;font-size:16rem;font-weight:700;color:#242424;}
+.page.prd.retire.irp .ico-list>li+li{margin-top:24rem;}
+.page.prd.retire.irp .ico-list>li:before{display:block;content:'';position:absolute;top:0;left:0;width:48rem;height:48rem;border-radius:50%;background-color:#f5f5f5;background-repeat:no-repeat;background-position:50%;background-size:24rem;}
+.page.prd.retire.irp .ico-list>li.ico1:before{background-image:url(../img/prd/ic_c_01@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico2:before{background-image:url(../img/prd/ic_c_02@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico3:before{background-image:url(../img/prd/ic_c_03@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico4:before{background-image:url(../img/prd/ic_c_04@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico5:before{background-image:url(../img/prd/ic_c_05@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico6:before{background-image:url(../img/prd/ic_c_06@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico7:before{background-image:url(../img/prd/ic_c_07@2x.png);}
+.page.prd.retire.irp .ico-list>li.ico8:before{background-image:url(../img/prd/ic_c_08@2x.png);}
+
+.page.prd.retire.irp .ico-list.line1{margin:16rem 0 40rem}
+.page.prd.retire.irp .ico-list.line1 li p{padding:13rem 0;}
+
+.page.prd.retire.irp .ico-list ul.bullet.c>li{word-break: break-all;}
+
+.page.prd.retire.irp .ut-bnr-lst.irp.type2{margin-bottom:40rem;}
+.page.prd.retire.irp .ut-bnr-lst.irp.type2 .ico1 a.lk{background-image:url(../img/prd/ic_gray_01@2x.png);}
+.page.prd.retire.irp .ut-bnr-lst.irp.type2 .ico2 a.lk{background-image:url(../img/prd/ic_gray_02@2x.png);}
+.page.prd.retire.irp .ut-bnr-lst.irp.type2 a.lk strong{padding-left:32rem;}
+
+.page.prd.retire.irp .share-top{position:relative;padding-top:40rem;;}
+.page.prd.retire.irp .share-top .bt-share{position:absolute;top:0;right:0;width:32rem;height:32rem;background:url(../img/prd/ic_share_@2x.png) no-repeat center center;background-size:32rem auto;}
+
+
+/* 운용상품선택 */
+.page.prd.retire.irp .pop-terms-detail{margin-top:32rem;}
+
+.page.prd.retire.irp .pop-terms-detail {border: 1px solid #e6e6e6;border-radius: 10rem;}
+.page.prd.retire.irp .pop-terms-detail .rating-box{border:none}
+.page.prd.retire.irp .pop-terms-detail .rating-box dt{position:relative;}
+.page.prd.retire.irp .pop-terms-detail .rating-box dt > .link-text{position:absolute;top:0;right:0;font-size:12rem;color:#2a81eb;font-weight:400;}
+.page.prd.retire.irp .pop-terms-detail .rating-box dd .list-empty{margin-top:0;padding-bottom:0;}
+.page.prd.retire.irp .pop-terms-detail .rating-box dd .list-empty p{font-size:14rem;}
+.page.prd.retire.irp .pop-terms-detail .rating-box dd .list-empty strong{display:block;padding-bottom:8rem;font-weight:700;color:#d65d1c;}
+
+.page.prd.retire.irp .pop-terms-detail .cont-area{border-top:1px solid #e6e6e6;margin:0 20rem 20rem;padding-top:20rem;}
+.page.prd.retire.irp .pop-terms-detail .cont-area > p{text-align:center;}
+.page.prd.retire.irp .pop-terms-detail .cont-area .box-gray{display:flex;justify-content:space-between;margin-top:16rem;background-color:#f2f7fa;border-radius:8rem;padding:20rem;font-weight:700;}
+.page.prd.retire.irp .pop-terms-detail .cont-area .box-gray .icon-area{width:24rem;height:24rem;background-color:#000;opacity:0.5;}
+
+.page.prd.retire.irp .pop-terms-detail + .ut-tabs{margin-top:40rem;margin-bottom:32rem;}
+
+.page.prd.retire.irp .tab-cont-wrap .bg-gray{margin:32rem -20rem 0;padding:32rem 20rem 47rem;/*background-color:#f5f5f5;*/} /*bg삭제*/
+.page.prd.retire.irp .tab-cont-wrap .bg-gray .ut-dcard{margin-top:16rem;}
+
+.page.prd.retire.irp .tab-cont-wrap .bg-gray .ut-dcard .list-empty{margin-top:0;line-height:24rem;}
+.page.prd.retire.irp .tab-cont-wrap .bg-gray .ut-dcard .list-empty .btn-set{margin:24rem 0 16rem;}
+
+.page.prd.retire.irp .floatbots .box-flex{display:flex;justify-content:space-between;align-items:center;padding-bottom:32rem;}
+.page.prd.retire.irp .floatbots .box-flex .cont > span{display:inline-block;margin-left:30rem;font-size:16rem;font-weight:700;vertical-align:middle;}
+.page.prd.retire.irp .floatbots .box-flex .cont > span > span{font-size:18rem;}
+.page.prd.retire.irp .floatbots .box-flex .cont > span > strong{display:inline-block;font-size:22rem;color:#2a81eb;font-weight:700;padding-left:16rem;}
+
+.page.prd.retire.irp ul.chk-list-wrap{margin-top:40rem;}
+.page.prd.retire.irp ul.chk-list-wrap li .ut-terms.a{margin-top:16rem;}
+.page.prd.retire.irp ul.chk-list-wrap li .ut-terms.a.tog .ckall{padding-bottom:0;}
+.page.prd.retire.irp .info-txt{margin-top:30rem;}
+.page.prd.retire.irp .info-txt .bullet.a{margin-top:16rem;}
+
+.page.prd.retire.irp .ut-terms.type2{padding-top:24rem;margin:40rem 0 16rem;}
+.page.prd.retire.irp .ut-terms.type2 .ckall{padding-bottom:16rem;}
+.page.prd.retire.irp .ut-terms.type2 .ckall+.plbox .plist{margin-top:23rem;}
+.page.prd.retire.irp .ut-terms.type2 .plbox .plist>li+li{margin-top:16rem;}
+
+/* 공통배너부분 수정 */
+.page.prd.retire.irp .ut-bnr-lst{margin:0;}
+.page.prd.retire.irp .ut-bnr-lst a.lk > .bullet.a{margin:8rem 0 0;}
+.page.prd.retire.irp .ut-bnr-lst a.lk ul.bullet.a.lg > li + li{margin-top:0;}
+
+.page.prd.retire.irp .ut-dcard.e .hdt .tit > button{font-size: 16rem;font-weight: 700;line-height: 1.31;text-align: left;word-break:break-all;color: #242424;}
+
+.page.prd.retire.irp .contents.vspace{margin-top:0;}
+.page.prd.retire.irp .contents.vspace .main.btm{color:#555;margin-top:120rem;}
+.page.prd.retire.irp .contents.vspace .main.btm .bilmain-list{margin-top:16rem;margin-bottom:20rem;}
+
+.page.prd.retire.irp .contents.vspace .conf-phone{margin-top:60rem;text-align:center;}
+.page.prd.retire.irp .contents.vspace .conf-phone a{display:block;margin:32rem auto 0;width:80rem;height:80rem;}
+.page.prd.retire.irp .contents.vspace .conf-phone img{width:100%;}
+
+.page.prd.retire.irp .ut-bnr-lst.irp{margin-top:16rem;}
+.page.prd.retire.irp .ut-bnr-lst.irp a.lk{background:#f5f5f5 url(../img/prd/ic_24@2x.png) no-repeat 20rem 20rem;background-size:24rem;}
+.page.prd.retire.irp .ut-bnr-lst.irp a.lk strong{font-size:14rem;padding-left:40rem;font-size:16rem;line-height:24rem;}
+
+.page.prd.retire.irp .pop-terms-detail .rating-box dt > .link-ar{float:right;font-weight:400;font-size:14rem;}
+
+
+/* 로보어드바이저 */
+.page.prd.retire.irp .tab-inr-wrap{margin-top:32rem;}
+.page.prd.retire.irp .hd-tit4{padding:0;}
+.page.prd.retire.irp .tab-inr-wrap .hd-tit4 + .select.def{margin:16rem 0 24rem;}
+
+.page.prd.retire.irp .solution-area{margin:16rem 0;background-color:#fff;/*border:1rem solid #e6e6e6;border-radius:8rem;*/padding:20rem;}
+.page.prd.retire.irp .bullet.a + .solution-area{margin-top:32rem;}
+.page.prd.retire.irp .hd-tit4.mt32 + .bullet.a{margin:10rem 0 0;}
+
+.ut-tbl.a table.tblist.nl>tbody>tr>td.arr{padding:0;}
+.ut-tbl.a table.tblist.nl>tbody>tr>td.arr>div{position:relative;}
+.ut-tbl.a table.tblist.nl>tbody>tr>td.arr>div:after{content:'';display:block;width:18rem;height:18rem;position:absolute;top:0;right:0;background:url(../img/prd/ic_arrow_sm_left@2x.png) no-repeat 0 0;background-size:18rem;}
+
+.page.prd.retire.irp .pop-kakaopay .rlbox .item-box .chk-item>li a{position:relative;width:24rem;height:24rem;background: url(../img/common/ico_chk_arr.png) no-repeat center;background-size: 24rem auto;padding-right: 24rem;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin: 0rem 0rem 0rem 0rem;}
+
+.page.prd.retire.irp .t-left{text-align:left;}
+
+.page.dlk.retire .contents{font-size:15rem;color:#555;}
+.page.dlk.retire .ol-decimal{margin-left:16rem;}
+.page.dlk.retire .ol-decimal li{list-style:decimal;margin-top:10rem;}
+.page.dlk.retire .hd-tit3{margin:24rem 0 16rem;}
+
+/* 퇴직연금서비스 */
+.page.prd.retire.invtm .retirement-wrap{margin:30rem 0 60rem;}
+.page.prd.retire.invtm .retirement-wrap .sect + .sect{margin-top:42rem;}
+.page.prd.retire.invtm .retirement-wrap .hd-tit3{margin-bottom:16rem;}
+.page.prd.retire.invtm .retirement-wrap .hd-tit3 .link-ar{font-size:15rem;float:right;font-weight:400;}
+
+
+/* .page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li .pic{width: 100%;height: 189rem;overflow: hidden;text-align: center;background-color: #f5f5f5;} */
+/* .page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li .pic a iframe{height:auto;min-height:189rem;} */
+
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li .pic {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+	/* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+	padding-top: 25px;
+	height: 0;
+	border-radius: 16rem;overflow: hidden;
+	z-index:1;
+	}
+
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li	.pic iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li .pic a img{display:block;position:absolute;left:50%;top:50%;transform:translate(-50% , -50%);object-fit:cover;max-width:inherit;min-width:100%;height:100%;}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot .slide>li .pic a img:after{z-index:100;display:block;content:'';width:56rem;height:56rem;background:url(../img/prd/ic_play@2x.png) no-repeat 0 0;background-size:56rem;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst{display:flex;justify-content:space-between;margin:0 -5rem 24rem;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li{width:50%;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li a{display:block;height:100%;flex:1;border:1rem solid #e6e6e6;padding:102rem 20rem 30rem;border-radius:8rem;margin:0 5rem;background-repeat:no-repeat;background-position:center 30rem;background-size:48rem;text-align:center;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li dt{font-size:16rem;font-weight:700;margin-bottom:8rem;text-align:center;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li dd{font-size:15rem;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li.li1 a{background-image:url(../img/prd/icretire_24@2x.png);}
+.page.prd.retire.invtm .retirement-wrap .retiremt-ban-lst > li.li2 a{background-image:url(../img/prd/iconretire@2x.png);}
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner .box{position:relative;display:block;min-height:102rem;padding:20rem 20rem 20rem 88rem;border-radius:8rem;background-color:#f5f5f5;background-position:20rem 20rem;background-repeat:no-repeat;background-size:48rem;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.col2 .box{background-color:#f2faf2;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.col3 .box{background-color:#faf5f2;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.col4 .box{background-color:#f2f7fa;}
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner-img .box{display:block;border-radius:8rem;border:1rem solid #e6e6e6;width:100%;min-width:320rem;min-height:99rem;background:#fff url(../img/prd/reti-bg00.png) no-repeat center center;background-size:320rem 99rem;}
+
+@media (prefers-color-scheme: dark) {
+	/* 다크 모드에 적용할 스타일 정의 */
+	.page.prd.retire.invtm .retirement-wrap .retiremt-banner-img .box{background-color:#ffffff;}
+  }
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.ico01 .box{background-image:url(../img/prd/reti_ico_bn01@2x.png);}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.ico02 .box{background-image:url(../img/prd/reti_ico_bn02@2x.png);}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.ico03 .box{background-image:url(../img/prd/reti_ico_bn03@2x.png);}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner.ico04 .box{background-image:url(../img/prd/reti_ico_bn04@2x.png);}
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner .box dt{font-size:16rem;font-weight:700;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner .box dt span{display:block;font-weight:400;font-size:12rem;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner .box dd{font-size:14rem;color:#555555;margin-top:4rem;}
+
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner-img2 .box {position:relative;display:block; border-radius: 8rem; overflow: hidden;}
+.page.prd.retire.invtm .retirement-wrap .retiremt-banner-img2 .box .img-banner{width: 100%;}
+
+.page.prd.retire.invtm .retirement-wrap .play-img-list {margin-top:16rem;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list li + li{margin-top:32rem;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list a.box{display:block;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list .img-area{position:relative;text-align:center;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list .img-area:after{z-index:100;display:block;content:'';width:56rem;height:56rem;background:url(../img/prd/ic_play@2x.png) no-repeat 0 0;background-size:56rem;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
+.page.prd.retire.invtm .retirement-wrap .play-img-list dl{margin-top:16rem;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list dt{font-size:18rem;font-weight:700;margin-bottom:8rem;}
+.page.prd.retire.invtm .retirement-wrap .play-img-list dd{font-size:15rem;color:#555555;}
+
+.page.prd.retire.invtm .retirement-wrap .play-img-list .pic {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+	/* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+	padding-top: 25px;
+	height: 0;
+	border-radius: 16rem;overflow: hidden;
+	z-index:1;
+	}
+
+.page.prd.retire.invtm .retirement-wrap .play-img-list .pic iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+
+.page.prd.retire.invtm .invest-info-wrap .prod-sub-sect .ut-slide-play .swiper .slide>li a{border-radius:8rem;overflow:hidden;}
+
+/* 퇴직연금 아이프레임 */
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot.video .slide>li {border-radius:16rem;background-color: #f5f5f5;overflow:hidden;}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot.video .slide>li .pic{border-radius:0;padding-top:0;}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot.video .slide>li .pic + dl{height: 81rem;padding:16rem 20rem;}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot.video .slide>li .pic + dl dt{font-size:18rem;font-weight:600;}
+.page.prd.retire.invtm .retirement-wrap .ut-slide-dot.video .slide>li .pic + dl dd{font-size:16rem;}
+/* IRP 개인형 퇴직연금 소개 */
+.page.prd.retire.irp .top-area{position:relative;margin:24rem 0 32rem;background:#e4eff2;border-radius:8rem;padding:20rem 20rem 140rem;}
+.page.prd.retire.irp .top-area:after{content: '';display: block;width: 120rem;height: 120rem;background: url(../img/temp/img_whc_120x120@2x.png) no-repeat 0 0;background-size: 120rem;position: absolute;bottom: 20rem;left:20rem;}
+.page.prd.retire.irp p.txt{margin:14rem 0;font-size:15rem;color:#555;line-height:21rem;}
+.page.prd.retire.irp .top-area .bt.share{background-image: url(../img/prd/ic_share_solid2@2x.png);position: absolute;top: 20rem;right: 20rem;}
+.page.prd.retire.irp .top-area .bt{width: 32rem;height: 32rem;background: no-repeat center;background-size: 32rem auto;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin: 0rem 0rem 0rem 0rem;}
+
+.poptents.page.prd.retire.irp .cont-area .hd-tit4{padding:0;line-height:1;line-height:24rem;}
+
+
+.poptents.page.prd.retire.irp .cont-area .irp-br-list li{min-height:80rem;background:#fafafa url(../img/prd/image_1@2x.png) no-repeat 20rem center;background-size:80rem;border-radius:8rem;padding:24rem 20rem 20rem 118rem;}
+.poptents.page.prd.retire.irp .cont-area .irp-br-list li + li{margin-top:16rem;}
+.poptents.page.prd.retire.irp .cont-area .irp-br-list li > strong{display:block;font-size:16rem;color:#2a81eb;font-weight:700;margin-top:10rem;}
+
+.poptents.page.prd.retire.irp .cont-area .inner-cont{margin:16rem 0 40rem;}
+
+.poptents.page.prd.retire.irp .cont-area .inner-cont.img{background-color:#ff0000;opacity:0.4;min-height:120rem;}
+.poptents.page.prd.retire.irp .cont-area .inner-cont.banner-list,
+.poptents.page.prd.retire.irp .cont-area .inner-cont.banner{background-color:#ff0000;opacity:0.4;}
+
+.poptents.page.prd.retire.irp .cont-area .inner-cont.bullet.a li + li{margin-top:6rem;}
+.poptents.page.prd.retire.irp .cont-area .inner-cont.bullet.a li > .bullet.b{margin-top:8rem;}
+
+.poptents.prd.retire.irp .btn-pop-wrap{margin-top:16rem;}
+.poptents.prd.retire.irp .btn-pop-wrap p{font-size:15rem;color:#555555;margin-bottom:16rem;}
+.poptents.prd.retire.irp .btn-pop-wrap .btn-set + p{margin-top:32rem;}
+
+.poptents.prd.retire.irp .btn-arr{height:58rem;padding-left:20rem;font-weight:700;border:none;background:#f5f5f5 url(../img/prd/ic_chevron@2x.png) no-repeat 94% 50%;background-size:18rem;display:block;text-align:left;}
+.poptents.prd.retire.irp .btn-arr.col2{background-color:#f2f7ff;}
+
+/* IRP(개인형 퇴직연금)소개 6321 */
+.prd.retire [class*='c-txt']{margin:16rem 0;color:#555555;}
+.prd.retire .c-txt16{font-size:16rem;}
+.prd.retire .c-txt15{font-size:15rem;}
+
+.poptents.prd.retire.irp-info .hd-tit2{margin:32rem 0 24rem;}
+.poptents.prd.retire.irp-info .hd-tit3{margin-top:32rem;}
+
+.poptents.prd.retire.irp-info .img-cont{margin:16rem 10rem 8rem;}
+.poptents.prd.retire.irp-info .img-cont > .box{position:relative;background-color:#f5f5f5;border-radius:12rem;padding:20rem 20rem 110rem 20rem;text-align:center;}
+.poptents.prd.retire.irp-info .img-cont > .box > .c-txt16{margin:0;color:#242424;}
+.poptents.prd.retire.irp-info .img-cont > .box .price{font-size:16rem;color:#242424;}
+.poptents.prd.retire.irp-info .img-cont > .box .price > b{font-weight:700;font-size:32rem;}
+.poptents.prd.retire.irp-info .img-cont > .box .price.t1{margin:16rem 0 12rem;font-size:15rem;}
+.poptents.prd.retire.irp-info .img-cont > .box:after{display:block;content:'';width:100%;height:71rem;position:absolute;bottom:19rem;left:0;background-repeat:no-repeat;background-position:center bottom;}
+.poptents.prd.retire.irp-info .img-cont > .box.bg1:after{background-image:url(../img/prd/pop-irp-ic01@2x.png);background-size:159rem 63rem;}
+.poptents.prd.retire.irp-info .img-cont > .box.bg2:after{background-image:url(../img/prd/pop-irp-ic02@2x.png);background-size:159rem 71rem;}
+.poptents.prd.retire.irp-info .img-cont > .box + .box{margin-top:16rem;}
+
+.poptents.prd.retire.irp-info .link-box{margin:16rem 0 40rem;}
+.poptents.prd.retire.irp-info .link-box a.box{display:block;border-radius: 8rem;padding:20rem 20rem 20rem 84rem;line-height:21rem;background-color:#f2f7ff;background-repeat:no-repeat;background-position:20rem 20rem;background-size:48rem;font-size:14rem;}
+.poptents.prd.retire.irp-info .link-box a.box .tit{margin-bottom:8rem;font-size:16rem;font-weight:700;background:url(../img/csc/bg_arr_counsel.png) no-repeat right center;background-size:18rem;}
+.poptents.prd.retire.irp-info .link-box a.box p{font-size:14rem;color:#555555;font-weight:400;}
+.poptents.prd.retire.irp-info .link-box > li + li{margin-top:16rem;}
+.poptents.prd.retire.irp-info .link-box > li.type1 a.box{background-image:url(../img/prd/ic_bg_01@2x.png);}
+.poptents.prd.retire.irp-info .link-box > li.type2 a.box{background-color:#f2feff;background-image:url(../img/prd/ic_bg_02@2x.png);}
+.poptents.prd.retire.irp-info .link-box > li.type3 a.box{background-color:#f2f3ff;background-image:url(../img/prd/ic_bg_03@2x.png);}
+.poptents.prd.retire.irp-info .link-box > li.type4 a.box{background-color:#f2f7ff;background-image:url(../img/prd/ic_bg_04@2x.png);}
+.poptents.prd.retire.irp-info .link-box > li ul.bullet.a>li+li{margin-top:4rem;}
+
+.poptents.prd.retire.irp-info ul.bullet.a.lg > li ul.bullet{margin-top:4rem;}
+
+
+/* 퇴직연금 부가 서비스 */
+.page.prd.retire.irp .top-area.right{padding-bottom:136rem;}
+.page.prd.retire.irp .top-area.right:after{left:unset;bottom:12rem;right:15rem;background: url(../img/temp/img_bg_temp00@2x.png) no-repeat 0 0;background-size:129rem 133rem;}
+.page.prd.retire.irp .top-area.right p.txt{margin-top:20rem;}
+
+.page.prd.retire.irp .ut-bnr-lst.line-img{margin-top:40rem;}
+.page.prd.retire.irp .ut-bnr-lst.line-img a.lk{position:relative;background-color:#fff;border:1rem solid #e9eaed;padding-left:84rem;}
+.page.prd.retire.irp .ut-bnr-lst.line-img a.lk:before{position:absolute;top:20rem;left:20rem;display:block;content:'';width:48rem;height:48rem;background:#e64c2e url() no-repeat 0 0;opacity: 0.25;background-size:48rem;}
+
+/* 퇴직연금 부가 서비스 수정 22-05-24 */
+.page.prd.retire.irp.addservice .share-top{padding-bottom:252rem;background:url(../img/prd/ads-bg01@2x.png) no-repeat center bottom;background-size:300rem 192rem;}
+.page.prd.retire.irp.addservice .ut-bnr-ico{margin-top:32rem;}
+.page.prd.retire.irp.addservice .ut-bnr-ico > a.lk + a.lk{margin-top:16rem;}
+.page.prd.retire.irp.addservice .ut-bnr-ico > a.lk{background-color:#fff;border:1rem solid #e9eaed;}
+
+.page.prd.retire.irp.addservice .ut-bnr-ico > a.lk.ic_img01::before{background-image:url(../img/prd/ic6610_01@2x.png);}
+.page.prd.retire.irp.addservice .ut-bnr-ico > a.lk.ic_img02::before{background-image:url(../img/prd/ic_cart@2x.png);}
+
+
+
+/* 회사검색탭 수정 */
+.pop-jobsch .poptents.page.prd.retire.irp .ut-tabs.a{margin-left:0;margin-right:0;}
+.pop-jobsch .poptents.page.prd.retire.irp .forms{padding-top:10rem;}
+
+/* 같이투자 */
+.page.prd.retire .blue{color:#2a81eb}
+
+/* 닉네임 검색 하단팝업 */
+.poptents.page.prd.retire.invtm{padding-bottom:0;}
+.page.prd.retire.invtm .such-wrap{margin-top:12rem;margin-bottom:30rem;}
+.page.prd.retire.invtm .such-wrap .btn.sm{min-width:68rem;}
+
+.page.prd.retire.invtm .full-bg{margin:0 -20rem;padding:24rem 20rem;}
+.page.prd.retire.invtm .full-bg.gray{background-color:#f5f5f5;}
+.page.prd.retire.invtm .full-bg.gray2{background-color:#f2f7ff;}
+.page.prd.retire.invtm .full-bg > .bg-white{background-color:#fff;border-radius:8rem;}
+
+.page.prd.retire.invtm .such-result-list{padding:4rem 20rem;}
+.page.prd.retire.invtm .such-result-list.like li{border-bottom:1rem solid #e6e6e6;position:relative;}
+.page.prd.retire.invtm .such-result-list.like li a.box{display:flex;justify-content:space-between;align-items:center;min-height:66rem;padding:12rem 0;margin-right:50rem;font-size:15rem;color:#242424;}
+.page.prd.retire.invtm .such-result-list.like li:last-child{border-bottom:none;}
+
+.page.prd.retire.invtm .such-result-list.like li .follower{position:absolute;top:50%;right:0;transform:translateY(-50%)}
+
+.page.prd.retire.invtm .such-result-list.like li .pic-area{width:42rem;}
+.page.prd.retire.invtm .such-result-list.like li .pic-area > img{display:block;width:42rem;height:42rem;}
+.page.prd.retire.invtm .such-result-list.like li .tit{width:45%;}
+
+/* DC 가입 2페이지 추가 */
+.page.prd.retire .complate-msg .dc-complate{margin-top:32rem;text-align:left;}
+.page.prd.retire .complate-msg .dc-complate .line-box{margin:0;}
+.page.prd.retire .complate-msg .line-box .list> li .dd{text-align:right;}
+.page.prd.retire .complate-msg .line-box + .btn-set.vt{margin-top:16rem;}
+
+/* 같이투자 홈 */
+.page.prd.retire.invtm .home-top{font-size:26rem;line-height:40rem;}
+.page.prd.retire.invtm .home-top strong{display:block;font-weight:700;}
+
+.page.prd.retire.invtm .tab-inr-sect .swiper-slide img{width:100%;display:block;max-width:inherit;min-width:100%;}
+
+.page.prd.retire.invtm .tab-inr-sect .ut-optset-wrap{margin-top:32rem;border-bottom:1rem solid #e6e6e6;}
+.page.prd.retire.invtm .tab-inr-sect .ut-optset-wrap .ut-optset{padding-bottom:16rem;}
+.page.prd.retire.invtm .tab-inr-sect .ut-optset-wrap + .btm-list-area{margin-top:0;}
+.page.prd.retire.invtm .tab-inr-sect .ut-optset-wrap>.opt .date{margin-left:0;}
+
+.page.prd.retire.invtm .tab-inr-sect .ut-optset-wrap .bullet.b.lg{margin-top:-6rem;margin-bottom:10rem;}
+
+.page.prd.retire.invtm .type-tbl{margin:20rem 0}
+.page.prd.retire.invtm .type-tbl .ut-tbl.a:before{display:none}
+.page.prd.retire.invtm .type-tbl .ut-tbl.a .tblist>thead>tr>th{padding:5rem; font-size:13rem; border-bottom:1rem solid #e9ebef; border-top:1rem solid #e9ebef;}
+.page.prd.retire.invtm .type-tbl .ut-tbl.a .tblist>tbody>tr>th{background:#f3f5f7; font-weight:700; font-size:13rem; color:#2b2e38; border-top:1rem solid #e9ebef;}
+
+
+/* .page.prd.retire.invtm .home-top-img{display:none;} */
+.page.prd.retire.invtm .home-top-img .bg{margin:24rem 0;height:180rem;background:url(../img/prd/img_insurance@2x.png) no-repeat center top;background-size:320rem;}
+.page.prd.retire.invtm .home-top-img .bg .link-ar{font-size:14rem;}
+.page.prd.retire.invtm .home-top-img .btn-set{text-align:center;display:block;margin-bottom:9rem;}
+.page.prd.retire.invtm .home-top-img .btn-set .btn{width:50%;}
+
+.page.prd.retire.invtm .home-top-btn{margin-top:24rem;margin-bottom:4rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .ut-slide-dot{margin:24rem 0 40rem;}
+.page.prd.retire.invtm .tab-inr-sect .type-a{margin:24rem 0 40rem;}
+.page.prd.retire.invtm .tab-inr-sect .type-a .swiper-slide {height:120rem; margin:0; padding:0; background:none; border:none}
+.page.prd.retire.invtm .tab-inr-sect .type-a .swiper-slide a {height:100%; padding:0;}
+.page.prd.retire.invtm .tab-inr-sect .type-a .swiper-slide a img {height:auto;}
+.page.prd.retire.invtm .tab-inr-sect .type-a .swiper-container .pagination {top:123rem; right:auto; width:100%; align-items: center;}
+
+
+.page.prd.retire.invtm .full-bg.gray3{background-color:#fafafa;padding-bottom:32rem;}
+
+.page.prd.retire.invtm .input.a.such{border-color:#767676;box-shadow: 0 3px 6px 0 rgba(18, 28, 114, 0.15);}
+.page.prd.retire.invtm .input.a.such .ibts{top:50%;right:15rem;transform:translate(0 ,-50%)}
+.page.prd.retire.invtm .input.a.such .ibts .sch-img{width: 24rem;height: 24rem;font-size: 1rem;color: transparent;vertical-align: middle;border: none;background: none;padding: 0rem;background: url(../img/prd/ic_search@2x.png) no-repeat center;background-size: 24rem auto;z-index: 1;}
+
+.page.prd.retire.invtm .full-bg.gray3 .t1{font-size:14rem;color:#2a81eb}
+.page.prd.retire.invtm .full-bg.gray3 .t2{font-size:18rem;color:#242424;font-weight:700;margin:8rem 0 16rem;}
+
+.page.prd.retire.invtm .btm-list-area{margin-top:16rem;}
+.page.prd.retire.invtm .btm-list-area .such-result-list{padding:0;}
+
+.page.prd.retire.invtm .btm-list-area .such-result-list li .num{width:10%;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .tit{width:70%;font-size:14rem;font-weight:700;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .tit > img{width:42rem;height:42rem;display:inline-block;margin-right:16rem;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .percent{width:20%;padding-right:0;background:none;text-align:right;}
+
+.page.prd.retire.invtm .btm-list-area .such-result-list li .blue{color:#2a81eb}
+
+.page.prd.retire.invtm .btm-list-area .such-result-list li:last-child{border-bottom:1rem solid #e6e6e6;}
+
+
+
+.page.prd.retire.invtm .ut-more{margin:32rem 0;}
+
+.page.prd.retire.invtm .btn-set.btn-one{width:50%;}
+
+.page.prd.retire.invtm .uninsured a{display:block;position:relative;height:157rem;margin-bottom:40rem;padding:32rem 0 50rem;font-size:16rem;line-height:21rem;color:#555555;}
+.page.prd.retire.invtm .uninsured a strong{display:block;margin-top:16rem;font-size:22rem;font-weight:700;color:#282828;}
+.page.prd.retire.invtm .uninsured a:after{position:absolute;top:34rem;right:0;display:block;content:'';width:100rem;height:100rem;background:url(../img/prd/Group24732@2x.png) no-repeat 0 0;background-size:100%;}
+
+.page.prd.retire.invtm .full-bg.gray3 + .list-empty.bd{margin:32rem 0 60rem;}
+
+.page.prd.retire.invtm .solution-area{margin: 16rem 0;background-color: #fff;/*border: 1rem solid #e6e6e6;border-radius:8rem;*/padding: 20rem;}
+
+/*
+
+.is-scroll-down .page.prd.retire.invtm .ut-tabs.a{background:none;margin-bottom:0;padding-bottom:0;}
+.is-scroll-down .page.prd.retire.invtm .ut-tabs.a + .btn-img{position:absolute;bottom:-24rem;left:50%;transform:translate(-50%, 0)}
+.is-scroll-down .page.prd.retire.invtm .ut-tabs.a + .btn-img button{display:inline-block;width:80rem;height:24rem;color: transparent;font-size:1rem;border:1rem solid #ddd;border-radius:0 0 8rem 8rem;background-color:#fff;box-shadow: 0 2px 4px 0 rgba(18, 28, 114, 0.16);}
+.is-scroll-down .page.prd.retire.invtm .ut-tabs.a + .btn-img button:before{border-width:0 0 1rem 1rem;border-style:solid;border-color:#242424;display:block;content:'';width:8rem;height:8rem;position:absolute;top:5rem;left:50%;transform:translate(-50%, 0) rotate(-45deg);}
+.is-scroll-up .page.prd.retire.invtm .ut-tabs.a + .btn-img{display:none;}
+
+ */
+/* MY 같이투자 */
+.ut-bdgs .bdg.white{background-color:#fff;border-color:#fff;color:#555555;}
+
+.page.prd.retire.invtm .top-area{position:relative;}
+.page.prd.retire.invtm .top-area .bt.share{position:absolute;top: 0;right: 0;width: 32rem;height: 32rem;background:url(../img/prd/ic_share_solid_2@2x.png) no-repeat center;background-size: 32rem auto;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin: 0rem 0rem 0rem 0rem;}
+.page.prd.retire.invtm .top-area .invest{display:flex;}
+.page.prd.retire.invtm .top-area .invest .pic-area{width:80rem;margin-right:16rem;}
+
+.page.prd.retire.invtm .top-area .invest .pic-area + div > .hd-tit2 a{text-decoration:underline;}
+
+.page.prd.retire.invtm .follower .checkbox>.txt::before {width:24rem;height:24rem;background: url(../img/prd/ic_star_off@2x.png) no-repeat;background-size: 24rem;}
+.page.prd.retire.invtm .follower .checkbox>input:checked + .txt::before {background: url(../img/prd/ic_star_on@2x.png) no-repeat;background-size: 24rem;}
+
+.page.prd.retire.invtm .icon-btn-wrap .follower .checkbox>.txt::before {width:24rem;height:24rem;background: url(../img/prd/ic_heart_off@2x.png) no-repeat;background-size: 24rem;}
+.page.prd.retire.invtm .icon-btn-wrap .follower .checkbox>input:checked + .txt::before {background: url(../img/prd/ic_heart_on@2x.png) no-repeat;background-size: 24rem;}
+
+
+.page.prd.retire.invtm .blue-btn-wrap{padding:24rem 0;}
+.page.prd.retire.invtm .blue-btn-wrap .blue-btn{position:relative;display:block;width:100%;text-align:left;padding:18rem 12rem 18rem 20rem;background-color:#2a81eb;color:#fff;border-radius:8rem;font-size:16rem;font-weight:700;}
+.page.prd.retire.invtm .blue-btn-wrap .blue-btn:after{position:absolute;top:50%;right:20rem;content:''; transform: translateY(-50%); display:block;width: 24rem; height: 24rem; background: url('../img/msc/ic_pdmdselect@2x.png') no-repeat 0 0; background-size: 100% auto; }
+.page.prd.retire.invtm .blue-btn-wrap .blue-btn span{display:inline-block;margin-right:10rem;padding:4rem 12rem;color:#2a81eb;background-color:#fff;border-radius:16rem;font-size:12rem;}
+
+.page.prd.retire.invtm .tab-inr-sect{margin-top:32rem;}
+.page.prd.retire.invtm .tab-inr-sect + .tab-inr-sect{margin-top:40rem;}
+.page.prd.retire.invtm .hd-tit4{line-height:1;padding:0;}
+.page.prd.retire.invtm .hd-tit4 span{font-weight:400;}
+.page.prd.retire.invtm .st-date{margin:10rem 0; text-align:right; color: #767676}
+
+.page.prd.retire.invtm .tab-inr-sect .ranking-list{display:flex;justify-content:space-between;margin:0 -8rem;padding-top:32rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li{margin:0 8rem;width:100%;}
+
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .tit{height:24rem;line-height:24rem;font-size:15rem;font-weight:700;padding-left:28rem;margin-bottom:12rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li.ranking .tit{background:url(../img/prd/ic_insight@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li.follower .tit{background:url(../img/prd/ic_heart_off@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .tit span{font-size:18rem;color:#2a81eb;}
+
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box{text-align:center;border-radius:8rem;padding:12rem 25rem 16rem; min-height:110rem; display: flex; align-items: center; justify-content:center}
+
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li.ranking .box{background-color:#fcf2e8;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li.follower .box{background-color:#faf4dc;}
+
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box .t1{font-size:14rem;color:#242424;font-weight:700;line-height:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box .t1 .ut-tooltip{top:-2rem;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box .t2{margin:6rem 0;font-size:18rem;color:#2a81eb;font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box .t3{font-size:12rem;color:#242424;font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .ranking-list li .box .t3 span{color:#808080;font-weight:400;}
+
+.page.prd.retire.invtm .ut-hash-box{margin-top:12rem;}
+.page.prd.retire.invtm .ut-hash-box .ut-hash.active{background-color:#3667cd;border-color:#3667cd;color:#fff;font-weight:700;}
+
+.page.prd.retire.invtm .tab-inr-sect .sol-area{margin:16rem 0 24rem;}
+.page.prd.retire.invtm .tab-inr-sect .flex-left{display:flex;justify-content:space-between;margin-top:16rem;border:1rem solid #e6e6e6;border-radius:8rem;padding:16rem 0;}
+.page.prd.retire.invtm .tab-inr-sect .flex-left li{text-align:center;border-left:1rem solid #e6e6e6;width:25%;font-size:14rem;color:#555;}
+.page.prd.retire.invtm .tab-inr-sect .flex-left li:first-child{border:none;}
+.page.prd.retire.invtm .tab-inr-sect .flex-left li strong{display:block;font-weight:700;color:#242424;}
+
+.page.prd.retire.invtm .box-line{margin-top:16rem;margin-bottom:30rem;border:1rem solid #e6e6e6;border-radius:8rem;padding:20rem;}
+.page.prd.retire.invtm .box-line ul li{position:relative;padding:0 68rem 0 22rem;font-size:15rem;color:#555;}
+.page.prd.retire.invtm .box-line ul li span{position:absolute;top:0;right:0;}
+.page.prd.retire.invtm .box-line ul li + li{margin-top:16rem;}
+.page.prd.retire.invtm .box-line ul li:before{position:absolute;top:6rem;left:0;content:'';display:block;width:10rem;height:10rem;border-radius:50%;background-color:#ff931e;}
+.page.prd.retire.invtm .box-line ul li.col2:before{background-color:#ffc00e;}
+.page.prd.retire.invtm .box-line ul li.col3:before{background-color:#a6ce37;}
+.page.prd.retire.invtm .box-line ul li.col4:before{background-color:#00b04a;}
+.page.prd.retire.invtm .box-line ul li.col5:before{background-color:#13bece;}
+.page.prd.retire.invtm .box-line ul li.col6:before{background-color:#9ca2f7;}
+.page.prd.retire.invtm .box-line ul li.col7:before{background-color:#c8cbcc;}
+
+.page.prd.retire.invtm .tab-inr-sect .tab-cont{font-size:15rem;color:#555;line-height:21rem;}
+.page.prd.retire.invtm .tab-inr-sect .tab-cont strong{display:block;font-size:22rem;color:#242424;font-weight:700;line-height:32rem;margin-bottom:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .tab-cont .bg-img{margin-top:120rem;height:180rem;background:url(../img/prd/img_insurance2@2x.png) no-repeat center 0;background-size:320rem 192rem;}
+.page.prd.retire.invtm .blue{color:#2a81eb}
+
+/* 수정 : 22-05-23 */
+.page.prd.retire.invtm .tab-inr-sect.bg6348 .tab-cont .hd-tit2{display:block;font-size:22rem;color:#242424;font-weight:700;line-height:32rem;margin-bottom:24rem;}
+.page.prd.retire.invtm .tab-inr-sect.bg6348 .tab-cont .bg-img{margin-top:60rem;height:192rem;background:url(../img/prd/img_insurance2@2x.png) no-repeat center 0;background-size:320rem;}
+
+.page.prd.retire.invtm .ut-bnr-lst.img a.lk.b{padding-left:84rem;background-image:url(../img/prd/img_48x48@2x.png);background-position:20rem 20rem;background-repeat:no-repeat;background-size:48rem;}
+
+.page.prd.retire.invtm .ut-bnr-lst.img .ic01 a.lk.b{background-image:url(../img/prd/retire_icon01@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img .ic02 a.lk.b{background-image:url(../img/prd/retire_icon02@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img .ic03 a.lk.b{background-image:url(../img/prd/retire_icon03@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img .ic04 a.lk.b{background-image:url(../img/prd/retire_icon04@2x.png);}
+
+
+.page.prd.retire.invtm .manual-wrap{margin-top:32rem;}
+.page.prd.retire.invtm .manual-wrap .opr-invt-box {padding-top:5rem}
+.page.prd.retire.invtm .manual-wrap .opr-invt-box,
+.page.prd.retire.invtm .manual-wrap .manual-list{margin-top:24rem;}
+.page.prd.retire.invtm .manual-wrap .manual-list li{border:1rem solid #e6e6e6;border-radius:8rem;padding:20rem;}
+.page.prd.retire.invtm .manual-wrap .manual-list li dl{background-repeat:no-repeat;background-position:left top;background-size:48rem;padding-left:64rem;}
+.page.prd.retire.invtm .manual-wrap .manual-list li.ico01 dl{background-image:url(../img/prd/ico_manual01@2x.png);}
+.page.prd.retire.invtm .manual-wrap .manual-list li.ico02 dl{background-image:url(../img/prd/ico_manual02@2x.png);}
+.page.prd.retire.invtm .manual-wrap .manual-list li.ico03 dl{background-image:url(../img/prd/ico_manual03@2x.png);}
+.page.prd.retire.invtm .manual-wrap .manual-list li dt{font-size:16rem;color:#242424;font-weight:700;margin-bottom:12rem;}
+.page.prd.retire.invtm .manual-wrap .manual-list li dd{font-size:15rem;color:#555555;}
+.page.prd.retire.invtm .manual-wrap .manual-list li + li{margin-top:16rem;}
+
+
+/* 수익률 대회 */
+.page.prd.retire.invtm .tab-inr-sect .p-txt{color:#555;margin-top:4rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg{margin-top:20rem;margin-bottom:32rem;background:#fafafa;padding:32rem 16rem;border-radius:8rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .hd-tit3{text-align:center;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .p-txt2{text-align:center;font-size:12rem;color:#808080;margin-top:4rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list{margin:28rem -5rem 40rem;display:flex;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li{position:relative;padding-bottom:80rem;text-align:center;margin:0 5rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .bg-img{position:relative;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .bg-img span{display:block;content:'';width:43rem;height:47rem;position:absolute;top:-10rem;right:-10rem;background:url(../img/prd/Path23652@2x.png) no-repeat 0 0;background-size:43rem 47rem;color:#ffffff;text-align:center;line-height:43rem;font-size:12rem;font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .cont{position:absolute;bottom:0;left:50%;transform:translate(-50%, 0)}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .cont .rank-ranking{font-size:16rem;font-weight:700;color:#242424;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .cont .rank-id{font-size:14rem;color:#242424;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:96rem;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li.rank1 .cont .rank-id{font-size:14rem;color:#242424;font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li .cont .rank-percent{font-size:14rem;color:#2a81eb;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li.rank1 .cont .rank-percent{font-size:16rem;font-weight:700;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li.rank1{width:42%;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li.rank2{width:32%;padding-top:30rem;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .ranking-img-list li.rank3{width:26%;padding-top:40rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .such-result-list{background-color:#fff;border:1rem solid #e6e6e6;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .such-result-list li{padding-left:16rem;padding-right:16rem;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .such-result-list li:last-child{border-bottom:none;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-top.bg-img{padding-bottom:252rem;background:url(../img/prd/img_insurance2@2x.png) no-repeat center bottom;background-size:300rem 192rem;}
+.page.prd.retire.invtm .tab-inr-sect .inr-top.bg-img p{font-size:15rem;margin-top:12rem;color:#555555;font-weight:400;}
+
+.page.prd.retire.invtm .such-result-list.type2 li{display:block;padding:0;margin:0;border-bottom:1rem solid #e6e6e6;min-height:unset;}
+.page.prd.retire.invtm .such-result-list.type2 li a{display:flex;justify-content:space-between;align-items:center;min-height:66rem;}
+
+
+.page.prd.retire.invtm .my-state{border:1rem solid #555;border-radius:8rem;background-color:#fff;padding:12rem 20rem 12rem;}
+.page.prd.retire.invtm .my-state .tit-txt{font-size:12rem;color:#242424;font-weight:700;margin-bottom:8rem;}
+.page.prd.retire.invtm .my-state .flex{display:flex;justify-content:space-between;align-items:center;}
+.page.prd.retire.invtm .my-state .flex .num{/*width:10%;*/ width:auto; max-width:52rem; padding-right:10rem; font-size:16rem;font-weight:700;}
+.page.prd.retire.invtm .my-state .flex .tit{width:64%;font-size:18rem;padding-right:8rem;font-weight:700;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.page.prd.retire.invtm .my-state .flex .tit > img{width:42rem;display:inline-block;margin-right:16rem;}
+.page.prd.retire.invtm .my-state .flex .percent{width:27%;font-size:18rem;padding-right:0;background:none;color:#2a81eb;font-weight:700;text-align:right;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg + .inr-bg{margin-top:16rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg .my-state .flex .num{width:auto; max-width:48rem; padding-right:10rem;}
+
+.page.prd.retire.invtm .award-list{display:flex;justify-content:space-between;margin:24rem -10rem 0;}
+.page.prd.retire.invtm .award-list li{margin:0 10rem;text-align:center;}
+.page.prd.retire.invtm .award-list li .img-circ{position:relative;background:#fff;border-radius:50%;width:80rem;height:80rem;margin-bottom:14rem;overflow:hidden;}
+.page.prd.retire.invtm .award-list li .img-circ img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg.gray.bg-img{padding-top:24rem;padding-bottom:155rem;font-size:15rem;line-height:21rem;color:#555555;background:#f5f5f5 url(../img/prd/bg-img01.png) no-repeat 90% bottom;background-size:140rem;}
+.page.prd.retire.invtm .tab-inr-sect .inr-bg.gray.bg-img .hd-tit2{margin-bottom:12rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .inr-bg-line{margin-top:16rem;border:1rem solid #e6e6e6;border-radius:8rem;padding:20rem;}
+.page.prd.retire.invtm .tab-inr-sect .hd-tit4 > .link-text{font-size:14rem;font-weight:400;float:right;}
+
+.page.prd.retire.invtm .tab-inr-sect:last-child{margin-bottom:30rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .award-data li + li{margin-top:12rem;}
+.page.prd.retire.invtm .tab-inr-sect .award-data dl{display:flex;}
+.page.prd.retire.invtm .tab-inr-sect .award-data dl dt{width:34%;font-size:14rem;font-weight:700;color:#242424}
+.page.prd.retire.invtm .tab-inr-sect .award-data dl dd{width:66%;font-size:15rem;color:#555555;}
+
+.page.prd.retire.invtm .inr-bg-line .award-list{margin:10rem -10rem 10rem;}
+.page.prd.retire.invtm .award-list li .img-circ{border:1rem solid #e6e6e6;}
+
+/* MY 피드 */
+.page.prd.retire.invtm .tab-inr-sect .feed-list li{position:relative;padding-top:16rem;padding-bottom:24rem;border-bottom:1rem solid #e6e6e6;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li + li{margin-top:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .tit{position:relative;padding-left:58rem;margin-bottom:20rem;min-height:42rem;font-size:18rem;font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .tit img{width:42rem;position:absolute;top:0;left:0;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .tit .date{font-size:12rem;color:#808080;font-weight:400;}
+
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .top-btn-wrap{position:absolute;top:0;right:-12rem;line-height:1;height:12rem;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .top-btn-wrap > button{position:relative;padding:0 11rem 0 12rem;font-size:14rem;line-height:1;color:#555;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .top-btn-wrap > button + button:before{display:block;content:'';position:absolute;top:1rem;left:0;width:1rem;height:12rem;background-color:#cccccc;}
+
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .cont{margin-bottom:40rem;font-size:15rem;color:#555555;line-height:21rem;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .cont a{text-decoration:underline;color:#2a81eb}
+
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .bt{display:inline-block;height:24rem;padding-left:28rem;font-size:14rem;color:#555555;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .bt + .bt{margin-left:40rem;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .bt span{font-weight:700;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .bt.like{background:url(../img/prd/ic_heart_off@2x.png) no-repeat 0 0;background-size:24rem;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .bt.comm{background:url(../img/prd/ic_chat_square@2x.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .btn-declare{display:inline-block;float:right;padding-left:28rem;height:24rem;line-height:24rem;font-size:14rem;color:#555555;background:url(../img/prd/btn-declare.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .like-w{display:inline-block;margin-right:40rem;font-size:14rem;color:#555555;}
+.page.prd.retire.invtm .tab-inr-sect .feed-list li .icon-btn-wrap .like-w b{font-weight:700;}
+
+/* 같이투자 커뮤니티 */
+.page.prd.retire.invtm .tab-tab-wrap{margin-top:16rem;}
+.page.prd.retire.invtm .tab-tab-wrap .tab-inr-sect{margin-top:0;}
+
+.page.prd.retire.invtm .btm-list-area .such-result-list li{border-bottom:1rem solid #e6e6e6;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .box{display:flex;align-items:center;padding:16rem 0;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .tit.bdg-wrap{display:flex; overflow: inherit; align-items:center}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .state-bdgs{position:relative;  margin-right:16rem}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .state-bdgs .profile{width: 42rem; height: 42rem; display:inline-block;}
+.page.prd.retire.invtm .btm-list-area .such-result-list li .state-bdgs .state{display:inline-block; position:absolute; width:43rem; height:21rem; bottom:-5rem; left:0; background:url(../img/prd/icon_state@2x.png) no-repeat 0 0; background-size:100%; }
+
+
+.page.prd.retire.invtm .btm-list-area .ut-bdgs .bdg{margin-bottom:0;margin-top:2rem;}
+
+.page.prd.retire.invtm .tab-inr-sect .full-bg.gray3 .my-state{border:none;background-color:#e6eaf1;margin-bottom:16rem;padding:16rem;}
+.page.prd.retire.invtm .tab-inr-sect .full-bg.gray3 .my-state .tit-txt{margin-bottom:16rem;}
+.page.prd.retire.invtm .tab-inr-sect .full-bg.gray3 .my-state .tit-txt .ut-bdgs{float:right;}
+
+.page.prd.retire.invtm .my-state .flex .percent.center{text-align:center;}
+.page.prd.retire.invtm .full-bg.gray3 .bullet.a{font-size:14rem;margin:-8rem 0 24rem;padding-top:0;}
+.page.prd.retire.invtm .full-bg.gray3 .bullet.a>li{font-size:12rem}
+.page.prd.retire.invtm .full-bg.gray3 .ut-tooltip .bt-tooltip{position:relative;top:-3rem;}
+
+.page.prd.retire.invtm .my-state + .follower-area {position:relative;padding-bottom:25rem;}
+.page.prd.retire.invtm .my-state + .follower-area .link-ar{font-size:14rem;position:absolute;bottom:25rem;right:0;}
+
+/* 퇴직연금 교육 */
+.page.prd.retire.invtm .box-line.on-edu{position:relative;font-size:16rem;line-height:2;padding-right:84rem;}
+.page.prd.retire.invtm .box-line.on-edu strong{font-weight:700;}
+.page.prd.retire.invtm .box-line.on-edu .b-line-btn{font-size:12rem;color:#2a81eb;border:1rem solid #2a81eb;padding:2rem 12rem;border-radius:16rem;position:absolute;top:50%;right:20rem;transform:translate(0, -50%);}
+
+.page.prd.retire.invtm .hd-tit4.on-edu{margin:40rem 0 16rem}
+.page.prd.retire.invtm .on-edu-list{margin-bottom:16rem;border-top:1rem solid #242424;}
+.page.prd.retire.invtm .on-edu-list li{border-bottom:1rem solid #e6e6e6;padding:16rem 0;min-height:98rem;}
+.page.prd.retire.invtm .on-edu-list li .bt-t-area{position:relative;margin-top:16rem;}
+.page.prd.retire.invtm .on-edu-list li .bt-t-area .btn{position:absolute;top:0;right:0;padding:0 14rem;}
+
+/* 레이어팝업 */
+.page.prd.retire.invtm .pop-cont-sect{margin-top:32rem;}
+.page.prd.retire.invtm .pop-cont-sect + .pop-cont-sect{margin-top:40rem;}
+
+.page.prd.retire.invtm .pop-cont-sect ol.numbering{margin:16rem 0 30rem;}
+.page.prd.retire.invtm .pop-cont-sect ol.numbering li{position:relative;padding-left:33rem;text-indent:-33rem;font-size:15rem;color:#555;}
+.page.prd.retire.invtm .pop-cont-sect ol.numbering li b.num{display:inline-block;position:relative;top:0;left:0;width:24rem;height:24rem;border-radius:50%;background-color:#ddd;text-align:center;line-height:24rem;font-size:12rem;font-weight:700;padding-left:0;text-indent:0;margin-right:5rem;}
+
+.page.prd.retire.invtm .pop-cont-sect ol.numbering li + li{margin-top:12rem;}
+
+.page.prd.retire.invtm .pop-cont-sect .comment-list{margin-top:32rem;}
+.page.prd.retire.invtm .pop-cont-sect .comment-list li{border-bottom:1rem solid #e6e6e6;padding:20rem 0;}
+.page.prd.retire.invtm .pop-cont-sect .comment-list li:first-child{padding-top:0;}
+.page.prd.retire.invtm .pop-cont-sect .comment-list li .info .tit{position:relative;padding-left:58rem;margin-bottom:16rem;min-height:42rem;font-size:16rem;font-weight:700;}
+.page.prd.retire.invtm .pop-cont-sect .comment-list li .info .tit img{width:42rem;position:absolute;top:0;left:0;}
+.page.prd.retire.invtm .pop-cont-sect .comment-list li .info .tit .date{font-size:12rem;color:#808080;font-weight:400;}
+
+
+.page.prd.retire.invtm .pop-cont-sect .comment-list li .info .tit .btn-declare{position:absolute;right:0;bottom:0;display:inline-block;padding-left:28rem;height:24rem;line-height:24rem;font-size:14rem;color:#555555;background:url(../img/prd/btn-declare.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.retire.invtm .pop-cont-sect .comment-list li .cont{font-size:15rem;color: #555555;}
+
+.page.prd.retire.invtm .comment-write{padding-bottom:32rem;}
+.page.prd.retire.invtm .comment-write .hd-tit4{margin-bottom:16rem;}
+.page.prd.retire.invtm .comment-write .comm .input.a{display:inline-block;width:75%;margin-right:2%;}
+.page.prd.retire.invtm .comment-write .comm .btn{padding:0 20rem;}
+
+/* 이미지 변경 팝업 */
+.page.prd.retire.invtm .img-radio-wrap{margin:16rem -20rem;}
+.page.prd.retire.invtm .hd-tit4.btm-tit{padding-bottom:20rem;}
+
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell{display:flex;flex-wrap:wrap;margin:0;border-left:3px solid #f5f5f5;}
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap{flex:0 0 auto;margin:0 0 -3px 0;padding:40rem 18rem 20rem;border:3px solid #f5f5f5;border-left-width:1.5rem;width:calc(100% / 3);text-align:center;}
+/* .page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap:first-child,
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap:nth-child(4){border-left-width:3rem;} */
+
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap .radio>.txt{padding-left:0;display:block;width:80rem;height:80rem;}
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap .radio>.txt::before{left:unset;right:-12rem;top:-34rem;}
+.page.prd.retire.invtm .img-radio-wrap .img-radio-cell .wrap .radio>input{left:unset;right:-12rem;top:-34rem;}
+
+.page.prd.retire.invtm .pop-cont-sect2{margin-top:16rem;}
+.page.prd.retire.invtm .pop-cont-sect2 .info-cont{margin:16rem 0 32rem;}
+.page.prd.retire.invtm .pop-cont-sect2 .bullet-tit{font-size:15rem;font-weight:700;margin-bottom:16rem;}
+
+.page.prd.retire.invtm .pop-cont-sect2 .radio-box{margin:16rem 0 32rem 10rem;}
+.page.prd.retire.invtm .pop-cont-sect2 .radio-box li+li{margin-top:10rem;}
+
+.page.prd.retire.invtm  .pop-cont-sect2 .cont-wrap{margin:16rem 0 32rem;}
+.page.prd.retire.invtm  .pop-cont-sect2 .plist li{position:relative;}
+.page.prd.retire.invtm  .pop-cont-sect2 .plist li .plink{width: 24rem;height: 24rem;background: url(../img/common/ico_chk_arr.png) no-repeat center;background-size: 24rem auto;padding-right: 24rem;color: transparent;font-size: 1rem;white-space: nowrap;overflow: hidden;display: inline-block;vertical-align: middle;content: '';margin:0rem;position:absolute;right:0;}
+
+.page.prd.retire.invtm  .pop-cont-sect2 .cont-wrap.textarea-wrap .tit{display:flex;align-items:center;margin-bottom:16rem;}
+.page.prd.retire.invtm  .pop-cont-sect2 .cont-wrap.textarea-wrap .tit img{width:42rem;height:42rem;}
+.page.prd.retire.invtm  .pop-cont-sect2 .cont-wrap.textarea-wrap .tit .writer{padding-left:16rem;font-size:16rem;font-weight:700;}
+
+
+/* 퇴직연금 설계하기 */
+.page.prd.retire.planning{}
+
+.page.prd.retire.planning .plann-sect{margin-top:32rem;}
+.page.prd.retire.planning .plann-sect:last-child{margin-bottom:18rem;}
+.page.prd.retire.planning .plann-sect.top-cont{background:url(../img/prd/img_pension_1@2x.png) no-repeat right bottom;background-size:80rem auto;}
+.page.prd.retire.planning .plann-sect.top-cont p{margin-top:20rem;font-size:15rem;padding-right:110rem;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li{position:relative;border-color:#e6e6e6;padding-bottom:40rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .hbox{position:unset;display:flex;font-weight:700;font-size:16rem;align-items:top;padding-bottom:0;min-height:unset;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .hbox .tit{padding-top:4rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .hbox span{padding-right:2rem;font-size:20rem;letter-spacing:1.1rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li.open .hbox{padding-bottom:16rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li.open .hbox span{color:#2a81eb}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .hbox .btn-tog{top:unset;bottom:0;left:0;width:100%;z-index:10;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a>li .hbox>.btn-tog:before{right:unset;left:50%;transform:translate(-50%, 0)}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a>li+li{margin-top:16rem;}
+
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li .result-wrap{display:none;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li.open.result .result-wrap{display:none;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li.result .result-wrap{display:block;padding:24rem 20rem 10rem;color:#555;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li.result .result-wrap .result-list li{display:flex;justify-content:space-between;width:100%;font-weight:400;font-size:15rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li.result .result-wrap .result-list li + li{margin-top:8rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li.result .result-wrap .result-list li .null{color:#d65d1c;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn li.result .result-wrap .result-list li div:last-child{text-align:right;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .radio-list li{font-size:15rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li + li{margin-top:24rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li label{font-size:15rem;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .radio-list li + li{margin-top:16rem;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap{display:flex;justify-content:space-between;align-items:center;margin-top:16rem;padding:0 34rem;width:100%;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap button{display:block;min-width:40rem;height:40rem;font-size:1rem;color: transparent;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap button.btn-plus{background:url(../img/prd/ic_circle_plus@2x.png) no-repeat 0 0;background-size:40rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap button.btn-minus{background:url(../img/prd/ic_circle_minus@2x.png) no-repeat 0 0;background-size:40rem;}
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap input{width:calc(100% - 32rem);height:50rem;margin:0 8rem 0 16rem;border:1rem solid #dddddd;border-radius:4rem;padding-right:16rem;text-align:right;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li .input-wrap input + .ip-txt{font-size:15rem;margin-right:10rem;}
+
+.page.prd.retire.planning .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li span.input{margin-top:16rem;}
+
+
+/**/
+.page.prd.retire.planning .plann-sect .none-accd > li{border: 1rem solid #e6e6e6;border-radius: 8rem;padding: 16rem 16rem 32rem 16rem;}
+.page.prd.retire.planning .plann-sect .none-accd > li + li{margin-top: 16rem;}
+
+.page.prd.retire.planning .plann-sect .none-accd > li .hbox{display:flex;padding-bottom: 16rem;}
+.page.prd.retire.planning .plann-sect .none-accd > li .hbox .tit{font-size: 16rem;font-weight: 600;margin-top:4rem;}
+.page.prd.retire.planning .plann-sect .none-accd > li .hbox > span{font-size: 20rem;font-weight: 600;padding-right: 2rem;}
+
+.page.prd.retire.planning .plann-sect .none-accd > li .cbox > .radio-list > li + li{margin-top: 16rem;}
+
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap{display: flex;justify-content: space-between;align-items: center;margin-top: 16rem;padding: 0 34rem;width: 100%;}
+
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li label{font-size:15rem}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap button{display: block;min-width: 40rem;height: 40rem;font-size: 1rem;color: transparent;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap button.btn-plus{background: url(../img/prd/ic_circle_plus@2x.png) no-repeat 0 0;background-size: 40rem;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap button.btn-minus{background: url(../img/prd/ic_circle_minus@2x.png) no-repeat 0 0;background-size: 40rem;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap input{width: calc(100% - 32rem);height: 50rem;margin: 0 8rem 0 16rem;border: 1rem solid #dddddd;border-radius: 4rem;padding-right: 16rem;text-align: right;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li .input-wrap input + .ip-txt {font-size: 15rem;margin-right: 10rem;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li + li{margin-top: 24rem;}
+.page.prd.retire.planning .plann-sect .none-accd >li .cbox .input-list li span.input {margin-top: 16rem;}
+/**/
+
+.page.prd.retire.planning .plann-sect.top-cont.bg2{background: url(../img/prd/img_pension_2@2x.png) no-repeat right bottom;background-size: 80rem auto;}
+.page.prd.retire.planning .plann-sect.top-cont.bg3{background: url(../img/prd/img_pension_3@2x.png) no-repeat right bottom;background-size: 80rem auto;}
+
+.page.prd.retire.planning .plann-sect .cbox .hd-tit4{margin-bottom:16rem;}
+.page.prd.retire.planning .plann-sect .cbox .select.def{margin-top:16rem;}
+
+.page.prd.retire.planning .plann-sect .hd-tit3 + .ut-tabs.a{margin-top:24rem;}
+
+.page.prd.retire.planning .full-bg {margin:32rem -20rem 24rem;padding: 32rem 20rem;}
+.page.prd.retire.planning .full-bg.gray{background-color:#f5f5f5;}
+.page.prd.retire.planning .full-bg.bgwhite{background-color:#ffffff;}
+
+.page.prd.retire.planning .plann-sect .che-wrap{margin:16rem 0;}
+.page.prd.retire.planning .plann-sect .btm-txt{margin-bottom:24rem;font-size:14rem;color:#555555;line-height:21rem;}
+
+.page.prd.retire.planning .plann-sect .full-bg.gray .plann-sect.accd{margin:0;}
+.page.prd.retire.planning .plann-sect .full-bg.gray .plann-sect.accd .ut-accd.a.btm-btn>li{border:none;background-color:#fff;}
+.page.prd.retire.planning .plann-sect .full-bg.bgwhite .plann-sect.accd{border:1rem solid #e6e6e6; border-radius: 8rem;}
+
+.page.prd.retire.planning .plann-sect .plann-sect.accd .ut-accd.a.btm-btn>li .tit-line{border-bottom:1rem solid #242424;padding:8rem 0;margin-bottom:24rem;font-size:14rem;font-weight:700;}
+.page.prd.retire.planning  .full-bg.gray .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .input-list li label{font-size:16rem;font-weight:700;}
+.page.prd.retire.planning  .full-bg.gray .plann-sect.accd .ut-accd.a.btm-btn>li .cbox .btn-set.vt{margin-top:24rem;}
+
+.page.prd.retire.planning .plann-sect .plann-sect.accd .ut-accd.a.btm-btn>li .input-list + .tit-line{margin-top:24rem;}
+
+/* 바텀시트 팝업 */
+.page.prd.retire.planning .plan-botpop-cont{margin-top:16rem;}
+.page.prd.retire.planning .bg-box-sky{background-color:#eff7ff;border-radius:8rem;padding:20rem;font-size:15rem;color:#242424;}
+.page.prd.retire.planning .bg-box-gray{background-color:#fafafa;border-radius:8rem;padding:20rem;font-size:15rem;color:#555555;}
+.page.prd.retire.planning .bg-box-gray .link-ar{font-size:15rem;margin-top:16rem;}
+.page.prd.retire.planning .plan-botpop-cont .plan-sect{margin-top:32rem;}
+.page.prd.retire.planning .plan-sect .hd-tit4{padding:0;margin-bottom:16rem;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a .tbform.center td{text-align:center;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a .tbform td.t-right{text-align:right !important;padding-right:8rem;}
+
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform > tbody > tr td{font-size:15rem;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform > tbody > tr td.t-right{font-size:14rem;font-weight:700;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform>tbody>tr th, .page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform>tbody>tr td{border:none;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform > tbody > tr:first-child td{padding-top:24rem;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline .tbform > tbody > tr:last-child td{padding-bottom:24rem;}
+
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline + .total{display:flex;justify-content:space-between;padding:15rem 20rem;border:1rem solid #dddddd;border-radius:4rem;background-color:#fafafa;margin-top:24rem;font-size:16rem;font-weight:700;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline + .total strong{font-size:18rem;color:#2a81eb;font-weight:700;}
+.page.prd.retire.planning .plan-sect .ut-tbl.a.unline + .hd-tit4{margin-top:40rem;}
+
+
+/* 레이어 팝업 */
+.page.prd.retire.planning .plan-layer-coont{}
+.page.prd.retire.planning .plan-layer-coont .plan-sect{margin-top:40rem;}
+.page.prd.retire.planning .plan-layer-coont .plan-sect:first-child{margin-top:32rem;}
+.page.prd.retire.planning .plan-layer-coont .plan-sect:last-child{margin-bottom:80rem;}
+
+.page.prd.retire.planning .plan-sect .txt-cont{margin-top:16rem;color:#555555;font-size:15rem;line-height:21rem;}
+.page.prd.retire.planning .plan-sect .img-cont{margin-top:24rem;}
+
+
+
+/* 투자정보 */
+.page.prd.retire.invtm .invest-info-wrap>.btn-set{margin:32rem 0}
+.page.prd.retire.invtm .invest-info-wrap .perc-list{margin-top:32rem;border:1px solid #e6e6e6;padding:20rem 25rem;border-radius:8rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul{display:flex;flex-wrap:wrap;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li{width:calc(100% / 2)}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li:nth-child(2n) .wrap{border-left:1rem solid #e6e6e6;padding-left:25rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li.bt-li{margin-top:20rem;padding-top:20rem;border-top:1rem solid #e6e6e6;}
+
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .s-tit{font-size:12rem;color:#808080;margin-bottom:2rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .numb{font-size:18rem;font-weight:700;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc{margin-top:16rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t{font-size:14rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t:before{display:inline-block;content:'';width:0;height:0;border-radius:2rem;margin-right:6rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t.red{color:#e64c2e;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t.blue{color:#2a81eb;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t.red:before{border-left:4.5rem solid transparent;border-right:4.5rem solid transparent;border-bottom:6rem solid #e64c2e;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .icon-t.blue:before{position:relative;top:-2rem;border-left:4.5rem solid transparent;border-right:4.5rem solid transparent;border-top:6rem solid #2a81eb;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .ut-bdg{display:inline-block;padding:1rem 5rem 1rem 4rem;color:#fff;background-color:#e64c2e;font-size:12rem;border-radius:4rem;}
+.page.prd.retire.invtm .invest-info-wrap .perc-list ul li .perc .ut-bdg.blue{background-color:#2a81eb;}
+
+
+.page.prd.retire.invtm .invest-info-wrap .invest-sect{margin-top:40rem;}
+
+.page.prd.retire.invtm .invest-info-wrap .bnr-btn{position:relative;display:block;background-color:#f5f5f5;min-height:140rem;padding:20rem 120rem 20rem 20rem;border-radius:8rem;}
+.page.prd.retire.invtm .invest-info-wrap .bnr-btn:after{display:block;content:'';width:80rem;height:80rem;background:url(../img/prd/image_2@2x.png) no-repeat 0 0;background-size:80rem;position:absolute;top:20rem;right:20rem;}
+.page.prd.retire.invtm .invest-info-wrap .bnr-btn strong.tit{display:block;font-size:18rem;font-weight:700;margin-bottom:12rem;color:#242424;}
+.page.prd.retire.invtm .invest-info-wrap .bnr-btn span.txt{font-size:15rem;color:#242424;}
+
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .hd-tit4{margin-bottom:16rem;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .hd-tit4 > .link-ar{float:right;font-size:14rem;font-weight:400;color:#282828;}
+
+
+/* 슬라이드 */
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .swiper-container-autoheight .swiper-slide{height:270rem;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .swiper-slide{border-radius:16rem;overflow:hidden;}
+
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play{position:relative;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play .swiper{padding-bottom:43rem;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play .slide>li{background-color:#f5f5f5;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play .slide>li .pic{width:100%;height:189rem;overflow:hidden;text-align:center;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play .slide>li .pic img{height:100%;width:531rem;max-width:unset;margin-left:-90rem;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .swiper-slide .txt{height:81rem;padding:20rem;font-size:18rem;font-weight:700;}
+.page.prd.retire.invtm .invest-info-wrap .invest-sect .ut-slide-play .swiper .control{position: absolute;right: 0;left: 0;bottom: 3rem;top:unset;}
+
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap{height:270rem;border-radius:16rem;overflow: hidden;background-color:#f5f5f5;-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-webkit-transform: translate3d(0, 0, 0);-moz-transform: translate3d(0, 0, 0);}
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap + .img-guide-wrap{margin-top:16rem;}
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap > a{display:block;}
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap .pic{width:100%;height:189rem;overflow:hidden;text-align:center;}
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap .pic img{height:100%;width:531rem;max-width:unset;margin-left:-90rem;}
+.page.prd.retire.invtm .invest-info-wrap .img-guide-wrap .txt{height:81rem;padding:20rem;font-size:18rem;font-weight:700;}
+
+/* 운용상품 */
+.page.prd.retire.invtm .prod-sub-sect .ut-slide-play .swiper{padding-bottom:40rem;}
+.page.prd.retire.invtm .prod-sub-sect .ut-slide-play .swiper .control{position: absolute;right: 0;left: 0;bottom:0;top:unset;}
+
+.page.prd.retire.invtm .prod-sub-sect + .prod-sub-sect{margin-top:32rem;}
+
+.page.prd.retire.invtm .prod-sub-sect .ut-optset{margin:8rem 0 16rem;}
+.page.prd.retire.invtm .prod-sub-sect .ut-optset>.opt .date{margin-left:0;}
+.page.prd.retire.invtm .prod-sub-sect .box-line{margin:0;}
+
+.page.prd.retire.invtm .prod-sub-sect .rate10-list{border:1rem solid #e6e6e6;border-radius:8rem;padding:0 20rem;}
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li{padding:20rem 0;display:flex;justify-content:space-between;}
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li+li{border-top:1rem solid #e6e6e6;}
+
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li .tit{padding-left:24rem;position:relative;}
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li .tit .rank{position:absolute;top:0;left:0;font-size:16rem;font-weight:700;}
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li .tit>a {margin-right: 16rem; min-width: 65%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.31; /*word-break: keep-all;*/ word-break: break-all; font-size: 15rem; color: #555 }
+.page.prd.retire.invtm .prod-sub-sect .rate10-list li .perc strong{font-size:16rem;font-weight:700;color:#e64c2e;}
+
+/* 상품검색 */
+.poptents.page.prd.retire.irp.btm-margin{margin-bottom:120rem;}
+.poptents.page.prd.retire.irp.btm-margin .ut-more.more{margin:32rem 0 24rem;}
+
+.page.prd.retire .box-blue{margin-top:32rem;position:relative;border-radius:8rem;padding:20rem;background-color:#2a81eb;color:#fff;font-size:16rem;font-weight:700;}
+.page.prd.retire .box-blue span{display:inline-block;padding:2rem 12rem;background-color:#fff;color:#2a81eb;font-size:12rem;margin-right:10rem;border-radius:16rem;position:relative;top:-2rem;}
+.page.prd.retire .box-blue.btn-refres button{position:absolute;top:20rem;right:20rem;display:inline-block;font-size:1rem;color:transparent;width:24rem;height:24rem;background:url(../img/prd/ic_reload@2x.png) no-repeat 0 0;background-size:24rem;}
+
+.page.prd.retire.irp.btm-margin .box-gray{margin:40rem 0;background-color:#f5f5f5;border-radius:4rem;padding:16rem;text-align:center;}
+.page.prd.retire.irp.btm-margin .box-gray .btn-set.vt{margin-top:16rem;}
+
+.page.prd.retire .ut-optset.optset.type2{display:unset;}
+.page.prd.retire .ut-optset.optset.type2 > .flex-btwn{display:flex;justify-content:space-between;margin:18rem 0 16rem;}
+.poptents.page.prd.retire.irp.btm-margin .checkbox.star>.txt{margin-right:8rem;}
+.poptents.page.prd.retire.irp.btm-margin  .red{color:#e64c2e !important;font-size:16rem;}
+
+.poptents.page.prd.retire.irp.btm-margin .ut-dcard.a .stds .ddt{margin-top:8rem;}
+.poptents.page.prd.retire.irp.btm-margin .ut-dcard.a .stds .hdt{margin-bottom:8rem;}
+.poptents.page.prd.retire.irp.btm-margin .ut-dcard.a .stds .hdt .chk .checkbox{margin-top:10rem;}
+.poptents.page.prd.retire.irp.btm-margin .ut-dcard.a .stds .hdt .chk .checkbox .txt{/*padding:0;*/ padding-right:30rem; word-break: break-all;}
+.poptents.page.prd.retire.irp.btm-margin .ut-dcard.a .stds .hdt .chk .checkbox .txt .hash-txt{font-size:14rem;color:#555;font-weight:400;margin-top:8rem;}
+/* 변액보험 */
+/* 펀드서비스 */
+.page.prd.insurance.variable .blue{color:#2a81eb;}
+.page.prd.insurance.variable .variable-wrap{margin-top:32rem;}
+.page.prd.insurance.variable .variable-wrap .hd-tit4{padding:0;line-height:1;}
+.page.prd.insurance.variable .variable-wrap .hd-tit4 > .link-ar{float:right;font-size:14rem;font-weight:400;color:#282828;padding-top:2rem;}
+
+.page.prd.insurance.variable .ut-bnr-lst.img a.lk{padding-left:84rem;background-image:url(../img/prd/img_48x48@2x.png);background-position:20rem 50%;background-repeat:no-repeat;background-size:48rem;background-color:#ebf5ff;}
+.page.prd.insurance.variable .ut-bnr-lst.img a.lk .txt{font-size:15rem;}
+
+.page.prd.insurance.variable .variable-wrap .t-tit{font-size:18rem;line-height:24rem;font-weight:700;}
+.page.prd.insurance.variable .variable-wrap .cont-sect{margin-top:32rem;}
+.page.prd.insurance.variable .variable-wrap .cont-sect + .cont-sect{margin-top:40rem;}
+.page.prd.insurance.variable .variable-wrap .hd-tit4{margin-bottom:16rem;}
+.page.prd.insurance.variable .variable-wrap .market-info-list{display:flex;flex-wrap:wrap;justify-content:space-between;margin:0 -8rem;}
+.page.prd.insurance.variable .variable-wrap .market-info-list li{margin:0 8rem;width:calc(50% - 16rem);text-align:center;}
+.page.prd.insurance.variable .variable-wrap .market-info-list li > a{display:block;height:100%;flex:1;background-color:#ebf5ff;border-radius:16rem;padding:84rem 20rem 25rem 20rem;background-repeat:no-repeat;background-position:center 20rem;background-size:48rem;}
+.page.prd.insurance.variable .variable-wrap .market-info-list li.li01 > a{background-image:url(../img/prd/ic_mk_info01@2x.png);}
+.page.prd.insurance.variable .variable-wrap .market-info-list li.li02 > a{background-image:url(../img/prd/ic_mk_info02@2x.png);background-color:#e4f5f7;}
+
+.page.prd.insurance.variable .variable-wrap .ut-tabs.c{margin-top:32rem;margin-bottom:20rem;}
+
+.page.prd.insurance.variable .variable-wrap .box-line{border:1rem solid #e6e6e6;border-radius:8rem;padding:0 20rem;}
+.page.prd.insurance.variable .variable-wrap .variable-best-list li{position:relative;padding:20rem 0 20rem 24rem;border-bottom:1rem solid #e6e6e6;}
+.page.prd.insurance.variable .variable-wrap .variable-best-list li:last-child{border-bottom:0;}
+.page.prd.insurance.variable .variable-wrap .variable-best-list li .rank{font-weight:700;font-size:16rem;position:absolute;top:50%;left:0;transform:translate(0 , -50%)}
+.page.prd.insurance.variable .variable-wrap .flex-betw{display:flex;justify-content:space-between;align-items:center;}
+.page.prd.insurance.variable .variable-wrap .variable-best-list li .cont .ut-bdgs{margin-bottom:4rem;}
+
+.page.prd.insurance.variable .variable-wrap .flex-betw.right{display:block;text-align:right;}
+.page.prd.insurance.variable .variable-wrap .flex-betw.right > .t-m12.c80{display:none;}
+
+/* 하단배너 수정 */
+.page.prd.insurance.variable .ut-bnr-ico {margin-bottom:18rem;}
+.page.prd.insurance.variable .ut-bnr-ico > li + li{margin-top:16rem;}
+.page.prd.insurance.variable .ut-bnr-ico  a.lk{display: block;padding: 20rem 20rem 20rem 84rem;border-radius: 8rem;background-color: #f5f5f5;position: relative;color: #242424;background-size: 48rem;background-repeat: no-repeat;background-position: left top;}
+.page.prd.insurance.variable .ut-bnr-ico a.lk:after {content: "";display: block;position: absolute;right: 20rem;top: 30rem;transform: translateY(-50%);width: 18rem;height: 18rem;background: url(../img/csc/bg_arr_counsel.png) no-repeat center top;background-size: 18rem;}
+
+.page.prd.insurance.variable .ut-bnr-ico a.lk.b2{background-color:#ebf5ff;}
+.page.prd.insurance.variable .ut-bnr-ico a.lk.ic_img_f_01{background-image:url(../img/prd/ic_mk_info03@2x.png);background-position:20rem 20rem;}
+.page.prd.insurance.variable .ut-bnr-ico a.lk.ic_img_f_02{background-image:url(../img/prd/ic_mk_info04@2x.png);background-position:20rem 20rem;}
+
+
+
+/* 펀드리스트 */
+.page.prd.insurance.variable .variable-wrap .tab-tab-inr{}
+.page.prd.insurance.variable .variable-wrap .ut-more{margin:32rem 0 22rem;}
+.page.prd.insurance.variable .variable-wrap .tab-tab-inr{margin-top:40rem;}
+
+.page.prd.insurance.variable .variable-wrap .input.a.such{border-radius:25rem;border-color:#555555;margin-bottom:26rem;}
+.page.prd.insurance.variable .variable-wrap .input.a.such .ibts{top:50%;right:15rem;transform:translate(0 ,-50%)}
+.page.prd.insurance.variable .variable-wrap .input.a.such .ibts .sch-img{width: 24rem;height: 24rem;font-size: 1rem;color: transparent;vertical-align: middle;border: none;background: none;padding: 0rem;background: url(../img/prd/ic_search@2x.png) no-repeat center;background-size: 24rem auto;z-index: 1;}
+
+.page.prd.insurance.variable .variable-wrap .ut-optset.optset{margin-bottom:16rem;}
+.page.prd.insurance.variable .variable-wrap .ut-dcard.a.account .stds .hdt{margin-top:12rem;}
+
+.page.prd.insurance.variable .box-gray{padding:16px 17px 16px;border-radius:4px;background-color:#f5f5f5;margin-bottom:16rem;}
+.page.prd.insurance.variable .box-gray .lst>li>.dl{display:flex;width:100%;justify-content:space-between;color:#242424;font-weight:700;}
+.page.prd.insurance.variable .box-gray .lst>li+li{margin-top:10rem;}
+.page.prd.insurance.variable .box-gray + .bullet.b{margin-bottom:26rem;}
+
+.page.prd.insurance.variable .variable-wrap .hd-tit4 > .right{float:right;}
+.page.prd.insurance.variable .variable-wrap .hd-tit4 > .right em{color:#e64c2e;}
+
+.page.prd.insurance.variable .variable-wrap .variable-best-list.type2 li{padding-left:0;}
+
+.page.prd.insurance.variable .variable-wrap .fund-list{display:flex;justify-content:space-between;}
+.page.prd.insurance.variable .variable-wrap .fund-list li{position:relative;background-color:#ebf5ff;border-radius:16rem;padding:20rem;height:152rem;}
+.page.prd.insurance.variable .variable-wrap .fund-list li.null{background-color:#fafafa;font-size:14rem;line-height:21rem;padding-top:47rem;text-align:center;}
+.page.prd.insurance.variable .variable-wrap .fund-list li.null a{color:#555555;}
+.page.prd.insurance.variable .variable-wrap .fund-list li .fund-tit{font-size:18rem;color:#242424;font-weight:700;margin-top:12rem;}
+
+.page.prd.insurance.variable .variable-wrap .ut-tbl.a .tblist.nl.t-border>tbody>tr>th{border-top:1rem solid #e6e6e6;}
+
+.page.prd.insurance.variable .box-gray.gray2{background-color:#fafafa;padding:19rem 20rem 20rem;}
+.page.prd.insurance.variable .box-gray.flex-betw >.ut-bdgs .bdg{margin-bottom:0;background:none;}
+.page.prd.insurance.variable .box-gray.flex-betw >.level{font-size:18rem;font-weight:700;color:#242424;}
+.page.prd.insurance.variable .box-gray.flex-betw >.level span{padding-left:8rem;font-weight:400;font-size:15rem;color:#555555;}
+
+.page.prd.insurance.variable  .variable-wrap.popup .hd-tit4{margin-top:40rem;}
+.page.prd.insurance.variable  .variable-wrap.popup .box-gray.flex-betw + .hd-tit4{margin-top:32rem;}
+.page.prd.insurance.variable  .variable-wrap.popup .img-graph-area{min-height:240rem;margin-top:24rem;}
+
+.page.prd .ut-tbl.a table.tblist.nl.left>tbody>tr>td{text-align:left;}
+.page.prd .ut-tbl.a table.tblist.nl>tbody>tr>td.left{text-align:left;}
+
+.page.prd.insurance.variable .variable-wrap .perc .icon-t:before{display:inline-block;content:'';width:0;height:0;border-radius:2rem;margin-right:6rem;}
+.page.prd.insurance.variable .variable-wrap .perc .icon-t.red{color:#e64c2e;}
+.page.prd.insurance.variable .variable-wrap .perc .icon-t.blue{color:#2a81eb;}
+.page.prd.insurance.variable .variable-wrap .perc .icon-t.red:before{border-left:4.5rem solid transparent;border-right:4.5rem solid transparent;border-bottom:6rem solid #e64c2e;}
+.page.prd.insurance.variable .variable-wrap .perc .icon-t.blue:before{position:relative;top:-2rem;border-left:4.5rem solid transparent;border-right:4.5rem solid transparent;border-top:6rem solid #2a81eb;}
+
+.page.prd.insurance.variable  .variable-wrap.popup .btn-set.vt{margin:40rem 0;}
+
+/* 시황정보 */
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list{border-top:1rem solid #555555;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li{border-bottom:1rem solid #e6e6e6;padding:20rem 0;display:flex;justify-content:space-between;align-items:center;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li .date{font-size:12rem;color:#808080;margin-bottom:4rem;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li .date span.bar{position:relative;padding-left:4rem;margin-left:5rem;display:inline-block;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li .date span.bar:before{display:block;content:'';position:absolute;top:4rem;left:0;width:1rem;height:10rem;background-color:#808080;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li .tit{font-size:15rem;color:#555555;}
+.page.prd.insurance.variable .variable-wrap .pdf-dw-list li .btn-pdf-dw{font-size:1rem;color:transparent;display:block;width:18rem;height:18rem;background:url(../img/prd/ic_pdf_down@2x.png) no-repeat 0 0;background-size:18rem;}
+
+/* 보험료 및 해지환급금 예시 팝업 */
+.poptents.prd.insurance-pop .sect{margin-top:32rem;font-size:15rem;}
+.poptents.prd.insurance-pop .sect + .sect{margin-top:40rem;}
+.poptents.prd.insurance-pop .sect > .hd-tit3{margin-bottom:12rem;}
+.poptents.prd.insurance-pop .sect > .t-flex{display:flex;color:#555555;margin-bottom:20rem;}
+.poptents.prd.insurance-pop .sect > .t-flex > .tt{width:34rem;margin-right:6rem;}
+.poptents.prd.insurance-pop .sect > .t-flex > .tc{width:calc(100% - 40rem);}
+.poptents.prd.insurance-pop .sect > .table-area{background-color:#dddddd;margin:20rem 0 16rem;}
+.poptents.prd.insurance-pop .sect > .t-blue{margin-bottom:8rem;}
+/* ===================== 펀드신탁 ===================== */
+/* 신탁 */
+.poptents.page.prd.trust{}
+
+.poptents.page.prd.trust .progress-bar-area{padding:0 10rem;}
+.poptents.page.prd.trust .progress-bar-area .hd-tit4{padding-bottom:0;}
+.poptents.page.prd.trust .progress-bar-area .state-area{display:flex;justify-content:space-between;font-size:15rem;color:#555;}
+.poptents.page.prd.trust .progress-bar-area .state-area .tit{font-size:18rem;color:#2a81eb;font-weight:bold;}
+
+.poptents.page.prd.trust .progress-bar-area .progress{margin-top:24rem;position:relative;height:12rem;background-color:#e9eaed;border-radius:50rem;overflow:hidden;}
+.poptents.page.prd.trust .progress-bar-area .progress .bar{position:absolute;top:0;left:0;background-color:#2a81eb;display:inline-block;height:12rem;border-radius:50rem;}
+
+/* 신탁신규가입 */
+.page.prd.trust .join-info .hd-tit3 {font-size:22rem}
+.page.prd.trust .join-info .cont{position:relative;margin-top:40rem;/*padding-top:105rem;*/font-size:15rem;color:#555555;line-height:21rem;}
+/*.page.prd.trust .join-info .cont:before{display:block;content:'';position:absolute;top:0;left:50%;transform:translate(-50%, 0);width:80rem;height:80rem;background:url(../img/prd/icon_tendency1@2x.png) no-repeat 0 0;background-size:100%;}*/
+.page.prd.trust .join-info .cont .ct{text-align:center;}
+.page.prd.trust .join-info .cont .txt-t1{font-size:22rem;font-weight:700;color:#242424;line-height:32rem;margin-bottom:8rem;}
+.page.prd.trust .join-info .cont .txt-con{margin-top:32rem;}
+.page.prd.trust .join-info .cont + .btn-set{padding:0 10rem;margin:40rem 0;}
+
+.page.prd.trust .join-info-step{font-size:15rem;color:#555555;line-height:21rem;}
+.page.prd.trust .join-info-step .hd-tit3 {font-size:22rem}
+
+.page.prd.trust .join-info-step .cont .txt-con{margin-top:16rem;}
+.page.prd.trust .join-info-step .cont .box-gray{background-color:#fafafa;margin-top:32rem;padding:20rem;border-radius:8rem;}
+.page.prd.trust .join-info-step .cont .box-gray .radio-wrap{margin-top:16rem;}
+
+.page.prd.trust .join-info-step .btn-list{margin-top:32rem;}
+.page.prd.trust .join-info-step .btn-list li + li{margin-top:8rem;}
+.page.prd.trust .join-info-step .btn-list li button{display:block;width:100%;border:1px solid #ccc;border-radius:4rem;padding:20rem;font-size:15rem;color:#555;}
+.page.prd.trust .join-info-step .btn-list li button .wrap {display:flex;justify-content:space-between;align-items:center;}
+
+.page.prd.trust .join-info-step .blue{color:#2a81eb;}
+.page.prd.trust .join-info-step .count{font-size:12rem;}
+
+/* 6795 */
+.page.prd.add-service .s-section ul.bullet.a.lg > li  .cont-box .hd-tit4{font-size:16rem;}
+
+/* 같이투자 새로운페이지 */
+.page.csc.faq.list .board-wrp.invtm .ut-accd.a>li .hbox .tit{margin-top:0;padding-right:30rem}
+.page.csc .board-wrp.invtm .ut-accd.a>li .hbox .btn-tog:before{top:56%;}
+
+.page.invtm.txt-page .contents{margin:24rem 0 30rem;}
+.page.invtm.txt-page p.txt{margin-top:16rem;}
+.page.invtm.txt-page ul.bullet.a>li>.bullet.c {padding:6rem 0 0 10rem;}
+.page.invtm.txt-page ul.bullet.a>li>ol{padding-top:6rem;}
+.page.invtm.txt-page .hd-tit4 {margin: 24rem 0 8rem;}
+.page.invtm.txt-page .hd-tit4.top-line{border-top:1rem solid #e6e6e6;padding-top:16rem;}
+.page.invtm.txt-page .txt-desc{color:#555; line-height: 1.5;}
+.page.invtm.txt-page .btn-set.vt{margin:16rem 0;}
+
+.page.prd.retire.irp .main .visual-area .chk-list.invtm{padding-top:180rem;background: url(../img/prd/img_48x48@2x.png) no-repeat center 50rem;background-size: 96rem;}
+.page.prd.retire.irp .main .visual-area .chk-list.invtm dt{font-size:18rem;font-weight:700;}
+.page.prd.retire.irp .main .visual-area .chk-list.invtm dd{font-size:15rem;color:#555555;}
+
+/* 보험금계산결과 테이블 수정 */
+.poptents.ensure.table-st{}
+.poptents.ensure.table-st  .ut-tbl.a table.tblist>tbody>tr>td{font-size:12rem;word-break:break-all;text-align:left;}/* 내려쓰기 확인필요!! */
+.poptents.ensure.table-st  .ut-tbl.a table.tblist>tbody>tr>td:last-child{text-align:right;}
+.poptents.ensure.table-st2  .ut-tbl.a table.tblist>tbody>tr>td{font-size:12rem;}
+
+.poptents.ensure.table-st2 .ut-tbl.a.wd768{overflow-x:auto;max-width:768rem;}
+.poptents.ensure.table-st2 .ut-tbl.a.wd768 .tblist{width:768rem !important;border-top:1rem solid #000;}
+
+.poptents.ensure.table-st .ut-tbl{overflow-x:auto;max-width:500rem;}
+.poptents.ensure.table-st .ut-tbl .tblist{width:500rem !important;border-top:1rem solid #000;}
+
+
+.page.prd.retire.invtm .opr-invt-box {padding:30rem 20rem 0; border:1rem solid #e6e6e6; border-radius: 8rem; }
+.page.prd.retire.invtm .opr-invt-lst>li {padding:20rem 0 20rem 96rem; min-height:120rem; position:relative;}
+.page.prd.retire.invtm .opr-invt-lst>li:first-child {padding-top:24rem}
+.page.prd.retire.invtm .opr-invt-lst>li+li {border-top:1rem solid #e6e6e6}
+.page.prd.retire.invtm .opr-invt-lst>li::after {display:block; content:""; width:80rem; height:80rem; position:absolute; top:20rem; left:0; background-size:80rem auto; background-repeat: no-repeat;}
+.page.prd.retire.invtm .opr-invt-lst>li.ico01::after {background-image:url(../img/prd/ic_opr01.png);}
+.page.prd.retire.invtm .opr-invt-lst>li.ico02::after {background-image:url(../img/prd/ic_opr02.png);}
+.page.prd.retire.invtm .opr-invt-lst>li.ico03::after {background-image:url(../img/prd/ic_opr03.png);}
+.page.prd.retire.invtm .opr-invt-lst>li.ico04::after {background-image:url(../img/prd/ic_opr04.png);}
+.page.prd.retire.invtm .opr-invt-lst .txt{font-size:15rem; color:#242424; line-height: 1.4;}
+.page.prd.retire.invtm .opr-invt-box +.ut-bnr-lst {margin-top:16rem}
+
+
+/* 퇴직연금 아이콘 수정 22-05-24 이후 */
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon li a.lk.b{}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico01 a.lk.b{background-image:url(../img/prd/ic6610_01@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico02 a.lk.b{background-image:url(../img/prd/ic6610_02@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico03 a.lk.b{background-image:url(../img/prd/ic6610_03@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico04 a.lk.b{background-image:url(../img/prd/ic6610_04@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico05 a.lk.b{background-image:url(../img/prd/ic6610_05@2x.png);}
+.page.prd.retire.invtm .ut-bnr-lst.img.n-icon .ico06 a.lk.b{background-image:url(../img/prd/ic6610_06@2x.png);}
+
+.page.prd.retire.invtm .ut-bnr-ico > a.lk.b{background-color:#f2feff;}
+.page.prd.retire.invtm .ut-bnr-ico > a.lk.ic_img01{background-image:url(../img/prd/ic6373_01@2x.png);background-position:20rem 20rem;}
+.page.prd.retire.invtm .ut-bnr-ico > a.lk.ic_img02{background-image:url(../img/prd/ic6610_01@2x.png);background-position:20rem 20rem;}
+
+/* 퇴직연금 설계하기 */
+.page.prd.retire.plan .hd-tit2{margin-top:32rem;}
+.page.prd.retire.plan .c-txt16{margin-top:12rem;}
+.page.prd.retire.plan .ut-slide-dot{margin:48rem -20rem 40rem -20rem;}
+.page.prd.retire.plan .ut-slide-dot .swiper{padding-bottom:0;}
+.page.prd.retire.plan .swiper-container{padding-top:40rem;}
+.page.prd.retire.plan .swiper-container .pagination.swiper-pagination-bullets{top:0;bottom:unset;height:unset;}
+
+.page.prd.retire.plan .swiper-wrapper .card{position:relative;height:340rem;border-radius:16rem;padding:25rem 30rem;color:#fff;}
+.page.prd.retire.plan .swiper-wrapper .card:after{display:block;content:'';width:80rem;height:80rem;position:absolute;bottom:40rem;right:24rem;background-repeat:no-repeat;background-position:0 0;background-size:100%;}
+.page.prd.retire.plan .swiper-wrapper .card.card01{background-color:#121c72}
+.page.prd.retire.plan .swiper-wrapper .card.card02{background-color:#008b95}
+.page.prd.retire.plan .swiper-wrapper .card.card03{background-color:#007cea}
+.page.prd.retire.plan .swiper-wrapper .card.card01:after{background-image:url(../img/prd/ic_reti_1@2x.png);}
+.page.prd.retire.plan .swiper-wrapper .card.card02:after{background-image:url(../img/prd/ic_reti_2@2x.png);}
+.page.prd.retire.plan .swiper-wrapper .card.card03:after{background-image:url(../img/prd/ic_reti_3@2x.png);}
+
+.page.prd.retire.plan .swiper-wrapper .card .tit{font-size:22rem;font-weight:700;line-height:32rem;}
+.page.prd.retire.plan .swiper-wrapper .card .txt{font-size:16rem;font-weight:400;margin-top:10rem;}
+
+
+/* 버튼 텍스트 가려지는 부분 수정 */
+.page .btn-set.vt .btn{word-wrap:unset;word-break:break-all;white-space:pre-line;}
+
+/* 체크박스 텍스트 분리 22-07-15 */
+.page.prd.insurance.variable .variable-wrap .ut-dcard.a.account .stds .nchk{position: relative;width: 100%}
+.page.prd.insurance.variable .variable-wrap .ut-dcard.a.account .stds .nchk > label{position: absolute;top: 0;right: 0;margin-right: 0;}
+.page.prd.insurance.variable .variable-wrap .ut-dcard.a.account .stds .nchk > .btn-ip-txt{font-size: 16rem;font-weight: 600;}
+.page.prd.insurance.variable .variable-wrap .ut-dcard.a.account .stds .nchk > .btn-ip-txt + span{display:block;margin-top:4rem;}
+
+
+
+.page.prd.is-full.insurance.variable .secCont + .secCont{min-height:250rem;}
+
+/* 갤러시 폴드 대응 */
+
+@media screen and ( max-width:1024px ) and ( min-width:769px ){
+	.page.prd.detail .cont-sec.sec1 .img-cont-bg img{ max-width : 400rem !important}
+	.page.prd.detail .cont-sec.sec3 .img-cont img{ max-width : 400rem !important}
+	.page.prd.detail .cont-sec .img-cont-bg.img-cont2 img{ max-width : 400rem !important}
+	.page.prd.detail .cont-sec .img-cont-bg img{ max-width : 400rem !important}
+	.page.prd.detail .cont-sec .img.type2 img{ max-width : 400rem !important}
+}
+
+@media screen and ( max-width:768px ) and ( min-width:450px ){
+	.page.prd.detail .cont-sec.sec1 .img-cont-bg img{ max-width : 340rem !important}
+	.page.prd.detail .cont-sec.sec3 .img-cont img{ max-width : 340rem !important}
+	.page.prd.detail .cont-sec .img-cont-bg.img-cont2 img{ max-width : 340rem !important}
+	.page.prd.detail .cont-sec .img-cont-bg img{ max-width : 340rem !important}
+	.page.prd.detail .cont-sec .img.type2 img{ max-width : 340rem !important}
+}
+
+
+/* 디폴트옵션 등록하기(dc/irp) 2023-01-04 */
+.default-option .ut-optset  {
+	display: block;
+}
+.default-option .pop-terms-detail + .ut-optset {
+	margin-top: 30rem;
+}
+.default-option .default-option-wrap + .ut-optset,
+.default-option .ut-dcard + .ut-optset {
+	margin-top: 40rem;
+}
+.default-option .ut-optset + .default-option-wrap,
+.default-option .ut-optset + .ut-dcard {
+	margin-top: 20rem;
+}
+.default-option.tab-cont-wrap .ut-optset {
+	margin-top: 30rem;
+}
+.default-option .ut-optset .info {
+	display: flex;
+	align-items: center;
+	gap: 10rem;
+}
+.default-option .ut-optset > * + * {
+	margin-top: 15rem;
+}
+.default-option .ut-optset .tit {
+	font-size: 16rem;
+	font-weight: 500;
+}
+.default-option .ut-optset .info .date {
+	color: #767676;
+	font-size: 12rem;
+}
+.default-option .ut-optset .opts-btw {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.default-option .ut-dcard .stds {
+	margin-bottom: 12rem;
+}
+.default-option .ut-dcard .stds .hdt {
+	margin-top: 5rem;
+	margin-bottom: 0;
+}
+.default-option .ut-dcard .stds > .btn-set {
+	margin-top: 16rem;
+}
+.default-option .ut-dcard .dtds {
+	padding-top: 0 !important;
+}
+.default-option .ut-dcard .dtds > * + * {
+	margin-top: 16rem;
+}
+.default-option .dopt-cont:first-child {
+	padding-top: 20rem;
+	border-top: 1px solid #e6e6e6;
+}
+.default-option .dopt-cont .prd-tit { 
+	font-size: 15rem;
+	margin-bottom: 16rem;
+	font-weight: 500;
+ }
+ .default-option .dtds .dopt-cont .dlt>li .dd { 
+	color: #555;
+	font-weight: normal;
+ }
+.default-option .ut-dcard.selected {
+	background-color: #fafafa;
+	border: none;
+}
+.default-option .ut-dtds {
+	margin-top: 10rem;
+}
+.default-option .ut-dtds .dlist li + li { 
+	margin-top: 16rem;
+}
+.default-option .ut-dtds .hdt {
+	padding: 15rem 0;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #e6e6e6;
+}
+.default-option .ut-dtds .hdt .tit {
+	font-size: 16rem;
+	font-weight: 500;
+}
+.default-option .ut-dtds .cdt {
+	margin-top: 12rem;
+	font-size: 15rem;
+}
+.default-option .ut-dtds .cdt .sbtit {
+	font-size: 14rem;
+	font-weight: 500;
+}
+.default-option .ut-dtds dl {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #555;
+	margin-top: 16rem;
+}
+.default-option .phdt {
+	margin-top: 16rem;
+	font-size: 16rem;
+}
+.default-option .phdt > * + * {
+	margin-top: 15rem;
+}
+.default-option .phdt .tit {
+	font-weight: 500;
+}
+.default-option .phdt .text {
+	font-size: 15rem;
+	color: #555;
+}
+.default-option .phdt + .ut-range {
+	margin-top: 16rem;
+}
+.default-option .ut-bnr-lst {
+	margin-top: 16rem;
+}
+.default-option .ut-bnr-lst a.lk .tit {
+	font-size: 14rem;
+}
+.default-option .floatbots .box-set.box-flex.alt {
+	padding-bottom: 20rem !important;
+}
+.default-option.poptents .ut-dcard .stds .hdt .chk .checkbox { 
+	margin-top: 0 !important;
+}
+.default-option-box {
+	margin-bottom: 30rem;
+}
+.default-option-box .info-box-gray {
+	margin-top: 10rem;
+	padding: 20rem;
+	border-radius: 8px;
+  background-color: #fafafa;
+	font-size: 15rem;
+	color: #555;
+}
+.default-option-box .info-box-gray + .ut-range {
+	margin-top: 20rem;
+}
+.default-option-box .ut-range .tit {
+	font-size: 16rem;
+	font-weight: 500;
+}
+.default-option-box .ut-range .tit + .rcs {
+	margin-top: 16rem;
+}
+/* 디폴트옵션 등록하기(dc/irp) 2023-01-04 */

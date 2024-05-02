@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"신탁신규가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr trust " id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">9. 신탁계좌 비밀번호입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">13</b></span>
+								<span class="num"><b class="b">9</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ut-bdgs">
+				<em class="bdg b">정기예금 신탁</em>
+			</div>
+
+			<div class="futr-tit">
+				<h2 class="hd-tit3">본인확인 및 상품설명을 위한<br>영상통화 시간을 예약해 주세요.</h2>
+			</div>
+
+			<div class="video-time">
+				<h3 class="hd-tit4">오늘 영상통화 가능 시간 <span class="date">(2021.11.19)</span></h3> 
+				<ul class="time-list">
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">09:00~10:00</span></label></li>
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">10:00~11:00</span></label></li>
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">11:00~12:00</span></label></li>
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">12:00~13:00</span></label></li>
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">13:00~14:00</span></label></li>
+					<li><label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">14:00~15:00</span></label></li>
+				</ul>
+			</div>
+
+			<!-- [D] 2022-05-10 마크업 추가 -->
+			<div class="ut-terms a mb40">
+				<div class="ckall">
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">영상통화 전체 동의</span></label>
+				</div>
+
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">신탁상품을 신규하는 경우 금융투자업 규정 4-82조에 따라 교보생명 상담원과의 영상통화를 통해 상품 내용을 듣고 이해한 후 신규 가능합니다.</span></label>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">영상통화를 통한 투자설명 전체과정은 음성녹음 및 영상녹화가 진행되며, 투자권유 관련 자료로써 관련 법률에 의해 10년간 보관합니다. 이를 이해하고 음성녹음 및 영상녹화에 동의합니다.</span></label>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">상담시 폭언 등 피해가 발생하는 경우 상담원은 해당 상담을 중단할 수 있으며 관련 법령에 의해 직원보호를 위한 조치를 취할 수 있습니다.</span></label>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">영상통화시 와이이존이 앙닐 경우 데이터통화료가 발생할 수 있으며, 영상통화 연결시 대기시간으로 인해 연결이 지연될 수 있습니다.</span></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--//[D] 2022-05-10 마크업 추가 -->
+			
+			<section class="sect" data-sid="ui-gudset">
+				<!-- [D] 2022-04-20 클래스 'open' 추가 -->
+				<!-- [D] 2022-05-10 클래스 'open' 삭제 -->
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">안내사항</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">						
+							<li>오늘 중 영상통화가 가능한 시간을 선택해 주세요.</li>
+							<li>예약한 시간 10분 전에 영상통화 진행 안내 문자를 보내 드립니다.</li>
+							<li>영상통화 시 본인명의 휴대폰과 본인 신분증(주민등록증 또는 운전면허증)이 반드시 필요합니다.</li>
+							<li>예약한 시간에 영상통화가 진행되지 않을 경우 해당 신탁상품 가입은 취소됩니다.</li>
+							<li>영상통화 완료 후 이어서 가입을 진행할 수 있습니다.</li>
+							<li>예약 가능한 시간이 없을 경우 내일 다시 가입을 신청해 주세요.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+		
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- [D] 2022-05-10 클래스 'b mt60' 삭제 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

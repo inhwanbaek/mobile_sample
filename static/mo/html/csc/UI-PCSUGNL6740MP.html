@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-contract-info" id="pop-contract-info">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계약정보확인 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect-csc">
+						<h2 class="hd-tit2">고객님,<br>
+							<i class="line">계약정보</i>가 안보이나요?
+						</h2>
+						<h3 class="hd-tit3 mt40">계약정보확인 방법</h3>
+							<ul class="m-lst mt16">
+								<li class="list01">[고객센터 &gt; 계약정보확인]에서 확인하실 
+									수 있습니다.</li>
+								<li class="list02">[고객센터 &gt; 자주 하는 질문]에서 
+									'계약정보확인'을 검색하세요.</li>
+							</ul>
+					</div>
+
+					<div class="sect-csc">
+						<ul class="ut-bnr-lst ct-info-lst">
+							<li>
+								<a href="javascript:;" class="lk b">
+									계약정보 확인
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">다시보지 않기</button>
+					<button type="button" class="btn a rd lg">닫기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-contract-info');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

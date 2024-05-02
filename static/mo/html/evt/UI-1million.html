@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <title>교보생명 앱 100만 회원 돌파 기념 이벤트</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+    <link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="../../js/jquery-3.4.1.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/jquery.ui.touch-punch.js"></script>
+    <script src="../../js/swiper.js"></script>
+
+    <script src="../../js/ui.js"></script>
+    <script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body event detail is-header">
+<div class="wrap" id="wrap">
+
+    <!-- 헤더-->
+    <include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"이벤트"}'></include>
+    <include class="gnb" src="../inc/gnb.html"></include>
+
+    <!---- 바디 - 여기위로는 템플릿영역 ---->
+
+    <main class="container page event event_full list" id="container">
+        <!-- 본문 영역 -->
+        <div class="a pop-evnt-100" style="display: block;"><!-- 2023-04-11 수정 -->
+            <div class="pbd">
+                <div class="pct" id="scroll_box">
+                    <main class="poptents hdt">
+                        <!-- 개발 환경 -->
+                        <video class="video_100" id="video_100" muted playsinline autoPlay>
+                            <source src="../../video/video_evt_100.mp4" type="video/mp4">
+                        </video>
+                        <div class="wrap_event">
+                            <div class="box_event green">
+                                <strong class="tit_event">EVENT 1</strong>
+                                <h2 class="tit">신규 회원가입 이벤트</h2>
+                                <p class="txt" id="element-id">
+                                    <span class="mark scroll_visible">교보생명 앱의 100만 N번째 회원</span>
+                                    이 되시면 추첨을 통해
+                                    5,000분께 스타벅스 아메리카노를 보내드려요.
+                                </p>
+                                <div class="area_gift scroll_visible">
+                                    <p class="txt">스타벅스 아메리카노</p>
+                                    <span class="num_people">5,000명</span>
+                                    <img src="../../img/evt/img_gift_starbucks.png" class="img_gift starbucks" alt="">
+                                </div>
+                                <button type="button" class="btn_apply" style="display: none">응모하기</button>
+                                <button type="button" class="btn_apply" disabled>응모완료</button>
+                            </div>
+
+                            <div class="box_event orange">
+                                <strong class="tit_event">EVENT 2</strong>
+                                <h2 class="tit">최초 자산연결 이벤트</h2>
+                                <p class="txt">
+                                    <span class="mark scroll_visible">마이데이터 자산연결</span> 하시면
+                                    선착순 3,000분께 스타벅스
+                                    아메리카노를  보내드려요.
+                                </p>
+                                <div class="area_plus scroll_visible">
+                                    <img src="../../img/evt/ic_plusone.png" class="img_plus" alt="하나 더!">
+                                    <span class="tit">경품 혜택 <strong>하나 더!</strong></span>
+                                    <p class="txt">
+                                        <!-- 2023-04-07 수정 -->
+                                        기간 중 자산연결까지 완료하시면<br>
+                                        총 10분을 추첨하여<br>
+                                        신세계상품권 30만원 증정
+                                        <!-- //2023-04-07 수정 -->
+                                    </p>
+                                </div>
+                                <div class="area_gift scroll_visible">
+                                    <p class="txt">스타벅스 아메리카노</p>
+                                    <span class="num_people">3,000명</span>
+                                    <img src="../../img/evt/img_gift_starbucks.png" class="img_gift starbucks" alt="">
+                                    <span class="icon_plus"></span><!-- 2023-04-07 추가 -->
+                                </div>
+                                <div class="area_gift scroll_visible">
+                                    <p class="txt">신세계상품권 30만원</p>
+                                    <span class="num_people">10명</span>
+                                    <img src="../../img/evt/img_gift_giftcard.png" class="img_gift giftcard" alt="">
+                                </div>
+                                <button type="button" class="btn_apply">응모하기</button>
+                            </div>
+
+                            <div class="area_share">
+                                <p class="tit">친구에게 공유하기</p>
+                                <div class="box">
+                                    <button type="button" class="btn_share kakao" aria-title="카카오톡"></button>
+                                    <button type="button" class="btn_share facebook" aria-title="페이스북"></button>
+                                    <button type="button" class="btn_share url" aria-title="URL 복사">URL</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn_evt_toggle_notice">
+                            이벤트 유의사항 <i class="arrow"></i>
+                        </button>
+                        <div class="box_evt_notice">
+                            <ol>
+                                <!-- 2023-04-07 수정 -->
+                                <li>본 이벤트는 행사기간 내 교보생명 이벤트 페이지의 개인(신용)정보 수집·이용 동의를 수락 하셔야 참여가 가능합니다.</li>
+                                <li>회원가입 시 휴대폰번호를 기재하지 않을 경우 당첨 대상에서 제외됩니다.</li><!-- 2023-04-20 추가 -->
+                                <li>이벤트 당첨자는 교보생명 앱 및 웹사이트 내 고객센터 &gt; 이벤트 &gt; 당첨자 확인 페이지에서 확인하실 수 있습니다.</li>
+                                <li>경품 추첨 시점에 교보생명 회원 탈퇴 시 경품 당첨 대상에서 제외됩니다.</li>
+                                <li>이벤트를 통해 수집된 개인정보는 경품 배송을 위한 목적으로만 활용 후 파기됩니다.</li>
+                                <li>부정한 방법으로 이벤트에 참여한 것이 확인될 경우 당첨이 취소됩니다.<br>(타인의 명의 도용, 가짜 명의 생성, 반복 참여 프로그램 이용 등)</li>
+                                <li>경품은 중복 지급하지 않으며, 타인에게 양도 및 판매를 금지합니다.</li>
+                                <li>당첨된 경품은 현금, 또는 다른 상품으로 환불이나 교환이 불가합니다.</li>
+                                <li>본 이벤트는 당사에 의해 사전 고지 없이 동일한 금액의 다른 경품으로 대체될 수 있으며, 이벤트 내용이 변경될 수 있습니다.</li>
+                                <li>당첨자 발표일(5/19)은 변경될 수 있으며 변경 시 공지사항을 통해 사전 안내 예정입니다.</li>
+                                <li>잘못된 개인정보 입력, 기타 사유 등으로 인해 당첨자에게 연락이 불가하거나 경품의 분실, 오발송 또는 반송 시 재발송 되지 않습니다.</li>
+                                <li>
+                                    EVENT 2-3 자산연결 이벤트 참여 시 유의하세요.
+                                    <ol>
+                                        <li>1) 마이데이터 점검 시간(매일 23:30~익일 00:30) 동안은 자산 연결이 불가합니다.</li>
+                                        <li>2) 2023년 4월 25일 00시 이후 최초 자산연결하신 분들도 이벤트 기간 내 참여 완료 시 본 이벤트 대상에 포함됩니다.</li>
+                                        <li>3) 경품 추첨 시점까지 자산 연결을 유지해야 합니다.</li><!-- 2023-04-20 수정 -->
+                                    </ol>
+                                </li>
+                                <li>
+                                    이벤트 및 경품 관련 문의<br>
+                                    cs.kyoboevent@gmail.com
+                                    <p class="txt_sub">※ 메일로 응대 가능한 시간은 오전 10시 ~ 오후 6시까지이며, 문의가 많을 경우 회신이 늦어질 수 있습니다.</p>
+                                </li>
+                                <!-- //2023-04-07 수정 -->
+                            </ol>
+                        </div>
+                        <!-- //개발 환경 -->
+                    </main>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script>
+    // 영상 자동재생
+    const autoplayVideoInterval = setInterval("autoplayVideo()",200);
+    function autoplayVideo() {
+        var promise = document.getElementById('video_100').play();
+        if (promise !== undefined)
+        {
+            promise.then(function (_)
+            {
+                // Autoplay started!
+                clearInterval(autoplayVideoInterval);
+            }).catch(function (error) {
+                // Show a "Play" button so that user can start playback.
+            });
+        }
+    }
+
+    // 스크롤 캐치 애니메이션
+    function checkscroll_visible(element, targetElements) {
+        let scrollPosition = element.scrollTop,
+            windowHeight = element.clientHeight;
+
+        for (var i = 0; i < targetElements.length; i++) {
+            let target = targetElements[i],
+                targetPosition = target.offsetTop,
+                targetHeight = target.offsetHeight;
+
+            if (targetPosition >= scrollPosition &&
+                targetPosition + targetHeight <= scrollPosition + windowHeight) {
+                target.classList.add('_show');
+            } else {
+                // 안보일경우 처리
+            }
+        }
+    }
+
+    let container = document.getElementById('scroll_box'),
+        targets = document.querySelectorAll('.pop-evnt-100 .scroll_visible');
+
+    container.addEventListener('scroll', function() {
+        checkscroll_visible(container, targets);
+    });
+
+    // 유의사항 toggle
+    $('.btn_evt_toggle_notice').on('click', function() {
+        $(this).toggleClass('_on');
+        $('.box_evt_notice').slideToggle();
+    });
+
+    // EVENT2 영역 스크롤 애니메이션
+    function scroll_event() {
+        $('.event_full .pct').stop().animate({
+            scrollTop: $('.box_event.orange').offset().top
+        }, 800, 'easeInCubic');
+    }
+</script>
+</body>
+</html>

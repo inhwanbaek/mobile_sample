@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"이벤트"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page event detail winners" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="board-view">
+				<div class="tit-area">
+					<div class="perform"><!-- [D] 2022-02-22 공유버튼 추가 -->
+						<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+					</div>
+					<h2 class="board-tit">메트로 어드벤처 2021 앨리스와 신비한 서점 </h2>
+				</div>
+				<div class="cnt-area">
+					<div class="cnt">
+						<div class="ut-dtds a dtds">
+							<ul class="dlist">
+								<li>
+									<div class="dt">이벤트 기간</div>
+									<div class="dd">2021.11.01 ~ 2020.01.01</div>
+								</li>
+								<li>
+									<div class="dt">당첨자 발표</div>
+									<div class="dd">2020.01.14</div>
+								</li>
+								<li>
+									<div class="dt">경품수령방법</div>
+									<div class="dd">아래 공지사항 참조</div>
+								</li>
+								<li>
+									<div class="dt">경품수령방법</div>
+									<div class="dd">당첨자 개별 문자 발송</div>
+								</li>
+							</ul>
+						</div>
+						<p class="desc">
+							이벤트에 참여해주신 고객 여러분께 감사 드립니다.
+							<br><br>
+							최우수상, 우수상 당선 고객님께는 따로 전화 연락을 드립니다. 당선 발표 2주 이내 전화 연락이 되지 않을 경우 당첨이 취소됩니다.
+							<br><br>
+							장려상 수상 고객님께는 1월 1일까지 응모 시 입력한 휴대폰번호로 기프트 카드를 보내 드립니다.
+							<br><br>응모 당시 입력하신 휴대폰번호로만 당첨자 정보를 확인할 수 있습니다. 
+						</p>
+					</div>
+				</div>
+				<div class="inf-cnt">
+					<ul class="bullet a">
+						<li>같은 내용의 응모작이 접수된 경우, 접수 순서에 따라 먼저 접수한 분에게 우선권을 부여합니다.</li>
+						<li>여러 작품을 응모하여 2개 이상이 당선된 경우 가장 상위 등급 작품만 당선작으로 처리됩니다.</li>
+						<li>교보생명의 내부 논의에 따라 마이데이터 서비스명은 최우수 수상작과 다를 수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="winners-cnt">
+					<h3 class="hd-tit4">당선자 명단</h3>
+					<h4 class="hd-tit5">최우수상(1명)</h4>
+					<div class="ut-tbl a"><!-- [D] 2022-03-21 UX/UI변경 -->
+						<table class="tblist nl" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">당선자 명단, 최우수상(1명)</span><span class="cap"></span></caption>
+							<colgroup>
+								<col span="1" style="width: auto;">
+								<col span="1" style="width: 30%;">
+								<col span="1" style="width: 45%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">이름</th>
+									<th scope="col">휴대폰<br>끝자리</th>
+									<th scope="col">경품</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>강*보</td>
+									<td>2345</td>
+									<td>문화상품권 10만원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- //ut-tbl -->
+					<h4 class="hd-tit5">우수상(6명)</h4>
+					<div class="ut-tbl a"><!-- [D] 2022-03-21 UX/UI변경 -->
+						<table class="tblist nl" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">당선자 명단, 우수상(6명)</span><span class="cap"></span></caption>
+							<colgroup>
+								<col span="1" style="width: auto;">
+								<col span="1" style="width: 30%;">
+								<col span="1" style="width: 45%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">이름</th>
+									<th scope="col">휴대폰<br>끝자리</th>
+									<th scope="col">경품</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>강*보</td>
+									<td>2345</td>
+									<td>문화상품권 10만원</td>
+								</tr>
+								<tr>
+									<td>강*보</td>
+									<td>2345</td>
+									<td>문화상품권 10만원</td>
+								</tr>
+								<tr>
+									<td>강*보</td>
+									<td>2345</td>
+									<td>문화상품권 10만원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- //ut-tbl -->
+				</div>
+			</section>
+
+			<!-- [D] 2022-03-21 UX/UI변경
+			<nav class="page-nav">
+				<ul class="lst">
+					<li class="next">
+						<div class="tit">이전 글</div>
+						<div class="txt">이전 글이 없습니다.</div>
+					</li>
+					<li class="prev">
+						<div class="tit">다음 글</div>
+						<div class="txt"><button type="button" class="lk">내 보험료 상담받고! 행운도 내 보험료 상담받고! 행운도 내 보험료 상담받고! 행운도</button></div>
+					</li>
+				</ul>
+			</nav> -->
+
+			<div class="btn-set">
+				<button type="button" class="btn md rd">목록</button>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">응모하기</button>
+				</div>
+			</div>
+		</nav> -->
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

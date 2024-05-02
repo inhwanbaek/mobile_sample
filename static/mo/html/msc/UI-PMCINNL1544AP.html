@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-sample3" id="pop-sample3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험증권 재발행용 이메일정보 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents pb0">
+					<div class="tp-mail-wrap"><!-- [D] 2022-03-03 텍스트추가 -->
+						<p>계약변경 시 보험증권 재발행 신청을 위해 고객님의 이메일 정보가 필요합니다. 현재 사용하시는 주소가 맞는지 확인해 주세요. </p>
+						<dl>
+							<dt>이메일</dt>
+							<dd>kyobo@kyobo.com</dd>
+						</dl>
+						<div class="btn-wrap"><a href="javascript:;" class="btn sm">개인정보 변경</a></div><!-- [D] 2022-05-10 태그텍스트변경 -->
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample3');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

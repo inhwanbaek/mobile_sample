@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer xs a pop-etfpay" id="pop-etfpay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">ETF 예수금으로 출금</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="etf-inp-box">
+						<h2 class="hd-tit3">금액입력</h2>						
+						<div class="psb-sum">
+							<dl>
+								<dt>가능 금액</dt>
+								<dd><span class="t-blue">6,000,000</span>원</dd>
+								<dd><button type="button" class="btn sm">전액</button></dd>
+							</dl>
+						</div>
+						<div class="psb-inp">
+							<div class="radiobox d">
+								<label class="radio"><input type="radio" name="radio_d2" checked><span class="txt">1만원</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">5만원</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">10만원</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">100만원</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">500만원</span></label>
+							</div>
+							<span class="input a won coms">
+								<label class="lb blind" for="input-2">금액 입력</label>
+								<input type="text" placeholder="금액을 입력해 주세요." id="input-2">
+								<i class="w">원</i>
+							</span>
+							<div class="inp-view">
+								<div class="ext"><p>20만원</p></div>
+							</div>										
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-etfpay');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

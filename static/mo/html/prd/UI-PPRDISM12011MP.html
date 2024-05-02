@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-terms terms" id="pop-terms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고유식별정보 수집·이용 동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<section class="agreeArea">						
+						<div class="scrollBox">
+
+							<div class="agreeBox">
+								<div class="term-doc typeBg">
+
+									<h2 class="term_h_tit">계약체결 · 이행 등을 위한 동의</h2>
+									<p>
+										귀하는 개인(신용)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 개인의 신용도 등을 평가기하 위한 목적 이외의 개인(신용)정보 제공 동의는 철회할 수 있습니다. 다만, 본 동의는 ‘보험계약 인수심사·체결·이행·유지·관리’를 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+									</p>
+
+									<h3 class="term_tit">1. 수집·이용 목적</h3>
+									<ul class="bullet a lg">
+										<li>보험계약의 인수심사·체결·이행·유지·관리(부활 및 갱신 포함), 보험금 등 지급·심사, 보험계약 대출 체결·유지·관리</li>
+										<li>조사연구, 서비스 제공, 순보험료율의 산출·검증</li>
+										<li>민원처리 및 분쟁 대응, 적부 및 사고조사(보험사기 조사 포함), 고객 이력 관리</li>
+										<li>보험계약 및 보험금 청구, 보험계약대출에 이해관계가 있는 자에 대한 법규 및 계약상 의무 이행</li>
+										<li>기존 계약자에 대한 보험계약 및 보험계약대출 상담(당사 및 당사 설계사에 한함)</li>
+										<li>금융거래 관련 업무(보험계약 및 보험계약대출 관련 금융거래 신청, 자동이체 등)</li>
+									</ul>
+
+									<h3 class="term_tit">2. 보유 및 이용 기간</h3>
+									<ul class="bullet a lg">
+										<li>수집·이용 동의일로부터 거래 종료 후 5년까지
+											(단, 거래종료 후 5년이 경과한 경우에는 보험금 지급, 금융사고조사, 보험사기 방지· 적발, 민원처리,법령상 의무이행을 위하여 보유·이용하며 별도 보관)
+										</li>
+										<li>거래 종료일은 “①보험계약 만기, 해지, 취소, 철회일 또는 소멸일, ②보험금 청구권 소멸시효 완성일(상법 제662조), 
+											③채권·채무 관계 소멸일 등 당사와의 모든 거래가 종료된 날로부터 가장 나중에 도래한 사유를 기준으로 판단합니다. 
+											다만, 만기 등 사유발생일 이후라 하더라도 만기환급금 또는 해지 환급금 등을 수령하지 않았거나, 상환할 금액이 남아 있는 경우, 
+											보험금 지급이나 수사·소송이 진행 중인 경우는 거래종료에 해당하지 않습니다.</li>
+									</ul>
+
+									<h3 class="term_tit">3. 수집·이용 항목</h3>
+									<ul class="bullet a lg">
+										<li>고유식별정보
+											<ul class="bullet c">
+												<li>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-terms');
+	</script>
+
+</div>
+</body>
+</html>

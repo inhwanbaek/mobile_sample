@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"스마트위임 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default billing smt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- <div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">1. 계약선택_휴면보험금 신청</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">2</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<h2 class="hd-tit3">어느 계약의 보험금을 <br><i class="line">스마트위임</i>으로 신청하시겠어요?</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+
+			<div class="ut-tabs a mt24">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">배당금 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">중도보험금/연금 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">만기보험금 신청</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">휴면보험금 신청</a></li>
+					<!-- <li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">사고전미지급금 신청</a></li> -->
+				</ul>
+			</div>
+			<!-- 탭박스 -->
+			<h3 class="hd-tit4" id="ball_1">계약선택</h3>
+			<span data-ui-balloon="right,top" aria-describedby="ball_1" class="tip-msc1454">최대 5건까지 선택할 수 있어요.</span>
+			<!-- 체크시 class="ut-dcard a checked" 클래스추가 -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox"><span class="txt">무배당교보실손의료비보험(갱신형 [선택행, 90%보장)</span></label>
+						</div>
+					</div>
+
+					<!-- [D] 2022-03-03 클래스변경 -->
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">실수령액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">70,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 2022-03-25 태그추가 -->
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd">2017.12.08</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd">2018.09</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">휴면보험금</div>
+								<div class="dd">15,000원</div>
+							</div>
+						</li>
+						<li data-tog-cls="box">
+							<div class="dl">
+								<div class="dt">기타지급금<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+								<div class="dd"><span class="fn-point01">중도</span></div>
+							</div>
+							<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+								<div class="ut-tbl b" aria-describedby="">
+									<table class="tblist" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">기타지급금</span><span class="cap"></span></caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="left">배당금</td>
+												<td class="right">3,114,000원</td>
+											</tr>
+											<tr>
+												<td class="left">미지급 보험금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">가산금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">미경과 이자</td>
+												<td class="right">0원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li data-tog-cls="box">
+							<div class="dl">
+								<div class="dt">공제금액<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+								<div class="dd"><span class="fn-point01">26,840,680원</span></div>
+							</div>
+							<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+								<div class="ut-tbl b" aria-describedby="">
+									<table class="tblist" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">공제금액</span><span class="cap"></span></caption>
+										<colgroup>
+											<col width="60%">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="left">보험계약대출 상환원금</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">보험계약 대출이자</td>
+												<td class="right">0원</td>
+											</tr>
+											<tr>
+												<td class="left">기타공제금액</td>
+												<td class="right">0원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+
+			<!-- [D] 2022-03-28 텍스트추가 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문<span class="btxt">열기</span></button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>실수령액 = 휴면보험금 + 기타지급금 - 공제금액</li> <!-- [D] 텍스트 수정: + 공제금액 - > - 공제금액: 2022-07-06 -->
+						<li>휴면보험금 신청이 가능한 보험금은 해지(효력상실) 또는 만기 등 보험금 지급사유 발생 후 2~3년이 지났는데도 불구하고 고객이 청구하지 않은 보험금으로, 언제든지 신청할 수 있습니다. 선택하신 보험증권번호의 휴면보험금을 받으면 그 계약은 해지(소멸)됩니다.</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

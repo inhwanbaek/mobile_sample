@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"증명서제출"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc mdw iss" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="hd-box">
+				<h2 class="hd-tit3">출입국에 관한 사실증명</h2>
+			</div>
+			<div class="hd-box c">
+				<h3 class="hd-tit4">기록대조시작일</h3>
+			</div>
+			<div class="sec">
+				<span class="input a ut-date"><label class="lb blind" for="date_id_0">기록대조시작일</label><input type="number" id="date_id_0" class="datepicker" placeholder="YYYY.MM.DD"></span>
+			</div>
+			
+			<div class="hd-box c">
+				<h3 class="hd-tit4">기록대조종료일</h3>
+			</div>
+			<div class="sec">
+				<span class="input a ut-date"><label class="lb blind" for="date_id_1">기록대조종료일</label><input type="number" id="date_id_1" class="datepicker" placeholder="YYYY.MM.DD"></span>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">출입국기록 출력</h3>
+			</div>
+			<div class="sec">
+				<div>
+					<!-- [D] 2022-04-20 Y / N 순서변경 -->
+					<label class="radio"><input type="radio" name="radio1" checked><span class="txt">Y</span></label>
+					<label class="radio"><input type="radio" name="radio1"><span class="txt">N</span></label>
+				</div>
+				<p class="iss-desc color10">* ‘출입국 기록 없음’을 증명해야 할 경우 ‘N’을 선택해 주세요.</p>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">선원기록출력</h3><!-- [D] 2022-05-17 텍스트 수정 -->
+			</div>
+			<div class="sec">
+				<div>
+					<!-- [D] 2022-04-20 Y / N 순서변경 -->
+					<label class="radio"><input type="radio" name="radio2"><span class="txt">Y</span></label>
+					<label class="radio"><input type="radio" name="radio2" checked><span class="txt">N</span></label>
+				</div>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">남북왕래기록 출력</h3>
+			</div>
+			<div class="sec">
+				<div>
+					<!-- [D] 2022-04-20 Y / N 순서변경 -->
+					<label class="radio"><input type="radio" name="radio3"><span class="txt">Y</span></label>
+					<label class="radio"><input type="radio" name="radio3" checked><span class="txt">N</span></label>
+				</div>
+			</div>
+
+			<div class="hd-box c">
+				<h3 class="hd-tit4">주민등록번호 뒷자리</h3>
+			</div>
+			<div class="sec">
+				<div>
+					<label class="radio"><input type="radio" name="radio4" checked><span class="txt">표시</span></label>
+					<label class="radio"><input type="radio" name="radio4"><span class="txt">미표시</span></label>
+				</div>
+			</div>
+			
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b" onclick="confirm_sample_1();">장바구니</button>
+					<button type="button" class="btn rd lg a">신청</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<article class="pop-layer b pop-bldnum" id="pop-bldnum">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">건물번호란?</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					이미지이미지
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+<script>
+	var popBldnum = function () {
+		ui.popup.open('pop-bldnum');
+	} 
+	var confirm_sample_1 = function () {
+		ui.confirm("증명서를 장바구니에 담았습니다. [장바구니]로 이동하시겠습니까?",{ // 컨펌 창 옵션들
+			//tit:"타이틀",
+			ycb:function(){
+				console.log("컨펌확인결과");
+			},
+			ncb:function(){
+				console.log("컨펌취소결과");
+			},
+			ybt:"확인", 
+			nbt:"취소"
+		});
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"이사회"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이사회 구성</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이사회 내 위원회</a></li>
+				</ul>
+			</div>
+
+			<ul class="tab-btn">
+				<li><a href="#lst01">사내이사<strong class="name">신창재<span>회장</span></strong></a></li>
+				<li><a href="#lst02">사내이사<strong class="name">편정범<span>사장</span></strong></a></li>
+				<li><a href="#lst03">사외이사<strong class="name">지범하</strong></a></li>
+				<li><a href="#lst04">사외이사<strong class="name">황성식</strong></a></li>
+				<li><a href="#lst05">사외이사<strong class="name">이철주</strong></a></li>
+				<li><a href="#lst06">사외이사<strong class="name">문효은</strong></a></li>
+				<li><a href="#lst07">사외이사<strong class="name">이영주</strong></a></li>
+				<li><a href="#lst08">기타비상무이사<strong class="name">하리 라잔<br><span>(Hari R. Rajan)</span></strong></a></li>
+			</ul>
+			<h3 class="hd-tit3">사내이사</h3>
+			<!-- [D] 2022-07-27 학력 br 태그 추가  -->
+			<div class="rdt-box" id="lst01">
+				<h4 class="hd-tit3">신창재 회장</h4>
+				<h5 class="hd-tit5">학력</h5>
+				서울대학교 의과대학원 박사<br>서울대학교 의과대학원 석사<br>서울대학교 의과대학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>교보생명 대표이사 회장 <span class="date">(2000.05 ~ 현재)</span></li>
+					<li>교보생명 대표이사 이사회 의장 <span class="date">(1999.11 ~ 2000.04)</span></li>
+					<li>교보생명 이사회 의장 <span class="date">(1999.05 ~ 1999.10)</span></li>
+					<li>교보생명 이사회 회장 <span class="date">(1998.10 ~ 1999.04)</span></li>
+					<li>교보생명 이사회 부회장 <span class="date">(1996.11 ~ 1998.09)</span></li>
+					<li>서울대학교 의과대학 교수 <span class="date">(1994.10 ~ 1996.10)</span></li>
+					<li>대산재단 이사장 <span class="date">(1993.11 ~ 1994.09)</span></li>
+					<li>대산재단 이사 <span class="date">(1993.05 ~ 1993.10)</span></li>
+					<li>대한산부인과 내시경학회 총무이사 <span class="date">(1992.12 ~ 1993.04)</span></li>
+					<li>서울대학교 의과대학 조교수 <span class="date">(1989.10 ~ 1992.11)</span></li>
+					<li>서울대학교 의과대학 전임강사 <span class="date">(1987.09 ~ 1989.09)</span></li>
+				</ul>
+			</div>
+			<div class="rdt-box" id="lst02">
+				<h4 class="hd-tit3">편정범 사장</h4>
+				<h5 class="hd-tit5">학력</h5>
+				동국대학교 경영학 박사<br>동국대학교 경영학 석사<br>순천향대학교 수학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>교보생명 대표이사 사장  <span class="date">(2021.03 ~ 현재)</span></li>
+					<li>교보생명 채널담당  <span class="date">(2018.09 ~ 2021.03)</span></li>
+					<li>교보생명 전략기획팀장/ 전략기획담당  <span class="date">(2016.12 ~ 2018.09)</span></li>
+					<li>교보생명 채널기획팀/ 채널지원팀/ 조직순증지원팀/ 컨설턴트보호센터/ 인력개발팀 담당임원  <span class="date">(2014.12 ~ 2016.12)</span></li>
+					<li>교보생명 영업교육팀장兼SSP추진팀 담당임원  <span class="date">(2012.04 ~ 2013.03)</span></li>
+					<li>교보생명 계성원 부원장  <span class="date">(2011.12 ~ 2013.03)</span></li>
+					<li>교보생명 중부FP본부장  <span class="date">(2008.04 ~ 2011.03)</span></li>
+					<li>교보생명 SSP추진팀장  <span class="date">(2005.05 ~ 2008.03)</span></li>
+					<li>교보생명 입사  <span class="date">(1988.09)</span></li>
+				</ul>
+			</div>
+			<div class="rdt-box" id="lst03">
+				<h4 class="hd-tit3">지범하 사외이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				펜실베니아대학교 와튼스쿨 경영학 박사<br>서울대학교 경영대학원 경영학 석사<br>서울대학교 경영학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>한동대학교 경영경제학부 교수 <span class="date">(2009.09 ~ 현재)</span></li>
+					<li>한국FP학회 회장 <span class="date">(2015.01 ~ 2015.12)</span></li>
+					<li>더킹스칼리지 경영대학 학장  <span class="date">(2003.08 ~ 2009.08)</span></li>
+					<li>메트로폴리탄생명보험㈜ 국제자문역  <span class="date">(2001.10 ~ 2003.07)</span></li>
+				</ul>
+			</div>
+			<div class="rdt-box" id="lst04">
+				<h4 class="hd-tit3">황성식 사외이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				카이스트 테크노경영대학원 경영정보공학 박사<br>서울대학교 경영대학원 경영학 석사<br>서울대학교 경영학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<!-- [D] 2022-07-22 문구 수정 -->
+					<li>신도리코 경영고문<span class="date">(2022.01~현재)</span></li>
+					<li>신도리코 대표이사 부회장 <span class="date">(2020.03~2022.01)</span></li>
+					<!-- // [D] 2022-07-22 문구 수정 -->
+					<li>가천대학교 경영학부 글로벌경영학 전임교수 <span class="date">(2018.03 ~ 2020.03)</span></li>
+					<li>카이스트 대우교수 <span class="date">(2017.03 ~ 2017.12)</span></li>
+					<li>㈜삼천리 사장 <span class="date">(2011.01 ~ 2016.12)</span></li>
+					<li>㈜삼천리 부사장 <span class="date">(2008.03 ~ 2010.12)</span></li>
+					<li>삼일회계법인 부대표(CPA/AICPA) <span class="date">(1977.12 ~ 2004.02)</span></li>
+				</ul>
+			</div>
+			<div class="rdt-box" id="lst05">
+				<h4 class="hd-tit3">이철주 사외이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				하버드대학교 경영대학원 경영학 석사(MBA)<br>브라운대학교 응용수학 및 경제학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>어피니티에쿼티파트너스 부회장 <span class="date">(2004.03 ~ 현재)</span></li>
+					<li>UBS캐피탈 이사 <span class="date">(2001.07 ~ 2004.03)</span></li>
+				</ul>
+			</div>
+			<div class="rdt-box" id="lst06">
+				<h4 class="hd-tit3">문효은 사외이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				고려대학교 정보통신 석사 <br>이화여자대학교 인문대학 불어불문학 학사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>(현) 아트벤처스(주) 대표 <span class="date">(2015.06 ~ 현재)</span></li>
+					<li>이화여대 리더십개발원 특임교수 <span class="date">(2012.08 ~ 2017.12)</span></li>
+					<li>(주)다음서비스 대표이사 <span class="date">(2008.04 ~ 2009.06)</span></li>
+					<li>LIG문화재단 사외이사 <span class="date">(2006.08 ~ 2015.08)</span></li>
+					<li>(주)디앤샵(現 GS홈쇼핑)부사장 <span class="date">(2006.04 ~ 2007.11)</span></li>
+					<li>(주)다음커뮤니케이션(現 카카오) 부사장(COO) <span class="date">(2004.11 ~ 2011.11)</span></li>
+					<li>다음세대재단 대표이사 <span class="date">(2004.04 ~ 2013.07)</span></li>
+				</ul>
+			</div>
+
+			<div class="rdt-box" id="lst07">
+				<h4 class="hd-tit3">이영주 사외이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				서울대학교 법학 석사
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>서울대학교 인권센터 인권상담소장 <span class="date">(2020.09 ~ 현재)</span></li>
+					<li>사법연수원 부원장 <span class="date">(2019.07 ~ 2020.01)</span></li>
+					<li>법무연수원 기획부장 <span class="date">(2018.06 ~ 2019.07)</span></li>
+					<li>제 64대 춘천지방검찰청 검사장 <span class="date">(2017.08 ~ 2018.06)</span></li>
+					<li>법무연수원 용인분원장 <span class="date">(2016.01 ~ 2017.07)</span></li>
+					<li>춘천지방검찰청 차장검사 <span class="date">(2015.02 ~ 2016.01)</span></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit3">기타비상무이사</h3>
+			<div class="rdt-box" id="lst08">
+				<h4 class="hd-tit3">하리 라잔(Hari R. Rajan) 기타비상무이사</h4>
+				<h5 class="hd-tit5">학력</h5>
+				펜실베니아대학교 와튼스쿨 경영학 석사(MBA)<br> 예일대학교 학사(BA)
+				<h5 class="hd-tit5">주요경력</h5>
+				<ul class="bullet a">
+					<li>코세어캐피탈 파트너 <span class="date">(2006.03 ~ 현재)</span></li>
+					<li>JP모건체이스 <span class="date">(1999.07 ~ 2006.03)</span></li>
+				</ul>
+			</div>
+			<!-- // [D] 2022-07-27 학력 br 태그 추가  -->
+
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<script>
+		//
+		$(document).ready(function(){
+		  var $vcLi = $(".tab-btn li"); //각 화면 li 클래스
+			$vcLi.each(function(i){
+				$(this).find("a").click(function(){
+					var _headHt = ($(".header>.inr").height()+10);
+					var _id=$(this).attr('href');
+					var offset = $(_id).offset(); //해당 위치 반환
+					$("html, body").animate({scrollTop: (offset.top)-_headHt },400);
+				});
+			});
+		});
+	</script>
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

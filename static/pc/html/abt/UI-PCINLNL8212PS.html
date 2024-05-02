@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt eth ccm eth-pc" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">소비자중심경영(CCM) 인증 제도</h2><!-- [D] 2022-08-30 타이틀 변경 -->
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">CCM 개념 및 목적</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">CCM 실행체계</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">CCM 홍보자료</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit3">CCM(소비자중심경영)의 개념</h3>
+			<p>소비자중심경영, 즉 CCM은 기업이 수행하는 모든 활동을 소비자 관점에서 소비자 중심으로 구성하고, 관련 경영활동을 지속적으로 개선하고 있는지를 평가하여 인증하는 제도입니다.</p>
+			<!-- [웹접근성] 2nd 수정 -->
+			<div class="pic-ccm01">
+				<img src="../../img/abt/ccm_01.png" alt="자세한내용 하단참조">
+				<div class="blind">
+					<p>소비자의 소리(VOC)</p>
+					<ul>
+						<li>
+							LSP - L:Leadership, S:System, P:Performance
+							<ul>
+								<li>서비스</li>
+								<li>품질</li>
+								<li>영업</li>
+								<li>홍보</li>
+								<li>물류</li>
+								<li>생산</li>
+								<li>구매</li>
+								<li>제품기획</li>
+							</ul>
+						</li>
+					</ul>
+					<p>소비자 효용 증대 권익 증진</p>
+				</div>
+			</div>
+			<!--// [웹접근성] 2nd 수정 -->
+			<h3 class="hd-tit3">CCM의 목적</h3>
+			<p class="mb40">
+				CCM 인증제도는 기업 및 기관의 소비자 지향적 경영문화 확산과 소비자 권익 증진 노력을 통한 경쟁력 강화 및 소비자 후생 증대에 기여함을 목적으로 합니다.
+			</p>
+			<h3 class="hd-tit3">인증·운영기관</h3>
+			
+			<div class="box-group">
+				<div class="col2">
+					<h4 class="hd-tit4">인증기관</h4>
+					<div class="box-line01">
+						<img src="../../img/abt/ccm_02.png" alt="공정거래위원회">
+					</div>
+				</div>
+				<div class="col2">
+					<h4 class="hd-tit4">운영기관</h4>
+					<div class="box-line01">
+						<img src="../../img/abt/ccm_03.png" alt="한국소비자원">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

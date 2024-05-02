@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-mbl pop-pcert" id="pop-pcert-phone">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">휴대폰번호 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<section class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit3"><i class="line">본인확인을 위해</i><br>인증을 진행해 주세요.</h2>
+							</div>
+						</div>
+
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a w100p"><label class="lb" for="tnum_0">휴대폰 번호</label>
+										<input type="text" placeholder="- 없이 숫자만 입력" id="tnum_0">
+									</span>
+									<div class="btn-set certi-btn">
+										<button type="button" class="btn sm b">인증번호 요청</button>
+										<button type="button" class="btn sm c">인증번호 재요청</button>
+									</div>
+								</li>
+								<li>
+									<div class="ut-certi w100p">
+										<span class="input a">
+											<label class="lb" for="certi-1">인증번호</label>
+											<input type="number" class="cnm" placeholder="숫자 6자리 입력" id="certi-1">
+											<div class="ctt ibts">
+												<i class="tt">입력시간</i><i class="ts">05:32</i>
+											</div>
+										</span>
+										<div class="ext"><a href="javascript:;" class="link-text">시간연장</a></div><!-- [웹접근성] 1st 수정 -->
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-pcert-phone');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/	jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"GFP(Group Financial Planner)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt abt-fp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">GFP 소개</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP지원체계</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP 상담신청</a></li>
+				</ul>
+			</div>
+
+			<ul class="list-tit">
+				<li><a href="javascript:;">교육지원 시스템</a></li>
+				<li class="active"><a href="javascript:;">영업지원 시스템</a></li>
+				<li><a href="javascript:;">차별화된 서비스</a></li>
+			</ul>
+
+			<h2 class="hd-tit2">교보생명은 <i class="line">업계 최고의 영업지원</i><br><i class="line">시스템</i>으로 당신이 앞서 나가도록 지원합니다.</h2>
+
+
+			<div class="rd-group">
+				<h3 class="hd-tit3">V3 영업지원</h3>
+				<div class="tit">업계 최고의 CRM 시스템 지원</div>
+				<div class="bx">
+					<ul class="bullet a">
+						<li>GFP가 갈 곳을 제공받고 활동계획과 성과를 확인할 수 있는 프로세스형 영업지원시스템</li>
+						<li>시간과 장소에 구애받지 않는 모바일 지원</li>
+					</ul>
+				</div>
+				<div class="tit">법인영업의 A부터 Z까지 모든 정보를 지원</div>
+				<div class="bx">
+					<ul class="bullet a">
+						<li>기업일반 및 재무사항 등 기업 정보 제공</li>
+						<li>기업활동정보 및 활동분석 등 활동관리 툴 제공</li>
+						<li>기업별 계약정보, 제안서 출력 지원 및 법인 자료실</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="rd-group">
+				<h3 class="hd-tit3">생애설계</h3>
+				<div class="tit">고객 니즈 중심의 체계적인 생애설계 컨설팅 지원</div>
+				<div class="bx">
+					<ul class="bullet a">
+						<li>고객의 라이프사이클에 따른 차별화된 프로그램 제공</li>
+						<li>고객의 3층 준비자산 분석을 통한 노후생활보장 분석 프로그램 제공</li>
+					</ul>
+				</div>
+			</div>
+			<div class="rd-group">
+				<h3 class="hd-tit3">가족보장 분석</h3>
+				<div class="tit">가족의 모든 위험에 대비한 종합적 보장설계 지원</div>
+				<div class="bx">
+					<ul class="bullet a">
+						<li>보험 리모델링, 가족보장 분석을 통해 가족생활보장(종신), 노후생활보장(연금) 설계 지원</li>
+						<li>25,500여 종(2018년 5월 기준)에 달하는 동종 업계 다른 회사의 생명보험/손해보험 상품 보장내용을 자동 제공해 보장 분석 용이 </li>
+					</ul>
+				</div>
+			</div>
+			<div class="rd-group">
+				<h3 class="hd-tit3">e-상품 지원</h3>
+				<div class="tit">인터넷을 통한 상품 관련 보험안내자료 및 교육 지원</div>
+				<div class="bx">
+					<!-- [D] 2022-07-04 클래스 추가 및 수정-->
+					<ul class="bullet a none">
+						<li>인터넷으로 상품별 안내장, 제안서, 전단지, DM 등 각종 툴 활용 지원 상품별 플래시 교육자료 및 교육 동영상 지원</li>
+					</ul>
+					<!-- // [D] 2022-07-04 클래스 추가 및 수정-->
+				</div>
+			</div>
+
+			<ul class="bullet b">
+				<li>이 광고는 GFP를 모집하기 위한 것으로 교보생명 정규직 또는 비정규직 채용과는 무관합니다.</li>
+				<li>GFP는 보험업법상 ‘보험설계사’이며 독립사업자로 분류됩니다.</li>
+			</ul>
+
+			<p class="txt-b">준법감시인확인필 3-2108-3 GFP사업부직속(2021.08.25)</p>
+
+		</div>
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

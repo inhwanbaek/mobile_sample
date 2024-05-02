@@ -1,0 +1,1393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer lg a pop-calculate prd-calc" id="pop-calculate">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit blind">보험료 계산하기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<section class="sect htop">
+							<div class="hdt">
+								<h2 class="tit">(무)교보마이핏Fit 건강보험</h2>
+								<div class="bdg">
+									<em class="bd">다이렉트</em>
+								</div>
+								<div class="bts">
+									<button type="button" class="bt link"><i class="blind">공유하기 링크복사</i></button>
+									<button type="button" class="bt fav"><i class="blind">관심상품저장</i></button>
+									<!-- <button type="button" class="bt-tog" onclick="location.href='보험상품선택.html'"><i class="blind">상품리스트보기</i></button> -->
+								</div>
+							</div>
+						</section>
+
+						<section class="sect menu">
+							<div class="ut-tabs tabs b">
+								<ul class="menu" role="tablist">
+									<li class="hide"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;" onclick="ui.prd.calc.movSld(1);">내가 계산한 보험료</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;" onclick="ui.prd.calc.movSld(2);">40대 남성이 가장 많이 선호</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;" onclick="ui.prd.calc.movSld(3);">더 크고 든든한 보장</a></li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="sect prds">
+							<div class="ut-tabsld" id="tabsld_calc">
+								<div class="swiper-container swiper">
+									<ul class="swiper-wrapper slide">
+										<li class="hide" data-tbsld-idx="1">
+											<div class="inner">
+												<!-- [case] template -->
+												<div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;">
+															<div class="msg">가입 가능한 상품을<br>직접 설계해 보세요.</div>
+															<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">보험료 계산 다시하기</button>
+														</div>
+														<!-- [D] UI-PPRINPD6124PL : 다시 계산하기 > 레이어팝업 -->
+														<!-- <div class="refresh" style="display: none;">
+															<div class="msg"></div>
+															<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">보험료 계산 다시하기</button>
+														</div> -->
+														<!-- [D] 2022-05-19 월보험료->보험료 / 문구추가(주계약에 대한~) -->
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">335,000</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tf">주계약</span></div>
+																		<div class="dd">
+																			<p class="desc-amount">각각 <span class="prc md"><em class="p">3,000</em><i class="w">만원</i></span></p>
+																			<div class="msgs">암, 뇌출혈, 급성심근경색증 진단보험금</div>
+																		</div>
+																	</div>
+
+																	<ul class="dise">
+																		<li><span class="pic pic1"></span> <span class="name">암</span></li>
+																		<li><span class="pic pic2"></span> <span class="name">뇌출혈</span></li>
+																		<li><span class="pic pic3"></span> <span class="name">급성심근경색증</span></li>
+																	</ul>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md ico-arrow">보험료 결과 자세히 보기</button>
+															</div>
+														</div>
+													</article>
+												</div>
+
+												<!-- [D] 2022-06-08 암케어보험은 문구 노출 제외 -->
+												<!-- [case] 암케어보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;">
+															<div class="msg">가입 가능한 상품을<br>직접 설계해 보세요.</div>
+															<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">보험료 계산 다시하기</button>
+														</div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">6,500</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">28세</em><em class="t">여성</em></div>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">암진단</span>
+																				<span class="prc"><em class="p">300</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">소액암진단
+																					<div class="ut-tooltip">
+																						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																						<div class="toolctn">
+																							<div class="tptit">소액암진단</div>
+																							<div class="tpmsg">
+																								<ul class="bullet a">
+																									<li>기타피부암, 대장점막내암, 경계성종양, 제자리암, 양성뇌종양 : 200만원</li>
+																									<li>특성갑상선암, 초기유방암 : 400만원</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				</span>
+																				<span class="prc"><em class="p">1,000</em><i class="w">만원</i></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md ico-arrow">보험료 결과 자세히 보기</button>
+															</div>
+														</div>
+													</article>
+												</div> -->
+
+												<div class="result">
+													<article class="box">
+														<div class="hdt">
+															<div class="tit">선택한 특약</div>
+														</div>
+														<div class="cdt">
+															<div class="ut-dtds d dtds">
+																<ul class="dlist">
+																	<li>
+																		<div class="dt">소액암진단특약(갱신형)Ⅲ</div>
+																		<div class="dd"><span class="prc"><em class="p">1,250</em><i class="w">원</i></span></div>
+																	</li>
+																	<li>
+																		<div class="dt">GI납입면제특약</div>
+																		<div class="dd"><span class="prc"><em class="p">15,250</em><i class="w">원</i></span></div>
+																	</li>
+																	<li>
+																		<div class="dt">당뇨진단및합병증보장특약 (갱신형)Ⅱ</div>
+																		<div class="dd"><span class="prc"><em class="p">360</em><i class="w">원</i></span></div>
+																	</li>
+																</ul>
+															</div>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md ico-arrow">선택한 특약 전체 보기</button>
+															</div>
+														</div>
+													</article>
+
+													<article class="box">
+														<div class="splist">
+
+															<div class="helpbox">
+																<button type="button" data-ui-tog="btn" data-ui-tog-val="tog_helpmsg" class="bt-help"><em class="t">도움말</em> <i class="ico help sm"></i></button>
+															</div>
+
+															<ul class="lst">
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험종류</div>
+																		<div class="bts">
+																			<span class="select">
+																				<select title="보험종류선택" onchange="ui.prd.calc.setCust(this);">
+																					<option>1종(저해지환급금형)</option>
+																					<option>2종(저해지환급금형)</option>
+																					<option>3종(저해지환급금형)</option>
+																				</select>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="cdt" data-ui-tog="ctn" data-ui-tog-val="tog_helpmsg">
+																		<div class="guds">저해지환급금형 보험이에요</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보장금액</div>
+																		<div class="bts">
+																			<span class="input a won no-lb"><input type="text" value="300,000" id="input-12" title="보장금액"><i class="w">원</i></span>
+
+																		</div>
+																	</div>
+																	<div class="cdt" data-ui-tog="ctn" data-ui-tog-val="tog_helpmsg">
+																		<div class="guds">보장금액을 원하시는 만큼 조정해 보세요.</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험기간</div>
+																		<div class="bts">
+																			<span class="select">
+																				<select title="보험기간 선택" onchange="ui.prd.calc.setCust(this);">
+																					<option>100세만기</option>
+																					<option>100세만기</option>
+																					<option>100세만기</option>
+																				</select>
+																			</span>
+																		</div>
+																	</div>
+																	<!-- <div class="cdt" data-ui-tog="ctn" data-ui-tog-val="tog_helpmsg">
+																	</div> -->
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입기간</div>
+																		<div class="bts">
+																			<span class="select">
+																				<select title="납입기간 선택" onchange="ui.prd.calc.setCust(this);">
+																					<option>30년</option>
+																					<option>30년</option>
+																					<option>30년</option>
+																				</select>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="cdt" data-ui-tog="ctn" data-ui-tog-val="tog_helpmsg">
+																		<div class="guds">납입기간이 길수록 월 보험료가 낮아져요.</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입주기</div>
+																		<div class="bts">
+																			<span class="select">
+																				<select title="납입주기 선택" onchange="ui.prd.calc.setCust(this);">
+																					<option>월납</option>
+																					<option>월납</option>
+																					<option>월납</option>
+																				</select>
+																			</span>
+																		</div>
+																	</div>
+																	<div class="cdt" data-ui-tog="ctn" data-ui-tog-val="tog_helpmsg">
+																		<div class="guds">문구 수급중 문구 수급중 문구 수급중 문구 수급중 문구 수급중 문구 수급중 문구 수급중 문구 수급중 문구 수급중 </div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</article>
+
+													<article class="special-box">
+
+														<div class="spopts" data-tog-cls="box">
+															<div class="btn-set btstop">
+																<button type="button" class="btn md bt-tog" data-tog-cls="btn">특약 <i class="ts">선택</i></button>
+																<!-- <button type="button" class="btn md bt-tog">특약 <i class="ts">선택</i></button> -->
+															</div>
+															<div class="opt-list" data-tog-cls="ctn">
+																<ul class="ut-accd c mlist" data-accd="tog">
+																	<li class="open expt">
+																		<div class="hbox"> <div class="tit">가입할 때 꼭 넣어야 할 특약이에요</div></div>
+																		<div class="cbox">
+																			<ul class="ut-accd slist" data-accd="tog">
+																				<li class="open expt">
+																					<div class="hbox"> <label class="checkbox"><input type="checkbox"><span class="txt">소액암진단특약(갱신형)Ⅲ [최초계약]</span></label></div>
+																					<div class="cbox">
+																						<div class="opts">
+																							<ul class="dlst">
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb">보험기간</label></div>
+																										<div class="dd">
+																											<span class="item">100세 만기</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="sel_id00">납입기간</label></div>
+																										<div class="dd">
+																											<!-- <span class="select def">
+																												<select id="sel_id00" name="sel_id00">
+																													<option>5년납</option>
+																													<option>10년납</option>
+																												</select>
+																											</span> -->
+																											<span class="item">전기납</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_3">가입금액</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_3" type="text" pattern="\d*"value="0"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_4">보험료</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_4" type="text" pattern="\d*"readonly value="1,250"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																							</ul>
+																							<div class="guds">소액암진단특약(갱신형)Ⅲ은 이러이러한 특약이에요.</div>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																	<li>
+																		<div class="hbox"> <div class="tit">암</div> <button type="button" class="btn-tog"></button></div>
+																		<div class="cbox">
+																			<ul class="ut-accd slist" data-accd="tog">
+																				<li>
+																					<div class="hbox"> <label class="checkbox"><input type="checkbox"><span class="txt">간암진단특약</span></label> <button type="button" class="btn-tog"></button> </div>
+
+																					<div class="cbox">
+																						<div class="opts">
+																							<ul class="dlst">
+																								<li>
+																									<div class="dl">
+																										<div class="dt">보험기간</div>
+																										<div class="dd"><span class="item">100세만기</span></div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="sel_id01">납입기간</label></div>
+																										<div class="dd">
+																											<span class="select def">
+																												<select id="sel_id01" name="sel_id01">
+																													<option>5년납</option>
+																													<option>10년납</option>
+																												</select>
+																											</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_33">가입금액</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_33" type="text" pattern="\d*" value="0"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_44">보험료</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_44" type="text" pattern="\d*" readonly value=""><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																							</ul>
+																							<div class="guds">문구 수급중 </div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="hbox"> <label class="checkbox"><input type="checkbox"><span class="txt">위암 및 식도암 진단특약</span></label> <button type="button" class="btn-tog"></button></div>
+																					<div class="cbox">
+																						<div class="opts">
+																							<ul class="dlst">
+																								<li>
+																									<div class="dl">
+																										<div class="dt">보험기간</div>
+																										<div class="dd"><span class="item">100세만기</span></div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="sel_id02">납입기간</label></div>
+																										<div class="dd">
+																											<span class="select def">
+																												<select id="sel_id02" name="sel_id02">
+																													<option>5년납</option>
+																													<option>10년납</option>
+																												</select>
+																											</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_31">가입금액</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_31" type="text" pattern="\d*"value="0"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_32">보험료</label></div>
+																										<div class="dd">
+																											<span class="input won a"><input id="input_id_32" type="text" pattern="\d*"readonly value="1,250"><i class="w">원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																							</ul>
+																							<div class="guds">문구 수급중 </div>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																	<li>
+																		<div class="hbox"> <div class="tit">질병</div> <button type="button" class="btn-tog"></button></div>
+																		<div class="cbox">
+																			<ul class="ut-accd slist" data-accd="tog">
+																				<li>
+																					<div class="hbox"> <label class="checkbox"><input type="checkbox"><span class="txt">3대질병및중증치매진단 보험료환급특약 2형</span></label> <button type="button" class="btn-tog"></button> </div>
+																					<!-- [D] 2022-05-23 치매보험_특약 입력폼 예외케이스 추가 -->
+																					<div class="cbox">
+																						<div class="opts">
+																							<ul class="dlst">
+																								<li>
+																									<div class="dl">
+																										<div class="dt">보험기간</div>
+																										<div class="dd"><span class="item">100세만기</span></div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="sel_id40">납입기간</label></div>
+																										<div class="dd">
+																											<span class="select def">
+																												<select id="sel_id01" name="sel_id40">
+																													<option>5년납</option>
+																													<option>10년납</option>
+																												</select>
+																											</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_43">가입금액</label></div>
+																										<div class="dd">
+																											<span class="select def f-sm">
+																												<select id="sel_id02" name="sel_id43">
+																													<option>주계약 보험료 × 10%</option>
+																													<option>주계약 보험료 × 20%</option>
+																													<option>주계약 보험료 × 30%</option>
+																													<option>주계약 보험료 × 40%</option>
+																													<option>주계약 보험료 × 50%</option>
+																													<option>주계약 보험료 × 60%</option>
+																													<option>주계약 보험료 × 70%</option>
+																													<option>주계약 보험료 × 80%</option>
+																													<option>주계약 보험료 × 90%</option>
+																													<option selected>주계약 보험료 × 100%</option>
+																												</select>
+																											</span>
+																											<span class="input won m a mt05"><input id="input_id_43" type="text" pattern="\d*" value="0"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_45">보험료</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_45" type="text" pattern="\d*" readonly value=""><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																							</ul>
+																							<!-- <div class="guds">문구 수급중 </div> -->
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="hbox"> <label class="checkbox"><input type="checkbox"><span class="txt">위암 및 식도암 진단특약</span></label> <button type="button" class="btn-tog"></button></div>
+																					<div class="cbox">
+																						<div class="opts">
+																							<ul class="dlst">
+																								<li>
+																									<div class="dl">
+																										<div class="dt">보험기간</div>
+																										<div class="dd"><span class="item">100세만기</span></div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="sel_id02">납입기간</label></div>
+																										<div class="dd">
+																											<span class="select def">
+																												<select id="sel_id02" name="sel_id02">
+																													<option>5년납</option>
+																													<option>10년납</option>
+																												</select>
+																											</span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_31">가입금액</label></div>
+																										<div class="dd">
+																											<span class="input won m a"><input id="input_id_31" type="text" pattern="\d*"value="0"><i class="w">만원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																								<li>
+																									<div class="dl">
+																										<div class="dt"><label class="lb" for="input_id_32">보험료</label></div>
+																										<div class="dd">
+																											<span class="input won a"><input id="input_id_32" type="text" pattern="\d*"readonly value="1,250"><i class="w">원</i></span>
+																										</div>
+																									</div>
+																								</li>
+																							</ul>
+																							<div class="guds">문구 수급중 </div>
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																</ul>
+																<div class="btn-set btsend">
+																	<button type="button" class="btn md" id="ball_2">보험료 확인</button>
+																</div>
+																<span data-ui-balloon="center,top-auto" class="ball b2" aria-describedby="ball_2">[보험료 확인]을 누르면 보험료가 자동 계산돼요!</span>
+															</div>
+
+														</div>
+													</article>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide" data-tbsld-idx="2">
+											<div class="inner">
+												<!-- [case] template -->
+												<div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<!-- [D] 2022-05-19 월보험료->보험료 / 문구추가(주계약에 대한~) -->
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">335,000</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tf">주계약</span></div>
+																		<div class="dd">
+																			<p class="desc-amount">각각 <span class="prc md"><em class="p">3,000</em><i class="w">만원</i></span></p>
+																			<div class="msgs">암, 뇌출혈, 급성심근경색증 진단보험금</div>
+																		</div>
+																	</div>
+
+																	<ul class="dise">
+																		<li><span class="pic pic1"></span> <span class="name">암</span></li>
+																		<li><span class="pic pic2"></span> <span class="name">뇌출혈</span></li>
+																		<li><span class="pic pic3"></span> <span class="name">급성심근경색증</span></li>
+																	</ul>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<!-- <button type="button" class="btn md ico-arrow">보험료 결과 자세히 보기</button> -->
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													
+												</div>
+
+												<!-- [D] 2022-06-08 -->
+												<!-- [case] 미니보장보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">6,500</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">입원비</span>
+																				<span class="prc"><em class="p">2</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">상급종합병원입원비</span>
+																				<span class="prc"><em class="p">3</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">수술비
+																					<div class="ut-tooltip">
+																						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																						<div class="toolctn">
+																							<div class="tptit">수술비</div>
+																							<div class="tpmsg">
+																								<ul class="bullet a">
+																									<li>1종 : 10만원</li>
+																									<li>2종 : 30만원</li>
+																									<li>3종 : 50만원</li>
+																									<li>4종 : 100만원</li>
+																									<li>5종 : 300만원</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				</span>
+																				<span class="prc"><em class="p">10</em><i class="w">만원</i> ~ <em class="p">300</em><i class="w">만원</i></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>													
+													<article class="bnnr">
+														<div class="ut-slide-play">
+															<div class="swiper-container swiper" data-slide-id="banner_2">
+																<div class="control">
+																	<div class="dots"></div>
+																	<div class="plys"><button type="button" class="bt play">정지</button></div>
+																</div>
+																<ul class="swiper-wrapper slide">
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																</ul>
+															</div>
+														</div>
+													</article>
+													
+												</div> -->
+
+												<!-- [case] 간편가입건강보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">20,000</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">재해사망</span>
+																				<span class="prc"><em class="p">1,000</em><i class="w">만원</i></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													<article class="bnnr">
+														<div class="ut-slide-play">
+															<div class="swiper-container swiper" data-slide-id="banner_2">
+																<div class="control">
+																	<div class="dots"></div>
+																	<div class="plys"><button type="button" class="bt play">정지</button></div>
+																</div>
+																<ul class="swiper-wrapper slide">
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																</ul>
+															</div>
+														</div>
+													</article>
+												</div> -->
+
+												<!-- [case] 암보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">10,655</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">암진단</span>
+																				<span class="prc"><em class="p">2,500</em><i class="w">만원</i></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													<article class="bnnr">
+														<div class="ut-slide-play">
+															<div class="swiper-container swiper" data-slide-id="banner_2">
+																<div class="control">
+																	<div class="dots"></div>
+																	<div class="plys"><button type="button" class="bt play">정지</button></div>
+																</div>
+																<ul class="swiper-wrapper slide">
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																</ul>
+															</div>
+														</div>
+													</article>
+												</div> -->
+
+												<!-- [case] 치매보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">10,655</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">경도치매</span>
+																				<span class="prc"><em class="p">300</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">증증도치매</span>
+																				<span class="prc"><em class="p">1,000</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">증증치매</span>
+																				<span class="prc"><em class="p">2,000</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">중증치매생활자금</span>
+																				<span class="prc"><em class="p">100</em><i class="w">만원</i> <span class="cnt">(36회 ~ 최대180회)</span></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													<article class="bnnr">
+														<div class="ut-slide-play">
+															<div class="swiper-container swiper" data-slide-id="banner_2">
+																<div class="control">
+																	<div class="dots"></div>
+																	<div class="plys"><button type="button" class="bt play">정지</button></div>
+																</div>
+																<ul class="swiper-wrapper slide">
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																</ul>
+															</div>
+														</div>
+													</article>
+												</div> -->
+
+												<!-- [case] 암케어보험 -->
+												<!-- <div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">1,530</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dt-item">
+																		<ul class="item">
+																			<li>
+																				<span class="name">암진단</span>
+																				<span class="prc"><em class="p">300</em><i class="w">만원</i></span>
+																			</li>
+																			<li>
+																				<span class="name">소액암진단
+																					<div class="ut-tooltip">
+																						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																						<div class="toolctn">
+																							<div class="tptit">소액암진단</div>
+																							<div class="tpmsg">
+																								<ul class="bullet a">
+																									<li>기타피부암, 대장점막내암, 경계성종양, 제자리암, 양성뇌종양 : 200만원</li>
+																									<li>특성갑상선암, 초기유방암 : 400만원</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				</span>
+																				<span class="prc"><em class="p">1,000</em><i class="w">만원</i></span>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+															</ul>
+															<div class="btn-set btsbot">
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													<article class="bnnr">
+														<div class="ut-slide-play">
+															<div class="swiper-container swiper" data-slide-id="banner_2">
+																<div class="control">
+																	<div class="dots"></div>
+																	<div class="plys"><button type="button" class="bt play">정지</button></div>
+																</div>
+																<ul class="swiper-wrapper slide">
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																	<li class="swiper-slide"><a href="javascript:;"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+																</ul>
+															</div>
+														</div>
+													</article>
+												</div> -->
+
+												<div class="result">
+													<article class="box">
+														<div class="sppeid">
+															<div class="hdt">
+																<div class="tit">납입 및 보장 기간</div>
+															</div>
+															<div class="cdt">
+																<!-- [D] 2022-05-19 일시납 케이스 추가 -->
+																<!-- <div class="ut-peid">
+																	<div class="graph y30" role="img" aria-label="종신/정기보험, 납입기간은 30년 납, 보장기간은 사망시까지">
+																		<span class="tot">
+																			<em class="gg">사망시까지 보장</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">30년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div> -->
+
+																<div class="ut-peid">
+																	<div class="graph y20 limit" role="img" aria-label="건강/암보험, 납입기간은 20년 납, 보장기간은 100세 만기">
+																		<span class="tot">
+																			<em class="gg">100세 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">20년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div>
+											
+																<!-- <div class="ut-peid">
+																	<div class="graph y10 limit" role="img" aria-label="어린이보험, 납입기간은 10년 납, 보장기간은 30세 만기">
+																		<span class="tot">
+																			<em class="gg">30세 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">10년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div>
+											
+																<div class="ut-peid">
+																	<div class="graph same" role="img" aria-label="전기납, 5년 만기">
+																		<span class="tot">
+																			<em class="gg">5년 납</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">5년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">5년 만기 납입 종료</i></span>
+																		</span>
+																	</div>
+																</div>
+															
+																<div class="ut-peid">
+																	<div class="graph same first" role="img" aria-label="일시납, 5년 만기">
+																		<span class="tot">
+																			<em class="gg">5년 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">납입기간</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i><i class="cnt">1회 납입</i></span>
+																			<span class="tt ed"><i class="t">5년 만기 납입 종료</i></span>
+																		</span>
+																	</div>
+																</div> -->
+
+															</div>
+														</div>
+
+														<div class="splist info">
+															<ul class="lst">
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험종류</div>
+																		<div class="bts">1종(저해지환급금형)</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보장금액</div>
+																		<div class="bts">3,000만원</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험기간</div>
+																		<div class="bts">100세만기</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입기간</div>
+																		<div class="bts">30년</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입주기</div>
+																		<div class="bts">월납</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+
+														<div class="spopts">
+															<div class="dbox">
+																<div class="dts">
+																	<span class="tit">의무부가 특약</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>주계약 또는 특정 선택특약을 부가하는 경우에 의무적으로 부가해야하는 특약입니다. </p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="dds">
+																	<ul class="bullet a lg">
+																		<li>
+																			<div class="name">소액암진단특약(갱신형)Ⅲ</div><span class="prc">보험료  <em class="p">2,100</em><i class="w">원</i></span>
+																			<div class="edt"><em class="ed">5년만기</em> <em class="ed">전기납</em> <em class="ed">1,000만원</em></div>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</article>
+												</div>
+											</div>
+
+											<div class="spbots">
+												<div class="btn-set btsbot">
+													<button type="button" class="btn md ico-arrow">보장내용</button>
+													<button type="button" class="btn md ico-arrow">해지환급금</button>
+												</div>
+											</div>
+										</li>
+										<li class="swiper-slide" data-tbsld-idx="3">
+											<div class="inner">
+												<div class="pbox">
+													<article class="box">
+														<div class="refresh" style="display: none;"><button type="button" class="msg" onclick="ui.prd.calc.myPrds(this);">결과다시보기</button></div>
+														<!-- [D] 2022-05-19 월보험료->보험료 / 문구추가(주계약에 대한~) -->
+														<div class="inr">
+															<ul class="info">
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tm">보험료</span></div>
+																		<div class="dd">
+																			<span class="prc blue lg"><em class="p">335,000</em><i class="w">원</i></span>
+																			<div class="tmsg"><em class="t">41세</em><em class="t">남성</em></div>
+																		</div>
+
+																	</div>
+																</li>
+																<li>
+																	<div class="dl">
+																		<div class="dt"><span class="tf">주계약</span></div>
+																		<div class="dd">
+																			<p class="desc-amount">각각 <span class="prc md"><em class="p">3,000</em><i class="w">만원</i></span></p>
+																			<div class="msgs">암, 뇌출혈, 급성심근경색증 진단보험금</div>
+																		</div>
+																	</div>
+
+																	<ul class="dise">
+																		<li><span class="pic pic1"></span> <span class="name">암</span></li>
+																		<li><span class="pic pic2"></span> <span class="name">뇌출혈</span></li>
+																		<li><span class="pic pic3"></span> <span class="name">급성심근경색증</span></li>
+																	</ul>
+																</li>
+															</ul>
+															<p class="bullet b">주계약에 대한 보장내용입니다.</p>
+															<div class="btn-set btsbot">
+																<!-- <button type="button" class="btn md ico-arrow">보험료 결과 자세히 보기</button> -->
+																<button type="button" class="btn md" onclick="ui.prd.calc.myPrds(this);">내가 직접 계산하기</button>
+															</div>
+														</div>
+													</article>
+													
+												</div>
+
+												<div class="result">
+													<article class="box">
+														<div class="sppeid">
+															<div class="hdt">
+																<div class="tit">납입 및 보장 기간</div>
+															</div>
+															<div class="cdt">
+																<!-- [D] 2022-05-19 일시납 케이스 추가 -->
+																<!-- <div class="ut-peid">
+																	<div class="graph y30" role="img" aria-label="종신/정기보험, 납입기간은 30년 납, 보장기간은 사망시까지">
+																		<span class="tot">
+																			<em class="gg">사망시까지 보장</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">30년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div> -->
+
+																<div class="ut-peid">
+																	<div class="graph y20 limit" role="img" aria-label="건강/암보험, 납입기간은 20년 납, 보장기간은 100세 만기">
+																		<span class="tot">
+																			<em class="gg">100세 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">20년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div>
+											
+																<!-- <div class="ut-peid">
+																	<div class="graph y10 limit" role="img" aria-label="어린이보험, 납입기간은 10년 납, 보장기간은 30세 만기">
+																		<span class="tot">
+																			<em class="gg">30세 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">10년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">납입종료</i></span>
+																		</span>
+																	</div>
+																</div>
+											
+																<div class="ut-peid">
+																	<div class="graph same" role="img" aria-label="전기납, 5년 만기">
+																		<span class="tot">
+																			<em class="gg">5년 납</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">5년 납</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+																			<span class="tt ed"><i class="t">5년 만기 납입 종료</i></span>
+																		</span>
+																	</div>
+																</div>
+															
+																<div class="ut-peid">
+																	<div class="graph same first" role="img" aria-label="일시납, 5년 만기">
+																		<span class="tot">
+																			<em class="gg">5년 만기</em>
+																		</span>
+																		<span class="gag">
+																			<em class="gg">납입기간</em>
+																			<span class="tt st"><i class="t">납입 및 보장 시작</i><i class="cnt">1회 납입</i></span>
+																			<span class="tt ed"><i class="t">5년 만기 납입 종료</i></span>
+																		</span>
+																	</div>
+																</div> -->
+															</div>
+														</div>
+
+														<div class="splist info">
+															<ul class="lst">
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험종류</div>
+																		<div class="bts">1종(저해지환급금형)</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보장금액</div>
+																		<div class="bts">3,000만원</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">보험기간</div>
+																		<div class="bts">100세만기</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입기간</div>
+																		<div class="bts">30년</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="hdt">
+																		<div class="tit">납입주기</div>
+																		<div class="bts">월납</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+
+														<div class="spopts">
+															<div class="dbox">
+																<div class="dts">
+																	<span class="tit">의무부가 특약</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>주계약 또는 특정 선택특약을 부가하는 경우에 의무적으로 부가해야하는 특약입니다. </p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="dds">
+																	<ul class="bullet a lg">
+																		<li>
+																			<div class="name">소액암진단특약(갱신형)Ⅲ</div><span class="prc">보험료  <em class="p">2,100</em><i class="w">원</i></span>
+																			<div class="edt"><em class="ed">5년만기</em> <em class="ed">전기납</em> <em class="ed">1,000만원</em></div>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</article>
+												</div>
+											</div>
+
+											<div class="spbots">
+												<div class="btn-set btsbot">
+													<button type="button" class="btn md ico-arrow">보장내용</button>
+													<button type="button" class="btn md ico-arrow">해지환급금</button>
+												</div>
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							
+						</section>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<!-- [D] 상품일 경우 -->
+				<div class="btn-set">
+					<button type="button" class="btn lg rd a">상담신청</button>
+				</div>
+				<!-- [D] 다이렉트상품일 경우 -->
+				<div class="btn-set">
+					<button type="button" class="btn lg rd b">상담신청</button>
+					<button type="button" class="btn lg rd a">간편가입</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<script>
+
+		ui.prd.calc = {  // 상품보험료계산
+			init:function(id){
+				ui.tbsld.set(id);
+				ui.tbsld.slide.tabsld_calc.on("slideChangeTransitionEnd",function(){
+					var idx = this.realIndex;
+					// console.log(idx);
+					ui.prd.calc.actSld(idx);
+				});
+
+				ui.prd.calc.actSld(0);
+			},
+			movSld:function(idx){  //  탭 클릭 이동
+				//var idx = idx - $(".slide>li").length + 2;
+				var idx = idx - $(".slide>li.hide").length -1 ;
+				ui.tbsld.slide.tabsld_calc.slideTo(idx);
+			},
+			actSld:function(idx){  // 슬라이드 탭 싱크
+				//idx = idx +1;
+				idx = idx + $(".slide>li.hide").length + 1;
+				console.log(idx+" / 3번째");
+				$(".tabs .menu>li:nth-child("+idx+")").addClass("active").siblings("li").removeClass("active");
+				ui.update();
+			},
+			myPrds:function(els){  //  내가 계산한 보험료 슬라이드로 셋팅
+				//$(".tabs .menu>li").addClass("active").siblings("li").removeClass("active");
+				//$(".slide>li").addClass("swiper-slide");
+				$(".tabs .menu>li.hide").removeClass("hide").addClass("active").siblings("li").removeClass("active");
+				$(".slide>li.hide").addClass("swiper-slide").removeClass("hide");
+				$(".refresh").hide().next(".inr").attr("aria-hidden",false);
+				ui.tbsld.slide.tabsld_calc.slideTo(0);
+				ui.tbsld.slide.tabsld_calc.update();
+				$("body,html").animate({ scrollTop: 0 }, 100);
+				console.log("내가 계산한 보험료 슬라이드로 셋팅");
+				ui.update();
+			},
+			setCust:function(els){ //  선택 수정했을때
+				$(".slide li.swiper-slide-active").find(".refresh").show().next(".inr").attr("aria-hidden",true);
+				$("body,html").animate({ scrollTop: 0 }, 100);
+			}
+		}
+
+		ui.prd.calc.init('tabsld_calc');
+
+		// 높이계산
+		// $(".special-box button, .splist .bt-help").on("click",function(){
+		// 	setTimeout(function(){
+		// 			ui.tbsld.slide.tabsld_calc.slideTo(0);
+		// 	},150);
+		// });
+
+		// [D] 2022-06-08 높이계산 수정
+		// ".swiper-slide .result button" 문제시 아래로 수정
+		// ".swiper-slide .result .btn-tog, .swiper-slide .result [data-tog-cls='btn'], .swiper-slide .result [data-ui-tog='btn']"
+		$(document).on("click", ".swiper-slide .result button", function(e) {
+			setTimeout(function(){
+				ui.tbsld.slide.tabsld_calc.update();
+			},150);
+		});
+
+
+
+
+
+
+	ui.popup.open('pop-calculate');  // 팝업 열기
+
+	/* 콜백 필요 할때 팝업 열기
+	ui.popup.open('pop-pdmpsell',{
+		ocb:function(){
+			console.log("열리고 콜백");
+		},
+		ccb:function(){
+			console.log("닫히고 콜백");
+		}
+	});
+	*/
+
+	// [D] 퍼블 확인용! 개발페이지에서는 가져가지 마세요.
+	const urlParams = new URL(location.href).searchParams;
+	const type = urlParams.get('type');
+	$(".pbt .btn-set").hide();
+	if(type == "direct") $(".pbt .btn-set:last-child").show();
+	else $(".pbt .btn-set:first-child").show();
+
+</script>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

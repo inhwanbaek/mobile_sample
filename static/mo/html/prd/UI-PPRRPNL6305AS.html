@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"IRP 가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd retire irp" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">5. 서류제출</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">9</b></span>
+								<span class="num"><b class="b">5</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="hd-tit2">증빙서류를 제출해 주세요.</h2>
+			
+			<div class="btn-set vt mt16">
+				<button type="button" class="btn">증빙서류안내</button>
+			</div>
+
+			<div class="cont-box">
+				<h3 class="hd-tit4">구분</h3>
+				<div class="radiobox c">
+					<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">직장인</span></label>
+					<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">자영업자</span></label>
+				</div>
+
+				<div>
+					<h4 class="hd-tit5">다음 방법 중 하나를 선택해 제출해 주세요.</h4>
+					
+					<div class="ut-addfile">
+						<ul class="addfile">
+							<li>
+								<div class="fbox">
+									<div class="hdt"><span class="tit">자동제출서비스</span></div>
+									<div class="bts">
+										<button type="button" class="btn sm f">신청하기</button>
+									</div>
+								</div>
+							</li>
+
+							<!-- 스크래핑 서류 업로드 상태 -->
+							<li>
+								<div class="fbox">
+									<div class="hdt"><span class="tit">자동제출서비스</span></div>
+									<div class="bts">
+										<button type="button" class="btn sm f" disabled="">제출완료</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<ul class="bullet b lg">
+						<li>공동인증서, 패스 인증서, 토스 인증서 중 1가지를 준비해 주세요.</li>
+						<li>휴대폰에 공동인증서가 없는 경우 PC에 있는 공동인증서를 복사한 후 진행해 주세요.<br>
+							<a href="javascript:;" class="link-text">공동인증서 가져오기</a>
+						</li>
+					</ul>
+					
+				</div>
+
+				<!-- <h4 class="hd-tit5 center">또는</h4> --> <!-- 22-05-17 텍스트 삭제 -->
+				
+				<!-- [D] 2022-07-12 직접 증빙서류 첨부 삭제 
+				<div class="ut-addfile">
+					<ul class="addfile">
+						<li>
+							<div class="fbox">
+								<div class="hdt"><span class="tit">직접 증빙서류 첨부</span></div>
+								<div class="bts">
+									<label class="btn sm f btn-attach" title="직접 증빙서류 첨부">
+										<em class="btx">직접 첨부</em>
+										<input class="file" type="file" accept="image/*; capture=camera">
+									</label>
+								</div>
+							</div>
+						</li>
+
+						직접 증빙서류 업로드 상태 
+						<li>
+							<div class="fbox">
+								<div class="hdt"><span class="tit">직접 첨부</span></div>
+								<div class="bts btn2">
+									<button type="button" class="btn sm f comp" title="직접 증빙서류 첨부">미리보기</button>
+									<label class="btn sm f comp btn-attach" title="직접 증빙서류 첨부">
+										<em class="btx">다시첨부</em>
+										<input class="file" type="file" accept="image/*; capture=camera">
+									</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>-->
+
+
+
+				
+			</div>
+			
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">					
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	
+	<script>
+		
+	</script>
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

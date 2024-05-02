@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=content-type content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="http://www.kyobo.co.kr/css/mail/kyobomail_2014.css" rel="stylesheet" type="text/css">       
+    <title>템플릿 보기</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="conbg">
+            <div class="topbg">
+                <div class="fl_left logo"><a href="http://www.kyobo.com/" target="blank"><img src="http://www.kyobo.co.kr/images/mail/attachMail_logo.gif" alt="교보생명 로고"/></a></div>
+            </div>
+            <!-- 콘텐츠 영역  --> 
+            <div class="t_center">
+                <img src="http://www.kyobo.co.kr/images/co/mail/h2_mailshot_21.gif" alt="보험료 자동갱신 안내" class="mt50"/>  
+            </div>
+            <div class="greeting_new">
+                <ul>
+                    <li class="fs14" style="font-weight:bold;">
+                        <span style="color:#006bbe;"><u>{$autRnwEmalGeImDto.cnor_nm$}</u></span>&nbsp;고객님께
+                    </li>
+                    <li class="mt10 fs12">고객님께서 가입하신 자동갱신 대상 보험계약 중<br>
+                        갱신형 특약의 자동갱신일이 도래하여 변동된 보험료를 안내드립니다. 
+                    </li>
+                </ul>
+            </div>
+            <!-- 박스  -->
+            <div class="conbox mt20 ml30 fs12" style="background: #e6f0f7; border: 0px;">
+                갱신형보험(특약)이란 갱신 주기마다 보험료를 재산정하여 갱신하는 보험으로, 연령, 위험률을 다시 적용하여 보험료를 산출하고,<br>
+                계약자의 별도 의사표시가 없는 한 매 갱신 주기마다 자동갱신 하는 것입니다.
+            </div>
+            <!--  테이블  -->
+            <div class="mt30" style="height:20px">
+                <span class="fl_left bul_green ml30">계약사항</span>
+            </div>
+            <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+                <table style="width:100%;" border="1" >
+                    <colgroup>
+                        <col style="width:30%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <tr>
+                        <th class="bg_bold" style="border-left:0px;">상품명<br>보험증권번호/주피보험자</th>
+                        <th class="bg_bold">계약일자</th>
+                        <th class="bg_bold">최종월도/횟수</th>
+                        <th class="bg_bold">보험기간<br>납입기간</th>
+                        <th class="bg_bold">납입주기<br>수금방법</th>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }<br>${ } / ${ }</td>
+                        <td>${ }</td>
+                        <td>${ } / ${ }</td>
+                        <td>${ }<br>${ }</td>
+                        <td>${ }<br>${ }</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mt30" style="height:20px">
+                <span class="fl_left bul_green ml30">갱신예상내역</span>
+                <span class="fl_right fs11  mr40">(금액단위: 원)</span>
+            </div>
+            <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+                <table style="width:100%;" border="1" >
+                    <colgroup>
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <tr>
+                        <th class="bg_bold" style="border-left:0px;">보험기간 종료일</th>
+                        <th class="bg_bold">갱신예정일</th>
+                        <th class="bg_bold">갱신 전 합계보험료<br>(납입중 보험료)</th>
+                        <th class="bg_bold">갱신 후 합계보험료</th>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+                        <td>${ }</td>
+                        <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="guide mt10 ml30">
+                <li class="list_bdot">본 안내문은 ${ } 기준으로 작성된 내용으로 그 후의 변동사항은 반영되어 있지 않습니다.</li> 
+                <li class="list_bdot">갱신후(특약)보험료 및 자동갱신시 합계보험료는 예정기초율(위험률, 이율, 사업비율) 및 피보험자의 나이 증가를 반영하여<br>
+                    산출한 금액으로 안내시점 이후의 변동이 있는 경우, 실제 갱신시에는 변동된 예정기초율을 적용후 갱신처리 되어 안내된 금액과<br>달라질 수 있습니다.</li>
+            </ul>
+            <div class="mt30" style="height:20px">
+                <span class="fl_left bul_green ml30">자동갱신안내</span>
+            </div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_green_dash">보험기간 종료일 15일 전까지 상기 특약을 갱신하지 않는다는 의사표시가 없으면 갱신 의사가 있는 것으로 간주하여 자동갱신이 이루어<br>집니다.</li> 
+                <li class="bul_green_dash"><b>만약 자동갱신을 원하지 않으실 경우, 갱신중지 신청을 할 수 있으며</b> 콜센터((☎1588-1001) 또는 고객PLAZA 방문을 통해 가능합니다.<br>
+                     단, 자동이체 계약은 보험기간 종료일보다 이체희망일이 빠른경우 이체희망일 15일 전까지 갱신하지 않는다는 의사표시를 하지 않으면<br>
+                     갱신후 보험료가 청구됩니다.</li> 
+                <li class="bul_green_dash">약관에서 정한 납입최고(독촉)기간 내에 갱신 전 계약의 보험료 및 갱신계약의 제1회 보험료를 납입하지 않으면 이 계약은 갱신되지<br>않습니다.</li> 
+                <li class="bul_green_dash">갱신후(특약) 합계보험료는 작성일 기준 원보험료로 표기 하였으며, 할인이 해당되는 경우 및 갱신시점에 납입이 완료되는 주계약(특약)이<br>
+                    있는 경우 등에 따라 보험료 납입 시 변동될 수 있습니다.</li> 
+                <li class="bul_green_dash">주피보험자의 나이가 갱신가능 나이를 넘어선 경우에는 자동갱신이 불가합니다.</li> 
+            </ul>
+            <!-- 테이블 : 갱신형 특약별 상세 보험료 변동내역 안내 -->
+            <div class="mt30" style="height:20px">
+                <span class="fl_left bul_green ml30">갱신형 특약별 상세 보혐료 변동내역 안내</span>
+                <span class="fl_right fs11  mr40">(금액단위: 원)</span>
+            </div>
+            <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+                <table style="width:100%;" border="1">
+                    <colgroup>
+                        <col style="width:28%">  
+                        <col style="width:9%">
+                        <col style="width:9%">
+                        <col style="width:9%"> 
+                        <col style="width:9%">
+                        <col style="width:9%">
+                        <col style="width:9%">
+                        <col style="width:9%">
+                        <col style="width:9%">
+                    </colgroup>
+                    <tr>
+                        <th class="bg_bold" style="border-left:0px;" colspan="4">현재가입내역</th>
+                        <th class="bg_bold" colspan="3">갱신후보험료</th>
+                        <th class="bg_bold" colspan="2">갱신차액</th> 		
+                    </tr>
+                    <tr>
+                        <th class="bg_bold" style="border-left:0px;">특약명<br>피보험자</th>
+                        <th class="bg_bold">최대갱신<br>종료나이</th>
+                        <th class="bg_bold">보험기간<br>납입기간</th>
+                        <th class="bg_bold">갱신전<br>보험료</th>
+                        <th class="bg_bold">할인전<br>보험료</th>
+                        <th class="bg_bold">무사고할인<br>보험료</th>
+                        <th class="bg_bold">할인후<br>보험료</th>
+                        <th class="bg_bold">연령<br>상승분</th>
+                        <th class="bg_bold">연령외<br>상승분</th>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                    <tr>
+                        <td style="border-left:0px;">${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+  					    <td>${ }</td>
+                        <td>${ }</td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="guide mt10 ml30">
+                <li class="list_bdot">상기 내용의 실손의료비 갱신후 보험료는 갱신 직전 보험기간동안 보험금을 지급받지 않은 경우, 각각의 실손의료비 보험료를 할인하는<br>
+                    무사고 할인이 적용된 보험료 입니다.</li> 
+                <li class="list_bdot">갱신전 · 후 보험료 차이(갱신차액)는 연령 상승분과 연령외 상승분* 등으로 구분됩니다.<br>
+                *예정위험률, 예정이율, 예정사업비율의 차이 등에 의한 보험료 변동</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">유지서비스 지점 안내</li>
+                <li>
+                    <div class="box_gray" style="display:inline-block; padding:5px 15px; width:728px;">
+                        <ul style="float:left;">
+                            <li class="list_bdot">유지서비스 점포 : ${BRNC_NAME} ${CLCT_TECT_NO}</li>
+                            <li class="list_bdot">유지서비스 컨설턴트 :${EMPL_NAME}${HAND_PHON_NO} ${CLCT_FAX_NO}</li>
+                            <li>※ 기타 문의 사항은 교보생명 콜센터(☎ 1588-1001)로 연락주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- 갱신형 특약에 대한 추가 안내사항 -->
+            <div class="bul_guide mt20 ml30">갱신형 특약에 대한 추가 안내사항</div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">갱신특약 보험료 변동 내역 (갱신차액) 안내</li>
+                <li>갱신전·후 보험료 차이는 연령 상승분과 연령외 상승분으로 구분하였으며 다음의 경우 갱신특약의 갱신차액이 미표기 되었습니다.</li>
+                <li class="bul_green_dash">가입 당시 선택한 상품(특약)이 가입이 불가한 연령으로 갱신되는 경우, 갱신 전 계약의 갱신 후 나이에 해당하는 보험료 산출이<br>불가한 경우</li>
+                <li class="bul_green_dash">다중보장특약 (1대 다수의 특약으로 갱신)의 경우 갱신전 다수특약으로 보험료 산출이 불가한 경우</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">직업/직무 통지의무 이행방법 안내</li>
+                <li><b>직업 · 직무 변경 등 통지의무에 관한 안내</b> | 상해보험의 경우</li>
+                <div class="conbox fs12 mt10" style="border-radius: 10px;">
+                    <span style="color:#013976"><strong>상해보험이란?</strong></span><br>
+                    피보험자가 우연한 외부적인 사고로 인해 신체상의 상해를 입어 그 결과 사망 또는 불구 등이 되거나 치료를 받아야 할 사망보험금,<br>
+                    장해보험금, 치료비 등을 지급하는 보험(예:2005.10.1일 이후 가입한 무배당교통안전보험, 교보실손의료비특약 상해형 등) 계약자<br>
+                    또는 피보험자는 보험기간 중에 피보험자가 그 직업 또는 직무를 변경(계약체결 당시의 직업 또는 직무의 변경없이 새로운 직업 또는<br>
+                    직무에 종사하게 된 경우와 자가용 운전자가 영업용 운전자로 직업 또는 직무를 변경하는 등의 경우를 포함합니다)하거나 이륜자동차<br>
+                    또는 원동기장치 자전거를 계속적으로 사용하게 된 경우에는 지체없이 회사에 알려야 하며, 그렇지 않은 경우 보험사고가 발생한<br>
+                    경우에도 보험금 지급이 제한될 수 있습니다. 다만, 변경된 직업 또는 직무와 관계없는 사고로 발생한 상해에 대해서는<br>
+                    보험금 지급을 제한하지 않습니다.
+                </div>
+                <li class="mt10">피보험자의 직업(직무)이 변경된 경우 아래와 같은 방법을 통해 당사에 변경내용을 통지하실 수 있습니다.</li>
+                <li class="bul_green_dash">신청방법 : 고객PLAZA(영업점 내 고객창구) 내방, 컨설턴트 방문 접수</li>
+                <li class="bul_green_dash">구비서류<br>
+                <div class="clear mt10 common_top_basic_box" style="width:740px;">
+                    <table style="width:100%" border="1">
+                        <colgroup>
+                            <col style="width:50%">
+                            <col style="width:50%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="bg_bold" style="border-left:0px;">피보험자 신청시</th>
+                                <th class="bg_bold">계약자 신청시</th>
+                            </tr>
+                            <tr>
+                                <td class="t_left" style="padding:10px; border-left:0px; line-height: 1.5;">· 공통 구비서류<br> &nbsp; 
+                                    - 직종변경 신청서(당사 양식)<br> &nbsp; 
+                                    - 피보험자의 직무(취급업무) 및 근무개시일자 확인이<br><span style="margin-left: 20px;">가능한 서류(재직증명서등)</span><br> &nbsp; 
+                                    ※ 상기서류를 구비할 수 없는 경우 직종변경 신청서 상<br><span style="margin-left: 20px;">「 알릴 의무사항」 작성</span></td>
+                                <td class="t_left" style="padding:10px; line-height: 1.5;">· 공통 구비서류<br> 
+                                    · 계약자와 피보험자와의 관계확인서류<br> 
+                                    · 피보험자의 직무 및 근무개시일자 확인서류가 없는 경우<br> &nbsp; 
+                                    - 피보험자 인감증명서(본인서명사실 확인서)<br> &nbsp; 
+                                    - 위임장(인감도장 날인 또는 본인서명)<br> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </ul>
+            <div class="conbox mt20 ml30" style="border-radius: 10px;">
+                <div><span class="fl_left bul_green">고객정보 확인안내</span></div><br>
+                <ul class="guide ml10">
+                    <li>고객님의 소중한 정보(주소, 휴대폰, 이메일 등)가 변경된 경우 가입하신 보험약관 주소변경 통지규정에 따라<br>
+                        교보생명 콜센터(☎ ${TEL}), 홈페이지(www.kyobo.com) 또는 가까운 고객PLAZA에서 정정하시기 바랍니다.</li>
+                    <div class="clear mt10 common_top_basic_box" style="width:710px">
+                        <table style="width:100%;" border="1">
+                            <colgroup>
+                                <col style="width:15%"> 
+                                <col style="width:35%"> 
+                                <col style="width:15%"> 
+                                <col style="width:35%"> 
+                            </colgroup>
+                            <tbody>
+                                <tr> 
+                                    <th class="bg_bold" style="border-left:0px;">휴대폰</th> 
+                                    <td class="bg_bold">${MASKING_HP}</td> 
+                                    <th class="bg_bold">이메일</th> 
+                                    <td class="bg_bold">${MASKING_EMAIL}</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </ul>
+            </div>
+            
+            <!-- 실손의료비보험 (특약) 갱신형에 대한 추가 안내사항 -->
+            <div class="bul_guide mt20 ml30">실손의료비보험 (특약) 갱신형에 대한 추가 안내사항</div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">실손의료보험의 보험료 할인제도 안내</li>
+                <div class="conbox mt10 mb10 fs12" style="background: #e6f0f7; border: 0px;">
+                보험료납입 의무납입기간(유니버셜보험)이후 계약 및 보험료납입 일시 중지 신청 중인 계약은 보험료를 할인하는 대신 적립금액에서<br>
+                차감하는 이 특약의 월대체 보험료를 할인하여 드립니다.
+            </div>
+                <li>◈ 무사고할인</li>
+                <li>회사가 정한 「보험료할인판정기간」동안 보험금을 지급받지 않은 경우에는 갱신계약 영업보험료의 10%를 할인해드립니다.</li>
+                <li class="bul_green_dash">보험료할인판정기간 | 해당 갱신계약 이후 도래하는 그 다음 갱신계약의 보장개시일이 속한 달의 3개월전 마지막 날로부터 직전1년<br>
+                    (다만, 갱신계약의 보험기간이 3년인 계약은 3년이며, 2017년 4월1일 이후 가입하신 경우 2년)의 기간으로 합니다.</li>
+                <li>※ 예)갱신 직전 2년 무사고 → 1년간 보험료 10% 할인(2년 갱신)</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li>◈ 의료급여 수급권자 보험료 할인</li>
+                <li>피보험자가 의료급여수급권자에 해당되는 경우 해당 사실을 입증하는 서류를 제출하시면 보험료를 할인받으실 수 있습니다.</li>
+                <li class="bul_green_dash">신청대상 | 2014.4.1일 이후 가입하거나 갱신된 표준화 단독실손의료비보험 또는 실손의료비특약(영업보험료의 5% 할인)</li>
+                <li class="bul_green_dash">신청서류 | 피보험자가 의료급여수급권자임을 증명하는 서류(의료급여증명원 등)</li>
+                <li class="bul_green_dash">신청방법 | 고객PLAZA (영업점 내 고객창구) 내방, 컨설턴트 방문접수</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li>◈ 표준화 실손의료비보장 안정화 할인</li>
+                <li>2017년3월31일 이전에 가입하신 1년만기 갱신형 실손의료비보험(특약)의 갱신도래 계약 갱신후 보험료는 해당 계약의 갱신도래시점 부터<br>
+                    갱신보험기간(1년)동안 갱신계약 영업보험료의 5.5%를 할인하여 드립니다.</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">해외 장기체류에 따른 실손의료보험료 환급제도 안내</li>
+                <li>3개월 이상 해외에 장기 체류한 경우 국내에 돌아와서 해외 체류 사실을 입증하는 서류를 제출하시면 실손의료보험료를 환급받으실 수 있습니다.</li>
+                <li class="bul_green_dash">신청대상 | 유지 중인 표준화 실손의료보험 개인계약 중 피보험자가 2016.1월 이후 3개월 이상 연속하여 해외 체류한 경우</li>
+                <li class="bul_green_dash">신청서류 | 피보험자의 출입국사실증명서 또는 승하선 기록 증명 &amp; 선원수첩(선원일 경우)</li>
+                <li class="bul_green_dash">신청방법 | 고객PLAZA(영업점 내 고객창구) 내방, 컨설턴트 방문접수</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">4세대 실손의료보험 전환 할인 안내</li>
+                <li>1~3세대 개인실손의료보험 가입자 중 기간內 '4세대 개인실손의료보험'으로 계약전환을 신청한 가입자에 대하여 1년간 보험료의 50%를<br>할인하여 드립니다. (단, 4세대 상품으로 최초 전환하는 경우에 한함)</li>
+                <li class="bul_green_dash">대상상품 | 2021.6.30일 까지 가입한 개인실손의료보험(주계약 및 특약)</li>
+                <li class="bul_green_dash">전환신청기간 | 2023.1.1~2023.6.30</li>
+                <li class="bul_green_dash">신청방법 및 기타 문의 사항은 콜센터, 유지서비스 점포, 담당 컨설턴트에게 연락주시기 바랍니다.</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+               <div class="conbox fs12 mt10" style="border-radius: 10px;">
+                    <span style="color:#013976"><strong>실손의료보험이란?</strong></span><br>
+                    고객님께서 병·의원에서 치료 받은 경우 공적보험인 국민건강보험에서 보장되지 않아 환자 본인이 부담해야하는 의료비를 보장하는<br>민간보험입니다.<br>
+                    <span class="bul_blue">실손의료보험 보험료가 변동하는 이유는 연령증가, 의료수가 인상 등의 건강보험제도 변화, 비급여 비용 변동 등 외부변수와</span><br>
+                    <span style="margin-left:10px;">회사별 손해율 등의 내부변수를 근거로 보험료를 재산출 하기 때문입니다.</span><br>
+                    <span style="margin-left:10px;">※ 생명보험협회 공시(http://pub.insure.or.kr/)에서 보험회사별 직전 3년간 보험료 인상률 및 손해율 자료를 비교해보실 수</span><br>
+                    <span style="margin-left:25px;">있습니다.(단, 2013년 4월부터 판매된 1년만기 실손의료비특약의 경우 해당 됩니다.)</span><br>
+                    <span class="bul_blue">여러 실손의료보험계약 (우체국보험, 각종 공제, 상해·질병·간병보험 등 제3보험, 개인연금·퇴직보험 등 의료비를 실손으로 보상하는</span><br>
+                    <span style="margin-left:10px;">보험·공제계약을 포함)을 중복 가입한 경우 (다수보험) 각 계약에서 가입자의 실제 손해를 분담하여 비례분담원칙에 의하여</span><br>
+                    <span style="margin-left:10px;">보험금을 지급합니다.</span><br>
+                </div>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">보장내용 변경주기 안내 및 재가입 관련 사항 안내</li>
+                <li class="bul_green_dash">(무)교보실손의료비보험 (갱신형)의 약관상 보장내용이 바뀌는 주기(보장내용 변경주기)는 15년이며, 보장내용 변경 주기 종료일은<br>
+                    이보험의 계약일 이후 15년이 지난 계약해당일의 전일로 합니다. 단, 2021.7.1이후 가입한 (무)교보 실손의료보험 (갱신형)의 보장내용<br>
+                    변경주기는 5년이며, 보장내용 변경주기 종료일은 계약일로부터 5년이 되는 계약해당일의 전일로 합니다.</li>
+                <li class="bul_green_dash">자동갱신종료 후 재가입하는 경우 회사는 재가입 시점의 인수기준에 따릅니다. 재가입 이후 최종 갱신계약의 보험기간 종료일은 보장내용<br>
+                    변경주기 종료일로 하며, 보장내용 변경주기 종료일이 피보험자의 100세 계약해당일 이후인 경우에는 100세 해당일의 전일로 합니다<br>
+                    (종피형 피보험자가 자녀인 경우는 28세 계약해당일의 전일로 합니다).<br>※ 자세한 사항은 상품약관을 참고하여 주시기 바랍니다.</li>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">실손의료비보장 중지제도 및 재개에 관한 안내</li>
+                <li>보험자가 취직 등 으로 개인/단체실손에 중복가입한 경우 「실손의료보험 중지 및 재개 특약」 에서 정한 방법에 따라 보험료 이중부담을<br>
+                    해소하기 위해 개인실손의 보험료 납입 및 보장을 중지 하고 필요시 재개를 신청할 수 있습니다</li>
+                <li class="bul_green_dash">실손의료비보장 중지제도<br>
+                    - 대상상품ㅣ단독실손의료비 보험 또는 실손의료비 특약<br>
+                    - 신청기준ㅣ 개인실손계약을 최초 보장개시일로 부터 1년이상 유지 중이며, 개인실손계약의 피보험자가 단체실손계약의<br><span style="padding-left: 74px">피보험자인 경우 신청가능</span><br>
+                    - 신청방법ㅣ(계약자/피보험자 본인신청) 고객PLAZA (영업점 내 고객창구)내방, 컨설턴트 방문 접수</li>
+                <li class="bul_green_dash">재개되는 개인실손의료보험은 재개 시점에 회사가 개인실손의료보험(재개용) 이므로, 재개되는 개인실손의료보험의 보장범위 등은 중지된<br>
+                    개인실손의료보험과 다를 수 있습니다.</li>
+            </ul>
+            
+            <!-- 실손의료보험의 보험가격지수 안내 -->
+            <div class="bul_guide mt20 ml30">실손의료보험의 보험가격지수 안내</div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_blue_circle">보험가격지수란?</li>
+                <li>해당상품의 보험료총액(보험금 지급을 위한 보험료 및 보험회사의 사업경비 등을 위한 보험료)을 참조순보험료총액과 평균사업비총액을<br>
+                    합한 금액으로 나눈 비율을 "보험가격지수"라고 합니다.</li>
+                <li class="bul_green_dash"><strong>참조순보험료 총액</strong><br>
+                    감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균(평균공시이율) 및 참조순보험요율을 적용하여 산출한 보험금<br>지급을 위한 보험료</li>
+                <li class="bul_green_dash"><strong>평균사업비총액</strong><br>
+                    상품군별(실손표준형, 실손선택형 Ⅱ 등) 생명보험상품 전체의 평균 사업비율을 반영하여 계산(역산)한 값</li>
+            </ul>
+            <div class="mt20" style="height:20px">
+                <span class="fl_left bul_green ml30">보험가격지수(예시)</span>
+            </div>
+            <div class="clear mt10 ml30 common_top_basic_box" style="width:760px"><table style="width:100%;" border="1">
+                <colgroup>
+                    <col style="width:46%">
+                    <col style="width:10%"> 
+                    <col style="width:7%">  
+                    <col style="width:7%">   
+                    <col style="width:10%">   
+                    <col style="width:10%">  
+                    <col style="width:10%">  
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th colspan="2" rowspan="2" class="bg_bold">주계약 구분</th>
+                        <th rowspan="2" class="bg_bold">보험<br>기간</th>
+                        <th rowspan="2" class="bg_bold">납입<br>기간</th>
+                        <th rowspan="2" class="bg_bold">가입금액</th>
+                        <th colspan="2" class="bg_bold">보험가격지수</th>
+                    </tr>
+                    <tr>
+                        <th class="bg_bold">남자</th>
+                        <th class="bg_bold">여자</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="bg_bold" style="border-left:0px;">(무)교보실손의료비보험(갱신형)Ⅱ</td>
+                        <td class="bg_bold">표준형</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td rowspan="6" class="bg_bold">주석1)<br>참고</td>
+                        <td class="bg_bold">92.3%</td>
+                        <td class="bg_bold">92.3%</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_bold">선택형Ⅱ</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.2%</td>
+                        <td class="bg_bold">92.3%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="bg_bold" style="border-left:0px;">(무)교보실손의료비보험(갱신형)Ⅲ</td>
+                        <td class="bg_bold">표준형</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.4%</td>
+                        <td class="bg_bold">92.3%</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_bold">선택형Ⅱ</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.4%</td>
+                        <td class="bg_bold">92.4%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="bg_bold" style="border-left:0px;">(무)교보실손의료비보험(갱신형)Ⅳ</td>
+                        <td class="bg_bold">표준형</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.0%</td>
+                        <td class="bg_bold">92.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_bold">선택형Ⅱ</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.0%</td>
+                        <td class="bg_bold">92.0%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="bg_bold" style="border-left:0px;">(무)교보실손의료비보험(갱신형)_1704<br>
+                            (무)교보실손의료비보험(갱신형)_1704[계약전환용]<br>
+                            (무)교보실손의료비보험(갱신형)_1812[개인실손전환용]<br>
+                            (무)교보실손의료비보험(갱신형)Ⅱ_1704<br>
+                            (무)교보실손의료비보험(갱신형)Ⅱ_1704[계약전환용]<br>
+                            (무)교보실손의료비보험(갱신형)Ⅱ_1812[개인실손전환용]</td>
+                        <td class="bg_bold"><span class="bg_bold" style="border-left:0px;">표준형</span></td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td rowspan="2" class="bg_bold">주석2)<br>참고</td>
+                        <td class="bg_bold">92.4%</td>
+                        <td class="bg_bold">92.3%</td>
+                    </tr>
+                    <tr>
+                        <td class="bg_bold">선택형Ⅱ</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">92.4%</td>
+                        <td class="bg_bold">92.4%</td>
+                    </tr>
+                    <tr>
+                        <td height="53" colspan="2" class="bg_bold" style="border-left:0px;">(무)교보실손의료비보험(갱신형)Ⅲ_2107<br>
+                            (무)교보실손의료비보험(갱신형)Ⅲ_2107[계약전환용]<br>
+                            (무)교보실손의료비보험(갱신형)Ⅲ_2107[개인실손전환용]</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">1</td>
+                        <td class="bg_bold">주석3)<br>참고</td>
+                        <td class="bg_bold">80.3%</td>
+                        <td class="bg_bold">83.4%</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <ul class="guide mt10 ml30">
+                <li>주석1) 40세, 비위험, 상해/질병 입원의료비 5,000만원, 상해/질병 통원의료비 30만원(외래20만원, 처방조제10만원) 기준</li>
+                <li>주석2) 40세, 비위험, 상해/질병 입원의료비 5,000만원, 상해/질병 통원의료비 30만원(외래20만원, 처방조제10만원),</li>
+                <li><span style="padding-left: 38px;">비급여 도수치료·체외충격파치료·증식치료 특약 350만원, 비급여 주사료 특약 250만원, 비급여 자기공명영상진단(MRI/MRA)</span><br>
+                    <span style="padding-left: 38px;">특약300만원 기준</span></li>
+                <li>주석3) 40세 남자·여자, 비위험, 비급여 요율상대도(보험료 할인·할증) 미적용</li>
+                <li><span style="padding-left: 38px;">질병급여 입·통원 합산 연간 5,000만원 한도(단, 통원 회당 20만원 한도),</span><br>
+                    <span style="padding-left: 38px;">상해급여 입·통원 합산 연간 5,000만원 한도(단, 통원 회당 20만원 한도),</span><br>
+                    <span style="padding-left: 38px;">질병비급여 입·통원 합산 연간 5,000만원 한도(단, 통원 회당 20만원(연간 100회) 한도),</span><br>
+                    <span style="padding-left: 38px;">상해비급여 입·통원 합산 연간 5,000만원 한도(단, 통원 회당 20만원(연간 100회) 한도,</span><br>
+                    <span style="padding-left: 38px;">3대비급여(비급여 도수치료·체외충격파치료·증식치료 연간 350만원(50회 한도), 비급여 주사료 연간 250만원(50회 한도),</span><br>
+                    <span style="padding-left: 38px;">비급여 자기공명영상진단 연간 300만원 기준</span>
+                </li>
+                <li>※ 판매중지 상품의 경우, 갱신 해당년도에 적용하는 단독 실손의료보험 참조순보험료와 평균사업비율을 적용하여 산출합니다.<br>
+                    <span style="padding-left: 15px;">(다만, 위 보험가격지수는 2023.1월 기준으로 산출된 비율로, 향후 보험요율 및 참조순보험요율에 따라 변경될 수 있습니다)</span></li>
+                <li>※ 생명보험협회 공시실(http://pub.insure.or.kr/)에서 현재 판매중인 다른 실손의료보험상품과 가격비교를 할 수 있도록 실손의료보험<br>
+                    <span style="padding-left: 15px;">상품별 보험가격지수 자료를 공시하고 있습니다. (단, 2015.09.01부터 판매된 실손의료보험의 경우만 해당)</span></li>
+            </ul>  
+            
+            <!-- 실손의료보험 단독상품 및 특약상품의 장·단점 -->
+            <div class="bul_guide mt20 ml30">실손의료보험 단독상품 및 특약상품의 장·단점</div>
+            <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+                <table style="width:100%;" border="1">
+                    <colgroup>
+                        <col style="width:10%">
+                        <col style="width:45%">
+                        <col style="width:45%">
+                    </colgroup>
+                    <tbody>
+                        <tr> 
+                            <th class="bg_bold" style="border-left:0px;">구분</th>
+                            <th class="bg_bold">단독상품</th>
+                            <th class="bg_bold">특약상품</th>
+                        </tr>
+                        <tr> 
+                            <th style="border-left:0px;">장점</th>
+                            <td class="t_left" style="padding: 10px; line-height: 1.5;">- 실손담보만 가입하고자 하는 경우 저렴한 보험료로<br><span style="padding-left: 10px;">가입이 가능합니다.</span></td>
+                            <td class="t_left" style="padding: 10px; line-height: 1.5;">- 1건의 계약으로 실손담보 뿐만 아니라 가입자가 선택한<br><span style="padding-left: 10px;">특약을 통해 다양한 담보를 같이 보장받을 수 있습니다.</span></td>
+                        </tr>
+                        <tr> 
+                            <th style="border-left:0px;">단점</th>
+                            <td class="t_left" style="padding: 10px;; line-height: 1.5;">- 실손 이외의 다른 담보를 특약으로 추가할 수 없습니다.</td>
+                            <td class="t_left" style="padding: 10px; line-height: 1.5;">- 실손담보만 가입하고자 하는 경우에도 주보험을 가입해야<br><span style="padding-left: 10px;">하므로 보험료 부담이 커집니다.</span><br>
+                                - 전체담보를 중도 해지 할 경우 상대적으로 손실이 더<br><span style="padding-left: 10px;">발생할 수 있습니다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="guide mt10 ml30">
+                <li>※ 자세한 사항은 상품 안내장 및 약관을 참고하시기 바랍니다.</li>
+            </ul>
+            
+            <!-- 실손의료보험 중복가입 관련 안내 -->
+            <div class="bul_guide mt20 ml30">실손의료보험 중복가입 관련 안내</div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_green_dash">실손의료보험은 실제 의료비를 보상하는 상품으로서 실손의료보험을 다수 가입하더라도 각 계약의 비례분담액을 지급하므로 <br>
+                    실제 부담한 의료비를 초과하여 보상받을 수 없습니다.</li>
+                <li class="bul_green_dash">보험계약자가 보장금액 한도를 확대* 하기 위해 중복가입하는 경우도 있으나, 불필요한 보험료의 낭비가 발생할 수 있으므로<br>
+                    실손의료보험의 중복 가입여부를 반드시 확인하시고, 중복상태를 해소하기 원하는 경우에는 실손의료보험 상품의 중지 • 재개 제도 등을<br>참고해 보시기 바랍니다.<br>
+                    * (예)통원치료시 보장한도(30만원)를 초과하는 MRI(40~70만원) 등 고가비급여 보장을 위해 중복가입</li>
+                <li class="bul_green_dash">실손의료보험 중복 여부는 한국신용정보원 크레딧포유 홈페이지(http://www.credit4u.or.kr)에서 회원가입 후, 실손의료보험 가입 현황을<br>
+                    조회하시어 확인하실 수 있습니다.</li>
+            </ul>
+            
+            <!-- 실손의료보험 중복가입 관련 안내 -->
+            <div class="bul_guide mt20 ml30">개인 실손의료보험 중지·재개 제도 안내</div>
+            <ul class="guide mt10 ml30">
+                <li class="bul_green_dash">일반 개인실손의료보험과 단체실손의료보험에 중복 가입된 경우, 일반 개인실손의료보험의 보험료 납입과 보장을 중지하실 수 있습니다.</li>
+                <li class="bul_green_dash">단체실손의료보험 종료 후 1개월 내 중지하였던 기존 일반 개인실손의료보험의 재개를 신청하면 無심사로 재개시점에 판매중인<br>
+                    실손의료보험 상품으로 재개하게 됩니다.</li>
+                <li><img src="http://www.kyobo.co.kr/images/mail/img_ums_2204_1.png" style="margin-left:1px" class="mt20"/></li>
+            </ul>
+            
+            <!-- 실손의료보험 중복가입 관련 안내 -->
+            <div class="bul_guide mt20 ml30">실손보험 가입시기별 실손의료보험 중지시 참고사항</div>
+            <ul class="guide mt10 ml30">
+                <li>개인실손의료보험을 중지할 경우 불필요한 보험료 부담을 줄일 수 있으나,</li>
+                <li>1) 단체실손의 보험가입금액, 보장범위 등이 개인실손에 비해 낮은 경우 충분한 보장을 받지 못할 수도 있음</li>
+                <li class="ml10">- 단체 실손의 가입금액(1,000만원, 3,000만원)이 개인 실손(대부분 5,000만원)보다 적을 수 있고, 질병과 상해 중 한 개의 담보에만<br><span class="ml10">가입된 경우도 있음</span></li>
+                <li>2) ‘09.10월(표준화) 이전 개인실손의료보험을 중지할 경우 의료비 발생시 일정 부분(비율) 본인 부담금이 발생 함</li>
+                <li class="ml10">- 개인이 가입한 실손의료보험은 자기부담금이 없는 상품이였으나, 단체실손의 경우 자기부담금이 있으므로 추가의료비가 발생할 수 있음</li>
+                <li>3) ‘09.10월(표준화) 이후 개인실손의료보험을 중지할 경우 실손의료보험 가입 시점에 따라 보장내용, 보장범위가 제한 될 수 있음</li>
+                <li class="ml10">- ‘17.4월 이전 실손보험가입자는 단체실손의 담보특약 미가입시 보장내용 축소 발생 가능(도수치료, 비급여주사제, 비급여MRI 별도<br><span class="ml10">특약으로 분리)</span></li>
+            </ul>
+            
+            <!-- 실손의료보험 중복가입 관련 안내 -->
+            <div class="bul_guide mt20 ml30">단체 실손의료보험 -개인 실손의료보험 전환제도 안내</div>
+            <ul class="guide mt10 ml30">
+                <li>직전 5년간(연속) 단체 실손의료보험에 가입한 단체 소속 임·직원 중, 일반 실손의료보험 가입연령 해당자(60세 이하)는 퇴직 직전에 가입한<br>
+                    단체 실손의료보험과 동일 또는 가장 유사한 일반 개인 실손의료보험 상품으로 전환하실 수 있습니다.</li>
+                <li class="bul_green_dash">전환신청 : 단체실손 종료 후 1개월 이내에 직전 단체보험이 가입된 보험회사에 전환을 신청</li>
+                <li class="bul_green_dash">전환(무심사) 기준 :</li>
+                <li class="ml10">- 직전 5년간 단체실손 보험금200만원 이하 수령 &amp; 10대질병 진단, 치료력이 없는 경우 → 無심사 전환 가능</li>
+                <li><img src="http://www.kyobo.co.kr/images/mail/img_ums_2204_2.png" style="margin-left:1px" class="mt20"/></li>
+                <li class="ml10">- 단체실손계약에 가입한 단체의 임직원이거나, 퇴직자인 경우<br>
+                    <span class="ml10">※ 현재임직원 본인만 전환가능</span></li>
+                <li class="ml10">- 직전 5년간 연속’으로 단체실손계약의 피보험자인 경우<br>
+                    <span class="ml10">※ 단, 직전5년간 보장공백기간이 1회당 1개월(31일초과),누적 3개월(92일) 초과인 경우 전환불가함</span></li>
+                <li class="ml10">- 단체실손계약 및 전환후 개인실손계약의 피보험자는 동일</li>
+                <div class="box_gr" style="padding: 5px; margin: 5px 0; width: 740px;">
+                    <ul>
+                        <li class="ml10"><strong>10대질병</strong></li>
+                        <li class="ml10">①암 ②백혈병 ③고혈압 ④협심증 ⑤심근경색 ⑥심장판막증 ⑦간경화증 ⑧뇌졸중증(뇌출혈,뇌경색) ⑨당뇨병 ⑩에이즈 및HIV보균</li>
+                    </ul>
+                </div>
+            </ul>
+            <ul class="guide mt10 ml30">
+                <li>기타 자세한 사항은 교보생명 콜센터 (☎ 1588-1001 ,1588-0770)로 문의하여 주시기 바랍니다.</li>
+            </ul>
+            <img src="http://www.kyobo.co.kr/images/mail/attachMail_contact.gif" title="" usemap="#website" style="margin-left:1px" class="mt20"/>
+            <map name="website">
+                <area shape="rect" coords="441,109,604,132" href="http://www.kyobo.com" target="blank()" title="교보생명 홈페이지 바로가기 "/>
+            </map>
+        </div>
+        <!-- footer -->
+        <img src="http://umsgw.kyobo.com:16080/TOBE/images/mail/attachMail_footer.png" title="대표문의전화 : 1588-1001 교보생명 보험주식회사 대표이사 신창재 서울특별시 종로구 종로1가 광화문 우체국 사서함 23호  Copyright (C) KYOBO LIFE INSURANCE CO., LTD. all right reserved." />  
+    </div>
+</body>
+</html>

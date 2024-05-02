@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-insurance" id="pop-insurance">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">특약갱신 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<h2 class="hd-tit3">특약갱신 예정 상품이 있어요.<br>상세내역을 확인해 보세요.</h2>	
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard open" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당교보실속있는건강플러스</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">  
+									<div class="dl">
+										<div class="dt">소액암진단특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">주요성인병특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">재해치료비특약 <button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당교보실속있는건강플러스</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">소액암진단특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">주요성인병특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">재해치료비특약 <button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당교보실속있는건강플러스</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">소액암진단특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">주요성인병특약<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li data-tog-cls="box">
+									<div class="dl">
+										<div class="dt">재해치료비특약 <button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+									</div>
+									<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+										<p class="hd-tit5">갱신예정일 2022.01.12</p>
+										<div class="ut-tbl b" aria-describedby="">
+											<table class="tblist" cellspacing="0" cellpadding="0" >
+												<caption><span class="tit">지급금액</span><span class="cap"></span></caption>
+												<colgroup>
+													<col width="50%">
+													<col width="50%">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">금액</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">갱신 전 보험료</td>
+														<td class="right">184,439원</td>
+													</tr>
+													<tr>
+														<td class="left">갱신 후 보험료</td>
+														<td class="right">195,210원</td>
+													</tr>
+													<tr>
+														<td class="left">보험료 증감</td>
+														<td class="right">10,771원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+
+					<div class="ut-more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+				
+					<ul class="bullet b">
+						<li>실제 갱신 시에는 변동된 예정기초율(위험률, 이율, 사업비율)을 적용 후 갱신처리되어 안내된 금액과 달라질 수 있습니다.</li>
+					</ul>
+
+					<!-- 가이드박스 -->
+					<div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>갱신형 특약이란?<br>설정된 갱신주기에 따라 보험료를 다시 계산해서 갱신하는 특약입니다. 계약자가 따로 의사 표시를 하지 않으면 자동으로 갱신되면서 보험이 유지됩니다.</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //가이드박스 -->
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-insurance');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

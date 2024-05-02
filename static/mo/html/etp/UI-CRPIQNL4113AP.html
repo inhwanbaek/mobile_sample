@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<article class="pop-layer a pop-dateinquiry" id="pop-dateinquiry">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">기간별 적립금 조회</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<h2 class="hd-tit4" id="ball_1">조회기간</h2>
+						<div class="ut-range">
+							<div class="rag">
+								<label class="radio"><input type="radio" name="r_range" checked><span class="txt">1개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">6개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+							</div>
+							<div class="rcs">
+								<span class="input a ut-date">
+									<label class="lb blind" for="date_st_0">시작날짜</label>
+									<input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+								<i class="ds">~</i>
+								<span class="input a ut-date">
+									<label class="lb blind" for="date_ed_1">종료날짜</label>
+									<input type="tel" id="date_ed_1" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜">
+								</span>
+							</div>
+							<div class="btn-set etpbtn">
+								<button type="button" class="btn md">조회</button>
+							</div>		
+						</div>
+						<div class="datainquiry-box a">
+							<div class="inner">
+								<!-- DC 관리자일 경우에만 select 노출 
+								<span class="select def no-lb">
+									<label class="lb blind" for="select-1">Label <em class="ast">는 필수항목입니다</em></label>
+									<button class="btsel" type="button" title="선택하기">전체(사용자분+가입자분)</button><select name="select-1" id="select-1">
+										<option selected="">전체(사용자분+가입자분)</option>
+										<option>회사부담(사용자분)</option>
+										<option>가입자 부담(가입자분)</option>
+									</select>
+								</span>
+								 -->
+								<div class="etpacc-box">
+									<div class="tops">
+										<h3 class="hd-tit4 htit">수입내역</h3>
+										<span class="unit">(단위 : 원)</span>
+									</div>
+									<div class="ut-dcard c pdetail" data-tog-cls="box">				
+										<div class="dtds">
+											<ul class="dlt">
+												<li>
+													<div class="dl">
+														<h4 class="dt">부담금</h4>
+														<div class="dd">426,812,661</div>
+													</div>
+												</li>
+												<li class="total">
+													<div class="dl">
+														<h4 class="dt">수입합계</h4>
+														<div class="dd">426,812,661</div>
+													</div>
+												</li>							
+											</ul>
+										</div>
+									</div>
+									<div class="tops">
+										<h3 class="hd-tit4 htit">지출내역</h3>
+										<span class="unit">(단위 : 원)</span>
+									</div>
+									<div class="ut-dcard c pdetail" data-tog-cls="box">				
+										<div class="dtds">
+											<ul class="dlt">
+												<li>
+													<div class="dl">
+														<h4 class="dt">퇴직금여금</h4>
+														<div class="dd">225,185,504</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">기타지급금</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">운용관리수수료</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">자산관리수수료(차감)</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">시장가격조정액(MVA)</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">환매수수료</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<h4 class="dt">기타수수료</h4>
+														<div class="dd">0</div>
+													</div>
+												</li>																																																																	
+												<li class="total">
+													<div class="dl">
+														<h4 class="dt">지출합계</h4>
+														<div class="dd">225,228,899</div>
+													</div>
+												</li>							
+											</ul>
+										</div>
+									</div>																
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<!-- <div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-datechange');">취소</button>
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div> -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-dateinquiry');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-dgngud',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

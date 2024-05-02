@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">최저보증이율및중도해지이율</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">연금(변액포함)</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교육저축</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">기타 보장</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">방카슈랑스다이렉트</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">단체</a></li>
+				</ul>
+			</div>
+		
+			<div class="ut-optset optset a-bot">
+				<div class="opt pl"> </div>
+				<div class="opt pr"> <span class="txt-unit">단위: %</span> </div>
+			</div>
+			<div class="ut-tbl a scroll-x">
+				<!-- 하드코딩적용:2022-04-18 -->
+				<table class="tblist">
+					<caption><span class="tit">단체</span><span class="cap"></span></caption>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">상품명</th>
+							<th scope="col" rowspan="2">판매시작일</th> <!-- 텍스트수정:2022-04-18 -->
+							<th scope="col" rowspan="2">판매중지일</th>
+							<th scope="col" rowspan="2">최저보증이율</th>
+							<th scope="col" colspan="2" id="tb_interest">중도해지이율</th>
+						</tr>
+						<tr height="35px">
+							<th scope="col" id="tb_lapse">경과기간</th>
+							<th scope="col" id="tb_app_interest">적용이율</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" class="t_left">연금저축 교보기업복지연금보험</th>
+							<td>2009.03.10</td>
+							<td>2013.02.28</td>
+							<td>2.0</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th scope="row" class="t_left">(무)비전플러스복지보험(Ⅱ)</th>
+							<td>2007.04.01</td>
+							<td>2008.05.31</td>
+							<td>2.5</td>
+							<td>180일미만</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<th scope="row" class="t_left">(무)비전플러스복지보험</th>
+							<td>2000.12.26</td>
+							<td>2003.03.31</td>
+							<td>3.0</td>
+							<td>90일미만<br>180일미만<br>1년미만</td>
+							<td>3.0<br>공시이율x80%<br>공시이율x90%</td>
+						</tr>
+						<tr>
+							<th scope="row" class="t_left" rowspan="3">(무)퇴직보험</th>
+							<td>2005.04.18</td>
+							<td>2015.03.31</td>
+							<td>2.2</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>2015.04.01</td>
+							<td>2016.01.31</td>
+							<td>1.5</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>2016.02.01</td>
+							<td>현재</td>
+							<td>1.0</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th scope="row" class="t_left" rowspan="3">퇴직보험</th>
+							<td>2004.11.29</td>
+							<td>2015.03.31</td>
+							<td>2.0</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>2015.04.01</td>
+							<td>2016.01.31</td>
+							<td>1.5</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>2016.02.01</td>
+							<td>현재</td>
+							<td>1.0</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<th rowspan="48" scope="row" class="t_left">(무)신단체퇴직저축보험</th>
+							<td rowspan="4">2001.04.02</td>
+							<td rowspan="4">2003.03.16</td>
+							<td rowspan="4">3.0</td>
+							<td>1년미만</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>공시이율 x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>공시이율 x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2003.03.17</td>
+							<td rowspan="4">2003.12.31</td>
+							<td rowspan="4">3.0</td>
+							<td>1년미만</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율 x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율 x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2004.01.01</td>
+							<td rowspan="4">2005.03.31</td>
+							<td rowspan="4">3.0</td>
+							<td>1년미만</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율II x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율II x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율II</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2005.04.01</td>
+							<td rowspan="4">2005.08.11</td>
+							<td rowspan="4">2.5</td>
+							<td>1년미만</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율II x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율II x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율II</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2005.08.12</td>
+							<td rowspan="4">2008.05.31</td>
+							<td rowspan="4">적립형<br>10년미만:2.5<br>10년이후:2.0<br>거치형 - 2.5</td>
+							<td>1년미만</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율II ×80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율II ×90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율II</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2008.06.01</td>
+							<td rowspan="4">2013.03.31</td>
+							<td>적립형</td>
+							<td>1년미만</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<td>10년미만 : 2.0</td>
+							<td>2년미만</td>
+							<td>Max(2.5%, 공시이율 × 80%)</td>
+						</tr>
+						<tr>
+							<td>10년이후 : 1.5</td>
+							<td>3년미만</td>
+							<td>Max(2.5%, 공시이율 × 90%)</td>
+						</tr>
+						<tr>
+							<td>거치형 - 2.0</td>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2013.04.01</td>
+							<td rowspan="4">2014.12.31</td>
+							<td>적립형</td>
+							<td>1년미만</td>
+							<td>2.0</td>
+						</tr>
+						<tr>
+							<td>10년미만 : 2.0</td>
+							<td>2년미만</td>
+							<td>Max(2.0%, 공시이율 × 80%)</td>
+						</tr>
+						<tr>
+							<td>10년이후 : 1.5</td>
+							<td>3년미만</td>
+							<td>Max(2.0%, 공시이율 × 90%)</td>
+						</tr>
+						<tr>
+							<td>거치형 - 2.0</td>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2015.01.01</td>
+							<td rowspan="4">2015.03.31</td>
+							<td rowspan="4">10년미만:2.0<br>10년이상:1.5</td>
+							<td>1년미만</td>
+							<td>2.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>Max(2.0%, 공시이율 ×80%)</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>Max(2.0%, 공시이율 ×90%)</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2015.04.01</td>
+							<td rowspan="4">2016.03.31</td>
+							<td rowspan="4">5년미만:2.0<br>10년미만:1.5<br>10년이상:1.0</td>
+							<td>1년미만</td>
+							<td>2.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>Max(2.0%, 공시이율 ×80%)</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>Max(2.0%, 공시이율 ×90%)</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2016.04.01</td>
+							<td rowspan="4">2016.12.31</td>
+							<td rowspan="4">10년미만:1.5<br>10년이상:1.0</td>
+							<td>1년미만</td>
+							<td>1.5%</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>Max(1.5%, 공시이율 ×80%)</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>Max(1.5%, 공시이율 ×90%)</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2017.01.01</td>
+							<td rowspan="4">2020.04.12</td>
+							<td rowspan="4">5년 미만 1.25<br>10년 미만 1.0<br>10년 이상 0.75</td>
+							<td>1년미만</td>
+							<td>1.25%</td>
+						</tr>
+						<tr>
+							<td>1년 이상 2년미만</td>
+							<td>Max(1.25%, 공시이율 × 80%)</td>
+						</tr>
+						<tr>
+							<td>2년 이상 3년미만</td>
+							<td>Max(1.25%, 공시이율 × 90%)</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2020.04.13</td>
+							<td rowspan="4">현재</td>
+							<td rowspan="4">5년 미만 1.25<br>10년 미만 1.0<br>10년 이상 0.5</td>
+							<td>1년미만</td>
+							<td>1.25%</td>
+						</tr>
+						<tr>
+							<td>1년 이상 2년미만</td>
+							<td>Max(1.25%, 공시이율 x 80%)</td>
+						</tr>
+						<tr>
+							<td>2년 이상 3년미만</td>
+							<td>Max(1.25%, 공시이율 x 90%)</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>공시이율</td>
+						</tr>
+
+						<tr>
+							<th rowspan="12" scope="row" class="t_left">(무)단체적립저축보험</th>
+							<td rowspan="4">2003.06.20</td>
+							<td rowspan="4">2003.12.31</td>
+							<td rowspan="4">3.0</td>
+							<td>1년미만</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율 x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율 x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">2004.01.01</td>
+							<td rowspan="4">2005.03.31</td>
+							<td rowspan="4">3.0</td>
+							<td>1년미만</td>
+							<td>3.0</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율II x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율II x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율II </td>
+						</tr>
+						<tr>
+							<td rowspan="4">2005.04.01</td>
+							<td rowspan="4">2005.08.11</td>
+							<td rowspan="4">2.5</td>
+							<td>1년미만</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<td>2년미만</td>
+							<td>신공시이율II x 80%</td>
+						</tr>
+						<tr>
+							<td>3년미만</td>
+							<td>신공시이율II x 90%</td>
+						</tr>
+						<tr>
+							<td>3년이상</td>
+							<td>신공시이율II </td>
+						</tr>
+					</tbody>
+
+
+
+				</table>
+				<!-- 하드코딩적용:2022-04-18 -->
+			</div>
+
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

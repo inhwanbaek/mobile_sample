@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 팝업영역 -->
+	<article class="pop-layer c pop-caseDetails" id="pop-caseDetails">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">건별 상세내역</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<div class="ut-dcard a dcard noline">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">무배당교보변액연금모험Ⅱ(월납)</div>
+							</div>
+							<div class="ddt">
+								<div class="bxt">
+									<ul class="lst">
+										<li>
+											<div class="dl">
+												<div class="dt">보험증권번호</div>
+												<div class="dd">21406****459</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="dtds">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">2007.06.28</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">보험료</div>
+										<div class="dd">
+											<span class="prc bold">
+												<strong class="p">7,000</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">최종납입연월</div>
+										<div class="dd">2021.09</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수</div>
+										<div class="dd">172회</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-caseDetails');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-caseDetails');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+	<!-- //팝업영역 -->
+
+
+
+</div>
+</body>
+</html>

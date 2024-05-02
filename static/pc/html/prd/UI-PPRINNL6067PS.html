@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd detail prd-detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<!-- pc ver -->
+			<section class="sect page-hdt head-top">
+				<h2 class="stit hd-tit2">(무)교보미니저축보험</h2>
+				<div class="bg-white right">
+					<!-- fnsize -->
+					<div class="ut-tooltip fnsize">
+						<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+							</div>
+						</div>
+					</div><!--// fnsize -->
+					<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+					<button type="button" class="btn-bookmark"><em class="blind">북마크</em></button>
+				</div> 
+			</section>
+
+			<section class="sect hcont bg3"><!-- 22-06-03 클래스명 추가 -->
+				<div class="t1">부담 없는 보험료 3만원으로 목돈까지</div>
+				<div class="ut-slide-play product">
+					<div class="swiper-container swiper" data-slide-id="banner_1">
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">취미생활비 200만원 만들기</div>
+									<div class="t3">매월 33,000원씩 5년 납부</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">자기계발비 300만원 만들기</div>
+									<div class="t3">매월 50,000원씩 5년 납부</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">종잣돈 600만원 만들기</div>
+									<div class="t3">매월 100,000원씩 5년 납부</div>
+								</a>
+							</li>
+						</ul>
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- [s] 22-08-04 추가 case4 -->
+			<section class="sect top-nobox">
+				<div class="left">
+					
+				</div>
+				<div class="right">
+					<button type="button" class="btn sm ico-r ico-arrow">보험료 및 해지환급금 예시</button>
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case4 -->
+
+			<!-- 모바일 컨버팅 영역 -->
+			<section class="">
+				<!-- 탭 -->
+				<div class="ut-tabs c lg">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이런 점이 좋아요</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이럴 때 필요해요</a></li>
+					</ul>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 이런 점이 좋아요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-area active">
+
+					<div class="cont-sec sec3 sec4">
+						<div class="tit">교보 ‘미니저축보험’의 장점</div>
+						<div class="txt">나에게 주는 보너스! 3년, 5년이면 충분해요!</div>
+						<div class="s-tit">월 3만~10만원으로 나를 위한 목돈 마련</div>		
+						
+						<ul class="box-gray-list type type1">
+							<li>
+								<div class="t-m12">이 맛에 산다! 덕질/취미생활 <span class="blue">장비구입비</span></div>
+								<div class="t-one">
+									<div>200만원 만들기</div>
+									<div class="icon">|</div> 
+									<div class="icon">|</div>
+								</div>
+								<div class="t-m12">
+									<span class="inline-wrap">
+										<span class="c80 mr8">3년납</span> 매월 <strong>55,000원</strong>
+									</span>
+									<span class="inline-wrap">
+										<span class="c80 mr8">5년납</span> 매월 <strong>33,000원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="t-m12">나에게 투자한다! 내 몸값 올릴 <span class="blue">자기계발비</span></div>
+								<div class="t-one">
+									<div>300만원 만들기</div>
+									<div class="icon">|</div> 
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+								</div>
+								<div class="t-m12">
+									<span class="inline-wrap">
+										<span class="c80 mr8">3년납</span> 매월 <strong>83,000원</strong>
+									</span>
+									<span class="inline-wrap">
+										<span class="c80 mr8">5년납</span> 매월 <strong>50,000원</strong>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="t-m12">사랑하는 부모님을 위한 선물! <span class="blue">효도자금 마련</span></div>
+								<div class="t-one">
+									<div>400만원 만들기</div>
+									<div class="icon">|</div> 
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+								</div>
+								<div class="t-m12">
+									<span class="inline-wrap">
+										<span class="c80 mr8">5년납</span> 매월 <strong>66,000원</strong>
+									</span>
+									
+								</div>
+							</li>
+							<li>
+								<div class="t-m12">재테크를 위한 초석 다지기! <span class="blue">종잣돈 마련</span></div>
+								<div class="t-one">
+									<div>600만원 만들기</div>
+									<div class="icon">|</div> 
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+									<div class="icon">|</div>
+								</div>
+								<div class="t-m12">
+									<span class="inline-wrap">
+										<span class="c80 mr8">5년납</span> 매월 <strong>100,000원</strong><!-- 22-07-27 결함 수정 -->
+									</span>
+									
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // 이런 점이 좋아요 -->
+
+				<!-- 이럴 때 필요해요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-area ">
+					<div class="cont-sec sec3 sec4">
+						<div class="tit">왜  ‘미니저축보험’이 필요할까요?</div>
+						<div class="txt">미니저축보험으로 저축 습관 들이면 어느새 목돈이 생겨요!<br>(학생, 직장인, 주부 누구나 가입 가능)</div><!-- 22-08-08 수정 -->
+						
+						<!-- [s] 22-05-23 상품상세 일괄수정 -->
+						<ul class="prd-icon-bnr">
+							<li class="bg6">
+								<dl>
+									<dd>사회초년생 새는 돈 막는 저축</dd>
+									<dt>현명한 월급관리</dt>
+								</dl>
+							</li>
+							<li class="bg7">
+								<dl>
+									<dd>소소한 푼돈도 모으는 재미</dd>
+									<dt>비상금 저축</dt>
+								</dl>
+							</li>
+							<li class="bg8">
+								<dl>
+									<dd>결혼, 이직, 내집마련 등 다양한 계획을 고려한</dd>
+									<dt>쪼개기 저축</dt>
+								</dl>
+							</li>
+						</ul><!-- 22-08-08 수정 -->
+						<!-- // [e] 22-05-23 상품상세 일괄수정 -->
+					</div>
+				</div>
+				<!-- // 이럴 때 필요해요 -->
+				<div class="compliance">준법감시인확인필 1-2204-26 디지털채널통합TF(2022.04.13)</div><!-- 22-08-08 준법 추가 -->
+
+				<div class="btn-set vt">
+					<button type="button" class="btn md ico-nlink ico-r">가입 전 반드시 알아야 할 사항</button>
+					<button type="button" class="btn md ico-nlink ico-r">보험약관</button>
+					<button type="button" class="btn md ico-elink ico-r">가격공시실</button>
+				</div>
+				<!-- // 모바일 컨버팅 영역 -->
+
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set">
+							<button type="button" class="btn lg rd a">상담신청</button>
+						</div>
+					</div>
+				</nav><!-- 22-08-08 위치 수정 -->
+
+				<!-- 상세 하단 공통영역 -->
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">예금자보호 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>내용</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="img-banner-wrap btm" id="ball_0">
+					<span data-ui-balloon="left,top" aria-describedby="ball_0">위 보험상품은 추가 혜택을 드려요.</span>
+					<div class="img-banner bn1">교보건강코칭 서비스</div>
+					<div class="img-banner bn2">교보헬스케어 서비스</div>
+				</div>
+
+				<ul class="ut-bnr-lst img">
+					<li>
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">보험료 이렇게 따라하세요</strong>
+							<span class="txt">생년월일만 입력하면! 바로~~~</span>
+						</a>
+					</li>
+				</ul>
+				<!-- // 상세 하단 공통영역 -->
+
+				<!-- [D] 2022-08-12 배너추가 -->
+				<div class="banner-box bt">
+					<div class="ut-slide-play type-b">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //end [D] 2022-08-12 배너추가 -->
+			</section>
+			
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

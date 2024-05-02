@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"false","class":"is-back,is-title,is-gnb","title":"신탁 가입 완료"}'></include>
+	<include class="gnb" src="../inc/gnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- [D] 2022-04-08 클래스 추가 -->
+	<!-- [D] 2022-04-19 클래스 삭제 -->
+	<main class="container page cmplaint futr" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="complate-msg icon1">
+				<div class="msg">
+					<!-- [D] 2022-04-20 텍스트 수정 -->
+					<p class="p1">
+						신탁 가입이 완료되었습니다.
+					</p>
+					<p class="p2">교보생명 신탁 가족이 되신 걸 환영해요.<br>우리 함께 자산을 쑥쑥 키워가요!<br></p>
+				</div>
+
+				<!-- [D] 2022-04-19 ui 변경 -->
+				<div class="line-box">
+					<ul class="list">
+						<li>
+							<p class="dt">상품명</p>
+							<p class="dd">정기예금 신탁</p>
+						</li>
+						<li>
+							<p class="dt">상품상세명</p>
+							<p class="dd">KEB하나은행 정기예금(1개월)</p>
+						</li>
+					</ul>
+				</div>
+				<ul class="bullet a lg">
+					<li>가입하신 신탁계약은 가입금액을 입금하셔야 계약이 최종 성립됩니다.</li>
+					<li>오늘 신탁업무 마감시간인 15:30까지 입금하지 않으시면 신탁계약이 취소됩니다.</li>
+				</ul>
+				<!-- [D] 2022-04-21 삭제 
+				<div class="btn-set ct">
+					<a href="javascript:;" role="button" class="btn md">신탁 가입금액 입금하기</a>
+				</div>
+				-->
+				<!-- //[D] 2022-04-19 ui 변경 -->
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<!-- [D] 2022-04-21 텍스트 수정 -->
+					<button type="button" class="btn rd lg a">신탁 가입금액 입금하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

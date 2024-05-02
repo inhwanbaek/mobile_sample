@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"FP(재무설계사)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt abt-fp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<!-- [D] 2022-07-05 tab 2개 삭제 -->
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">FOR FP 문화</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">FP 상담신청</a></li>
+				</ul>
+			</div>
+
+			<div class="hd-tit2">
+				교보생명은 사랑과 존경의 마음으로 <br>
+				FP 여러분을 <i class="line">한가족처럼 생각하고,</i> <br>
+				<i class="line">한마음으로 함께합니다.</i>
+			</div>
+			<!-- [D] 2022-07-05 마크업 변경 -->
+			<div class="culture-box">
+				<ul>
+					<li>
+						<h4 class="hd-tit4 mb16">섬김</h4>
+						<p class="txt">고객보장 FP대상 시상식에 참여하는 FP들을 레드카펫에서 반기며 축하하는 임원진들</p>
+					</li>
+					<li>
+						<h4 class="hd-tit4 mb16">존경</h4>
+						<p class="txt">탁월한 고객가치를 창출해 수준 높은 보험 서비스를 실천하고 있는 우수FP를 명예임원으로 선발합니다.</p>
+					</li>
+					<li>
+						<h4 class="hd-tit4 mb16">사랑</h4>
+						<p class="txt">고객보장 FP대상 시상식 때 신창재 대표이사회장이 FP들을 위해 특별 와인을 만들고 있는 모습</p>
+					</li>
+					<li>
+						<h4 class="hd-tit4 mb16">가족</h4>
+						<p class="txt">우수FP 자녀들의 영어 능력 향상과 글로벌 문화 체험을 위해 캐나다/뉴질랜드 어학연수를 지원합니다.</p>
+					</li>
+					<li>
+						<h4 class="hd-tit4 mb16">화합</h4>
+						<p class="txt">2006년 결성된 교보생명 FP합창단은 음악 활동으로 얻은 수익금 전액을 소외된 이웃들과 나누며 나눔정신을 실천합니다.</p>
+					</li>
+				</ul>
+			</div>
+			<!-- // [D] 2022-07-05 마크업 변경 -->
+
+			<p class="txt-b">준법감시인확인필 3-2106-2 조직순증지원팀(2021.06.17)</p>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

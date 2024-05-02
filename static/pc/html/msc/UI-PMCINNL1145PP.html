@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">청약철회 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">					
+					<div class="text-group">
+						<h2 class="hd-tit4">청약철회를 신청할 수 없는 계약 </h2>
+						<div class="text-box">
+							<ul class="bullet a">								
+								<li>진단계약, 보장기간이 90일 이내인 계약, 전문금융소비자가 체결한 보험계약, 청약을 한 날부터 30일을 초과한 계약(만 65세 이상 고령자가 전화(TM)로 가입한 보험상품 계약은 45일을 초과한 계약)</li>
+								<li>전환계약, 계약변동(보험료 변동)계약, 계약변경 계약, 보험금이 지급된 계약, 보험계약대출/신용대출을 받은 계약</li>
+							</ul>
+						</div>
+
+						<h2 class="hd-tit4">청약철회 접수 및 취소 가능 시간</h2>					
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>매일 09:00~22:00<br>(매월 다섯 번째 영업일: 09:00~18:00) 
+									<ul class="bullet c">										
+										<li>매월 다섯 번째 영업일: 토, 일, 공휴일을 제외한 다섯 번째 날
+											<ul class="bullet b">												
+												<li>청약철회 취소 시 당일 신청 건에 한하여 가능합니다. </li>
+												<li>매월 다섯 번째 영업일에는 신청과 취소 시간이 모두 18:00까지 입니다.</li>
+												<li>단, 고객 계좌로 반환 보험료가 입금된 경우에는 청약철회를 취소할 수 없습니다.</li>
+												<li>청약철회 요청이 가능한 기간에는 청약철회 취소 후 재접수가 가능합니다. </li>
+											</ul>
+										</li>
+									</ul>
+									
+								</li>								
+							</ul>
+							
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample3');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

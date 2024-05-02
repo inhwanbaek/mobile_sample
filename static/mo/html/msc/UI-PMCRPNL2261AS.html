@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"ETF 팔기(매도)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp msc rp etfsale" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">시장가</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">지정가</a></li>
+				</ul>
+			</div>
+			<div class="etf-sell-wrp">
+				<h2 class="hd-tit3">매도 신청 금액과 매도 신청 수량을 입력해 주세요.</h2>
+				<div class="select-cname">
+					<h3 class="hd-tit4">종목명</h3>
+					<div class="etp-bg-box">
+						<p>KBSTAR ESG사회책임투자</p>
+					</div>
+				</div>
+				<div class="clst-infowrp">
+					<div class="ut-tbl a vline"><!-- [D]2022-06-23 클래스 vline 추가 -->
+						<table class="tblist nl" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">판매 및 구매 잔여 수량 목록 표</span><span class="cap">매도잔여수량, 매수잔여수량 으로 구성된 표입니다.</span></caption>
+							<colgroup>
+								<col>
+								<col style="width: 30%">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="txt-r">매도 잔여 수량</th>
+									<th scope="col">&nbsp;</th>
+									<th scope="col" class="txt-l">매수 잔여 수량</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-r"><span class="down no">182,092</span></td>
+									<td>75,200</td>
+									<td class="txt-l"><span class="up no"></span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no">15,123</span></td>
+									<td>75,100</td>
+									<td class="txt-l"><span class="up no"></span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no">627,299</span></td>
+									<td>75,000</td>
+									<td class="txt-l"><span class="up no"></span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no">322,173</span></td>
+									<td>74,900</td>
+									<td class="txt-l"><span class="up no"></span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no">164,885</span></td>
+									<td>74,800</td>
+									<td class="txt-l"><span class="up no"></span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no"></span></td>
+									<td>74,700</td>
+									<td class="txt-l"><span class="up no">128,428</span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no"></span></td>
+									<td>74,600</td>
+									<td class="txt-l"><span class="up no">123,456</span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no"></span></td>
+									<td>74,500</td>
+									<td class="txt-l"><span class="up no">164,265</span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no"></span></td>
+									<td>74,400</td>
+									<td class="txt-l"><span class="up no">101,765</span></td>
+								</tr>
+								<tr>
+									<td class="txt-r"><span class="down no"></span></td>
+									<td>74,300</td>
+									<td class="txt-l"><span class="up no">94,711</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="etp-item">
+						<h3 class="hd-tit4">매도 신청 금액</h3><!-- [D] 2022-08-23 텍스트 수정-->
+						<div class="count-wrp">
+							<!-- 삭제 <h4 class="hd-tit5">매도 신청 금액</h4> -->
+							<div class="inp-count">
+								<div class="psb-inp">
+									<button type="button" class="c-btn c-down">-</button>
+									<!-- [D] 2022-04-06 인풋수정 -->
+									<span class="input a won">
+										<label class="lb blind" for="input-count1">금액 입력</label>
+										<input type="text" placeholder="금액을 입력해 주세요." value="74,800" id="input-count1">
+										<i class="w">원</i>
+									</span>
+									<button type="button" class="c-btn c-up">+</button>
+								</div>
+								<!-- [D] 2022-08-23 금액 표시 추가 -->
+								<div class="inp-view">
+									<div class="ext"><p>50만원</p></div>
+								</div>
+								<!--//[D] 2022-08-23 금액 표시 추가 -->
+							</div>
+						</div>
+						<div class="count-wrp">
+							<h4 class="hd-tit4">매도 신청 수량</h4><!-- [D] 2022-08-23 클래스 변경 'hd-tit5'-> 'hd-tit4' -->
+							<div class="inp-count">
+								<!-- [D] 2022-08-23 위치변경:타이틀 아래위치 -->
+								<div class="psb-sum">
+									<dl>
+										<dt>최대 가능 수량</dt>
+										<dd><span class="t-blue">10</span>주</dd>
+										<dd><button type="button" class="btn sm">최대</button></dd>
+									</dl>
+								</div>
+								<!--//[D] 2022-08-23 위치변경:타이틀 아래위치 -->
+								<div class="psb-inp">
+									<button type="button" class="c-btn c-down">-</button>
+									<!-- [D] 2022-04-06 인풋수정 -->
+									<span class="input a won">
+										<label class="lb blind" for="input-count2">수량 입력</label>
+										<input type="text" placeholder="수량을 입력해 주세요." value="10" id="input-count2">
+										<i class="w">주</i>
+									</span>
+									<button type="button" class="c-btn c-up">+</button>
+								</div>
+								<!-- [D] 2022-08-23 위치변경:타이틀 아래위치 <div class="psb-sum">
+									<dl>
+										<dt>최대 가능 수량</dt>
+										<dd><span class="t-blue">10</span>주</dd>
+										<dd><button type="button" class="btn sm">최대</button></dd>
+									</dl>
+								</div> -->
+							</div>
+						</div>
+						<div class="etp-bg-box total">
+							<dl>
+								<dt class="t-t">합계</dt>
+								<dd class="t-num">748,000<i class="unit">원</i></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

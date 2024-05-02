@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/main.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+<style>
+
+</style>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true","login":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page is-full etp main-etp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 로그인 후 DB -->
+			<div class="area-visual">
+				<div class="sect">
+					<div class="box card">  
+						<div class="etp-card">
+							<div class="ut-bdgs">
+								<em class="bdg u">DC</em>
+							</div>
+							<span class="tit">(주)교보문고</span>
+							<!-- [D] 가입제도선택  관리 제도가 2개 이상일 경우에만 노출됨. 선택 시 ,가입제도선택(화면 ID : UI-CSCNLNL4034PP  ) 팝업 노출 -->
+							<a href="javascript:;" class="btn-system"><i class="blind">가입제도선택</i></a>
+							<ul class="lst-txt">
+								<li><span class="tit">계약유형</span><span class="txt">DB(확정급여형)</span></li>
+								<li><span class="tit">제도가입일</span><span class="txt">2006.09.30</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box card2">
+						<div class="etp-card">
+							<div class="amount">
+								<span class="tit">적립금</span>
+								<a href="javascript:;" class="lnk sum">5,314,7533<i>원</i></a>
+							</div>
+							<ul class="lst-txt">
+								<li><span class="tit">적립비율</span><span class="txt"><a href="javascript:;" class="lnk point">132.94<i>%</i></a></span></li>
+							</ul>
+						</div>
+						<div class="etp-card blue">
+							<div class="tit">진행 업무를 빠르게 확인해 보세요.</div>
+							<div class="progress-item">
+								<a href="javascript:;" class="icon01">
+									<strong class="tit-pro">결재 대상건</strong>
+									<span class="lnk">4건</span>
+								</a>
+								<a href="javascript:;" class="icon02">
+									<strong class="tit-pro">최근 처리건</strong>
+									<span class="lnk">4건</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//[D] 로그인 후 DB -->
+
+			<!-- [D] 로그인 후 DC -->
+			<div class="area-visual">
+				<div class="sect">
+					<div class="box card">  
+						<div class="etp-card">
+							<div class="ut-bdgs">
+								<em class="bdg u">DC</em>
+							</div>
+							<span class="tit">(주)교보문고금강고속</span>
+							<!-- [D] 가입제도선택  관리 제도가 2개 이상일 경우에만 노출됨. 선택 시 ,가입제도선택(화면 ID : UI-CSCNLNL4034PP  ) 팝업 노출 -->
+							<a href="javascript:;" class="btn-system"><i class="blind">가입제도선택</i></a>
+							<ul class="lst-txt">
+								<li><span class="tit">계약유형</span><span class="txt">DB(확정급여형)</span></li>
+								<li><span class="tit">제도가입일</span><span class="txt">2006.09.30</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box card2">
+						<div class="etp-card">
+							<div class="amount">
+								<span class="tit">남입금액</span>
+								<a href="javascript:;" class="lnk sum">5,314,7533<i>원</i></a>
+							</div>
+							<ul class="lst-txt">
+								<li><span class="tit">납입일</span><span class="txt">2022-04-30</span></li>
+								<li><span class="tit">가입자수</span><span class="txt"><a href="javascript:;" class="lnk point">23<i>명</i></a></span></li>
+							</ul>
+						</div>
+						<div class="etp-card blue">
+							<div class="tit">진행 업무를 빠르게 확인해 보세요.</div>
+							<div class="progress-item dc">
+								<a href="javascript:;" class="icon01">
+									<strong class="tit-pro">결재 대상건</strong>
+									<span class="lnk">4건</span>
+								</a>
+								<a href="javascript:;" class="icon02">
+									<strong class="tit-pro">최근 처리건</strong>
+									<span class="lnk">4건</span>
+								</a>
+								<a href="javascript:;" class="icon03 date">
+									<strong class="tit-pro">다음 납입일</strong>
+									<span class="lnk">2022-05-30</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//[D] 로그인 후 DC -->
+
+			<!-- [D] 로그인 후 DB -->
+			<div class="area-menu sect">
+				<div class="inr">
+					<div class="list-inquiry">
+						<ul>
+							<li class="icon05"><a href="javascript:;">퇴직연금 계약조회</a></li>
+							<li class="icon06"><a href="javascript:;">퇴직금 신청</a></li>
+							<li class="icon01"><a href="javascript:;">상품변경</a></li>
+							<li class="icon07"><a href="javascript:;">가입자 추가/변경</a></li>
+						</ul>
+					</div>
+					<div class="qr-code">
+						<strong class="tit">교보생명 <br>퇴직연금(기업용) 앱<br>QR코드로 설치하세요.</strong>
+						<div class="qr-item">
+							<div class="qr-img">
+								<!-- [웹접근성] 1st 수정 -->
+								<img src="../../img/etp/img_main_qr1.png" alt="https://play.google.com/ QR코드 이미지">
+								<!--// [웹접근성] 1st 수정 -->
+								<span>Google Play</span>
+							</div>
+							<div class="qr-img">
+								<!-- [웹접근성] 1st 수정 -->
+								<img src="../../img/etp/img_main_qr2.png" alt="https://www.apple.com/kr/app-store/ QR코드 이미지">
+								<!--// [웹접근성] 1st 수정 -->
+								<span>App Store</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//[D] 로그인 후 DB -->
+
+			<!-- [D] 로그인 후 DC -->
+			<div class="area-menu sect">
+				<div class="inr">
+					<div class="list-inquiry">
+						<ul>
+							<li class="icon05"><a href="javascript:;">퇴직연금 계약조회</a></li>
+							<li class="icon06"><a href="javascript:;">퇴직금 신청</a></li>
+							<li class="icon08"><a href="javascript:;">부담금 납입</a></li>
+							<li class="icon07"><a href="javascript:;">가입자 추가/변경</a></li>
+						</ul>
+					</div>
+					<div class="qr-code">
+						<strong class="tit">교보생명 <br>퇴직연금(기업용) 앱<br>QR코드로 설치하세요.</strong>
+						<div class="qr-item">
+							<div class="qr-img">
+								<img src="../../img/etp/img_main_qr1.png" alt="QR코드">
+								<span>Google Play</span>
+							</div>
+							<div class="qr-img">
+								<img src="../../img/etp/img_main_qr2.png" alt="QR코드"><!-- [D] 2022-07-26 이미지명 변경 -->
+								<span>App Store</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//[D] 로그인 후 DC -->
+
+			<!-- [D] 로그인 후 DC/DB공통 -->
+			<div class="area-service">
+				<div class="sect">
+					<h2 class="tit">기업을 위한 다양한 서비스를 확인하세요!</h2>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;" class="banner">
+										<div class="txtbox">
+											<!-- [D] 2022-06-17 배너 텍스트 수정 
+											<strong class="tit">운용상품 </strong>
+											<span class="txt">수백개의 다양한<br>퇴직연금 운용상품을 확인해 보세요.</span>-->
+											<strong class="tit">퇴직연금 운용상품</strong>
+											<span class="txt">수백개의 다양한<br>운용상품을 확인해 보세요.</span>
+										</div>
+										<div class="imgbox"><img src="../../img/etp/img_main_sbanner01.png" alt=""></div>
+									</a>
+									<a href="javascript:;" class="banner">
+										<div class="txtbox">
+											<strong class="tit">투자정보 </strong>
+											<span class="txt">상품 운용에 도움되는<br>알짜 투자정보를 확인해 보세요.</span>
+										</div>
+										<div class="imgbox"><img src="../../img/etp/img_main_sbanner02.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="banner">
+										<div class="txtbox">
+											<strong class="tit">퇴직연금안내</strong>
+											<span class="txt">시기별 퇴직연금 업무와<br>업무처리 안내서를 제공해 드려요.</span>
+										</div>
+										<div class="imgbox"><img src="../../img/etp/img_main_sbanner04.png" alt=""></div>
+									</a>
+									<a href="javascript:;" class="banner">
+										<div class="txtbox">
+											<strong class="tit">퇴직연금서비스</strong>
+											<span class="txt">기업맞춤형<br>퇴직연금서비스를 만나 보세요.</span>
+										</div>
+										<div class="imgbox"><img src="../../img/etp/img_main_sbanner03.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+						<div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div>
+					</div>
+				</div>
+			</div>
+			<!--//[D] 로그인 후 DC/DB공통 -->
+
+			<!-- area- -->
+			<div class="area-retire">
+				<div class="sect">
+					<div class="notice-item">
+						<h2 class="tit"><a href="javascript:;">퇴직연금 공지사항</a></h2>
+						<div class="box">
+							<!-- [D] 최근 공지 게시글 (4~5개 노출) -->
+							<ul class="bullet a">
+								<!-- [D]  New(아이콘) 노출 - 7일 노출 -->  
+								<!-- [D] 2022-07-26 마크업 수정 -->
+								<li><a href="javascript:;"><span class="txt">교보생명 서비스 일시중지 안내</span><span class="icon_new"><img src="../../img/etp/icon_main_new.png" alt="새 글"></span></a> <span class="date">2022.01.07</span></li>
+								<li><a href="javascript:;"><span class="txt">교보생명 FY2022 마케팅리서치 연</span></a> <span class="date">2022.01.07</span></li>
+								<li><a href="javascript:;"><span class="txt">교보생명 여신거래기본약관 변경 안내</span></a> <span class="date">2022.01.07</span></li>
+								<li><a href="javascript:;"><span class="txt">교보생명 여신거래기본약관 변경 안내</span></a> <span class="date">2022.01.07</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="paper-item">
+						<h2 class="tit">관련 서류</h2>
+						<div class="box">
+							<a href="javascript:;" class="icon01">퇴직연금</a>
+							<a href="javascript:;" class="icon02">퇴직보험</a>
+							<a href="javascript:;" class="icon03">기업복지</a>
+						</div>
+					</div>
+
+					<div class="site-item">
+						<h2 class="tit">관련 사이트</h2>
+						<ul class="list">
+							<li><a href="http://www.moel.go.kr/pension/index.do " target="_blank" title="새창 열림">고용노동부 퇴직연금</a></li>
+							<li><a href="https://100lifeplan.fss.or.kr " target="_blank" title="새창 열림">금융감독원 연금포털</a></li>
+							<li><a href="https://www.easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=999&ccfNo=1&cciNo=1&cnpClsNo=1&menuType=lsi&search_put= " target="_blank" title="새창 열림">관련 법령정보</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--//area-menu -->
+
+			<!-- area-info -->
+			<div class="area-info sect">
+				<div class="tit">도움이 필요하세요?</div>
+				<div class="call-item">
+					<p class="tit-call">법인콜센터</p>
+					<strong class="num">1588-0770</strong>
+				</div>
+			</div>
+			<!--//area-info -->
+
+			<!-- 플로팅퀵메뉴 클래스 open 노출 -->
+			<nav class="floating-menu">
+				<div class="inr">
+					<div class="fl-head">
+						<div class="ut-bdgs">  
+							<em class="bdg u">DC</em>
+							<!-- 
+								<em class="bdg u">DB</em>
+								<em class="bdg u">DC</em>
+								<em class="bdg u">기업형 IRP</em>
+							 -->
+						</div>
+						<!-- [D] 제도 종류, 회사명(최대 2줄까지 / 길 경우 말줄임 효과 적용 -->
+						<span class="tit ellip2">(주)교보문고교보문고교보문고교보문고</span>
+					</div>
+					<ul class="fl-list">
+						<li class="icon01"><a href="javascript:;"><span class="tit">다른 제도 선택</span></a></li>
+						<li class="icon02"><a href="javascript:;"><span class="tit">결재센터</span></a></li>
+						<li class="icon03"><a href="javascript:;"><span class="tit">퇴직금 신청</span></a></li>
+						<li class="icon04"><a href="javascript:;"><span class="tit">가입자 추가/변경</span></a></li>
+						<li class="icon05"><a href="javascript:;"><span class="tit">퇴직연금안내</span></a></li>
+					</ul>
+					<button type="button" class="btn"><span class="blind">메뉴 더보기</span></button>
+				</div>
+			</nav>
+			<!--//플로팅퀵메뉴 -->
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":""}'></include>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<script>
+		
+		/* [D] 2022-08-18 : 플로팅퀵메뉴 공통 ui.js 추가됨
+		$(document).ready(function(){			
+			$('.floating-menu').each(function(){
+				var $btn = $(this).find('.btn');
+				$btn.append('<span class="btxt">열기</span>').attr("aria-expanded",false);
+
+				$btn.on('click', function(){
+					var $quick = $(this).parents('.floating-menu');
+					if( !$quick.hasClass('open') ){
+						$quick.addClass('open');
+						$btn.attr("aria-expanded",true).find(".btxt").text("닫기");
+					} else {
+						$quick.removeClass('open');
+						$btn.attr("aria-expanded",false).find(".btxt").text("열기");
+					}
+				});
+			});
+		});*/
+		
+	</script>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

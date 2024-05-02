@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"연금으로 받기"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc rp irpmng" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="mrp-tbox">
+				<h2 class="hd-tit3">신청정보를 입력해 주세요.</h2>
+			</div>
+
+			<div class="msect">
+				<div class="sect">
+					<h3 class="hd-tit4">가입자 정보</h3>
+					<div class="ut-tbl b">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">가입자 정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:128rem;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">이름</th>
+									<td>김교보</td>
+								</tr>
+								<tr>
+									<th scope="row">주민등록번호</th>
+									<td>900101-2******</td>
+								</tr>
+								<tr>
+									<th scope="row">회사입금액<br>(퇴직금)</th>
+									<td>9,000,000원</td>
+								</tr>
+								<tr>
+									<th scope="row">개인입금액<br>(추가납입)</th>
+									<td>441,485원</td>
+								</tr>
+								<tr>
+									<th scope="row">적립금액</th>
+									<td>9,441,485원 <br>(2021.05.27 기준)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="dtxt">※ 실제 고객님이 받으실 퇴직금은 적립금액에서 세금을 차감한 금액입니다.</p>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">소득/세액공제 미공제분 확인</h3>
+					<div class="fldset">
+						<div class="fld">
+							<label class="radio"><input type="radio" name="radio1"><span class="txt">있음</span></label>
+							<label class="radio"><input type="radio" name="radio1"><span class="txt">없음</span></label>
+						</div>
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">휴대폰번호 <em class="ast">는 필수항목입니다</em></h3>
+					<div class="fldset">
+						<div class="fld">
+							<span class="input a">
+								<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" title="휴대폰번호">
+							</span>
+							<p class="dtxt">※ 교보생명 접수 및 지급 완료 시 문자세시지를 보내 드립니다. 휴대폰 번호를 입력해 주세요.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">이메일</h3>
+					<div class="ut-email email">
+						<div class="enam">
+							<span class="input a emids"><label class="lb" for="emids_0">이메일<i class="blind">아이디</i></label><input id="emids_0" type="email" placeholder="abcd"></span>
+							<i class="at">@</i>
+							<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+						</div>
+						<ul class="ebts">
+							<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+							<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+							<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">연금수령방법</h3>
+					<h4 class="hd-tit5">연금개시나이</h4>
+					<span class="input a">
+						<input type="text" placeholder="연금개시나이" title="연금개시나이" value="63세" readonly>
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">연금개시신청월</h4>
+					<span class="select a">
+						<select title="연금개시신청월 선택">
+							<option>선택</option>
+							<option>4월</option>
+							<option>5월</option>
+							<option>6월</option>
+							<option>7월</option>
+							<option>8월</option>
+							<option>9월</option>
+							<option>10월</option>
+							<option>11월</option>
+							<option>12월</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">연금종류</h4>
+					<span class="select a">
+						<select title="연금종류 선택">
+							<option>선택</option>
+							<option>확정연금형</option><!-- [D] 2022-04-21 문구수정 -->
+							<option>종신연금형</option>
+							<option>종신연금형 집중1형</option>
+							<option>종신연금형 집중2형</option>
+							<option>종신연금형 집중3형</option>
+							<option>상속연금형</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">확정/보증기간</h4>
+					<span class="select a">
+						<select title="확정/보증기간 선택">
+							<option>선택</option>
+							<option>5년</option>
+							<option>10년</option>
+							<option>15년</option>
+							<option>20년</option>
+							<option>30년</option>
+							<option>100세</option>
+						</select>
+					</span>
+					<span class="select a">
+						<select title="확정/보증기간 선택">
+							<option>선택</option>
+							<option>10년보증</option>
+							<option>20년보증</option>
+							<option>30년보증</option>
+							<option>100세보증</option>
+						</select>
+					</span>
+					<span class="select a">
+						<select title="확정/보증기간 선택">
+							<option>선택</option>
+							<option>10년보증</option>
+							<option>30년보증</option>
+						</select>
+					</span>
+					<span class="select a">
+						<select title="확정/보증기간 선택">
+							<option>선택</option>
+							<option>10년보증</option>
+							<option>30년보증</option>
+						</select>
+					</span>
+					<span class="select a">
+						<select title="확정/보증기간 선택">
+							<option>선택</option>
+							<option>30년보증</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">수령방법</h4>
+					<span class="select a">
+						<select title="수령방법 선택">
+							<option>선택</option>
+							<option>연 1회수령</option>
+							<option>연 2회수령</option>
+							<option>연 4회수령</option>
+							<option>연 6회수령</option>
+							<option>연 12회수령</option>
+						</select>
+					</span>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">계좌정보</h3>
+					<h4 class="hd-tit5">입금계좌 금융기관</h4>
+					<span class="input a">
+						<input type="button" value="선택" title="계좌정보" onclick="console.log('호출')">
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">계좌번호</h4>
+					<span class="input a">
+						<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" title="계좌번호">
+					</span>
+				</div>
+
+				<div class="sect b">
+					<h4 class="hd-tit5">예금주</h4>
+					<span class="input a">
+						<input type="text" placeholder="예금주" title="예금주" value="김교보" readonly>
+					</span>
+				</div>
+
+
+				<div class="sbtbox">
+					<p class="txt">※ 연금은 매월 25일 신청하신 계좌로 지급됩니다.</p>
+				</div>
+			</div>
+
+
+
+			<div class="mrp-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li><span class="bold">연금으로 받기 신청시간은 평일 09:00~16:00입니다.</span></li>
+							<li>본인인증을 완료하셔야 교보생명에 접수됩니다.</li>
+							<li>자세한 사항은 <span class="bold">법인콜센터(1588-0770)</span>로 문의해 주세요.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

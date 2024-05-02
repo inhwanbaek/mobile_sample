@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back","title":"인증센터"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl etpmbl etp-regis" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+	
+			<div class="etpmbl-top">
+				<h2 class="hd-tit2">패스 인증서 등록</h2>
+			</div>
+			
+			<div class="certi-box">
+				<h2 class="hd-tit3">패스 인증서 등록을 위해 추가 인증 방식을 선택해 주세요.</h2>
+				<ul class="boxs">
+					<li class="ics ctcm"><button type="button" class="bt">공동인증서</button></li>
+					<li class="ics ctfn"><button type="button" class="bt">금융인증서</button></li>
+				</ul>
+			</div>
+
+			<div class="btn-set ct regis-btn">
+				<a href="javascript:;" role="button" class="btn">공동인증서 가져오기 <i class="link-ar"></i></a>
+				<a href="javascript:;" role="button" class="btn">휴대폰 공용폴더(NPKI) <i class="link-ar"></i></a>
+			</div>
+
+			<div class="ut-gudbox b open mt40" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>패스 인증서 등록을 위해 공동인증서 또는 금융인증서로 최초 1회 인증해야 합니다.</li>
+						<li>공동인증서가 휴대폰에 저장되어 있지 않다면 먼저 공동인증서 가져오기를 진행해 주세요.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

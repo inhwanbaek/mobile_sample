@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-auth" id="pop-layer">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">앱 접근권한 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<!-- [D] 2022-02-09 내용/이미지 수정, class:grayFontArrow 추가 -->
+					<div class="head-box mb0">
+						<h2 class="hd-tit2">앱 접근권한을 허용해 주세요.</h2><!--[D] 2022-05-20 태그수정-->
+					</div>
+					<div class="text-contents">
+						<p class="text-type1">고객님의 안전하고 편리한 서비스 이용을 위해<br> 아래의 권한 허용이 필요합니다.</p>
+					</div>
+					<ul class="list">
+						<li class="lst01">
+							<strong class="tit">[필수] 전화번호</strong>
+							<p class="txt">본인 확인 및 기기인증, 상담연결</p>                            
+						</li>
+						<li class="lst02">
+							<strong class="tit">[필수] 저장공간</strong>
+							<p class="txt">인증서 로그인, 인증서 가져오기, 내보내기</p>                            
+						</li>
+						<li class="lst03">
+							<strong class="tit">[선택] 카메라, 사진</strong>
+							<p class="txt">보험금 신청, 비대면 실명인증, 서류촬영/첨부,<br> 금융마이데이터 프로필 첨부</p>                            
+						</li>
+						<li class="lst04">
+							<strong class="tit">[선택] 위치</strong>
+							<p class="txt">지점 찾기</p>                            
+						</li>
+						<li class="lst05">
+							<strong class="tit">[선택] 생체인증</strong>
+							<p class="txt">생체인증 정보 등록</p>                            
+						</li>
+					</ul>
+					
+					<p class="grayFontArrow mt25 mb10">선택적 접근권한의 경우 허용에 동의하지 않으셔도 앱<br> 사용이 가능하나, 일부 기능 사용에 제한이 있을 수 있습니다.</p>
+					<p class="grayFontArrow">접근권한 설정 및 변경은 [휴대폰 설정 > <br> 애플리케이션 > 교보생명 > 권한] 메뉴에서도 가능합니다.</p>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-kakaopay');">취소</button> -->
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-layer');">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-layer');
+	</script>
+
+</div>
+</body>
+</html>

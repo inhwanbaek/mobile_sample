@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a md pop-dcs" id="pop-period-down">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">기간별 다운로드 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="sky-box">
+					<h2 class="hd-tit5">(무)교보에듀케어보험</h2>
+				</div>
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<span class="tot">전체 <i class="n">728</i> 건</span>
+					</div>
+					<div class="opt pr">
+						<span class="select sort">
+							<select name="select-4" id="select-quan" title="목록 개수 선택">
+								<option>10개씩 보기</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="ut-tbl a">
+					<table class="tblist">
+						<caption><span class="tit">상품 목록</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width: auto">
+							<col style="width: 15%">
+							<col style="width: 15%">
+							<col style="width: 15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">판매기간</th>
+								<th scope="col">상품요약서</th>
+								<th scope="col">약관</th>
+								<th scope="col">사업방법서</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">2020.01.01 ~ </td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							</tr>
+							<tr>
+								<td class="txt-l">2021-04-01 ~ 2021-07-31</td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							</tr>
+							<tr>
+								<td class="txt-l">2021-04-01 ~ 2021-07-31</td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							</tr>
+							<tr>
+								<td class="txt-l">2021-04-01 ~ 2021-07-31</td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							</tr>
+							<tr>
+								<td class="txt-l">2021-04-01 ~ 2021-07-31</td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+								<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- [D] 2022-08-09 페이징 삭제 <include class="ut-paging" src="../inc/paging.html" data-include-opt='{"visible":"true"}'></include> -->
+
+				<!-- [D] 2022-08-09 상품상세설명 추가-->
+				<div class="pro-explain">
+					<div class="tit">상품상세설명</div>
+					<div class="txt">'종신보험'이란 피보험자가 사망하면 보험금을 지급하는 상품이며 피보험자가 사망할 때까지 평생을 보장해드려요</div>
+				</div>
+				<!--//[D] 2022-08-09 상품상세설명 추가-->
+
+
+				<div class="ut-gudbox b open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>특정 문서가 보이지 않으면 해당 파일의 뷰어 프로그램을 설치해 주세요.</li>
+							<li>뷰어가 설치되었는데도 문서가 보이지 않으면 프로그램을 최신 버전으로 업데이트해 주세요.</li>
+						</ul>
+						<div class="btn-set">
+							<button type="button" class="btn sm ico-down ico-r">PDF 뷰어</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-period-down');  // 팝업 열기
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

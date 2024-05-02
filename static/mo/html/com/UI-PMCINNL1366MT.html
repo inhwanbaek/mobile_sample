@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- [D] 2022-02-25 전체변경 -->
+	<article class="pop-layer a pop-camera" id="pop-camera">
+		<div class="pbd">
+			<!-- [D] 2022-02-18 문구변경 -->			
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">촬영 전 유의사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="ut-slide-dot">
+					<div class="swiper-container swiper" data-slide-id="photo_1">
+						<ul class="swiper-wrapper slide" style="height: ;">
+							<li class="swiper-slide">
+								<main class="poptents hdt">					
+									<h2 class="hd-tit3">서류를 이미지 영역 테두리에
+										맞춰 촬영해 주세요.
+										<p class="sub-text">※ 첨부서류 내용이 선명하게 보이지 않으면 심사가 진행되지 않습니다.</p>		
+									</h2>		
+									<div class="img-paper img01"><img src="../../img/common/img_paper01.png" class="img" alt="촬영한 서류 이미지"></div>
+									<ul class="list">
+										<li class="lst01">							
+											서류가 기울어져 보이지 않도록 정면에서 촬영해 주세요. 
+										</li>
+										<li class="lst02">
+											서류의 접힌 부분이 없도록 최대한 평평하게 펴서 촬영해 주세요.              
+										</li>
+										<li class="lst03">
+											다른 서류가 같이 찍히지 않도록 주변 정리 후 첨부하려는 서류만 촬영해 주세요.
+										</li>
+										<li class="lst04">
+											촬영 후에는 반드시 이미지 상태를 확인해  주세요.              
+										</li>
+									</ul>				
+								</main>
+							</li>
+							<li class="swiper-slide">
+								<main class="poptents hdt">			
+									<h2 class="hd-tit3">이미지를 영역 테두리에 맞춰 주세요.</h2>		
+									<div class="top-box">
+										<p class="text-type1">촬영한 이미지가 테두리에 맞지 않으면 그림처럼 
+											<br>①, ②, ③, ④를 움직여서 맞춘 다음 <br>[확인]을 눌러 주세요.</p>
+									</div>
+									<div class="img-paper img02"><img src="../../img/common/img_paper02.png" class="img" alt="왼쪽상단①, 오른쪽상단②, 왼쪽하단③, 오른쪽하단④ 해당영역에 맞춘 촬영한 서류 이미지"></div>
+								</main>
+							</li>
+							<li class="swiper-slide">
+								<main class="poptents hdt">				
+									<h2 class="hd-tit3">서류가 선명하게 보이는지
+										확인해 주세요.</h2>	
+									<div class="top-box">
+										<p class="text-type1">서류에 잘린 부분이 없는지, 이미지가 흔들려서 흐릿하게 보이지 않는지, 한 번 더 확인해 주세요.</p>
+										<p class="sub-text">※ 첨부서류 내용이 선명하게 보이지 않으면 심사가 진행되지 않습니다.</p>
+									</div>
+									<div class="img-paper img02"><img src="../../img/common/img_paper03.png" class="img" alt="이미지가 흔들림, 서류일부잘림 예시 된 촬영한 서류 이미지"></div>
+								</main>
+							</li>
+						</ul>
+						<div class="pagination"></div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>		
+	</article>
+	<script>
+		ui.popup.open('pop-camera');
+	</script>
+
+</div>
+</body>
+</html>

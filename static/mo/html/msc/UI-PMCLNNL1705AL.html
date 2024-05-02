@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-chdtdtl" id="pop-chdtdtl">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신용/담보대출내역 상세보기</h1><!-- [D] 2022-04-07 문구수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents msc loan inq">
+
+					<div class="loiq-tbox">
+						<div class="ut-dcard b mltype">
+							<div class="ut-bdgs">
+								<em class="bdg j">신용대출</em>
+							</div>
+							<div class="hdt">
+								<div class="tit">교보e프라임신용대출(A형)</div>
+							</div>
+							<div class="dls">
+								<div class="dl">
+									<div class="dt">대출잔액</div>
+									<div class="dd">
+										<span class="prc">
+											<strong class="p">100,000,000</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="loiq-ttab">
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">대출계약내용</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">상환내역</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">상환일정</a></li><!-- [D] 2022-04-07 문구수정 -->
+							</ul>
+						</div>
+					</div>
+
+					<div class="loiq-tpnl">
+						<div class="msect">
+							<!-- <h3 class="hd-tit4">상환 일정내용</h3> --><!-- [D] 2022-04-07 삭제 -->
+
+							<div class="ut-tbl b">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">상환 일정내용</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:128rem;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">상환방법</th>
+											<td>100회 원리금균등</td>
+										</tr>
+										<tr>
+											<th scope="row">대출기간</th>
+											<td>2021.08.02 ~ 2029.08.01</td>
+										</tr>
+										<tr>
+											<th scope="row">최초 할부 시작</th>
+											<td>2021.09.15</td>
+										</tr>
+										<tr>
+											<th scope="row">거치기간</th>
+											<td>없음</td>
+										</tr>
+										<tr>
+											<th scope="row">총 납입회차</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>100회</td>
+										</tr>
+										<tr>
+											<th scope="row">납입회차</th>
+											<td>4회</td>
+										</tr>
+										<tr>
+											<th scope="row">남은회차</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>96회</td>
+										</tr>
+										<tr>
+											<th scope="row">예상 월할부금</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>
+												<span class="prc">
+													<strong class="p">630,380</strong><i class="w">원</i>
+												</span>
+											</td>
+										</tr>
+										<!-- [D] 2022-05-26 추가 -->
+										<tr>
+											<th scope="row">대출금리</th>
+											<td>연 3.5%</td>
+										</tr>
+										<!-- //end [D] 2022-05-26 추가 -->
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chdtdtl');
+	</script>
+
+</div>
+</body>
+</html>

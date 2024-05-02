@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"광화문글판 소개"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt sign-int" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="int-head">
+				<strong><span><em>인생 한 문장,</em></span> 광화문글판</strong>
+				<p>
+					광화문글판은 교보생명 사옥에 부착되어 있는 시민을 위한 글판입니다.
+				</p>
+			</div>
+
+			<div class="ut-slide-dot">
+				<div class="swiper-container swiper">
+					<ul class="swiper-wrapper slide">
+						<li class="swiper-slide">
+							<div class="pic"><img src="../../img/abt/banner1.jpg" alt="우리는 언제나 두드리고 싶은 것이 있다 그것이 창이든, 어둠이든 또는 별이든"></div>
+						</li>
+						<li class="swiper-slide">
+							<div class="pic"><img src="../../img/abt/banner2.jpg" alt="우리는 언제나 두드리고 싶은 것이 있다 그것이 창이든, 어둠이든 또는 별이든"></div>
+						</li>
+					</ul>
+					<div class="pagination"></div>
+				</div>
+			</div>
+
+			<p class="int-cont">
+				<strong>우연히 가슴에 와 닿아,</strong>
+				삶의 어느 순간 소중한 힘이 됐던 <br>교보생명 광화문글판!
+			</p>
+			<p class="int-cont">
+				<strong>위로와 격려,</strong>
+				다시 일어날 용기를 ‘광화문글판’이 여러분께 전합니다.
+			</p>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="javascript:;">광화문글판 문안 응모하기</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-insConfirm has-lineBox" id="pop-insConfirm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계약전 확인사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="confirm-box">
+						<!-- [D] 2022-05-13 수정 시작 -->
+						<!-- 3-1 -->
+						<p class="p-txt">2019년 7월 10일 이후 체결한 보험계약은 대출상품 이용 시 대출계약 체결만으로도 신용점수가 하락할 수 있고, 이로 인해 대출 및 타사와의 금융거래 등에 불이익이 발생할 수 있습니다. 
+						</p>
+						<!-- 3-2 -->
+						<p class="p-txt">보험계약대출은 건별 대출금액이 5천만원을 초과하면 인지세를 납부해야 합니다. 
+						</p>
+						<!-- 3-3 -->
+						<p class="p-txt">보험계약대출은 고객님이 체결하신 보험계약의 해지환급금 적용금리가 높은 경우 일반적인 대출상품보다 금리가 높을 수 있습니다.
+						</p>
+						<div class="line-box"><strong class="qst">교보생명으로부터 관련 설명을 들으셨고,<br>
+							위 내용에 동의하십니까?</strong></div>
+						<!-- [D] 2022-05-13 수정 끝 -->	
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<!-- [D] 2022-05-13 띄어쓰기  -->
+					<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-insConfirm');">동의안함</button>
+					<button type="button" class="btn lg rd a">동의</button>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<script>
+		ui.popup.open('pop-insConfirm');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sgnsys',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+	</script>
+
+</div>
+</body>
+</html>

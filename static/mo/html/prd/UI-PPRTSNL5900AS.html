@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"신탁의 이해"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="main">
+				<div class="trust-wrap">
+					<div class="trust-text">
+						<div class="futr-tit">
+							<h2 class="hd-tit3">가족을 위한 미래보장은 물론<br>확인해 보세요.재산증식까지 함께합니다</h2>
+						</div>
+					</div>  
+
+					<div class="sect mt32">
+						<h3 class="hd-tit4">신탁의 정의</h3>
+						<!-- 이미지영역 임시 -->
+						<!-- [D] 2022-05-25 삭제 
+						<div class="img" style="height:160rem; background-color: #f00;  opacity: 0.2;">
+							<span class="blind">신탁의 정의 이미지 설명</span>
+						</div>				
+						-->		
+						<p class="txt">
+							신탁설정자(위탁자)와 신탁을 인수하는 자(수탁자)와의 특별한 신임관계에 기하여 위탁자가 특정의 재산권을 수탁자에게 이전하거나 기타의 처분을 하고 수탁자로 하여금 일정한 자(수익자)의 이익을 위하여 또는 특정한 목적을 위하여 그 재산권을 관리·처분하게 하는 법률관계로서, 위탁자, 수익자 및 수탁자가 서로 믿음을 바탕으로 재산관리 또는 재산증식을 목적으로 가입하는 금융상품입니다.
+						</p>
+					</div>
+
+					<div class="sect">
+						<h3 class="hd-tit4">신탁의 구조</h3>
+						<!-- [D] 2022-05-25 이미지 추가/style 삭제 -->  
+						<div class="img">
+							<img src="../../img/prd/img_diagram01.png" alt="하단영역 참조">
+							<span class="blind">
+								위탁자 고객이 수탁자교보생명에게 신탁계약체결(운용방법 지시) 및 신탁재산 이전 
+								위탁자 고객이 수익자위탁자 본인 또는 제3자에게 위탁자가	수익자 지정
+								수탁자 교보생명이 위탁자 고객에게 신탁재산 운용, 관리 등 신탁업무 수행
+								수탁자 교보생명이 수익자위탁자 본인 또는 제3자에게 신탁이익 지급
+							</span>
+						</div> 
+					</div>
+
+					<div class="sect">
+						<h3 class="hd-tit4">신탁의 특징</h3>
+						<ul class="bullet a glst">
+							<li>위탁자(고객)의 운용지시에 따라 운용되는 맞춤형 상품입니다.</li>
+							<li>위탁자별 신탁재산은 단독운용 합니다.</li>
+							<li>신탁은 실적배당 상품이므로 운용결과에 따른 이익 또는 손실이 수익자에게 귀속됩니다.</li>
+						</ul>
+					</div>
+
+					
+					<div class="sect">
+						<p class="hd-tit4">신탁 관련 용어</p>
+						<div class="ut-tbl b">
+							<table class="tbform b" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">신탁 관련 용어 정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:30%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">위탁자</th>
+										<td>교보생명에 신탁재산을 맡기는 자 (고객)</td>
+									</tr>
+									<tr>
+										<th scope="row">수탁자</th>
+										<td>신탁의 목적에 따라 신탁재산을 관리·처분하는 자(교보생명)</td>
+									</tr>
+									<tr>
+										<th scope="row">수익자</th>
+										<td>신탁재산의 원본 또는 이익을 수령하는 자<br>수익자는 위탁자가 지정할 수 있으며, 별도로 지정하지 않은 경우에는 위탁자 본인이 수익자가 됨</td>
+									</tr>
+									<tr>
+										<th scope="row">신탁재산</th>
+										<td>신탁목적에 따라 수탁 받은 금전 또는 재산권<br>신탁재산은 수탁자의 고유재산 또는 다른 재산과 구분하여 별도 관리</td>
+									</tr>
+									<tr>
+										<th scope="row">실적배당</th>
+										<td>신탁재산의 관리, 운용 및 처분의 결과에 따라 발생하는 수익에서 제비용(신탁보수 등)을 차감한 수익 전액을 배당</td>
+									</tr>
+									<tr>
+										<th scope="row">신탁보수</th>
+										<td>신탁재산의 관리, 운용의 대가로서 위탁자가 지불하는 수수료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="ut-gudbox a open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>이 금융상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+								<li>실적배당형 상품이므로 원본의 손실이 발생할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

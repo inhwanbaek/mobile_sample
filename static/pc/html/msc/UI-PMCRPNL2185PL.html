@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-chlmtamnt" id="pop-chlmtamnt">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">한도금액 등록/변경</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="msect">
+							<div class="ut-dcard e">
+								<div class="inr">
+									<div class="stds">
+										<div class="dtds">
+											<ul class="dlt">
+												<li>
+													<div class="dl">
+														<div class="dt">금융기관</div>
+														<div class="dd">교보생명 본사</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">연금상품</div>
+														<div class="dd">퇴직연금(개인IRP)</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">한도금액</div>
+														<div class="dd">1,210,000원</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<h3 class="hd-tit4">변경 한도금액</h3>
+							<div class="psb-sum v1">
+								<dl>
+									<dt>최대 가능 금액</dt>
+									<dd><span class="t-blue">1,500,000</span>원</dd>
+									<dd><button type="button" class="btn sm">최대</button></dd>
+								</dl>
+							</div>
+							<div class="psb-inp">
+								<!-- <div class="radiobox d">
+									<label class="radio" role="radio" aria-checked="true"><input type="radio" name="radio_d2" checked="" aria-hidden="true"><span class="txt">1만원</span></label>
+									<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio_d2" aria-hidden="true"><span class="txt">5만원</span></label>
+									<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio_d2" aria-hidden="true"><span class="txt">10만원</span></label>
+									<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio_d2" aria-hidden="true"><span class="txt">100만원</span></label>
+									<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio_d2" aria-hidden="true"><span class="txt">500만원</span></label>
+								</div> [D] 2022-06-29 삭제 -->
+								<span class="input a won">
+									<label class="lb blind" for="input-2">금액 입력</label>
+									<input type="text" placeholder="입력하세요" value="500,000" id="input-2">
+									<i class="w">원</i>
+								</span>
+								<div class="inp-view">
+									<div class="ext"><p>50만원</p></div>
+								</div>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close">닫기</button>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn lg rd a">확인</button>
+					</div>
+				</div>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-chlmtamnt');
+		</script>
+
+	</div>
+</body>
+</html>

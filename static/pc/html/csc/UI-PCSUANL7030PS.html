@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc ars" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">상담전화 안내</h2>
+				<!-- <div class="desc">언제 어디서든 편리하게 ARS 서비스를 이용해 보세요.</div> -->
+			</div>
+
+			<section class="sect tels">
+				<div class="tbox">
+					<h3 class="tit">콜센터</h3>
+					<div class="dap">대표전화 <span class="tel">1588-1001</span></div>
+					<div class="ext">해외 +82-2-2670-5222</div>
+				</div>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>상담사원 연결: 평일 09:00~18:00 <br>(단, 펀드/신탁 상담은 평일 09:00~16:00)</li>
+						<li>ARS 연결: 08:00~23:30</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect guds">
+				<h3 class="hd-tit3">업무별 상담 번호 안내</h3>
+				<div class="ut-tbl b ty01">
+					<table class="tbform" cellpadding="0" cellspacing="0">
+						<caption><span class="tit">업무별 상담 번호 안내</span><span class="cap"></span></caption>
+						<colgroup>
+							<col class="a">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">보험</th>
+								<td>
+									<p class="tel">1588-1001</p>
+									<p class="tel">+82-2-2670-5222</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">대출</th>
+								<td>
+									<p class="tel">1588-1010</p>
+									<p class="tel">해외 +82-2-2670-5400</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">퇴직연금</th>
+								<td>
+									<p class="tel">1588-0770</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">펀드/신탁</th>
+								<td>
+									<p class="tel">1599-7899</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">방카슈랑스</th>
+								<td>
+									<p class="tel">1588-1099</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">사고보험금</th>
+								<td>
+									<p class="tel">1588-1810</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">보험사기제보</th>
+								<td>
+									<p class="tel">080-987-0080</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="sect arsn">
+				<h3 class="hd-tit3">고객만족센터 ARS 서비스 번호 안내</h3>
+				<ul class="ut-accd b accd" data-accd="accd">
+					<li>
+						<div class="hbox"><em class="t">1</em>보험계약대출<button type="button" class="btn-tog"></button></div>
+						<div class="cbox">
+							<ul class="alst">
+								<li><em class="n">1</em> 조회 및 신청</li>
+								<li><em class="n">2</em> 원금 및 이자 상환</li>
+								<li><em class="n">0</em> 상담사원 연결</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="hbox"><em class="t">2</em>보험금 청구<button type="button" class="btn-tog"></button></div>
+						<div class="cbox">
+							<ul class="alst">
+								<li><em class="n">1</em> 중도보험금 조회 및 신청</li>
+								<li><em class="n">2</em> 배당금 조회 및 신청</li>
+								<li><em class="n">3</em> 해지환급금 조회 및 신청</li>
+								<li><em class="n">4</em> 휴면보험금 조회 및 신청</li>
+								<li><em class="n">5</em> 사고보험금 조회 및 신청</li>
+								<li><em class="n">0</em> 상담사원 연결</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="hbox"><em class="t">3</em>보험료 납입<button type="button" class="btn-tog"></button></div>
+						<div class="cbox">
+							<ul class="alst">
+								<li><em class="n">1</em> 보험료 납입</li>
+								<li><em class="n">0</em> 상담사원 연결</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="hbox"><em class="t">4</em>납입증명서/비밀번호/보안카드/지급중지 <button type="button" class="btn-tog"></button></div>
+						<div class="cbox">
+							<ul class="alst">
+								<li><em class="n">1</em> 납입증명서 팩스 발급</li>
+								<li><em class="n">2</em> ARS 비밀번호 관리</li>
+								<li><em class="n">3</em> 카드 분실신고</li>
+								<li><em class="n">4</em> 보안카드 유효기간 연장</li>
+								<li><em class="n">5</em> 보험계약 지급중지 요청</li>
+								<li><em class="n">0</em> 상담사원 연결</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="hbox"><em class="t">0</em>상담사원 연결 <button type="button" class="btn-tog"></button></div><!-- [D] 2022-03-23 UI/UX 변경 -->
+						<div class="cbox">
+							<ul class="alst">
+								<li><em class="n">1</em> 보험계약대출 상담</li>
+								<li><em class="n">2</em> 수술, 입원, 장해, 실손 관련 보험금 상담</li>
+								<li><em class="n">3</em> 변액보험 펀드 상담</li>
+								<li><em class="n">4</em> 보험료 납입, 해약, 중도/만기보험금 등 보험 일반 상담</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<div class="gudchat">
+					<div class="tit">통화대기시간이 길어진다면<br>채팅상담을 이용해보세요.</div>
+					<p class="txt"><strong class="point">채팅상담 평일 10:00 ~17:00</strong></p>
+					<div class="btn-set">
+						<a href="javascript:;" class="btn md ico-r ico-nlink" target="_blank" title="새창열림">채팅상담 시작하기</a>
+					</div>
+				</div>
+
+				<div class="ut-gudbox b open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>
+								<!-- [D] 2022-05-20 UI/UX 변경 -->
+								<strong>ARS 서비스 신청방법</strong>
+								<ul class="bullet c">
+									<li>주민등록증 및 본인명의통장을 지참하고 가까운 교보생명 고객PLAZA를 방문해 주세요. </li>
+									<li>ARS 서비스를 신청하고 보안카드를 발급받으시면 됩니다.</li>
+									<li><span class="point">고객PLAZA 업무시간: 평일 09:00~15:30</span></li>
+								</ul>
+							</li>
+							<li>
+								<strong>ARS 서비스 이용 시 통화요금</strong>
+								<ul class="bullet c">
+									<li>일반전화: 기본적으로 시내통화요금이 부과됩니다. 시외통화요금이 발생하면 시내통화요금을 제외한 차액을 교보생명이 부담합니다.</li>
+									<li>휴대폰/인터넷전화: 고객님이 가입하신 통신사의 약정 요금제 기준으로 부과됩니다.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

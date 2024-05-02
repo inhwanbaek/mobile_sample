@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-pmodlist" id="pop-pmodlist">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변경내역 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						
+
+						<div class="ut-tbl a">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">가입자별</span><span class="cap"></span></caption>
+								<colgroup>
+									<col >
+									<col style="width: 25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">상품명</th>
+										<th scope="col">매수비율</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-l">교보생명(신탁) 현금성 자산</td>
+										<!-- [D] 2022-06-07 클래스 'bold' 추가 -->
+										<td>
+											0%  <!-- [D] 2022-06-14 텍스트 '%' 태그 밖으로 -->
+											<!-- [웹접근성] 3rd 수정 -->
+											<span role="img" aria-label="오른쪽 화살표">→</span>
+											<!-- //[웹접근성] 3rd 수정 -->
+											<span class="color6 bold">50</span>%
+										</td>
+									</tr>
+									<tr>
+										<td class="txt-l">(온라인)하이월드에너지증권자투자신탁(주식-재간접형</td>
+										<!-- [D] 2022-06-07 클래스 'bold' 추가 -->
+										<td>
+											0% <!-- [D] 2022-06-14 텍스트 '%' 태그 밖으로 -->
+											<!-- [웹접근성] 3rd 수정 -->
+											<span role="img" aria-label="오른쪽 화살표">→</span>
+											<!-- //[웹접근성] 3rd 수정 -->
+											<span class="color6 bold">50</span>%
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">결재</button><!-- [D] 2022-07-19 텍스트 수정 -->
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pmodlist');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

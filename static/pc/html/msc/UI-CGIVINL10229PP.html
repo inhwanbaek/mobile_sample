@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-ckemailinfo" id="pop-ckemailinfo">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험증권 재발행용 이메일정보 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<ul class="bullet a">
+						<li>계약변경 시 보험증권 재발행 신청을 위해 고객님의 이메일 정보가 필요합니다. <br>현재 사용하시는 주소가 맞는지 확인해 주세요. </li>
+					</ul>
+					<div class="ut-tbl a mt16">
+						<table class="tbform a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">보험증권 재발행용 이메일정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:30%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">이메일</th>
+									<td>kyobo@kyobo.com</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-ckemailinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-ckemailinfo',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

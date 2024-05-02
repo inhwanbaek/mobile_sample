@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"요약재무상태표"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt finance" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">별도 재무상태표</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">연결 재무상태표</a></li>
+				</ul>
+			</div>
+
+			<div class="box-rd-bg">
+				「보험업법 시행령」 개정에 따라 2013 회계연도부터 보험사의 결산일(장부폐쇄일)이 3월31일에서 12월 31일로 변경되었습니다.
+				따라서 2013 회계연도 실적은 2013년 4월 1일부터 2013년 12월 31일까지 9개월간의 실적입니다.
+			</div>
+
+			<h3 class="hd-tit4">별도 재무상태표</h3>
+			<h4 class="hd-tit5">사업연도별 비교</h4>
+			<div class="period-year">
+				<span class="select a">
+					<label class="lb blind" for="select-3">시작년도 선택</label>
+					<select name="select-3" title="시작년도 선택">
+						<option selected>2020</option>
+					</select>
+				</span>
+				<i class="ds">~</i>
+				<span class="select a">
+					<label class="lb blind" for="select-3">마지막년도 선택</label>
+					<select name="select-3" title="마지막년도 선택">
+						<option selected>2019</option>
+					</select>
+				</span>
+			</div>
+			<div class="btn-set">
+				<button type="button" class="btn md">조회</button>
+			</div>
+			<div class="ut-optset optset">
+				<div class="opt pl">
+				</div>
+				<div class="opt pr">
+					<span class="unit">(단위: 십억원, %)</span>
+				</div>
+			</div>
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">별도 재무상태표</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: auto;" span="5">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">사업연도</th>
+							<th scope="col">FY2020</th>
+							<th scope="col">FY2019</th>
+							<th scope="col">증감</th>
+							<th scope="col">증감률</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg">
+							<td>자산총계</td>
+							<td class="txt-r">115,486.1</td>
+							<td class="txt-r">107,893.5</td>
+							<td class="txt-r">7,592.6</td>
+							<td class="txt-r">7.0</td>
+						</tr>
+						<tr>
+							<td>현금 및 예치금</td>
+							<td class="txt-r">917.9</td>
+							<td class="txt-r">1,810.6</td>
+							<td class="txt-r">-892.7</td>
+							<td class="txt-r">-49.3</td>
+						</tr>
+						<tr>
+							<td>유가증권</td>
+							<td class="txt-r">64,974.7</td>
+							<td class="txt-r">60,925.6</td>
+							<td class="txt-r">4,049.1</td>
+							<td class="txt-r">6.6</td>
+						</tr>
+						<tr>
+							<td>대출채권</td>
+							<td class="txt-r">20,715.2</td>
+							<td class="txt-r">19,895.1</td>
+							<td class="txt-r">820.1</td>
+							<td class="txt-r">4.1</td>
+						</tr>
+						<tr>
+							<td>투자부동산</td>
+							<td class="txt-r">1,133.4</td>
+							<td class="txt-r">1,163.0</td>
+							<td class="txt-r">-29.6</td>
+							<td class="txt-r">-2.5</td>
+						</tr>
+						<tr>
+							<td>유형자산</td>
+							<td class="txt-r">960.7</td>
+							<td class="txt-r">950.5</td>
+							<td class="txt-r">10.2</td>
+							<td class="txt-r">1.1</td>
+						</tr>
+						<tr>
+							<td>무형자산</td>
+							<td class="txt-r">208.7</td>
+							<td class="txt-r">226.2</td>
+							<td class="txt-r">-17.5</td>
+							<td class="txt-r">-7.7</td>
+						</tr>
+						<tr>
+							<td>기타자산</td>
+							<td class="txt-r">3,016.6</td>
+							<td class="txt-r">2,477.6</td>
+							<td class="txt-r">539.0</td>
+							<td class="txt-r">21.8</td>
+						</tr>
+						<tr>
+							<td>특별계정자산</td>
+							<td class="txt-r">23,558.9</td>
+							<td class="txt-r">20,444.8</td>
+							<td class="txt-r">3,114.1</td>
+							<td class="txt-r">15.2</td>
+						</tr>
+						<tr class="bg">
+							<td>부채총계</td>
+							<td class="txt-r">103,392.2</td>
+							<td class="txt-r">96,204.3</td>
+							<td class="txt-r">7,187.9</td>
+							<td class="txt-r">7.5</td>
+						</tr>
+						<tr>
+							<td>책임준비금</td>
+							<td class="txt-r">75,196.0</td>
+							<td class="txt-r">71,663.8</td>
+							<td class="txt-r">3,532.2</td>
+							<td class="txt-r">4.9</td>
+						</tr>
+						<tr>
+							<td>계약자지분조정</td>
+							<td class="txt-r">1,440.7</td>
+							<td class="txt-r">1,397.5</td>
+							<td class="txt-r">43.2</td>
+							<td class="txt-r">3.1</td>
+						</tr>
+						<tr>
+							<td>기타부채</td>
+							<td class="txt-r">2,656.3</td>
+							<td class="txt-r">2,251.0</td>
+							<td class="txt-r">405.3</td>
+							<td class="txt-r">18.0</td>
+						</tr>
+						<tr>
+							<td>특별계정부채</td>
+							<td class="txt-r">24,099.2</td>
+							<td class="txt-r">20,891.9</td>
+							<td class="txt-r">3,207.3</td>
+							<td class="txt-r">15.4</td>
+						</tr>
+						<tr class="bg">
+							<td>자본총계</td>
+							<td class="txt-r">12,093.9</td>
+							<td class="txt-r">11,689.2</td>
+							<td class="txt-r">404.7</td>
+							<td class="txt-r">3.5</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

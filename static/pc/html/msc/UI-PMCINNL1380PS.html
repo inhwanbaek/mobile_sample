@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page msc default billing bg" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">손해사정사 선임</h2>
+				<div class="ut-topfix step">
+					<div class="inr">
+						<div class="ut-steps d">
+							<!-- <div class="tit"></div> -->
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">3</b></span>
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc"><i class="line">손해사정사 선임방법</i> 선택 후 동의요청을 해 주세요.</div><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+
+			<h3 class="hd-tit4">보험금 신청정보</h3>	
+			<div class="ut-dcard b light">				
+				<div class="dls">
+					<div class="dl">
+						<div class="dt">접수번호</div>
+						<div class="dd">20090200208301</div>
+					</div>
+					<div class="dl">
+						<div class="dt">피보험자</div>
+						<div class="dd">수인강</div>
+					</div>
+					<div class="dl">
+						<div class="dt">생년월일</div>
+						<div class="dd">19950330</div>
+					</div>
+				</div>
+			</div>			
+			<ul class="bullet a">				
+				<li>고객님은 위 보험금 신청 건의 손해사정을 위해 개별적으로 손해사정사를 선임하실 수 있습니다.</li>
+				<li>손해사정사 개별 선임을 요청하실 경우 교보생명이 동의하면 손해사정 비용을 교보생명이 부담합니다.</li>
+			</ul>
+
+			<h3 class="hd-tit4">손해사정사 선임방법</h3>				
+			<div class="rc-tab-dt group">
+				<label class="radio" role="radio" aria-checked="true"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1" checked="" aria-hidden="true"><span class="txt">교보생명 위탁업체인 KCA손해사정㈜을 통해 선임</span></label>
+				<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_2" aria-hidden="true"><span class="txt">손해사정사 개별 선임</span></label>
+			</div>
+
+			<h4 class="hd-tit5">위 손해사정사를 선임하는 사람</h4>		
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">위 손해사정사를 선임하는 사람</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:15%">
+						<col>
+					</colgroup>
+					<tbody>											
+						<tr>
+							<th scope="row">이름 <em class="ast">는 필수항목입니다</em></th>
+							<td>
+								<!-- <label class="lb" for="input-1">이름</label> -->
+								<span class="input a w100p">
+									<input type="text" title="이름 입력" placeholder="입력하세요" value="수인강" id="input-1" disabled>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">생년월일 <em class="ast">는 필수항목입니다</em></th>
+							<td>
+								<!-- <label class="lb" for="input-2">이름</label> -->
+								<span class="input a w100p"><input type="text" title="생년월일 입력" placeholder="입력하세요" value="19950330" id="input-2" disabled></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">계약관계 <em class="ast">는 필수항목입니다</em></th>
+							<td>
+								<span class="select a">
+									<select title="계약관계 선택">
+										<option>계약관계 선택</option>
+									</select>
+								</span>
+							</td>
+						</tr>
+					</tbody>					
+				</table>
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">						
+						<button type="button" class="btn rd lg a">동의요청</button>
+					</div>
+				</div>
+			</nav>
+			<!-- //하단 고정영역 -->
+			
+		</div>
+
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

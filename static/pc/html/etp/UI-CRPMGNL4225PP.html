@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-pmodlist" id="pop-pmodlist">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">자동상품변경 처리내역</h1>
+				</div>
+			</div>
+			<div class="pct page etp pmod">
+				<main class="poptents">
+					
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<!-- <span class="tot">총 <i class="n">00</i> 건</span> -->
+						</div>
+						<div class="opt pr">
+							최근 1년 동안 자동상품변경 처리내역입니다.
+						</div>
+					</div>
+
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist tstyle" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">자동상품변경 처리내역</span><span class="cap"></span></caption>
+							<!-- <colgroup>
+								<col style="width: 10%;">
+								<col>
+								<col style="width: 10%;">
+								<col style="width: 10%;">
+								<col style="width: 10%;">
+							</colgroup> -->
+							<thead>
+								<tr>
+									<th scope="col">처리일자</th>
+									<th scope="col">처리결과</th>
+									<th scope="col">매도신청금액</th>
+									<th scope="col">상품잔고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2021.04.05</td>
+									<td>잔액부족</td>
+									<td class="txt-r"><em>2,000,000</em>원</td>
+									<td class="txt-r"><em>3,8885,544</em>원</td>
+								</tr>
+								<tr>
+									<td>2021.04.05</td>
+									<td>정상</td>
+									<td class="txt-r"><em>2,000,000</em>원</td>
+									<td class="txt-r"><em>3,8885,544</em>원</td>
+								</tr>
+								<tr>
+									<td>2021.04.05</td>
+									<td>정상</td>
+									<td class="txt-r"><em>2,000,000</em>원</td>
+									<td class="txt-r"><em>3,8885,544</em>원</td>
+								</tr>
+								<tr class="nodata">
+									<td colspan="4">
+										<p class="txt">처리내역이 없습니다.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pmodlist');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

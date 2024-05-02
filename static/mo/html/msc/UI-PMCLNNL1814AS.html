@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 자동이체 신청/변경"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng atcl" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">2. 약관동의</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">4</b></span>
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3"><i class="line">동의</i>해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 --><!-- [D] 2022-06-28 수정 -->
+			</div>
+
+			<div class="lomng-terms">
+				<div class="ut-terms a">
+					<div class="ckall">
+						<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+						<a href="javascript:;" class="plink" role="button">보기</a>
+					</div>
+
+					<div class="plbox">
+						<div class="hdt"><div class="tit">신용/담보대출 자동이체를 위한 동의</div></div><!-- [D] 2022-06-28 문구수정-->
+						<ul class="plist">
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">신용/담보대출 자동이체 약관</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</li>
+						</ul>
+						<!-- [D] 2022-06-28 문구 추가-->
+						<div class="hdt"><div class="tit">개인(신용)정보 수집·이용·제공 동의</div></div>
+						<ul class="plist">
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보 수집·이용 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 수집·이용 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보 제공 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 제공 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

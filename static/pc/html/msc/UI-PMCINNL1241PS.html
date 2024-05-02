@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a md pop-agppradvnc" id="pop-agppradvnc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변액보험 보험료 선납동의 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">변액보험 보험료 선납 및 선납동의</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>변액보험 중 보험료 선납이 가능한 계약의 경우 선납가능일부터 해당 상품 약관에 정한 가능 기간까지 보험료를 선납(미리 납입)할 수 있습니다. </li>
+								<li>변액보험 선납 시 아래 고객 유의사항에 대한 내용을 사전에 안내해 드리며, 이에 대해 동의한 계약에 한하여 보험료를 선납할 수 있습니다. </li>
+							</ul>
+						</div>
+						<h2 class="hd-tit4">상품별 선납 가능 기간(예시)</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>변액유니버셜 상품은 보험료 납입의무기간 중에는 해당 상품에서 정한 최대 선납 가능 기간까지 선납할 수 있으며, 보험료 납입의무기간 경과 후부터는 선납할 수 없습니다.  </li>
+								<li>상품별 최대 선납 가능 기간은 다르므로 해당 상품의 약관을 참조하시기 바랍니다. </li>
+							</ul>
+						</div>
+						<h2 class="hd-tit4">변액보험 보험료 선납 동의 시 보험계약자가 사전에 알아두셔야 할 사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li><em class="fn-point01">납입한 선납보험료는 납입과 동시에 펀드(특별계정)에 투입되지 않습니다.</em></li>
+								<li>선납보험료는 보험료 납입일로부터 선납 시 적용금리로 일반계정에서 적립한 후, 매월 계약해당일이 도래할 때마다 당월보험료 해당액을 선택한 펀드에 투입하게 됩니다.</li>
+								<li>선납보험료는 바로 특별계정에 투입되지 않기 때문에 특별계정 투입시점의 차이가 수익률과 「중도인출 및 보험계약대출」 신청 시 수령 가능한 금액에 영향을 미치게 됩니다.</li>
+								<li>중도인출 및 대출 신청 시 미경과된 선납보험료는 수령가능금액에 포함되지 않습니다.</li>
+								<li>‘당월 보험료 해당액’은 월보험료에서 보험유지에 필요한 사업비 등이 차감된 금액이며 선납 시 적용금리로 계산한 이자를 포함합니다.</li>
+								<li>선납 시 적용이율이란 이 보험에서 정한 선납보헙료 적립 시 적용하는 이율을 말합니다.</li><!-- [D] 2022-03-07 변경 -->
+							</ul>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-agppradvnc');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-agppradvnc');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

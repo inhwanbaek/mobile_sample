@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"스마트 ATM출금 신청"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd atm" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 계좌등록</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">6</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="atm-tit">
+				<!-- [D] 2022-05-12 수정 -->
+				<h2 class="hd-tit3">보험계약대출이자 <i class="line">자동이체 계좌</i>를 등록해 주세요.</h2>
+			</div>
+
+			<div class="head-box mt40">
+				<!-- [D] 2022-05-12 수정 -->
+				<h3 class="hd-tit4">출금계좌</h3>
+				<!-- [D] 2022-06-28 삭제 -->
+				<!-- <button type="button" class="ico plus">출금계좌 신규 등록</button> -->
+			</div> 
+			<span class="select a">
+				<label class="lb" for="sel_id0">계좌선택</label>
+				<select id="sel_id0" name="sel_id0">
+					<option selected>예금주:남익단, 계좌:(우리은행)938384938384938384</option>
+				</select>
+			</span>
+
+			<!-- [D] 2022-06-28 삭제 -->
+			<!-- <div class="tooltip-area">
+				<span class="tt">등록 가능한 은행</span>
+				<div class="ut-tooltip">
+					<button type="button" class="ico help sm bt-tooltip">출금 가능한 은행 도움말</button>
+					<div class="toolctn">
+						<div class="tptit">제목</div>
+						<div class="tpmsg">출금 가능한 은행 리스트</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- // [D] 2022-06-28 삭제 -->
+			
+			<div class="head-box mt40">
+				<h3 class="hd-tit4">이자 자동이체일</h3>
+			</div>
+			<span class="select a">
+				<label class="lb" for="sel_id1">자동이체일 선택</label>
+				<select id="sel_id1" name="sel_id1">
+					<option>5일,10일,15일,20일,25일,말일</option>
+				</select>
+			</span>      
+			
+			<!-- 알아두세요 -->
+			<!-- [D] 2022-05-12 open 클래스 추가 -->
+			<div class="ut-gudbox b mt40 open" data-tog-cls="box">
+				<div class="gtit">꼭 확인하세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>보험계약대출 원리금 청구 중인 계약으로 보험계약대출을 받을 경우 원리금이 이충출금될 수 있습니다. 이중출금된 이자는 2일(영업일 기준) 안에 다시 입금해 드립니다.</li>
+						<li>매월 발생하는 보험계약대출 이자는 은행 자동이체로 납부하셔야 합니다.</li>
+						<li>이자는 보험계약대출 신청 시 등록한 입출금계좌에서 지정한 자동이체일에 출금됩니다.</li>
+						<li>원리금 분할상환을 계속 이용하시려면 추가대출 후 대출원리금 분할상환을 재신청해 주시기 바랍니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">요청하신 교보생명 업무 처리를 위해 「전자금융거래법」에 따른 출금이체 등록에 동의하십니까?</div>
+					<div class="rdos">
+						<label class="radio"><input type="radio" name="radio9" checked><span class="txt">동의</span></label>
+						<!-- [D] 2022-05-12 수정 -->
+						<label class="radio"><input type="radio" name="radio9"><span class="txt">동의안함</span></label>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+		
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

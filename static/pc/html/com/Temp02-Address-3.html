@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-adrrsch" id="pop-adrrsch">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">주소찾기</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<h2 class="hd-tit3"><i class="line">등록할 주소</i>를 선택해 주세요.</h2>
+						<!-- 등록 주소 선택 화면-->
+						<section class="ressel">
+							<ul class="list">
+								<li>
+									<label class="radio cu" role="radio" aria-checked="true">
+										<input type="radio" name="rdo-adrs" checked="" aria-hidden="true">
+										<span class="txt">
+											<span class="tt">도로명주소</span>
+											<div class="tox">
+												<dl class="dls">
+													<dt class="dt">선택 주소</dt>
+													<dd class="dd">01063서울 강북구 삼양로 159길 40(우성빌라)</dd>
+													<dt class="dt">나머지 주소</dt>
+													<dd class="dd">101동 404호</dd>
+												</dl>
+											</div>
+										</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio cu" role="radio" aria-checked="false">
+										<input type="radio" name="rdo-adrs" aria-hidden="true">
+										<span class="txt">
+											<span class="tt">표준화지번주소</span>
+											<div class="tox">
+												<dl class="dls">
+													<dt class="dt">선택 주소</dt>
+													<dd class="dd">01063서울 강북구 삼양로 159길 40(우성빌라)</dd>
+													<dt class="dt">나머지 주소</dt>
+													<dd class="dd">101동 404호</dd>
+												</dl>
+											</div>
+										</span>
+									</label>
+								</li>
+								<li>
+									<label class="radio cu" role="radio" aria-checked="false">
+										<input type="radio" name="rdo-adrs" aria-hidden="true">
+										<span class="txt">
+											<span class="tt">입력 주소</span>
+											<div class="tox">
+												<dl class="dls">
+													<dt class="dt">선택 주소</dt>
+													<dd class="dd">01063서울 강북구 삼양로 159길 40(우성빌라)</dd>
+													<dt class="dt">나머지 주소</dt>
+													<dd class="dd">101동 404호</dd>
+												</dl>
+											</div>
+										</span>
+									</label>
+								</li>
+							</ul>
+						</section>
+						<!--// 등록 주소 선택 화면-->
+					</main>
+				</div>
+				<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+					<div class="btn-set">
+						<button type="button" class="btn b rd lg">다시찾기</button>
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-adrrsch');
+		</script>
+	</div>
+</body>
+</html>

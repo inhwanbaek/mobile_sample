@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/	jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"다이렉트(TMR/TFP)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt abt-fp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">TMR(텔레마케터)</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">TFP(Total Financial Planner)</a></li>
+				</ul>
+			</div>
+
+			<div class="ut-tabs b">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">TMR 소개</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">보상체계</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">TMR지점</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">TMR 상담신청</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit3">TMR 지점</h3>
+			<div class="ut-tbl a">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">TMR 지점</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:20%">
+						<col>
+						<col style="width:20%">
+					</colgroup>
+					<thead>
+						<th scope="col">지점</th>
+						<th scope="col">주소</th>
+						<th scope="col">위치</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>명동다이렉트지점</td>
+							<td class="txt-l">서울 중구 퇴계로 173(충무로3가, 남산스퀘어빌딩) 5층</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>서초다이렉트지점</td>
+							<td class="txt-l">서울 서초구 동작대로 134(방배동, 가나안빌딩) 6층</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>퍼스트다이렉트지점</td>
+							<td class="txt-l">서울 영등포구 당산로 118(당산동3가, 대흥빌딩) 5층</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>미래다이렉트지점</td>
+							<td class="txt-l">서울 영등포구 영등포로 96(당산동2가, 교보생명빌딩) 201호</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>강서다이렉트지점</td>
+							<td class="txt-l">서울 영등포구 영등포로 96(당산동2가, 교보생명빌딩) 207호</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>강북다이렉트지점</td>
+							<td class="txt-l">서울 강북구 노해로 3(수유동, 평익타워) 15층</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+						<tr>
+							<td>강남다이렉트지점</td>
+							<td class="txt-l">서울 서초구 방배천로 91(방배동, 구산빌딩) 3층</td>
+							<td><a href="javascript:;" class="link-text">지도<br>보기</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">본사 사옥</h3>
+			<div class="pic"><img src="../../img/abt/pic-trm-01.png" alt="본사 사옥 이미지"></div>
+
+			<h3 class="hd-tit3">강남 사옥</h3>
+			<div class="pic"><img src="../../img/abt/pic-trm-02.png" alt="강남 사옥 이미지"></div>
+
+			<h3 class="hd-tit3">영등포 사옥</h3>
+			<div class="pic"><img src="../../img/abt/pic-trm-03.png" alt="영등포 사옥 이미지"></div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer md a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">잔고비율 매도란?</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">					
+					<div class="text-group">
+						<h2 class="hd-tit4">잔고비율 매도란? </h2>
+						<div class="text-box">
+							<!-- [D] 2022-06-08 마크업 수정 
+							<ul class="bullet a">								
+								<li>퇴직급여 지급에 필요한 자금을 확보하기 위해 현재 운용되고 있는 전체 상품을 <span class="color6">각 상품별 잔고비율대로 파는 것(매도)</span>을 말합니다.</li>
+							</ul>
+							-->
+							<!-- [D] 2022-06-08 마크업 수정 -->
+							<p>퇴직급여 지급에 필요한 자금을 확보하기 위해 현재 운용되고 있는 전체 상품을 <span class="color6">각 상품별 잔고비율대로 파는 것(매도)</span>을 말합니다.</p>
+							<!--//[D] 2022-06-08 마크업 수정 -->
+						</div> 
+						<h2 class="hd-tit4">잔고비율 매도 예시</h2>		
+						<!-- [D] 2022-06-08 클래스 'mb20' 추가 -->						
+						<div class="text-box mb20">
+							<!-- [D] 2022-06-08 마크업 수정
+							<ul class="bullet a">
+								<li>예) 퇴직금 2천만원을 지급해야 하는 경우</li>								
+							</ul>
+							 -->
+							<!-- [D] 2022-06-08 마크업 수정 -->
+							<p>예) 퇴직금 2천만원을 지급해야 하는 경우</p>
+							<!--//[D] 2022-06-08 마크업 수정 -->
+						</div>
+					</div>
+
+					<div class="ut-tbl a">
+						<table class="tblist a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">잔고비율 매도 정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col style="width: 20%">
+								<col style="width: 18%">
+								<col style="width: 20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">상품명</th>
+									<th scope="col">평가금액(원)</th>
+									<th scope="col">잔고비율(%)</th>
+									<th scope="col">매도금액(원)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>(무)교보 DB 금리 연동형</td>
+									<td class="txt-r">10,000,000</td>
+									<td>10</td>
+									<!-- [D] 2022-06-08 클래스 'bold' 추가 -->
+									<td class="txt-r"><span class="color6 bold">2,000,000</span></td>
+								</tr>
+								<tr>
+									<!-- [D] 2022-06-21 텍스트 수정 -->
+									<td>(무)교보 DB GIC 1년형</td>
+									<td class="txt-r">40,000,000</td>
+									<td>40</td>
+									<!-- [D] 2022-06-08 클래스 'bold' 추가 -->
+									<td class="txt-r"><span class="color6 bold">8,000,000</span></td>
+									<!--//[D] 2022-06-21 텍스트 수정 -->
+								</tr>
+								<tr>
+									<!-- [D] 2022-06-21 텍스트 수정 -->
+									<td>(무)교보 DB GIC 1년형</td>
+									<td class="txt-r">50,000,000</td>
+									<td>50</td>
+									<!-- [D] 2022-06-08 클래스 'bold' 추가 -->
+									<td class="txt-r"><span class="color6 bold">10,000,000</span></td>
+									<!--//[D] 2022-06-21 텍스트 수정 -->
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>합계</td>
+									<td class="txt-r">100,000,000</td>
+									<td>100</td>
+									<!-- [D] 2022-06-08 클래스 'bold' 추가 -->
+									<td class="txt-r"><span class="color6 bold">20,000,000</span></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample3');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

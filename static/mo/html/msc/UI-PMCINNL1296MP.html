@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-terms-detail" id="pop-terms-detail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">안내사항</h1>
+				</div>
+			</div>
+			<!-- [D] 2022-02-11 전체문구변경 -->
+			<div class="pct">
+				<main class="poptents">
+					<div class="text-group">
+						<h2 class="hd-tit4">청구 대상</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>디지털채널 청구 가능 보험금은 300만원 이하입니다.(사망보험금은 청구 불가)</li>
+								<li>수익자만 청구 가능하며, 청구자가 피보험자 본인이 아닌 경우 피보험자의 동의가 필요합니다.(모바일로 정보제공 동의 진행)
+									<ul class="bullet b">
+										<li>다음 영업일 18:00까지 피보험자가 동의해야 청구가 완료되며, 동의하지 않으면 청구가 취소됩니다. </li><!-- [D] 2022-05-10 태그텍스트변경 -->	
+									</ul>
+								</li>
+								<li>피보험자가 미성년자인 경우 친권자가 대신 청구할 수 있습니다.
+									<ul class="bullet b">
+										<li>친권자가 계약자이고, 수익자는 친권자 본인이거나 미성년 피보험자인 경우에 한하며, 이때 자녀의 기본증명서와 가족관계증명서가 필요합니다.(단, 계약자와 수익자가 같은 경우는 불필요)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<h2 class="hd-tit4">디지털채널 청구시간</h2>
+						<div class="text-box">
+							365일 08:00~23:30
+							<ul class="bullet b mt08">
+								<li>토, 일, 공휴일 및 18:00 이후 청구 건은 다음 영업일에 접수됩니다. </li><!-- [D] 2022-05-10 태그텍스트변경 -->	
+							</ul>
+						</div>
+						<h2 class="hd-tit4">보험금청구권 소멸시효</h2>
+						<div class="text-box">
+							「상법」 제662조에 따라 보험금청구권의 소멸시효는 3년입니다.
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<!-- [웹접근성] 1st 수정 -->
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+		<!-- //[웹접근성] 1st 수정 -->
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-terms-detail');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

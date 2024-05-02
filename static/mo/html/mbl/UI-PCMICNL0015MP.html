@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sign-adds" id="sign-adds">
+		<div class="pbd">
+			<div class="phd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">통합인증서</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="mbl-top">
+							<div class="hdt"><h2 class="hd-tit2">전자서명 또는 본인확인을 진행할 인증서를 선택해주세요.</h2></div>
+						</div>
+						<div class="certificate-list">
+							<!-- [D] 2022 06-13 인증서 순서 정렬 -->
+							<ul class="list">
+								<li class="ics naver"><a href="javascript:;" class="lks">네이버 인증서</a></li> <!-- [D] 2022-06-08: 네이버인증서 추가 -->
+								<li class="ics kpay bdnone"><a href="javascript:;" class="lks">카카오페이 인증서 <p class="ubdgs">이용등록</p></a></li><!-- [D] 2022-07-27 포커스 영역 수정으로 마크업 수정 -->
+								<li class="ics pass bdnone"><a href="javascript:;" class="lks">패스 인증서</a></li>
+								<li class="ics toss bdnone"><a href="javascript:;" class="lks">토스 인증서</a></li>
+								<li class="ics ctfn bdtop bdnone "><a href="javascript:;" class="lks">금융인증서</a></li>
+							</ul>
+							<!--// [D] 2022 06-13 인증서 순서 정렬 -->
+						</div>
+					</div>
+				</main>
+			</div>
+		<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+	</div>
+</article>
+
+
+<script>
+	ui.popup.open('sign-adds');
+</script>
+
+</div>
+</body>
+</html>

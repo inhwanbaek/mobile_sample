@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-appdetail" id="pop-appdetail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신청인원 상세보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="etp-item">
+						<div class="card-count">
+							<h3 class="count">총 <strong>20</strong>명</h3>
+						</div>
+						<div class="ut-dcard c pdetail" data-tog-cls="box">
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<h4 class="dt">이름</h4><!-- [D] 2022-04-13 텍스트수정 -->
+											<div class="dd">남단아(820312-1)</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">퇴직급여 총액</h4>
+											<div class="dd"><span class="t-blue">23,939,486</span>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 --></div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">교보생명 청구금액</h4>
+											<div class="dd">23,939,486원</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">회사가 IRP로 입금할 금액</h4>
+											<div class="dd">0원</div>
+										</div>
+									</li>																														
+								</ul>
+								<ul class="dlt line" data-tog-cls="ctn" style="display: none;">
+									<li>
+										<div class="dl">
+											<h4 class="dt">퇴사일</h4>
+											<div class="dd">2021.12.25</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">지급형태</h4>
+											<div class="dd">전부일시금</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">계좌정보</h4>
+											<div class="dd">SC제일은행<br>4127111134561258<br>남단아</div>
+										</div>
+									</li>													
+								</ul>
+								<div class="mores">
+									<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more" aria-expanded="false">상세내용 더보기<span class="btxt">열기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="ut-dcard c pdetail" data-tog-cls="box">				
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<h4 class="dt">이름</h4><!-- [D] 2022-04-13 텍스트수정 -->
+											<div class="dd">남단아(820312-1)</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">퇴직급여 총액</h4>
+											<div class="dd"><span class="t-blue">23,939,486</span>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 --></div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">교보생명 청구금액</h4>
+											<div class="dd">23,939,486원</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">회사가 IRP로 입금할 금액</h4>
+											<div class="dd">0원</div>
+										</div>
+									</li>																														
+								</ul>
+								<ul class="dlt line" data-tog-cls="ctn" style="display: none;">
+									<li>
+										<div class="dl">
+											<h4 class="dt">퇴사일</h4>
+											<div class="dd">2021.12.25</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">지급형태</h4>
+											<div class="dd">전부일시금</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<h4 class="dt">계좌정보</h4>
+											<div class="dd">SC제일은행<br>4127111134561258<br>남단아</div>
+										</div>
+									</li>													
+								</ul>
+								<div class="mores">
+									<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more" aria-expanded="false">상세내용 더보기<span class="btxt">열기</span></button>
+								</div>
+							</div>
+						</div>
+						<div class="ut-more more mt40">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+						<p class="t-dsc mt30">복수 운용관리기관을 운용 중인 단체의 경우 '회사가 IRP로 입금할 금액' 에 타연금사 지급분이 포함 될 수 있습니다.</p>
+					</div>				
+				</main>
+			</div>	
+			<!-- 하단 버튼 옵션 레이어 영역 -->
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>		
+			<!--// 하단 버튼 옵션 레이어 영역 -->			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-appdetail');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

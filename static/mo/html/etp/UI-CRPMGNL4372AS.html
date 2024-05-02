@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"퇴직금 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금) -->
+	<main class="container page etp" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  	
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 신청정보 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="etp-tit-box">
+				<h2 class="hd-tit3">퇴직금을 신청하는<br>가입자의 기본 정보를 입력해 주세요</h2>
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">
+					<span class="tt">퇴직 정산부담금</span>
+					<!-- [D] 2022-01-21 ut-tooltip 클래스.mtop 추가 -->
+					<div class="ut-tooltip mtop">
+						<button type="button" class="ico help bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p>퇴직정산부담금은 가입자가 이미 납입한 부담금에 해당하는 근무기간을 초과하여 근무하고 퇴직한 경우, 해당 초과 근무분에 대하여 납입하는 부담금을 말합니다.
+								</p>
+							</div>
+						</div>
+					</div>	
+				</h3>
+				<!-- [D] 2022-02-15 항목 제거 <h4 class="hd-tit5">퇴직정산 부담금 존재 여부</h4> -->
+				<!-- [D] 2022-01-24 불필요 속성 제거 -->
+				<div class="radiobox c">
+					<label class="radio">
+						<input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1">
+						<span class="txt">있음</span>
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2">
+						<span class="txt">없음</span>
+					</label>
+				</div>
+				<!--// [D] 2022-01-24 불필요 속성 제거 -->
+				<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1">
+					<h4 class="hd-tit5">납입예정일</h4>
+					<span class="input a ut-date">
+						<label class="lb blind" for="datepick_0">납입예정일 선택</label>
+						<input type="tel" id="datepick_0" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01">
+					</span>
+					<h4 class="hd-tit5">납입예정부담금</h4>
+					<span class="input a won no-lb">
+						<label class="lb blind" for="input-01">납입예정부담금 입력</label>
+						<input type="tel" pattern="\d*" placeholder="입력하세요" value="" id="input-01"><i class="w">원</i><!-- [D] 2022-01-21 input 변경 -->
+					</span>
+					<div class="ext"><p>128억 5,825만 8,552원</p></div>
+					<p class="t-dsc t-blue">퇴직정산 부담금이 있는 경우 이 부담금을 납입해야 퇴직금 신청이 진행됩니다.</p>
+				</div>
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">국민연금전환금</h3>			
+				<!-- [D] 2022-02-15 항목 제거 <h4 class="hd-tit5">국민연금전환금 존재 여부</h4>-->
+				<!-- [D] 2022-01-24 불필요 속성 제거 -->
+				<div class="radiobox c">
+					<label class="radio">
+						<input type="radio" name="radio_md2" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_3">
+						<span class="txt">있음</span>
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio_md2" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_4">
+						<span class="txt">없음</span>
+					</label>
+				</div>
+				<!--// [D] 2022-01-24 불필요 속성 제거 -->
+				<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_3">
+					<h4 class="hd-tit5">국민연금전환금</h4>
+					<span class="input a won no-lb">
+						<label class="lb blind" for="input-02">국민연금전환금 입력</label>
+						<input type="tel" placeholder="입력하세요" value="" id="input-02"><i class="w">원</i>
+					</span>
+					<div class="ext"><p>128억 5,825만 8,552원</p></div>
+					<h4 class="hd-tit5 mt28">국민연금전환금 처리방법</h4>
+					<div class="lst-rdo-wrp">
+						<div class="lrbox">
+							<ul class="lrlst">
+								<li>
+									<label class="radio">
+										<input type="radio" name="radio1" id="kkk1">
+										<span class="txt">퇴직소득세 계산 후 국민연금전환금 단체 반환</span>
+										<p class="txt-dsc">[퇴직연금제도 도입 시 국민연금전환금을 <strong class="bold">정산하지 않고</strong> 부담금을 납입하였음<strong class="bold">(아직 차감하지 않음)</strong></p>
+									</label>
+								</li>
+								<li>
+									<label class="radio">
+										<input type="radio" name="radio1" id="kkk2">
+										<span class="txt">퇴직소득세 계산에만 적용</span>
+										<p class="txt-dsc">[퇴직연금제도 도입 시 국민연금전환금을 <strong class="bold">정산하여</strong> 부담금을 납입하였음<strong class="bold">(이미 차감함)</strong></p>
+									</label>	
+								</li>									
+							</ul>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">중간정산</h3>			
+				<!-- [D] 2022-02-15 항목 제거 <h4 class="hd-tit5">중간정산 여부</h4>-->
+				<!-- [D] 2022-01-24 불필요 속성 제거 -->
+				<div class="radiobox c">
+					<label class="radio">
+						<input type="radio" name="radio_md3" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_5">
+						<span class="txt">있음</span>
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio_md3" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_6">
+						<span class="txt">없음</span>
+					</label>
+				</div>
+				<!--// [D] 2022-01-24 불필요 속성 제거 -->
+				<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_5">
+					<div class="ut-addfile">
+						<ul class="addfile">
+							<li>
+								<div class="fbox">
+									<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+									<div class="bts">
+										<label class="btn sm f btn-attach" for="btn_001" title="원천징수영수증">
+											<em class="btx">첨부하기</em>
+											<input class="file" type="file" accept="image/*; capture=camera" id="btn_001">
+										</label>
+									</div>
+									<!-- 서류 첨부후 <div class="bts btn2">
+										<button type="button" class="btn sm f comp" title="원천징수영수증">미리보기</button>
+										<label class="btn sm f comp btn-attach" for="btn_002" title="원천징수영수증">
+											<em class="btx">다시첨부</em>
+											<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+										</label>
+									</div> -->
+								</div>
+							</li>
+						</ul>
+					</div>			
+				</div>			
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">퇴직위로금</h3>			
+				<!-- [D] 2022-02-15 항목 제거 <h4 class="hd-tit5">퇴직위로금 존재 여부</h4>-->
+				<!-- [D] 2022-01-24 불필요 속성 제거 -->
+				<div class="radiobox c">
+					<label class="radio">
+						<input type="radio" name="radio_md4" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_7">
+						<span class="txt">있음</span>
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio_md4" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_8">
+						<span class="txt">없음</span>
+					</label>
+				</div>
+				<!--// [D] 2022-01-24 불필요 속성 제거 -->
+				<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_7">
+					<div class="ut-addfile">
+						<ul class="addfile">
+							<li>
+								<div class="fbox">
+									<div class="hdt"><span class="tit">원천징수영수증 제출</span></div>
+									<div class="bts">
+										<label class="btn sm f btn-attach" for="btn_002" title="원천징수영수증">
+											<em class="btx">첨부하기</em>
+											<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+										</label>
+									</div>
+									<!-- 서류 첨부후 <div class="bts btn2">
+										<button type="button" class="btn sm f comp" title="원천징수영수증">미리보기</button>
+										<label class="btn sm f comp btn-attach" for="btn_002" title="원천징수영수증">
+											<em class="btx">다시첨부</em>
+											<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+										</label>
+									</div> -->
+								</div>
+							</li>
+						</ul>
+					</div>			
+				</div>							
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">퇴직금 수령</h3>			
+				<!-- [D] 2022-02-15 항목 제거 <h4 class="hd-tit5">수령방법</h4>-->
+				<!--[D] 2022-02-15 라디오 레이아웃 변경 -->
+				<!--[D] 2020.01.24 불필요 속성 제거 -->
+				<div class="etp-radio_box"><!--[D] 2022-02-24 클래스명변경 -->
+					<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->
+					<label class="radio">
+						<input type="radio" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_1">
+						<span class="txt">교보생명 IRP로 받기</span>
+					</label>
+					<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_1">
+						<!-- <span class="select a no-lb set">
+							<label class="lb blind" for="select08">상품 매도방법 선택</label>
+							<select name="select-3" id="select08" title="상품 매도방법 선택">
+								<option>상품 매도방법 선택</option>
+								<option>상품 그대로 이전</option>
+								<option>상품 팔고 현금으로 이전</option>
+							</select>
+						</span>	 -->
+						<h4 class="hd-tit5">상품 매도방법</h4>
+						<span class="select a no-lb set">
+							<label class="lb blind" for="select220">상품 매도방법 선택</label>
+							<select name="select-3" id="select1220" title="상품 매도방법 선택">
+								<option>선택</option>
+								<option>선택</option>
+								<option>선택</option>
+							</select>
+						</span>
+						<h4 class="hd-tit5 mt24">입금계좌 금융기관</h4>
+						<!-- [D] 2022-03-07 버튼으로 변경 -->
+						<span class="input a">
+							<input type="button" value="금융기관 선택" title="금융기관" onclick="console.log('호출')">
+						</span>
+						<!--// [D] 2022-03-07 버튼으로 변경 -->
+						<h4 class="hd-tit5 mt24">계좌번호</h4>
+						<span class="input a no-lb readonly">
+							<label class="lb blind" for="input-12ss">계좌번호 입력</label>
+							<input type="tel" patter="\d*" title="계좌번호 입력" placeholder="입력하세요." id="input-12ss">
+						</span>
+						<h4 class="hd-tit5 mt24">예금주</h4>
+						<span class="input a no-lb readonly">
+							<label class="lb blind" for="input-12sss">예금주</label>
+							<input type="text" patter="\d*" title="입력" value="김교보" readonly id="input-12sss">
+						</span>							
+					</div>		
+					<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->				
+					<label class="radio">
+						<input type="radio" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_2">
+						<span class="txt">타사 IRP로 받기</span>
+					</label>
+					<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_2">
+						<h4 class="hd-tit5">
+							<span class="tt">타사 IRP 연금사업자(금융기관)</span>
+							<div class="ut-tooltip">
+								<button type="button" class="ico help bt-tooltip">도움말</button>
+								<div class="toolctn">
+									<div class="tpmsg">
+										<p>IRP 계좌를 만든 다른 금융기관을 선택해 주세요.</p>
+									</div>
+								</div>
+							</div>	
+						</h4>
+						<!-- [D] 2022-03-07 버튼으로 변경 -->
+						<span class="input a">
+							<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+						</span>
+						<!--// [D] 2022-03-07 버튼으로 변경 -->
+						<h4 class="hd-tit5 mt24">
+							<span class="tt">입금계좌 금융기관</span>
+							<div class="ut-tooltip">
+								<button type="button" class="ico help bt-tooltip">도움말</button>
+								<div class="toolctn">
+									<div class="tpmsg">
+										<p>IRP 계좌 사본(확인서)에 있는 입금계좌의 금융기관을 선택해 주세요.</p>
+									</div>
+								</div>
+							</div>	
+						</h4>
+						<!-- [D] 2022-03-07 버튼으로 변경 -->
+						<span class="input a">
+							<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+						</span>
+						<!--// [D] 2022-03-07 버튼으로 변경 -->
+						<h4 class="hd-tit5 mt24">계좌번호</h4>
+						<span class="input a no-lb">
+							<label class="lb blind" for="input-20">계좌번호</label>
+							<input  type="tel" pattern="\d*" title="입력" placeholder="입력하세요" id="input-20">
+						</span>
+						<h4 class="hd-tit5 mt24">예금주</h4>
+						<span class="input a no-lb readonly">
+							<label class="lb blind" for="input-21">계좌번호</label>
+							<input type="tel" pattern="\d*" title="입력" readonly placeholder="김교보" id="input-21"><!-- [D] 2022-01-21 input 변경 -->
+						</span>	
+						<div class="ut-addfile">
+							<ul class="addfile">
+								<li>
+									<div class="fbox">
+										<div class="hdt"><span class="tit">타사 IRP 계좌 사본<br>(확인서)</span></div>
+										<div class="bts">
+											<label class="btn sm f btn-attach" for="btn_011" title="타사 IRP 계좌 사본">
+												<em class="btx">첨부하기</em>
+												<input class="file" type="file" accept="image/*; capture=camera" id="btn_011">
+											</label>
+										</div>
+									</div>
+								</li>							
+							</ul>
+						</div>										
+					</div>		
+					<!-- [D] 2022-06-13 클래스 'cr' 삭제 -->								
+					<label class="radio">
+						<input type="radio" name="radio_c2" data-ui-tab-btn="tab_rb_8" aria-controls="tab_rb_8_3">
+						<span class="txt">일시금 받기</span>
+					</label>					
+					<div data-ui-tab-ctn="tab_rb_8" aria-labelledby="tab_rb_8_3">
+						<h4 class="hd-tit5">입금계좌 금융기관</h4>
+						<!-- [D] 2022-03-07 버튼으로 변경 -->
+						<span class="input a">
+							<input type="button" value="선택" title="금융기관" onclick="console.log('호출')">
+						</span>
+						<!--// [D] 2022-03-07 버튼으로 변경 -->
+						<h4 class="hd-tit5 mt24">계좌번호</h4>
+						<span class="input a no-lb">
+							<label class="lb blind" for="input-22">계좌번호</label>
+							<input type="tel" pattern="\d*" title="입력" placeholder="입력하세요" id="input-22"><!-- [D] 2022-01-21 input 변경 -->
+						</span>
+						<h4 class="hd-tit5 mt24">예금주</h4>
+						<span class="input a no-lb readonly">
+							<label class="lb blind" for="input-2ss">계좌번호</label>
+							<input type="text" title="입력" readonly value="김교보" id="input-2ss">
+						</span>									
+					</div>
+				</div>
+				<!--//[D] 2022-02-15 라디오 레이아웃 변경 -->						
+			</div>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">					
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

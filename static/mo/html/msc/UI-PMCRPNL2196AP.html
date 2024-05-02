@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-pdmpsell pop-etppdmpsell" id="pop-etppdmpsell">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">매도신청</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="selltents">
+						<h2 class="hd-tit3">이 상품은 매수일에 따라 만기일과 적용이율이 달라집니다.<br>만기까지 남은 기간과 이율을 고려하여 매도할 상품을 직접 선택해 주세요.</h2>
+						<div class="sellhdt mt32 hdt-g"><!--[D]2022-06-23 클래스 hdt-g 추가-->
+							<div class="tit">(무)동부생명 DB GIC 2년형</div>
+							<div class="tdl">
+								<div class="tdt">적립금액</div>
+								<div class="tdd">
+									<span class="prc t-red"><!-- [D]2022-06-27 클래스 t-red 추가-->
+										<strong class="p">6,736,104</strong><i class="w">원</i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<span class="select a">
+							<label class="lb blind" for="sel_id0">목록 정렬</label>
+							<select id="sel_id0" name="sel_id0">
+								<option>빠른 만기 순</option>
+								<option>이자손해 적은 순</option>
+								<option>적립금 많은 순</option>
+							</select>
+						</span>
+						<div class="selllist">
+							<div class="hinfo">
+								<div class="count">총 <strong>5</strong>개</div>
+								<div class="date">
+									<span class="tt">2020.01.01 기준</span>
+									<div class="ut-tooltip">
+										<button type="button" class="ico help sm bt-tooltip">도움말</button>
+										<div class="toolctn">
+											<div class="tpmsg">직전영업일 기준 매도금액이 표기됩니다.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="pmcard-list">
+								<li>
+									<div class="ut-dcard e">
+										<div class="inr">
+											<div class="stds">
+												<div class="dtds">
+													<ul class="dlt">
+														<li>
+															<div class="dl">
+																<div class="dt">매수일</div>
+																<div class="dd">2019-11-19</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">만기일</div>
+																<div class="dd">2020.01.01</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적용 이율</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">1.80</strong><i class="w">%</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적립 금액</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">6,736,104</strong><i class="w">원</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt c">매도금액</div>
+																<div class="dd">
+																	<div class="fmset col">
+																		<div class="fm">
+																			<span class="input won a"><input type="tel" pattern="\d*" title="매도금액" placeholder="숫자로 입력" value="6,736,104"><i class="w">원</i></span>
+																		</div>
+																		<div class="bts">
+																			<div class="btn-set"><button type="button" class="btn sm">전액매도</button></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ut-dcard e">
+										<div class="inr">
+											<div class="stds">
+												<div class="dtds">
+													<ul class="dlt">
+														<li>
+															<div class="dl">
+																<div class="dt">매수일</div>
+																<div class="dd">2019-11-19</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">만기일</div>
+																<div class="dd">2020.01.01</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적용 이율</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">1.80</strong><i class="w">%</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적립 금액</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">6,736,104</strong><i class="w">원</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt c">매도금액</div>
+																<div class="dd">
+																	<div class="fmset col">
+																		<div class="fm">
+																			<span class="input won a"><input type="tel" pattern="\d*" title="매도금액" placeholder="숫자로 입력" value="6,736,104"><i class="w">원</i></span>
+																		</div>
+																		<div class="bts">
+																			<div class="btn-set"><button type="button" class="btn sm">전액매도</button></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">
+																	<span class="tt">중도해지차액</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">지금 매도하면 이자가 덜 지급됩니다.</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p orange">736,104</strong><i class="w">원</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt b no-hide"> <!-- no-hide 넣으면 안사라짐-->
+				<div class="box-set">
+					<div class="pdmd-ttl">
+						<div class="box">
+							<div class="htit">매도금액</div>
+							<div class="hrlt">
+								<div class="dd b">
+									<span class="prc">
+										<strong class="p">6,736,104</strong><i class="w">원</i><em>(100%)</em>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-etppdmpsell');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">가입상세안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure">
+						<!-- 탭 -->
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">가입안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보장내용</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">연금액 예시</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">해지환급금예시</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 가입안내 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<h2 class="hd-tit3">가입안내사항</h2>
+							<div class="ut-tbl a">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">연금지급형태</th>
+											<td>종신연금형 [개인형/부부형, 정액형[5년(5회), 10년(10회), 20년(20회), 30년(30회), 100세보 증]/체증형(5% 체증, 10% 체증)] 확정기간연금형 (5, 10, 15, 20, 25, 30년), 상속연금형</td>
+										</tr>
+										<tr>
+											<th scope="row">선택특약</th>
+											<td>고도장해납입면제특약, 플러스수술특약(갱신형)Ⅲ, 재해사망특약, 재해상해특약1형, 입원특약Ⅲ</td>
+										</tr>
+										<tr>
+											<th scope="row">연금지급개시나이</th>
+											<td>18~79세</td>
+										</tr>
+										<tr>
+											<th scope="row">가입나이</th>
+											<td>0~79세</td>
+										</tr>
+										<tr>
+											<th scope="row">보험기간</th>
+											<td>
+												<ul class="bullet a">
+													<li>주계약 – 연금개시 전 보험기간: 계약일부터 연금지급개시나이 계약해당일 전일까지 연금개시 후 보험기간: 연금지급개시나이 계약해당일로부터 종신까지</li>
+													<li>특약 - 45~80세 만기/ 갱신형특약: 5년 만기 갱신형 / 고도장해납입면제특약: 주계약의 보험료 납입기간</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">납입기간</th>
+											<td>
+												<ul class="bullet a">
+													<li>주계약 - 적립형: 월납 [3년·5년·7년·10년· 12년·15년·20년·25년·30년납]</li>
+													<li>통합형: 일부일시납 [월납+일시납]</li>
+													<li>특약 – 3년·5년·7년·10년·12년·15년·20년·25년·30년납</li>
+												</ul>
+												갱신형특약 및 고도장해납입면제특약: 전기납
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">주계약 기본 보험료</th>
+											<td>월납(1구좌 기준): 20만원 이상 100만원 이하<br><span>※ 3년납의 경우 30만원 이상 100만원 이하<br>일시납: 300만원 이상</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>계약을 체결할 때 연금지급형태는 종신연금형[개인형, 10년(10회) 보증 정액형]으로 가입되며 연금지급개시 전에 연금지급형태를 변경할 수 있습니다.</li>
+							</ul>
+
+						</div>
+						<!-- // 가입안내 -->
+
+						<!-- 보장내용 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<h2 class="hd-tit3">연금지급형태 안내 <span>(연금개시 후 보험기간)</span></h2>
+							<p class="c-txt">연금지급 사유: 피보험자가 연금개시 후 보험기간 중 매년 계약해당일에 살아있을 경우</p>
+							<div class="sec-wrap">
+								<h3 class="hd-tit4">종신연금형</h3>
+								<img src="../../img/prd/6082_img1@2x.png" alt="적립액 보증지급 생존연금 가입 연금지급개시 종신">
+								<p class="txt-15">연금액을 종신토록 지급받는 형태</p>
+								<p class="txt-12"><span>※</span> 연금지급 개시 이후에는 해지 불가</p>
+							</div>	
+							<div class="sec-wrap">
+								<h3 class="hd-tit4">확정기간 연금형</h3>
+								<img src="../../img/prd/6082_img2@2x.png" alt="적립액 생존연금 가입 연금지급개시(5,10,15,20,25,30년 선택) ">
+								<p class="txt-15">연금액을 일정 기간 동안 지급받는 형태</p>
+							</div>
+							<div class="sec-wrap">
+								<h3 class="hd-tit4">상속연금형</h3>
+								<img src="../../img/prd/6082_img3@2x.png" alt="적립액 생존연금 가입 연금지급개시 종신 ">
+								<p class="txt-15">이자를 생존연금으로 지급하고, 사망했을 경우에는 해당 시점의 적립액을 사망 시 수익자가 일시금으로 지급받는 형태</p>
+							</div>	
+
+							<h2 class="hd-tit3 mt60">주계약 보장내용 <span>(주계약 연금개시 전 보험기간)</span></h2>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:80%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" colspan="2">적립형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>급부명칭</td>
+											<td class="tl-left">재해장해급여금</td>
+										</tr>
+										<tr>
+											<td>지급사유</td>
+											<td class="tl-left">연금개시전 보험기간 중 피보험자가 재해로 각 장해지급률에 해당하는 장해상태가 되었을 경우</td>
+										</tr>
+										<tr>
+											<td>지급금액</td>
+											<td class="tl-left">1,000만 원 x 해당 장해지급률</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<ul class="bullet b lg">
+								<li>피보험자가 연금개시 전 보험기간 중 사망하였을 경우에는 「사망 당시 이미 납입한 보험료와 적립액 중 큰 금액」을 계약자에게 지급합니다.</li>
+								<li>연금지급 연기기간 중 피보험자가 사망하였을 경우에는 사망 당시의 적립액을 계약자에게 지급합니다.</li>
+							</ul>
+
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:40%">
+										<col style="width:40%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" colspan="3">통합형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>급부명칭</td>
+											<td>재해장해급여금</td>
+											<td>사망보험금</td>
+										</tr>
+										<tr>
+											<td>지급사유</td>
+											<td>연금개시 전 보험기간 중 피보험자가 재해로 각 장해지급류에 해당하는 장해상태가 되었을 경우</td>
+											<td>연금개시 전 보험기간 중 피보험자가 사망하였을 경우</td>
+										</tr>
+										<tr>
+											<td>지급금액</td>
+											<td>1,000만 원 x 해당 장해지급률</td>
+											<td>기본보험료(일시납부분)의 7% + 사망 당시의 일시납부분 적립액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<ul class="bullet b lg">
+								<li>피보험자가 연금개시 전 보험기간 중 사망하였을 경우에는 「사망 당시 이미 납입한 보험료와 적립액 중 큰 금액」을 계약자에게 지급합니다.</li>
+								<li>연금지급 연기기간 중 피보험자가 사망하였을 경우에는 사망 당시의 적립액을 계약자에게 지급합니다.</li>
+								<li>(일반)사망보험금은 '고의적 사고 및 2년 이내 자살'의 경우에 지급을 제한합니다.</li>
+							</ul>
+						</div>
+						<!-- // 보장내용 -->
+
+						<!-- 연금액 예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+							<h2 class="hd-tit3">주계약 보험료 예시</h2>
+							
+						</div>
+						<!-- // 연금액 예시 -->
+
+						<!-- 해지환급금예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+							<h2 class="hd-tit3">주계약 해지환급금 예시</h2>
+							
+						</div>
+						<!-- // 해지환급금예시 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body chp">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a xs pop-chplogout" id="pop-chplogout">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">자동 로그아웃</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p class="text1">
+						<span class="color10">19초 후</span> 자동 로그아웃 예정입니다. <br>
+						안전한 금융거래를 위해 30분 동안 사이트를 이용하지 <br>
+						않을 경우 자동 로그아웃 됩니다.
+					</p>
+					<p class="text2">로그인 시간을 연장하시겠습니까?</p>
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn rd b">로그아웃</button>
+					<button type="button" class="btn rd a">연장하기</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-chplogout');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

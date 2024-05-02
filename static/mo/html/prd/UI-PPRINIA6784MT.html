@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"상품부가서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page prd add-service btm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents" data-ui-fsize="ctn">	
+			<section class="top-area type2 bg6">
+				<div class="top-btn-area">
+					<button type="button" class="btn-fsize" data-ui-fsize="btn"><i class="blind">글자크기 조정하기</i></button>
+					<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+				</div>
+				
+				<h2 class="hd-tit2">교보주니어헬스케어서비스</h2>
+				<div class="tit">교육보험 가입고객용</div>
+				<div class="top_cont">				
+					단계별 맞춤성장 안내부터<br>
+					해외 의료지원까지<br>
+					<strong>우리아이 건강지킴이</strong>					
+				</div>				
+			</section>
+
+			<section class="sec-wrap">
+				<h3 class="hd-tit4">교보주니어헬스케어서비스를 이용해 보세요.</h3>
+				<div class="btn-set vt">			
+					<button type="button" class="btn f md ico-call-blue ico-r">교보주니어헬스케어서비스 콜센터</button>
+					<button type="button" class="btn md ico-elink ico-r">교보주니어헬스케어서비스 홈페이지</button>
+				</div>
+			</section>
+		
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이용방법</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교보주니어헬스케어서비스</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">교보주니어헬스케어서비스Ⅱ</a></li>
+				</ul>
+			</div>
+
+			<!-- 이용방법 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어디에서 이용하나요?</h4>
+					<p>「교보주니어헬스케어서비스」는 교보주니어헬스케어서비스 홈페이지(<a href="http://www.kyobojuniorhealthcare.com" target="_blank" title="새창열림">www.kyobojuniorhealthcare.com</a>) 또는 교보주니어헬스케어서비스 콜센터(1811-7524)을 통해 이용할 수 있습니다.</p>
+
+					<h5 class="hd-tit4">주요화면</h5>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<!-- 22-07-11 주요화면 이미지수정 -->
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6784_1@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6784_2@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6784_3@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6784_4@2x.png" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sec-box">
+					<h4 class="hd-tit2">누가 이용할 수 있나요?</h4>
+					<div class="balloon-box-wrap">
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">아래 상품에 가입하시면 서비스를 이용할 수 있어요.</span>
+						<!-- [D] 2022-08-22 퍼블화면 상의 내용 일치하게 수정 -->
+						<h5 class="hd-tit3" id="ball_1">어린이 보험 상품</h5>
+						<div class="balloon-box" >
+							<ul class="un-bullet">
+								<li>(무)교보금쪽같은내아이보험(갱신형) 가입</li>
+							</ul>							
+						</div>		
+						<!--// [D] 2022-08-22 퍼블화면 상의 내용 일치하게 수정 -->						
+					</div>
+					<ul class="bullet a lg">
+						<li>교보주니어헬스케어서비스는 미리보는(무)교육변액보험상품에 가입한 고객에게 제공되며, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출하고 서비스 대상자임을 확인받은 후 이용할 수 있습니다.</li>
+						<li>서비스 부가기준 등 자세한 내용은 교보생명 FP(재무설계사) 또는 교보생명 콜센터(1588-1001)에 문의해 주세요. </li>
+					</ul>
+					
+				</div>	
+				
+			</div>
+			<!-- // 이용방법 -->
+
+			<!-- 교보주니어헬스케어서비스 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어떤 혜택을 받나요?</h4>
+					<div class="s-section s-section2">
+						<h5 class="hd-tit3 ball-tit" id="ball_2">스텝케어</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_2">시기별 건강·성장관리로 아이의 성장이 올바르게<br>진행될 수 있도록 도와 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">영유아 육아관리(0~5세)</h6>
+							<ul class="bullet a lg">
+								<li>엄마와 자녀를 위한 시기별·테마별 16가지 집중관리 프로그램(양육/건강/성장)</li>
+							</ul>
+						
+							<h6 class="hd-tit4">성장관리(6~18세)</h6>
+							<ul class="bullet a lg">
+								<li>건강칼럼 및 건강정보 제공</li>
+								<li>성장관리 클리닉 안내, 발달센터 우대<br>(고객이 실제 비용 부담)</li>
+							</ul>
+							<div class="inr-box evenly">
+								<ul>
+									<li class="cont img5">성장 자가진단<br>(키 성장예측,<br>비만도 측정)</li>
+									<li class="arr"></li>
+									<li class="cont img1">성장 결과분석에<br>따른 상담 및 안내</li>									
+								</ul>
+							</div>
+						
+							<h6 class="hd-tit4">심리관리(6~18세)</h6>
+							<ul class="bullet a lg">
+								<li>심리 콘텐츠 제공</li>
+								<li>심리상담센터 심리검사 및 상담 우대<br>(고객이 실제 비용 부담)</li>
+							</ul>
+							<div class="inr-box evenly">
+								<ul>
+									<li class="cont img5">심리 자가진단<br>(또래관계/ADHD<br>/소아우울증 등)</li>
+									<li class="arr"></li>
+									<li class="cont img1">심리 결과분석에<br>따른 상담 및 안내</li>									
+								</ul>
+							</div>
+						</div>
+						
+						<h5 class="hd-tit3 ball-tit" id="ball_3">헬스케어</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_3">아이 건강에 대한 사소한 궁금증 해결부터<br>병원예약, 방문상담까지 제공해 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">전문의료진 건강상담</h6>
+							<ul class="bullet a lg">
+								<li>간호사 상담 접수 후 전문의, 간호사, 영양사, 심리상담사, 운동처방사 등 각 분야별 전문가와 전화상담</li>
+							</ul>
+						
+							<h6 class="hd-tit4">병원·의료진 안내 및 예약대행</h6>
+							<ul class="bullet a lg">
+								<li>질병 진료 및 치료를 위한 병원·의료진 안내 및 진료예약 대행</li>
+							</ul>
+							<div class="inr-box-line">
+								<ul>
+									<li class="cont img1">1811-7524<br>교보주니어헬스<br>콜센터</li>
+									<li class="arr"></li>
+									<li class="cont img2">전문간호사<br>건강상담</li>
+									<li class="plus"></li>
+									<li class="cont img4">질환 발생 시<br>병원진료 예약 및<br>명의 안내</li>
+								</ul>
+							</div>
+					
+							<h6 class="hd-tit4">건강검진 우대 및 예약</h6>
+							<ul class="bullet a lg">
+								<li>제휴 병원에서 건강검진 시 우대(검진비용은 고객 부담)</li>
+								<li>맞춤형 건강검진 설계 및 검진항목 안내</li>
+								<li>건강검진 결과 상담</li>
+							</ul>
+					
+							<h6 class="hd-tit4">방문 치료지원</h6>
+							<ul class="bullet a lg">
+								<li>중대질환 방문 지원</li>
+								<li>중대질환 발생 시 전문간호사 방문상담 및 질병 교육 (최대 4회, 소아당뇨는 최대 2회)
+									<ul class="bullet b la">
+										<li>중대질환: 암, 뇌종양, 악성림프종, 소아뇌졸중, 소아마비, 만성신부전증, 소아당뇨)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<h5 class="hd-tit3 ball-tit" id="ball_4">글로벌케어</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_4">해외에서 상해나 질병으로 위급한 상황 발생 시 신속<br>하고도 편안하게 해결하실 수 있도록 도와 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">현지병원 안내 및 예약</h6>
+							<ul class="bullet a lg">
+								<li>출국 전 국가별 예방접종 및 유의사항 상담</li>
+								<li>상해나 질병으로 의료 상황 발생 시 현지병원, 진료절차 안내 및 진료예약 대행
+									<ul class="bullet b la">
+										<li>서비스 대상 자녀 및 동반 부모까지 이용 가능</li>
+									</ul>
+								</li>
+							</ul>
+						
+							<h6 class="hd-tit4">언어지원 및 의료서류 번역</h6>
+							<ul class="bullet a lg">
+								<li>현지 의료진과 실시간 의료 통역</li>
+								<li>해당 국가 의료서류 번역 지원</li>
+							</ul>
+						</div>						
+					</div>
+				</div>				
+			</div>
+			<!-- // 교보주니어헬스케어서비스 -->
+
+			<!-- 교보주니어헬스케어서비스Ⅱ-->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어떤 혜택을 받나요?</h4>
+					<div class="ut-tabs c lg mt37">
+						<ul class="menu" role="tablist">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_dl2" aria-controls="tab_dl2_1" href="javascript:;" role="tab" aria-selected="false">혜택 1</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_dl2" aria-controls="tab_dl2_2" href="javascript:;" role="tab" aria-selected="false">혜택 2</a></li>
+						</ul>
+					</div>
+					<!-- 혜택 1 -->
+					<div data-ui-tab-ctn="tab_dl2" aria-labelledby="tab_dl2_1" class="active">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3 ball-tit" id="ball_12">스텝케어</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_12">시기별 건강·성장관리로 아이의 성장이 올바르게<br>진행될 수 있도록 도와 드려요.</span>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">영유아 육아관리(0~5세)</h6>
+								<ul class="bullet a lg">
+									<li>엄마와 자녀를 위한 시기별·테마별 16가지 집중관리 프로그램(양육/건강/성장)</li>
+								</ul>
+							
+								<h6 class="hd-tit4">성장관리(6~18세)</h6>
+								<ul class="bullet a lg">
+									<li>건강칼럼 및 건강정보 제공</li>
+									<li>성장관리 클리닉 안내, 발달센터 우대<br>(고객이 실제 비용 부담)</li>
+								</ul>
+								<div class="inr-box evenly">
+									<ul>
+										<li class="cont img5">성장 자가진단<br>(키 성장예측,<br>비만도 측정)</li>
+										<li class="arr"></li>
+										<li class="cont img1">성장 결과분석에<br>따른 상담 및 안내</li>									
+									</ul>
+								</div>
+							
+								<h6 class="hd-tit4">심리관리(6~18세)</h6>
+								<ul class="bullet a lg">
+									<li>심리 콘텐츠 제공</li>
+									<li>심리상담센터 심리검사 및 상담 우대<br>(고객이 실제 비용 부담)</li>
+								</ul>
+								<div class="inr-box evenly">
+									<ul>
+										<li class="cont img5">심리 자가진단<br>(또래관계/ADHD<br>/소아우울증 등)</li>
+										<li class="arr"></li>
+										<li class="cont img1">심리 결과분석에<br>따른 상담 및 안내</li>									
+									</ul>
+								</div>
+							</div>
+							
+							<h5 class="hd-tit3 ball-tit" id="ball_13">헬스케어</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_13">아이 건강에 대한 사소한 궁금증 해결부터<br>병원예약, 방문상담까지 제공해 드려요.</span>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">전문의료진 건강상담</h6>
+								<ul class="bullet a lg">
+									<li>간호사 상담 접수 후 전문의, 간호사, 영양사, 심리상담사, 운동처방사 등 각 분야별 전문가와 전화상담</li>
+								</ul>
+							
+								<h6 class="hd-tit4">병원·의료진 안내 및 예약대행</h6>
+								<ul class="bullet a lg">
+									<li>질병 진료 및 치료를 위한 병원·의료진 안내 및 진료예약 대행</li>
+								</ul>
+								<div class="inr-box-line">
+									<ul>
+										<li class="cont img1">1811-7524<br>교보주니어헬스<br>콜센터</li>
+										<li class="arr"></li>
+										<li class="cont img2">전문간호사<br>건강상담</li>
+										<li class="plus"></li>
+										<li class="cont img4">질환 발생 시<br>병원진료 예약 및<br>명의 안내</li>
+									</ul>
+								</div>
+						
+								<h6 class="hd-tit4">건강검진 우대 및 예약</h6>
+								<ul class="bullet a lg">
+									<li>제휴 병원에서 건강검진 시 우대(검진비용은 고객 부담)</li>
+									<li>맞춤형 건강검진 설계 및 검진항목 안내</li>
+									<li>건강검진 결과 상담</li>
+								</ul>
+						
+								<h6 class="hd-tit4">방문 치료지원</h6>
+								<ul class="bullet a lg">
+									<li>중대질환 방문 지원</li>
+									<li>중대질환 발생 시 전문간호사 방문상담 및 질병 교육 (최대 4회, 소아당뇨는 최대 2회)
+										<ul class="bullet b la">
+											<li>중대질환: 암, 뇌종양, 악성림프종, 소아뇌졸중, 소아마비, 만성신부전증, 소아당뇨)</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+	
+							<h5 class="hd-tit3 ball-tit" id="ball_14">글로벌케어</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_14">해외에서 상해나 질병으로 위급한 상황 발생 시 신속<br>하고도 편안하게 해결하실 수 있도록 도와 드려요.</span>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">현지병원 안내 및 예약</h6>
+								<ul class="bullet a lg">
+									<li>출국 전 국가별 예방접종 및 유의사항 상담</li>
+									<li>상해나 질병으로 의료 상황 발생 시 현지병원, 진료절차 안내 및 진료예약 대행
+										<ul class="bullet b la">
+											<li>서비스 대상 자녀 및 동반 부모까지 이용 가능</li>
+										</ul>
+									</li>
+								</ul>
+							
+								<h6 class="hd-tit4">언어지원 및 의료서류 번역</h6>
+								<ul class="bullet a lg">
+									<li>현지 의료진과 실시간 의료 통역</li>
+									<li>해당 국가 의료서류 번역 지원</li>
+								</ul>
+							</div>						
+							
+						</div>
+					</div>
+					<!--// 혜택 1 -->
+
+					<!-- 혜택 2 -->
+					<div data-ui-tab-ctn="tab_dl2" aria-labelledby="tab_dl2_2">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3 ball-tit" id="ball_21">알지케어</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_21">활동적이고 도전적인<br>α(알파)세대 및 Z(제트)세대를 위한 맞춤케어</span>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">청소년 인과 예방 & 관리 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>청소년 안과질환 예방 및 관리를 위한 가이드 제공</li>
+								</ul>
+						
+								<h6 class="hd-tit4">청소년 영양 & 운동 관리 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>청소년기 영양 및 운동 관리르 위한 가이드 제공</li>
+								</ul>
+						
+								<h6 class="hd-tit4">학업능력 향상 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>집중력, 학습욕구, 두뇌건강에 대한 자기진단/상담 및 피드백</li>
+								</ul>
+
+								<h6 class="hd-tit4">심리 안정 이너피스 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>마인드 코칭, 숙면관리, 스트레스 관리, 학습/교우/가족 상담 등 서비스 제공
+										<ul class="bullet b lg mt10">
+											<li>이너피스(Inner peace): 마음에 평화</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3 ball-tit" id="ball_22">펫케어제휴서비스(고객선택)</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_22">고객님의 선택에 따라 당사와 제휴한 업체<br>
+							「(주)펫네스트」의 펫케어제휴서비스를 이용할 수 있습니다.<br>고객이 직접 선택하고 비용을 부담함</span>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">펫케어제휴서비스 이용방법</h6>
+								<div class="inr-box-vt">
+									<ul>
+										<li>교보주니어 헬스케어서비스Ⅱ 홈페이지 접속</li>
+										<li>마이페이지 &gt; 펫케어 제휴번호 &gt;제휴번호 확인</li>
+										<li>제휴사 홈페이지에서 회원가입, 비용결제(제휴번호 입력)</li>
+									</ul>
+								</div>
+								<ul class="bullet a lg">
+									<li>제휴서비스 내용 및 서비스 신청방법에 관한 사항은 QR코드 또는 펫케어제휴서비스 업체 홈페이지를 참고하시기 바랍니다.
+										(www.petcarecard.co.kr)</li>
+									<li>펫케어제휴서비스는 향후 제공여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+								</ul>					
+							</div>
+						</div>
+					</div>
+					<!--// 혜택 2 -->
+
+				</div>				
+			</div>
+			<!-- // 교보주니어헬스케어서비스Ⅱ -->
+			
+			<!-- [s] 22-05-31 위치수정, 클래스 추가 -->
+			<section class="sec-wrap adds-btn">
+				<h3 class="hd-tit4">다른 상품부가서비스가 궁금하시다면?</h3>
+				<button type="button" class="btn c sm">상품부가서비스 전체보기</button>
+			</section>
+			<!-- // [e] 22-05-31 위치수정, 클래스 추가 -->
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<!-- [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+					<ul class="bullet a glst">
+						<li>교보주니어헬스케어서비스는 교보생명이 정한 서비스 부가기준을 충족하고, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출한 주회원(가입자녀), 종회원(계약자)에게 제공합니다.(보험 유지건에 한함)</li>
+						<li>교보주니어헬스케어서비스는 고객 전용 홈페이지(www.kyobokidscare.com), 교보어린이헬스콜센터(1588-4733)를 통해 제공합니다.</li>
+						<li>교보어린이헬스케어서비스는 가입자녀의 만 나이 0~18세까지 제공됩니다.</li>
+						<li>교보주니어헬스케어서비스는 향후 제공여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+						<li>보험계약체결 전 상품설명서와 약관을 읽어보시기 바랍니다.</li>
+						<li>보험상품을 가입할 때 보험계약의 기본사항(보험상품명, 납입기간, 피보험자 등)을 반드시 확인하시기 바랍니다.</li>
+						<li>교보생명은 보험상품에 대해 충분히 설명할 의무가 있으며 가입에 앞서 이에 대한 충분한 설명을 받으시기 바랍니다.</li>
+						<li>보험은 은행상품과 달리 위험보장을 해 드리므로 해지환급금이 납입하신 보험료보다 적거나 없을 수 있습니다.</li>
+					</ul>
+					<!--// [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+				</div>
+			</div>
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a xs sign-adds pop-snglsign" id="pop-snglsign">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">통합인증</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="centbox">
+							<div class="mbl-top">
+								<div class="hdt">
+									<h2 class="hd-tit3"><i class="line">전자서명 또는 본인확인</i>을<br>진행할 인증서를 선택해주세요.</h2>
+								</div>
+							</div>
+
+							<div class="certificate-list">
+								<ul class="list">
+									<li class="ics simp"><a href="javascript:;" class="lks">간편비밀번호</a></li>
+									<li class="ics bio"><a href="javascript:;" class="lks">바이오인증서</a></li>
+									<li class="ics naver bdcc"><a href="javascript:;" class="lks">네이버 인증서</a></li>
+									<li class="ics kpay"><a href="javascript:;" class="lks">카카오페이 인증서</a></li><!-- [D] 2022-05-24 .bdcc클래스 추가 -->
+									<li class="ics pass"><a href="javascript:;" class="lks">패스인증서</a></li>
+									<li class="ics toss"><a href="javascript:;" class="lks">토스인증서</a></li>
+									<li class="ics ctfn bdcc"><a href="javascript:;" class="lks">금융인증서</a></li>
+									<li class="ics ctcm"><a href="javascript:;" class="lks">공동인증서</a></li>
+								</ul>
+							</div>
+						</div>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-snglsign');">닫기</button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-snglsign');
+		</script>
+
+	</div>
+</body>
+</html>

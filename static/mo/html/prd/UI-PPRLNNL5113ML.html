@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-insureView" id="pop-insureView">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험계약대출 신청안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+		
+					<div class="text-group type2">
+						<h2 class="hd-tit4">보험계약대출 안내</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>보험계약대출을 받은 날 원금을 바로 상환할 경우 하루치 이자가 부과됩니다.</li>
+								<li>「인지세법」에 따라 보험계약대출 건별 5천만원 초과 신청 시 인지세가 부과되며, 보험계약대출 금액별 인지세 중 고객님이 납부하실 금액은 다음과 같습니다.
+									<ul class="bullet c">
+										<li>5천만원 초과~1억원 이하: 3만 5천원</li>
+										<li>1억원 초과~10억원 이하: 7만 5천원</li>
+										<li>10억원 초과: 17만 5천원</li>
+									</ul>
+								</li>
+								<li>보험계약대출금액은 고객님이 설정하신 한도 내에서 신청할 수 있습니다.<br>(건별 1억원, 1일 1억원, 1개월 1억원 한도)</li>
+							</ul>
+						</div>
+						<!-- [D] 2022-05-13 붙여쓰기 수정 -->
+						<h2 class="hd-tit4">일괄신청</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<!-- [D] 2022-05-13 붙여쓰기 수정 -->
+								<li>보험계약대출 일괄신청은 고객님의 전체 계약 건 중 보험계약대출 신청가능금액 한도 내에서 한 번에 보험계약대출을 신청하는 것입니다. </li>
+								<li>대출금리가 낮은 계약부터 자동으로 신청됩니다.</li>
+							</ul>
+						</div>
+						<!-- [D] 2022-05-13 붙여쓰기 수정 -->
+						<h2 class="hd-tit4">건별신청</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<!-- [D] 2022-05-13 붙여쓰기 수정 -->
+								<li>보험계약대출 건별신청은 고객님이 가입하신 상품별 대출가능금액 한도 내에서 보험계약대출을 신청하는 것입니다.</li>
+								<li>보험계약대출을 신청할 계약(보험증권번호)을 선택한 후 대출신청금액을 입력하면 됩니다. 보험계약은 최대 5건까지 선택할 수 있습니다.</li>
+								<li>대출신청금액이 즉시 지급되는 변액보험 계약은 [일반보험계약대출 신청] 메뉴에서 이용하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+					
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-insureView');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

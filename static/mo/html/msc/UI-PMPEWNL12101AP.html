@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-mdw pop-bldreg" id="pop-bldreg">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대장구분/대장종류 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="br-desc">
+						건축물대장은 일반건축물대장과 집합건축물대장으로 나뉩니다. 아래 안내를 참고하여 신청하시려는 지면 건축물의 구분과 종류를 확인하시기 바랍니다.
+					</div>
+					<h2 class="tit1">1. 대장구분</h2>
+					<ul class="bullet a">
+						<li>일반: 건물 소유주가 1명이거나 ‘홍길동 외 0명’ 식으로 대표자가 있는 경우</li>
+						<li>집합: 건물 소유주가 여러 명이며 소유주 이름이 각각 명시되는 경우</li>
+					</ul>
+					<p class="bullet b">일반적으로 아파트, 연립주택, 다세대주택 등은 집합건축물에 해당됨.</p>
+					<h2 class="tit1">2. 대장 종류</h2>
+					<h3 class="tit2">(1) 대장구분에서 ‘일반’ 선택 시</h3>
+					<ul class="bullet a">
+						<li>총괄 : 신청 주소지 지번의 모든 건물 표시(해당 지번에 건물이 2개동 이상 있을 경우)</li>
+						<li>일반 : 본인 건물만 표시</li>
+					</ul>
+					<h3 class="tit2">(2) 대장구분에서 ‘집합’ 선택 시</h3>
+					<ul class="bullet a">
+						<li>총괄 : 해당 지번에 있는 모든 건축물 표시</li>
+						<li>표제부 : 해당 지번에 있는 동 표시</li>
+						<li>전유부 : 해당 지번에 있는 동의 호수 표시</li>
+					</ul>
+					<div class="bld-ex">
+						<!-- <h3 class="tit2">예시</h3> -->
+						<ul class="bullet">
+							<li><i class="n">예1)</i> 월드컵아파트 2002호 2호의 건축물대장을 신청할 경우</li>
+						</ul>
+						<ul class="bullet c">
+							<li>‘대장구분: 집합’, ‘대장 종류: 전유부’ 선택</li>
+						</ul>
+						<ul class="bullet">
+							<li><i class="n">예2)</i> 단독주택의 건축물대장을 신청할 경우 </li>
+						</ul>
+						<ul class="bullet c">
+							<li>‘대장구분: 일반’, ‘대장종류: 일반’ 선택</li>
+						</ul>
+					</div>
+					<p class="bullet b">‘해당되는 정보가 있지 않습니다.’라는 메시지가 나타난다면, 해당 건축물의 주소가 정확하지 않거나, 대장구분 또는 대장종류가 잘못 선택된 경우이니 확인 후 다시 신청하시기 바랍니다.</p>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-bldreg');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	
+	
+	<script>
+		ui.popup.open('pop-bldreg');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-mdw pop-addSch" id="pop-addSch2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<!-- [D] 2022-04-21 헤더명 수정 -->
+					<h1 class="ptit">호명검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- [D] 2022-04-21 설명 삭제, 타이틀 수정 -->
+					<h2 class="hd-tit4">해당되는 호명을 선택해 주세요.</h2>
+					<div class="ut-tbl a">
+						<table class="tblist a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">해당되는 동명을 선택</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">선택</th>
+									<th scope="col">호명칭</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><label class="radio"><input type="radio" name="radio1"><span class="txt"></span></label></td>
+									<td>서초네이쳐힐3단지 301동</td>
+								</tr>
+								<tr>
+									<td><label class="radio"><input type="radio" name="radio1"><span class="txt"></span></label></td>
+									<td>서초네이쳐힐3단지 302동</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</main>
+			</div>
+
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a lg">확인</button>
+				</div>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-addSch2');  // 팝업 열기
+
+		
+	</script>
+
+</div>
+</body>
+</html>

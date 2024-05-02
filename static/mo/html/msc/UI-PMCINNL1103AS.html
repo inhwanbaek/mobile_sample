@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<!-- 헤더-->
+		<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"false","class":"is-title","title":"신청완료"}'></include>
+		<include class="gnb" src="../inc/gnb.html"></include>
+
+		<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+		<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+		<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+		<main class="container page result" id="container">
+			<div class="contents vspace" id="contents">
+				<div class="complate-msg icon1">
+					<div class="msg">
+						<p class="p1">홍길동님의<br>
+							<strong class="bold">건강검진결과</strong>입니다.</p>
+					</div>
+				</div>
+
+				<h2 class="hd-tit4" id="ball_1">결과내역</h2>
+				<span data-ui-balloon="left,top" aria-describedby="ball_1" class="tip-msc0035">국민건강보험공단으로부터 수신한 내역입니다.</span>
+				<div class="ut-dtds f dtds type01">
+					<ul class="dlist">
+						<li>
+							<div class="dt">진단유형</div>
+							<div class="dd"><strong class="bold">진단C</strong></div>
+						</li>
+						<li>
+							<div class="dt">검진일자</div>
+							<div class="dd"><strong class="bold">2021.09.15</strong></div>
+						</li>
+						<li>
+							<div class="dt">검진장소 구분</div>
+							<div class="dd"><strong class="bold">-</strong></div>
+						</li>
+					</ul>
+				</div>
+
+				<h2 class="hd-tit4">상세내역</h2>
+				<div class="ut-tbl a">
+					<table class="tblist nl" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">사망보험금</span><span class="cap"></span></caption>
+						<colgroup>
+							<col>
+							<col width="37%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">검진항목</th>
+								<th scope="col">단위</th>
+								<th scope="col">진단 값</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>신장</td>
+								<td>cm</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>체중</td>
+								<td>kg</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>체질량지수</td>
+								<td>kg/m</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>혈압(최고)</td>
+								<td>mmHg</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>혈압(최저)</td>
+								<td>mmHg</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>요단백</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>혈색소</td>
+								<td>g/dl</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>공복혈당</td>
+								<td>mg/dl</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>HDL-콜레스테롤</td>
+								<td>mg/dl</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>중성지방<br>
+									(트리글리세이드)</td>
+								<td>mg/dl</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>혈청크레아티닌</td>
+								<td>mg/dl</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>흉부방사선검사</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">검진자료 제출하기</button>
+					</div>
+				</div>
+			</nav>
+
+		</main>
+	</div>
+</body>
+</html>
+

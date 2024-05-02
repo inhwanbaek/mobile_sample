@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-givedic" id="pop-givedic">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="hd-tit3 ptit">인증서 가져오기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="phone-wrap">
+					<p class="export-txt">프로그램 화면에 표시된 인증번호를 <br>입력하시고, 다음 버튼을 터치해 주세요.</p>
+					<div class="export-box" role="img" aria-label="PC에서 휴대폰으로 인증서 복사하기">  <!-- [웹접근성] 1st 수정 -->
+						<ul class="ico-lst">
+							<li><div class="ico ico-pc">PC</div></li>
+							<li><div class="ico ico-m">휴대폰</div></li>
+						</ul>
+					</div>
+
+					<h5 class="num-titl blind">
+						인증번호
+					</h5>
+					<!-- [웹접근성] 1st 수정 -->
+					<div class="num-inputs">
+						<span class="first-input input a">
+							<label class="lb blind" for="input_id_1">인증번호 앞4자리</label>
+							<input id="input_id_1" type="tel" pattern="\d*" title="인증번호 앞4자리" maxlength="4" value="1234" class="t-center">
+						</span>
+						<span class="second-input input a">
+							<label class="lb blind" for="input_id_2">인증번호 뒷4자리</label>
+							<input id="input_id_2" type="tel" pattern="\d*" title="인증번호 뒷4자리" maxlength="4" value="5678">
+						</span>
+					</div>
+					<!--// [웹접근성] 1st 수정 -->
+					<!-- <div class="num-inputs">
+						<span class="num first-input" title="인증번호 앞4자리">1234</span> 
+						<span class="num second-input" title="인증번호 뒤4자리">5678</span> 
+					</div> -->
+
+					<p class="num-plist">
+						PC에 저장된 공동인증서를 휴대폰으로 복사하면 PC와 모바일에서 동일한 인증서로 모든 금융거래가 가능합니다.
+					</p>
+
+					<ol class="oder-list">
+						<li><span>1</span>PC 홈페이지에서 [PC → 휴대폰 복사] 버튼을 누르면 인증서 목록이 나옵니다.</li>
+						<li><span>2</span>복사할 인증서를 선택하고 인증서 비밀번호를 입력해 주세요.</li>
+						<li><span>3</span>교보생명 앱 실행 후 [인증센터 > 공동인증서 > 인증서 복사 > PC → 휴대폰 복사] 메뉴를 선택해 주세요.</li>
+						<li><span>4</span>PC화면에서 생성된 인증번호를 교보생명 앱 화면에 입력해 주세요.</li>
+						<li><span>5</span>선택하신 공동인증서가 교보생명 앱으로 복사됩니다.</li>
+					</ol>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-givedic');">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-givedic');
+	</script>
+
+</div>
+</body>
+</html>

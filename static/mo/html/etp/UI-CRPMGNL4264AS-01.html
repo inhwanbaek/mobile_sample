@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer c pjoin pop-etfdetail" id="pop-etfdetail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">주문 상세내역</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="etf-detail-wrp">
+						<div class="ut-tbl a">
+							<table class="tblist" cellpadding="0" cellspacing="0"><!-- [D] 2022-06-29 클래스 'nl' 삭제 -->
+								<caption>주문상세내역</caption>
+								<colgroup>
+									<col style="width:25%">
+									<col>
+									<col style="width:25%">
+									<col style="width:25%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">체결단가</th>
+										<th scope="col">체결수량</th>
+										<th scope="col">체결합계</th>
+										<th scope="col">발생수수료</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-r">69,000원</td>
+										<td>3주</td>
+										<td class="txt-r">207,000원</td>
+										<td class="txt-r">60원</td>
+									</tr>
+									<tr>
+										<td class="txt-r">69,100원</td>
+										<td>1주</td>
+										<td class="txt-r">69,100원</td>
+										<td class="txt-r">20원</td>
+									</tr>	
+									<tr>
+										<td class="txt-r">68,900원</td>
+										<td>1주</td>
+										<td class="txt-r">68,900원</td>
+										<td class="txt-r">20원</td>
+									</tr>																																										
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>합계</td>
+										<td>5주</td>
+										<td class="txt-r">345,000원</td>
+										<td class="txt-r">100원</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<p class="t-dsc">발생 수수료는 예수금에서 차감되며, 체결일 16:40 이전에는 예상 수수료 금액이 보여집니다. </p>
+					</div>	
+
+				</main>		
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-etfdetail');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sgnsys',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+	</script>
+</div>
+</body>
+</html>

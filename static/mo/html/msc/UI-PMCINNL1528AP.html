@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"스마트위임 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default billing smt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="smt-tbox">
+				<h2 class="hd-tit3">직접방문이 어려울땐,<br>
+					대리인에게 편리한 스마트위임을 이용하세요
+					</h2>
+				<div class="hd-help">스마트 위임이란?
+					<div class="ut-tooltip">
+						<button type="button" class="ico help bt-tooltip">스마트 위임이란? 도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p>수익자 본인이 고객창구나 고객PLAZA를 직접 방문하기 어려울 때, 온라인상에서 미리 대리인을 지정하여 업무를 위임하는 서비스입니다.
+									이 서비스를 통해 대리인으로 지정된 사람은 위임장, 인감증명서 등 복잡한 서류 없이 수익자 대신 각종 업무를 편리하게 처리할 수 있습니다. <br>
+									※ 미성년 자녀 계약 건으로 신청, 변경, 해지를 할 경우 스마트 위임을 이용할 수 없습니다. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">스마트 위임 신청</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">스마트 위임 해지</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit4" id="ball_1">계약선택</h3>
+			<span data-ui-balloon="right,top" aria-describedby="ball_1">최대 5건까지 선택할 수 있어요.</span>
+
+			<!-- 카드리스트 -->
+			<!-- 체크시 class="ut-dcard a dcard checked" 클래스추가 -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox"><span class="txt">배당</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">실수령액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">70,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">예약접수번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">신청일</div>
+								<div class="dd">2021.11.30</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">유효기간</div>
+								<div class="dd">2021.02.02</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			<!-- 체크시 class="ut-dcard a dcard checked" 클래스추가 -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox"><span class="txt">배당</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">실수령액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">70,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">예약접수번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">신청일</div>
+								<div class="dd">2021.11.30</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">유효기간</div>
+								<div class="dd">2021.02.02</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			<!-- //카드리스트 -->
+
+			<!-- //스마트 위임 혜지 -->
+
+		</div>
+		<!-- //contents -->
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">해지</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

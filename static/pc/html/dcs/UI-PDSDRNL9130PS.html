@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">계약자배당</h2>
+			</div>
+			
+			<div class="dcs-sect">
+				<section class="sect">
+					<h3 class="hd-tit3">계약자 배당금 산출 기준</h3>
+
+
+					<h4 class="hd-tit4 mt30">이자율차 배당금</h4>
+					<ul class="bullet lg a">
+						<li>대상계약: 1년 이상 유지된 유효 배당보험계약</li>
+						<li>배당금액 = ( 직전 보험연도 말 순보험료식 보험료적립금 - 해지공제액 ) × 이자율차배당률</li>
+						<li>이자율차배당률 = 회사별 이자율차배당기준율 - 보험상품별 예정이율
+							<ul class="bullet b mt10">
+								<!-- [D] 2022-04-19 텍스트 수정 -->
+								<li>금리연동형 보험의 보험상품별 예정이율은 사업연도 1년간의 보험료적립금 부리이율 산술평균한 값으로 함</li>
+							</ul>
+						</li>
+					</ul>
+					<h4 class="hd-tit4 mt30">위험률차 배당금</h4>
+					<ul class="bullet lg a">
+						<li>대상계약: 1년 이상 유지된 유효 배당보험계약</li>
+						<li>배당금액 = 당해 연도 위험보험료 × 위험률차배당률</li>
+						<li>위험률차배당률 = ( 1 - 제4회경험생명표 사망률 × 회사별 율/보험료 산출 시 사망률)
+							<ul class="bullet b mt10">
+								<li>위험률차배당률은 계약별, 성별, 연령별로 다름</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section class="sect">
+					<h3 class="hd-tit3">계약자 배당률</h3>
+
+					<h4 class="hd-tit4 mt30">이자율차배당기준율</h4>
+					<ul class="bullet lg a">
+						<li>일반상품: 배당하지 않음</li>
+						<li>연금저축: 2.62%</li> <!--[D] 2022-07-26: 텍스트 수정 -->
+						<li>퇴직(확정): 1.50%</li>
+						<li>퇴직(연동): 배당하지 않음</li>
+					</ul>
+					
+					<h4 class="hd-tit4 mt30">위험률차배당률</h4>
+					<ul class="bullet lg a">
+						<li>2.8%
+							<ul class="bullet b mt10">
+								<li>FY 2022 기준</li> <!--[D] 2022-07-26: 텍스트 수정 -->
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section class="sect">
+					<h3 class="hd-tit3">계약자 배당준비금적용이율</h3>
+					<ul class="bullet lg a">
+						<li>일반상품: 2.50%</li>
+						<li>연금저축: 2.62%</li> <!--[D] 2022-07-26: 텍스트 수정 -->
+						<!-- [D] 2022-04-19 텍스트 수정 -->
+						<li>퇴직(확정): 보험료적립금 부리이율 
+							<ul class="bullet b mt10">
+								<li>FY 2022 기준</li> <!--[D] 2022-07-26: 텍스트 수정 -->
+							</ul>
+						</li>
+					</ul>
+					
+				</section>
+				
+			</div>
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

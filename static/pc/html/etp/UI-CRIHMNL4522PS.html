@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp isrc" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">피보험자</h2>
+			</div>
+			<!-- [D] 2022-03-03 단체명 레이아웃 변경 -->
+			<div class="bg-cdbox">
+				<strong class="group">진방스틸코리아(주)</strong>				
+				<dl class="info">
+					<dt>보험증권번호</dt>
+					<dd>00000012</dd>
+				</dl>								
+			</div>
+			<!--// [D] 2022-03-03 단체명 레이아웃 변경 -->
+			<!-- 조회영역 -->
+			<div class="isrc-search v1">
+				<div class="inr">
+					<div class="pl">
+						<h3 class="s-tit">조회대상</h3>
+						<span class="select a">
+							<label class="lb blind" for="select-3">조회대상 선택</label>
+							<select name="select-3" title="조회대상을 선택하세요.">
+								<option selected>전체</option>
+								<option>재직자</option>
+								<option>퇴직자</option>
+							</select>
+						</span>
+					</div>
+					<div class="s-cont pr">
+						<h3 class="s-tit">이름</h3>
+						<span class="input a">
+							<label class="lb blind" for="input-01">이름</label>
+							<input type="text" title="입력" placeholder=",로 구분하여 최대 10명 입력 가능(예: 김교보, 이생명)" id="input-01">
+						</span>
+					</div>
+				</div>
+				<div class="btn-set btsch">
+					<button type="button" class="btn md ico-search ico-r">조회</button>
+				</div>
+			</div>
+			<!--// 조회영역 -->
+			<div class="ut-optset optset vab">
+				<div class="opt pl">
+					<span class="tot">총 <i class="n">678</i>건</span>
+				</div>
+				<div class="opt pr">
+					<!-- [D] 2022-06-03 클래스 삭제 'sm' -->
+					<button type="button" role="button" class="btn ico-r ico-down">엑셀 다운로드</button>
+				</div>
+			</div>
+
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">피보험자 조회 목록</span><span class="cap">피보험자번호, 이름, 주민등록번호, 적립금액, 퇴직금추계액, 중간정산일, 퇴직일의 목록 표입니다.</span></caption>
+					<!-- [D] 2022-07-13 width 수정 -->
+					<colgroup>
+						<col>
+						<col style="width: 8.5%">
+						<col style="width: 13%">
+						<col style="width: 18.7%">
+						<col style="width: 18.7%">
+						<col style="width: 14.5%">
+						<col style="width: 15.5%">
+					</colgroup>
+					<!--//[D] 2022-07-13 width 수정 -->
+					<thead>
+						<tr>
+							<th scope="col">피보험자<br>번호</th><!-- [D] 2022-07-13 br태그 추가 -->
+							<th scope="col">이름</th>
+							<th scope="col">주민등록<br>번호</th><!-- [D] 2022-07-13 br태그 추가 -->
+							<th scope="col">적립금액</th>
+							<th scope="col">퇴직금추계액</th>
+							<th scope="col">중간정산일</th>
+							<th scope="col">퇴직일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>000001</td>
+							<td>한*아</td>
+							<td>650325-1</td>						
+							<td class="txt-r">5,170,041원</td>
+							<td class="txt-r">18,784,440원</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>000001</td>
+							<td>한*아</td>
+							<td>650325-1</td>						
+							<td class="txt-r">130,330원</td>
+							<td class="txt-r">475,940원</td>
+							<td>&nbsp;</td>
+							<td>2020.01.01</td>
+						</tr>			
+						<tr class="nodata">
+							<td colspan="7">
+								<p class="txt">조회 결과가 없습니다.</p>
+							</td>
+						</tr>		
+					</tbody>
+				</table>
+			</div>
+
+			<div class="ut-paging">
+				<div class="nav prev">
+					<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+				</div>
+				<div class="link">
+					<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+				</div>
+				<div class="nav next">
+					<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+					<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+				</div>
+			</div>
+
+			<!-- 펼침 상태인 경우 -->
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>엑셀 파일 다운로드 시 ‘재직자’ 정보만 다운로드됩니다.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

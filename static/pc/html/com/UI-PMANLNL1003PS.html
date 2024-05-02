@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"hide-location"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page is-full main" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- 특화영역 -->
+			<section class="section1">
+				<!--  <div class="main-header">
+					<div class="comment"><strong>고객님</strong>을 위해 준비했어요</div>
+				</div> -->
+				<section class="specbox" style="opacity: 0;">
+					<div class="swiper-container main-swiper">
+						<div class="swiper-wrapper">
+							<!-- 검색 -->
+							<div class="swiper-slide sch-keyword ico-a">
+								<div class="schs">
+									<input id="keywords" type="search" title="검색하기" placeholder="궁금한 정보를 찾아보세요.">
+									<button type="button" class="bt-sch"><i class="blind">검색하기</i></button>
+								</div>
+								<div class="items">
+									<strong class="hash-tit">이런 키워드 검색 어떠세요?</strong>
+									<div class="ut-hash-box">
+										<a href="javascript:;" class="ut-hash">#보험금청구</a>
+										<a href="javascript:;" class="ut-hash">#종신보험</a>
+										<a href="javascript:;" class="ut-hash">#보험료신청서류</a>
+										<a href="javascript:;" class="ut-hash">#보험계약대출</a>
+										<a href="javascript:;" class="ut-hash">#보험료납입</a>
+										<a href="javascript:;" class="ut-hash">#증명서발급</a>
+									</div>
+								</div>
+							</div>
+							<!--// 검색 -->
+							<!-- 로그인 -->
+							<div class="swiper-slide login ico-c">
+								<div class="nudge-box">
+									<strong class="nudge-tit">계약 조회부터 다양한 금융거래까지<br>지금 로그인하세요.</strong>
+									<div class="btn-set">
+										<button type="button" class="btn md a">로그인</button>
+										<button type="button" class="btn md">인증센터</button>
+									</div>
+								</div>
+							</div>
+							<!--// 로그인 -->
+							<div class="swiper-slide ico-d line">
+								<div class="nudge-bnr">
+									<strong class="nudge-tit">내 모든 금융정보를<br>한 손안에<br>마이데이터 peach</strong>
+									<span class="imgbg"><img src="../../img/main/img_spec_bnr01.png" alt=""></span>
+									<div class="btn-set">
+										<button type="button" class="btn">마이데이터 바로가기</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide ico-b line">
+								<div class="nudge-bnr">
+									<strong class="nudge-tit">전자증명서 서비스 <br>바로 이용하세요!</strong>
+									<span class="imgbg"><img src="../../img/main/img_spec_bnr02.png" alt=""></span>
+									<div class="btn-set">
+										<button type="button" class="btn">증명서 발급 바로가기</button>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="swiper-slide ico-b">
+								<div class="nudge-bnr">
+									<strong class="nudge-tit">평생 든든 <br>라이프 파트너 <br>Peach</strong>
+									<span class="imgbg"><img src="../../img/main/img_spec_bnr03.png" alt=""></span>
+									<div class="btn-set">
+										<button type="button" class="btn">앱다운로드 바로가기</button>
+									</div>
+								</div>
+							</div> -->
+
+							<div class="swiper-slide ico-a">
+								<div class="nudge-state">
+									<div class="inner">
+										<div class="state-mark st-mat"></div>
+										<p class="date-state">만기도래일 <span>2022</span>년 <span>02</span>월 <span>02</span>일</p>
+										<strong class="nudge-tit">지급 예정 보험금이 있습니다.</strong>
+										<a href="javascript:;" class="link-ar">확인하러 가기</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide ico-a">
+								<div class="nudge-state">
+									<div class="inner">
+										<div class="state-mark st-rene"></div>
+										<p class="date-state">갱신일 <span>2022</span>년 <span>02</span>월 <span>02</span>일</p>
+										<strong class="nudge-tit">특약갱신 예정입니다.</strong>
+										<a href="javascript:;" class="link-ar">확인하러 가기</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide ico-a">
+								<div class="nudge-list">
+									<strong class="nudge-tit opt-ica">마지막 이용하신 메뉴예요!</strong>
+									<ul class="desc-list bullet a">
+										<li>
+											<a href="javascript:;" class="lk">
+												<span class="txt ellip1">보험계약조회/관리</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="lk">
+												<span class="txt ellip1">해당화면메뉴명노출최대열네자해당화면메뉴명노출최대열네자</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="lk">
+												<span class="txt ellip1">최대자수이상메뉴말줄임표시함해당화면메뉴명노출최대열네자</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+			
+							<div class="swiper-slide ico-c">
+								<div class="nudge-list">
+									<strong class="nudge-tit opt-icb">이런 보험상품 어떠세요?</strong>
+									<ul class="desc-list">
+										<li>
+											<a href="javascript:;" class="lk">
+												<p>
+													<strong class="tit ellip1">꼭 필요한 보장으로 Fit하게!!꼭 필요한 보장으로 Fit하게!!</strong>
+													<span class="txt">건강보험</span>
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="lk">
+												<p>
+													<strong class="tit ellip1">보장은 크고 보험료는 미니꼭 필요한 보장으로 Fit하게!!</strong>
+													<span class="txt">미니보험</span>
+												</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-main-prev disabled"><span class="blind">이전</span></div>
+					<div class="btn-main-next"><span class="blind">다음</span></div>
+				</section>
+			</section>
+			<!-- // 특화영역 -->
+
+			<section class="section2">
+				<article class="area-menu">
+					<ul class="fav-menu">
+						<li><a href="javascript:;"><span>MY교보<br>(계약조회)</span></a></li>
+						<li><a href="javascript:;"><span>보험금<br>청구</span></a></li>
+						<li><a href="javascript:;" onclick="ui.popup.open('pop-loan');"><span>대출<br>신청</span></a></li>
+						<li><a href="javascript:;"><span>나의<br>퇴직연금</span></a></li>
+						<li><a href="javascript:;"><span>보험료<br>납입</span></a></li>
+						<li><a href="javascript:;"><span>변액보험<br>펀드변경</span></a></li>
+						<li><a href="javascript:;"><span>펀드<br>신규가입</span></a></li>
+						<li><a href="javascript:;"><span>신탁<br>신규가입</span></a></li>
+					</ul>
+				</article>
+
+				<!-- 등록 없으면 해당영역 숨김 -->
+				<!-- <article class="area-bnr">
+					<a href="javascript:;">
+						<div class="txtbox">
+							<strong>새로워진 교보생명!</strong>지금 새로워진 서비스를<br>경험하세요
+						</div>
+						<div class="imgbox"><img class="img" src="../../img/main/img_banner.png" alt=""></div>
+					</a>
+				</article> -->
+
+				<article class="area-bnr">
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="banner_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<span class="tit">평생든든 라이프 플래너</span>
+											<span class="text">금융마이데이터 <b>Peach</b> 평생든든 라이프 플래너</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/img_banner.png" alt=""></div> <!--[D] 배너이미지 설명이 필요합니다 예) alt="평생든든 라이프 플래너 금융마이데이터 아이콘 이미지"-->
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<span class="tit">새로워진 교보생명!</span>
+											<span class="text">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 서비스를 경험하세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/img_banner.png" alt=""></div> <!--[D] 배너이미지 설명이 필요합니다 예) alt="평생든든 라이프 플래너 금융마이데이터 아이콘 이미지"-->
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<span class="tit">내 보장 확인하고 <br>커피한잔 받으세요~</span>
+											<span class="text">지금 새로워진 서비스를 경험하</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/img_banner.png" alt=""></div> <!--[D] 배너이미지 설명이 필요합니다 예) alt="평생든든 라이프 플래너 금융마이데이터 아이콘 이미지"-->
+									</a>
+								</li>
+								<!-- <li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/3.jpg" alt=""></a></div>
+								</li> -->
+							</ul>
+							<!-- <div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div> -->
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</article>
+				<!--// 등록 없으면 해당영역 숨김 -->
+			</section>
+
+			<section class="section3">
+				<article class="area-prd">
+					<div class="ut-tabs">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">보험</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">다이렉트</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">퇴직연금</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">대출</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">펀드/신탁</a></li>
+						</ul>
+					</div>
+					<!-- 보험 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-cont active" data-slide-prd="slide-prd01">
+						<h2 class="title">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+						<div class="swiper-container prd-swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg v"># 종신/정기보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">사망보험금&amp;진단보험금 <br>동시에 보장하는</strong>
+											<span class="txt">종신보험을 알고 계신가요?</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_01.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 건강/암보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">암, 무서워하지 마세요!</strong>
+											<span class="txt">전조질환부터 <br>진단 및 후속치료까지!</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_02.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 치매보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">치매, <br>나도 모르는 사이?</strong>
+											<span class="txt">치매, 이제 더 이상 <br>두려워 마세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_03.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										3
+									</a>
+									<a href="javascript:;">
+										4
+									</a>
+									<a href="javascript:;">
+										5
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										6
+									</a>
+									<a href="javascript:;">
+										7
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="prd-indicator" data-page="slide-prd01">
+							<div class="btn-prd-prev"><span class="blind">이전</span></div>
+							<div class="prd-pagination"></div>
+							<div class="btn-prd-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<!--// 보험 -->
+					<!-- 다이렉트 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-cont" data-slide-prd="slide-prd02">
+						<h2 class="title">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+						<div class="swiper-container prd-swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg v"># 종신/정기보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">사망보장+노후준비<br> 하나면 준비완료!</strong>
+											<span class="txt">종신보험을 알고 계신가요?</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_01.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 건강/암보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">만성실환 하나쯤 있어도<br> 가입 가능해요</strong>
+											<span class="txt">가입 상담해보세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_02.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 어린이보험</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">내 아이가<br> 사랑스러운 만큼</strong>
+											<span class="txt">금쪽같이 지켜주세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_03.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="prd-indicator" data-page="slide-prd02">
+							<div class="btn-prd-prev"><span class="blind">이전</span></div>
+							<div class="prd-pagination"></div>
+							<div class="btn-prd-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<!--// 다이렉트 -->
+					<!-- 퇴직연금 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3" class="tab-cont" data-slide-prd="slide-prd03">
+						<h2 class="title">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+						<div class="swiper-container prd-swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg v"># IRP가입</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">세금 아끼는 개인형IRP</strong>
+											<span class="txt">세액공제는 기본!<br> 퇴직소득세도 아낄 수 있어요!</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_01.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 퇴직연금서비스</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">퇴직연금 고객님을 위한<br> 엄청난 혜택!</strong>
+											<span class="txt">다양한 전자책이 무료!<br> 혜택 쇼핑몰도 있어요!</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_02.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 투자</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">어려운 퇴직연금 투자!<br> 우리 '같이투자' 해요</strong>
+											<span class="txt">어려운 투자 힘드셨죠? <br>노하우를 공유 해보세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_03.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="prd-indicator" data-page="slide-prd03">
+							<div class="btn-prd-prev"><span class="blind">이전</span></div>
+							<div class="prd-pagination"></div>
+							<div class="btn-prd-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<!--// 퇴직연금 -->
+					<!-- 대출 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4" class="tab-cont" data-slide-prd="slide-prd04">
+						<h2 class="title">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+						<div class="swiper-container prd-swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 보험계약대출</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">긴급자금이 필요할 때</strong>
+											<span class="txt">신속하고 간편하게<br> 이용해보세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_01.png" alt=""></div>
+									</a>
+									<!--[sm] 2022-12-12  화면수정-->
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 신용대출</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">직장인이라면 <br> 최대 3500만원까지</strong>
+											<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_03.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 주택담보대출</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">아파트담보대출<br> 한도, 금리부터 조회!</strong>
+											<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_02.png" alt=""></div>
+									</a>
+									<!--//[sm] 2022-12-12  화면수정-->
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="prd-indicator" data-page="slide-prd04">
+							<div class="btn-prd-prev"><span class="blind">이전</span></div>
+							<div class="prd-pagination"></div>
+							<div class="btn-prd-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<!--// 대출 -->
+					<!-- 펀드/신탁 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_5" class="tab-cont" data-slide-prd="slide-prd05">
+						<h2 class="title">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+						<div class="swiper-container prd-swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg v"># 펀드</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">수익률로 알아보는 <br>펀드투자 트렌드</strong>
+											<!-- <span class="txt">종신보험을 알고 계신가요?</span> -->
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_01.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 펀드</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">장기수익률 BEST펀드</strong>
+											<span class="txt">장기수익률(1년)이 높은 펀드<br> 확인해보세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_02.png" alt=""></div>
+									</a>
+									<a href="javascript:;">
+										<div class="ut-bdgs">
+											<em class="bdg b"># 신탁</em>
+										</div>
+										<div class="txtbox">
+											<strong class="tit">정기예금형 신탁</strong>
+											<span class="txt">안정적인 금융기관의<br> 정기 예금으로 운용가능한<br> 상품</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ic_pd_03.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="prd-indicator" data-page="slide-prd05">
+							<div class="btn-prd-prev"><span class="blind">이전</span></div>
+							<div class="prd-pagination"></div>
+							<div class="btn-prd-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<!--// 펀드/신탁 -->
+				</article>
+			</section>
+
+			<section class="section4">
+				<div class="area-finance">
+					<div class="area-tit">
+						<strong>요즘 금융정보, <br>어디까지 <br>알고 계세요?</strong>
+						<!-- <span>카드뉴스로 쉽게 금융을 배워요</span> -->
+					</div>
+					<div class="fin-list">
+						<ul class="list-finance">
+							<li>
+								<a href="javascript:;">
+									<div class="pic"><img class="img" src="../../img/temp/img_card01@2x.jpg" alt=""></div><!-- [웹접근성] 1st 수정 -->
+									<div class="txtbox">
+										<strong class="tit">연령대별 필수보험 우선순위<br> 체크리스트</strong>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="pic"><img class="img" src="../../img/temp/img_card02@2x.jpg" alt=""></div><!-- [웹접근성] 1st 수정 -->
+									<div class="txtbox">
+										<strong class="tit">현실적인 내 집 마련 방법 3가지</strong>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="pic"><img class="img" src="../../img/temp/img_card03@2x.jpg" alt=""></div><!-- [웹접근성] 1st 수정 -->
+									<div class="txtbox">
+										<strong class="tit">행복한 노후를 보내는 액티브<br>시니어의 비결</strong>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- 등록 없으면 해당영역 숨김 -->
+			<section class="section5">
+				<!-- <article class="area-marketbnr">
+					<a href="javascript:;">
+						<div class="tit"><strong>새로워진 교보생명을 만나보세요!</strong>지금 새로운 서비스를 경험해 보세요</div>
+						<div class="pic"><img src="../../img/main/ banner.png" alt=""></div>
+					</a>
+				</article> -->
+
+				<article class="area-marketbnr">
+					<div class="ut-slide-num">
+						<div class="swiper-container swiper" data-slide-id="banner_2">
+							<ul class="swiper-wrapper slide">
+								<!-- <li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/banner_1.png" alt="배너"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/5.jpg" alt=""></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/6.jpg" alt=""></a></div>
+								</li> -->
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<span class="txt">지금 새로워진 서비스를 경험하세요</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ex_1.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">평생든든 라이프 플래너 금융마이데이터<b>Peach</b></strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ex_2.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">내 보장 확인하고 커피한잔 받으세요~</strong>
+											<span class="txt">10분이상 보험 상담시 ( 1인 1회 )</span>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ex_3.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">변액보험, 이제 당신의 펀드전략을 지원합니다.</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/main/ex_4.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+							<!-- <div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div> -->
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!--// 등록 없으면 해당영역 숨김 -->
+			<section class="section6">
+				<!-- <article class="area-promote">
+					<strong class="area-tit">교보생명이 지급한<br>보험금지급</strong>
+					<div class="txtbox">
+						<p class="point"><span>4,044</span><i>억원</i></p>
+						<p class="sub">사고,만기보험금 및 연금합계액 (2021. 11월말 기준)</p>
+					</div>
+					<a href="javascript:;" class="link-ar">
+						<strong class="tit">보험금 지급사례</strong>
+						<span class="txt">남이 아닌 나의 일이였다. <br>행복에서 절망으로, 다시 행복으로!</span>
+					</a>
+				</article> -->
+
+				<article class="area-promote-v2">
+					<a href="javascript:;">
+						<strong class="area-tit">교보생명이 지급한 보험금</strong>
+						<div class="txtbox">
+							<p class="sub">연간누계</p><!--[D] 2022-08-22 내용변경-->
+							<p class="point"><span>4,044</span><i>억원</i></p>
+							<p class="min">사고,만기보험금 및 연금합계액 (2021. 11월말 기준)</p>
+						</div>
+						<div class="txtbox2">
+							<p class="tit">보험금 지급사례</p>
+							<p class="txt">남이 아닌 나의 일이였다. 행복에서 절망으로, 다시 행복으로!</p>
+						</div>
+					</a>
+				</article>
+
+				<article class="area-panel">
+					<a href="javascript:;">
+						<div class="imgbox"><img src="../../img/main/img_card2.png" alt="김춘수|능금, 파도야 놀자ⓒ이수지, 우리들 두 눈에 그득히 물결치는 시작도 끝도 없는 바다가 있다"></div><!-- [웹접근성] 1st 수정 -->
+						<div class="cont">
+							<strong class="tit">광화문글판</strong>
+							<p class="txt">사랑,위안,격려,희망의 한마디<br>광화문글판으로 세상에 온기를 더합니다.</p>
+						</div>
+					</a>
+				</article>
+			</section>
+
+			<section class="section7">
+				<div class="inner_section">
+					<div class="area-cs">
+						<h2>궁금증을 해결해 드릴게요!</h2>
+						<div class="swiper-container cs-swiper">
+							<ul class="swiper-wrapper assist-list">
+								<li class="swiper-slide">
+									<a href="javascript:;" class="cs1"><strong class="tit">상담하기</strong></a>
+									<a href="javascript:;" class="cs2"><strong class="tit">자주묻는질문</strong></a>
+									<a href="javascript:;" class="cs3"><strong class="tit">필요서류안내</strong></a>
+									<a href="javascript:;" class="cs4"><strong class="tit">소비자포털</strong></a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="cs5"><strong class="tit">지점찾기</strong></a>
+									<a href="javascript:;" class="cs6"><strong class="tit">전자민원접수</strong></a>
+									<a href="javascript:;" class="cs7" onclick="return movePage('/dgt/web/dti/contract-inquiry/non-receipt/inquiry'), false"><strong class="tit">휴면보험금 찾기</strong></a>
+								</li>
+							</ul>
+						</div>
+						<!-- INDICATOR -->
+						<div class="cs-indicator">
+							<div class="btn-cs-prev"><span class="blind">이전</span></div>
+							<div class="cs-pagination"></div>
+							<div class="btn-cs-next"><span class="blind">다음</span></div>
+						</div>
+					</div>
+					<div class="area-notice">
+						<h2>공지사항</h2>
+						<ul class="bullet a">
+							<li>
+								<a href="javascript:;"><span class="txt">2022학년도 교육보험 학자금 2022학년도 교육보험 학자금</span><span class="icon_new"><i>새글</i></span></a>
+								<span class="date">2022.01.07</span>
+							</li>
+							<li>
+								<a href="javascript:;"><span class="txt">기업은행 서비스 일시중지(안내)</span><span class="icon_new"><i>새글</i></span></a>
+								<span class="date">2022.01.07</span>
+							</li>
+							<li>
+								<a href="javascript:;"><span class="txt">기업은행 서비스 일시중지(안내)</span></a>
+								<span class="date">2022.01.07</span>
+							</li>
+						</ul>
+						<!--[D] 2022-08-22 더보기 추가-->
+						<div class="more"><a href="#more" id="moreViewBtn" role="button"><em class="blind">회사소개</em>더보기</a></div>
+						<!--//[D] 2022-08-22 더보기 추가-->
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!-- [D] 대출 화면 판업 추가: 2022-12-12 -->
+	<article class="pop-layer a pop-loan" id="pop-loan" style="display: none;">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대출신청</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<ul class="pop-prd">
+						<li class="loan-box">
+							
+							<a href="javascript:void(0);" onclick="return movePage('/dgt/web/insurance/policy-loan/PCLN_ALL_INTRO'), false" role="button"> 
+								<div class="ut-bdgs">
+									<em class="bdg b"># 보험계약대출</em>
+								</div> 
+								<div class="txtbox">
+									<strong class="tit">긴급자금이 필요할 때</strong>
+									<span class="txt">신속하고 간편하게<br> 이용해보세요</span>
+								</div> 
+								<div class="imgbox">
+									<img class="img" src="../../img/main/ic_pd_01.png" alt="보험계약대출 아이콘 이미지">
+									<!-- 개발은 밑에 소스로 넣어주세요.-->
+									<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_01.png" alt="보험계약대출 아이콘 이미지"> -->
+								</div>
+							</a>
+						</li>
+						<li class="loan-box">
+							<a href="javascript:void(0);" onclick="return movePage('/dgt/web/loan/product/credit/wkrkPlacePerson-text-detail'), false" role="button"> 
+								<div class="ut-bdgs">
+									<em class="bdg b"># 신용대출</em>
+								</div> 
+								<div class="txtbox">
+									<strong class="tit">직장인이라면 <br> 최대 3500만원까지</strong>
+									<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+								</div> 
+								<div class="imgbox">
+									<img class="img" src="../../img/main/ic_pd_03.png" alt="신용대출 아이콘 이미지">
+									<!-- 개발은 밑에 소스로 넣어주세요.-->
+									<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_03.png" alt="신용대출 아이콘 이미지"> -->
+								</div>
+							</a>
+						</li>
+						<li class="loan-box">
+							<a href="javascript:void(0);" onclick="return movePage('/dgt/web/loan/product/house/security/apartment-security-text-detail'), false" role="button"> 
+								<div class="ut-bdgs">
+									<em class="bdg b"># 주택담보대출</em>
+								</div> 
+								<div class="txtbox">
+									<strong class="tit">아파트담보대출<br> 한도, 금리부터 조회!</strong>
+									<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+								</div> 
+								<div class="imgbox">
+									<img class="img" src="../../img/main/ic_pd_02.png" alt="주택담보대출 아이콘 이미지">
+									<!-- 개발은 밑에 소스로 넣어주세요.-->
+									<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_02.png" alt="주택담보대출 아이콘 이미지"> -->
+								</div>
+							</a>
+						</li>
+					</ul>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<!--// [D] 대출 화면 판업 추가: 2022-12-12 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+	<script type="text/javascript">
+
+		// swiper laading fake
+		setTimeout(() => {
+			$('.section1 .specbox').css('opacity', 1);
+		}, 100);
+
+		var mainSwiper = new Swiper(".main-swiper", {
+			slidesPerView: "auto",
+			watchOverflow: true,
+			centeredSlides: true,
+			spaceBetween: 0,
+			initialSlide: 1,
+			
+			navigation: {
+				nextEl: ".btn-main-next",
+				prevEl: ".btn-main-prev",
+			},
+			on: {
+				activeIndexChange : function() {
+					var slideA = $('.main-swiper .swiper-slide').length - 1;
+					var slideL = slideA - 1;
+					if (this.realIndex == 0) {
+						// this.allowSlidePrev = false;
+						// this.allowSlideNext = false;
+						// this.allowTouchMove = false;
+						var slideF = this.realIndex + 1
+						this.slideTo(slideF);
+						// console.log(slideF);
+						$('.specbox .btn-main-prev').addClass('disabled');
+					} else if (this.realIndex == slideA) {
+						// console.log(this.realIndex);
+						// var slideL = this.realIndex
+						this.slideTo(slideL);
+						$('.specbox .btn-main-next').addClass('disabled');
+					} else if (this.realIndex > 1) {
+						$('.specbox .btn-main-prev').removeClass('disabled');
+						$('.specbox .btn-main-next').removeClass('disabled');
+					}
+				}
+			}
+		});
+		
+		var prdSwiper = new Swiper(".fin-swiper", {
+			// slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".fin-pagination",
+				type: "fraction",
+			},
+			navigation: {
+				nextEl: ".btn-fin-next",
+				prevEl: ".btn-fin-prev",
+			}
+		});
+		
+		var prdSwiper = new Swiper(".cs-swiper", {
+			// slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".cs-pagination",
+				type: "fraction",
+			},
+			navigation: {
+				nextEl: ".btn-cs-next",
+				prevEl: ".btn-cs-prev",
+			}
+		});
+
+		// full type navi 클릭시 슬라이드 위치
+		$("div[class*='btn-main']").on("click",function () {
+			var isFirst = $(".main-swiper .swiper-slide:first-child").hasClass("swiper-slide-prev");
+			var isLast = $(".main-swiper .swiper-slide:last-child").hasClass("swiper-slide-next");
+			if(isFirst == true) $(".btn-main-prev").addClass("disabled");
+			else $(".btn-main-prev").removeClass("disabled");
+
+			if(isLast == true) $(".btn-main-next").addClass("disabled");
+			else $(".btn-main-next").removeClass("disabled");
+		});
+
+		// 상품
+		function slide_prd() {
+			var prdCnt = $(".area-prd .ut-tabs .menu li").length;
+			for(var i= 1;i<=prdCnt;i++){
+				var swiperPrd = new Swiper("[data-slide-prd='slide-prd0"+i+"'] .prd-swiper", {
+					spaceBetween: 30,
+					observer: true,
+					observeParents: true,
+					pagination: {
+						el: "[data-page='slide-prd0"+i+"'] .prd-pagination",
+						type: "fraction",
+					},
+					navigation: {
+						nextEl: "[data-page='slide-prd0"+i+"'] .btn-prd-next",
+						prevEl: "[data-page='slide-prd0"+i+"'] .btn-prd-prev",
+					}
+				});
+			}
+			// var prdSwiper = new Swiper(".prd-swiper", {
+			// 	// slidesPerView: 3,
+			// 	spaceBetween: 30,
+			// 	pagination: {
+			// 		el: ".prd-pagination",
+			// 		type: "fraction",
+			// 	},
+			// 	navigation: {
+			// 		nextEl: ".btn-prd-next",
+			// 		prevEl: ".btn-prd-prev",
+			// 	}
+			// });
+		}
+		slide_prd();
+	</script>
+</div>
+</body>
+</html>

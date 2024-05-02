@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt finance" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">신용등급</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">보험금지급능력평가 (국내)</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보험금지급능력평가  (해외)</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit3">보험금지급능력평가 (해외)</h3>
+			<h4 class="hd-tit4">피치 (Fitch Ratings)</h4>
+			<div class="ut-tbl a">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">피치 (Fitch Ratings) 목록</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:30%">
+						<col>
+						<col style="width:30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">평가일</th>
+							<th scope="col">신용평가기관명</th>
+							<th scope="col">신용등급</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- [D] 2022-08-01 항목추가 -->
+						<tr>
+							<td>2022. 04. 20</td>
+							<td>피치 (Fitch Ratings)</td>
+							<td>A+(안정적)</td>
+						</tr>
+						<!--//[D] 2022-08-01 항목추가 -->
+						<tr>
+							<td>2021. 04. 29</td>
+							<td>피치 (Fitch Ratings)</td>
+							<td>A+(안정적)</td>
+						</tr>
+						<tr>
+							<td>2020. 09. 24</td>
+							<td>피치 (Fitch Ratings)</td>
+							<td>A+(안정적)</td>
+						</tr>
+						<tr>
+							<td>2020. 05. 07</td>
+							<td>피치 (Fitch Ratings)</td>
+							<td>A+(안정적)</td>
+						</tr>
+						<!-- [D]2022-08-01 항목삭제 <tr> 
+							<td>2019. 10. 08</td>
+							<td>피치 (Fitch Ratings)</td>
+							<td>A+(안정적)</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+
+			<h4 class="hd-tit4">무디스 (Moody’s Investors Service)</h4>
+			<div class="ut-tbl a">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">무디스 (Moody’s Investors Service) 목록</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:30%">
+						<col>
+						<col style="width:30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">평가일</th>
+							<th scope="col">신용평가기관명</th>
+							<th scope="col">신용등급</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- [D] 2022-08-01 항목추가 -->
+						<tr>
+							<td>2022. 01. 03</td>
+							<td>무디스 (Moody’s Investors Service)</td>
+							<td>A1(안정적)</td>
+						</tr>
+						<!--//[D] 2022-08-01 항목추가 -->
+						<tr>
+							<td>2021. 04. 30</td>
+							<td>무디스 (Moody’s Investors Service)</td>
+							<td>A1(안정적)</td>
+						</tr>
+						<tr>
+							<td>2020. 11. 20</td>
+							<td>무디스 (Moody’s Investors Service)</td>
+							<td>A1(부정적)</td>
+						</tr>
+						<tr>
+							<td>2020. 04. 28</td>
+							<td>무디스 (Moody’s Investors Service)</td>
+							<td>A1(부정적)</td>
+						</tr>
+						<!--[D] 2022-08-01 항목삭제  <tr> 
+							<td>2019. 09. 11</td>
+							<td>무디스 (Moody’s Investors Service)</td>
+							<td>A1(안정적)</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3 mt60">신용등급 체계 및 정의</h3>
+			<h4 class="hd-tit4">피치 (Fitch Ratings)</h4>
+			<div class="ut-tbl a">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">피치 (Fitch Ratings) 목록</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:20%">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">평가등급</th>
+							<th scope="col">등급정의</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- [D] 2022-08-02 내용 수정 -->
+						<tr>
+							<td>AAA</td>
+							<td class="txt-l">
+								지급능력이 최상입니다.<br>
+								보험계약 및 기타 계약에 대한 지급능력이 최고 수준일 경우에만 주어지며, 예측 가능한 변화로 지급능력이 하락할 가능성은 거의 없습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>AA</td>
+							<td class="txt-l">
+								지급능력이 우수합니다.<br>
+								보험계약 및 기타 계약에 대한 지급능력이 매우 우수할 경우 주어지며, 예측 가능한 변화로 지급능력이 하락할 가능성이 적습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>A</td>
+							<td class="txt-l">
+								지급능력이 양호합니다.<br>
+								보험계약 및 기타 계약에 대한 지급능력이 우수할 경우 주어지나, 환경 악화가 지급능력에 미치는 영향이 상위 등급보다 높다고 볼 수 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>BBB</td>
+							<td class="txt-l">
+								지급능력이 현재 상태는 양호합니다.<br>
+								보험계약 및 기타 계약에 대한 지급능력이 적절한 수준이지만, 향후 경제적 상황이나 환경 악화의 영향을 받을 수 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>BB</td>
+							<td class="txt-l">
+								지급능력이 제한적이며 특히 시장 변화에 취약합니다.<br>
+								다만, 사업 혹은 금융 등 대안적 방법으로 보험계약 및 기타 계약에 대한 지급이 적절할 것으로 보입니다.
+							</td>
+						</tr>
+						<tr>
+							<td>B</td>
+							<td class="txt-l">
+								지급능력에 대해 두 가지 가능성을 봅니다.<br>
+								첫 번째, 현재 시점의 지급능력이 양호하고 우호적인 시장환경과 경제상황에서는 지급능력이 유지될 것으로 예상되나, 제한된 안정성 때문에 미래의 지급능력에는 상당한 위험이 있을 수 있습니다.<br><!-- [D] 2022-08-02 줄바꿈 <br> 추가 -->
+								두 번째, 현재는 지급의무를 이행하지 못하나, 향후 회복 가능성이 상당히 높습니다. 회복(recovery) 평가에서 ‘RR1(Outstanding)’ 등급을 받은 경우에 해당됩니다.
+							</td>
+						</tr>
+						<tr>
+							<td>CCC</td>
+							<td class="txt-l">
+								지급능력에 대해 두 가지 가능성을 봅니다.<br>
+								첫 번째. 현재 시점에서는 지급의무를 이행할 것으로 보이나, 미래에는 지급이행이 실질적으로 어려울 수 있습니다. 시장환경, 경영 및 경제 환경이 긍정적으로 유지될 경우에만 지급이행이 가능합니다.<br><!-- [D] 2022-08-02 줄바꿈 <br> 추가 -->
+								두 번째, 지급의무는 이행하지 못하나, 향후 회복할 가능성이 평균 이상으로 높습니다. 회복(recovery) 평가에서 ‘RR2(Superior)’, ‘RR3(Good)’, ‘RR4(Average)’ 등급을 받은 경우에 해당됩니다.
+							</td>
+						</tr>
+						<tr>
+							<td>CC</td>
+							<td class="txt-l">
+								지급능력에 대해 두 가지 가능성을 봅니다.<br>
+								첫 번째, 현재 시점에서는 지급의무를 이행할 것으로 보이나, 미래에는 지급의무 이행이 불가능할 수 있습니다.<br>
+								두 번째, 지급의무는 이행하지 못하나, 향후 회복할 가능성이 평균 혹은 평균에 약간 못 미치는 수준입니다. 회복(recovery) 평가에서 ‘RR4(Average)’ 또는 ‘RR5(Below Average)’ 등급을 받은 경우에 해당됩니다.
+							</td>
+						</tr>
+						<tr>
+							<td>C</td>
+							<td class="txt-l">
+								지급능력에 대해 두 가지 가능성을 봅니다.<br>
+								첫 번째, 현재 시점에서는 지급의무 이행이 유지되고 있으나, 의무를 이행하지 못할 상황이 임박해 있습니다.<br>
+								두 번째, 지급의무는 이행하지 못하나, 향후 회복할 가능성이 평균 이하 혹은 매우 낮은 수준입니다. 회복(recovery) 평가에서 ‘RR5(Below Average)’ 또는 ‘RR6(Poor)’ 등급을 받은 경우에 해당됩니다.
+							</td>
+						</tr>
+						<!--//[D] 2022-08-02 내용 수정 -->
+					</tbody>
+				</table>
+			</div>
+			<ul class="bullet a">				
+				<li>위 등급 중 AA등급부터 B등급까지는 등급 내 상대적 우열에 따라 ‘+’ 또는 ‘-’ 기호가 덧붙습니다.</li><!-- [D] 2022-08-02 내용 수정 -->
+			</ul>
+
+			<h4 class="hd-tit4">무디스 (Moody’s Investors Service)</h4>
+			<div class="ut-tbl a">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">무디스 (Moody’s Investors Service) 목록</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:20%">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">평가등급</th>
+							<th scope="col">등급정의</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- [D] 2022-08-02 내용 수정 -->
+						<tr>
+							<td>Aaa</td>
+							<td class="txt-l">
+								이 등급의 보험사의 재무안정성이 최상입니다. 이런 기업은 신용 현황이 변화할 수는 있으나 그 변화로 인해 근본적으로 강력한 기업의 포지션이 저해될 가능성은 거의 없습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>Aa</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 우수합니다.<br>
+								일반적으로 Aaa그룹과 함께 상위 등급(high-grade) 기업으로 알려져 있습니다. 그럼에도 Aaa등급 기업보다 낮게 책정되는 이유는 장기적인 리스크가 다소 더 크다고 판단되기 때문입니다.
+							</td>
+						</tr>
+						<tr>
+							<td>A</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 양호합니다.<br>
+								그러나 미래 어느 시점에 신용도를 저해할 수 있는 취약 요소가 존재할 수 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>Baa</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 적절합니다.<br>
+								그러나 일부 보호 요소(protective elements)가 부족하거나 장기적 관점에서 특징적으로 신뢰할 수 없을 가능성이 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>Ba</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 의심스러운 수준입니다.<br>
+								보험계약 채무 상환 능력이 매우 낮기 때문에 향후 보호받지 못할 수 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>B</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 불량합니다.<br>
+								장기적 관점에서 보험계약 채무를 적기 상환할 가능성이 낮습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>Caa</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 상당히 불량합니다.<br>
+								보험계약 채무에 대해 부도 상태거나 보험계약 채무 및 청구권의 적기 상환 관련 위험요소가 존재할 수 있습니다.
+							</td>
+						</tr>
+						<tr>
+							<td>Ca</td>
+							<td class="txt-l">
+								보험사의 재무안정성이 매우 불량합니다.<br>이런 기업들은 종종 보험계약 채무 부도 상태거나 기타 두드러진 단점들이 존재합니다.
+							</td>
+						</tr>
+						<tr>
+							<td>C</td>
+							<td class="txt-l">
+								보험사 등급 중 최하 등급이며 재무안정성을 제공할 가능성이 매우 희박한 것으로 간주될 수 있습니다.
+							</td>
+						</tr>
+						<!--//[D] 2022-08-02 내용 수정 -->
+					</tbody>
+				</table>
+			</div>
+			<ul class="bullet a">
+				<!-- [D] 2022-08-02 내용 수정 -->
+				<li>무디스는 Aa부터 Caa까지 각 등급에 숫자 1, 2, 3을 덧붙여 등급을 좀 더 세분합니다. ‘1’은 최고 등급, ‘2’는 중간 등급, ‘3’은 최하 등급입니다.</li>
+				<li>단, 각각의 등급(예를 들면 Aa) 안에서 기업의 재무건전성은 대체로 동일합니다.</li>
+			</ul>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

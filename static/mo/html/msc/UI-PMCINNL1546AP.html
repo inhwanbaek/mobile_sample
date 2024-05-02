@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-qst-rst" id="pop-qst-rst">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">펀드변경 적합성 분석결과</h1><!-- [D] 2022-02-04 문구변경 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<!-- <h2 class="hd-tit4">분석결과</h2>
+					<div style="background:#ddd; height:100rem;">
+						공통영역
+					</div>
+					-->
+
+					<dl class="rst-box bg1">
+						<dt>
+							***님의 투자성향은<br>
+							<strong>위험회피형</strong>입니다.
+						</dt>
+						<dd><!-- [D] 2022-02-04 문구변경 -->
+							고객님 답변을 종합적으로 분석한 결과, <br>고객님 투자성향은 <strong>위험회피형</strong>이에요.
+						</dd>
+					</dl>
+
+					<span data-ui-balloon="left,top" aria-describedby="ball_1" class="tip-msc1546">고객님에게 적합한 특별계정(펀드)을 확인해 보세요.</span>
+					<h2 class="hd-tit4" id="ball_1">투자성향별 추천 특별계정(펀드)</h2>
+					<div class="ut-tbl a">
+						<table class="tblist nl" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">투자성향별 추천 특별계정(펀드)</span><span class="cap"></span></caption>
+							<colgroup>
+								<col width="27%;">
+								<col>
+								<col width="30%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">고객성향</th>
+									<th scope="col">추천특별계정<br>(펀드)등급</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="active">
+									<td><strong>위험회피형</strong></td>
+									<td class="txt-l">현금손실을 원하지 않으며 예,적금 수준의 수익을 기대</td>
+									<td>최저위험<br>(채권형 펀드)</td>
+								</tr>
+								<tr>
+									<td>안정추구형</td>
+									<td class="txt-l">원금손실을 취소화하고 이자,배당수익 등 안정적 수익 추구</td>
+									<td>저위험<br>(채권형, 주식편입비율 30%이하펀드)</td>
+								</tr>
+								<tr>
+									<td>위험중립형</td>
+									<td class="txt-l">원금손실 위험을 충분히 인식하고, 예,적금보다 높은 수익률을 위해 일정수준의 손실감내 가능</td>
+									<td>중위험<br>(채권형, 주식편입비율 50%이하펀드)</td>
+								</tr>
+								<tr>
+									<td>적극투자형</td>
+									<td class="txt-l">원금손실 위험을 충분히 감내하고 높은 수익률을 원하며, 상당 부분 위험자산에 투자할 의향이 있음</td>
+									<td>고위험<br>
+										(채권형, 주식편입비율 70% 이하 펀드)</td>
+								</tr>
+								<tr>
+									<td>위험선호형</td>
+									<td class="txt-l">아주 높은 수익율을 원하고, 대부분의 위험자산에 투자할 의향이 있음</td>
+									<td>최고위험<br>(채권형, 주식형 등 모든 펀드)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- [D] 2022-02-03 삭제 -->
+					<!-- 가이드박스 -->
+					<!-- <div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							위 적합성 진단결과는 로보어드바이저(RA) 추천펀드 제공만을 위한 것으로 신규상품 가입 및 펀드 변경 시 따로 적합성 진단을 할 수도 있습니다.
+
+						</div>
+					</div> -->
+					<!-- //가이드박스 -->
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="ui.popup.close('pop-qst-rst');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-qst-rst');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

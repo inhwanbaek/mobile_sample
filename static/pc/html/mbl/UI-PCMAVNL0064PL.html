@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer a sm pop-agree" id="pop-agree">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">약관동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit3">고객님의 계좌내역을 확인하기 위해 <br>이용 동의가 필요합니다</h2>
+							</div>
+						</div>
+						<div class="ut-terms b">
+							<div class="plbox">
+								<ul class="plist">
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 수집 · 이용 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+
+	<script>
+		ui.popup.open('pop-agree');
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-cardList',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 팝업영역 -->
+	<article class="pop-layer c pop-mrefund2" id="pop-mrefund2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변경 항목 선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+
+					<h2 class="hd-tit4">추천펀드와 추천 투자비율로 <br>변경할 항목을 선택해 주세요. </h2>
+					<div class="rd-vgbox">
+						<label class="radio"><input type="radio" name="radio1" id="rdo1" checked><span class="txt">적립금</span></label>
+						<label class="radio"><input type="radio" name="radio1" id="rdo2"><span class="txt">기본보험료</span></label>
+						<label class="radio"><input type="radio" name="radio1" id="rdo3"><span class="txt">추가납입보험료</span></label>
+					</div>
+					<ul class="bullet b">
+						<li>로보어드바이저(RA)에서 추천받은 펀드로 펀드 변경 시 가입 당시 투자성향을 초과하는 경우 적합성 재진단 대상이 될 수 있습니다.</li>
+						<li>교보생명은 로보어드바이저(RA) 추천펀드의 투자성과 등에 대해 보장하거나 책임을 지지 않습니다.</li>
+						<li>적립금 이전 시에는 ‘채권형(채권형그룹) 최소 편입비율의 특별계정 투입보험료로 운용된 적립금’은 채권형(채권형그룹) 이외의 펀드로 이전될 수 없습니다.</li>
+					</ul>
+
+					<div class="btn-set vt">
+						<button type="button" class="btn">로보어드바이저 추천펀드로 변경</button>
+						<button type="button" class="btn">추천펀드 적용하지 않고 펀드변경</button>
+					</div>
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-mrefund2');">확인</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-mrefund2');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+	<!-- //팝업영역 -->
+
+
+
+</div>
+</body>
+</html>

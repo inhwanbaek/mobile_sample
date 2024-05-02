@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-myconsultant-info" id="pop-myconsultant-info">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">나의 담당 FP 정보</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect top">
+						<h2 class="hd-tit3">담당 FP 정보를 확인해 보세요.</h2>
+						<div class="ut-dtds c">
+							<ul class="dlist left">
+								<li>
+									<div class="dt">지점</div>
+									<div class="dd">교보지점</div>
+								</li>
+								<li>
+									<div class="dt">이름</div>
+									<div class="dd">김교보</div>
+								</li>
+								<li>
+									<div class="dt">전화번호</div>
+									<div class="dd">010-1234-5678</div>
+								</li>
+								<li>
+									<div class="dt">소재지</div>
+									<div class="dd">서울 마포구 신촌로 134</div>
+								</li>
+								<li>
+									<div class="dt">담당상품</div>
+									<div class="dd">
+										<a href="javascript:;" class="prd-tit link-text">무배당교보베스트라이프종신보험(종합플랜A형건강체)</a>
+										<a href="javascript:;" class="prd-tit link-text">무배당교보베스트라이프종신보험(종합플랜A형건강체)</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-set vt downs">
+							<button type="button" class="btn md">FP상담내역</button>
+							<button type="button" class="btn md">상담 신청하기</button>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">FP에게 전화하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-myconsultant-info');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

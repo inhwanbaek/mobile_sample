@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"소비자중심경영(CCM) 운영"}'></include><!-- [D] 2022-08-30 텍스트 변경 -->
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt eth-charter" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">도입선포</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">운영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">인증</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">포상</a></li>
+				</ul>
+			</div>
+			<div class="ept_upper back11">
+				<!-- [D] 2022-05-18 타이틀영역 변경 -->
+				<strong class="hd-tit2">교보생명 모든 임직원들은 <br><i class="line">소비자중심경영</i>을 성실히 <br>준수할 것입니다.</strong>
+			</div>
+			<p>
+				저는 2000년 '변화와 혁신'을 시작하면서 CS, 즉 ‘고객기대만족’이야말로 회사경영의 가장 중요한 목표가 되어야 한다고 지속적으로 강조해 왔습니다.
+			</p>
+			<p>
+				실제로 여러분들이 지금까지 힘껏 도와주신 덕분에 우리 CS역량과 CS문화는 크게 향상되었고, 객관적으로도 ‘고객만족 경영대상 5년 연속 수상’을 비롯한 여러 성과를 통하여 교보생명 고객만족경영의 우수성을 널리 인정받아 왔습니다.
+			</p>
+			<p>
+				오늘 우리는 고객의 이익을 먼저 고려하고, 정당한 고객의 불만을 지금보다 더욱 적극적이고 체계적으로 관리하기 위해 CCM(소비자중심경영)을 정식으로 도입 운영하고자 합니다.
+			</p>
+			<p>
+				CCM은 사전에 고객불만을 예방하고, 고객이 불만을 제기했을 때에도 이를 효율적으로 해소하는 명확한 기준과 절차를 우리 임직원 및 컨설턴트분들에게 제시해 줍니다. 우리는 금번에 도입하는 CCM의 운영을 통해 고객만족경영을 위한 업무프로세스와 인프라 수준을 한 단계 높이고, 선량한 고객들이 미래의 역경에서 좌절하지 않도록 도우려는 우리의 노력을 한층 더 강화하는 계기로 삼을 것입니다.
+			</p>
+
+			<div class="signature-from">
+				교보생명 대표이사 신창재<span class="signature"><img src="../../img/abt/signature_sin.png" alt="신창재 서명"></span>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

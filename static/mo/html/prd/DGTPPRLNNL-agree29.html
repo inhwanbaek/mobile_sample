@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-kakaopay" id="pop-kakaopay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카카오페이 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="prd-tbox">
+						<h2 class="hd-tit3">
+							카카오페이 인증 이용을 위한 약관에 동의해주세요.
+						</h2>
+					</div>
+					
+					<div class="ut-terms a">
+						<div class="plbox2">
+							<ul class="plist2">
+								<li>
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+									<a href="javascript:;" class="plink2" role="button">보기</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+					
+					<div class="ut-terms a">
+					
+						<div class="plbox2">
+							<div class="hdt2">
+								<div class="tit">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집 및 이용동의</span></label>
+									<a href="javascript:;" class="plink2" role="button">보기</a>
+								</div>
+							</div>
+							<!-- [D] 2022-04-27  아래 삭제 -->
+							<!-- <div class="hdt2">
+								<div class="tit">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 고유식별정보 처리 동의</span></label>
+									<a href="javascript:;" class="plink2" role="button">보기</a>
+								</div>
+							</div> -->
+							<div class="hdt2">
+								<div class="tit">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보의 제공에 대한 동의</span></label>
+									<a href="javascript:;" class="plink2" role="button">보기</a>
+								</div>
+							</div>
+							<div class="hdt2">
+								<div class="tit">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 전자금융서비스 이용약관</span></label>
+									<a href="javascript:;" class="plink2" role="button">보기</a>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+				
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-kakaopay');
+	</script>
+
+</div>
+</body>
+</html>

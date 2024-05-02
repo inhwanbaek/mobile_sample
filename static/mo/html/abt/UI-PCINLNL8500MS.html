@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"FP(재무설계사)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt intro" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">FP 소개</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">FOR FP 문화</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">FP 상담신청</a></li>
+				</ul>
+			</div>
+			<h3 class="hd-tit2">고객의 삶 가장 가까운 곳에서<br><i class="line">든든한 믿음을 주는 보험 전문가</i></h3>
+			<p class="intro-txt">
+				교보생명 FP(Financial Planner)는 고객과 보험, 금융을 두루 이해하는 재무설계사이자 고객의 ‘든든한 내 편 하나’입니다. 고객에게 신뢰받는 평생 금융 파트너로 성장하도록 활동, 교육, 시스템 등을 아낌없이 지원받습니다.
+				<img src="../../img/abt/fp_intro01.png" alt="든든한 내편 하나, 교보생명FP">
+			</p>
+			<h3 class="hd-tit3 mt32">FP 브랜드 슬로건</h3>
+			<p class="intro-txt">
+				‘든든한 내 편 하나’는 교보생명 FP의 슬로건입니다.<br>고객의 삶 가장 가까운 곳에서 끝까지 든든한 편이 되겠다는 교보생명 FP의 의지를 나타냅니다.
+				<img src="../../img/abt/fp-maskGroup02.png" alt="든든한 내편 하나 교보생명 FP" style="width:196rem">
+			</p>
+			<h3 class="hd-tit3 mt32">그래픽모티프</h3>
+			<p class="intro-txt">
+				교보생명 FP은 고객의 삶 가장 가까운 곳에서 함께 인생을 논의하고 함께 걸어가는 가장 친한 친구입니다.<br>그래픽모티브는 고객과 교보생명 FP이 손을 굳게 잡은 든든한 관계를 의미합니다.
+				<img src="../../img/abt/fp_hand.png" alt="든든한 내편 하나 교보생명 FP">
+			</p>
+
+			<div class="ol-paragbox">
+				<ol class="lst">
+					<li>
+						<div class="tit">고객맞춤형 보험 서비스를<br>제공하는 FP</div>
+						<div class="txt">
+							교보생명 FP는 고객의 눈높이에서 상황을 같이 헤아리고, 개개인의 요구에 맞춰 전문적인 서비스를 제공할 수 있는 사람입니다
+						</div>
+					</li>
+					<li>
+						<div class="tit">고객과의 신뢰를<br>최우선으로 하는 FP</div>
+						<div class="txt">
+							교보생명 FP는 업계 최고의 보험신뢰성을 바탕으로 고객과의 약속을 가장 먼저 실천하는 사람입니다.
+						</div>
+					</li>
+					<li>
+						<div class="tit">고객에게 필요한 도움을<br>앞서 제공하는 FP</div>
+						<div class="txt">
+							교보생명 FP는 풍부한 경험과 노하우를 바탕으로 모든 세대의 라이프 스테이지(Life Stage, 생애주기)를 아우를 수 있고, 고객에게 필요한 도움, 조언, 조력을 한발 앞서 제공할 수 있는 사람입니다.
+						</div>
+					</li>
+				</ol>
+			</div>
+
+
+			<div class="btn-set">
+				<button type="button" class="btn md ico-r ico-down">리크루팅 브로셔</button>
+			</div>
+
+			<div class="intro-movie pro">
+				<video id="myVideo" controls="controls" preload="none" poster="../../img/abt/poster-pos.png">
+					<source id="video" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+				</video>
+				<!-- <button type="button" class="btn-play">동영상 보기</button> -->
+			</div>
+			<div class="pro-text">
+				<p class="tit">김지연FP의 추천사는?</p>
+				<p class="txt">추천사가 궁금하시다면 지금 바로 확인해보세요!</p>
+			</div>
+
+			
+			<div class="ut-gudbox b open mt60" data-tog-cls="box">
+				<div class="gtit">알려드립니다.</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<p>본 광고는 FP(보험설계사)를 모집하기 위한 것으로 회사의 정규 또는 비정규 직원 채용과는 무관하며 FP는 보험업법상 보험 설계사로 독립사업자 신분입니다.</p>
+				</div>
+			</div>
+			<p class="txt-b mt16">준법감시인확인필 3-2108-3 GFP사업부직속(2021.08.25)</p>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

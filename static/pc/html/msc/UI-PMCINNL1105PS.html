@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page msc default cti" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">가입진단결과 발행</h2>
+			</div>
+			<h3 class="hd-tit4">가입진단 결과 우편 발행 신청 </h3>
+
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">가입진단 결과 우편 발행 신청  정보</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:12%">
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">진단서<br>번호</th>
+							<th scope="col">진단<br>일자</th>
+							<th scope="col">의료기관명</th>
+							<th scope="col">진단<br>항목</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><label class="checkbox"><input type="checkbox"><span class="txt"></span></label></td>
+							<td>202005115****</td>
+							<td>20200519</td>
+							<td>차병***메딕</td>
+							<td>기본검진 </td>
+						</tr>
+						<tr>
+							<td><label class="checkbox"><input type="checkbox"><span class="txt"></span></label></td>
+							<td>202005115****</td>
+							<td>20200519</td>
+							<td>차병***메딕</td>
+							<td>기본검진 </td>
+						</tr>
+						<!-- 내역이 없을 경우 -->
+						<tr>
+							<td colspan="5">조회된 데이터가 없습니다. </td>
+						</tr>
+						<!--//내역이 없을 경우 -->
+					</tbody>
+				</table>
+			</div>
+			<ul class="bullet a mt20">
+				<li>가입진단 결과 발행은 신청일 기준 진단일로부터 1년 이내 건만 가능합니다.</li>
+				<li>1년 이후 진단 결과 발행 요청 시 가까운 고객PLAZA로 내방하여 발급 바랍니다.</li>
+			</ul>
+		
+			<h3 class="hd-tit4">받을 주소 확인 </h3>
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">받을 주소 확인 정보</span><span class="cap"></span></caption>
+					<colgroup>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">자택주소 </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>서울 강남구 강남대로 3283 ********* </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="bullet a  mt20">
+				<li>수신처 주소가 바뀐 경우 고객정보 변경에서 수정하십시오.
+					<button type="button" class="btn sm ico-elink ico-r" title="새창열림">우편물 수신처 변경 바로가기</button>
+				</li>
+				<li>신청일 +_ 5일 이내 일반우편으로 수신 가능합니다.</li>
+			</ul>
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">신청</button>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-chngrcpt" id="pop-chngrcpt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계좌변경</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents vspace">
+
+					<div class="pt-main">
+						<div class="msect">
+							<h2 class="hd-tit4">연금수령계좌</h2>
+							<h3 class="hd-tit5">금융기관</h3>
+							<div class="fldset">
+								<div class="fld">
+									<!-- [D] 2022-05-03 셀렉트로 변경 -->
+									<span class="select w100p">
+										<select title="금융기관선택">
+											<option>선택</option>
+										</select>
+									</span>
+								</div>
+							</div>
+
+							<h3 class="hd-tit5">계좌번호</h3>
+							<div class="fldset">
+								<div class="fld">
+									<span class="input a w100p">
+										<input type="number" pattern="\d*" placeholder="-없이 입력해 주세요" title="계좌번호"><!-- [D] 2022-04-15 input type속성 변경 -->
+									</span>
+									<div class="vald-msg no">계좌번호를 입력해주세요.</div>
+									<div class="vald-msg no">계좌번호가 올바르지 않습니다.</div>
+								</div>
+							</div>
+
+							<h3 class="hd-tit5">예금주</h3>
+							<div class="fldset">
+								<div class="fld">
+									<span class="input a w100p">
+										<input type="text" title="예금주" value="김교보" readonly>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pt-bottom">
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li>연금수령계좌는 매달 연금수령일 3일 전까지(영업일 기준) 변경할 수 있습니다.</li>
+									<li>연금수령계좌 변경 가능 시간은 매일 08:00~22:00입니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">계좌변경</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chngrcpt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a md pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">약관동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="head-topBox2"><h2 class="hd-tit3">보험계약 대출의 체결/이행 등을 위한 <br>개인(신용정보) 수집/이용 및 제3자 제공동의서</h2></div>
+					<div class="ut-terms a">
+
+						<div class="ckall">
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a><!-- [D] 2022-05-13 태그텍스트변경 -->
+						</div>
+
+						<div class="plbox">
+							<div class="hdt"><div class="tit"><label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 수집/이용에 관한 사항</span></label></div></div>
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별정보 수집/이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="plbox">
+							<div class="hdt"><div class="tit"><label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 제공에 관한 사항</span></label></div></div>
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별정보 수집/이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 제공에 관한 사항 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

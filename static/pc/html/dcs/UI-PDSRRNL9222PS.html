@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a lg pop-dcs" id="pop-calc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보장내용</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="dcs-calc-top">
+					<div class="ut-bdgs">
+						<em class="bdg b">종신/정기</em>
+					</div>
+					<div class="hdt"><h2 class="tit hd-tit3">(무)교보실속있는평생든든종신보험(보증비용부과형)</h2></div>
+				</div>
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">예상보장내용</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">해지환급금</a></li>
+					</ul>
+				</div>
+
+				<div>
+					
+					<div class="ut-optset optset mt50 a-bot">
+						<div class="opt pl">
+							<span class="hd-tit5">주계약</span>
+						</div>
+						<div class="opt pr">
+							<!-- <span class="txt-unit">단위: 원</span> -->
+						</div>
+					</div>
+					<div class="ut-tbl a mt20 dcs-tbl">
+						<table class="tblist">
+							<caption><span class="tit">주계약</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 25%">
+								<col style="width: auto">
+								<col style="width: 20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">보장명</th>
+									<th scope="col">보장내용</th>
+									<th scope="col">보장금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l v-top">사망보험금</td>
+									<td class="txt-l v-top">보험기간(종신) 중 사망하였을 경우 <br> 기본보험금액 + 가산적립금 + 추가적립금 지급</td>
+									<td class="txt-r v-top">10,000,000원</td>
+								</tr>
+								<tr>
+									<td class="txt-l v-top">플러스보장기간 사망보험금</td>
+									<td class="txt-l v-top">플러스보장기간 중 사망하였을 경우 : 플러스보장기간 보험가입금액</td>
+									<td class="txt-r v-top">-</td>
+								</tr>
+								<tr>
+									<td class="txt-l v-top">기타안내사항</td>
+									<td class="txt-l v-top">
+										<ul class="bullet b">
+											<li>기본보험기간 중 기본사망보험금은 아래와 같이 계산된 금액을 말합니다.
+												<ul class="bullet c">		
+													<li>계약일부터 10년경과 계약해당일 전일까지 : 보험가입금액의 100% (다만, 간편가입형의 경우 계약일로부터 2년 미만에 재해 이외의 원인으로 사망할 경우 보험가입금액의 50%)</li>
+													<li>10년경과 계약해당일부터 20년경과 계약해당일 전일까지 : 보험가입금액의 100% + 10년경과 계약해당일부터 매년 보험가입금액의 10%씩 정액 체증</li>
+													<li>20년경과 계약해당일 이후 : 보험가입금액의 200% + 20년경과 계약해당일부터 매년 보험가입금액의 20%씩 정액 체증</li>
+												</ul>
+											</li>
+											<li>기본보험기간 중 가산보험금액은 기본적립금이 예정책임준비금보다 큰 경우에 기본적립금과 예정책임준비금과의 차이에 따라 증감되는 보험금액으로 기본보험기간 중 유효한 계약에 대하여 매일 계산하며, 계산 당일에만 확정 적용합니다. 다만, 기본적립금이 예정책임준비금 보다 적은 경우에는 가산보험금액이 발생하지 않습니다.</li>
+											<li>기본보험기간 중 가산보험금액은 공시이율을 적용하여 계산되기 때문에 공시이율이 변경되면 가산보험금액도 증가하거나 감소할 수 있습니다.</li>
+											<li>기본보험기간 중 최저사망보험금은 향후 공시이율에 관계없이 최저사망보험금 보증기간 동안 보장하는 최저한도의 사망보험금으로서 기본사망보험금을 말하며, 최저사망보험금 보증기간 동안 보장합니다.</li>
+											<li>기본보험기간 중 사망보험금 지급사유가 발생한 경우 사망 당시의 장기납입보너스 적립금, 고액유지보너스 적립금 및 고액유지보너스 책임준비금을 사망보험금과 함께 지급합니다. 다만, 최저사망보험금 보증기간에 피보험자가 사망한 경우에는 고액유지보너스 책임준비금을 지급하지 않습니다.</li>
+											<li>플러스보장기간의 사망보험금은 산출방법서에서 정한 방법에 따라 기본보험기간이 만료되는 시점에 기본적립금과 예정책임준비금 중 큰 금액에 추가적립금, 장기납입보너스 적립금 및 고액유지보너스 적립금을 더한 금액을 일시납보험료로 하여 산출되는 보험금을 말합니다.</li>
+											<li>플러스보장기간은 기본보험기간이 만료되는 날의 다음 날부터 10년으로 합니다.</li>
+											<li>플러스보장기간의 보장개시일은 기본보험기간이 만료되는 날의 다음 날로 하며, 피보험자가 보험가입 적격자인지 여부에 관계없이 자동으로 전환됩니다.</li>
+											<li>플러스보장기간의 보험가입금액은 전환일 현재 피보험자의 나이에 따라 계산하며, 계약체결 당시의 약관 및 보험요율을 적용합니다.</li>
+										</ul>
+									</td>
+									<td class="txt-r v-top">-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="ut-optset optset mt50">
+						<div class="opt pl">
+							<span class="hd-tit5">재해장해납입면제특약</span>
+						</div>
+						<div class="opt pr">
+							<!-- <span class="txt-unit">단위: 원</span> -->
+						</div>
+					</div>
+					<div class="ut-tbl a mt20 dcs-tbl">
+						<table class="tblist">
+							<caption><span class="tit">재해장해납입면제특약</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 25%">
+								<col style="width: auto">
+								<col style="width: 20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">보장명</th>
+									<th scope="col">보장내용</th>
+									<th scope="col">보장금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l v-top">보험료납입면제</td>
+									<td class="txt-l v-top">보험기간 중 「장해분류표 중 동일한 재해를 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상인 장해상태」가 되었을 경우에는 주계약 및 이 특약의 차회 이후부터 보험료 납입기간 종료일까지의 보험료 납입을 면제합니다.</td>
+									<td class="txt-r v-top">10,000,000원</td>
+								</tr>
+								<tr>
+									<td class="txt-l v-top">기타안내사항</td>
+									<td class="txt-l v-top">
+										<ul class="bullet b">
+											<li>보험기간 중 피보험자가 사망한 경우에는 사망 당시의 책임준비금을 계약자에게 지급하고 이 특약은 더 이상 효력을 가지지 않습니다.</li>
+											<li>보험기간 중 주계약이 이 특약에서 정하지 않은 사유로 납입면제 되었을 경우에는 납입면제 당시의 책임준비금을 계약자에게 지급하고 이 특약은 더 이상 효력을 가지지 않습니다.</li>
+											<li>장해지급률은 장해분류표 중 동일한 재해(하나의 사고로 인한 재해)를 원인으로 여러 신체부위의 장해지급률을 더한 기준입니다.</li>
+										</ul>
+									</td>
+									<td class="txt-r v-top">-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="ut-optset optset mt50">
+						<div class="opt pl">
+							<span class="hd-tit5">질병재해장해납입면제특약</span>
+						</div>
+						<div class="opt pr">
+							<!-- <span class="txt-unit">단위: 원</span> -->
+						</div>
+					</div>
+					<div class="ut-tbl a mt20 dcs-tbl">
+						<table class="tblist">
+							<caption><span class="tit">질병재해장해납입면제특약</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 25%">
+								<col style="width: auto">
+								<col style="width: 20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">보장명</th>
+									<th scope="col">보장내용</th>
+									<th scope="col">보장금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l v-top">보험료납입면제</td>
+									<td class="txt-l v-top">보험기간 중 「장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상인 장해상태」가 되었을 경우에는 주계약 및 이 특약의 차회 이후부터 보험료 납입기간 종료일까지의 보험료 납입을 면제합니다.</td>
+									<td class="txt-r v-top">10,000,000원</td>
+								</tr>
+								<tr>
+									<td class="txt-l v-top">기타안내사항</td>
+									<td class="txt-l v-top">
+										<ul class="bullet b">
+											<li>보험기간 중 「장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상인 장해상태」가 되었을 경우에는 주계약 및 이 특약의 차회 이후부터 보험료 납입기간 종료일까지의 보험료 납입을 면제합니다.</li>
+										</ul>
+									</td>
+									<td class="txt-r v-top">-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!--// 2022-04-18 수정: 전체 수정 -->
+					<div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog open" aria-expanded="true">안내문<span class="btxt">닫기</span></button>
+						<div class="gctn open" data-tog-cls="ctn" style="display: block;">
+							<ul class="bullet a glst">
+								<li>이 자료는 요약된 것이므로 실제 가입 시 건강 사항, 나이, 직업, 운전 여부, 과거 병력, 취미 등에 따라 가입이 제한되거나 보장금액 등이 축소될 수 있습니다.</li>
+								<li>자세한 내용은 보험약관과 보험증권(보험가입증서)으로 확인하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+					<!--// 2022-04-18 수정: 전체 수정 -->
+				</div>
+
+
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-calc');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

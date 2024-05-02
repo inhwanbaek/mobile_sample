@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer sm a pop-calculation" id="pop-calculation">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">사업비 계산방법</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- [D] 2022-06-03 클래스 삭제 'lg' -->			
+					<ul class="bullet a">
+						<li><span class="color6">보험료 비례 사업비 : 납입순보험료 x 0.6%</span>
+							<ul class="bullet c">
+								<li>다른 수탁기관의 퇴직보험(신탁)을 이전하는 경우: 납입순보험료 × 0.2%</li>
+								<li>종퇴보험을 퇴직보험으로 전환 시 사업비 할인 가능</li>
+							</ul>
+						</li>
+						<li><span class="color6">준비금 비례 사업비</span><br>해당 보험연도를 기준으로 산출한 경과책임준비금의 규모에 비례하여 부가합니다.
+							<ul class="bullet c">
+								<!-- [D] 2022-06-03 마크업 수정		
+								<li>경과책임준비금은 매월 계약해당일 책임준비금의 평균을 의미<br>* 준비금 비례 사업비 = 경과책임준비금 – (∑해당일 책임준비금) ÷ 경과월수</li>
+								-->	
+								<!-- [D] 2022-06-03 마크업 수정 -->
+								<li>경과책임준비금은 매월 계약해당일 책임준비금의 평균을 의미
+									<ul class="bullet b">
+										<li>준비금 비례 사업비 = 경과책임준비금 – (∑해당일 책임준비금) ÷ 경과월수</li>
+									</ul>
+								</li>
+								<!--//[D] 2022-06-03 마크업 수정 -->
+								<li>경과책임준비금 구간별 사업비율은 [준비금비례사업비 산출내역] 참조</li>
+							</ul>
+						</li>
+					</ul>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-calculation');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

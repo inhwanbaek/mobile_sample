@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a md pop-pim pop-transfor3" id="pop-transfor3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">출금이체 동의철회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- 본문 영역 -->
+					<div class="contents" id="contents">
+						<div class="int-txt">동의철회 신청 계좌를 확인해주세요.</div>
+
+						<div class="grp-ut-dcard">
+							<div class="ut-dcard c">
+								<div class="dtds">
+									<ul class="dlt">
+										<li>
+											<div class="dl">
+												<div class="dt">등록번호</div>
+												<div class="dd">2109300468801</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">은행</div>
+												<div class="dd">우리은행</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">계좌번호</div>
+												<div class="dd">45454****115</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">신청일</div>
+												<div class="dd">2021.10.30</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">처리구분</div>
+												<div class="dd">출금동의</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p class="txt-confirm">
+							동의 철회 시, 위 계좌를 통한 교보생명 보험 및 대출 관련 출금이체 거래가 중지됩니다.
+							<strong>출금이체 동의를 철회하시겠습니까?</strong><!-- [D] class 삭제 -->
+						</p>
+					</div>
+
+					<!-- 하단 고정영역 -->
+					<nav class="floatbots">
+						<div class="inr">
+							<div class="btn-set b2">
+								<button type="button" class="btn rd lg b" onclick="popsample_A();">취소</button>
+								<button type="button" class="btn rd lg a" onclick="popsample_C();">다음</button>
+							</div>
+						</div>
+					</nav>
+
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+	ui.popup.open('pop-transfor3');  // 팝업 열기
+
+	/* 콜백 필요 할때 팝업 열기
+	ui.popup.open('pop-sample1',{
+	ocb:function(){
+		console.log("열리고 콜백");
+	},
+	ccb:function(){
+		console.log("닫히고 콜백");
+	}
+	});
+	*/
+
+	</script>
+</div>
+</body>
+</html>

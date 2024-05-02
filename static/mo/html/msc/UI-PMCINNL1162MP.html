@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<!-- 헤더-->
+		<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"false","class":"is-title","title":"신청완료"}'></include>
+		<include class="gnb" src="../inc/gnb.html"></include>
+
+		<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+		<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+		<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+		<main class="container page result" id="container">
+			<div class="contents vspace" id="contents">
+				<div class="complate-msg icon1">
+					<div class="msg">
+						<p class="p1"><!-- [D] 2022-05-10 태그텍스트변경 -->	
+							보험료 추가/자유납입이 <br>
+							신청되었습니다. <br>
+							<strong class="bold">처리 결과</strong>를 꼭 확인해 주세요.
+						</p>
+					</div>
+					<div class="rst-area">
+						<h2 class="hd-tit4">처리내역</h2>
+						<div class="line-box">
+							<ul class="list">
+								<li>
+									<p class="dt">처리결과</p>
+									<p class="dd">
+										<!-- [D] 2022-06-22 태그수정 -->	
+										<span class="fn-point01">정상</span>
+										<span class="fn-point05">실패</span>
+									</p>
+								</li>
+								<li>
+									<p class="dt">처리일시</p>
+									<p class="dd">2021.08.26 10:06:08</p>
+								</li>
+								<li>
+									<p class="dt">처리번호</p>
+									<p class="dd">2021110500240571460</p>
+								</li>
+								<li>
+									<p class="dt">출금계좌</p>
+									<p class="dd">스탠다드차타드은행<br>(13645****869)</p>
+								</li>
+								<li>
+									<p class="dt">실처리금액</p>
+									<p class="dd">10,000원</p>
+								</li>
+							</ul>
+						</div>
+						<p class="sub-txt">자세한 내용은 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)로 문의해 주세요.</p>
+					</div>
+					<div class="rst-area">
+						<h2 class="hd-tit4">보험료 추가/자유 납입금액</h2>
+						<div class="line-box">
+							<ul class="list btw">
+								<li>
+									<p class="dt">총 신청건수</p>
+									<p class="dd">1건</p>
+								</li>
+								<li>
+									<p class="dt">추가납입보험료</p>
+									<p class="dd">70,000원</p>
+								</li>
+								<li>
+									<p class="dt"><strong class="fn-point01">실납입보험료 합계</strong></p>
+									<p class="dd"><strong class="fn-point01">70,000원</strong></p>
+								</li>
+							</ul>
+							<div class="btn-set">
+								<button type="button" class="btn wm md" id="ball_1">건별 상세내역</button>
+							</div>
+							<!-- <span data-ui-balloon="left,top" aria-describedby="ball_1" class="tip-msc1152">출금계좌 은행의 시스템에 따라 처리가 <br>다소 지연될 수 있어요.<br>
+								납입 처리결과가 ‘은행처리중’인 건은 반드시 <br>해당 계좌의 입출금거래내역을 확인해 주세요.
+							</span> -->
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">확인</button>
+					</div>
+				</div>
+			</nav>
+
+		</main>
+	</div>
+</body>
+</html>

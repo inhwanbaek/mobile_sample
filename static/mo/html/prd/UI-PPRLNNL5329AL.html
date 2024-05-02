@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	
+	<article class="pop-layer a pop-atm" id="pop-atm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대출사기 및 보이스피싱 주의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit3">
+						다음 항목 중 하나라도 해당한다면? <br>보이스피싱 사기를 의심하세요!
+					</h2>
+					<ul class="bullet a">
+						<li>카카오톡 등 SNS에서 가족 또는 지인을 사칭하며 출처를 알 수 없는 앱 설치 요구!</li>
+						<li>대출 처리 비용 등을 이유로 선입금 요구!</li>
+						<li>저금리, 정부 지원 대출이 가능하다며 선입금 요구!</li>
+						<li>검찰, 경찰, 금융감독원이라며 안전계좌로 이체 요구!</li>
+						<li>계좌 비밀번호, 인증서 비밀번호 등 개인금융정보 요구!</li>
+						<li>가족 납치 또는 협박 등을 하며 금전 요구!</li>
+						<li>신용카드 사진과 비밀번호 전송 요구!</li>
+						<li>신용점수 상향 목적으로 수수료 선입금 요구!</li>
+						<li>계좌를 지정해 주면서 고금리 대출  상환 요청!</li>
+					</ul>
+					<h2 class="hd-tit3">피해 예방을 위하여</h2>
+					<ul class="bullet a">
+						<li>실제 가족, 지인이 맞는지 반드시 직접 전화통화로 확인하세요.</li>
+						<li>상대방이 긴급한 상황을 연출하더라도 전화로 직접 확인하기 전에는 각별히 주의하시기 바랍니다.</li>
+					</ul>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-atm');">취소</button> -->
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-atm');
+	</script>
+
+</div>
+</body>
+</html>

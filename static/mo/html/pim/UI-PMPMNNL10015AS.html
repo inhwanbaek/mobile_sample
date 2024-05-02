@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"나의 알림"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page pim pim-alert" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<a href="javascript:;" class="link-bell">알림설정</a>
+			<div class="grp-box-rd">
+				<dl class="box-rd-bg">
+					<dt>상담<span class="ico-new"><em class="blind">new</em></span></dt>
+					<dd>
+						상담 답변이 도착했습니다. <br>지금 확인해보세요.
+						<span class="date">지금</span>
+						<button type="button" class="btn-arr"><span class="blind">자세히 보기</span></button>
+					</dd>
+				</dl>
+
+				<dl class="box-rd-bg">
+					<dt>보험료만기도래<span class="ico-new"><em class="blind">new</em></span></dt>
+					<dd>
+						보험료 만기 날짜가 도래하였습니다. <br>지급 가능한 금액을 확인해보세요
+						<span class="date">지금</span>
+						<button type="button" class="btn-arr"><span class="blind">자세히 보기</span></button>
+					</dd>
+				</dl>
+				<dl class="box-rd-bg">
+					<dt>내 보험 바로알기 서비스 <br>오픈이벤트</dt>
+					<dd>
+						20201-10-01~20201-10-26
+						<span class="date">2021.10.20</span>
+						<button type="button" class="btn-arr"><span class="blind">자세히 보기</span></button>
+					</dd>
+				</dl>
+				<dl class="box-rd-bg">
+					<dt>회원가입을 축하드립니다</dt>
+					<dd>
+						교보 가족이 되신것을 축하드립니다
+						<span class="date">2021.10.20</span>
+						<button type="button" class="btn-arr"><span class="blind">자세히 보기</span></button>
+					</dd>
+				</dl>
+			</div>
+			<div class="ut-more">
+				<button type="button" class="btn-more">
+					<span class="tnt">
+						<em class="tm">더보기</em>
+						<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+					</span>
+				</button>
+			</div>
+		</div>
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">변경</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

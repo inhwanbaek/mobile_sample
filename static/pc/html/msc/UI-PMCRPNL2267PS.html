@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc rp irpmng" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">퇴직금 찾기(IRP해지)</h2>
+			</div>
+
+			<div class="mrp-tbox">
+				<h2 class="hd-tit3">퇴직금 찾기 신청 안내</h2>
+				<ul class="bullet a">
+					<li>IRP를 해지하여 퇴직금을 바로 받으실 수 있습니다.</li>
+					<li>추가로 납입한 금액 중 세액공제를 받지 않은 금액은 고객PLAZA에서 해지하실 수 있습니다.<br>(필요서류: 신분증, 근로소득원천징수영수증 또는 연금납입확인서(국세청 발행))</li>
+				</ul>
+			</div>
+
+			<div class="msect">
+				<div class="irpmng-vsbox">
+					<h3 class="hd-tit4">퇴직금 찾기 신청 시 가입자 유의사항</h3>
+					<p class="tbltt">"퇴직금 찾기" VS "연금으로 받기" 세제 비교</p>
+
+					<div class="ut-tbl a">
+						<table class="tbform a" cellpadding="0" cellspacing="0">
+							<caption>"연금으로 받기" VS "퇴직금 찾기" 세제 비교<span class="tit"></span><span class="cap"></span></caption>
+							<colgroup>
+								<col >
+								<col style="width:35%;">
+								<col style="width:35%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">구분</th>
+									<td>퇴직금 찾기<br>(일시금 수령)</td>
+									<td>연금으로 받기<br>(연금 수령)</td>
+								</tr>
+								<tr>
+									<th scope="row">사용자 <br>부담금</th>
+									<td>퇴직소득세</td>
+									<td>연금소득세<br>(퇴직소득세의 70%만 과세)</td>
+								</tr>
+								<tr>
+									<th scope="row">세액공제 받은 추가납, <br>운용수익</th>
+									<td>기타소득세<br>(16.5% 분리과세)</td>
+									<td>연금소득세<br>(1,200만원 이하 3.3~5.5%, 1,200만원 초과 시 종합과세)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<ul class="bullet a">
+						<li>IRP를 해지하여 퇴직금으로 한 번에 받으면 적립금에서 퇴직소득세 및 기타소득세(지방소득세 포함) 차감 후 지급됩니다.</li>
+						<li>세액공제를 받은 추가 납입금 및 운용수익에 대해서는 기타소득세 16.5%(지방소득세 포함)가 과세됩니다.</li>
+					</ul>
+					<div class="agrbox">
+						<label class="checkbox cr"><input type="checkbox"><span class="txt">동의</span></label>
+					</div>
+				</div>
+			</div>
+
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg a">신청</button>
+					</div>
+				</div>
+			</nav>
+
+			<div class="mrp-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li><span class="bold">퇴직금 찾기 신청시간은 평일 09:00~16:00입니다.</span></li>
+							<li>본인인증을 완료하셔야 교보생명에 접수됩니다.</li>
+							<li>자세한 사항은 <span class="bold">법인콜센터(1588-0770)</span>로 문의해 주세요.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

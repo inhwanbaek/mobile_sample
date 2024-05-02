@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		
+		<article class="pop-layer sm a pop-compsch" id="pop-compsch">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">직장명을 입력해 주세요.</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents nopad">
+						<section class="forms">
+							<span class="input a name">
+								<label class="lb" for="input_kwd">직장명</label>
+								<div class="ibts"><button type="button" class="btn sm b bt-sch">검색</button></div>
+								<input id="input_kwd" type="search" placeholder="2글자 이상 입력">
+							</span>
+						</section>
+						<section class="schlist">
+							<ul class="rslist">
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보조경건설</span><span class="name">남동인</span> <span class="blind">선택</span></button></li>
+								<li><button type="button" class="sel"><span class="cmpy">교보교육제단</span><span class="name">안팡기</span> <span class="blind">선택</span></button></li>
+							</ul>
+							<div class="rndata">
+								<div class="msg"><span class="m">검색 결과가 없습니다.</span></div>
+								<div class="btn-set bts">
+									<button type="button" class="btn md wm bt-reg" onclick="sampleFunction()">직접입력</button>
+								</div>
+							</div>
+	
+						</section>
+					</main>
+				</div>
+				<div class="pbt" style="display:none;" id="btn_area">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg b">취소</button>
+						<button type="button" class="btn rd lg a">저장</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		
+		<script>
+			ui.popup.open('pop-compsch');  // 팝업 열기
+			
+			var sampleFunction = function(){
+				$("#btn_area").show();
+				$(".schlist").hide();
+				ui.update();
+			}
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-sample1',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			
+			
+		</script>
+	</div>
+</body>
+</html>

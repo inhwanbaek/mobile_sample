@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page msc insur-guide" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">보험금청구 안내</h2>
+				<div class="desc">다양한 <i class="line">보험금 청구방법</i>, 알기 쉽게 안내해 드릴게요.</div><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-tabs a">
+						<ul class="menu">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">공통사항</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">사망보험금</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">장해급여금</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">진단급여금</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">입원/통원/치아치료/골절·수술/실손</a></li>
+						</ul>
+					</div>
+					<!-- 공통사항 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+						<div class="ut-tabs b">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_1" href="javascript:;">청구방법</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_2" href="javascript:;">필요서류</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_c" aria-controls="tab_c_3" href="javascript:;">주요안내</a></li>
+							</ul>
+						</div>
+						<!-- 신청방법 --> <!-- [D] 2022-02-11 전체 변경 -->
+						<div data-ui-tab-ctn="tab_c" aria-labelledby="tab_c_1" class="active">
+							<div class="info-slide navi">
+								<div class="swiper-container swiper">
+									<ul class="swiper-wrapper slide">
+										<li class="swiper-slide">
+											<ol class="avatar-list">
+												<li class="q"><span class="text">직접 방문하시겠어요?</span></li>
+												<li>
+													<span class="text">신분증(주민등록증 또는 운전면허증)과 보험가입증서를 지참해서 전국 교보생명 고객PLAZA 또는 지점 외설창구를 방문해 주세요.
+													<a href="javascript:;" class="link-text">고객PLAZA/지점 찾기</a></span><!-- [D] 2022-07-05 텍스트수정 -->	
+												</li>
+												<li class="q"><span class="text">FP가 보험금 청구를 대신해 드릴 수 있어요.</span></li>
+												<li>
+													<span class="text">담당 컨설턴트에게 연락해 주세요.
+													<a href="javascript:;" class="link-text">FP(담당컨설턴트) 대리접수 신청</a></span>
+												</li>
+											</ol>
+										</li>
+										<li class="swiper-slide">
+											<ol class="avatar-list">
+												<li class="q"><span class="text">우편으로 청구하시려면?</span></li>
+												<li>
+													<div class="text">청구에 필요한 서류를 담당 컨설턴트 소속 지점으로 보내 주세요.
+														<ul class="bullet b"><!-- [D] 2022-05-12 태그변경 -->
+															<li>단, 사망보험금은 우편으로 청구하실 수 없습니다.</li>
+														</ul>
+													</div>
+												</li>
+												<li class="q"><span class="text">팩스로 청구하시려면?</span></li>
+												<li>
+													<div class="text">
+														콜센터 또는 담당 컨설턴트 소속 지점으로 연락하여 받으신 FAX번호로 서류를 전송해 주세요.<!-- [D] 2022-06-16 텍스트변경 -->	
+														<ul class="bullet b">
+															<li>18:00 이후 전송된 서류는 다음 영업일에 접수됩니다.</li>
+															<li>팩스로 청구할 수 있는 보험금은 100만원 이하입니다.</li>
+														</ul>
+													</div>
+												</li>
+											</ol>
+										</li>
+										<li class="swiper-slide">
+											<ol class="avatar-list">
+												<li class="q"><span class="text">디지털채널을 이용하면 간편해요!</span></li>
+												<li>
+													<div class="text">
+														<ul class="bullet c">
+															<li>PC나 모바일에서 교보생명 홈페이지(www.kyobo.com) 또는 앱에 접속해 보험금청구 절차를 진행해 주세요.</li>
+															<li>필요서류는 카메라로 촬영 또는 이미지 파일을 첨부해 주세요. 등록 가능한 파일 형식은 TIF, TIFF, JPEG, PNG입니다.<!-- [D] 2022-06-16 텍스트변경 -->	
+																<ul class="bullet b">
+																	<li>18:00 이후 청구 건과 토, 일, 공휴일 청구 건은 다음 영업일에 접수됩니다.</li>
+																	<li>디지털채널로 청구할 수 있는 보험금은 300만원 이하입니다.</li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="text">
+														<strong class="tit">일반 계약인 경우</strong>
+														수익자만 청구할 수 있으며, 청구하는 분이 피보험자 본인이 아닌 경우 피보험자의 동의가 필요합니다.(모바일로 정보제공 동의 진행)
+														<ul class="bullet b">
+															<li>다음 영업일 18:00까지 피보험자가 동의해야 접수가 완료되며, 동의하지 않으면 보험금 청구가 취소됩니다. </li>
+														</ul>
+													</div>
+													<div class="text">
+														<strong class="tit">미성년자 계약인 경우(친권자) </strong>
+														계약자와 수익자가 같거나, 피보험자와 수익자가 같고, 피보험자가 미성년자인 보험계약만 가능하며, 청구는 계약자 본인만 할 수 있습니다. 이때 자녀의 기본증명서, 가족관계증명서가 추가로 필요합니다.(계약자와 수익자가 같은 경우는 불필요)
+													</div>
+												</li>
+											</ol>
+										</li>
+										<li class="swiper-slide">
+											<ol class="avatar-list">
+												<li class="q"><span class="text">보험금을 청구할 수 있는 분은?</span></li><!-- [D] 2022-06-16 텍스트변경 -->	<!-- [D] 2022-07-08 "사고보험금" -> "보험금"텍스트수정 -->
+												<li>
+													<span class="text">
+														<ul class="bullet"><!-- [D] 2022-05-23 태그텍스트변경 --><!-- [D] 2022-06-16 숫자불릿으로 변경 -->
+															<li><i class="n">①</i> 보험계약을 한 계약자 </li>
+															<li><i class="n">②</i> 보험의 대상이 되는 피보험자 </li>
+															<li><i class="n">③</i> 청구사유별 보험금을 받기로 지정된 수익자 </li>
+															<li><i class="n">④</i> 계약자에게 위임받은 대리인 등이 가능합니다. </li>
+														</ul>
+													</span>
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+								<div class="navigation">
+									<button type="button" class="nav prev"><span class="blind">이전으로</span></button>
+									<button type="button" class="nav next"><span class="blind">다음으로</span></button>
+								</div>
+								<div class="pagination"></div>
+							</div>
+
+							<h3 class="hd-tit4 tstep">보험금 지급심사 절차</h3>
+							<div class="step-list">
+								<ul>
+									<li>
+										<strong class="tit"><span class="num">01.</span> 접수</strong>
+										<span class="txt">(고객창구 텔러)</span>
+									</li>
+									<li>
+										<strong class="tit"><span class="num">02.</span> 현장확인 여부 심사</strong>
+										<span class="txt">(지급심사팀 심사당담자)</span>
+									</li>
+									<li>
+										<strong class="tit"><span class="num">03.</span> 현장확인</strong>
+										<span class="txt">(KCA손해사정㈜ 현장확인담당자)</span>
+									</li>
+									<li>
+										<strong class="tit"><span class="num">04.</span> 지급 여부 심사</strong>
+										<span class="txt">(지급심사팀 심사담당자)</span>
+									</li>
+									<li>
+										<div class="tit"><span class="num">05.</span> 지급 또는 불지급
+											<!-- <p class="bullet b">텔러가 판정하지 않습니다</p> --><!-- [D] 2022-07-05 텍스트삭제 -->	
+										</div>										
+										<span class="txt">(고객창구 텔러)</span>
+									</li>
+								</ul>
+							</div>
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>보험금 지급 여부 결정을 위해 사고 현장 조사, 병원 방문 조사 등이 필요한 경우 「보험업법」에 따라 공동된 제3자에게 현장확인 업무를 위탁할 수 있습니다.</li>
+										<li>현장확인 위탁 업무를 위해 「개인정보보호법」 및 「신용정보의 이용 및 보호에 관한 법률」 제32조에 따라 개인(신용)정보의 제공 및 활용 동의서를 고객님에게 요구할 수 있습니다.</li>
+										<li>「보험업감독규정」 중 ‘금융기관의업무위탁등에관한규정’에 의하면, ‘금융기관은 인가 등을 받은 업무를 영위함에 있어 제3자에게 업무를 위탁하거나 제3자의 업무를 수탁할 수 있다.’라고 명시하고 있습니다.</li>
+										<li>교보생명이 현장확인 업무를 위탁한 회사는 KCA손해사정㈜입니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //신청방법 -->
+
+						<!-- 필요서류 -->  <!-- [D] 2022-02-11 전체 변경 -->
+						<div data-ui-tab-ctn="tab_c" aria-labelledby="tab_c_2">
+							<!-- <div class="btn-set mb15"><button type="button" class="btn md move">서류 다운로드 이동</button></div> -->
+							<!-- [D] 2022-05-25 태그텍스트변경 -->
+							<div class="ut-dcard b rgray">
+								<div class="bx">
+									<div class="txt">필요한 서류를 다운로드 할 수 있는 메뉴로 이동합니다.</div>
+									<div class="btn-set">
+										<button type="button" class="btn md ico-elink ico-r">서류 다운로드 이동</button><!-- [D] 2022-06-03 아이콘수정  -->
+									</div>
+								</div>								
+							</div>
+							<div class="tab-cts-box">
+								<ul class="ut-accd b" data-accd="tog">
+									<li>
+										<div class="hbox">공통 서류<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<div class="text-group">
+												<h3 class="hd-tit4">보험금 청구서류</h3><!-- [D] 2022-06-23 텍스트수정 -->	<!-- [D] 2022-07-08 "사고보험금" -> "보험금"텍스트수정 -->
+												<h4 class="hd-tit5">공통</h4>
+												<div class="text-box">
+													<ul class="bullet c">
+														<li>보험금 청구서(보험금 청구를 위한 상세 동의서 포함)</li>
+														<li>청구인 신분증 사본</li>
+													</ul>
+												</div>
+												<h4 class="hd-tit5">추가서류(필요 시) </h4>
+												<div class="text-box">
+													<ul class="bullet c">
+														<li>
+															가족관계 확인 필요 시(배우자, 자녀 등의 보장상품, 수익자가 미성년자인 경우 등): 가족관계 확인 서류<br>
+															예) 가족관계증명서, 혼인관계증명서 등<br>
+															단, 자녀의 경우 계약사항 내에 자녀 등록 시 가족관계확인서류 생략
+														</li>
+														<li>
+															대리인 청구 시: 위임장, 보험금 청구권자의 인감증명서(또는 본인서명사실확인서), 보험금청구권자의 개인(신용)정보처리동의서<br>
+															단, 계약당사자(계약자, 피보험자, 청구사유별 수익자)는 청구인 신분증으로 같음, 계약당사자의 직계가족은 가족관계확인서류로 갈음
+														</li>
+													</ul>
+												</div>
+												<h3 class="hd-tit4">보험금 청구 시 필요서류</h3>
+												<h4 class="hd-tit5">본인</h4>
+												<div class="text-box">
+													<ul class="bullet a lg">
+														<li>보험증권</li>
+														<li>실명확인증표(주민등록증, 운전면허증, 여권)
+															<ul class="bullet c">
+																<li>외국인의 경우 여권, 외국인등록증, 금융감독원발행 투자신분증</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<h4 class="hd-tit5">대리인</h4>
+												<div class="text-box">
+													<ul class="bullet a lg">
+														<li>보험증권</li>
+														<li>수령권자의 위임장(본인서명사실확인서에 서명 또는 인감도장 날인)</li>
+														<li>인감증명서 또는 본인서명사실확인서</li>
+														<li>가족관계확인서류(주민등록등본 또는 가족관계증명서)</li>
+														<li>대리인의 실명확인증표
+															<ul class="bullet c">
+																<li>대리인은 직계존비속 및 배우자에 한함.</li>
+															</ul>
+														</li>
+													</ul><!-- [D] 2022-06-23 태그추가 -->
+													<span class="hr-line" aria-hidden="true"></span><!-- [D] 2022-06-23 태그추가 -->
+													<ul class="bullet a lg"><!-- [D] 2022-06-23 태그추가 -->
+														<li>생존 시 지급되는 보험금의 경우 주(종)피보험자의 생존여부확인서류(기본증명서 또는 주민등록등본 등)
+															<ul class="bullet c">
+																<li>피보험자 생존 여부 및 대리인 수령 시 가족관계확인서류는 발급일로부터 1개월 이내</li>
+																<li>내방한 본인(실명확인증표 지참)의 생존여부확인서류는 생략 가능</li>
+															</ul>
+														</li>
+														<li>배우자 또는 직계존비속 수령 시 500만원 이하인 경우 위임장 및 본인서명사실확인서, 인감증명서 생략 가능(해약, 중도인출, 보험계약대출의 지급 사유는 제외)</li>
+														<li>수령권자가 미성년인 경우 콜센터로 별도 서류 문의
+															<ul class="bullet b">
+																<li>위 서류 외에 청구사유별로 추가 서류가 필요할 수 있습니다.</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">개인(신용)정보 처리 동의서 작성<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<div class="text-group">
+												<div class="text-box">
+													<h4 class="hd-tit5">보험금 신청서 및 보험금 청구를 위한 개인(신용)정보 처리 동의서 작성</h4>
+													<ul class="bullet a lg">
+														<li>회사가 고객의 개인(신용)정보를 수집ㆍ이용하고자 하는 경우에는 「개인정보보호법」 제15조 및 제22조, 「신용정보의 이용 및 보호에 관한 법률」 제32조 및 제33조에 따라 동의를 얻어야 하고, 생명보험협회, 손해보험협회, 보험개발원 등 신용정보집중기관으로부터 고객의 신용정보를 조회하고자 하는 경우는 「신용정보의 이용 및 보호에 관한 법률」 제32조2항에 따라 동의를 얻어야 하며, 고객으로부터 취득한 개인(신용)정보를 제3자에게 제공할 경우에는 「개인정보보호법」 제17조 및 제22조, 「신용정보의 이용 및 보호에 관한 법률」 제32조에 따라 고객의 사전 동의를 얻어야 합니다. </li>
+														<li>또한, 고객의 민감정보 및 고유식별정보를 처리(수집ㆍ이용, 제공 등)하기 위해서는 「개인정보보호법」 제23조 및 제24조에 의하여 위의 개인(신용)정보에 대한 각 동의와 별도의 동의를 얻어야 합니다. 고객님께서 청구하신 보험금을 신속하고 정확하게 처리하기 위하여 보험금 신청서와 개인(신용)정보 수집ㆍ이용 제공 조회 동의서 내용을 숙지하시고 직접 작성하여 주시기 바랍니다.</li>
+													</ul>
+													<div class="tbl-box">
+														<div class="ut-tbl a">
+															<table class="tblist nl" cellspacing="0" cellpadding="0">
+																<caption><span class="tit">청구방법 및 작성방법 상세</span><span class="cap"></span></caption>
+																<colgroup>
+																	<col>
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">청구방법</th>
+																		<th scope="col">작성방법</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>
+																			<ul class="bullet a">
+																				<li>계약당사자 청구</li>
+																				<li>계약당사자의 직계가족 대리 청구</li>
+																				<li>FP 대리 청구</li>
+																			</ul>
+																		</td>
+																		<td>
+																			계약당사자 작성 후 서명 또는 인감 날인
+																			<ul class="bullet b">
+																				<li>동의서 작성 시 피보험자 동의 필수</li>
+																			</ul>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">임의 대리인 청구</td>
+																		<td class="txt-l">계약당사자 작성 후 인감 날인
+																			<ul class="bullet b">
+																				<li>임의대리인 청구 시 인감 날인 필수</li>
+																			</ul>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">재해사실 확인서류<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<div class="text-group">
+												<div class="text-box">
+													<ul class="bullet a lg">
+														<li>약관에서 말하는 ‘재해’는 우발적인 외래 사고입니다. </li>
+														<li>재해사고로 인한 보험금을 청구할 때는 청구 사유를 객관적으로 확인하기 위해 재해사고 종류별 확인서류를 제출하셔야 합니다.</li>
+													</ul>
+													<div class="tbl-box">
+														<div class="ut-tbl a">
+															<table class="tblist nl" cellspacing="0" cellpadding="0">
+																<caption><span class="tit">재해사실 확인서류의 제출</span><span class="cap"></span></caption>
+																<colgroup>
+																	<col width="40%">
+																	<col>
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">재해사고종류</th>
+																		<th scope="col">확인서류</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="txt-l">교통사고</td>
+																		<td class="txt-l">공공기관(경찰서, 소방서 등)·손해보험사·공제조합(버스, 화물, 택시 등) 사고사실확인서</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">산업재해</td>
+																		<td class="txt-l">산업재해처리내역서 또는 보험급여지급확인서</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">군인재해사고</td>
+																		<td class="txt-l">공무상병인증서</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">의료사고 등 법원분쟁</td>
+																		<td class="txt-l">법원판결문</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">기타 재해사고</td>
+																		<td class="txt-l">공공기관(경찰서, 소방서 등) 사고사실확인서</td>
+																	</tr>
+																	<tr>
+																		<td class="txt-l">확인서류 발급불가 재해사고</td>
+																		<td class="txt-l">병원 초진 차트 등 재해사고 증명서류, 보험금 청구서상 재해사고 내용 기재</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+													<!-- <ul class="bullet a lg">
+														<li>
+															보험금 청구 시 문자메시지 수신에 동의하시면 지급금 안내, 보험금 지급 처리 현황 등 각종 정보를 휴대폰으로 받아보실 수 있습니다.
+														</li>
+														<li>
+															교보생명이 아닌 다른 보험사에서 가입하신 보험계약은 보험협회에서 조회하실 수 있습니다.
+														</li>
+														<li>
+															교보생명의 보험금 지급 거절 및 보험금 결정금액에 동의하지 않으면 상담 신청 또는 이의 제기를 하실 수 있습니다.
+														</li>
+													</ul>
+													<h4 class="hd-tit5">상담 신청 및 이의 제기 방법</h4>
+													<ul class="bullet a lg">
+														<li>
+															전화: 보험금 심사담당자 또는 교보생명 보험금 전용 상담센터(1588-1810)
+														</li>
+														<li>
+															인터넷: 교보생명 홈페이지(<a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">www.kyobo.co.kr</a>) <a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">[고객센터 > 칭찬/제안/민원 > 전자민원접수]</a> 메뉴 이용
+														</li>
+														<li>
+															우편: (03154) 서울 종로구 종로 1(종로1가) 교보생명 지급심사팀 민원담당자
+														</li>
+													</ul> -->
+													<!-- [D] 2022-06-03 삭제 -->
+													<!-- <div class="btm-download">
+														<ul class="bullet a">
+															<li>다운로드한 서류가 보이지 않으면 PDF 뷰어 프로그램을 설치해 주세요.</li>
+														</ul>
+														<button type="button" class="btn sm ico-down ico-r">PDF 뷰어</button>
+													</div> -->
+												</div>
+											</div>
+
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<!-- [D] 2022-06-23 태그텍스트수정 -->
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a"><!-- [D] 2022-07-05 텍스트순서변경 -->	
+										<li>보험금 지급심사 과정에서 추가 서류가 필요한 경우 서류 보완을 요청드릴 수 있습니다.</li>
+										<li>현장확인 대상 건의 보험금 지급심사 진행 현황은 교보생명 홈페이지(<a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">www.kyobo.co.kr</a>)에서 조회하실 수 있습니다.</li>
+										<li>보험금 청구 시 문자메시지 수신에 동의하시면 지급금 안내, 보험금 지급 처리 현황 등 각종 정보를 휴대폰으로 받아보실 수 있습니다.</li>
+										<li>교보생명이 아닌 다른 보험사에서 가입하신 보험계약은 보험협회에서 조회하실 수 있습니다.</li>
+										<li>교보생명의 보험금 지급 거절 및 보험금 결정금액에 동의하지 않으면 상담 신청 또는 이의 제기를 하실 수 있습니다.</li>										
+									</ul>
+									<p class="tt">상담 신청 및 이의 제기 방법</p>
+									<ul class="bullet a">
+										<li>전화: 보험금 심사담당자 또는 교보생명 보험금 전용 상담센터(1588-1810)</li>
+										<li>인터넷: 교보생명 홈페이지(<a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">www.kyobo.co.kr</a>) <a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">[고객센터 > 칭찬/제안/민원 > 전자민원접수]</a> 메뉴 이용</li>
+										<li>우편: (03154) 서울 종로구 종로 1(종로1가) 교보생명 지급심사팀 민원담당자</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //필요서류 -->
+
+						<!-- 주요안내 --> <!-- [D] 2022-02-11 전체 변경 -->
+						<div data-ui-tab-ctn="tab_c" aria-labelledby="tab_c_3">
+							<div class="tab-cts-box">
+								<ul class="ut-accd b" data-accd="tog">
+									<li>
+										<div class="hbox">보험금 지급조사 요청에 대한 동의<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<div class="text-group">
+												<div class="text-box">
+													<ul class="bullet a lg">
+														<li>계약자, 피보험자 또는 보험수익자(보험금을 받는 자)는 보험금 지급사유조사와 관련하여 의료기관 또는 국민건강보험공단, 경찰서 등 관공서에 대한 교보생명의 서면 조사 요청에 동의해야 합니다. </li>
+														<li>다만, 정당한 사유 없이 이에 동의하지 않을 경우 사실 확인이 끝날 때까지 교보생명은 보험금과 지급 지연에 따른 이자를 지급하지 않습니다.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">보험사 간 치료비 분담 지급(비례보상 적용)<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<div class="text-group">
+												<div class="text-box">
+													<ul class="bullet a lg">
+														<li>상해ㆍ질병으로 인한 의료비 실비를 보상하는 상품에 여러 개 가입하신 경우 보험약관에 따라 비례보상원칙을 적용해 보험계약별로 보험금을 분할 지급할 수 있습니다. </li>
+														<li>이 경우 접수대행신청서를 작성하면 다른 보험사에 접수 대행이 가능하고, 다른 보험사에 가입된 보험계약은 생명보험협회를 통해 확인하실 수 있습니다.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">보험금 청구에 대한 결과 안내<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											보험금 지급심사 결과 청구 보험금이 정상 지급되지 않을 수 있으며(보험금 부지급, 해지, 취소, 무효 등), 이 경우 그 사유 및 근거를 안내해 드립니다.
+										</div>
+									</li>
+									<li>
+										<div class="hbox">보험금 예상 지급일<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											최종 서류 접수일로부터 3일 이내, 지급 사유 조사나 확인이 필요한 경우는 10일 이내이며, 날짜 계산은 모두 영업일 기준입니다.
+										</div>
+									</li>
+									<li>
+										<div class="hbox">보험금 지급 지연 안내<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<ul class="bullet a lg">
+												<li>약관에서 정한 지급기일 안에 보험금을 지급하지 못할 것으로 예상되면 지연 사유와 지급예정일을 안내해 드립니다.</li>
+												<li>지급예정일이 지난 경우 약관 규정에 따라 지연이자를 산정해서 지급합니다. </li>
+												<li>약관상 지급기일 안에 보험금을 지급하지 못할 것으로 명백히 예상되는 경우에는 보험금 가지급제도에 따라 보험금을 받으실 수 있습니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">의료 심사<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<ul class="bullet a lg">
+												<li>보험수익자와 교보생명이 보험금 지급 사유에 대해 합의하지 못할 때는 보험수익자와 교보생명이 함께 제3자를 정하고 그 제3자의 의견에 따를 수 있습니다.</li>
+												<li>제3자는 「의료법」 제3조(의료기관)에 규정된 종합병원 소속 전문의 중에서 정합니다.</li>
+												<li>보험금 지급 사유 판정에 드는 비용은 교보생명이 전액 부담합니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">보험금 등의 소멸시효<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<ul class="bullet a lg">
+												<li>「상법」 제662조(소멸시효)에 따라 보험금청구권, 보험료반환청구권, 해지환급금청구권, 책임준비금반환청구권 및 배당금청구권은 3년간 행사하지 않을 경우 시효가 소멸됩니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">주소변경 통지<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<ul class="bullet a lg">
+												<li>표준약관 제10조(주소변경통지)에 따라 계약자(보험수익자가 계약자와 다른 경우 보험수익자 포함)는 주소 또는 연락처가 변경되었을 때 지체 없이 이를 교보생명에 알려야 합니다.</li>
+												<li>알리지 않을 경우 교보생명은 현재 고객정보로 등록된 계약자 또는 보험수익자의 주소 또는 연락처로 등기우편 등 발신 기록이 남는 방법을 이용해 알림사항을 전달하고, 일반적인 배송 완료 시일이 지나면 계약자 또는 보험수익자에게 알림사항이 도달된 것으로 봅니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">손해사정사 선임 안내<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox"><!-- [D] 2022-06-07 텍스트변경 -->
+											<ul class="bullet a lg">
+												<li>고객님께서 손해사정을 위해 개별적으로 손해사정사를 선임하실 수 있으며 선임하지 않을 경우 보험사는 「보험업법」에 따라 공인된 손해사정법인에게 사고조사 업무를 위탁할 수 있습니다.</li>
+												<li>보험계약자 등이 부담하는 경우
+													<ul class="bullet c">
+														<li>보험사가 고용 또는 선임한 손해사정사의 사정 결과에 승복하지 못할 때</li>
+														<li>보험계약자 등이 보험사와는 별도로 손해사정사를 선임할 때</li>
+													</ul>
+												</li>
+												<li>보험사가 부담하는 경우
+													<ul class="bullet c">
+														<li>손해사정이 착수되기 전에 보험계약자 등이 손해사정사 선임 의사를 보험사에 통보하여 동의를 얻은 때</li>
+														<li>보험사가 보험사고를 통보받은 날(제3보험상품의 경우 접수완료일)로부터 7일이 지나도 정당한 사유 없이 손해사정을 착수하지 않은 때</li>
+													</ul>
+												</li>
+											</ul>
+											<ul class="bullet b">
+												<li>손해사정사는 보험금 대리청구, 보험금에 대한 보험사와의 합의 또는 절충 등의 행위를 할 수 없습니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="hbox">손해사정사 선임 동의 기준<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											교보생명은 보험금청구권자가 손해사정사 선임 의사를 표시하고 선임 동의를 요청했을 때, 아래 항목 중 하나에 해당하는 경우 외에는 선임에 동의하는 것을 원칙으로 합니다.
+											<ul class="bullet num mt16 mb10">
+												<li><i class="n">①</i> 「보험업법」 제2조제19호에 명시된 전문보험계약자1)의 계약인 경우(단, 전문보험계약자이나 실손의료보험 계약을 포함한 단체보험상품인 경우는 제외)</li>
+												<li><i class="n">②</i> 화재보험, 해상보험, 자동차보험, 보증보험 등 「보험업법 시행령」 제1조의2 제3항 각호에서 정한 계약2)인 경우</li>
+												<li><i class="n">③</i> 실손의료비 외 진단비, 수술비, 후유장해보험금 등 정액보장 보험계약이 함께 청구된 경우</li>
+												<li><i class="n">④</i> 보험금 청구 시 제출한 서류만으로 심사가 가능해 조사나 확인이 필요하지 않은 경우</li>
+												<li><i class="n">⑤</i> 선임할 손해사정사가 「보험업법 시행규칙」의 신체손해사정사 또는 종합손해사정사 자격을 갖추지 못한 경우(단, 2011년 1월 「보험업법 시행규칙」 개정 전에 등록한 제4종손해사정사는 실손의료보험에 대한 손해사정 자격 있음) </li>
+												<li><i class="n">⑥</i> 선임할 손해사정사가 건전한 금융질서를 해칠 소지가 있는 경우
+													<ul class="bullet c">
+														<li>보험금 청구일 기준 2년 이내에 「보험업법」 또는 「보험업감독규정」 위반으로 형사처벌을 받았거나 감독기관의 제재를 받은 이력이 있는 경우</li>
+														<li>교보생명을 대상으로 한 보험금 지급 관련 분쟁조정 및 소송 제기에 관여한 이력이 있는 경우</li>
+														<li>「보험업법 시행령」 제99조제3항제2호 및 제3호에서 정한 이해관계가 있는 경우</li>
+													</ul>
+												</li>
+												<li><i class="n">⑦</i> 손해사정사 적격 여부 판단에 필요한 경영정보를 공시하지 않은 경우</li>
+												<li><i class="n">⑧</i> 선임할 손해사정사가 보험연수원, 손해사정사협회 등 「보험업법」에 따라 설립된 단체에서 주관하는 손해사정 관련 보수교육을 이수하지 않은 경우</li>
+												<li><i class="n">⑨</i> 교보생명의 ‘위탁손해사정사 평가 기준’에 미달하는 경우</li>
+												<li><i class="n">⑩</i> 손해사정사가 요구하는 손해사정 관련 수수료가 교보생명이 정한 손해사정 수수료 기준을 초과하는 경우</li>
+											</ul>
+											<ul class="lst-comment mb15">
+												<li><span class="num">주1)</span> 국가, 지방자치단체, 대통령령으로 정한 금융기관, 상장법인 등(「보험업법 시행령」 제6조의2 참조)</li>
+												<li><span class="num">주2)</span> 교보생명에서 판매하지 않는 손해보험 영역</li>
+											</ul>
+											<div>
+												[참고]<br>
+												위 <i class="n">①</i>호 또는 <i class="n">④</i>호에 의한 동의 거부에 대해서는 모범규준 제7조의 재선임을 요청하지 않고 보험금 지급심사를 진행합니다.
+											</div>
+
+											<div class="btn-set bs"><button type="button" class="btn sm ico-down ico-r">선임동의요청서</button></div> <!-- [D] 2022-02-18 문구변경 -->
+										</div>
+									</li>
+									<li>
+										<div class="hbox">주요 안내<button type="button" class="btn-tog"><span class="blind">버튼</span></button></div>
+										<div class="cbox">
+											<ul class="bullet a lg">
+												<li>보험금 지급심사 과정에서 추가 서류가 필요한 경우 서류 보완을 요청드릴 수 있습니다.</li>
+												<li>300만원 이하의 보험금 청구(팩스 청구는 100만원 이하)는 서류를 사본으로 제출할 수 있으나, 필요 시 원본을 제출해야 합니다.</li>
+												<li>보험금 지급심사 진행 현황은 교보생명 홈페이지(<a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">www.kyobo.co.kr</a>)에서 조회하실 수 있습니다.</li>
+												<li>보험금 청구 시 문자메시지 수신에 동의하시면 지급금 안내, 보험금 지급 처리 현황 등 각종 정보를 휴대폰으로 받아보실 수 있습니다.</li>
+												<li>보험금 청구서류 제출 시 수익자 계좌정보 제공에 동의하시면 지급 결정 후 보험금을 즉시 받으실 수 있습니다.</li>
+												<li>교보생명이 아닌 다른 보험사에서 가입하신 보험계약은 보험협회에서 조회하실 수 있습니다.</li><!-- [D] 2022-06-23 텍스트수정 -->	
+												<li>만일 보험금 청구서류에 허위가 있다면 법률 및 약관 규정에 따라 보험금 청구 건이 상실되며, 이에 대한 법적책임을 물을 수 있습니다.</li>
+												<li>교보생명은 보험금청구권자가 요청하는 경우 고용한 손해사정사가 작성ㆍ제출한 손해사정서를 열람하게 하거나 그 사본을 교부해 드립니다. 단, 보험사고로 인한 손해가 경미하고 보험사고 발생 후 보험금이 즉시 지급된 경우에는 손해사정서를 작성하지 않을 수 있습니다.</li>
+												<li>계약자, 피보험자 또는 보험수익자에게 책임이 있는 사유로 보험금 지급이 지연된 경우 해당 기간에 대한 이자는 지급되지 않을 수 있습니다.</li>
+												<li> <!-- [D] 2022-07-05 태그텍스트수정 -->
+													분쟁의 조정
+													<ul class="bullet c">
+														<li>보험금의 청구와 관련해 분쟁이 있는 경우 분쟁 당사자(또는 기타 이해관계인)와 교보생명은 금융감독원장에게 조정을 신청할 수 있습니다.</li>
+														<li>교보생명의 보험금 지급 거절 및 보험금 결정금액에 동의하지 않으면 상담 신청 또는 이의를 제기하실 수 있습니다.</li>
+													</ul>
+												</li>
+											</ul>											
+											<h3 class="hd-tit5 mt16">상담 신청 및 이의 제기 방법</h3>
+											<ul class="bullet a">
+												<li>전화: 보험금 심사담당자 또는 교보생명 보험금 전용 상담센터(1588-1810)</li>
+												<li>인터넷: 교보생명 홈페이지(<a href ="https://www.kyobo.co.kr" title="새창열림" target="_blank">www.kyobo.co.kr</a>) [고객센터 > 칭찬/제안/민원 > 전자민원접수] 메뉴 이용</li>
+												<li>우편: (03154) 서울시 종로구 종로 1(종로1가) 교보생명 지급심사팀 민원담당자</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //주요안내 -->
+					</div>
+					<!-- 공통사항 -->
+
+					<!-- 사망보험금 --> <!-- [D] 2022-02-11 전체 변경 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+						<div class="text-group">
+							<h3 class="hd-tit4">기본서류</h3>
+							<h4 class="hd-tit5">사망진단서(시체검안서) 원본 또는 사본</h4>
+							<div class="text-box">
+								단, 사본은 원본대조필 후 피보험자의 사망 사실이 기재된 기본 증명서 첨부
+							</div>
+							<h4 class="hd-tit5">기본증명서 외 사망 사실이 기재된 호적·제적등본, (폐쇄) 가족관계증명서 등</h4>
+							<h3 class="hd-tit4">추가서류</h3>
+							<h4 class="hd-tit5">보험수익자가 지정되지 않은 경우</h4>
+							<div class="text-box">
+								<ul class="bullet a lg">
+									<li>상속관계 확인서류: 가족관계증명서, 혼인증명서 등</li>
+									<li>상속인이 다수인 경우: 상속인 각각의 위임장 및 인감증명서(또는 본인서명사실확인서)</li><!-- [D] 2022-06-23 텍스트수정 -->	
+								</ul>
+							</div>
+							<h4 class="hd-tit5">종피보험자(배우자, 자녀) 사망 시</h4>
+							<div class="text-box">
+								주피보험자와의 가족관계 확인서류: 가족관계증명서, 혼인관계증명서 등
+							</div>
+							<h4 class="hd-tit5">재해사망 시</h4>
+							<div class="text-box">
+								재해 입증서류(공통 서류 참조)
+							</div>
+							<h4 class="hd-tit5">암사망 시</h4>
+							<div class="text-box">
+								진단서 및 진단사실 확인서류: 조직검사결과지 또는 CT/MRI 판독지, 골수검사지(백혈병)
+							</div>
+						</div>
+					</div>
+					<!-- 사망보험금 -->
+
+					<!-- 장해급여금 --> <!-- [D] 2022-02-11 전체 변경 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+						<div class="text-group">
+							<h3 class="hd-tit4">기본서류</h3>
+							<h4 class="hd-tit5">후유장해진단서 또는 일반진단서</h4>
+							<div class="text-box">
+								콜센터 또는 고객PLAZA 상담 후 발급
+							</div>
+							<h4 class="hd-tit5">후유장해진단서</h4>
+							<div class="text-box">
+								<ul class="bullet a lg">
+									<li>후유장해진단서상 팔, 다리, 척추 등 관절장해인 경우 AMA 방식에 따른 운동 범위 반드시 기재</li>
+									<li>관절 외 신체 부위 장해는 해당 보험 판매시기별 약관 기준에 따라 작성(신체부위별 장해 판정 기준은 가입시기별로 다른 부분이 있으니, 해당 보험 약관의 장해등급분류표 및 장해등급분류해설 참조)
+										<ul class="bullet c">
+											<li>예) 시력장해는 교정시력, 청력장해는 데시벨(청력검사 단위), 추간판장해(1999년 2월 이후 판매 상품)는 운동 범위에 따른 운동장해가 아닌 수술 여부 및 후유신경증상 정도, 중추신경계 및 흉복부장기 장해는 일상생활 기본동작(ADLs) 제한 정도, 절단장해는 절단 부위를 구체적으로 기재</li><!-- [D] 2022-06-23 텍스트수정 -->	
+										</ul>
+									</li>
+									<li>장해진단서에는 장해 상태를 명시하고, 2005년 4월 1일 이후 계약은 장해지급률 적용</li>
+								</ul>
+							</div>
+							<h4 class="hd-tit5">일반진단서(대체 가능한 경우)</h4>
+							<div class="text-box">
+								<ul class="bullet a lg">
+									<li>만성신부전: 최초 혈액투석일 및 환자 상태 기재</li>
+									<li>사지절단: 절단 부위 및 환자 상태 기재, 엑스레이 필름 첨부</li>
+									<li>인공관절치환술: 수술명 및 수술일 기재</li>
+									<li>비장/신장 적출: 적출수술일 기재</li>
+								</ul>
+							</div>
+							<h3 class="hd-tit4">추가서류</h3>
+							<h4 class="hd-tit5">종피보험자(배우자, 자녀) 장해 시</h4>
+							<div class="text-box">
+								주피보험자와의 가족관계 확인서류: 가족관계증명서, 혼인관계증명서 등
+							</div>
+							<h4 class="hd-tit5">재해장해 시</h4>
+							<div class="text-box">
+								재해 입증서류(공통 서류 참조)
+							</div>
+						</div>
+					</div>
+					<!-- 장해급여금 -->
+
+					<!-- 진단급여금 --><!-- [D] 2022-02-11 전체 변경 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+						<div class="text-group">
+							<h3 class="hd-tit4">기본서류</h3>
+							<h4 class="hd-tit5">진단서</h4>
+							<div class="text-box">
+								인적사항(이름, 주민등록번호), 진단명, 진단일, 병명코드, 병원 직인 필수 기재
+							</div>
+							<h4 class="hd-tit5">진단사실 확인서류</h4>
+							<div class="text-box">
+								<ul class="bullet a lg">
+									<li>암: 병리조직검사결과지
+										<ul class="bullet c">
+											<li>단, 간암, 폐암, 췌장암은 조직검사를 하지 못한 경우에 한해 CT 또는 MRI 판독지로 대체 가능</li>
+										</ul>
+									</li>
+									<li>백혈병: 골수검사결과지</li>
+									<li>뇌졸중: CT 또는 MRI 판독지</li>
+									<li>급성심근경색증: 관상동맥조영술결과지, 심근효소결과지, 심전도검사결과지</li>
+									<li>그 밖에 검사결과지: 심초음파 등</li>
+								</ul>
+							</div>
+							<h3 class="hd-tit4">추가서류</h3>
+							<h4 class="hd-tit5">종피보험자(배우자, 자녀) 진단 시</h4>
+							<div class="text-box">
+								주피보험자와의 가족관계 확인서류: 가족관계증명서, 혼인관계증명서 등
+							</div>
+						</div>
+					</div>
+					<!-- 진단급여금 -->
+
+					<!-- 입원/통원/치아/수술/실손 --><!-- [D] 2022-02-11 전체 변경 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_5">
+						<div class="ut-tabs b">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_1" href="javascript:;">입원</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_2" href="javascript:;">통원</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_3" href="javascript:;">치아치료</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_4" href="javascript:;">골절·수술</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_5" href="javascript:;">실손</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_d" aria-controls="tab_d_6" href="javascript:;">추가서류</a></li>
+							</ul>
+						</div>
+
+						<!-- 입원 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_1" class="active">
+							<div class="text-group">
+								<h3 class="hd-tit4">기본서류</h3>
+								<h4 class="hd-tit5">진단서</h4>
+								<div class="text-box">
+									진단명이 포함된 입퇴원확인서 또는 진단명과 입원기간이 포함된 진료확인서(정액보험금은 금액 제한 없음)
+								</div>
+								<h4 class="hd-tit5">입퇴원확인서</h4>
+								<div class="text-box">
+									단, 진단서에 입원기간이 포함된 경우, 실손의료보험금 청구 시는 제외
+								</div>
+
+								<h3 class="hd-tit4">추가서류</h3>
+								<h4 class="hd-tit5">실손의료보험, 응급실내원특약인 경우</h4>
+								<ul class="bullet a lg mb0">
+									<li>진료비계산서(영수증)</li>
+									<li>진료비세부내역서</li>
+								</ul>
+								<div class="btn-set bot"><button type="button" class="btn wm sm auto">진료비세부내역서 보기</button></div>
+							</div>
+						</div>
+						<!-- //입원 -->
+
+						<!-- 통원 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_2">
+							<div class="text-group">
+								<h3 class="hd-tit4">기본서류</h3>
+								<h4 class="hd-tit5">진단명, 통원일자 및 기간이 포함된 서류</h4>
+								<div class="text-box">
+									진단서, 통원확인서, 처방전(통원일자별), 진료확인서, 소견서, 진료차트 등
+								</div>
+								<h3 class="hd-tit4">추가서류</h3>
+								<h4 class="hd-tit5">실손의료보험, 응급실내원특약인 경우</h4>
+								<div class="text-box">
+									<ul class="bullet a lg">
+										<li>진료비계산서(영수증), 약제비계산서(영수증)</li>
+										<li>진료비세부내역서
+											<ul class="bullet c">
+												<li>
+													단, 2017년 4월 1일 이후의 실손의료보험 계약이 없고<br>
+													(비례보상 대상인 다른 보험사 계약 포함), 비급여 5만원 이하 청구 시 진료비세부내역서 생략 가능
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //통원 -->
+
+
+						<!-- 치아 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_3">
+							<div class="text-group">
+								<h3 class="hd-tit4">기본서류</h3>
+								<div class="text-box">
+									<ul class="bullet a lg">
+										<!-- <li>치아치료확인서(교보생명 양식) 또는 치과치료진단서(소견서)</li> -->
+										<li><!-- [D] 2022-06-23 텍스트수정 -->	
+											치아치료확인서(교보생명 양식) 또는 치과치료진단서(소견서), 치과진료기록 사본<br>
+											(치아번호, 치아치료 종류, 치아 진단확정일 및 치료종료일 기재 필수)
+										</li>
+									</ul>
+									<div class="btn-set bot"><button type="button" class="btn sm ico-down ico-r">치아치료확인서</button></div><!-- [D] 2022-02-18 문구변경 -->
+								</div>
+							</div>
+						</div>
+						<!-- //치아 -->
+
+						<!-- 수술 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_4">
+							<div class="text-group">
+								<h3 class="hd-tit4">골절</h3>
+								<h4 class="hd-tit5">진단명이 포함된 서류</h4>
+								<div class="text-box"><!-- [D] 2022-05-03 텍스트변경 -->	
+									진단서, 통원확인서, 진료확인서, 소견서 등
+								</div>
+								<h3 class="hd-tit4">수술</h3>
+								<h4 class="hd-tit5">진단명, 수술명, 수술일이 포함된 서류</h4>
+								<div class="text-box">
+									진단서, 수술확인서 등
+								</div>
+							</div>
+						</div>
+						<!-- //수술 -->
+
+						<!-- 실손 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_5">
+							<div class="text-group">
+								<h3 class="hd-tit4">기본서류</h3>								
+								<div class="text-box">
+									<ul class="bullet a lg">										
+										<li>입원 : 진단서, 진료비계산서(영수증), 진료비세부내역서</li>
+										<li>통원 : 진단서·통원확인서·소견서·처방전 中 택1, 통원일자별 진료비계산서, 통원일자별 진료비세부내역서</li>
+										<li>처방 : 처방전(질병코드기재), 일자별 수납내역(약국 영수증)</li>
+									</ul>									
+								</div>
+								<h3 class="hd-tit4">서류 간소화 청구대상</h3>	
+								<div class="text-box">
+									<p>실손의료비 보험금 또는 정액 통원 보험금 청구 시 합산 청구 금액이 10만원 이하인 경우 진단병명 확인 서류(진단서, 통원확인서 등) 생략가능</p>
+									<ul class="bullet a lg">										
+										<li>제외대상 : 산부인과·항문외과·비뇨기과·피부과 치료시, 치료내용 확인이 필요한 경우, 반복 청구하는 경우
+											<ul class="bullet c">
+												<li> 17.4.1. 이전 실손통원 계약인 경우 진료비세부내역서 생략가능 </li>
+											</ul>
+										</li>
+										<li>제외 대상 : 비급여 5만원 이상 청구시, 타사 실손계약 17.4.1. 이후 가입자</li>
+									</ul>									
+								</div>
+								<h3 class="hd-tit4">실손의료보험의 보험금 지급사유 조사대상 선정</h3>
+								<div class="text-box">
+									<p>보험회사는 실손의료보험 가입자의 정당한 보험금 청구에 대하여 약관에서 정한 기일 이내에 지체없이 보험금을 지급합니다. <br>
+									다만, 보험금 청구내용 등이 다음 각 호에 해당되는 경우로서 보험회사가 질병 항목 등 세부 항목별 조사 대상 선정기준을 합리적으로 마련한 경우에는 그 기준에 따라 보험금 지급사유를 조사 및 확인할 수 있습니다.</p>
+									<ol class="bullet num lg">										
+										<li>
+											<i class="num">1.</i> 보험금 지급사유 확인을 위해 필요한 경우로서 피보험자의 병증 등과 관련하여 담당의사의 진단·소견의 근거를 알 수 있는 영상자료, 검사결과 등의 증빙자료를 합리적인 사유없이 제출하지 않거나, 제출하였더라도 아래 예시와 같이 제출된 증빙자료의 객관성에 대하여 추가적 확인이 필요하다고 인정되는 경우
+											<ul class="bullet ko">
+												<li><i class="num">가.</i> 제출된 증빙자료(검사 결과지를 포함합니다)가 특별한 사유없이 해상도 또는 명도 등에 문제가 있어 판단하기 어려운 경우이거나 제출된 증빙자료가 피보험자(환자) 본인의 것인지 불명확한 경우 등</li>
+												<li><i class="num">나.</i> 「국민건강보험법」 혹은 「의료급여법」에 따른 비급여대상 중 표준화된 코드가 사용되지 않은 경우로서 세부 치료내역에 대하여 제출을 거부한 경우 등</li>
+											</ul>
+										</li>										
+										<li><i class="num">2.</i> 피보험자의 과거 의료기록, 주변인 진술 또는 관련 주변정황 등을 감안할 때, 보험수익자 등이 제출한 주요 검사결과, 치료경과 내역 등 의학적 증거가 청구내용과 상이한 경우 등 청구내용의 신빙성을 의심할 만한 합당한 사유가 있는 경우</li>
+										<li><i class="num">3.</i> 피보험자의 진단·치료와 관련하여 국민건강보험공단, 건강보험심사평가원, 식품의약품안전처, 관련 의학 학회, 기타 이에 준하는 전문기관에서 권고하거나 일반적으로 제시하고 있는 기준 등에 비추어 입원 혹은 통원 치료 필요성 여부를 확인할 수 없는 경우로서, 아래와 같이 불필요한 입원 혹은 통원 치료가 합리적으로 의심되는 경우
+											<ul class="bullet ko">
+												<li><i class="num">가.</i> 의료기관이 허위진단서를 발행하거나 피보험자에게 입원 혹은 통원 치료 필요성이 존재하지 않음에도 적절한 설명없이 불필요한 입원 혹은 통원 치료를 하도록 유도한 정황이 합리적으로 의심되는 경우
+													험사기 행위 존재 여부가 합리적으로 의심되는 경우</li>
+												<li><i class="num">나.</i> 피보험자가 의료기관으로부터 입원이나 통원이 필요하지 않다고 설명받았음에도 불구하고 불필요한 입원 혹은 통원 치료를 받은 정황이 합리적으로 의심되는 경우</li>
+											</ul>
+										</li>
+										<li><i class="num">4.</i> 비급여 치료항목의 실제 진료비용이 아래 예시와 같이 「의료법」 등에 따라 공시한 진료비용 등에 비추어 합리적인 사유 없이 현저히 높은 경우로서, 진료비 계산서·영수증 허위 발생 등 보험사기 행위가 의심되는 경우
+											<ul class="bullet ko">												
+												<li><i class="num">가.</i> 실제 진료비용이 건강보험심사평가원이 공개한 해당 의료기관의 각 항목별 진료비용보다과도하게 높은 경우</li>
+												<li><i class="num">나.</i> 실제 진료비용이 건강보험심사평가원이 공개한 각 항목별 진료비용 기준으로 의료법에 따른 동급 혹은 상급 의료기관의 평균 진료비용보다 과도하게 높은 경우</li>
+												<li><i class="num">다.</i> 실손의료보험 가입 등을 사유로 합리적인 이유 없이 동일 항목에 대해 환자별 진료비용을 달리 적용하는 경우 등</li>
+											</ul>
+										</li>
+										<li><i class="num">5.</i> 아래 예시와 같이 「의료법」 등을 위반한 정황이 반복적으로 확인된 의료기관을 방문하여 보험금을 청구한 경우로서 보험수익자 등의 보험사기 행위가 합리적으로 의심되는 경우
+											<ul class="bullet ko">			
+												<li><i class="num">가.</i> 소비자의 과잉의료를 유발하는 내용(보건복지부의 『의료광고 가이드라인』에서 금지하는 항목을 포함)을 광고한 정황이 확인된 의료기관</li>
+												<li><i class="num">나.</i> 제3자에게 환자 소개비를 지급한 정황이 확인된 의료기관</li>
+												<li><i class="num">다.</i> 교통비, 숙박비 등 의료비 이외의 경비 보전을 위해 의료비 중 일부를 환급한 정황이 확인된 의료기관</li><!-- [D] 2022-06-30 텍스트수정 -->
+												<li><i class="num">라.</i> 비의료행위 혹은 치료목적 이외의 의료행위에 대한 비용을 치료 의료항목에 포함시켜 의료비로 전가시킨 정황이 확인된 의료기관</li>
+												<li><i class="num">마.</i> 진단서, 진료비 계산서·영수증 등을 허위로 발생한 정황이 확인된 의료기관</li>
+											</ul>
+										</li>
+										<li><i class="num">6.</i> 그 밖의 약관상 보험금 지급사유 충족 여부 혹은 보험사기 행위 존재 여부가 합리적으로 의심되는 경우</li>
+									</ol>
+								</div>
+
+								<!-- [D] 2022-07-22 문구추가 -->
+								<h3 class="hd-tit4">백내장 수술 관련 실손보험 가입자 유의사항</h3>
+								<div class="text-box">
+									약관상 입원의 정의에 해당하지 않는 경우, 백내장 수술은 통원 의료비로 지급됩니다.<br>
+									비급여 다초점렌즈 삽입술을 받게 되는 경우, 통원 기준 실손보험금 만으로는 수술비를 충당하기에 충분하지 않으므로 본인의 의료비 부담이 클 수 있으니 이점 각별히 유의하시기 바랍니다.
+									<br><br>
+									※ 주의!<br>
+									백내장 수술 후 환자의 합병증 또는 부작용으로 인해 통원치료가 곤란한 경우로서, 의사의 소견에 따라 의료기관에서 의사의 관찰·관리를 받으면서 6시간 이상 입원치료를 받아야 하는 필요성이 인
+									정되며, 이에 따라 입원치료를 받은 사실이 진료기록부 및 검사기록 등 객관적인 증빙자료로 입증된 경우에 한해 입원치료'로 인정됩니다.(대법원 2022.6.16. 선고 2022다216749)	
+								</div>
+
+								<h3 class="hd-tit4">실손의료보험금 청구서류 접수대행서비스</h3>
+								<div class="text-box">
+									실손의료비 보장보험을 여러 보험사에서 2개 이상 가입한 경우 보험금 청구서류를 회사마다 제출해야 하는 불편을 덜어드리고자, 고객님의 청구서류를 다른 보험사로 전송해 보험금 접수를 대행해 드리는 제도입니다.
+									<br><br>
+									단, 동의서를 제출한 실손의료비 보험금 청구 시에만 서비스 제공이 가능하며, 정액형(입원, 수술 등) 보험금 청구는 해당되지 않습니다.
+								</div>
+								<h4 class="hd-tit5">신청요건</h4><!-- [D] 2022-06-03 문구변경 -->
+								<div class="text-box">
+									<ul class="bullet a lg">
+										<li>수익자가 동일한 실손의료비 보장보험을 여러 보험사에서 가입한 고객</li>
+										<li>실손의료보험금 청구서류 접수대행서비스 신청서를 작성한 고객</li>
+									</ul>
+								</div>
+								<h4 class="hd-tit5">유의사항</h4>
+								<div class="text-box">
+									<ul class="bullet a lg">
+										<li>보험금 지급심사 중 추가서류를 요청할 수 있습니다.</li>
+										<li>비례보상이 되는 실손의료보험 청구 시에만 해당됩니다.</li>
+									</ul>
+									<div class="btn-set bs"><button type="button" class="btn sm ico-down ico-r auto">접수대행서비스신청서</button></div><!-- [D] 2022-02-18 문구변경 -->
+								</div>
+								<h3 class="hd-tit4">실손의료비 보험금 연대책임서비스</h3>
+								<div class="text-box">
+									수익자가 동일한 실손의료보험을 여러 보험사에서 가입한 경우, 수익자는 보험금의 전부 또는 일부를 다수 계약된 보험사 중 하나의 보험사에 청구해서 받을 수 있는 서비스입니다. 2009년 10월 1일 이후 신규 가입한 실손의료보험부터 적용됩니다.
+								</div>
+								<h4 class="hd-tit5">신청요건</h4><!-- [D] 2022-06-03 문구변경 -->
+								<div class="text-box">
+									<ul class="bullet a lg">
+										<li>수익자가 동일한 실손의료비 보장보험을 2009년 10월 1일 이후 다수 보험사에서 신규 가입한 고객</li>
+										<li>실손의료비 보험금 연대책임 신청서를 작성한 고객
+											<ul class="bullet b">
+												<li>실손의료비 보험금 연대책임 신청 고객은 실손의료보험금 청구서류접수대행신청서를 함께 작성하셔야 합니다.</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<h4 class="hd-tit5">연대책임서비스 제외 대상</h4>
+								<div class="text-box">
+									<ul class="bullet">
+										<li><span class="n">①</span> 중복 가입된 계약의 수익자가 다른 경우(단체 실손의료보험 중복 가입자 중 수익자가 회사인 경우 등도 포함)</li>
+										<li><span class="n">②</span> 표준화 상품 외 다른 의료실비 계약이 중복 가입된 경우</li>
+										<li><span class="n">③</span> 별도 심사 또는 조사가 필요한 경우(부담보 계약 건, 고지의무·통지의무 위반 조사 필요 건)</li>
+										<li><span class="n">④</span> 10만원 이하의 소액 통원의료비 청구 건</li>
+										<li><span class="n">⑤</span> 정액형 담보를 포함한 경우</li>
+										<li><span class="n">⑥</span> 보상 기준이 다른 계약 간의 중복인 경우</li>
+										<li><span class="n">⑦</span> 부담보 설정이 있는 경우</li>
+									</ul>
+									<div class="btn-set bs"><button type="button" class="btn sm ico-down ico-r auto">연대책임신청서</button></div><!-- [D] 2022-02-18 문구변경 -->
+								</div>
+							</div>
+						</div>
+						<!-- //실손 -->
+
+						<!-- 추가서류 -->
+						<div data-ui-tab-ctn="tab_d" aria-labelledby="tab_d_6">
+							<div class="text-group">
+								<h3 class="hd-tit5">재해보장 청구 시</h3>
+								<div class="text-box">
+									재해 입증서류(공통 서류 참조)
+								</div>
+								<h3 class="hd-tit5">종피보험자(배우자, 자녀) 입원·통원·골절·수술 시</h3>
+								<div class="text-box">
+									주피보험자와의 가족관계 확인서류: 가족관계증명서, 혼인관계증명서 등
+								</div>
+							</div>
+						</div>
+						<!-- 추가서류 -->
+					</div>
+					<!-- 입원/통원/치아/수술/실손 -->
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<script>
+		var dgntypeSlider = new Swiper('.navi .swiper-container', {
+			autoHeight: true,
+			slidesPerView: 1,
+			loop: true,
+			navigation: {
+				nextEl: '.navigation .nav.next',
+				prevEl: '.navigation .nav.prev'
+			},
+			pagination: {
+				el: ".pagination",
+				clickable: true
+			},
+		});
+	</script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

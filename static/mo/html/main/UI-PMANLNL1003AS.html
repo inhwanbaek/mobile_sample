@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/main_app.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header_mapp.html" data-include-opt='{"visible":"true","class":"is-gnb","title":""}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page main app" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- 컨텐츠영역 -->
+			<section class="panel">
+
+				<!-- [D] greeting-box -->
+				<div class="greeting-box">
+					<p class="hello">김교보님, 또 오셨네요!</p>
+					<button type="button" class="my-keyword">
+						<span class="txt">내 관심키워드</span>
+						<span class="num">3</span>
+					</button>
+				</div>
+				
+				<!-- [D] 관심키워드  -->
+				<!-- <div class="comp-keyword">
+					<button type="button" class="item set">
+						<span class="ut-hash-box">
+							<i class="ut-hash"># 보험</i>
+							<i class="ut-hash"># 건강</i>
+							<i class="ut-hash"># 최대다섯자</i>
+						</span>
+						<i class="cnt">+3</i>
+					</button>
+				</div> -->
+
+				<!-- [D] nudge custom-rich -->
+        <article class="nudge custom-rich opt-dark">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box fill">
+							<span class="ut-hash"># 자산관리</span>
+							<span class="ut-hash"># 건강</span>
+							<span class="ut-hash"># 평생자산관리</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">나에게 울림을 준<br>그 책 속 한 문장</p>
+									<p class="sub-title">나에게 울림을 준 그 책 속 한 문장 나에게 울림을 준 그 책 속 한 문장</p>
+								</div>
+							</div>
+							<div class="img-box-full"><img src="../../img/main/img_bg_main01.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+							<i class="ci"><img src="../../img/main/img_logo_metizen.png" alt="metizen로고 이미지"></i>
+						</p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu" onclick="popSetting();"><span class="dot">메뉴</span></button>
+        </article>
+
+				<!-- [D] nudge custom-report -->
+				<article class="nudge custom-report">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 자산관리</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">내 은퇴필요 자금<br>얼마나 준비 됐나요?</p>
+								</div>
+								<div class="area-report-cash">
+									<p class="desc-txt"><span>김교보</span>님의 준비상태는</p>
+									<div class="bar-box">
+										<div class="bar cf" data-percent="89%">
+										</div>
+									</div>
+									<ul class="cash-box">
+										<li>
+											<dl class="count-box">
+												<dt>필요자금</dt>
+												<dd>1억2000만원</dd>
+											</dl>
+										</li>
+										<li>
+											<dl class="count-box">
+												<dt>준비자금</dt>
+												<dd>5000만원</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+              <i class="ci"><img src="../../img/main/ci_mydata.png" alt=""></i>
+              <span class="txt">마이데이터</span>
+            </p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu" onclick="popSetting();"><span class="dot">메뉴</span></button>
+				</article>
+
+				<!-- [D] nudge size-sm -->
+				<article class="nudge size-sm opt-dark comp-bg-c600">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 보험</span>
+							<span class="ut-hash"># 건강</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">종신보험은 사망시에만 보장? Nope!</p>
+								</div>
+							</div>
+							<div class="img-box"><img src="../../img/main/img_temp96.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+					</div>
+					<!-- //inner -->
+				</article>
+
+				<!-- [D] nudge custom-rich -->
+        <article class="nudge custom-rich opt-dark">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box fill">
+							<span class="ut-hash"># 자산관리</span>
+							<span class="ut-hash"># 건강</span>
+							<span class="ut-hash"># 평생자산관리</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">엄마, 아빠,<br>나와의 기억<br>그 이야기</p>
+								</div>
+							</div>
+							<div class="img-box-full"><img src="../../img/main/img_bg_main02.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+              <i class="ci"><img src="../../img/main/img_logo_blueblack.png" alt="blue-black로고 이미지" /></i>
+            </p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu" onclick="popSetting();"><span class="dot">메뉴</span></button>
+        </article>
+
+				<!-- [D] nudge size-sm -->
+				<article class="nudge size-sm opt-dark comp-bg-c900">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 보험</span>
+							<span class="ut-hash"># 건강</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">내 집 마련 포기 말아요</p>
+									<p class="sub-title">(살짝 알려드리는 3가지 방법)</p>
+								</div>
+							</div>
+							<div class="img-box"><img src="../../img/main/img_temp96.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+					</div>
+					<!-- //inner -->
+				</article>
+
+				<!-- [D] nudge custom-report -->
+				<article class="nudge custom-report">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 자산관리</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">지난달 대비<br>내 순자산 변동 금액은?</p>
+								</div>
+								<div class="area-report-assets">
+									<p class="assets-count">
+										<span class="sign">+</span>
+										<span class="num">15,000,000</span>
+										<span class="txt">원</span>
+									</p>
+									<div class="assets-summary">
+										<div class="ast-from">
+											<ul>
+												<li>
+													<img src="../../img/main/ico_money.png" alt="">
+													<span>금융자산</span>
+												</li>
+												<li>
+													<img src="../../img/main/ico_house.png" alt="">
+													<span>부동산</span>
+												</li>
+											</ul>
+											<span>에서</span>
+										</div>
+										<div class="ast-add">
+											<strong>10%</strong>
+											<span>증가했어요!</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+              <i class="ci"><img src="../../img/main/ci_mydata.png" alt=""></i>
+              <span class="txt">마이데이터</span>
+            </p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu" onclick="popSetting();"><span class="dot">메뉴</span></button>
+				</article>
+
+				<!-- [D] nudge custom-rich -->
+        <article class="nudge custom-rich opt-dark">
+					<!-- inner -->
+					<div class="inner">
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">내 삶을 바꾼<br>반려동물 이야기</p>
+								</div>
+							</div>
+							<div class="img-box-full"><img src="../../img/main/img_bg_main03.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+              <i class="ci"><img src="../../img/main/img_logo_kbbook.png" alt="교보문고 로고 이미지" /></i>
+            </p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu" onclick="popSetting();"><span class="dot">메뉴</span></button>
+        </article>
+
+				<!-- [D] dict-detailBanner -->
+				<div class="dict-detailBanner opt-dark comp-bg-c1000">
+					<button type="button" class="item">
+						<span class="text">건강나이로 점쳐보는 노후, 1분이면</span>
+						<span class="emoji">👌</span>
+					</button>
+				</div>
+
+				<!-- [D] nudge custom-rich -->
+        <article class="nudge custom-rich opt-dark">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box fill">
+							<span class="ut-hash"># 자산관리</span>
+							<span class="ut-hash"># 건강</span>
+							<span class="ut-hash"># 평생자산관리</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">승무원이 들려주는<br>Flight Diary</p>
+								</div>
+							</div>
+							<div class="img-box-full"><img src="../../img/main/img_bg_main04.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+						<p class="origin">
+              <i class="ci"><img src="../../img/main/img_logo_nadio.png" alt="나디오 로고 이미지" /></i>
+            </p>
+					</div>
+					<!-- //inner -->
+					<button type="button" class="dot-menu-black" onclick="popSetting();"><span class="dot">메뉴</span></button>
+        </article>
+
+				<!-- [D] nudge size-sm -->
+				<article class="nudge size-sm opt-dark comp-bg-c900">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 보험</span>
+							<span class="ut-hash"># 건강</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">내 집 마련 포기 말아요</p>
+									<p class="sub-title">(살짝 알려드리는 3가지 방법)</p>
+								</div>
+							</div>
+							<div class="img-box"><img src="../../img/main/img_temp96.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+					</div>
+					<!-- //inner -->
+				</article>
+
+				<!-- [D] nudge size-sm -->
+				<article class="nudge size-sm opt-dark comp-bg-c1300">
+					<!-- inner -->
+					<div class="inner">
+						<div class="ut-hash-box">
+							<span class="ut-hash"># 보험</span>
+							<span class="ut-hash"># 건강</span>
+						</div>
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">혼자는 어려워!<br>퇴직연금 "같이투자"</p>
+								</div>
+							</div>
+							<div class="img-box"><img src="../../img/main/img_temp96.png" alt=""></div>
+						</div>
+						<!-- //cont -->
+					</div>
+					<!-- //inner -->
+				</article>
+
+				<!-- [D] nudge custom-row  -->
+				<article class="nudge custom-row">
+					<!-- inner -->
+					<a href="javascript:;" class="inner">
+						<!-- cont -->
+						<div class="cont">
+							<div class="img-box-xlg"><img src="../../img/main/img_panel01.png" alt=""></div>
+							<div class="post">
+								<div class="heading">
+									<p class="title">광화문글판</p>
+									<p class="sub-title">사랑, 위안, 격려, 희망의 한마디<br>광화문글판으로 세상에</p>
+								</div>
+							</div>
+						</div>
+						<!-- //cont -->
+					</a>
+					<!-- //inner -->
+				</article>
+
+				<!-- [D] nudge custom-list -->
+				<article class="nudge custom-list">
+					<!-- inner -->
+					<div class="inner">
+						<!-- cont -->
+						<div class="cont">
+							<div class="post">
+								<div class="heading">
+									<p class="title">생애 중심에 있는<br>3대 보험 상품</p>
+									<div class="img-deco"><img src="../../img/main/ico_pd_04.png" alt=""></div>
+								</div>
+								<ul class="ut-bnr-lst">
+									<li>
+										<a href="javascript:;" class="lk">
+											<strong class="tit">비갱신 암보험</strong>
+											<span class="txt">보장은 확실하고, 보험료는 저렴한 암보험</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="lk">
+											<strong class="tit">연금저축</strong>
+											<span class="txt">최대 66만원 연말정산 환급과<br>노후 준비를 한번에</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="lk">
+											<strong class="tit">어린이보험(종합형)</strong>
+											<span class="txt">내 아이에게 선물하는 어린이 종합보험</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //cont -->
+					</div>
+					<!-- //inner -->
+				</article>
+			
+			</section>
+			<!-- //컨텐츠영역 -->
+
+			<!-- 하단 고정영역 -->
+			<!-- <nav class="floatbots c">
+				<div class="inr">
+					<p class="msg">계약 조회부터 다양한 금융거래까지<br>지금 로그인하세요.</p>
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">로그인</button>
+					</div>
+				</div>
+			</nav> -->
+			<!-- //하단 고정영역 -->
+
+			<!-- 하단 고정영역 [D] 디자인 변경 2022-08-26 -->
+			<nav class="floatbots c">
+				<div class="inr">
+					<div class="apm-build-up">
+						<span class="hd-tit">
+							<a href="#;">
+								계약 조회부터 다양한 금융거래까지<br> 
+								<span class="line point">지금 로그인</span> 하세요
+							</a>
+						</span>
+					</div>
+				</div>
+			</nav>
+			<!-- //하단 고정영역 [D] 디자인 변경 2022-08-26 -->
+
+		</div>
+		<!-- //본문 영역 -->
+	</main>
+
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!-- 팝레이어 B 가운데 뜨는 크기 -->
+	<article class="pop-layer b pop-setting" id="pop-setting">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카드 키워드 개별 설정</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="set-box">
+						<div class="head">
+							<strong class="tit">공유하기</strong>
+							<a href="javascript:;" class="ico-share">공유하기</a>
+						</div>
+						<div class="head">
+							<strong class="tit">키워드 관심 설정</strong>
+							<a href="javascript:;" class="ico-onoff">키워드 관심 설정</a>
+						</div>
+						<div class="cont">
+							<ul class="lst-app-keyword">
+								<li>
+									<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 보험</span></label>
+								</li>
+								<li>
+									<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 재테크</span></label>
+								</li>
+								<li>
+									<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 노후준비</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn md" onclick="ui.popup.close('pop-setting');">닫기</button>
+				</div>
+			</div>
+			<!-- <button type="button" class="btn-pop-close"><i class="blind">닫기</i></button> -->
+		</div>
+	</article>
+
+	<script>
+		// 막대그래프
+    setTimeout(function start (){
+      $('.bar').each(function(i){  
+        var $bar = $(this);
+        $(this).append('<span class="count"></span>')
+        setTimeout(function(){
+        $bar.css('width', $bar.attr('data-percent'));      
+        }, i*100);
+      });
+
+      $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).parent('.bar').attr('data-percent')
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now) +'%');
+          }
+        });
+      });
+    }, 500)
+
+		var popSetting = function(){
+			// 레이어팝업 열기 콜백
+			// ui.popup.open("pop-setting",{
+			// 	ocb:function(){
+			// 		console.log("pop-setting 열림");
+			// 	},
+			// 	ccb:function(){
+			// 		console.log("pop-setting 닫힘");
+			// 		$("#btn_pop_b").focus();
+			// 	}
+			// });
+			console.log("popSetting")
+		}
+  </script>
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

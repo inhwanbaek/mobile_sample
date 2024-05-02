@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-period" id="pop-period">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">조회설정</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect">
+						<h2 class="hd-tit3">업무구분</h2>
+						<div class="work-range">
+							<div class="radiobox c col3">
+								<label class="radio"><input type="radio" name="r_work" checked><span class="txt">전체</span></label>
+								<label class="radio"><input type="radio" name="r_work"><span class="txt">입금</span></label>
+								<label class="radio"><input type="radio" name="r_work"><span class="txt">출금</span></label>
+								<label class="radio"><input type="radio" name="r_work"><span class="txt">사고신고</span></label>
+								<label class="radio"><input type="radio" name="r_work"><span class="txt">사고신고해제</span></label>
+								<label class="radio"><input type="radio" name="r_work"><span class="txt">계약변경</span></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="sect">
+						<h2 class="hd-tit3">조회기간</h2>
+						<div class="ut-range">
+							<div class="radiobox c col4">
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">당일</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">1주</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">15일</span></label>
+								<label class="radio"><input type="radio" name="r_range" checked><span class="txt">1개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">2년</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">3년</span></label>
+							</div>
+							<div class="rcs">
+								<span class="input a ut-date">
+									<label class="lb blind" for="date_st_0">시작날짜</label>
+									<input type="text" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="조회 시작날짜"><!-- [D] 2022-04-13 title 수정 --><!-- [D] 2022-04-19 인풋 속성 수정 -->
+								</span>
+								<i class="ds">~</i>
+								<span class="input a ut-date">
+									<label class="lb blind" for="date_ed_1">종료날짜</label>
+									<input type="text" id="date_ed_1" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="조회 종료날짜"><!-- [D] 2022-04-13 title 수정 --><!-- [D] 2022-04-19 인풋 속성 수정 -->
+								</span>
+							</div>
+							<!-- [D] 2022-03-22 버튼 변경<div class="btn-set etpbtn">
+								<button type="button" class="btn md">조회</button>
+							</div>		 -->
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">조회</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-period');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

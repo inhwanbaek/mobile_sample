@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-mbl-certigud" id="pop-mbl-certigud">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">인증서 내보내기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents mt20">
+					<div class="certigud">
+						<div class="num">01.</div>
+						<div class="tit">PC 홈페이지에서 [기업 > 인증센터 > 공동인증서 > 인증서 내보내기] 메뉴를 선택하고 [PC→휴대폰 복사] 버튼을 눌러주세요.</div> 
+						<div class="dsc dsc3-1"></div> 
+					</div>
+					<div class="sps"></div>
+					<div class="certigud">
+						<div class="num">02.</div>
+						<div class="tit">복사할 인증서를 선택하고 인증서 비밀번호를 입력하여 인증번호 8자리를 확인해 주세요.</div> 
+						<div class="dsc dsc3-2"></div> 
+					</div>
+					<div class="sps"></div>
+					<div class="certigud">
+						<div class="num">03.</div>
+						<div class="tit">교보생명 기업 앱 실행 후 [로그인 화면 > 공동인증서 > PC에서 인증서 가져오기]를 선택해 주세요.</div> 
+						<div class="dsc dsc3-3"></div> 
+					</div>
+					<div class="sps"></div>
+					<div class="certigud">
+						<div class="num">04.</div>
+						<div class="tit">PC화면에서 생성된 8자리 인증번호를 교보생명 기업 앱 공동인증서 화면에 입력해 주세요.</div> 
+						<div class="dsc dsc3-4"></div> 
+					</div>
+					<div class="sps"></div>
+					<div class="certigud">
+						<div class="num">05.</div>
+						<div class="tit">교보생명 기업 앱에서 인증서 비밀번호를 입력하고 인증하면 공동인증서가 교보생명 기업 앱으로 복사됩니다.</div> 
+						<div class="dsc dsc3-5"></div> 
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-mbl-certigud');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<script>
+		ui.popup.open('pop-mbl-certigud');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

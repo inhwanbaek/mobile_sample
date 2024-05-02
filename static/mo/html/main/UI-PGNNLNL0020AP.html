@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/main_app.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script>
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-app-interest" id="pop-app-interest">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">관심 키워드 설정</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="txt-app-keyword">
+						<span class="has-back">무엇에 </span>
+						<span><em>관심</em>이 많으세요?</span>
+						<span class="sub">관심 키워드에 딱 맞는 꿀팁을 준비했어요 :)</span>
+					</div>
+					<ul class="lst-app-keyword">
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 보험</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 재테크</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 노후준비</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 자산관리</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 건강</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 금융상식</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 문화예술</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 교육정보</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 추천도서</span></label>
+						</li>
+						<li>
+							<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 평생보장</span></label>
+						</li>
+					</ul>
+				</main>
+			</div>
+			<div class="pbt no-hide">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">설정</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-app-interest');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

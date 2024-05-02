@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a xs pop-rsrinprpns" id="pop-rsrinprpns">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향 재진단 사유</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="rsrinprpns-tbox">
+							<h2 class="hd-tit3">투자성향진단은 하루 최대 3회까지 <br>진행할 수 있습니다.</h2>
+							<p class="desc">(<strong>현재 <em>1</em>회</strong> / 최대 3회)</p>
+						</div>
+
+						<div class="rsrinprpns-form">
+							<h3 class="hd-tit5">투자성향 재진단 사유를 선택해 주세요.</h3>
+							<div class="fldset">
+								<label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">개인정보 및 성향이 바뀜</span></label>
+								<label class="checkbox cv"><input type="radio" name="radio01"><span class="txt">잘못된 답변을 등록함</span></label>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set b2">
+						<button type="button" class="btn a rd lg">다음</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-rsrinprpns');
+		</script>
+	</div>
+</body>
+</html>

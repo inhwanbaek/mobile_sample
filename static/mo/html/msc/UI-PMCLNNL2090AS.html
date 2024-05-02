@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 금리인하요구 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng rqrt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">1. 대상선택</div><!-- [D] 2022-04-07 문구수정 -->
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">4</b></span><!-- [D] 2022-07-28 문구수정 -->
+									<span class="num"><b class="b">1</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3"><i class="line">금리인하</i> 요구할 대출계약을 <br>선택해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="lomng-hinfo">
+				<div class="ut-dcard b mltype">
+					<div class="dls">
+						<div class="dl">
+							<div class="dt">총 대출잔액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">100,158,951</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">총 대출건수</div><!-- [D] 2022-04-07 문구수정 -->
+							<div class="dd">2건</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mcardwrp">
+				<ul class="mcardlst">
+					<li>
+						<div class="ut-dcard a mltype" data-tog-cls="box">
+							<div class="stds">
+								<div class="ut-bdgs">
+									<em class="bdg j">신용대출</em>
+								</div>
+								<div class="hdt">
+									<div class="tit">교보e프라임신용대출(A형)</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">대출잔액</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p">158,951</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">대출금리</div><!-- [D] 2022-04-07 문구수정 -->
+										<div class="dd">연 4.72%</div><!-- [D] 2022-04-07 문구수정 -->
+									</div>
+									<div class="bxs">
+										<div class="dt">상태</div>
+										<div class="dd">금리인하요구 신청가능</div>
+									</div>
+								</div>
+							</div>
+							<div class="dtds" data-tog-cls="ctn">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt">총 대출금액</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">300,000</strong><i class="w">원</i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출번호</div>
+											<div class="dd">104****29862</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출시작일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2020.01.06</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출만기일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2025.01.06</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-set vt">
+									<button type="button" class="btn md">금리인하요구 신청</button>
+								</div>
+							</div>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ut-dcard a mltype" data-tog-cls="box">
+							<div class="stds">
+								<div class="ut-bdgs">
+									<em class="bdg j">담보대출</em><!-- [D]2022-06-28 문구수정-->
+								</div>
+								<div class="hdt">
+									<div class="tit">아파트담보대출</div><!-- [D]2022-06-28 문구수정-->
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">대출잔액</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p">158,951</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">대출금리</div><!-- [D] 2022-04-07 문구수정 -->
+										<div class="dd">연 4.72%</div><!-- [D] 2022-04-07 문구수정 -->
+									</div>
+									<div class="bxs">
+										<div class="dt">상태</div>
+										<div class="dd">금리인하요구 대상아님</div><!-- [D]2022-06-28 문구수정-->
+									</div>
+								</div>
+							</div>
+							<div class="dtds" data-tog-cls="ctn">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt">총 대출금액</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">300,000</strong><i class="w">원</i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출번호</div>
+											<div class="dd">104****29862</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출시작일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2020.01.06</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출만기일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2025.01.06</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-set vt">
+									<button type="button" class="btn md">금리인하 불가사유</button><!-- [D]2022-06-28 문구수정-->
+								</div>
+							</div>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ut-dcard a mltype" data-tog-cls="box">
+							<div class="stds">
+								<div class="ut-bdgs">
+									<em class="bdg j">신용대출</em>
+								</div>
+								<div class="hdt">
+									<div class="tit">교보e프라임신용대출(A형)</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">대출잔액</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p">158,951</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">대출금리</div><!-- [D] 2022-04-07 문구수정 -->
+										<div class="dd">연 4.72%</div><!-- [D] 2022-04-07 문구수정 -->
+									</div>
+									<div class="bxs">
+										<div class="dt">상태</div>
+										<div class="dd">금리인하요구 신청가능</div><!-- [D]2022-06-28 문구수정-->
+									</div>
+								</div>
+							</div>
+							<div class="dtds" data-tog-cls="ctn">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt">총 대출금액</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">300,000</strong><i class="w">원</i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출번호</div>
+											<div class="dd">104****29862</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출시작일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2020.01.06</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출만기일</div><!-- [D] 2022-04-07 문구수정 -->
+											<div class="dd">2025.01.06</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-set vt">
+									<button type="button" class="btn md">금리인하요구 신청</button><!-- [D]2022-06-28 문구수정-->
+								</div>
+							</div>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>
+						</div>
+					</li>
+					<!-- [D]2022-06-28 card li 추가-->
+					<li>
+						<div class="ut-dcard a mltype" data-tog-cls="box">
+							<div class="stds">
+								<div class="ut-bdgs">
+									<em class="bdg j">신용대출</em>
+								</div>
+								<div class="hdt">
+									<div class="tit">교보e프라임신용대출(A형)</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">대출잔액</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p">158,951</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">대출금리</div>
+										<div class="dd">연 4.72%</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">상태</div>
+										<!-- [D] 2022-07-27 금리인하요구 청구상담 필요일 경우만 a 태그 추가 -->
+										<div class="dd"><a href="#" class="txt-link">금리인하요구 청구상담 필요</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="dtds" data-tog-cls="ctn">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt">총 대출금액</div>
+											<div class="dd">
+												<span class="prc">
+													<strong class="p">300,000</strong><i class="w">원</i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출번호</div>
+											<div class="dd">104****29862</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출시작일</div>
+											<div class="dd">2020.01.06</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">대출만기일</div>
+											<div class="dd">2025.01.06</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-set vt">
+									<button type="button" class="btn md">금리인하요구 상담신청</button><!-- [D] 2022-04-07 문구수정 -->
+								</div>
+							</div>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="ut-more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

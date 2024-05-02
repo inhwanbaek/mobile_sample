@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-result" id="pop-result">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">페이지 오류</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="complate-msg icon2">
+						<div class="msg">
+							<p class="p1">페이지에 접근할 수 없습니다.</p>
+							<p class="p2">접근하신 페이지가 존재하지 않습니다.<br>사라졌거나 다른 페이지로 변경되었을 수 있습니다.</p>
+							<p class="p2">페이지 경로나 접근 방법을 다시 확인 해 주세요.</p>
+						</div>
+						<div class="tel-box">
+							<a href="tel:1588-1010" title="전화 앱으로 전환됩니다." class="link-tel">고객센터 (1588-1001)</a>
+							<p class="tel-text">문제가 지속되는 경우, 고객센터로 문의바랍니다.</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">이전 페이지로 이동</button>
+					<button type="button" class="btn rd lg a">메인으로 이동</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-result');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

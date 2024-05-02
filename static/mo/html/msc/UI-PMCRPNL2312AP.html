@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-chngcallcntrpw" id="pop-chngcallcntrpw">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">퇴직연금 콜센터 업무처리 비밀번호 변경</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="mrp-tbox">
+						<h2 class="hd-tit3">콜센터를 통한 업무처리에 사용하는 <br>비밀번호를 변경할 수 있습니다.</h2>
+					</div>
+
+					<div class="msect">
+						<h3 class="hd-tit4">법인 콜센터 업무처리 비밀번호 변경</h3>
+
+						<div class="fldset">
+							<div class="fld">
+								<span class="input a">
+									<label class="lb" for="input_id01">새로운 비밀번호</label>
+									<input id="input_id01" type="password" pattern="\d*" placeholder="숫자 6자리 입력">
+								</span>
+							</div>
+							<div class="fld">
+								<span class="input a">
+									<label class="lb" for="input_id02">새로운 비밀번호 확인</label>
+									<input id="input_id02" type="password" pattern="\d*" placeholder="숫자 6자리 입력">
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg">변경</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chngcallcntrpw');
+	</script>
+
+
+</div>
+</body>
+</html>

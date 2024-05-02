@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-reqguds p1" id="pop-reqguds-p1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">피담보채무의 범위 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="tmsg"><!-- [D] 2022-02-09 폰트 수정 -->
+						회사는 피담보채무의 범위를 달리하는 다음의 두 유형 가운데 어느 하나를 설정자가 선택할 수 있음을 설명하였고, 설정자는 <em class="st">한정근담보</em>에서 정한 채무(이자, 지연배상금 기타 부대채무를 포함한다)를 담보하기로 한다.
+					</div>
+					<div class="tbox t1">
+						<div class="tit">특정근담보</div>
+						<div class="txt">채무자가 회사에 대하여 다음 약정서에 의한 거래로 말미암아 현재 및 장래에 부담하는 모든 채무</div>
+						<div class="inf">
+							<div class="date"><em class="yy">2021</em> <i class="y">년</i> <em class="mm">12</em> <i class="m">월</i> <em class="dd">21</em> <i class="d">일</i> <em class="tt">약정서</em></div>
+							<div class="date"><em class="yy">    </em> <i class="y">년</i> <em class="mm">  </em> <i class="m">월</i> <em class="dd">  </em> <i class="d">일</i> <em class="tt">약정서</em></div>
+						</div>
+					</div>
+					<div class="tbox t2">
+						<div class="tit">한정근담보</div>
+						<div class="txt">채무자가 회사에 대하여 다음 종류의 거래로 말미암아 현재 및 장래에 부담하는 모든 채무</div>
+						<div class="inf">
+							<div class="mmt">
+								<em class="tt">주택담보대출</em> <i class="ts">거래</i> , 
+								<em class="tt"></em> <i class="ts">거래</i>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-reqguds-p1');
+	</script>
+
+</div>
+</body>
+</html>

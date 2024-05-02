@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-mbl-pnl" id="pop-mbl-pnl">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">휴대폰 본인확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit3">고객님 <i class="line">정보를 입력</i>해 주세요.</h2>
+					<div class="ut-form a">
+						<ul class="form">
+							<li>
+								<span class="input a  w100p"><label class="lb" for="inp-1">이름</label><input type="text" placeholder="실명입력" id="inp-1"></span>
+								<div class="vald-msg show no">이름을 정확하게 입력해 주세요.</div>
+							</li>
+							<li>
+								<span class="input a nobg ut-rsnum w100p">
+									<label class="lb" for="rsnum_3">생년월일</label>
+									<input id="rsnum_3" type="number" class="fn" title="생년월일 앞 6자리" placeholder="예) 210101" value="">
+									<i class="ds">-</i>
+									<input type="number" value="" class="mn int" title="주민등록번호 뒤 1자리" placeholder="*"> 
+									<input type="password" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" value="●●●●●●" readonly>
+								</span>
+								<div class="vald-msg show no">생년월일을 정확하게 입력해 주세요.</div>
+							</li>
+							<li>
+								<div class="ut-phone w100p">
+									<span class="select tcom def">
+										<label for="tcom_0" class="lb">통신사</label>
+										<select id="tcom_0">
+											<option>통신사선택</option>
+											<option>SKT</option>
+											<option>KT</option>
+											<option>LGU+</option>
+											<option>SKT알뜰폰</option>
+											<option>KT알뜰폰</option>
+											<option>LGU+알뜰폰</option>
+										</select>
+									</span>
+									<span class="input a tnum"><label class="lb" for="tnum_0">전화번호입력</label>
+										<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="tnum_0">
+									</span>
+								</div>
+								<div class="vald-msg show no">휴대폰번호를 정확하게 입력해 주세요.</div>
+							</li>
+							
+						</ul>
+					</div>
+
+					<div class="hd-tit4 mt40">본인확인 약관동의</div>
+					<div class="ut-terms a terms mt10">
+						<div class="ckall">
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</div>
+						<div class="plbox">
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">개인정보 수집·이용 취급 위탁 동의(KCB)</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">본인확인서비스 이용약관(KCB)</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보처리 동의(KCB)</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">통신사 이용약관 동의(KCB)</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">개인정보 제3자 제공 동의(KCB)</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ut-form a">
+						<ul class="form">
+							<li>
+								<div class="ut-certi w100p">
+									<span class="input a">
+										<label class="lb" for="certi-2">인증번호 확인</label>
+										<div class="ctt ibts">
+											<i class="tt">입력시간</i><i class="ts">05:32</i>
+										</div>
+										<input type="number" class="cnm" placeholder="전송된 인증번호를 입력" id="certi-2">
+									</span>
+									<div class="ext"><a href="javascript:;" class="link-text">시간연장</a></div><!-- [웹접근성] 1st 수정 -->
+									<div class="btn-set vt bts">
+										<button type="button" class="btn sm b">인증</button>
+										<button type="button" class="btn sm c">인증번호 재발송</button>
+									</div>
+								</div>
+								<div class="vald-msg show no">인증번호가 일치하지 않습니다. 다시 입력해 주세요.</div>
+								<div class="vald-msg show ok">인증이 완료되었습니다.</div>
+							</li>
+						</ul>
+					</div>
+					
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-mbl-pnl');">확인</button> 
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-mbl-pnl');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 자동이체 신청/변경"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng atcl" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">4. 변경내역 확인</div>
+							<!-- <div class="tit">4. 신청내용 확인</div> -->
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">4</b></span>
+									<span class="num"><b class="b">4</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3"><i class="line">변경내용</i>을 다시 확인해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+				<!-- <h2 class="hd-tit3"><i class="line">신청내용</i>을 다시 확인해 주세요.</h2> --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="mcardwrp">
+				<ul class="mcardlst">
+					<li>
+						<div class="ut-dcard e" data-tog-cls="box">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg j">신용대출</em>
+									</div>
+									<div class="hdt">
+										<div class="tit">무배당교보100세시대변액연금모험Ⅱ(월납1형:3UP보증형)</div>
+									</div>
+									<div class="dtds">
+										<ul class="dlt fs">
+											<li>
+												<div class="dl">
+													<div class="dt">대출잔액</div>
+													<div class="dd">
+														<span class="prc st">
+															<strong class="p">500,000</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">납입방법</div>
+													<div class="dd">자동이체</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">은행</div>
+													<div class="dd">신한은행(35282*****053)</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="dtds hasline" data-tog-cls="ctn">
+										<ul class="dlt fs">
+											<li>
+												<div class="dl">
+													<div class="dt">대출번호</div>
+													<div class="dd">104*****765139</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">예금주</div>
+													<div class="dd">김교보</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">이체일</div>
+													<div class="dd">매월 10일</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="mores">
+									<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

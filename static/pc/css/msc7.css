@@ -1,0 +1,228 @@
+/* 나의 전자 문서 지갑 */
+
+/* 나의 전자 문서 지갑 - 공통 */
+.page.msc.mdw .hd-box{margin-top:32rem;}
+.page.msc.mdw .hd-box.a{margin-bottom: 32rem;}
+.page.msc.mdw .hd-box.b{margin-bottom: 24rem;}
+.page.msc.mdw .hd-box.c{margin-bottom: 16rem;}
+.page.msc.mdw .hd-box.c .hd-tit4{padding: 0;}
+.page.msc.mdw .hd-box.flx{display: flex; justify-content: space-between; align-items: center;}
+.page.msc.mdw .hd-box.flx .ico-nlink{border: 0;}
+
+.page.msc.mdw .input-50p{width: 50%;}
+.page.msc.mdw .input-100p{width: 100%;}
+
+/* .page.msc.mdw .sec+.hd-box{margin-top:30rem} */
+.page.msc.mdw .sec{margin-top:8rem}
+.page.msc.mdw .btn-set.mt{margin-top:40rem}
+.page.msc.mdw .date-sch {margin-bottom:40rem;}
+.page.msc.mdw .date-sch .btn-set{margin-top:16rem;}
+
+
+.page.msc.mdw .rbox{margin-bottom: 8rem;}
+.page.msc.mdw .rbox .radio{margin-bottom: 8rem;}
+.page.msc.mdw .txt-c{text-align: center;}
+
+/* .pop-mdw .poptents .scroll-x{overflow-x: auto;} */
+.pop-mdw .poptents .mdw-tbl .tblist{width: 100%;}
+.pop-mdw .poptents .mdw-tbl .tblist>thead>tr>th, 
+.pop-mdw .poptents .mdw-tbl .tblist>tbody>tr>td{padding: 16rem 32rem 16rem 0; border: 0;}
+.pop-mdw .poptents .mdw-tbl .tblist>thead>tr>th{border-bottom: 1px solid #555; text-align: left; background-color: transparent; font: var(--font14); line-height: 1.5;}
+.pop-mdw .poptents .mdw-tbl .tblist>tbody>tr>td{border-bottom: 1px solid #e6e6e6; background-color: transparent; color: #555; font: var(--font15); line-height: 1.4;}
+.pop-mdw .poptents .mdw-tbl .tblist>tbody>tr>td.chk{padding-right:8rem;}
+
+/* 나의 전자 문서 지갑 - 요청받은증명서 */
+.page.msc.mdw.crt .sec .ut-tabs.a{margin-bottom: 30rem;}
+.page.msc.mdw.crt .crt-lst .ut-dcard.a .line{display: block; height: 1rem; margin: 16rem 0; background: #555;}s
+.page.msc.mdw.crt .crt-lst .ut-dcard.a .stds .ut-bdgs{margin-bottom: 8rem;}
+.page.msc.mdw.crt .crt-lst .ut-dcard.a .stds .hdt .tit+.tit{margin-top: 8rem;}
+.page.msc.mdw.crt .crt-lst .ut-dcard.a .stds+.dtds {border-top:1px solid #242424;}
+.page.msc.mdw.crt .crt-lst .ut-dcard.a .dtds .tit{color: #555; font: var(--font14); line-height: 1.5;}
+
+/* 나의 전자 문서 지갑 - 내증명서 */
+.page.msc.mdw .ec-chklst .ut-dcard .all-chk{margin-bottom: 15rem; padding-bottom: 15rem; border-bottom: 1px solid #e6e6e6; text-align: right;}
+.page.msc.mdw .ec-chklst .ut-dcard .all-chk .checkbox>.txt{padding:2rem 30rem 2rem 0rem; color: #555;}
+.page.msc.mdw .ec-chklst .ut-dcard .all-chk .checkbox>.txt::before{left:auto; right: 0rem;}
+.page.msc.mdw .ec-chklst .ut-dcard .ut-bdgs{margin-bottom: 8rem;}
+/* .page.msc.mdw .ec-chklst .ut-dcard .hdt{display:flex; align-items: center; justify-content: space-between;  } */
+.page.msc.mdw .ec-chklst .ut-dcard .hdt .tit{font-size: 16rem;}
+.page.msc.mdw .ec-chklst .ut-dcard .hdt .chk .checkbox .txt{font-size: 16rem;}
+.page.msc.mdw .ec-chklst .ut-dcard .dtds{border-top: 1px solid #242424;}
+.page.msc.mdw .ec-chklst .ut-dcard .dtds .dlt+.dlt{margin-top: 16rem; padding-top: 16rem; border-top: 1px solid #e6e6e6;}
+.page.msc.mdw .ec-chklst .ut-dcard .dtds+.stds{margin-top:20rem; padding-top:20rem; border-top: 1px solid #e6e6e6;}
+.page.msc.mdw .ec-chklst .ut-dcard .dtds .date-count .dt{color:#e64c2e;}
+.page.msc.mdw .ec-chklst .ut-dcard .dtds .date-count .dd{color:#e64c2e;} 
+
+
+/* 선택한 전자증명서 */
+.page.msc.mdw .tops{margin-top: 24rem;}
+.page.msc.mdw .ec-dtds>.dlist{margin-top:16rem;}
+.page.msc.mdw .ec-dtds>.dlist{border-top: #242424 solid 1px;}
+.page.msc.mdw .ec-dtds>.dlist>li{position: relative; padding: 12rem 38rem 12rem 0rem; line-height: 1.5;border-bottom: #cccccc solid 1px;}
+
+.page.msc.mdw .ec-dtds>.dlist>li>.hdt .dt{color: #242424; font: var(--font14); font-weight: 700;line-height: 1.5;}
+.page.msc.mdw .ec-dtds>.dlist>li .cdt{display: flex; align-items: center; margin-top: 12rem;}
+.page.msc.mdw .ec-dtds>.dlist>li>.cdt .dt{font: var(--font14); line-height: 1.5;}
+.page.msc.mdw .ec-dtds>.dlist>li>.cdt .dd{margin-left: 16rem; color: #555555; font: var(--font14);line-height: 1.5;}
+
+.page.msc.mdw .ec-dtds>.dlist>li>.btn-del{position: absolute; top: 50%; right: 0; width: 38rem; height: 38rem; background: url(../img/common/ico_file_del.png) no-repeat center right; background-size: 24rem auto; font-size: 1rem; text-indent:-9999rem; transform: translateY(-50%);}
+
+/* 전자문서지갑 제출내역 상세*/
+.pop-mdw.pop-mdwInfo .mdw-ptit{display: flex; align-items: center; justify-content: space-between;}
+.pop-mdw.pop-mdwInfo .poptents>.ut-bdgs{margin-top: 16rem;}
+.pop-mdw.pop-mdwInfo .poptents>.hd-tit3{margin-top: 8rem;}
+.pop-mdw.pop-mdwInfo .poptents>.mdw-ptbl{margin-top: 16rem;}
+.pop-mdw.pop-mdwInfo .bullet.b{margin-top:16rem;}
+
+/* 팝업 테이블 */
+
+/* 팝업 테이블 우측 영역 */
+.pop-mdw .tbl-over{ margin: 0 -20rem; }
+.pop-mdw .tbl-over .ut-tbl.a.scroll-x{ padding: 0 20rem; border-top: 0;}
+.pop-mdw .tbl-over .ut-tbl.a.scroll-x .tblist>thead>tr>th{ border-top: 1px solid #242424;}
+
+/* 증명서 검색 */
+.page.msc.mdw .schs-rd{margin-top: 24rem; text-align: center;}
+.page.msc.mdw .schs-rd .input.a{width: 550rem; border-radius: 25rem;}
+.page.msc.mdw .schs-rd .input.a .btdel{ right:44rem; }
+.page.msc.mdw .schs-rd .ibts .bt-sch{width: 24rem;height: 24rem;overflow: hidden;background:url(../img/common/ico_sch.png) no-repeat center center;background-size:100%;}
+
+.page.msc.mdw.join-certi .all-chkbox{margin-bottom:16rem;}
+.page.msc.mdw.join-certi .ut-more{padding: 24rem 0 32rem;}
+
+/* 증명서 신청 apply */
+.page.msc.mdw .certif-srch{margin-top: 24rem;}
+.page.msc.mdw .certi-lst {margin-top: 24rem; border-top: 1rem solid #555;}
+.page.msc.mdw .certi-lst > li {border-bottom: 1rem solid #ddd;}
+.page.msc.mdw .certi-lst > li {border-bottom: 1rem solid #ddd;}
+.page.msc.mdw .certi-lst > li .lnk{position: relative; display: block; padding: 20rem 0; font: var(--font15); line-height: 1.4;}
+.page.msc.mdw .certi-lst > li .lnk::after{content:''; position: absolute; top: 50%; right: 0; width: 18rem;height: 18rem;overflow: hidden;background:url(../img/msc/ic_chevron.png) no-repeat center center;background-size:100%; transform: translateY(-50%);}
+
+/* 증명서 종류 */
+.page.msc.mdw .select-set{position: relative; display: flex; margin-left: -4rem; margin-right: -4rem;}
+.page.msc.mdw .select-set .select{width: 100%; margin: 0 4rem;}
+
+/* 증명서 신청목록 */
+.page.msc.mdw .iss-desc {margin-top: 24rem; margin-bottom: 32rem; color: #555; font: var(--font15); line-height: 1.4;}
+.page.msc.mdw .pi-iss .name{margin-top: 16rem; width: 100%;} 
+.page.msc.mdw .pi-iss .ut-rsnum{margin-top: 16rem;  width: 100%;} 
+.page.msc.mdw .pi-iss .btn-set{margin-top: 16rem;} 
+.page.msc.mdw .iss-lst{margin-top:24rem}
+.page.msc.mdw .iss-lst>li+li{margin-top:24rem;}
+.page.msc.mdw .iss-lst>li .txt{margin-bottom:16rem; color: #555; font: var(--font15); line-height: 1.5;}
+.page.msc.mdw .iss-lst>li .tit{margin-bottom:16rem; font: var(--font14); font-weight: 700; line-height: 1.5;}
+
+/* 증명서제출공통화면 */
+.page.msc.mdw.iss .achrbox { margin:0 -20rem; padding: 24rem 20rem; background-color: #fff; box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.1); }
+.page.msc.mdw.iss .achrbox.active{ position: fixed; top: 48rem; left: 0; width: 100%; margin: 0; z-index: 501;}
+.page.msc.mdw.iss .achrbox .menu{display: flex; flex-wrap: wrap; max-height:70rem;  overflow-y: scroll;}
+.page.msc.mdw.iss .achrbox .menu::-webkit-scrollbar { width: 3rem; background: #f4f4f4; border-radius: 3rem; }
+.page.msc.mdw.iss .achrbox .menu::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 3rem; }
+.page.msc.mdw.iss .achrbox .menu{margin-left: -8rem; }
+.page.msc.mdw.iss .achrbox .menu>li{margin-left: 8rem; margin-bottom: 8rem;}
+.page.msc.mdw.iss .achrbox .menu>li>.achr{position: relative; display: inline-block; padding: 4rem 16rem; background-color: #fff; border: 1px solid #ddd; border-radius: 16rem; color: #555; font: var(--font14); line-height: 1.5; }
+.page.msc.mdw.iss .achrbox .menu>li.active>.achr{ background-color: #3667cd; border: 1px solid #3667cd; color:#fff; }
+.page.msc.mdw.iss .line{margin: 40rem 0; border-top: 1px solid #ccc;}
+
+/* 증명서 제출 */
+.page.msc.mdw.iss .text{color: #555;}
+.page.msc.mdw.iss .bp-inputs .hd-tit5{margin-bottom: 16rem;}
+.page.msc.mdw.iss .bp-inputs .input{margin-bottom: 24rem;}
+.page.msc.mdw.iss .tax-tbl{margin-top: 24rem;}
+.page.msc.mdw.iss .biznumbox{display: flex; align-items: center;}
+.page.msc.mdw.iss .biznumbox .ds{width: 30rem; text-align: center;}
+
+
+/* 영업종목 공통 팝업 */
+.pop-mdw.pop-mdwcode .tit{padding: 20rem; background-color:#fafafa; border-radius: 8rem; }
+.pop-mdw.pop-mdwcode .tit .dep{position: relative; display:inline-block; padding-right:4rem; font-size: 16rem; line-height: 1.4;}
+.pop-mdw.pop-mdwcode .tit .dep.now{font-weight: 700;}
+.pop-mdw.pop-mdwcode .tit .dep+.dep{padding-left: 22rem; }
+.pop-mdw.pop-mdwcode .tit .dep+.dep::before{content:''; position: absolute; top:50%; left: 0; width: 18rem; height: 18rem; background:url(../img/msc/ic_chevron.png) no-repeat center center;background-size:100%; transform: translateY(-50%);}
+
+
+
+/* 증명서 종류 - 건축물 대장 */
+.page.msc.mdw .bld-num{display: flex; justify-content: space-between; align-items: center; margin-top: 8rem;}
+.page.msc.mdw .bld-num .select{width: 100%;}
+.page.msc.mdw .bld-num .input{width: 100%;; margin-left:8rem;}
+.page.msc.mdw .bld-text{display: flex; justify-content: space-between; align-items: center; margin-top: 8rem;}
+.page.msc.mdw .bld-text .desc{color: #555; font: var(--font12); line-height: 1.4; }
+.page.msc.mdw .bld-radio.radiobox[class*='col'] .radio > .txt{height: 58rem;}
+.page.msc.mdw .bld-cate{padding: 20rem; border: 1px solid #e6e6e6; border-radius: 8rem;}
+.page.msc.mdw .bld-cate .radio{display: block;}
+.page.msc.mdw .bld-cate .radio+.radio{margin-top: 16rem;}
+.page.msc.mdw .bldnum-img{display: block; width: 100%; height: 180rem; margin:0 auto; background: url(../img/msc/img_bld_num.png) no-repeat center; background-size: 100% auto;}
+
+
+/* 건축물대장 - popup*/
+.pop-mdw.pop-bldreg .br-desc{margin-top: 32rem; padding: 20rem; background-color: #fafafa; border-radius: 8rem; color: #555; font: var(--font15); line-height: 1.4;}
+.pop-mdw.pop-bldreg .tit1{margin: 32rem 0 16rem; color:#242424; font-size: 16rem; font-weight: 700; line-height: 1.31;}
+.pop-mdw.pop-bldreg .tit2{margin-bottom:16rem; color:#242424; font: var(--font14); line-height: 1.5;}
+.pop-mdw.pop-bldreg .bullet.d+.tit2{margin-top: 24rem;}
+.pop-mdw.pop-bldreg .bld-ex{margin-top: 16rem; margin-bottom: 8rem; padding: 20rem; border: 1px solid #e6e6e6;}
+.pop-mdw.pop-bldreg .bld-ex .bullet.c+.bullet{margin-top: 16rem;}
+
+/* 주소검색 */
+.pop-mdw.pop-addSch .hd-tit4{margin-top:16rem;}
+.pop-mdw.pop-addSch .bullet{margin-top: 16rem; }
+.pop-mdw.pop-addSch .bullet.hd-tit4{margin-top: 40rem; }
+
+/* 대상토지 소재지 */
+.page.msc.mdw.iss.land {}
+.page.msc.mdw.iss.land .bullet.b{margin-top:8rem;}
+.page.msc.mdw.iss.land .radiobox{margin-bottom:24rem;}
+
+
+/* 나의 지갑 주소보기 */
+.page.msc.mdw.qr .qrbox{margin-top: 64rem;}
+.page.msc.mdw.qr .qrbox .qr{display: block; width: 160rem; height: 160rem; margin: 0 auto; border: 1px solid #ddd;}
+.page.msc.mdw.qr .urlbox{margin-top: 40rem;}
+.page.msc.mdw.qr .urlbox .btn-set{margin-top: 8rem;}
+
+/* 전자지갑 폐기 */
+.page.msc.mdw.wdrop .complate-msg.icon-wdrop::before{background-image: url(../img/msc/ico_wdrop.png);}
+.page.msc.mdw.wdrop .complate-msg.icon-wdrop .hd-tit2{text-align: left;}
+.page.msc.mdw.wdrop .complate-msg.icon-wdrop .msg{margin-top: 60rem;}
+.page.msc.mdw.wdrop .complate-msg.icon-wdrop .bullet.a{margin-top: 16rem;}
+
+/* 전자지갑생성 */
+.page.msc.mdw.mdwf .fbox{margin-top: 16rem;}
+.page.msc.mdw.mdwf .sub-tit{margin-top: 32rem; text-align: right; color: #808080; font: var(--font14); line-height: 1.29;}
+
+/* 전자문서지갑관리 동의 팝업 */
+.pop-mdw.pop-provinfo .agreeBox{padding-bottom: 32rem;}
+.pop-mdw.pop-provinfo .pbt {border-radius: 16rem 16rem 0 0; background-color: #fff; box-shadow: 0 -2rem 4rem 0 rgba(0, 0, 0, 0.1);}
+.pop-mdw.pop-provinfo .pbt .qagee{margin-left:10rem; margin-bottom: 32rem; font-size: 16rem; font-weight: 600; line-height: 1.4;}
+
+
+
+
+
+/* 다이렉트 */
+.page.dlk .tit-box{margin-top: 32rem;}
+.page.dlk .tit-box .logo{margin-bottom: 30rem; width: 80rem; height: 26rem; background: url(../img/common/logo_kyobo_2x.png) no-repeat center; background-size: 80rem;}
+.page.dlk .tit-box .sub-desc{margin-top: 16rem; color:#555; font: var(--font15); line-height: 1.4;}
+
+.page.dlk .tit-box {margin-bottom: 32rem;}
+.page.dlk .tit-box .ico-pnum{position: relative; padding-right: 48rem;}
+.page.dlk .tit-box .ico-pnum:after{content:""; position: absolute; top: 0; right: 0; width: 48rem; height: 48rem; background: url('../img/msc/img_contact@2x.png') no-repeat 0 0; background-size: 48rem;}
+
+.page.dlk.pnum .sec .hd-tit4{padding: 0;}
+.page.dlk.pnum .sec .hd-tit5{margin-top:24rem;}
+.page.dlk.pnum .sec .btn-set{margin-top: 16rem;}
+.page.dlk.pnum .sec .bullet.b{margin-top: 10rem;}
+.page.dlk.pnum .sec .text{color:#555; font: var(--font15); line-height: 1.4;}
+.page.dlk.pnum .sec .text.a{margin-top: 16rem;}
+
+.page.dlk.pnum .sec.a{margin-top:32rem;}
+.page.dlk.pnum .sec.a .ut-phone{margin-top: 16rem;}
+.page.dlk.pnum .sec.b{margin-top:40rem;}
+.page.dlk.pnum .sec.c{margin:40rem 0 100rem;}
+
+.page.dlk.pnum .cs-step{margin-top:16rem;}
+.page.dlk.pnum .cs-step > li {position: relative; }
+.page.dlk.pnum .cs-step > li + li {margin-top: 24rem; }
+.page.dlk.pnum .cs-step > li + li:before {content: ''; display: block; position: absolute; top: -20rem; left: 50%; width: 16rem; height: 16rem; transform: translateX(-50%); background: url('../img/msc/ico_gudstep_arr.png') no-repeat 0 0; background-size: 100% auto; }
+.page.dlk.pnum .cs-step > li .item {overflow: hidden; padding: 18rem; border-radius: 8rem; border: 1rem solid #e9eaed; text-align: center; font: var(--font14); font-weight: 600; line-height: 1.5;}
+.page.dlk.pnum .cs-step > li .item .num {display: inline-block; width: 24rem; height: 24rem; margin-right: 8rem; background-color: #2166d4; border-radius: 4rem; color: #fff; line-height: 24rem;}

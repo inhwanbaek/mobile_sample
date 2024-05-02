@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-cprd02" id="pop-cprd02">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">퇴직연금 상품비교</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="cprd-wrp">
+						<div class="cprd-box">
+							<div class="bd-detail">
+								<ul>
+									<li>
+										<strong>(온라인)하이월드에너지증권자투자신탁(주식-재간접형)</strong>
+										<a href="javascript:;" role="button" class="btn sm">상세보기</a>
+									</li>
+									<li>
+										<strong>(온라인)K투자글로벌전기차투자(주식)(C-Re)</strong>
+										<a href="javascript:;" role="button" class="btn sm">상세보기</a>
+									</li>									
+								</ul>
+							</div>
+						</div>
+						<div class="cprd-box mt30">
+							<h2 class="hd-tit4">수익률</h2>
+							<div class="ut-range">
+								<div class="radiobox c sm"><!-- [D] 2022-06-30 클래스 'rag' 삭제/ 'radiobox c sm' 추가 -->
+									<label class="radio" role="radio"><input type="radio" name="r_range" checked=""><span class="txt">1개월</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">3년</span></label>
+									<label class="radio" role="radio"><input type="radio" name="r_range"><span class="txt">5년</span></label>
+								</div>
+							</div>
+							<!-- 차트영역-->
+							<div class="ut-chart">
+								<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+								<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+							</div>
+							<!--// 차트영역-->
+						</div>
+
+												<!--[D] 리스트 스타일 변경-->													
+												<div class="ut-tbl a mt40">
+													<table class="tblist" cellpadding="0" cellspacing="0">
+														<caption><span class="tit">퇴직연금 상품비교</span><span class="cap"></span></caption>
+														<colgroup>
+															<col style="width:24%">
+															<col style="width:38%">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col"><span>기간</span></th>
+																<!--[D] 22-10-04 첫번째 상품명-->
+																<th scope="col" class="txt-l"><span class="blind">첫번째 상품명:</span><span>(온라인)하이월드에너지증권자투자신탁(주식-재간접형)</span></th>
+																<!--[D] 22-10-04 두번째 상품명-->
+																<th scope="col" class="txt-l"><span class="blind">두번째 상품명:</span><span>(온라인)K투자글로벌전기차투자(주식)(C-Re)</span></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row"><span>1개월</span></th>
+																<td class="txt-r"><span class="t-red">5.85%</span></td>
+																<td class="txt-r t-red"><span class="t-red"></span>5.85%</td>
+															</tr>
+															<tr>
+																<th scope="row"><span>3개월</span></th>
+																<td class="txt-r t-red"><span class="t-red">10.94%</span></td>
+																<td class="txt-r t-red"><span class="t-red">13.94%</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>1년</span></th>
+																<td class="txt-r t-red"><span class="t-red">10.94%</span></td>
+																<td class="txt-r t-red"><span class="t-red">13.94%</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>3년</span></th>
+																<td class="txt-r t-red"><span class="t-red">58.30%</span></td>
+																<td class="txt-r t-red"><span class="t-red">48.30%</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>5년</span></th>
+																<td class="txt-r t-red"><span class="t-red">70.58%</span></td>
+																<td class="txt-r t-red"><span class="t-red">67.58%</span></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<!--//[D] 리스트 스타일 변경-->
+						
+												<!--[D] 이전화면 삭제 22-10-04-->
+												<!-- <div class="cprd-box mt40">
+													<div class="eft-tbl bdn">
+														<ul class="lst-form v2">
+															<li>
+																<dl>
+																	<dt>1개월</dt>
+																	<dd class="t-red">5.85%</dd>
+																</dl>
+																<dl>
+																	<dt>1개월</dt>
+																	<dd class="t-red">5.85%</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>3개월</dt>
+																	<dd class="t-red">10.94%</dd>
+																</dl>
+																<dl>
+																	<dt>3개월</dt>
+																	<dd class="t-red">13.94%</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>1년</dt>
+																	<dd class="t-red">32.81%</dd>
+																</dl>
+																<dl>
+																	<dt>1년</dt>
+																	<dd class="t-red">36.81%</dd>
+																</dl>
+															</li>	
+															<li>
+																<dl>
+																	<dt>3년</dt>
+																	<dd class="t-red">58.30%</dd>
+																</dl>
+																<dl>
+																	<dt>3년</dt>
+																	<dd class="t-red">48.30%</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>5년</dt>
+																	<dd class="t-red">70.58%</dd>
+																</dl>
+																<dl>
+																	<dt>5년</dt>
+																	<dd class="t-red">67.90%</dd>
+																</dl>
+															</li>																																
+														</ul>
+													</div>
+												</div>						 -->
+												
+												<!--[D] 리스트 스타일 변경-->													
+												<div class="ut-tbl a mt40">
+													<table class="tblist" cellpadding="0" cellspacing="0">
+														<caption><span class="tit">퇴직연금 상품비교</span><span class="cap"></span></caption>
+														<colgroup>
+															<col style="width:24%">
+															<col style="width:38%">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col"><span>분류</span></th>
+																<!--[D] 22-10-04 첫번째 상품명-->
+																<th scope="col" class="txt-l"><span class="blind">첫번째 상품명:</span><span></span>(온라인)하이월드에너지증권자투자신탁(주식-재간접형)</th>
+																<!--[D] 22-10-04 두번째 상품명-->
+																<th scope="col" class="txt-l"><span class="blind">두번째 상품명:</span><span></span>(온라인)K투자글로벌전기차투자(주식)(C-Re)</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row"><span>가입대상</span></th>
+																<td class="txt-l"><span>DB</span></td>
+																<td class="txt-l"><span>DB/DC</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>투자유형</span></th>
+																<td class="txt-l"><span>채권혼합형</span></td>
+																<td class="txt-l"><span>채권혼합형</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>위험등급</span></th>
+																<td class="txt-l"><span>위험중립형(3등급)</span></td>
+																<td class="txt-l"><span>위험중립형(3등급)</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>변동성<br>(최근 1년)</span></th>
+																<td class="txt-l"><span>7.75</span></td>
+																<td class="txt-l"><span>8.54</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>설정일</span></th>
+																<td class="txt-l"><span>2017.08.23</span></td>
+																<td class="txt-l"><span>2017.09.18</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>설정액</span></th>
+																<td class="txt-l"><span>165억원</span></td>
+																<td class="txt-l"><span>22억원</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>운용사</span></th>
+																<td class="txt-l"><span>삼성자산운용</span></td>
+																<td class="txt-l"><span>유리자산운용</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>환매수수료</span></th>
+																<td class="txt-l"><span>수수료 없음</span></td>
+																<td class="txt-l"><span>180일 미만/수익금의 0%</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>총보수</span></th>
+																<td class="txt-l"><span>0.87%</span></td>
+																<td class="txt-l"><span>1.03%</span></td>
+															</tr>
+															<tr>
+																<th scope="row"><span>구성종목</span></th>
+																<td class="txt-l">
+																	<ul class="lst-con">
+																		<li>LG화학</li>
+																		<li>SK 이노베이션</li>
+																		<li>에코프로비엠</li>
+																		<li>일진머티리얼즈</li>
+																		<li>셀트리온</li>
+																	</ul>
+																</td>
+																<td class="txt-l">
+																	<ul class="lst-con">
+																		<li>삼성 SDI</li>
+																		<li>포스코케미칼</li>
+																		<li>SKC</li>
+																		<li>삼성전자</li>
+																		<li>후성</li>
+																	</ul>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<!--//[D] 리스트 스타일 변경-->
+												
+												<!--[D] 이전화면 삭제 22-10-04-->
+												<!-- <div class="cprd-box mt40">
+													<div class="eft-tbl">
+														<ul class="lst-form v1">
+															<li>
+																<dl>
+																	<dt>가입대상</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>DB</li>
+																			<li>DB/DC</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>투자유형</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>채권혼합형</li>
+																			<li>채권혼합형</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>	
+															<li>
+																<dl>
+																	<dt>위험등급</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>위험중립형(3등급)</li>
+																			<li>위험중립형(3등급)</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>변동성(최근 1년)</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>7.75</li>
+																			<li>8.54</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>설정일</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>2017.08.23</li>
+																			<li>82017.09.18</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>설정액</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>165억원</li>
+																			<li>22억원</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>운용사</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>삼성자산운용</li>
+																			<li>유리자산운용</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>환매수수료</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>수수료 없음</li>
+																			<li>180일 미만/<br>수익금의 0%</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>총 보수</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>0.87%</li>
+																			<li>1.03%</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>
+															<li>
+																<dl>
+																	<dt>구성종목</dt>
+																	<dd>
+																		<ul class="lst-con">
+																			<li>LG화학</li>
+																			<li>삼성 SDI</li>
+																			<li>SK 이노베이션</li>
+																			<li>포스코케미칼</li>
+																			<li>에코프로비엠</li>
+																			<li>SKC</li>
+																			<li>일진머티리얼즈</li>
+																			<li>삼성 SDI</li>
+																			<li>셀트리온</li>
+																			<li>후성</li>
+																		</ul>
+																	</dd>
+																</dl>
+															</li>																		
+														</ul>
+													</div>
+												</div> -->
+						
+												
+											</div>
+
+
+
+						<!-- <div class="cprd-box">
+							<div class="eft-tbl bdn">
+								<ul class="lst-form v2">
+									<li>
+										<dl>
+											<dt>1개월</dt>
+											<dd><span class="t-red">5.85</span>%</dd>
+										</dl>
+										<dl>
+											<dt>1개월</dt>
+											<dd><span class="t-red">5.85</span>%</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>3개월</dt>
+											<dd><span class="t-red">10.94</span>%</dd>
+										</dl>
+										<dl>
+											<dt>3개월</dt>
+											<dd><span class="t-red">13.94</span>%</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>1년</dt>
+											<dd><span class="t-red">32.81</span>%</dd>
+										</dl>
+										<dl>
+											<dt>1년</dt>
+											<dd><span class="t-red">36.81</span>%</dd>
+										</dl>
+									</li>	
+									<li>
+										<dl>
+											<dt>3년</dt>
+											<dd><span class="t-red">58.30</span>%</dd>
+										</dl>
+										<dl>
+											<dt>3년</dt>
+											<dd><span class="t-red">48.30</span>%</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>5년</dt>
+											<dd><span class="t-red">70.58</span>%</dd>
+										</dl>
+										<dl>
+											<dt>5년</dt>
+											<dd><span class="t-red">67.90</span>%</dd>
+										</dl>
+									</li>																																
+								</ul>
+							</div>
+						</div>						
+						<div class="cprd-box mt40">
+							<div class="eft-tbl">
+								<ul class="lst-form v1">
+									<li>
+										<dl>
+											<dt>가입대상</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>DB</li>
+													<li>DB/DC</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>투자유형</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>채권혼합형</li>
+													<li>채권혼합형</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>	
+									<li>
+										<dl>
+											<dt>위험등급</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>위험중립형(3등급)</li>
+													<li>위험중립형(3등급)</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>변동성(최근 1년)</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>7.75</li>
+													<li>8.54</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>설정일</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>2017.08.23</li>
+													<li>82017.09.18</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>설정액</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>165억원</li>
+													<li>22억원</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>운용사</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>삼성자산운용</li>
+													<li>유리자산운용</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>환매수수료</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>수수료 없음</li>
+													<li>180일 미만/<br>수익금의 0%</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>총 보수</dt>
+											<dd>
+												<ul class="lst-con">
+													<li>0.87%</li>
+													<li>1.03%</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>구성종목</dt>
+											<dd>
+												<div class="block-item">
+													<ul class="lst-con">
+														<li>LG화학</li>
+														<li>삼성 SDI</li>
+														<li>SK 이노베이션</li>
+														<li>포스코케미칼</li>
+														<li>에코프로비엠</li>
+														<li>SKC</li>
+														<li>일진머티리얼즈</li>
+														<li>삼성 SDI</li>
+														<li>셀트리온</li>
+														<li>후성</li>
+													</ul>
+													<ul class="lst-con">
+														<li>LG화학</li>
+														<li>삼성 SDI</li>
+														<li>SK 이노베이션</li>
+														<li>포스코케미칼</li>
+														<li>후성</li>
+													</ul>
+												</div>
+											</dd>
+										</dl>
+									</li>																		
+								</ul>
+							</div>
+						</div> -->
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cprd02');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>
+

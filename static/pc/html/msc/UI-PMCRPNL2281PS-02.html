@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-fnncacnt" id="pop-fnncacnt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">금융기관 계좌정보</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="mcardwrp">
+						<ul class="mcardlst">
+							<li>
+								<div class="ut-dcard a">
+									<div class="stds">
+										<div class="hdt">
+											<div class="chk">
+												<label class="checkbox cr"><input type="radio" name="radio_fnncacnt"><span class="txt">교보생명 본사</span></label><!-- [D] 2022-06-24 클래스 cr 추가 -->
+											</div>
+										</div>
+									</div>
+									<div class="dtds line">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt">계좌유형</div>
+													<div class="dd">개인형IRP</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">계좌번호</div>
+													<div class="dd">81200000284</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">가입일</div>
+													<div class="dd">2021.07.30</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ut-dcard a">
+									<div class="stds">
+										<div class="hdt">
+											<div class="chk">
+												<label class="checkbox cr"><input type="radio" name="radio_fnncacnt"><span class="txt">교보생명 본사</span></label><!-- [D] 2022-06-24 클래스 cr 추가 -->
+											</div>
+										</div>
+									</div>
+									<div class="dtds line">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt">계좌유형</div>
+													<div class="dd">개인형IRP</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">계좌번호</div>
+													<div class="dd">81200000284</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">가입일</div>
+													<div class="dd">2021.07.30</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" disabled>선택</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-fnncacnt');
+	</script>
+
+	</div>
+</body>
+</html>

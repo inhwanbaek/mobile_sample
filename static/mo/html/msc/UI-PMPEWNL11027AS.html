@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"증명서제출"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc mdw iss" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="hd-box">
+				<h2 class="hd-tit3">건축물대장</h2>
+			</div>
+			<div class="hd-box c">
+				<h3 class="hd-tit4">건축물소재지</h3>
+			</div>
+			<div class="sec">
+				<div class="ut-addrs bld-addrs">
+					<span class="input a adr1">
+						<label class="lb blind" for="adr_id1" role="text"></label>
+						<div class="ibts"><button type="button" class="btn sm b sch">주소찾기</button></div>
+						<input id="adr_id1" type="text" placeholder="주소를 입력해주세요" readonly>
+					</span>
+				</div>
+				<div class="bld-num">
+					<span class="select a">
+						<label class="lb blind" for="sel_id1">건축물소재지 선택</label>
+						<select id="sel_id1" name="sel_id1">
+							<option>지상</option>
+						</select>
+					</span>
+					<span class="input a"><label class="lb blind" for="input_id1">본번</label><input id="input_id1" type="text" placeholder="본번"></span>
+					<span class="input a"><label class="lb blind" for="input_id2">부번</label><input id="input_id2" type="text" placeholder="부번"></span>
+				</div>
+				<div class="bld-text">
+					<p class="bullet b">본번, 부번: 건물번호 (예시: 16-2  본번:16  부번:2)</p>,<!-- [D] 2022-05-17 텍스트 추가 -->
+					<!-- [D] 2022-04-20 tooltip 삭제 -->
+				</div>
+			</div>
+
+			<!-- [D] 2022-05-20 2단계 노출 start -->
+			<div>
+				<div class="hd-box c">
+					<h3 class="hd-tit4">대장구분</h3>
+				</div>
+				<div class="sec">
+					<div class="radiobox c col2 bld-radio">
+						<label class="radio"><input type="radio" name="radio1" data-ui-tab-btn="tab_rb" aria-controls="tab_a_1"><span class="txt txt-c">일반<br>(단독주택)</span></label>
+						<label class="radio"><input type="radio" name="radio1" data-ui-tab-btn="tab_rb" aria-controls="tab_a_2"><span class="txt txt-c">집합<br>(아파트, 연립주택 등)</span></label>
+					</div>
+				</div>
+			</div>
+			<!--// [D] 2022-05-20 2단계 노출 end -->
+
+			<!-- [D] 2022-05-20 3단계 노출 start -->
+			<div>
+				<div class="hd-box c flx">
+					<h3 class="hd-tit4">대장종류</h3>
+				</div>
+				<div class="sec bld-cate">
+					<label class="radio"><input type="radio" name="radio2-1" data-ui-tab-btn="tab_rb_1" aria-controls="tab_b_1"><span class="txt">총괄</span></label>
+					<label class="radio"><input type="radio" name="radio2-1" data-ui-tab-btn="tab_rb_1" aria-controls="tab_b_2"><span class="txt">일반</span></label>
+				</div>
+				<div data-ui-tab-ctn="tab_rb_1" aria-labelledby="tab_b_1" class="active"></div>
+				<div data-ui-tab-ctn="tab_rb_1" aria-labelledby="tab_b_2">
+					<div class="hd-box c">
+						<h3 class="hd-tit4">건물(동)명칭</h3>
+					</div>
+					<div class="sec">
+						<span class="input a">
+							<label class="lb blind" for="input-id2-1">건물(동)명칭 검색</label>
+							<input type="text" id="input-id2-1" readonly>
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!--// [D] 2022-05-20 3단계 노출 end -->
+
+			<!-- [D] 2022-05-20 4단계 노출 start -->
+			<div>
+				<div class="hd-box c flx">
+					<h3 class="hd-tit4">대장종류</h3>
+				</div>
+				<div class="sec bld-cate">
+					<label class="radio"><input type="radio" name="radio2-2" ><span class="txt">총괄</span></label>
+					<label class="radio"><input type="radio" name="radio2-2" ><span class="txt">표제부</span></label>
+					<label class="radio"><input type="radio" name="radio2-2" ><span class="txt">전유부</span></label>
+				</div>
+				
+				<!-- [D] 2022-05-20 표제부 start -->
+				<div>
+					<div class="hd-box c">
+						<h3 class="hd-tit4">건물(동)명칭</h3>
+					</div>
+					<div class="sec">
+						<span class="input a">
+							<label class="lb blind" for="input-id3-1">건물(동)명칭 검색</label>
+							<input type="text" id="input-id3-1" readonly>
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span>
+					</div>
+				</div>
+				<!-- [D] 2022-05-20 표제부 end -->
+
+				<!-- [D] 2022-05-20 전유부 start -->
+				<div>
+					<div class="hd-box c">
+						<h3 class="hd-tit4">건물(동)명칭</h3>
+					</div>
+					<div class="sec">
+						<span class="input a">
+							<label class="lb blind" for="input-id3-2">건물(동)명칭 검색</label>
+							<input type="text" id="input-id3-2" readonly>
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span>
+					</div>
+					<div class="hd-box c">
+						<h3 class="hd-tit4">호명칭</h3>
+					</div>
+					<div class="sec">
+						<span class="input a">
+							<label class="lb blind" for="input-id3-3">호명칭 검색</label>
+							<input type="text" id="input-id3-3" readonly>
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span>
+					</div>
+				</div>
+				<!-- [D] 2022-05-20 전유부 end -->
+
+			</div>
+			<!--// [D] 2022-05-20 4단계 노출 end -->
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b" onclick="confirm_sample_1();">장바구니</button>
+					<button type="button" class="btn rd lg a">제출</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+<script> 
+	var confirm_sample_1 = function () {
+		ui.confirm("증명서를 장바구니에 담았습니다. [장바구니]로 이동하시겠습니까?",{ // 컨펌 창 옵션들
+			//tit:"타이틀",
+			ycb:function(){
+				console.log("컨펌확인결과");
+			},
+			ncb:function(){
+				console.log("컨펌취소결과");
+			},
+			ybt:"확인", 
+			nbt:"취소"
+		});
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer md a pop-cnftest" id="pop-cnftest">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">추천펀드(RA) 적합성 진단 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<div class="cnftest-tbox">
+						<div class="gudbox">
+							<p class="tit">적합성 진단이란?</p>
+							<p class="desc">고객의 나이, 재산상황, 보험가입 목적 등의 정보를 기초로 고객의 보험계약 체결 성향을 분석하는 것으로, 이 결과에 따라 고객님에게 적합한 보험상품[특별계정(펀드)]을 권유해 드립니다.</p>
+						</div>
+					</div>
+
+					<div class="cnftest-q">
+						<div class="q-section">
+							<h2 class="tit"><i class="num">01.</i>펀드, 변액보험 등 금융투자상품 투자경험기간은 어느 정도입니까?</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">투자경험없음</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">1년 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">2년 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">2년 이상</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="q-section">
+							<h2 class="tit"><i class="num">02.</i>고객님께서 취득 처분해보신 경험이 있는 상품은 어떤 상품입니까? (복수선택 가능)</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="checkbox" name="q2"><span class="txt">파생상품(ELS ,ELW, ELF 등)</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="checkbox" name="q2"><span class="txt">주식 및 펀드(수익증권), 채권</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="checkbox" name="q2"><span class="txt">변액보험</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="checkbox" name="q2"><span class="txt">가입해 본 경험 없음</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="q-section">
+							<h2 class="tit"><i class="num">03.</i>고객님께서 투자하실 때 원금 보존과 투자 수익률 중 어느 쪽을 중요하게 생각하십니까?</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">원금은 반드시 보존이 되어야 함</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">원금 보존을 중요하게 생각함</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">수익률이 어느 정도 되어야 함</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">수익률을 중요시함</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="q-section">
+							<h2 class="tit"><i class="num">04.</i>고객님께서 투자수익률을 얻기 위해 어느정도의 손실을 감수할 수 있습니까?</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">어떠한 경우에도 손실이 나면 안됨</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">10%미만까지는 손실을 감수할 수 있음</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">10%~30%미만까지는 손실을 감수할 수 있음</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">원금 기준 100% 수준도 감수할 수 있음</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="q-section">
+							<h2 class="tit"><i class="num">05.</i>투자상품에 가입하실 때 연간 수익률이 얼마가 되길 기대하세요?</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">10% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">10%~30% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">30%~50% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">50% 이상</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="q-section">
+							<h2 class="tit"><i class="num">06.</i>앞으로 고객님의 금융자산 중 주식이나 주식형 상품의 비중을 어느 정도로 구성하고 싶으십니까?</h2>
+							<div class="list">
+								<ul>
+									<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">10% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">10%~30% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">30%~50% 미만</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+									<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">50% 이상</span></label></li><!-- [D] 2022-05-20 클래스 변경 -->
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cnftest');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-cnftest',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

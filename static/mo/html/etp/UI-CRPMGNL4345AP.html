@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-dview" id="pop-dview">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">가입자별 부담금 납입 상세내역</h1><!-- [D] 2022-03-31 타이틀 텍스트 수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="detail-paywrp">
+						<div class="ut-dtds f dtds">
+							<ul class="dlist between">
+								<li class="total">
+									<div class="dt">총 납입 부담금</div>
+									<div class="dd"><span class="t-red">100,000,000<span class="won">원</span></span></div>
+								</li>
+								<li>
+									<div class="dt">총 납입 대상 가입자수</div>
+									<div class="dd">9명</div>
+								</li>
+							</ul>
+						</div>
+						<div class="etp-item">
+							<div class="ut-dcard c pdetail" data-tog-cls="box">
+								<div class="hdt">
+									<h3 class="tit">김평생(590328-1)</h3>
+								</div>										
+								<div class="dtds">
+									<ul class="dlt">
+										<li>
+											<div class="dl">
+												<h4 class="dt">회사납입금</h4>
+												<div class="dd">2,000,000원</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<h4 class="dt">개인납입금</h4>
+												<div class="dd">100,000원</div>
+											</div>
+										</li>	
+										<li>
+											<div class="dl">
+												<h4 class="dt">지연이자</h4>
+												<div class="dd">5,000원</div>
+											</div>
+										</li>																																																																																		
+										<li class="total">
+											<div class="dl">
+												<h4 class="dt">합계</h4>
+												<div class="dd">2,105,000원</div>
+											</div>
+										</li>							
+									</ul>
+								</div>
+							</div>
+							<div class="ut-dcard c pdetail" data-tog-cls="box">
+								<div class="hdt">
+									<h3 class="tit">이든든(880328-1)</h3>
+								</div>										
+								<div class="dtds">
+									<ul class="dlt">
+										<li>
+											<div class="dl">
+												<h4 class="dt">회사납입금</h4>
+												<div class="dd">2,000,000원</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<h4 class="dt">개인납입금</h4>
+												<div class="dd">100,000원</div>
+											</div>
+										</li>	
+										<li>
+											<div class="dl">
+												<h4 class="dt">지연이자</h4>
+												<div class="dd">5,000원</div>
+											</div>
+										</li>																																																																																		
+										<li class="total">
+											<div class="dl">
+												<h4 class="dt">합계</h4>
+												<div class="dd">2,105,000원</div>
+											</div>
+										</li>							
+									</ul>
+								</div>
+							</div>
+							<div class="ut-dcard c pdetail" data-tog-cls="box">
+								<div class="hdt">
+									<h3 class="tit">김교보(890328-2)</h3>
+								</div>										
+								<div class="dtds">
+									<ul class="dlt">
+										<li>
+											<div class="dl">
+												<h4 class="dt">회사납입금</h4>
+												<div class="dd">2,000,000원</div>
+											</div>
+										</li>																																																																																	
+										<li class="total">
+											<div class="dl">
+												<h4 class="dt">합계</h4>
+												<div class="dd">20100,000원</div>
+											</div>
+										</li>							
+									</ul>
+								</div>
+							</div>													
+						</div>
+						<div class="ut-more more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>															
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-dview');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/	
+	</script>
+</div>
+</body>
+</html>

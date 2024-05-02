@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer a sm pop-regStep" id="pop-regStep">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험청약 처리 단계</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="head-topBox"><h2 class="hd-tit3">보험 가입부터 유지까지 보험청약은 <i class="line">4단계</i>로 처리됩니다.</h2></div><!-- [D] 2022-05-10 태그텍스트변경 -->
+					<div class="step-list">
+						<ul>
+							<li>
+								<p class="tit"><span class="blue">01</span> 청약</p>
+							</li>
+							<li>
+								<p class="tit"><span class="blue">02</span> 심사</p>
+							</li>
+							<li>
+								<p class="tit"><span class="blue">03</span> 승낙</p>
+							</li>
+							<li>
+								<p class="tit"><span class="blue">04</span> 유지</p>
+							</li>
+						</ul>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-regStep');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+
+
+</div>
+</body>
+</html>

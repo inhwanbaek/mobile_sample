@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	<script>
+		Array.from(document.querySelectorAll('.watermarked')).forEach(function(el) {
+		el.dataset.watermark = (el.dataset.watermark + ' ').repeat(300);
+		});
+	</script>
+</head>
+
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a abt" id="pop-abt">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">참가확인서</h1>
+					</div>
+				</div>
+				<!-- <div class="pct watermarked" data-watermark="교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전  교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 교보생명 공모전 "> -->
+
+				<div class="pct watermarked"><!-- [D] 2022-06-24 워터마크 수정 -->
+					<main class="poptents">
+						<!-- [D] 2022-06-27 디자인 수정 -->
+						<div class="pop-cnfpt">					
+							<dl class="cnfpt-box">
+								<dt>광화문글판 2022년 여름편<br>참가 확인서</dt>
+								<dd class="info">
+									<p><span class="tit">이름</span>김교보</p>
+									<p><span class="tit">제출일</span>2022. 05. 05 12:30</p>
+								</dd>
+								<dd class="txt">
+									<p>위 학생이 광화문글판 2022년 여름편에<br><strong>참가하였음을 확인</strong>합니다.</p>
+									<!-- <p class="date">2022.05.05</p> -->
+								</dd>
+								<dd class="sign">
+									<p>교보생명보험주식회사<br>
+									<strong>대표이사 사장 윤열현</strong><br>
+									(직인 생략)</p>
+								</dd>
+							</dl>
+							<ul class="bullet b">
+								<li>본 확인서는 공모전 참가를 확인한 교보생명의 공식 문서로 위/변조 시 효력이 상실됩니다.</li>
+								<li>기타 문의는 카카오톡 ‘@광화문글판’으로 문의하시면 답변드리겠습니다.</li>
+							</ul>
+							<p class="doc-num">문서번호 k200206160010025430</p>
+						</div>
+						<!-- [D] 2022-06-27 디자인 수정 -->
+					</main>
+				</div>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-abt');">인쇄</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</article>
+
+
+		<script>
+			ui.popup.open('pop-abt');
+		</script>
+
+	</div>
+</body>
+
+</html>

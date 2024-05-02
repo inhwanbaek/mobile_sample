@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a md pop-docatcinfo" id="pop-docatcinfo">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">서류첨부 안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="docatcinfo-box">
+							<div class="tbox">
+								<div class="cont">
+									<h2 class="hd-tit3">휴대폰으로 필요서류를 촬영해 간편하게 제출하세요!</h2>
+									<ul class="bullet a">
+										<li>휴대폰으로 QR코드를 촬영하면 서류첨부 화면으로 연결됩니다.</li>
+										<li>모바일웹 화면에 아래 임시번호(숫자 3자리)를 입력해 주세요.</li>
+									</ul>
+								</div>
+								<div class="qrimg">
+									<img src="../../img/temp/img_qr_120_120.png" alt="qr코드">
+								</div>
+							</div>
+							<div class="tmpnum">임시번호: <span class="n">578</span></div>
+						</div>
+
+
+						<!-- 퇴직금 신청 : DC 제도 안내 문구 -->
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li class="color6">DC 퇴직금 신청 당일 접수 마감 시간은 09:00~16:00입니다.</li>
+									<li>관리자의 최종 결재 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+									<li>퇴직금 수령방법별 필요서류
+										<ul class="bullet c">
+											<li>퇴직위로금 또는 중간정산 원천세 합산 요청 시: 퇴직소득원천징수영수증(회사직인 찍은 것만 가능)</li>
+											<li>다른 금융기관 IRP(개인형퇴직연금)로 수령 시: 타사 IRP 계좌 사본(확인서)
+											</li>
+										</ul>
+										<ul class="bullet b lx">
+											<li>퇴직금 수령방법별 <span class="bold">필요서류를 제출</span>하셔야 신청이 접수됩니다.</li>
+										</ul>
+									</li>
+								</ul>
+								<p class="mt12">자세한 사항은 <span class="bold">법인콜센터(1588-0770)</span>로 문의해 주세요.</p>
+							</div>
+						</div>
+
+
+						<!-- 퇴직금 신청 : DB 제도 안내 문구 -->
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li class="color6">DB 퇴직금 신청 당일 접수 마감 시간은 09:00~16:00입니다.</li>
+									<li>관리자의 최종 결재 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+									<li>퇴직금 수령방법별 필요서류
+										<ul class="bullet c">
+											<li>교보생명 IRP(개인형퇴직연금) 또는 일시금 수령 시: 퇴직소득원천징수영수증(회사직인 찍은 것만 가능)</li>
+											<li>다른 금융기관 IRP(개인형퇴직연금)로 수령 시: 퇴직소득원천징수영수증(회사직인 찍은 것만 가능) 및 타사 IRP 계좌 사본(확인서)
+											</li>
+										</ul>
+										<ul class="bullet b lx">
+											<li>퇴직금 수령방법별 <span class="bold">필요서류를 제출</span>하셔야 신청이 접수됩니다.</li>
+										</ul>
+									</li>
+								</ul>
+								<p class="mt12">자세한 사항은 <span class="bold">법인콜센터(1588-0770)</span>로 문의해 주세요.</p>
+							</div>
+						</div>
+
+
+						<!-- 부담금 환급 -->
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li class="color6">DC 부담금 환급 신청 당일 접수 마감 시간은 09:00~16:00입니다.</li>
+									<li>관리자의 최종 결재 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+									<li>부담금 환급을 위한 필요서류
+										<ul class="bullet c">
+											<li>환급금 산출내역서</li>
+										</ul>
+									</li>
+								</ul>
+								<p class="mt12">자세한 사항은 <span class="bold">법인콜센터(1588-0770)</span>로 문의해 주세요.</p>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-docatcinfo');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-docatcinfo',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

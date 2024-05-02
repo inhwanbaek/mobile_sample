@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt eth eth-pc" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">교보생명 공정거래자율준수</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">CEO선포문</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">임직원결의문</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">공정거래자율준수관리자</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">운영경과</a></li>
+				</ul>
+			</div>
+			<div class="ept_upper back02">
+				<strong class="tit">교보생명 임직원은 다음과 같이 <i class="line">다짐</i>합니다.</strong>
+				<h4 class="tit2">우리 교보생명 임직원은 회사의 경쟁력 향상과 지속적인 성장을 위하여 공정거래 자율준수를 실천하고자 다음과 같이 다짐합니다.</h4>
+			</div>
+			<ul class="list-charter">
+				<li>
+					<span><em class="blind">하나.</em></span>
+					우리는 공정하고 자유로운 경쟁이 회사와 사회를 발전시킨다는 데 <br> 인식을 같이하고 이를 실천하기 위하여 노력하겠습니다.
+				</li>
+				<li>
+					<span><em class="blind">하나.</em></span>
+					우리는 시장경쟁질서를 존중하고, 공정한 경쟁을 통한 보험산업의 <br> 건전한 발전에 앞장서겠습니다.
+				</li>
+				<li>
+					<span><em class="blind">하나.</em></span>
+					우리는 공정거래 관련 법규를 자율적으로 준수하고 <br> 부당한 공동행위와 불공정 거래행위를 하지 않겠습니다.
+				</li>
+				<li>
+					<span><em class="blind">하나.</em></span>
+					우리는 불공정한 약관을 사용하거나 허위·과장된 표시·광고를 <br> 하지 않겠습니다.
+				</li>
+			</ul>
+			<div class="signature-from">
+				2016년 12월 30일<br>
+				교보생명 임직원 일동
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

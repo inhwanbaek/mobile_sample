@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">실적배당형 특별계정</h2> <!-- 2022-04-18 수정: 텍스트 수정 -->
+			</div>
+
+			<div class="dcs-sect">
+				
+				<p class="hd-txt mb20">수익률, 자산 구성 및 부채 현황, 결산서 등 실적배당형 특별계정에 대한 현재 정보입니다.</p> <!-- 2022-04-18 수정: 텍스트 수정 -->
+
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">기준가 및 수익률 현황</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">자산구성 현황</a></li> <!-- [D] 2022-05-20 텍스트 수정 / 자산구성 현황 -->
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">자산/부채 현황</a></li><!-- [D] 2022-05-27 텍스트 수정 / 자산/부채 현황 -->
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">수수료 지급내역</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">계약결산서</a></li> <!-- 2022-04-18 수정: 텍스트 수정 -->
+					</ul>
+				</div>
+
+				<section class="sect">
+					<h3 class="hd-tit3">기준가 및 수익률 현황</h3>
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="date">기준일: 2021.12.31 현재</span>
+						</div>
+						<!-- <div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div> --> <!-- 2022-04-18 삭제  -->
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">기준가 및 수익률 현황</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col">펀드명</th>
+									<th scope="col">기준가(원)</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">전일대비(원)</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">누적수익률(%)</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">순자산가치(원)</th>
+									<th scope="col">좌수(좌)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c"><strong>주식형</strong></td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">-34.47</td>
+									<td class="txt-c">215.11</td>
+									<td class="txt-r">55,534,848</td>
+									<td class="txt-r">17,624,064</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권형</strong></td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">+2.82</td>
+									<td class="txt-c">68.02</td>
+									<td class="txt-r">2,319,193,958</td>
+									<td class="txt-r">1,380,297,243</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권혼합형</strong></td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">10.21</td>
+									<td class="txt-c">110.83</td>
+									<td class="txt-r">12,072,958,362</td>
+									<td class="txt-r">5,726,356,255</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>인덱스혼합형</strong></td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">+1.68</td>
+									<td class="txt-c">113.92</td>
+									<td class="txt-r">35,555,098,271</td>
+									<td class="txt-r">16,621,025,341</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션 <br>(주식형)</strong></td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">-2.51</td>
+									<td class="txt-c">25.65</td>
+									<td class="txt-r">53,667,458,825</td>
+									<td class="txt-r">42,712,280,687</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션 <br>(채권혼합형)</strong></td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">-1.13</td>
+									<td class="txt-c">14.28</td>
+									<td class="txt-r">7,205,928,161</td>
+									<td class="txt-r">6,305,782,892</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션 <br>(주식형)</strong></td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">-2.09</td>
+									<td class="txt-c">51.13</td>
+									<td class="txt-r">74,582,623,294</td>
+									<td class="txt-r">49,351,009,817</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션 <br>(채권혼합형)</strong></td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">-0.57</td>
+									<td class="txt-c">22.11</td>
+									<td class="txt-r">8,521,708,316</td>
+									<td class="txt-r">6,978,822,392</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 안정자산 Focus 펀드 <br>(채권혼합형)</strong></td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">-3.94</td>
+									<td class="txt-c">19.79</td>
+									<td class="txt-r">6,559,882,495</td>
+									<td class="txt-r">5,476,221,351 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</section>
+				<!-- 2022-04-18 수정: 텍스트 수정 -->
+				<ul class="bullet lg a mt50">
+					<li>
+						<span class="bold">펀드설정일</span>
+						<ul class="bullet c">
+							<li>주식형, 채권형, 채권혼합형, 인덱스혼합형: 2005년 12월 23일</li>
+							<li>교보 퇴직연금Best컬렉션(주식형), 교보 퇴직연금Best컬렉션(채권혼합형), 교보 글로벌 퇴직연금Best컬렉션(주식형), 교보 글로벌 퇴직연금Best컬렉션(채권혼합형), 교보 안정자산 Focus 펀드(채권혼합형): 2015년 8월 05일</li>
+						</ul>
+					</li>
+					<li><span class="bold">기준가</span>
+						<p>펀드자산을 시장가치로 환산한 가격이며 펀드설정일의 기준가는 1,000좌당 1,000원입니다.</p>
+						<ul class="bullet c">
+							<li><span class="stt">기준가</span> = 당일 펀드의 순수자산가치 ÷ 펀드의 총좌수 x 1,000</li>
+							<li><span class="stt">순자산가치</span> = 당일 펀드의 총자산 - 최저사망보증비용 - 펀드운용보수 - 그 외 모든 비용(수탁보수 등)</li>
+						</ul>
+					</li>
+					<li>
+						<span class="bold">수익률</span>
+						<ul class="bullet c">
+							<li>펀드운용보수 등 모든 수수료를 차감한 값입니다.</li>
+							<li>펀드운용보수 외에 펀드에서 부담하는 모든 수수료는 「간접투자자산 운용업법」에 따라 적용하며, 항목은 다음과 같습니다.
+								<ul class="bullet f">
+									<li>1. 회계감사보수(법 제86조제2항 및 동법 시행령 제89조제1항)</li>
+									<li>2. 자산운용보고서 작성 및 제공비용(법 121조제3항 및 동법 시행령 제100조제5항)</li>
+									<li>3. 수탁보수(법 제28조제1항5호에 의한 신탁계약) </li>
+								</ul>
+							</li>
+							<li><span class="stt">누적수익률은 펀드설정일부터 현재까지 누적된 수익률을 말합니다.</span></li>
+						</ul>
+					</li>
+				</ul>
+				<!--// 2022-04-18 수정: 텍스트 수정 -->
+				<section class="sect">
+					<h3 class="hd-tit3">특정기간 운용성과 조회</h3> <!-- 2022-04-18 수정: 텍스트 수정 -->
+					<div class="ut-schfm a schfm mt20">
+						<div class="fmset bdn">
+							<div class="flst">
+								<div class="itm">
+									<div class="dt"><label class="lb" for="sel_id0">조회조건</label></div> <!--// 2022-04-18 수정: 텍스트 수정 -->
+									<div class="dd">
+										<span class="select a">
+											<select id="sel_id0" name="sel_id0">
+												<option>주식형</option>
+											</select>
+										</span>
+									</div>
+								</div>
+								<div class="itm">
+									<div class="dt"><label class="lb" for="sel_id1">조회기간</label></div><!--// 2022-04-18 수정: 텍스트 수정 -->
+									<div class="dd">
+										<div class="ut-range a">
+											<div class="rcs">
+												<span class="input a ut-date"><input type="tel" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+												<i class="ds">~</i>
+												<span class="input a ut-date"><input type="tel" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn-set btsch">
+							<button type="button" class="btn md ico-search">조회</button>
+						</div>
+					</div>
+
+					<h4 class="hd-tit4">조회 결과</h4>
+					<div class="ut-tbl a">
+						<table class="tblist">
+							<caption><span class="tit">조회 결과</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col">시작일 기준가</th> <!--// 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">종료일 기준가</th> <!--// 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">기간수익률</th>
+									<th scope="col">연환산수익률</th>
+									<th scope="col">운용일수</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c">-</td>
+									<td class="txt-c">-</td>
+									<td class="txt-c">+0.01</td>
+									<td class="txt-c">-</td>
+									<td class="txt-c">0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</section>
+
+				<ul class="bullet lg a mt50">
+					<li>특정기간 운용성과 조회 결과로 나온 수익률은 특정기간의 펀드 운용 수익률이며 개개인의 실제 수익률과는 차이가 있습니다.</li> <!-- 2022-04-18 수정: 텍스트 수정 -->
+					<li>연환산수익률은 조회기간이 1년 이상인 경우에만 산출됩니다.</li>
+				</ul>
+
+				<section class="sect">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<h3 class="hd-tit3">최근 6개월간 기준가 변동내역</h3> <!-- 2022-04-18 수정: 텍스트 수정 -->
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: 원</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">최근 6개월간 기준가 변동내역</span><span class="cap"></span></caption> <!-- 2022-04-18 수정: 텍스트 수정 -->
+							<thead>
+								<tr>
+									<th scope="col">펀드명</th>
+									<th scope="col">2022.01.31</th>
+									<th scope="col">2021.12.31</th>
+									<th scope="col">2021.11.30</th>
+									<th scope="col">2021.10.31</th>
+									<th scope="col">2021.09.30</th>
+									<th scope="col">2021.08.31</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c"><strong>주식형</strong></td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">3151.08</td>
+									<td class="txt-c">3151.08</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권형</strong></td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">1680.21</td>
+									<td class="txt-c">1680.21</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권혼합형</strong></td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">2108.31</td>
+									<td class="txt-c">2108.31</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>인덱스혼합형</strong></td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">2139.16</td>
+									<td class="txt-c">2139.16</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br> (주식형)</strong></td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">1256.49</td>
+									<td class="txt-c">1256.49</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br> (채권혼합형)</strong></td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">1142.75</td>
+									<td class="txt-c">1142.75</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br> (주식형)</strong></td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">1511.27</td>
+									<td class="txt-c">1511.27</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br> (채권혼합형)</strong></td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">1221.08</td>
+									<td class="txt-c">1221.08</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 안정자산 Focus 펀드<br> (채권혼합형)</strong></td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">1197.88</td>
+									<td class="txt-c">1197.88</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</section>
+
+
+
+				<section class="sect">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<h3 class="hd-tit3">기간별 수익률 및 펀드설정일 이후 누적수익률</h3> <!-- 2022-04-18 수정: 텍스트 수정 -->
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">기간별 수익률 및 펀드설정일 이후 누적수익률</span><span class="cap"></span></caption> <!-- 2022-04-18 수정: 텍스트 수정 -->
+							<thead>
+								<tr>
+									<th scope="col">펀드명</th>
+									<th scope="col">펀드설정일</th>
+									<th scope="col">직전1개월</th>
+									<th scope="col">직전3개월</th>
+									<th scope="col">직전6개월</th>
+									<th scope="col">직전1년</th>
+									<th scope="col">직전3년</th>
+									<th scope="col">직전5년</th>
+									<th scope="col">누적수익률</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+									<th scope="col">당해수익률</th> <!-- 2022-04-18 수정: 텍스트 수정 -->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c"><strong>주식형</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권형</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>채권혼합형</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>인덱스혼합형</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br> (주식형)</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 퇴직연금Best컬렉션<br> (채권혼합형)</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br> (주식형)</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 글로벌 퇴직연금Best컬렉션<br> (채권혼합형)</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+								<tr>
+									<td class="txt-c"><strong>교보 안정자산 Focus 펀드<br> (채권혼합형)</strong></td>
+									<td class="txt-c">2005.12.23</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+									<td class="txt-c">-0.00</td>
+								</tr>
+																
+							</tbody>
+						</table>
+					</div>
+
+				</section>
+				<!-- 2022-04-18 수정: 텍스트 수정 -->
+				<ul class="bullet lg a mt50">
+					<li>위 수익률은 특별계정 투입보험료(영업보험료에서 신계약비, 수금비, 유지비 제외)로 운용된 수익률이며, 특별계정운용수수료 등 모든 비용이 차감되어 있습니다.</li>
+					<li>위 수익률은 펀드별 최초설정일부터 기준일(조회일)까지 해당 펀드의 총자산 수익률을 기준으로 산출했습니다. 보험 가입 시점 및 해당 펀드 선택 시점이 각기 다른 개별 계약자의 실제 수익률과는 차이가 있으며, 회사가 보장하는 수익률이 아닙니다.</li>
+				</ul>
+				<!--// 2022-04-18 수정: 텍스트 수정 -->
+
+			</div>
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

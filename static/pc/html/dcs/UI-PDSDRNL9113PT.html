@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">보험계약대출이율 변동내역</h2> <!-- [D] 2022-05-27 텍스트 수정 / 보험계약대출이율 변동내역 -->
+			</div>
+			<!-- 2022-04-14 삭제 -->
+			<!-- search -->
+			<!-- <ul class="sch-upper">
+				<li>
+					<span class="th-tit">검색조건</span>
+					<div class="td-cont">
+						<span class="select w260">
+							<label class="lb blind" for="select-12" role="text">검색조건 선택</label>
+							<select name="select-11" id="select-11">
+								<option>2010년 10월 1일 이후</option>
+							</select>
+						</span>
+					</div>
+				</li>
+			</ul>
+			<div class="btn-set">
+				<button type="button" class="btn md ico-search">조회</button>
+			</div> -->
+			<!--// 2022-04-14 삭제 -->
+			<!-- 2022-04-14 추가 -->
+			<div class="radiobox c mb30">
+				<label class="radio" role="radio" aria-checked="true"><input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked="" aria-hidden="true" class="active"><span class="txt">2010년 10월 1일 이후</span></label>
+				<label class="radio" role="radio" aria-checked="false"><input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2" aria-hidden="true" class=""><span class="txt">2010년 10월 1일 이전</span></label>
+			</div>
+			<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active" role="tabpanel">
+				<div class="ut-optset optset a-bot mt50">
+					<div class="opt pr"> <span class="txt-unit">단위: %</span> </div>
+				</div>
+				<div class="ut-tbl a scroll-x">
+					<table class="tblist">
+						<caption><span class="tit">보험계약대출이율변동내역</span><span class="cap"></span></caption>
+						<thead>
+							<tr>
+								<th scope="col">변동일</th>
+								<th scope="col">확정형 예정이율 상품</th>
+								<th scope="col">연동형 상품</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2010.10.01</td>
+								<td>예정이율 + 2.85</td>
+								<td>기준이율 + 1.5</td>
+							</tr>
+							<tr class="nodata">
+								<td colspan="3"><p class="txt">조회 데이터가 없습니다.</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2" role="tabpanel">
+				<div class="ut-optset optset a-bot mt50">
+					<div class="opt pr"> <span class="txt-unit">단위: %</span> </div>
+				</div>
+				<div class="ut-tbl a scroll-x">
+					<table class="tblist">
+						<caption><span class="tit">보험계약대출이율변동내역</span><span class="cap"></span></caption>
+						<thead>
+							<tr>
+								<th scope="col">변동일</th>
+								<th scope="col">확정형 예정이율 상품</th>
+								<th scope="col">연동형 상품</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2010.10.01</td>
+								<td>예정이율 + 2.85</td>
+								<td>기준이율 + 1.5</td>
+							</tr>
+							<tr class="nodata">
+								<td colspan="3"><p class="txt">조회 데이터가 없습니다.</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--// 2022-04-14 추가 -->
+			<!--2022-04-14 수정 -->
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog open" aria-expanded="true">안내문<span class="btxt">닫기</span></button>
+				<div class="gctn open" data-tog-cls="ctn" style="display: block;">
+					<ul class="bullet a glst">
+						<li>2010년 10월 1일부터 확정형 예정이율 상품의 보험계약대출이율이 기존 구간금리 방식에서 가산금리 방식으로 변경되어 가산금리 2.85% 이하의 보험계약대출이율은 변경 전 가산금리를 유지합니다.</li>
+						<li>기준이율은 공시이율, 정기예금이율 상품별 적용이율입니다. </li>
+						<li>최저보증이율이 있는 연동형 상품은 적용이율이 최저보증이율보다 낮을 경우 보험계약대출이율을 ‘최저보증이율 + 1.5%’로 적용합니다. </li>
+						<li>보험계약대출이율 연동 상품의 보험계약대출이율은 2001년 7월 10일부터 ‘슈퍼재테크(배당형) 공시이율 + 1.5%’를 적용합니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!--// 2022-04-14 수정 -->
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

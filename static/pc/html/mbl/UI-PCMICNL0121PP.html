@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-mbl-certicom" id="pop-mbl-certicom"><!-- [D] 2022-05-18 수정 -->
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카카오페이(토스,패스) 인증</h1><!-- [D] 2022-05-18 수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<div class="mbl-gray-box">
+						<div class="tops">
+							<div class="bt-ico kpay" aria-hidden="true"></div>
+							<!--<div class="bt-ico naver" aria-hidden="true"></div>--><!-- [D] 네이버인증서 삭제: 2022-06-20 -->
+							<div class="bt-ico toss" aria-hidden="true"></div>
+							<div class="bt-ico pass" aria-hidden="true"></div>
+							<div class="tit">인증 확인</div>
+							<div class="dsc">카카오페이에서 인증 완료 후 <br>현재 화면으로 돌아와 <span class="t-blue">[인증 완료]를 눌러</span> 주세요.</div>
+						</div>
+
+						<ul class="bullet a mt20">
+							<li>발급받은 인증서가 없는 경우 인증서 발급을 먼저 진행해 주세요. </li>
+							<li>인증서가 등록되지 않은 경우 로그인할 수 없습니다. 인증서 등록을 먼저 진행해 주세요.</li>
+						</ul>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">인증완료</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-mbl-certicom');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

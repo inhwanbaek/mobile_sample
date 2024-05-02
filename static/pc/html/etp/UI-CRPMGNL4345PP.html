@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">가입자별 부담금 납입 상세내역</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<!-- [D] 2022-06-09  마크업 수정
+						<div class="total-box b">
+							<div class="item">
+								<p class="tit">총 납입 부담금 <span class="color11 ml20">1,000,000 원</span></p>
+							</div>
+							<div class="item">
+								<p class="tit lk">납입대상 가입자수  10 명
+									<a href="javascript:;" class="link-ext"></a> 
+								</p>
+							</div>
+						</div>
+						-->
+						<!-- [D] 2022-06-09  마크업 수정 -->
+						<div class="ut-dcard b light info">
+							<div class="dls">
+								<div class="dl st">
+									<div class="dt"><span class="hd-tit4">총 납입 부담금</span></div>
+									<div class="dd">
+										<span class="prc">
+											<strong class="p t-red">100,000,000</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</div>  
+							<div class="dls">
+								<div class="dl">
+									<div class="dt">납입대상 가입자수</div>
+									<div class="dd"><span class="bold">10 명</span></div>
+								</div>
+							</div>
+						</div>
+						<!--//[D] 2022-06-09  마크업 수정 -->
+						
+						<!-- 테이블 상단 -->
+						<div class="ut-tbltop">
+							<div class="left"></div>
+							<div class="right">
+								<button type="button" role="button" class="btn ico-r ico-down">엑셀 다운로드</button>
+							</div>
+						</div>
+
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">가입자별</span><span class="cap"></span></caption>
+								<colgroup>
+									<col >
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">이름</th>
+										<th scope="col">주민등록번호</th>
+										<th scope="col">회사납입금</th>
+										<th scope="col">개인납입금</th>
+										<th scope="col">지연이자</th>
+										<th scope="col">합계</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>김평생</td>
+										<td>590328-1</td>
+										<td class="txt-r">2,000,000원</td>
+										<td class="txt-r">100,000원</td>
+										<td class="txt-r">5,000원</td>
+										<td class="txt-r"><!-- [D] 2022-06-15 '원' 태그 밖으로 수정 --><span class="color11"> 4,469,207</span>원</td>
+									</tr>
+									<tr>
+										<td>김평생</td>
+										<td>590328-1</td>
+										<td class="txt-r">2,000,000원</td>
+										<td class="txt-r">100,000원</td>
+										<td class="txt-r">5,000원</td>
+										<td class="txt-r"><!-- [D] 2022-06-15 '원' 태그 밖으로 수정 --><span class="color11"> 4,469,207</span>원</td>
+									</tr>
+									<tr>
+										<td>김평생</td>
+										<td>590328-1</td>
+										<td class="txt-r">2,000,000원</td>
+										<td class="txt-r">100,000원</td>
+										<td class="txt-r">5,000원</td>
+										<td class="txt-r"><!-- [D] 2022-06-15 '원' 태그 밖으로 수정 --><span class="color11"> 4,469,207</span>원</td>
+									</tr>
+								
+								</tbody>
+							</table>
+						</div>
+						<div class="ut-paging">
+							<div class="nav prev">
+								<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+							</div>
+							<div class="link">
+								<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+							</div>
+							<div class="nav next">
+								<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+								<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<!-- <button type="button" class="btn b rd lg">나중에 결재</button> -->
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

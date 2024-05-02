@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고객확인 대상 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit3">안녕하세요, 고객님!<br>
+						아래 내용을 확인해주세요.</h2>
+
+						<div class="text-group type2">
+							<div class="text-box">
+								<ul class="bullet a">
+									<li>교보생명은 「특정 금융거래정보의 보고 및 이용에 관한 법률」에 따라 고객과의 금융거래를 지속하는 동안 주기적으로 고객님의 정보를 확인하고 있습니다.</li>
+									<li>교보생명에 등록된 고객님의 정보(주소, 연락처, 직업 등)를 확인하신 후 변동사항이 있으면 등록·수정 후 신분증 확인을 진행해 주시기 바랍니다.
+									<li>‘고객확인’을 실행하지 않으시면 금융거래가 제한될 수 있으니 양해해 주시기 바랍니다. </li>
+										<ul class="bullet c">
+											<li> 고객확인 등록 시 본인인증 방법
+												<ul class="bullet a">
+													<li>공동인증서/간편비밀번호 로그인: 공동인증서로 인증</li>
+													<li>금융인증서 로그인: 금융인증서로 인증</li>
+													<li>지문인증 로그인: 지문인증</li>
+												</ul>
+
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">위 내용을 확인하고 동의하십니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">동의안함</a>
+					<a href="javascript:;" class="btn lg rd a">동의</a>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

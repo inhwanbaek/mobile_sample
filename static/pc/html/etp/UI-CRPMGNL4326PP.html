@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer sm a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">부담수준 확인 서비스 설정</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<!-- 테이블 상단 -->
+						<div class="ut-tbltop mt0">
+							<div class="left">
+								<h2 class="hd-tit4">부담수준 확인 서비스 이용 설정</h2>
+							</div>
+						</div>
+						<div class="g-box">
+							<ul>
+								<li><label class="radio"><input type="radio" name="radio1" checked><span class="txt">부담수준 확인 서비스 이용</span></label></li>
+								<li><label class="radio"><input type="radio" name="radio1"><span class="txt">부담수준 확인 서비스 이용안함</span></label></li>
+							</ul>
+						</div>
+						<!-- 테이블 상단 -->
+						<!-- [D] 2022-06-09 마크업 수정
+						<div class="ut-tbltop">
+							<div class="left">
+								<h2 class="hd-tit4">부담수준 확인 서비스</h2>
+							</div>
+						</div>
+						<ul class="bullet a lg txt-l">
+							<li>교보생명은 귀사가 관련 법률 「근로자퇴직급여보장법」을 기준으로 적정한 부담금을 산출하여 납입하실 수 있도록 부담수준 확인 서비스를 제공하고 있습니다.</li>
+							<li>
+								부담수준 확인 서비스는 가입자별 임금총액을 회사납입금 입력금액과 비교하여 부담금 납입금액이 적정한지 검증하는 서비스로, 부담금 입력 시 모든 가입자의 임금총액 <sup>주1)</sup> 을 반드시 입력해야 합니다.
+								<p class="mt15">주1) 임금총액: 퇴직연금 부담금 산출 시 기준이 되는 금액으로, 규약에서 정한 납입방법인 월납(월임금), 3월납(3개월 임금), 6월납(6개월 임금), 연납(연 임금) 주기에 따라 산정된 임금.</p>	
+							</li>
+							
+						</ul>
+						-->
+						<!-- [D] 2022-06-09 마크업 수정 -->
+						<div class="service-box">
+							<div class="ut-tbltop">
+								<div class="left">
+									<h2 class="hd-tit4">부담수준 확인 서비스</h2>
+								</div>
+							</div>
+							<div class="service-text">
+								<p class="text">교보생명은 귀사가 관련 법률 「근로자퇴직급여보장법」을 기준으로 적정한 부담금을 산출하여 납입하실 수 있도록 부담수준 확인 서비스를 제공하고 있습니다.</p>
+								<p class="text">부담수준 확인 서비스는 가입자별 임금총액을 회사납입금 입력금액과 비교하여 부담금 납입금액이 적정한지 검증하는 서비스로, 부담금 입력 시 모든 가입자의 임금총액 <sup>주1)</sup> 을 반드시 입력해야 합니다.</p>
+								<ul class="bullet f">
+									<li>주1) 임금총액: 퇴직연금 부담금 산출 시 기준이 되는 금액으로, 규약에서 정한 납입방법인 월납(월임금), 3월납(3개월 임금), 6월납(6개월 임금), 연납(연 임금) 주기에 따라 산정된 임금.</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!--//[D] 2022-06-09 마크업 수정 -->
+
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">저장</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

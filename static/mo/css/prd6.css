@@ -1,0 +1,152 @@
+@charset "utf-8";  
+
+/* 펀드/신탁 */
+.space-none {margin:0 -20px !important}
+.page.prd.futr .ut-topfix {margin-bottom:5rem}
+.page.prd.futr .ut-topfix+.ut-bdgs {margin-bottom: 8rem;}
+.page.prd.futr .head-box {margin-top:40px}
+.page.prd.futr .head-box .ico.plus::before {top:50%; transform: translateY(-50%);}
+.page.prd.futr .futr-tit + .head-box,
+.page.prd.futr .futr-tit + .info-enter .sect {margin-top:32rem}  
+.page.prd.futr .futr-tit {margin-bottom:32rem}
+.page.prd.futr .futr-tit .hd-tit3 {font-size:22rem}
+.page.prd.futr .futr-txt {font-size:15rem; line-height:1.4; color:#555;}
+.page.prd.futr .ut-tbl.a .tbform.b>tbody th,
+.page.prd.futr .ut-tbl.a .tbform.b>tbody td {font-size:15rem; line-height: 1.4;}
+.page.prd.futr .ut-tbl.a .tbform.b>tbody td {height:42rem}
+.page.prd.futr .ctra-item {margin-top:40rem}
+.page.prd.futr .ctra-item .hd-tit4 {padding-bottom:16rem}
+.page.prd.futr .ctra-item .btn-set {padding:0 20rem}  
+.page.prd.futr .checkbox-list .checkbox>.txt {padding-left:36rem; font-size:15rem; line-height:1.4; color:#555;}
+.page.prd.futr .checkbox-list>ul>li+li {margin-top:5rem}
+.page.prd.futr .select + .tooltip-area {margin-top:11rem}
+.page.prd.futr .input.won+.bullet {margin-top:10rem}
+.page.prd.futr .text-box+.btn-items {margin-top:40rem}  
+.page.prd.futr .checkbox-flex + .btn-set {margin-top:26rem;}  
+.page.prd.futr .info-enter .sect {margin-top:40rem}
+.page.prd.futr .info-enter .hd-tit4 {margin:0 0 16rem}
+.page.prd.futr .msect > .sect:first-child {margin-top: 0;}
+.page.prd.futr .msect .sect + .sect {margin-top:40rem}
+
+
+.pop-futr .accd-question {padding-top:35px;}
+.pop-futr .invest-bullet {margin:40px 0 0 5px;}
+.pop-futr .ut-tbl.a {margin:0}
+.pop-futr .accd-question .q-tit {position:relative; padding-left:26px;  font-size:16rem; font-weight:700; line-height: 1.31;}
+.pop-futr .accd-question .q-tit>i {display:block; clear:both; content:""; position:absolute; top:0; left:0; width:18rem; height:18rem; vertical-align:top; background-image: url(../img/common/icon_question_small@2x.png); background-size: 18rem auto;}
+.pop-futr .accd-question .q-text {margin-top:8px; font-size:15rem; line-height: 1.4;}
+.pop-futr .accd-question .q-text+.q-tit {margin-top:16px}
+.page.prd.futr .accd-question.b>li .hbox {min-height: 58rem; padding: 18rem 0; line-height: 1.4;}
+
+/* 펀드/신탁 > 펀드 > 펀드 신규가입 */
+.page.prd.futr .futr-join {margin-top:32rem}
+.page.prd.futr .futr-join>.hd-tit3 {margin-top:40rem}
+.page.prd.futr .futr-join .desc {margin-top:16rem; font-size: 16rem; color:#555555; line-height: 1.31;}
+.page.prd.futr .futr-join .ico-list{margin:16rem 0 25rem;}
+.page.prd.futr .futr-join .ico-list li{position:relative;padding-left:64rem;min-height:48rem;font-size:15rem;color:#555555;}
+.page.prd.futr .futr-join .ico-list li strong{display:block;margin-bottom:2rem;font-size:16rem;font-weight:700;color:#242424;}
+.page.prd.futr .futr-join .ico-list li+li{margin-top:24rem;}
+.page.prd.futr .futr-join .ico-list li:before{display:block;content:'';position:absolute;top:0;left:0;width:48rem;height:48rem;border-radius:50%;background-color:#f5f5f5;background-repeat:no-repeat;background-position:50%;background-size:24rem;}
+.page.prd.futr .futr-join .ico-list li.ico1:before{background-image:url(../img/prd/ic_c_01@2x.png);}
+.page.prd.futr .futr-join .ico-list li.ico2:before{background-image:url(../img/prd/ic_c_02@2x.png);}
+.page.prd.futr .futr-join .join-box {padding-top:25rem; border-top:1rem solid #e6e6e6}
+.page.prd.futr .futr-join .join-box .bullet {margin-top:16rem}
+.page.prd.futr .futr-join .join-box .bullet > li + li {margin-top:8rem; font-size:16rem;}
+.page.prd.futr .futr-join .join-box .bullet > li:before {top:9rem}
+.page.prd.futr .input.won.term>input{padding-right: 85rem; text-align:right}  
+
+/* 펀드/신탁 > 고객확인의무 */  
+.pop-layer.pop-infoentry .infoentry-tit.customer {margin-bottom:16rem}
+
+/* 펀드/신탁 > 고객확인정보등록 */
+.pop-layer.pop-infoentry .infoentry-tit {margin:32rem 0 40rem}
+.pop-layer.pop-infoentry .infoentry-tit .hd-tit3 {font-size:22rem}
+.pop-layer.pop-infoentry .infoentry-item {margin:40rem 0}
+.pop-layer.pop-infoentry .infoentry-item .hd-tit4 {padding:0; margin-bottom:10rem}
+.pop-layer.pop-infoentry .infoentry-item .item {margin-top:16rem}
+.pop-layer.pop-infoentry .infoentry-item .item.min-chck .radio {min-width:103rem; margin-bottom:16rem}
+.pop-layer.pop-infoentry .infoentry-item .other-item {display: flex; align-items: center; margin-top: 16rem;}
+.pop-layer.pop-infoentry .infoentry-item .select.open.bot>.slist {max-height: 25vh;}
+.pop-layer.pop-infoentry .checkbox-list li+li {margin-top:5rem}
+.pop-layer.pop-infoentry .ut-gudbox {margin-top:40rem}
+.pop-layer.pop-infoentry .eng-name {display: flex; justify-content: space-between;}
+.pop-layer.pop-infoentry .eng-name .last {width: 40%;min-width: 120rem;margin-right: 8rem;}
+.pop-layer.pop-infoentry .eng-name .first {width:calc(60% - 8rem);}
+  
+
+/* 펀드/신탁 > 펀드 > 펀드가입 상품목록 */
+.page.prd.futr .card-product {margin:32rem -20rem 40rem; padding:0 20rem; background:#f5f5f5}
+.page.prd.futr .card-product .result-item {display:flex; justify-content: space-between; align-items:center; padding-top:32rem;}
+.page.prd.futr .card-product .result-item .total {font-size:14rem; color:#555}
+.page.prd.futr .card-product .result-item .total b {font-weight:700;}
+.page.prd.futr .card-product .result-item .date {font-size:12rem; color:#808080}
+.page.prd.futr .card-product .ut-dcard.a {margin-top:16rem}
+.page.prd.futr .card-product .ut-more {padding:40px 0;}
+.page.prd.futr .card-product .ut-dcard.a.account .dtds {padding-top:0;}
+.page.prd.futr .card-product .ut-dcard.a.account .stds .top-txt {margin-bottom:8px; font-weight:400; font-size:14rem; color:#808080;line-height:1.29}
+.page.prd.futr .card-product .ut-dcard.a.account .prefer-info .ut-bdgs {display:inline;}  
+.page.prd.futr .card-product.bg-none {background:#fff}
+.page.prd.futr .card-product.bg-none .result-item {padding-top:0}
+.page.prd.futr .card-product.bg-none .result-item .total {font-weight:700; font-size:16rem; color:#242424; line-height:1.31}
+.page.prd.futr .card-product.bg-none .result-item .date {color:#767676;}
+.page.prd.futr .floatbots.fl-otp .cprd-wrp .bg-box {text-align:left;}
+.page.prd.futr .floatbots.fl-otp > .inr,
+.page.prd.futr .floatbots.fl-otp .btn-set {padding:0;}
+body.bg-gray .wrap {background:#f5f5f5} /* 배경색 */
+body.bg-gray .wrap .bg-gray {background:#fff}
+
+/* 펀드/신탁> 신탁> 신탁신규가입 */ 
+.page.prd.futr .info-enter .ut-phone+.desc {margin-top:16rem}
+.page.prd.futr .info-enter .ut-phone+.desc .txt {font-size:15rem; color:#555}
+.page.prd.futr .info-enter .fldset .fld + .fld {margin-top:16rem}
+.page.prd.futr .video-time {margin-bottom:40rem}
+.page.prd.futr .video-time .hd-tit4 {padding:0}
+.page.prd.futr .video-time .hd-tit4 .date {font-size:12rem; color:#808080; font-weight:400}
+.page.prd.futr .video-time .time-list {margin-top:14rem}
+.page.prd.futr .video-time .time-list>li{margin-top:8rem}
+.page.prd.futr .ut-dcard.a .stds .cdt .bxs.vt {align-items: start; text-align:right}
+.page.prd.futr .ut-dcard.a .stds .cdt .bxs .st-pri {font-size:18rem; line-height:1.33; font-weight:700}
+.page.prd.futr .ut-form.b .graybox {margin-top:16rem}
+.page.prd.futr .q-slider .swiper-slide ul.rdos {display:flex}
+.page.prd.futr .q-slider .swiper-slide ul.rdos li+li{margin-left:16rem}
+.page.prd.futr .code-item{margin-top:40rem}
+.page.prd.futr .code-item .tit{padding-bottom:10rem}
+.page.prd.futr .code-item .tit>span{font-weight:400}
+.page.prd.futr .code-item .bullet.b{margin-top:5rem}
+.graybox {margin:32rem 0 40rem; background:#f5f5f5; border-radius: 4rem; padding:20rem}
+.graybox .desc+.hd-tit4 {margin:16rem 0; }
+.graybox .desc {font-size:15rem; color:#555; line-height:1.4;}
+.graybox .txt-c {text-align:center}  
+.page.futr .complate-msg .result-info .flex-item.date {display:flex;}
+.page.futr .complate-msg .result-info .flex-item.date .val {margin-left:auto}
+
+
+/* 펀드/신탁> 신탁> 전체 신탁 */
+.page.prd.futr .trust-wrap .trust-text {margin:32rem 0;}    
+.page.prd.futr .trust-wrap .ut-dcard.a.account .stds .inf {font-size:15rem}
+.page.prd.futr .trust-wrap .sect {margin:40rem 0}
+.page.prd.futr .trust-wrap .sect .txt {}
+/*.page.prd.futr .trust-wrap .trust-img {margin:16rem 0 40rem; padding:20px; background:#f2f7ff; text-align:center; border-radius: 16rem;}
+.page.prd.futr .trust-wrap .trust-img .hd-tit3 {position:relative; padding:104rem 0 16rem;}
+.page.prd.futr .trust-wrap .trust-img .hd-tit3:after {display:block; clear:both; content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); width:80px; height:80px; background:url(../img/prd/img_thumbnail@2x.png) no-repeat center; background-size:80rem 80rem}*/  
+.page.prd.futr .trust-wrap .ut-bnr-lst.trust a.lk {padding:20rem 20rem 20rem 84rem; background:#f2faf2 url(../img/prd/ic_trust@2x.png) no-repeat 20rem 20rem; background-size:48rem auto}
+.page.prd.futr .trust-wrap .ut-bnr-lst.trust a.lk::after {top:20rem; transform:translateY(0);}
+.page.prd.futr .trust-wrap .ut-bnr-lst.trust .txt {font-size:14rem; line-height:1.5}
+.page.prd.futr .trust-wrap .txt {font-size:15rem; line-height:1.4; color:#555;}
+.page.prd.futr .trust-wrap .bg-gray {background:#f5f5f5; border:none}
+.page.prd.futr .ut-dcard.trust .stds {position:relative; padding-bottom:24rem}
+.page.prd.futr .ut-dcard.trust .stds.icon:after {display:block; clear:both; content:""; position:absolute; top:0; right:0; width:80px; height:80px; background-size:80rem 80rem}
+.page.prd.futr .ut-dcard.trust .stds.icon.icon01:after {background-image:url(../img/prd/icon_customer01.png);}
+.page.prd.futr .ut-dcard.trust .stds.icon.icon02:after {background-image:url(../img/prd/icon_customer02.png);}
+.page.prd.futr .ut-dcard.trust .stds .hdt .tit {font-size:18rem; line-height: 1.33;}
+.page.prd.futr .ut-dcard.trust .stds .inf {font-size:14rem; line-height: 1.5;color:#777}
+.page.prd.futr .ut-dcard.trust .dtds {border-top:1px solid #e6e6e6}
+.page.prd.futr .trust-wrap .sect .img {width:300rem; margin:15rem auto 0;}
+.page.prd.futr .trust-wrap .img+.txt {margin-top:16rem }
+
+/* 펀드/신탁 > 가입완료 */  
+.page.futr .complate-msg .line-box {margin: 24rem 10rem 16rem; }
+.page.futr .complate-msg .line-box .list> li:last-child {margin-bottom:0}
+.page.futr .complate-msg .btn-set {margin-top:24rem}
+
+

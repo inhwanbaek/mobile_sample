@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd detail prd-detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<!-- pc ver -->
+			<section class="sect page-hdt head-top">
+				<h2 class="stit hd-tit2">(무)교보New플러스하이브리드 변액종신보험</h2>
+				<div class="bg-white right">
+					<!-- fnsize -->
+					<div class="ut-tooltip fnsize">
+						<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+							</div>
+						</div>
+					</div><!--// fnsize -->
+					<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+					<button type="button" class="btn-bookmark"><em class="blind">북마크</em></button>
+				</div> 
+			</section>
+
+			<section class="sect hcont bg1"><!-- 22-06-03 클래스명 추가 -->
+				<div class="t1">저금리와 물가상승도 극복할 수 있는 보험</div>
+				<div class="ut-slide-play product">
+					<div class="swiper-container swiper" data-slide-id="banner_1">
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">사망보험금 및 생활자금으로 활용</div>
+									<div class="t3">유연하게 자금을 활용할 수 있어요</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">멀리 보는 안목</div>
+									<div class="t3">적립식으로 꾸준하게 투자해 보세요</div>
+								</a>
+							</li>
+						</ul>
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- [s] 22-08-04 현행화 -->
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 현행화 -->
+			
+			<!-- 모바일 컨버팅 영역 -->
+			<section class="">
+				<!-- 탭 -->
+				<div class="ut-tabs c lg">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이런 점이 좋아요</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이럴 때 필요해요</a></li>
+					</ul>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 이런 점이 좋아요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-area active">
+					<div class="cont-sec sec3">
+						<div class="tit">교보생명 ‘변액보험’의 장점</div>
+						<div class="s-tit">시장 트렌드를 반영한<br>맞춤형 자금 운용이 쉬워요 </div>
+
+						<!-- [s] 22-05-23 상품상세 일괄수정 -->
+						<ul class="prd-icon-bnr">
+							<li class="bg13">
+								<dl>
+									<dd>글로벌신성장주식형 등 24개의 다양한 펀드로</dd>
+									<dt>분산투자 가능</dt>
+								</dl>
+							</li>
+							<li class="bg14">
+								<dl>
+									<dd>멀리 보는 장기투자! 5년 이상 꾸준하게</dd>
+									<dt>적립식투자 가능</dt>
+								</dl>
+							</li>
+							<!-- 22-08-09 삭제
+							<li class="bg15 line1">
+								<dl>
+									<dd>사망보험금 및 생활자금</dd>
+									<dt>최저보증</dt>
+								</dl>
+							</li>
+							-->
+						</ul>
+						<!-- // [e] 22-05-23 상품상세 일괄수정 -->
+						
+					</div>
+					<div class="cont-sec sec3">
+						<div class="tit balloon" id="ball_2">유연한 보장</div>
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">생활자금 적립을 신청해<br>유연하게 자금활용을 할 수 있어요.
+							</span>
+						<div class="img-cont w360">
+							<img src="../../img/prd/img_prod04_2@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								생활자금 적립을 신청해 유연하게 자금활용을 할 수 있어요.
+								세형나이 기준 경제활동기에는 가족’을 위한 사망보장 노후에는 ‘나’를 위한 생활자금 지급 또는생활자금 적립신청 가능
+							</div>
+						</div>
+						<div class="img-cont w360">
+							<img src="../../img/prd/img_prod04_3@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								자동전환 기준 경제활동기에는 사망보장 노후생활기에는 해당 보험가입금액만큼 해지(최대 90%까지 가능) 매년 생활자금 지급(10회) 잔여 사망보장
+							</div>
+						</div>
+						<ul class="bullet b lg mt18 line-fix">
+							<li><strong>(일반)사망보험금은 '고의적 사고 및 2년 이내 자살'의 경우에 지급을 제한합니다.</strong></li><!-- 22-08-09 결함 수정 -->
+						</ul>
+					</div>
+					
+				</div>
+				<!-- // 이런 점이 좋아요 -->
+
+				<!-- 이럴 때 필요해요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-area ">
+					<div class="cont-sec sec3">
+						<div class="tit">지금, 왜 ‘변액보험’이 주목받을까요?</div>
+						<div class="txt">저금리 속에 다시 주목받는 변액보험</div>
+						<div class="img-cont">
+							<img src="../../img/prd/img_prod04_4@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								변액보험 월납  보험료
+								<ul>
+									<li>2018(연말 기준) 1조 7,860억원</li>
+									<li>2019(연말 기준) 1조 8,163억원</li>
+									<li>2020(3분기 기준) 2조 939억원</li>
+								</ul>
+								금리, 주가 등의 영향으로 변액보험 가입이 증가하는 추세예요! 
+							</div>
+							<div>출처: 「110조 변액보험 가입자, 펀드 갈아타기 열풍」, 한국경제, 2021.01.27</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 이럴 때 필요해요 -->				
+				<div class="compliance tar">준법감시인확인필 1-2207-35 디지털채널통합TF(2022.07.26~2023.07.25) <br>
+					생명보험협회 심의필 제2022-3572호(2022.8.2~2023.8.1)</div>
+
+				<div class="btn-set vt">
+					<button type="button" class="btn md ico-nlink ico-r">가입 전 반드시 알아야 할 사항</button>
+					<button type="button" class="btn md ico-nlink ico-r">보험약관</button>
+					<button type="button" class="btn md ico-elink ico-r">가격공시실</button>
+				</div>
+				<!-- // 모바일 컨버팅 영역 -->
+
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set">
+							<button type="button" class="btn lg rd a">상담신청</button>
+						</div>
+					</div>
+				</nav><!-- 22-08-08 위치 수정 -->
+
+				<!-- 상세 하단 공통영역 -->
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">예금자보호 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>내용</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="img-banner-wrap btm" id="ball_0">
+					<span data-ui-balloon="left,top" aria-describedby="ball_0">위 보험상품은 추가 혜택을 드려요.</span>
+					<div class="img-banner bn1">교보건강코칭 서비스</div>
+					<div class="img-banner bn2">교보헬스케어 서비스</div>
+				</div>
+
+				<ul class="ut-bnr-lst img">
+					<li>
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">보험료 이렇게 따라하세요</strong>
+							<span class="txt">생년월일만 입력하면! 바로~~~</span>
+						</a>
+					</li>
+				</ul>
+				<!-- // 상세 하단 공통영역 -->
+
+				<!-- [D] 2022-08-12 배너추가 -->
+				<div class="banner-box bt">
+					<div class="ut-slide-play type-b">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //end [D] 2022-08-12 배너추가 -->
+
+				
+			</section>
+			
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

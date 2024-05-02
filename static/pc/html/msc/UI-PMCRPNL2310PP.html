@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a md pop-prdlst" id="pop-prdlst">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">만기별 상품내역</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="selltents">
+							<div class="sellhdt hdt-g"><!-- [D] 2022-06-27 클래스 hdt-g 추가 -->
+								<h2 class="tit">(온라인)미래에셋연금인디아업종대표1(주식)C-P2e</h2>
+								<div class="tdl">
+									<div class="tdt">적립금액</div>
+									<div class="tdd">
+										<span class="prc t-red"><!-- [D] 2022-06-27 t-red클래스 추가 -->
+											<strong class="p">12,123,123</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="ut-dcard a type-left" data-tog-cls="box">
+								<div class="stds">
+									<div class="cdt">
+										<div class="bxs">
+											<h3 class="dt">매수일</h3>
+											<div class="dd">2020.09.02</div>
+										</div>
+										<div class="bxs">
+											<h3 class="dt">만기일</h3>
+											<div class="dd"><strong class="t-blue">2020.09.08</strong></div>
+										</div>
+										<div class="bxs">
+											<h3 class="dt">적용금리</h3>
+											<div class="dd">32.90%</div>
+										</div>
+										<div class="bxs nspace">
+											<h3 class="dt">적립금액</h3>
+											<div class="dd"><strong class="t-red">6,736,104원</strong></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ut-dcard a type-left" data-tog-cls="box">
+								<div class="stds">
+									<div class="cdt">
+										<div class="bxs">
+											<h3 class="dt">매수일</h3>
+											<div class="dd">2020.09.02</div>
+										</div>
+										<div class="bxs">
+											<h3 class="dt">만기일</h3>
+											<div class="dd"><strong class="t-blue">2020.09.08</strong></div>
+										</div>
+										<div class="bxs">
+											<h3 class="dt">적용금리</h3>
+											<div class="dd">32.90%</div>
+										</div>
+										<div class="bxs nspace">
+											<h3 class="dt">적립금액</h3>
+											<div class="dd"><strong class="t-red">6,736,104원</strong></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">만기예정상품 예약변경</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-prdlst');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-pdmpsell',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+		</script>
+
+	</div>
+</body>
+</html>

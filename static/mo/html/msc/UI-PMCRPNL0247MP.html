@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-awdapcfm" id="pop-awdapcfm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신청확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="ut-tbl b mt16">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">신정정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col width="35%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">성명</th>
+									<td>김교보</td>
+								</tr>
+								<tr>
+									<th scope="row">주민등록번호</th>
+									<td>900101-2******</td>
+								</tr>
+								<tr>
+									<th scope="row">입사일자</th>
+									<td>1999-01-01</td>
+								</tr>
+								<tr>
+									<th scope="row">중간정산일자</th>
+									<td>2008-01-01</td>
+								</tr>
+								<tr>
+									<th scope="row">적립금액</th>
+									<td>9,441,485원</td>
+								</tr>
+								<tr>
+									<th scope="row">중도인출사유</th>
+									<td>무주택자인 가입자 본인명의 주택구입 (분양권 매수 시)</td>
+								</tr>
+								<tr>
+									<th scope="row">계좌정보</th>
+									<td>12345678912356 (국민)</td>
+								</tr>
+								<tr>
+									<th scope="row">중도인출 결재관리자</th>
+									<td>이교보 관리자</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-awdapcfm');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-awdapcfm',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

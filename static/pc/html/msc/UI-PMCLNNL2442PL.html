@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-rsnnotbn" id="pop-rsnnotbn">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">금리인하요구 신청불가사유</h1><!-- [D] 2022-04-07 문구수정 -->
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="msect">
+							<h2 class="hd-tit4">해당 대출은 다음의 사유로 금리인하요구 대상이 아닙니다.</h2><!-- [D] 2022-04-07 문구수정 -->
+
+							<div class="ut-tbl b">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">금리인하요구 신청불가사유</span><span class="cap"></span></caption><!-- [D] 2022-04-07 문구수정 -->
+									<colgroup>
+										<col style="width:128rem;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">대출상품</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>교보e프라임신용대출</td>
+										</tr>
+										<tr>
+											<th scope="row">현재대출금리</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>3.7%</td>
+										</tr>
+										<tr>
+											<th scope="row">사유</th>
+											<td>#불가 사유 출력#</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-rsnnotbn');">닫기</button>
+						<button type="button" class="btn a rd lg">상담신청</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close">닫기</button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-rsnnotbn');
+		</script>
+
+	</div>
+</body>
+</html>

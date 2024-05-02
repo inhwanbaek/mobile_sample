@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-kakaopay" id="pop-kakaopay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카카오페이 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="prd-tbox">
+						<h2 class="hd-tit3">
+							카카오페이 인증서를 등록할게요.<br>
+							고객님의 정보를 입력해 주세요.
+						</h2>
+					</div>
+					<div class="prd-contents">
+						<div class="text-type1">「개인정보보호법」 및 「신용정보의 이용 및 보호에 관한 법률」에 따라 고객님의 개인(신용)정보를 다음과 같이 처리(수집, 조회, 제공)합니다.</div>
+					</div>
+
+					<div class="ut-form a datas">
+						<ul class="form">
+							<li class="agre">
+								<ul class="ut-accd checklist a" data-accd="tog" data-clickable="false"><!-- [웹접근성] 2nd 수정 -->
+									<li >
+										<div class="hbox">
+											<div class="hdt">
+												<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>	
+											</div>
+											<div class="bts">
+												<button class="bt btn-tog show" type="button">약관</button>
+											</div>
+										</div>
+										<div class="cbox">
+											<ul class="chk-item">
+												<li>
+													<label class="checkbox cr"><input type="checkbox"><span class="txt">개인(신용)정보 수집 및 이용 동의
+													</span></label>
+													<a href="javascript:;">보기</a>
+												</li>
+												<li>
+													<label class="checkbox cr"><input type="checkbox"><span class="txt">고유식별정보 처리 동의</span></label>
+													<a href="javascript:;">보기</a>
+												</li>
+												<li>
+													<label class="checkbox cr"><input type="checkbox"><span class="txt">개인(신용)정보의 제공에 대한 동의</span></label>
+													<a href="javascript:;">보기</a>
+												</li>
+												<li>
+													<label class="checkbox cr"><input type="checkbox"><span class="txt">전자금융서비스 이용약관</span></label>
+													<a href="javascript:;">보기</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="name">
+								<span class="input a">
+									<label class="lb" for="input_id01">성명</label>
+									<input id="input_id01" type="text" placeholder="실명 입력">
+								</span>
+							</li>
+							<li class="rnum">
+								<span class="input a ut-rsnum">
+									<label class="lb" for="input_id02">주민등록번호 및 외국인등록번호</label>
+									<input id="input_id02" type="tel" class="fn" pattern="\d*" title="주민등록번호 및 외국인등록번호 앞 6자리" placeholder="앞 6자리"> <!-- [웹접근성] 1st 수정 -->
+									<i class="ds">-</i>
+									<input type="tel" class="ln" pattern="\d*" title="주민등록번호 및 외국인등록번호 뒤 7자리" placeholder="뒤 7자리"> <!-- [웹접근성] 1st 수정 -->
+								</span>
+							</li>
+							<li class="mobl">
+								<div class="ut-phone">
+									<span class="select tcom">
+										<label class="lb" for="input_id03">통신사</label>
+										<select id="input_id03">
+											<option>SKT</option>
+											<option>KT</option>
+											<option>LGU+</option>
+											<option>SKT알뜰폰</option>
+											<option>KT알뜰폰</option>
+											<option>LGU+알뜰폰</option>
+										</select>
+									</span>
+									<span class="input a tnum"><label class="lb" for="input_id04">전화번호입력</label>
+										<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="input_id04">
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-kakaopay');">취소</button> -->
+					<button type="button" class="btn a rd lg">인증서 요청</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-kakaopay');
+	</script>
+
+</div>
+</body>
+</html>

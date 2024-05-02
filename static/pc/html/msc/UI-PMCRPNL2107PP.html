@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">자발적 금융투자상품 거래 확인</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="nncprd">
+							<div class="nncprd-tbox">
+								<h2 class="hd-tit3">고객님 투자성향보다 위험도가 높은 <br>금융상품에 투자하시겠습니까?</h2>
+							</div>
+
+							<div class="nncprd-info">
+								<div class="list">
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg h">매우낮은위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg k">낮은위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg l">보통위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg m">다소높은위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg i">높은위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ut-bdgs">
+											<em class="bdg i">매우높은위험</em>
+										</div>
+										<div class="hdt">
+											<div class="tit">교보생명(신탁)현금성 자산</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="nncprd-gud">
+								본인은 교보생명이 파악한 본인의 투자성향이 <strong class="st">$수익추구형$</strong>임을 안내받았으나, 본인의 투자성향보다 위험도가 높은 금융투자상품임에도 불구하고 교보생명으로부터 투자권유를 받지 않고 본인의 판단에 따라 투자를 하고자 합니다.  해당 금융투자상품에 대한 투자의 위험성을 안내받았음을 확인합니다.
+							</div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg">취소</button>
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

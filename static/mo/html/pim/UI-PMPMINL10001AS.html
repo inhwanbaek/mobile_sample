@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"개인정보 조회/변경"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page pim my-info" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="int-txt"><span>홍길동</span> 님의<br>개인정보를 확인해보세요.</div>
+			<h3 class="hd-tit4">기본정보</h3>
+			<h4 class="hd-tit5 mt10 mb10">전화번호</h4>
+			<div class="ut-tbl b">
+				<table class="tbform" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">전화번호</span><span class="cap">휴대폰, 자택, 직장, 팩스, 금융거래정보 SMS수신동의 로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">휴대폰</th>
+							<td>010-****-1234</td>
+						</tr>
+						<tr>
+							<th scope="row">자택</th>
+							<td>02-****-1234</td>
+						</tr>
+						<tr>
+							<th scope="row">직장</th>
+							<td>02-****-1234</td>
+						</tr>
+						<tr>
+							<th scope="row">팩스</th>
+							<td>02-1234-5678</td>
+						</tr>
+						<tr>
+							<th scope="row">금융거래정보<br>SMS수신동의</th>
+							<td>동의</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h4 class="hd-tit5 mt40 mb10">주소</h4>
+			<div class="ut-tbl b">
+				<table class="tbform" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">주소</span><span class="cap">자택, 직장, 우편물수신처로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">자택</th>
+							<td>(03154) 서울 종로구 종로1 교보생명빌딩 17층 디지털채널통합TF</td>
+						</tr>
+						<tr>
+							<th scope="row">직장</th>
+							<td>(03154) 서울 종로구 종로1 교보생명빌딩 17층 디지털채널통합TF</td>
+						</tr>
+						<tr>
+							<th scope="row">우편물수신처</th>
+							<td>자택</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h4 class="hd-tit5 mt40 mb10">이메일</h4>
+			<div class="ut-tbl b">
+				<table class="tbform" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">기본 정보</span><span class="cap">이메일, 보험계약 관련 안내 이메일 수신동의 로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>Kyo****@gmail.com</td>
+						</tr>
+						<tr>
+							<th scope="row">보험계약 관련 안내<br>이메일 수신동의</th>
+							<td>미동의</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit4 mt40 mb10">부가정보</h3>
+			<div class="ut-tbl b">
+				<table class="tbform" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">부가정보</span><span class="cap">결혼유무, 결혼기념일, 반려동물로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결혼유무</th>
+							<td>기혼</td>
+						</tr>
+						<tr>
+							<th scope="row">결혼기념일</th>
+							<td>2022-12-12</td>
+						</tr>
+						<tr>
+							<th scope="row">반려동물</th>
+							<td>반려견<br>반려묘<br>기타</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="javascript:;">변경</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

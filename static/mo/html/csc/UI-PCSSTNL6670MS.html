@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"원격지원서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc remote" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">고객님의 PC 또는 모바일 화면을 보면서 문제를 직접 해결해 드려요.</h2>
+				<ol class="counselor-lst step-type"><!-- [D] 2022-06-22 UI/UX 변경 -->
+					<li>
+						<a href="javascript:;" class="lk"  title="새창열림"><em class="point">01.</em>채팅상담 시작하기</a><!-- [웹접근성] 1st 수정 -->
+					</li>
+					<li>
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">채팅상담을 시작해야 서비스를 이용할 수 있어요.</span>
+						<a href="javascript:;" class="lk "><em class="point">02.</em>원격지원서비스 요청하기</a>
+					</li>
+				</ol>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h3 class="hd-tit4">이용시간</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li><span class="point">평일 10:00~17:00(토, 일, 공휴일 휴무)</span></li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h3 class="hd-tit4">안내사항</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>[원격지원서비스] 버튼을 눌러도 화면이 연결되지 않으면 채팅창에 아래의 URL을 입력해 주세요. <br>helper.kyobocrm.com:174443</li>
+						<li>원격지원서비스는 PC와 안드로이드(웹,앱)에서만 이용하실 수 있습니다.
+							<ul class="bullet b red">
+								<li>아이폰(IOS)는 지원불가능</li>
+							</ul>
+						</li>
+						<li>고객님의 정보는 안전하게 보호되며, 상담 중에도 고객님이 원하시면 접속이 즉시 해제됩니다. 안심하고 이용해 주세요.</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

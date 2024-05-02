@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	
+	<article class="pop-layer a pop-termleak" id="pop-termleak">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">개인정보 유출 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="aplg-txt">
+						<h2 class="hd-tit2 tit">고객님께 드리는 사과의 말씀</h2>
+						<p class="txt">
+							고객님의 소중한 정보가 일부 유출된 점에 대해 깊이 사과드립니다. <br>
+							<br>
+							교보생명은 고객님의 소중한 정보를 기반으로 평생 든든한 라이프 파트너가 되어 드리고자 노력해 온 생명보험회사로서 개인정보 보호를 최우선 순위에 두고 철저하게 보안에 힘써 왔으나, 언론보도 내용과 같이 폐기 대기 중인 고객님의 일부 정보가 유출된 것에 머리 숙여 사과 말씀 드립니다. <br>
+							<br>
+							해당 사고는 <span class="hlt">당사가 폐기를 의뢰한 고객정보가 폐기되지 않은 채 발견된 것</span>으로 추정하고 있으며, 유출된 정보는 <span class="hlt">이름, 주민등록번호, 휴대폰번호, 전화번호, 주소, 이메일, 가입상품명</span>입니다. 유출 정보 항목은 고객별로 다르며, 세부 내용은 [개인정보 유출여부 확인]에서 조회하실 수 있습니다. <br>
+							<br>
+							경찰 <span class="hlt">수사 결과에 따르면, 고객정보가 기재된 인쇄물이 미처 폐기되지 않은 채 시민의 신고로 발견되었고, 여기에 약 1만 2천 건의 고객정보가 담겨 있으나 추가 유출의 징후는 없는 것으로 파악</span>됩니다. 경찰이 해당 인쇄물을 모두 회수 조치하여 더 이상 피해는 없을 것으로 보이나, 혹시라도 해당 정보를 이용한 전자금융 사기가 있을 수 있으니 유의해 주시기 바랍니다.<br>
+							<br>
+							또한, 이번 사건과 관련하여 고객님께 피해가 발생한 것으로 확인되면 적법한 절차에 따라 구제해 드리겠습니다. 구체 신청은 전국의 교보생명 고객PLAZA나 온라인 채널을 통해 가능하며, 세부 내용은 공지사항을 참고해 주시기 바랍니다.<br>
+							<br>
+							더 궁금하신 사항은 교보생명 콜센터(1588-1001)로 문의하시면 성심을 다해 신속하게 대응하겠습니다. <br>
+							<br>
+							앞으로 이런 일이 발생하지 않도록 임직원 모두가 고객님의 개인정보 보호에 더욱 만전을 기할 것임을 약속 드립니다. <br>
+							<br>
+							항상 교보생명을 믿고 사랑해 주시는 고객 여러분께 심려를 끼쳐 드려 다시 한번 진심으로 사과 드립니다.
+						</p>
+					</div>
+
+					<div class="sign">
+						2014년 7월 18일 교보생명보험주식회사 <br>임직원 일동
+					</div>
+					<div class="btn-set">
+						<button type="button" class="btn g md">개인정보 유출 여부 확인</button>
+					</div>
+				</main>
+			</div>
+			<div class="pbt white">
+				<div class="bot-btn">
+					<label class="checkbox"><input type="checkbox"><span class="txt">다시 보지 않기</span></label>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-termleak');">닫기</button>
+				</div>
+				<!-- <div class="btn-set ">
+					<button type="button" class="btn rd lg">다시 보지 않기</button>
+					<button type="button" class="btn rd lg" onclick="ui.popup.close('pop-termleak');">닫기</button>
+				</div> -->
+			</div>
+			<!-- <button type="button" class="btn-pop-close">닫기</button> -->
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-termleak');  // 팝업 열기
+
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">주요사항 설명</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+
+					<div class="text-group type2">
+						<div class="text-box">
+							<p>[관련 근거: 생명보험 표준약관 및 2010년 4월 1일 이후 상품별 보험약관 해당 조항]</p>
+							<p class="tit">생명보험 표준약관 제29조(계약자의 임의해지 및 피보험자의 서면동의 철회권)</p><!-- [D] 2022-06-23 텍스트수정 -->
+							<ul class="bullet num">
+								<li><i class="n">①</i> 제4조(계약의 무효)에 따라 사망을 보험금 지급사유로 하는 계약에서 서면에 의한 동의를 한 피보험자(피보험자)는 계약의 효력이 유지되는 기간 중에는 언제든지 서면동의를 철회할 수 있습니다. 또한 서면동의 철회로 계약이 해지되어 회사가 지급하여야 할 해지환급금이 있을 때에는 제18조(해지환급금) 제1항에 따라 해지환급금을 계약자에게 지급합니다.</li><!-- [D] 2022-06-23 텍스트수정 -->
+								<!-- <li><i class="n">②</i> 제4조(계약의 무효)에 따라 사망을 보험금 지급사유로 하는 계약에서 서면에 의한 동의를 한 피보험자(보험대상자)는 계약의 효력이 유지되는 기간 중에는 언제든지 서면동의를 장래를 향하여 철회할 수 있습니다. 또한 서면동의 철회로 계약이 해지되어 회사가 지급하여야 할 해지환급금이 있을 때에는 제18조(해지환급금) 제1항에 따라 해지환급금을 계약자에게 지급합니다.</li> -->
+							</ul>
+
+							<p class="tt">[신청 전 반드시 알아야 할 사항]</p>
+							<ul class="bullet num">
+								<li><i class="n">①</i> 이 서면동의 철회신청은 일단 접수된 후에는 취소 할 수 없습니다.</li>
+								<li><i class="n">②</i> 이 서면동의 철회신청서를 접수 시 해당 피보험자(보험대상자)에 대해 해당 보험약관에서 정한 보장은 즉시 소멸됩니다. 또한 주/종피보험자 동시 존재 조건은 주피보험자의 서면동의 철회 시 해당 보험약관에 특별규정이 없는 한 종피보험자에 대한 보장도 함께 소멸됩니다.</li>
+								<li><i class="n">③</i> 서면동의 철회신청 시 계약이 해지되어 회사가 지급하여야 할 해지환급금이 있을 때에는 계약자에게 지급됩니다.</li>
+							</ul>
+
+						</div>
+					</div>
+				</main>
+			</div>
+
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="bot-box">
+						<div class="confirm-box"><!-- [D] 2022-06-23 텍스트수정 -->	
+							본인은 선택한 계약에 대한 피보험자(보험대상자)의 서면동의 철회를 위와 같이 신청함에 있어, ‘신청 전 반드시 알아야 할 사항’에 대하여 충분히 설명을 들었으며, 향후 이 서면동의 철회와 관련하여 교보생명에 민·형사상 어떠한 이의도 제기하지 않을 것을 확약합니다.
+						</div>
+						<div class="hd-tit5">이 내용을 확인하고 동의하십니까?</div>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">동의안함</button>
+					<button type="button" class="btn lg rd a">동의</button>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

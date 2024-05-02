@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"상품부가서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page prd add-service btm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents" data-ui-fsize="ctn">	
+			<section class="top-area type2 bg7">
+				<div class="top-btn-area">
+					<button type="button" class="btn-fsize" data-ui-fsize="btn"><i class="blind">글자크기 조정하기</i></button>
+					<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+				</div>
+				
+				<h2 class="hd-tit2">교보치매케어서비스</h2>
+				<div class="tit">치매보험 가입고객용</div>
+				<div class="top_cont">				
+					치매예방부터<br>단계별 치매케어까지<br>
+					<strong>우리 가족 치매 돌보미</strong>					
+				</div>				
+			</section>
+
+			<section class="sec-wrap">
+				<h3 class="hd-tit4">교보치매케어서비스를 이용해 보세요.</h3>
+				<div class="btn-set vt">			
+					<button type="button" class="btn f md ico-call-blue ico-r">교보치매케어서비스 콜센터</button>
+					<button type="button" class="btn md ico-elink ico-r">교보치매케어서비스 홈페이지</button>
+				</div>
+			</section>
+		
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이용방법</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">혜택안내</a></li>
+				</ul>
+			</div>
+
+			<!-- 이용방법 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어디에서 이용하나요?</h4>
+					<p>「교보치매케어서비스」는
+						교보치매케어서비스 홈페이지(<a href="www.kyoboseniorcare.com" target="_blank" title="새창열림">www.kyoboseniorcare.com</a>) 또는 교보치매케어서비스 콜센터(1811-7002)를 통해 이용할 수 있습니다.</p>										
+
+					<h5 class="hd-tit4">주요화면</h5>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<!-- 22-07-11 주요화면 이미지수정 -->
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6790_1@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6790_2@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6790_3@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6790_4@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6790_5@2x.png" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sec-box">
+					<h4 class="hd-tit2">누가 이용할 수 있나요?</h4>
+					<div class="balloon-box-wrap">
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">아래 상품에 가입하시면 서비스를 이용할 수 있어요.</span>
+						<div class="balloon-box" id="ball_1">
+							<!-- [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+							<ul class="un-bullet">
+								<li>(무)교보New가족든든치매보험</li>
+								<li>(무)교보New내생애맞춤치매보험Ⅱ</li>
+								<li>(무)교보든든해요치매보험</li>
+							</ul>	
+							<p class="txt">상기 보험상품 가입 시 제공</p> <!-- [D] 2022-08-25 텍스트 수정 -->
+							<ul class="bullet b lg">
+								<li>(2022년 4월 기준)</li>
+							</ul>			
+							<!-- [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+						</div>						
+					</div>
+					<ul class="bullet a lg">
+						<li>교보치매케어서비스는 해당 보험상품에 가입한 고객에게 제공되며, 해당 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출하고 서비스 대상자임을 확인받은 후 이용할 수 있습니다.</li>
+						<li>서비스 부가기준 등 자세한 내용은 교보생명 FP(재무설계사) 또는 교보생명 콜센터(1588-1001)에 문의해 주세요. </li>
+					</ul>
+					
+				</div>	
+				
+			</div>
+			<!-- // 이용방법 -->
+
+			<!-- 혜택안내 -->
+			<!-- 22-05-31 혜택안내 전체수정 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어떤 혜택을 받나요?</h4>
+
+					<div class="s-section s-section2">
+
+						<!-- <h5 class="hd-tit3">연금 개시 전 암치료 지원</h5> -->
+						<div class="cont-box-noline">
+							<div class="lnr-cont-vt">
+								<!-- [D] 2022-08-23 마크업 수정 s -->
+								<h5 class="hd-tit4">평상시</h5> 
+								<ul class="wrap">
+									<li>
+										<h6 class="hd-tit4">치매예방</h6>
+										<ul class="bullet a">
+											<li>디지털 치매예방 프로그램</li>
+											<li>치매예방 건강관리</li>
+											<li>건강상담/심리상담</li>
+											<li>건강생활 영양 컨설팅</li>
+											<li>간병인 매칭</li>
+											<li>병원·의료진 안내 및 예약대행</li>
+											<li>요양병원·시설 찾기</li>
+											<li>치매안심체크/안심콜</li>
+										</ul>
+									</li>
+								</ul>
+								<h5 class="hd-tit4">단계별</h5>
+								<ul class="wrap">
+									<li>
+										<h6 class="hd-tit4">경도치매 CDR1</h6>
+										<ul class="bullet a">
+											<li>치매케어 플래너</li>
+											<li>간병인 지원 또는 간호사 병원 동반</li>
+											<li>보호자 심리케어</li>
+											<li>AI 지원 or 위치추적기 지원 or 화상 심리상담(2회)</li> <!-- [D] 2022-08-29 텍스트 수정 -->
+										</ul>
+									</li>
+									<li>
+										<h6 class="hd-tit4">중등도치매 CDR2</h6>
+										<ul class="bullet a">
+											<li>차량 에스코트</li>
+											<li>화상 심리상담 또는 병원 간 이송</li>
+											<li>요양기관 입소 지원 상담</li>
+										</ul>
+									</li>
+									<li>
+										<h6 class="hd-tit4">중증치매 CDR3</h6>
+										<ul class="bullet a">
+											<li>가사도우미 지원</li>
+											<li>화상 심리상담 또는 치매환자 24시 모니터링 지원</li>
+										</ul>
+									</li>
+								</ul>
+								<!--// [D] 2022-08-23 마크업 수정 e -->
+							</div>
+
+							<ul class="bullet b mt16">
+								<li>CDR 척도 정의 및 상세내용은 상품안내장 및 약관을 참조하시기 바랍니다.</li>
+								<li>CDR 척도(한국판 Expanded Clinical Dementia Rating, 2001년)는 치매 관련 전문의가 실시하는 검사로, 전반적인 인지기능 및 사회기능 정도를 측정합니다. 전체 점수 구성은 0, 0.5, 1, 2, 3, 4, 5로 되어 있으며, 점수가 높을수록 중증을 의미합니다.</li>
+							</ul>
+						</div>
+											
+						<h5 class="hd-tit3 ball-tit" id="ball_2">헬로마인드케어</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_2">화상 심리상담은 ‘헬로마인드케어’를 통해<br>고객님 본인 또는 가족에게 제공해 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">치매발생 시</h6>
+							<div class="inr-box">
+								<ul>
+									<li class="cont img6">상담신청<br>교보치매케어<br>홈페이지/콜센터</li>
+									<li class="arr"></li>
+									<li class="cont img2">전문간호사<br>상담</li>
+									<li class="arr"></li>
+									<li class="cont img7">화상 심리상담<br>헬로마인드<br>케어앱</li>
+								</ul>
+							</div>
+							<ul class="bullet a lg">
+								<li>상담 신청 후 전문간호사가 상담을 통해 서비스 이용방법을 안내해 드립니다.</li>
+							</ul>
+
+						</div>
+
+						<h5 class="hd-tit3 ball-tit" id="ball_3">평상시 치매예방</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_3">평상시 건강관리부터 연령별 치매예방까지<br>빈틈 없이 관리해 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">디지털 치매예방 프로그램</h6>
+							<ul class="bullet a lg">
+								<li>인지능력 및 암기능력 향상 콘텐츠 제공: 뇌 훈련 퀴즈, 명언 암기 등 </li>
+								<li>건강 식단 및 음원 콘텐츠 제공: 뇌 건강 레시피, 힐링 음악 등
+									<ul class="bullet b lg">
+										<li>프로그램 신청 고객에게 모바일로 콘텐츠를 발송하고 필요시 간호사, 전문의 등 전문가 상담 진행</li>
+									</ul>
+								</li>
+							</ul>
+					
+							<h6 class="hd-tit4">치매예방 건강관리</h6>
+							<ul class="bullet a lg">
+								<li>건강정보 제공: 시니어 건강, 운동, 영양 등 치매예방을 위한 건강 콘텐츠 제공</li>
+								<li>건강검진 우대: 제휴 병원에서 건강검진 시 우대(검진비용은 고객 부담)</li>
+							</ul>
+						
+							<h6 class="hd-tit4">건강상담/심리상담</h6> <!-- [D] 2022-08-25 텍스트 수정 -->
+							<ul class="bullet a lg">
+								<li>건강상담: 간호사 상담 접수 후 내과, 외과 등 14개과 진료과목 전문의 전화상담 제공</li>
+								<li>심리상담: 우울, 불안 등 관련하여 심리상담사와 전화 심리상담,  심리상담센터 심리검사 및 상담 우대(비용 고객 부담)</li>
+							</ul>
+						
+							<h6 class="hd-tit4">건강생활 영양 컨설팅</h6> <!-- [D] 2022-08-25 텍스트 수정 -->
+							<ul class="bullet a lg">
+								<li>개별 상담을 통한 영양 설계, 필수 영양소ㆍ건강기능식품 추천</li> <!-- [D] 2022-08-25 텍스트 수정 -->
+							</ul>
+						
+							<h6 class="hd-tit4">간병인 매칭</h6>
+							<ul class="bullet a lg">
+								<li>간병인 필요 시 제휴업체를 통한 간병인 안내(고객부담)</li>
+							</ul>
+						
+							<h6 class="hd-tit4">병원·의료진 안내 및 예약대행</h6>
+							<ul class="bullet a lg">
+								<li>질병 진료 및 치료를 위한 병원·의료진 안내 및 진료  예약대행</li> <!-- [D] 2022-08-25 텍스트 수정 -->
+							</ul>
+					
+							<h6 class="hd-tit4">요양병원·시설 찾기</h6>
+							<ul class="bullet a lg">
+								<li>희망지역, 건강상태, 테마별(양/한방, 혈액투석 등) 요양병원·시설 찾기 제공</li>
+								<li>고객의 상황에 맞는 맞춤형 요양병원·시설(최대 3곳) 견적 비교 제공
+									<ul class="bullet b lg">
+										<li>교보치매케어서비스 홈페이지(<a href="http://www.kyoboseniorcare.com" target="_blank" title="새창열림">www.kyoboseniorcare.com</a>)를 통해 제공</li>
+									</ul>
+								</li>
+							</ul>
+						
+							<h6 class="hd-tit4">치매안심체크/치매안심콜</h6>
+							<ul class="bullet a lg">
+								<li>치매안심체크: 연령 구간별 맞춤 치매관리 지원(연 1회)
+									<ul class="bullet b lg">
+										<li>치매자가문진(문자메시지 → 치매상담간호사 전화상담 → 필요시 의료기관 연계 지원)</li>
+									</ul>
+								</li>
+								<li>치매안심콜: 65세 이상 고령층 대상 안부전화 제공(연 1회)</li>
+							</ul>
+						</div>								
+						
+						<h5 class="hd-tit3 ball-tit" id="ball_4">경도치매(CDR1)</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_4">치매 초기를 잘 극복할 수 있도록 전문 의료진이<br>도와 드리고, 든든하게 보장해 드려요.  </span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">치매케어 플래너</h6>
+							<ul class="bullet a lg">
+								<li>치매환자에게 필요한 치매치료 및 관리방법 설계</li>
+								<li>치료·재활 과정에서 필요한 의료 및 요양기관 지원 상담</li>
+								<li>제휴협력을 통해 요양보호사·간병인 제휴업체 연계(비용 고객 부담)</li>
+							</ul>
+						
+							<h6 class="hd-tit4">간병인 지원 또는 간호사 병원 동반</h6>
+							<ul class="bullet a lg">
+								<li>경도치매 진단 후 상급종합병원 진료, 상해/질병으로 인해 상급종합병원 입원 시 간병인 지원(최대 5일/1회) 또는 경도  이상 치매 진단 후 상급종합병원 진료 시 간호사 병원 동반(2회) 중 선택 제공
+									<ul class="bullet b lg">
+										<li>간병인 지원의 경우, 3일(영업일 기준) 전 신청(중등도 이상 치매의 경우 간병인 지원이 제한될 수 있음)</li>
+										<li>간호사 병원 동반의 경우, 치매 관련 질환(신경과/정신과)으로 진료 시 제공</li>
+									</ul>
+								</li>
+							</ul>
+					
+							<h6 class="hd-tit4">보호자 심리케어</h6>
+							<ul class="bullet a lg">
+								<li>보호자 전화 심리상담 제공(4회)</li>
+								<li>심리상담사 가족 방문 상담(1회)
+									<ul class="bullet b lg">
+										<li>단, 방문 장소는 관련 시설 및 의료기관</li> <!-- [D] 2022-08-22 컨텐츠 수정 -->
+									</ul>
+								</li>
+							</ul>
+						
+							<h6 class="hd-tit4">AI 지원 or 위치추적기 지원 or 화상심리상담(2회)</h6>  <!-- [D] 2022-08-25 텍스트 수정 -->
+							<ul class="bullet a lg">
+								<li>경도 이상 치매진단 후 AI스피커(두뇌/힐링 체조/투약ㆍ생활ㆍ운동ㆍ일정알림 등)지원 또는 실내외 위치추적(배회감지기)지원 또는 화상심리상담(2회)중 선택 제공
+									<ul class="bullet b lg">
+										<li>위치추적기 월 사용료는 고객 부담</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<h5 class="hd-tit3 ball-tit" id="ball_5">중등도치매(CDR2)</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_5">치매 치료를 위해 의료기관으로 이동할 때도<br>신속하고 편안하게 도와 드려요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">차량 에스코트</h6>
+							<ul class="bullet a lg">
+								<li>상급종합병원 입원 또는 퇴원 시 차량 에스코트 지원(1회)
+									<ul class="bullet b lg">
+										<li>보호자 동반 필수</li>
+										<li>50km까지 무상 제공, 초과 비용은 고객 부담</li>
+									</ul>
+								</li>
+							</ul>
+					
+							<h6 class="hd-tit4">화상 심리상담(3회) 또는 병원 간 이송</h6>
+							<ul class="bullet a lg">
+								<li>중등도치매 진단 후 화상 심리상담(3회) 또는 병원 간 환자 이송 발생 시 구급차 지원(1회) 중 선택 제공
+									<ul class="bullet b lg">
+										<li>보호자 동반 필수</li>
+										<li>50km까지 무상 제공, 초과 비용은 고객 부담</li>
+									</ul>
+								</li>
+							</ul>
+						
+							<h6 class="hd-tit4">요양기관 입소지원 상담</h6>
+							<ul class="bullet a lg">
+								<li>요양기관 안내 및 기관 이용 시 필요사항 체크 등 상담 지원</li>
+							</ul>
+						</div>
+
+						<h5 class="hd-tit3 ball-tit" id="ball_6">중증치매(CDR3)</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_6">중증치매 진단을 받으셨다면 가족 간병 지원을<br>통해 부담을 덜어 보세요.</span>
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">가사도우미 지원</h6>
+							<ul class="bullet a lg">
+								<li>중증치매로 장기간 입원 시 가사지원 서비스 제공(연 1회/4시간)
+									<ul class="bullet b lg">
+										<li>중증치매 진단 후 상급종합병원 7일 이상 입원 시 가사도우미 파견</li>
+									</ul>
+								</li>
+							</ul>
+						
+							<h6 class="hd-tit4">화상 심리상담(4회) 또는 치매환자 24시간 모니터링 지원</h6>
+							<ul class="bullet a lg">
+								<li>중증치매 진단 후 화상 심리상담(4회) 또는 중증치매환자 모니터링을 위한 CCTV 필요시 제휴업체 연계 및 설치 지원 중 선택 제공
+									<ul class="bullet b lg">
+										<li>CCTV 설치 후 월 사용료는 고객  부담</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+
+				</div>			
+			</div>
+			<!-- // 혜택안내 -->
+
+			<!-- [s] 22-05-31 위치수정, 클래스 추가 -->
+			<section class="sec-wrap adds-btn">
+				<h3 class="hd-tit4">다른 상품부가서비스가 궁금하시다면?</h3>
+				<button type="button" class="btn c sm">상품부가서비스 전체보기</button>
+			</section>
+			<!-- // [e] 22-05-31 위치수정, 클래스 추가 -->
+			
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<!-- [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+					<ul class="bullet a glst">
+						<li>교보치매케어서비스는 교보생명이 정한 서비스 부가기준을 충족하고, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출한 주피보험자에게 제공합니다.(보험 유지건에 한함)</li>
+						<li>교보치매케어서비스는 보험계약일로부터 20년간 제공되며, 20년 후부터는 고객이 비용을 부담하는 ‘치매케어멤버십서비스(제휴형)’를 1년 단위로 신청하여 이용할 수 있습니다.(비용 고객 부담)</li>
+						<li>교보치매케어서비스의 평상시 치매예방 서비스는 보험계약일부터 제공하며, 단계별 치매케어 서비스는 가입하신 보험상품의 치매보장개시일(보험계약일로부터 2년) 이후 치매보험금 지급사유 발생 시 제공합니다.</li>
+						<li>교보치매케어서비스는 고객 전용 홈페이지(www.kyoboseniorcare.com), 치매케어콜센터(1811-7002)를 통하여 제공합니다.</li>
+						<li>교보치매케어서비스는 향후 제공여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+						<li>보험계약체결 전 상품설명서와 약관을 읽어보시기 바랍니다.</li>
+						<li>보험상품을 가입할 때 보험계약의 기본사항(보험상품명, 납입기간, 피보험자 등)을 반드시 확인하시기 바랍니다.</li>
+						<li>교보생명은 보험상품에 대해 충분히 설명할 의무가 있으며 가입에 앞서 이에 대한 충분한 설명을 받으시기 바랍니다.</li>
+					</ul>
+					<!--// [D] 2022-08-23 퍼블화면 상의 내용 일치하게 수정 -->
+
+					<!-- <ul class="bullet a glst">
+						<li></li>
+						<li>교보건강코칭서비스는 교보생명이 정한 서비스 부가기준을 충족하고, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출한 주피보험자(주된 보험대상자)에게 보험계약일로부터 3년 동안 제공합니다.(보험 유지건에 한함)</li>
+					</ul>
+					<ul class="bullet c">
+						<li>교보건강코칭서비스는 고객 전용 앱(교보건강코칭), 카카오톡(교보건강코칭), 교보건강코칭콜센터(1661-0664)에서 제공합니다.</li>
+						<li>교보건강코칭서비스는 향후 제공여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+					</ul>
+					<ul class="bullet a glst">
+						<li>보험계약체결 전 상품설명서와 약관을 읽어 보시기 바랍니다.</li>
+						<li>보험상품을 가입할 때 보험계약의 기본사항(보험상품명, 납입기간, 피보험자 등)을 반드시 확인하시기 바랍니다.</li>
+						<li>교보생명은 보험상품에 대해 충분히 설명할 의무가 있으며 가입에 앞서 이에 대한 충분한 설명을 받으시기 바랍니다.</li>
+					</ul> -->
+				</div>
+			</div>
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

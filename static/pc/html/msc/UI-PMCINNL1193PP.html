@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-terms-detail" id="pop-terms-detail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">건강검진 약관동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">					
+					<div class="text-group">
+						<div class="text-box">			
+							<ul class="bullet a">
+								<li>국민건강보험공단으로부터 건강검진 자료 수신을 위한 고객동의 절차입니다.</li>
+								<li>귀하는 아래 수집 및 이용에 관한 사항에 대해 거부할 수 있습니다. 다만, 본 동의를 거부하시는 경우에는 보험계약 체결,이행 등이 불가능하며 본 동의서에 의한 개인(신용)정보 조회는 귀하의 신용등급에 영향을 주지 않습니다.</li>
+							</ul>
+						</div>
+
+						<div class="terms-wrap">
+							<div class="ut-terms a">
+								<div class="ckall">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">[필수] 수집 및 이용에 관한 사항</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</div>
+								<div class="plbox">									
+									<ul class="plist">
+										<li>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집 및 이용 동의</span></label>
+											<a href="javascript:;" class="plink" role="button">보기</a>
+										</li>
+										<li>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 민감정보 처리 동의</span></label>
+											<a href="javascript:;" class="plink" role="button">보기</a>
+										</li>
+										<li>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별번호 처리 동의</span></label>
+											<a href="javascript:;" class="plink" role="button">보기</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>					
+
+					</div>
+
+				</main>
+			</div>
+			
+			<div class="pbt">
+				<div class="btn-set b2"><!-- [D] 2022-06-03 수정  -->
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>			
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-terms-detail');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

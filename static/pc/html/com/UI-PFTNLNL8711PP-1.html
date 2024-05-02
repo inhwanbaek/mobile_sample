@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-recversys" id="pop-recversys">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신용회복지원제도</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<div class="hd-tit4"> 주요 신용회복지원제도 비교 </div>
+
+					
+
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist nl tbfix" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">신용회복지원제도</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">기초수급자 지원</th>
+									<th scope="col">영세자영업자 등 지원</th>
+									<th scope="col">개인워크아웃 <br>	 (개인신용회복)</th>
+									<th scope="col">개인회생제도</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="bg">신청기관</td>
+									<td>자산관리공시</td>
+									<td>신용회복위원회</td>
+									<td>신용회복위원회</td>
+									<td>법원</td>
+								</tr>
+								<tr>
+									<td class="bg">시행시기</td>
+									<td class="txt-l">2005년 5월 9일부터 <br> 6개월간 한시적</td>
+									<td class="txt-l">2005년 5월부터 시행</td>
+									<td class="txt-l">2002년 10월 1일부터</td>
+									<td class="txt-l">2004년 9월 23일부터</td>
+								</tr>
+								<tr>
+									<td class="bg">대상채권</td>
+									<td class="txt-l">1개 금융기관 <br> 단독채무자 및 <br>다중채무자 모두 대상</td>
+									<td class="txt-l">1개 금융기관 <br> 단독채무자 및 <br>다중채무자 모두 대상</td>
+									<td class="txt-l">협약에 가입한 <br> 2개 이상 금융기관 채권</td>
+									<td class="txt-l">제한 없음(사채 포함)</td>
+								</tr>
+								<tr>
+									<td class="bg">채무범위</td>
+									<td>제한 없음</td>
+									<td>제한 없음</td>
+									<td>5억원 이하</td>
+									<td>무담보채무(5억) <br> 담보채무(10억)</td>
+								</tr>
+								<tr>
+									<td class="bg">대상채무자</td>
+									<td class="txt-l">기초수급자이면서 <br> 신용불량자 <br> (2005.03.23 기준)</td>
+									<td class="txt-l">
+										<ul class="bullet a">
+											<li>영세 자영업자중<br>신용불량자<br>(2004.12.31 기준)</li>
+											<li>청년층 신용불량자 <br>(상동)</li>
+											<li>기초수급자 중<br>신용불량미등록자</li>
+										</ul>
+									</td>
+									<td class="txt-l">신용불량자이며 <br> 최저생계비 이상 <br> 소득자</td>
+									<td class="txt-l">파산지경에 이른 <br> 봉급생활자 또는 <br> 영업소득자</td>
+								</tr>
+								<tr>
+									<td class="bg">채무조정수준</td>
+									<td class="txt-l">채무자의 총채무액을 <br> 채무조정을 통해 <br> 장기분할상환</td>
+									<td class="txt-l">채무자의 총채무액을 <br> 채무조정을 통해 <br> 장기분할상환</td>
+									<td class="txt-l">채무자의 총채무액을 <br> 채무조정을 통해 <br> 장기분할상환</td>
+									<td class="txt-l">8년 이내 변제기간에 <br> 채무자가 정한 <br> 변제계획에 의한 변제</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-recversys');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-recversys',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

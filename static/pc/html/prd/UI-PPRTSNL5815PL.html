@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer sm a pop-dgntype" id="pop-dgntype">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="dgntype-slider">
+							<div class="swiper-container swiper">
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide">
+										<!-- 안정형 -->
+										<div class="dgntype-item case1">
+											<div class="invgraph stage1" aria-hidden="true">
+												<span class="txt blind">안정형</span>
+											</div>
+											<div class="tit">안정형</div>
+											<div class="desc">위험(리스크)이 있는 투자수익보다는 일정한 이자 수입을 얻고 원금을 보존하기 바라는 안정적 투자성향입니다. 무위험 금융상품에 가입하거나 MMT 혹은 은행예금 상품에 투자자산 배분을 고려하시기 바랍니다.</div>
+										</div>
+									</li>
+									<!-- [D] 2022-05-10 투자성향 주석처리 해당하는 투자성향 설명만 노출 
+									<li class="swiper-slide">										
+										<div class="dgntype-item case2">
+											<div class="invgraph stage2" aria-hidden="true">
+												<span class="txt blind">안정추구형</span>
+											</div>
+											<div class="tit">안정추구형</div>
+											<div class="desc">위험(리스크)이 있는 투자수익보다는 대체로 안정성에 중점을 두는 투자성향입니다. 저위험 이하의 금융상품에 가입하거나 채권형 중심의 금융상품에 투자자산 배분을 고려하시기 바랍니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										
+										<div class="dgntype-item case3">
+											<div class="invgraph stage3" aria-hidden="true">
+												<span class="txt blind">위험중립형</span>
+											</div>
+											<div class="tit">위험중립형</div>
+											<div class="desc">투자 결정 시 안정성을 고려하면서도 약간 위험(리스크)도 감수할 의향이 있는 투자성향입니다. 중위험 이하의 금융상품에 가입하거나, 주식형보다 채권형에 우위를 두는 투자자산 배분을 고려하시기 바랍니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										
+										<div class="dgntype-item case4">
+											<div class="invgraph stage4" aria-hidden="true">
+												<span class="txt blind">적극투자형</span>
+											</div>
+											<div class="tit">적극투자형</div>
+											<div class="desc">안정성도 중요하지만 수익률 역시 중요하게 고려하는 투자성향입니다. 어느 정도의 투자 위험을 감수하지만 그 폭이 그리 크지는 않습니다. 고위험 이하의 금융상품에 가입하거나 채권형보다는 주식형 중심의 금융상품에 투자자산 배분을 고려하시기 바랍니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">										
+										<div class="dgntype-item case5">
+											<div class="invgraph stage5" aria-hidden="true">
+												<span class="txt blind">공격투자형</span>
+											</div>
+											<div class="tit">공격투자형</div>
+											<div class="desc">안정성보다는 위험(리스크)을 감수하더라도 높은 기대 수익을 추구하는 투자성향입니다. 초고위험  금융상품에 가입할 수 있으며 성장주에 투자하는 주식형 상품이나 해외펀드로 구성된 상품을 이용해 적극적으로 투자자산 배분을 고려하시기 바랍니다.</div>
+										</div>
+									</li>
+									-->
+								</ul>
+								<!-- [D] 2022-05-10 좌우버튼 삭제
+								<div class="navigation">
+									<button type="button" class="nav prev">이전으로</button>
+									<button type="button" class="nav next">다음으로</button>
+								</div>
+							-->
+							</div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-dgntype');  // 팝업 열기
+
+			var dgntypeSlider = new Swiper('.dgntype-slider .swiper-container', {
+				slidesPerView: 1,
+				//loop: true, 2022-05-10 주석
+				navigation: {
+					nextEl: '.navigation .nav.next',
+					prevEl: '.navigation .nav.prev'
+				},
+			});
+
+			// slide이동
+			// dgntypeSlider.slideTo(3, 0);
+		</script>
+	</div>
+</body>
+</html>

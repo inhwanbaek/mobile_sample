@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt consultant" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">다이렉트(TMR/TFP)</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">TMR(텔레마케터)</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">TFP(Total Financial Planner)</a></li>
+				</ul>
+			</div>
+
+			<div class="ut-tabs b">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">TMR 소개</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">보상체계</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">TMR지점</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">TMR 상담신청</a></li>
+				</ul>
+			</div>
+
+			<ul class="list-tit eth">
+				<li><a href="javascript:;">인적지원 시스템</a></li>
+				<li><a href="javascript:;">교육지원 시스템</a></li>
+				<li><a href="javascript:;">영업지원 시스템</a></li>
+				<li class="active"><a href="javascript:;">차별화된 서비스</a></li>
+			</ul>
+
+			<div class="ept_upper">
+				<strong class="hd-tit3">교보생명만의 차별화된 서비스로 <i class="line">고객 만족도를 더 높여드립니다.</i></strong>
+				<p class="txt">교보생명 보험상품에 가입한 고객들에게 제공하는 차별화된 상품 부가서비스로, 고객이 생애에 걸쳐 역경을 극복할 수 있도록 행복울타리가 되어 드립니다.
+				</p>
+			</div>
+
+
+			<div class="sect">
+				<div class="box-item fl-wrap service">
+					<ul>
+						<li class="service01"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보헬스케어서비스</strong>
+							<ul class="bullet a">
+								<li>평상시 건강관리</li>
+								<!-- [D] 2022-07-25 수정 -->
+								<li>병원&middot;의료진 안내 및 예약대행</li>
+								<li>중대질환 간호사 병원 동반</li>
+								<li>건강검진 상담 및 예약</li>
+								<li>토닥토닥 마음케어</li>
+								<!-- // [D] 2022-07-25 수정 -->
+							</ul>
+							<a href="http://www.kyobohealthcare.com" class="link-text" target="_blank" title="새창 열림">www.kyobohealthcare.com</a>
+						</li>
+						<li class="service02"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보우먼헬스케어서비스</strong>
+							<ul class="bullet a">
+								<!-- [D] 2022-07-25 수정 -->
+								<li>병원&middot;의료진 안내 및 예약대행</li>
+								<li>중대질환 간호사 병원 동반</li>
+								<li>건강검진 상담 및 예약</li>
+								<li>여성 특화 자가진단 및 여성암 체크</li>
+								<!-- // [D] 2022-07-25 수정 -->
+							</ul>
+							<a href="http://www.kyobowomancare.com" class="link-text" target="_blank" title="새창 열림">www.kyobowomancare.com</a>
+						</li>
+						<li class="service03"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보에듀케어서비스</strong>
+							<ul class="bullet a">
+								<li>양육마스터</li>
+								<li>디지털 도서관</li>
+								<li>글로벌 멘토링</li>
+								<li>현장학습</li>
+								<li>아이돌봄 제휴 서비스</li>
+							</ul>
+							<a href="http://www.kyoboeducare.com" class="link-text" target="_blank" title="새창 열림">www.kyoboeducare.com</a>
+						</li>
+						<li class="service04"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보어린이헬스케어서비스</strong>
+							<ul class="bullet a">
+								<li>임신·출산·육아 집중관리</li>
+								<li>영·유아 중대질환 간호사 방문 지원</li>
+								<li>가족 심리상담 및 건강증진</li>
+							</ul>
+						</li>
+						<li class="service05"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보실버케어서비스+플러스</strong>
+							<ul class="bullet a">
+								<li>암 치료 지원</li>
+								<li>간병상담</li>
+								<li>노화 방지 프로그램</li>
+								<li>케어매니저 방문 교육</li>
+							</ul>
+							<a href="http://www.kyobosilvercare.com" class="link-text" target="_blank" title="새창 열림">www.kyobosilvercare.com</a>
+						</li>
+						<li class="service06"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보치매케어서비스</strong>
+							<ul class="bullet a">
+								<li>평상시 치매예방</li>
+								<li>단계별 치매케어(경도, 중등도, 중증)</li>
+							</ul>
+							<a href="http://www.kyoboseniorcare.com" class="link-text" target="_blank" title="새창 열림">www.kyoboseniorcare.com</a>
+						</li>
+						<li class="service07"><!-- [D] 2022-07-26 class 추가-->
+							<strong class="tit">교보건강코칭서비스</strong>
+							<ul class="bullet a">
+								<li>AI 카메라 기반 식단관리(푸드렌즈)</li>
+								<li>앱을 이용한 활동량 측정</li>
+								<li>건강코칭 1:1 상담</li>
+								<li>건강검진 결과 분석</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="info-txt">준법감시인확인필 3-2108-1 다이렉트사업부직속(2021.08.19)</p>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+</div>
+</body>
+</html>

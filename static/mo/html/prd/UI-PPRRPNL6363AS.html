@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"피드 작성 규정"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page invtm txt-page" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<h3 class="hd-tit3">건강한 커뮤니티 활동를 위해<br>이런 점에 주의해 주세요!</h3>
+			<p class="txt">교보생명은 같이투자 커뮤니티 이용자간 원활한 커뮤니케이션을 위해 피드 작성 규정을 운영하고 있습니다. </p>
+			<p class="txt">
+				이 규정은 커뮤니티 운영에 발생할 수 있는 문제 상황에 일관성 있게 대처하기 위한 것입니다.<br>
+				닉네임 설정, 피드 및 댓글 작성 시 부적절한 활동이 발견되거나 신고가 접수되는 경우 같이투자 커뮤니티 이용에 불이익을 받으실 수 있습니다.
+			</p>
+			<h4 class="hd-tit4">부적절한 활동 유형</h4>
+			<ul class="bullet a">
+				<li>욕설, 비방, 차별, 혐오</li>
+				<li>홍보, 영리 목적</li>
+				<li>불법 정보</li>
+				<li>음란, 청소년 유해</li>
+				<li>개인정보 노출, 유포, 거래</li>
+				<li>도배, 스팸</li>
+				<li>권리침해 신고</li>
+				<li>기타 커뮤니티 서비스 운영을 저해하는 경우</li>
+			</ul>
+			<h4 class="hd-tit4">이용 불이익 사항</h4>
+			<ul class="bullet a">
+				<li>닉네임 이용 제한
+					<ul class="bullet c">
+						<li>부적절한 닉네임 사용 시 해당 닉네임 임의 교체</li>
+					</ul>
+				</li>
+				<li>커뮤니티 이용 제한
+					<ul class="bullet c">
+						<li>부적절한 내용, 신고된 게시글 또는 댓글 노출 제한</li>
+						<li>의도성 및 반복성이 다분하다고 판단되는 이용자의 글쓰기 제한</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+  <!-- pop-layer -->
+	<article class="pop-layer c pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품운용방법 선택(비정기 운용)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents default-option">
+          <!-- phdt -->
+          <div class="phdt">
+            <div class="tit">입금 기준일</div>
+            <div class="text">적용기간은 60일 이내, 최대 5영업일간 적용 가능합니다.</div>
+          </div>
+          <!-- //phdt -->
+          <!-- ut-range -->
+          <div class="ut-range">
+            <div class="rcs">
+              <span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜" oninput="ui.format.init(this)"></span>
+              <i class="ds">~</i>
+              <span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜" oninput="ui.format.init(this)"></span>
+            </div>
+          </div>
+          <!-- ut-range -->
+          <!-- ut-bnr-lst -->
+          <ul class="ut-bnr-lst">
+						<li>
+							<a href="javascript:void(0);" class="lk b" role="button">
+								<strong class="tit">금리연동형</strong>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="lk b" role="button">
+								<strong class="tit">로보어드바이저 추천상품 지정</strong>
+							</a>
+						</li>
+            <li>
+							<a href="javascript:void(0);" class="lk b" role="button">
+								<strong class="tit">직접 상품 지정</strong>
+							</a>
+						</li>
+					</ul>
+          <!-- ut-bnr-lst -->
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+  <!-- pop-layer -->
+
+	<script>
+		ui.popup.open('pop-sample1');
+	</script>
+
+</div>
+</body>
+</html>

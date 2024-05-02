@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/* msc4 : MY교보(신탁), MY교보(평생든든서비스) */
+
+
+/************************
+MY교보(신탁)
+************************/
+
+
+
+/* 공통 */
+.page.msc.trust .ut-gudbox .gctn .btn-set {margin: 14rem 0 0 -8rem;}
+.page.msc.trust .list-empty + * {margin-top: 30rem;}
+.page.msc.trust .sect + .btn-set {margin-top: 30rem;}
+.page.msc.trust .ut-dcard + .btn-set {margin-top: 30rem;}
+.page.msc.trust .ut-dcard + .text-box + .btn-set {margin-top: 30rem;}
+.page.msc.trust .ut-more + .btn-set {margin-top: 30rem;}
+.page.msc.trust .complate-msg + .btn-set {margin-top: 30rem;}
+.page.msc.trust .btn-set + .ut-unprotected {margin-top: 30rem;}
+
+/* 완료 */
+.page.msc.trust .complate-msg .result-info {margin: 24rem 10rem 16rem; padding:19rem 20rem 16rem; border-radius: 8rem; border: solid 1px #e6e6e6; line-height: 1.4;font: var(--font15); }
+.page.msc.trust .complate-msg .result-info .date {display: inline-block; color: #555; }
+.page.msc.trust .complate-msg .result-info .date .val {padding-left: 8rem; color: #242424; }
+.page.msc.trust .complate-msg .add-info {margin: 0; border-top: 1px solid #e6e6e6; padding-top: 30rem;}
+.page.msc.trust .complate-msg .add-info ul > li {text-align: left; }
+.page.msc.trust .complate-msg .msg + .add-info {margin-top: 30rem; }
+.page.msc.trust .complate-msg .ut-dcard.a + .add-info {border-top: none;}
+
+
+/** 신탁조회/변경 **/
+.page.msc.trust a[href^="tel:"] {color: inherit; }
+.page.msc.trust .top {margin-top: 32rem;}
+.page.msc.trust .top .ut-dtds.rdbox.g {margin-top: 32rem;}
+.page.msc.trust .top .bullet.b {margin-top: 10rem;}
+.page.msc.trust .ut-more {margin: 34rem 0;}
+.page.msc.trust .sect + * {margin-top: 60rem;}
+.page.msc.trust .sect + .ut-tabs.a {margin-top: 24rem; margin-bottom: 32rem;}
+.page.msc.trust .sect.top + .ut-dcard.a.account {margin-top: 20rem;}
+.page.msc.trust .sect .hd-tit3 + * {margin-top: 20rem;}
+.page.msc.trust .account-sel {}
+.page.msc.trust .account-sel .select.no-lb {width: 100%;}
+.page.msc.trust .ut-dtds.c .dlist {border-top:1rem solid #555;}
+.page.msc.trust .result-wrp + .bullet.b {margin-top: 16rem;}
+.page.msc.trust .filter-wrp {display: flex; align-items: center; justify-content: flex-end; margin-top: 32rem; margin-bottom: 16rem;}
+.page.msc.trust .filter-wrp .condition {font: var(--font15); color: #555555; margin-right: 8rem;}
+.page.msc.trust .filter-wrp .val {position: relative;padding-right: 10rem; margin-right: 4rem; }
+.page.msc.trust .filter-wrp .val .date {font: inherit;}
+.page.msc.trust .filter-wrp .val:after {content:"·"; display: block; position: absolute; right:0; top:50%; transform: translateY(-50%);}
+.page.msc.trust .filter-wrp .btn.filter {width: 32rem; height: 32rem; background: url(../img/common/ic_filter@2x.png) no-repeat center; background-size:24rem; border-color: #ddd; border-radius: 50%;}
+
+/* 계약상세조회 */
+.pop-cont-detail {}
+.pop-cont-detail .hd-tit4 {padding: 0; line-height: 1.31;}
+.pop-cont-detail .sect + .sect {margin-top: 60rem;}
+.pop-cont-detail .refer-date {font: var(--font14); color: #808080; text-align: right; margin-bottom: 8rem;}
+.pop-cont-detail .tit-area {display: flex; justify-content: space-between; align-items: center;}
+.pop-cont-detail .ut-dtds.c {margin-top: 20rem;}
+.pop-cont-detail .ut-tbl {margin-top: 16rem;}
+.pop-cont-detail .ut-tbl.ty01 col.a {width: auto;}
+.pop-cont-detail .ut-tbl.ty01 col.b {width: 20%;}
+.pop-cont-detail .ut-tbl.ty01 col.c {width: 28%;}
+.pop-cont-detail .downs {margin-top: 20rem;}
+.pop-cont-detail .btn-set.grp {flex-wrap: wrap;}
+.pop-cont-detail .btn-set.grp .btn { flex: 0 0 auto; margin: 5rem;}
+
+/* 조회기간 설정 */
+.pop-period {}
+.pop-period .sect + .sect {margin-top: 60rem;}
+.pop-period .hd-tit4 {padding: 0; line-height: 1.31;}
+.pop-period .btn-set {margin-top: 16rem;}
+.pop-period .work-range {margin-top: 16rem;}
+.pop-period .ut-range {margin-top: 16rem;}
+.pop-period .ut-range .radiobox + .rcs {margin-top: 10rem; display: flex; justify-content : space-between;}
+.pop-period .ut-range .radiobox + .rcs .ds {flex-shrink: 0;}
+.pop-period .ut-range .radiobox + .rcs .input {width: 100%;}
+
+/* 신탁 모바일통장 */
+.pop-mo-account .ut-dcard.a.account .top {margin-bottom: 30rem; text-align: right;}
+.pop-mo-account .ut-dcard.a.account .img_trust_kyobo {display: inline-block; width: 80rem; height: 25rem; background: url(../img/msc/img_trust_kyobo@2x.png) no-repeat left bottom; background-size:100% auto;}
+.pop-mo-account .ut-dcard.a.account .stds * +.cdt {border-color: #ccc;}
+.pop-mo-account .ut-dcard.a.account .stds .cdt .bxs {justify-content: inherit;}
+.pop-mo-account .ut-dcard.a.account .stds .cdt .bxs .dt {min-width: 132rem;}
+.pop-mo-account .ut-dcard.a.account .etc {border-top: solid 1rem #e6e6e6; text-align: right; margin-top: 20rem; }
+.pop-mo-account .official-seal {position: relative; text-align: right; padding-right: 30rem; color: #555555; margin-top: 60rem; min-height: 24rem; line-height: 1.8;}
+.pop-mo-account .official-seal:after {content:""; display: block; position: absolute; right: 0 ; top: 0 ; width: 24rem; height: 24rem; background: url(../img/msc/img_official_seal@2x.png) no-repeat left bottom; background-size:100% auto;}
+
+
+/** 신탁 관리 **/
+.page.msc.trust .hd-tit3 + .ut-dcard.b {margin-bottom: 0;  }
+.page.msc.trust .ut-dcard.b .tit-prd {font-weight: 700; font-size: 18rem;}
+.page.msc.trust .ut-dcard.b .tit-prd + .dls {margin-top: 12rem;}
+.page.msc.trust .ut-dcard.b .dls .dl > .dd .prc .p {font-weight: 700;}
+.page.msc.trust .ut-dcard.b .dls .dl > .dd .prc .w {font-weight: 400;}
+
+
+/** 신탁 입/출금 **/
+.page.msc.trust .ut-topfix + .top {margin-top: 0;}
+.page.msc.trust .hd-tit4 {padding: 0;}
+.page.msc.trust .hd-tit4 + * {margin-top: 16rem;}
+.page.msc.trust .tit-txt {margin-top: 16rem; font-size: 16rem; color: #555555; word-break: keep-all;}
+.page.msc.trust .tit-area {display: flex; justify-content: space-between;}
+.page.msc.trust .tit-area .ico.plus {margin-top: 0; font: var(--font14);}
+.page.msc.trust .tit-area + .ut-form.a {margin-top: 16rem;}
+.page.msc.trust .regist-banks {margin-top: 8rem;}
+.page.msc.trust .regist-banks .tit { display: inline-block; vertical-align: middle;}
+.page.msc.trust .account-wrp {margin-top: 16rem;}
+.page.msc.trust .account-wrp .account-sel {margin-top: 16rem;}
+.page.msc.trust * + .text-box {margin-top: 16rem; }
+.page.msc.trust .text-box .bullet.a > li {font: var(--font15);}
+.page.msc.trust .text-box .bullet.a > li:before {width: 5rem; height: 5rem; top: 8rem;}
+.page.msc.trust .complate-msg + .sect {margin-top: 60rem;}
+.page.msc.trust .ut-dcard.a.account .stds .cdt.left.b .bxs .dt {min-width: 96rem;}
+.page.msc.trust .amount-ava {margin-top: 8rem; display: flex; justify-content: flex-end; align-items: center;}
+.page.msc.trust .amount-ava .val {display: inline-block; margin-right: 6rem;}
+.page.msc.trust .amount-ava .val .won {display: inline-block; padding-left: 4rem;}
+.page.msc.trust .ut-form.a .select {width: 100%;}
+.page.msc.trust .ut-form.a .input {width: 100%;}
+.page.msc.trust .regist-banks .ut-tooltip { margin-top: -2rem;}
+.page.msc.trust .regist-banks .ut-tooltip .ico.help {vertical-align: middle;}
+
+
+
+/************************
+MY교보(평생든든서비스)
+************************/
+
+
+/* 평생든든 서비스 안내 */
+.page.msc.lifetime {}
+/* .page.msc.lifetime .sect .link-ar {font-size: 15rem; margin-top: 19rem;} */
+.page.msc.lifetime .sect .tit-txt {font: var(--font15); line-height: 1.4; color: #555555; margin-top: 13rem; word-break: break-all; }
+.page.msc.lifetime .sect .hd-tit4 {line-height: 1.31; padding: 0;}
+.page.msc.lifetime .sect + .sect {margin-top: 60rem;}
+.page.msc.lifetime .serv-dsc {margin-top: 20rem;}
+.page.msc.lifetime .serv-dsc .hd-tit2{ font-size: 22rem; }
+.page.msc.lifetime .serv-dsc .txt { margin-top: 24rem; font-size: 16rem; line-height: 1.4; word-break: keep-all;}
+.page.msc.lifetime .point .about .hd-tit3 {background: url(../img/msc/ic_life_point@2x.png) no-repeat left top; background-size: 24rem; padding-left: 36rem; line-height: 1.1;}
+.page.msc.lifetime .point .save {margin-top: 24rem ; padding-top: 24rem; border-top: 1rem solid #e6e6e6;}
+.page.msc.lifetime .point .save .point-lst {margin-top: 20rem;}
+.page.msc.lifetime .point .save .point-lst > li + li {margin-top: 8rem;}
+.page.msc.lifetime .point .save .point-lst .txt {padding: 10rem 12rem; border-radius: 4rem; background-color: #f5f5f5; color: #555555; height: 40rem;}
+.page.msc.lifetime .serv .tit3-area .link-ar {margin-top: 18rem;}
+.page.msc.lifetime .serv .hd-tit3 + .box {margin-top: 20rem;}
+.page.msc.lifetime .serv .guide-cnt-wrapper {display: flex; padding-top: 16rem; margin-top: 16rem; border-top: 1rem solid #e6e6e6;}
+.page.msc.lifetime .serv .guide-cnt-wrapper .guide-cnt {width:50%;}
+.page.msc.lifetime .serv .guide-cnt-wrapper .guide-cnt .hd-tit5 {padding-left: 10rem; font: var(--font15); color:#555;position: relative; }
+.page.msc.lifetime .serv .guide-cnt-wrapper .guide-cnt .hd-tit5::before {width: 3rem; height: 3rem; background: #555555; border-radius: 50%; position: absolute; left: 0rem; top: 9rem; content: "";}
+.page.msc.lifetime .serv .tit3-area + .guide-cnt {margin-top: 24rem ; padding-top: 24rem; border-top: 1rem solid #e6e6e6;}
+.page.msc.lifetime .serv .guide-cnt .img {position: relative; margin-top: 8rem; height: 187rem; margin: 20rem 0 0;background: url(../img/msc/img-insurance.png) no-repeat left bottom; background-size: 280rem auto;}
+.page.msc.lifetime .serv .guide-cnt .img.b {background: url(../img/msc/img-insurance2.png) no-repeat left top; background-size: 280rem auto;}
+.page.msc.lifetime .serv .guide-cnt + .bullet.b {margin-top: 10rem;}
+.page.msc.lifetime .serv .life-lst {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.page.msc.lifetime .serv .life-lst > li {width:calc(50% - 15rem); margin-top: 20rem; }
+.page.msc.lifetime .serv .life-lst .box {position: relative; padding: 30rem 40rem 60rem; border-radius: 8rem; border: solid 1rem #e6e6e6; min-height: 192rem;}
+.page.msc.lifetime .serv .life-lst .box .hd-tit4 {min-height: 24rem; padding-left: 48rem; background-repeat: no-repeat ; background-position: left -4rem; background-size: 32rem;}
+.page.msc.lifetime .serv .life-lst .box .link-ar {position: absolute;left: 40rem; bottom: 30rem;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(1) {width:100%;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(1) .link-ar {position: relative ; left: auto; bottom: auto;} 
+.page.msc.lifetime .serv .life-lst > li:nth-child(1) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv01@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(2) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv02@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(3) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv03@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(4) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv04@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(5) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv05@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(6) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv06@2x.png) ;}
+.page.msc.lifetime .serv .life-lst > li:nth-child(7) .box .hd-tit4 {background-image: url(../img/msc/ic_life_serv07@2x.png) ;}
+
+/* 든든포인트 */
+.page.msc.reliable {}
+.page.msc.reliable * .dlt {margin-top: 20rem;} 
+.page.msc.reliable .dlt > li + li {margin-top: 10rem;}
+.page.msc.reliable .dlt > li > .dl {display: flex;justify-content: space-between; align-items: center; font-weight: bold;}
+.page.msc.reliable .dlt > li > .dl .dt {min-width: 90px; line-height: 1.31; word-break: keep-all; text-align: left; font-size: 16rem; line-height: 1.33;}
+.page.msc.reliable .dlt > li > .dl .dd {text-align: right; font-size: 18rem; line-height: 1.33;}
+.page.msc.reliable .num {display: inline-block; vertical-align: middle;}
+.page.msc.reliable .pt {display: inline-block; width: 18rem; height: 18rem; background-image: url(../img/msc/ic_point@2x.png) ; background-repeat: no-repeat ; background-position: left top; background-size: 100% auto; vertical-align: middle;}
+.page.msc.reliable .big.pt {margin: 0 auto; width: 80rem; height: 80rem; background-image: url(../img/msc/ic_point_yellow@2x.png) ;}
+.page.msc.reliable .have {margin-top: 24rem; padding: 30rem 40rem; border-radius: 8rem; background-color: #fcf2e8; text-align: center;}
+.page.msc.reliable .have .result {margin-top: 16rem;}
+.page.msc.reliable .have .result .total {margin-top: 2rem; }
+.page.msc.reliable .have .result .total .num {font-weight: bold; font-size: 26rem;  line-height: 1.3; color: #2a81eb;}
+.page.msc.reliable .have .result .total .pt {background-image: url(../img/msc/ic_point_blue@2x.png) ; width: 24rem; height: 24rem;}
+.page.msc.reliable .have .each {border-top: 1rem solid #ddd; margin-top: 32rem; }
+.page.msc.reliable .point-srch {margin-top: 24rem;}
+.page.msc.reliable .point-srch .option {display: none; margin-bottom: 60rem;}
+.page.msc.reliable .point-srch .option.active {display: block;}
+.page.msc.reliable .point-srch .optset {text-align: right;}
+.page.msc.reliable .point-srch .btn-setup {border: 1rem solid #e6e6e6;display: inline-flex;align-items: center;position: relative;padding: 0 32rem 0 12rem;font-size: 16rem;background: #FFFFFF;background-size: 24rem auto;/* width: 100%; */min-width: 90rem;height: 33rem;text-align: center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;color: #222222;font: var(--font14);/* display: none; */border-radius: 33rem;}
+.page.msc.reliable .point-srch .btn-setup:after {content: '';position: absolute;top: 50%;right: 14rem;width: 9.5rem;height: 4rem;background: url(../img/common/ic_selector@2x.png) no-repeat 0 100%;background-size: 100% auto;pointer-events: none;transform:translateY(-50%);}
+.page.msc.reliable .point-srch .item-lst .hd-tit3 + * {margin-top: 16rem;}
+.page.msc.reliable .radiobox.c.col3 {border: 1px solid transparent;}
+.page.msc.reliable .point-srch .item-lst > li + li {margin-top: 20rem;}
+.page.msc.reliable .point-srch .btn-set {margin-top: 30rem;}
+.page.msc.reliable .point-wrp {margin-top: 60rem;}
+.page.msc.reliable .point-wrp.active {margin: 32rem -20rem 0; padding: 32rem 20rem; background-color: #f5f5f5;}
+.page.msc.reliable .point-lst > li + li {margin-top: 20rem;}
+.page.msc.reliable .point-lst .item {padding: 30rem 40rem; border-radius: 8rem; border: solid 1rem #e6e6e6; background-color: #fff;}
+.page.msc.reliable .point-lst .item .add {height: 22rem;}
+.page.msc.reliable .point-lst .etc {margin-top: 5rem;}
+.page.msc.reliable .point-lst .etc .lst > li {color: #767676;}
+.page.msc.reliable .point-lst .etc .lst > li + li {margin-top: 2rem;}
+.page.msc.reliable .point-lst .item.used {background-color: #fafafa;}
+.page.msc.reliable .point-lst .item.used .dlt > li > .dl {color: #767676;}
+.page.msc.reliable .point-lst .item.used .pt {background-image: url(../img/msc/ic_point_gr@2x.png) ;}
+.page.msc.reliable .point-lst + .list-empty {margin-top: 16rem;}
+.page.msc.reliable .list-empty {margin-top: 0;}
+.page.msc.reliable .point-wrp .ut-more {margin: 32rem 0 10rem;}
+.page.msc.reliable .ut-gudbox.a {margin-top: 60rem;}
+.page.msc.reliable .ut-gudbox.a .btn-set {margin-top: 5rem;}
+.page.msc.reliable .ut-gudbox.a .btn-set .link-ar {font: var(--font14);}
+.page.msc.reliable .point-srch .ut-range .rag .radio {width: 100%;}
+.page.msc.reliable .point-srch .ut-range .rcs {display: flex; margin-top: 16rem;}
+.page.msc.reliable .point-srch .ut-range .rcs .input {width: 100%;}
+
+/* 보장내용확인 */
+.page.msc.guarantee {}
+.page.msc.guarantee .top {margin-top: 32rem;}
+.page.msc.guarantee .sect + .sect {margin-top: 60rem;}
+.page.msc.guarantee .guarant-slide {margin-top: 20rem; padding-bottom: 30rem;}
+.page.msc.guarantee .guarant-slide .ut-slide-dot {height: 317rem; padding: 32rem 20rem 24rem; border-radius: 8rem; border: solid 1rem #e6e6e6;}
+.page.msc.guarantee .guarant-slide .swiper-container .pagination.swiper-pagination-bullets {align-items: flex-end; bottom: 0;}
+.page.msc.guarantee .guarant-slide .ut-slide-dot .swiper {padding-bottom: 60rem;}
+.page.msc.guarantee .guarant-slide .graph-cnt {margin: 0 auto; width: 280rem;}
+.page.msc.guarantee .guarant-slide .graph-cnt .unit {font: var(--font12); color: #767676; margin-top: 8rem; text-align: right;}
+.page.msc.guarantee .guarant-slide .graph-cnt .graph-data {overflow: hidden; height: 179rem; }
+.page.msc.guarantee .ut-dtds.rdbox.g + .ut-gudbox.a {margin-top: 16rem;}
+.page.msc.guarantee .hd-tit3 + .list-empty {margin-top: 20rem;}
+.page.msc.guarantee .hd-tit3 + .ut-dcard.a {margin-top: 20rem;}
+.page.msc.guarantee .ut-dcard.a .ut-tbl col.a {width: auto;}
+.page.msc.guarantee .ut-dcard.a .ut-tbl col.b {width: 50%;}
+.page.msc.guarantee .ut-dcard.a .stds .hdt .tit {font-size: 16rem;}
+.page.msc.guarantee .ut-dcard.a .stds .cdt .bxs .dd .prc .num {font-size: 16px; font-weight: 700; line-height: 1.31;}
+.page.msc.guarantee .ut-dcard.a .dtds .dlt > li + li {margin-top: 16rem;}
+.page.msc.guarantee .ut-dcard.a .dtds .bx-tog.bx-tog2 .ut-tbl.b :not(thead) + tbody tr:first-child th, 
+.page.msc.guarantee .ut-dcard.a .dtds .bx-tog.bx-tog2 .ut-tbl.b :not(thead) + tbody tr:first-child td {padding-top: 0;}
+.page.msc.guarantee .ut-gudbox.a {margin-top: 60rem;}
+.page.msc.guarantee .other-lst {margin-top: 20rem; display: flex; width: 100%; justify-content: space-between;}
+.page.msc.guarantee .other-lst > li a.lk {position: relative;display: flex;}
+.page.msc.guarantee .other-lst > li a.lk::before {content: ''; width: 80rem; height: 80rem; padding-left: 80rem; text-align: center; background-color:#f5f5f5; border-radius: 100%; background-repeat: no-repeat; background-position: center center; background-size: 48rem; z-index: -1;}
+.page.msc.guarantee .other-lst > li a .txt {display: flex; margin-left: 20rem; align-items: center; font-size: 18rem; font-weight: 600;}
+.page.msc.guarantee .other-lst > li:nth-child(1) a.lk { background: url(../img/msc/ic_guarant01@2x.png) 16rem center no-repeat; background-size: 48rem;}
+.page.msc.guarantee .other-lst > li:nth-child(2) a.lk { background: url(../img/msc/ic_guarant02@2x.png) 16rem center no-repeat; background-size: 48rem;}
+.page.msc.guarantee .other-lst > li:nth-child(3) a.lk { background: url(../img/msc/ic_guarant03@2x.png) 16rem center no-repeat; background-size: 48rem;}
+.page.msc.guarantee .ut-tbl.b table.tblist>tbody>tr>th {text-align: left;}
+
+
+/** 나의 담당컨설턴트 **/
+.ut-bnr-lst a.lk.ic_myconsultant:before {content:""; display: block; width: 48rem; height: 48rem; position: absolute; left: 20rem; top: 50%; margin-top: -24rem; background: url('../img/msc/ic_myconsultant@2x.png') no-repeat left top; background-size: 100% auto;}
+.ut-bnr-lst a.lk.ic_myconsultant {padding-left: 84rem;}
+
+.page.msc.myconsultant {}
+.page.msc.myconsultant .top {margin-top: 32rem;}
+.page.msc.myconsultant .top + .ut-dcard.a.account {margin-top: 20rem;}
+.page.msc.myconsultant .ut-dcard.a.account .btn-set.btnbot {margin-top: 20rem;}
+.page.msc.myconsultant .ut-dcard.a .bdt {margin-top: 16rem; padding-top: 16rem; border-top: 1rem solid #e6e6e6;}
+.page.msc.myconsultant .ut-dcard.a .bdt .prd-tit {display: block; word-break: keep-all; font-weight: 700; color: #555555;}
+
+/* 나의 담당 FP 정보 */
+.pop-myconsultant-info {}
+.pop-myconsultant-info .top .ut-dtds.c { margin-top: 20rem;}
+.pop-myconsultant-info .top .ut-dtds.c + .btn-set.downs {margin-top: 30rem;}
+.pop-myconsultant-info .prd-tit {display: block; word-break: keep-all; color: #555555;}
+.pop-myconsultant-info .prd-tit + .prd-tit {margin-top: 8rem;}
+
+/* 계약 선택 */
+.pop-contract-choice {}
+.pop-contract-choice .txt-def {font: var(--font15);}
+.pop-contract-choice .form-group {margin-top: 16rem;}
+.pop-contract-choice .checkbox.cv>.txt {color: #555555; font: var(--font15); line-height: 1.4;}
+.pop-contract-choice .checkbox.cv>.txt .t {display: block;}
+
+/* 상담 선택 */
+.pop-consult-choice {}
+.pop-consult-choice .btn-set.vt {margin-top: 16rem;}
+.pop-consult-choice .btn-set.vt .btn + .btn {margin-top: 8rem;}

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"운용상품"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd retire invtm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="invest-info-wrap">
+				<!--[D] 2022-06-02 버튼 추가 -->
+				<div class="btn-set">
+					<a href="javascript:;" role="button" class="btn md ico-search ico-r">내게 맞는 상품 찾기</a>
+				</div>
+				
+				<!--[D] 2022-05-27:검색박스 변경 -->
+				<!--[D] 2022-06-02 삭제 
+				<div class="srch-btnbox mt32 mb32">
+					<span class="input ipsch no-lb w100p">
+						<label class="lb blind" for="keywords">상품검색</label>
+						<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="" id="keywords">
+						<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+					</span>
+					 <button type="button" class="btn condi "><span class="blind">조건검색</span></button>
+				</div>
+				-->
+
+				<!--// [D] 2022-05-27:검색박스 변경 -->
+				<!-- 삭제 -->
+				<!-- <div class="such-wrap mt32">
+					<span class="input a coms no-lb">
+						<label class="lb blind" for="adr_id3" role="text">키워드</label>
+						<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+						<input id="adr_id3" type="text" placeholder="키워드 또는 상품명을 입력해 주세요.">
+					</span>
+				</div> -->
+
+				
+				<div class="prod-sub-sect">
+					<div class="ut-slide-play">
+						<div class="swiper-container swiper" data-slide-id="banner_1">
+							<!-- 22-05-12 이미지 수정 -->
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_01@2x.png" alt="요즘 돈이 몰리는 섹터는 설정액이 몰리는 섹터에 투자하는 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_02@2x.png" alt="투자 자금이 몰리는 최근 설정액이 가장 많이 증가한 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_03@2x.png" alt="장기 수익률이 좋은 장기(3년) 수익률이 높은펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_04@2x.png" alt="나의 연령대에서 좋아하는 나와 같은 연령대가 선택한 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_05@2x.png" alt="로보어드바이저가 추천하는 최적의 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_06@2x.png" alt="내 성향에 맞는 추천 포트폴리오 교보생명이 추천하는 포트폴리오 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_07@2x.png" alt="수익률 상위 10% 가입자가 가장 많이 선택한 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_08@2x.png" alt="'같이투자자'가 선택한 '같이투자자'들이 가장 많이 보유한 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_09@2x.png" alt="고액가입자가 선택한 적립금 1억 이상 펀드"></div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box">
+										<div class="pic"><img class="img" src="../../img/prd/Banner_10@2x.png" alt="로보어드바이저가 추천하는 최적의 펀드"></div>
+									</a>
+								</li>
+							</ul>
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="prod-sub-sect">
+					<h3 class="hd-tit4">인기검색어</h3>
+					<div class="ut-hash-box">
+						<a href="javascript:;" class="ut-hash active">#에너지</a>
+						<a href="javascript:;" class="ut-hash">#전기차</a>
+						<a href="javascript:;" class="ut-hash">#ESG</a>
+						<a href="javascript:;" class="ut-hash">#헬스케어</a>
+						<a href="javascript:;" class="ut-hash">#메타버스</a>
+					</div>
+				</div>
+
+				<div class="prod-sub-sect">
+					<h3 class="hd-tit4">수익률 Top 10</h3>
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="date">2021.01.21 기준</span>
+						</div>
+						<div class="opt pr">
+							<span class="select sort">
+								<select name="select-4" title="정렬선택">
+									<option>1개월</option>
+									<option>3개월</option>
+									<option selected>1년</option>
+									<option>3년</option>
+									<option>5년</option>
+								</select>
+							</span>
+						</div>
+					</div>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<ul class="rate10-list">
+										<li>
+											<div class="tit"><span class="rank blue">1</span><a href="javascript:;">(온라인)하이월드에너지증권투자신탁(주식-재간</a></div>
+											<div class="perc"><strong>23.26</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank blue">2</span><a href="javascript:;">삼성에너지트랜지션증권자(주식-재간접형)S-P</a></div>
+											<div class="perc"><strong>15.24</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank blue">3</span><a href="javascript:;">(무)교보 IRP개인형 GIC 1년형</a></div>
+											<div class="perc"><strong>15.20</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">4</span><a href="javascript:;">(온라인)하이월드에너지증권투자신탁(주식-재간</a></div>
+											<div class="perc"><strong>31.26</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">5</span><a href="javascript:;">삼성에너지트랜지션증권자(주식-재간접형)S-P</a></div>
+											<div class="perc"><strong>11.24</strong>%</div>
+										</li>
+									</ul>
+								</li>
+								<li class="swiper-slide">
+									<ul class="rate10-list">
+										<li>
+											<div class="tit"><span class="rank">6</span><a href="javascript:;">(온라인)하이월드에너지증권자투자신탁(주식-재간</a></div>
+											<div class="perc"><strong>23.26</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">7</span><a href="javascript:;">삼성에너지트랜지션증권자(주식-재간접형)S-P</a></div>
+											<div class="perc"><strong>15.24</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">8</span><a href="javascript:;">(무)교보 IRP개인형 GIC 1년형</a></div>
+											<div class="perc"><strong>15.20</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">9</span><a href="javascript:;">(온라인)하이월드에너지증권투자신탁(주식-재간</a></div>
+											<div class="perc"><strong>31.26</strong>%</div>
+										</li>
+										<li>
+											<div class="tit"><span class="rank">10</span><a href="javascript:;">삼성에너지트랜지션증권자(주식-재간접형)S-P</a></div>
+											<div class="perc"><strong>11.24</strong>%</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 22-05-12 li 클래스명 추가 -->
+				<ul class="ut-bnr-lst img">
+					<li class="ic01">
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">로보어드바이저</strong>
+							<span class="txt">투자하기 어렵다면?<br>로보어드바이저</span>
+						</a>
+					</li>
+					<li class="ic02">
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">같이투자</strong>
+							<span class="txt">다른 사람들은 어떻게 투자할까요? </span><!-- 22-06-22 수정 -->
+						</a>
+					</li>
+					<li class="ic03">
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">투자정보</strong>
+							<span class="txt">투자를 위한 특별한 가이드를<br>확인해보세요!</span>
+						</a>
+					</li>
+					<li class="ic04">
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">IRP 가입신청 </strong>
+							<span class="txt">소중한 나의 퇴직연금<br>IRP를 통해 관리해 보세요!</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="ut-gudbox b open mb40" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>투자형 상품의 수익률은 과거 실적을 나타내는 것으로, 미래 수익을 보장하지 않습니다.</li>
+							<li>투자형 상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+							<li>투자형 상품은 운용실적에 따라 원금손실이 발생할 수 있으며, 그 손실은 가입자에게 귀속됩니다.</li>
+							<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

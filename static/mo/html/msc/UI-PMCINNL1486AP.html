@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">중도인출과 보험계약대출 장단점</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit3">단기자금 이용시에는 보험계약대출을 <br>이용보세요.</h2>
+					<div class="text-group type2">
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>보험계약대출 좋은점
+									<ul class="bullet c">
+										<li>현금서비스, 신용대출, 카드론보다 저렴한 금리</li>
+										<li>인터넷, 모바일, ARS, ATM, 모바일로 언제든 쉽고 편리하게 이용</li>
+										<li>수수료 및 연체이자 부담없이 이용</li>
+										<li>구비서류가 필요없는 신속한 대출</li>
+										<li>신용에 관계없이, 상환수수료 없이 언제든지 상환</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<h2 class="hd-tit3">중도인출을 이용해보세요.</h2>
+					<div class="text-group type2">
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>장기자금을 이용하실 고객님은 이자에 부담이 없는 인출을 하는 것이 좋습니다.</li>
+								<li>
+									상품별로 <strong class="bold">추가납입에 대해서는 일부</strong> 제한이 있을 수 있으며, 추가납입 시 <strong class="bold">계약관리비용(기타비용)이 공제됩니다.</strong>
+
+										<ul class="bullet c">
+											<li>중도인출에 대한 추가납입보험료 사업비 : 상품별 2.5%~5.0%</li>
+											<li>인출금액 이내 추가납입 시 계약관리비용(기타비용) 이원화 적용됩니다.(계약시기 또는 상품에 따라 상이)
+												<div class="sub-group">
+													<p class="tit">* 2013.4.1 이후 계약</p>
+													월납 또는 적립액 인출 : 2%와 5만원 중 적은 금액
+													<p class="tit">* 2019.4.1 이후 계약</p>
+													적립액 인출 : 1%와 5만원 중 적은 금액<br>
+													노후자금 인출 : 0.5%와 5만원 중 적은 금액
+												</div>
+											</li>
+											<li> 단, 인출금액을 초과하는 추가납입분은 해당 상품의 추가납 계약관리비용(기타비용)이 적용됩니다.</li>
+										</ul>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample3');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

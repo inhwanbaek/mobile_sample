@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page pim my-info" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">개인정보 조회/변경</h2>
+				<div class="desc"><span>홍길동</span> 님의 개인정보입니다. 변경사항이 있으면 수정해 주세요.</div>
+			</div>
+
+			<div class="ut-form b">
+				
+				<div class="hdt">
+					<h3 class="tit">기본정보</h3>
+					<h4 class="hd-tit4">전화번호</h4><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<div class="radiobox c">
+						<label class="radio"><input type="radio" name="radio_c1" id="ph-set-1" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">휴대폰</span></label>
+						<label class="radio"><input type="radio" name="radio_c1" id="ph-set-2" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">자택</span></label> <!-- [D] 2022-12-12 텍스트변경 -->
+						<label class="radio"><input type="radio" name="radio_c1" id="ph-set-3" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_3"><span class="txt">직장</span></label>
+					</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active">
+						<div class="ut-phone">
+							<!-- [D] 2022-12-12 삭제 -->
+							<!-- <span class="select tcom">
+								<label for="tcom_0" class="lb">통신사</label>
+								<select id="tcom_0">
+									<option>SKT</option>
+									<option>KT</option>
+									<option>LGU+</option>
+									<option>SKT알뜰폰</option>
+									<option>KT알뜰폰</option>
+									<option>LGU+알뜰폰</option>
+								</select>
+							</span> -->
+							<!--// [D] 2022-12-12 삭제 -->
+							<span class="input a tnum"><label class="lb" for="tnum_1">전화번호입력</label>
+								<input type="tel" pattern="\d*" placeholder="[-] 없이 숫자만 입력" id="tnum_1" value="010****1234" title="휴대폰 전화번호"> <!-- [웹접근성] 타이틀추가-->
+							</span>
+						</div>
+						<!-- [D] 2022-12-12 삭제 -->
+						<!-- <div class="btn-set mt20">
+							<a href="javascript:;" class="btn md">변경</a>
+						</div> -->
+						<!--// [D] 2022-12-12 삭제 -->
+						<div class="inp-set-checkbox">
+							<label class="checkbox"><input type="checkbox" id="cell-sms" checked><span class="txt">금융거래정보 SMS수신동의</span></label><!-- [D] 2022-12-12 텍스트변경 -->
+						</div>
+						<ul class="bullet a mt16">
+							<li>SMS(문자 안내 서비스)에 동의하시면 입출금거래내역 등 금융거래정보를 휴대폰 문자를 통해 실시간으로 확인하실 수 있습니다.</li><!-- [D] 2022-12-12 텍스트변경 -->
+						</ul>
+						<div class="ut-gudbox a open mt16" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								휴대폰 인증번호를 문자메시지로 발송하는 비용은 교보생명이 부담합니다.
+							</div>
+						</div>
+					</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2">
+						<div class="ut-phone">
+							<span class="input a tnum"><label class="lb" for="tnum_2">전화번호입력</label>
+								<input type="tel" pattern="\d*" placeholder="[-] 없이 숫자만 입력" id="tnum_2" title="자택 전화번호" value="02****1234"><!-- [D] 2022-12-12 텍스트변경 -->	
+							</span>
+						</div>
+					</div>
+					<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_3">
+						<div class="ut-phone">
+							<span class="input a tnum"><label class="lb" for="tnum_3">전화번호입력</label>
+								<input type="tel" pattern="\d*" placeholder="[-] 없이 숫자만 입력" id="tnum_3" title="직장 전화번호" value="02****1234"><!-- [D] 2022-12-12 텍스트변경 -->	
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="hdt">
+					<h4 class="hd-tit4">팩스번호</h4><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<span class="input a">
+						<label class="lb blind" for="input-01">팩스번호</label>
+						<input type="text" title="팩스번호 입력" placeholder="[-] 없이 숫자만 입력" id="input-01" value="027213996">
+					</span>
+				</div>
+				<div class="hdt">
+					<h4 class="hd-tit4">주소</h4><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<div class="radiobox c">
+						<label class="radio"><input type="radio" name="radio_c2" id="addr-1" data-ui-tab-btn="addr_rb" aria-controls="addr_rb_1" checked><span class="txt">자택</span></label> <!-- [D] 2022-12-12 텍스트변경 -->
+						<label class="radio"><input type="radio" name="radio_c2" id="addr-2" data-ui-tab-btn="addr_rb" aria-controls="addr_rb_2"><span class="txt">직장</span></label>
+					</div>
+					<div class="ut-addrs addrs active" data-ui-tab-ctn="addr_rb" aria-labelledby="addr_rb_1">
+						<span class="input a adr1">
+							<label class="lb" for="adr_id3" role="text">주소</label>
+							<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+							<!-- [웹접근성] 1st 수정 -->
+							<input id="adr_id3" type="text" placeholder="주소를 입력해주세요" readonly title="집 주소" value="(03154) 서울 종로구 종로1">
+						</span>
+						<span class="input a adr2">
+							<!-- [웹접근성] 1st 수정 -->
+							<label class="lb" for="adr_id4">나머지 주소</label><input id="adr_id4" type="text" placeholder="나머지 주소를 입력해주세요" title="집 나머지 주소" value="교보생명빌딩 17층 디지털채널통합TF">
+						</span>
+						<div class="inp-set-checkbox">
+							<label class="checkbox"><input type="checkbox" id="rev-mail1"><span class="txt">우편물 수신처로 설정</span></label>
+						</div>
+					</div>
+					<div class="ut-addrs addrs" data-ui-tab-ctn="addr_rb" aria-labelledby="addr_rb_2">
+						<span class="input a adr1">
+							<label class="lb" for="adr_id3" role="text">주소</label>
+							<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+							<!-- [웹접근성] 1st 수정 -->
+							<input id="adr_id5" type="text" placeholder="주소를 입력해주세요" readonly title="직장 주소" value="(06611) 서울특별시 서초구 강남대로 465 ">
+							<!-- <input id="adr_id3" type="text" placeholder="주소를 입력해주세요" readonly title="직장 주소"> 직장일때 -->
+							<!-- //[웹접근성] 1st 수정 -->
+						</span>
+						<span class="input a adr2">
+							<!-- [웹접근성] 1st 수정 -->
+							<label class="lb" for="adr_id4">나머지 주소</label><input id="adr_id6" type="text" placeholder="나머지 주소를 입력해주세요" title="집 나머지 주소" value="교보생명빌딩 4층 디지털채널통합팀">
+							<!-- <label class="lb" for="adr_id4">나머지 주소</label><input id="adr_id4" type="text" placeholder="나머지 주소를 입력해주세요" title="직장 나머지 주소"> 직장일때 -->
+							<!-- //[웹접근성] 1st 수정 -->
+						</span>
+						<div class="inp-set-checkbox">
+							<label class="checkbox"><input type="checkbox" id="rev-mail2"><span class="txt">우편물 수신처로 설정</span></label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hdt">
+					<h4 class="hd-tit4">이메일</h4><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<div class="ut-email email">
+						<div class="enam">
+							<span class="input a emids"><label class="lb" for="emids_0">이메일</label><input id="emids_0" type="email" placeholder="아이디" value="kyo****"></span>
+							<i class="at">@</i>
+							<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력" value="naver.com"></span>
+						</div>
+						<ul class="ebts">
+							<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+							<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+							<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+						</ul>
+					</div>
+					<div class="inp-set-checkbox">
+						<label class="checkbox"><input type="checkbox" id="rev-email" checked><span class="txt">보험계약 관련 안내 이메일 수신</span></label>
+					</div>
+				</div>
+				
+				<div class="hdt">
+					<h3 class="tit">부가정보</h3>
+					<h4 class="hd-tit4">결혼여부</h4><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<label class="radio"><input type="radio" name="radio1" id="mry1" checked><span class="txt">미혼</span></label>
+					<label class="radio"><input type="radio" name="radio1" id="mry2"><span class="txt">결혼</span></label>
+				</div>
+				<div class="hdt">
+					<h3 class="hd-tit4">결혼기념일</h3><!-- [D] class 변경 -->
+				</div>
+				<div class="panel">
+					<span class="input a ut-date"><input type="tel" id="datepick_0" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" title="결혼기념일 날짜입력"></span><!-- [D] 2022-07-26 접근성수정-->	
+				</div>
+				<!-- [D] 추가 -->
+				<div class="hdt">
+					<h3 class="hd-tit4">반려동물</h3><!-- [D] class 변경 -->
+				</div>
+				<div class="panel pan-pet"><!-- [D] class 추가 -->
+					<span class="select def">
+						<select name="select-11" id="select-11" title="반려동물 옵션 선택">
+							<option selected>선택1</option>
+						</select>
+					</span>
+					<span class="select def">
+						<select name="select-12" id="select-12" title="반려동물 옵션 선택">
+							<option selected>선택2</option>
+						</select>
+					</span>
+					<span class="select def">
+						<select name="select-13" id="select-13" title="반려동물 옵션 선택">
+							<option selected>선택3</option>
+						</select>
+					</span>
+				</div>
+				<!--// [D] 추가 -->
+			</div>
+			<!-- 하단 고정영역 -->
+			<div class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg b" onclick="javascript:;">취소</button>
+						<button type="button" class="btn rd lg a" onclick="javascript:;">다음</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

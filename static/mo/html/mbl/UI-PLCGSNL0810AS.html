@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/common2.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back","title":"비밀번호 변경 안내"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl dotp otppw" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="otp-simbol"></div>
+			<h2 class="hd-tit2">디지털OTP 비밀번호를 변경할 수 있습니다.</h2>
+			<h3 class="hd-tit3">비밀번호 변경 유의사항</h3>
+			<ul class="otp-bullet">
+				<li><i class="num">1</i><span class="txt">거래 시 사용하실 디지털OTP 비밀번호를 등록합니다.</span></li>
+				<li><i class="num">2</i><span class="txt">비밀번호는 숫자 6자리이며, 타인이 쉽게 유추할 수 있는 생년월일, 휴대폰번호를 피해서 설정합니다.</span></li>
+				<li><i class="num">3</i><span class="txt">비밀번호는 주기적으로 변경해 노출되지 않도록 유의하시기 바랍니다.</span></li>
+				<!-- [D] 2022-06-16 문구삭제 -->
+			</ul>
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">변경</button>
+				</div>
+			</div>
+		</nav>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

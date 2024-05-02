@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc panel idea" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">아이디어 제안</h2>
+				<div class="desc">제안하고 싶은 아이디어를 항목에 맞춰 작성해 주세요.</div>
+			</div>
+
+			<section class="sect">
+				<h3 class="blind">기본정보입력</h3>
+				<div class="ut-form a">
+					<p class="info-ast"><em class="ast"></em>필수입력항목</p>
+					<ul class="form ty02">
+						<li>
+							<span class="input a">
+								<label class="lb" for="inp-name">이름<em class="ast">필수항목</em></label>
+								<input type="text" title="이름 입력" placeholder="실명 입력" id="inp-name" value="홍길동" readonly>
+							</span>
+						</li>
+						<li>
+							<span class="input a ut-date">
+								<label class="lb" for="inp-email">이메일</label>
+								<input type="email" id="inp-email" placeholder="이메일 입력" value="kyobo@kyobo.co.kr" readonly>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3"><label for="input-cate">구분<em class="ast">필수항목</em></label></h3>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="select def">
+								<select name="select-11" id="input-cate" title="구분 선택">
+									<option selected>선택</option>
+									<option>보험상품개발</option>
+									<option>서비스제도 및 프로그램</option>
+									<option>설계사(FP)서비스/고객관리역량</option>
+									<option>임직원(텔러)</option>
+									<option>브랜드</option>
+									<option>기타</option>
+								</select>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3"><label for="input-tit">제목<em class="ast">필수항목</em></label></h3>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<input type="text" title="제목 입력" placeholder="50자 이내로 입력" id="input-tit">
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<div class="tit-area">
+					<h3 class="hd-tit3"><label for="textarea-1">현황 및 문제점<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li class="tarea">
+							<span class="textarea a">
+								<textarea placeholder="내용 1,500자 이내 입력" id="textarea-1" title="현황 및 문제점 입력"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">1,500</i>자)</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<div class="tit-area">
+					<h3 class="hd-tit3"><label for="textarea-2">제안내용<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li class="tarea">
+							<span class="textarea a">
+								<textarea placeholder="내용 1,500자 이내 입력" id="textarea-2" title="제안내용 입력"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">1,500</i>자)</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<div class="tit-area">
+					<h3 class="hd-tit3"><label for="textarea-3">기대효과<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li class="tarea">
+							<span class="textarea a">
+								<textarea placeholder="예) 펀드 투자 시 불편한 점이 있었습니다." id="textarea-3" title="기대효과 입력"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">1,500</i>자)</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3">
+					파일첨부
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<ul class="bullet b">
+									<li>이미지 파일은 1개까지 첨부할 수 있습니다.</li>
+									<li>글자가 흐리거나 잘 보이지 않는 경우, 다시 파일을 첨부해 달라는 요청을 드릴 수 있습니다.</li>
+									<li>첨부 가능한 이미지 파일 형식은 zip, doc, docx, ppt, pptx, hwp, hwpx 입니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</h3>
+				<!-- [D] 2022-05-24 UI/UX 변경 -->
+				<ul class="ut-attachments">
+					<li>
+						<p class="tit">아이디어 제안</p>
+						<!-- <p class="add-btn"><button type="button" class="btn f" href="javascript:;" target="_blank" title="새창열림">첨부하기</button></p> -->
+						<p class="add-btn"><button type="button" class="btn g" href="javascript:;" target="_blank" title="새창열림">다시첨부</button></p>
+						<ul>
+							<li><span class="ico file">파일명.png<a href="javascript:;" class="close"><span class="blind">닫기</span></a></span></li>
+							<li><span class="ico file">파일명.png<a href="javascript:;" class="close"><span class="blind">닫기</span></a></span></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<div class="btn-set">
+				<button type="button" class="btn b rd lg">취소</button>
+				<button type="button" class="btn a rd lg">제안</button>
+			</div>
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

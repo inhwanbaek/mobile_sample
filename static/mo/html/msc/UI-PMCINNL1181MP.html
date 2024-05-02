@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-insrnpratd" id="pop-insrnpratd">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 자동이체납입제도 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">보험료 자동이체납입제도란?</h2>
+						<div class="text-box">
+							매월 납입해야 하는 보험료를 고객이 지정한 은행 입출금계좌에서 지정한 이체일에 출금하여 자동으로 납입하는 제도입니다.
+						</div>
+						<h2 class="hd-tit4">유의사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>보험료가 해당 이체일 은행 영업시간까지 계좌에 입금되어 있어야만 자동이체됩니다. </li>
+								<li>계좌 잔액 부족, 지급제한, 약정대출금 연체 등으로 대체납부가 불가능한 경우 자동이체가 실행되지 않습니다. </li>
+								<li>지정한 이체일에 출금되지 않은 경우 보험료 납입최고(독촉) 기간 동안 5일 단위로 자동이체가 다시 실행됩니다.</li>
+								<li>기본보험료 자동이체일이 5일, 10일, 15일, 20일, 25일인 경우에만 추가납입보험료 자동이체를 신청할 수 있습니다.</li>
+							</ul>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-insrnpratd');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-insrnpratd');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

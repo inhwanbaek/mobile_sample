@@ -1,0 +1,234 @@
+﻿@charset "utf-8";
+
+/************************
+ msc5 : MY교보 - 나의펀드
+************************/
+.page.msc.fund{}
+
+/* 나의펀드 공통 */
+.page.msc.fund .fund-tit{margin-top:32rem;}
+.page.msc.fund .fund-tit > h2{word-break: keep-all;}
+.page.msc.fund .ut-topfix.step + .fund-tit{margin-top:0;}
+.page.msc.fund .ut-more {margin: 34rem 0;}
+.page.msc.fund .ut-dcard.a.account .stds .ut-bdgs + .hdt{margin-top:4rem;}
+.page.msc.fund .refer-date { font: var(--font14); color: #808080; text-align: right; margin-bottom: 8rem;}
+.page.msc.fund .fund-tit + .fund-lst,
+.page.msc.fund .fund-tit + .ut-dcard.b{margin-top:32rem;}
+.page.msc.fund .fund-lst > li + li{margin-top:20rem;}
+.page.msc.fund .fund-lst > ul > li + li{margin-top:20rem;}
+.page.msc.fund .fund-tit + .ut-tabs.a {margin-top: 24rem; margin-bottom: 32rem;}
+.page.msc.fund .hdt.flx,
+.page.msc.fund [class^="hd-tit"].flx{display:flex; justify-content: space-between; align-items: center;}
+.page.msc.fund [class^="hd-tit"].flx .refer-date{font-weight: 400;margin:0;}
+.page.msc.fund .input-wmsg{display:flex;flex-direction: column;}
+.page.msc.fund .input-wmsg .input input{text-align: right;}
+.page.msc.fund .input-wmsg .input ~ .won-msg{align-self: flex-end; padding:4rem 8rem;border-radius: 4rem; background-color: #f5f5f5; color:#555; }
+.page.msc.fund .input-wmsg .input ~ .txt-msg{align-self: flex-end;}
+.page.msc.fund .input-wmsg .input ~ *{margin-top:8rem;}
+.page.msc.fund .fund-tit + .sec{margin-top:32rem;}
+.page.msc.fund .sec + .sec{margin-top:40rem;}
+.page.msc.fund .flx .addon button{font: var(--font14);}
+.page.msc.fund .ut-form.b > .hdt{margin-bottom:20rem;}
+.page.msc.fund .ut-form.b .panel-b{margin-top:8rem;}
+.page.msc.fund .ut-optset.right{justify-content: flex-end;}
+.page.msc.fund .ut-optset.right>.opt.pr{margin:0; margin-left:8rem;}
+.page.msc.fund .ft-lst {display:flex;color:#555;font: var(--font15);}
+.page.msc.fund .ft-lst li + li::before{content:"·";padding:0 8rem}
+.page.msc.fund .btn.ft{display: block; padding:0; width:32rem;height:32rem;border-radius:16rem;border:1rem solid #e6e6e6;margin:0}
+.page.msc.fund .btn.ft::before{content:"";display:block;width:32rem;height:32rem;background: url(../img/common/ic_filter@2x.png) no-repeat center center;background-size:24rem auto;margin:0;}
+.page.msc.fund .ut-tooltip .tpmsg p + .bullet{margin-top:8rem;}
+.page.msc.fund .ut-gudbox  .gctn .bullet>li strong{font-weight:700;}
+.page.msc.fund .ut-gudbox  .gctn .bullet>li em{color: #2a81eb;}
+.page.msc.fund .ut-dcard.a.account .dtds .btn-set.vt.wrp{flex-wrap: wrap;}
+.page.msc.fund .ut-dcard.a.account .dtds .btn-set.vt.wrp .btn{flex:1; margin:5rem; min-width: auto; max-width: 200rem;}
+.page.msc.fund .account-sel>span{width:100%;}
+.page.msc.fund .ut-dtds.c > .dlist.left > li{justify-content: flex-start;}
+/* 나의펀드 - 펀드조회/변경 */
+.page.msc.fund.chk{}
+
+/* 조회 공통 */
+.page.msc.fund.chk .ut-dtds.rdbox.g + *{margin-top:40rem;}
+.page.msc.fund.chk .ut-dtds.rdbox.g + .bullet{margin-top:20rem;}
+.page.msc.fund.chk .ut-dtds.rdbox.g + .sec{margin-top:40rem;}
+.page.msc.fund.chk .ut-form + *{margin-top:40rem;}
+.page.msc.fund.chk .ut-dcard.b .dl.left{justify-content: left;}
+.page.msc.fund.chk .sec [class^="hd-tit"]{padding:0;margin-bottom:20rem;}
+.page.msc.fund.chk .result-wrp .ut-dcard.a.account .dtds.open{margin-top:16rem;padding-top:16rem; border-top:1px solid #e6e6e6;}
+
+/* 보험계약대출조회 */
+.page.msc.fund .ut-tabs.a + .funt-wrp > .ut-dtds.rdbox.g{margin-top:0;}
+
+/* 나의펀드 팝업 */
+.pop-layer.pop-mscDft{}
+.pop-layer.pop-mscDft [class^="hd-tit"] {padding: 0; line-height: 1.31;}
+.pop-layer.pop-mscDft [class^="hd-tit"] + .ut-dtds,
+.pop-layer.pop-mscDft [class^="hd-tit"] + .ut-tbl.a,
+.pop-layer.pop-mscDft [class^="hd-tit"] + .btn-set{margin-top:20rem;}
+.pop-layer.pop-mscDft .poptents{padding-top:32rem;}
+.pop-layer.pop-mscDft .sec{margin-top: 0;}
+.pop-layer.pop-mscDft .sec + .sec {margin-top: 40rem;}
+.pop-layer.pop-mscDft .btn-set.vt.wrp{flex-wrap: wrap;}
+.pop-layer.pop-mscDft .btn-set.vt.wrp .btn{margin:5rem !important;}
+.pop-layer.pop-mscDft .ut-dtds.c > .dlist.left > li{justify-content: flex-start;}
+/* 조회설정 */
+.pop-layer.pop-mscDft.pop-period .ut-form.b .hdt .tit{font-size:20rem;}
+/* 정보조회팝업 */
+.pop-mscInfo .refer-date { font: var(--font14); color: #808080; text-align: right; margin-bottom: 8rem;}
+.pop-mscInfo .ut-dtds.c>.dlist.left.dt-long>li>.dt{min-width:152rem;}
+.pop-mscInfo .ut-dtds.c>.dlist.left>li>.dt{flex:0 0 40%;}
+.pop-layer.pop-mscInfo .up{padding-left:0;}
+.pop-layer.pop-mscInfo .up:before{display: none;}
+.pop-layer.pop-mscInfo .stds .ut-bdgs + .hdt{margin-top:4rem;}
+
+/* 거래내역조회 */
+.page.msc.fund.chk .bullet.b li{font: var(--font12);}
+
+.page.msc.fund.chk .account-sel + * {margin-top: 40rem;}
+.page.msc.fund.chk .ut-optset + * {margin-top: 20rem;}
+.page.msc.fund.chk .result-wrp{margin-top: 40rem;}
+.page.msc.fund.chk .sec>.ut-dtds.rdbox.g{margin-top:0;}
+
+/* 실질투자수익률 */
+.page.msc.fund.chk .ut-dcard.a.sg  .stds .cdt .bxs{padding:0;}
+.page.msc.fund.chk .ut-dcard.b{margin-bottom:0;}
+.page.msc.fund.chk .ut-dcard.b + .ratio-current{margin-top:20rem;}
+.page.msc.fund.chk .ratio-current + .sec{margin-top:37rem;}
+.page.msc.fund.chk .ut-dtds.c + .bullet.a{margin-top:20rem;}
+.page.msc.fund.chk .ut-dtds.c>.dlist.left>li>.dt{flex:0 0 40%;}
+
+/* 환매예상금액조회 */
+.page.msc.fund.chk .ut-dcard.b + .ut-form.b{margin-top:40rem;}
+.page.msc.fund.chk .input.a.al{width:100%;}
+.page.msc.fund.chk .input.a.al>input{text-align: right;}
+.page.msc.fund.chk .sec .hd-tit4.flx{display:flex; justify-content: space-between;}
+.page.msc.fund.chk .ut-form.b .btn-set{margin-top:40rem;}
+/* 수익률 카운트 */
+.page.msc.fund.chk .ratio-current {padding: 40rem 0; text-align: center; border: 1rem solid #e6e6e6; border-radius: 8rem; box-sizing: border-box}
+.page.msc.fund.chk .ratio-current .ratio-cinr {padding: 0 20rem}
+.page.msc.fund.chk .ratio-current .tit {margin-bottom: 14rem; font-size: 18rem; font-weight: 700; color: #242424; line-height: 1.3}
+.page.msc.fund.chk .ratio-current .num {margin-bottom: 14rem; color: #e64c2e; font-size: 36rem; font-weight: 700; line-height: 1.3}
+.page.msc.fund.chk .ratio-current .percent {margin-left: 4rem; font-size: 22rem; color: #242424; line-height: 1.3}
+.page.msc.fund.chk .ratio-current .desc {font: var(--font14); color: #555; line-height: 1.5;}
+.page.msc.fund.chk .ratio-current .desc em {color:#2a81eb;}
+
+/* 나의펀드 - 펀드 매수/환매 */
+.page.msc.fund.deal{}
+
+/* 나의펀드 - 펀드 매수/환매 공통 */
+.page.msc.fund.deal .fund-tit + .ut-form.b{margin-top:32rem;}
+.page.msc.fund.deal [class^="hd-tit"]{padding:0;}
+.page.msc.fund.deal .ut-dcard.b{margin-bottom:0;}
+.page.msc.fund.deal .ut-dcard.b + .sec{margin-top:40rem;}
+.page.msc.fund.deal .ut-form + *{margin-top:40rem;}
+.page.msc.fund.deal .hd-tit4.flx .refer-date{font-weight: 400; margin:0;}
+.page.msc.fund.deal .sec [class^="hd-tit"] + .ut-dtds.c{margin-top:16rem;}
+.page.msc.fund.deal .won-info{text-align: right; margin-top:8rem;}
+.page.msc.fund.deal .full-enter{display: flex; align-items: center; align-self: flex-end; margin-top:8rem;}
+.page.msc.fund.deal .full-enter span{margin-right: 8rem;}
+.page.msc.fund.deal .ut-form.b span.select,
+.page.msc.fund.deal .ut-form.b span.input{width:100%;}
+.page.msc.fund.deal .ut-dtds.c>.dlist.left>li>.dt{flex:0 0 40%;}
+
+/* 출금계좌 */
+
+/* .page.msc.fund.deal .sec-agree{display:none;} */
+.page.msc.fund.deal .agree-box{background:#fafafa;border-radius: 8rem; border:1px solid #555; padding:30rem; text-align: center;}
+.page.msc.fund.deal .agree-box .agree-txt{font-size:18rem; font-weight: 700;}
+.page.msc.fund.deal .agree-box .radio-wrap{margin-top:16rem;}
+
+/* 매수신청 완료 */
+.page.msc.fund.deal .complate-msg + .btn-set{margin-top:40rem;}
+
+/* 환매신청 */
+.page.msc.fund.deal .input.a.al>input{text-align: right;}
+.page.msc.fund.deal .ut-form.b .btn-set{margin-top:40rem;}
+
+/* 펀드 통장간 대체 */
+.page.msc.fund.deal .fund-dtds.a{margin-top:32rem; padding:16rem 0; border-top:1px solid #555; border-bottom:1px solid #e6e6e6; }
+.page.msc.fund.deal .fund-dtds.a .dlt li + li{margin-top:12rem;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl{display:flex;  align-items: flex-start;font: var(--font15);}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dt{min-width:112rem;line-height: 1.4;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dt.bl{margin-top:14rem;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dd{flex:1; text-align: right; margin-left:16rem;line-height: 1.4;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dd .input.won{width:100%;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dd .input.won input{text-align: right; padding-right:35rem;}
+.page.msc.fund.deal .fund-dtds.a .dlt li .dl .dd .input.won + .txt-msg{ font: var(--font12); color:#808080; margin-top:4rem;  text-align: right;}
+
+/* 펀드관리 */
+.page.msc.fund.mng{}
+
+/* 펀드관리 공통 */
+.page.msc.fund.mng .fund-tit + .ut-form.b,
+.page.msc.fund.mng .ut-dcard.b + .ut-form.b{margin-top:32rem;}
+.page.msc.fund.mng [class^="hd-tit"]{padding:0; line-height: 1.31;}
+.page.msc.fund.mng .ut-dcard.b{margin-bottom:0;}
+.page.msc.fund.mng .ut-form + *,
+.page.msc.fund.mng .ut-dcard.b + .sec,
+.page.msc.fund.mng .sec + .ut-form{margin-top:40rem;}
+.page.msc.fund.mng .hd-tit4.flx .refer-date{font-weight: 400; margin:0;}
+.page.msc.fund.mng .sec [class^="hd-tit"] + .ut-dtds.c{margin-top:16rem;}
+.page.msc.fund.mng .won-info{text-align: right; margin-top:8rem;}
+.page.msc.fund.mng .full-enter{display: flex; align-items: center; align-self: flex-end; margin-top:8rem;}
+.page.msc.fund.mng .full-enter span{margin-right: 8rem;}
+.page.msc.fund.mng .ut-dtds.c>.dlist>li .dt.ac{align-self: center;}
+.page.msc.fund.mng .ut-dtds.c>.dlist>li .dt.bl{margin-top:16rem;}
+.page.msc.fund.mng .ut-dtds.c>.dlist.left>li .dt.ac{align-self: center;}
+
+.page.msc.fund.mng .fms > ul > li + li{margin-top:12rem;}
+.page.msc.fund.mng .fms > ul > li + li{margin-top:12rem;}
+.page.msc.fund.mng .fms.flx > ul{display: flex;}
+.page.msc.fund.mng .fms.flx > ul li + li{margin: 0 0 0 30rem;}
+.page.msc.fund.mng .ut-dtds.c.bd.dtl .dt{min-width: 150rem;}
+.page.msc.fund.mng .ut-dtds.c.bd .tops{margin-bottom:16rem;}
+.page.msc.fund.mng .ut-dtds.c.bd .tops ~ .tops{margin-top:40rem;}
+.page.msc.fund.mng .ut-dtds.c.bd .fms .input.won{width:100%;}
+.page.msc.fund.mng .ut-dtds.c.bd .fms .input.won input{text-align: right;padding-right:32rem;}
+.page.msc.fund.mng .sec>.ut-tbl {margin:0;}
+.page.msc.fund.mng .sec>.ut-tbl + .ut-tbl{margin-top:40rem;}
+.page.msc.fund.mng .ut-dtds.c+.btn-set{margin-top:16rem;}
+.page.msc.fund.mng .ut-form.b span.select,
+.page.msc.fund.mng .ut-form.b span.input{width:100%;}
+.page.msc.fund.mng .ut-dtds.c>.dlist.left>li>.dt{flex:0 0 40%;}
+.page.msc.fund.mng .ut-dtds.c>.dlist.left>li>.dd{flex:0 0 60%;}
+.page.msc.fund.mng .info-enter .fldset {margin-top:20rem;}
+
+/* 투자성향 진단 */
+.page.msc.fund.mng .contents > .join-info:first-of-type{margin-top:32rem;}
+.page.msc.fund.mng .join-info {padding:40rem 80rem 60rem; border:1rem solid #e6e6e6; border-radius:8px;}
+.page.msc.fund.mng .join-info .cont{position:relative;padding-top:105rem;font: var(--font15);color:#555555;line-height:21rem;}
+.page.msc.fund.mng .join-info .cont:before{display:block;content:'';position:absolute;top:0;left:50%;transform:translate(-50%, 0);width:80rem;height:80rem;background:url(../img/prd/ico_invgraph_stage4_gray.png) no-repeat 0 0;background-size:100%;}
+.page.msc.fund.mng .join-info .cont .ct{text-align:center; font-size:16rem; line-height: 1.31;}
+.page.msc.fund.mng .join-info .cont .txt-t1{font-size:24rem;font-weight:700;color:#242424;line-height:32rem;margin-bottom:8rem;}
+.page.msc.fund.mng .join-info .cont .txt-con{margin-top:30rem; padding-top:30rem; font-size:16rem; line-height: 1.31; border-top:1rem solid #e6e6e6}
+.page.msc.fund.mng .join-info .cont + .btn-set{margin-top:30rem}
+
+
+/* 알림수익률 */
+.page.msc.fund.mng .ut-dtds.c.pct>.dlist>li,
+.page.msc.fund.mng .ut-dtds.c.pd>.dlist>li{padding:16rem 0;}
+.page.msc.fund.mng .ut-dtds.c.pct>.dlist>li .dd .input{max-width: 132rem;}
+.page.msc.fund.mng .ut-dtds.c.pct>.dlist .fms ul.flx>li{display: flex;align-items: center;}
+.page.msc.fund.mng .ut-dtds.c.pct>.dlist .fms ul.flx>li label{margin-right: 25rem;font: var(--font15); color:#242424;}
+
+/************************
+ msc5 : MY교보 - 계약정보확인
+************************/
+
+.pop-checkInfo{}
+.pop-checkInfo .text-group.bg::after{display:block;content:"";margin:40rem auto 0; width:320rem; height:220rem;;background:url(../img/msc/img_insurance@2x.png) no-repeat 0 0;background-size:100%;}
+.pop-checkInfo * + .info-box{margin-top:40rem;}
+.pop-checkInfo .info-box [class^="hd-tit"]{padding:0;}
+.pop-checkInfo .info-box .chk {margin-top:16rem;}
+.pop-checkInfo .info-box .chk li{font-size: 16rem; color: #242424; display: flex; justify-content: flex-start; align-items: flex-start;}
+.pop-checkInfo .info-box .chk li::before{display:block; flex: 0 0 24rem; content:''; width: 24rem; height: 24rem; background: url(../img/common/bullet_ic_check@2x.png) no-repeat; background-size: 24rem;margin-right:3rem;}
+.pop-checkInfo .info-box .chk li + li{margin-top:8rem;}
+.pop-checkInfo .ico-linkList{margin: 32rem -20rem 26rem 0;}
+.pop-checkInfo .ico-linkList li {border-bottom: 1rem solid #e6e6e6;}
+.pop-checkInfo .ico-linkList li button {position: relative;display: flex;align-items: center; width: 100%;padding: 20rem 0;text-align: left;font-size: 16rem;line-height: 1.31;font-weight: 700;color: #242424;}
+.pop-checkInfo .ico-linkList li button::before {content: "";width: 24rem;height: 24rem;margin-right:8rem; vertical-align: middle; background: url(../img/msc/ic_currency_dollar01.png) no-repeat left center;background-size: 24rem 24rem;}
+.pop-checkInfo .ico-linkList li button::after {content: "";margin-left:auto; margin-right: 30rem;top: 28rem;width: 8rem;height: 8rem;transform: rotate(-45deg);border: 1rem solid #242424;border-width: 0 1rem 1rem 0;}
+
+.page.msc.cci .cci-tit{margin-top: 32rem;}
+.page.msc.cci .cci-tit + .ut-form.a,
+.page.msc.cci .cci-tit + .ut-terms.a{margin-top: 32rem;}
+/* .page.msc.cci .ut-form.a .input{width:100%;} */

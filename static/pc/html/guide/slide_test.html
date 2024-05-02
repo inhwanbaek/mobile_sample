@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#333333">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link href="../../font/Pretendard-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+	<link href="../../font/Pretendard-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<link href="../guide/shCore.css" rel="stylesheet">
+	<script src="../guide/shCore.js"></script>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page ui" id="container">
+
+		<div class="contents" id="contents">
+			<div class="uisect">
+
+
+				<section class="sect" data-sid="ui-swipers">
+					<h3 class="hdt">슬라이드 Swiper</h3>
+
+					<div class="snippets">
+						<p>swiper slide 슬라이드</p>
+					</div>
+					<div class="ut-slide-dot" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/1.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/2.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/3.jpg" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div>
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-slide-num" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="photo_2">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/4.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/5.jpg" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/temp/6.jpg" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="navigation"><button type="button" class="nav prev">이전</button><button type="button" class="nav next">다음</button></div>
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-slide-play" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-1">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<div class="ut-slide-play" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-2">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<!--[D] type2는 simulateTouch:true 적용, 마우스로 선택해서 넘길때 페이징 바뀌게하는 옵션 -->
+					<div class="ut-slide-play type2" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-type2">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide"><a href="javascript:;" class="box"><br><br><br><span style="font-size:18rem">.ut-slide-play.type2</span><br>자동 play 기다리지 않고 사용자가 슬라이드 넘길때 페이징 change 적용<br><br><br></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+								<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="배너"></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="gap"></p>
+					<h4>A type</h4>
+					<div class="ut-slide-play type-a" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-a">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요g</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!g나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">g지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-4">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-5">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-6">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-7">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-8">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide color-9">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<h4>B type</h4>
+					<div class="ut-slide-play type-b" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<h4>C type</h4>
+					<div class="ut-slide-play type-c" style="display: none;">
+						<div class="swiper-container swiper" data-slide-id="slide-play-c">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="imgbox"><img class="img" src="../../img/common/type_c.png" alt="연금 금액 알아보기"></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+
+        <div class="ut-slide-play">
+          <div class="swiper-container swiper" data-slide-id="banner_2">
+            <div class="control">
+              <div class="plys"><button type="button" class="bt play">정지</button></div>
+              <div class="dots"></div>
+            </div>
+            <ul class="swiper-wrapper slide">
+              <li class="swiper-slide img1">
+                <a href="#;" class="inner">
+                  <p class="visual-txt">고객님의 소중한 꿈, <br><strong> 교보생명이 함께 합니다.</strong></p>
+                  <span class="visual-go">
+                    <button type="button" class="link-ar white">채용 바로가기</button>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide img2">
+                <a href="#;" class="inner">
+                  <p class="visual-txt">건강하고 따뜻한 오늘 <br><strong> 함께 나눌 수 있어 더 행복합니다.</strong></p>
+                  <span class="visual-go">
+                    <button type="button" class="link-ar white">사회공헌 바로가기</button>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide img3">
+                <a href="#;" class="inner">
+                  <p class="visual-txt">고객님의 소중한 꿈, <br><strong> 교보생명과 함께 이루세요.</strong></p>
+                  <span class="visual-go">
+                    <button type="button" class="link-ar white">채용 바로가기</button>
+                  </span>
+                </a>
+              </li>
+              <!-- <li class="swiper-slide mov">
+                <div class="inner">
+                  <p class="visual-txt">고객님의 소중한 꿈, <br><strong> 교보생명과 함께 이루세요.</strong></p>
+                  <span class="visual-go"><a href="#link" class="link-ar white">채용 바로가기</a></span>
+                </div>
+                <video muted="muted" autoplay="" loop="" playsinline="" onloadedmetadata="this.muted = true">
+                  <source src="../../img/abt/company_visual.mp4" type="video/mp4">
+                </video>
+                <div class="blind">모든 생명의 가치를 존중하고, 누구나 행복한 삶을 누릴 수 있도록. 물, 바람, 흙, 햇빛</div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+
+			</div>
+		</div>
+
+	</main>
+
+
+
+</div>
+
+
+</body>
+</html>

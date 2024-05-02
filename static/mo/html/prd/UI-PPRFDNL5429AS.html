@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"펀드신규가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<!-- [D] 2022-04-08 텍스트 수정 -->
+						<div class="tit">7. 펀드 상품설명서 확인</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<!-- [D] 2022-04-08 텍스트 수정 -->
+							<div class="nums">
+								<!-- [D] 2022-05-27 단계 숫자 변경 -->
+								<span class="tot"><b class="b">12</b></span>
+								<span class="num"><b class="b">9</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ut-bdgs">
+				<em class="bdg b">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</em>
+			</div>
+
+			<div class="futr-tit">
+				<!-- [D] 2022-04-08 텍스트 수정 -->
+				<h2 class="hd-tit2">상품설명서를 읽으신 후 <br>아래 확인 사항에 답변해 주세요. </h2>
+			</div>
+
+			<div class="ipdgn-q q-slider" data-ui="qslider" tabindex="-1">
+				<div class="swiper-container swiper">
+					<ul class="swiper-wrapper slide">
+						<!-- [D] 2022-06-24 항목 삭제<li class="swiper-slide">
+							<div class="msect">
+								<h3 class="hd-tit4">이 금융거래의 실소유자입니까?</h3>
+								<div class="fldset">
+									<div class="fld">
+										<ul class="rdos">
+											<li><label class="radio"><input type="radio" name="radio1-1" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1-1"><span class="txt">예</span></label></li>
+											<li><label class="radio"><input type="radio" name="radio1-1" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1-2"><span class="txt">아니오</span></label></li>
+										</ul>
+										[D] 2022-04-20 텍스트 수정 -->
+										<!-- [D] 2022-04-11 텍스트 수정 -->
+										<!-- 아니요. 선택 시 안내 메시지 출력
+										<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_1-2">
+											<div class="vald-msg show no">실소유자가 아닌 경우 채널에서 펀드상품에 가입하실 수 없습니다.</div>
+										</div>
+										//아니요. 선택 시 안내 메시지 출력
+									</div>	
+								</div>	
+							</div>
+						</li>-->
+						<li class="swiper-slide">
+							<div class="checkbox-list">
+								<ul>
+									<li><label class="checkbox"><input type="checkbox"><!-- [D] 2022-08-18 클래스 'bold, t-red' 추가 --><span class="txt bold t-red">본인이 가입하는 금융상품은 「예금자보호법」에 따라 보호되지 않음을 설명 듣고 이해했음을 확인합니다.</span></label></li>
+									<!-- [D] 2022-04-08 텍스트 수정 -->
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">(간이)투자 설명서를 읽고 그 주요 내용을 이해했음을 확인합니다.</span></label></li>
+									<!-- [D] 2022-04-08 텍스트 수정 -->
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">가입하고자하는	상품이 본인의 투자목적, 투자경험에 비추어 적합하다고 판단합니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">펀드 투자 시  <!-- [D] 2022-08-25 태그 수정 --><em class="bold color12">투자원금이 보장되지 않는다는 사실 등 투자위험에 대한 설명을 이해했으며, 그 결과는 투자자에게 귀속된다는 사실 또한 확인하고 이해</em>했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">펀드의 명칭 및 종류를 확인하고 이해했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><!-- [D] 2022-08-25 클래스 'bold', 'color11' 추가 --><span class="txt bold color12">펀드 운용 개념 및 방법을 확인하고 이해했습니다.(해외 자산에 투자하는 상품의 경우 환율 변동 위험, 환헤지 여부, 목표 환헤지비율 등 포함)</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt"><!-- [D] 2022-08-25 태그 수정 --><em class="bold color12">펀드 재산의 운용방법, 운용제한 및 운용전략을 확인하고 이해</em>했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt"><!-- [D] 2022-08-25 태그 수정 --><em class="bold color12">펀드의 환매방법, 환매제한, 환매수수료, 환매수수료 부과기간 및 환매연기에 대해 확인하고 이해</em>했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt"><!-- [D] 2022-08-25 태그 수정 --><em class="bold color12">투자자 또는 펀드가 부담하는 각종 보수, 수수료, 비용 및 투자소득의 과세에 대해 확인하고 이해</em>했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">집합투자규약 또는 정관의 주요 내용 변경에 따른 공시를 확인하고 이해했습니다.</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">수익자 총회 또는 주주총회에 대해 확인하고 이해했습니다.</span></label></li>
+									<!-- [D] 2022-04-08 텍스트 추가 -->
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">집합투자증권 상품설명서는 금소법 및 소비자보호 내부 통제기준에 따른 절차를 거쳐 제공합니다. 집합투자증권 상품설명서를 전자문서에 이하여 제공받음을 동의하고 제공받은 내용을 충분히 이해하여 본 상품에 가입함을 확인합니다.</span></label></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+		
+		<!-- 하단 고정영역 -->
+		<!-- [D] 2022-04-08 ui 수정 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot"><!-- [D] 2022-06-24 style 'display:none'삭제 -->
+					<div class="hd-tit5">집합투자규약에 동의하며 해당 상품에 가입하시겠습니까?</div>
+					<div class="rdos">
+						<label class="radio"><input type="radio" name="radio9" checked><span class="txt">예</span></label>
+						<label class="radio"><input type="radio" name="radio9"><span class="txt">아니요</span></label>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<!-- [D] 2022-05-10 버튼 추가 -->
+					<button type="button" class="btn b rd lg" data-qslider="prev-page">이전</button>
+
+					<button type="button" class="btn b rd lg" data-qslider="prev" style="display: none;">이전</button>
+					<button type="button" class="btn a rd lg" data-qslider="next">다음</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- [D] 2022-04-08 추가 -->
+	<script>
+		var qslider = new Swiper('[data-ui="qslider"] .swiper-container', {
+			slidesPerView: 1,
+			allowTouchMove: false,
+			//autoHeight:true,
+			autoplay:false,
+			loop: false,
+			on: {
+				init: function () {
+					_setQsliderNavi(this)
+					_setQsliderSlide(this);
+				},
+				slideChange: function () {
+					_setQsliderNavi(this)
+					_setQsliderSlide(this);
+				},
+			}
+		});
+	
+		function _setQsliderNavi(element) {
+			// 2022-05-10 [data-qslider="prev-page"] 추가
+			if( element.activeIndex > 0 ) {
+				$('[data-qslider="prev"]').show();
+				$('[data-qslider="prev-page"]').hide();
+			} else {
+				$('[data-qslider="prev"]').hide();
+				$('[data-qslider="prev-page"]').show();
+			}
+		}
+		function _setQsliderSlide(element) {
+			$(element.slides).attr('aria-hidden', true);
+			$(element.slides).find('.radio input').attr('tabindex', '-1');
+			console.log($(element.slides));
+			$(element.slides[element.activeIndex]).attr('aria-hidden', false);
+			$(element.slides[element.activeIndex]).find('.radio input').attr('tabindex', '');
+		}
+		function _setQsliderKeytab() {
+			$('[data-ui="qslider"]').focus();
+			ui.keytab.set( $('[data-ui="qslider"]') );
+			
+		}
+
+		$(document).on('click', '[data-qslider="prev"]', function() {
+			qslider.slidePrev();
+			_setQsliderKeytab();
+			
+			if( qslider.activeIndex == 0){
+				$('.box-set').hide();				
+				$('.page.prd.futr').css({'padding-bottom':'0px'});
+				/* [D] 2022-04-11 추가 */
+				$('html, body').animate({scrollTop : 0});
+			}
+			
+		});
+
+		$(document).on('click', '[data-qslider="next"]', function() {
+			var checkbox = $(qslider.slides[qslider.activeIndex]).find('.radio input');
+
+			if( !qslider.slides.length - 1 == qslider.activeIndex) {
+				if( checkbox.filter(':checked').length <= 0 ) {
+					alert('radio false');
+					return;
+				}
+			}
+		
+			var boxsetHeight = $('.box-set').innerHeight();
+			if( qslider.activeIndex == 0){
+				$('.box-set').show();
+				$('.page.prd.futr').css({'padding-bottom':boxsetHeight+'px'});
+				/* [D] 2022-04-11 추가 */
+				$('html, body').animate({scrollTop : 0});
+			} 
+
+			/* qslider.slideNext(); [D] 2022-06-24 js 실행 X*/
+			/* _setQsliderKeytab(); [D] 2022-06-24 js 실행 X*/
+			
+		
+		});
+
+		
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

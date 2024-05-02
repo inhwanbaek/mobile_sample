@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer xs a pop-confirm" id="pop-layer">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">실손보험료환급대상 상품 해지 시 안내사항</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="confirm-box">
+							<p class="text-type1">3개월 이상 해외 장기체류시 실손 보험료 환급대상 입니다. 해지(해약) 계약은 환급요청이 불가능하오니 해지(해약) 전 피보험자의 해외체류사실여부를 확인 후 콜센터(1588-1001)로 문의하시기 바랍니다.</p>
+							<div class="line-box"><strong class="qst">위 사항에 동의하십니까?</strong></div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-layer');">동의안 함</button>
+						<button type="button" class="btn lg rd a">동의</button>
+					</div>
+				</div>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-layer');
+		</script>
+
+	</div>
+</body>
+</html>

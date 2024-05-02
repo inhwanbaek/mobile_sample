@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">이미지선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="select-img">
+						<label class="radio">
+							<span class="img"><img src="../../img/temp/1.jpg" alt="샘플이미지"></span>
+							<input type="radio" name="radio1" id="kkk1"><span class="txt">선택</span>
+						</label>
+						<label class="radio">
+							<span class="img"><img src="../../img/temp/1.jpg" alt="샘플이미지"></span>
+							<input type="radio" name="radio1" id="kkk2"><span class="txt">선택</span>
+						</label>
+						<label class="radio">
+							<span class="img"><img src="../../img/temp/1.jpg" alt="샘플이미지"></span>
+							<input type="radio" name="radio1" id="kkk3"><span class="txt">선택</span>
+						</label>
+						<label class="radio">
+							<span class="img"><img src="../../img/temp/1.jpg" alt="샘플이미지"></span>
+							<input type="radio" name="radio1" id="kkk4"><span class="txt">선택</span>
+						</label>
+						<label class="radio">
+							<span class="img"><img src="../../img/temp/1.jpg" alt="샘플이미지"></span>
+							<input type="radio" name="radio1" id="kkk5"><span class="txt">선택</span>
+						</label>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-list">
+					<button type="button" class="btn c md" onclick="ui.popup.close('pop-sample1');">닫기</button>
+					<button type="button" class="btn a md">선택</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample1');
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+﻿@charset "utf-8";
+
+/* chp : 협력병원 */
+/* 협력병원 로그인*/
+.chp .page.login{position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: 0 auto; overflow-y: hidden;}   
+.chp .page.login::before,
+.chp .page.login::after{background:url() no-repeat center;padding-right: 1021rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';position: absolute;left: 50%;} 
+.chp .page.login::before{width:1021rem;height:658rem;background-image: url(../img/chp/login_bg_1@2x.png);background-size:1021rem auto;transform: translate(-50%,-60%);top: 0;z-index: 1;}
+.chp .page.login::after {width:675rem;height:670rem;background-image: url(../img/chp/login_bg_2@2x.png);background-size:675rem auto;transform: translate(-50%,60%);bottom: 0;}
+.chp .page.login .contents{margin: 0;padding: 0 !important;display: flex;align-items: center;justify-content: center;min-height: 470rem !important;height: 100%;width: 100%;overflow: hidden;}
+
+.chp .page.login .login-box{padding: 0rem 20rem;position: relative;z-index: 100;}
+.chp .page.login .login-box>.inr{border: 1px solid #e6e6e6;border-radius: 8rem;width: 525rem;padding: 30rem;background: #ffffff;margin: 0 auto;}
+.chp .page.login .login-box .hdt{ text-align: center; }
+.chp .page.login .login-box .hdt .tit{font-weight: 700; font-size:24rem;}
+.chp .page.login .login-box .hdt .desc{margin-top:16rem; font-size:16rem;}
+.chp .page.login .login-box .form{margin: 40rem 0rem 0rem 0rem; position: relative; }
+.chp .page.login .login-box .form .input+.input{margin-top: 15rem;}
+.chp .page.login .login-box .form .frm{height: 116rem;padding: 0rem 180rem 0rem 0rem;}
+.chp .page.login .login-box .form .input{ height: 50rem; width: 100%; display: block; }
+
+.chp .page.login .login-box .form .input input{ height: 48rem; font: var(--font15); }
+.chp .page.login .login-box .form .btn-login{ width: 162rem; height: 116rem; font-size: 18rem; position: absolute; right: 0rem; top: 0rem; }
+.chp .page.login .login-box .form .msg{ color: #555555; margin-top: 8rem; }
+.chp .page.login .login-box .form .checkbox{ margin-top: 14rem; }
+.chp .page.login .login-box .form .checkbox .txt{}
+.chp .page.login .login-box .copy{ text-align: center; margin: 50rem 0rem 0rem 0rem; font: var(--font13);}
+.chp .page.login .login-box .copy::before{width:104rem;height:30rem;background:url(../img/common/kyobo_web_ci_2@2x.png) no-repeat center;background-size:104rem auto;padding-right: 104rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display: block;vertical-align:middle;content:'';margin: 0rem auto 17rem auto;}
+.chp .page.login .login-box .bt{position: relative; display: block; width: 168rem; margin: 50rem auto 0; }
+.chp .page.login .login-box .bt .logo{ display: block; width: 104rem; height: 30rem; background: url(../img/chp/kyobo_web_ci_2@2x.png) no-repeat center; background-size: 104rem; font-size: 0rem;}
+.chp .page.login .login-box .bt .txt{position:absolute; bottom: -3rem; right:0; padding-left: 18rem; color: #121c72; font: var(--font12); font-weight: 700; font-family: Kyobo; }
+.chp .page.login .login-box .bt .txt::before{content:""; position:absolute; top: 50%; left: 9rem; margin-top: -6rem; width: 1px; height: 12rem; background-color: #ccc;}
+
+/* 협력병원 자동 로그아웃 */
+.pop-chplogout .text1{color:#555; font: var(--font15); line-height: 1.4;}
+.pop-chplogout .text1 .color10{font-weight: 600;}
+.pop-chplogout .text2{ margin-top: 16rem; color:#242424; font: var(--font15); line-height: 1.4;}
+
+/* 협력병원 gnb */
+.chp .header .gnb{padding: 33rem 0 0 330rem;}
+.chp .header .logo .txt{position: relative; top: 11rem; padding-left: 8px; margin-left: 4rem; color: #121c72; font-size: 16rem; font-weight: 700; font-family: Kyobo;}
+.chp .header .logo .txt::before{content:""; position: absolute; top:0; left:0; width: 1rem; height: 16rem; background-color: #ccc;}
+
+/* 협력병원 lnb */
+.chp nav.lnb>.inr{top: 160rem;}
+.chp nav.lnb>.inr .info{ padding: 30rem 20rem; border-radius: 8rem; background-color: #00084d; color: #fff;}
+.chp nav.lnb>.inr .info .tit{font-size: 22rem; font-weight: 600; line-height: 1.45;}
+.chp nav.lnb>.inr .info .desc{ margin-top: 24rem; padding-top: 16rem; border-top:1px solid #fff;}
+.chp nav.lnb>.inr .info .desc .dlist+.dlist{margin-top: 24rem;}
+.chp nav.lnb>.inr .info .desc .dlist .t{color: #dce7fc; font-size: 16rem; line-height: 1.5;}
+.chp nav.lnb>.inr .info .desc .dlist .d{margin-top: 4rem; color: #fff; font-size: 16rem; font-weight: 600; line-height: 1.5;}
+
+.chp nav.lnb>.inr .mys{margin-top: 17rem;}
+.chp nav.lnb>.inr .mys .time .btn{margin-left: 16rem;}
+.chp nav.lnb>.inr .mys .btn-set{margin-top: 16rem;}
+.chp nav.lnb>.inr .mys .btn-set .btn{width: 100%; min-width: auto;}
+.chp nav.lnb>.inr .mys .pwd{margin-top: 16rem;}
+.chp nav.lnb>.inr .mys .pwd > .link-text{ display: inline-flex; justify-content: center; align-items: center; vertical-align: middle; width: 100%; height: 32rem; min-width: 30rem; padding: 0 14rem; background: #fff; border: 1rem solid #777777; border-radius: 4rem; color: #242424; text-align: center; font: var(--font14); text-decoration: none !important;} /* [D] 2022-06-07 이미 개발된 페이지라 마크업 수정이 난감해서 css 수정 */
+
+
+.chp nav.lnb>.inr .chp-bnr-lst{margin-top: 40rem;}
+.chp nav.lnb>.inr .chp-bnr-lst .lst+.lst{margin-top: 10rem;}
+.chp nav.lnb>.inr .chp-bnr-lst .lk{position: relative; display: block; padding: 20rem 45rem 20rem 65rem; border: 1px solid #e5e5e5; border-radius: 8rem; box-sizing: border-box;}
+.chp nav.lnb>.inr .chp-bnr-lst .lk:before{content:""; display:block; position: absolute; left: 22rem; top: 50%; transform: translateY(-50%); width: 24rem; height: 24rem;}
+.chp nav.lnb>.inr .chp-bnr-lst .lk.a:before{background: url('../img/chp/icon_doc_@2x.png') no-repeat center top; background-size: 24rem;}
+.chp nav.lnb>.inr .chp-bnr-lst .lk.b:before{background: url('../img/chp/icon_home_@2x.png') no-repeat center top; background-size: 24rem;}
+.chp nav.lnb>.inr .chp-bnr-lst .lk:after{content:""; display:block; position: absolute; right: 10rem; top: 50%; transform: translateY(-50%); width: 18rem; height: 18rem; background: url('../img/csc/bg_arr_counsel.png') no-repeat center top; background-size:18rem; }
+.chp nav.lnb>.inr .chp-bnr-lst .lk .tit{font: var(--font15); font-weight: 600; line-height: 1.4; white-space: nowrap;}
+
+.footer.chp{border-top: none; text-align: left; background: #f8f8f8;}
+.footer.chp .inner{ display: block; width: 1134rem; height: auto; margin: 0 auto; padding: 30rem 0 40rem; }
+.footer.chp .inner .logo{width:63rem; height:32rem; background:url(../img/common/logo_kyobo_2x.png) no-repeat left top; background-size:99rem auto; padding-right: 63rem; color: transparent; font-size:1rem; white-space: nowrap; overflow:hidden; display:inline-block; vertical-align:middle; content:''; margin: 0rem 0rem 0rem 0rem}
+.footer.chp .inner .info-corp{margin-top: 16rem; font: var(--font14); line-height: 1.5;}
+.footer.chp .inner .info-addr{margin-top: 18rem; font: var(--font14); line-height:1.5;}
+.footer.chp .inner .info-addr>.addr{display: inline-block; margin-left: 15rem;}
+.footer.chp .inner .info-copy{margin-top: 18rem; font-size: 11rem; font-family: 'kyobo'; font-weight: 600; line-height: 1.6;}
+
+/* 협력병원 공통 */
+.page.chp .page-hdt .desc{font-size: 18rem; font-weight: 500; line-height: 1.44;}
+.page.chp .ut-tbl.a .tblist>tbody>tr>td{padding:5rem 10rem;}
+.page.chp .ut-tbl.a .tblist>tbody>tr.nodata>td{padding:40rem 15rem;}
+
+/* 협력병원 메인 */
+.page.chp.main .ut-gudbox{margin-top:56rem;}
+
+/* 협력병원 공지사항 */
+.page.chp.noti .bview{margin-top: 56rem;}
+
+/* 협력병원 board view */
+.page.chp .bview .btit{display: flex; align-items: start; justify-content: space-between; padding: 20rem 12rem; background-color: #f5f5f5; border-top:1px solid #242424; }
+.page.chp .bview .btit .tit{font-size:16rem; font-weight: 600;  line-height: 1.31;}
+.page.chp .bview .btit .date{color: #555; font-size: 16rem; line-height: 1.31; }
+.page.chp .bview .bdetail{min-height:140px; padding: 16rem 22rem 16rem 16rem; border-bottom: 1px solid #e6e6e6;}
+.page.chp .bview .bdetail .txt{display: block; color: #555; font-size: 16rem; line-height: 1.63;}
+
+/* 협력병원 board list */
+.page.chp.list .ellip{display: block; width:370rem; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.page.chp.list .b-schr{text-align: center;}
+.page.chp.list .b-schr .schr-box{display: inline-flex; padding:25rem 30rem; background-color: #fafafa; border-radius: 8rem; align-items: center; justify-content: center;}
+.page.chp.list .b-schr .select+.input{margin-left: 16rem;}
+.page.chp.list .b-schr .input+.btn{ margin-left: 16rem; width: 80rem; min-width: auto;}
+
+.page.chp.list .btn-box{text-align: right; margin-top: 30rem; }
+.page.chp.list .btn-box .btn{width: 120rem; min-width: auto;}
+
+/* 협력병원 board write */
+.page.chp.wrt .ut-tbl.a{margin-top: 16rem;}
+.page.chp.wrt .ut-tbl .input.w100p{max-width: 100%; }
+.page.chp.wrt .ut-tbl .textarea.a>textarea{font: var(--font15); line-height: 1.6;}
+.page.chp.wrt .ut-tbl .textarea.a .num{bottom: -24rem; left: auto; right: 0; }
+.page.chp.wrt .noti{ font: var(--font13); line-height: 1.85;}
+.page.chp.wrt .wrt-file>li+li{margin-top:8rem;}
+.page.chp.wrt .ui-add-file{display: flex; justify-content: space-between; align-self: center;}
+.page.chp.wrt .ui-add-file .flist{display: flex; margin-right: 30rem;}
+.page.chp.wrt .ui-add-file .flist .file-name{display: inline-block; margin-right: 16rem; word-break: keep-all; line-height: 1.71;}
+.page.chp.wrt .ui-add-file .flist .checkbox>.txt{color: #242424; font: var(--font14); line-height: 1.71;}
+.page.chp.wrt .ui-add-file .flist .btx{border: 1rem solid #777777; background: #ffffff; color: #242424; height: 32rem; overflow: hidden; padding: 0rem 10rem 0rem 10rem; display: inline-flex; justify-content: center; align-items: center; vertical-align: middle; cursor: pointer; white-space: nowrap; border-radius: 4rem; line-height: 1.1; font: var(--font14);}
+.page.chp.wrt .ui-add-file .flist .loc{display:block; width:383rem; margin-left: 4rem; padding: 4.5rem 0 3.5rem 12rem; border: 1px solid #ddd; border-radius: 4rem; color:#8e9094; font: var(--font15); line-height: 1.6;}
+.page.chp.wrt .ui-add-file .btn{width:68rem; min-width: auto;}
+.page.chp.wrt .ui-add-file .btn+.btn{margin-left:10rem;}
+.page.chp.wrt .btn-list{margin-top:30rem;}
+.page.chp.wrt .btn-list .btn{width:120rem; min-width: auto;}
+.page.chp.wrt .btn-list+.ut-tbl{margin-top:40rem;}
+.page.chp.wrt .txt-r{text-align: right;}
+
+/* 협력병원 패스워드 변경 */
+.page.chp.pwd .btn-set {margin-top: 30rem;}
+.page.chp.pwd .btn-set .btn{width: 260rem; min-width: auto;}
+
+/* 협력병원 패스워드 변경 완료 */
+.page.chp.pwd .complate-msg{background-color: #f5f5f5; border-radius: 8rem;}
+
+/* 협력병원 진단서 입력*/
+.page.chp .diag-form{}
+.page.chp .diag-form {padding:20rem 30rem; background-color: #f5f5f5; border-radius: 8rem;}
+.page.chp .diag-form .itm{display: flex; align-items: center;}
+.page.chp .diag-form .itm+.itm{margin-top: 16rem;}
+.page.chp .diag-form .itm .t{padding-right: 16rem; font-size: 16rem; font-weight: 600; line-height: 1.31;}
+
+
+/* 협력병원 진단서 확인, 수정 */
+.page.chp.form .hd-tit3{margin-top: 70rem; margin-bottom: 20rem;}
+.page.chp.form .ut-dcard.b{margin-bottom: 19rem;}
+.page.chp.form .btn-set{margin-top: 30rem;}
+
+.page.chp.form .wmd{width: 150rem;}
+.page.chp.form .ut-tbl .input.a.wmd{width: 150rem; max-width: 150rem;}
+.page.chp.form .wmd>input{text-align: right;}
+.page.chp.form .unit{display: inline-block; margin-left:8rem; }
+.page.chp.form .unit+.input.a{margin-left:32rem; }
+.page.chp.form .unit+.txt{margin-left:32rem; }
+.page.chp.form .slash{display: inline-block; margin:0 16rem; }
+.page.chp.form .ut-tbl.tbl-1{margin-top: 19rem;}
+.page.chp.form .ut-tbl.tbl-2{margin-top: 40rem;}
+.page.chp.form .ut-tbl.tbl-3{margin-top: 12rem;}
+
+.page.chp.form .ut-tbl.a .tbform .qradio{padding-right: 16rem;}
+.page.chp.form .ut-tbl.a .td{background-color: #f9f9f9; border-left: #e9ebef solid 1rem; border-right: #e9ebef solid 1rem;}
+.page.chp.form .ut-tbl.a .bl{border-left: #e9ebef solid 1rem;}
+
+
+/* 진단서 조회 */
+.page.chp.sch .sch-box{display: flex; align-items: end; margin-bottom: 20rem; padding: 30rem; background-color: #fafafa; border-radius: 8rem;}
+.page.chp.sch .sch-box .t{ height:50rem; margin-right: 16rem; font-size: 16rem; font-weight: 600; line-height: 50rem;}
+.page.chp.sch .sch-box .d .r{margin-bottom: 16rem;}
+.page.chp.sch .sch-box .d .rcs>.input{width: 257rem; min-width: auto;}
+.page.chp.sch .btn-set{margin-bottom: 53rem;}
+
+
+
+

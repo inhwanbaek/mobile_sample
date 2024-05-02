@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"보험계약대출 안내장"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd drl intro list" id="container">
+	
+		<!-- 본문 영영 -->
+		<div class="contents" id="contents">
+
+			<h2 class="hd-tit2">고객님이 이용하신<br>보험계약대출 처리내역입니다. </h2><!-- [D] 2022-06-09 타이틀 수정 -->
+			
+			<div class="lomng-hinfo">
+				<div class="ut-dcard b mltype">
+					<div class="dls">
+						<div class="dl">
+							<div class="dt">총 대출잔액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">100,158,951</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">총 대출건수</div>
+							<div class="dd">3건</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="tit">꿈을이어주는(무)교보연금보험Ⅱ(생활보장형)</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">보험대출처리금액 </div><!-- [D] 2022-06-09 항목명 수정 -->
+							<div class="dd">
+								<span class="prc">
+									<strong class="p blue">170,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn" style="display: none;">
+					<!-- [D] 2022-06-09 항목명 전체 수정 -->
+					<ul class="dlt">
+						<!-- [D] 2022-07-07 위치이동 -->
+						<li>
+							<div class="dl">
+								<div class="dt">증서번호</div>
+								<div class="dd">1584258***225</div>
+							</div>
+						</li>
+						<!--// [D] 2022-07-07 위치이동 -->
+						<li>
+							<div class="dl">
+								<div class="dt">이자합계</div>
+								<div class="dd">1,000원</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">대출이자율</div>
+								<div class="dd">4.49 %</div>
+							</div>
+							<div class="dl sub">
+								<div class="dt">(예정(공시)이율+가산금리)</div>
+								<div class="dd">(2.5%+1.99%)</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">금리적용방식</div>
+								<div class="dd">고정형</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">만기일</div>
+								<div class="dd">보험만기일</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">대출상환방법</div>
+								<div class="dd">만기일시상환, 정액분할상환</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">대출잔액</div>
+								<div class="dd">1,000,000원</div>
+							</div>
+						</li>
+					</ul>
+					<!-- // [D] 2022-06-09 항목명 전체 수정 -->
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="tit">꿈을이어주는(무)교보연금보험Ⅱ(생활보장형)</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">보험대출처리금액</div><!-- [D] 2022-06-09 항목명 수정 -->
+							<div class="dd">
+								<span class="prc">
+									<strong class="p blue">158,951</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn" style="display: none;">
+					<!-- [D] 2022-06-09 항목명 전체 수정 -->
+					<ul class="dlt">
+						<!-- [D] 2022-07-07 위치이동 -->
+						<li>
+							<div class="dl">
+								<div class="dt">증서번호</div>
+								<div class="dd">1584258***225</div>
+							</div>
+						</li>
+						<!--// [D] 2022-07-07 위치이동 -->
+						<li>
+							<div class="dl">
+								<div class="dt">이자합계</div>
+								<div class="dd">1,000원</div>
+							</div>
+						</li>
+					
+						<li>
+							<div class="dl">
+								<div class="dt">대출이자율</div>
+								<div class="dd">4.49 %</div>
+							</div>
+							<div class="dl sub">
+								<div class="dt">(예정(공시)이율+가산금리)</div>
+								<div class="dd">(2.5%+1.99%)</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">금리적용방식</div>
+								<div class="dd">고정형</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">만기일</div>
+								<div class="dd">보험만기일</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">대출상환방법</div>
+								<div class="dd">만기일시상환, 정액분할상환</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">대출잔액</div>
+								<div class="dd">1,000,000원</div>
+							</div>
+						</li>
+					</ul>
+					<!-- // [D] 2022-02-24 항목명 전체 수정 -->
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+
+
+			<div class="ut-more">
+				<button type="button" class="btn-more">
+					<span class="tnt">
+						<em class="tm">더보기</em>
+						<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+					</span>
+				</button>
+			</div>
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog open">안내문</button>
+				<div class="gctn open" data-tog-cls="ctn" style="display: block;">
+					<ul class="bullet a glst">
+						<li>대출금리는 오늘(이자계산 기준일) 현재 기준으로 적용된 정상이자 금리입니다.</li>
+						<li>변액보험계약대출 2영업일 지급 상품은 당일 대출 상환을 하더라도 당일 대출 신청을 할 수 없습니다.</li>
+						<li>보험계약대출을 받은 날 원금을 바로 상환할 경 우 하루치 이자가 부과됩니다.</li>
+						<li>2005년 4월 1일 이후 가입 계약 중 해지(실효)된 계약은 보험계약대출 원금상환을 할 수 없습니다.</li>
+						<li>미납된 이자에는 해당 계약 보험계약대출 금리를 적용한 가산이자가 부과됩니다.</li>
+						<li>보험계약대출 원리금 청구 중인 계약으로 보험계약대출을 받을 경우 원리금이 이중출금될 수 있습니다. 이중출금된 이자는 2일(영업일 기준) 안에 다시 입금해 드립니다.</li>
+						<li>보험계약대출 실행 기준이 변경되면 원리금 상환 후 대출가능금액이 변동될 수 있습니다.</li>
+						<li>보험계약대출원리금 상환 시 「전자금융거래법」 제15조(추심이체의 출금동의)에 따라 출금에 대해 동의하신 건만 상환 처리함을 안내 드립니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

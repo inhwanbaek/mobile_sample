@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-usermod" id="pop-usermod">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">기본정보변경</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<section class="sect info">
+						<div class="hdts">
+							<div class="tit">고객정보</div>
+							<div class="txt"><em class="ast">*</em> 은 필수항목입니다.</div>
+						</div>
+
+						<div class="ut-dtds b pinf">
+							<ul class="dlist">
+								<li>
+									<div class="dt">성명</div>
+									<div class="dd">김교보</div>
+								</li>
+								<li>
+									<div class="dt">주민등록번호</div>
+									<div class="dd">720101-1******</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ut-form a utfm">
+							<ul class="form">
+								<li class="adr">
+									<div class="ut-addrs addrs">
+										<span class="input a adr1">
+											<label class="lb" for="adr_id4" role="text">자택주소<em class="ast">는 필수항목입니다</em></label>
+											<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+											<input id="adr_id4" type="text" placeholder="주소를 입력해주세요" readonly>
+										</span>
+										<span class="input a adr2"><label class="lb" for="adr_id5">주소</label><input id="adr_id5" type="text" placeholder="나머지 주소를 입력해주세요"></span>
+									</div>
+								</li>
+								<li class="tel">
+									<span class="input a"><label class="lb" for="tel_1">자택 전화번호</label><input id="tel_1" type="tel" pattern="\d*" placeholder="'-'없이 입력"></span>
+								</li>
+								<li class="tel">
+									<span class="input a"><label class="lb" for="tel_2">직장 전화번호</label><input id="tel_2" type="tel" pattern="\d*" placeholder="'-'없이 입력"></span>
+								</li>
+								<li class="mob">
+									<div class="ut-phone">
+										<span class="select tcom">
+											<label for="tcom_0" class="lb">통신사</label>
+											<select id="tcom_0">
+												<option>SKT</option>
+												<option>KT</option>
+												<option>LGU+</option>
+												<option>SKT알뜰폰</option>
+												<option>KT알뜰폰</option>
+												<option>LGU+알뜰폰</option>
+											</select>
+										</span>
+										<span class="input a tnum">
+											<label for="mob_2" class="lb">휴대전화번호입력 <em class="ast">는 필수항목입니다</em></label>
+											<input id="mob_2" type="number" pattern="\d*" placeholder="[-] 없이 입력해주세요">
+										</span>
+									</div>
+								</li>
+								<li class="sms">
+									<div class="gtit">문자안내서비스</div>
+									<div class="gtxt">문자안내서비스를 신청하시면 입출금거래내역 등 금융거래정보를 휴대폰 문자를 통해 실시간으로 확인하실 수 있습니다.</div>
+									<div class="rdos">
+										<label class="radio"><input type="radio" name="radio1"><span class="txt">동의함</span></label>
+										<label class="radio"><input type="radio" name="radio1"><span class="txt">동의하지 않음</span></label>
+									</div>
+								</li>
+								<li class="email">
+									<div class="ut-email email">
+										<div class="enam">
+											<span class="input a emids"><label class="lb" for="emids_0">이메일<i class="blind">아이디</i></label><input id="emids_0" type="email" placeholder="abcd"></span>
+											<i class="at">@</i>
+											<span class="input a emcom"><label class="lb" for="emcom_id0"><i class="blind">이메일도메인</i></label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+										</div>
+										<ul class="ebts">
+											<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+											<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+											<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="sect inco">
+						<div class="hdts">
+							<div class="tit">소득정보</div>
+						</div>
+						<div class="ut-form a utfm">
+							<ul class="form">
+								<li class="incat">
+									<div class="hdt">
+										<h4 class="hd-tit5">소득구분 <em class="ast">필수항목</em></h4>
+										<!-- 소득구분 <em class="ast">는 필수항목입니다</em> -->
+									</div>
+									<div class="rdos">
+										<label class="radio"><input type="radio" name="incom_1"><span class="txt">근로소득</span></label>
+										<label class="radio"><input type="radio" name="incom_1"><span class="txt">사업소득</span></label>
+										<label class="radio"><input type="radio" name="incom_1"><span class="txt">기타</span></label>
+									</div>
+								</li>
+								<li class="job">
+									<span class="select a">
+										<label class="lb" for="job_1" role="text">직업 <em class="ast">는 필수항목입니다</em></label>
+										<select id="job_1" name="job_1">
+											<option>선택</option>
+										</select>
+									</span>
+								</li>
+								<li class="jnm">
+									<span class="input a">
+										<label class="lb" for="job_2" role="text">직장명 <em class="ast">는 필수항목입니다</em></label>
+										<input id="job_2" type="text" placeholder="내용을 입력하세요.">
+										<span class="ibts"><button type="button" class="btn sm b sch">직장명 검색</button></span>
+									</span>
+								</li>
+								<li class="adr">
+									<div class="ut-addrs addrs">
+										<span class="input a adr1">
+											<label class="lb" for="adr_id1" role="text">자택주소<em class="ast">*</em></label>
+											<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+											<input id="adr_id1" type="text" placeholder="주소를 입력해주세요" readonly>
+										</span>
+										<span class="input a adr2"><label class="lb" for="adr_id2">주소</label><input id="adr_id2" type="text" placeholder="나머지 주소를 입력해주세요"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="sect post">
+						<div class="hdts">
+							<div class="tit">안내장발송</div>
+						</div>
+						<div class="ut-form a utfm">
+							<ul class="form">
+								<li class="pst">
+									<div class="hdt">
+										<h4 class="hd-tit5">우편물 수령지 <em class="ast">필수항목</em></h4>
+										<!-- 우편물 수령지 <em class="ast">는 필수항목입니다</em> -->
+									</div>
+									<div class="rdos">
+										<label class="radio"><input type="radio" name="post_1"><span class="txt">자택</span></label>
+										<label class="radio"><input type="radio" name="post_1"><span class="txt">직장</span></label>
+									</div>
+								</li>
+								<li class="ems">
+									<div class="hdt">
+										<h4 class="hd-tit5">이메일 수신 <em class="ast">필수항목</em></h4>
+										<!-- 이메일 수신 <em class="ast">는 필수항목입니다</em> -->
+									</div>
+									<div class="rdos">
+										<label class="radio"><input type="radio" name="inward_1"><span class="txt">수신</span></label>
+										<label class="radio"><input type="radio" name="inward_1"><span class="txt">미수신</span></label>
+									</div>
+								</li>
+							</ul>
+							<ul class="bullet b gdl">
+								<li>고객님이 선택하신 수신처로 대출금 지급 및 각종 대출관련 안내문이 발송됩니다.</li>
+							</ul>
+						</div>
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-usermod');">취소</button>
+					<button type="button" class="btn a rd lg">변경하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-usermod');
+	</script>
+
+</div>
+</body>
+</html>

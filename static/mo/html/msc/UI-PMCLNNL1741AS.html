@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"아파트담보대출 진행상태"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan inq prapt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="loiq-tbox">
+				<h2 class="hd-tit3">000 님이 신청하신<br> 아파트담보대출 <i class="line">진행상태</i>입니다.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="loiq-ttab">
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">진행상태</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">추가 서류제출</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">세대원 동의현황</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="loiq-tpnl">
+				<div class="msect">
+					<!-- <h3 class="hd-tit4">대출 진행상태</h3> --><!-- [D] 2022-04-07 삭제 -->
+					<div class="ut-steps c steps">
+						<ol class="cl">
+							<!-- [D] 2022-05-26 삭제-->
+							<!-- <li>
+								<em class="sn">1</em><span class="blind">단계</span>
+								<i class="tt">기본정보입력 완료</i>
+							</li> -->
+							<li class="active">
+								<em class="sn">1</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">서류제출 전</i>
+							</li>
+							<li>
+								<em class="sn">2</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">세대원 동의</i>
+							</li>
+							<li>
+								<em class="sn">3</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">융자센터 확인</i>
+							</li>
+							<li>
+								<em class="sn">4</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">대출약정</i>
+							</li>
+							<li>
+								<em class="sn">5</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">대출심사</i>
+							</li>
+							<li>
+								<em class="sn">6</em><span class="blind">단계</span><!-- [D] 2022-05-26 단계수정-->
+								<i class="tt">대출금 지급</i>
+							</li>
+						</ol>
+					</div>
+				</div>
+
+				<!-- [D] 2022-05-26 삭제-->
+				<!-- CASE : step2 (서류제출 요청 전일 경우)-->
+				<!-- <div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>고객님은 현재 융자센터 대출상담까지 진행하셨습니다.</li>
+						<li>아래 버튼을 눌러 서류를 제출해 주세요.</li>
+					</ul>
+					<div class="btn-set">
+						<button type="button" class="btn md">아파트담보대출 서류제출</button>
+					</div>
+				</div> -->
+
+				<!-- [D] 2022-05-26 삭제-->
+				<!-- CASE : step2 (서류제출 요청한 경우) -->
+				<!-- <div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>고객님은 현재 기본정보 입력 완료 후 대출가능금액을 확인하신 상태입니다.</li>
+						<li>융자센터에서 확인 후, 서류 제출을 위한 안내를 드릴 예정입니다.</li>
+					</ul>
+				</div> -->
+
+				<!-- CASE : step3 -->
+				<div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>현재 세대원 동의가 진행 중입니다. </li>
+						<li>세대원 동의는 동의를 요청한 다음 날까지 모두 완료되어야 합니다.</li><!-- [D] 2022-04-07 문구수정 -->
+						<li>모든 세대원이 동의를 완료하면 제출서류 확인 후 대출심사 신청 안내를 해 드릴 예정입니다.</li><!-- [D] 2022-04-07 문구수정 -->
+					</ul>
+				</div>
+
+				<!-- CASE : step4 -->
+				<div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>세대원 동의가 완료되었습니다.</li>
+						<li>제출서류와 세대원 동의 현황을 융자센터에서 확인 중입니다. </li>
+						<li>제출서류 확인 후 대출심사 신청 안내를 해 드릴 예정입니다.</li><!-- [D] 2022-04-07 문구수정 -->
+					</ul>
+				</div>
+
+				<!-- CASE : step5 -->
+				<div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>제출서류 및 세대원 동의 확인이 완료되었습니다.</li><!-- [D] 2022-04-07 문구수정 -->
+						<li>융자센터에서 전달한 URL 또는 아래 버튼을 눌러 대출약정을 진행해 주세요. </li><!-- [D] 2022-04-07 문구수정 -->
+					</ul>
+					<ul class="bullet b">
+						<li>공동소유자가 있을 경우 공동소유자에게 전달된 대출약정이 먼저 진행되어야 합니다.</li>
+					</ul>
+					<div class="btn-set">
+						<button type="button" class="btn md">대출약정 바로가기</button><!-- [D] 2022-04-07 문구수정 -->
+					</div>
+				</div>
+
+				<!-- CASE : step6 -->
+				<div class="loiq-gudbox">
+					<ul class="bullet a">
+						<li>현재 대출 심사 중입니다.</li>
+						<li>융자센터에서 안내받은 다음 날까지 전자등기 신청을 완료하셔야 최종 심사가 진행됩니다.</li><!-- [D] 2022-04-07 문구수정 -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

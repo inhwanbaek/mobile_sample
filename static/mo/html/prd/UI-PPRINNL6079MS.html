@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back,is-gnb,is-fav","title":"보험"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd detail" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<section class="sect htop">
+				<div class="tbtn">
+					<div class="bdg"></div>
+					<div class="bts">
+						<button type="button" class="bt fsize" data-ui-fsize="btn"><i class="blind">글자크기</i></button>
+						<button type="button" class="bt share"><i class="blind">공유하기</i></button>
+						<button type="button" class="bt fav"><i class="blind">관심상품저장</i></button>
+					</div>
+				</div>
+				<div class="hdt">
+					<div class="tit">(무)교보뉴플랜연금보험</div>
+					<div class="bts"><button type="button" class="bt-tog" onclick="ui.popup.open('pop-pselect');"><i class="blind">버튼</i></button></div>
+				</div>
+			</section>
+			
+			<section class="sect tab" data-ui-fsize="ctn">
+
+				
+				<div class="top-sect">
+					<div class="tit">
+						<div class="t1">가입은 자유롭게, 연금은 내게 맞게! </div>
+						<div class="ut-slide-play product">
+							<div class="swiper-container swiper" data-slide-id="banner_1">
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide">
+										<a href="javascript:;" class="box">
+											<div class="t2">나만의 맞춤 연금 보험</div>
+											<div class="t3">노후자금마련 계획에 따라 자유롭게<br>보험료를 설계할 수 있어요.</div>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:;" class="box">
+											<div class="t2">유연한 자금운용</div>
+											<div class="t3">중도인출, 추가납입을 통해<br>목돈을 마련할 수 있어요. </div>
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="javascript:;" class="box">
+											<div class="t2">다양한 방식으로 연금 수령</div>
+											<div class="t3">지급개시를 앞당길 수도 뒤로 미룰 수도 있어요.</div>
+										</a>
+									</li>
+								</ul>
+								<div class="control">
+									<div class="dots"></div>
+									<div class="plys"><button type="button" class="bt play">정지</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-area">
+						<dl class="insurance">
+							<dt>월 보험료<br><span>(주계약기준)</span></dt><!-- 22-08-02 결함 수정 -->
+							<dd>
+								<div class="t1"><span class="blue">500,000</span>원</div>
+								<div class="t2">40세 남자, 10년납 기준</div>
+							</dd>
+						</dl>
+						<div class="btn-set vt">
+							<label class="btn btn-attach ico-calculator md">
+								<em class="btx">내 보험료 확인하기</em>
+								<input class="file" type="file" accept="image/*; capture=camera">
+							</label>							
+						</div>
+						<dl class="ensure">
+							<dt>연금수령예상액</dt>
+							<dd>
+								<ul>
+									<li>매월 33만원씩 평생 지급(10회 보증)<br>(65세 연금지급개시,<br>현재공시이율(2.27%) 가정)</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="dw-btn">
+						<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>  <!-- [웹접근성] 1st 수정 -->
+					</div>
+				</div>
+
+				<!-- 탭 -->
+				<div class="ut-tabs c lg">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이런 점이 좋아요</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이럴 때 필요해요</a></li>
+					</ul>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 이런 점이 좋아요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-area active">
+
+					<div class="cont-sec sec3 sec4">
+						<div class="tit">교보 ‘뉴플랜연금보험’의 장점</div>
+						<div class="txt">가입은 자유롭게, 연금은 내게 맞게!<br>상황에 맞춰 노후 준비를 할 수 있어요.</div>
+						
+						<ul class="box-gray-list flex">
+							<li>
+								<div class="t-m12">짧은 기간 효과적인 준비</div>
+								<div class="t-b16">통합형<br>(일부일시납)</div>
+							</li>
+							<li>
+								<div class="t-m12">장기간 매월 꾸준한 준비</div>
+								<div class="t-b16">적립형<br>(월납)</div>
+							</li>
+						</ul>
+
+						<div class="img-cont">
+							<img src="../../img/prd/img_prod79_1@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								상황에 맞게 일시납+월납 또는 월납 선택 일시납 적립액(일시납+월납) 조기연금지금, 연금지급개시, 연금지급연기
+							</div>
+						</div>
+
+						<dl class="img-account">
+							<dt>조기 연금 지급</dt>
+							<dd>예상치 못한 조기퇴직 등으로 소득을 상실했을 경우 연금지급개시를 앞당길 수 있어요.</dd>
+							<dt>연금 지급 연기</dt>
+							<dd>정년 연장 등으로 연금이 필요하지 않은 경우, 연금을 뒤로 미룰 수 있어요.<br>(최대 10년까지 가능)</dd>
+						</dl>
+
+						<!-- 22-07-25 삭제 <div class="img-cont-sm"><img src="../../img/prd/img_prod79_2@2x.png" alt="종신·상속·확정기간 연금"></div> -->
+					</div>
+
+				</div>
+				<!-- // 이런 점이 좋아요 -->
+
+				<!-- 이럴 때 필요해요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-area ">
+					<div class="cont-sec sec3">
+						<div class="tit">왜 ‘ 연금보험’이 필요할까요?</div>
+						<div class="txt">노후 준비에 너무 늦거나 너무 이른 나이는 없어요. 여유로운 노후를 미리 준비해 보세요!</div>
+						<div class="s-tit">소득 크레바스란?</div>
+						<div class="balloon-txt-bg">
+							<div>직장에서 퇴직한 후 국민연금을 받기 전까지<br>소득이 없는 시기를 말합니다.</div>
+						</div>						
+						
+						<div class="img-cont">
+							<img src="../../img/prd/img_prod79_3@2x.png" alt="은퇴시점에서 국민연금 개시 시점까지 연금 없이 사는 기간 평균 12.5년">
+							<div>출처: 「생애금융보고서」, 하나금융그룹 100년행복연구센터, 2020</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 이럴 때 필요해요 -->
+				<div class="compliance">준법감시인확인필 1-2204-26 디지털채널통합TF(2022.04.13)</div><!-- 22-08-08 준법 추가 -->
+
+				<div class="btn-set vt">
+					<button type="button" class="btn md">가입 전 반드시 알아야 할 사항</button>
+					<button type="button" class="btn md ico-down ico-r">보험약관</button>
+					<button type="button" class="btn md ico-elink ico-r">가격공시실</button>
+				</div>
+
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">예금자보호 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>내용</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="img-banner-wrap color" id="ball_0">
+					<span data-ui-balloon="left,top" aria-describedby="ball_0">위 보험상품은 추가 혜택을 드려요.</span>
+					<div class="img-banner blue">교보건강코칭<br>서비스</div>
+					<div class="img-banner green">교보헬스케어<br>서비스</div>
+				</div>
+				<ul class="ut-bnr-lst img">
+					<li>
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">보험료 이렇게 따라하세요</strong>
+							<span class="txt">생년월일만 입력하면! 바로~~~</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- [D] 2022-08-12 배너추가 -->
+				<div class="banner-box bt">
+					<div class="ut-slide-play type-b">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //end [D] 2022-08-12 배너추가 -->
+
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set">
+							<button type="button" class="btn lg rd a">상담신청</button>
+						</div>
+					</div>
+				</nav>
+				
+
+			</section>
+			
+
+			
+		</div>
+
+		
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<article class="pop-layer c pop-pselect" id="pop-pselect">
+		<div class="pbd">
+
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit blind">상품선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="plist">
+						<li>
+							<button type="button"  class="box">
+								<div class="bdg"><em class="bd">다이렉트</em></div>
+								<div class="bt"> (무)교보마이핏Fit 건강보험 </div>
+							</button>
+						</li>
+						<li>
+							<button type="button"  class="box">
+								<div class="bdg"><em class="bd">다이렉트</em></div>
+								<div class="bt"> (무) 교보실속있는 New건강플러스 종신보험(보증비용부과형) </div>
+							</button>
+						</li>
+						<li>
+							<button type="button"  class="box">
+								<!-- <div class="bdg"><em class="bd">다이렉트</em></div> -->
+								<div class="bt"> (무) 교보실속있는 New건강플러스 종신보험(보증비용부과형) </div>
+							</button>
+						</li>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

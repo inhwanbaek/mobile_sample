@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"금융Q&amp;A"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc qna detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<section class="board-view">
+				<div class="tit-area">
+					<div class="perform">
+						<button data-ui-fsize="btn" type="button" class="btn-fsize"><i class="blind">글자크기 조정하기</i></button>
+						<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+					</div>
+					<h2 class="board-tit">보험 종류와 보험사 차이 비교 (생명보험 vs 손해보험 vs 제3보험)</h2>
+					<div class="info">
+						<div class="add">
+							<em class="date">2020.01.01</em>
+							<em class="view">조회수:<span>100</span></em>
+						</div>
+					</div>
+				</div>
+				<div class="font-size">
+					<div class="cnt-area" data-ui-fsize="ctn">
+						<div class="txt-area">
+							<p class="txt">암벽등반을 해본 적이 있으신가요? 혹시 발을 헛디뎌 떨어지지는 않을까, 생각보다 너무 높지는 않을까, 오르기 전에는 알 수 없는 것들로 인해 두려움이 일곤 합니다. 이럴 때 두려움을 덜어주는 것은 추상적인 응원보다는 물리적인 안전 장비입니다. 정상에 단단하게 매여 있는 안전 로프의 존재를 떠올리며 더 위로 향할 용기를 얻는 거죠. 우리의 삶도 마찬가지입니다. 불확실한 하루 앞에 놓인 우리는 확실한 ‘보험’의 존재를 떠올리며 용기를 내곤 합니다. 그래서 우리는 ‘보험’에 가입합니다. <br><br>
+
+								건강보험단에 따르면 우리나라 국민 10명 중 9명이 민간보험에 가입했다고 합니다. 그만큼 주변에 가입하지 않은 사람을 찾아보기 힘들 정도로 보험은 일상적인 것이 되었습니다. 그렇다면 너무도 익숙한 보험에 대해 우리는 잘 알고 있을까요? 익숙한 것에는 쉽게 무심해집니다.  동기가 가입하니까, 선배가 추천하니까, 잘은 모르지만 가입하곤 합니다. 그러나 동기도, 선배도 나와는 다른 삶을 살아갑니다. 나만의 특수한 상황과 복잡한 여건을 고려하여 꼭 맞는 보험을 선택해야 할 사람은 바로 나 자신입니다. 그렇기 때문에 보험에 대해 충분히 알아본 후 가입하는 것이 중요합니다. </p>
+							<p class="img2-1">보험은 불확실한 미래를 위한 물리적인 안정 장치</p>
+							<p>그래서 오늘은 결정적인 순간에 우리를 단단하게 지탱해 줄 보험에 대해 알아보려고 합니다. 민간 보험의 종류(생명 보험, 손해 보험, 제3보험)와 특징, 보험 회사의 종류에 대해 살펴본 후 보험사와 보험을 종류별로 비교해 보도록 하겠습니다.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="font-size">
+				<div data-ui-fsize="ctn">
+					<section>
+						<div class="table-area">
+							<p class="bg-chk"><span>바쁜 당신을 위한 핵심체크</span></p>
+							<h3 class="hd-tit3">생명보험 VS 손해보험 VS 제3보험 차이</h3>
+							<div class="ut-tbl a ty01">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">생명보험 VS 손해보험 VS 제3보험 차이 </span><span class="cap">구분(보험대상, 보험금, 판매, 대표적인 상품), 생명보험, 손해보험, 제3보험 으로 이루어진 표</span></caption>
+									<colgroup>
+										<col style="width:22%">
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">생명보험</th>
+											<th scope="col">손해보험</th>
+											<th scope="col">제3보험</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보험대상</th>
+											<td>인간의 생명</td>
+											<td>재산상의 <br>
+												손해</td>
+											<td>상해, 질병, 간병 등</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금 <br>
+												지급 방식</th>
+											<td>정액 보상</td>
+											<td>실손 보상</td>
+											<td>정액 보상
+												또는
+												실손 보상</td>
+										</tr>
+										<tr>
+											<th scope="row">판매 <br>
+												보험사</th>
+											<td>생명 보험사</td>
+											<td>손해 보험사</td>
+											<td>생명 보험사 &amp; 손해
+												보험사</td>
+										</tr>
+										<tr>
+											<th scope="row">대표적인 <br>
+												상품</th>
+											<td>사망보험, 연금보험, 저축보험 등</td>
+											<td>화재보험, 자동차보험, 기술보험 등</td>
+											<td>상해보험, 질병보험, 간병 보험 등</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit3"><em class="q">Q</em>생명 보험이란?</h4>
+							<p>
+								생명 보험이란 이름에서 알 수 있듯이 사람의 ‘생명’과 관련된 문제를 보장하는 보험입니다. 인간은 유한한 존재이기 때문에 질병과 사망의 위험으로부터 자유로울 수 없습니다. 가장 큰 문제는 이러한 위험이 언제 현실이 될지 알 수 없습니다.
+							</p>
+							<p class="img2-2">생명 보험이란 사람의 ‘생명’과 관련된 문제를 보장하는 보험</p>
+							<p>따라서 우리는 건강 상의 위험에 대비하여 생명 보험에 가입합니다. 이와 더불어 생명 보험은 생존의 문제 역시 보장합니다. 생명이 오래도록 지속되는 것 또한 문제를 발생시키는데요, 부양가족 혹은 경제력을 상실한 본인에게 경제적인 부담을 지우기 때문입니다. 이렇게 삶을 지속하며 맞닥뜨리는 경제적인 어려움에 대비하여 생명 보험을 가입하기도 합니다. <br><br>
+								이렇듯 생명 보험은 인간의 생명을 다룹니다. 인간의 생명은 경중을 따질 수 없는 가치를 지니고 있습니다. 따라서 보험사고가 발생했을 때 보험금이 산정되는 것이 아니라, 보험사고의 종류에 따라 지급되는 보험금이 미리 정해져 있는 ‘정액보상’의 형태를 띱니다. <br><br>
+								생명 보험의 종류는 보험금 납부와 지급 방식에 따라 대표적으로, 피보험자의 사망을 보장하는 사망보험(종신보험, 정기보험), 연금 지급 시기에 맞춰 연금액이 지급되는 연금보험, 적금과 유사한 형태로 목돈 마련에 적합한 저축보험으로 나눌 수 있습니다. 
+							</p>
+						</div>
+						<div class="blue-box">
+							<h5 class="hd-tit4">즉, 생명 보험은</h5>
+							<ul class="bullet a">
+								<li>사람의 생명 과 관련된 위험을 보장하는 보험입니다.
+									<ul class="bullet c">
+										<li>건강상의 위험(질병, 생사)을 보장합니다.</li>
+										<li>생존의 문제(노후, 자녀 양육비)를 다룹니다.</li>
+									</ul>
+								</li>
+								<li>보험사고의 종류에 따라 지급되는 보험금이 미리 정해져 있는 ‘정액보상’의 형태를 띱니다.</li>
+								<li>사망보험(정기보험, 종신보험), 연금보험, 저축보험 등이 대표적입니다.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div class="txt-area">
+							<h4 class="hd-tit3"><em class="q">Q</em>손해 보험이란?</h4>
+							<p>
+								손해 보험이란 사람의 ‘재산/재물’과 관련된 손해를 보장하는 보험입니다. 사고로 인해 부동산, 자동차, 휴대폰 등의 재산 상 손해가 발생했을 때 보험금이 지급됩니다.
+								<br><br>
+								생명 보험과 달리 손해 보험은 손해를 본 만큼 보험금이 지급되는 ‘실손보상’이 이루어집니다. 따라서 피해의 규모를 파악하는 손해사정사가 필요합니다. 
+							</p>
+							<p class="img2-3">손해보험이란 사람의 ‘재산/재물’과 관련된 손해를 보장하는 보험</p>
+							<p>손해 보험의 종류는 사고의 종류에 따라 나뉩니다. 대표적으로, 화재로 인해 입은 재물에 대한 손해를 보장하는 화재보험, 자동차에 입은 손해를 보장하는 자동차보험, 건설 또는 조립 공사 중 그 목적물에 생긴 손해를 보장하는 기술보험이 있습니다.</p>
+						</div>
+						<div class="blue-box">
+							<h5 class="hd-tit4">즉, 손해보험은</h5>
+							<ul class="bullet a">
+								<li>피보험자의 재산/재물과 관련된 손해를 보장하는 보험입니다.</li>
+								<li>생명 보험과 달리 그때그때 발생한 손해만큼 보험금이 지급되는 ‘실손보상’이 이루어집니다.</li>
+								<li>화재보험, 자동차보험, 기술보험 등이 대표적입니다.</li>
+							</ul>
+						</div>
+						<div class="txt-area">
+							<h4 class="hd-tit3"><em class="q">Q</em>제3보험이란?</h4>
+							<p>제3보험은 생명 보험과 손해 보험의 특성을 모두 가지고 있는 보험입니다. 최근 생명 보험과 손해 보험의 경계가 모호해지면서 그 범위가 넓어지고 있습니다.
+							</p>
+							<p class="img2-4">보험의 분류 - 손해보험, 생명보험, 그리고 제3보험</p>
+							<p>대표적으로, 사고로 입은 신체적인 상해에 대한 치료를 보장하는 상해 보험, 질병으로 발생하는 비용을 보장하는 질병 보험, 타인의 간병을 필요로 하는 상태에 처했을 때 이에 대한 비용을 보장하는 간병 보험이 있습니다. </p>
+						</div>
+						<div class="txt-area">
+							<h3 class="hd-tit3">보험 회사의 종류</h3>
+							<p>
+								앞서, 보험의 구체적인 종류와 특성에 대해 알아보았습니다. 이를 바탕으로 나에게 필요했던 보험 상품을 발견했다면, 어떤 보험 회사에서 필요한 보험 상품을 가입할 수 있는지 알아보겠습니다. <br><br>
+								보험 회사는 크게 2가지 종류로 나뉩니다. ‘생명보험사’와 ‘손해보험사’인데요, ‘생명’이라는 단어로 어렵지 않게 두 회사를 구별할 수 있습니다. ‘생명’이라는 단어가 회사명에 포함된 곳은 생명보험사, 회사명에 ‘생명’이 포함되지 않은 곳은 손해 보험사입니다. <br><br>
+								생명보험은 생명보험사에서만, 손해보험은 손해보험사에서만 취급합니다. 반면 제3보험은 생명보험사와 손해보험사 양측에서 모두 취급합니다. 생명보험사와 손해보험사가 판매하는 제3보험의 종류에는 큰 차이가 없지만 상품의 보장 내용과 보장금액, 보험료 등이 조금씩 다르기 때문에 면밀히 비교해 본 후 본인의 상황에 적합한 상품을 선택하는 것이 좋습니다. 
+							</p>
+							
+						</div>
+					</section>
+
+					<hr class="chick">
+
+					<section>
+						<div class="txt-area">
+							<p>현재에 집중하여 순간을 살아내는 것이 행복해질 수 있는 가장 확실한 방법이라고 합니다. 그러나 말처럼 쉽지는 않습니다. 현재에만 집중하며 살아가기에는 걱정할 것도 준비할 것도 너무나 많기 때문입니다. 그중 큰 부분을 차지하는 것이 불확실한 미래에 대한 불안감이 아닐까 싶습니다.  <br><br>
+								이런 불안감을 조금이나마 덜 수 있는 방법은 나에게 맞는 보험 선택이 아닐까요? 이 글이 여러분에게 꼭 맞는 보험을 찾는 데 도움이 되었기를 바랍니다.
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">목록</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<script>
+		$(document).ready(function(){		  
+				
+			var swiper = new Swiper(".qna-swiper .swiper", {
+				slidesPerView: 1.08,//auto
+				spaceBetween: 0,
+				pagination: {
+					el: '.pagination',
+					clickable: true
+				},
+				slidesOffsetAfter: 0
+			});
+		});
+	</script>
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

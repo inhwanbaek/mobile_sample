@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<link href="../guide/docs/img/favicon_kyobo.ico" rel="shrtcut icon">
+	<link rel="stylesheet" href="./docs/guide.css">
+	<!-- <link rel="stylesheet" href="./docs/shCore.css"> -->
+	<script type="text/javascript" src="./docs/jquery-3.4.1.min.js"></script>    
+	<!-- <script src="./docs/shCore.js"></script>
+	<script src="./docs/guide.js?v=1"></script> -->
+	<script>document.title = "교보생명 디지털 채널 통합 WEB STYLE GUIDE";</script>
+</head>
+
+
+<style>
+	.ui-total {padding: 20px}
+	.ui-total .head {display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; background: rgb(233 233 233); border-radius: 3px; padding: 10px; }
+	.ui-total .head .page {display: flex; align-items: center;  justify-content: space-between; border:1px solid #fff; background: #fff; overflow:hidden; border-radius: 5px; padding-left:5px;}
+	.ui-total .head .page select {border:0; height: 30px; margin-right: 5px}
+	.ui-total .head .page .tot {display: flex; align-items: center; margin-right: 10px;}
+	.ui-total .head .page .tot::before {content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; width: 1px; height: 10px; background: #808080;}
+	.ui-total .head .page .tot span{display:block; width: 45px; text-align: center; font-weight: bold;}
+	.ui-total .hdt {font-size: 13px; font-weight: bold; color:#333; position: relative; padding-left: 20px}
+	.ui-total .hdt::before {content: ""; display: block; width: 3px; height: 3px; background: #333; position: absolute; top: 8px; left:10px; margin-top: 0px; border-radius: 100%;}
+	.ui-total .hdt .tot{display: inline-block; vertical-align: middle; padding-left: 10px; color:#333}
+	.ui-total .hdt .tot::before {content: ""; display: inline-block; vertical-align: middle; margin-right: 10px; width: 1px; height: 10px; background: #808080;}
+	.ui-total .tbl-wrap {border-top: 2px solid #555555; }
+	.ui-total .tbl-wrap .tbl {width: 100%;}
+	.ui-total .tbl-wrap .tbl thead th {background: #ddd;}
+	.ui-total .tbl-wrap .tbl th,
+	.ui-total .tbl-wrap .tbl td {border:1px solid #d0d0d0; padding: 5px}
+	.ui-total .tbl-wrap .tbl td .pl,
+	.ui-total .tbl-wrap .tbl td .dn,
+	.ui-total .tbl-wrap .tbl td .pub {display: block; text-align: center;}
+	.ui-total .tbl-wrap .tbl td .num {display: block; text-align: center;}
+	.ui-total .tbl-wrap .tbl tr td:first-of-type {text-align:center}
+	.ui-total .tbl-wrap .tbl tr {background:#fff; transition:all .2s ease-in-out; cursor: pointer}
+	.ui-total .tbl-wrap .tbl tr.active {background:#ddd; transition:all .2s ease-in-out}
+</style>
+
+<body class="body">
+<div class="wrap" id="wrap">
+	<div class="ui-total">
+		<div class="head">
+			<h3 class="hdt">
+				Mobile 화면
+				<span class="tot"></span>
+			</h3>
+			<div class="page">
+				<select name="pub-name" id="pub-name" onchange="selectChange(this.value)">
+				</select>
+				<span class="tot">
+					총
+					<span></span>
+					페이지
+				</span>
+			</div>
+		</div>
+		<div class="tbl-wrap">
+			<table class="tbl" cellpadding="0" cellspacing="0">
+				<caption><span class="tit">제목</span><span class="cap"></span></caption>
+				<colgroup>
+					<col width="5%">
+					<col width="9%">
+					<col>
+					<col>
+					<col width="16%">
+					<col width="16%">
+					<col width="16%">
+					<col width="8%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">No</th>
+						<th scope="col">구분</th>
+						<th scope="col" colspan="2">업무</th>
+						<th scope="col">기획</th>
+						<th scope="col">디자인</th>
+						<th scope="col">퍼블</th>
+						<th scope="col">본수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>개인</td>
+						<td>메인</td>
+						<td></td>
+						<td><span class="pl">-</span></td>
+						<td><span class="dn">박은경 부장</span></td>
+						<td><span class="pub">김기현 수석</span></td>
+						<td><span class="num">2</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>마이페이지</td>
+						<td></td>
+						<td><span class="pl">박미연 수석/-</span></td>
+						<td><span class="dn">전영준 수석</span></td>
+						<td><span class="pub">신용섭 수석</span></td>
+						<td><span class="num">2</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>서브메인</td>
+						<td><span class="pl">박미연 수석</span></td>
+						<td><span class="dn">박은경 부장</span></td>
+						<td><span class="pub">김기현 수석</span></td>
+						<td><span class="num">2</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>보험</td>
+						<td><span class="pl">박미연 수석/김민 수석</span></td>
+						<td><span class="dn">이지영 책임</span></td>
+						<td><span class="pub">최윤미 책임</span></td>
+						<td><span class="num">341</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>퇴직연금</td>
+						<td><span class="pl">이예은 선임</span></td>
+						<td><span class="dn">이재선 수석</span></td>
+						<td><span class="pub">임영범 책임</span></td>
+						<td><span class="num">220</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>대출</td>
+						<td><span class="pl">서동해 선임</span></td>
+						<td><span class="dn">전세영 주임</span></td>
+						<td><span class="pub">임영범 책임</span></td>
+						<td><span class="num">78</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>펀드</td>
+						<td><span class="pl">김채이 주임</span></td>
+						<td><span class="dn">채지선 책임</span></td>
+						<td><span class="pub">이상민 책임</span></td>
+						<td><span class="num">178</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>신탁</td>
+						<td><span class="pl">김채이 주임/신재웅 수석</span></td>
+						<td><span class="dn">채지선 책임</span></td>
+						<td><span class="pub">임혜옥 책임</span></td>
+						<td><span class="num">39</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>증명서발급</td>
+						<td><span class="pl">박미연 수석</span></td>
+						<td><span class="dn">전세영 주임</span></td>
+						<td><span class="pub">신용섭 수석</span></td>
+						<td><span class="num">24</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>나의계약</td>
+						<td>평생든든서비스</td>
+						<td><span class="pl">이주영 수석</span></td>
+						<td><span class="dn">한아름 선임</span></td>
+						<td><span class="pub">임혜옥 책임</span></td>
+						<td><span class="num">24</span></td>
+					</tr>
+					<!-- 상품 -->
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>보험</td>
+						<td><span class="pl">김민 수석</span></td>
+						<td><span class="dn">이지영 책임</span></td>
+						<td><span class="pub">최지은 책임</span></td>
+						<td><span class="num">142</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>다이렉트보험</td>
+						<td><span class="pl">김민 수석</span></td>
+						<td><span class="dn">전영준 수석</span></td>
+						<td><span class="pub">최지은 책임</span></td>
+						<td><span class="num">97</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>퇴직연금</td>
+						<td><span class="pl">이예은 선임</span></td>
+						<td><span class="dn">이재선 수석</span></td>
+						<td><span class="pub">최지은 책임</span></td>
+						<td><span class="num">126</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>대출</td>
+						<td><span class="pl">서동해 선임</span></td>
+						<td><span class="dn">전세영 주임</span></td>
+						<td><span class="pub">이상민 책임</span></td>
+						<td><span class="num">130</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>펀드</td>
+						<td><span class="pl">서동해 선임</span></td>
+						<td><span class="dn">채지선 책임</span></td>
+						<td><span class="pub">TBD</span></td>
+						<td><span class="num">81</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>신탁</td>
+						<td><span class="pl">서동해 선임</span></td>
+						<td><span class="dn">이지영 책임</span></td>
+						<td><span class="pub">김기현 수석</span></td>
+						<td><span class="num">37</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>상품</td>
+						<td>상담</td>
+						<td><span class="pl">심승미 주임</span></td>
+						<td><span class="dn">전세영 주임</span></td>
+						<td><span class="pub">임혜옥 책임</span></td>
+						<td><span class="num">37</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>고객센터</td>
+						<td></td>
+						<td><span class="pl">심승미 주임/이주영 수석</span></td>
+						<td><span class="dn">전세영 선임</span></td>
+						<td><span class="pub">임혜옥 책임</span></td>
+						<td><span class="num">196</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>이벤트공지</td>
+						<td></td>
+						<td><span class="pl">이주영 수석</span></td>
+						<td><span class="dn">한아름 선임</span></td>
+						<td><span class="pub">임혜옥 책임</span></td>
+						<td><span class="num">14</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>회사소개/IR</td>
+						<td></td>
+						<td><span class="pl">심승미 주임</span></td>
+						<td><span class="dn">유나희 책임</span></td>
+						<td><span class="pub">오승남 수석</span></td>
+						<td><span class="num">189</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>공시실</td>
+						<td></td>
+						<td><span class="pl">TBD/김민 수석</span></td>
+						<td><span class="dn">TBD</span></td>
+						<td><span class="pub">TBD</span></td>
+						<td><span class="num">201</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>협력병원</td>
+						<td></td>
+						<td><span class="pl">심승미 주임</span></td>
+						<td><span class="dn">한아름 선임</span></td>
+						<td><span class="pub">신용섭 수석</span></td>
+						<td><span class="num">19</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>인증/보안센터</td>
+						<td></td>
+						<td><span class="pl">김성수 책임</span></td>
+						<td><span class="dn">전영준 수석</span></td>
+						<td><span class="pub">신용섭 수석</span></td>
+						<td><span class="num">263</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>Footer</td>
+						<td></td>
+						<td><span class="pl">심승미 주임</span></td>
+						<td><span class="dn">박은경 부장</span></td>
+						<td><span class="pub">김기현 수석</span></td>
+						<td><span class="num">19</span></td>
+					</tr>
+					<tr>
+						<td>개인</td>
+						<td>공통</td>
+						<td></td>
+						<td><span class="pl">-</span></td>
+						<td><span class="dn">전영준 수석</span></td>
+						<td><span class="pub">김기현 수석</span></td>
+						<td><span class="num">18</span></td>
+					</tr>
+					<tr>
+						<td>기업</td>
+						<td></td>
+						<td></td>
+						<td><span class="pl">장철호 수석/박미연 수석</span></td>
+						<td><span class="dn">이지영 책임</span></td>
+						<td><span class="pub">김향희 책임</span></td>
+						<td><span class="num">345</span></td>
+					</tr>
+					<tr>
+						<td>영문</td>
+						<td></td>
+						<td></td>
+						<td><span class="pl">심승미 주임</span></td>
+						<td><span class="dn">TBD</span></td>
+						<td><span class="pub">오승남 수석</span></td>
+						<td><span class="num">37</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+
+</div>
+
+<script>
+	const $wrap = $('.ui-total .tbl-wrap');
+	const $tbl = $wrap.find('.tbl tbody tr');
+	const $tot = $('.page .tot span');
+	const $pubName = $('#pub-name');
+	
+	let sum = 0;
+
+	// const plannerArr = ['조성길 부장', '박미연 수석', '김민 수석', '장철호 수석', '노지현 수석', '이주영 수석', '김성수 책임', '서동해 선임', '이예은 선임', '심승미 주임', '김채이 주임']
+	// const designArr = ['전영준 수석', '박은경 부장', '이재선 수석', '이지영 책임', '유나희 책임', '채지선 책임', '한아름 선임', '김진선 선임', '전세영 주임']
+	// const publisherArr = ['신용섭 수석', '김기현 수석', '최지은 책임', '임영범 책임', '최윤미 책임', '김향희 책임']
+	// console.log( plannerArr , ":::::::::::: > plannerArr");
+	// console.log( designArr , ":::::::::::: > designArr");
+	// console.log( publisherArr , ":::::::::::: > publisherArr");
+	var publisher = [
+		{key:0, value: '담당자 선택'},
+		{key:1, value: '신용섭 수석'},
+		{key:2, value: '김기현 수석'},
+		{key:3, value: '오승남 수석'},
+		{key:4, value: '최지은 책임'},
+		{key:5, value: '임영범 책임'},
+		{key:6, value: '최윤미 책임'},
+		{key:7, value: '김향희 책임'},
+		{key:8, value: 'TBD'},
+		{key:9, value: '임혜옥 책임'},
+		{key:10, value: '이상민 책임'},
+	];
+	publisher.map( item => {
+		$pubName.append(`<option key="item.key" value="item.value">${item.value}</option>`);
+	});
+
+	$(document).on("click", '.tbl tbody tr' , function (e) {
+		e.stopPropagation();
+
+		let num = parseInt( $(this).find('.num').text() )
+
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+		}else {
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+		}
+		
+		$(this).closest('.ui-total').find('.tot span').text(num)
+		
+	});	
+
+	for(let i = 0 ; i < $tbl.length ; i ++) {
+		$tbl.eq(i).prepend(`<td>${i + 1}</td>`);
+
+		sum += parseInt( $tbl.eq(i).find('.num').text() );
+
+
+
+		$tbl.closest('.ui-total').find('.hdt .tot').text(`총 ${sum} 페이지`);
+	}
+	
+	function selectChange(){
+		let num = 0;
+		let $select = $("select[name='pub-name'] option:selected").text();
+
+		for(let i = 0 ; i < $tbl.length ; i ++) {
+			let $pub = $tbl.eq(i).find('.pub').text();
+			
+			if( $select == $pub ){
+
+				var bg = $tbl.eq(i).find('.num').text()
+				num += parseInt( $tbl.eq(i).find('.num').text() );
+
+				$tot.text(`${num}`);
+				$tbl.eq(i).addClass('active');
+
+			
+			}else if($select == '담당자'){
+				$tot.text(sum);
+				
+			}else {
+				$tbl.eq(i).removeClass('active');
+				
+				
+			}
+		}
+	}
+	$tot.text(sum);
+	
+
+
+	window.onload = () => {
+		console.log(1);
+
+		let time = 0;
+
+		const speed = 10;
+		const maxTime = 1000;
+
+		const totalTime = maxTime / speed;
+
+		const numArry = [1101, 1120, 1100, 3184];
+		const totalArry = [1000, 550, 330, 220];
+
+		let timer = setInterval(function(){
+			time += speed;
+			console.log(time);
+
+			totalArry.forEach( (i, n)=> {
+				totalArry[n] += Number(numArry[n]) / Number(totalTime);
+				console.log(n , ':' , totalArry[n] , '::::::::::::::::::');
+			});
+
+			if(time >= maxTime){
+				clearInterval(timer)
+				console.log(11111);
+			}
+		}, speed);
+	}
+
+
+
+
+</script>
+</body>
+</html>

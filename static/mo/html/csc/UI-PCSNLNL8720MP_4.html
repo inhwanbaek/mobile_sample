@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"개인정보처리방침(금융거래용)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc policy" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-04-27 약관 이력 어드민 연계 추가 / 팝업->바닥페이지로 레이아웃 변경 / 해당화면은 영역 노출 -->
+			<section class="sect top">
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="select a">
+								<label class="lb blind" for="sel_id01">약관코드 선택</label>
+								<select id="sel_id01" name="sel_id01">
+									<option>이전 개인정보처리방침(금융거래고객용) 보기(2021년 1월 1일 ~ 2021년 7월 29일)</option>
+									<option>이전 개인정보처리방침(금융거래고객용) 보기(2019년 5월 17일 ~ 2020년 12월 31일)</option>
+									<option>이전 개인정보처리방침(금융거래고객용) 보기(2019년 2월 15일 ~ 2019년 5월 16일)</option>
+									<option>이전 개인정보처리방침(금융거래고객용) 보기( ~ 2019년 2월 14일)</option>
+								</select>
+							</span>
+						</li>
+						<li>
+							<div class="btn-set">
+								<button type="button" class="btn md">조회</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<div class="ut-termbox">
+					<div class="terms">
+						<p>교보생명보험주식회사(이하 '회사')는 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련된 이용자의 고충을 원활하게 처리할 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
+						<h2>1. 개인정보 처리 목적</h2>
+						<p>회사는 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용목적이 변경될 시에는 사전동의를 구할 예정입니다.</p>
+						<ol class="nums">
+							<li>(1) 보험계약 및 대출계약 체결 및 이행
+								<ul class="dash">
+									<li>- 보험계약 상담, 보험계약 체결 및 인수여부 결정판단</li>
+									<li>- 보험계약의 체결, 유지, 관리, 상담, 이행, 계약적부, 가불금의 지급 및 관리, 상담, 이행, 보험금의 지급, 심사, 보험사고 조사</li>
+									<li>- 조사연구, 서비스 제공, 순보험요율의 산출 및 검증</li>
+									<li>- 보험모집질서 유지, 공공기관의 정책자료로 제공</li>
+									<li>- 보험계약 및 보험금 청구에 이해관계가 있는 자와 대출계약 및 대출계약에 이해관계가 있는 자에 대한 법규 및 계약상 의무 이행</li>
+									<li>- 제환급금 및 대출금 지급신청 처리업무를 포함한 보험계약 및 대출계약 변경 처리</li>
+									<li>- 보험계약정보, 보험금지급정보, 채권결손처분 관리정보, 대출계약정보, 대출금 상환정보의 조회</li>
+									<li>- 대출계약의 체결여부 결정판단</li>
+									<li>- 대출계약의 체결, 유지, 관리, 상담, 이행, 대출금 지급 및 관리 등</li>
+									<li>- 개인식별정보, 신용거래정보, 신용능력정보, 공공정보, 신용등급 등 조회</li>
+
+								</ul>
+							</li>
+							<li>(2) 금융투자상품의 계약 체결 및 이행
+								<ul class="dash">
+									<li>- 수익증권/신탁 상담, 계약체결, 유지, 관리, 지급</li>
+									<li>- 공공기관의 정책자료 제공</li>
+									<li>- 수익증권/신탁계약 및 지급에 이해관계가 있는 자에 대한 법규 및 계약상 의무이행</li>
+									<li>- 수익증권/신탁 계약 변경 처리</li>
+									<li>- 개인식별정보(성명, 주민등록번호, 주소, 성별, 직업, 전화번호, 휴대전화번호, 전자우편주소 등)</li>
+									<li>- 수익증권/신탁 가입정보 (계좌번호, 가입기간, 계약일자, 상품명, 납입금액, 평가금액, 좌수, 계약유지여부, 세금우대 정보 등)</li>
+								</ul>
+							</li>
+							<li>(3) 직원채용 및 인사관리
+								<ul class="dash">
+									<li>- 입사지원 행정처리 및 입사자 채용업무</li>
+									<li>- 입사지원자 중 최종 입사자의 경우 근로계약의 체결 및 유지와 경력증명서 발급 및 입사 후 인력관리, 업무분배, 기본급, 보너스, 수당, 성과급, 의료보험, 휴가와 같은 복지관련 사항의 처리 등 직원관리의 효율성 유지, 제고</li>
+									<li>- 인력관리(채용, 승진, 보상, 평가, 노무, 상벌), 업무분배(부서이동, 배치, 전보) 기본급, 보너스, 수당, 성과급, 사회보험, 상해보험, 신용보증보험, 퇴직연금, 적금, 의료지원, 대부제공, 휴가, 주차와 같은 복지관련 사항의 처리 등 직원 관리의 효율성 지, 제고 및 근로계약상 의무의 준수, 재직증명서의 발급</li>
+									<li>- 소득세, 외국인세, 기타 세금의 납부, 보건, 안전의무, 불법적인 차별없는 근무환경의 제공, 4 대보험 등 법정보험의 가입과 근로기준법 기타 고용관계 관련법령의 준수, 균등한 처우 및 기회제공, 보훈대상자 확인 및 처우제공, 외국인 근로자 관련 법령 준수 등 회사에 부과되는 법적, 행정적 의무 준수</li>
+									<li>- 퇴직자에 대한 재직증명서 및 경력증명서 발급</li>
+									<li>- 개인식별정보, 신용거래정보, 신용능력정보, 공공정보, 신용등급 등 조회</li>
+								</ul>
+							</li>
+							<li>(4) FP(컨설턴트), 대출모집인 위촉 및 관리
+								<p>보험설계사, 대리점 및 대출모집인 위촉여부 판단 개인식별정보, 신용거래정보, 신용능력정보, 공공정보, 신용등급 및 신용평점정보, 다른기관의 신용정보, 금융위원회 및 금융감독원의 금융사고자정보 조회</p>
+							</li>
+							<li>(5) 마케팅 및 광고 등에의 활용
+								<p>회사의 상품, 서비스, 소개 및 판매, 사은, 판촉행사 안내(방문, 우편, 전자우편, 전화, SMS 포함), 시장조사</p>
+							</li>
+						</ol>
+
+						<h2>2. 개인정보의 처리 및 보유 기간</h2>
+						<p>회사는 관계법령 규정에 의해 보존의 필요가 없는 한 이용자 개인정보는 원칙적으로 개인정보의 처리목적이 달성되면 지체 없이 파기합니다</p>
+
+						<h2>3. 개인정보의 제3자 제공에 관한 사항</h2>
+						<ol>
+							<li>(1) 보험거래 관련
+								<div class="ut-tbl a">
+									<table class="tblist">
+										<caption><span>보험거래 관련 테이블</span><span class="cap"></span> </caption>
+										<colgroup>
+											<col style="width:25%">
+											<col style="width:25%">
+											<col style="width:25%">
+											<col style="width:25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">제공받는 자</th> 
+												<th scope="col">이용목적</th> 
+												<th scope="col">제공하는 신용정보의 종류</th>
+												<th scope="col">보유 및 이용기간</th>
+											</tr>
+										</thead>
+										<tbody> 
+											<tr>
+												<td class="left">신용정보집중기관 <br>
+													생명보험협회(02-2262-6600)<br>
+													손해보험협회(02-3702-8500)<br>
+													전국은행연합회<br>
+													(02-3705-5000)<br>
+													보험개발원(02-368-4000)<br>
+													휴면예금관리재단<br>
+													국세청
+												</td>
+												<td class="left">보험계약정보의 집중관리 및
+													활용 등 신용정보집중기관의 업무</td>
+												<td class="left">개인식별정보, <br>
+													가족관계등 개인정보<br>
+													보험계약정보<br>
+													보험금 지급정보<br>
+													기타 재산ㆍ소득 등에 관한<br>
+													개인신용정보 등<br>
+													피보험자의 질병에 관한 정보</td>
+												<td class="left">신용정보집중기관의 <br>
+													업무목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">당사로부터 보험계약의 체결ㆍ
+													유지ㆍ관리 등의 업무를
+													위탁받은 자 (계약적부ㆍ
+													보험사고 조사회사, 교보생명FP 등 컨설턴트 및 보험대리점, 전산시스템개발회사, 우편물 배달회사, 리서치회사, 서비스제공회사 등 )</td>
+												<td class="left">계약적부ㆍ보험사고 조사ㆍ보험금 지급심사, 보험계약의 유지ㆍ관리ㆍ상담, 조사연구(리서치), 서비스 제공, 금융상품 및 서비스의 소개, 이벤트 안내 등</td>
+												<td class="left">위와 같음</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">타보험회사(생명보험업계,
+													손해보험업계) <br>
+													우체국(02-1588-1900)<br>
+													농협(02-1588-2100)<br>
+													신협(02-1566-6000)<br>
+													수협(02-1588-1515)<br>
+													새마을금고(02-1599-9000)<br>
+													재보험회사, 보험개발원
+													(02-368-4000)</td>
+												<td class="left">보험계약의 적부 및 보험사고 조사, 보험모집질서의 유지,
+													순보험요율의 산출ㆍ검증, 보험원가 관리, 공공기관의 정책자료로 활용 등</td>
+												<td class="left">위와 같음</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+							<li>(2) 대출거래 관련
+								<div class="ut-tbl a">
+									<table class="tblist">
+										<caption><span>대출거래 관련 테이블</span><span class="cap"></span> </caption>
+										<colgroup>
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">제공받는 자</th> 
+												<th scope="col">이용목적</th> 
+												<th scope="col">제공하는 신용정보의 종류</th>
+												<th scope="col">보유 및 이용기간</th>
+											</tr>
+										</thead>
+										<tbody> 
+											<tr>
+												<td class="left">전국은행연합회(02-3705-5000) <br>
+													NICE평가정보(02-2122-4000)<br>
+													코리아크레딧뷰로(02-708-1000)</td>
+												<td class="left">본인의 신용을 판단하기 위한 자료로 활용하거나 공공기관에서 정책자료로 활용</td>
+												<td class="left">개인식별정보 <br>
+													신용거래정보 <br>
+													신용능력정보</td>
+												<td class="left">신용정보집중기관의
+													업무목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">당사가 업무를 위탁한 자 ( 리서치업체, 우편물배달업체 신용정보회사, 법무사 등 위탁사무의 수행을 위해 정보제공이 필요한 자)</td>
+												<td class="left">대출계약의 체결ㆍ유지ㆍ관리ㆍ상담, 조사연구(리서치), 금융상품 및 서비스의 소개, 이벤트 안내, 기타 위탁사무의 수행</td>
+												<td class="left">위와 같음</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">한국주택금융공사(02-1688-8114),주택저당채권, 주택저당채권담보부채권 또는 주택저당증권의 투자자, 양수인 그 밖에 이에 준하는 이해관계인</td>
+												<td class="left">한국주택금융공사 채권유동화 관련 업무 수행</td>
+												<td class="left">위와 같음</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+							<li>(3) 금융투자상품 관련
+								<div class="ut-tbl a">
+									<table class="tblist">
+										<caption><span>금융투자상품 관련 테이블</span><span class="cap"></span> </caption>
+										<colgroup>
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+											<col style="width: 25%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">제공받는 자</th> 
+												<th scope="col">이용목적</th> 
+												<th scope="col">제공하는 신용정보의 종류</th>
+												<th scope="col">보유 및 이용기간</th>
+											</tr>
+										</thead>
+										<tbody> 
+											<tr>
+												<td class="left">당사로부터 금융상품의 체결.유지.관리 등의 업무를 위탁받은 자(우편물배달회사,서비스제공회사 등)</td>
+												<td class="left">금융상품 계약의 유지,관리,서비스 안내 등</td>
+												<td class="left">개인식별정보(성명,계좌번호,가입상품정보 등)</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">금융결제원(02-1577-5500)</td>
+												<td class="left">금융상품 계약의 유지,관리를 위한 업무 </td>
+												<td class="left">개인식별정보(은행,은행계좌번호),고객식별번호(주민번호)
+													</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">전국은행연합회(02-3705-5000)</td>
+												<td class="left">금융상품가입정보의 집중관리 및 신용정보집중기관의 업무</td>
+												<td class="left">개인식별정보(성명,계좌번호,가입상품정보 등)</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">한국예탁결제원(02-3774-3000)</td>
+												<td class="left">실질수익자 명세 확인</td>
+												<td class="left">개인식별정보,고유식별번호,상품정보,잔고좌수 등</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+											<tr>
+												<td class="left">생명보험협회(02-2262-6600)</td>
+												<td class="left">사망자 가입내역확인</td>
+												<td class="left">가입자의 계좌번호, 상품정보, 납입내역, 가입일자, 가입기간 잔고좌수,평가금액 등</td>
+												<td class="left">제공목적 달성시까지</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+						</ol>
+
+						<h2>4. 개인정보처리의 위탁에 관한 사항</h2>
+						<ol>
+							<li>
+								<div class="ut-tbl a">
+									<table class="tblist">
+										<caption><span>개인정보처리의 위탁에 관한 사항 테이블</span> <span class="cap"></span> </caption>
+										<colgroup>
+											<col style="width: 33%">
+											<col style="width: 33%">
+											<col style="width: 33%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">위탁을 받는 자</th> 
+												<th scope="col">위탁하는 업무의 내용</th> 
+												<th scope="col">연락처</th>
+											</tr>
+										</thead>
+										<tbody> 
+											<tr>
+												<td class="left">세틀뱅크</td>
+												<td class="left">펌뱅킹 이체, 수납 등</td>
+												<td class="left">02-588-2546</td>
+											</tr>
+											<tr>
+												<td class="left">스탠다드네트웍스㈜</td>
+												<td class="left">고객 SMS/LMS/MMS/
+													카카오톡(알림톡, 친구톡) 발송</td>
+												<td class="left">02-3485-6755</td>
+											</tr>
+											<tr>
+												<td class="left">LG CNS</td>
+												<td class="left">고객 카카오톡(알림톡, 친구톡) 발송</td>
+												<td class="left">02-2099-0114</td>
+											</tr>
+											<tr>
+												<td class="left">LG U+</td>
+												<td class="left">
+													고객 SMS/LMS 발송
+												</td>
+												<td class="left">1544-0001</td>
+											</tr>
+											<tr>
+												<td class="left">빌포스트㈜</td>
+												<td class="left">고객 우편물/DM 발송</td>
+												<td class="left">02-2024-3322</td>
+											</tr>
+											<tr>
+												<td class="left">㈜I2S</td>
+												<td class="left">고객 우편물/DM 발송</td>
+												<td class="left">02-462-7788</td>
+											</tr>
+											<tr>
+												<td class="left">대성전산주식회사</td>
+												<td class="left">고객 우편물/DM 발송</td>
+												<td class="left">02-591-8822</td>
+											</tr>
+											<tr>
+												<td class="left">NICE평가정보</td>
+												<td class="left">실명확인서비스</td>
+												<td class="left">1588-2486</td>
+											</tr>
+											<tr>
+												<td class="left">KCB(코리아크레딧뷰로)</td>
+												<td class="left">실명확인서비스</td>
+												<td class="left">02-708-1000</td>
+											</tr>
+											<tr>
+												<td class="left">카카오페이</td>
+												<td class="left">간편인증, 전자서명</td>
+												<td class="left">1644-7405</td>
+											</tr>
+											<tr>
+												<td class="left">㈜A&amp;D신용정보</td>
+												<td class="left">채권추심</td>
+												<td class="left">02-3705-7777</td>
+											</tr>
+											<tr>
+												<td class="left">㈜KCA손해사정</td>
+												<td class="left">계약심사 및 지급심사</td>
+												<td class="left">02-2290-4328</td>
+											</tr>
+											<tr>
+												<td class="left">교보문고㈜</td>
+												<td class="left">에듀케어서비스</td>
+												<td class="left">02-2076-0535</td>
+											</tr>
+											<tr>
+												<td class="left">㈜에임메드</td>
+												<td class="left">헬스케어서비스 제공</td>
+												<td class="left">02-3015-7505</td>
+											</tr>
+											<tr>
+												<td class="left">㈜녹십자헬스케어</td>
+												<td class="left">헬스/우먼/맘스케어 서비스 제공</td>
+												<td class="left">02-2040-9145</td>
+											</tr>
+											<tr>
+												<td class="left">㈜마인드웨어코퍼레이션즈</td>
+												<td class="left">모바일 상품권/택배자동/POP제작</td>
+												<td class="left">070-4072-6752</td>
+											</tr>
+											<tr>
+												<td class="left">제니엘㈜</td>
+												<td class="left">고객 우편물/DM 발송</td>
+												<td class="left">031-777-9836</td>
+											</tr>
+											<tr>
+												<td class="left">브로컬리마켓㈜</td>
+												<td class="left">모바일 상품권 제공</td>
+												<td class="left">02-1666-9334</td>
+											</tr>
+											<tr>
+												<td class="left">디레몬</td>
+												<td class="left">스마트 보장분석 서비스 운영지원</td>
+												<td class="left">1670-0345</td>
+											</tr>
+											<tr>
+												<td class="left">원</td>
+												<td class="left">스마트 보험금청구 서비스 운영지원</td>
+												<td class="left">070-4369-5001</td>
+											</tr>
+											<tr>
+												<td class="left">안심파라메딕</td>
+												<td class="left">방문검진</td>
+												<td class="left">02-6300-7472</td>
+											</tr>
+											<tr>
+												<td class="left">세인파라메딕</td>
+												<td class="left">방문검진</td>
+												<td class="left">02-2238-8744</td>
+											</tr>
+											<tr>
+												<td class="left">의료법인 성광의료재단 차병원파라메딕</td>
+												<td class="left">방문검진</td>
+												<td class="left">02-3468-35501</td>
+											</tr>
+											<tr>
+												<td class="left">광화문 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">02-732-3791</td>
+											</tr>
+											<tr>
+												<td class="left">강남 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">02-530-9762</td>
+											</tr>
+											<tr>
+												<td class="left">인천 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">032-431-2490</td>
+											</tr>
+											<tr>
+												<td class="left">대전 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">042-487-6600</td>
+											</tr>
+											<tr>
+												<td class="left">부산 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">051-463-4841</td>
+											</tr>
+											<tr>
+												<td class="left">대구 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">053-431-3723</td>
+											</tr>
+											<tr>
+												<td class="left">광주 헬스케어의원</td>
+												<td class="left">종합건강검진 서비스</td>
+												<td class="left">062-224-7834</td>
+											</tr>
+											<tr>
+												<td class="left">써브감정평가법인</td>
+												<td class="left">담보물 감정평가</td>
+												<td class="left">02-581-7800</td>
+											</tr>
+											<tr>
+												<td class="left">대학내일</td>
+												<td class="left">블로그 이벤트 운영</td>
+												<td class="left">02-735-3800</td>
+											</tr>
+											<tr>
+												<td class="left">한국감정원</td>
+												<td class="left">담보물 감정평가</td>
+												<td class="left">1644-2828</td>
+											</tr>
+											<tr>
+												<td class="left">통일감정평가법인</td>
+												<td class="left">담보물 감정평가</td>
+												<td class="left">02-719-7272</td>
+											</tr>
+											<tr>
+												<td class="left">법무법인 및 법률사무소</td>
+												<td class="left">소송대리 및 법률자문</td>
+												<td class="left"><a href="https://www.kyobo.co.kr/pdf/co/lawfirm_list.doc" class="btn xs ">협력 법무법인(법률사무소) 보기</a></td>
+											</tr>
+											<tr>
+												<td class="left">KCA 서비스(주)</td>
+												<td class="left">고객상담 및 안내업무</td>
+												<td class="left">1588-1001</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+							
+						</ol>
+
+						<h2>5. 정보주체의 권리의무 및 그 행사방법에 관한 사항</h2>
+
+						<ol class="nums">
+							<li>(1) 목적 범위외의 제공ㆍ활용 중단 요청
+								<p>고객님의 개인정보를 동의받은 범위 이외의 목적으로 제공 ·이용한 사실이 있는 경우에는 즉시 중단을 요청하실 수 있습니다.</p>
+							</li>
+							<li>(2) 영업 목적의 수집ㆍ이용, 조회, 제공에 대한 동의의 철회
+								<p>영업목적에 대한 동의('동의Ⅱ')를 한 때로부터 3개월 경과 후부터 이를 철회(마케팅거부)하거나 마케팅목적의 전화 수신을 거부하실 수 있습니다. 동의철회(마케팅거부) 또는 전화수신거부 신청에 대한 조치는 신청일로부터 1개월 경과후부터 적용되오니 이 점 양해하여 주시기 바랍니다.</p>
+							</li>
+							<li>(3) 영리목적의 광고성 정보 수신 거부
+								<p>영리목적의 전화ㆍ이메일ㆍSMS 등 광고성 정보의 수신을 거부하실 수 있습니다.</p>
+							</li>
+							<li>(4) 조회ㆍ열람 및 정정ㆍ삭제 청구 권리
+								<p>교보생명이 보유하고 있는 고객님의 정보를 언제든지 열람하실 수 있으며, 만일 잘못된 정보가 있는 경우에는 정정ㆍ삭제를 요구하실 수 있습니다.</p>
+							</li>
+							<li>(5) 개인정보 및 개인신용정보 수집, 조회, 이용, 제공 동의 철회권
+								<ul class="dash">
+									<li>- 계약 체결 3개월 이후부터 개인정보 및 개인신용정보 수집, 조회, 이용, 제공 동의를 철회하실 수 있습니다. 다만, 신용조회회사 또는 신용정보집중기관에 제공하여 개인의 신용도 등을 평가하기 위한 목적에 대해서는 철회하실 수 없으며, 계약의 유지ㆍ관리ㆍ상담, 기타 업무 위탁에 따른 정보 제공 동의를 철회하는 경우에는 해당 용역의 제공을 받지 않을 것을 명확히 하여야 합니다.</li>
+									<li>- 개인정보 및 개인신용정보 수집, 조회, 이용, 제공 동의를 철회하시고자 하는 경우에는 철회의 대상 및 내용 등을 특정하여 인터넷 홈페이지(www.kyobo.co.kr) 또는 고객플라자에 내방하여 서면으로 철회의 의사표시를 하여 주시기 바라며, 이 경우 회사는 1개월 이내에 조치를 완료하고, 철회가 불가할 경우 그 사유를 5일 이내에 알려드립니다.</li>
+								</ul>
+							</li>
+							<li>(6) 제공 사실 통보 요구 권리
+								<p>교보생명이 고객님의 정보를 제3자에게 제공한 사실이 있는 경우에 고객님께서는 정보제공사실 통보를 요구하실 수 있습니다. 위 권리를 행사하시기 위해서는 회사 대표전화(1588-1001)로 전화하시거나 지점 또는 고객플라자에 내방하여 서면으로 신청하여 주시기 바랍니다. 영업목적으로 제공 · 이용에 대한 동의의 철회 및 마케팅 전화수신거부는 저희 회사 인터넷 홈페이지(www.Kyobo.co.kr) 사이버창구에서도 직접 처리하실 수 있습니다. 개인정보에 대한 고객님의 권리와 관련하여 보다 자세한 사항은 다음의 고객권리안내문을 보시기 바랍니다.</p>
+							</li>
+						</ol>
+
+						<h2>6. 처리하는 개인정보의 항목</h2>
+						<ol class="nums">
+							<li>(1) 보험과 관련하여 수집하는 개인정보 항목   
+								<ul class="dash"> 
+									<li>- <strong>개인식별정보</strong> : 이름, 주소(자택/직장), 연락처(전화번호/e-Mail 등), 직업, 직장, 직위, 입사일, 취미, 세대정보 </li> 
+									<li>- <strong>고유식별정보</strong> : 주민등록번호, 운전면허번호, 외국인의 경우 외국인등록번호ㆍ여권번호 </li> 
+									<li>- <strong>보험 거래 관련 정보</strong> : 보험가입정보, 가입목적, 보험료 납입 및 보험금 지급내역, 계좌정보, 상담내역기록, 사이버창구 이용 관련기록(서비스이용내역/접속로그 등) 등 </li> 
+									<li>- <strong>소득, 재산 등의 재정정보</strong> : 자금의 출처, 재산현황 </li> 
+									<li>- <strong>피보험자(보험대상자)의 질병에 관한 정보</strong> : 과거병력, 건강진단 결과 등 </li> 
+								</ul>
+							</li>
+							<li>(2) 대출과 관련하여 수집하는 개인정보 항목   
+								<ul class="dash"> 
+									<li>- <strong>개인식별정보</strong> : 이름, 주소(자택/직장), 연락처(전화번호/e-Mail 등), 직장, 부서, 입사일, 취미, 학력, 세대정보, 결혼일 </li> 
+									<li>- <strong>고유식별정보</strong> : 주민등록번호, 외국인의 경우 외국인등록번호ㆍ여권번호 </li> 
+									<li>- <strong>대출거래 관련 정보</strong> : 대출금 지급 및 상환 거래 내역, 계좌정보, 보증거래 내역, 상담내역, 사이버창구 이용 관련 기록(서비스이용내역/접속로그 등) 등 </li> 
+									<li>- <strong>신용능력정보</strong> : 재산, 채무, 소득, 납세실적, 주택소유여부 등 </li> 
+									<li>- <strong>채무불이행정보</strong> : 연체, 대위변제, 대지급, 부도, 관련인 발생사실 등 </li> 
+								</ul>
+							</li>
+							<li>(3) 금융투자상품과 관련하여 수집하는 개인정보 항목
+								<ul class="dash"> 
+									<li>- <strong>개인식별정보</strong> :이름, 주소(자택/직장), 연락처(전화번호/e-Mail 등), 직장, 부서, 입사일, 취미, 학력, 세대정보, 결혼일</li> 
+									<li>- <strong>고유식별정보</strong> : 주민등록번호, 외국인의 경우 외국인등록번호ㆍ여권번호 </li> 
+									<li>- <strong>투자상품 거래 관련 정보</strong> : 계좌정보, 입출금 내역, 상담내역, 사이버창구 이용 관련 기록(서비스 이용 내역/접속로그 등) 등 </li> 
+									<li>- <strong>투자목적 판단에 필요한 정보</strong> : 직업, 재산, 소득, 위험에 대한 태도, 투자경험, 투자권유 의존도, 투자금액, 투자자금의 성격 투자기간, 투자목적 등</li> 
+								</ul>
+							</li>
+							<li class="t_mt5">(4) 전자금융거래 서비스 제공을 위한 정보
+								<p>접속정보 및 서비스 이용정보, 쿠키, 접속IP정보, MAC Address, 금융거래 이용시 거래정보 등</p>
+							</li>
+						</ol>
+
+						<h2>7. 개인정보의 파기의 관한 사항</h2>
+						<p>회사는 개인정보의 보유기간이 경과된 경우에는 다음 각 호의 사유가 없는 한 지체 없이 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 다음 각 호의 사유가 없는 한 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 지체 없이 그 개인정보를 파기합니다.</p>
+						<ol class="dash">
+							<li>- 신용정보집중기관 또는 신용조회회사가 신용정보의 집중관리ㆍ활용 또는 개인의 신용도 등을 평가하기 위한 목적으로 개인신용정보를 보유하는 경우(보유기간에 한함)</li>
+							<li>- 신용정보회사 등이 민ㆍ형사상의 책임 또는 시효가 지속되거나 분쟁의 입증자료로서 개인신용정보를 보유하는 경우</li>
+							<li>- 상법 제33조 등 법령에 따라 보존하여야 하는 경우</li>
+							<li>- 기타 이와 유사한 정당한 사유가 있는 경우</li>
+						</ol>
+						<p>개인정보가 기록된 출력물, 서면 등은 파쇄 또는 소각의 방법으로 파기하고, 전자적 파일형태의 개인정보는 복원이 불가능한 방법으로 영구 삭제하는 방법으로 파기합니다.</p>
+
+						<h2>8. 개인정보의 안전성 확보 조치</h2>
+						<p>회사는 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.</p>
+						<ol class="nums">
+							<li>(1) 개인정보의 암호화 <br>
+								이용자의 개인정보 비밀번호는 암호화 되어 저장 및 관리되고 있어, 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화 하거나 파일 잠금기능을 사용하는 등의 별도 보안기능을 사용하고 있습니다.</li>
+							<li>(2) 해킹 등에 대비한 기술적 대책 <br>
+								회사는 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신ㆍ점검을 하며 외부로부터 접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및 차단하고 있습니다.</li>
+							<li>(3) 개인정보처리시스템 접근 제한 <br>
+								개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여, 변경, 말소를 통하여 개인정보에 대한 접근통제를 위하여 필요한 조치를 하고 있으며 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.</li>
+							<li>(4) 개인정보 취급 직원의 최소화 및 교육 <br>
+								개인정보를 취급하는 직원을 지정하고 담당자에 한정시켜 최소화 하여 개인정보를 관리하는 대책을 시행하고 있습니다.</li>
+						</ol>
+
+						<h2>9. 개인정보 처리방침의 변경에 관한 사항</h2>
+						<p>이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 변경사항은 확인할 수 있도록 고지할 것입니다.</p>
+
+
+						<h2>10. 권익침해 구제방법</h2>
+						<P>개인정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.</P>
+						<ul class="dash">
+							<li>- 한국인터넷진흥원 개인정보침해신고센터 (<a href="http://privacy.kisa.or.kr/" target="_blank" title="새창열림" coords="">http://privacy.kisa.or.kr</a>/118/1336)</li>
+							<li>- 개인분쟁조정위원회 (<a href="http://www.kopico.go.kr/" target="_blank" title="새창열림" coords="">http://www.kopico.go.kr/</a>1833-6977/02-580-0533~4)</li>
+							<li>- 정보보호마크인증위원회 (<a href="http://www.eprivacy.or.kr/" target="_blank" title="새창열림" coords="">http://www.eprivacy.or.kr/</a>02-550-9531~2/02-3480-3600)</li>
+							<li>- 대검찰청 첨단범죄수사부 (<a href="http://www.spo.go.kr/" target="_blank" title="새창열림" coords="">http://www.spo.go.kr</a>/02-3480-2000/1566-0112)</li>
+							<li>- 경찰청 사이버안전국 (<a href="http://cyberbureau.police.go.kr/" target="_blank" title="새창열림" coords="">http://cyberbureau.police.go.kr</a>/182/1566-0112)</li>
+						</ul>
+							
+						<h2>11. 개인정보 보호책임자</h2>
+						<ul class="dash">
+							<li>- 성명 : 박영준</li>
+							<li>- 부서 : 정보보안 담당임원(CPO)</li>
+							<li>- 전화 : 02-721-3968</li>
+							<li>- 정보주체의 권리 의무 및 그 행사 방법안내</li>
+							<li>- 대표전화 : 1588-1001</li>
+							<li>- 인터넷홈페이지 www.kyobo.co.kr</li>
+						</ul>
+						
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+

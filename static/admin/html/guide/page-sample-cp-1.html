@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style_cp.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더 , gnb-->
+	<include class="header" id="header" src="../inc/header_cp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	
+	<main class="container cp page" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-scform a mb30">
+				<div class="inr">
+					<ul class="slist">
+						<li>
+							<div class="dt">조회구분</div>
+							<div class="dd">
+								<span class="select a w230 mr20">
+									<select>
+										<option>선택</option>
+									</select>
+								</span>
+								<span class="input a w260"><input type="text" value="김교보"></span>
+							</div>
+						</li>
+						<li>
+							<div class="dt">진행상태</div>
+							<div class="dd">
+								<span class="select a w230">
+									<select>
+										<option>선택</option>
+									</select>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="btsch mt20">
+					<button type="button" class="btn md ico-search w200">조회</button>
+				</div>
+			</div>
+
+			<div class="inr">
+				<div class="ut-tot a">
+					<em class="t">총</em> <i class="n">728</i>건
+				</div>
+				<div class="ut-tbl a">
+					<table class="tblist" cellspacing="0" cellpadding="0">
+						<colgroup>
+							<col style="width: 10%">
+							<col style="width: auto">
+							<col style="width: 10%">
+							<col style="width: 10%">
+							<col style="width: 10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>등록자</th>
+								<th>등록일</th>
+								<th>진행상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10</td>
+								<td class="txt-l">[비밀번호변경알림] 비밀번호 변경기간이 5일 남았습니다.</td>
+								<td>김*수</td>
+								<td>2021.05.25</td>
+								<td>접수</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td class="txt-l">[비밀번호변경알림] 비밀번호 변경기간이 5일 남았습니다.</td>
+								<td>김*수</td>
+								<td>2021.05.25</td>
+								<td class="color2">승인</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td class="txt-l">[비밀번호변경알림] 비밀번호 변경기간이 5일 남았습니다.</td>
+								<td>김*수</td>
+								<td>2021.05.25</td>
+								<td class="color1">반려</td>
+							</tr>
+							<tr class="nodata">
+								<td colspan="9"><p class="txt">조회 데이터가 없습니다.</p></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="mt30">
+					<include class="ut-paging" src="../inc/paging.html" data-include-opt='{"visible":"true"}'></include>
+				</div>
+				<div class="btn-list mt60">
+					<button type="button" class="btn xl a w260">등록</button>
+				</div>
+			</div>
+		</div>
+
+			
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer_cp.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<!-- 헤더-->
+		<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"퇴직금 신청"}'></include>
+		<include class="gnb" src="../inc/gnb.html"></include>
+		<!---- 바디 - 여기위로는 템플릿영역 ---->
+		<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+		<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금) -->
+		<main class="container page etp" id="container">
+			<!-- 본문 영역 -->
+			<div class="contents" id="contents">  
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">4. 신청정보 확인</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">5</b></span>
+									<span class="num"><b class="b">4</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="etp-tit-box">
+					<h2 class="hd-tit3">퇴직금 신청 정보를 확인하고 결재해 주세요.</h2>
+				</div>
+				<!-- [D] 2022-04-26 ui 변경/추가 -->
+				<div class="ut-dtds c confirm">
+					<!-- [D] 2022-04-27 마크업 수정/삭제 -->
+					<div class="etp-item a">
+						<h3 class="etp-tit">퇴직금 신청금액&#47;공제금액</h3>
+						<div class="ut-dtds c bd">
+							<ul class="dlist">
+								<li>
+									<div class="dt">매도 방법</div>
+									<div class="dd">잔고비율 매도</div>
+								</li>
+								<li>
+									<div class="dt">신청인원</div>
+									<div class="dd">1명</div>
+								</li>
+								<li>
+									<div class="dt">신청금액</div>
+									<div class="dd">30,000,000원</div>
+								</li>													
+								<li>
+									<div class="dt">공제금액(회사로 반환)</div>
+									<div class="dd">0원</div>
+								</li>	
+								<li>
+									<div class="dt">공제금액(적립금에 포함)</div>
+									<div class="dd">0원</div>
+								</li>	
+								<li>
+									<div class="dt">가입자지급금</div>
+									<div class="dd"><em class="t-blue">30,000,000</em>원</div><!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+								</li>
+								<li>
+									<div class="dt">매도필요금액</div>
+									<div class="dd"><em class="t-blue">30,000,000</em>원</div><!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+								</li>																				
+							</ul>
+						</div>
+					</div>	
+					<!--// [D] 2022-04-27 마크업 수정/삭제 -->	
+					<div class="etp-item">
+						<h3 class="etp-tit">가입자 정보</h3>
+						<!-- [D] 2022-07-01 마크업 수정
+						<div class="privacy-box">
+							<div class="lst-privacy between">[D] 2022-06-29 클래스 'between' 추가
+								<dl>
+									<dt class="tt">이름</dt>
+									<dd class="dsc">김교보</dd>
+								</dl>
+								<dl>
+									<dt class="tt">주민등록번호</dt>
+									<dd class="dsc">900101-1</dd>
+								</dl>
+								<dl>
+									<dt class="tt">퇴사일</dt>
+									<dd class="dsc">2021.12.25</dd>
+								</dl>
+							</div>
+						</div>-->
+						<!-- [D] 2022-07-01 마크업 수정 -->
+						<div class="ut-dtds c bd">
+							<ul class="dlist">
+								<li>
+									<div class="dt">이름</div>
+									<div class="dd">김교보</div>
+								</li>
+								<li>
+									<div class="dt">주민등록번호</div>
+									<div class="dd">900101-1</div>
+								</li>	
+								<li>
+									<div class="dt">퇴사일</div>
+									<div class="dd">2021.12.25</div>
+								</li>												
+							</ul>
+						</div>
+					</div>	
+					<div class="etp-item a">
+						<h3 class="etp-tit sb">매도 상품 합계<button type="button" class="btn sm">매도 상품 상세보기</button></h3>
+						<div class="ut-dtds c bd">
+							<ul class="dlist">
+								<li>
+									<div class="dt">적립금</div>
+									<div class="dd">12,554,766,190원</div>
+								</li>
+								<li>
+									<div class="dt">매도예상금액</div>
+									<div class="dd">30,000,000원</div>
+								</li>
+								<li>
+									<div class="dt">매도가능금액</div>
+									<div class="dd">12,554,766,190원</div>
+								</li>																																		
+							</ul>
+						</div>
+					</div>							
+				</div>
+				<!--// [D] 2022-04-26 ui 순서 변경 -->
+			</div>
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<!-- [D] 2022-01-21 클래스.b2 추가 -->
+					<div class="btn-set b2">					
+						<button type="button" class="btn rd lg b">이전</button>
+						<button type="button" class="btn rd lg a">결재</button>
+					</div>
+				</div>
+			</nav>
+		</main>
+		<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+		<!---- 바디 - 여기밑으로 템플릿영역 ---->
+		<!-- 고정메뉴 -->
+		<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+		<!-- 푸터 -->
+		<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"보험료납입 일시중지 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default inspym" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">3</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="hd-tit3 mb32"><i class="line">납입중지기간</i>을 설정해 주세요.</h2><!-- [D] 2022-03-07 변경 --><!-- [D] 2022-05-10 태그텍스트변경 -->	
+			<div class="head-box">
+				<h3 class="hd-tit4">신청계약내역</h3>
+			</div>
+			<!-- 카드영역 -->
+			<div class="card-wrap">
+				<div class="ut-dcard a dcard open" data-tog-cls="box">
+					<div class="stds">
+						<div class="hdt">
+							<div class="tit">무배당교보변액유니버셜종신보험Ⅱ(보장형[기본형],표준체)</div>
+						</div>
+					</div>
+					<div class="dtds open" data-tog-cls="ctn">
+						<ul class="dlt">
+							<li>
+								<div class="dl">
+									<div class="dt">보험증권번호</div>
+									<div class="dd">21406****459</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">보험대상자</div>
+									<div class="dd">미밤추</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">보험료</div>
+									<div class="dd">
+										<span class="prc color6">
+											<strong class="p">600,000</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입방법</div>
+									<div class="dd">자동이체</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입중지 신청가능기간</div><!-- [D] 2022-03-07 변경 -->
+									<div class="dd">12개월</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mores">
+						<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+					</div>
+				</div>
+			</div>
+			<!-- 카드영역 -->
+			<div class="head-box">
+				<h3 class="hd-tit4">신청정보</h3>
+			</div>
+			<div class="ut-dcard a dcard">
+				<div class="dtds">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">신청가능횟수</div>
+								<div class="dd"><span class="prc"><strong class="p">3</strong><i class="w">회</i></span></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">총 신청횟수</div>
+								<div class="dd"><span class="prc"><strong class="p">1</strong><i class="w">회</i></span></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">신청가능기간</div>
+								<div class="dd"><span class="prc"><strong class="p">1</strong><i class="w">년</i></span></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="head-box">
+				<h3 class="hd-tit4" id="ball_3">신청기간</h3><!-- [D] 2022-03-11 클래스변경 -->
+			</div>
+			<span data-ui-balloon="right,top" aria-describedby="ball_3">납입중지 신청가능기간 범위에서 입력해 주세요. </span><!-- [D] 2022-03-11 클래스변경 -->
+			<div class="fm">
+				<span class="input won a unit"><input type="tel" pattern="\d*" value="" title="납입중지기간 입력" placeholder="납입중지기간 입력"><i class="w">개월</i></span><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+
+			<div class="btn-set vt">
+				<button type="button" class="btn md">신청내용 확인</button>
+			</div>
+			<div class="cts-box bg-gray nobpd">
+				<div class="ut-dcard a dcard">
+					<div class="stds">
+						<div class="hdt">
+							<div class="tit">무배당교보다이렉트건강보험(기본형)</div>
+						</div>
+					</div>
+					<div class="dtds">
+						<ul class="dlt">
+							<li>
+								<div class="dl">
+									<div class="dt">보험증권번호</div>
+									<div class="dd">21406****459</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">피보험자</div><!-- [D] 2022-03-07 변경 -->
+									<div class="dd"><strong>미밤추</strong></div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">보험료</div>
+									<div class="dd"><span class="prc color6"><strong class="p">152,300</strong><i class="w">원</i></span></div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입방법</div>
+									<div class="dd">자동이체</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입중지 신청기간</div><!-- [D] 2022-03-07 변경 -->
+									<div class="dd">12개월</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입중지기간 <br>종료 후 최종납입연월 </div><!-- [D] 2022-03-07 변경 -->
+									<div class="dd">2022.10</div>
+								</div>
+							</li>
+							<li>
+								<div class="dl">
+									<div class="dt">납입중지기간 <br>종료 후 납입시작연월</div><!-- [D] 2022-03-07 변경 -->
+									<div class="dd">2022.10</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

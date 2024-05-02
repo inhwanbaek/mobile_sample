@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">		
+		<!-- 헤더-->
+		<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"지급일정 및 내역조회"}'></include>
+		<include class="gnb" src="../inc/gnb.html"></include>	
+		<!---- 바디 - 여기위로는 템플릿영역 ---->	
+		<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+		<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+		<main class="container page etp bg" id="container">
+			<!-- 본문 영역 -->
+			<div class="contents" id="contents">  					
+				<div class="inr-white chk">
+					<span class="select def no-lb">
+						<label class="lb blind" for="select-1">신청사유선택</label>
+						<select name="select-1" id="select-1">
+							<option selected="">신청사유선택</option>
+							<option></option>
+							<option></option>
+						</select>
+					</span>
+					<div class="ut-range mt08">
+						<div class="rcs">
+							<span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+							<i class="ds">~</i>
+							<span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span>
+						</div>
+					</div>
+					<label class="checkbox"><input type="checkbox"><span class="txt">근로기간 1년 미만 퇴직자 단체반환내역</span></label>
+					<div class="btn-set">
+						<button type="button" class="btn md">조회</button>
+					</div>
+				</div>
+				<div class="lst-ratio-wrp">
+					<div class="card-count">
+						<h3 class="count">총 <strong>55</strong>건</h3>
+						<p class="t-dsc mt18">지급일은 필요서류 미비 등의 사유로 지급예정일과 달라질 수 있습니다.</p><!-- [D] 2022-04-13 텍스트수정 -->
+					</div>
+					<div class="ut-dcard c pdetail" data-tog-cls="box">
+						<div class="hdt">
+							<h3 class="tit">남서하(970329-2)</h3>
+						</div>						
+						<div class="dtds">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<h4 class="dt">처리상태</h4>
+										<div class="dd"><span class="t-blue">결재대기</span></div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청금액</h4>
+										<div class="dd">926,616원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">공제금액</h4>
+										<div class="dd">0원</div>
+									</div>
+								</li>													
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급액</h4>
+										<div class="dd"><span class="t-blue">926,616</span>원<!-- [D] 2022-07-01 '원' 텍스트 태그 밖으로 이동 --></div>
+									</div>
+								</li>							
+							</ul>
+							<ul class="dlt line" data-tog-cls="ctn">
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청접수일</h4>
+										<div class="dd">2021.05.30</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급예정일</h4>
+										<div class="dd">2021.06.05</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급일</h4>
+										<div class="dd">2021.06.03</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청사유</h4>
+										<div class="dd">퇴직</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">퇴직일</h4>
+										<div class="dd">2021.05.21</div>
+									</div>
+								</li>																	
+							</ul>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>						
+						</div>
+					</div>
+					<div class="ut-dcard c pdetail" data-tog-cls="box">
+						<div class="hdt">
+							<h3 class="tit">남범담(940405-1)</h3>
+						</div>						
+						<div class="dtds">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<h4 class="dt">처리상태</h4>
+										<div class="dd"><span class="t-blue">교보생명 접수완료</span></div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청금액</h4>
+										<div class="dd">2,257,570원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">공제금액</h4>
+										<div class="dd">257,570원</div>
+									</div>
+								</li>													
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급액</h4>
+										<div class="dd"><span class="t-blue">2,000,000</span>원<!-- [D] 2022-07-01 '원' 텍스트 태그 밖으로 이동 --></div>
+									</div>
+								</li>							
+							</ul>
+							<ul class="dlt line" data-tog-cls="ctn">
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청접수일</h4>
+										<div class="dd">2021.05.30</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급예정일</h4>
+										<div class="dd">2021.06.05</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급일</h4>
+										<div class="dd">2021.06.03</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청사유</h4>
+										<div class="dd">퇴직</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">퇴직일</h4>
+										<div class="dd">2021.05.21</div>
+									</div>
+								</li>																	
+							</ul>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>						
+						</div>
+					</div>
+					<div class="ut-dcard c pdetail" data-tog-cls="box">
+						<div class="hdt">
+							<h3 class="tit">김교보(880329-2)</h3>
+						</div>						
+						<div class="dtds">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<h4 class="dt">처리상태</h4>
+										<div class="dd"><span class="t-blue">교보생명 접수중</span></div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청금액</h4>
+										<div class="dd">21,926,616원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">공제금액</h4>
+										<div class="dd">0원</div>
+									</div>
+								</li>													
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급액</h4>
+										<div class="dd"><span class="t-blue">21,926,616</span>원<!-- [D] 2022-07-01 '원' 텍스트 태그 밖으로 이동 --></div>
+									</div>
+								</li>							
+							</ul>
+							<ul class="dlt line" data-tog-cls="ctn">
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청접수일</h4>
+										<div class="dd">2021.05.30</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급예정일</h4>
+										<div class="dd">2021.06.05</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">지급일</h4>
+										<div class="dd">2021.06.03</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">신청사유</h4>
+										<div class="dd">퇴직</div>
+									</div>
+								</li>	
+								<li>
+									<div class="dl">
+										<h4 class="dt">퇴직일</h4>
+										<div class="dd">2021.05.21</div>
+									</div>
+								</li>																	
+							</ul>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>						
+						</div>
+					</div>					
+					<!-- 결과가 없을 때 -->
+					<div class="list-empty bd">
+						<p>조회 결과가 없습니다.</p>
+					</div>
+					<!--// 결과가 없을 때 -->
+					<!-- 결과가 없을 때는 더보기 버튼 비활성 -->
+					<div class="ut-more more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+					<!--// 결과가 없을 때는 더보기 버튼 비활성 -->
+				</div>
+				<div class="inr-white">
+					<!-- 가이드박스 -->
+					<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>퇴직금 신청 당일 접수 마감 시간은 09:00~16:00입니다.</li>
+								<li>관리자의 최종승인(결재) 및 필요서류 제출이 완료되어야 교보생명에 접수됩니다.</li>
+								<!-- [D] 2022-07-01 위치 이동 strong 태그 추가 <li>자세한 사항은 법인콜센터(<a href="tel:1588-0770" title="전화 앱으로 전환됩니다.">1588-0770</a>)로 문의해 주세요.</li>-->
+							</ul>
+							<!-- [D] 2022-07-01 위치 이동 strong 태그 추가 -->
+							<p class="mt10">자세한 사항은 <strong class="bold">법인콜센터</strong>(<a href="tel:1588-0770" title="전화 앱으로 전환됩니다.">1588-0770</a>)로 문의해 주세요.</p>
+						</div>
+					</div>
+					<!-- //가이드박스 -->
+				</div>				
+			</div>			
+		</main>	
+		<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+		<!---- 바디 - 여기밑으로 템플릿영역 ---->	
+		<!-- 고정메뉴 -->
+		<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>	
+		<!-- 푸터 -->
+		<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+	</div>	
+	</body>
+</html>

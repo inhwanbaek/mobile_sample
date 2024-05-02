@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-buyrt-kpad no-focus" id="pop-buyrt-kpad">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">위험자산현황</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="rskast-stat">
+						<div class="graph">
+							<div class="prgbar">
+								<div class="bar" style="width:40%;"><!-- [D] 70% 초과시 over클래스 추가 <div class="bar over"> -->
+									<span class="val">40</span>
+								</div>
+								<span class="maxval">최대 70%</span>
+								<span class="maxpos" style="width:70%;" aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="buyrt-fldset">
+						<div class="inp-buyrt">
+							<button type="button" class="c-btn c-down" data-num="-10">- 10</button>
+							<div class="inpset" aria-live="polite">
+								<!-- <div class="inp-value" title="매수비율">
+									<div class="val">40</div>
+								</div> -->
+								<span class="input a xdel xset">
+									<input type="tel" title="매수비율" pattern="\d*" value="40" readonly>
+								</span>
+								<i class="unit">%</i>
+							</div>
+							<button type="button" class="c-btn c-up" data-num="10">+ 10</button>
+						</div>
+					</div>
+
+					<div class="kpad brtype" data-ui="kpad">
+						<div class="kpad-numset">
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="1"><span>1</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="2"><span>2</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="3"><span>3</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="4"><span>4</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="5"><span>5</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="6"><span>6</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="7"><span>7</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="8"><span>8</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="9"><span>9</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="0"><span>0</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="clear"><span>지우기</span></button>
+							<button type="button" class="kpad-num" data-ui="kpad-num" data-value="confirm"><span>완료</span></button>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-buyrt-kpad');
+	</script>
+
+</div>
+</body>
+</html>

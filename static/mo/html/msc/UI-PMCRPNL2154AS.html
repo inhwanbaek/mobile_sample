@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"계약상세정보"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc rp mrp ctd" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="mrp-ttab">
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">적립금현황</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">보유상품현황</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">입금상품현황</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="mrp-tpnl">
+
+				<div class="pdmd-tprd">
+					<div class="tit"><span class="i">IRP</span><span class="t">교보정보통신</span></div>
+					<div class="act"><button type="button">가입제도선택</button></div>
+				</div>
+
+
+				<div class="msect">
+
+					<div class="mrp-topsel">
+						<div class="hdadd">
+							<span class="date">202.12.02 기준</span>
+						</div>
+						<span class="select a">
+							<select title="부담주체 구분 선택">
+								<option selected>전체(사용자분+가입자분)</option>
+								<option>회사 부담(사용자분)</option>
+								<option>가입자 부담(가입자분)</option>
+							</select>
+						</span>
+					</div>
+
+					<div class="ctdpsnl-sect">
+
+						<div class="ctdpsnl-info">
+							<div class="ut-dcard b ctdhinfo">
+								<div class="dls">
+									<div class="dl st">
+										<div class="dt">적립금</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p bold">12,123,123</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+									<div class="dl">
+										<div class="dt">평가손익</div>
+										<div class="dd">123,123원 수익</div>
+									</div>
+									<div class="dl">
+										<div class="dt">누적수익률
+											<div class="ut-tooltip">
+												<button type="button" class="ico help bt-tooltip">도움말</button>
+												<div class="toolctn">
+													<div class="tpmsg">
+														<!-- [D] 2022-04-29 툴팁 내용 수정 -->
+														<ul class="bullet d">
+															<li>누적수익률이란, 투자기간 동안 적립금에서 차감하는 수수료 등을 반영한 실질수익을 투입원금으로 나눈 수익률입니다.</li>
+															<li>누적수익률 = 수수료 차감 후 운용손익 / 투입원금</li>
+															<li>중도인출 등 지급이 있을 경우, 수익률 산출 방식에 따른 수익률 왜곡이 발생할 수 있습니다.</li>
+															<li>전액 중도인출을 받으신 경우, 누적수익률은 중도인출 이후부터 다시 계산됩니다.</li>
+														</ul>
+														<!-- //end [D] 2022-04-29 툴팁 내용 수정 -->
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="dd">34.71%(연 4.73%)</div>
+									</div>
+								</div>
+								<div class="btn-set">
+									<button type="button" class="btn md">수익률 상세</button>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!--
+							ctdpsnl-psnl a : 수익률 최고
+							ctdpsnl-psnl b : 수익률 양호
+							ctdpsnl-psnl c : 수익률 보통
+							ctdpsnl-psnl d : 수익률 관리
+							ctdpsnl-psnl e : 수익률 개선
+						-->
+						<div class="ctdpsnl-psnl b">
+							<div class="psnl-hinfo">
+								<div class="item-ico" aria-hidden="true"></div>
+								<div class="item-tit">수익률 양호</div>
+								<div class="item-msg">1년 수익률이<br>교보 평균 수익률(약 20%)보다 <br><span class="st">+9.64%</span> 초과달성</div>
+							</div>
+
+							<div class="psnl-hdesc">
+								<div class="item-msg">홍길동님! 투자를 잘 하고 계시네요. <br>수익률 대회에 한번 참여해 보세요!</div>
+								<a href="javascript:;" role="button" class="item-act">
+									<div class="tit">같이투자 수익률 대회</div>
+								</a>
+							</div>
+						</div>
+
+
+					</div>
+
+					<!-- [D] 2022-08-11 마크업 수정 기준일 추가  <h3 class="hd-tit4">포트폴리오 현황</h3> -->
+					<!-- [D] 2022-08-11 마크업 수정 기준일 추가 -->
+					<div class="hdadd flex">
+						<h3 class="hd-tit4">포트폴리오 현황</h3>
+						<span class="date">2022.12 기준</span>
+					</div>
+					<!--//[D] 2022-08-11 마크업 수정 기준일 추가 -->
+
+					<div class="mrp-chart">
+						<div class="ut-chart">
+							<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+							<!-- [웹접근성] 2st 수정 -->
+							<div class="chart" role="img" aria-label="포트폴리오 그래프, 상세 내용은 다음 표를 참고하세요"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+							<!-- [웹접근성] 2st 수정 -->
+						</div>
+					</div>
+
+					<div class="mrp-tbl">
+						<div class="hdadd">
+							<span class="unit">(단위: %)</span>
+						</div>
+						<div class="ut-tbl a scroll-x vline"><!--[D] 2022-06-23 클래스 vline 추가 -->
+							<table class="tblist nl tbfix" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">포트폴리오 현황</span><span class="cap"></span></caption>
+								<thead>
+									<tr>
+										<th scope="col" class="fixed">유형</th>
+										<th scope="col">2021.12</th>
+										<th scope="col">2021.06</th>
+										<th scope="col">2020.12</th>
+										<th scope="col">2020.06</th>
+										<th scope="col">2019.12</th>
+										<th scope="col">2019.06</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td scope="row" class="t">예금형</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">국내주식</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">해외주식</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">국내혼합</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">해외혼합</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">국내채권</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+									<tr>
+										<td scope="row" class="t">해외채권</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+										<td class="txt-r">x.x</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="list-empty bd">
+					<p>적립금이 없습니다.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- [D] 2022-05-25 삭제 -->
+		<!-- <div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">보유상품변경</button>
+				</div>
+			</div>
+		</div> -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

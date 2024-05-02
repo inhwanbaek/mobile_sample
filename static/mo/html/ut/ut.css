@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* ut-test */
+.page {} 
+
+.ut-test{
+    position: relative;
+    z-index: 100;
+}
+.ut-test .link{}
+.ut-test .link .img{
+    width: 100%;
+}
+
+
+
+.ut-test .top-txt {font-size: 33rem; color:#242424; margin-top: 14rem; margin-bottom: 50rem}
+.ut-test .top-txt strong {font-weight: 700 }
+
+a {display: block;}

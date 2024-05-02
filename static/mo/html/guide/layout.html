@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"페이지타이틀"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page myp info" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<span class="input a won coms readonly no-lb" role="button" title="예가람저축은행 개인형IRP 정기예금 1년 회사입금액 입력 팝업 오픈">
+				<input type="tel" name="usr_ivt_rte" value="50" pattern="d*" title="" placeholder="0~100" savebank="undefined" rtpaseog="" readonly=""><i class="w">%</i>
+			</span>
+
+			<div style="padding: 50rem 0;" id="test-box">
+				<p role="text" style="font-size:20rem;">
+					기본적인 팝업의 위치는<br>
+					<span style="font-size:20rem; font-weight:bold; padding-top: 10rem; display: block;">
+						<b style="color: red;">.warp</b> 안<br>
+						<b style="color: red;">.container</b> 바깥으로 넣어주세요
+					</span>
+				</p>
+				<!-- <p role="text" style="padding-top: 30rem; font-size:20rem;">
+					2중팝업을 호출할땐<br>
+					<span style="font-weight:bold; padding-top: 10rem; display: block;">
+						팝업을 호출하는 이벤트 객체에<br>
+						<b style="color: red;"> data-ui-dblayer="true"</b> 
+					</span>
+				</p> -->
+
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="select a">
+								<label class="lb" for="select-4">Label</label>
+								<select name="select-4" id="select-4">
+									<option value="s-1">선택 하세요</option>
+									<option value="s-2">선택1</option>
+									<option value="s-3">선택2</option>
+									<option value="s-4" selected>선택3</option>
+								</select>
+							</span>
+						</li>
+						<li>
+							<span class="select a">
+								<label class="lb" for="select-1">Label</label>
+								<select name="select-1" id="select-1">
+									<option>선택 하세요 .a</option>
+									<option>선택1</option>
+									<option>선택2</option>
+									<option>선택3</option>
+								</select>
+							</span>
+						</li>
+						<li>
+							<span class="select def">
+								<select name="select-11" id="select-11" title="선택선택옵션">
+									<option selected>선택 하세요 .def</option>
+									<option>선택1</option>
+									<option disabled>선택2</option>
+									<option>선택3</option>
+									<option>선택4</option>
+								</select>
+							</span>
+						</li>
+
+					</ul>
+				</div>
+
+				<form action="">
+					<label class="checkbox star">
+						<input type="checkbox" checked="" value="N" onclick="javascript:fn_Pop4811_Tab1_ActionIntrToggle(this);">
+						<span class="txt"></span>
+					</label>
+					<label class="checkbox star">
+						<input type="checkbox" checked="" value="Y" onclick="javascript:fn_Pop4811_Tab1_ActionIntrToggle(this);">
+						<span class="txt"></span>
+					</label>
+					<label class="checkbox op" role="checkbox" aria-checked="true" aria-disabled="true">
+						<input type="checkbox" id="chkOlClssYn_4811" disabled="disabled" checked="checked">
+						<span class="txt">온라인 전용</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" id="chkOlClssYn_4811" value="N" onclick="javascript:fn_Pop4811_Tab1_ActionCartToggle(this);">
+						<span class="txt">test</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" id="chkOlClssYn_4811" value="N" onclick="javascript:fn_Pop4811_Tab1_ActionCartToggle(this);">
+						<span class="txt">test2</span>
+					</label>
+				</form>
+
+				<div class="blind">dkssudgktpdy</div>
+				<div class="blind">blind 초점</div>
+
+				<!-- <label for="test1" class="chk-test">
+					<input type="checkbox" id="test1">
+					<span class="">text</span>
+				</label> -->
+
+				<span class="input_test">
+					<span class="vs-chk">
+						<input type="radio" id="test1" name="test1">
+						<i></i>
+					</span>
+					<label for="test1">테스트 옵션1</label>
+				</span>
+				<span class="input_test">
+					<span class="vs-chk">
+						<input type="radio" id="test1-2" name="test1" checked>
+						<i></i>
+					</span>
+					<label for="test1-2">테스트 옵션2</label>
+				</span>
+
+				<span class="input_test">
+					<span class="vs-chk">
+						<input type="checkbox" id="test2" name="test2">
+						<i></i>
+					</span>
+					<label for="test2">테스트 옵션3</label>
+				</span>
+
+				<span class="input_test hide_test">
+					<span class="vs-chk">
+						<input type="checkbox" id="test4" name="test4">
+						<i></i>
+					</span>
+					<label for="test4">테스트 옵션4</label>
+				</span>
+
+				<style>
+					.input_test {
+						display: block;
+						margin: 5px 0;
+						display: flex;
+						align-items: center;
+					}
+					.input_test .vs-chk {
+						width: 30rem;
+						height: 30rem;
+						position: relative;
+					}
+					.input_test .vs-chk input {
+						position: absolute;
+					}
+					.input_test .vs-chk i { 
+						width: 100%;
+						height: 100%;
+						background-color: rgb(210, 210, 210);
+						position: absolute;
+						top: 0;
+						left: 0;
+						/* z-index: 1; */
+					}
+					.input_test .vs-chk input:checked + i {
+						background-color: brown;
+					}
+					.input_test input {
+						opacity: 0;
+						margin: 0;
+						z-index: 1;
+					}
+					.input_test label {
+						margin-left: 5rem;
+					}
+					.hide_test {
+						width: 30rem;
+						height: 30rem;
+						position: relative;
+					}
+					.hide_test label {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 1;
+						overflow: hidden;
+						color: transparent;
+						clip: rect(0 0 0 0); 
+						clip-path: inset(50%);
+						margin: -1px;
+						font-size: 1rem;
+						border: none;
+					}
+				</style>
+				
+				<script>
+
+					function reset_test() {
+						$(".checkbox").each(function (index) {
+              $(this).find('input[type="checkbox"]').prop("checked", false);
+							console.log(111);
+            });
+					}
+					reset_test();
+
+					function fn_Pop4811_Tab1_ActionCartToggle(oCheckboxObject) {
+						setTimeout(() => {
+							let $checkObject = $(oCheckboxObject);
+							let sCartPdtYn = $checkObject.val();
+							// console.log($checkObject);
+							// console.log(sCartPdtYn);
+							// let $cardObject = $checkObject.closest("div.card");
+							// let sRtpPdtCd = $cardObject.data("rtpPdtCd");
+							// let sRtpPdtTpCd = $cardObject.data("rtpPdtTpCd");
+							// let sRtpPdtNm = $cardObject.find("h3.hd-tit4").text();
+
+							// // 기존체크 유지
+							$checkObject.prop("checked", sCartPdtYn != null && sCartPdtYn == "Y");
+
+							// // 최대상품 20개까지 가능
+							// if (fn_Pop4811_GetCartListCount() >= 20 && (sCartPdtYn == null || sCartPdtYn == "N")) {
+							//   ui.alert("변경할 상품은 최대 20개까지만 가능합니다.");
+							//   return false;
+							// }
+
+							// // 현재카트상품 여부에 따른 처리
+							if (sCartPdtYn != null && sCartPdtYn == "Y") {
+								$checkObject.val("N");
+								$checkObject.prop("checked", false);
+								// fn_GetDeletePdtFromCart(sRtpPdtCd).then(function () {
+								//   // fn_Pop4811_DisplayRemoveCart(sRtpPdtCd, false);
+								// });
+							} else {
+								$checkObject.val("Y");
+								$checkObject.prop("checked", true);
+								// fn_GetInsertPdtToCart(sRtpPdtCd, sRtpPdtNm, sRtpPdtTpCd).then(function () {
+								//   // fn_Pop4811_DisplayAddCart({ rtpPdtCd: sRtpPdtCd, rtpPdtNm: sRtpPdtNm, rtpPdtTpCd: sRtpPdtTpCd });
+								// });
+							}
+							ui.update();
+						}, 0);
+					}
+
+					function fn_Pop4811_Tab1_ActionIntrToggle(oCheckObject) {
+						let $checkObject = $(oCheckObject);
+						let sIntrYn = $checkObject.val();
+						// let $cardObject = $checkObject.closest("div.card");
+						// let sRtpPdtCd = $cardObject.data("rtpPdtCd");
+						// let sRtpPdtTpCd = $cardObject.data("rtpPdtTpCd");
+						// let sRtpRcpPthDvCd = "12";
+
+						// 기존체크 유지
+						$checkObject.prop("checked", sIntrYn != "" && sIntrYn == "Y");
+
+
+						if (sIntrYn != "" && sIntrYn == "Y") {
+							$checkObject.val("N");
+							$checkObject.prop("checked", false);
+							// ui.alert("관심 상품에서 삭제되었습니다.");
+						} else {
+							$checkObject.val("Y");
+							$checkObject.prop("checked", true);
+							// ui.alert("관심 상품으로 추가되었습니다.");
+						}
+
+						return false;
+
+						
+					}
+
+				</script>
+			</div>
+			<div style="margin-top: 10rem;">
+				<a class="btn" href="javascript:;" onclick="alert_sample_2();">알럿</a>
+			</div>
+			<div style="margin-top: 10rem;">
+				<a class="btn" href="javascript:;" onclick="confirm_sample_2();">컨펌</a>
+			</div>
+			<div style="margin-top: 10rem;">
+				<!-- <button type="button" class="btn b rd lg" data-layer="pop-sample1" onclick="ui.popup.open('pop-sample1');">팝업 1번</button> -->
+				<!-- <button type="button" class="btn b rd lg" id="test" data-layer="pop-sample1" onclick="open_layer();">팝업 1번</button> -->
+				<button type="button" class="btn b rd lg" onclick="open_layer();">팝업 1번</button>
+			</div>
+
+			<div style="margin-top: 10rem;">
+				<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample4');">팝업 4번</button> -->
+				<button type="button" class="btn b rd lg" onclick="open_layer4();">팝업 4번</button>
+			</div>
+
+			<div style="margin-top: 10rem;">
+				<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample4');">팝업 4번</button> -->
+				<button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-terms');">pop-terms</button>
+			</div>
+			
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<article class="pop-layer b pop-sample3" id="pop-sample4">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업레이어 타이틀 4</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+				</main>
+			</div>
+			<div class="pbt">
+
+				<div class="btn-set">
+					<button type="button" class="btn b md" onclick="ui.popup.close('pop-sample4');">취소</button>
+					<button type="button" class="btn a md">다음</button>
+				</div>
+				
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer b pop-sample3" id="pop-sample3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업레이어 타이틀 3</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-terms');">pop-terms</button>
+				</main>
+			</div>
+			<div class="pbt">
+
+				<div class="btn-set">
+					<button type="button" class="btn b md" onclick="ui.popup.close('pop-sample3');">취소</button>
+					<button type="button" class="btn a md">다음</button>
+				</div>
+				
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer c pop-sample2" id="pop-sample2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업레이어 2번</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p style="height: 300rem;">내용 내용.</p>
+					<div>
+						<a class="btn" href="javascript:;" onclick="alert_sample_1();">알럿1</a>
+						<a class="btn" href="javascript:;" onclick="confirm_sample_1();">컨펌1</a>
+					</div>
+					<button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample3');">팝업 3번</button>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample2');">취소</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer a pop-sample1" id="pop-sample0">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업레이어 1번</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p style="height: 300rem;">내용 내용.</p>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample0');">취소</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer a pop-terms" id="pop-terms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">전자금융 서비스 이용약관</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<section class="cts-box">            
+						<div class="text-contents">
+							<p class="text-type1">
+								귀하는 본 동의를 거부할 수 있습니다. 다만, 본 동의를 거부하시는 경우 상품 소개 및 가입 안내, 상품 관련 컨설팅 서비스 제공이 제한되며, 동의하시더라도 콜센터(1588-1001), 서명 등을 통해 동의한 정보의 삭제 및 상담 목적의 연락에 대란 중단 요청을 할 수 있습니다.
+							</p>
+						</div>
+						<div class="rating-list">
+							<dl class="rating-box stage1">
+								<dt>동의등급</dt>
+								<dd class="graph-area" role="img" aria-label="안심, 다소안심, 보통, 신중, 주의 평가등급 중 안심 평가등급">
+									<ol class="graph">
+										<li><span>안심</span></li>
+										<li><span>다소안심</span></li>
+										<li><span>보통</span></li>
+										<li><span>신중</span></li>
+										<li><span>주의</span></li>
+									</ol>
+									<strong class="blind"></strong>
+								</dd>
+								<dd class="text-area">이 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 고려하여 동의내용의 평가등급을 제공하는 제도입니다.</dd>
+							</dl>                
+						</div>
+					</section>
+					<section class="agreeArea">						
+						<div class="scrollBox">
+							<!-- 전자금융 서비스 이용약관 시작 -->
+							<div class="agreeBox">
+								<div class="term-doc typeBg">
+									
+
+									<h3 class="term_tit">제 1 조 (목적)</h3> 
+									<p>본 약관은 교보생명보험주식회사(이하 “회사”라 한다)와 회사가 제공하는 전자금융서비스(이하 “서비스”라 한다)를 이용하고자하는 고객 (이하 “이용자”라 한다)간에 서비스 이용에 관한 제반사항을 정함을 목적으로 한다.</p>
+									<h3 class="term_tit">제 2 조 (서비스 종류) </h3>
+									<p>본 약관에 따른 서비스는 다음과 같다.</p>
+									<ol class="agreeDepth1">
+										<li>① 조회서비스 : 계약사항조회, 입·출금거래내역, 계약심사조회, 청약철회, 수익증권저축(펀드)정보 등</li>
+										<li>② 입금서비스 : 보험료 및 보험계약대출원리금, 개인대출원리금, 수익증권저축(펀드)불입금, 특정금전신탁MMT형 추가신탁 등</li>
+									</ol>
+									<h3 class="term_tit">제 3 조 (서비스 개시) </h3>
+									<ol class="agreeDepth1">
+										<li>① 이용자가 고객창구에 방문하여 회사의 전자금융서비스 이용약관(이하 '약관'이라 함)에 동의하고, 회사 소정의 서비스 신청서(이하</li>
+										<li>② 이용자가 PC나 모바일 통신기기를 활용한 인터넷창구 또는 모바일창구에서 공동인증서, 금융인증서, 카카오페이인증</li>
+									</ol>
+									<h3 class="term_tit">제 4 조 (서비스 이용)</h3> 
+									<ol class="agreeDepth1">
+										<li>① 이용자가 고객창구에 방문하여 회사의 전자금융서비스 이용약관(이하 '약관'이라 함)에 동의하고, 회사 소정의 서비스 신청서(이하</li>
+										<li>② 이용자가 PC나 모바일 통신기기를 활용한 인터넷창구 또는 모바일창구에서 공동인증서, 금융인증서, 카카오페이인증</li>
+									</ol>
+									<h3 class="term_tit">제 5 조 (서비스 이용 방법)</h3> 
+									<p>서비스 이용은 PC나 모바일 통신기기를 활용한 인터넷 창구, 모바일창구, 전화ARS, CD/ATM기기를 통해 이용할 수 있으며, 이용자 비밀번호 등록이나 보안카드의 발급 여부 등에 따라 일부 서비스 이용이 제한될 수 있다.</p>
+									<ol class="agreeDepth1">
+										<li>① 조회서비스 : 계약사항조회, 입·출금거래내역, 계약심사조회, 청약철회, 수익증권저축(펀드)정보 등
+											<ul>
+												<li>- 조회서비스 : 계약사항조회, 입·출금거래내역, 계약심사조회, 청약철회, 수익증권저축(펀드)정보 등</li>
+												<li>- 입금서비스 : 보험료 및 보험계약대출원리금, 개인대출원리금, 수익증권저축(펀드)불입금, 특정금전신탁MMT형 추가신탁 등</li>
+											</ul>
+										</li>
+										<li>② 입금서비스 : 보험료 및 보험계약대출원리금, 개인대출원리금, 수익증권저축(펀드)불입금, 특정금전신탁MMT형 추가신탁 등</li>
+									</ol>
+									
+
+
+									<h3 class="term_tit">[별표 1] 이용서비스</h3>
+
+									<div class="ut-tbl a">
+										<table class="tblist" cellpadding="0" cellspacing="0">
+											<caption><span class="tit"></span><span class="cap"></span></caption>
+											<colgroup>
+												<col style="width: 24%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">서비스</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>입금 서비스</td>
+													<td>보험료 및 보험계약대출원리금, 개인대출원리금, 수익증권저축(펀드)불입금, 특정금전신탁 MMT형 추가신탁 등</td>
+												</tr>
+												<tr>
+													<td>출금 서비스</td>
+													<td>보험계약대출금, 중도 및 만기보험금, 배당금, 해지환급금, 휴면보험금, 사고보험금, 대출금, 수익증권환매대금(저축재산) , 특정금전신탁 MMT형 해지 출금 및 정기예금형 만기 출금 등</td>
+												</tr>
+												<tr>
+													<td>변경 · 등록 서비스</td>
+													<td>고객정보변경, 계약변경, 펀드변경,자동이체등록, 자동대출등록, 자동송금등록, 카드관련서비스, 수익증권신규등록 &middot; 매입신청 · 환매신청, 특정금전 신탁 위탁자 고객정보(주소, 전화번호, E-mail등)변경 등</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer a pop-cprdt" id="pop-cprdt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업레이어 1번</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<p style="height: 300rem;">내용 내용.</p>
+					<a class="btn" href="javascript:;" onclick="alert_sample_1();">알럿1</a>
+					<a class="btn" href="javascript:;" onclick="confirm_sample_1();">컨펌1</a>
+					<div style="margin-top: 10rem;">
+						<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample4');">팝업 4번</button> -->
+						<button type="button" class="btn b rd lg" onclick="open_layer4();">팝업 4번</button>
+					</div>
+					<div style="margin-top: 10rem;">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample2');">팝업 2번</button>
+					</div>
+					<div class="st-r">
+						<button type="button" class="btn-share02" id="snsShares" onclick="ui.popup.open('pop-shares');"><i class="blind">공유하기</i></button>
+						<label id="labelCheckBox" class="checkbox star" role="checkbox" aria-checked="false" style="display: none2;"><input type="checkbox" name="intrPdtCheckBox" id="intrPdtCheckBox" aria-hidden="true"><span class="txt" aria-label="관심상품 추가"><span class="blind">관심상품</span></span></label>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<div id="commonFunctionLayout">
+		<article class="pop-layer c pop-shares" id="pop-shares">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">레벨이 다른 팝업</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<p style="height: 300rem;">내용 내용.</p>
+						<div>
+							<a class="btn" href="javascript:;" onclick="alert_sample_1();">알럿1</a>
+							<a class="btn" href="javascript:;" onclick="confirm_sample_1();">컨펌1</a>
+						</div>
+						<button type="button" class="btn b rd lg" onclick="ui.popup.open('pop-sample3');">팝업 3번</button>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample2');">취소</button>
+						<button type="button" class="btn a rd lg">다음</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+	</div>
+	
+
+	
+
+	<style>
+		*:focus { border: 2px solid red !important; }
+	</style>
+
+	<script>
+		var confirm_sample_1 = function(){
+			ui.confirm("신청을 취소하시겠습니까?",{ // 컨펌 창 띄우기
+				ycb:function(){
+					// console.log("컨펌1확인결과");
+				},
+				ncb:function(){
+					// console.log("컨펌1취소결과");
+				},
+				ybt:"예",
+				nbt:"아니오"
+			});
+		}
+		var confirm_sample_2 = function(){
+			ui.confirm("추가 납입처리 진행중인 건이 있습니다. 해지 처리는 법인콜센터(1588-0730)로 문의주시기 바랍니다.",{ // 컨펌 창 띄우기
+				tit:"안내",
+				ycb:function(){
+					// console.log("컨펌2확인결과");
+				},
+				ncb:function(){
+					// console.log("컨펌2취소결과");
+				},
+				ybt:"확인",
+				nbt:"취소"
+			});
+		}
+		var alert_sample_1 = function(){
+			// 알럿창 띄우기
+			ui.alert("알럿 메시지 입니다.",{
+				ycb:function(){
+					// console.log("알럿1확인결과");
+				},
+				ybt:"확인"
+			});
+		}
+		var alert_sample_2 = function(){
+			// 알럿창 띄우기
+			ui.alert("알럿 메시지 입니다.",{
+				tit:"타이틀",
+				ycb:function(){
+					// console.log('알럿2확인결과');
+				},
+				ybt:"확인"
+			});
+		}
+		function open_layer() {
+			ui.popup.open("pop-cprdt", {
+				ocb: function () {
+					// console.log("open");
+				},
+				ccb: function () {
+					// console.log("close");
+				},
+				zIndex:2000
+			});
+		}
+
+		function open_layer2() {
+			ui.popup.open("pop-sample2", {
+				ocb: function () {
+					// console.log("open");
+				},
+				ccb: function () {
+					// console.log("close");
+				},
+			});
+		}
+
+		function open_layer3() {
+			ui.popup.open("pop-sample3", {
+				ocb: function () {
+					// console.log("open");
+				},
+				ccb: function () {
+					// console.log("close");
+				},
+			});
+		}
+
+		function open_layer4() {
+			ui.popup.open("pop-sample4", {
+				ocb: function () {
+					// console.log("open");
+				},
+				ccb: function () {
+					// $("#test4").focus();
+				},
+			});
+		}
+
+		function check_test() {
+			let test = "";
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+			test += '<label class="checkbox"><input type="checkbox"><span class="txt">checkbox</span></label>';
+
+			$("#test-box").prepend(test);
+			
+		}
+		setTimeout(() => {
+			// check_test();
+		}, 2000);
+
+		// ui.popup.open("pop-sample0");
+
+		// open_layer();
+		// open_layer3();
+		// open_layer2();
+
+
+		
+		// alert 복귀
+		// let layer_rt = document.querySelectorAll(".pop-layer");
+		// if (layer_rt.length >= 1) {
+		// 	layer_rt.forEach(function(item) {
+		// 		setTimeout(() => {
+		// 			let attr = item.getAttribute("aria-hidden");
+		// 			if (attr == "false" ) {
+		// 				// console.log(item);
+		// 				// console.log(attr);
+		// 				item.focus();
+		// 			}
+		// 		}, 100);
+		// 	});
+		// }
+
+
+		// zindex 확인
+		// let cntlayer = document.querySelectorAll(".pop-layer[aria-hidden='false'");
+		// let czi = 2000;
+		// if (cntlayer.length >= 1) {
+		// 	cntlayer.forEach(function(item) {
+		// 		czi = Number(item.style.zIndex) + 1;
+		// 		console.log(czi);
+		// 	});
+		// }
+
+		// var lyAlert =
+		// '<article role="alertdialog" aria-live="assertive" tabindex="0" class="ui-alert ' + opt.cls + '" style="z-index: ' + czi + '">' +
+		// '	<div class="pbd">'+
+		// '		<div class="phd"><span class="tit">'+opt.tit+'</span></div>'+
+		// '		<div class="pct"><div class="msg">'+opt.msg+'</div></div>'+
+		// '		<div class="pbt">'+
+		// '			<button type="button" class="btn btn-confirm">'+ opt.ybt +'</button>'+
+		// '		</div>'+
+		// // '		<button type="button" class="btn-close">닫기</button>'+
+		// '	</div>'+
+		// '</article>';
+		// $("body").append(lyAlert).addClass("is-alert");
+		// if (opt.tit) {
+		// 	$(".ui-alert>.pbd>.phd").addClass("is-tit");
+		// }
+
+
+	</script>
+
+	<!-- 접근성 -->
+	<script>
+		// $(document).on("click", ".st-r #snsShares", function(){
+		// 	$(".pop-layer.on").attr("aria-hidden", "true");
+		// 	if( $("#commonFunctionLayout #pop-shares").hasClass("on")) {
+		// 		console.log("open");
+		// 		$(".pop-layer.on").attr("aria-hidden", "false");
+		// 	} else {
+		// 		console.log("close");
+		// 		$(".pop-layer.on").attr("aria-hidden", "true");
+		// 	}
+		// });
+		
+		// open
+		$(document).on("click", ".st-r #snsShares", function(){
+			$("#pop-cprdt.on").attr("aria-hidden", "true");
+		});
+		// close
+		$(document).on("click", "#commonFunctionLayout #pop-shares .btn-pop-close", function(){
+			$("#pop-cprdt.on").attr("aria-hidden", "false");
+		});
+	</script>
+	<!-- 접근성 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<!-- <include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include> -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-qmenu"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

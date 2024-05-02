@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-idencard" id="pop-idencard">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신분증 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<h1 class="hd-tit2">촬영하신 신분증 정보를<br>확인해 주세요.</h1>
+					<div class="iden-img">
+						<div class="card">
+							<!-- <div class="blind">주민등록증및 자동자면허증 예제 이미지</div> -->
+							<img src="../../img/mbl/iden-imgpic2x.png" alt="운전면허증 정보확인"><!-- [D] 2022-07-08 이미지 변경 -->
+						</div>
+					</div>
+
+					<div class="ut-form a  forms">
+						<ul class="form">
+							<li>
+								<!-- [D] 2022-08-29 입력영역 변경 -->
+								<div class="ut-cdnum input a drive-num">
+									<span class="lb">운전면허번호</span>
+									<div class="set">
+										<input type="number" class="cd c1" pattern="\d*" title="운전면허번호 1~2자리" placeholder="00">
+										<i class="ds">-</i>
+										<input type="number" class="cd c2" pattern="\d*" title="운전면허번호 3~4자리" placeholder="00">
+										<i class="ds">-</i>
+										<input type="number" class="cd c3" pattern="\d*" title="운전면허번호 5~10자리" placeholder="000000">
+										<i class="ds">-</i>
+										<input type="number" class="cd c4" pattern="\d*" title="운전면허번호 11~12자리" placeholder="00">
+									</div>
+								</div>
+								<!-- [D] 2022-08-29 입력영역 변경 -->
+								<!-- <span class="input a"><label class="lb" for="input_nn1">운전면허번호</label><input id="input_nn1" type="text" placeholder=""  value="11-111111-11"></span> -->
+							</li>
+							<li>
+								<span class="input a"><label class="lb" for="input_id1">이름</label><input id="input_id1" type="text" placeholder=""  value="김미래"></span>
+							</li>
+							<li>
+								<span class="input a nobg ut-rsnum">
+									<label class="lb" for="rsnum_2">주민(외국인)등록번호</label>
+									<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민(외국인)등록번호 앞 6자리" placeholder="앞 1~6자리" value="830000"> <!-- [웹접근성] 1st 수정 -->
+									<i class="ds">-</i>
+									<input type="tel" class="mn" pattern="\d*" title="주민(외국인)등록번호 뒤 1자리" value="1" placeholder="*" maxlength="1"> <!-- [웹접근성] 1st 수정 -->
+									<input type="tel" class="ln" pattern="\d*" title="주민(외국인)등록번호 뒤 2~7자리" value="******" readonly> <!-- [웹접근성] 1st 수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="input a ut-date"><label class="lb" for="date_id_1">발급일</label><input type="tel" id="date_id_1" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set b">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-idencard');">재촬영</button>
+					<button type="button" class="btn a rd lg">신분증 인증</button><!-- [D] 2022-05-24 텍스트 수정 -->
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-idencard');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-idencard',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

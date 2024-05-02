@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<link rel="stylesheet" href="ut.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<script src="ut.js"></script>
+
+
+</head>
+<body class="body">
+<!-- <div class="wrap" id="wrap">
+	
+	<div class="ut-test">
+		<a href="UT0808.html" class="link"><img class="img" src="./img/ut0807.png" alt=""></a>
+	</div>
+
+</div> -->
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-pdmdcnfm" id="pop-pdmdcnfm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변경내역 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="pdmdcnfm-list">
+						<div class="item">
+							<div class="tit">매도(파는 상품)</div>
+							<ul class="list">
+								<li>
+									<div class="t">AB미국그로스증권(주식-재간접형)</div>
+								</li>
+								<li>
+									<div class="t">교보생명(신탁) 현금성 자산</div>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="tit">매수(사는 상품)</div>
+							<ul class="list">
+								<li>
+									<div class="t">AB미국그로스증권(주식-재간접형)</div>
+								</li>
+								<li>
+									<div class="t">교보생명(신탁) 현금성 자산</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="pdmdcnfm-act">
+						<div class="btn-set vt">
+							<button type="button" class="btn md">상품매매별 예정스케줄</button>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="location.href='UT0808.html'">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pdmdcnfm');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmdcnfm',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+		
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">제3자 정보제공 동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					
+					<div class="ut-termbox">
+						<div class="terms">			
+							<p class="term_h_tit">공단은 정보주체의 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다. </p>
+							<h2>1.용어정의</h2>
+							<ul class="ko">
+								<li>가. CI(연계정보) : 특정 개인의 식별을 위한 고유한 범용값</li>
+								<li>나. DI(중복가입확인정보) : 특정 개인의 식별을 위한 해당 기관에서 고유한 로컬값</li>
+								<li>다. 인증사업자 : 카카오, KB국민은행, payco, pass, 삼성pass, 네이버, 신한은행, 토스 등 전자서명 서비스를 제공하는 사업자</li>
+							</ul>
+							<h2>2.제 3자 제공에 관한 사항</h2>
+							<ul class="ko">
+								<li>가. 개인정보를 제공받는자 : 이용자가 선택한 인증사업자</li>
+								<li>나. 제공받는 자의 개인정보 이용목적 : 간편인증 시 인증 또는 전자서명</li>
+								<li>다. 제공하는 개인정보 항목 : 생년월일, 성명, 휴대폰번호</li>
+								<li>라. 제공받는자의 보유/이용기간 : 인증 또는 전자서명 후 즉시 파기</li>
+							</ul>
+							<h2>3.개인정보의 제3자 제공 동의</h2>
+							<p>귀하는 개인(신용)정보의 선택적인 제공에 대한 동의를 거부할 수 있습니다. 다만, 관련 민원 신청 등 이용 목적에 따른 혜택의 제한이 있을 수 있습니다.</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots b">
+					<div class="inr">
+						<div class="box-set boxbot">
+							<div class="hd-tit5">위 사항에 동의하십니까?</div>
+						</div>
+						<div class="btn-set b2">
+							<a href="javascript:;" class="btn lg rd b">동의안함</a>
+							<a href="javascript:;" class="btn lg rd a">동의</a>
+						</div>
+					</div>
+				</nav>
+				<!-- //하단 고정영역 -->
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+		
+
+
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

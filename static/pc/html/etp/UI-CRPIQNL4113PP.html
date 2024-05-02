@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">기간별 적립금 조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<!-- 조회영역 -->
+						<div class="isrc-search">
+							<div class="inr">
+								<div class="pl">
+									<h2 class="s-tit">조회기간</h2>
+								</div>				
+								<div class="s-cont pr">
+									<div class="ut-range">
+										<div class="rag">
+											<label class="radio"><input type="radio" name="r_range" checked><span class="txt">1개월</span></label>
+											<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+											<label class="radio"><input type="radio" name="r_range"><span class="txt">6개월</span></label>
+											<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+										</div>
+										<div class="rcs">
+											<span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+											<i class="ds">~</i>
+											<span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-set btsch">
+								<button type="button" class="btn md ico-search ico-r">조회</button>
+							</div>
+						</div>
+					
+						<!-- 테이블 상단 -->
+						<div class="ut-tbltop">
+							<div class="left">
+								<!-- [D] 2022-06-03 클래스 수정 -->
+								<h3 class="hd-tit3">수입·지출내역</h3>
+							</div>
+							<div class="right">
+								<span class="select a">
+									<label class="lb blind" for="sel_id0">전체</label>
+									<select id="sel_id0" name="sel_id0">
+										<option>전체(사용자분+가입자분)</option>
+										<option>회사 부담(사용자분)</option>
+										<option>가입자 부담(가입자분)</option>
+									</select>
+								</span>
+							</div>
+						</div>
+
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">수입·지출내역</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 20%;">
+									<col style="width: 20%;">
+									<col style="width: 20%;">
+									<col style="width: 20%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">수입내역</th>
+										<th scope="col" colspan="3">지출내역</th>
+									</tr>
+									<tr>
+										<th scope="col">내용</th>
+										<th scope="col">금액</th>
+										<th scope="col" colspan="2">내용</th>
+										<th scope="col">금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>부담금</td>
+										<td class="txt-r">426,812,661원</td>
+										<td class="txt-l" colspan="2">퇴직급여금</td>
+										<td class="txt-r">426,812,661원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td class="txt-l" colspan="2">기타지급금</td>
+										<td class="txt-r">0원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td rowspan="5">제수수료</td>
+										<td class="txt-l">운용관리수수료</td>
+										<td class="txt-r">0원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td class="txt-l">자산관리수수료(차감)</td>
+										<td class="txt-r">43,395원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td class="txt-l">시장가격조정액(MVA)</td>
+										<td class="txt-r">0원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td class="txt-l">환매수수료</td>
+										<td class="txt-r">0원</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="txt-r"></td>
+										<td class="txt-l">기타수수료</td>
+										<td class="txt-r">0원</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<tr>
+											<td class="txt-l">수입합계</td>
+											<td class="txt-r"><span class="color11">426,812,661</span>원</td>
+											<td class="txt-l" colspan="2">지출합계</td>
+											<td class="txt-r"><span class="color11">426,812,661</span>원</td>
+										</tr>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						
+					</div>
+
+				</main>
+			</div>
+		
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-insurance" id="pop-insurance">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험금 지급 미리 알림 </h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<h2 class="hd-tit3">보험금 지급일이 다가오고 있어요.<br>상세내역을 확인해 보세요.</h2>	
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard open" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당내사랑어린이보험(2종)</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">보험금종류</div>
+										<div class="dd">만기보험금</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">합계보험료</div>
+										<div class="dd">72,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">기납입보험료</div>
+										<div class="dd">15,638,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정보험금</div>
+										<div class="dd">7,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정일</div>
+										<div class="dd">2021.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">수익자</div>
+										<div class="dd">홍수진</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당내사랑어린이보험(2종)</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>  
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">보험금종류</div>
+										<div class="dd">만기보험금</div>
+									</div>
+								</li>
+								<li>  
+									<div class="dl">
+										<div class="dt">합계보험료</div>
+										<div class="dd">72,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">기납입보험료</div>
+										<div class="dd">15,638,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정보험금</div>
+										<div class="dd">7,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정일</div>
+										<div class="dd">2021.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">수익자</div>
+										<div class="dd">홍수진</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+
+					<!-- 카드리스트 -->
+					<div class="ut-dcard a dcard" data-tog-cls="box">
+						<div class="stds border">
+							<div class="hdt">
+								<div class="tit">무배당내사랑어린이보험(2종)</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">21090300468801</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약자(주피보험자)</div>
+										<div class="dd">홍길동(홍길동)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">계약일</div>
+										<div class="dd">1994.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">납입횟수(최종납입연월)</div>
+										<div class="dd">216회(2012.01)</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">보험금종류</div>
+										<div class="dd">만기보험금</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">합계보험료</div>
+										<div class="dd">72,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">기납입보험료</div>
+										<div class="dd">15,638,400원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정보험금</div>
+										<div class="dd">7,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">지급예정일</div>
+										<div class="dd">2021.02.25</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">수익자</div>
+										<div class="dd">홍수진</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP정보(점포)</div>
+										<div class="dd">김교보(강남지점) </div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">FP전화번호</div>
+										<div class="dd">
+											<p><a href="tel:031-858-8888" title="전화 앱으로 전환됩니다." class="link-text">031-858-8888</a></p>
+											<p><a href="tel:010-1234-5678" title="전화 앱으로 전환됩니다." class="link-text">010-1234-5678</a></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- //카드리스트 -->
+				
+					<ul class="bullet b">
+						<li>지급예정보험금과 실제 수령금액은 다를 수 있습니다.</li>
+					</ul>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-insurance');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer sm a pop-aclrpdpst" id="pop-aclrpdpst">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대출상환 입금전용계좌</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents msc loan inq">
+
+					<div class="msect">
+						<h2 class="hd-tit4">입금전용계좌 정보</h2>
+						<div class="ut-tbl b">
+							<table class="tbform" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">입금전용계좌 정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:40%;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">은행</th><!-- [D] 2022-04-07 문구수정 -->
+										<td>신한은행(구.신한)</td>
+									</tr>
+									<tr>
+										<th scope="row">계좌번호</th><!-- [D] 2022-04-07 문구수정 -->
+										<td>274-901-18297274</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="desc">
+							<ul class="bullet b">
+								<li>가상계좌로 상환하시려면 담당 융자센터 또는 융자콜센터(1588-1010)에 먼저 문의하신 후 입금하시기 바랍니다.</li><!-- [D] 2022-04-07 문구수정 -->
+							</ul>
+						</div>
+						<div class="btn-set vt">
+							<a href="javascript:;" class="btn md ico-arrow" role="button">입금전용계좌정보 카카오톡 공유</a><!-- [D] 2022-04-07 문구수정 -->
+						</div>
+					</div>
+
+					<div class="loiq-gudbox">
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li>입금전용계좌는 교보생명 명의로 개설해 고객에게 부여해 드리는 입금 전용 가상계좌입니다.(통장 실물은 없음)</li><!-- [D] 2022-04-07 문구수정 -->
+									<li>입금전용계좌로 입금하시면 입금 즉시 납입 처리됩니다.</li><!-- [D] 2022-04-07 문구수정 -->
+									<li>입금전용계좌 입금 가능 시간은 08:00~23:30입니다.</li><!-- [D] 2022-04-07 문구수정 -->
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-aclrpdpst');
+	</script>
+
+
+</div>
+</body>
+</html>

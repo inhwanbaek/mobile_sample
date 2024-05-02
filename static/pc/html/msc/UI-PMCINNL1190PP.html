@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a md pop-insrnpratd2" id="pop-insrnpratd2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 자동이체납입제도 및 유의사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt isbotb">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">보험료 자동이체납입제도 및 유의사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>매월 납입해야 하는 보험료를 고객이 등록한 은행 입출금계좌에서 지정한 이체일에 이체하여 자동으로 납입하는 제도입니다.</li>
+								<li>추가납입보험료 자동이체 신청 건도 위와 같은 계좌, 같은 이체일에 등록/변경/해지됩니다. </li>
+								<li>유니버셜 상품의 추가납입 자동이체 신청 건은 의무납입기간 중에만 이체됩니다. </li>
+								<li>의무납입기간이 끝나 계약별 자유납입기간이 되면 자유납입 자동이체 신청을 따로 하지 않는 한 추가납입 자동이체는 중지되고 기본보험료만 이체됩니다.</li>
+								<li>보험료가 연체된 경우 당월 말일까지 보험료를 납입하지 않으면 계약해지(실효)됩니다.  </li>
+								<li>해당 이체일에 이체되지 않은 경우 보험료 납입최고(독촉) 기간 내 5일 단위로 다시 청구됩니다.</li>
+								<li>보험료 합산이체
+									<ul class="bullet c">
+										<li>자동이체가 등록된 계약 중 출금계좌와 이체일이 같은 2건 이상의 계약은 보험료가 합산되어 1건으로 이체됩니다. </li>
+										<li>합산이체 시 고객님의 통장에는 납입보험료 내역이 1건으로 간략하게 표기됩니다. </li>
+										<li>이메일 수신에 동의하시면 합산이체 결과를 이메일로 안내해 드립니다.</li>
+										<li>합산이체 예시: A계좌에서 이체일 10일로 자동이체 등록한 2건의 계약(교육보험 100,000, 연금보험 70,000원) → 매월 10일에 170,000원으로 합산되어 1건으로 이체됨(통장표기 내용: 교보07(납입월)-002건)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt b no-hide">
+				<div class="box-set">
+					<div class="hd-tit4">위 내용을 확인하셨습니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-insrnpratd2');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

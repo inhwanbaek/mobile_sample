@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-signature sign-adds" id="pop-signature">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="hd-tit3 ptit">본인확인</h1><!-- [D] 2022-07-08 ptit 클래스 추가 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="centbox">
+					<!-- [D] 2022-02-24 UI-PCMLCNL0913AP -->
+					<div class="mbl-top">
+						<div class="hdt"><h2 class="hd-tit2"><i class="line">디지털 회원</i>으로 로그인</h2></div>
+					</div>  
+					
+					<div class="certificate-list">
+						<!-- [D] 2022 06-13 인증서 순서 정렬 -->
+						<ul class="list">
+							<li class="ics simp"><a href="javascript:;" class="lks">간편비밀번호<p class="ubdgs">이용등록</p></a></li><!-- [D] 2022-07-27 포커스 영역 수정으로 마크업 수정 -->
+							<li class="ics touch bdcc"><a href="javascript:;" class="lks">지문 인증<p class="ubdgs">이용등록</p></a></li> <!-- 안드로이드 경우 --> <!-- [D] 2022-07-27 포커스 영역 수정으로 마크업 수정 -->
+							<li class="ics face"><a href="javascript:;" class="lks">얼굴 인증<p class="ubdgs">이용등록</p></a></li> <!-- 아이폰 경우 --> <!-- [D] 2022-07-27 포커스 영역 수정으로 마크업 수정 -->
+							<li class="ics naver bdcc"><a href="javascript:;" class="lks">네이버 인증서</a></li> <!-- [D] 2022-06-08: 네이버인증서 추가 -->
+							<li class="ics kpay bdnone"><a href="javascript:;" class="lks">카카오페이 인증서<p class="ubdgs">이용등록</p></a> </li><!-- [D] 2022-07-27 포커스 영역 수정으로 마크업 수정 -->
+							<li class="ics kbpay bdnone"><a href="javascript:;" class="lks">KB모바일 인증서</a></li>
+							<li class="ics payco bdnone"><a href="javascript:;" class="lks">페이코 인증서</a></li>
+							<li class="ics pass bdnone"><a href="javascript:;" class="lks">패스 인증서</a></li><!-- [D] 2022-07-08 순서변경 -->
+							<li class="ics sspass bdnone"><a href="javascript:;" class="lks">삼성패스 인증서</a></li>
+							<li class="ics toss bdnone"><a href="javascript:;" class="lks">토스 인증서</a></li><!-- [D] 2022-07-08 순서변경 -->
+							<li class="ics ctfn bdcc"><a href="javascript:;" class="lks">금융인증서</a></li><!-- [D] 2022-07-08 순서변경 -->
+							<li class="ics ctcm bdnone"><a href="javascript:;" class="lks">공동인증서<span class="sm-txt">(구 공인인증서)</span></a></li>
+							<li class="ics nomem bdcc"> <!-- [D] 2022-06-13 비회원 로그인 class .nomem 추가 -->
+								<div class="w100p">
+									<h2 class="hd-tit2"><i class="line">비회원</i>으로 로그인</h2><!-- [D] 2022-07-08 수정 -->
+									<div class="btn-set mt20 center">
+										<button type="button" class="btn md">휴대폰 본인확인</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!--// [D] 2022 06-13 인증서 순서 정렬 -->
+					</div>
+					
+					<div class="visit-box">
+						<p class="tit">처음 오셨나요?</p>
+						<p class="txt">건강부터 금융까지, 든든한 파트너가 되어 드릴게요!
+							<button type="button" class="mem_arw">회원가입</button>
+						</p>
+					</div>
+
+				</main>
+			</div>
+
+			
+			<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-signature');">닫기</button>
+		</div>
+	</article>
+
+	
+	
+	<!-- <article class="pop-layer b pop-confirmOne" id="pop-confirmOne">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="hd-tit3 blind">비회원 로그인</h1>
+				</div>
+			</div>
+
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="mbl-top">
+							<div class="txt wordbreak">
+							비회원 로그인
+							</div>
+						</div>
+					</div>
+				</main>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">휴대폰 본인확인</button>
+					</div>
+				</div>
+
+				<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-layer5');">닫기</button>
+			</div>
+		</div>
+	</article> -->
+
+	<script>
+		ui.popup.open('pop-signature');
+		// ui.popup.open('pop-confirmOne');
+	</script>
+
+</div>
+</body>
+</html>

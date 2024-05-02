@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/common2.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back","title":"디지털 OTP"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl dotp" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<h2 class="hd-tit2 mt30">디지털OTP란?</h2>
+			<p class="desc a">실물OTP, 보안카드 없이 고객님이 지정한 휴대폰에서 교보생명 금융거래에 유효한 일회용 비밀번호를 생성하고 인증하는 신개념 OTP 서비스입니다. </p>
+
+			<h3 class="hd-tit3 mt30">이용대상</h3>
+			<p class="desc b">교보생명 디지털채널 이용 개인고객</p>
+
+			<h3 class="hd-tit3 mt30">이체한도</h3>
+			<p class="desc b">1일 1억원 / 1회 1억원</p>
+
+			<h3 class="hd-tit3 mt30">디지털OTP 발급/재발급 절차</h3>
+			<ul class="otp-step mt16"> 
+				<li>
+					<strong class="tit"><i class="num">01.</i> 본인확인</strong>
+					<span class="txt">휴대폰 본인확인 및 약관동의</span>
+				</li>
+				<li>
+					<strong class="tit"><i class="num">02.</i> 비대면 실명인증</strong>
+					<span class="txt">신분증 촬영, 계좌 인증</span>
+				</li>
+				<li>
+					<strong class="tit"><i class="num">03.</i> 비밀번호 설정</strong>
+					<span class="txt">디지털OTP 비밀번호 설정</span>
+				</li>
+				<li>
+					<strong class="tit"><i class="num">04.</i> 발급/재발급 완료</strong>
+					<span class="txt">디지털OTP 발급 완료</span>
+				</li>
+			</ul>
+			<ul class="bullet b mt10">
+				<!-- [D] 2022-06-16 문구삭제 -->
+				<li>교보생명 앱 삭제 후 재설치한 고객님은 디지털OTP를 재발급받은 후 비밀번호를 변경하시기 바랍니다.  </li>
+			</ul>
+
+			<div class="ut-gudbox b open mt40" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>디지털OTP 발급은 1인당 1기기로 제한됩니다. </li>
+						<li>디지털OTP는 교보생명 거래 시에만 이용 가능합니다.</li>
+						<li>앱 삭제, 기기변경, 데이터 초기화 등의 경우 디지털OTP를 재발급받으셔야 합니다.</li>
+						<li>비밀번호는 타인에게 유출되지 않도록 유의하시기 바랍니다.</li>
+						<li>비밀번호를 5회 연속 잘못 입력한 경우 이용이 중지됩니다. 다시 이용하시려면 디지털OTP 해지 후 재발급받으시기 바랍니다.</li>
+						<li>디지털OTP를 발급받은 휴대폰을 분실한 경우 교보생명 콜센터 또는 가까운 고객PLAZA에 신고 바랍니다.</li>
+						<li>디지털OTP는 현재 모바일앱, 모바일웹에서만 이용 가능합니다. PC웹에서도 이용하기 위해서는 디지털OTP를 발급받은 휴대폰이 있어야 합니다. </li>
+						<li>디지털OTP 발급 후에는 이용 중인 보안카드 사용이 제한될 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">발급/재발급</button>
+				</div>
+			</div>
+		</nav>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">퇴직연금사업자공시</h2>
+			</div>
+
+			<div class="dcs-sect">
+				<!-- 2022-04-18 수정: 전체 수정 -->
+				<div class="ut-tabs d col4">
+					<!-- 2022-05-27 수정: 전체 수정 -->
+					<ul class="menu">
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">적립금 운용금액 및<br> 수익률</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">분기별 적립금 및<br> 수익률</a></li>
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">퇴직연금 사업자 등록<br> 내용에 관한사항</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">수수료</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">적립금 운용 방법 및<br> 수익률</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_6" href="javascript:;">계약서 및<br> 약관</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_7" href="javascript:;">원리금보장형<br> 상품현황</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_8" href="javascript:;">타 사업자에 대한<br> 상품제공 실적</a></li>
+					</ul>
+					<!-- 2022-05-27 수정: 전체 수정 -->
+				</div>
+
+				<section class="sect">
+					<h3 class="hd-tit3">퇴직연금 사업자 등록내용에 관한사항</h3> <!-- 2022-05-27 수정 -->
+					<p class="hd-txt">교보생명이 퇴직연금사업자로 등록한 내용입니다.</p>
+				</section>
+
+				<section class="sect">
+					<div class="ut-optset optset a-bot">
+						<div class="opt pl">
+							<h3 class="hd-tit3 mr20">재무건전성 요건</h3> <span class="date">최근 3년 사업연도 지급여력비율</span> <!-- [D] 2022-05-20 텍스트 수정 / 최근 3년 사업연도 지급여력비율 --> 
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: %</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">재무건전성 요건</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col">FY2020(2020년 12월)</th>
+									<th scope="col">FY2019(2019년 12월)</th>
+									<th scope="col">FY2018(2018년 12월)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c">333.39</td>
+									<td class="txt-c">338.89</td>
+									<td class="txt-c">311.83</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</section>
+
+				<section class="sect">
+					<div class="ut-optset optset a-bot">
+						<div class="opt pl">
+							<h3 class="hd-tit3 mr20">전문인력 요건</h3>
+						</div>
+						<div class="opt pr">
+							<span class="txt-unit">단위: 명</span>
+						</div>
+					</div>
+					<div class="ut-tbl a scroll-x">
+						<table class="tblist">
+							<caption><span class="tit">전문인력 요건</span><span class="cap"></span></caption>
+							<thead>
+								<tr>
+									<th scope="col">연금계리전문인력</th>
+									<th scope="col">전산전문인력</th>
+									<th scope="col">운용전문인력</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-c">2</td>
+									<td class="txt-c">2</td>
+									<td class="txt-c">1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</section>
+
+				<section class="sect">
+					<h3 class="hd-tit3 mr20">물적설비 요건</h3>
+					<p class="hd-txt"> 제3자 위탁업무 (없음)</p>
+					
+				</section>
+				<!--// 2022-04-18 수정: 전체 수정 -->
+
+			</div>
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

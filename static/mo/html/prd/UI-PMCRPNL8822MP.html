@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-prdsearch no-focus" id="pop-prdsearch">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-tabs a">
+						<h2 class="blind">주메뉴</h2>
+						<ul class="menu">
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">투자형</a></li>
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">예금형</a></li>
+						</ul>
+					</div>			
+					<div class="srch-btnbox">
+						<span class="input a">
+							<label class="lb blind" for="input-4">상품검색</label>
+							<input type="text" placeholder="검색어 입력" value="에너지" id="input-4">
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span>
+						<!-- <button type="button" class="btn condi"><span class="blind">조건검색</span></button> -->
+					</div>
+				
+					<div class="cprd-wrp fpop">
+						<div class="cprd-box">
+							<div class="ut-optset optset">
+								<div class="opt pl">
+									<span class="tot">총 <i class="n">15</i> 개</span>  <span class="date">2020.01.01 기준</span>
+								</div>
+								<div class="opt pr">
+									<span class="select sort">
+										<select name="select-4" title="정렬선택">
+											<option>상품명</option>
+											<option>적용이율</option>
+										</select>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-wrp">
+							<div class="card a">
+								<div class="card-chkbox">
+									<div class="chk-top">			
+										<div class="tit">
+											<h3 class="hd-tit4">(무)교보 DB 이율변동형(3년)</h3>
+										</div>
+									</div>
+									<dl class="bg-data">
+										<dt>적용이율</dt>
+										<dd class="t-red">3.26%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>		
+							<div class="card a">
+								<div class="card-chkbox">
+									<div class="chk-top">
+										<div class="tit">
+											<h3 class="hd-tit4">(무)교보 DB 금리연동형</h3>
+										</div>
+									</div>
+									<dl class="bg-data">
+										<dt>적용이율</dt>
+										<dd class="t-red">1.26%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>																		
+						</div>
+						<div class="ut-more more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+						<div class="list-empty bd">
+							<p>상품검색 결과가 없습니다.</p>
+						</div>																	
+					</div>
+
+					
+				</main>
+			</div>
+				
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-prdsearch');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		/* 하단 옵션 레이어 */
+		$(".btn-option").click(function() {
+			if($(this).hasClass("open") == true) {
+				$(".opt-scrollbox").hide();
+				$(this).removeClass("open");
+			}else {
+				$(".opt-scrollbox").show();
+				$(this).addClass("open");
+			};
+		});		
+	</script>
+</div>
+</body>
+</html>

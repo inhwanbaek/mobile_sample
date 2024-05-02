@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp login is-full" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="box-top">
+				<div class="page-hdt">
+					<h2 class="stit hd-tit2 ic-login">로그인</h2>
+					<div class="desc">로그인 하실 업무를 선택해 주세요.</div>
+				</div>
+
+				<div class="ut-tabs f">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">퇴직연금</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">퇴직보험</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">기업복지</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">단체보험</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="login-txt">퇴직연금 기업 고객님 반갑습니다. 등록된 인증서로 로그인해 주세요.</div>
+				<section class="box-main">
+					<div class="inner a">
+						<div class="mbl-login-box">
+							<div class="ut-tabs b big-sty">
+								<ul class="menu">
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">공동인증서</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">금융인증서</a></li>
+									<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">카카오페이인증서</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_4" href="javascript:;">토스인증서</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_5" href="javascript:;">패스인증서</a></li>
+								</ul>
+							</div>
+
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_1"></div>
+
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_2"></div>
+
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_3" class="active">
+								<div class="tops">
+									<div class="bt-ico kpay" aria-hidden="true"></div>
+									<div class="dsc">아래 정보를 입력한 후 인증해 주세요. </div>
+								</div>
+								<div class="ut-form a">
+									<ul class="form">
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-1">이름</label><input type="text" placeholder="실명 입력" id="inp-1"></span>
+											<div class="vald-msg no">이름을 정확하게 입력해 주세요.</div>
+											<div class="vald-msg no">이름은 두 글자 이상 입력해 주세요.</div>
+										</li>
+										<li>
+											<!-- [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<span class="input a ut-rsnum w100p">
+												<label class="lb" for="inp-2">생년월일</label>
+												<input id="inp-2" type="tel" class="fn" pattern="\d*" title="생년월일 6자리" placeholder="예) 210101" value=""><!-- [웹접근성] 1st 수정 -->
+												<i class="ds">-</i>
+												<input type="tel" value="" class="mn int" title="주민등록번호 뒤 1자리" placeholder="*"> <!-- [웹접근성] 1st 수정 --> <!-- [D] 2022-08-02 placeholder 값 수정-->
+												<input type="password" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" placeholder="●●●●●●" readonly><!-- [웹접근성] 1st 수정 -->
+											</span>
+											<!--// [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<div class="vald-msg no">생년월일 6자리를 정확하게 입력해 주세요.</div>
+										</li>
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-3">휴대폰번호</label><input type="number" placeholder="- 없이 숫자만 입력" value="" id="inp-3"></span>
+											<div class="vald-msg no">휴대폰번호를 정확하게 입력해 주세요.</div>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-set mt30">
+									<button type="button" class="btn a rd lg">다음</button>
+								</div>
+
+							</div>
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_4">
+								<div class="tops">
+									<div class="bt-ico toss" aria-hidden="true"></div>
+									<div class="dsc">아래 정보를 입력한 후 인증해 주세요. </div>
+								</div>
+								<div class="ut-form a">
+									<ul class="form">
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-1">이름</label><input type="text" placeholder="실명 입력" id="inp-1"></span>
+											<div class="vald-msg no">이름을 정확하게 입력해 주세요.</div>
+											<div class="vald-msg no">이름은 두 글자 이상 입력해 주세요.</div>
+										</li>
+										<li>
+											<!-- [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<span class="input a ut-rsnum w100p">
+												<label class="lb" for="inp-2">생년월일</label>
+												<input id="inp-2" type="tel" class="fn" pattern="\d*" title="생년월일 앞 6자리" placeholder="예) 210101" value=""><!-- [웹접근성] 1st 수정 -->
+												<i class="ds">-</i>
+												<input type="tel" value="" class="mn int" title="주민등록번호 뒤 1자리" placeholder="*"> <!-- [웹접근성] 1st 수정 --><!-- [D] 2022-08-02 placeholder 값 수정-->
+												<input type="password" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" placeholder="●●●●●●" readonly><!-- [웹접근성] 1st 수정 -->
+											</span>
+											<!--// [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<div class="vald-msg no">생년월일 6자리를 정확하게 입력해 주세요.</div>
+										</li>
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-3">휴대폰번호</label><input type="number" placeholder="- 없이 숫자만 입력" value="" id="inp-3"></span>
+											<div class="vald-msg no">휴대폰번호를 정확하게 입력해 주세요.</div>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-set mt30">
+									<button type="button" class="btn a rd lg">다음</button>
+								</div>
+							</div>
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_5">
+								<div class="tops">
+									<div class="bt-ico pass" aria-hidden="true"></div>
+									<div class="dsc">아래 정보를 입력한 후 인증해 주세요. </div>
+								</div>
+								<div class="ut-form a">
+									<ul class="form">
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-1">이름</label><input type="text" placeholder="실명 입력" id="inp-1"></span>
+											<div class="vald-msg no">이름을 정확하게 입력해 주세요.</div>
+											<div class="vald-msg no">이름은 두 글자 이상 입력해 주세요.</div>
+										</li>
+										<li>
+											<!-- [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<span class="input a ut-rsnum w100p">
+												<label class="lb" for="inp-2">생년월일</label>
+												<input id="inp-2" type="tel" class="fn" pattern="\d*" title="생년월일 6자리" placeholder="예) 210101" value="">
+												<i class="ds">-</i>
+												<input type="tel" value="" class="mn int" title="주민등록번호 뒤 1자리" placeholder="*"> <!-- [D] 2022-08-02 placeholder 값 수정-->
+												<input type="password" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" placeholder="●●●●●●" readonly>
+											</span>
+											<!--// [D] 2022-07-15 주민등록번호를 생년월일로 변경  -->
+											<div class="vald-msg no">생년월일 6자리를 정확하게 입력해 주세요.</div>
+										</li>
+										<li>
+											<span class="input a w100p"><label class="lb" for="inp-3">휴대폰번호</label><input type="number" placeholder="- 없이 숫자만 입력" value="" id="inp-3"></span>
+											<div class="vald-msg no">휴대폰번호를 정확하게 입력해 주세요.</div>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-set mt30">
+									<button type="button" class="btn a rd lg">다음</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+
+			</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">탭내용2</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">탭내용3</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">탭내용4</div>
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

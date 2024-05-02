@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc use loan" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">대출결제 서비스 안내</h2>
+				<!-- <div class="desc">서브문구</div> -->
+			</div>
+
+			<section class="sect">
+				<h3 class="hd-tit3">융자콜센터 이용안내</h3>
+				<p class="tit-txt">융자콜센터를 통해 교보생명에 등록된 출금동의 계좌에서 원리금을 상환할 수 있습니다. <br>(융자콜센터를 통한 대출업무 처리 시 반드시 미리 설정한 비밀번호가 있어야 합니다.)</p>
+				<div class="text-box">
+					<ul class="bullet c">
+						<li>이용시간: 평일 09:00~18:00</li>
+						<li>융자콜센터: 1588-1010</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3">창구 이용 안내</h3>
+				<h4 class="hd-tit4">고객PLAZA 방문</h4>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>자동이체를 신청하지 않은 경우, 보안카드와 인증서가 없는 경우, 직접 납입하려는 경우에는 가까운 교보생명 고객PLAZA를 방문하여 납입하실 수 있습니다.</li>
+						<li>이용시간: 평일 09:00~15:50
+							<div class="btn-wrp">
+								<a href="javascript:;" role="button" class="btn sm ico-nlink ico-r">지점찾기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3">입금전용계좌 이용 안내</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>입금전용계좌는 입금만을 위해 교보생명 명의로 개설한 후 고객님께 부여해 드리는 가상의 계좌이며, 실물 통장은 없습니다.</li>
+						<li>입금전용계좌로 금액을 입금하면 입금 즉시 자동 결제됩니다.</li>
+						<li>입금전용계좌 입금가능시간: 07:00~23:30</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>입금전용계좌 이용 시 유의사항
+							<ul class="bullet c">
+								<li>입금전용계좌는 타행이체, PC뱅킹, 텔레뱅킹, CD(현금지급기) 입금 등 모든 방법으로 입금 가능하며, 해당 은행의 송금수수료가 따로 부과됩니다.</li>
+								<li>대출 건별로 가상계좌번호가 구분되어 있으므로 정상결제를 위해 반드시 입금 전에 정확한 결제대금과 계좌번호를 융자콜센터(1588-1010)에 다시 한번 확인하시기 바랍니다.</li>
+								<li>무통장 입금 시 계좌번호, 예금주(예: 교보 홍길동), 입금액만 기입해 주세요. 대출번호는 기입하실 필요가 없습니다.</li>
+								<li>입금금액이 결제금액과 다른 경우, 교보생명이 정한 충당 순서에 따라 처리됩니다.</li>
+								<li>인터넷뱅킹을 통한 계좌이체 및 무통장 입금이 완료된 후에는 취소 및 입금 정정을 할 수 없습니다. 단, 무통장 입금은 송금한 은행의 창구 직원이 잘못 입력한 경우에만 그 은행에서 취소할 수 있습니다.</li>
+								<li>대출 원리금을 자동이체로 납입 중인 고객님의 자동이체계좌에 잔액이 있을 경우 원리금이 추가 인출될 수 있습니다. 자동이체일 당일 출금계좌의 잔액을 비워두셔야 이중출금을 막을 수 있습니다.</li>
+								<li>이중출금된 경우, 다음 영업일에 고객님의 결제계좌로 자동 입금됩니다.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

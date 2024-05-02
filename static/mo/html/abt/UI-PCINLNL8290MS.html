@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"디지털캐릭터"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">소개</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">다운로드</a></li>
+				</ul>
+			</div>
+
+			<div class="upper-character">
+				<h3 class="hd-tit2">교보러버스</h3>
+				<p>
+					교보생명의 초성에서 탄생한 귀여운 네 친구 교보러버스!<br>
+					통통튀는 매력과 포근한 마음을 지닌 러버스 친구들을 온라인에서 다양한 모습으로 만나보세요.
+				</p>
+			</div>
+
+			<ul class="list-movie character">
+				<li>
+					<div class="nail-movie">
+						<video id='myVideo' preload='none' poster="../../img/abt/nail_video_play1.png">
+							<source id='video' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+						</video>
+						<button type="button" class="btn-play">동영상 보기</button>
+					</div>
+					<div class="cont-movie">
+						<div class="title">교보러버스 소개</div>
+						<div class="info">
+							각각의 다채로운 개성을 가진 러버스 친구들을 소개합니다.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="nail-movie">
+						<video id='myVideo2' preload='none' poster="../../img/abt/nail_video_play2.png">
+							<source id='video2' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+						</video>
+						<button type="button" class="btn-play">동영상 보기</button>
+					</div>
+					<div class="cont-movie">
+						<div class="title">교보러버스 탄생편</div>
+						<div class="info">
+							교보생명 초성에서 탄생한 교보러버스를 만나보세요.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="nail-movie">
+						<video id='myVideo3' preload='none' poster="../../img/abt/nail_video_play3.png">
+							<source id='video3' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+						</video>
+						<button type="button" class="btn-play">동영상 보기</button>
+					</div>
+					<div class="cont-movie">
+						<div class="title">교보러버스 LOVE편</div>
+						<div class="info">
+							러버스의 LOVE는 가족사랑!<br>
+							가족사랑 댄스를 확인하세요
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="lower-character">
+				<h3 class="hd-tit3">러버스 소개</h3>
+				<ul class="list-character">
+					<li>
+						<strong class="title">고고</strong>
+						<div class="info">
+							언제나 가족을 가장 먼저 생각하는 러버스의 <br>카리스마 리더
+						</div>
+					</li>
+					<li>
+						<strong class="title">보보</strong>
+						<div class="info">
+							여러분의 안전과 행복을 보장할 <br>따뜻한 마음의 고민 해결사
+						</div>
+					</li>
+					<li>
+						<strong class="title">소소</strong>
+						<div class="info">
+							무한 애정으로 모두를 감싸안아줄 <br>열정 사랑꾼
+						</div>
+					</li>
+					<li>
+						<strong class="title">모모</strong>
+						<div class="info">
+							언제나 긍정긍정! 모모와 함께라면 <br>밝은 미래만 가득할거에요
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

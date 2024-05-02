@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"자주 하는 질문"}'></include>
+	<!-- <include class="gnb" src="../inc/gnb.html"></include> -->
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page allsearch" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-05-19 UI/UX 변경 -->
+			<div class="alsrch-container">
+				<div class="alsrch-header">
+					<div class="mt30">
+						<h2 class="hd-tit2">궁금하신 점이 있나요? <br>키워드로 검색해 보세요.</h2>
+					</div>
+					<div class="alsrch-form">
+						<div class="alsrch-fldset pt27">
+							<div class="alsrch-input">
+								<span class="input ipsch full">
+									<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="">
+									<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+								</span>
+							</div>
+						</div>
+
+						<div class="keyword-recent" style="display: none;">
+							<div class="inbox">
+								<div class="kwd-hdt">
+									<div class="tit">최근 검색어</div>
+									<button type="button" class="alldel">전체삭제</button>
+								</div>
+
+								<div class="kwd-list">
+									<ul>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">보험증권</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">종신보험</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">보험가입확인</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">구비서류</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">보험금청구</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">약관</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">재테크</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">건강보험</button>
+												<button type="button" class="del">삭제</button>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="kwd-close">
+									<button type="button" class="btn-kwd-close">닫기</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="keyword-auto" style="display: none;">
+							<div class="inbox">
+								<div class="kwd-list">
+									<ul>
+										<li>
+											<div class="item">
+												<button type="button" class="tit"><span class="st">보험</span>증권</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">종신<span class="st">보험</span></button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit"><span class="st">보험</span>가입확인</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">구비서류</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit"><span class="st">보험</span>금청구</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">약관</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">재테크</button>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<button type="button" class="tit">건강<span class="st">보험</span></button>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="keyword-popular" style="display: none;">
+							<div class="inbox">
+								<div class="kwd-hdt">
+									<div class="tit">인기 검색어</div>
+								</div>
+
+								<div class="kwd-hashtag">
+									<button type="button" class="tag active">#보험금청구</button>
+									<button type="button" class="tag">#종신보험</button>
+									<button type="button" class="tag">#보험계약대출</button>
+									<button type="button" class="tag">#금융거래확인서</button>
+									<button type="button" class="tag">#자동이체</button>
+									<button type="button" class="tag">#보험증권</button>
+									<button type="button" class="tag">#보험료 납입</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="alsrch-viewer">
+					<div class="alsrch-cate">
+						<div class="ut-tabs b b2">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#약관</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#해지</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#보험증권</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#고객센터</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#약관</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_b" href="javascript:;">#약관</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="alsrch-result mt24">
+
+						<div class="ut-tabs a">
+							<ul class="menu" role="tablist">
+								<li class="active"><a class="bt active" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;" role="tab" aria-selected="true">전체</a></li>
+								<li class=""><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;" role="tab" aria-selected="false">보험/다이렉트보험</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;" role="tab" aria-selected="false">대출</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;" role="tab" aria-selected="false">퇴직연금</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;" role="tab" aria-selected="false">기업보험</a></li>
+								<li class=""><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_6" href="javascript:;" role="tab" aria-selected="false">펀드/신탁</a></li>
+								<li class=""><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_7" href="javascript:;" role="tab" aria-selected="false">공통</a></li>
+							</ul>
+						</div>
+
+						<span class="select def no-lb round mt24">
+							<select name="select-11" id="select-11" title="선택선택옵션">
+								<option selected="">카테고리 선택</option>
+								<option>선택1</option>
+								<option>선택2</option>
+								<option>선택3</option>
+							</select>
+						</span>
+
+						<div class="ut-optset optset mt40">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">00</i> 건</span>
+							</div>
+						</div>
+
+						<div class="alsect mt20">
+							<div class="alsect-sub">
+								<ul class="ut-accd alsect-accd bdt" data-accd="tog">
+									<li class="open">
+										<div class="hbox">
+											<p class="cate">보험상품/가입</p>
+											보험 해지 시 환급금  <button type="button" class="btn-tog">버튼</button></div>
+										<div class="cbox">
+											내용이 나옵니다
+										</div>
+									</li>
+									<li>
+										<div class="hbox">
+											<p class="cate">보험상품/가입</p>
+											다이렉트보험<button type="button" class="btn-tog">버튼</button></div>
+										<div class="cbox">
+											내용이 나옵니다
+										</div>
+									</li>
+									<li>
+										<div class="list-empty bb">
+											<p>검색 결과가 없습니다.</p>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+
+						<div class="ut-more-wrapper">
+							<div class="ut-more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="ut-bnr-ico">
+							<a href="javascript:;" class="lk ic_chatbot">
+								<strong class="tit">챗봇상담</strong>
+								<span class="txt">편리한 챗봇상담을 이용해 보세요.</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sign-adds" id="sign-adds">
+		<div class="pbd">
+			<div class="phd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">모바일대용진단 건강검진자료 제출</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="mbl-top">
+							<div class="hdt"><h2 class="hd-tit2">국민건강보험공단으로부터 건강검진 자료 수신을 위한 인증방식을 선택해 주세요.</h2></div>
+						</div>
+						<div class="certificate-list">							
+							<ul class="list">
+								<li class="ics kko bdtop bdnone"><a href="javascript:;" class="lks">카카오 인증</a></li><!-- [D] 2022-08-12 kko 클래스 변경 -->
+								<li class="ics kbpay bdnone"><a href="javascript:;" class="lks">KB모바일 인증</a></li>
+								<li class="ics payco bdnone"><a href="javascript:;" class="lks">페이코 인증</a></li>								
+								<li class="ics pass bdnone"><a href="javascript:;" class="lks">패스 인증</a></li>
+								<li class="ics sspass bdnone"><a href="javascript:;" class="lks">삼성패스 인증</a></li>
+								<li class="ics ctcm bdnone "><a href="javascript:;" class="lks">공동인증서</a></li>
+							</ul>						
+						</div>
+					</div>
+				</main>
+			</div>
+		<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+	</div>
+</article>
+
+
+<script>
+	ui.popup.open('sign-adds');
+</script>
+
+</div>
+</body>
+</html>

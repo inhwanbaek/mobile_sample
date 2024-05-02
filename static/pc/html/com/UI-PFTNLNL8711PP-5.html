@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-recversys" id="pop-recversys">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">법원의 개인채무자 회생제도 및 파산제도</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<div class="hd-tit4">법원의 개인채무자 회생제도 및 파산제도</div>
+
+
+					<div class="ftlist">
+						<p class="ptxt">각종 신용회복지원제도를 통해서 신용회복이 어려운 경우에는 법원의 개인채무자회생 제도 또는 파산제도를 이용하세요. <br> 개인채무자회생제도는 2004년 9월 중에 실시할 예정이며, 파산제도는 이미 시행 중에 있어 언제든지 신청이 가능합니다. </p>
+					</div>
+
+					<div class="ftlist">
+						<div class="htit">개인채무자회생제도</div>
+						<div class="ptxt">빚이 15억원(담보채권 10억원, 무담보채권 5억원 이내)을 초과하지 않는 범위내에서 대법원 규칙으로 정한 금액 이하의 빚이 있는 급여소득자 또는 영업소득자는 모든 빚(사채 포함)에 대해서 신용불량등록 여부와 상관없이 신청할 수 있습니다.8년 이내의 상환기간으로 채무자가 정한 상환계획(요건: 채무자가 상환할 금액이 채무자 보유재산을 현재 처분해서 회수할 수 있는 금액보다 많을 것)을 법원에 제출하면 법원의 인가를 받아 확정되고 채무자가 상환계획대로 상환하게 되면 나머지 빚은 탕감됩니다.</div>
+					</div>
+
+					<div class="ftlist">
+						<div class="htit">파산제도</div>
+						<div class="ptxt">
+							빚을 갚을 능력이 없는 경우에는 법원에 파산신청을 할 수 있습니다. <br>
+							채무자에게 파산원인이 있다고 인정되는 경우에 파산선고를 받게 되며 채무자의 총재산을 모든 채권자에게 공평하게 나누어 주게 됩니다. <br>
+							파산선고 뒤 채무자는 법원에 더 이상 채무를 갚지 않도록 허가해 달라는 면책신청을 할 수 있으며, 허가를 받아 결정이 되면 조세 등 일부 예외를 제외하고는 책임을 면하게 됩니다. 그러나 파산선고와 면책은 엄격한 기준에 의해 결정되므로 신청시 법률전문가의 도움을 받아 신중하게 신청 여부를 정하여야 합니다.<br>
+							파산선고 후 면책을 받지 못하게 되는 경우에는 여러 가지 제한이 있어 정상적인 사회활동이 어려워집니다.<br>
+							개인파산 사실은 전국은행연합회 등 신용정보집중기관 등에 상당기간 보관됨에 따라 향후 신용카드 발급, 대출신청 등에 불이익을 받을 수 있습니다.
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-recversys');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-recversys',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

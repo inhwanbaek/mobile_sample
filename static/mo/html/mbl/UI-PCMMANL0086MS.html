@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-certification" id="pop-certification">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="hd-tit4">카카오페이 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<section class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit2"><i class="line">카카오페이 인증 이용에 동의</i>하고 <br> 고객님의 정보를 입력해 주세요.</h2>
+							</div>
+						</div>
+						<!--2022-5-31 약관 스타일 변경 -->
+						<div class="ut-terms a tog open" data-tog-cls="box">
+
+							<!-- 전체 동의 -->
+							<div class="ckall">
+								<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</div>
+							
+							<!-- 상위 레이블 앞에 선택옵션, 버튼 x -->
+							<div class="plbox">
+								<ul class="plist">
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별정보 처리 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보의 제공에 대한 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 전자금융서비스 이용약관</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+								</ul>
+							</div>		
+						</div>	
+						<!--// 2022-5-31 약관 스타일 변경 -->
+						<div class="ut-form a forms">
+							<ul class="form">
+								<li>
+									<span class="input a"><label class="lb" for="input_id2">이름</label><input id="input_id2" type="text" placeholder="이름을 입력해주세요" value="김인석"></span>
+								</li>
+								<li>
+									<span class="input a nobg ut-rsnum">
+										<label class="lb" for="rsnum_2">주민(외국인)등록번호</label>
+										<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민(외국인)등록번호 앞 1~6자리" placeholder="앞 6자리" value=""> <!-- [웹접근성] 1st 수정 -->
+										<i class="ds">-</i>
+										<input type="tel" class="ln" pattern="\d*" title="주민(외국인)등록번호 뒤 1~7자리" placeholder="뒤 7자리" value=""> <!-- [웹접근성] 1st 수정 -->
+									</span>
+								</li>
+								<li><!--  [D] 2022-02-14 내용수정  -->
+									<span class="input a"><label class="lb" for="tel_id_0">휴대폰번호</label><input id="tel_id_0" type="number" pattern="\d*" placeholder="[-] 없이 입력해주세요"></span>
+								</li>
+							</ul>
+						</div>
+					</section>					
+				</main>
+			</div>
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg a">다음</button>
+					</div>
+				</div>
+			</nav>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-certification');
+	</script>
+</div>
+</body>
+</html>

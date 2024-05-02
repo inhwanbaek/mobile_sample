@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"보험료납입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default inspym adfrpy" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents isbotb" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<!-- <div class="tit"></div> -->
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">3</b></span>
+								<span class="num"><b class="b">3</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="hd-tit3"><i class="line">납입보험료</i>와 <i class="line">출금계좌</i>를<br>확인해 주세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+
+			<div class="ut-dcard a dcard">
+				<div class="stds">
+					<div class="hdt b">
+						<div class="tit">무배당교보다이렉트건강보험(기본형)</div>
+					</div>
+					<div class="ddt">
+						<div class="bxt">
+							<ul class="lst">
+								<li>
+									<div class="dl">
+										<div class="dt">실납입보험료</div>
+										<div class="dd">123,240 원</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="dtds">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd">2012.08.22</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">추가납입보험료</div>
+								<div class="dd">6,500,500원</div>
+							</div>
+						</li>
+						<li data-tog-cls="box">
+							<div class="dl">
+								<div class="dt">할인보험료<button type="button" class="bt-tog bt-tog2" data-tog-cls="btn" data-tog-val="open"></button></div>
+								<div class="dd">
+									<span class="prc">
+										<strong class="p">10,000</strong><i class="w">원</i>
+									</span>
+								</div>
+							</div>
+							<div class="bx-tog bx-tog2"  data-tog-cls="ctn">
+								<div class="tgtit">할인보험료 상세내역</div>
+								<div class="ut-tbl b">
+									<table class="tblist" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">할인보험료 상세내역</span><span class="cap"></span></caption>
+										<colgroup>
+											<col>
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row" class="left">단체취급할인</th>
+												<td class="right">2,400원</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr class="st">
+												<th scope="row" class="left">합계</th>
+												<td class="right">2,400원</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</li>
+						<!-- [D] 2022-03-07 추가 -->
+						<li>
+							<div class="dl">
+								<div class="dt">실납입보험료</div>
+								<div class="dd"><span class="fn-point01">7,500</span>원</div>
+							</div>
+						</li>
+						<!--// [D] 2022-03-07 추가 -->
+					</ul>
+				</div>
+			</div>
+
+			<div class="head-box mt40">
+				<h3 class="hd-tit4">계좌정보선택</h3>
+				<button type="button" class="ico plus">다른 계좌 추가</button>
+			</div>
+			<span class="select a">
+				<select name="select-3" title="계좌정보선택">
+					<option selected>예금주 : 남약단, 계좌 : (국민은행)927621123123123123</option>
+					<option>선택2</option>
+					<option>선택3</option>
+				</select>
+			</span>
+			<span data-ui-balloon="right,bot" aria-describedby="ball_1" class="tip-msc1161">납입하신 보험료는 취소할 수 없어요. <br>
+				계좌정보를 한 번 더 확인해 주세요.</span>
+
+			<!-- <h3 class="hd-tit4" id="ball_2">선택한 계좌정보</h3>
+			<span data-ui-balloon="right,top" aria-describedby="ball_2" class="tip-msc1151">
+				납입하신 보험료는 취소할 수 없어요. <br>계좌정보를 한 번 더 확인해 주세요.
+			</span>
+			<ul class="acc-infoList">
+				<li>
+					<img class="logo" src="../../img/bank/ic_bank_hana.png" alt="하나은행 로고">
+					<strong>하나은행</strong>
+					<span class="num">234-43-34093-330232</span>
+					<span class="name">김교보</span>
+				</li>
+			</ul> -->
+
+		</div><!-- contents -->
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">선택하신 계좌에서 보험료를 출금하시겠습니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

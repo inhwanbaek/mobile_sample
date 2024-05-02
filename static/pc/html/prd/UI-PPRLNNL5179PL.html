@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		
+		<article class="pop-layer md a pop-crdSearch" id="pop-crdSearch">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">대출신청정보 조회</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents hdt">
+						<h2 class="hd-tit3">등록하신 비금융정보가 있습니다.<br>
+							내용 확인 후 진행해 주세요.</h2>
+	
+							<div class="ut-tbl a">
+								<table class="tblist nl" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">>비금융정보 내역</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:30%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">국세청 업체정보</td>
+											<td>교보생명</td>
+										</tr>
+										<tr>
+											<td scope="row">건강보험<br>
+												자격취득연월</td>
+											<td>1999년 10월</td>
+										</tr>
+										<tr>
+											<td scope="row">국세청 소득금액</td>
+											<td>2021년 기준
+												100,000,000원
+											</td>
+										</tr>
+										<tr>
+											<td scope="row">상품명</td>
+											<td>교보e프라임신용대출
+											</td>
+										</tr>
+										
+										
+									</tbody>
+									
+								</table>
+							</div>
+							<ul class="bullet a">
+								<li>고객님의 대출신청정보(직장 및 소득 등)를 확인하는 절차입니다.</li>
+								<li>위 내용이 고객님 정보와 일치하면 동의 후 대출신청을 진행해 주세요.</li>
+								<li>고객님 정보와 다를 경우 [취소]를 누르고 비금융정보를 다시 등록하여 진행해 주세요. </li>
+								<li>비대면 대출이 어려울 경우 증빙서류를 가지고 가까운 융자센터를 방문하시기 바랍니다.</li>
+							</ul>
+					</main>
+				</div>
+				<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+					<nav class="floatbots b">
+						<div class="inr">
+							<div class="box-set boxbot">
+								<div class="hd-tit5">위 대출신청정보가 사실임을 확인했으며, 만일 사실과 다를 경우 대출승인을 취소하거나 대출금을 회수하더라도 이의를 제기하지 않습니다.</div>
+								<div class="rdos">
+									<label class="radio"><input type="radio" name="radio9" checked><span class="txt">동의</span></label>
+									<label class="radio"><input type="radio" name="radio9"><span class="txt">동의안함</span></label>
+								</div>
+							</div>
+							<div class="btn-set b2">
+								<a href="javascript:;" class="btn lg rd b">취소</a>
+								<a href="javascript:;" class="btn lg rd a">다음</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+				
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		
+		<script>
+			ui.popup.open('pop-crdSearch');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-sample1',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			
+			
+		</script>
+	</div>
+</body>
+</html>

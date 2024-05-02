@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-vctest" id="pop-vctest">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">추천펀드(RA) 적합성 진단 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- <div class="vctest-tbox">
+						<h2 class="hd-tit3">지금부터 고객님 투자성향을 <br>진단해 볼까요?</h2>
+					</div> -->
+
+					<div class="bg-rBox blue">
+						<strong class="t-tit">적합성 진단이란?</strong>
+						고객의 나이, 재산상황, 보험가입 목적 등의 정보를 기초로 고객의 보험계약 체결 성향을 분석하는 것으로, 이 결과에 따라 고객님에게 적합한 보험상품[특별계정(펀드)]을 권유해 드립니다.
+					</div>
+
+					<!-- [D] 2022-02-23 전체문항수정 -->
+					<div class="vctest-slider" data-ui="qslider" tabindex="-1">
+						<div class="swiper-container swiper">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">펀드, 변액보험 등 금융투자상품 투자경험기간은 어느 정도입니까?</h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">투자경험없음</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">1년 미만</span></label></li><!-- [D] 2022-02-15 수정 -->
+												<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">2년 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q1"><span class="txt">2년 이상</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">고객님께서 취득 처분해보신 경험이 있는 상품은 어떤 상품입니까? (복수선택 가능)</h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">파생상품(ELS ,ELW, ELF 등)</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">주식 및 펀드(수익증권), 채권</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">변액보험</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">가입해 본 경험 없음</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">고객님께서 투자하실 때 원금 보존과 투자 수익률 중 어느 쪽을 중요하게 생각하십니까?</h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">원금은 반드시 보존이 되어야 함</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">원금 보존을 중요하게 생각함</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">수익률이 어느 정도 되어야 함</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">수익률을 중요시함</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">고객님께서 투자수익률을 얻기 위해 어느정도의 손실을 감수할 수 있습니까?</h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">어떠한 경우에도 손실이 나면 안됨</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">10%미만까지는 손실을 감수할 수 있음</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">10%~30%미만까지는 손실을 감수할 수 있음</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">원금 기준 100% 수준도 감수할 수 있음</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">투자상품에 가입하실 때 연간 수익률이 얼마가 되길 기대하세요? </h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">10% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">10%~30% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">30%~50% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q5"><span class="txt">50% 이상</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="q-section">
+										<h2 class="tit">앞으로 고객님의 금융자산 중 주식이나 주식형 상품의 비중을 어느 정도로 구성하고 싶으십니까?</h2>
+										<div class="list">
+											<ul>
+												<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">10% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">10%~30% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">30%~50% 미만</span></label></li>
+												<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">50% 이상</span></label></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- <div class="vctest-tt">
+						<span class="tt">변액보험 적합성 진단이란?</span>
+						<div class="ut-tooltip">
+							<button type="button" class="ico help sm bt-tooltip">변액보험 적합성 진단이란?</button>
+							<div class="toolctn">
+								<div class="tpmsg">변액보험 적합성 진단이란 고객의 나이, 재산상황, 보험가입 목적 등의 정보를 기초로 고객의 보험계약 체결 성향을 분석하는 것으로, 이 결과에 따라 고객님에게 적합한 보험상품[특별계정(펀드)]을 권유해 드립니다.</div>
+							</div>
+						</div>
+					</div> -->
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" data-qslider="prev">이전</button>
+					<button type="button" class="btn a rd lg" data-qslider="next">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-vctest');  // 팝업 열기
+
+
+		var qslider = new Swiper('[data-ui="qslider"] .swiper-container', {
+			slidesPerView: 1,
+			allowTouchMove: false,
+			autoHeight:true,
+			autoplay:false,
+			loop: false,
+			on: {
+				init: function () {
+					_setQsliderNavi(this)
+					_setQsliderSlide(this);
+				},
+				slideChange: function () {
+					$('.pop-layer.a .pct').scrollTop(0);
+					_setQsliderNavi(this)
+					_setQsliderSlide(this);
+				},
+			}
+		});
+		function _setQsliderNavi(element) {
+			if( element.activeIndex > 0 ) {
+				$('[data-qslider="prev"]').show();
+			} else {
+				$('[data-qslider="prev"]').hide();
+			}
+		}
+		function _setQsliderSlide(element) {
+			$(element.slides).attr('aria-hidden', true);
+			$(element.slides).find('.checkbox input').attr('tabindex', '-1');
+			$(element.slides[element.activeIndex]).attr('aria-hidden', false);
+			$(element.slides[element.activeIndex]).find('.checkbox input').attr('tabindex', '');
+		}
+		function _setQsliderKeytab() {
+			$('[data-ui="qslider"]').focus();
+			ui.keytab.set( $('[data-ui="qslider"]') );
+		}
+
+		$(document).on('click', '[data-qslider="prev"]', function() {
+			qslider.slidePrev();
+			_setQsliderKeytab();
+		});
+
+		$(document).on('click', '[data-qslider="next"]', function() {
+			var checkbox = $(qslider.slides[qslider.activeIndex]).find('.checkbox input');
+
+			// 각 슬라이드 라디오 checked 확인
+			if( checkbox.filter(':checked').length <= 0 ) {
+				alert('checked false');
+				return;
+			}
+
+			// 마지막 슬라이드 완료시
+			if( qslider.slides.length - 1 == qslider.activeIndex) {
+				alert('complete');
+				return;
+			}
+
+			qslider.slideNext();
+			_setQsliderKeytab();
+		});
+	</script>
+</div>
+</body>
+</html>

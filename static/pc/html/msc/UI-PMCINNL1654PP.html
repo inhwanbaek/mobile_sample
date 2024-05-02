@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">	
+	<article class="pop-layer a sm pop-tsearch" id="pop-tsearch">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">수술명 조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<div class="such-wrap"><!-- [D] 2022-06-10 UI변경 -->
+						<span class="input ipsch">
+							<span class="select sort">
+								<select name="select-1" id="select-1" title="수술명 선택">
+									<option selected>수술명</option>
+									<option></option>
+								</select>
+							</span>							
+							<input type="search" placeholder="수술명 입력" title="수술명 입력" value="">
+							<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+						</span>
+					</div>
+				
+					<div class="rst-box">			
+						<!-- 검색 결과 있을 경우 -->
+						<ul class="radio-list">
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">결장경하플립절제술(암전이, 재발, 추가수술시)<span class="stxt">악성신생물수술</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">결장경하플립절제술(악성신생물근치)<span class="stxt">악성신생물수술</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">결장경하플립절제술(악성신생물근치)<span class="stxt">악성신생물수술</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">결장경하플립절제술(악성신생물근치)<span class="stxt">악성신생물수술</span></span></label>
+							</li>																																				
+						</ul>
+						<dl class="sub-desc">
+							<dt>수술 설명</dt>
+							<dd>결장결을 사용하여 결장에 있는 용종을 절제하여 제거해내는 내시경적 수술을 말한다.</dd>
+						</dl>
+						<!-- 검색 결과 없을 경우 -->
+						<div class="list-empty bd mt0">
+							<p>검색된 수술명이 없습니다.</p>
+						</div>					
+						
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-tsearch');
+	</script>
+
+</div>
+</body>
+</html>

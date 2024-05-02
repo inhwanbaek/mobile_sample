@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm" id="pop-trust">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">금융취약소비자 안내사항</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="text-group">
+							<h2 class="hd-tit3">금융투자상품 가입 시 유의사항</h2>
+							<h3 class="hd-tit4">예금자보호가 되지 않습니다.</h3>
+							<div class="text-box">
+								<ul class="bullet a">
+									<li>투자상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+								</ul>
+							</div>
+							<h3 class="hd-tit4">원금손실이 발생할 수 있습니다.</h3>
+							<div class="text-box">
+								<ul class="bullet a">
+									<li>투자상품은 운용실적에 따라 이익 또는 손실이 발생할 있으며 그 결과는 투자자에게 귀속됩니다.</li>
+								</ul>
+							</div>
+	
+							<h3 class="hd-tit4">중도해지 시 비용이 발생할 수 있습니다.</h3>
+							<div class="text-box">
+								<ul class="bullet a">
+									<li>정해진 환매(중도해지)수수료 청구기간 이내에 환매(중도해지)하는 경우 환매수수료가 발생할 수 있습니다.</li>
+								</ul>
+							</div>
+	
+							<h3 class="hd-tit4">상품설명서를 반드시 읽어 주시기 바랍니다.</h3>
+							<div class="text-box">
+								<ul class="bullet a">
+									<li>상품 가입을 결정하기 전에 투자대상, 투자위험, 환매(중도해지) 방법 및 보수에 관하여 상품설명서를 반드시 확인하시기 바랍니다.</li>
+								</ul>
+							</div>
+							<div class="mt10">
+								<ul class="bullet b">
+									<li>과거 운용실적이 미래의 수익을 보장하지 않습니다.</li>
+								</ul>
+							</div>
+						</div>
+					</main>
+				</div>
+
+				<div class="pbt">
+					<!-- 하단 고정영역 -->
+					<nav class="floatbots b">
+						<div class="inr">
+							<div class="box-set boxbot">
+								<div class="hd-tit5">금융소비자 유의사항 내용을 확인하고, 이 내용에 동의하십니까?</div>
+								<div class="mt16">
+									<label class="radio"><input type="radio" name="radio1" id="kkk1"><span class="txt">예</span></label>
+									<label class="radio"><input type="radio" name="radio1" id="kkk2" checked><span class="txt">아니오</span></label>
+								</div>
+							</div>
+							<div class="btn-set b2">
+								<button type="button" class="btn lg rd b">이전</button>
+								<button type="button" class="btn lg rd a">다음</button>
+							</div>
+						</div>
+					</nav>
+					<!-- //하단 고정영역 -->
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-trust');
+		</script>
+	</div>
+</body>
+</html>

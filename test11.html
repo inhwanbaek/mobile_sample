@@ -1,0 +1,49 @@
+<!-- html 수정 -->
+<main class="container page event detail" id="container">
+<main class="container page event event_full list" id="container">
+        
+<div class="pop-layer a pop-evnt-100" style="z-index: 1001; display: block;">
+<div class="pop-layer a pop-evnt-100" style="display: block;">
+
+
+
+<!-- css 추가 -->
+.container.event_full {
+    padding: 0;
+}
+.pop-layer.a.pop-evnt-100 {
+    position: relative;
+}
+.pop-layer.a.pop-evnt-100 .pct {
+    height: 100vh!important;
+}
+
+<script>
+
+let duration = 1700, // 2023-04-03 수정
+            success = button => {
+                button.classList.add('success');
+                $area_bar.classList.add('_success');
+                //alert("자산 연결로 이동!!"); // 개발이관 X
+            };
+
+
+        // 2023-04-04 추가 (시작)
+        function rotate_bar() {
+            myTween_yellow = new TweenMax.to('.area_bar .yellow', 13, {rotation:"+=360", ease:Linear.easeNone, repeat:-1});
+            myTween_green = new TweenMax.to('.area_bar .green', 17, {rotation:"+=360", ease:Linear.easeNone, repeat:-1});
+            myTween_pink = new TweenMax.to('.area_bar .pink', 17, {rotation:"-=360", ease:Linear.easeNone, repeat:-1});
+            myTween_blue = new TweenMax.to('.area_bar .blue', 21, {rotation:"-=360", ease:Linear.easeNone, repeat:-1});
+        }
+
+        let button_hold = document.querySelector(".button-hold");
+        function reset() {
+            button_hold.classList.remove('success', 'process');
+            $area_bar.classList.remove('_success');
+            rotate_bar();
+        }
+        // 2023-04-04 추가 (끝)
+
+        TweenMax.set('.area_bar .bar', {xPercent: "-50", yPercent: "-50"});
+        rotate_bar(); //2023-04-04 수정
+    </script>

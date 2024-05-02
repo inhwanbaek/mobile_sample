@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"스마트위임 신청"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd ins dft" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">1. 대출신청금액 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">6</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ins-tit">
+				<h2 class="hd-tit3"><i class="line">스마트위임으로 대출</i>이 가능해요.<br>얼마를 신청하시겠어요?</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">일괄 신청</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">건별 신청</a></li>
+				</ul>
+			</div>
+			
+			<div class="tab-cont tab-a" aria-labelledby="tab_a_1">
+				<div class="ut-dcard b light">
+					<div class="dls">
+						<div class="dl">
+							<div class="dt">총 대출가능금액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">9,360,000</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+						<div class="dl">
+							<div class="dt">총 대출가능계약건수</div>
+							<div class="dd">7건</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="hd-tit4">대출신청금액</h3>
+
+				<div class="ut-price">
+					<div class="radiobox d">
+						<label class="radio"><input type="radio" name="radio_d0" checked><span class="txt">5만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d0"><span class="txt">10만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d0"><span class="txt">100만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d0"><span class="txt">500만원</span></label>
+						<label class="radio"><input type="radio" name="radio_d0"><span class="txt">1000만원</span></label>
+					</div>
+					<span class="input a won unit no"><!-- [D] 2022-04-07 클래스추가 -->
+						<label class="lb" for="input_id0">대출 신청금액</label>
+						<input type="tel" pattern="\d*" placeholder="숫자로 입력" title="숫자로 입력" value="" id="input_id0"><i class="w">만원</i>
+					</span>
+					<div class="vald-msg show no">대출신청금액은 숫자로만 입력해 주세요.</div>
+				</div>
+				<ul class="bullet b">
+					<li>1억까지 신청 가능</li>
+				</ul>
+
+				<div class="btn-set mt20">
+					<a href="javascript:;" role="button" class="btn ">대출가능금액 전액 입력</a>
+				</div>
+
+				<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>보험계약별로 대출금액을 각각 입력하려면 [건별 신청]으로 진행해 주세요.</li>
+							<li>보안카드 인증으로는 1회 1억원까지, 휴대폰 인증으로는 1회 5천만원까지 대출 신청 가능합니다.</li>
+							<li>간편서비스대출은 휴대폰 인증만으로 가능하며, 한도는 월 1억원입니다.</li>
+							<li>보험계약대출 원리금 청구 중인 계약으로 보험계약대출을 받을 경우 원리금이 이중출금될 수 있습니다. 이중출금된 이자는 2일(영업일 기준) 안에 다시 입금해 드립니다.</li>
+							<li>보험계약대출 신청 관련 자세한 사항은 [자세히 보기] 링크를 누르고 확인해 보세요. </li>
+						</ul>
+						<div class="btn-set mt20">
+							<a href="javascript:;" role="button" class="btn sm">보험계약대출 자세히 보기</a>
+						</div>
+					</div>
+				</div>
+				<!-- 변액보험계약대출일 경우 -->
+				<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>보험계약별로 대출금액을 각각 입력하려면 [건별 신청]으로 진행해 주세요.</li>
+							<li>보안카드 인증으로는 1회 1억원까지, 휴대폰 인증으로는 1회 5천만원까지 대출 신청 가능합니다.</li>
+							<li>간편서비스대출은 휴대폰 인증만으로 가능하며, 한도는 월 1억원입니다.</li>
+							<li>단, 변액보험계약대출 예약 시 최대신청금액은 계약별(보험증권번호별) 1천만원까지며, 월 1회 한도입니다.<br>(고객PLAZA 방문 시 월 1회, 5천만원까지 가능)<br>※ 월 기준은 매월 1일~말일입니다</li>
+							
+							<li>보험계약대출 원리금 청구 중인 계약으로 보험계약대출을 받을 경우 원리금이 이중출금될 수 있습니다. 이중출금된 이자는 2일(영업일 기준) 안에 다시 입금해 드립니다.</li>
+							<li>변액보험계약대출 신청 관련 자세한 사항은 [자세히 보기] 링크를 누르고 확인해 보세요. </li>
+						</ul>
+						<div class="btn-set mt20">
+							<a href="javascript:;" role="button" class="btn sm">변액보험계약대출 자세히 보기</a>
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+			
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" onclick="uiAlert();" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<script>                         
+        function uiAlert(){
+			ui.alert("보안카드가 없는 경우 휴대폰 인증으로 최대 5천만원까지 대출 가능합니다. "); 
+		}
+    </script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

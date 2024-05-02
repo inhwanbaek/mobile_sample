@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"연금저축 적립률 안내"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default reg" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<h2 class="hd-tit3">고객님이 가입하신 연금저축의<br> 적립률을 확인해 보세요.</h2>
+			<!-- 카드영역   -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="tit">개인연금저축교보가족연금보험(개인정액형)</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">보험증권번호</div>
+							<div class="dd">20210***********559</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">납입금액</div>
+							<div class="dd">
+								<span class="prc bold">
+									<strong class="p">7,000</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd">2021.03.03</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">적립금</div>
+								<div class="dd">50,779,636원</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">누적적립률</div>
+								<div class="dd">116.7%</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">해지환급금</div>
+								<div class="dd">50,779,131 원</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">연금수령 개시일</div>
+								<div class="dd">2023.12.12(만55세)</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">연금수령 가능일</div>
+								<div class="dd">2023.12.12(만55세)</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">비고</div>
+								<div class="dd">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			<!-- 카드영역   -->
+
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>주계약 및 추가납입 적립금에 대한 적립률을 확인할 수 있습니다. </li>
+						<li>선납보험료는 납입원금 및 적립금, 해지환급금에 포함되지 않는 금액입니다.</li>
+						<li>연금수령 가능일부터 연금을 수령할 수 있습니다.</li>
+						<li>만 나이는 보험나이 기준입니다.</li>
+						<li>해지환급금은 미지급금 및 공제금/세금 반영 전 금액입니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

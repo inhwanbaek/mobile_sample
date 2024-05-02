@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-yielddtls" id="pop-yielddtls">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">수익률 상세</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<div class="save-wrp">
+						<div class="etp-item">
+							<h2 class="etp-tit">
+								<span class="tt">단순수익률</span>
+								<div class="ut-tooltip mtop">
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>단순수익률은 투자기간 동안 적립금에서 수수료 등의 비용을 차감한 실제 수익을 총 납입원금으로 나눈 수익률입니다.</li>
+												<li>납입원금대비수익률 = (적립금평가금액 + 중도인출금 등 - 납입원금) ÷ 납입원금 x 100<br>
+													※ ‘중도인출금 등’ 에는 수수료 차감금액이 포함되지 않습니다.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</h2>
+							<div class="profit-wrp">
+								<ul class="lst-profit">
+									<li>
+										<dl>
+											<dt class="p-tt">누적</dt>
+											<dd class="p-cont">34.71<span class="percent">%</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="p-tt">연평균</dt>
+											<dd class="p-cont">4.73<span class="percent">%</span></dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="etp-item">
+							<h2 class="etp-tit">
+								<span class="tt">기간수익률</span>
+								<div class="ut-tooltip mtop">
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>기간수익률은 입금과 출금에 따라 발생하는 수익률 왜곡(예. 운용손익에 변화가 없더라도, 큰 금액이 입금되면 수익률이 낮아지는 현상)을 조정하기 위해 금융감독원에서 정한 수익률 계산방법으로, 운용손익을 일별 투자원금의 평균으로 나누어 계산한 수익률입니다. </li>
+												<li>누적수익률 = (운용손익 ÷ 일별 평균투자원금) x 100</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</h2>
+							<div class="profit-wrp">
+								<ul class="lst-profit">
+									<li>
+										<dl>
+											<dt class="p-tt">최근 3개월</dt>
+											<dd class="p-cont">7.06<span class="percent">%</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="p-tt">최근 1년</dt>
+											<dd class="p-cont">7.66<span class="percent">%</span></dd>
+										</dl>
+									</li>
+								</ul>
+								<ul class="lst-profit bdt">
+									<li>
+										<dl>
+											<dt class="p-tt">최근 3년</dt>
+											<dd class="p-cont">30.12<span class="percent">%</span></dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt class="p-tt">최근 5년</dt>
+											<dd class="p-cont">-</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="etp-item a mb24">
+							<h2 class="etp-tit">수익률 추이</h2>
+							<span class="select def no-lb">
+								<label class="lb blind" for="select-1">수익률 추이</label>
+								<select name="select-1" id="select-1">
+									<option selected="">최근 3개월</option>
+									<option>최근 1년</option>
+									<option>최근 3년</option>
+									<option>최근 5년</option>
+								</select>
+							</span>
+						</div>
+						<!-- 솔루션 영역 -->
+						<div class="ut-chart">
+							<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+							<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+						</div>
+						<!--// 솔루션 영역 -->	
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-yielddtls');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

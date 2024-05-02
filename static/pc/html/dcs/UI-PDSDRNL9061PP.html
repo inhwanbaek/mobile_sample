@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a xl pop-dcs" id="pop-interest-rate">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">직전 3개월간 적용금리 추이 </h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="sky-box">
+					<h2 class="hd-tit5">확정급여형(DB)</h2>
+				</div>
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<span class="tot">전체 <i class="n">728</i> 건</span>
+						<span class="date">기준일: 2022.02.18 </span> <!-- [D] 2022-05-20 텍스트 수정 / 기준일: -->
+					</div>
+					<div class="opt pr">
+						<span class="unit">단위 %</span>
+						<span class="select sort">
+							<select name="select-4" id="select-quan" title="목록 개수 선택">
+								<option>10개씩 보기</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="ut-tbl a scroll-x">
+					<table class="tblist">
+						<caption><span class="tit">확정급여형(DB)</span><span class="cap"></span></caption>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">구분</th>
+								<th scope="col" rowspan="2">상품명</th>
+								<th scope="col" rowspan="2">만기</th>
+								<th scope="col" colspan="3">금리적용기간</th>
+							</tr>
+							<tr>
+								<th scope="col" class="bdl">2022.02.01~<br>2022.02.28</th>
+								<th scope="col">2022.01.01~<br>2022.01.31</th>
+								<th scope="col">2021.12.01~<br>2021.12.31</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-c">자사 상품</td>
+								<td class="txt-l">교보생명/금리연동형Ⅱ보험</td>
+								<td class="txt-c">1년</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+							</tr>
+							<tr>
+								<td class="txt-c">자사 상품</td>
+								<td class="txt-l">교보생명/금리연동형Ⅱ보험</td>
+								<td class="txt-c">1년</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+							</tr>
+							<tr>
+								<td class="txt-c">자사 상품</td>
+								<td class="txt-l">교보생명/금리연동형Ⅱ보험</td>
+								<td class="txt-c">1년</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+								<td class="txt-c">0.00(0.00)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<include class="ut-paging" src="../inc/paging.html" data-include-opt='{"visible":"true"}'></include>
+
+				<ul class="bullet lg a mt50">
+					<li>2015년 6월 이전의 만기별 ‘교보생명 이율보증형보험(신탁제공용)’ 적용금리는 해당 만기별 ‘교보생명 이율보증형보험’의 적용금리와 같습니다.</li>
+				</ul>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-interest-rate');  // 팝업 열기
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

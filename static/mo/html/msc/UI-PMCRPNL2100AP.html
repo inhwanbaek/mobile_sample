@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a pop-dgninfo" id="pop-dgninfo">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향진단정보</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="dgninfo-head">
+							<h2 class="hd-tit3">맞춤형 투자를 위해 <br>최신 투자성향으로 관리하세요.</h2>
+
+							<div class="headbox">
+								<div class="headtit">
+									<h3 class="hd-tit4">나의 투자성향</h3>
+									<div class="ut-tooltip">
+										<span class="tt">투자성향 진단이란</span>
+										<button type="button" class="ico help bt-tooltip">투자성향 진단 도움말</button>
+										<div class="toolctn">
+											<div class="tpmsg">
+												<ul class="bullet a">
+													<li>투자성향진단은 간단한 설문을 통해 투자수익률, 손실이 생기더라도 감내 할 수 있는 수준 등 고객님의 투자성향을 분석합니다.</li>
+													<li>투자성향진단 24개월 경과한 경우 재 진단을 권유 드립니다.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="invgraph stage5" aria-hidden="true">
+									<span class="txt blind">고수익추구형</span>
+								</div>
+								<div class="tit">김교보 님의 투자성향</div>
+								<div class="msg"><strong>고수익추구형</strong> <button type="button" class="ico help">고수익추구형 도움말</button> 입니다. </div>
+								<div class="action"><button type="button" class="btn md">투자성향진단 다시하기</button></div>
+							</div>
+						</div>
+
+						<div class="dgninfo-body">
+							<div class="mcardwrp">
+								<div class="ut-optset optset">
+									<div class="opt pl">
+										<span class="tot">총 <i class="n">20</i> 개</span>
+									</div>
+								</div>
+								<div class="mcardlst">
+									<div class="ut-dcard a dcard">
+										<div class="dtds">
+											<ul class="dlt fs">
+												<li>
+													<div class="dl">
+														<div class="dt">진단일</div>
+														<div class="dd">2020.01.01</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">진단결과</div>
+														<div class="dd fn-point01">미진단</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">유효기간</div>
+														<div class="dd">2020.01.01</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="ut-dcard a dcard">
+										<div class="dtds">
+											<ul class="dlt fs">
+												<li>
+													<div class="dl">
+														<div class="dt">진단일</div>
+														<div class="dd">2020.01.01</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">진단결과</div>
+														<div class="dd fn-point01">미진단</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">유효기간</div>
+														<div class="dd">2020.01.01</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="ut-more">
+									<button type="button" class="btn-more">
+										<span class="tnt">
+											<em class="tm">더보기</em>
+											<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-dgninfo');
+		</script>
+	</div>
+</body>
+</html>

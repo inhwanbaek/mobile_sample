@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon" />
+    <link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/main_app.css">
+
+    <script src="../../js/jquery-3.4.1.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/jquery.ui.touch-punch.js"></script>
+    <script src="../../js/swiper.js"></script>
+
+    <script src="../../js/ui.js"></script>
+    <script src="../guide/html.js"></script>
+    <!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+    
+
+  </head>
+  <body class="body">
+    <div class="wrap" id="wrap">
+      <!-- 헤더-->
+      <include class="header" id="header" src="../inc/header_mapp.html" data-include-opt='{"visible":"true","class":"is-gnb","title":""}'></include>
+      <include class="gnb" src="../inc/gnb.html"></include>
+
+      <!---- 바디 - 여기위로는 템플릿영역 ---->
+
+      <main class="container page main app" id="container">
+        <!-- 본문 영역 -->
+        <div class="contents" id="contents">
+          <!-- 특화영역 -->
+          <section class="panel">
+
+            <button type="button" class="test">
+              test
+            </button>
+
+            <style>
+              .test:active {
+                color: red;
+              }
+            </style>
+
+            <!-- greeting-box -->
+            <div class="greeting-box">
+              <p class="hello">김교보님, 또 오셨네요!</p>
+              <button type="button" class="my-keyword">
+                <span class="txt">내 관심키워드</span>
+                <span class="num">3</span>
+              </button>
+            </div>
+
+            <script>
+              function test() {
+                console.log(121);
+                location.href='./test2.html'
+                // setTimeout(() => {
+                //   // this.evt();
+                // }, 500);
+              }
+            </script>
+
+
+            <article class="nudge opt-dark comp-bg-c300 first">
+              <!-- inner -->
+              <a href="javascript:;" class="inner" onclick="test();">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 카드 키워드는</span>
+                  <span class="ut-hash"># 3개까지</span>
+                  <span class="ut-hash"># 등록가능</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">내 보험료는 얼마일까?</p>
+                    </div>
+                    <div class="area-name">
+                      <!-- <div class="txtblock">
+										<span class="txt">나의 이름은 </span>
+										<span class="ipbox"></span>
+										<span class="txt">입니다.</span>
+									</div> -->
+                      <span><img src="../../img/main/img_flexible_field.png" alt="나의 이름은_입니다." /></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="txt">교보생명 라이프 플래닛</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge size-md comp-bg-c000">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">제휴콘텐츠 카드 유형 타이틀</p>
+                      <p class="sub-title">편리하게 독서를 즐기세요.</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img src="../../img/main/img_bg_pr.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge custom-row">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 추천도서</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">생활에 향기를 더하는<br />다양한 혜택과 정보가 가득</p>
+                      <p class="sub-title">노후 걱정은 덜고 인생 여유는 더하고!</p>
+                    </div>
+                  </div>
+                  <div class="img-box-sm"><img src="../../img/main/img_flexible_logo.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="ci"><img src="../../img/main/ci_sinhan.png" alt="신한카드 로고" /></span>
+                  <span class="txt">신한카드</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge opt-dark comp-bg-c800">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 카드 키워드는</span>
+                  <span class="ut-hash"># 3개까지</span>
+                  <span class="ut-hash"># 등록가능</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">심장관련 질환을<br />폭넓게 보장</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img src="../../img/main/img_bg_hand.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="txt">교보생명 라이프 플래닛</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge size-md comp-bg-c000">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">새로워진 교보생명을 만나보세요!</p>
+                      <p class="sub-title">지금 새로워진 서비스를 경험하세요.</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img src="../../img/main/img_bg_pr.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 퇴직연금</span>
+                  <span class="ut-hash"># 재테크</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">미래를 위한 보장 설계<br />변액연금보험</p>
+                      <p class="sub-title">보장과 수익이 따라오는 변액종신보험</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img class="img" src="../../img/main/ico_pd_01.png" alt="이미지" /></div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="txt">출처 / 링크있는 타입</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <div class="dict-detailBanner opt-dark comp-bg-c1000">
+              <button type="button" class="item">
+                <span class="text">건강나이로 점쳐보는 노후, 1분이면</span>
+                <span class="emoji">👌</span>
+              </button>
+            </div>
+
+            <article class="nudge motive-k">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 평생보장</span>
+                  <span class="ut-hash"># 노후자산</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">E-Book 서비스</p>
+                      <p class="sub-title">편리하게 독서를 즐기세요.</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img src="../../img/main/img_box_motive01.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="txt">교보생명 라이프 플래닛</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+
+            <article class="nudge motive-b">
+              <!-- inner -->
+              <a href="javascript:;" class="inner">
+                <div class="ut-hash-box">
+                  <span class="ut-hash"># 추천도서</span>
+                </div>
+                <!-- cont -->
+                <div class="cont">
+                  <div class="post">
+                    <div class="heading">
+                      <p class="title">미리 준비하는 평생 월급! 교보생명IRP</p>
+                      <p class="sub-title">노후 걱정 덜고 인생여유는 더하고!</p>
+                    </div>
+                  </div>
+                  <div class="img-box"><img src="../../img/main/img_box_motive02.png" alt="" /></div>
+                </div>
+                <!-- //cont -->
+                <p class="origin">
+                  <span class="txt">교보생명 라이프 플래닛</span>
+                </p>
+              </a>
+              <!-- //inner -->
+            </article>
+          </section>
+          <!-- // 특화영역 -->
+        </div>
+      </main>
+
+      <!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+      <!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+      <section class="my-deck-fake">
+        <!-- data-ui-drag -->
+        <button class="btn-hmb" data-ui-drag="true" title="열기">
+          <i></i>
+        </button>
+        <!-- md-container-fake -->
+        <div class="md-container">
+          <div class="account-sum">
+            <span class="tit">퇴직연금</span>
+            <span class="won">
+              <strong class="num">353,000</strong>
+            </span>
+          </div>
+          <div class="btn-set">
+            <button type="button" class="btn sm b">보험금청구</button>
+            <button type="button" class="btn sm b">보험료납입</button>
+            <button type="button" class="btn sm b">보험계약대출</button>
+          </div>
+        </div>
+        <!-- //md-container-fake -->
+      </section>
+      <!-- //my-deck -->
+
+      <!-- my-deck -->
+      <section class="my-deck">
+        <!-- data-ui-drag -->
+        <button class="btn-hmb" data-ui-drag="true" title="열기">
+          <i></i>
+        </button>
+        <!-- md-container -->
+        <div class="md-container">
+          <!-- md-cont -->
+          <div class="md-cont">
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">보험 <strong>4</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd" checked>
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">보험료합계</span>
+                  <span class="won">
+                    <strong class="num">353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>보험료 납입</span></a>
+                  <a href="#;" class="lnk"><span>보험금 청구</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+            <!-- banner-box -->
+            <div class="banner-box opt-arrow">
+              <a href="#;" class="banner-item">
+                <div class="imgBox"><img src="../../img/main/img_msca02.png" alt="" aria-hidden="true"></div>
+                <p class="tit">특약갱신 예정입니다.</p>
+                <!-- <p class="txt">지금 확인해 보세요</p> -->
+              </a>
+            </div>
+            <!-- //banner-box -->
+            <!-- banner-box -->
+            <div class="banner-box opt-arrow">
+              <a href="#;" class="banner-item">
+                <div class="imgBox"><img src="../../img/main/img_msca03.png" alt="" aria-hidden="true"></div>
+                <p class="tit">지급 예정 보험금이 있습니다.</p>
+                <!-- <p class="txt">지금 확인해 보세요</p> -->
+              </a>
+            </div>
+            <!-- //banner-box -->
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">퇴직연금 <strong>10</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd">
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">총 적립금액</span>
+                  <span class="won">
+                    <strong class="num">100,353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>투자상품 변경</span></a>
+                  <a href="#;" class="lnk"><span>같이투자</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">보험계약대출 <strong>10</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd">
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">총 대출잔액</span>
+                  <span class="won">
+                    <strong class="num">100,353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>대출상환</span></a>
+                  <a href="#;" class="lnk"><span>보험계약대출 신청</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">신용/담보대출 <strong>9,999</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd">
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">총 대출잔액</span>
+                  <span class="won">
+                    <strong class="num">100,353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>대출상환</span></a>
+                  <a href="#;" class="lnk"><span>자동이체 신청변경</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">펀드 <strong>9,999</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd">
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">총 평가잔액</span>
+                  <span class="won">
+                    <strong class="num">100,353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>가입내역 조회</span></a> <!--[D] 텍스트수정 2022-08-02 -->
+                  <a href="#;" class="lnk"><span>신규가입 신청</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+            <!-- prd-card -->
+            <div class="prd-card">
+              <div class="prd-setting">
+                <span class="tit">신탁 <strong>10</strong>건</span>
+                <label class="radio cd">
+                  <input type="radio" name="radio-prd">
+                  <span class="txt"><i>항상 보기</i></span>
+                </label>
+              </div>
+              <div class="prd-summary">
+                <div class="account-sum">
+                  <span class="tit">총 신탁잔고</span>
+                  <span class="won">
+                    <strong class="num">100,353,000</strong>
+                  </span>
+                </div>
+                <div class="btn-set">
+                  <a href="#;" class="lnk"><span>수익률 조회</span></a>
+                  <a href="#;" class="lnk"><span>신규가입 신청</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- //prd-card -->
+
+            <!-- deck-banner -->
+            <!-- 가입하지 않은 상품카테고리가 있을 경우 -->
+            <div class="deck-banner">
+              <div class="banner-box">
+                <a href="#;" class="banner-item bg-c100">
+                  <div class="imgBox"><img src="../../img/main/img_mscc01.png" alt="" aria-hidden="true"></div>
+                  <div class="txtBox">
+                    <p class="tit">보험상품 안내</p>
+                    <p class="txt">교보생명에서 준비한 다양한 <br>보험상품을 알아보세요.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="banner-box">
+                <a href="#;" class="banner-item bg-c200">
+                  <div class="imgBox"><img src="../../img/main/img_mscc02.png" alt="" aria-hidden="true"></div>
+                  <div class="txtBox">
+                    <p class="tit">교보생명 퇴직연금 서비스</p>
+                    <p class="txt">교보생명 퇴직연금(IRP)가입 시<br>받을 수 있는 다양한 혜택을 만나보세요.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="banner-box">
+                <a href="#;" class="banner-item bg-c300">
+                  <div class="imgBox"><img src="../../img/main/img_mscc03.png" alt="" aria-hidden="true"></div>
+                  <div class="txtBox">
+                    <p class="tit">보험계약대출 신청</p>
+                    <p class="txt">고객님의 대출가능금액을 <br>확인해 보세요. </p>
+                  </div>
+                </a>
+              </div>
+              <div class="banner-box">
+                <a href="#;" class="banner-item bg-c400">
+                  <div class="imgBox"><img src="../../img/main/img_mscc04.png" alt="" aria-hidden="true"></div>
+                  <div class="txtBox">
+                    <p class="tit">펀드상품 안내</p>
+                    <p class="txt">재테크 필수품, 다양한 펀드상품을 <br>알아 보세요.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="banner-box">
+                <a href="#;" class="banner-item bg-c500">
+                  <div class="imgBox"><img src="../../img/main/img_mscc05.png" alt="" aria-hidden="true"></div>
+                  <div class="txtBox">
+                    <p class="tit">신탁상품 안내</p>
+                    <p class="txt">다양한 신탁상품을 알아 보세요.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- //가입하지 않은 상품카테고리가 있을 경우 -->
+            <!-- //deck-banner -->
+
+            <!-- link-more -->
+            <div class="link-more">
+              <span class="txt">더 자세한 내용은 <a href="#;" class="lk">MY교보</a>에서<br> 확인하실 수 있습니다.</span>
+            </div>
+            <!-- link-more -->
+            <!-- banner-box -->
+            <div class="banner-box opt-tall">
+              <a href="#;" class="banner-item">
+                <p class="tit">가입한 상품의<br />담당 FP를 확인해보세요</p>
+                <p class="txt">나의 담당 컨설턴트</p>
+                <div class="imgBox"><img src="../../img/main/img_ftservice.png" alt="" aria-hidden="true" /></div>
+              </a>
+            </div>
+            <!-- //banner-box -->
+          </div>
+          <!-- //md-cont -->
+          <!-- btn-deck-close -->
+          <button class="btn-deck-close"><i>닫기</i></button>
+        </div>
+        <!-- //md-container -->
+
+      </section>
+      <!-- //my-deck -->
+
+      <!-- dim -->
+      <div class="my-dim">
+        <div class="my-dim-nav">
+          <a href="#;" class="my-dim-link">MY교보</a>
+        </div>
+      </div>
+      <!-- dim -->
+
+      <!-- 고정메뉴 -->
+      <include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-qmenu"}'></include>
+
+      <!-- 푸터 -->
+      <!-- <include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include> -->
+
+
+<!-- 터치모션 트러블슈팅 시작 -->
+<!--
+<div id="debug">
+  <p class="text">
+    초기상태
+  </p>
+</div>
+<style>
+  #debug {position: fixed; width: 100%; height: 100px; top: 120px; background-color: #000; z-index: 2147483647; color: #fff; font-size: 30px;}
+</style>
+-->
+<!-- 터치모션 트러블슈팅 끝 -->
+
+
+      <style>
+        /* 스크롤 고정 */
+        /* html,body {
+          width:100%; 
+          height:100%;
+          overflow: hidden !important;
+        }
+        .wrap {
+          position:fixed;
+          width:100%;
+          height:100%;
+          overflow:auto;
+        }
+        html.is-lock .wrap { 
+          overflow: hidden; 
+        }
+        .container.page.main.app {
+          height: auto !important;
+        } */
+  
+        /* lock상태 클릭 잠금 */
+        html.is-lock .wrap .main, 
+        html.is-lock .wrap .header { 
+          pointer-events: none;
+        }
+      </style>
+      <script>
+        document.onreadystatechange = function () {
+
+          // 윈도우 크기 설정
+          document.querySelector(':root').style.setProperty('--vh', window.innerHeight/100 + 'rem');
+
+          if (document.readyState == "interactive") {
+
+            let docHtml = document.querySelector('html');
+            let docBody = document.body;
+            let docMain = document.querySelector('.main');
+            
+            let deckOrig = document.querySelector('.my-deck');  // 대상 deck
+            let deckFake = document.querySelector('.my-deck-fake');   // 보여주기 deck
+            let deckDim = document.querySelector('.my-dim');  // deck 연동 dim
+            
+            // 초기 높이
+            let hiDrag = document.querySelector('.my-deck-fake [data-ui-drag]').clientHeight;
+            let hiFake = document.querySelector('.my-deck-fake .md-container').clientHeight;
+            let hiStart = hiDrag + hiFake;
+            let hiHeader = document.querySelector('.header').clientHeight;
+
+            // 스크롤 최상단 여부를 감지할 내부 컨테이터
+            let deckInner = deckOrig.querySelector('.md-container');
+
+
+            // funcReset
+            const funcReset = e => {
+              deckFake.style.setProperty('height', `${hiStart}rem`);
+              deckOrig.style.setProperty('height', `${hiFake}rem`);
+              deckInner.scrollTo({ top: 0, left: 0 });
+            };
+            funcReset();
+
+            // transition
+            const funcTransNone = e => {
+              deckOrig.classList.add('on-touch');
+              deckFake.classList.add('on-touch');
+            };
+            const funcTransAdd = e => {
+              deckOrig.classList.remove('on-touch');
+              deckFake.classList.remove('on-touch');
+            };
+
+            // scrollLock
+            const funcScrollLock = e => {
+              docHtml.classList.add("is-lock");
+            };
+
+            // funcDeckActive
+            const funcDeckActive = e => {
+              deckOrig.classList.add('active');
+              deckOrig.style.setProperty('height', `calc(100% - ${hiHeader}rem)`);
+              deckFake.style.setProperty('height', '0rem');
+            };
+
+            // funcAriaHidden
+            const funcAriaHidden = e => {
+              if(docHtml.classList.contains('is-lock')){
+                docMain.setAttribute('aria-hidden','true');
+              } else {
+                docMain.setAttribute('aria-hidden','false');
+              }
+            };
+
+            // funcDeckClose
+            const funcDeckClose = e => {
+
+              docHtml.classList.remove('is-lock');
+              deckOrig.classList.remove('active');
+              deckDim.classList.remove('active');
+              funcReset();
+              funcAriaHidden();
+            };
+
+            // 덱 내부 닫기버튼을 통한 닫기 처리
+            let deckCloser = document.querySelector('.btn-deck-close');
+            deckCloser.addEventListener('click', funcDeckClose);
+
+
+            // [s] scroll
+            let fakeShowTick = 1000;  // 스크롤 시 fake 숨긴 후 fakeShowTick 경과 시 재노출
+            let fakeShow; // 비동기 처리 할당용 변수
+            let lastScrollY = 0;
+            document.addEventListener('scroll', e => {
+
+              // 스크롤 방향에 따른 숨김처리
+              let scrollY = docHtml.scrollTop;
+              let direction = scrollY > lastScrollY ? "Scroll Down" : "Scroll Up";
+              lastScrollY = scrollY;
+              if (direction == "Scroll Up") {
+                deckFake.classList.remove('hide');  
+              } else {
+                deckFake.classList.add('hide'); 
+              }
+              // 일정 시간 후 나타남
+              let setHide = e => {
+                fakeShow = setTimeout(e => {
+                  deckFake.classList.remove('hide');
+                }, fakeShowTick);
+              };
+              // 중첩 동작 방지.
+              clearTimeout(fakeShow);
+              // 스크롤 종료 시점 한 번만 실행되도록 처리
+              setHide();
+            });
+            // [e] scroll
+
+            // funcTouchUpdate
+            let posInfo = {};
+            // 터치 중 이동 시 필요 값 계산을 위한 함수
+            const funcTouchUpdate = e => {
+              // 현재 Y 확보
+              posInfo.currentY = e.touches[0].clientY;
+              // 시작과 현재 차이 계산
+              posInfo.compareY = posInfo.startY - posInfo.currentY;
+              // 조건부 이동 또는 처리
+              if (posInfo.compareY > 1) {
+                // deckFake.style.setProperty('height', `${posInfo.fakeHeight - posInfo.compareY}rem`);
+                deckFake.style.setProperty('height', '0rem');
+                deckOrig.style.setProperty('height', `${posInfo.origHeight + posInfo.compareY}rem`);
+              }
+            };
+
+            // funcDeckMotion
+            let posInfoDeck = {};
+            // 터치 중 이동 시 필요 값 계산을 위한 함수
+            const funcDeckMotion = e => {
+              if (deckInner.scrollTop === 0) {
+                // 현재 Y 확보
+                posInfoDeck.currentY = e.touches[0].clientY;
+                // 시작과 현재 차이 계산
+                posInfoDeck.compareY = posInfoDeck.startY - posInfoDeck.currentY;
+                // 조건부 이동 또는 처리
+                if (posInfoDeck.compareY < 1) {
+                  deckOrig.classList.remove("active");
+                  deckOrig.style.setProperty('height', `${posInfoDeck.origHeight + posInfoDeck.compareY}rem`);
+                }
+              } else {
+                return false;
+              }
+            };
+
+            // [s] deckFake
+            // touchstart
+            deckFake.addEventListener('touchstart', e => {
+              // 트러블 슈팅 시 deckFate 이벤트 touchstart 중에만 발생.
+              // e.touches.length 1일때에도 터지므로 다른 방법 찾아야 함.
+              // touchend 이벤트리스너 추가로 처리됨.
+
+              //document.querySelector('#debug .text').textContent = `deckFake touchstart`;
+              // 시작 Y 확보
+              posInfo.compareY = 0;
+              posInfoDeck.compareY = 0;
+              posInfo.startY = e.touches[0].clientY;
+              posInfo.origHeight = deckOrig.offsetHeight;
+              posInfo.fakeHeight = deckFake.offsetHeight;
+              // 스크롤 잠금 & funcAriaHidden
+              funcScrollLock();
+              funcAriaHidden();
+              // 트랜지션 제거
+              funcTransNone();
+              // 터치 후 이동 시 작동할 처리 추가
+              deckFake.addEventListener('touchmove', funcTouchUpdate);
+            });
+            // touchend
+
+
+
+            function funcDeckTempHandle(e){
+              // 터치 후 이동 시 작동한 처리 제거
+              deckFake.removeEventListener('touchmove', funcTouchUpdate);
+              // 트랜지션 원복
+              funcTransAdd();
+              if (posInfo.compareY > 100) {
+                funcDeckActive();
+              } else {
+                funcDeckClose();
+              }
+            }
+
+            deckFake.addEventListener('touchend', e => {
+              //// document.querySelector('#debug .text').textContent = 'deckFake touchend';
+              funcDeckTempHandle(e);
+            });
+
+
+            deckFake.addEventListener('touchcancel', e => {
+              //document.querySelector('#debug .text').textContent = '캔슬!!';
+              funcDeckTempHandle(e);
+            });
+
+
+
+            // [e] deckFake 
+
+            // [s] deckOrig 
+            // touchstart
+            deckOrig.addEventListener('touchstart', e => {
+              //// document.querySelector('#debug .text').textContent = 'deckOrig touchstart';
+              // 시작 Y 확보
+              posInfoDeck.startY = e.touches[0].clientY;
+              posInfoDeck.origHeight = deckOrig.offsetHeight;
+              posInfoDeck.fakeHeight = deckFake.offsetHeight;
+              // 트랜지션 제거
+              funcTransNone();
+              // 터치 후 이동 시 작동할 처리 추가
+              deckOrig.addEventListener('touchmove', funcDeckMotion);
+            });
+            // touchend
+            deckOrig.addEventListener('touchend', e => {
+              //// document.querySelector('#debug .text').textContent = 'deckOrig touchend';
+              // 터치 후 이동 시 작동한 처리 제거
+              deckOrig.removeEventListener('touchmove', funcDeckMotion);
+              // 트랜지션 원복
+              funcTransAdd();
+              if (Math.abs(posInfoDeck.compareY) > 200) {
+                funcDeckClose();
+              } else {
+                funcDeckActive();
+              }
+            });
+            // [e] deckOrig
+
+            // 금액 애니메이션 테스트
+            $({ val : 0 }).animate({ val : 1000000 }, { duration: 500,
+              step: function() {
+                var num = numberWithCommas(this.val.toFixed());
+                $(".my-deck-fake .account-sum .num").text(num);
+              },
+              complete: function() {
+                var num = numberWithCommas(this.val.toFixed());
+                $(".my-deck-fake .account-sum .num").text(num);
+              }
+            });
+            function numberWithCommas(x) {
+              return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            // 금액 애니메이션 테스트
+            
+          }
+        };
+      </script>
+
+
+
+    </div>
+  </body>
+</html>

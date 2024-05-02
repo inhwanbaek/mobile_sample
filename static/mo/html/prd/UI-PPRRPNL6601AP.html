@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-document" id="pop-document">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">같이투자자 등록</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire irp">
+					<div class="pop-inr-wrap pop-kakaopay">
+						<div class="txt-box">
+							<h2 class="hd-tit4 mt10">나의 수익률과 포트폴리오를 공유하고 수익률 대회 등 같이투자자를 위한 이벤트에 참여해 보세요.</h2><!-- [D] 2022-08-24 텍스트 수정 -->
+						</div>
+						<h3 class="hd-tit5">닉네임 설정
+							<div class="ut-tooltip">
+								<button type="button" class="ico help sm bt-tooltip">도움말</button>
+								<div class="toolctn">
+									<ul class="bullet a">
+										<li>띄어쓰기 없이 최대 8자로 입력해 주세요.</li>
+										<li>특수문자를 제외한 한글, 영문, 숫자만 입력해 주세요.</li>
+										<li>다른 가입자가 같은 닉네임을 이미 사용 중이면 사용할 수 없습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</h3>
+						<div class="ut-text text mt10">
+							<span class="input a"><label class="lb blind" for="input-01">Label</label><input type="text" title="입력" placeholder="닉네임 입력" id="input-01"></span>
+							<div class="vald-msg no">닉네임을 입력해 주세요.</div>
+						</div>
+
+
+						<!-- [s] 22-05-13 약관수정 -->
+						<div class="ut-terms a">
+							<!-- 전체 동의 -->
+							<div class="ckall">
+								<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</div>
+							
+							<!-- 상위 레이블 앞에 선택옵션, 버튼 x -->
+							<div class="plbox">
+								<!-- [s] 22-05-17 수정 -->
+								<div class="hdt">
+									<div class="tit">
+										<label class="checkbox cr"><input type="checkbox"><span class="txt">같이투자자 등록을 위한 동의</span></label>
+									</div>
+								</div>
+								<ul class="plist">
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용에 관한 사항</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 조회에 관한 사항</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<!-- <li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별정보의 처리에 관한 사항</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li> -->
+								</ul>
+								<!-- // [e] 22-05-17 수정 -->
+							</div>
+						</div>
+						<!-- // [e] 22-05-13 약관수정 -->
+						
+						<div class="ut-gudbox b open mt40" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li>교보생명 퇴직연금(DC/IRP) 고객 중 적립금이 일정 금액 이상이면 누구든지 무료로 같이투자자로 신청하고 활동할 수 있습니다. </li>
+									<!--  2022-08-24 텍스트 수정 <li>같이투자자 고객은 정기적으로 수익률 대회에 참여할 수 있으며 수상에 따른 혜택이 제공됩니다.  </li>
+									<li>같이투자자 고객의 수익률과 투자상품 일별 현황은 다른 같이투자자 고객에게 공개됩니다.</li> -->
+									<!-- 2022-08-24 텍스트 수정 -->
+									<li>같이투자자 고객은 참가 조건을 충족할 경우 수익률 대회 등 이벤트에 자동 참가하게 되며 수상에 따른 혜택이 제공됩니다.</li>
+									<li>같이투자자 고객의 수익률과 투자상품 일별 현황은 익명(닉네임 사용)으로 다른 가입자에게 공개됩니다</li>
+									<!--//2022-08-24 텍스트 수정 -->
+									
+									<li>퇴직, 중도인출 등의 사유로 같이투자 커뮤니티 가입이 해지될 수 있습니다. </li>
+									<li>향후 서비스 제공 여건에 따라 서비스 내용 및 제공방법 등이 변경될 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>					
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">같이투자자 등록</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-document');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

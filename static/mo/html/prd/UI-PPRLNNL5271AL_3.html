@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-findApt" id="pop-findApt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">아파트 찾기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<h2 class="hd-tit3">아파트 상세 정보를 입력해주세요.</h2>
+					
+					<div class="step step3">
+						<div class="bg-box">
+							<div class="apt-reg">서울특별시 &gt; 강남구 &gt; 역삼동</div>
+							<strong>개포4차우성(양재우성)</strong>
+						</div>
+
+						<div class="ut-form b">
+							<!-- [D] 2022-06-10 건물전용면적 추가  -->
+							<div class="hdt">
+								<h3 class="tit tt">건물전용면적 / 건물공급면적</h3>
+							</div>
+							<div class="panel">
+								<span class="select a">
+									<label class="lb" for="select-4">Label</label>
+									<select name="select-4" id="select-4">
+										<option value="s-1" selected>선택</option>
+										<option value="s-2">89.3A㎡ / 103.3A㎡  </option>
+										<option value="s-3">선택2</option>
+										<option value="s-4">선택3</option>
+									</select>
+								</span>
+							</div>
+							<!-- // [D] 2022-06-10 건물전용면적 추가  -->
+
+							<div class="hdt">
+								<h3 class="tit tt">층수</h3>
+								<p class="apt-floor">총 <strong>20층</strong> 중</p>
+							</div>
+							<div class="panel">
+								<span class="input a won">
+									<label class="lb" for="input1">층 입력</label>
+									<input id="input1" type="tel" pattern="\d*" placeholder="숫자만 입력">
+									<i class="w">층</i>
+								</span>
+							</div>
+
+							<div class="hdt">
+								<h3 class="tit tt">동/호수 입력</h3>
+							</div>
+							<div class="panel">
+								<div class="apt-dongHo">
+									<span class="input a won">
+										<label class="lb" for="input2">동 입력</label>
+										<input id="input2" type="tel" pattern="\d*" placeholder="숫자만 입력">
+										<i class="w">동</i>
+									</span>
+									<span class="input a won">
+										<label class="lb" for="input3">호 입력</label>
+										<input id="input3" type="tel" pattern="\d*" placeholder="숫자만 입력">
+										<i class="w">호</i>
+									</span>
+								</div>
+								
+							</div>
+
+							
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">이전</button>
+					<button type="button" class="btn a rd lg">입력완료</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-findApt');
+	</script>
+
+</div>
+</body>
+</html>

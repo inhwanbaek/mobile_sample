@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-office main" id="pop-main-office">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">본사 오시는 길</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect-csc top">
+						<div class="map-wrp">
+							<div class="map"></div>
+						</div>
+
+						<div class="office-inf">
+							<h2 class="hd-tit3">광화문고객PLAZA</h2>
+							<p class="tit-txt">서울 종로구 종로 1(종로1가) 교보생명보험주식회사</p>
+						</div>
+						<div class="btn-set">
+							<a href="https://map.kakao.com/" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-map">카카오맵 열기</a><!-- [D] 2022-03-08 role="button" 추가 -->
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">오시는 길</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>지하철
+									<ul class="bullet c">
+										<li>5호선 광화문역 3번 출구</li>
+									</ul>
+								</li>
+								<li>버스
+									<ul class="bullet c">
+										<li>0015, 0212, 1011, 1012, 1020, 7012, 7018, 162, 606, 9703, 9704, 9711 교보빌딩 앞 하차</li>
+									</ul>
+								</li>
+								<li>자가용
+									<ul class="bullet c">
+										<li>세종로사거리에서 세종로 방향으로 오른쪽에 위치(지하주차장 이용 가능)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">대표 전화번호</h3>
+						<div class="btn-wrp">
+							<a href="tel:1588-1001" title="전화 앱으로 전환됩니다." role="button" class="btn sm ico-r ico-call">1588-1001</a><!-- [D] 2022-03-08 role="button" 추가 -->
+						</div>
+					</div><!-- //sect-csc -->
+
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-main-office');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

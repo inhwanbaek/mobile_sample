@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">가입상세안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure">
+						<!-- 탭 -->
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">가입안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보장내용</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">보험료 예시</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">해지환급금예시</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 가입안내 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<h2 class="hd-tit3">가입안내사항</h2>
+							<div class="ut-tbl a">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">보험종류</th>
+											<td>주계약: 간편가입형 / 일반가입형, 체증형(플러스)(0515플랜,1020플랜)<br>
+												특약: 질병재해장해납입면제특약, 재해장해납입면제특약, 재해장해납입면제특약(간편가입형)<br>
+												※ 각 특약은 가입 필요에 따라 고객님이 직접 선택할 수 있습니다.
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험기간</th>
+											<td>주계약: 90세 만기<br>특약: 주계약 납입기간</td>
+										</tr>
+										<tr>
+											<th scope="row">납입기간</th>
+											<td>주계약: 80세납, 전기납<br>특약: 주계약 납입기간</td>
+										</tr>
+										<tr>
+											<th scope="row">납입주기</th>
+											<td>월납<br>※ 다만, 플러스보장기간은 일시납입니다.</td>
+										</tr>
+										<tr>
+											<th scope="row">가입나이</th>
+											<td>간편가입형: 30~70세<br>일반가입형: 만 15~70세</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>가입나이는 회사의 계약인수 가이드라인 및 성별, 주계약, 특약의 보험기간, 납입기간에 따라 차이가 있습니다.</li>
+							</ul>
+
+						</div>
+						<!-- // 가입안내 -->
+
+						<!-- 보장내용 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<h2 class="hd-tit3">체증형/체증형플러스(0515플랜)</h2>
+							<p class="c-txt">[기본보험기간: 계약일부터 피보험자 90세 연계약해당일 전일까지] </p>
+							<div class="tbl-tit-right">
+								<span>기준 : 보험가입금액</span>
+							</div>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:40%">
+										<col style="width:40%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">일반형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>사망<br>보험금</td>
+											<td>기본보험기간 중<br>사망시</td>
+											<td>기본사망보험금 + 가산보험금액 + 추가적립금</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h3 class="hd-tit4">기본사망보험금</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:50%">
+										<col style="width:50%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">기본사망보험금</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">체증형·체증형플러스(1020플랜)</td>
+										</tr>
+										<tr>
+											<td>계약일부터<br>5년 경과 계약해당일 전일 까지</td>
+											<td>보험가입금액의 100%<br>(다만, 간편가입형은 계약일로부터 2년 미만에 재해 이외의 원인으로 사망할 경우 보험가입금액의 50%)</td>
+										</tr>
+										<tr>
+											<td>5년 경과 계약해당일부터<br>15년 경과 계약해당일 전일까지</td>
+											<td>보험가입금액의 100%<br>+ 10년 경과 계약해당일부터 매년 보험가입금액의 5%씩 체증</td>
+										</tr>
+										<tr>
+											<td>15년 경과 계약해당일 이후</td>
+											<td>보험가입금액의 150%<br>+ 20년 경과 계약해당일부터 매년 보험가입금액의 15%씩 체증</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<h2 class="hd-tit3 mt40">체증형/체증형플러스(0120플랜)</h2>
+							<p class="c-txt">[기본보험기간: 계약일부터 피보험자 90세 연계약해당일 전일까지] </p>
+							<div class="tbl-tit-right">
+								<span>기준: 보험가입금액</span>
+							</div>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:40%">
+										<col style="width:40%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">일반형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>사망<br>보험금</td>
+											<td>기본보험기간 중<br>사망시</td>
+											<td>기본사망보험금 + 가산보험금액 + 추가적립금</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h3 class="hd-tit4">기본사망보험금</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:50%">
+										<col style="width:50%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">기본사망보험금</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">체증형·체증형플러스(1020플랜)</td>
+										</tr>
+										<tr>
+											<td>계약일부터<br>10년 경과 계약해당일 전일까지</td>
+											<td>보험가입금액의 100%<br>(다만, 간편가입형은 계약일로부터 2년 미만에 재해 이외의 원인으로 사망할 경우 보험가입금액의 50%)</td>
+										</tr>
+										<tr>
+											<td>10년 경과 계약해당일부터<br>20년 경과 계약해당일 전일까지</td>
+											<td>보험가입금액의 100%<br>+ 10년 경과 계약해당일부터 매년 보험가입금액의 10%씩 체증</td>
+										</tr>
+										<tr>
+											<td>20년 경과 계약해당일 이후</td>
+											<td>보험가입금액의 200%<br>+ 20년 경과 계약해당일부터 매년 보험가입금액의 20%씩 체증</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>(일반)사망보험금은 ‘고의적 사고 및 2년 이내 자살’의 경우에 지급을 제한합니다.</li>
+								<li>위 보험상품 관련 내용은 요약된 자료이므로 단순 안내자료로 참고하시기 바라며, 보다 자세한 사항은 약관 및 상품설명서를 참조하시기 바랍니다. </li>
+							</ul>
+							
+						</div>
+						<!-- // 보장내용 -->
+
+						<!-- 보험료 예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+							<h2 class="hd-tit3">주계약 보험료 예시</h2>
+							<p class="c-txt">기준: 주계약 보험가입금액 1억원, 전기납, 월납, 일반가입형의 경우 표준체</p>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">간편가입형</h3>
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="3">남자</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">30세</th>
+											<th scope="col">40세</th>
+											<th scope="col">50세</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>체증형플러스<br>(0515플랜)</td>
+											<td>676,000</td>
+											<td>712,000</td>
+											<td>734,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(0515플랜)</td>
+											<td>618,000</td>
+											<td>659,000</td>
+											<td>689,000</td>
+										</tr>
+										<tr>
+											<td>체증형플러스<br>(1020플랜)</td>
+											<td>791,000</td>
+											<td>801,000</td>
+											<td>779,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(1020플랜)</td>
+											<td>721,000</td>
+											<td>741,000</td>
+											<td>730,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tbl-tit-right mt30">
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="3">여자</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">30세</th>
+											<th scope="col">40세</th>
+											<th scope="col">50세</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>체증형플러스<br>(0515플랜)</td>
+											<td>542,000</td>
+											<td>573,000</td>
+											<td>592,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(0515플랜)</td>
+											<td>493,000</td>
+											<td>529,000</td>
+											<td>554,000</td>
+										</tr>
+										<tr>
+											<td>체증형플러스<br>(1020플랜)</td>
+											<td>640,000</td>
+											<td>655,000</td>
+											<td>643,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(1020플랜)</td>
+											<td>582,000</td>
+											<td>604,000</td>
+											<td>601,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">일반가입형</h3>
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="3">남자</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">30세</th>
+											<th scope="col">40세</th>
+											<th scope="col">50세</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>체증형플러스<br>(0515플랜)</td>
+											<td>592,000</td>
+											<td>622,000</td>
+											<td>640,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(0515플랜)</td>
+											<td>540,000</td>
+											<td>576,000</td>
+											<td>600,000</td>
+										</tr>
+										<tr>
+											<td>체증형플러스<br>(1020플랜)</td>
+											<td>694,000</td>
+											<td>705,000</td>
+											<td>685,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(1020플랜)</td>
+											<td>633,000</td>
+											<td>651,000</td>
+											<td>641,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tbl-tit-right mt30">
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="3">여자</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">30세</th>
+											<th scope="col">40세</th>
+											<th scope="col">50세</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>체증형플러스<br>(0515플랜)</td>
+											<td>453,000</td>
+											<td>479,000</td>
+											<td>495,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(0515플랜)</td>
+											<td>412,000</td>
+											<td>441,000</td>
+											<td>462,000</td>
+										</tr>
+										<tr>
+											<td>체증형플러스<br>(1020플랜)</td>
+											<td>537,000</td>
+											<td>550,000</td>
+											<td>540,000</td>
+										</tr>
+										<tr>
+											<td>체증형<br>(1020플랜)</td>
+											<td>487,000</td>
+											<td>507,000</td>
+											<td>505,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- // 보험료 예시 -->
+
+						<!-- 해지환급금예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+							<h2 class="hd-tit3">주계약 해지환급금 예시</h2>
+						</div>
+						<!-- // 해지환급금예시 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

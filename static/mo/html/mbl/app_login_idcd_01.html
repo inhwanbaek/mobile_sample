@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+
+
+  <!-- 본인확인 방법선택 추가 2022-12-21 -->
+  <!-- pop-layer -->
+	<article class="pop-layer c sign-adds" id="pop-certificate">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="hd-tit3">본인확인 방법선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="mbl-top">
+							<div class="hdt"><h2 class="hd-tit2">본인확인 방법을 선택해 주세요.</div>
+						</div>
+						<div class="certificate-list">
+							<ul class="list">
+                <li class="ics card bdcc pt20 pb20"><a href="javascript:;" class="lks">본인명의 신용/체크카드</a></li>
+								<li class="ics ctcm bdnone pt20 pb20"><a href="javascript:;" class="lks">공동인증서</a></li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-certificate');">닫기</button>
+		</div>
+	</article>
+  <!-- //pop-layer -->
+  <!-- //본인확인 방법선택 추가 2022-12-21 -->
+
+
+
+
+
+	<script>
+		ui.popup.open('pop-certificate');
+	</script>
+
+</div>
+</body>
+</html>

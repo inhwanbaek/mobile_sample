@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-country countrysearch" id="pop-country">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">국적찾기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- 검색 전 화면 -->
+					<section>
+						<div class="hdt">
+							<h2 class="hd-tit2"><i class="line">국가명</i>을 입력해 주세요.
+							</h2>
+						</div>
+						<div class="mt20">
+							<span class="input ipsch xdel no-lb coms del">
+								<label class="lb blind" for="keywords1">국가명 입력</label>
+								<input type="search" placeholder="국가명를 입력해 주세요." title="검색하기" value="" id="keywords1" style="padding-right: 62px;">
+								<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+							<button type="button" class="btdel" tabindex="-1">삭제</button></span>
+						</div>
+					</section>
+					<!--// 검색 전 화면 -->
+					<!-- 검색 후 화면 -->
+					<secttion class="country-result" style="display: block;">
+						<ul class="country-list">
+							<li>
+								<a class="item" href="#" title="검색결과">
+									<div class="tit"><span class="sp">미국</span>령 군소제도</div>
+									<div class="subtit">UNITED STATES MINOR OUTLYING ISLANDS</div>
+									<div class="ab">UMI</div>
+								</a>
+							</li>
+							<li>
+								<a class="item" href="#" title="검색결과">
+									<div class="tit"><span class="sp">미국</span></div>
+									<div class="subtit"><span class="sp">UNITED STATES</span></div>
+									<div class="ab">USA</div>
+								</a>
+							</li>
+							<li>
+								<a class="item" href="#" title="검색결과">
+									<div class="tit"><span class="sp">미국</span>령 버진아일랜드</div>
+									<div class="subtit">VIRGIN ISLANDS, U.S</div>
+									<div class="ab">VIR</div>
+								</a>
+							</li>
+							<li>
+								<a class="item" href="#" title="검색결과">
+									<div class="tit"><span class="sp">미국</span>령 군소제도</div>
+									<div class="subtit">UNITED STATES MINOR OUTLYING ISLANDS</div>
+									<div class="ab">UMI</div>
+								</a> 
+							</li>
+							<li>
+								<a class="item" href="#" title="검색결과">
+									<div class="tit"><span class="sp">미국</span>령 군소제도</div>
+									<div class="subtit">UNITED STATES MINOR OUTLYING ISLANDS</div>
+									<div class="ab">UMI</div>
+								</a>
+							</li>
+						</ul>	
+					</secttion>
+					<!--// 검색 후 화면 -->
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-country');
+	</script>
+
+</div>
+</body>
+</html>

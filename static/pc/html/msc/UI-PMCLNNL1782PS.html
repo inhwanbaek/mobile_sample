@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-drctsyst" id="pop-drctsyst">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험계약대출이자 자동이체납입제도 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<ul class="bullet a lg">
+						<li>자동이체될 금액이  해당 이체일 은행 영업시간까지 계좌에 입금되어 있어야만 자동이체됩니다. </li>
+						<li>계좌 잔액 부족,  지급제한, 약정대출금 연체 등으로 대체납부가 불가능한 경우 자동이체가 실행되지 않습니다. </li>
+						<li>해당 이체일에 이체되지 않으면 다음 이체일(5일 후)에 가산이자가 포함된 금액을 청구(출금)하므로 통장 잔액을 확인해 주시기 바랍니다.</li>
+						<li>고객님이 자동이체로 납입하신 보험계약대출 원리금은 실제 납입한 날로부터 시스템에 반영되는 시간이 2일 정도 걸리며, 이 기간 중 다른 업무처리로 인해 이중출금이 될 경우 2일(영업일 기준) 안에 해당 계좌로 다시 입금해 드립니다. </li>
+						<li>이중출금된 금액을 다시 입금해 드릴 때는 보험계약대출금리를 적용하여 2일간의 가산금을 지급해 드립니다.</li>
+						<li>이체일(납기일)에 자동이체로 이체될 금액(카드사 결제금액 등)이 여러 건 있을 경우 출금되는 우선순위는 은행에서 정하는 바에 따릅니다.</li>
+					</ul>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-drctsyst');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

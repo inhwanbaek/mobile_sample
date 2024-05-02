@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc default certificate" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">신용/담보대출증명서</h2>
+				<div class="desc">필요한 증명서를 발급해 보세요.</div>
+			</div>
+
+			<h3 class="hd-tit4">발급 가능 증명서 조회</h3>
+
+			<div class="cont-box">
+				<div class="ut-tbl a">
+					<table class="tbform a" cellpadding="0" cellspacing="0">
+						<caption><span class="tit"></span><span class="cap"></span></caption>
+						<colgroup>
+							<col width="25%">
+							<col width="auto">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">증명서 종류</th>
+								<td>
+									<ul class="radio-item">
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">장기주택저당차입금증명서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">원리금상환증명서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">부채증명원</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">연체해제확인서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">금융거래확인서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">주택자금상환증명서(소득공제 신청용)</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">보증보험증권상환확인서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">대출완납증명서</span></label></li>
+										<li><label class="radio cr"><input type="radio" name="radio4"><span class="txt">질권설정해지확인서</span></label></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<h4 class="hd-tit4">발급연도</h4>
+				<span class="select a">
+					<label class="lb blind" for="sel_id01">발급연도</label>
+					<select id="sel_id01" name="sel_id01">
+						<option>2022</option>
+					</select>
+				</span>
+				<h4 class="hd-tit4">사용용도</h4>
+				<span class="select a">
+					<label class="lb blind" for="sel_id02">사용용도</label>
+					<select id="sel_id02" name="sel_id02">
+						<option>특별공제신청용</option>
+					</select>
+				</span>
+				<div class="btn-set">
+					<button type="button" class="btn md ico-search">조회</button>
+				</div>
+			</div>
+
+			<!-- 회색박스 -->
+			<div class="bg-gray">
+				<h3 class="hd-tit4">증명서 발급 대상 대출내역</h3>
+				<div class="cont-box">
+					<p class="txt">증명서를 발급할 대출내역을 선택해 주세요.</p>
+				</div>
+
+				<div id="ball_4" class="card-wrap">
+					<!-- 카드영역   -->
+					<!-- 체크시 class="ut-dcard a dcard checked" 클래스추가 -->
+					<div class="ut-dcard a dcard checked open" data-tog-cls="box">
+						<div class="stds">
+							<div class="hdt">
+								<div class="chk">
+									<label class="checkbox"><input type="checkbox" checked><span class="txt">1000000000023</span></label>
+								</div>
+							</div>
+							<div class="cdt">
+								<div class="bxs">
+									<div class="dt">마스터암치료보험(2종가족2형)</div>
+									<div class="dd"></div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">대출일</div>
+										<div class="dd">2021.09.02</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">대출금액</div>
+										<div class="dd">0원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">대출잔액</div>
+										<div class="dd">0원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">만기일</div>
+										<div class="dd">2021.09.02</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- 체크시 class="ut-dcard a dcard checked" 클래스추가 -->
+					<div class="ut-dcard a dcard" data-tog-cls="box">
+						<div class="stds">
+							<div class="hdt">
+								<div class="chk">
+									<label class="checkbox"><input type="checkbox" checked><span class="txt">1000000000023</span></label>
+								</div>
+							</div>
+							<div class="cdt">
+								<div class="bxs">
+									<div class="dt">마스터암치료보험(2종가족2형)</div>
+									<div class="dd"></div>
+								</div>
+							</div>
+						</div>
+						<div class="dtds" data-tog-cls="ctn">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<div class="dt">대출일</div>
+										<div class="dd">2021.09.02</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">대출금액</div>
+										<div class="dd">0원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">대출잔액</div>
+										<div class="dd">0원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<div class="dt">만기일</div>
+										<div class="dd">2021.09.02</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="mores">
+							<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+						</div>
+					</div>
+					<!-- 카드영역   -->
+				</div>
+			</div>
+			<!-- //회색박스 -->
+			<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a">
+						<li>
+							국세청 연말정산간소화서비스(www.yesone.go.kr)를 이용하시면 연말정산에 필요한 각종 소득공제 자료를 한 번에 확인하실 수 있습니다.
+							<div class="btn-set">
+								<a href="http://www.yesone.go.kr/" target="_blank" title="국세청 홈페이지 새창으로 바로가기" class="btn sm ico-arrow">국세청 바로가기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- [D] 2022-04-29 버튼 위치 변경 ('contents' 안으로 이동)-->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg a">다운로드</button>
+					</div>
+				</div>
+			</nav>
+			<!--// [D] 2022-04-29 버튼 위치 변경 ('contents' 안으로 이동)-->
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

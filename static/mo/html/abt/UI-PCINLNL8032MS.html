@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"경영철학"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt manage-phi" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">비전경영</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">고객만족경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">지속가능경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">나눔경영</a></li>
+				</ul>
+			</div>
+			<div class="grp-hd manage02">
+				<strong class="hd-tit2">늘 고객보다 <i class="line">반걸음 먼저 앞서 가는</i> <br>교보생명이 되겠습니다.</strong>
+				<!-- <h3 class="hd-tit4">고객만족경영 <br>Management for Customer Satisfaction</h3> --><!-- [D] 2022-07-06 삭제 -->
+			</div>
+			<div class="phi-cont">
+				<strong>
+					교보생명은 금융업계 최초로 소비자중심경영(CCM) 명예의 전당에 헌정됐습니다. 또한 금융감독원 금융소비자보호 우수기관 표창을 수상했습니다.
+				</strong>
+				<p>
+					신창재 회장은 “우리는 이익을 위해 고객에 피해를 주는 마피아와 같은 조직이 아닙니다. 고객을 이롭게 해야 우리 자신도 이로워질 수 있습니다.”라는 말로 고객만족경영에 대한 소신을 피력합니다.
+				</p>
+				<p>
+					신창재 회장은 이를 ‘자리이타(自利利他)’, 즉 “네가 남에게 대접받고 싶은 대로 남을 대접하라”는 말로 표현하기도 합니다. 기업이 더 큰 성공을 원한다면, 그것을 원하는 만큼 고객의 성공을 도와주어야 비로소 가능하다는 것입니다.
+				</p>
+				<p>
+					고객만족에 대한 신창재 회장의 확고한 신념은
+					가입, 유지, 지급에 이르는 보험 사업 전반에 반영
+					되었습니다. 그 결과 교보생명은 금융업계 최초로 한국능률협회로부터 5년 연속 고객만족대상을 수상했으며, 2004년 명예의 전당에 올랐습니다.
+				</p>
+				<p>
+					이에 대해 신창재 회장은 수상이 중요한 것이 아니라 교보생명이 제공하는 상품과 서비스의 품질을 고객이 체감할 수 있도록 하는 것이 더 중요하다고 강조합니다.
+				</p>
+				<p>
+					신창재 회장은 “회장 취임 후 교보생명에 많은 변화가 있었습니다. 그 가운데서도 기업문화가 고객중심으로 바뀐 점을 눈여겨봐야 합니다.
+					보험업은 일반 제조업과는 달리 ‘사람’이 중요합니다. 고객을 바라보는 마음과 신뢰가 중요하고, 고객에 대한 배려가 우선되어야 합니다.”라고 말했습니다.
+				</p>
+				<p>
+				<strong>
+					교보생명의 고객만족경영에 대한 노력은 끊임없이 이어져 2019년 초대 소비자중심경영(CCM) 명예의 전당에 헌정됐으며, 금융감독원 금융소비자보호 우수기관 표창을 수상했습니다.
+				</strong>
+
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

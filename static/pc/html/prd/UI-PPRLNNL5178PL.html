@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		
+		<article class="pop-layer sm a pop-prd pop-advNotice" id="pop-advNotice">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">고액신용대출 추가약정 사전 안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents hdt">
+	
+						<div class="text-group type2">		
+							<h2 class="hd-tit3">고액신용대출의 사후 용도 관리 강화를 위한<br>
+								추가약정 사전 안내</h2>
+							<h3 class="hd-tit4">아래 내용에 동의하시면 고액신용대출 추가약정이 진행됩니다.</h3> 
+							<div class="text-box">
+								<ul class="bullet a">	
+									<li>교보생명(기존 대출잔액 + 추가신청금액) 및 다른 금융기관 신용대출 금액은 <em>300,000,000</em>원입니다.</li>
+									<li>교보생명 및 다른 금융기관 신용대출 금액이 <em>1억원을 초과하는 경우</em> 고액신용대출의 사후 용도 관리 강화를 위해 추가약정 체결 후 대출을 진행합니다.</li>
+									<li>추가약정에 동의하지 않으시면 대출을 신청하실 수 없습니다.</li>
+								</ul>
+								
+							</div>
+						
+						</div>
+	
+						<div class="agree-box rbox">
+							<p class="agree-txt">현재 취득 후 소유권 등기를 하지 않은 주택분양권이 있습니까?</p>
+							<div class="radio-wrap">
+								<label class="radio" for="radio1-1"><input type="radio" id="radio1-1" name="radio1"><span class="txt">없음</span></label>
+								<label class="radio" for="radio1-2"><input type="radio" id="radio1-2" name="radio1"><span class="txt">있음</span></label>
+							</div>
+							<ul class="bullet b">
+								<li>주택분양권을 소유하신 경우 융자센터에서 대출을 신청하시기 바랍니다.</li>
+							</ul>
+						</div>
+	
+						<div class="agree-box rbox">
+							<p class="agree-txt">추가약정 체결을 진행하는데 동의하십니까?</p>
+							<div class="radio-wrap">
+								<label class="radio" for="radio2-1"><input type="radio" id="radio2-1" name="radio2"><span class="txt">동의</span></label>
+								<label class="radio" for="radio2-2"><input type="radio" id="radio2-2" name="radio2"><span class="txt">동의안함</span></label>
+							</div>
+						</div>
+	
+					</main>
+				</div>
+				<div class="pbt" id="btn_area">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">다음</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		
+		<script>
+			ui.popup.open('pop-advNotice');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-sample1',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			
+			
+		</script>
+	</div>
+</body>
+</html>

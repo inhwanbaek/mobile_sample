@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"상품부가서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page prd add-service btm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents" data-ui-fsize="ctn">	
+			<section class="top-area type2">
+				<div class="top-btn-area">
+					<button type="button" class="btn-fsize" data-ui-fsize="btn"><i class="blind">글자크기 조정하기</i></button>
+					<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+				</div>
+				
+				<h2 class="hd-tit2">교보건강코칭서비스</h2>
+				<div class="tit">CI보험 우수고객용</div>
+				<div class="top_cont">				
+					AI 가 추천하는 식단과 걷기 챌린지로<br>
+					스마트한 건강관리<br>
+					<strong>나만의 건강코칭</strong>					
+				</div>				
+			</section>
+
+			<section class="sec-wrap">
+				<h3 class="hd-tit4">교보건강코칭서비스를 이용해 보세요.</h3>
+				<div class="btn-set vt">			
+					<button type="button" class="btn f md ico-call-blue ico-r">교보건강코칭서비스 콜센터</button>
+					<a href="https://play.google.com/store/apps/details?id=wellness.kyobo.com.coach" target="_blank" role="button" class="btn md ico-elink ico-r">교보건강코칭서비스 앱설치 안내</a><!-- [D] 2022-06-30 링크 변경 AOS -->
+					<!-- <a href="https://apps.apple.com/kr/app/id1287847453" target="_blank" role="button" class="btn md ico-elink ico-r">교보건강코칭 서비스 앱설치 안내</a> --> <!-- [D] 2022-06-30 링크 변경 IOS -->
+				</div>
+			</section>
+		
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이용방법</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">혜택안내</a></li>
+				</ul>
+			</div>
+
+			<!-- 이용방법 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어디에서 이용하나요?</h4>
+					<p>‘교보건강코칭서비스’는 교보건강코칭서비스 앱 또는 카카오톡 플러스친구(교보건강코칭), 교보건강코칭서비스 콜센터(1661-0664)를 통해 이용할 수 있습니다. </p>
+
+					<h5 class="hd-tit4">주요화면</h5>
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_1@2x.png" alt="교보건강코칭서비스 출석체크 화면이미지"> </a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_2@2x.png" alt="교보건강코칭서비스 매일매일 챌린지 화면이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_3@2x.png" alt="교보건강코칭서비스 전체 섭취량 입력 화면이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_4@2x.png" alt="교보건강코칭서비스 이벤트 첼린지 화면이미지"></a></div>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sec-box">
+					<h4 class="hd-tit2">누가 이용할 수 있나요?</h4>
+					<div class="balloon-box-wrap">
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">아래 상품에 가입하시면 서비스를 이용할 수 있어요.</span>
+						<div class="balloon-box" id="ball_1">
+							<ul class="un-bullet">
+								<li>(무)교보미리미리여성CI보험</li>
+								<li>(무)교보미리미리CI보험</li>
+								<li>NEW(무)교보미리미리여성CI보험</li>
+								<li>NEW(무)교보미리미리CI보험</li>
+								<li>(무)교보실속있는건강플러스종신보험</li> <!-- [D] 2022-08-25 텍스트수정 -->
+								<li>(무)교보실속있는NEW건강플러스종신보험</li>
+								<li>(무)교보내생애맞춤건강보험</li>
+							</ul>
+							<ul class="bullet b lg">
+								<li>단, (무)교보내생애맞춤건강보험은 2018년 4월 1일 이후에 가입하신 고객님만 이용하실 수 있습니다. </li>							
+							</ul>
+						</div>						
+					</div>
+					<ul class="bullet a lg">
+						<!-- [D] 2022-08-19 텍스트 수정 -->
+						<li>교보건강코칭서비스는 상품별로 정한 일정 금액 이상을 가입한 고객에게 제공됩니다.</li>
+						<li>서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출하고 서비스 대상자임을 확인받은 후 이용할 수 있습니다.</li>
+						<li>서비스 이용 가능한 상품 및 금액은 교보생명 FP(재무설계사) 또는 콜센터(1588-1001)로 문의해 주세요.</li>
+						<!--// [D] 2022-08-19 텍스트 수정 -->
+					</ul>
+				</div>	
+				
+			</div>
+			<!-- // 이용방법 -->
+
+			<!-- 혜택안내 -->
+			<!-- 22-05-31 혜택안내 전체수정 -->	
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어떤 혜택을 받나요?</h4>
+					<div class="s-section">
+						<h5 class="hd-tit3 ball-tit" id="ball_2">매일매일 챌린지</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_2">건강 유지에 필요한 권장활동량을 설정해<br>드려요. 목표를 달성하면 다양한 혜택도<br>제공받으실 수 있어요. </span>
+					
+						<div class="img">
+							<div class="ut-slide-dot">
+								<div class="swiper-container swiper" data-slide-id="photo_2">
+									<!-- [D] 2022-08-19 슬라이드 수정 -->
+									<ul class="swiper-wrapper slide">
+										<li class="swiper-slide">
+											<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_5@2x.png" alt="교보건강코칭서비스 매일매일 챌린지"></a></div>
+										</li>
+									</ul>
+									<div class="pagination"></div>
+								</div>
+							</div>
+						</div> 
+					
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">걷기 챌린지</h6>
+							<ul class="bullet a lg">
+								<li>매일매일 출석체크 & 걷기 목표 도전</li>
+								<li>걸음수/칼로리 소모량 등 나의 운동 현황 분석</li>
+								<li>목표 달성 시 경품 응모</li>
+							</ul>
+							<h6 class="hd-tit4">이벤트 챌린지</h6>
+							<ul class="bullet a lg">
+								<li>건강상식 OX, 객관식 퀴즈, 숨은 음식 찾기 등</li>
+								<li>다양한 이벤트 챌린지 제공</li>
+								<li>목표 달성 시 경품 응모</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="s-section">
+						<h5 class="hd-tit3 ball-tit" id="ball_3">푸드렌즈</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_3">사진을 찍어서 간편하게 식사를 기록해 보<br>세요. 1:1 식단 컨설팅을 받으실 수 있어요.</span>
+							
+						<div class="img">
+							<div class="ut-slide-dot">
+								<div class="swiper-container swiper" data-slide-id="photo_3">
+									<!--[D] 2022-08-19 슬라이드 수정 -->
+									<ul class="swiper-wrapper slide">
+										<li class="swiper-slide">
+											<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_6@2x.png" alt="교보건강코칭서비스 푸드렌즈"></a></div>
+										</li>
+									</ul>
+									<!--// [D] 2022-08-19 슬라이드 수정 -->
+									<div class="pagination"></div>
+								</div>
+							</div>
+						</div> 
+					
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">AI 카메라 기반 식단 관리</h6>
+							<ul class="bullet a lg">
+								<li>인공지능 사진 인식 기술을 이용해 음식/칼로리 자동 분석</li>
+								<li>일자별/식사별 칼로리 및 영양 관리</li>
+							</ul>
+							<h6 class="hd-tit4">1:1 식단 컨설팅</h6>
+							<ul class="bullet a lg">
+								<li>전문영양사를 통한 1:1 컨설팅</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="s-section">
+						<!-- [D] 2022-08-19 말풍선으로 수정 -->
+						<h5 class="hd-tit3 ball-tit" id="ball_4">5!마이코칭</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_4">전문가의 건강코칭프로그램을 통해 <br>건강나이는 낮추고 건강지수는 높여 보세요.</span>
+						<!--// [D] 2022-08-19 말풍선으로 수정 -->
+											
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">12주 건강코칭프로그램</h6>
+							<ul class="bullet a lg">
+								<li>운동, 영양. 스트레스. 절주. 금연 등 5대 프로그램</li>
+								<li>웹툰, 동영상, 레시피 등 건강증진 콘텐츠</li>
+								<li>프로그램 완료 시 축하선물 증정</li>
+								<li>나만의 건강코치와 1:1 채팅상담 제공</li>
+							</ul>
+							<h6 class="hd-tit4">건강나이</h6>
+							<ul class="bullet a lg">
+								<li>건강나이 측정</li>
+								<li>건강위험도(5대 중증질환 위험도, 5대 암 위험도) 평가</li>
+							</ul>
+						</div>						
+					</div>
+
+					<div class="s-section">
+						<h5 class="hd-tit3 ball-tit" id="ball_5">체크체크 마이헬스</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_5">건강검진 결과를 알기 쉽게 설명해주고, 이 결<br>과를 바탕으로 의학생체나이도 측정해 드려요.</span>
+						<div class="img">
+							<div class="ut-slide-dot">
+								<div class="swiper-container swiper" data-slide-id="photo_3">
+									<!-- [D] 2022-08-19 슬라이드 수정 -->
+									<ul class="swiper-wrapper slide">
+										<li class="swiper-slide">
+											<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6102_7@2x.png" alt="교보건강코칭서비스 체크체크 마이헬스"></a></div>
+										</li>
+									</ul>
+									<!--// [D] 2022-08-19 슬라이드 수정 -->
+									<div class="pagination"></div>
+								</div>
+							</div>
+						</div> 
+					
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">신체나이/대사나이 분석</h6>
+							<ul class="bullet a lg">
+								<li>건강검진 결과 입력 시, 건강 리포트 제공(서비스 기간 동안 2회)</li>
+								<li>맞춤처방 및 실천 안내사항 제공</li>
+							</ul>
+							<h6 class="hd-tit4">전문가 상담 및 관리</h6>
+							<ul class="bullet a lg">
+								<li>전문의료진을 통한 분석 상담</li>
+								<li>건강생활습관 상담</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="s-section">
+						<h5 class="hd-tit3 ball-tit" id="ball_6">건강도서관</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_6">다양한 건강정보를 쉽고 편리하게 찾을 수<br>있게 전문정보를 한 곳에 모아 놨어요.</span>
+						
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">건강 정보</h6>
+							<ul class="bullet a lg">
+								<li>생활건강관리 방법 및 중대질병 정보 제공</li>
+								<li>운동 동영상/영양 레시피 등 다양한 콘텐츠</li>
+							</ul>
+							<h6 class="hd-tit4">건강웹진</h6>
+							<ul class="bullet a lg">
+								<li>모바일 건강웹진 제공(매월 1회)</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="s-section">
+						<h5 class="hd-tit3 ball-tit" id="ball_7">건강코치 1:1 상담</h5>
+						<span data-ui-balloon="left,top" aria-describedby="ball_7">언제, 어디서나 쉽게 건강관리 전문가와<br>1:1로 상담할 수 있어요. </span>
+
+						<div class="cont-box revise">
+							<h6 class="hd-tit4">체팅/전화상담</h6>
+							<ul class="bullet a lg">
+								<li>전문의료진(간호사), 운동처방사, 영양사, 심리상담사와 1:1 상담</li>
+								<li>사진 전송이 가능한 간편 모바일 상담</li>
+							</ul>
+							<h6 class="hd-tit4">카카오톡 플러스친구</h6>
+							<ul class="bullet a lg">
+								<li>건강웹진 발송(매월 1회)</li>
+								<li>서비스 및 이벤트 안내</li>
+								<li>앱 사용방법 안내</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- // 혜택안내 -->
+
+			<!-- [s] 22-05-31 위치수정, 클래스 추가 -->
+			<section class="sec-wrap adds-btn">
+				<h3 class="hd-tit4">다른 상품부가서비스가 궁금하시다면?</h3>
+				<button type="button" class="btn c sm">상품부가서비스 전체보기</button>
+			</section>
+			<!-- // [e] 22-05-31 위치수정, 클래스 추가 -->
+			
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>교보건강코칭서비스는 교보생명이 정한 서비스 부가기준을 충족하고, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출한 주피보험자(주된 보험대상자)에게 보험계약일로부터 3년 동안 제공합니다.(보험 유지건에 한함)</li>
+					</ul>
+					<ul class="bullet c">
+						<li>교보건강코칭서비스는 고객 전용 앱(교보건강코칭), 카카오톡(교보건강코칭), 교보건강코칭콜센터(1661-0664)에서 제공합니다.</li>
+						<li>교보건강코칭서비스는 향후 제공여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+					</ul>
+					<ul class="bullet a glst">
+						<li>보험계약체결 전 상품설명서와 약관을 읽어 보시기 바랍니다.</li>
+						<li>보험상품을 가입할 때 보험계약의 기본사항(보험상품명, 납입기간, 피보험자 등)을 반드시 확인하시기 바랍니다.</li>
+						<li>교보생명은 보험상품에 대해 충분히 설명할 의무가 있으며 가입에 앞서 이에 대한 충분한 설명을 받으시기 바랍니다.</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

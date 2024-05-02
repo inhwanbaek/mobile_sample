@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd futr" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">전체펀드</h2>
+				<div class="desc">다양한 펀드상품을 확인하고 가입해 보세요.</div>		
+			</div>
+			
+			<div class="card-product">
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<span class="tot">총 <i class="n">300</i>개</span> <span class="date">2020.01.01 기준</span>
+					</div>
+					<!--[D] 2022-05-26:검색박스 변경 -->
+					<div class="srch-btnbox bt">
+						<span class="input ipsch no-lb">
+							<label class="lb blind" for="keywords">상품검색</label>
+							<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="" id="keywords">
+							<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+						</span>
+						<!-- <span class="input a w100p">
+							<label class="lb blind" for="input-4">상품검색</label>
+							<input type="text" placeholder="입력하세요" value="에너지" id="input-4">
+							<span class="ibts"><button type="button" class="btn sm b">검색</button></span>
+						</span> -->
+						<button type="button" class="btn condi"><span class="blind">조건검색</span></button>
+					</div>
+					<!--//[D] 2022-05-26:검색박스 변경 -->
+				</div>
+				<div class="ut-dcard a account" data-tog-cls="box">
+					<div class="stds">
+						<div class="ut-bdgs">
+							<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+							<em class="bdg">창구전용</em>
+							<em class="bdg h">매우낮은위험</em>
+							<em class="bdg k">낮은위험</em>
+							<em class="bdg l">보통위험</em>
+							<em class="bdg m">다소높은위험</em>
+							<em class="bdg i">높은위험</em>
+							<em class="bdg i">매우높은위험</em>
+						</div>
+						
+						<div class="hdt">
+							<div class="chk">
+								<label class="checkbox">
+									<input type="radio" name="rdo-deal" id="rdo-deal01"><span class="txt"><p class="top-txt">교보악사자산운용</p>교보악사 파워인덱스 증권 1호[주식-파생형] (A)</span>
+								</label>
+							</div>
+						</div>
+						<div class="cdt">
+							<div class="bxs">
+								<div class="dt">기준가<br>(증감)</div>
+								<div class="dd">
+									<p class="st-pri">1,055.71</p>
+									<span class="flu dw">
+										<span class="var">-2.19%</span>
+										<span class="ico-rate">
+											<em class="blind">기준가(증감) 하락</em>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">12개월 수익률</div>
+								<div class="dd">
+									<span class="flu dw">
+										<span class="var">-2.19%</span>
+										<span class="ico-rate">
+											<em class="blind">12개월 수익률 하락</em>
+										</span>
+									</span>  
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">12개월 수익률</div>
+								<div class="dd">
+									<span class="flu up">
+										<span class="var">0.05%</span>
+										<span class="ico-rate">
+											<em class="blind">12개월 수익률 상승</em>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">설정액</div>
+								<div class="dd">420 억</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">연간 총보수</div>
+								<div class="dd">3.30 %</div>
+							</div>
+							<div class="dtds">
+								<div class="btn-set">
+									<a href="javascript:;" role="button" class="btn md ico-arrow">자세히보기</a>
+									<a href="javascript:;" role="button" class="btn md ico-arrow">가입하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ut-more more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>	
+
+				<div class="list-empty bd">
+					<p>상품검색 결과가 없습니다.</p>
+				</div>
+
+				<!-- 펼침 상태인 경우 -->
+				<div class="ut-gudbox b" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>본 자료는 정보 제공을 목적으로 하며, 펀드의 판매나 권유를 위해 작성되는 것이 아닙니다.</li>
+							<li><span class="st">이 금융상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</span></li>
+							<li>실적배당형 상품이어서 원본의 손실이 발생할수 있습니다.</li>
+							<li>과거 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.</li>
+							<li>상기 수익률은 MMF/채권형은 연환산수익률로 그 외 펀드는 해당기간의 실현수익률입니다.</li>
+							<li>당일 기준가는 9시 이후에 적용되며, 그 이전에는 전영업일 기준가격으로 조회됩니다.</li>
+							<li>당일 펀드의 결산이 있을 경우 수익률 반영이 늦어질 수 있습니다.</li>
+							<li>총보수는 연단위 보수율을 의미하고 선취판매수수료는 매수금액 1원당 지급율을 의미합니다</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn lg rd b">이전</button>
+					</div>
+				</div>
+			</nav>
+
+			<!-- 체크박스 클릭 시 노출 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn lg rd a">보유상품변경 (0개)</button>
+					</div>
+				</div>
+			</nav>
+			<!-- //체크박스 클릭 시 노출 -->
+				
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

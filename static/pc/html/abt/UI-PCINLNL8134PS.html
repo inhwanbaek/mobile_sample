@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt direction" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">오시는 길</h2>
+			</div>
+			<div class="map">
+				<div class="map-area">
+					<img src="../../img/abt/map_institute.png" alt="계성원 위치를 주소에 명기된 내용으로 표현된 이미지">
+				</div>
+				<ul class="bullet a">
+					<li>(31068) 충청남도 천안시 동남구 태조산길 267-113(유량동)</li>
+					<li>전화번호: 041-559-9604(주간), 041-559-9610(야간)</li>
+					<li>팩스번호: 041-559-9561</li>
+				</ul>
+			</div>
+			<h3 class="hd-tit3">개인차량</h3>
+			<h5 class="hd-tit4 mb20 mt20">천안IC 통과 후 우회전하는 경우</h5>
+			<ul class="bullet a mb30 none"><!-- [D] 2022-07-06 class 추가 -->
+				<li>첫 번째 우회전 진입로(호서대학교 방향)에서 진입 → 호서대학교 통과  → 첫 번째 삼거리(좌측의 주유소 통과 전 삼거리)에서 우회전(태조산청소년수련원 방향, 길이 작아 지나치기 쉬움) → 가다가 태조산청소년수련원 삼거리에서 계성원으로 진입</li>
+			</ul>
+			<h5 class="hd-tit4 mb20 mt20">천안IC 통과 후 좌회전하는 경우</h5>
+			<ul class="bullet a mb60 none"><!-- [D] 2022-07-06 class 추가 -->
+				<li>첫 번째 사거리에서 독립기념관 방향으로 좌회전 → 첫 육교 통과 후 첫 번째 신호등(두 번째 육교 전)에서 태조산청소년수련원 방향으로 좌회전 → 가다가 태조산청소년수련원 삼거리에서 계성원으로 진입</li>
+			</ul>
+			<h3 class="hd-tit3 mb20">대중교통</h3>
+			<ul class="bullet a mb60">
+				<li>천안역 및 고속터미널에서 택시 이용 (20분 내외 소요)</li>
+				<li>천안아산역에서 택시 이용 (30분 내외 소요)</li>
+			</ul>
+			<h4 class="hd-tit3 mb20">교육생 입소버스</h4>
+			<h5 class="hd-tit4 mb20 mt20">입소 시</h5>
+			<ul class="bullet a">
+				<li>천안역 ↔ 계성원 운행</li>
+				<li>천안아산역 ↔ 계성원 운행</li>
+			</ul>
+			<h5 class="hd-tit4 mb20 mt20">퇴소 시</h5>
+			<ul class="bullet a">
+				<li>계성원 ↔ 천안역/천안아산역/터미널 셔틀 운행</li>
+				<li>계성원 ↔ 태조산 수련원 주차장 셔틀 운행</li>
+			</ul>
+			<ul class="bullet b">
+				<li>입소 및 퇴소 시 셔틀 버스 운행은 연수과정 및 인원에 따라 탄력적으로 운영됩니다.</li>
+			</ul>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

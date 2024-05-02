@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"보험증권 재발행"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page msc certificate" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<h2 class="hd-tit3">원하시는 계약의 보험증권을 <i class="line">재발행</i>해 보세요.</h2><!-- [D] 2022-05-30 텍스트 수정, <i class="line"> 추가 -->
+			
+
+			<div class="ut-dcard c dcard checked open" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox" checked><span class="txt">4153156165154</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">프라이스히트보험(기본형)</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">우편물 수신처</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">보험료</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입횟수</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약상태</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			<div class="ut-dcard c dcard checked" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="checkbox" checked><span class="txt">4153156165154</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">프라이스히트보험(기본형)</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">우편물 수신처</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">보험료</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입횟수</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약상태</div>
+								<div class="dd"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+
+			<h4 class="hd-tit4">증권 재발행 신청사유</h4>
+			<span class="select a mt10">
+				<label class="lb blind" for="sel_id0">증권 재발행 신청사유</label>
+				<select id="sel_id0" name="sel_id0">
+					<option>멸실</option>
+				</select>
+			</span>
+
+			<h3 class="hd-tit4 mt30">수신처 확인</h3>
+			<div class="ut-tbl a">
+				<table class="tbform a" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">수신처</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: 25%">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">집주소</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">직장주소</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰</th>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="ut-gudbox a open mt40" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>우편으로 수령하실 경우 보험계약별로 등록하신 우편물 수신처로 발송됩니다. 수신처를 변경하시려면 콜센터(1588-1001)로 문의해 주세요.</li>
+						<li>이메일로 수령하실 경우 신청일로부터 5일(영업일 기준) 안에 받으실 수 있습니다.</li>
+					</ul>
+					<div class="btn-set b2 mt10">
+						<button title="국세청 홈페이지 새창으로 바로가기" class="btn c">고객정보 변경</button>
+					</div>
+					<div class="btn-set b2 mt10">
+						<a class="btn c" href="tel:1588-0770" title="전화 앱으로 전환됩니다.">콜센터 바로연결</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<!-- <button type="button" class="btn rd lg b">이전</button> -->
+					<button type="button" class="btn rd lg a">재발행 신청</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

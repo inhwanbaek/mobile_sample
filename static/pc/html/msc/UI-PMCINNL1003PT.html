@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc default cti" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">계약상세</h2>
+				<div class="desc">선택하신 보험계약의 
+					상세내역을 확인해 보세요.</div>
+			</div>
+
+			<div class="ut-dcard b">
+				<strong class="t-tit">개인연금저축교보가족연금보험(개인정액형)</strong>
+				<div class="dls">
+					<div class="dl left">
+						<div class="dt">보험증권번호</div>
+						<div class="dd">21406****459</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">계약상세내용</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">가입특약조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">보장내역조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">납입내역조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">보험계약대출내역</a></li>
+				</ul>
+			</div>
+
+			<!-- [D] 2022-07-07 인쇄버튼추가 --> 
+			<div class="btn-tops">
+				<div class="opt">
+					<button type="button" role="button" class="btn ico-r ico-print">인쇄</button>					
+				</div>	
+			</div>
+
+			<!-- 계약상세내용 -->
+			<div class="ut-dtds c">				
+				<div class="tops">
+					<h3 class="hd-tit4 htit">계약정보</h3>					
+				</div>
+				<ul class="dlist left">
+					<li>
+						<div class="dt">계약일</div>
+						<div class="dd">2005.05.30</div>
+					</li>
+					<li>
+						<div class="dt">가입금액</div>
+						<div class="dd">370만원</div>
+					</li>
+					<li>
+						<div class="dt">최종납입연월</div>
+						<div class="dd">2021.08</div>
+					</li>
+					<li>
+						<div class="dt">보험기간</div>
+						<div class="dd">종신</div>
+					</li>
+					<li>
+						<div class="dt">보험료</div>
+						<div class="dd">127,790원</div>
+					</li>
+					<li>
+						<div class="dt">납입횟수</div>
+						<div class="dd">196회</div>
+					</li>
+					<li>
+						<div class="dt">납입기간</div>
+						<div class="dd">20년</div>
+					</li>
+					<li>
+						<div class="dt">보험만기일</div>
+						<div class="dd">종신</div>
+					</li>
+					<li>
+						<div class="dt">최종입금일</div>
+						<div class="dd">2021.08.25</div>
+					</li>
+					<li>
+						<div class="dt">납입주기</div>
+						<div class="dd">월납</div>
+					</li>
+					<li>
+						<div class="dt">연금지급개시나이</div>
+						<div class="dd">0세</div>
+					</li>
+					<li>
+						<div class="dt">납입방법</div>
+						<div class="dd">자동이체</div>
+					</li>
+					<li>
+						<div class="dt">계약상태</div>
+						<div class="dd">보험계약이 정상적으로 유지되고 있습니다. <br>※ 이 계약은 (2021.08월분) 보험료가 납입되어 정상 유지 상태입니다. </div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ut-dtds c">
+				<div class="tops">
+					<h3 class="hd-tit4 htit">보험대상자정보</h3>
+				</div>
+				<ul class="dlist left">
+					<li>
+						<div class="dt">계약자</div>
+						<div class="dd">홍길동 
+							(850624-1******)</div>
+					</li>					
+					<li>
+						<div class="dt">주피보험자</div>
+						<div class="dd">홍길동 
+							(850624-1******)</div>
+					</li>
+					<li>
+						<div class="dt">종피보험자</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">만기시 보험금을 받는 자</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">입원 시 보험금을 받는자</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">사망시 보험금을 받는 자</div>
+						<div class="dd">홍길동 
+							(850624-1******)</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ut-dtds c">
+				<div class="tops">
+					<h3 class="hd-tit4 htit">자동이체정보</h3>
+				</div>
+				<ul class="dlist left">
+					<li>
+						<div class="dt">대상</div>
+						<div class="dd">
+							보험료자동이체
+							<!-- 보험계약대출 이자 자동이체 -->
+						</div>
+					</li>
+					<li>
+						<div class="dt">거래은행</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">계좌번호</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">예금주</div>
+						<div class="dd">-</div>
+					</li>
+					<li>
+						<div class="dt">이체일</div>
+						<div class="dd">-</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- FP정보 -->
+			<div class="fpd-box">
+				<p class="h-tit">FP(재무설계사)정보</p>
+				<dl>
+					<dt>시스템 2팀<strong>홍길동</strong></dt>
+					<dd>							
+						<p class="info"><span class="tit">FP전화번호</span><span>02-555-5555</span></p>
+						<div class="btn-set">
+							<button type="button" class="btn md ico-arrow">상담신청하기</button><!-- [D] 2022-02-16 클래스변경 -->	
+							<button type="button" class="btn md ico-arrow">전화상담하기</button><!-- [D] 2022-02-16 클래스변경 -->
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!-- //FP정보 -->
+
+			<!-- [D] 2022-07-06 인쇄추가 -->
+			<!-- <div class="btn-set">
+				<button type="button" class="btn md ico-r ico-print">인쇄</button>
+			</div> -->
+
+
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open mt40" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">							
+						<li>보험만기일은 주계약 기준이며, 갱신형특약 부가계약은 만기일이 다를 수 있습니다.</li>
+						<li>납입기간은 주계약과 특약 중 가장 긴 납입기간으로 표기되므로 특약별 납입기간은 가입특약조회 메뉴에서 확인하시기 바랍니다.</li>
+						<li>보험료납입 의무기간이 지난 유니버셜 상품 계약의 최종납입연월과 납입횟수는 월대체보험료를 해지환급금에서 공제(충당대체)한 내역으로 조회되기 때문에 실제 납입한 보험료의 최종납입연월과 납입횟수가 다릅니다. 
+							<br>※ 해지환급금은 특약 해지환급금을 제외한 금액이며 보험계약대출 원리금은 공제금액을 뺀 금액입니다.</li>
+						<li>일부 일시납 상품의 경우 보험료가 다를 수 있습니다. 자세한 내용은 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)로 문의해 주세요.</li>
+					</ul>
+					<div class="btn-set">
+						<button type="button" class="btn sm ico-arrow">변액보험조회</button>
+					</div>
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

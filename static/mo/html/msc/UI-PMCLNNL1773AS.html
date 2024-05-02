@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 상환/이자납입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan pay aprp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lopay-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">2. 상환금액 입력</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">3</b></span><!-- [D] 2022-07-21 원복 -->
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lopay-tbox">
+				<h2 class="hd-tit3"><i class="line">상환금액</i>을 입력해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="lopay-hinfo">
+				<div class="ut-dcard b mltype">
+					<div class="ut-bdgs">
+						<em class="bdg j">신용대출</em>
+					</div>
+					<div class="hdt">
+						<div class="tit">교보e프라임신용대출(A형)</div>
+					</div>
+					<div class="dls">
+						<div class="dl">
+							<div class="dt">대출잔액</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">100,000,000</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="msect">
+				<h3 class="hd-tit4">상환신청금액</h3><!-- [D] 2022-04-07 문구수정 -->
+				<div class="fldset">
+					<div class="fld">
+						<div class="ckbsbox"><!-- [D] 2022-05-26 div.ckbsbox 감싸기 추가 -->
+							<label class="radio"><input type="radio" name="radio4"><span class="txt">이자(할부금)</span></label><!-- [D] 2022-05-26 추가 -->
+							<label class="radio"><input type="radio" name="radio4"><span class="txt">원금 전액</span></label><!-- [D] 2022-04-07 문구수정 -->
+							<label class="radio"><input type="radio" name="radio4" checked><span class="txt">원금만 일부</span></label><!-- [D] 2022-04-07 문구수정 -->
+							<label class="radio"><input type="radio" name="radio4"><span class="txt">원금+이자</span></label>
+						</div>
+					</div>
+					<!-- [D] 2022-05-26 이자(할부금) 입력 케이스 추가 -->
+					<div class="fld">
+						<span class="input a ut-date">
+							<label class="lb" for="month_1">이자(할부금) 납입월</label>
+							<input type="tel" id="month_1" class="monthpicker" placeholder="YYYY-MM" value="2021.12">
+						</span>
+					</div>
+					<!-- //end [D] 2022-05-26 이자(할부금) 입력 케이스 추가 -->
+					<div class="fld">
+						<span class="input a won"><input type="tel" pattern="\d*" placeholder="숫자로 금액 입력" title="상환 신청금액" value=""><i class="w">원</i></span><!-- [D] 2022-04-07 문구수정 -->
+					</div>
+				</div>
+			</div>
+
+			<div class="lopay-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>대출받은 날로부터 ‘14일 안에’ 대출계약을 취소할 수 있습니다.(대출계약철회)</li><!-- [D] 2022-04-07 문구수정 -->
+							<li>대출계약철회는 먼저 철회 신청 후 대출금을 전액 상환해야 정상 처리됩니다.</li><!-- [D] 2022-04-07 문구수정 -->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

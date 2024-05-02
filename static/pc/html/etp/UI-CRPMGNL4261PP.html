@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-etfpay" id="pop-etfpay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">종목 검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="bg-search">
+						<div class="user-wrp">
+							<label for="selet01">투자유형</label>
+							<span class="select a">
+								<select name="select-3" id="selet01" title="투자유형 선택">
+									<option selected>전체</option>
+									<option>선택2</option>
+									<option>선택3</option>
+								</select>
+							</span>
+						</div>
+						<div class="user-wrp">
+							<label for="selet02">운용사</label>
+							<span class="select a">
+								<select name="select-3" id="selet02" title="운용사 선택">
+									<option selected>전체</option>
+									<option>선택2</option>
+									<option>선택3</option>
+								</select>
+							</span>
+						</div>
+						<div class="user-wrp">
+							<label for="inp03">직접입력</label>
+							<span class="input a">
+								<input type="text" id="inp03" placeholder="종목명 또는 종목코드 입력"></span>
+						</div>				
+					</div>		
+					<div class="btn-set mt20">
+						<button type="button" class="btn md ico-search ico-r">조회</button>
+					</div>
+					<div class="etp-looklst">
+						<div class="ut-optset optset mt60">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">15</i>건</span>
+							</div>
+							<div class="opt pr">
+								<span class="select sort no-lb set"> <!-- .def 클래스 추가하면 기본시스템 select -->
+									<button class="btsel" type="button" title="정렬 기준 선택" aria-expanded="false">정렬 기준 선택</button>
+									<select name="select-4" id="select-quan" title="정렬 기준 선택" tabindex="-1" aria-hidden="true">
+										<option>전체</option>
+										<option>수익률 높은순</option>
+										<option>종목명순</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<div class="ut-tbl a">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption>
+									<!-- [웹접근성] 1st 수정 -->
+									<span class="tit">종목 검색 목록 표입니다.</span>
+									<!--// [웹접근성] 1st 수정 -->
+									<span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col style="width: 15%">
+									<col style="width: 18%">
+									<col style="width: 24%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">종목명</th>
+										<th scope="col">종목코드</th>
+										<th scope="col">전영업일 종가</th><!-- [D] 2022-07-22 텍스트 수정 -->
+										<th scope="col">등락폭</th>																		
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt-l"><a href="javascript:;" class="link-ext">KBSTAR ESG사회책임투자</a></td>
+										<td>290130</td>
+										<td class="txt-r"><span class="bold"><i class="color10">69,100</i>원</span></td><!-- [D] 2022-07-22 텍스트 컬러 적용 -->
+										<td class="txt-r">
+											<div class="stock">
+												<span class="up"><span class="blind">상승</span>300</span><!-- [웹접근성] 1st 수정 -->
+												<span class="up no">+0.44%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="txt-l"><a href="javascript:;" class="link-ext">KBSTAR 미국S&P원유생산기업(합성 H)</a></td>
+										<td>290130</td>
+										<td class="txt-r"><span class="bold"><i class="color6">121,000</i>원</span></td><!-- [D] 2022-07-22 텍스트 컬러 적용 -->
+										<td class="txt-r">
+											<div class="stock">
+												<span class="down"><span class="blind">하락</span>4,000</span><!-- [웹접근성] 1st 수정 -->
+												<span class="down no">-3.42%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="txt-l"><a href="javascript:;" class="link-ext">KODEX 200</a></td>
+										<td>290130</td>
+										<td class="txt-r"><span class="bold"><i class="color10">69,100</i>원</span></td><!-- [D] 2022-07-22 텍스트 컬러 적용 -->
+										<td class="txt-r">
+											<div class="stock">
+												<span class="up"><span class="blind">상승</span>11,500</span><!-- [웹접근성] 1st 수정 -->
+												<span class="up no">+2.94%</span>
+											</div>
+										</td>
+									</tr>																
+									<tr class="nodata">
+										<td colspan="4">
+											<p class="txt">조회 결과가 없습니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>	
+					</div>						
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-etfpay');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt esg-policy pcpage" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">ESG 정책</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">서문</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">환경(E)</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">사회(S)</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">지배구조(G)</a></li>
+				</ul>
+			</div>
+			<ul class="list-tit">
+				<li class="active"><a href="javascript:;">이사회 다양성정책</a></li>
+				<li><a href="javascript:;">지속가능투자정책</a></li>
+				<li><a href="javascript:;">조세정책</a></li>
+			</ul>
+			<h3 class="hd-tit3">이사회 다양성정책</h3>
+			<p>
+				교보생명은 주주, 고객 등을 포함한 이해관계자를 두루 고려하여 보다 폭넓은 관점을 바탕으로 주요 의사결정에 임할 수 있도록 다양한 분야의 전문성을  갖춘 자로 이사회를 구성하고 있습니다. 또한 특정한 공통의 배경을 보유하거나 일부 집단의 이해 관계를 대변하지 않는 이사회 구성을 위해 성별, 연령, 출신 배경, 국적, 인종, 종교, 민족, 문화적 배경 등의 다양성을 추구합니다. 교보생명은 전체 사외이사 후보군 중 여성 후보자를 20% 이상으로 구성하는 등 이사회의 다양성 제고를 위해 노력하고 있으며, 공정하고 투명한 방식으로 사외이사를 선출합니다.
+			</p>
+			<h5 class="hd-tit4">전문성</h5>
+			<ul class="bullet a">
+				<li>전문분야: 금융, 경제, 경영, 디지털 기술, 법률, 회계, 소비자보호 등</li>
+				<li>전문역량: 금융회사의 이사로서 분야별 관련 전문지식이나 실무경험이 풍부한 사람</li>
+			</ul>
+			<h5 class="hd-tit4">다양성</h5>
+			<ul class="bullet a">
+				<li>성별: 이사회가 특정 성(性)으로 구성되지 않도록 고려</li>
+				<li>연령: 연륜과 유연함을 조화시켜 관점의 다양화 추구</li>
+				<li>출신 배경: 특정 지역, 분야 및 직군 등 출신 배경의 편중을 지양</li>
+				<li>국적, 인종, 종교, 민족, 문화적 배경 등: 법과 규제가 허용하는 범위에서 다양성 추구</li>
+			</ul>
+			<div class="btn-set btm">
+				<button type="button" class="btn md ico-r ico-down">정책 다운로드</button>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

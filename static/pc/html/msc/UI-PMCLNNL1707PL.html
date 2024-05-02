@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer sm a pop-readloandocimg" id="pop-readloandocimg">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">대출서류 이미지 열람</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="msect">
+						<div class="readloandocimg-head">
+							<h2 class="hd-tit3">대출서류 이미지 열람이란?</h2>
+						</div>
+
+						<!-- [D] 2022-05-26 수정 -->
+						<!-- [D] 2022-04-07 문구수정 -->
+						<ul class="bullet a lg">
+							<li>고객님이 대출 신청 시 작성한 서류의 이미지를 확인하는 것으로, 현재 유지 중인 대출의 서류를 보실 수 있습니다.</li>
+							<li class="color10">전자서명을 통한 대출 약정 건으로 대출일 기준 직전 3개월 이내인 경우에만 열람 가능하며, 열람이 불가한 대출 건은 융자 콜센터(1588-1010)으로 문의해주세요.</li>
+						</ul>
+						<!-- //end [D] 2022-04-07 문구수정 -->
+						<!-- //end [D] 2022-05-26 수정 -->
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-readloandocimg');">닫기</button>
+					<button type="button" class="btn a rd lg">열람</button><!-- [D] 2022-05-26 수정 -->
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-readloandocimg');
+	</script>
+
+
+</div>
+</body>
+</html>

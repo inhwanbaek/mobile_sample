@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp isrc pay-apply" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-06-09 마크업 수정
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">부담금 납입</h2>
+			</div>
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2.정보입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="hd-tit3">부담금 납입대상을 선택해 주세요.</h3>
+			 -->
+			<!-- [D] 2022-06-09 마크업 수정 -->
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">부담금 납입</h2>
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<!-- <div class="tit">2.정보입력</div> -->
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">4</b></span>
+									<span class="num"><b class="b">1</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc">부담금 납입대상을 선택해 주세요.</div>
+			</div>
+			<!--//[D] 2022-06-09 마크업 수정 -->
+
+			<!-- 테이블 상단 -->
+			<div class="ut-tbltop">
+				<div class="left">
+					<!-- [D] 2022-06-09 클래스 'hd-tit4' -> 'hd-tit3' 수정 -->
+					<h3 class="hd-tit3">정기/상시 부담금</h3>
+				</div>
+				<div class="right">
+					<span class="txt">부담수준 확인 서비스</span>
+					<div class="ut-tooltip">
+						<button type="button" class="ico help md bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								부담수준 확인 서비스는 가입자별 임금총액을 회사납입금 입력금액과 비교하여 부담금 납입금액이 적정한지 검증하는 서비스로, 이 서비스를 신청하면 부담금 입력 시 모든 가입자의 임금총액을 반드시 입력해야 합니다.
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" class="lk">이용중</a>
+				</div>
+			</div>
+
+		
+			
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist a" cellpadding="0" cellspacing="0">
+					<caption><span class="tit"></span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: 8%">
+						<col style="width: 8%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col>
+						<col style="width: 10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">납입구분</th>
+							<th scope="col">납입예정일(납입기한)</th>
+							<th scope="col">부담금 종류</th>
+							<th scope="col">진행상태</th>
+							<th scope="col">납입예정금액</th>
+							<th scope="col">수정</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<!-- [D] 2022-06-15 checkbox -> radio 수정 <label class="checkbox"><input type="checkbox" title="선택"><span class="txt"></span></label>-->
+								<label class="radio"><input type="radio" name="radio1" id="kkk1"><span class="txt"></span></label>
+							</td>
+							<!-- [D] 2022-06-09 클래스 'bold' 추가 -->
+							<td class="bold">상시</td>
+							<td class="bold"><span class="color6">2021.12.23</span></td>
+							<td>기본부담금(DC)</td>
+							<td>결제대기</td>
+							<td class="txt-r">0원</td>
+							<td><a href="javascript:;" role="button" class="btn sm">수정</a></td>
+						</tr>
+						<tr>
+							<td>
+								<!-- [D] 2022-06-15 checkbox -> radio 수정 <label class="checkbox"><input type="checkbox" title="선택"><span class="txt"></span></label>-->
+								<label class="radio"><input type="radio" name="radio1" id="kkk2"><span class="txt"></span></label>
+							</td>
+							<!-- [D] 2022-06-09 클래스 'bold' 추가 -->
+							<td class="bold">상시</td>
+							<td class="bold"><span class="color6">2021.12.23</span></td>
+							<td>기본부담금(DC)</td>
+							<td>결제대기</td>
+							<td class="txt-r">0원</td>
+							<td><a href="javascript:;" role="button" class="btn sm">수정</a></td>
+						</tr>
+						<tr>
+							<td>
+								<!-- [D] 2022-06-15 checkbox -> radio 수정 <label class="checkbox"><input type="checkbox" title="선택"><span class="txt"></span></label>-->
+								<label class="radio"><input type="radio" name="radio1" id="kkk3"><span class="txt"></span></label>
+							</td>
+							<!-- [D] 2022-06-09 클래스 'bold' 추가 -->
+							<td class="bold">상시</td>
+							<td class="bold"><span class="color6">2021.12.23</span></td>
+							<td>기본부담금(DC)</td>
+							<td>결제대기</td>
+							<td class="txt-r">0원</td>
+							<td><a href="javascript:;" role="button" class="btn sm">수정</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- [D] 2022-06-09 클래스 'mt10' -> 'mt20' 수정 -->
+			<div class="astar mt20">정기부담금 납입대상은 귀사의 퇴직연금 규약상 납입주기에 따라 자동으로 생성되며, 정기부담금을 기한 안에 납입하지 않으면 미납부담금으로 변경되어 지연이자가 발생할 수 있습니다.</div>
+
+			<div class="btn-set b2">
+				<button type="button" class="btn lg rd a">기본부담금 납입</button>
+			</div>
+			<!-- 테이블 상단 -->
+			<div class="ut-tbltop">
+				<div class="left">
+					<!-- [D] 2022-06-09 클래스 'hd-tit4' -> 'hd-tit3' 수정 -->
+					<h3 class="hd-tit3">미납부담금</h3>
+				</div>
+			</div>
+
+			
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist a" cellpadding="0" cellspacing="0">
+					<caption><span class="tit"></span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: 8%">
+						<col style="width: 13%">
+						<col style="width: 20%">
+						<col style="width: 20%">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">선택</th>
+							<th scope="col">납입구분</th>
+							<th scope="col">미납일</th>
+							<th scope="col">진행상태</th>
+							<th scope="col">납입예정금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<!-- [D] 2022-06-15 checkbox -> radio 수정 <label class="checkbox cr"><input type="checkbox" title="선택"><span class="txt"></span></label> -->
+								<label class="radio"><input type="radio" name="radio2" id="kkk4"><span class="txt"></span></label>
+							</td>
+							<!-- [D] 2022-06-09 클래스 'bold' 추가 -->
+							<td class="bold"><span class="color11">미납</span></td>
+							<td>2021.12.23</td>
+							<td>결제대기</td>
+							<td class="txt-r">1,000,000원</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-set b2">
+				<button type="button" class="btn lg rd a">미납부담금 납입</button>
+			</div>
+
+			<!-- [D] 2022-06-09 클래스 'mt30' 삭제 -->
+			<div class="line-box">
+				<div class="text">기본부담금 외 퇴직정산 부담금
+					<div class="ut-tooltip">
+						<button type="button" class="ico help md bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								퇴직정산 부담금은 퇴사자의 부담금을 마지막으로 납입한 날부터 퇴직 처리 전까지 기간에 대한 부담금입니다.
+							</div>
+						</div>
+					</div>
+					또는 경영성과급
+					<div class="ut-tooltip">
+						<button type="button" class="ico help md bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								경영성과급은 납입대상으로 지정된 가입자만 납입하는 부담금입니다. 납입대상 단체에게만 [경영성과급 납입] 버튼이 보입니다. 
+							</div>
+						</div>
+					</div>
+					을 납입하시려면 아래 해당 버튼을 눌러 주세요.
+				</div>
+				<div class="btn-box mt20">
+					<!-- <button type="button" class="btn md ico-r ico-down">퇴직정산 부담금 납입</button>
+					<button type="button" class="btn md ico-r ico-window">경영성과급 납입</button> -->
+					<button type="button" class="btn md ico-r ico-arrow">퇴직정산 부담금 납입</button>
+					<button type="button" class="btn md ico-r ico-arrow">경영성과급 납입</button>
+				</div>
+			</div>
+
+
+			
+
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>신규 가입자 또는 퇴직자가 있는 경우에는 신규 가입이나 퇴직 처리를 먼저 해야 합니다.</li>
+						<li>신규 가입자를 추가하면 추가 즉시 정기부담금 납입대상 목록에 추가됩니다.(미납부담금은 예외)</li>
+						<li>가입자가 100명 이상인 경우 일괄납입으로 자동 연결됩니다.</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- [D] 2022-06-09 클래스 'b' 추가 -->
+			<div class="g-box b">
+				<h4 class="hd-tit3">정기부담금 납입대상이 없습니다.</h4>
+				<div class="flex-box">
+					<!-- [D] 2022-06-09 마크업 수정
+					<p class="text txt-l">
+						귀사의 퇴직연금 규약상 납입주기에 따라 계산된 <span class="color6"> 다음 부담금 납입일</span>은 <span class="color6">2021년 3월 22일</span>입니다.  <br>
+						해당일 15일 전에 납입대상이 자동으로 생성됩니다. <br> <br>
+						
+						자동 생성 전에 미리 납입하시려면 [정기부담금 미리 납입]을 눌러 주세요.
+					</p>
+					-->
+					<!-- [D] 2022-06-09 마크업 수정 -->
+					<p class="text txt-c">
+						귀사의 퇴직연금 규약상 납입주기에 따라 계산된 <span class="color6"> 다음 부담금 납입일</span>은 <span class="color6">2021년 3월 22일</span>입니다.  <br>
+						해당일 15일 전에 납입대상이 자동으로 생성됩니다. 
+					</p>
+					<p class="text txt-c">자동 생성 전에 미리 납입하시려면 [정기부담금 미리 납입]을 눌러 주세요.</p>
+					<!--//[D] 2022-06-09 마크업 수정 -->
+					<p>
+						<div class="btn-set b2">
+							<button type="button" class="btn lg rd a">정기부담금 미리 납입</button>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

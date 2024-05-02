@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back,is-gnb","title":"신분증 진위 확인"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl iden card" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="iden-img">
+				<div class="card">
+					<div class="blind">주민등록증및 자동자면허증 예제 이미지</div>
+				</div>
+			</div>
+
+			<div class="ut-form a  forms">
+				<ul class="form">
+					<li>
+						<span class="input a"><label class="lb" for="input_nn1">여권번호</label><input id="input_nn1" type="text" placeholder=""  value="11-111111-11"></span>
+					</li>
+					<li>
+						<span class="input a"><label class="lb" for="input_nn2">기간말료일</label><input id="input_nn2" type="text" placeholder=""  value="2020.01.01"></span>
+					</li>
+					<li>
+						<span class="input a"><label class="lb" for="input_id1">이름</label><input id="input_id1" type="text" placeholder=""  value="김미래"></span>
+					</li>
+					<li>
+						<span class="input a nobg ut-rsnum">
+							<label class="lb" for="rsnum_2">주민등록번호</label>
+							<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민등록번호앞 6자리" placeholder="앞 6자리" value="830000"><!-- [웹접근성] 1st 수정 -->
+							<i class="ds">-</i>
+							<input type="tel" class="mn" pattern="\d*" title="주민등록번호 뒤 1자리" placeholder="*" value="1" maxlength="1"><!-- [웹접근성] 1st 수정 -->
+							<input type="tel" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" value="******" readonly><!-- [웹접근성] 1st 수정 -->
+						</span>
+					</li>
+					<li>
+						<span class="input a ut-date"><label class="lb" for="date_id_1">발급일자</label><input type="tel" id="date_id_1" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+		</nav>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

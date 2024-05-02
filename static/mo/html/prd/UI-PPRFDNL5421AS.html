@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"펀드신규가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">11. 펀드계좌 비밀번호입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<!-- [D] 2022-05-27 단계 숫자 변경 -->
+								<span class="tot"><b class="b">12</b></span>
+								<span class="num"><b class="b">5</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [D] 2022-05-27 삭제
+			<div class="ut-bdgs">
+				<em class="bdg b">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</em>
+			</div>
+			 -->
+
+			<div class="futr-tit">
+				<!-- [D] 2022-04-20 텍스트 수정 -->
+				<h2 class="hd-tit2">펀드계약에 사용할 비밀번호를<br>설정해 주세요.</h2>
+			</div>
+
+			<!-- [D] 2022-03-29 신탁과 동일 Ui로 변경 -->
+			<div class="msect">
+				<div class="sect">
+					<!-- [D] 2022-04-08 텍스트 삭제 -->
+					<h3 class="hd-tit4">비밀번호</h3>
+					<div class="fldset">
+						<div class="fld">
+							<!-- [D] 2022-05-10 인풋박스 형태 변경-->
+							<span class="input a no-lb">
+								<label class="lb blind" for="inp-pw">6자리 입력</label>
+								<input type="password" pattern="\d*" title="6자리 입력 입력" placeholder="6자리 입력" id="inp-pw">
+							</span>
+							<!-- 6자리 미만 or 초과하여 입력할 경우, 에러메시지 노출 
+							<span class="input a no coms no-lb">
+								<label class="lb blind" for="inp-pw">계좌 비밀번호</label>
+								<input type="password" pattern="\d*" title="계좌 비밀번호 입력" placeholder="6자리 입력" id="inp-pw">
+							</span>
+							<div class="vald-msg show no">비밀번호는 숫자 6자리로 입력해 주세요. </div>
+							-->
+						</div>	
+					</div>
+				</div>
+				<div class="sect">
+					<!-- [D] 2022-04-08 텍스트 삭제 -->
+					<h3 class="hd-tit4">비밀번호 확인</h3>
+					<div class="fldset">
+						<div class="fld">
+							<!-- [D] 2022-05-10 인풋박스 형태 변경-->
+							<span class="input a no-lb">
+								<label class="lb blind" for="inp-pw2">6자리 입력 확인</label>
+								<input type="password" pattern="\d*" title="6자리 입력 확인 입력" placeholder="6자리 입력" id="inp-pw2">
+							</span>
+							<!-- 입력한 계좌 비밀번호가 다를 경우
+							<span class="input a no coms no-lb">
+								<label class="lb blind" for="inp-pw2">계좌 비밀번호 확인</label>
+								<input type="password" pattern="\d*" title="계좌 비밀번호 확인 입력" placeholder="6자리 입력" id="inp-pw2">
+							</span>
+							<div class="vald-msg show no">입력한 계좌 비밀번호가 일치하지 않습니다. </div>
+							-->
+						</div>	
+					</div>
+				</div>
+				<div class="sect">
+					<h3 class="hd-tit4">이 금융거래의 실소유자입니까?</h3>
+					<div class="fldset">
+						<div class="fld">
+							<div class="rdos">
+								<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1"><span class="txt">예</span></label>
+								<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_2"><span class="txt">아니오</span></label>
+							</div>
+							<!-- 아니요. 선택 시 실소유자 가입 불가 안내 메시지 출력 -->
+							<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_2">
+								<!-- [D] 2022-04-08 텍스트 삭제 -->
+								<div class="vald-msg show no">실소유자가 아닌 경우 펀드상품에 가입할 수 없습니다.</div>
+							</div>
+							<!-- //아니요. 선택 시 실소유자 가입 불가 안내 메시지 출력 -->
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- [D] 2022-03-29 신탁과 동일 Ui로 변경 -->
+		<!-- 하단 고정영역 -->
+		<!-- [D] 2022-05-10 'b, mt60' 클래스 삭제-->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

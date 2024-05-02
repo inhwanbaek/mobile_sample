@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a sm pop-shares" id="pop-shares">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 및 해지환급금 예시</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents prd insurance-pop">
+					<div class="sect">
+						<h3 class="hd-tit3">주계약 보험료 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약 보험가입금액 1,000만원, 20년납, 월납, 100세 만기</div>
+						</div>
+						<div class="ut-optset optset">							
+							<div class="opt pr">
+								<span class="unit">(단위:원)</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">주계약 보험료 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">구분</th>
+										<th scope="col" colspan="5">남자</th>
+										<th scope="col" colspan="5">여자</th>
+									</tr>
+									<tr>
+										<th scope="col">20세</th>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+										<th scope="col">60세</th>
+										<th scope="col">20세</th>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+										<th scope="col">60세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>보험료</td>
+										<td>24,300</td>
+										<td>28,600</td>
+										<td>33,900</td>
+										<td>40,100</td>
+										<td>46,600</td>
+										<td>18,200</td>
+										<td>21,000</td>
+										<td>24,100</td>
+										<td>27,100</td>
+										<td>30,200</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="sect">
+						<h3 class="hd-tit3">해지환급금 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약보험가입금액 1,000만원, 남자 40세, 20년납, 월납, 100세만기, 세전</div>
+						</div>
+						<div class="ut-optset optset">							
+							<div class="opt pr">
+								<span class="unit">(단위:원)</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">해지환급금 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">경과년</th>
+										<th scope="col">총납입보험료</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급율</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1년</th>
+										<td>406,800</td>
+										<td>-</td>
+										<td>0.0%</td>
+									</tr>
+									<tr>
+										<th scope="row">3년</th>
+										<td>1,220,400</td>
+										<td>604,657</td>
+										<td>49.5%</td>
+									</tr>
+									<tr>
+										<th scope="row">5년</th>
+										<td>2,034,000</td>
+										<td>1,259,529</td>
+										<td>61.9%</td>
+									</tr>
+									<tr>
+										<th scope="row">7년</th>
+										<td>2,847,600</td>
+										<td>1,925,400</td>
+										<td>67.6%</td>
+									</tr>
+									<tr>
+										<th scope="row">10년</th>
+										<td>4,068,000</td>
+										<td>2,783,200</td>
+										<td>68.4%</td>
+									</tr>
+									
+									<tr>
+										<th scope="row">20년</th>
+										<td>8,136,000</td>
+										<td>5,709,000</td>
+										<td>70.2%</td>
+									</tr>
+									<tr>
+										<th scope="row">30년</th>
+										<td>8,136,000</td>
+										<td>5,664,900</td>
+										<td>69.6%</td>
+									</tr>
+									<tr>
+										<th scope="row">40년</th>
+										<td>8,136,000</td>
+										<td>4,712,100</td>
+										<td>57.9%</td>
+									</tr>
+									<tr>
+										<th scope="row">50년</th>
+										<td>8,136,000</td>
+										<td>2,838,600</td>
+										<td>34.9%</td>
+									</tr>
+									<tr>
+										<th scope="row">60년</th>
+										<td>8,136,000</td>
+										<td>-</td>
+										<td>0.0%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="bullet b">
+							<li>상기 예시표는 고객의 이해를 돕기 위해 주계약 보험금 지급사유가 발생하지 않은 경우를 가정하였습니다.</li>
+							<li>위의 예시금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+							<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결비용 및 계약관비리용(해지공제금액 포함) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-shares');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"UL자유납입보험료 자동이체"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default inspym attrrq" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">3</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="hd-tit3"><i class="line">자유납입금액</i>을 입력해 주세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+
+			<h3 class="hd-tit4">선택 계약 확인</h3>
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="tit">무배당교보실손의료비보험(갱신형)[선택형, 90%보장]</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">보험료</div>
+							<div class="dd">
+								<span class="prc">
+									<strong class="p">70,240</strong><i class="w">원</i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">자유납입금액</div><!-- [D] 2022-03-07 변경 -->
+								<div class="dd">0원</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입방법(최종납입연월)</div>
+								<div class="dd">급여이체(2021.08)</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">은행/계좌번호</div>
+								<div class="dd">기업/2354*****2654</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">예금주</div>
+								<div class="dd">김교보</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">이체일</div>
+								<div class="dd">매월 5일</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">청구여부</div>
+								<div class="dd">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+
+
+			<div class="head-box mt40">
+				<h3 class="hd-tit4" id="ball_1">계좌정보선택</h3>
+				<button type="button" class="ico plus">다른 계좌 추가</button>
+			</div>
+			<span data-ui-balloon="left,top" aria-describedby="ball_1" class="tip-msc1151">본인명의 계좌만 등록할 수 있어요.</span>
+			<span class="select a" >
+				<select name="select-3" title="계좌정보선택">
+					<option selected>예금주 : 남약단, 계좌 : (국민은행)927621123123123123</option>
+					<option>선택2</option>
+					<option>선택3</option>
+				</select>
+			</span>
+
+			<!-- <h3 class="hd-tit4">선택한 계좌정보</h3>
+			<ul class="acc-infoList">
+				<li>
+					<img class="logo" src="../../img/bank/ic_bank_hana.png" alt="하나은행 로고">
+					<strong>하나은행</strong>
+					<span class="num">234-43-34093-330232</span>
+					<span class="name">김교보</span>
+				</li>
+			</ul> -->
+
+			<h3 class="hd-tit4">이체일 선택</h3>
+			<div class="radiobox c">
+				<label class="radio"><input type="radio" name="radio_md" checked><span class="txt">5일</span></label>
+				<label class="radio"><input type="radio" name="radio_md"><span class="txt">10일</span></label>
+				<label class="radio"><input type="radio" name="radio_md"><span class="txt">15일</span></label>
+				<label class="radio"><input type="radio" name="radio_md"><span class="txt">20일</span></label>
+				<label class="radio"><input type="radio" name="radio_md"><span class="txt">25일</span></label>
+			</div>
+
+			<h3 class="hd-tit4">자유납입보험료</h3><!-- [D] 2022-03-07 변경 -->
+			<div class="ut-form a mt0">
+				<ul class="form">
+					<li>
+						<span class="input a won">
+							<input type="tel" pattern="\d*" title="자유납입 보험료" placeholder="숫자로 입력" value=""><i class="w">원</i>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit4">자동이체 등록/변경/해지를 위한 약관동의</h3>
+			<div class="ut-terms a mt0">
+				<div class="ckall">
+					<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+					<a href="javascript:;" class="plink" role="button">보기</a><!-- [D] 2022-05-13 태그텍스트변경 -->
+				</div>
+				<div class="plbox">
+					<ul class="plist">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">UL자유납입보험료 자동이체납입제도 및 유의사항</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">보험료 자동이체 약관</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="btn-set vt mt40">
+				<button type="button" class="btn md ico-nlink ico-r">UL자유납입보험료 자동이체납입제도 안내</button>
+				<button type="button" class="btn md ico-nlink ico-r">보험료 합산이체제도 안내</button>
+			</div>
+		</div><!-- contents -->
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

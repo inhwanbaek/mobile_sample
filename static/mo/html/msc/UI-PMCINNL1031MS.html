@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"월간 시황정보"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default mki" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-bilTit2">
+				<h2 class="hd-tit3">매달 변화하는 <i class="line">금융시장 흐름</i>,<br>시황정보 받고 매매 타이밍 잡아 보세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+				<i class="hd-img" aria-hidden="true"></i>
+				<h3 class="hd-tit3">월간 금융시장 동향 (2021)년 11월</h3>
+			</div>
+			<div class="mki-cnt">
+				<div class="sect">
+					<h4 class="tit">금융시장 전망</h4>
+					<div class="lbx">
+						<ul class="bullet a lg">
+							<li>실업수당 청구건수 감소는 고용 호조로 실물경제가 지속적으로 회복되고 있음을 나타냄. 스프레드는 투기 등급 채권과 안전 채권의 이자율 차이를 뜻함.</li>
+							<li>스프레드 축소 시 위험 선호 및 기업 부도율 감소를 나타내며, 스프레드 확대 시 위험 회피 및 기업 부도율 증가를 의미함. 현재는 지속적으로 스프레드가 축소되고 있음.</li>
+							<li>해상 운임의 지속적인 상승은 원자재 수요-공급에 불균형을 일으킬 수 있고, 원자재로부터의 인플레이션 심화는 실물 경제에 부정적으로 작용할 것으로 예상됨.</li>
+							<li>인플레이션 우려가 이어지고 있으나 금융시장의 위험 선호 현상이 사라지지 않고 있음. 는 주식 시장의 긍정적인 요인으로 작용할 것으로 예상됨. 하지만, 조기 긴축 및 원자재 가격 변동이라는 잠재적 험을 회피하기 위한 채권(안전 자산) 수요가 나타날 가능성이 있음.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sect">
+					<h4 class="tit">글로벌 자산군별 전망</h4>
+
+					<div class="ut-tbl a mkitbl">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">글로벌 자산군별 전망</span><span class="cap"></span></caption>
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">자산군</th>
+									<th scope="col" colspan="3">전망</th>
+								</tr>
+								<tr>
+									<th scope="col" class="ll">지난 달</th>
+									<th scope="col">이번 달</th>
+									<th scope="col">증감</th>
+								</tr>
+							</thead>
+							<tbody class="noline">
+								<tr>
+									<td>국내주식</td>
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico c" aria-hidden="true"></i><span class="mkbdg c">중립</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span class="mkinc down">하락</span></td>
+								</tr>
+								<tr>
+									<td>선진국주식</td>
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico c" aria-hidden="true"></i><span class="mkbdg c">중립</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span class="mkinc down">하락</span></td>
+								</tr>
+								<tr>
+									<td>신흥국주식</td>
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico c" aria-hidden="true"></i><span class="mkbdg c">중립</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span class="mkinc down">하락</span></td>
+								</tr>
+								<tr>
+									<td>채권</td>
+									<td><i class="mkico b" aria-hidden="true"></i><span class="mkbdg b">부정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span class="mkinc up">상승</span></td>
+								</tr>
+								<tr>
+									<td>원자재</td>
+									<td><i class="mkico b" aria-hidden="true"></i><span class="mkbdg b">부정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span class="mkinc up">상승</span></td>
+								</tr>
+								<tr>
+									<td>원자재</td>
+									<td><i class="mkico b" aria-hidden="true"></i><span class="mkbdg b">부정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><i class="mkico a" aria-hidden="true"></i><span class="mkbdg a">긍정</span></td><!-- [D] 2022-03-08 .mkico 아이콘추가 -->
+									<td><span>-</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<ul class="bullet a lg">
+						<li>스프레드 축소에서 나타나는 위험 선호 현상과 실업자 감소에서 나타나는 실물 경제 회복은 선진국 주식 시장에 긍정적인 신호로 작용. 반면 최근 연방준비위원회에서 조기 긴출을 시사하는발언을 하며 취약한 업종을 중심으로 선진국 증시에 위험신호가 감지되고 있음.</li>
+						<li>경제 재개는 수출 산업을 중심으로 구성된 한국증시에 긍정적으로 작용. 하지만 한국 은행은 매파적인 모습을 보이며 추가 금리 인상을 암시하고 있음. 빠른 유동성 회수는 국내 및 신흥국 성장 주식에 부정적으로 작용할 것으로 예상.</li>
+						<li>미국을 중심으로 물가 상승이 일시적이지 않다는 주장이 힘을 얻고 있음. 이는 금 투자의 매력을 높이는 요인으로 작용하고 있음. 선진국의 연말 소비 시즌과 신흥국의 공장 가동 재개로 인하여 원유 수요 증가 예상.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="mki-btnset">
+				<div class="btn-set vt">
+					<button type="button" class="btn md">로보어드바이저 서비스 신청</button>
+					<button type="button" class="btn md">로보어드바이저 추천펀드</button>
+				</div>
+			</div>
+
+			<div class="mki-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>이 자료는 고객님이 변액보험 펀드를 선택하고 관리하는데 도움을 드리고자 제작되었습니다.</li>
+							<li>이 자료의 내용은 (주)디셈버앤컴퍼니자산운용이 신뢰할 만한 자료 및 정보를 바탕으로 작성하였으나 정확성 및 완전성을 보증하지는 않습니다. 따라서 참고자료로만 활용하고, 고객님 자신의 판단과 책임에 따라 최종결정을 하시기 바랍니다.</li>
+							<li>이 자료는 어떠한 경우에도 고객의 투자 결과에 대한 법적 책임 소재의 증빙자료로 사용될 수 없습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+
+
+
+</div>
+
+</body>
+</html>

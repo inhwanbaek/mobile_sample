@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">	
+		<article class="pop-layer a pop-exp" id="pop-exp">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">잔고비율 매도란?</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="etp-exp-wrp">
+							<h2 class="hd-tit2">잔고비율 매도란?</h2><!-- [D] 2022-06-29 클래스 'hd-tit4' -> 'hd-tit2' 수정 -->
+							<p class="exp-txt">퇴직급여 지급에 필요한 자금을 확보하기 위해 현재 운용되고 있는 전체 상품을 <span class="t-blue">각 상품별 잔고비율대로 파는 것(매도)</span>을 말합니다.</p>
+							<h2 class="hd-tit4">잔고비율 매도 예시</h2>
+							<p class="exp-txt">예) 퇴직금 2천만원을 지급해야 하는 경우</p>
+							<div class="item-cont">
+								<div class="ut-tbl a fixed"><!-- [D] 2022-02-17 클래스.fixed 추가 -->
+									<table class="tblist" cellpadding="0" cellspacing="0"><!-- [D] 2022-06-29 클래스 'nl' 삭제 -->
+										<caption>추천상품</caption>
+										<colgroup>
+											<col style="width:20%;">
+											<col>
+											<col>
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" class="vat">상품명</th>
+												<th scope="col">평가금액<br>(원)</th>
+												<th scope="col">잔고비율<br>(%)</th>
+												<th scope="col">매도금액<br>(원)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="tal">(무)교보 DB 금리 연동형</td>
+												<td>10,000,000</td>
+												<td>10</td>
+												<td class="t-blue">2,000,000</td>
+											</tr>
+											<tr>
+												<td class="tal">(무)교보 DB GIC 1년형</td>
+												<td>40,000,000</td>
+												<td>40</td>
+												<td class="t-blue">8,000,000</td>
+											</tr>
+											<tr>
+												<td class="tal">(무)교보 DB GIC 1년형</td>
+												<td>50,000,000</td>
+												<td>50</td>
+												<td class="t-blue">10,000,000</td>
+											</tr>																						
+										</tbody>
+										<tfoot>
+											<tr>
+												<td class="bold">합계</td>
+												<td class="bold">100,000,000</td>
+												<td class="bold">100</td>
+												<td class="t-blue bold">20,000,000</td><!-- [D] 2022-06-29 클래스 'bold' 추가 -->
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<!-- <div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-rcmprt');">취소</button>
+						<button type="button" class="btn a rd lg">적용</button>
+					</div>
+				</div> -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-exp');
+		</script>
+	</div>
+</body>
+</html>

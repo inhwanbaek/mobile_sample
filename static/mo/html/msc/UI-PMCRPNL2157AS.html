@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"계약상세정보"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp msc rp mrp ctd" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-tabs a">
+				<ul class="menu" role="tablist">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1">적립금현황</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2">보유상품현황</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3">입금상품현황</a></li>
+				</ul>
+			</div>
+			<!-- 보유상품현황 -->
+			<div class="save-wrp">
+				<!-- [D] 2022-07-05 가입제도선택 추가 -->
+				<div class="pdmd-tprd">
+					<div class="tit"><span class="i">IRP</span><span class="t">교보정보통신</span></div>
+					<div class="act"><button type="button">가입제도선택</button></div>
+				</div>
+				<!--//[D] 2022-07-05 가입제도선택 추가 -->
+
+				<span class="select def no-lb msect"><!-- [D] 2022-07-05 클래스 'msect' 추가 -->
+					<label class="lb blind" for="select-1">보유상품현황 선택</label>
+					<select name="select-1" id="select-1">
+						<option selected="">전체(사용자분+가입자분)</option>
+						<option>회사부담(사용자분)</option>
+						<option>가입자 부담(가입자분)</option>
+					</select>
+				</span>
+				<div class="etp-item b">
+					<div class="top">
+						<h2 class="etp-tit">상품별 적립비율</h2>
+						<span class="desc">202.12.02 기준</span>
+					</div>
+					<!-- 솔루션 영역 --><!-- [D] 2022-01-28 챠트영역 HTML 변경 -->
+					<div class="ut-chart">
+						<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+						<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+					</div>
+					<!--// 솔루션 영역 -->
+
+					<!-- [D] 2022-08-11 차트에 대한 ‘표’ 추가 -->
+					<div class="ut-tbl a" aria-describedby="">
+						<table class="tblist" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">상품별 적립비율 차트 정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 75%;">
+								<col>						
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">상품명</th>
+									<th scope="col">비율</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l">(온라인)미래에셋연금인디아업종대표1(주식)C-P2</td>
+									<td><strong class="bold">99.56%</strong></td>
+								</tr>	
+								<tr>
+									<td class="txt-l">(무)흥국생명 DB GIC 1년형</td>
+									<td><strong class="bold">17.80%</strong></td>
+								</tr>	
+								<tr>
+									<td class="txt-l">(온라인)미래에셋연금인디아업종대표1(주식)C-P2</td>
+									<td><strong class="bold">99.56%</strong></td>
+								</tr>	
+								<tr>
+									<td class="txt-l">(무)흥국생명 DB GIC 1년형</td>
+									<td><strong class="bold">17.80%</strong></td>
+								</tr>																															
+							</tbody>
+						</table>
+					</div>	
+					<!--//[D] 2022-08-11 차트에 대한 ‘표’ 추가 -->	
+				</div>
+				<div class="etp-item a">
+					<div class="ut-dcard a dcard">
+						<div class="stds">
+							<div class="ut-bdgs">
+								<em class="bdg j">국내주식</em><!-- [D] 2022-02-21 클래스.j 변경, 텍스트변경 -->
+							</div>
+							<div class="hdt arr">
+								<h3 class="tit"><a href="javascript:;">(온라인)미래에셋연금인디아업종대표1(주식)C-P2</a></h3>
+							</div>
+						</div>
+						<div class="dtds line">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<h4 class="dt">가입일</h4>
+										<div class="dd">2019.12.01</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">투입원금(매수)</h4><!-- [D] 2022-04-29 문구수정 -->
+										<div class="dd">12,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">적립금액</h4>
+										<div class="dd">12,123,123원</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ptds">
+							<ul class="lst-profit">
+								<li>
+									<dl>
+										<dt class="p-tt">수익률
+											<div class="ut-tooltip">
+												<button type="button" class="ico help bt-tooltip">도움말</button>
+												<div class="toolctn">
+													<div class="tpmsg">
+														<!-- [D] 2022-04-29 툴팁 내용 수정 -->
+														<ul class="bullet d">
+															<li>누적수익률이란, 투자기간 동안 적립금에서 차감하는 수수료 등을 반영한 실질수익을 투입권금으로 나눈 수익률입니다.</li>
+															<li>누적수익률 = 수수료 차감 후 운용손익 / 투입원금</li>
+															<li>상품변경 등을 통해 적립금을 일부만 매도하신 경우, 수익률 산출 방식에 따른 수익률 왜곡이 발생할 수 있습니다.</li>
+															<li>상품을 전액 매도하신 경우, 누적수익률은 중도인출 이후부터 다시 계산됩니다.</li>
+														</ul>
+														<!-- //end [D] 2022-04-29 툴팁 내용 수정 -->
+													</div>
+												</div>
+											</div>
+										</dt>
+										<dd class="p-cont">+34.86%</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt class="p-tt">수익(수수료차감)</dt><!-- [D] 2022-04-29 문구수정 -->
+										<dd class="p-cont">9,999,999,999원</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-set">
+							<button type="button" class="btn sm">상품 사기&#47;팔기</button>
+							<!-- <button type="button" class="btn sm">만기별 상품내역</button> -->
+						</div>
+					</div>
+					<div class="ut-dcard a dcard">
+						<div class="stds">
+							<div class="ut-bdgs">
+								<em class="bdg j">원리금보장</em><!-- [D] 2022-02-21 클래스.j 변경, 텍스트변경 -->
+							</div>
+							<div class="hdt arr">
+								<h3 class="tit"><a href="javascript:;">(온라인)미래에셋연금인디아업종대표1(주식)C-P2</a></h3>
+							</div>
+						</div>
+						<div class="dtds line">
+							<ul class="dlt">
+								<li>
+									<div class="dl">
+										<h4 class="dt">가입일</h4>
+										<div class="dd">2019.12.01</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">투입원금(매수)</h4><!-- [D] 2022-04-29 문구수정 -->
+										<div class="dd">12,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="dl">
+										<h4 class="dt">적립금액</h4>
+										<div class="dd">12,123,123원</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ptds">
+							<ul class="lst-profit">
+								<li>
+									<dl>
+										<dt class="p-tt">수익률
+											<div class="ut-tooltip">
+												<button type="button" class="ico help bt-tooltip">도움말</button>
+												<div class="toolctn">
+													<div class="tpmsg">
+														<!-- [D] 2022-04-29 툴팁 내용 수정 -->
+														<ul class="bullet d">
+															<li>누적수익률이란, 투자기간 동안 적립금에서 차감하는 수수료 등을 반영한 실질수익을 투입권금으로 나눈 수익률입니다.</li>
+															<li>누적수익률 = 수수료 차감 후 운용손익 / 투입원금</li>
+															<li>상품변경 등을 통해 적립금을 일부만 매도하신 경우, 수익률 산출 방식에 따른 수익률 왜곡이 발생할 수 있습니다.</li>
+															<li>상품을 전액 매도하신 경우, 누적수익률은 중도인출 이후부터 다시 계산됩니다.</li>
+														</ul>
+														<!-- //end [D] 2022-04-29 툴팁 내용 수정 -->
+													</div>
+												</div>
+											</div>
+										</dt>
+										<dd class="p-cont">+34.86%</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt class="p-tt">수익(수수료차감)</dt><!-- [D] 2022-04-29 문구수정 -->
+										<dd class="p-cont">123,123원</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-set">
+							<button type="button" class="btn sm">상품 사기&#47;팔기</button>
+							<button type="button" class="btn sm">만기별 상품내역</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- [D] 2022-04-20 하단 안내문구 추가 -->
+				<ul class="bullet b mt08">
+					<li>ETF 상품을 거래한 경우, ETF 적립금은 자금결제가 완료되는 '거래일자 + 2일(영업일 기준)' 적립금에 반영됩니다.</li>
+				</ul>
+			</div>
+			<!--// 보유상품현황 -->
+			<div class="list-empty bd">
+				<p>보유상품현황이 없습니다.</p>
+			</div>
+		</div>
+
+		<!-- [D] 2022-05-25 삭제 -->
+		<!-- <div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">보유상품변경</button>
+				</div>
+			</div>
+		</div> -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm" id="pop-trust">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">예금자보호안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="complate-msg icon9 mb0">
+							<div class="msg">
+								<p class="p2">금융투자 상품이 아닌 고객계좌에 현금으로 남아 있는 예수금은 예금자보호법에 따라 <span class="color10">예금보험공사가 보호</span> 하되, 보호 한도는 본 금융기관에 있는 귀하의 모든 예금보호 대상 금융상품의 원금과 소정의 이자를 합하여 <span class="color10">1인당 “최고5천만원”</span> 이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다.</p>
+							</div>
+						</div>
+					</main>
+				</div>
+
+				<div class="pbt">
+					<!-- 하단 고정영역 -->
+					<nav class="floatbots b">
+						<div class="inr">
+							<div class="box-set boxbot">
+								<div class="hd-tit5">본인은 위 안내 내용에 대해 충분히 이해하였음을 확인합니다.</div>
+								<div class="mt16">
+									<label class="checkbox cr"><input type="checkbox" id="kkk1"><span class="txt">예</span></label>
+									<label class="checkbox cr"><input type="checkbox" id="kkk2" checked><span class="txt">아니오</span></label>
+								</div>
+							</div>
+							<div class="btn-set b2">
+								<button type="button" class="btn lg rd b">이전</button>
+								<button type="button" class="btn lg rd a">다음</button>
+							</div>
+						</div>
+					</nav>
+					<!-- //하단 고정영역 -->
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-trust');
+		</script>
+	</div>
+</body>
+</html>

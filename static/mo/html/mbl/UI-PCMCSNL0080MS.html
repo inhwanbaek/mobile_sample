@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/common2.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back","title":"인증서 등록"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl step-byStep pcert" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+
+			<section class="pcert-step">
+				<!-- [D] 2022-02-11 내용/디자인변경 화살표 추가 -->
+				<!-- 타이틀수정: 백인환 2020.3.31-->
+				<div class="mbl-top">
+					<div class="hdt">
+						<h2 class="hd-tit3">로그인을 위해<br>최초 1회 인증서를 등록합니다.</h2>
+					</div>
+					<!-- <div class="cdt">로그인을 위해 최초 1회 인증서를 등록합니다.</div> -->
+				</div>
+				<!-- 타이틀수정: 백인환 2020.3.31-->
+				<!-- <div class="mbl-top">
+					<div class="hdt"><h2 class="hd-tit2">카카오페이 인증서 등록을 위해 <br> 고객님의 정보를 입력해 주세요.</h2></div>
+					<div class="cdt">‘개인정보보호법’ 및 ‘신용정보의 이용 및 보호에 관한 법률’에 따라 귀하의 개인(신용)정보를 다음과 같이 처리(수집, 조회, 제공)하고자 합니다.</div>
+				</div> -->
+
+				<div class="ut-terms a tog open" data-tog-cls="box">
+					<div class="ckall">
+						<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+						<button type="button" data-tog-cls="btn" class="bt-tog">전체동의</button>
+					</div>
+					<!-- [D] 2022-02-14 클래스 수정 -->
+					<div class="plbox open" data-tog-cls="ctn">
+						<ul class="plist">
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 수집 및 이용 동의</span></label><!-- [D] 2022-05-04 문구수정 -->
+								<a href="javascript:;" class="plinks" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보의 제공 동의</span></label><!-- [D] 2022-05-04 문구수정 -->
+								<a href="javascript:;" class="plinks" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보 처리 동의</span></label><!-- [D] 2022-05-04 문구수정 -->
+								<a href="javascript:;" class="plinks" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">전자금융거래 기본약관</span></label><!-- [D] 2022-05-04 문구수정 -->
+								<a href="javascript:;" class="plinks" role="button">보기</a>
+							</li>
+							<li>
+								<label class="checkbox cd"><input type="checkbox"><span class="txt">전자금융서비스 이용약관</span></label><!-- [D] 2022-05-04 문구수정 -->
+								<a href="javascript:;" class="plinks" role="button">보기</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 이름 주민번호 추가: 백인환 2020.3.31-->
+				<div class="mt40">
+					<span class="input a">
+						<label class="lb" for="input_id0">이름</label>
+						<input id="input_id0" type="text" placeholder="실명입력">
+					</span>
+					<div class="vald-msg no">이름을 정확하게 입력해 주세요.</div>
+					<div class="vald-msg no">이름은 두 글자 이상 입력해 주세요.</div>
+
+					<span class="input a ut-rsnum mt16">
+						<label class="lb" for="rsnum_01">주민등록번호 및 외국인등록번호</label>
+						<input id="rsnum_01" type="tel" class="fn" pattern="\d*" title="주민등록번호 및 외국인등록번호 앞 1~6자리" placeholder="앞 6자리"><!-- [웹접근성] 1st 수정 -->
+						<i class="ds">-</i>
+						<input type="tel" class="ln" pattern="\d*" title="주민등록번호 및 외국인등록번호 뒤 1~7자리" placeholder="뒤 7자리"><!-- [웹접근성] 1st 수정 -->
+					</span>
+				</div>
+				<!--// 이름 주민번호 추가: 백인환 2020.3.31-->
+				<div class="ut-gudbox a gudbox open mt40" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn open" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>회원가입을 하신 고객님만 인증서 등록이 가능합니다. </li><!-- [D] 2022-06-30 텍스트 수정 -->
+							<li>휴대폰 기기 또는 번호가 변경된 경우 인증서 재등록을 하셔야 합니다.</li>
+							<li>인증서 재발급, 기간 만료로 인증서 정보가 변경된 경우 재등록을 진행하셔야 합니다.</li>
+							<!-- [D] 2022-09-07 문구 추가 -->
+							<li>일부 전자금융거래에서는 간편비밀번호 외 다른 인증서를 통한 전자서명 인증이 추가로 필요할 수 있습니다.</li>
+							<li>일부 전자금융거래에서는 바이오 인증 외 다른 인증서를 통한 전자서명 인증이 추가로 필요할 수 있습니다.</li>
+							<!--//[D] 2022-09-07 문구 추가 -->
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="info-box b">
+					<span>
+						인증서 등록을 위해 교보생명 이용약관에 동의를 해주세요.
+					</span>
+				</div> -->
+
+
+			</section>
+
+
+
+
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

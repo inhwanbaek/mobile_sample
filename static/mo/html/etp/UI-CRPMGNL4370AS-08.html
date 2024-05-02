@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer c pjoin pop-joininfo-05" id="pop-joininfo-05">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">가입자 정보</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="joininfo-list">
+						<div class="item b">
+							<h2 class="tit">김교보</h2>
+						</div>							
+						<div class="item">
+							<ul class="list">
+								<li>
+									<div class="t">주민등록번호</div>
+									<div class="d">820312-1</div>
+								</li>
+								<li>
+									<div class="t">교보IRP 가입여부</div>
+									<div class="d">Y</div>
+								</li>												
+								<li>
+									<div class="t">진행상태</div>
+									<div class="d">WEB접수</div>
+								</li>
+								<li>
+									<div class="t">접수일</div>
+									<div class="d">2021.04.24</div>
+								</li>	
+								<li>
+									<div class="t">결재상태</div>
+									<div class="d">승인필요</div>
+								</li>																								
+							</ul>
+						</div>
+					</div>
+					<div class="line-box"><strong class="qst">가입자의 퇴직금 신청을 취소하시겠습니까?</strong></div><!-- [D] 2022-04-05 텍스트 수정 -->
+				</main>		
+			</div>
+			<div class="pbt">
+				<div class="btn-set b">
+					<button type="button" class="btn a rd lg">신청취소</button><!-- [D] 2022-04-05 버튼 클래스 변경-->
+					<!-- <button type="button" class="btn a rd lg">수정</button>[D] 2022-04-05 버튼삭제 -->
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-joininfo-05');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sgnsys',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+	</script>
+</div>
+</body>
+</html>

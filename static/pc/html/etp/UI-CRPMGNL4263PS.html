@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp balance" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">ETF 매매</h2>
+			</div>
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">ETF 매매</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">ETF 주문내역</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">ETF 잔고</a></li>
+				</ul>
+			</div>	
+			<div class="etf-box-wrp">
+				<div class="ut-dcard e etf-card" data-tog-cls="box">
+					<div class="flex-box">
+						<div class="item">
+							<div class="bxs">
+								<div class="dt">ETF 예수금 잔액</div>
+								<div class="dd">
+									<span class="t-blue">1,000,000</span><i class="w">원</i>
+								</div>									
+							</div>					
+						</div>
+						<div class="item">
+							<ul class="list">
+								<li>
+									<div class="flex-box">
+										<div class="dt">ETF를 살 수 있는 금액(A)</div>
+										<div class="dd">4,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex-box">
+										<div class="dt">ETF를 파는 중인 금액(B)</div>
+										<div class="dd">3,000,000원</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex-box">
+										<div class="dt"><span class="tt">뺄 수 있는 금액(A-B)</span>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-expanded="false">도움말</button>
+												<div class="toolctn">
+													<div class="tpmsg">
+														<p>ETF를 파는 중인 금액(매도 금액)은 매도 주문 2일(영업일 기준) 후 거래소와 정산합니다.  이미 거래가 체결되었기 때문에 해당 대금으로 다른 ETF를 살 수는 있지만, 예수금에서 빼려면 거래소에서 매도 금액을 받은 후에 가능합니다.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="dd"><span class="t-blue">1,000,000</span>원</div>
+									</div>
+								</li>												
+							</ul>
+						</div>
+					</div>
+					<div class="btn-set">
+						<a href="javascript:;" class="btn md ico-arrow">ETF 예수금 입금/출금</a><!-- [D] 2022-07-18 버튼 클래스 변경 -->
+					</div>	
+				</div>
+				<div class="ut-tbl a mt40 fixed">
+					<table class="tblist" cellspacing="0" cellpadding="0" >
+						<caption><span class="tit">ETF 거래내역</span><span class="cap"></span></caption>
+						<colgroup>
+							<col>
+							<col style="width: 12%">
+							<col style="width: 15%">
+							<col style="width: 15%">
+							<col style="width: 15%">
+							<col style="width: 14%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">종목명</th>
+								<th scope="col">보유수량</th>
+								<th scope="col">평가금액</th>
+								<th scope="col">원금</th>
+								<th scope="col">수익(수익률)</th>
+								<th scope="col">매수/매도</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">KBSTAR ESG 사회책임투자</td>
+								<td>80주</td>
+								<td class="txt-r">2,100,000원</td>
+								<td class="txt-r">2,100,000원</td>
+								<td class="txt-r">
+									<div class="stock">
+										<div class="up">300</div>
+										<div class="t-red">(+0.44%)</div>
+									</div>
+								</td>
+								<td>
+									<div class="s-btn">
+										<button type="button" class="btn sm">ETF 사기</button>
+										<button type="button" class="btn sm">ETF 팔기</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">KBSTAR 미국S&P원유생산기업(합성 H)</td>
+								<td>40주</td>
+								<td class="txt-r">1,100,000원</td>
+								<td class="txt-r">1,000,000원</td>
+								<td class="txt-r">
+									<div class="stock">
+										<div class="down">4,000</div>
+										<div class="t-blue">(-3.42%)</div>
+									</div>
+								</td>
+								<td>
+									<div class="s-btn">
+										<button type="button" class="btn sm">ETF 사기</button>
+										<button type="button" class="btn sm">ETF 팔기</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="txt-l">KODEX 200</td>
+								<td>80주</td>
+								<td class="txt-r">2,100,000원</td>
+								<td class="txt-r">2,100,000원</td>
+								<td class="txt-r">
+									<div class="stock">
+										<div class="up">11,500</div>
+										<div class="t-red">(+2.94%)</div>
+									</div>
+								</td>
+								<td>
+									<div class="s-btn">
+										<button type="button" class="btn sm">ETF 사기</button>
+										<button type="button" class="btn sm">ETF 팔기</button>
+									</div>
+								</td>
+							</tr>											
+						</tbody>
+					</table>
+				</div>				
+			</div>
+			<!-- <div class="btn-set b2">
+				<button type="button" class="btn lg rd">이전</button>
+				<button type="button" class="btn lg rd a">다음</button>
+			</div> -->
+		</div>		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+	
+	
+</div>
+</body>
+</html>

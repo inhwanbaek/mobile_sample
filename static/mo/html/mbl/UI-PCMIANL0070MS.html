@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a mbl pop-iden" id="pop-iden">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신분증 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="mbl-top">
+						<div class="hdt"><h2 class="hd-tit2">본인확인을 위해 주민등록증 또는<br> 운전면허증을 준비해주세요</h2></div>
+					</div>
+					<!-- [D] 2022-02-14 이미지 백그라운드 처리 -->
+					<div class="iden-img">
+						<div class="card">
+							<div class="blind">주민등록증및 자동자면허증 예제 이미지</div>
+						</div>
+					</div>
+
+					<!-- [D] 2022-07-08 수정 -->
+					<div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>주민등록증이 운전면허증보다 신분증 인식률이 높습니다.</li>
+								<li>촬영 시 영역에 잘 맞춰 촬영해 주세요.</li>
+								<li>신분증은 반드시 원본이어야 합니다. 사본이나 임시 신분증으로는 인증할 수 없습니다.</li>
+								<li>신분증 인식 과정에서 진위를 확인하여, 연속 5회 이상 일치하지 않으면 중단되니 유의하시기 바랍니다.</li>
+								<li>신분증 정보 보유기관의 문제(정보제공 제한, 시스템 장애 또는 업그레이드 등)로 진위 확인을 할 수 없는 경우 가까운 교보생명 고객PLAZA를 방문해 주세요.</li>
+								<li>그 밖의 이유로 신분증 진위 확인이 되지 않는 경우 교보생명 콜 센터(158-1001)로 문의해 주세요.</li>
+							</ul>
+						</div>
+					</div>
+					<!--// [D] 2022-07-08 수정 -->
+
+					
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set b2">
+					<!-- <button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-iden');">취소</button> -->
+					<button type="button" class="btn a rd lg">신분증 촬영</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-iden');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-iden',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

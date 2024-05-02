@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"자동이체 등록/변경/해지"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc fund mng" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 자동이체 신청정보 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">3</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="fund-tit">
+				<h2 class="hd-tit3">자동이체 정보를 입력해 주세요.</h2>
+			</div>
+
+			<div class="ut-dcard b">
+				<div class="dls">
+					<div class="hdt">
+						<div class="tit">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</div>
+					</div>
+					<div class="dl left">
+						<div class="dt">계좌번호</div>
+						<div class="dd">200***-001-02</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ut-form b">
+				<div class="hdt">
+					<h3 class="tit" id="rdo1">처리구분</h3>
+				</div>
+				<div class="panel">
+					<div class="radiobox c col3" role="radiogroup" aria-labelledby="rdo1">
+						<label class="radio"><input type="radio" name="radio-1" value="1" checked ><span class="txt">등록</span></label>
+						<label class="radio"><input type="radio" name="radio-1" value="2"><span class="txt">금액변경</span></label>
+						<label class="radio"><input type="radio" name="radio-1" value="3"><span class="txt">해지</span></label>
+					</div>
+				</div>
+
+				<div class="hdt flx">
+					<h3 class="hd-tit4">자동이체 계좌 등록</h3>
+					<div class="addon">
+						<button type="button" class="ico plus">자동이체계좌 신규 등록</button>
+					</div>
+				</div>
+				<div class="panel">
+					<span class="select def">
+						<label class="lb" for="sel_id01">자동이체 계좌 선택</label>
+						<select  id="sel_id01" name="sel_id01">
+							<option value="0">선택</option>
+							<option selected>[국민은행] 200***-01-002  김교보</option>
+							<option >[농협] 35282*****053 인조우</option>
+						</select>
+					</span>
+				</div>
+				<div class="panel-b">
+					<span class="tt">등록 가능한 은행</span>
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<div class="tptit">등록 가능한 은행</div>
+								<p>SC제일은행, KB국민은행, 우리은행, 한국씨티은행, IBK기업은행, 농협중앙회, 농협조합, DGB대구은행, 신한은행, BNK부산은행, 하나은행, BNK경남은행, 우체국, 광주은행, 전북은행, Sh수협은행, KDB산업은행, 제주은행(총 18개)</p>
+								<ul class="bullet b">
+									<li>가상계좌 및 증권사 연계계좌는 등록할 수 없습니다.</li>
+									<li>계좌는 2개만 등록할 수 있습니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="sec">
+				
+				<h3 class="hd-tit4">자동이체 정보 등록</h3>
+				<!-- <h3 class="hd-tit4">금액정보 변경</h3>
+				<h3 class="hd-tit4">자동이체 정보</h3> -->
+				<div class="ut-dtds c bd">
+					<ul class="dlist left">
+						<li>
+							<div class="dt">은행</div>
+							<div class="dd">우리은행</div>
+						</li>
+						<li>
+							<div class="dt">계좌번호</div>
+							<div class="dd">34864****456</div>
+						</li>
+						<li>
+							<div class="dt">예금주</div>
+							<div class="dd">김*보</div>
+						</li>
+						<li>
+							<div class="dt" id="rdo2">이체일</div>
+							<div class="dd">
+								<div class="fms">
+									<ul role="radiogroup" aria-labelledby="rdo2">
+										<li><label class="radio"><input type="radio" name="radio1"><span class="txt">5일</span></label></li>
+										<li><label class="radio"><input type="radio" name="radio1"><span class="txt">15일</span></label></li>
+										<li><label class="radio"><input type="radio" name="radio1"><span class="txt">25일</span></label></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dt ac">이체금액</div>
+							<div class="dd">
+								<div class="fms">
+									<span class="input won a"><input id="input_3" title="이체금액 입력" type="tel" pattern="\d*" placeholder="숫자만 입력"><i class="w">원</i></span>
+									<div class="vald-msg show no">50,000원 이상 이체 가능합니다.</div>
+								</div>
+								<!-- 100,000원 -->
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="ut-gudbox b open mt40" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>자동이체 등록/변경/해지는 적립식펀드만 가능합니다.</li>
+						<li>자동이체 등록 시 4~5일이 소요되며, 최초 자동이체는 등록한 다음 달부터 시작됩니다.   </li>
+						<li>이체일 및 은행계좌를 변경하려면 자동이체 해지 후 다시 등록하시기 바랍니다. </li>
+						<li>이체일에 잔액 부족 등으로 인해 이체되지 않을 경우 추가로 인출되지 않습니다.</li>
+						<li>이체일이 토, 일, 공휴일인 경우 다음 영업일에 이체됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+	</main>
+
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a sm pop-shares" id="pop-shares">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 및 해지환급금 예시</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents prd insurance-pop">
+					<div class="sect">
+						<h3 class="hd-tit3">주계약 보험료 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약 보험가입금액 1억원, 20년납, 표준체, 월납</div>
+						</div>
+						<div class="ut-optset optset">							
+							<div class="opt pr">
+								<span class="unit">(단위:원)</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">주계약 보험료 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2" colspan="3">구분</th>
+										<th scope="col" colspan="3">남자</th>
+										<th scope="col" colspan="3">여자</th>
+									</tr>
+									<tr>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="2">저해지환급금형</th>
+										<th scope="row">기본형플러스</th>
+										<th scope="row">50%해지지급형</th>
+										<td class="txt-r">280,000</td>
+										<td class="txt-r">318,000</td>
+										<td class="txt-r">371,000</td>
+										<td class="txt-r">264,000</td>
+										<td class="txt-r">297,000</td>
+										<td class="txt-r">339,000</td>
+									</tr>
+									<tr>
+										<th scope="row">기본형</th>
+										<th scope="row">50%해지지급형</th>
+										<td class="txt-r">223,000</td>
+										<td class="txt-r">268,000</td>
+										<td class="txt-r">329,000</td>
+										<td class="txt-r">203,000</td>
+										<td class="txt-r">242,000</td>
+										<td class="txt-r">293,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="sect">
+						<h3 class="hd-tit3">해지환급금 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약보험가입금액 1억원, 남자 40세, 표준체, 20년납, 월납, 세전, 계약해당일 기준</div>
+						</div>
+						<div class="t-blue">기본형플러스 저해지환급금형(50%해지지급형)</div>
+						<ul class="bullet a ">
+							<li>생활자금 자동 전환일에 사망보험금 생활자금 전환할 경우 (90%, 10회)</li>
+						</ul>
+						<div class="ut-optset optset">							
+							<div class="opt pr">
+								<span class="unit">(단위:만원)</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">해지환급금 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">경과기간</th>
+										<th scope="col" rowspan="2">총납입보험료(원)</th>
+										<th scope="col" colspan="3">공시이율(2.30%) 가정</th>
+										<th scope="col" colspan="3">평균공시이율과 공시이율 중<br>낮은 이율(2.25%) 가정</th>
+										<th scope="col" colspan="3">최저보증이율 가정</th>
+									</tr>
+									<tr>
+										<th scope="col">생활자금 누계</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+										<th scope="col">생활자금 누계</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+										<th scope="col">생활자금 누계</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1년</th>
+										<td class="txt-r">3,816,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+									</tr>
+									<tr>
+										<th scope="row">2년</th>
+										<td class="txt-r">7,632,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">173</td>
+										<td class="txt-r">22.7%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">173</td>
+										<td class="txt-r">22.7%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">173</td>
+										<td class="txt-r">22.7%</td>
+									</tr>
+									<tr>
+										<th scope="row">3년</th>
+										<td class="txt-r">11,448,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">356</td>
+										<td class="txt-r">31.1%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">356</td>
+										<td class="txt-r">31.1%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">356</td>
+										<td class="txt-r">31.1%</td>
+									</tr>
+									<tr>
+										<th scope="row">5년</th>
+										<td class="txt-r">19,080,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">731</td>
+										<td class="txt-r">38.3%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">731</td>
+										<td class="txt-r">38.3%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">731</td>
+										<td class="txt-r">38.3%</td>
+									</tr>
+									<tr>
+										<th scope="row">10년</th>
+										<td class="txt-r">38,160,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">1,664</td>
+										<td class="txt-r">43.6%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">1,664</td>
+										<td class="txt-r">43.6%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">1,663</td>
+										<td class="txt-r">43.6%</td>
+									</tr>
+									<tr>
+										<th scope="row">19년</th>
+										<td class="txt-r">72,504,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">3,526</td>
+										<td class="txt-r">48.6%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">3,525</td>
+										<td class="txt-r">48.6%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">3,516</td>
+										<td class="txt-r">48.5%</td>
+									</tr>
+									<tr>
+										<th scope="row">20년</th>
+										<td class="txt-r">76,320,000</td>
+										<td class="txt-r">738</td>
+										<td class="txt-r">7,470</td>
+										<td class="txt-r">107.6%</td>
+										<td class="txt-r">738</td>
+										<td class="txt-r">7,468</td>
+										<td class="txt-r">107.5%</td>
+										<td class="txt-r">732</td>
+										<td class="txt-r">7,411</td>
+										<td class="txt-r">106.7%</td>
+									</tr>
+									<tr>
+										<th scope="row">30년</th>
+										<td class="txt-r">76,320,000</td>
+										<td class="txt-r">7,831</td>
+										<td class="txt-r">934</td>
+										<td class="txt-r">114.9%</td>
+										<td class="txt-r">7,829</td>
+										<td class="txt-r">934</td>
+										<td class="txt-r">114.8%</td>
+										<td class="txt-r">7,765</td>
+										<td class="txt-r">925</td>
+										<td class="txt-r">113.9%</td>
+									</tr>
+									<tr>
+										<th scope="row">40년</th>
+										<td class="txt-r">76,320,000</td>
+										<td class="txt-r">7,831</td>
+										<td class="txt-r">1,078</td>
+										<td class="txt-r">116.7%</td>
+										<td class="txt-r">7,829</td>
+										<td class="txt-r">1,077</td>
+										<td class="txt-r">116.7%</td>
+										<td class="txt-r">7,765</td>
+										<td class="txt-r">1,066</td>
+										<td class="txt-r">115.7%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="bullet b">
+							<li>위의 예시금액은 세전 기준이며, 예시금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+							<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결비용 및 계약관리비용(해지공제금액 포함), 보험금 보장에 필요한 최저사망보험금 보증비용 및 해지환급금 보장에 필요한 최저해지환급금 보증비용(단, 최저해지환급금을 보증하지 않는 경우는 최저해지환급금 보증비용 제외) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+							<li>위의 해지환급금은 보험료를 계약해당일에 납입하고 중도인출 및 추가납입은 고려하지 않고 산출한 금액으로 보험료를 계약해당일에 납입하지 않았을 때 또는 중도 인출 및 추가납입이 있을 때에는 해지환급금이 변경됩니다.</li>
+							<li>위의 예시금액은 장기납입보너스, 장기유지보너스 및 납입완료보너스를 포함한 주계약의 해지환급금을 최저보증이율, 평균공시이율과 공시이율 중 낮은 이율, 2022. 7월 현재 보장성 상품에 적용하는 공시이율을 기준으로 계산한 금액이며, 기본형플러스 계약의 경우 「공시이율을 적용한 금액」과 「예정기본적립금 산출이율 (2.0%)을 적용한 금액」 중 큰 금액을 해지환급금으로 지급합니다. 다만, 저해지환급금형 기본형플러스 계약의 보험료 납입기간 중 해지환급금은 「일반형 계약의 예정기본해지환급금 X 해지지급률(50%)」 에 가산적립금, 추가적립금, 장기납입보너스 적립금을 더한 금액으로 합니다. 계약자적립금을 계산할 때 적용하는 공시이율이 변동하는 경우에는 해지환급금도 변동됩니다.</li>
+							<li>위의 환급률은 계약자가 납입한 보험료 대비 해지환급금과 생활자금누계액의 비율입니다.</li>
+							<li>공시이율은 매월 1일 회사가 정한 이율로 매월 1일부터 당월의 마지막 날까지 1개월간 확정 적용하며, 회사는 일반계정의 운용자산 이익률과 시장금리를 기준으로 향후 예상수익 등 경영환경을 고려하여 공시이율을 결정합니다.</li>
+							<li>공시이율의 최저보증이율은 연복리 0.75%입니다.</li>
+							<li>평균공시이율은 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월간 보험회사 평균공시이율을 말하며, 이 계약 체결 시점의 평균공시이율은 2.25%입니다.</li>
+							<li>위의 예시금액은 보험기간 중 예시 이율이 변동하지 않는다는 가정 하에 산출된 금액입니다.</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-shares');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

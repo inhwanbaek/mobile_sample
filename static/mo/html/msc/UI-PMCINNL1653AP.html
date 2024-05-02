@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-tsearch" id="pop-tsearch">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">병명코드 조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="such-wrap"><!-- [D] 2022-06-10 UI변경 -->
+						<span class="input ipsch">
+							<span class="select sort">
+								<select name="select-1" id="select-1" title="병명 선택">
+									<option selected>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+									<option>병명</option>
+								</select>
+							</span>							
+							<input type="search" placeholder="병명 입력" title="병명 입력" value="">
+							<span class="ibts"><button type="button" class="btn-sch">검색</button></span>
+						</span>
+					</div>
+				
+					<div class="rst-box">					
+						<ul class="radio-list">
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">S53.40<span class="stxt">요골측부인대의 염좌 및 긴장</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">S53.40<span class="stxt">요골측부인대의 염좌 및 긴장</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">S53.40<span class="stxt">요골측부인대의 염좌 및 긴장</span></span></label>
+							</li>																																				
+							<li>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">S53.40<span class="stxt">요골측부인대의 염좌 및 긴장</span></span></label>
+							</li>																																				
+						</ul>
+
+						<!-- 검색 결과 없을 경우 -->
+						<div class="list-empty mt0">
+							<p>검색된 병명코드가 없습니다.</p>
+						</div>						
+					</div>
+
+				</main>
+			</div>
+
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-tsearch');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+		
+	</script>
+
+</div>
+</body>
+</html>

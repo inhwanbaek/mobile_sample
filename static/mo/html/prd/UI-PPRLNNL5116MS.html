@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"보험계약대출 신청"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd ins input dft" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">3. 계좌 등록</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">6</b></span>
+								<span class="num"><b class="b">3</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ins-tit">
+				<!-- [D] 2022-05-13 수정 -->
+				<h2 class="hd-tit3">대출금 입금과 이자 출금용<br>
+					<i class="line">출금계좌</i>를 등록해 주세요.</h2>
+			</div>
+
+			<div class="ins-formGroup">
+				<div class="ins-form">
+					<div class="hdts">
+						<!-- [D] 2022-05-13 수정 -->
+						<h3 class="hd-tit4">출금계좌</h3>
+						<!-- [D] 2022-06-28 삭제-->
+						<!-- <div class="addon">
+							<button type="button" class="ico plus">출금계좌 신규 등록</button>
+						</div> -->
+					</div>
+					<div class="pnls">
+						<span class="select a">
+							<select title="출금계좌선택">
+								<option selected>[농협] 35282*****053 인조우</option>
+								<option>선택2</option>
+								<option>선택3</option>
+							</select>
+						</span>
+					</div>
+					<!-- [D] 2022-06-28 삭제-->
+					<!-- <div class="pnls-b">
+						<span class="tt">등록 가능한 은행</span>
+						<div class="ut-tooltip">
+							<button type="button" class="ico help sm bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<div class="tptit">등록 가능한 은행</div>
+									<p>SC제일은행, KB국민은행, 우리은행, 한국씨티은행, IBK기업은행, 농협중앙회, 농협조합, DGB대구은행, 신한은행, BNK부산은행, 하나은행, BNK경남은행, 우체국, 광주은행, 전북은행, Sh수협은행, KDB산업은행, 제주은행(총 18개)</p>
+									<ul class="bullet b">
+										<li>가상계좌 및 증권사 연계계좌는 등록할 수 없습니다.</li>
+										<li>계좌는 2개만 등록할 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- // [D] 2022-06-28 삭제-->
+				</div>
+				
+				<div class="ins-form">
+					<div class="hdt">
+						<h3 class="hd-tit4">이자 자동이체일</h3>
+					</div>
+					<div class="pnls">
+						<span class="select a">
+							<select title="출금계좌선택">
+								<option>선택</option>
+								<option>5일</option>
+								<option>10일</option>
+								<option>15일</option>
+								<option>20일</option>
+								<option>25일</option>
+								<option>말일</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="ins-form">
+					<div class="hdt">
+						<h3 class="hd-tit4">대출금 지급예정일</h3>
+					</div>
+					<div class="pnls">
+						<span class="input a ut-date"><input type="tel" disabled id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" title="대출금 지급예정일" value="2020.01.01"></span>
+						
+					</div>
+					<div class="pnls-b">
+						<label class="checkbox"><input type="checkbox"><span class="txt">대출금 지급일 변경하기(예약송금서비스)</span></label>
+					</div>
+				</div>
+
+				<div class="ins-form">
+					<div class="hdt">
+						<!-- [D] 2022-05-13 수정 -->
+						<h3 class="hd-tit4">대출금 지급예정일</h3>
+					</div>
+					<div class="pnls">
+						<!-- [D] 2022-05-13 title 수정 -->
+						<span class="input a ut-date"><input type="tel"  id="date_st_01" class="datepicker st" placeholder="YYYY.MM.DD" title="대출금 지급예정일" value="2020.01.01"></span>
+						
+					</div>
+					<div class="pnls-b">
+						<label class="checkbox"><input type="checkbox" checked><span class="txt">대출금 지급일 변경하기(예약송금서비스)</span></label>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>매월 발생하는 보험계약대출 이자는 은행 자동이체로 납입하셔야 합니다.</li>
+						<li>이자는 보험계약대출 신청 시 등록한 출금계좌에서 지정한 자동이체일에 출금됩니다.</li>
+						<li>원리금 분할상환을 계속 이용하시려면 추가대출 후 대출원리금 분할상환을 재신청해 주시기 바랍니다.</li>
+						<li>예약송금서비스 해지는 콜센터 또는 PLZA 내방을 통해서만 가능합니다. 자세한 사항은 콜센터로 문의하시기 바랍니다.</li><!-- [D] 2022-08-22 문구추가 -->
+					</ul>
+				</div>
+			</div>
+			<!-- 변액보험경우 -->
+			<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>매월 발생하는 보험계약대출 이자는 은행 자동이체로 납부하셔야 합니다.</li>
+						<li>이자는 보험계약대출 신청 시 등록한 출금계좌에서 지정한 자동이체일에 출금됩니다.</li>
+						<!-- [D] 2022-05-13 띄어쓰기 -->
+						<li>원리금 분할상환을 계속 이용하시려면 추가대출 후 대출원리금 분할상환을 재신청해 주시기 바랍니다. 변액보험계약대출 예약 시 최대신청금액은 계약(보험증권번호)별 1천만원까지며, 월 1회 한도입니다.</li>
+						<li>대출 처리 시 대출금 지급 당일의 기준가를 적용하므로 수령금액이 변동될 수 있습니다.</li>
+						<li>월대체보험료가 차감되는 상품으로 보험계약대출을 신청한 경우 수령금액이 신청금액보다 적을 수 있습니다.</li>
+						<li>예약송금서비스 해지는 콜센터 또는 PLZA 내방을 통해서만 가능합니다. 자세한 사항은 콜센터로 문의하시기 바랍니다.</li><!-- [D] 2022-08-22 문구추가 -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">요청하신 교보생명 업무 처리를 위해 「전자금융거래법」에 따른 출금이체 등록에 동의하십니까?</div>
+					<div class="rdos">
+						<label class="radio"><input type="radio" name="radio9" checked><span class="txt">동의</span></label>
+						<label class="radio"><input type="radio" name="radio9"><span class="txt">동의안함</span></label>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

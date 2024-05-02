@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-impayinfo" id="pop-impayinfo"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">같이투자자 등록해지</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire invtm">
+					<div class="pop-cont-sect2 mt0">
+						<div class="info-cont">
+							<ul class="bullet a">
+								<li>같이투자자 등록을 해지하시면 같이투자 커뮤니티에 기록된 고객님 정보가 모두 삭제되고, 수익률 대회에서 제외됩니다.</li>
+								<li>참여 중인 이벤트 및 수익률 대회의 수상에서 제외될 수 있습니다.</li>
+								<li>등록해지 다음 날부터 랭킹 산정에서 제외됩니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hd-tit4 btm-tit">같이투자자 등록을 해지하시겠습니까?</div>
+				</main>
+			</div>
+			<div class="pbt">
+				
+				<!-- [s] 22-05-17 수정 -->
+				<div class="btn-set">
+					<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-layer');">취소</button>
+					<button type="button" class="btn lg rd a">확인</button>
+				</div>
+				<!-- // [e] 22-05-17 수정 -->
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-impayinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

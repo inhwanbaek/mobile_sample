@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-pmodlist" id="pop-pmodlist">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">매도신청</h1>
+				</div>
+			</div>
+			<div class="pct page etp pmod">
+				<main class="poptents">
+					<div class="dtxt2 mb20">이 상품은 매수일에 따라 만기일과 적용이율이 달라집니다.   <br> 만기까지 남은 기간과 이율을 고려하여 매도할 상품을 직접 선택해 주세요. </div>
+					
+
+					<div class="ut-tbl a">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:164px">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">상품명</th>
+									<td><b class="bold">DB GIC 2년형</b></td>
+								</tr>
+								<tr>
+									<th scope="row">적립금액</th>
+									<td><b class="bold">6,736,104원</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<!-- [D] 2022-06-07 클래스 'mt40' 추가 -->
+					<div class="ut-optset optset mt40">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">718</i> 건</span> <span class="date">2020.01.01 기준</span>
+							<div class="ut-tooltip mb05">
+								<button type="button" class="ico help sm bt-tooltip">도움말</button>
+								<div class="toolctn w320">
+									<div class="tpmsg">
+										직전영업일 기준 매도금액이 표기됩니다.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="opt pr">
+							<!-- [D] 2022-05-10 스타일 변경 -->
+							<span class="select sort">
+								<label class="lb blind" for="sel_id0">정렬순서</label>
+								<select name="sel_id0" title="정렬순서">
+									<option>빠른 만기 순</option>
+									<option>이자손해 적은 순 </option>
+									<option>적립금 많은 순</option>
+								</select>
+							</span>
+							<!-- //[D] 2022-05-10 스타일 변경 -->
+						</div>
+					</div>
+
+					<div class="ut-tbl a scroll-x"><!-- [D] 2022-08-22 테이블 스크롤:클래스 'scroll-x' 추가 -->
+						<table class="tblist tstyle" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">입금상품</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 12%;">
+								<col style="width: 12%;">
+								<col style="width: 11%;">
+								<col style="width: 17%;">
+								<col>
+								<col style="width: 20%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">매수일</th>
+									<th scope="col">만기일</th>
+									<th scope="col">적용이율</th>
+									<th scope="col">적립금액</th>
+									<th scope="col">매도금액</th>
+									<th scope="col">중도해지차액
+
+										<div class="ut-tooltip">
+											<!-- [D] 2022-06-07 클래스 'sm' 삭제 -->
+											<button type="button" class="ico help bt-tooltip">도움말</button>
+											<div class="toolctn">
+												<div class="tpmsg">지금 매도하면 표시된 금액만큼 이자가 덜 지급됩니다. </div>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2019.11.19</td>
+									<td>2019.11.19</td>
+									<td><strong>1.80%</strong></td>
+									<td class="txt-r"><strong>6,736,104원</strong></td>
+									<td class="txt-c">
+										<div class="medo">
+											<span class="input a won">
+												<input type="text" title="매도금액" placeholder="최대 10,000,000,000"><!-- [D] 2022-08-22 placeholder 수정 -->
+												<i class="w">원</i>
+											</span>
+											<button type="button" class="btn md medo">전액매도</button>
+										</div>
+									</td>
+									<!-- [D] 2022-06-07 마크업 수정 -->
+									<td class="txt-r"><strong><span class="color11">6,736,104</span>원</strong></td>
+								</tr>
+								<tr>
+									<td>2019.11.19</td>
+									<td>2019.11.19</td>
+									<td><strong>1.80%</strong></td>
+									<td class="txt-r"><strong>6,736,104원</strong></td>
+									<td class="txt-c">
+										<div class="medo">
+											<span class="input a won">
+												<input type="text" title="매도금액" placeholder="최대 10,000,000,000"><!-- [D] 2022-08-22 placeholder 수정 -->
+												<i class="w">원</i>
+											</span>
+											<button type="button" class="btn md medo">전액매도</button>
+										</div>
+									</td>
+									<!-- [D] 2022-06-07 마크업 수정 -->
+									<td class="txt-r"><strong><span class="color11">6,736,104</span>원</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			
+					<div class="pdmd-ttl">
+						<div class="box">
+							<div class="htit">매도금액</div>
+							<div class="hrlt">
+								<div class="dd b">
+									<span class="prc">
+										<strong class="p">6,736,104</strong><i class="w">원(100%)</i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pmodlist');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

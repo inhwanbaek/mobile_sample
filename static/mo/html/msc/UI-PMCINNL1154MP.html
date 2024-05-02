@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">출금은행 및 유의사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">출금은행 안내 </h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>SC제일은행, KB국민은행, 우리은행, 한국씨티은행, IBK기업은행, 농협중앙회, 농협조합, DGB대구은행, 신한은행, BNK부산은행, 하나은행, BNK경남은행, 우체국, 광주은행, 전북은행, Sh수협은행, KDB산업은행, 제주은행, 새마을금고중앙회, 케이뱅크 (총 20개)</li><!-- [D] 2022-06-22 텍스트수정 -->
+								<li>가상계좌는 즉시이체로 보험료 수납이 불가능한 계좌입니다.(증권사 연계계좌, CMA, MMF, MMDA 등)</li>
+								<li>은행 사정에 따라 이용시간에 제한이 있을 수 있습니다.</li>
+							</ul>
+							<p class="bullet b">평생계좌란?<br>
+								고객이 전화번호 등으로 임의 생성한 번호를 계좌번호로 이용하는 입금 전용 계좌입니다.(자동이체 및 즉시이체 불가)
+							</p>
+						</div>
+						<h2 class="hd-tit4">출금 시 유의사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>2007년 1월 1일 「전자금융거래법」 개정에 따라 출금 가능한 계좌를 제한하고 있습니다.</li>
+								<li>출금 가능한 계좌는 고객님이 고객PLAZA에서 등록하신 계좌 또는 디지털채널에서 본인인증을 통해 등록하신 계좌입니다.</li>
+								<li>출금 가능한 계좌가 없는 경우 본인인증을 통해  출금계좌를 등록하면 바로 이용할 수 있습니다.</li>
+								<li>출금계좌는 반드시 본인명의 계좌여야 합니다.</li>
+								<li>농협중앙회 또는 농협조합 계좌를 등록하려는 경우, 은행명을 정확하게 선택하시기 바랍니다. </li>
+								<li>유지보험료 납입 시 「전자금융거래법」 제15조(추심이체의 출금동의)에 따라 출금에 동의한 납입 건만 처리됩니다.</li>
+							</ul>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt"><!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-infodt');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

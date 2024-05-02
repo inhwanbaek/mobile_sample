@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">수익률 상세</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<div class="ut-tbltop mt0">
+							<div class="left">
+								<h3 class="hd-tit4">공시수익률</h3>
+								<div class="ut-tooltip ml0">
+									<!-- [D] 2022-06-03 클래스 'sm' 삭제 -->
+									<button type="button" class="ico help bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet a">
+												<li>공시수익률은 금융감독원에서 정한 수익률 계산방법으로 운용손익을 일별투자원금의 평균으로 나누어 계산한 수익률입니다.</li>
+												<li>공시수익률 = (운용손익 ÷ 일별평균투자원금) x 100</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="result-item">
+							<dl>
+								<dt>누적</dt>
+								<dd><!-- [D] 2022-06-15 숫자 span 태그 추가 --><span class="color11">10.11</span>%</dd>
+							</dl>
+							<dl>
+								<dt>연평균</dt>
+								<dd><!-- [D] 2022-06-15 숫자 span 태그 추가 --><span class="color11">3.66</span>%</dd>
+							</dl>
+							<dl>
+								<dt>최근 3개월</dt>
+								<dd><!-- [D] 2022-06-15 숫자 span 태그 추가 --><span class="color11">30.12</span>%</dd>
+							</dl>
+							<dl>
+								<dt>최근 1년</dt>
+								<dd><!-- [D] 2022-06-15 숫자 span 태그 추가 --><span class="color11">27.01</span>%</dd>
+							</dl>
+							<dl>
+								<dt>최근 3년</dt>
+								<dd><!-- [D] 2022-06-15 숫자 span 태그 추가 --><span class="color11">7.66</span>%</dd>
+							</dl>
+							<dl>
+								<dt>최근 5년</dt>
+								<dd>-</dd>
+							</dl>
+						</div>
+					
+						<!-- 테이블 상단 -->
+						<div class="ut-tbltop">
+							<div class="left">
+								<h3 class="hd-tit4">수익률 추이</h3>
+							</div>
+							<div class="right">
+								<span class="select a">
+									<label class="lb blind" for="sel_id0">전체</label>
+									<select id="sel_id0" name="sel_id0">
+										<option>최근 3개월</option>
+										<option>최근 1년</option>
+										<option>최근 3년</option>
+										<option>최근 5년</option>
+									</select>
+								</span>
+							</div>
+						</div>
+
+						<div class="gh-area">
+							그래프
+						</div>
+					</div>
+
+				</main>
+			</div>
+		
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

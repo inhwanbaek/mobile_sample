@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-impayinfo" id="pop-impayinfo"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">즉시지급정보 입력</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="head-topBox">
+						<p class="hd-tit3">청구하신 내용이 다음 2가지 요건에 해당하여 심사 없이 보험금이 바로 지급됩니다. 추가 내용을 입력해 주세요.</p>
+					</div>
+					<div class="text-group">	
+						<div class="text-box">											
+							<!-- 수정: 텍스트수정 2022-04-14-->				
+							<ul class="bullet num">
+								<li><span class="n">①</span> 실손통원진료비만 청구하는 경우</li>
+								<li><span class="n">②</span> 영수증 합산 금액이 10만원 이하이며 급여 항목만 있는 경우(단, 산부인과, 비뇨기과, 피부과 진료는 제외)</li>
+							</ul>
+							<ul class="bullet b mt20">
+								<li>즉시 지급을 원하지 않으시는 경우에는 보험금 청구 진행을 해주시기 바랍니다.</li>
+								<li>병명/사인코드를 입력하실 때는 병명으로 조회 후 해당 코드 선택이 가능합니다.</li>
+							</ul>
+							<!--// 수정: 텍스트수정 2022-04-14-->
+							<!-- 추가: 화면추가 2022-04-14-->	
+							<div class="ut-form a">
+								<ul class="form">																									
+									<li>
+										<span class="input a">			
+											<label class="lb" for="input-12">병명코드</label>								
+											<input type="text" placeholder="예) 120, 120.1" title="병명코드 입력 예) 120, 120.1" value="" id="input-12"><!-- [D] 2022-06-03 placeholder수정  -->
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>
+									<li>
+										<span class="input a">			
+											<label class="lb" for="input-13">사인코드</label>								
+											<input type="text" placeholder="예) 넘어짐, 자전거, 화상, 낙상" title="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상 " value="" id="input-13"><!-- [D] 2022-06-03 placeholder수정  -->
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>									
+								</ul>
+							</div>
+							<!--// 추가: 화면추가 2022-04-14-->		
+							<h2 class="hd-tit4">치료일(영수증 1)</h2>					
+							<div class="ut-form a">
+								<ul class="form">									
+									<li>
+										<span class="input a ut-date"><label class="lb" for="datepick_1">치료일</label><input type="tel" id="datepick_1" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+									</li>									
+									<!-- 추가/삭제 2022-04-14-->										
+									<li>
+										<span class="select a set w100p">
+											<label class="lb" for="select-4">진료과목</label>
+											<select name="select-6" id="select-4">
+												<option value="s-1" selected>진료과목을 선택해주세요.</option>
+												<option value="s-2">선택2</option>
+												<option value="s-3">선택3</option>
+												<option value="s-4">선택4</option>
+											</select>
+										</span>
+										<!-- <span class="input won txt a">
+										<label class="lb" for="input-10">진료과목</label>
+										<input type="text" title="진료과목 입력" placeholder="진료과목 입력" value="" id="input-10"><i class="w">과</i></span>										 -->
+									</li>
+									<!--// 추가/삭제 2022-04-14-->									
+									<li>
+										<span class="input won a">
+											<label class="lb" for="input-11">납부총액</label>
+											<input type="tel" pattern="\d*" title="숫자로 납부총액 입력" placeholder="숫자로 납부총액 입력" value="" id="input-11"><i class="w">원</i></span>
+										</li>
+									<!-- 삭제 2022-04-14-->									
+									<!-- <li>
+										<span class="input a">			
+											<label class="lb" for="input-12">병명코드</label>								
+											<input type="text" placeholder="병명코드 입력 예) 120, 120.1" title="병명코드 입력 예) 120, 120.1" value="" id="input-12">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>
+									<li>
+										<span class="input a">			
+											<label class="lb" for="input-13">사인코드</label>								
+											<input type="text" placeholder="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상" title="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상 " value="" id="input-13">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>-->
+									<!-- 삭제 2022-04-14-->
+								</ul>
+							</div>
+						
+							<h2 class="hd-tit4">치료일(영수증 2)</h2>					
+							<div class="ut-form a">
+								<ul class="form">									
+									<li>
+										<span class="input a ut-date"><label class="lb" for="datepick_2">치료일</label><input type="tel" id="datepick_2" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+									</li>									
+									<!-- 추가/삭제 2022-04-14-->										
+									<li>
+										<span class="select a set w100p">										
+											<label class="lb" for="select-5">진료과목</label>
+											<select name="select-6" id="select-5">
+												<option value="s-1" selected>진료과목을 선택해주세요.</option>
+												<option value="s-2">선택2</option>
+												<option value="s-3">선택3</option>
+												<option value="s-4">선택4</option>
+											</select>
+										</span>
+										<!-- <span class="input won txt a">
+										<label class="lb" for="input-10">진료과목</label>
+										<input type="text" title="진료과목 입력" placeholder="진료과목 입력" value="" id="input-10"><i class="w">과</i></span>										 -->
+									</li>
+									<!--// 추가/삭제 2022-04-14-->									
+									<li>
+										<span class="input won a">
+											<label class="lb" for="input-21">납부총액</label>
+											<input type="tel" pattern="\d*" title="숫자로 납부총액 입력" placeholder="숫자로 납부총액 입력" value="" id="input-21"><i class="w">원</i></span>
+									</li>
+									<!-- 삭제 2022-04-14-->									
+									<!-- <li>
+										<span class="input a">			
+											<label class="lb" for="input-22">병명코드</label>								
+											<input type="text" placeholder="병명코드 입력 예) 120, 120.1" title="병명코드 입력 예) 120, 120.1" value="" id="input-22">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>
+									<li>
+										<span class="input a">			
+											<label class="lb" for="input-23">사인코드</label>								
+											<input type="text" placeholder="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상" title="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상" value="" id="input-23">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li> -->
+									<!-- 삭제 2022-04-14-->
+								</ul>
+							</div>
+
+
+							<h2 class="hd-tit4">치료일(영수증 3)</h2>					
+							<div class="ut-form a">
+								<ul class="form">									
+									<li>
+										<span class="input a ut-date"><label class="lb" for="datepick_3">치료일</label><input type="tel" id="datepick_3" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01"></span>
+									</li>									
+									<!-- 추가/삭제 2022-04-14-->										
+									<li>
+										<span class="select a set w100p">
+											<label class="lb" for="select-6">진료과목</label>
+											<select name="select-6" id="select-6">
+												<option value="s-1" selected>진료과목을 선택해주세요.</option>
+												<option value="s-2">선택2</option>
+												<option value="s-3">선택3</option>
+												<option value="s-4">선택4</option>
+											</select>
+										</span>
+										<!-- <span class="input won txt a">
+										<label class="lb" for="input-10">진료과목</label>
+										<input type="text" title="진료과목 입력" placeholder="진료과목 입력" value="" id="input-10"><i class="w">과</i></span>										 -->
+									</li>
+									<!--// 추가/삭제 2022-04-14-->									
+									<li>
+										<span class="input won a">
+											<label class="lb" for="input-31">납부총액</label>
+											<input type="tel" pattern="\d*" title="숫자로 납부총액 입력" placeholder="숫자로 납부총액 입력" value="" id="input-31"><i class="w">원</i></span>
+									</li>
+									<!-- 삭제 2022-04-14-->									
+									<!-- <li>
+										<span class="input a">			
+											<label class="lb" for="input-32">병명코드</label>								
+											<input type="text" placeholder="병명코드 입력 예) 120, 120.1" title="병명코드 입력 예) 120, 120.1 병명코드 입력" value="" id="input-32">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li>
+									<li>
+										<span class="input a">			
+											<label class="lb" for="input-33">사인코드</label>								
+											<input type="text" placeholder="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상" title="사인코드 입력 예) 넘어짐, 자전거, 화상, 낙상" value="" id="input-33">
+											<span class="ibts"><button type="button" class="btn sm b">조회</button></span>
+										</span>										
+									</li> -->
+									<!-- 삭제 2022-04-14-->
+								</ul>
+							</div>
+
+
+
+						</div>	
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-impayinfo');">일반지급신청</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-impayinfo');">즉시지급신청</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-impayinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

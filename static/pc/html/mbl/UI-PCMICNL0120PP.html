@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-mbl-certicom" id="pop-mbl-certicom">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">카카오페이(토스,패스) 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<div class="mbl-gray-box">
+						<div class="tops b">
+							<div class="bt-ico kpay" aria-hidden="true"></div>
+							<div class="bt-ico toss" aria-hidden="true"></div>
+							<div class="bt-ico pass" aria-hidden="true"></div>
+							<div class="tit">카카오페이(토스,패스) 인증 이용에 동의하고 <br>고객님의 정보를 입력해 주세요.</div>
+						</div>
+
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a w100p">
+										<label class="lb" for="inp-1">이름</label>
+										<input type="text" placeholder="실명입력" id="inp-1">
+									</span>
+									<div class="vald-msg show no">이름을 정확하게 입력해 주세요.</div>
+									<div class="vald-msg show no">이름을 두 글자 이상 입력해 주세요.</div>
+								</li>
+								<li>
+									<!-- [D] 2022-02-24 생년월일 자릿수 변경 (개발팀 요청) -->
+									<span class="input a w100p ut-rsnum">
+										<label class="lb" for="inp-2">생년월일</label>
+										<input id="inp-2" type="number" class="fn" title="생년월일 6자리" placeholder="앞 6자리" value=""><!-- [웹접근성] 1st 수정 -->
+										<i class="ds">-</i>
+										<input type="number" value="" class="mn int" title="주민등록번호 뒤 1자리" placeholder="*"> <!-- [웹접근성] 1st 수정 --><!-- [D] 2022-08-02 placeholder 값 수정-->
+										<input type="password" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" placeholder="●●●●●●" readonly> <!-- [웹접근성] 1st 수정 -->
+									</span>
+									<!-- <span class="input a w100p">
+										<label class="lb" for="inp-2">생년월일</label>
+										<input type="number" placeholder="예) 210101" id="inp-2">
+									</span> -->
+									<!--// [D] 2022-02-24 생년월일 자릿수 변경 (개발팀 요청) -->
+									<div class="vald-msg show no">생년월일 6자리를 정확하게 입력해 주세요.</div>
+								</li>
+								<li>
+									<span class="input a w100p">
+										<label class="lb" for="inp-3">휴대폰번호</label>
+										<input type="number" placeholder="- 없이 숫자만 입력" id="inp-3">
+									</span>
+									<div class="vald-msg show no">휴대폰번호를 정확하게 입력해 주세요.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ut-terms a">
+							<div class="ckall">
+								<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+								<a href="javascript:;" class="plink" role="button">보기</a>
+							</div>
+							<div class="plbox">
+								<ul class="plist">
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보 수집 및 이용 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">개인(신용)정보의 제공 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">고유식별정보 처리 동의</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">전자금융거래 기본약관</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+									<li>
+										<label class="checkbox cd"><input type="checkbox"><span class="txt">전자금융서비스 이용약관</span></label>
+										<a href="javascript:;" class="plink" role="button">보기</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-mbl-certicom');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

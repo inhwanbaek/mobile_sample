@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-prschk" id="pop-prschk">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험금 실시간 진행상태조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">				
+					
+					<h2 class="hd-tit3">접수번호: 2112290000001</h2>
+					<div class="grap-box">						
+						<div class="grap"></div>
+						<p class="tit">현장심사가 완료되어 전문 심사자가 <br>해당 건을 <strong>심사 중</strong> 입니다.</p>												
+					</div>
+
+					<div class="prschk-state">
+						<p></p>
+						<div class="ut-steps c">
+							<ol class="cl">
+								<li class="comp">
+									<em class="sn">1</em><span class="blind">단계</span>
+									<i class="tt">청구서류제출</i>
+								</li>
+								<li class="comp">
+									<em class="sn">2</em><span class="blind">단계</span>
+									<i class="tt">서류확인</i>
+								</li>
+								<li class="active">
+									<em class="sn">3</em><span class="blind">단계</span>
+									<i class="tt">심사진행</i>
+									<p class="dd">예상 소요시간 (0일 0시간)</p>
+								</li>
+
+								<li>
+									<em class="sn">4</em><span class="blind">처리중</span>
+									<i class="tt">처리종결</i>
+								</li>
+							</ol>
+						</div>
+					</div>
+								
+					<div class="prschk-data">
+						<span class="select a">
+							<label class="lb blind" for="sel_id0">보험증권번호 선택</label>
+							<select id="sel_id0" name="sel_id0" title="보험증권번호 선택">
+								<option>보험증권번호 : 21406****459</option>
+							</select>						
+						</span>
+						<h2 class="hd-tit4">무배당교보실손의료비보험(갱신형) [선택형, 90%보장]</h2>
+						<div class="ut-tbl a">
+							<table class="tblist nl" cellspacing="0" cellpadding="0" >
+								<caption><span class="tit">무배당교보실손의료비보험(갱신형) [선택형, 90%보장]</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">처리일시</th>
+										<th scope="col">진행상태</th>
+										<th scope="col">담당자</th> 
+									</tr>
+								</thead>
+								<tbody>								
+									<tr>
+										<td>2022.01.02 09:52</td>
+										<td>간단접수완료</td>
+										<td>김텔러</td>
+									</tr>
+									<tr>
+										<td>2022.01.02 09:52</td>
+										<td>상세접수완료</td>
+										<td>김텔러</td>
+									</tr>
+									<tr>
+										<td>2022.01.02 09:52</td>
+										<td>조사의뢰중</td>
+										<td>김텔러</td>
+									</tr>
+									<tr>
+										<td>2022.01.02 09:52</td>
+										<td>조사완료</td>
+										<td>김텔러</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="ui.popup.close('pop-prschk');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-prschk');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

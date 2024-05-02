@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<!-- 헤더-->
+		<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+		<!-- LNB 영역 -->
+		<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+		<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+		<main class="container page prd calc detail mort" id="container">
+
+			<!-- 본문 영역 -->
+			<div class="contents" id="contents">
+
+				<div class="page-hdt has-bts">
+					<h2 class="stit hd-tit2">보험계약대출</h2>
+					<div class="bts">
+						<div class="ut-tooltip fnsize">
+							<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+								</div>
+							</div>
+						</div><!--// fnsize -->
+						<button type="button" class="btn-url-copy"><em class="blind">현재 페이지 공유</em></button>
+						<button type="button" class="btn-bookmark"><em class="blind">현재 페이지 북마크</em></button>
+					</div>
+				</div>
+
+				<section class="sect cont">
+
+					<div class="top-sect">
+						<h2 class="hd-tit5">긴급한 목돈이나
+							생활자금이 필요하신가요?</h2>
+						<div class="ut-slide-play">
+							<div class="swiper-container swiper" data-slide-id="banner_2">
+								<div class="control">
+									<div class="dots"></div>
+									<div class="plys"><button type="button" class="bt play">정지</button></div>
+								</div>
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide">
+										<div class="tit">
+											<div class="t1">교보생명 보험고객이라면 가능!</div>
+											<div class="t2">보험만 있으면 신용 상관없이 대출이 가능해요.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="tit">
+											<div class="t1">저렴한 금리 제공</div>
+											<div class="t2">현금서비스, 신용대출, 카드론보다 저렴한 금리로 대출을 해드려요.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="tit">
+											<div class="t1">구비서류가 필요없는 신속한 대출</div>
+											<div class="t2">구비서류가 필요없어 신청부터 지급까지 신속하게 이루어집니다.</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					
+					</div>
+
+					<div class="box-area">
+						<dl class="st">
+							<dt>대출한도</dt>
+							<dd>
+								<em>해지환급금의</em> 50%~95%
+							</dd>
+						</dl>
+						<dl class="nm">
+							<dt>대출금리</dt>
+							<dd>
+								<p>
+									연 3.11%~10.5%
+									<!-- <span class="date">(2021.06.28 기준)</span> -->
+								</p>
+							</dd>
+							<dd class="desc-info">당사 보험 고객 중 가입하신 보험 계약의 해지환급금 범위 내에서의 대출해드립니다.</dd>
+						</dl>
+					</div>
+
+					<div class="cont-sect">
+						<h3 class="hd-tit3">대출신청절차</h3>
+						<div class="proc">
+							<ol class="lst hrz">
+								<li>
+									<div class="item">
+										<div class="tit"><i>01.</i> 본인확인 및<br> 약관동의
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="tit"><i>02.</i> 대출 가능금액<br> 확인</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="tit"><i>03.</i> 대출 신청정보<br> 입력</div>
+									</div>
+								</li>
+								<li>
+									<div class="item">
+										<div class="tit"><i>04.</i> 대출금 지급</div>
+									</div>
+								</li>
+							</ol>
+						</div>
+
+						<div class="ut-tabs c lg">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1"
+										href="javascript:;">상품안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">대출
+										시 유의사항</a></li>
+							</ul>
+						</div>
+						<!-- tab1 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+
+							<ul class="txt-lst">
+								<li>
+									<h3 class="hd-tit3">대출대상</h3>
+									<p class="txt-p">교보생명 보험계약자</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">대출한도</h3>
+									<p class="txt-p">해지환급금(주계약 해지환급금)의 50% ~ 95%까지 (보험상품에 따라 변동)</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">대출금리</h3>
+									<p class="txt-p">최저 연 3.11% ~ 최고 연 10.5% (2020.08.31일 기준)</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">중도상환수수료
+										<div class="ut-tooltip">
+											<button type="button" class="ico help sm bt-tooltip">도움말</button>
+											<div class="toolctn">
+												<div class="tptit">중도상환수수료 부과방식</div>
+												<div class="tpmsg">
+													<p>※ 아파트담보대출 중도상환수수료 부과기간은 대출일로부터 3년입니다. 그 이후 중도상환 시 면제됩니다.</p>
+													<p class="tt">기본부과형</p>
+													<p>3년 이내 상환 시 상환원금의 1.2%</p>
+													<p class="tt">일부면제형</p>
+													<p>대출일로부터 대출원금의 50% 이내 상환 시 중도상환수수료 면제(단, 나머지 50% 3년 이내 상환 시 상환원금의
+														1.2%)</p>
+													<p>※ 중도상환수수료 = 중도상환금액 ⅹ 중도상환수수료율 ⅹ (중도상환수수료부과기준 잔여일 ÷ 중도상환수수료 부과기간)
+													</p>
+												</div>
+											</div>
+										</div>
+									</h3>
+									<p class="txt-p">없음</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">대출기간</h3>
+									<p class="txt-p">보험계약의 만기일까지(연금보험은 연금개시 전까지)</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">상환방법</h3>
+									<p class="txt-p">보험기간내 자유롭게 상환가능</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">필요서류</h3>
+									<p class="txt-p">없음</p>
+								</li>
+								<li>
+									<h3 class="hd-tit3">신청방법</h3>
+									<p class="txt-p">고객PLAZA방문, MY교보, 콜센터전화, ARS, 모바일, 융자센터방문</p>
+								</li>
+							</ul>
+
+							<ul class="ut-accd b" data-accd="tog" data-accd-id="accd_123">
+								<li class="open">
+									<div class="hbox">보험료 자동대출납입제도<button type="button" class="btn-tog">버튼</button>
+									</div>
+									<div class="cbox">
+										<ul class="bullet a">
+											<li>
+												계약자의 사정으로 보험료 납입최고(催告)일까지 보험료가 납입되지 않았을 경우 보험계약대출 가능금액 범위 내에서 1회분 보험료를
+												자동으로 대출하여 보험료를 납입함으로써 보험의 효력이 상실되는 것을 방지하는 제도입니다.
+												<div class="accd-btn">
+													<a href="javascript:;" role="button" class="btn sm wm ico-arrow">보험료 자동대출신청
+														바로가기</a>
+												</div>
+											</li>
+										</ul>
+
+									</div>
+								</li>
+								<li class="open">
+									<div class="hbox">예약송금제도<button type="button" class="btn-tog">버튼</button></div>
+									<div class="cbox">
+										<ul class="bullet a">
+											<li>
+												계약자가 고객PLAZA를 내방하거나 대출신청을 통하여 보험계약대출금에 대한 지급일자를 예약하고 예약된 지급일자에 대출금을
+												은행계좌로 수령하는 서비스제도입니다.
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="open">
+									<div class="hbox">변액상품 보험계약대출 안내<button type="button" class="btn-tog">버튼</button>
+									</div>
+									<div class="cbox">
+										<p class="cb-hd bold">다음의 변액상품은 신청일 +2영업일 후 송금 처리되며, 월1회까지 대출 가능합니다.
+										</p>
+										<ul class="bullet a">
+											<li>2007.6.4까지 판매된 변액보험(단, (무)교보아이미래변액보험(연금플랜)은 제외)</li>
+											<li>방카슈랑스 변액보험(은행에서 판매된 변액보험) 중 다음의 상품 (무)교보변액연금보험, (무)교보First변액연금보험,
+												(무)교보First변액연금보험Ⅱ,
+												(무)교보변액유니버셜보험,(무)교보First변액유니버셜보험</li>
+											<li>이 외 모든상품은 신청 즉시 통장으로 송금 처리됩니다. 기타 자세한 사항은 보험계약대출 약정서를 참고하시기 바랍니다</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+						<!-- tab2 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<ul class="bullet a note">
+								<li>2021년 4월 8일 기준(상기 내용은 사전 통보 없이 변경될 수 있습니다.)</li>
+								<li>당사의 여신규정 및 관련 법규, 고객님의 신용도 등에 따라 대출이 제한될 수 있으며, 고객님의 신용점수 하락시 금융거래와 관련된 불이익이 발생할 수
+									있습니다.</li>
+								<li>고객님은 교보생명으로부터 충분한 설명을 받을 권리가 있으며, 그 설명을 이해한 후 거래하셔야합니다.</li>
+								<li>금융상품에 관한 계약체결전 상품설명서 및 여신거래기본약관을 반드시 읽어보시기를 권유드립니다.</li>
+								<li>상환능력에 비해 과도한 대출은 고객님의 신용점수 하락으로 금융거래와 관련된 불이익이 발생할 수 있으며, 납부하여야할 원리금이 연체될 경우 계약만료
+									기한이 도래하기 전에 모든 원리금을 변제해야할 의무가 발생할 수도 있습니다.</li>
+								<li>대출금액이 5천만원을 초과하면 대출금액별로 수입인지비용이 차등 부과됩니다.</li>
+							</ul>
+						</div>
+
+						<ul class="bullet b">
+							<li>준법감시인확인필 2-2201-7 소매여신마케팅팀(2022.01.19)</li>
+						</ul>
+					</div>
+
+
+				</section>
+
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set ">
+							<button type="button" class="btn lg rd b">상담신청</button>
+							<button type="button" class="btn lg rd a">한도 알아보기</button><!--[D] 2022-06-28 문구 수정 -->
+						</div>
+					</div>
+				</nav>
+
+			</div>
+
+		</main>
+
+		<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+		<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+		<!-- 푸터 -->
+		<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+	</div>
+</body>
+
+</html>

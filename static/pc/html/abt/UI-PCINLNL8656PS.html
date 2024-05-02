@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<style>
+			
+	
+	</style>
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-abt" id="pop-abt">
+		<div class="pbd">
+			<div class="phd no-print-page">
+				<div class="in">
+					<h1 class="ptit blind">참가확인서</h1>
+				</div>
+			</div>
+			<div class="pct watermarked page-divide"><!-- [D] 2022-06-27 워터마크 수정 -->
+				<!-- [D] 2022-08-26 워터마크 수정 -->
+				<div class="watermarked-box">
+					<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<pattern id="Pattern" x="0" y="0" width=".25" height=".15">
+								<text x="0" y="70" width="150" height="50" fill="black" opacity="0.3" style='transform: rotate(-18deg); font-size:15px;'>교보생명 공모전</text>
+							</pattern>
+						</defs>
+					
+						<rect fill="url(#Pattern)" width="100%" height="100%"/>
+					</svg>
+				</div> 
+				<!-- [D] 2022-08-26 워터마크 수정 -->
+				<main class="poptents">
+					<div class="pop-cnfpt">
+						<p class="doc-num">문서번호 k200206160010025430</p>					
+						<dl class="cnfpt-box">
+							<dt>광화문글판 2022년 여름편<br>참가 확인서</dt>
+							<dd class="info">
+								<p><span class="tit">이름</span>김교보</p>
+								<p><span class="tit">제출일</span>2022. 05. 05 12:30</p>
+							</dd>
+							<dd class="txt">
+								<p>위 학생이 광화문글판 2022년 여름편에<br><strong>참가하였음을 확인</strong>합니다.</p>
+								<!-- <p class="date">2022. 05. 05</p> -->
+							</dd>
+							<dd class="sign">
+								<p>교보생명보험주식회사<br>
+								<strong>대표이사 사장 윤열현</strong><br>
+								(직인 생략)</p>
+							</dd>
+						</dl>
+						<ul class="bullet b">
+							<li>본 확인서는 공모전 참가를 확인한 교보생명의 공식 문서로 위/변조 시 효력이 상실됩니다.</li>
+							<li>기타 문의는 카카오톡 ‘@광화문글판’으로 문의하시면 답변드리겠습니다.</li>
+						</ul>
+						
+					</div>
+				</main>
+			</div>
+			<div class="pbt no-print-page">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="window.print();">인쇄</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+
+		ui.popup.open('pop-abt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

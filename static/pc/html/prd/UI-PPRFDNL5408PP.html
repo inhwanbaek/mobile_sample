@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-confirm pop-futr" id="pop-trust">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">차명거래금지 안내</h1>
+					</div>
+				</div>
+				<div class="pct auto">
+					<main class="poptents pb0">
+						<div class="confirm-box">
+							<p class="text-type1">「금융실명거래 및 비밀보장에 관한 법률」 제3조 제3항에 따라 누구든지 불법재산의 은닉, 자금세탁행위, 공중협박자금조달행위 및 강제집행의 면탈, 그 외 탈법행위를 목적으로 타인의 실명으로 금융거래를 해서는 안 되며, 이를 위반할 경우 5년 이하의 징역 또는 5천만원 이하의 벌금에 처해질 수 있습니다.</p>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<!-- 하단 고정영역 -->
+					<nav class="floatbots b">
+						<div class="inr">
+							<div class="box-set boxbot">
+								<div class="hd-tit4">본인은 위 안내 내용에 대해 충분히 이해하였음을 확인합니다.</div>
+								<div class="radio-wrap">
+									<label class="radio"><input type="radio" name="radio1" id="kkk1"><span class="txt">예</span></label>
+									<label class="radio"><input type="radio" name="radio1" id="kkk2" checked><span class="txt">아니오</span></label>
+								</div>
+							</div>
+							<div class="btn-set">
+								<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-confirm');">동의 안함</button>
+								<button type="button" class="btn lg rd a">동의</button>
+							</div>
+						</div>
+					</nav>
+					<!-- //하단 고정영역 -->
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+
+		<!-- [D] 2022-04-19 alert 추가 -->
+		<script>
+			ui.popup.open('pop-trust');
+
+			/* 아니오 선택 or 미선택 후, [2]클릭 시 노출되는 팝업 */
+			var alert = function(){
+				// 알럿창 띄우기
+				ui.alert("「금융실명거래 및 비밀보장에 관한 법률」에 따라 차명거래금지 안내를 읽고 ‘확인’에 체크하셔야 투자성 상품에 가입하실 수 있습니다.",{
+					ycb:function(){
+						//console.log("알럿1확인결과");
+					},
+					ybt:"확인"
+				});
+			}
+		</script>
+	</div>
+</body>
+</html>

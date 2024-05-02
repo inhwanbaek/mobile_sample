@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"스마트위임 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default billing smt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- <div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 수임자 선택_배당금 신청</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">2</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<h2 class="hd-tit3"><i class="line">수임자(위임받는 사람)</i>를<br> 선택해 주세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+			<h3 class="hd-tit4">수령액 확인</h3><!-- [D] 2022-03-25 텍스트변경 -->	
+			<div class="ut-dtds f dtds">
+				<ul class="dlist between">
+					<li class="total">
+						<div class="dt">총 신청건수</div>
+						<div class="dd point">20건</div>
+					</li>
+					<li>
+						<div class="dt">인출신청금액 합계</div>
+						<div class="dd point">1,000,000원</div>
+					</li>
+					<li>
+						<div class="dt">실수령액 합계</div>
+						<div class="dd point">1,000,000원</div>
+					</li>
+				</ul>
+				<div class="btn-set btnbot">
+					<a href="javascript:;" class="btn md">건별 상세내역</a>
+				</div>
+			</div>
+
+			<h3 class="hd-tit4">수임자 선택</h3>
+			<span data-ui-balloon="right,top" aria-describedby="ball_1">수익자(위임하는 사람)의 <br>배우자 및 직계존비속(부모, 자녀 등 1촌 관계)만 <br>수임자(위임받는 사람)가 될 수 있어요.</span>
+			<span class="select a" id="ball_1">
+				<select name="select-3" title="계좌정보선택">
+					<option selected>예금주 : 남약단, 계좌 : (국민은행)927621123123123123</option>
+					<option>선택2</option>
+					<option>선택3</option>
+				</select>
+			</span>
+
+			<h3 class="hd-tit4">선택한 수임자 정보</h3>
+			<div class="ut-dtds white">
+				<ul class="dlist">
+					<li>
+						<div class="dt">성명</div>
+						<div class="dd">김교보</div>
+					</li>
+					<li>
+						<div class="dt">주민등록번호</div>
+						<div class="dd">720121-1******</div>
+					</li>
+					<li>
+						<div class="dt">수익자와의 관계</div>
+						<div class="dd">배우자</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+
+					<!-- [D] 2022-02-21 태그변경 -->
+					<ul class="bullet a glst">
+						<!-- [D] 2022-03-25 삭제 -->
+						<!-- <li>2021년 11월 29일 현재 신청하신 인출금액은 총지급액 50,000원이며, 총공제액 0원을 제외한 총 50,000원을 수령하실 수 있습니다.</li>
+						<li>실수령액 = 인출신청금액 - 최소상환금 - 수수료</li>
+						<li>인출금을 수령한 후에는 취소할 수 없습니다. 인출 관련 사항을 정확하게 확인하신 후 신청하시기 바랍니다.</li> -->
+						<!-- <li>인출금 수령 시 인출 수수료가 차감됩니다.</li> -->
+						<li>
+							[위임하는 사람의 확인 사항]
+							<ul class="bullet c glst">
+								<li>스마트 위임을 통해 업무를 위임하는 사람은 수임자에게 위의 신청 업무를 처리함에 있어 일체의 권한(청구 및 수령권 일체 등)을 위임하는 것입니다. </li>
+							</ul>
+							<ul class="bullet b">
+								<li>일체의 권한에는 타인을 위한 보험 해약 시 보험증권재발행, 보험계약대출 실행 시 보험계약대출 자동이체 등록 등이 포함됩니다. </li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- <p class="tt">[위임하는 사람의 확인 사항] </p>
+					<p>스마트 위임을 통해 업무를 위임하는 사람은 수임자에게 위의 신청 업무를 처리함에 있어 일체의 권한(청구 및 수령권 일체 등)을 위임하는 것입니다. </p>
+					<p class="bullet b">일체의 권한에는 타인을 위한 보험 해약 시 보험증권재발행, 보험계약대출 실행 시 보험계약대출 자동이체 등록 등이 포함됩니다. </p> -->
+
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+
+
+		</div><!-- contents -->
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

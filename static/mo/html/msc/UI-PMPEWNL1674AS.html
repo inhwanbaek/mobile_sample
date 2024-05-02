@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"증명서신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc mdw" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-box">
+				<h2 class="hd-tit3">신청하실 증명서를 선택해 주세요.</h2>
+			</div>
+
+			<div class="schs-rd">
+				<span class="input a xdel">
+					<label for="schs-input" class="lb blind">증명서 검색</label>
+					<input type="text" placeholder="검색어 입력" id="schs-input">
+					<span class="ibts"><button type="button" class="bt-sch"><i class="blind">검색</i></button></span>
+				</span>
+			</div>
+
+			<ul class="certi-lst">
+				<li>
+					<a href="javascript:;" class="lnk">주민등록표등본</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">주민등록표초본</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">국민연금지급내역증명서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">국민연금가입자가입증명</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">건강보험자격득실확인서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">소득금액증명</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">납세증명서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">지방세세목별과세증명서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">지방세납세증명(신청)서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">토지(임야)대장등본교부</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">사업자등록증명</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">건축물대장</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">출입국사실증명</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">연금보험료등소득·세액공제확인서</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">폐업사실증명</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">교통사고사실확인원</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="lnk">외국인등록사실증명</a>
+				</li>
+			</ul>
+			<!-- 검색결과 없는 경우 -->
+			<div class="list-empty bd">
+				<p>
+					검색 결과가 없습니다.
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

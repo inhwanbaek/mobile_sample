@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"DC 가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- [s] 22-05-18 전체수정 -->
+	<main class="container page prd retire irp join-page" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="share-top">
+				<button type="button" class="bt-share"><i class="blind">공유하기</i></button>
+			
+				<h2 class="hd-tit2"><i class="line">여유로운 노후를 위해 !</i><br>DC(확정기여형 퇴직연금)</h2>
+				<p class="c-txt16">간편하게 가입해 보세요!</p>
+				
+				<h3 class="hd-tit3 mt40">잠깐! 미리 준비해 주세요.</h3>
+
+				<ul class="ico-list mb0">
+					<li class="ico4"><strong>본인 명의 휴대폰</strong>신용카드 또는 인증서로도 본인인증 가능</li>
+					<li class="ico5"><strong>인증서</strong>금융인증서, 패스 인증서, 카카오페이 인증서, 토스 인증서 중 1가지</li>
+				</ul>
+							
+				<ul class="bullet b lg mt16">
+					<li>고객님이 재직 중인 회사에서 가입자(근로자) 명부에 등록되어 있어야만 가입이 가능합니다.</li>
+				</ul>
+
+				<div class="ut-gudbox b open mt40" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>고객님의 회사에서 가입자(근로자)
+								명부가 등록되지 않으면 해당 가입 신청건은 처리되지 않습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">진행 상태 확인</button>
+					<button type="button" class="btn rd lg a">DC가입하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<!-- // [e] 22-05-18 전체수정 -->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

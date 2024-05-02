@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-mdw pop-adrrsch p2" id="pop-adrrsch-2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">주소찾기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="tophd" style="display: none;"><h2 class="tit">도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</h2></div>
+					<section class="forms f2">
+						<span class="input a kwd">
+							<label class="lb" for="input_kwd">주소</label>
+							<input id="input_kwd" type="search" placeholder="건물명, 지번 또는 도로명 검색" value="우성">
+							<span class="ibts"><button type="button" class="btn sm b sch">검색</button></span>
+						</span>
+						<div class="msg" style="display: none;">
+							<i class="t">예)</i>
+							<p class="e">도로명: 신정로 11</p>
+							<p class="e">건물명: 국립중앙박물관</p>
+							<p class="e">지번: 신정동 1276</p>
+						</div>
+					</section>
+					<section class="result">
+						<ul class="list">
+							<li>
+								<button type="button" class="adr dr"><em class="i">[도로]</em>01063 서울 강북구 삼양로 159길 40(우성빌라)</button>
+								<button type="button" class="adr gb"><em class="i">[지번]</em>서울 강북구 우리동 47 우성빌라</button>
+							</li>
+							<li>
+								<button type="button" class="adr dr"><em class="i">[도로]</em>01063 서울 강북구 삼양로 159길 40(우성빌라)</button>
+								<button type="button" class="adr gb"><em class="i">[지번]</em>서울 강북구 우리동 47 우성빌라</button>
+							</li>
+							<li>
+								<button type="button" class="adr dr"><em class="i">[도로]</em>01063 서울 강북구 삼양로 159길 40(우성빌라)</button>
+								<button type="button" class="adr gb"><em class="i">[지번]</em>서울 강북구 우리동 47 우성빌라</button>
+							</li>
+						</ul>
+					</section>
+					<section class="ut-form a adrs">
+						<div class="hdt"><div class="tit">선택주소</div></div>
+						<ul class="form">
+							<li>
+								<span class="input a"><label class="lb" for="input_a1">주소</label><input id="input_a1" type="text" value="서울 강북구 삼양로 159길 40(우성빌라)" readonly></span>
+							</li>
+						</ul>
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-adrrsch-2');
+	</script>
+
+</div>
+</body>
+</html>

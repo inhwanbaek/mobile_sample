@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">가입상세안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure">
+						<!-- 탭 -->
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">가입안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보장내용</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">보험료 예시</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">해지환급금예시</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 가입안내 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<h2 class="hd-tit3">가입안내사항</h2>
+							<div class="ut-tbl a">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">보험종류</th>
+											<td>저해지환급금형(50%해지지급형)(기본형플러스/기본형)<br>일반형(기본형플러스/기본형)</td>
+										</tr>
+										<tr>
+											<th scope="row">보험기간</th>
+											<td>종신</td>
+										</tr>
+										<tr>
+											<th scope="row">납입기간</th>
+											<td>5년·7년·10년·12년·15년·20년·25년·30년납</td>
+										</tr>
+										<tr>
+											<th scope="row">납입주기</th>
+											<td>월납</td>
+										</tr>
+										<tr>
+											<th scope="row">가입나이</th>
+											<td>30세~최대 남자 69세, 여자 74세</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>가입나이는 보험종류, 보험기간, 납입기간에 따라 달라질 수 있습니다.</li>
+							</ul>
+						</div>
+						<!-- // 가입안내 -->
+
+						<!-- 보장내용 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<h2 class="hd-tit3">주계약</h2>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:40%">
+										<col style="width:40%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">일반형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>사망<br>보험금</td>
+											<td>보험기간 중<br>사망하였을 경우</td>
+											<td>기본보험금액<br>+ 가산적립금<br>+ 추가적립금</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<!-- [D] 2022-01-20 문구변경 -->
+							<ul class="bullet b lg">
+								<li>(일반)사망보험금은 '고의적 사고 및 2년 이내의 자살’의 경우에는 지급을 제한합니다.</li>
+								<li>위 보험상품 관련 내용은 요약된 자료이므로 단순 안내자료로 참고하시기 바라며, 보다 자세한 사항은 약관 및 상품설명서를 참조하시기 바랍니다.</li>
+							</ul>
+
+						</div>
+						<!-- // 보장내용 -->
+
+						<!-- 보험료 예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+							<h2 class="hd-tit3">주계약 보험료 예시</h2>
+							<p class="c-txt">기준: 주계약 보험가입금액 1억원, 20년납, 월납</p>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">남자</h3>
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="2">저해지환급금형<br>(50%해지지급형)</th>
+											<th scope="col" colspan="2">일반형</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">기본형<br>플러스</th>
+											<th scope="col">기본형</th>
+											<th scope="col">기본형<br>플러스</th>
+											<th scope="col">기본형</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>30세</td>
+											<td>248,000</td>
+											<td>213,000</td>
+											<td>275,000</td>
+											<td>239,000</td>
+										</tr>
+										<tr>
+											<td>40세</td>
+											<td>296,000</td>
+											<td>259,000</td>
+											<td>328,000</td>
+											<td>290,000</td>
+										</tr>
+										<tr>
+											<td>50세</td>
+											<td>363,000</td>
+											<td>325,000</td>
+											<td>399,000</td>
+											<td>361,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">여자</h3>
+								<span>(단위:원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:22%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">구분</th>
+											<th scope="col" colspan="2">저해지환급금형<br>(50%해지지급형)</th>
+											<th scope="col" colspan="2">일반형</th>
+										</tr>
+										<tr>
+											<th scope="col" class="bl">기본형<br>플러스</th>
+											<th scope="col">기본형</th>
+											<th scope="col">기본형<br>플러스</th>
+											<th scope="col">기본형</th>
+										</tr>
+									</thead>
+									<tbody class="noline">
+										<tr>
+											<td>30세</td>
+											<td>227,000</td>
+											<td>194,000</td>
+											<td>252,000</td>
+											<td>216,000</td>
+										</tr>
+										<tr>
+											<td>40세</td>
+											<td>269,000</td>
+											<td>233,000</td>
+											<td>299,000</td>
+											<td>262,000</td>
+										</tr>
+										<tr>
+											<td>50세</td>
+											<td>322,000</td>
+											<td>285,000</td>
+											<td>357,000</td>
+											<td>319,000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+						<!-- // 보험료 예시 -->
+
+						<!-- 해지환급금예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+							<h2 class="hd-tit3">주계약 해지환급금 예시</h2>
+							<h3 class="hd-tit4">저해지환급금형/기본형플러스</h3>
+							<div class="ut-tbl a">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">최저사망보험금 보증비용</th>
+											<td>매년 기본적립금의 0.35%</td>
+										</tr>
+										<tr>
+											<th scope="row">최저해지환급금 보증비용</th>
+											<td>납입기간 중 매년 기본보험료의 6.0%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>저해지환급금형(50%해지지급금형) 기본형플러스(계약해당일 기준) 생활자금 자동전환일에 사망보험금 생활자금을 전환하지 않은 경우</li>
+								<li>기준: 주계약 보험가입금액 1억원, 남자 40세, 20년납, 월납, 기본보험료 296,000원, 세전 </li>
+							</ul>
+
+							<div class="ut-tabs b">
+								<ul class="menu">
+									<li class="active"><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_1" href="javascript:;">공시이율 가정(2.2%)</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_2" href="javascript:;">평균공시이율과 공시이율 중 낮은 이율 가정(2.2%)</a></li>
+									<li><a class="bt" data-ui-tab-btn="tab_b" aria-controls="tab_b_3" href="javascript:;">최저해지환급금</a></li>
+								</ul>
+							</div>
+
+							<!-- 공시이율 가정(2.2%) -->
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_1" class="active">
+								<div class="tbl-tit">
+									<h3 class="hd-tit4">공시이율 가정(2.2%)</h3>
+									<span>(단위:만원)</span>
+								</div>
+								<div class="ut-tbl a ver-md">
+									<table class="tblist nl" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+										<colgroup>
+											<col>
+											<col style="width:25%">
+											<col style="width:25%">
+											<col style="width:25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">경과 기간</th>
+												<th scope="col">총납입 보험료</th>
+												<th scope="col">해지 환급금</th>
+												<th scope="col">환급률</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1년</td>
+												<td>355</td>
+												<td>-</td>
+												<td>0.0%</td>
+											</tr>
+											<tr>
+												<td>2년</td>
+												<td>710</td>
+												<td>152</td>
+												<td>21.5%</td>
+											</tr>
+											<tr>
+												<td>3년</td>
+												<td>1,065</td>
+												<td>325</td>
+												<td>30.5%</td>
+											</tr>
+											<tr>
+												<td>5년</td>
+												<td>1,776</td>
+												<td>679</td>
+												<td>38.3%</td>
+											</tr>
+											<tr>
+												<td>10년</td>
+												<td>3,552</td>
+												<td>1,551</td>
+												<td>43.7%</td>
+											</tr>
+											<tr>
+												<td>19년</td>
+												<td>6,748</td>
+												<td>3,266</td>
+												<td>48.4%</td>
+											</tr>
+											<tr>
+												<td>20년</td>
+												<td>7,104</td>
+												<td>7,578</td>
+												<td>106.7%</td>
+											</tr>
+											<tr>
+												<td>30년</td>
+												<td>7,104</td>
+												<td>8,917</td>
+												<td>125.5%</td>
+											</tr>
+											<tr>
+												<td>40년</td>
+												<td>7,104</td>
+												<td>10,650</td>
+												<td>149.9%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="bullet b lg">
+									<li>위의 예시 금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+									<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 비용 및 계약관리비용(해지공제금액 포함), 보험금 보장에 필요한 최저사망보험금 보증비용 및 해지환급금 보장에 필요한 최저해지환급금 보증비용 (단, 최저해지환급금을 보증하지 않는 경우는 최저해지환급금 보증비용 제외) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+									<li>위의 예시 금액은 장기납입보너스, 장기유지보너스 및 납입완료보너스를 포함한 주계약의 해지환급금을 최저보증이율, 평균공시이율과 공시이율 중 낮은 이율, 2021년 7월 현재 보장성 상품에 적용하는 공시이율을 기준으로 계산한 금액이며, 기본형 플러스 계약의 경우 「공시이율을 적용한 금액」과 「예정기본적립금 산출이율(2.0%)을 적용한 금액」 중 큰 금액을 해지환급금으로 지급합니다. 다만, 저해지환급금형 기본형 플러스 계약의 저해지기간 중 해지환급금은 「일반형 계약의 예정기본해지환급금 × 해지지급률(50%)」에 가산적립금, 추가적립금, 장기납입보너스적립금을 더한 금액으로 합니다.</li>
+									<li>위의 예시 금액은 보험기간 중 예시 이율이 변동하지 않는다는 가정 아래 산출된 금액입니다.</li>
+									<li>공시이율은 매월 1일 회사가 정한 이율로 매월 1일부터 당월의 마지막 날까지 1개월간 확정 적용하며, 공시이율이 변동하는 경우에는 해지환급금도 변동됩니다. 공시이율의 최저보증이율은 연복리 0.75%입니다.</li>
+									<li>평균공시이율은 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월간 보험회사 평균공시이율을 말하며, 이 계약 체결 시점의 평균공시이율은 2.25%입니다.</li>
+								</ul>
+							</div>
+							<!-- //공시이율 가정(2.2%) -->
+
+							<!-- 평균공시이율과 공시이율 중 낮은 이율 가정(2.2%) -->
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_2">
+								<div class="tbl-tit">
+									<h3 class="hd-tit4">평균공시이율과 공시이율 중<br>낮은 이율 가정(2.2%)</h3>
+									<span>(단위:만원)</span>
+								</div>
+								<div class="ut-tbl a ver-md">
+									<table class="tblist nl" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+										<colgroup>
+											<col>
+											<col style="width:25%">
+											<col style="width:25%">
+											<col style="width:25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">경과 기간</th>
+												<th scope="col">총납입 보험료</th>
+												<th scope="col">해지 환급금</th>
+												<th scope="col">환급률</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1년</td>
+												<td>355</td>
+												<td>-</td>
+												<td>0.0%</td>
+											</tr>
+											<tr>
+												<td>2년</td>
+												<td>710</td>
+												<td>152</td>
+												<td>21.5%</td>
+											</tr>
+											<tr>
+												<td>3년</td>
+												<td>1,065</td>
+												<td>325</td>
+												<td>30.5%</td>
+											</tr>
+											<tr>
+												<td>5년</td>
+												<td>1,776</td>
+												<td>679</td>
+												<td>38.3%</td>
+											</tr>
+											<tr>
+												<td>10년</td>
+												<td>3,552</td>
+												<td>1,551</td>
+												<td>43.7%</td>
+											</tr>
+											<tr>
+												<td>19년</td>
+												<td>6,748</td>
+												<td>3,266</td>
+												<td>48.4%</td>
+											</tr>
+											<tr>
+												<td>20년</td>
+												<td>7,104</td>
+												<td>7,578</td>
+												<td>106.7%</td>
+											</tr>
+											<tr>
+												<td>30년</td>
+												<td>7,104</td>
+												<td>8,917</td>
+												<td>125.5%</td>
+											</tr>
+											<tr>
+												<td>40년</td>
+												<td>7,104</td>
+												<td>10,650</td>
+												<td>149.9%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>		
+								<ul class="bullet b lg">
+									<li>위의 예시 금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+									<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 비용 및 계약관리비용(해지공제금액 포함), 보험금 보장에 필요한 최저사망보험금 보증비용 및 해지환급금 보장에 필요한 최저해지환급금 보증비용 (단, 최저해지환급금을 보증하지 않는 경우는 최저해지환급금 보증비용 제외) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+									<li>위의 예시 금액은 장기납입보너스, 장기유지보너스 및 납입완료보너스를 포함한 주계약의 해지환급금을 최저보증이율, 평균공시이율과 공시이율 중 낮은 이율, 2021년 7월 현재 보장성 상품에 적용하는 공시이율을 기준으로 계산한 금액이며, 기본형 플러스 계약의 경우 「공시이율을 적용한 금액」과 「예정기본적립금 산출이율(2.0%)을 적용한 금액」 중 큰 금액을 해지환급금으로 지급합니다. 다만, 저해지환급금형 기본형 플러스 계약의 저해지기간 중 해지환급금은 「일반형 계약의 예정기본해지환급금 × 해지지급률(50%)」에 가산적립금, 추가적립금, 장기납입보너스적립금을 더한 금액으로 합니다.</li>
+									<li>위의 예시 금액은 보험기간 중 예시 이율이 변동하지 않는다는 가정 아래 산출된 금액입니다.</li>
+									<li>공시이율은 매월 1일 회사가 정한 이율로 매월 1일부터 당월의 마지막 날까지 1개월간 확정 적용하며, 공시이율이 변동하는 경우에는 해지환급금도 변동됩니다. 공시이율의 최저보증이율은 연복리 0.75%입니다.</li>
+									<li>평균공시이율은 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월간 보험회사 평균공시이율을 말하며, 이 계약 체결 시점의 평균공시이율은 2.25%입니다.</li>
+								</ul>						
+							</div>
+							<!-- //평균공시이율과 공시이율 중 낮은 이율 가정(2.2%) -->
+
+							<!-- 최저해지환급금 -->
+							<div data-ui-tab-ctn="tab_b" aria-labelledby="tab_b_3">
+								<div class="tbl-tit">
+									<h3 class="hd-tit4">최저해지환급금</h3>
+									<span>(단위:만원)</span>
+								</div>
+								<div class="ut-tbl a ver-md">
+									<table class="tblist nl" cellspacing="0" cellpadding="0" >
+										<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+										<colgroup>
+											<col>
+											<col style="width:25%">
+											<col style="width:25%">
+											<col style="width:25%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">경과 기간</th>
+												<th scope="col">총납입 보험료</th>
+												<th scope="col">해지 환급금</th>
+												<th scope="col">환급률</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1년</td>
+												<td>355</td>
+												<td>-</td>
+												<td>0.0%</td>
+											</tr>
+											<tr>
+												<td>2년</td>
+												<td>710</td>
+												<td>152</td>
+												<td>21.5%</td>
+											</tr>
+											<tr>
+												<td>3년</td>
+												<td>1,065</td>
+												<td>325</td>
+												<td>30.5%</td>
+											</tr>
+											<tr>
+												<td>5년</td>
+												<td>1,776</td>
+												<td>679</td>
+												<td>38.3%</td>
+											</tr>
+											<tr>
+												<td>10년</td>
+												<td>3,552</td>
+												<td>1,550</td>
+												<td>43.7%</td>
+											</tr>
+											<tr>
+												<td>19년</td>
+												<td>6,748</td>
+												<td>3,258</td>
+												<td>48.3%</td>
+											</tr>
+											<tr>
+												<td>20년</td>
+												<td>7,104</td>
+												<td>7,498</td>
+												<td>105.6%</td>
+											</tr>
+											<tr>
+												<td>30년</td>
+												<td>7,104</td>
+												<td>8,806</td>
+												<td>124.0%</td>
+											</tr>
+											<tr>
+												<td>40년</td>
+												<td>7,104</td>
+												<td>10,487</td>
+												<td>147.6%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="bullet b lg">
+									<li>위의 예시 금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+									<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결 비용 및 계약관리비용(해지공제금액 포함), 보험금 보장에 필요한 최저사망보험금 보증비용 및 해지환급금 보장에 필요한 최저해지환급금 보증비용 (단, 최저해지환급금을 보증하지 않는 경우는 최저해지환급금 보증비용 제외) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+									<li>위의 예시 금액은 장기납입보너스, 장기유지보너스 및 납입완료보너스를 포함한 주계약의 해지환급금을 최저보증이율, 평균공시이율과 공시이율 중 낮은 이율, 2021년 7월 현재 보장성 상품에 적용하는 공시이율을 기준으로 계산한 금액이며, 기본형 플러스 계약의 경우 「공시이율을 적용한 금액」과 「예정기본적립금 산출이율(2.0%)을 적용한 금액」 중 큰 금액을 해지환급금으로 지급합니다. 다만, 저해지환급금형 기본형 플러스 계약의 저해지기간 중 해지환급금은 「일반형 계약의 예정기본해지환급금 × 해지지급률(50%)」에 가산적립금, 추가적립금, 장기납입보너스적립금을 더한 금액으로 합니다.</li>
+									<li>위의 예시 금액은 보험기간 중 예시 이율이 변동하지 않는다는 가정 아래 산출된 금액입니다.</li>
+									<li>공시이율은 매월 1일 회사가 정한 이율로 매월 1일부터 당월의 마지막 날까지 1개월간 확정 적용하며, 공시이율이 변동하는 경우에는 해지환급금도 변동됩니다. 공시이율의 최저보증이율은 연복리 0.75%입니다.</li>
+									<li>평균공시이율은 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월간 보험회사 평균공시이율을 말하며, 이 계약 체결 시점의 평균공시이율은 2.25%입니다.</li>
+								</ul>
+							</div>
+							<!-- //최저해지환급금 -->
+						</div>
+						<!-- // 해지환급금예시 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

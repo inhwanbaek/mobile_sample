@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-certificate" id="pop-certificate">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<!-- [D] 2022-04-11 텍스트 수정 -->
+					<h1 class="ptit">소득공제유의사항안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit4">일반 보장성보험</h2>
+					<div class="cont-box">
+						근로소득자가 기본공제 대상자를 피보험자로 하는 보장성보험의 연간 납입 보험료(연간 100만원 한도)
+						<p class="point">* 장애인 전용 보장성 보험</p>
+						근로소득자가 기본공제 대상자 중 장애인을 피보험자 또는 보험금을 받는 자(수익자)로 하는 보장성보험((무)교보곰두리보장보험)의 연간 납입보험료(연간 100만원 한도)
+					</div>
+					<h2 class="hd-tit4">장기주택마련저축(「소득세법」 제52조)</h2>
+					<div class="cont-box">
+						근로소득이 있는 거주자(일용근로자 제외)로서 세대주(당해 과세기간 중 무주택자 또는 ‘주택마련저축 가입 당시 기준시가 3억원 이하인 국민주택규모의 주택’을 1채만 소유한 자)가 가입한 장기주택마련저축 연간 납입 보험료의 40%(연간 300만원 한도)
+						<p class="point">* 주택마련저축 공제금액과 주택임차차입금 원리금상환액 공제금액을 합하여 300만원을 초과할 수 없음</p>
+					</div>
+					<h2 class="hd-tit4">개인연금저축보험(「조세특례제한법」 제86조)</h2>
+					<div class="cont-box">
+						2000년 말까지 본인명의로 가입한 개인연금저축보험의 연간 납입 연금보험료의 40%(연간 72만원 한도)
+					</div>
+					<h2 class="hd-tit4">연금저축보험(「조세특례제한법」 제86조의2)</h2>
+					<div class="cont-box">
+						2001년 이후 본인명의로 가입한 연금저축보험의 연간 납입 연금보험료 전액(연간 300만원 한도)
+						<p class="point">* 소득공제 대상금액은 국세청에서 확인</p>
+					</div>
+					<div class="btn-set b2">
+						<a href="http://www.yesone.go.kr/" target="_blank" title="국세청 홈페이지 새창으로 바로가기" class="btn c rd ">국세청 바로가기</a>
+					</div>
+					<div class="g-box">
+						<ul class="bullet d">
+							<li>관련 법(「조세특례제한법」 제86조, 제86조의2)에 따라 (개인) 연금저축보험이 아닌 일반 연금보험은 보장성 특약보험료만 공제되거나, 소득공제금액이 없을 수 있습니다.</li>							
+							<li>개인연금저축, 연금저축보험, 장기주택저축보험의 경우 중도해지하면 당해 연도 저축납입액이 소득공제 대상에서 제외됩니다. 증명서 발급 이후 중도해지한 경우 소득공제 신고 대상이 아니며, 국세청 연말정산간소화서비스(www.yesone.go.kr)를 이용해 소득공제 대상금액을 확인하시기 바랍니다.</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-certificate');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-certificate');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

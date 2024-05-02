@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-newcspfgud" id="pop-newcspfgud">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신규 고객 가이드</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="newcspfgud-cont">
+						<h2 class="hd-tit3">퇴직연금 투자, 막막하신가요?</h2>
+						<p>교보생명 추천 포트폴리오로 투자해 보세요!</p>
+						<p>현재 쌓여있는 적립금은 물론,
+							앞으로 회사에서 입금될 부담금도
+							교보생명 추천 펀드로 한 번에 변경해 드려요.</p>
+					</div>
+
+					<div class="btn-set vt">
+						<a href="javascript:;" role="button" class="btn j wm md">추천 포트폴리오로 변경하기</a>
+						<a href="javascript:;" role="button" class="btn j wm md">내가 직접 투자하기</a>
+					</div>
+
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-newcspfgud');
+	</script>
+
+</div>
+</body>
+</html>

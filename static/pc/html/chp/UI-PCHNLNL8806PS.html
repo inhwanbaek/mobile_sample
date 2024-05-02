@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body chp">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_chp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb_chp.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page chp diag form" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">진단서 입력</h2>
+				<div class="desc">
+					아래의 주민등록번호와 진단서번호가 진단서와 일치하는지 확인하십시오. <br>
+					상이할 경우 검진하신 진단서는 기 공급된 회신용 봉투를 이용하여 당사로 보내주시기 바랍니다.
+				</div>
+			</div>
+
+			<div class="ut-dcard b">
+				<div class="dls">
+					<div class="dl st">
+						<div class="dt">주민등록번호</div>
+						<div class="dd">
+							<span class="prc">
+								<strong class="p">960907-1******</strong>
+							</span>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">진단서번호</div>
+						<div class="dd">202109130001</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="bullet b">
+				<li class="color10">신분증 미지참시 진단이 불가능 합니다. 이 진단서는 유효기간 이내에 사용하셔야 합니다</li>
+			</ul>
+
+			<div class="ut-tbl a fixed tbl-1">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">진단서 </span><span class="cap">이름, 주민등록번호, 신분증확인, 유효기간, 설계사, 지정병원, 진단종류, 검사항목로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col>
+						<col style="width:164rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름</th>
+							<td>김교보</td>
+							<th scope="row">주민등록번호</th>
+							<td>900000-1234567</td>
+						</tr>
+						<tr>
+							<th scope="row">신분증확인</th>
+							<td>필 (    )    미필 (    )</td>
+							<th scope="row">유효기간</th>
+							<td>~ 20210901</td>
+						</tr>
+						<tr>
+							<th scope="row">설계사</th>
+							<td>채정애(00713354), 민락FP, ()</td>
+							<th scope="row">지정병원</th>
+							<td>연세내과의원 (02-1232-1234)</td>
+						</tr>
+						<tr>
+							<th scope="row">진단종류</th>
+							<td>건강체</td>
+							<th scope="row">검사항목</th>
+							<td>계약변경건강체_체격및혈압 계약변경건강체_흡연</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="ut-tbl a fixed tbl-2">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">진단서 </span><span class="cap">진단일자, 병원문진기재사항, 고지사항로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="datepick_0" class="lb">진단일자</label></th>
+							<td>
+								<span class="input a ut-date"><input type="text" id="datepick_0" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" title="날짜입력"></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">병원문진기재사항</th>
+							<td>
+								<span class="qradio">문진 소견란에 '예'로 체크된 항목에 대해 구체적 내용을 기록하였습니까?</span>
+								<label class="radio"><input type="radio" name="radio1"><span class="txt">예</span></label>
+								<label class="radio"><input type="radio" name="radio1" checked=""><span class="txt">아니오</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고지사항</th>
+							<td>
+								<span class="qradio">고지 의무란에 "예"로 체크된 사항이 있습니까?</span>
+								<label class="radio"><input type="radio" name="radio2"><span class="txt">예</span></label>
+								<label class="radio"><input type="radio" name="radio2" checked=""><span class="txt">아니오</span></label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="ut-tbl a fixed tbl-3">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">흡연, 음주여부 확인 테이블</span><span class="cap">흡연, 1년내흡연, 흡연기간, 1일흡연량, 금연기간, 음주횟수, 로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col style="width:118rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="4">흡연</th>
+							<th scope="row" class="td">1년내흡연</th>
+							<td>
+								<label class="radio"><input type="radio" name="radio3"><span class="txt">유</span></label>
+								<label class="radio"><input type="radio" name="radio3" checked=""><span class="txt">무</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id1">흡연기간</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id1" type="text" placeholder="0"></span><span class="unit">년</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id2">1일흡연량</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id2" type="text" placeholder="0"></span><span class="unit">개피</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id3">금연기간</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id3" type="text" placeholder="0"></span><span class="unit">개월</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="4">음주</th>
+							<th scope="row" class="td"><label class="lb" for="input_id4">음주횟수</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id4" type="text" placeholder="0"></span><span class="unit">회/주</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id5">1회 소주량</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id5" type="text" placeholder="0"></span><span class="unit">병</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id6">1회 맥주량</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id6" type="text" placeholder="0"></span><span class="unit">cc</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id7">금주기간</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id7" type="text" placeholder="0"></span><span class="unit">개월</span>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">건강체 할인조건 충족여부</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">건강체 할인조건 충족여부</span><span class="cap">건강체 항목, BMI(Body Mass Index), 혈압, 충족여부로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col style="width:197rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="3">건강체 항목</th>
+							<th scope="row" class="td">흡연</th>
+							<td>최근  1년이내 흡연 사실이 없고, 흡연 검사결과 음성</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td">흡연기간</th>
+							<td>18.0이상~26.9이하</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td">혈압</th>
+							<td>수축기혈압(139mmHg이하) & 이완기혈압(89mmHg이하)</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">충족여부</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio4"><span class="txt">충족</span></label>
+								<label class="radio"><input type="radio" name="radio4" checked=""><span class="txt">미충족</span></label>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">기본진단항목</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">기본진단항목</span><span class="cap">체격, 신장/체중, 혈압 1회 2회 3회, 맥박, 부정맥, 소변검사 요당 요담백 요잠혈로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col style="width:118rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">체격</th>
+							<th scope="row" class="td"><label class="lb" for="input_id8">신장/체중</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id8" type="text" placeholder="0" title="신장 입력"></span> <span class="unit">cm,</span>
+								<span class="input a wmd"><input id="input_id9" type="text" placeholder="0" title="체중 입력"></span> <span class="unit">kg</span> 
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3">혈압</th>
+							<th scope="row" class="td"><label class="lb" for="input_id10">1회</label></th>
+
+							<td>
+								<span class="input a wmd"><input id="input_id10" type="text" placeholder="0" title="1회 혈압"></span> <span class="slash">/</span>
+								<span class="input a wmd"><input id="input_id11" type="text" placeholder="0" title="1회 혈압"></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id12">2회</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id12" type="text" placeholder="0" title="2회 혈압"></span> <span class="slash">/</span>
+								<span class="input a wmd"><input id="input_id13" type="text" placeholder="0" title="2회 혈압"></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id14">3회</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id14" type="text" placeholder="0" title="3회 혈압"></span> <span class="slash">/</span>
+								<span class="input a wmd"><input id="input_id15" type="text" placeholder="0" title="3회 혈압"></span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2"><label class="lb" for="input_id16">맥박</label></th>
+							<td class="bl">
+								<span class="input a wmd"><input id="input_id16" type="text" placeholder="0"></span> <span class="unit">회/분</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">부정맥</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio5"><span class="txt">유</span></label>
+								<label class="radio"><input type="radio" name="radio5" checked=""><span class="txt">무</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="3">소변검사</th>
+							<th scope="row" class="td">요당</th>
+							<td>
+								<span class="select a">
+									<label class="lb blind" for="select-3">요당 선택</label>
+									<select name="select-3" title="소변검사 요당 선택">
+										<option>선택 하세요</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td">요단백</th>
+							<td>
+								<span class="select a">
+									<label class="lb blind" for="select-3">요단백 선택</label>
+									<select name="select-3" title="소변검사 요단백 선택">
+										<option>선택 하세요</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td">요잠혈</th>
+							<td>
+								<span class="select a">
+									<label class="lb blind" for="select-3">요잠혈 선택</label>
+									<select name="select-3" title="소변검사 요잠혈 선택">
+										<option>선택 하세요</option>
+										<option>선택1</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">진단A</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">진단A</span><span class="cap">간기능 검사 AST(SGOT), ALT(SGPT), r-GTP, B형간염항원 (HBs Ag)로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col style="width:118rem">
+						<col>
+					</colgroup>
+					<tbody>
+
+						<tr>
+							<th scope="row" rowspan="3">간기능 검사</th>
+							<th scope="row" class="td"><label class="lb" for="input_id17">AST<br>(SGOT)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id17" type="text" placeholder="0"></span> <span class="unit">IU/L</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id18">ALT<br>(SGPT)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id18" type="text" placeholder="0"></span> <span class="unit">IU/L</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id19">r-GTP</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id19" type="text" placeholder="0"></span> <span class="unit">IU/L</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">B형간염항원 (HBs Ag)</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio6"><span class="txt">음성</span></label>
+								<label class="radio"><input type="radio" name="radio6" checked=""><span class="txt">양성</span></label>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">진단B</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">진단B</span><span class="cap">식전 식후 간기능 검사, 일반혈액검사 (CBC), 혈소판(Platelet), 적혈구(RBC), 백혈구(WBC), 혈색소(Hemoglobin), 헤마토크릿(Hct)로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:118rem">
+						<col style="width:164rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2"><label class="lb" for="input_id20">간기능 검사</label></th>
+							<td class="bl">
+								식전 <span class="input a wmd"><input id="input_id20" type="text" placeholder="0" title="식전 간기능 검사 입력"></span> <span class="unit">mg/dl</span>
+								<span class="txt">식후</span> <span class="input a wmd"><input id="input_id21" type="text" placeholder="0" title="식후 간기능 검사 입력"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="5">일반<br>혈액검사<br>(CBC)</th>
+							<th scope="row" class="td"><label class="lb" for="input_id22">혈소판(Platelet)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id22" type="text" placeholder="0"></span> <span class="unit">천/㎣</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id23">적혈구(RBC)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id23" type="text" placeholder="0"></span> <span class="unit">만/㎣</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id24">백혈구(WBC)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id24" type="text" placeholder="0"></span> <span class="unit">천/㎣</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id25">혈색소(Hemoglobin)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id25" type="text" placeholder="0"></span> <span class="unit">g/dl</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id26">헤마토크릿(Hct)</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id26" type="text" placeholder="0"></span> <span class="unit">%</span>
+							</td>
+						</tr>
+												
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">진단C</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">진단C</span><span class="cap">진단C, 심전도(EKG)로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" ><label class="lb" for="input_id27">총콜레스테롤</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id27" type="text" placeholder="0"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>	
+						<tr>
+							<th scope="row" >심전도(EKG)</th>
+							<td>
+								<label class="radio"><input type="radio" name="radio7"><span class="txt">정상</span></label>
+								<label class="radio"><input type="radio" name="radio7" checked=""><span class="txt">비정상</span></label>
+							</td>
+						</tr>					
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit3">추가항목</h3>
+
+			<div class="ut-tbl a fixed">
+				<table class="tbform" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">추가항목 테이블</span><span class="cap">인지기능테스트, 흉부 X-선, 신장기능 BUN 크레아티닌
+						Creatinine, 당화혈색소, HDL-콜레스테롤, 중성지방, B형간염(HBe Ag), AFP
+						(a-Fetoprotein) 정성 정량, C형간염항체(HCV), 흡연검사로 구성된 테이블입니다.</span></caption>
+					<colgroup>
+						<col style="width:164rem">
+						<col style="width:130rem">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2">인지기능테스트</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio8"><span class="txt">정상</span></label>
+								<label class="radio"><input type="radio" name="radio8" checked=""><span class="txt">비정상</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">흉부 X-선</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio9"><span class="txt">정상</span></label>
+								<label class="radio"><input type="radio" name="radio9" checked=""><span class="txt">비정상</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">신장기능</th>
+							<th scope="row" class="td"><label class="lb" for="input_id28">BUN</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id28" type="text" placeholder="0"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id29">크레아티닌 Creatinine</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id29" type="text" placeholder="0"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row" colspan="2"><label class="lb" for="input_id30">당화혈색소</label></th>
+							<td class="bl">
+								<span class="input a wmd"><input id="input_id30" type="text" placeholder="0"></span> <span class="unit">%</span>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row" colspan="2"><label class="lb" for="input_id31">HDL-콜레스테롤</label></th>
+							<td class="bl">
+								<span class="input a wmd"><input id="input_id31" type="text" placeholder="0"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2"><label class="lb" for="input_id32">중성지방</label></th>
+							<td class="bl">
+								<span class="input a wmd"><input id="input_id32" type="text" placeholder="0"></span> <span class="unit">mg/dl</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">B형간염(HBe Ag)</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio10"><span class="txt">음성</span></label>
+								<label class="radio"><input type="radio" name="radio10" checked=""><span class="txt">양성</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">AFP <br>(a-Fetoprotein)</th>
+							<th scope="row" class="td">정성</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio11"><span class="txt">음성</span></label>
+								<label class="radio"><input type="radio" name="radio11" checked=""><span class="txt">양성</span></label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="td"><label class="lb" for="input_id33">정량</label></th>
+							<td>
+								<span class="input a wmd"><input id="input_id33" type="text" placeholder="0"></span> <span class="unit">ng/dl</span>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row" colspan="2">C형간염항체(HCV)</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio12"><span class="txt">음성</span></label>
+								<label class="radio"><input type="radio" name="radio12" checked=""><span class="txt">양성</span></label>
+							</td>
+						</tr>
+
+						<tr>
+							<th scope="row" colspan="2">흡연검사</th>
+							<td class="bl">
+								<label class="radio"><input type="radio" name="radio13"><span class="txt">음성</span></label>
+								<label class="radio"><input type="radio" name="radio13" checked=""><span class="txt">양성</span></label>
+								<label class="radio"><input type="radio" name="radio13"><span class="txt">악양성</span></label>
+							</td>
+						</tr>
+								
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btn-set">
+				<button type="button" class="btn lg a">등록</button>
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer_chp.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

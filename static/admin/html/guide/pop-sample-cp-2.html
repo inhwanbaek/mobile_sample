@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style_cp.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer cp a pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보안확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="complate-msg time-out">
+						<h4>로그인 시간 연장안내</h4>
+						<p class="msg">안전한 금융정보보안을 위해 관리홈페이지를 30분동안 사용하지 않으면 자동 로그아웃 됩니다.</p>
+						<p class="bg-box">
+							안정한 통합홈페이지 관리를 위해서 60초 후 자동 로그아웃 될 예정입니다.<br>
+							로그인 시간을 연장하시겠습니까?
+						</p>
+					</div>
+				</main>
+			</div>
+			<div class="pbt bdt">
+				<div class="btn-list">
+					<button type="button" class="btn md btn-logout w180">로그아웃</button>
+					<button type="button" class="btn a md w180">연장하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample1');
+	</script>
+
+</div>
+</body>
+</html>

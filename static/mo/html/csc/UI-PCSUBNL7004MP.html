@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-office branch" id="pop-find-branch">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">지점찾기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect-csc top">
+						<div class="map-wrp">
+							<div class="map"></div>
+						</div>
+
+						<div class="office-inf">
+							<h2 class="hd-tit3">광화문고객PLAZA</h2>
+							<p class="tit-txt">서울 종로구 종로 1(종로1가) 교보생명보험주식회사</p>
+						</div>
+						<div class="st-item sales"><!-- 일시폐쇄 시 노출되는 영역 -->
+							<div class="ut-bdgs">
+								<em class="bdg t">일시폐쇄</em>
+							</div>
+							<p class="date">YYYY.MM.DD~YYYY.MM.DD</p>
+						</div>
+						<div class="st-item standby">총 <strong class="count">64</strong>명 대기 중</div><!-- 플라자인 경우만 노출 -->
+						<div class="text-box">
+							<ul class="bullet b">
+								<li>조회된 대기인원은 실제 대기인원과 다를 수 있습니다.</li>
+							</ul>
+						</div>
+						<div class="btn-set">
+							<a href="https://map.kakao.com/" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-map">카카오맵 열기</a><!-- [D] 2022-03-08 role="button" 추가 -->
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">업무시간</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>기본업무: 평일 09:00~15:30</li>
+								<li>접수업무: 평일 10:00~15:30</li>
+							</ul>
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">처리가능업무</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>사고보험금 청구</li>
+								<li>보안카드 발급</li>
+								<li>보험계약 변경/정정</li>
+								<li>보험계약 감액/특약삭제</li>
+								<li>보험계약대출</li>
+								<li>배당/분할/만기보험금</li>
+								<li>중도인출/보험계약해지</li>
+								<li>보험료수납(10:00~15:30)</li>
+								<li>펀드업무</li>
+								<li>신탁업무</li>
+								<li>퇴직연금</li>
+								<li>신용대출/담보대출 상담 및 지급</li>
+								<li>연금저축 계좌이체</li>
+							</ul>
+							<ul class="bullet b">
+								<li>지점별로 이용시간과 처리 가능 업무가 다를 수 있습니다. 해당 지점에 확인하신 후 방문해 주세요.</li>
+							</ul>
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">오시는 길</h3>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>지하철
+									<ul class="bullet c">
+										<li>5호선 광화문역 3번 출구</li>
+									</ul>
+								</li>
+								<li>버스
+									<ul class="bullet c">
+										<li>일반 706, 606, 0212, 1020,1711, 7016, 7018</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!-- //sect-csc -->
+
+					<div class="sect-csc">
+						<h3 class="hd-tit4">전화번호</h3>
+						<div class="btn-wrp">
+							<a href="tel:02-504-2440" title="전화 앱으로 전환됩니다." role="button" class="btn sm ico-r ico-call">02-504-2440</a><!-- [D] 2022-03-08 role="button" 추가 -->
+						</div>
+					</div><!-- //sect-csc -->
+
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-find-branch');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

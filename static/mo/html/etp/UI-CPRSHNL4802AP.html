@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-compare" id="pop-compare">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">퇴직연금 상품비교</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="cprd-wrp fpop">
+						<div class="cprd-box">
+							<div class="ut-optset optset">
+								<div class="opt pl">
+									<span class="tot">총 <i class="n">15</i>개</span><!-- [D] 2022-06-30 띄어쓰기 수정 -->  <span class="date">2020.01.01 기준</span>
+								</div>
+							</div>
+							<div class="ut-chksort">
+								<label class="checkbox op"><input type="checkbox"><span class="txt">온라인 전용</span></label>
+								<span class="select sort">
+									<select name="select-4" title="정렬선택">
+										<option>수익률 1개월순</option>
+										<option>수익률 3개월순</option>
+										<option seleted>수익률 1년순</option>
+										<option>수익률 3년순</option>
+										<option>수익률 5년순</option>
+										<option>설정액 높은순</option>
+										<option>설정액 낮은순</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<div class="card-wrp">
+							<div class="card a">
+								<div class="card-chkbox">
+									<div class="chk-top">
+										<div class="state">
+											<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+											<div class="ut-bdgs">
+												<em class="bdg j">온라인</em>
+												<em class="bdg i">매우높은위험</em>
+											</div>
+										</div>										
+										<div class="tit">
+											<h3 class="hd-tit4">(온라인)하이월드에너지증권투자신탁(주식-재간접형)</h3>
+											<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+										</div>
+										<div class="h-tag">
+											<a href="javascript:;">#에너지</a>
+										</div>
+									</div>
+									<dl class="bg-data">
+										<dt>수익률</dt>
+										<!-- [D] 2022-06-30 마크업 수정 
+										<dd class="t-red">23.26%</dd>--><!-- t-blue 파란색 -->
+										<dd><span class="t-red">23.26</span>%</dd><!-- t-blue 파란색 -->
+									</dl>
+									<dl class="data">
+										<dt>설정액</dt>
+										<dd>471.85억</dd>
+									</dl>
+									<dl class="data">
+										<dt>투자한도</dt>
+										<!-- [D] 2022-06-30 마크업 수정 
+										<dd class="t-blue">70%</dd>-->
+										<dd><span class="t-blue">70</span>%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>		
+							<div class="card a">
+								<div class="card-chkbox">
+									<div class="chk-top">
+										<div class="state">
+											<label class="checkbox star"><input type="checkbox"><span class="txt"></span></label>
+											<div class="ut-bdgs">
+												<em class="bdg j">창구전용</em>
+												<em class="bdg h">매우낮은위험</em>
+											</div>
+										</div>
+										<div class="tit">
+											<h3 class="hd-tit4">(온라인)K투자글로벌전기차투자(주식)(C-Re)</h3>
+											<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+										</div>
+										<div class="h-tag">
+											<a href="javascript:;">#전기차</a>
+										</div>
+									</div>
+									<dl class="bg-data">
+										<dt>수익률</dt>
+										<!-- [D] 2022-06-30 마크업 수정 
+										<dd class="t-red">20.26%</dd>--><!-- t-blue 파란색 -->
+										<dd><span class="t-red">20.26</span>%</dd><!-- t-blue 파란색 -->
+									</dl>
+									<dl class="data">
+										<dt>설정액</dt>
+										<dd>471.85억</dd>
+									</dl>
+									<dl class="data">
+										<dt>투자한도</dt>
+										<!-- [D] 2022-06-30 마크업 수정 
+										<dd class="t-blue">100%</dd>-->
+										<dd><span class="t-blue">100</span>%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>																		
+						</div>
+						<div class="ut-more more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>													
+					</div>
+					<!-- [D] 2022-04-25 하단 ‘꼭 알아두세요’ 추가 -->
+					<div class="etp-item a">
+						<!-- 가이드박스 -->
+						<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li>투자형 상품의 수익률은 과거 실적을 나타내는 것으로, 미래 수익을 보장하지 않습니다.</li>
+									<li>투자형 상품은「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+									<li>투자형 상품은 운용실적에 따라 원금손실이 발생할 수 있으며, 그 손실은 가입자에게 귀속됩니다.</li>
+									<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //가이드박스 -->
+					</div>
+					<!--// [D] 2022-04-25 하단 ‘꼭 알아두세요’ 추가 -->
+				</main>
+			</div>
+			<!-- 하단 버튼 옵션 레이어 영역 -->
+			<div class="pbt opt no-hide"> <!--// [D] 2022-09-16 아이폰 스크롤 오류 수정 -->
+				<button type="button" class="btn-option"><span class="blind">상세펼침 버튼</span></button>
+				<!-- 스크롤 영역 -->
+				<div class="opt-scrollbox no"><!-- 리스트 있을때는 클래스 no 제거 -->
+					<div class="opt-bg">
+						<p class="dsc">비교할 상품을 선택해 주세요.(최대 2개)</p>
+					</div>
+					<!-- 상품 리스트 있을 때 
+					<ul class="lst-have">
+						<li>
+							<span class="prd">AB미국그로스증권(주식-재간접형)</span>
+							<a href="javascript:;" class="p-del">삭제</a>
+						</li>
+						<li>
+							<span class="prd">(온라인)하이월드에너지증권자투자신탁(주식-재간접형) 하이월드에너지증권자투이월드에너지증권자투이월드에너지증권자투</span>
+							<a href="javascript:;" class="p-del">삭제</a>
+						</li>																						
+					</ul>-->
+				</div>
+				<!--// 스크롤 영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">상품비교</button>
+				</div>
+			</div>		
+			<!--// 하단 버튼 옵션 레이어 영역 -->		
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-compare');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		/* 하단 옵션 레이어 */
+		$(".btn-option").click(function() {
+			if($(this).hasClass("open") == true) {
+				$(".opt-scrollbox").hide();
+				$(this).removeClass("open");
+			}else {
+				$(".opt-scrollbox").show();
+				$(this).addClass("open");
+			};
+		});
+	</script>
+</div>
+</body>
+</html>

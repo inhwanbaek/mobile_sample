@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>UI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1330, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon" />
+    <link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed" />
+
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <script src="../../js/jquery-3.4.1.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/jquery.ui.touch-punch.js"></script>
+    <script src="../../js/swiper.js"></script>
+
+    <script src="../../js/ui.js"></script>
+    <script src="../guide/html.js"></script>
+    <!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+  </head>
+  <body class="body">
+    <div class="wrap" id="wrap">
+      <!-- 헤더-->
+      <include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+      <!-- LNB 영역 -->
+      <include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+      <!---- 바디 - 여기위로는 템플릿영역 ---->
+      <main class="container page mbl join is-full" id="container">
+        <!-- [D] 2022-05-13 수정 -->
+
+        <!-- 본문 영역 -->
+        <div class="contents" id="contents">
+          <div class="page-hdt">
+            <h2 class="stit hd-tit2"><i class="line">인증서를 선택</i>해 주세요.</h2>
+            <!-- [D] 2022-05-13 수정 -->
+            <!-- <div class="desc">인증서를 선택해 주세요.</div> --><!-- [D] 2022-05-13 삭제 -->
+          </div>
+
+          <!-- [D] 2022-05-17 전체수정 -->
+          <div class="join-certi-list-v2">
+            <div class="sect bg">
+              <h3 class="hd-tit4">등록된 인증서로 로그인해 주세요.</h3>
+              <ul class="list b">
+                <!-- [D] 2022-06-08 네이버 인증서 추가 -->
+                <li class="ics naver" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">네이버<br />인증서</div>
+                  </div>
+                </li>
+                <li class="ics kpay" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">카카오페이<br />인증서</div>
+                  </div>
+                </li>
+                <li class="ics pass" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">패스<br />인증서</div>
+                  </div>
+                </li>
+                <!--// [D] 2022-06-08 네이버 인증서 추가 -->
+                <li class="ics toss" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">토스<br />인증서</div>
+                  </div>
+                </li>
+                <li class="ics ctfn" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">금융인증서</div>
+                    <p class="ubdgs">이용등록</p>
+                  </div>
+                </li>
+                <li class="ics ctcm" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">공동인증서</div>
+                    <p class="ubdgs">이용등록</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sect">
+              <h3 class="hd-tit4">새로운 인증서를 등록하여 로그인할 수 있습니다.</h3>
+              <ul class="list a">
+                <li class="ics ctcm" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">공동인증서</div>
+                    <p class="ubdgs">이용등록</p>
+                  </div>
+                </li>
+                <li class="ics ctfn" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">금융인증서</div>
+                    <p class="ubdgs">이용등록</p>
+                  </div>
+                </li>
+                <li class="ics kpay" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">카카오페이<br />인증서</div>
+                  </div>
+                </li>
+                <!-- [D] 2022-06-08 네이버 인증서 추가 -->
+                <li class="ics naver" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">네이버<br />인증서</div>
+                  </div>
+                </li>
+                <!--// [D] 2022-06-08 네이버 인증서 추가 -->
+                <li class="ics toss" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">토스<br />인증서</div>
+                  </div>
+                </li>
+                <li class="ics pass" role="button" tabindex="0">
+                  <div class="item">
+                    <div class="tit">패스<br />인증서</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //end [D] 2022-05-17 전체수정 -->
+
+          <div class="ut-gudbox b open" data-tog-cls="box">
+            <div class="gtit">꼭 알아두세요</div>
+            <button type="button" data-tog-cls="btn" class="bt-tog open" aria-expanded="true">안내문<span class="btxt">닫기</span></button>
+            <div class="gctn open" data-tog-cls="ctn">
+              <ul class="bullet a glst">
+                <li>로그인하려면 인증서를 등록해야 합니다.</li>
+                <li>이미 등록한 인증서가 있는 회원님은 바로 로그인하고 서비스를 이용하실 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+      <!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+      <script>
+				// [접근성] role="button" 키보드 이벤트 2022-10-21
+        //wai-aria button
+        var waiAriaBtns = function () {
+          const btns = document.querySelectorAll('[role="button"]');
+          btns.forEach((btn) => {
+            btn.addEventListener("keydown", (e) => {
+              if (e.keyCode === 32 || e.keyCode === 13) {
+                btn.click();
+                e.preventDefault();
+              }
+            });
+          });
+        };
+        waiAriaBtns();
+				// [접근성] role="button" 키보드 이벤트 2022-10-21
+
+
+				
+				// ***************** 테스트용 *****************
+				let btn = document.querySelector(".ics.naver");
+				btn.addEventListener("click", function () {
+					alert("assa");
+				});
+				// ***************** 테스트용 *****************
+      </script>
+
+      <!-- 푸터 -->
+      <include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a sm pop-currentprd" id="pop-currentprd">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-tabs a">
+						<h2 class="blind">주메뉴</h2>
+						<ul class="menu">
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">투자형</a></li>
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">예금형</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">추천</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">관심</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">최근</a></li>
+						</ul>
+					</div>
+					<!--[D] 2022-05-26:검색박스 변경 -->			
+					<div class="srch-btnbox">
+						<span class="input ipsch no-lb w100p">						
+							<label class="lb blind" for="keywords">상품검색</label>						
+							<input type="search" placeholder="검색어를 입력해 주세요." title="검색어 입력" value="" id="keywords">						
+							<span class="ibts"><button type="button" class="btn-sch">검색</button></span>						
+						</span>
+					</div>
+					<!--[D] 2022-05-26:검색박스 변경 -->
+					<div class="cprd-wrp fpop">
+						<div class="ut-optset optset">
+							<div class="opt pl">
+								<span class="tot">총 <i class="n">15</i> 개</span>  <span class="date">2020.01.01 기준</span>
+							</div>
+							<div class="opt pr">
+								<span class="select sort">
+									<select name="select-4" title="정렬선택">
+										<option>상품명순</option>
+										<option>적용이율순</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<div class="card-wrp">
+							<div class="card">
+								<div class="card-chkbox">
+									<div class="chk-top">
+										<div class="state">
+											<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+										</div>										
+										<div class="tit">
+											<h3 class="hd-tit4">(무)교보 DB 이율변동형(3년)</h3>
+											<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+										</div>
+									</div>
+									<dl class="data">
+										<dt>적용이율</dt>
+										<dd>3.26%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>		
+							<div class="card">
+								<div class="card-chkbox">
+									<div class="chk-top">
+										<div class="state">
+											<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+										</div>											
+										<div class="tit">
+											<h3 class="hd-tit4">(무)교보 DB 금리연동형</h3>
+											<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+										</div>
+									</div>
+									<dl class="data">
+										<dt>적용이율</dt>
+										<dd>3.26%</dd>
+									</dl>
+									<div class="btn-set">
+										<button type="button" class="btn md">상세보기</button>
+									</div>
+								</div>
+							</div>																		
+						</div>
+						<div class="ut-more more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+						<div class="list-empty bd">
+							<p>상품검색 결과가 없습니다.</p>
+						</div>
+						
+						<!-- [D] 2022-04-25 하단 ‘꼭 알아두세요’ 추가 -->
+						<!-- 로그인별/제도별 각 안내 문구 노출됨(개발에서 처리함)  -->
+						<div class="etp-item a">
+							<!-- 펼침 상태인 경우 -->
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>이 퇴직연금은「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+										<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관을 읽어 보시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+
+						<div class="etp-item a">
+							<!-- 펼침 상태인 경우 -->
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>이 퇴직연금은 예금보호 대상 금융상품으로 운용되는 적립금에 한하여「예금자보호법」에 따라 예금보험공사가 보호하되, 보호 한도는 귀하의 다른 예금보호 대상 금융상품과는 별도로 1인당 ‘최고 5천만원”이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다. 단, 2개 이상 퇴직연금에 가입한 경우 합하여 5천만원까지 보호합니다.</li>
+										<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+
+						<div class="etp-item a">
+							<!-- 펼침 상태인 경우 -->
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>[DC/IRP 예금형] 이 퇴직연금은 예금보호 대상 금융상품으로 운용되는 적립금에 한하여「예금자보호법」에 따라 예금보험공사가 보호하되, 보호 한도는 귀하의 다른 예금보호 대상 금융상품과는 별도로 1인당 ‘최고 5천만원”이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다. 단, 2개 이상 퇴직연금에 가입한 경우 합하여 5천만원까지 보호합니다.</li>
+										<li>[DB 예금형]이 퇴직연금은「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+										<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--// [D] 2022-04-25 하단 ‘꼭 알아두세요’ 추가 -->
+					</div>
+				</main>
+			</div>	
+			<!-- 하단 버튼 옵션 레이어 영역 -->
+			<div class="pbt opt">
+				<div class="bx">
+					<button type="button" class="btn-option"><span class="blind">상세펼침 버튼</span></button>
+					<!-- 스크롤 영역 -->
+					<div class="opt-scrollbox">
+						<ul class="lst-have">
+							<li>
+								<span class="prd">AB미국그로스증권(주식-재간접형)</span>
+								<a href="javascript:;" class="p-del">삭제</a>
+							</li>
+							<li>
+								<span class="prd">(온라인)하이월드에너지증권자투자신탁(주식-재간접형) 하이월드에너지증권자투이월드에너지증권자투이월드에너지증권자투</span>
+								<a href="javascript:;" class="p-del">삭제</a>
+							</li>
+							<li>
+								<span class="prd">AB미국그로스증권(주식-재간접형)</span>
+								<a href="javascript:;" class="p-del">삭제</a>
+							</li>	
+							<li>
+								<span class="prd">(온라인)하이월드에너지증권자투자신탁(주식-재간접형) 하이월드에너지증권자투최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄</span>
+								<a href="javascript:;" class="p-del">삭제</a>
+							</li>	
+							<li>
+								<span class="prd">AB미국그로스증권(주식-재간접형)</span>
+								<a href="javascript:;" class="p-del">삭제</a>
+							</li>																							
+						</ul>
+					</div>
+					<!--// 스크롤 영역 -->
+				</div>	
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">상품변경 (0개)</button>
+				</div>
+			</div>		
+			<!--// 하단 버튼 옵션 레이어 영역 -->			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-currentprd');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		/* 하단 옵션 레이어 */
+		$(".btn-option").click(function() {
+			if($(this).parents(".opt").hasClass("open") == true) {
+				$(".opt-scrollbox").hide();								
+				$(this).parents(".opt").removeClass("open");
+			}else {
+				$(".opt-scrollbox").show();								
+				$(this).parents(".opt").addClass("open");
+			};
+		});
+	</script>
+</div>
+</body>
+</html>

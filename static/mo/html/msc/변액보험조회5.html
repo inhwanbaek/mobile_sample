@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"변액보험계약조회"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default cti2" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+				
+			<h2 class="hd-tit3">고객님이 가입하신 <br>변액보험계약을 확인해 보세요.</h2>      
+			<div class="ut-dcard b">
+				<div class="dls">
+					<div class="dl">
+						<div class="dt">총 계약건수</div>
+						<div class="dd">2건</div>
+					</div>
+					<div class="dl">
+						<div class="dt">월납 합계보험료</div>
+						<div class="dd">
+							<span class="prc">
+								<strong class="p">600,000</strong><i class="w">원</i>								
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 카드 -->
+			<div class="ut-dcard a dcard" data-tog-cls="box">
+				<div class="stds">
+					<div class="hdt">
+						<div class="tit">개인연금저축교보가족연금보험(개인정액형)</div>
+					</div>				
+				</div>
+				<div class="dtds" data-tog-cls="ctn">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>                            
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">주피보험자</div>
+								<div class="dd">팡서왕</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd">2021.10</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입횟수</div>
+								<div class="dd">2018.09</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">보험료</div>
+								<div class="dd">15,000원</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약상태</div>
+								<div class="dd">유지</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btn-set">
+						<button type="button" class="btn md">변액보험 상세보기</button>
+					</div>
+				</div>
+				<div class="mores">
+					<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+				</div>
+			</div>
+			
+			<div class="ut-more more">
+				<button type="button" class="btn-more">
+					<span class="tnt">
+						<em class="tm">더보기</em>
+						<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+					</span>
+				</button>
+			</div>
+			<!-- //카드 -->
+
+
+			<!-- 가이드박스 -->		
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">						
+						<li>변액보험은 일반상품과 달리 계약자별 계정이 명확히 구분되어 있는 특별계정 상품으로 회사가 파산할 경우에도 계약자별 지분을 확보할 수 있습니다. 
+							따라서 이 계약(변액보험)은 예금자보호법 적용 대상에서 제외됩니다. 
+							<br>※ 단, 부가되는 특약은 특별계정 운용실적과 관계없는 경우 예금자보호법에서 정하는 바에 따라 그 지급을 보장합니다. </li>
+						<li>2012년 11월 1일 상품공시 개정에 따라 [적립금 및 적립률 조회]에서 조회되는 내용이 상품별로 다르니 참고하시기 바랍니다.</li>
+						<li>문의: 변액보험 전용 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)<br>
+							[ ARS(2번) → 상담사원 연결(0번) → 변액보험 <br>
+							펀드상담(7번) → 비밀번호 6자리(*)  또는 # 입력 ]
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+
+
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- <nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">					
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+		</nav> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+
+	
+
+</div>
+
+</body>
+</html>

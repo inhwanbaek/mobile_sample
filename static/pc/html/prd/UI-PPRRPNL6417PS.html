@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a lg pop-impayinfo" id="pop-impayinfo"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">연금특약유형 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire planning">
+					<div class="plan-layer-coont">
+						<div class="plan-sect">
+							<h2 class="hd-tit3">종신연금의 정액형이란?</h2>
+							<p class="txt-cont">보증기간 동안 계약자의 생사에 관계없이 확정적으로 연금을 받고, 보증기간이 끝난 후에는 생존 시에만 균등한 연금을 받는 형태입니다.</p>
+							<div class="img-cont"><img src="../../img/prd/diagram_1@2x.png" alt="가입 연금지급개시 사이 적립액 연금지금개시 종신 사이 생존연금 기준 보증기간"></div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">종신연금의 집중형이란?</h2>
+							<p class="txt-cont">집중연금지급기간 동안 다른 기간보다 연금을 더 많이 집중적으로 받는 형태입니다.</p>
+							<div class="img-cont"><img src="../../img/prd/diagram_2@2x.png" alt="가입 연금지급개시 사이 적립액 연금지금개시 종신 사이 생존연금 기준 집중연금지급기간"></div>
+							<div class="ut-gudbox b open mt24" data-tog-cls="box">
+								<div class="gtit">유의사항</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>10년 보증의 경우
+											<ul class="bullet c">
+												<li>10년(10회) 보증 1형:<br>연금지급 개시 시점부터 5년간 기본연금의 2배 지급</li>
+												<li>10년(10회) 보증 2형:<br>연금지급 개시 후 6년 차부터 5년간 기본연금의 2배 지급</li>
+											</ul>
+										</li>
+										<li>30년 보증의 경우
+											<ul class="bullet c">
+												<li>30년(30회) 보증 1형:<br>연금지급 개시 후 11년 차부터 20년간 기본연금의 1.5배 지급</li>
+												<li>30년(30회) 보증 2형:<br>연금지급 개시 후 16년 차부터 15년간 기본연금의 1.5배 지급</li>
+												<li>30년(30회) 보증 3형:<br>연금지급 개시 후 21년 차부터 10년간 기본연금의 1.5배 지급</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">확정기간연금형이란?</h2>
+							<p class="txt-cont">정해진 기간 동안 계약자의 생사에 관계없이 균등한 연금을 받는 형태입니다.</p>
+							<div class="img-cont"><img src="../../img/prd/diagram_3@2x.png" alt="가입 연금지급개시 사이 적립액 연금지금개시 확정기간 사이 확정기간 연금"></div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">상속연금형이란?</h2>
+							<p class="txt-cont">적립금의 이자가 연금으로 지급되며, 사망 또는 해지 시 해당 시점의 적립금을 사망보험금 또는 해지환급금으로 받는 형태입니다.</p>
+							<div class="img-cont"><img src="../../img/prd/diagram_4@2x.png" alt="가입 연금지급개시 사이 적립액 연금지금개시 종신 사이 이자+사망보험금 또는 해지환급금"></div>
+						</div>
+					</div>
+				</main>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-impayinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

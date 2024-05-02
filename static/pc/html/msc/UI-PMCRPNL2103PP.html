@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-dgngud" id="pop-dgngud">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향진단안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="dgngud-head">
+							<h2 class="tit">맞춤형 투자를 위해 <br>투자성향진단을 진행해 주세요.</h2>
+						</div>
+						<div class="dgngud-body">
+							<p>투자성향진단은 고객님의 투자성향을 파악하여, 적합한 금융투자상품을 추천하기 위한 기초 자료로 활용됩니다.</p>
+							<p>최대한 고객님의 상황에 부합하거나 가장 가까운 항목을 선택해 주세요.</p>
+							<p>잘못 답변하시면 적합하지 않은 상품을 추천하게 되는 결과를 가져올 수 있으므로 신중하게 답변해 주시기 바랍니다.</p>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-dgngud');">취소</button>
+						<button type="button" class="btn a rd lg">시작</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-dgngud');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-dgngud',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

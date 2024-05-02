@@ -1,0 +1,207 @@
+﻿@charset "utf-8";
+
+html {
+	height: 100vh;
+	font-size: 1px;
+}
+body {
+	word-wrap: break-word;
+	word-break: keep-all;
+	color: #242424;
+	line-height: normal;
+	-webkit-text-size-adjust: none;
+}
+.body.com {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	font-size: 1400%;
+}
+body, select, input, textarea, button {
+	font-feature-settings: "tnum";
+	font-family: "Pretendard","Kyobo","Roboto", "Apple SD Gothic Neo", "Malgun Gothic", "BaseLine", Tahoma, "Dotum", "sans-serif", "apple color emoji", "segoe ui emoji", "noto color emoji", "android emoji", "emojisymbols", "emojione mozilla", "twemoji mozilla", "segoe ui symbol";
+	vertical-align: middle;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.header {
+	height: 56rem;
+	text-align: center;
+	display: block;
+	z-index: 500;
+	position: relative;
+}
+.header>.inr {
+	color: #545454;
+	display: flex;
+	height: 56rem;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	top: 0rem;
+	background: #ffffff;
+}
+.header .ldt {
+	display: flex;
+	align-items: center;
+}
+.header .title {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 2rem 0 0 24rem;
+}
+.header .title .htit {
+	font-weight: 700;
+	font-size: 16rem;
+	color: #272b33;
+	text-align: left;
+	font-family: "Kyobo";
+	letter-spacing: -0.4px;
+}
+.container {
+	padding: 0 20rem 20rem 20rem;
+}
+.container .contents {
+	display: block;
+}
+
+.complate-msg.icon2{
+	text-align: center;
+	margin: 0rem 0rem 25rem 0rem;
+	border-top: transparent 1px solid;
+	display: block;
+}
+.complate-msg::before {
+	width: 80rem;
+	height: 80rem;
+	background: url() no-repeat center;
+	background-size: 80rem auto;
+	font-size: 1rem;
+	color: transparent;
+	display: block;
+	margin: 112rem auto 23rem auto;
+	vertical-align: middle;
+	content: '';
+}
+.complate-msg.icon2::before {
+	background-image: url(../img/common/ico_com_exclamation_tri@2x.png);
+}
+.complate-msg .msg .p1 {
+	color: #242424;
+	font-size: 22rem;
+	font-weight: 700;
+	line-height: 1.45;
+	word-break: keep-all;
+}
+.complate-msg .msg .p1 + .p2.depth {
+	margin-top: 26rem;
+}
+.complate-msg .msg .p2 {
+	font-size: 15rem;
+	color: #767676;
+	font-weight: 400;
+	margin-top: 20rem;
+}
+.complate-msg .msg + .tel-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 129rem;
+	bottom: calc(129rem + env(safe-area-inset-bottom));
+	text-align: center;
+}
+.complate-msg .link-tel {
+	justify-content: center;
+	text-decoration: none !important;
+	font-size: 16rem;
+	color: #242424;
+	display: flex;
+	align-items: center;
+}
+.link-tel::before {
+	width: 24rem;
+	height: 24rem;
+	margin-right: 4rem;
+	background: url(../img/common/ic_mobile@2x.png) no-repeat center;
+	background-size: 24px auto;
+	content: '';
+	margin: 0rem 0rem 0rem -5rem;
+}
+
+.complate-msg .msg + .tel-box .tel-text {
+	margin-top: 16rem;
+	font-size: 13rem;
+	color: #767676;
+}
+.floatbots .btn-set .btn {
+	flex: 2;
+}
+.floatbots>.inr {
+	transition: transform 0.4s;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	padding: 16rem 0;
+	padding-bottom: calc(16rem + env(safe-area-inset-bottom));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.7) 40%, #fff);
+}
+.floatbots .btn-set {
+	padding: 0 20rem;
+	position: relative;
+	display: flex;
+	margin-left: -4rem;
+	margin-right: -4rem;
+}
+.btn-set {
+	position: relative;
+	display: flex;
+	margin-left: -4rem;
+	margin-right: -4rem;
+}
+.btn-set .btn {
+	width: 100%;
+	margin: 0 4rem;
+}
+.btn.a {
+	border-color: #121c72;
+	background-color: #121c72;
+	color: #ffffff;
+}
+.btn.b {
+	border-color: #e0e2e5;
+	background-color: #e0e2e5;
+	color: #242424;
+}
+.btn.rd {
+	border-radius: 8rem;
+}
+.btn.lg {
+	height: 56rem;
+	min-width: 40rem;
+	padding: 0px 15rem;
+	font-size: 17rem;
+	font-weight: 500;
+}
+.btn {
+	border: 1rem solid #777777;
+	background: #ffffff;
+	color: #242424;
+	height: 40rem;
+	overflow: hidden;
+	padding: 0 12rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	border-radius: 4rem;
+	line-height: 1.1;
+	font-size: 14rem;
+}

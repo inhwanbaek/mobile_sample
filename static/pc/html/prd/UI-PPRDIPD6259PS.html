@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer lg a pop-calculate prd-calc" id="pop-calculate">
+		<div class="pbd">
+			<div class="phd">
+			<div class="in">
+					<h1 class="ptit blind">보험료 계산하기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<section class="sect htop">
+							<div class="hdt">
+								<h2 class="tit">(무)교보금쪽같은내아이보험(갱신형)</h2>
+								<div class="bdg">
+									<em class="bd">다이렉트</em>
+								</div>
+								<div class="bts">
+									<button type="button" class="bt link"><i class="blind">공유하기 링크복사</i></button>
+									<button type="button" class="bt fav"><i class="blind">관심상품저장</i></button>
+									<!-- <button type="button" class="bt-tog" onclick="location.href='보험상품선택.html'"><i class="blind">상품리스트보기</i></button> -->
+								</div>
+							</div>
+						</section>
+
+						<section class="sect prds">
+							<div class="inner">
+								<div class="pbox">
+									<article class="box">
+										<div class="inr">
+											<ul class="info">
+												<li>
+													<div class="dl desc">
+														<div class="dt">
+															<span class="tm ico-prd01">내가 계산한 보험료</span>
+														</div>
+														<div class="dd">
+															월 보험료<span class="prc blue"><em class="p">50,085</em><i class="w">원</i></span>
+															<div class="tmsg"><em class="t">5세</em><em class="t">(남아)</em><em class="t">어린이</em></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</article>
+
+									<!-- [D] 2022-08-12 배너추가 결과 -->
+									<article class="bnnr">
+										<div class="ut-slide-play type-b">
+											<!--[D] data-slide-id: 배너 타입에 맞게 아이디는 여러가지로 변경해야 합니다.-->
+											<div class="swiper-container swiper" data-slide-id="slide-play-b-more-s">
+												<div class="control">
+													<div class="dots"></div>
+													<div class="plys"><button type="button" class="bt play">정지</button></div>
+												</div>
+												<ul class="swiper-wrapper slide">
+													<li class="swiper-slide color-1">
+														<a href="javascript:;" class="s">
+															<div class="txtbox-s">
+																<strong class="tit-s">나의 계약을 안전하고 편리하게!</strong>
+																<p class="txt-s">지금 새로워진 서비스를 경험하세요</p>
+															</div>
+															<div class="imgbox-s"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+														</a>
+													</li>
+													<li class="swiper-slide color-2">
+														<a href="javascript:;" class="s">
+															<div class="txtbox-s">
+																<strong class="tit-s">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+															</div>
+															<div class="imgbox-s"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+														</a>
+													</li>
+													<li class="swiper-slide color-3">
+														<a href="javascript:;" class="s">
+															<div class="txtbox-s">
+																<strong class="tit-s">나의 계약을 안전하고 편리하게!</strong>
+																<p class="txt-s">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+															</div>
+															<div class="imgbox-s"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+														</a>
+													</li>
+													<li class="swiper-slide color-3">
+														<a href="javascript:;" class="s">
+															<div class="txtbox-s">
+																<strong class="tit-s">나의 계약을 안전하고 편리하게!</strong>
+															</div>
+															<div class="imgbox-s"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</article>
+									<!-- //[D] 2022-08-12 배너추가 결과 -->
+								</div>
+
+								<div class="result">
+									<article class="box">
+										<div class="sppeid">
+											<div class="hdt">
+												<div class="tit">납입 및 보장 기간</div>
+											</div>
+											<div class="cdt">
+												<!--[D]그래프수정-->
+												<div class="ut-peid">
+													<div class="graph y10 limit" role="img" aria-label="어린이보험, 납입기간은 10년 납, 보장기간은 30세 만기">
+														<span class="tot">
+															<em class="gg">30세 만기</em>
+														</span>
+														<span class="gag">
+															<em class="gg">10년 납</em>
+															<span class="tt st"><i class="t">납입 및 보장 시작</i></span>
+															<span class="tt ed"><i class="t">납입종료</i></span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="splist info">
+											<ul class="lst">
+												<!-- <li>
+													<div class="hdt">
+														<div class="tit">보험종류</div>
+														<div class="bts">1종(저해지환급금형)</div>
+													</div>
+												</li>
+												<li>
+													<div class="hdt">
+														<div class="tit">보장금액</div>
+														<div class="bts">3,000만원</div>
+													</div>
+												</li> -->
+												<li>
+													<div class="hdt">
+														<div class="tit">보험기간</div>
+														<div class="bts">30세만기</div>
+													</div>
+												</li>
+												<li>
+													<div class="hdt">
+														<div class="tit">납입기간</div>
+														<div class="bts">10년</div>
+													</div>
+												</li>
+												<li>
+													<div class="hdt">
+														<div class="tit">납입주기</div>
+														<div class="bts">월납</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</article>
+
+									<article class="box">
+										<div class="dbox">
+											<strong class="dbox-tit">보험료</strong>
+											<div class="dts">
+												<span class="tit">주계약</span>
+											</div>
+											<div class="dds">
+												<ul class="bullet a lg">
+													<li>
+														<div class="name">태아 23주 이내</div><span class="prc">보험료  <em class="p">50,000</em><i class="w">원</i></span>
+														<div class="edt"><em class="ed">30세 만기</em> <em class="ed">5세납</em> <em class="ed">2,500만원</em></div>
+													</li>
+												</ul>
+											</div>											
+										</div>
+
+										<div class="dbox">
+											<div class="dts">
+												<span class="tit">선택한 특약 <span class="cnt">[총 <i class="num">1</i>개]</span></span>
+											</div>
+											<div class="dds">
+												<ul class="bullet a lg">
+													<li>
+														<div class="name">교보신생아보장특약</div>
+														<ul class="bullet c lg">
+															<li><div class="prc">출생전 보험료 3,900원</div><span class="prc">출생후 보험료 <em class="p">3,900</em><i class="w">원</i></span></li><!-- 22-05-11 수정 -->
+														</ul>
+														<div class="edt"><em class="ed">1년만기</em> <em class="ed">전기납</em> <em class="ed">1,000만원</em></div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</article>
+
+									<!-- <div class="rprc">
+										<div class="dt">실제납입보험료</div>
+										<div class="dd"><div class="prc"><em class="p">73,500</em><i class="w">원</i></div></div>
+									</div> -->
+									
+								</div>
+							</div>
+
+							<div class="spbots">
+								<div class="btn-set btsbot">
+									<button type="button" class="btn md ico-arrow">보장내용</button>
+									<button type="button" class="btn md ico-arrow">해지환급금</button>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn lg rd b">상담신청</button>
+					<button type="button" class="btn lg rd a">간편가입</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<script>
+
+		ui.prd.calc = {  // 상품보험료계산
+			init:function(id){
+				ui.tbsld.set(id);
+				ui.tbsld.slide.tabsld_calc.on("slideChangeTransitionEnd",function(){
+					var idx = this.realIndex;
+					// console.log(idx);
+					ui.prd.calc.actSld(idx);
+				});
+
+				ui.prd.calc.actSld(0);
+			},
+			movSld:function(idx){  //  탭 클릭 이동
+				//var idx = idx - $(".slide>li").length + 2;
+				var idx = idx - $(".slide>li.hide").length -1 ;
+				ui.tbsld.slide.tabsld_calc.slideTo(idx);
+			},
+			actSld:function(idx){  // 슬라이드 탭 싱크
+				//idx = idx +1;
+				idx = idx + $(".slide>li.hide").length + 1;
+				console.log(idx+" / 3번째");
+				$(".tabs .menu>li:nth-child("+idx+")").addClass("active").siblings("li").removeClass("active");
+				ui.update();
+			},
+			myPrds:function(els){  //  내가 계산한 보험료 슬라이드로 셋팅
+				//$(".tabs .menu>li").addClass("active").siblings("li").removeClass("active");
+				//$(".slide>li").addClass("swiper-slide");
+				$(".tabs .menu>li.hide").removeClass("hide").addClass("active").siblings("li").removeClass("active");
+				$(".slide>li.hide").addClass("swiper-slide").removeClass("hide");
+				$(".refresh").hide().next(".inr").attr("aria-hidden",false);
+				ui.tbsld.slide.tabsld_calc.slideTo(0);
+				ui.tbsld.slide.tabsld_calc.update();
+				$("body,html").animate({ scrollTop: 0 }, 100);
+				console.log("내가 계산한 보험료 슬라이드로 셋팅");
+				ui.update();
+			},
+			setCust:function(els){ //  선택 수정했을때
+				$(".slide li.swiper-slide-active").find(".refresh").show().next(".inr").attr("aria-hidden",true);
+				$("body,html").animate({ scrollTop: 0 }, 100);
+			}
+		}
+
+		ui.prd.calc.init('tabsld_calc');
+
+		// 높이계산
+		$(".special-box button, .splist .bt-help").on("click",function(){
+			setTimeout(function(){
+					ui.tbsld.slide.tabsld_calc.slideTo(0);
+			},150);
+		});
+
+
+
+
+
+
+	ui.popup.open('pop-calculate');  // 팝업 열기
+
+	/* 콜백 필요 할때 팝업 열기
+	ui.popup.open('pop-pdmpsell',{
+		ocb:function(){
+			console.log("열리고 콜백");
+		},
+		ccb:function(){
+			console.log("닫히고 콜백");
+		}
+	});
+	*/
+
+
+
+</script>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<article class="pop-layer xs b pop-bn" id="pop-bn">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">교보생명 보험이 있으시네요!</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+		
+					<div class="text-group type2">
+						
+						<div class="text-box">
+							<p>고객님은 보험계약대출로<br><strong class="t-blue"> 100,000,000원 / 연 4.2%</strong> 까지<br> 
+								대출이 가능합니다.</p>
+						</div>
+						
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<!--[D] 2022-09-06 닫기버튼 추가  / 버튼 크기 변경-->
+					<button type="button" class="btn c rd sm">닫기</button>
+					<button type="button" class="btn a rd sm">보험계약대출 신청</button>
+					<!--// [D] 2022-09-06 닫기버튼 추가  / 버튼 크기 변경-->
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-bn');  // 팝업 열기
+	</script>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+</div>
+</body>
+</html>

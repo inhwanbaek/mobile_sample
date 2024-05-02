@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"경영철학"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt manage-phi" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">비전경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">고객만족경영</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">지속가능경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">나눔경영</a></li>
+				</ul>
+			</div>
+			<div class="grp-hd manage03">
+				<strong class="hd-tit2">교보생명은 <i class="line">고객과 사회에 대한</i> <br>약속을 성실히 지키고 있습니다.</strong>
+				<!-- <h3 class="hd-tit4">윤리경영 <br>Ethical Management</h3> --><!-- [D]2022-07-06 삭제 -->
+			</div>
+			<div class="phi-cont">
+				<strong>
+					회사는 이익을 추구하는 곳입니다. 그러나 단순히 이윤 창출만을 목적으로  한다면 회사는 좋은 성장을 할 수 없습니다.  이윤 추구와 윤리경영은 동전의 앞뒤가 아니라 함께 추구해야 하는 가치입니다.
+				</strong>
+				<p>
+					교보생명 故 신용호 창립자는 ‘거저와 비밀은 없다’고 강조했습니다. 이러한 창립자의 신념을 바탕으로 사훈인 ‘성실’은 교보생명 기업문화의 근간이 되었고, 핵심가치인 ‘정직과 성실’로 계승되어 윤리경영, 정도경영의 바탕이 되었습니다.
+				</p>
+				<p>
+					교보생명은 금융회사로서 이행해야 할 법적, 윤리적 책임은 물론 기업시민으로서 사회적 책임을 충실히 이행하기 위해 노력하고 있습니다.
+				</p>
+				<p>
+					‘교보인의 직무윤리헌장’을 제정하고 직무윤리 실천규범을 마련해 임직원들이 정직하고 성실하게 업무에 임하도록 하였습니다. 또한 윤리경영 CEO서약을 통해 윤리경영 추진의지를 확고히 다지고 있습니다.
+					이러한 노력으로 한국기업윤리학회 ‘제1회 기업윤리대상’을 비롯해 전경련 등 5개  단체가 주관하는 ‘제12회 투명경영대상’을 수상했습니다.
+				</p>
+				<p>
+					신창재 회장은 양적 성장을 강조하던 과거 경영방식과는 달리 앞으로의 경영환경은 기업의 사회적 책임(CSR: Corporate Social Responsibility)과 사람중심경영이 기업 경영에 있어 기본적이고 핵심적인 경쟁력으로 부각되고 있다고 말합니다.
+				</p>
+				<p>
+					신창재 회장은 “기업의 목적은 이윤 추구입니다. 그러나 이익 창출만을 목적으로 하는 기업은 오래가기 힘들 것입니다. 이윤 추구와 윤리경영은 동전의 앞뒤가 아니라 함께 추구해야 하는 가치입니다. 우리의 목표는 모든 이해관계자들로부터 존경받는 100년 장수 기업이 되는 것입니다.”라고 강조합니다.
+				</p>
+				<p>
+					<strong>
+						이와 함께 회사는 지속 가능한 성장을 위해 이해관계자를 고려하고 환경, 사회, 지배구조 요소를 경영활동 전반에 반영하는 ESG경영도 일관되게 추진하고 있습니다.
+					</strong>
+				</p>
+
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

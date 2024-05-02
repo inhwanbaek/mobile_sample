@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-mbl-user" id="pop-mbl-user">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">인증서 사용자 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="desc-box">
+						<p class="desc">사용하신 법인 인증서를 등록하신 사용자인지 확인이 진행됩니다.</p>
+						<p class="desc">안전한 인터넷서비스 이용을 위해 추가 정보를 입력해 주세요.</p>
+					</div>
+					<div class="user-info">
+						<h2 class="hd-tit3">사용자 정보 확인</h2>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a"><label class="lb" for="inp-1">이름</label><input type="text" placeholder="이름을 입력하세요." id="inp-1"></span>
+								</li>
+								<li>
+									<span class="input a">
+										<label class="lb" for="rsnum_1">생년월일(6자리)</label>
+										<input id="rsnum_1" type="number" class="fn" title="생년월일(6자리) 입력" placeholder="생년월일(6자리)">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-mbl-user');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

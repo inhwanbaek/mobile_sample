@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-back","title":"인증센터"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page mbl cetis etpmbl" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+	
+			<div class="centbox">
+				<div class="txt">
+					<h2 class="hdt">공동인증서 관리</h2>
+					<button type="button" class="bt ctcm"><i class="blind">공동인증서</i></button>
+					<div class="cdt">아이콘을 눌러 인증서의 비밀번호를<br> 변경하거나 인증서를 삭제할 수 있습니다. </div>
+				</div>
+				
+
+				<div class="ut-gudbox b open mt40" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>휴대폰에 저장된 공동인증서의 비밀번호를 변경하거나 인증서를 삭제할 수 있습니다.</li>
+							<li>PC와 휴대폰에 저장된 인증서가 동일한 경우, PC에서 비밀번호를 변경하면 휴대폰에 저장된 인증서에도 동일하게 적용됩니다.</li>
+							<li>인증서 삭제 시, 삭제한 기기에서만 삭제되는 것이며 다른 기기에 저장된 인증서는 그대로 남아 있습니다.</li>
+							<li>삭제된 인증서를 다시 사용하기 위해서는 금융기관을 방문하여 인증서 재발급 후 다시 등록을 진행해야 합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

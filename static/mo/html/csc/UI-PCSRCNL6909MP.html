@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-crime-report" id="pop-crime-report">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험범죄신고</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sect-csc">
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>신고내용을 조회하시려면 비밀번호를 입력해 주세요.</li>
+								<li>신고내용 작성 시 설정하신 비밀번호를 모르면 신고내용을 조회할 수 없습니다. <br>교보생명 담당자(<a href="tel:02-721-3093" title="전화 앱으로 전환됩니다.">02-721-3093</a>)에게 문의해 주세요.</li><!-- [D] 2022-05-11 UI/UX 변경 -->
+
+							</ul>
+						</div>
+						<div class="ut-form a">
+							<p class="info-ast"><em class="ast"></em>필수입력항목</p>
+							<ul class="form">
+								<li>
+									<span class="input a">
+										<label class="lb" for="inp-pw">비밀번호<em class="ast">필수항목</em></label>
+										<input type="password" pattern="\d*" title="비밀번호 입력" placeholder="숫자/영문/특수문자 혼합 8~15자 입력" id="inp-pw">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+				<div class="inr">
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">확인</button>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-crime-report');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

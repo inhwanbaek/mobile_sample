@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"펀드판매불편신고"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc fund" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect frm-bunch">
+				<h2 class="hd-tit3">펀드판매불편신고 작성</h2>
+				<div class="ut-form a">
+					<p class="info-ast"><em class="ast"></em>필수입력항목</p>
+					<ul class="form ty02">
+						<li>
+							<span class="input a">
+								<label class="lb" for="inp-name">이름<em class="ast">필수항목</em></label>
+								<input type="text" title="이름 입력" placeholder="실명 입력" id="inp-name">
+							</span>
+						</li>
+						<li>
+							<span class="input a ut-date">
+								<label class="lb" for="inp-birth">생년월일<em class="ast">필수항목</em></label>
+								<input type="tel" id="inp-birth" class="datepicker" placeholder="YYYY.MM.DD" value="">
+							</span>
+						</li>
+						<li>
+							<div class="ut-email email">
+								<div class="enam">
+									<span class="input a emids">
+										<label class="lb" for="emids_0">이메일<em class="ast">필수항목</em></label>
+										<input id="emids_0" type="email" placeholder="아이디">
+									</span>
+									<i class="at">@</i>
+									<span class="input a emcom">
+										<label class="lb" for="emcom_id0">주소입력</label>
+										<input id="emcom_id0" type="text" placeholder="직접입력">
+									</span>
+								</div>
+								<ul class="ebts">
+									<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+									<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+									<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch"><!-- [D] 2022-03-23 UI/UX 변경 -->
+				<div class="tit-area">
+					<h3 class="hd-tit4">전화번호<em class="ast">필수항목</em></h3>
+				</div>
+				<div class="ut-form a">
+					<div class="call-wrp">
+						<div class="radiobox c">
+							<label class="radio"><input type="radio" name="radio_c1" id="ph-set-1" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">휴대폰</span></label>
+							<label class="radio"><input type="radio" name="radio_c1" id="ph-set-2" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">집/직장</span></label>
+						</div>
+						<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active">
+							<div class="ut-phone">
+								<span class="input a tnum"><label class="lb" for="tnum_1">전화번호 입력</label>
+									<input type="tel" pattern="\d*" placeholder="- 없이 숫자만 입력" id="tnum_1" title="휴대폰번호 입력"><!-- [D] 2022-05-11 UI/UX 변경 -->
+								</span>
+							</div>
+						</div>
+						<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2">
+							<div class="ut-phone">
+								<span class="input a tnum"><label class="lb" for="tnum_2">전화번호 입력</label>
+									<input type="tel" pattern="\d*" placeholder="- 없이 숫자만 입력" id="tnum_2" title="집/직장 전화번호 입력"><!-- [D] 2022-05-11 UI/UX 변경 -->
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="hd-tit4"><label for="input-fund">펀드명</label></h3>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<input type="text" title="펀드명 입력" placeholder="펀드명 입력" id="input-fund">
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="hd-tit4"><label for="input-place">판매지점명</label></h3>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<input type="text" title="판매지점명 입력" placeholder="판매지점명 입력" id="input-place">
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="hd-tit4"><label for="input-tit">제목<em class="ast">필수항목</em></label></h3>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<input type="text" title="제목 입력" placeholder="50자 이내로 입력" id="input-tit">
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<div class="tit-area">
+					<h3 class="hd-tit4"><label for="textarea-1">내용<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="textarea a">
+								<textarea placeholder="예) 펀드 투자 시 불편한 점이 있었습니다." id="textarea-1"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">3,000</i>자)</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="text-box">
+					<ul class="bullet b">
+						<li>고객님의 개인정보를 안전하게 보호하기 위해 상담/문의 내용 입력 시 <span class="point02">불필요한 개인정보는 입력하지 마시고</span> 주위에 유출되지 않도록 주의하시기 바랍니다.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="hd-tit4">
+					파일첨부
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<ul class="bullet b">
+									<li>이미지 파일은 1개까지 첨부할 수 있습니다.</li>
+									<li>글자가 흐리거나 잘 보이지 않는 경우, 다시 파일을 첨부해 달라는 요청을 드릴 수 있습니다.</li>
+									<li>첨부 가능한 이미지 파일 형식은 JPG, JPEG, GIF, PNG입니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</h3>
+				
+				<!-- [D] 2022-05-23 UI/UX 변경 -->
+				<ul class="ut-attachments">
+					<li>
+						<p class="tit">펀드판매불편신고 사례</p>
+						<p class="add-btn"><button type="button" class="btn f" href="javascript:;" target="_blank" title="새창열림">첨부하기</button></p>
+					</li>
+					<li>
+						<p class="tit">펀드판매불편신고 사례</p>
+						<p class="add-btn"><button type="button" class="btn g" href="javascript:;" target="_blank" title="새창열림">다시첨부</button></p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="blind">동의여부</h3>
+				<div class="ut-form b round"><!-- [D] 2022-06-27 라디오박스를 체크박스로 변경 --><!-- [D] 2022-07-01 css 추가 -->
+					<ul class="form">
+						<li>
+							<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 수집 &middot; 이용에 관한 사항</span></label>
+							<a href="#link" target="_blank" title="새창열림" class="go"><span class="blind">보기</span></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">신고</button>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+

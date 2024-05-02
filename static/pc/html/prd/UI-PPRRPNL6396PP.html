@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a lg pop-impayinfo" id="pop-impayinfo"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">리밸런싱 상품적용 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd  retire irp">
+					<ul class="bullet a lg mt24">
+						<li>리밸런싱 서비스는 투자성향이 ‘안정추구형’ 이상부터 이용할 수 있습니다. </li>
+						<li>리밸런싱으로 만기 이전 원리금보장형 상품의 매도가 이뤄질 경우, 당초 약정한 이율보다 낮은 중도해지이율이 적용됩니다. 						</li>
+						<li>본 리밸런싱은 현재 보유상품과 향후 입금상품의 투자비중을 모두 변경하게 됩니다.(단, 타자산이 있는 DC 단체의 경우 회사분만 변경됩니다.) 						</li>
+						<li>입금상품의 투자비중은 원리금보장형 상품으로 교보생명 금리연동형 상품만을 추천하며, 보유상품의 경우 중도해지이율로 인한 손실을 최소화하기 위해 미리 정해진 상품 매각 우선 순위에 따라 상품을 매각합니다. </li>
+						<li>리밸런싱 신청 완료 이후에는 상품 변경을 취소할 수 없으며, 실제 리밸런싱은 해외 펀드 등 상품 매각에 따른 소요시간으로 인해 최종 완료까지 2주 이상 걸릴 수 있습니다. </li>
+						<li>리밸런싱 결과는 향후 펀드 수익률에 따라 당초 목표로 한 비중과 차이가 발생할 수 있습니다. </li>
+						<li>[DC/IRP 원리금보장형] 이 퇴직연금은 예금보호 대상 금융상품으로 운용되는 적립금에 한하여 「예금자보호법」에 따라 예금보험공사가 보호하되, 보호 한도는 귀하의 다른 예금보호 대상 금융상품과는 별도로 1인당 “최고 5천만원”이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다. 단, 2개 이상 퇴직연금에 가입한 경우 합하여 5천만원까지 보호합니다.</li>
+						<li>[DB 원리금보장형] 이 퇴직연금은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+						<li>투자형 상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+						<li>투자형 상품의 수익률은 과거 실적을 나타내는 것으로, 미래 수익을 보장하지 않습니다. </li>
+						<li>투자형 상품은 운용실적에 따라 원금손실이 발생할 수 있으며, 그 손실은 가입자에게 귀속됩니다. </li>
+						<li>상품에 가입하시기 전 투자대상, 환매방법 및 보수 등에 관하여 약관(집합투자규약) 및 상품설명서를 읽어 보시기 바랍니다.</li>
+					</ul>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-impayinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"소비자금융교육"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc edu list abt board" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">소비자(전체)</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">어린이/청소년</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">고령층/장애인</a></li>
+				</ul>
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+
+				<div class="board-wrp">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">100</i>건</span>
+						</div>
+					</div>
+					<!-- [D] 2022-05-25 UI/UX 변경 -->
+					<ul class="board-lst">
+						<li>						
+							<div class="link">
+								<a href="javascript:;" class="txt-link">광화문글판 2022년 여름편</a>
+								<!-- <i class="ic-new"><span class="blind">새글</span></i> -->
+							</div>
+							<span class="b-date">2022.01.01</span>
+							<div class="btn-set-area">
+								<button type="button" class="btn sm ico-down ico-r pdf" title="광화문글판 2022년 여름편">다운로드</button>
+							</div>
+						</li>
+						<li>
+							<div class="link">
+								<a href="javascript:;" class="txt-link">광화문글판 2022년 여름편</a>
+							</div>
+							<span class="b-date">2022.01.01</span>
+							<div class="btn-set-area">
+								<button type="button" class="btn sm ico-down ico-r pdf" title="광화문글판 2022년 여름편">다운로드</button>
+							</div>
+						</li>
+						<li>
+							<div class="link">
+								<a href="javascript:;" class="txt-link">광화문글판 2022년 여름편</a>
+							</div>
+							<span class="b-date">2022.01.01</span>
+							<div class="btn-set-area">
+								<button type="button" class="btn sm ico-down ico-r pdf" title="광화문글판 2022년 여름편">다운로드</button>
+							</div>
+						</li>
+						<li>
+							<div class="link">
+								<a href="javascript:;" class="txt-link">광화문글판 2022년 여름편</a>
+							</div>
+							<span class="b-date">2022.01.01</span>
+						</li>
+					</ul><!-- //board-lst -->
+
+					<div class="ut-more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+
+				</div><!-- //board-wrp -->
+
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+
+				<div class="board-wrp">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">100</i>개</span>
+						</div>
+					</div>
+					<ul class="notice-lst ty02">
+						<li>
+							<div class="item">
+								<button type="button" class="data">
+									<span class="cont">
+										<span class="add">
+											<em class="t">2020.01.01</em>
+										</span>
+										<strong class="tit">정부지원 긴급자금대출 빙자 보이스피싱 주의</strong>
+									</span>
+								</button>
+								<div class="atta_file">
+									<a href="javascript:;" class="ico file" title="다운로드"><span class="blind">은퇴기_생애주기별 금융생활 가이드북.pdf</span></a>
+								</div>
+							</div>
+						</li>
+					</ul><!-- //notice-lst -->
+
+					<div class="ut-more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+
+				</div><!-- //board-wrp -->
+
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+
+				<div class="board-wrp">
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">100</i>개</span>
+						</div>
+					</div>
+					<ul class="notice-lst ty02">
+						<li>
+							<div class="item">
+								<button type="button" class="data">
+									<span class="cont">
+										<span class="add">
+											<em class="t">2020.01.01</em>
+										</span>
+										<strong class="tit">은퇴기_생애주기별 금융생활 가이드북</strong>
+									</span>
+								</button>
+								<div class="atta_file">
+									<a href="javascript:;" class="ico file" title="다운로드"><span class="blind">은퇴기_생애주기별 금융생활 가이드북.pdf</span></a>
+								</div>
+							</div>
+						</li>
+					</ul><!-- //notice-lst -->
+
+					<div class="ut-more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+
+				</div><!-- //board-wrp -->
+
+			</div>
+
+			<ul class="ut-bnr-lst">
+				<li>
+					<a href="https://www.fss.or.kr/edu/fec/contMng/contUserList.do?check=1&menuNo=300117" title="새창열림" target="_blank" class="lk">
+						<strong class="tit">동영상 교육자료</strong>
+						<span class="txt">금융을 알기 쉽게 알려주는 <br>동영상 교육자료를 만나 보세요!</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

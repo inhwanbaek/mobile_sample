@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">같이투자자</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire invtm">
+					<div class="full-bg gray2">
+						<div class="top-area">					
+							<div class="invest dc">
+								<div class="pic-area"><img src="../../img/prd/img_03@3x.png" alt="프로필사진"></div>
+								<div>
+									<div class="ut-bdgs"><em class="bdg white">DC</em></div>
+									<div class="hd-tit2">필승투자</div>
+									<div class="follower"><label class="checkbox"><input type="checkbox" checked><span class="txt">팔로워 25</span></label></div>
+								</div>
+								
+							</div>
+		
+							<button type="button" class="bt share"><i class="blind">공유하기</i></button>
+						</div>				
+					</div>
+		
+					<div class="blue-btn-wrap">
+						<button type="button" class="blue-btn"><span>DC</span>한국BBBC제약</button>
+					</div>
+					
+					<div class="ut-tabs a">
+						<ul class="menu">
+							<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">투자자 정보</a></li>
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">투자자 피드</a></li>
+						</ul>
+					</div>
+		
+					<!-- 투자자 정보 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1">
+						투자자 정보
+					</div>
+		
+					<!-- 투자자 피드 -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="active">
+						<div class="tab-inr-sect">
+							<!-- 22-05-24 이미지url 변경 -->
+							<ul class="feed-list type2">
+								<li>							
+									<div class="tit">
+										<img src="../../img/prd/img_03@3x.png" alt="프로필사진">
+										필승투자
+										<div class="date">2020.01.01(화) 23:25</div>								
+									</div>
+									<div class="cont">
+										어제 장기투자 마인드를 잡을 수 있는 좋은 영상을 보고 공유 드립니다.<br><br>
+										#결국 자산가격은 우상향<br><br>
+										미국 시장 100년의 흐름<br>
+										링크 : <a href="#" target="_blank">Youtube.100hdxrt.kr.du</a>
+									</div>	
+									<div class="icon-btn-wrap">
+										<!-- [s] 22-05-11 좋아요 수정 -->
+										<span class="like-w">
+											<span class="follower">
+												<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+											</span>
+											좋아요 <b>3</b>개
+										</span>
+										<!-- // [e] 22-05-11 좋아요 수정 -->
+										<button type="button" class="bt comm">댓글 <span>3</span>개</button>
+										<button type="button" class="btn-declare">신고</button>
+									</div>
+									<!-- <div class="top-btn-wrap">
+										<button type="button">수정</button>
+										<button type="button">삭제</button>
+									</div>-->
+								</li>
+								<li>							
+									<div class="tit">
+										<img src="../../img/prd/img_02@3x.png" alt="프로필사진">
+										필승투자
+										<div class="date">2020.01.01(화) 23:25</div>
+										
+									</div>
+									<div class="cont">
+										어제 장기투자 마인드를 잡을 수 있는 좋은 영상을 보고 공유 드립니다.<br><br>
+										#결국 자산가격은 우상향<br><br>
+										미국 시장 100년의 흐름<br>
+										링크 : <a href="#" target="_blank">Youtube.100hdxrt.kr.du</a>
+									</div>	
+									<div class="icon-btn-wrap">
+										<!-- [s] 22-05-11 좋아요 수정 -->
+										<span class="like-w">
+											<span class="follower">
+												<label class="checkbox"><input type="checkbox"><span class="txt"></span></label>
+											</span>
+											좋아요 <b>3</b>개
+										</span>
+										<!-- // [e] 22-05-11 좋아요 수정 -->
+										<button type="button" class="bt comm">댓글 <span>3</span>개</button>
+										<button type="button" class="btn-declare">신고</button>
+									</div>
+									<!-- <div class="top-btn-wrap">
+										<button type="button">수정</button>
+										<button type="button">삭제</button>
+									</div> -->
+								</li>
+							</ul>
+		
+							<div class="ut-more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+
+							<!-- [D] 2022-08-03 작성된 피드 없을 시 추가-->
+							<div class="list-empty bd">
+								<p>작성된 피드가 없습니다.</p>
+							</div>
+							<!--//[D] 2022-08-03 작성된 피드 없을 시 추가-->
+						</div>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

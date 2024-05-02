@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-terms terms" id="pop-terms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">민감정보 제공 동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<section class="agreeArea">						
+						<div class="scrollBox">
+
+							<div class="agreeBox">
+								<div class="term-doc typeBg">
+
+									<h2 class="term_h_tit">계약체결 · 이행 등을 위한 동의</h2>
+									<p>
+										귀하는 개인(신용)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 개인의 신용도 등을 평가기하 위한 목적 이외의 개인(신용)정보 제공 동의는 철회할 수 있습니다. 다만, 본 동의는 ‘보험계약 인수심사·체결·이행·유지·관리’를 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+									</p>
+
+									<h3 class="term_tit">1. 제공받는자</h3>
+									<ul class="bullet a lg">
+										<li>종합신용정보집중기관 : 한국신용정보원</li>
+										<li>신용정보회사 : NICE평가정보㈜, 코리아크레딧뷰로㈜</li>
+										<li>공공기관 등 : 금융위원회, 금융감독원, 국세청 등 공공기관, 보험개발원, 보험요율 산출기관 등 법령상 업무 수행기관(위탁사업자 포함)</li>
+										<li>보험회사 등 : 생명·손해보험회사, 국내 재보험사, 공제사업자, 체신관서(우체국보험)</li>
+										<li>금융거래기관 : 계좌개설 금융기관, 금융결제원</li>
+										<li>보험협회 등 : 생명·손해보험협회, 건강보험심사평가원, 서울신용정보㈜, 한국예탁결제원, 변호사, 의료기관</li>
+									</ul>
+
+									<h3 class="term_tit">2. 제공받는 자의 이용목적</h3>
+									<ul class="bullet a lg">
+										<li>종합신용정보집중기관 : 개인(신용)정보 조회, 신용정보의 집중관리 및 활용 등 법령에서 정한 종합신용정보집중기관의 업무 수행</li>
+										<li>공공기관 등 : 법령에 따른 업무 수행(위탁업무 포함)</li>
+										<li>신용정보회사 : 신용도판단, 본인확인, 통계작성, 연구·분석, 정책자료로 활용 등 법령에서 정한 신용정보회사의 업무수행</li>
+										<li>보험회사 등 : 중복보험 확인 및 비례보상, 재보험 가입 및 재보험금 청구, 보험계약 공동인수</li>
+										<li>금융거래기관 : 금융거래업무</li>
+										<li>보험협회 등 : 보험계약 관련 업무지원(휴면보험금 등 포함), 공정경쟁 질서유지에 관한 협정업무</li>
+									</ul>
+
+									<h3 class="term_tit">3. 보유 및 이용기간</h3>
+									<ul class="bullet a lg">
+										<li>제공받는 자의 이용목적을 달성할 때까지(최대 거래 종료 후 5년까지)</li>
+									</ul>
+
+									<h3 class="term_tit">4. 제공 항목</h3>
+									<ul class="bullet a lg">
+										<li>민감정보
+											<ul class="bullet c">
+												<li>피보험자의 질병·상해에 관한 정보(상병명, 진료기록, 기왕증 등)</li>
+											</ul>
+										</li>
+									</ul>
+
+									<p class="bullet b mt20">외국 재보험사의 국내지점이 재보험계약 가입 판단 지원, 
+										보험계약 공동인수 지원 업무를 위탁하기 위한 경우 별의도 동의 없이 외국 소재 본점에 귀하의 정보를 이전할 수 있습니다.</p>
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-terms');
+	</script>
+
+</div>
+</body>
+</html>

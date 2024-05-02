@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a pop-beslds" id="pop-beslds">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">자동상품변경 처리내역</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="autoprd">
+							<p class="etp-txt">최근 1년 동안 자동상품변경 처리내역입니다.</p>
+							<div class="ut-dcard e mt16">
+								<div class="inr">
+									<div class="stds">
+										<div class="dtds">
+											<ul class="dlt">
+												<li>
+													<div class="dl">
+														<div class="dt">처리일자</div>
+														<div class="dd">2021.04.05</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">처리결과</div>
+														<div class="dd">정상</div>
+													</div>
+												</li>										
+												<li>
+													<div class="dl">
+														<div class="dt">매도신청금액</div>
+														<div class="dd">2,000,000원</div>
+													</div>
+												</li>												
+												<li>
+													<div class="dl">
+														<div class="dt">상품잔고</div>
+														<div class="dd">3,8885,544원</div>
+													</div>
+												</li>												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ut-dcard e">
+								<div class="inr">
+									<div class="stds">
+										<div class="dtds">
+											<ul class="dlt">
+												<li>
+													<div class="dl">
+														<div class="dt">처리일자</div>
+														<div class="dd">2021.04.05</div>
+													</div>
+												</li>
+												<li>
+													<div class="dl">
+														<div class="dt">처리결과</div>
+														<div class="dd">잔액부족</div>
+													</div>
+												</li>										
+												<li>
+													<div class="dl">
+														<div class="dt">매도신청금액</div>
+														<div class="dd">2,000,000원</div>
+													</div>
+												</li>												
+												<li>
+													<div class="dl">
+														<div class="dt">상품잔고</div>
+														<div class="dd">3,8885,544원</div>
+													</div>
+												</li>												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ut-more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+							<!-- 처리내역이 없을 시 -->
+							<div class="list-empty bd">
+								<p>처리내역이 없습니다.</p>
+							</div>				
+							<!--// 처리내역이 없을 시 -->																				
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-beslds');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-beslds',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-cont-detail" id="pop-cont-detail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품정보 보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="sect">
+						<!-- [D] 2022-04-01 텍스트 위치 변경 -->
+						<h2 class="hd-tit3">선택하신 신탁상품의 상세내용을<br>확인해 보세요.</h2>
+						<div class="graybox">  
+							<p class="desc">KEB하나은행 정기예금(1개월)</p>
+							<p class="hd-tit4">정기예금 신탁</p>
+							<div class="btn-set vt downs">
+								<button type="button" class="btn md ico-down ico-r">운용자산설명서</button>
+								<button type="button" class="btn md ico-down ico-r">특정금전신탁계약서</button>
+							</div>
+						</div>
+					</div>
+					<div class="sect">
+						<h3 class="hd-tit4">상품정보</h3>
+						<div class="ut-dtds c">
+							<ul class="dlist left">
+								<li>
+									<div class="dt">상품유형</div>
+									<div class="dd">정기예금형</div>
+								</li>
+								<li>
+									<div class="dt">투자위험도</div>
+									<div class="dd">낮은위험</div>
+								</li>
+								<li>
+									<div class="dt">신탁구분</div>
+									<div class="dd">특정금전신탁</div>
+								</li>
+								<li>
+									<div class="dt">이자지급유형</div>
+									<div class="dd">만기일시지급식</div>
+								</li>
+								<!-- [D] 2022-04-20 텍스트 수정 -->
+								<!-- 이자지급유형이 특정이자지급식인 경우 이자지급단위 컬럼을 추가로 노출 -->
+								<li>
+									<div class="dt">이자지급단위</div>
+									<div class="dd">00개월</div>
+								</li>
+								<!-- //이자지급유형이 특정이자지급식인 경우 이자지급단위 컬럼을 추가로 노출 -->
+								<!-- //[D] 2022-04-20 텍스트 수정 -->
+								<li>
+									<div class="dt">최저가입금액</div>
+									<div class="dd">10,000,000원</div>
+								</li>
+								<li>
+									<div class="dt">기본보수율</div>
+									<div class="dd">0.10%</div>
+								</li>
+								<li>
+									<div class="dt">중도해지가능여부</div>
+									<div class="dd">가능/불가능</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+
+					<div class="ut-unprotected">
+						<!-- [D] 2022-04-20 텍스트 수정 -->
+						<p class="txt">이 금융상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</p>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">가입하기</button>
+				</div>
+			</div> 
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cont-detail');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

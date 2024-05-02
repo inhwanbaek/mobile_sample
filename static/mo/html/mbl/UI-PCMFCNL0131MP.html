@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+
+	<article class="pop-layer a pop-idcardSing" id="pop-idcardSing">
+		<div class="pbd">
+			<div class="phd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">공동인증서</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="txt centers">
+							<div class="hdt">금융인증서</div>
+							<div class="cdt">아이콘을 눌러 인증해 주세요.</div><!-- [D] 2022-07-08 텍스트 수정 -->
+							<button type="button" class="bt ctfn"><i class="blind">금융인증서</i></button>
+						</div>
+						<!-- <div class="bts btn-set ct">
+							<button type="button" class="btn md">금융인증서 발급/재발급</button>
+						</div> -->
+					</div>
+				</main>
+				<!-- <div class="aling-center">
+					<ul class="link">
+						<li><a href="javascript:;" class="link-ar lk">다른 인증서 선택</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+		<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+	</article>
+	<script>
+		ui.popup.open('pop-idcardSing');
+	</script>
+
+</div>
+</body>
+</html>

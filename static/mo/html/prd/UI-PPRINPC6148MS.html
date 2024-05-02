@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"보험금 지급사례"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd payment" id="container">
+	
+		<!-- 본문 영역 -->
+		<!-- [s] 22-06-14 페이지 전체수정 -->
+		<div class="contents" id="contents">			
+			<div class="sec-top">
+				<div class="txt-tit">“보험이 참 고마웠어요.”<br>가슴 울리는 감동 사연</div>
+				<div class="txt-cont">교보생명 보험금 지급 사례 공모 수상작을 소개합니다.</div>
+
+				<span class="select def">
+					<label class="lb blind" for="select-11" role="text">Label <em class="ast">는 필수항목입니다</em></label>
+					<select name="select-11" id="select-11">
+						<option selected>2021년</option>
+						<option>2020년</option>
+						<option>2019년</option>
+					</select>
+				</span>
+			</div>
+			
+			<div class="sec-list">
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<span class="tot">총 <i class="n">300</i> 개</span>
+					</div>
+					<div class="opt pr">
+						<span class="select sort"> <!-- .def 클래스 추가하면 기본시스템 select -->
+							<select name="select-4" title="정렬선택">
+								<option>최신순</option>
+								<option>조회순</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<ul class="payment-list">
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="pic"><img class="img" src="../../img/prd/img_keyvisual_payment@2x.png" alt=""></div>
+							<div class="txt-area">
+								<div class="tit">가장 가슴 벅찬 청약</div>
+								<div class="txt">이별의 슬픔을 새로운 만남으로 위로해준 보험</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="pic"><img class="img" src="../../img/prd/img_keyvisual_payment2@2x.png" alt=""></div>
+							<div class="txt-area">
+								<div class="tit">무엇보다 소중하고 예쁜 카네이션 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄 두줄</div>
+								<div class="txt">아픔을 이겨낸 사랑의 힘 아픔을 이겨낸 사랑의 힘 아픔을 이겨낸 사랑의 힘 아픔을 이겨낸 사랑의 힘 아픔을 이겨낸 사랑의 힘</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="txt-area">
+								<div class="tit">이미지 없는 경우</div>
+								<div class="txt">이별의 슬픔을 새로운 만남으로 위로해준 보험 이미지 없는 경우</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="pic"><img class="img" src="../../img/prd/img_keyvisual_payment4@2x.png" alt=""></div>
+							<div class="txt-area">
+								<div class="tit">노란 단풍을 기다리며</div>
+								<div class="txt">죽음의 기로에서 제2의 인생 시작</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="pic"><img class="img" src="../../img/prd/img_keyvisual_payment7@2x.png" alt=""></div>
+							<div class="txt-area">
+								<div class="tit">유비무환, 우리 삶의 진정한 힘</div>
+								<div class="txt">미래를 위해 미리 준비하는 이유</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="box">
+							<div class="txt-area">
+								<div class="tit">어려울 때 힘이 되는 보험의 기적</div>
+								<div class="txt">코로나19에 남편의 시한부까지, 절망을 극복할 수 있게 한 보험</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+	
+				<div class="ut-more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>
+			</div>
+			
+			
+		</div>
+		<!-- // [e] 22-06-14 페이지 전체수정 -->
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

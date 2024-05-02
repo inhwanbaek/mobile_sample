@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a lg pop-dcs" id="pop-calc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 계산</h1>
+				</div>
+			</div>
+			<div class="pct">
+
+				<div class="dcs-calc-top">
+					<div class="ut-bdgs">
+						<em class="bdg b">연금</em>
+					</div>
+					<div class="hdt"><h2 class="tit hd-tit3">미리 보는 내 연금 (무)교보변액연금보험Ⅱ</h2></div>
+				</div>
+				
+				<div class="sky-box calc">
+					<div class="calc-set">
+						<span class="input a fix mr30"><label class="lb" for="inpt_0">생년월일</label><input id="inpt_0" type="number" placeholder="생년월일 입력(예:19800101)"></span>
+						<label class="radio"><input type="radio" name="radio1"><span class="txt">남성</span></label>
+						<label class="radio"><input type="radio" name="radio1"><span class="txt">여성</span></label>
+					</div>
+				</div>
+
+				<section class="sect">
+					<div class="hdts">
+						<h3 class="hd-tit3">주계약</h3>
+					</div>
+					<div class="cdts">
+						<div class="ut-tbl a">
+							<table class="tbform" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">주계약</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:180px">
+									<col>
+									<col style="width:180px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<label class="lb" for="sel_id0">보험종류</label>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_2">도움말</button>
+												<div class="toolctn w400">
+													<div class="tptit">보험종류</div>
+													<div class="tpmsg">저해지환급형 저해지기간 중 계약이 해지될 경우 일반형 계약의 해지환급금보다 적은 해지환급금을 지급하는 대신 일반형 계약보다 저렴한 보험료로 보장받으실 수 있습니다. </div>
+												</div>
+											</div>
+										</th>
+										<td>
+											<span class="select a w250">
+												<select id="sel_id0" name="sel_id0">
+													<option>미리 보는 내 연금 (무)교보변액연금보험Ⅱ</option>
+												</select>
+											</span>
+										</td>
+										<th scope="row">
+											<label class="lb" for="sel_id1">납입주기</label>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_3">도움말</button>
+												<div class="toolctn w400">
+													<div class="tptit">제목</div>
+													<div class="tpmsg">내용</div>
+												</div>
+											</div>
+										</th>
+										<td>
+											<span class="select a w250">
+												<select id="sel_id1" name="sel_id1">
+													<option>월납</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label class="lb" for="sel_id3">보험기간</label>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_4">도움말</button>
+												<div class="toolctn w400">
+													<div class="tptit">제목</div>
+													<div class="tpmsg">내용</div>
+												</div>
+											</div>
+										</th>
+										<td>
+											<span class="select a w250">
+												<select id="sel_id3" name="sel_id3">
+													<option>5년만기</option>
+												</select>
+											</span>
+										</td>
+										<th scope="row">
+											<label class="lb" for="sel_id4">납입기간</label>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_5">도움말</button>
+												<div class="toolctn w400">
+													<div class="tptit">납입기간</div>
+													<div class="tpmsg">납입기간이 길수록 월 보험료가 낮아져요.</div>
+												</div>
+											</div>
+										</th>
+										<td>
+											<span class="select a w250">
+												<select id="sel_id4" name="sel_id4">
+													<option>20년납</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<label class="lb" for="input_id1">연금지급개시나이</label>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_4">도움말</button>
+												<div class="toolctn w400">
+													<div class="tptit">제목</div>
+													<div class="tpmsg">내용</div>
+												</div>
+											</div>
+										</th>
+										<td>
+											<span class="select a w250">
+												<select id="input_id1" name="input_id1">
+													<option>20년납</option>
+												</select>
+											</span>
+										</td>
+										<th scope="row">
+											<label class="lb">보험료</label>
+										</th>
+										<!-- [D] 2022-05-04 항목 추가 -->
+										<td>											
+											<span class="input a won blue">
+												<label class="inlb-t" for="input_id4">상해급여형(최초계약)</label>
+												<input id="input_id4" type="tel" readonly value="123,456"><i class="w2">원</i>
+												<label class="inlb-b" for="input_id5">질병급여형(최초계약)</label>
+												<input id="input_id5" type="tel" readonly value="5,000"><i class="w">원</i>
+											</span>
+										</td>
+										<!--//[D] 2022-05-04 항목 추가 -->
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+
+				<!-- [D] 2022-05-04 부가정보 추가 -->
+				<section class="sect">
+					<div class="hdts">
+						<h3 class="hd-tit3">부가정보</h3>
+					</div>
+					<div class="cdts">
+						<div class="ut-tbl a">
+							<table class="tbform" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">부가정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:164px">
+									<col>
+									<col style="width:164px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row"><label class="lb" for="sel_id4-1">세형나이</label></th>
+										<td>
+											<span class="select a w260">
+												<select id="sel_id4-1" name="sel_id4-1">
+													<option>90세</option>
+												</select>
+											</span>
+										</td>
+										<th scope="row"><label class="lb" for="sel_s1-1">생활자금신청년수</label></th>
+										<td>
+											<span class="select a w260">
+												<select id="sel_s1-1" name="sel_s1-1">
+													<option>10년</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row"><label class="lb" for="sel_id4-2">보험료납입면제특약</label></th>
+										<td>
+											<span class="select a w260">
+												<select id="sel_id4-2" name="sel_id4-2">
+													<option>월납</option>
+												</select>
+											</span>
+										</td>
+										<th scope="row"><label class="lb" for="in_s1-1">연금지급개시나이</label></th>
+										<td>
+											<span class="input won a"><input type="tel" id="in_s1-1" title="보험료" value="80"><i class="w">세</i></span>
+										</td>
+									</tr>  									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!--//[D] 2022-05-04 부가정보 추가 -->
+				
+				<section class="sect">
+					<div class="hdts">
+						<h3 class="hd-tit3">펀드유형별 배분율</h3>
+					</div>
+					<div class="cdts">
+						<div class="ut-tbl a">
+							<table class="tbform tbss" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">펀드유형/배분율</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:auto">
+									<col style="width:125rem">
+									<col style="width:auto">
+									<col style="width:125rem">
+									<col style="width:auto">
+									<col style="width:125rem">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col"><label class="lb" for="sel_s1">채권형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s1" name="sel_s1">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s2">단기채권형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s2" name="sel_s2">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s3">성자주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s3" name="sel_s3">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s4">일반주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s4" name="sel_s4">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s5">인덱스주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s5" name="sel_s5">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s6">가치주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s6" name="sel_s6">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s7">글로벌주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s7" name="sel_s7">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s8">글로벌채권형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s8" name="sel_s8">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s9">K-Selection 주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s9" name="sel_s9">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s10">글로벌자산배분형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s10" name="sel_s10">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s11">K-커버드형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s11" name="sel_s11">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s12">글로벌배당주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s12" name="sel_s12">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s13">이머징주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s13" name="sel_s13">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s14">글로벌금리연동채권형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s14" name="sel_s14">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s15">장기국공채형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s15" name="sel_s15">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s16">글로벌자산배분형30</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s16" name="sel_s16">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s17">AI글로벌자산배분형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s17" name="sel_s17">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s18">글로벌원자재형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s18" name="sel_s18">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th class="tt"><label class="lb" for="sel_s19">글로벌ESG주식형</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s19" name="sel_s19">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"><label class="lb" for="sel_s20">길어질때두줄두줄길어질때두줄두줄</label></th>
+										<td class="txt-r">
+											<span class="select a min90">
+												<select id="sel_s20" name="sel_s20">
+													<option>10%</option>
+												</select>
+											</span>
+										</td>
+										<th class="tt"></th>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<ul class="bullet lg a mt30">
+						<li>채권형 그룹(채권형, 단기채권형, 글로벌금리연동채권형, 글로벌채권형, 장기국공채형)은 최소편입비율이 70% 이상이어야 합니다.</li>
+						<li>단, 글로벌자산배분형30을 포함하여 1개 이상의 펀드를 선택하는 경우, 채권형 그룹 최소편입비율은 아래와 같습니다.</li>
+						<li>채권형 그룹 최소편입비율 = 70% - 글로벌자산배분형30 편입비율 × 70%(채권형 그룹 최소편입비율이 '0'보다 작은 경우에는 '0'으로 합니다.)</li>					</ul>
+
+					
+				</section>
+				
+	
+				<section class="sect">
+					<!-- 스타일 변경: 2020.04.21-->
+					<div class="ut-optset optset a-bot">
+						<div class="opt a-bot">
+							<h3 class="hd-tit3">특약</h3> 
+						</div>
+						<div class="opt">
+							<label class="checkbox op"><input type="checkbox"><span class="txt">선택한 특약보기</span></label>
+						</div>
+					</div>
+					<div class="ut-optset optset a-bot">
+						<div class="opt a-bot">
+							<h4 class="hd-tit4">의무가입특약</h4> 
+							<span class="stt">가입할 때 꼭 넣어야 할 특약이에요</span>
+						</div>
+					</div>
+					<!--// 스타일 변경: 2020.04.21-->
+					<div class="ut-tbl a">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">특약</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: auto;">
+								<col style="width: 130rem;">
+								<col style="width: 130rem;">
+								<col style="width: 160rem;">
+								<col style="width: 160rem;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">특약명</th>
+									<th scope="col">보험기간</th>
+									<th scope="col">납입기간</th>
+									<th scope="col">가입금액</th>
+									<th scope="col">보험료</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l"><label class="checkbox"><input type="checkbox"><span class="txt bold">소액암진단특약(갱신형)Ⅲ [최초계약]</span></label></td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="보험기간">
+												<option>종신</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="납입기간">
+												<option>30년납</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="가입금액"><i class="w">원</i></span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="보험료" readonly><i class="w">원</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4 class="hd-tit4">사망보장</h4> 
+					<div class="ut-tbl a">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">사망보장</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: auto;">
+								<col style="width: 130rem;">
+								<col style="width: 130rem;">
+								<col style="width: 160rem;">
+								<col style="width: 160rem;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">특약명</th>
+									<th scope="col">보험기간</th>
+									<th scope="col">납입기간</th>
+									<th scope="col">가입금액</th>
+									<th scope="col">보험료</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l"><label class="checkbox"><input type="checkbox"><span class="txt bold">재해사망특약</span></label></td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="보험기간">
+												<option>종신</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="납입기간">
+												<option>30년납</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="input won a m w100p"><input type="tel" title="가입금액"><i class="w">만원</i></span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="보험료" readonly><i class="w">원</i></span>
+									</td>
+								</tr>
+								<tr>
+									<td class="txt-l"><label class="checkbox"><input type="checkbox"><span class="txt bold">정기특약</span></label></td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="보험기간">
+												<option>종신</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="납입기간">
+												<option>30년납</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="input won a m w100p"><input type="tel" title="납입금액"><i class="w">만원</i></span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="보험료" readonly><i class="w">원</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4 class="hd-tit4">입원보장</h4> 
+					<div class="ut-tbl a">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">질병보장</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: auto;">
+								<col style="width: 130rem;">
+								<col style="width: 130rem;">
+								<col style="width: 160rem;">
+								<col style="width: 160rem;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">특약명</th>
+									<th scope="col">보험기간</th>
+									<th scope="col">납입기간</th>
+									<th scope="col">가입금액</th>
+									<th scope="col">보험료</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l"><label class="checkbox"><input type="checkbox"><span class="txt bold">재해사망특약</span></label></td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="보험기간">
+												<option>종신</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="납입기간">
+												<option>30년납</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="input won a m w100p"><input type="tel" title="가입금액"><i class="w">만원</i></span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="보험료" readonly><i class="w">원</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4 class="hd-tit4">질병보장</h4> 
+					<div class="ut-tbl a">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">질병보장</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: auto;">
+								<col style="width: 130rem;">
+								<col style="width: 130rem;">
+								<col style="width: 160rem;">
+								<col style="width: 160rem;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">특약명</th>
+									<th scope="col">보험기간</th>
+									<th scope="col">납입기간</th>
+									<th scope="col">가입금액</th>
+									<th scope="col">보험료</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l"><label class="checkbox"><input type="checkbox"><span class="txt bold">재해사망특약</span></label></td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="보험기간">
+												<option>종신</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="select a w100p mw90">
+											<select title="납입기간">
+												<option>30년납</option>
+											</select>
+										</span>
+									</td>
+									<td>
+										<span class="input won a m w100p"><input type="tel" title="가입금액"><i class="w">만원</i></span>
+									</td>
+									<td>
+										<span class="input won a w100p"><input type="tel" title="보험료" readonly><i class="w">원</i></span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+	
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a md w250">보험료 계산</button>
+				</div>
+
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-calc');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

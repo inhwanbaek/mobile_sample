@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-kakaopay" id="pop-kakaopay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험계약대출 상품설명서 </h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+				
+		
+					<h3 class="hd-tit4 mt30">보험계약대출 계약내용</h3>
+					<div class="ut-tbl b">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">보험계약대출 계약내용</span><span class="cap"></span></caption>
+							<colgroup>
+								<col width="30%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">상품명</th>
+									<td>보험계약대출</td>
+								</tr>
+								<tr>
+									<th scope="row">대출신청금액</th>
+									<td>1,000,000원</td>
+								</tr>
+								<tr>
+									<th scope="row">대출한도</th>
+									<td>해지환급금 범위 내에서 회사가 정한 비율에 따름</td>
+								</tr>
+								<tr>
+									<th scope="row">대출기간</th>
+									<td>보험계약대출 대상 계약의 보험기간(연금보험은 연금 지급 개시 전)</td>
+								</tr>
+								<tr>
+									<th scope="row">보험계약대출 상환방법</th>
+									<td>만기일시상환, 정액분할상환</td>
+								</tr>
+								<tr>
+									<th scope="row">대출실행</th>
+									<td>2021.11.23</td>
+								</tr>
+								<tr>
+									<th scope="row">만기일</th>
+									<td>보험만기일</td>
+								</tr>
+								<tr>
+									<th scope="row">적용금리</th>
+									<td>연 3.7%</td>
+								</tr>
+								<tr>
+									<th scope="row">금리적용방식</th>
+									<td>고정형</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="mt30">
+						<span style="color:orangered">약관내용 관리자 pdf관리 </span>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-kakaopay');">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-kakaopay');
+	</script>
+
+</div>
+</body>
+</html>

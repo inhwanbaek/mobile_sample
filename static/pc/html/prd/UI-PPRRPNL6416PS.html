@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a lg pop-impayinfo" id="pop-impayinfo"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">결과보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire planning">
+					<div class="plan-botpop-cont">
+						<div class="bg-box-gray">
+							<div>000님은 가입하신 연금특약유형에 따라 <span class="blue">매월</span> 아래와 같이 연금을 받으실 수 있습니다.</div><!-- 22-07-04 수정 -->
+							<a href="javascript:;" class="link-ar">연금특약유형 안내</a>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">확정기간연금형</h2><!-- 22-07-04 수정 -->
+							<div class="ut-tbl a">
+								<table class="tbform center" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">확정기간연금형 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col" class="t-right">매월 받는 기본 연금(세전)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>5년 확정</td>
+											<td class="t-right">1,758,182원</td>
+										</tr>
+										<tr>
+											<td>10년 확정</td>
+											<td class="t-right">934,571원</td>
+										</tr>
+										<tr>
+											<td>15년 확정</td>
+											<td class="t-right">661,490 원</td>
+										</tr>
+										<tr>
+											<td>20년 확정</td>
+											<td class="t-right">526,033 원</td>
+										</tr>
+										<tr>
+											<td>30년 확정</td>
+											<td class="t-right">392,708 원</td>
+										</tr>
+										<tr>
+											<td>100년 확정</td>
+											<td class="t-right">323,503 원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">종신연금형(정액형)</h2><!-- 22-07-04 수정 -->
+							<div class="ut-tbl a">
+								<table class="tbform center" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">종신연금형(정액형) 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col" class="t-right">매월 받는 기본 연금(세전)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>10년(10회) 보증</td>
+											<td class="t-right">363,274원</td>
+										</tr>
+										<tr>
+											<td>20년 확정(20회) 보증</td>
+											<td class="t-right">359,411원</td>
+										</tr>
+										<tr>
+											<td>359,411원</td>
+											<td class="t-right">348,692원</td>
+										</tr>
+										<tr>
+											<td>100세 보증</td>
+											<td class="t-right">319,282원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">종신연금형(집중형)</h2><!-- 22-07-04 수정 -->
+							<div class="ut-tbl a">
+								<table class="tbform center" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">종신연금형(집중형) 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col" class="t-right">매월 받는 기본 연금(세전)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>10년(10회) 보증 1형</td>
+											<td class="t-right">300,863원</td>
+										</tr>
+										<tr>
+											<td>10년(10회) 보증 2형</td>
+											<td class="t-right">307,128원</td>
+										</tr>
+										<tr>
+											<td>30년(30회) 보증 1형</td>
+											<td class="t-right">277,086원</td>
+										</tr>
+										<tr>
+											<td>30년(30회) 보증 2형</td>
+											<td class="t-right">295,255원</td>
+										</tr>
+										<tr>
+											<td>30년(30회) 보증 3형</td>
+											<td class="t-right">313,299원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit3">상속연금형</h2><!-- 22-07-04 수정 -->
+							<div class="ut-tbl a">
+								<table class="tbform center" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">상속연금형 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col" class="t-right">매월 받는 기본 연금(세전)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>첫 회</td>
+											<td class="t-right">208,746원</td>
+										</tr>
+										<tr>
+											<td>2회 이후</td>
+											<td class="t-right">208,746원</td>
+										</tr>
+										<tr>
+											<td>상속자금</td>
+											<td class="t-right">97,503,900원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="plan-sect mt40">
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">유의사항</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>세금이 적용되지 않은 세전금액입니다.</li>
+										<li>이 결과는 입력하신 정보로 산출한 시뮬레이션 결과입니다. 실제 받는 금액과는 다를 수 있으니 참고자료로만 활용해 주세요. </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					
+				</main>
+			</div>
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-impayinfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

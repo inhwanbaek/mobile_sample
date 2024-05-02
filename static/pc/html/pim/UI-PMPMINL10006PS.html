@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-pim md pop-transfor1" id="pop-transfor1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">출금이체 동의신청</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- 본문 영역 -->
+					<div class="contents" id="contents">
+
+						<div class="complate-msg icon1">
+							<div class="msg">
+								<p class="p1">
+									출금이체 동의가 <i class="color6">완료</i>되었습니다.
+								</p>
+							</div>
+
+							<div class="ut-dcard a dcard">
+								<div class="dtds">
+									<ul class="dlt fs">
+										<li>
+											<div class="dl">
+												<div class="dt">은행</div>
+												<div class="dd">우리은행</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">계좌번호</div>
+												<div class="dd">45454****115</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">예금주</div>
+												<div class="dd">홍길동</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">예금주 주민등록번호</div>
+												<div class="dd">*****-2****</div>
+											</div>
+										</li>
+										<li>
+											<div class="dl">
+												<div class="dt">예금주와의 관계</div>
+												<div class="dd">본인</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-transfor1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+</div>
+</body>
+</html>

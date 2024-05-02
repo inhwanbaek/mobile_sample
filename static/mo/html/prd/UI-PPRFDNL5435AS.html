@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-condition" id="pop-condition">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">조건 검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="condition-wrp">
+						<div class="etp-item d">
+							<h2 class="etp-tit">펀드구분</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">국내</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">해외</span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+						</div>
+						<div class="etp-item">
+							<h2 class="etp-tit">펀드유형</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">MMF</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">채권형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">채권혼합형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">주식혼합형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">주식형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">기타</span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+						</div>
+						<!-- 펀드유형에서 주식형 선택 시 출력, 선택 해제 시 출력되지 않음 -->
+						<div class="etp-item">
+							<h2 class="etp-tit">주식형 펀드투자유형</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">성장형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">가치형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">배당형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">테마형</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">인덱스형 </span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+						</div>
+						<!-- //펀드유형에서 주식형 선택 시 출력, 선택 해제 시 출력되지 않음 -->
+
+						<div class="etp-item">
+							<h2 class="etp-tit">펀드위험등급</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">매우낮은위험</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">낮은위험</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">보통위험</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">다소높은위험</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">높은위험</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">매우높은위험</span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+						</div>
+						<div class="etp-item">
+							<h2 class="etp-tit">운용사</h2>
+							<span class="select a">
+								<label class="lb blind" for="sel_id1">운용사 선택</label>
+								<select id="sel_id1" name="sel_id0">
+									<option>전체</option>
+									<option>AB자산운용</option>
+									<option>BNK자산운용</option>
+									<option>DB자산운용</option>
+								</select>
+							</span>
+						</div>
+						<div class="etp-item">
+							<h2 class="etp-tit">상품 판매채널</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">온라인</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">창구전용</span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+							<div>
+								<h3 class="hd-tit5 mt10">온라인전용 펀드란? </h3>
+								<p>창구에 방문하지 않고도 인터넷으로만 바로 가입할 수 있는 펀드를 말합니다. 투자자 상담 등을 위한 시간, 비용요소가 적어 판매보수 수수료가 저렴합니다</p>
+							</div>
+						</div>		
+						<div class="etp-item">
+							<h2 class="etp-tit">수익률</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" checked><span class="txt">1개월</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">3개월</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">1년</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">3년</span></label></li>
+									<li><label class="checkbox"><input type="checkbox"><span class="txt">5년</span></label></li>
+								</ul>
+								<!-- //[D] 2022-04-08 checkbox 에 클래스 cr 삭제 디자인 가이드 기준 변경 -->
+							</div>
+						</div>							
+						<div class="etp-item">
+							<h2 class="etp-tit">투자수익률</h2>
+							<div class="ut-percent">
+								<span class="input a coms no-lb">
+									<input type="tel" id="" title="투자수익률 설정" pattern="\d*">
+									<i class="p">%</i>
+								</span>
+								<i class="ds">~</i>
+								<span class="input a coms no-lb">
+									<input type="tel" id="" title="투자수익률 설정" pattern="\d*">
+									<i class="p">%</i>
+								</span>
+							</div>
+						</div>
+						<div class="etp-item">
+							<h2 class="etp-tit">펀드 설정액</h2>
+							<div class="bg-chk">
+								<!-- [D] 2022-05-03 checkbox 변경 -->
+								<ul class="lst-chk">
+									<li><label class="checkbox"><input type="checkbox" name="chk-5"><span class="txt">10억</span></label></li>
+									<li><label class="checkbox"><input type="checkbox" name="chk-5"><span class="txt">50억</span></label></li>
+									<li><label class="checkbox"><input type="checkbox" name="chk-5"><span class="txt">100억</span></label></li>
+									<li><label class="checkbox"><input type="checkbox" name="chk-5"><span class="txt">1,000억 이상</span></label></li>
+								</ul>
+								<!--//[D] 2022-05-03 checkbox 변경 -->
+							</div>
+						</div>																		
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">초기화</button>
+					<button type="button" class="btn a rd lg">적용</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-condition');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>
+

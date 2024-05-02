@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 팝업영역 -->
+	<article class="pop-layer a sm pop-caseDetails" id="pop-caseDetails">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">건별 상세내역</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="list-empty bd"><!-- 검색결과 없는 경우 -->
+						<p>
+							조회된 내역이 없습니다.
+						</p>
+					</div>
+					<ul class="bullet b mt8">					
+						<li>수령인이 본인이 아닌 경우 제공되는 정보가 일부 제한됩니다.</li>
+					</ul>
+
+					<div class="ut-dtds f dtds"> <!-- [D] 2022-02-17 클래스변경 -->
+						<ul class="dlist between">
+							<li>
+								<div class="dt">지급일</div>
+								<div class="dd">2021.09.10</div>
+							</li>
+							<li>
+								<div class="dt">지급보험금</div>
+								<div class="dd"><span class="prc bold"> <strong class="p">7,500,000</strong><i class="w">원</i></span></div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ut-dtds c bd aic">
+						<div class="tops">
+							<h2 class="hd-tit4 htit">총 지급금액</h2>
+						</div>
+						<ul class="dlist left">
+							<li>
+								<div class="dt">접수번호</div>
+								<div class="dd">2109030044901</div>
+							</li>
+							<li>
+								<div class="dt">상품명</div>
+								<div class="dd">무배당교보베스트플랜유니버셜CI보험(주피 50%형표준)</div>
+							</li>
+							<li>
+								<div class="dt">보험증권번호</div>
+								<div class="dd">210005****928</div>
+							</li>
+							<li>
+								<div class="dt">병명</div>
+								<div class="dd">척추골절 및 외상</div>
+							</li>
+							<li>
+								<div class="dt">사고일</div>
+								<div class="dd">2021.08.10</div>
+							</li>
+							<!-- <li>
+								<div class="dt">보험금지급내역</div>
+								<div class="dd"><button type="button" class="btn sm">상세보기</button></div>
+							</li> -->
+							<li data-tog-cls="box" class="box open">
+								<div class="dl">
+									<div class="dt">보험금지급내역<button type="button" class="bt-tog bt-tog2 open" data-tog-cls="btn" data-tog-val="open"></button></div>
+									<div class="dd"></div>
+								</div>
+								<div class="bx-tog bx-tog2 tb open"  data-tog-cls="ctn">
+									<div class="ut-tbl b" aria-describedby="">
+										<table class="tblist" cellspacing="0" cellpadding="0" >
+											<caption><span class="tit">보험금지급내역</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="50%">
+												<col width="50%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">금액</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="left">실손통원의료비 (외래)</td>
+													<td class="right">0원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</li>
+
+
+							<li>
+								<div class="dt">지급보험금</div>
+								<div class="dd">
+									<span class="prc">
+										<strong class="p">7,000</strong><i class="w">원</i>
+									</span>
+								</div>
+							</li>
+							<li>
+								<div class="dt">은행</div>
+								<div class="dd">지역농축협</div>
+							</li>
+							<li>
+								<div class="dt">계좌번호</div>
+								<div class="dd">3558*****263</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ut-dtds c bd">
+						<div class="tops">
+							<h2 class="hd-tit4 htit">실손입원</h2>
+						</div>
+						<ul class="dlist left">
+							<li>
+								<div class="dt">접수번호</div>
+								<div class="dd">21090300449101</div>
+							</li>
+							<li>
+								<div class="dt">청구유형</div><!-- [D] 2022-07-21 태그텍스트수정 -->	
+								<div class="dd">실손-질병통원</div>
+							</li>
+							<li>
+								<div class="dt">청구금액</div>
+								<div class="dd">113,7000원</div>
+							</li>
+							<li>
+								<div class="dt">보상제외</div>
+								<div class="dd">0원</div>
+							</li>
+							<li>
+								<div class="dt">보상제외사유</div>
+								<div class="dd">-</div>
+							</li>
+							<li>
+								<div class="dt">공제금액</div>
+								<div class="dd">15,000원</div>
+							</li>
+							<li>
+								<div class="dt">지급보험금</div>
+								<div class="dd">15,000원</div>
+							</li>
+							<li>
+								<div class="dt">비례분담</div>
+								<div class="dd">N</div>
+							</li>
+						</ul>
+					</div>
+					<!-- [D] 2022-02-17 텍스트추가 -->
+					<div class="ut-dtds c bd">
+						<div class="tops">
+							<h2 class="hd-tit4 htit">실손통원</h2>
+						</div>
+						<ul class="dlist left">
+							<li>
+								<div class="dt">접수번호</div>
+								<div class="dd">21090300449101</div>
+							</li>
+							<li>
+								<div class="dt">청구유형</div><!-- [D] 2022-07-21 태그텍스트수정 -->	
+								<div class="dd">실손-질병통원</div>
+							</li>
+							<li>
+								<div class="dt">청구금액</div>
+								<div class="dd">113,7000원</div>
+							</li>
+							<li>
+								<div class="dt">보상제외</div>
+								<div class="dd">0원</div>
+							</li>
+							<li>
+								<div class="dt">보상제외사유</div>
+								<div class="dd">-</div>
+							</li>
+							<li>
+								<div class="dt">공제금액</div>
+								<div class="dd">15,000원</div>
+							</li>
+							<li>
+								<div class="dt">지급보험금</div>
+								<div class="dd">15,000원</div>
+							</li>
+							<li>
+								<div class="dt">비례분담</div>
+								<div class="dd">N</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- [D] 2022-02-17 버튼 추가 -->
+					<div class="btb-txt">가입하신 보험의 보상 제외 사유를 확인해보세요.</div><!-- [D] 2022-06-30 텍스트 추가 -->
+					<div class="btn-set btb">
+						<button type="button" class="btn md ico-elink ico-r">보험금 보상제외사유</button>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-caseDetails');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-caseDetails');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+	<!-- //팝업영역 -->
+
+
+
+</div>
+</body>
+</html>

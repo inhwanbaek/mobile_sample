@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer b pop-camera" id="pop-layer">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in head-box">
+					<h1 class="ptit">서류를 테두리에 맞춰 촬영해 주세요.</h1>
+					<!-- <p class="text-type1">가이드라인이 촬영한 이미지와 일치하지 않는 경우 ①, ②, ③, ④ 를 이동하여 그림과 같이 
+						맞춘 다음 확인을 눌러세요.</p> -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">					
+					<div class="top-box">
+						<p class="text-type1">가이드라인이 촬영한 이미지와 일치하지 않는 경우<br> ①, ②, ③, ④ 를 이동하여 그림과 같이 <br>
+							맞춘 다음 확인을 눌러세요.</p>
+					</div>
+					<div class="img-paper img02"><img src="../../img/common/img_paper02.png" class="img" alt="왼쪽상단①, 오른쪽상단②, 왼쪽하단③, 오른쪽하단④ 해당영역에 맞춘 촬영한 서류 이미지"></div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">					
+					<button type="button" class="btn c" onclick="ui.popup.close('pop-layer');">닫기</button>
+				</div>
+			</div>
+			<!-- <button type="button" class="btn-pop-close"><i class="blind">닫기</i></button> -->
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-layer');
+	</script>
+
+</div>
+</body>
+</html>

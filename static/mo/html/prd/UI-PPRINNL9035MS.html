@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- t.kyobo 가져옴 어디서 추가한 거지??? -->
+	<style>
+		.checked-button-active {
+	    position: relative !important;
+	    margin-right: -1rem !important;
+	    border-color: #242424 !important;
+	    border-right-width: 1rem !important;
+	    color: #242424 !important;
+	    font-weight: 700 !important;
+	    background: #f5f5f5 !important;
+	    z-index: 10 !important;
+	}
+	</style>
+	<!-- t.kyobo 가져옴 어디서 추가한 거지??? -->
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"변액보험 BEST 펀드"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd insurance variable" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">			
+			
+			<div class="variable-wrap">
+				<div class="t-tit">어느 펀드 수익이 좋았을까?<br>수익률 높았던 펀드를 알아 보세요.</div>
+			
+				<div class="ut-tabs a mt24">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">수익률 BEST</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">고객선호 BEST </a></li>
+					</ul>
+				</div>
+
+				<!-- 수익률 BEST -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+					<div class="tab-tab-inr">
+
+						<div class="ut-range mb26">
+							<div class="rag">
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt checked-button-active">당일</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt">3개월</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt">6개월</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt">1년</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt">3년</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="r_range">
+									<span class="txt">5년</span>
+								</label>
+							</div>
+							<div class="rag">
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="MN1" onclick="fnFdErnRtPd('MN1');" aria-hidden="true">
+									<span class="txt checked-button-active" role="button" title="1개월">1개월</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="MN3" onclick="fnFdErnRtPd('MN3');" aria-hidden="true">
+									<span class="txt" role="button" title="3개월">3개월</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="MN6" onclick="fnFdErnRtPd('MN6');" aria-hidden="true">
+									<span class="txt" role="button" title="6개월">6개월</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="YR1" onclick="fnFdErnRtPd('YR1');" aria-hidden="true">
+									<span class="txt" role="button" title="1년">1년</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="YR3" onclick="fnFdErnRtPd('YR3');" aria-hidden="true">
+									<span class="txt" role="button" title="3년">3년</span>
+								</label>
+								<label class="radio">
+									<input type="button" name="searchFdErnRtPd_tmp" value="YR5" onclick="fnFdErnRtPd('YR5');" aria-hidden="true">
+									<span class="txt" role="button" title="5년">5년</span>
+								</label>
+							</div>
+							<!-- <div class="rcs">
+								<span class="input a ut-date"><input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+								<i class="ds">~</i>
+								<span class="input a ut-date"><input type="tel" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span>
+							</div> -->
+						</div>
+
+						<div class="box-line">
+							<ul class="variable-best-list type2">
+								<li>
+									<div class="cont">
+										<div class="ut-bdgs">
+											<em class="bdg b">국내주식형</em>
+										</div>
+										<div class="flex-betw">
+											<div class="t-b16">일반주식형</div>
+											<div class="t-m14 c555">3개월</div>
+										</div>
+										<div class="flex-betw right"><!-- 22-07-20 클래스 추가 -->
+											<div class="t-m12 c80">F006</div>
+											<div class="t-b16">35.32%</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="cont">
+										<div class="ut-bdgs">
+											<em class="bdg b">국내주식형</em>
+										</div>
+										<div class="flex-betw">
+											<div class="t-b16">가치주식형</div>
+											<div class="t-m14 c555">3개월</div>
+										</div>
+										<div class="flex-betw right"><!-- 22-07-20 클래스 추가 -->
+											<div class="t-m12 c80">F008</div>
+											<div class="t-b16">27.32%</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="cont">
+										<div class="ut-bdgs">
+											<em class="bdg b">국내주식형</em>
+										</div>
+										<div class="flex-betw">
+											<div class="t-b16">글로벌주식형</div>
+											<div class="t-m14 c555">3개월</div>
+										</div>
+										<div class="flex-betw right"><!-- 22-07-20 클래스 추가 -->
+											<div class="t-m12 c80">F006</div>
+											<div class="t-b16">23.32%</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="ut-more">
+							<button type="button" class="btn-more">
+								<span class="tnt">
+									<em class="tm">더보기</em>
+									<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+								</span>
+							</button>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- 고객선호 BEST -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">고객선호 BEST</div>
+
+				
+			</div>	
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

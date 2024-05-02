@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"회원탈퇴"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page pim " id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="int-txt">앗! 지금 탈퇴하시면 아쉬워요.</div>
+			<div class="int-info">탈퇴 하시기 전에 아래 사항을 확인해주세요.</div>
+			<ul class="bullet a lg mt16">
+				<li>지금 탈퇴 하시면 교보 안에 유익한 콘텐츠와 서비스를 이용하실 수 없어요</li><!-- 문구A : 공통 -->
+				<li>모바일과 PC에서 전자금융서비스를 이용하실 수 없어요.</li><!-- 문구B : 계약고객만 노출 -->
+				<!-- 문구C : 금융마이데이터 서비스 가입 고객만 노출 -->
+				<li>가입 하신 금융마이데이터서비스를 이용하실 수 없어요.
+					<ul class="bullet b mt08">
+						<li>
+							회원탈퇴를 하시면 금융마이데이터에서 제공하는 정보는 모두 삭제되며 복구가 불가능합니다. 단, 법령에 따라 일부 정보는 일정기간 보관 후 파기됩니다.
+						</li>
+					</ul>
+				</li>
+				<!--// 문구C : 금융마이데이터 서비스 가입 고객만 노출 -->
+			</ul>
+			<!-- 문구D : 서비스 가입 고객만 노출 -->
+			<div class="int-info mt16">가입 하신 제휴서비스는 해당 페이지에 가셔서 직접 탈퇴 진행해야 해요.</div>
+			<ul class="ut-accd a mt16" data-accd="tog">
+				<li>
+					<div class="hbox">내가 가입한 제휴서비스 확인<button type="button" class="btn-tog">버튼</button></div>
+					<div class="cbox">
+						<ul class="bullet a">
+							<li>제휴서비스명 1</li>
+							<li>제휴서비스명 2</li>
+							<li>제휴서비스명 1</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<!--// 문구D : 서비스 가입 고객만 노출 -->
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button> <!--[sm] 텍스트수정 탈퇴하기 -> 다음 -->
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

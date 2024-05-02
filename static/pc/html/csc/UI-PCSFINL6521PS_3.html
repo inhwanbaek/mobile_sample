@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc qna detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">금융Q&amp;A</h2>
+				<!-- <div class="desc">서브문구</div> -->
+			</div>
+			
+			<section class="board-view">
+				<div class="tit-area">
+					<div class="pl">
+						<h3 class="board-tit">뭐가 어떻게 다른 걸까?  보장성 보험과 저축성 보험의 차이</h3>
+						<div class="info">
+							<div class="add">
+								<span class="date">2020.01.01</span>
+								<span class="ico-view"><em class="blind">조회</em><em class="num">100</em></span>
+							</div>
+						</div>
+					</div>
+					<div class="perform">
+						<!-- fnsize -->
+						<div class="ut-tooltip fnsize">
+							<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+								</div>
+							</div>
+						</div><!--// fnsize -->
+						<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+					</div>
+				</div>
+				<div class="cnt-area txt-area">
+					<div class="cnt">
+						<p class="txt">누구나 무탈하고 안정적인 삶을 꿈꾸지만, 인생은 생각한 만큼 흘러가지 않곤 합니다. 힘든 고비는 인생에 다양한 형태로 예고 없이 찾아오기 마련이기 때문입니다. 그러나 미리 가입해둔 보험은 벅찬 상황을 버틸 수 있는 최선의 수단이자 버팀목이 되어줍니다. 그렇다면 어떤 종류의 보험을 미리 준비해두는 것이 좋을까요? </p>
+						<p class="img3-1">보험은 크게 보장성 보험과 저축성 보험으로 나뉩니다. 
+							무엇이 다를까요?</p>
+						<p>보험은 보장성 보험과 저축성 보험의 갈래로 크게 나누어집니다. 보장성 보험과 저축성 보험은 각 목적과 성격이 뚜렷한데요, 합리적이고 효과적인 상품 설계를 위해, 가입자는 각 보험의 차이에 대해 정확히 이해해 두어야 합니다. 보장성 보험과 저축성 보험의 차이를 잘 알아보고, 여러분의 목적과 상황에 적합한 상품을 신중하게 검토해 보세요.</p>
+					</div>
+				</div>
+			
+				<div class="table-area">
+					<p class="bg-chk"><span>바쁜 당신을 위한 핵심체크</span></p>
+					<h4 class="hd-tit3">보장성 보험 VS 저축성 보험</h4>
+					<div class="ut-tbl a ty01">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">보장성 보험 VS 저축성 보험 </span><span class="cap">구분(주목, 세제 혜택, 종류, 보험금), 보장성 보험, 저축성 보험 으로 이루어진 표</span></caption>
+							<colgroup>
+								<col style="width:15%">
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">보장성 보험</th>
+									<th scope="col">저축성 보험</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">주목</th>
+									<td>질병과 재산 피해 등
+										위험보장에 중점을 둔 상품</td>
+									<td>목돈 마련이나 노후 대비
+										저축기능을 강화한 상품</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="2">세제 혜택</th>
+									<td>연말정산 시
+										세액공제</td>
+									<td>비과세</td>
+								</tr>
+								<tr>
+									<td>연 100만 원 한도에서 보험료의 13.2% 세액공제 <br>
+										(지방세 포함)</td>
+									<td>보험차익 이자 소득세 15.4% 면제 <br>
+										(지방세 포함)</td>
+								</tr>
+								<tr>
+									<th scope="row">종류</th>
+									<td>암보험, 질병보험, 종신보험, 운전자 보험 등</td>
+									<td>연금보험, 변액연금, 교육보험 등</td>
+								</tr>
+								<tr>
+									<th scope="row">보험금</th>
+									<td>만기환급금 ≤ 납입보험료 합계액</td>
+									<td>만기환급금 ≥ 납입보험료 합계액</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			
+				<div class="txt-area">
+					<h4 class="hd-tit4">보장성 보험</h4>
+					<p>
+						보장성 보험은 사망, 상해, 입원 등의 질병이나 재산상 피해 발생 시 가입자에게 계약된 보험금을 보장하는 것을 목적으로 합니다.
+					</p>
+					<p class="img3-2">보장성 보험은 사망, 상해, 입원 등의 질병이나 재산상 피해 발생 시 보험금을 지급하는 보험</p>
+					<p>보장성 보험의 종류로는 정기보험과 종신보험, 암보험, 실손의료보험 등의 상품이 있습니다. 저축성보험에 비해 보험료가 저렴한 대신, 중도 해약 혹은 만기 환급금이 납입한 보험료를 초과하지 않습니다. <br><br>
+						단어에서 바로 볼 수 있듯 위험 '보장'에 초점이 맞춰진 상품으로, 가입한 담보 금액만큼의 보험금을 보장받을 수 있습니다. 가입자가 생존해 있는 기간 혹은 사망 시 가족들의 경제적인 부담 등을 덜어내기 위한 성격이 강하며, 보장 기간에 따른 환급 여부, 그리고 갱신 여부에 따라 크게 나누어집니다. 
+					</p>
+				</div>
+			
+				<div class="txt-area">
+					<h4 class="hd-tit4">순수보장형과 만기환급형</h4>
+					<p>
+						같은 보장성 보험이더라도 만기 시 보험료 환급 여부로 순수보장형과 만기환급형으로 나누어집니다. 순수보장형은 순수하게 보장만 받는 보험이며 만기 시 받을 수 있는 환급금이 없습니다. 이에 비해 만기 환급형은 보험기간 중 납입한 보험료의 일부 혹은 모두를 환급받을 수 있습니다.   
+					</p>
+				</div>
+				<div class="blue-box">
+					<h5 class="hd-tit5">순수보장형</h5>
+					<ul class="bullet a">
+						<li>환급금이 없습니다.</li>
+						<li>납입 보험료가 만기환급형에 비해 저렴합니다.</li>
+						<li>만기 시 납입한 보험료 환급이 불가합니다.</li>
+					</ul>
+				</div>
+				<div class="blue-box">
+					<h5 class="hd-tit5">만기환급형</h5>
+					<ul class="bullet a">
+						<li>물가 상승 등의 요인으로 환급금의 가치가 하락할 가능성이 있습니다.</li>
+						<li>납입 보험료가 순수보장형에 비해 높습니다.</li>
+						<li>만기 시 납입한 보험료 환급이 가능합니다.</li>
+					</ul>
+				</div>
+			
+				<div class="txt-area">
+					<h4 class="hd-tit4">갱신형과 비갱신형</h4>
+					<p>
+						보장성 보험은 갱신형과 비갱신형으로 다시 나누어지기도 합니다. 이 둘은 어떤 차이가 있을까요? <br><br>
+						갱신형 보험은 가입자가 정해둔 기간이 지나면, 나이와 위험률 등을 적용해 보험료를 다시 계산하고 계약을 갱신하는 보험입니다. <br><br>
+						비갱신형 보험은 갱신형 보험에 비해 초기 보험료가 낮으나, 보험료가 갱신되기 때문에 부담해야 하는 금액이 지속적으로 오를 수 있는 특징이 있습니다. 가입 시점에 보험료가 확정되며, 초기 보험료가 비교적 높은 편이지만 납입하는 기간 동안 금액의 변동이 없다는 특징이 있습니다.
+					</p>
+				</div>
+				<div class="blue-box">
+					<h5 class="hd-tit5">정리하자면, 보장성 보험은</h5>
+					<ul class="bullet a">
+						<li>가입 기간 중 위험 보장에 중점을 둔 상품입니다.</li>
+						<li>저축이나 연금 목적으로 활용하기엔 적절하지 않습니다.</li>
+						<li>보험료 환급 여부로 순수보장형과 만기환급형으로 나누어집니다.</li>
+						<li>갱신 여부에 따라 갱신형과 비갱신형으로 나누어집니다.</li>
+					</ul>
+				</div>
+			
+				<div class="txt-area">
+					<h4 class="hd-tit4">저축성 보험</h4>
+					<p>
+						저축성 보험은 위험 보상에 저축 기능이 강화된 상품이며, 납입한 보험료보다 만기 시 지급되는 금액이 초과하는 보험입니다. 장기간 목돈 마련 혹은 노후 대비에 적합합니다. 과거에 비해 평균 수명이 길어지면서,  저축성보험에 관한 관심이 늘어나고 있는 추세입니다. 
+					</p>
+					<p class="img3-3">저축성 보험은 장기간 목돈 마련 혹은 노후 대비에 적합한 상품</p>
+					<p>저축성보험은 보장 금액과 사업비를 뺀 나머지 금액에 대해 복리로 이율을 부과 후 지급합니다. 그렇기 때문에 납입한 보험료보다 만기 시 받을 수 있는 보험금이 많습니다. <br><br>
+					연금보험, 교육보험, 자산연계형 연금보험, 저축보험 등이 저축성 보험의 종류에 속하며, 10년 이상 꾸준히 일정 금액 납입 시 비과세 혜택과 세액공제 등을 적용받을 수 있기에 재테크의 목적으로 고려해 볼 만한 상품입니다. 높은 물가 상승률과 저금리, 그리고 침체한 부동산 시장의 시대에서 저축성 보험은 수익을 위한 좋은 수단이 될 수 있습니다.  <br><br>
+					저축성 보험의 주목적이 목돈 마련과 연금수령이 되는 만큼, 자신의 자산 상황과 더불어 공시이율, 환급률 등을 종합적으로 판단하여 가입해야 합니다. 보험료를 장기적으로 납부해야 한다는 것을 고려해야 하며, 해지 환급금이 중도 해지 시 납입한 금액보다 적을 수 있기 때문에 자신에게 여유로운 한도를 설정해야 하는 점 또한 유념해야 합니다.
+					</p>
+				</div>
+				<div class="blue-box">
+					<h5 class="hd-tit5">정리하자면, 저축성 보험은 </h5>
+					<ul class="bullet a">
+						<li>저축을 위한 상품으로 목돈 마련이나 노후준비에 적합합니다.</li>
+						<li>만기 시, 납입한 금액보다 보장받을 수 있는 보험료가 높습니다.</li>
+						<li>비과세 혜택과 세액공제 혜택을 적용받을 수 있습니다.</li>
+					</ul>
+				</div>
+			
+				<div class="txt-area">
+					<h4 class="hd-tit4"><em class="q">Q</em>보장성 보험과 저축성 보험의 차이는?</h4>
+					<p>
+						보장성 보험과 저축성 보험을 구분 짓는 것은 납부한 보험료의 쓰임과 혜택의 차이입니다. 어떤 점이 다른지 구체적으로 살펴볼까요?
+					</p>
+					<h5 class="hd-tit5">쓰임의 차이 : 위험보험료와 적립보험료</h5>
+					<p>우선, 보험료의 정의와 구성에 대해 알아봅시다. 보험료는 가입자가 매월 지불하는 납입금을 이야기하며, 부가보험료와 순보험료로 이루어집니다.</p>
+					<div class="blind">
+						<ul>
+							<li>보험료
+								<ul>
+									<li>부가 보험료 : 보험계약의 체결, 유지, 관리를 위해 필요한 경비의 재원이 되는 보험료</li>
+									<li>순 보험료 : 보험에 가입하여 받을 수 있는 보장비용
+										<ul>
+											<li>저축 보험료 : 만기환급금, 해약환급금 등의 재원이 되는 보험료</li>
+											<li>위험 보험료 : 사망보험금, 장해급여금 등의 재원이 되는 보험료</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p class="img3-4">
+						보험료의 구성 - 부가 보험료와 순 보험료
+					</p>
+					<p>부가보험료란 보험 계약의 체결과 유지, 관리 등을 위해 보험사가 다양하게 사용하는 재원입니다. 순보험료는 가입 후 추후에 받을 수 있는 보장에 대한 금액을 뜻하는데요, 순보험료를 구성하고 있는 것이 바로 위험보험료와 저축보험료입니다. <br><br>
+						여기서 보장성 보험과 저축성 보험의 큰 차이가 발생합니다. 바로 가입자가 매월 납부하는 보험료의 구성입니다. 보장성 보험에는 위험보험료가 발생하는데요, 이는 피해 상황 시 가입자에게 지급되는 금액을 마련하기 위하여 따로 수금되는 보험료를 말합니다. 보험사는 위험보험료 수금을 통해 많은 가입자를 위한 보험료 지급을 감당할 수 있습니다. <br><br>
+						반면, 저축성 보험의 경우 피해 보장이 주된 목적이 아니기 때문에 위험 보험료가 없으며, 대부분 적립보험료로 이루어집니다. 적립보험료란 보험사의 사업비를 제외한 나머지 금액을 이율에 따라 적립 후, 만기환급금 혹은 중도 보험금 등을 제공할 때의 활용하는 재원을 말합니다.
+					</p>
+				</div>
+			
+				<div class="txt-area">
+					<h5 class="hd-tit5">세금 혜택의 차이 </h5>
+					<p>
+						다음으로 보장성 보험과 저축성 보험을 구분 짓는 것은 세금 혜택에 대한 차이입니다. 보장성 보험은 보험금에 비과세를 적용합니다. 한편, 저축성 보험의 보험차익에는 이자소득세에 대한 과세를 적용합니다.
+					</p>
+					<div class="blind">
+						<ul>
+							<li>보장성 보험
+								<ul>
+									<li>납입 보험료 : 연 100만원 이내 세액공제</li>
+								</ul>
+							</li>
+							<li>저축성 보험
+								<ul>
+									<li>보험차익 : 이자 소득세 15.4% 면제!</li>
+									<li>납입 보험료</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<p class="img3-5">보장성 보험과 저축성 보험의 세금 혜택 차이</p>
+					<p>보장성 보험은 근로소득자 본인 혹은 기본공제 대상자에 한해 연 100만 원 한도에서 보험료의 12%의 금액을 세액공제 받을 수 있습니다. 더불어 장애인 전용보험에 가입했을 경우에는 납입보험료 연 100만 원 한도에서 15%의 세액공제를 적용받을 수 있습니다.</p>
+				</div>
+			
+				<div class="table-area mt40">
+					<h5 class="hd-tit3">보장성 보험의 세액공제 요건</h5>
+					<div class="ut-tbl a ty01">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">보장성 보험 VS 저축성 보험 </span><span class="cap">구분(보장성보험, 보장성보험), 공제 금액, 요건 으로 이루어진 표</span></caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:36%">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">공제 금액</th>
+									<th scope="col">요건</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">보장성보험</th>
+									<td>연 100만 원 한도
+										납입액의 12%</td>
+									<td>기본공제대상자를 피보험자로 지출한 보장성보험의 보험료</td>
+								</tr>
+								<tr>
+									<th scope="row">장애인전용 <br>
+										보장보험</th>
+									<td>연 100만 원 한도
+										납입액의 15%</td>
+									<td>기본공제대상자 중 장애인을 피보험자 혹은 수익자로 지출한 장애인전용보장성보험의 보험료</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="txt-area mt32">
+					<p>저축성보험 상품은 보험차익에 대한 이자소득세 15.4%를 면제받을 수 있습니다. 다만 가입자는 아래와 같은 비과세 요건을 만족하여야 합니다.</p>
+				</div>
+				<div class="green-box">
+					<h6 class="hd-tit4">저축성 보험의 비과세 요건</h6>
+					<ol>
+						<li>1. 10년 이상의 보험 유지 기간</li>
+						<li>2. 매월 납입료가 150만 원 이하</li>
+						<li>3. (일시납 보험 계약일 경우) 1억 원 이하의 계약</li>
+						<li>4. (월납 보험 계약일 경우) 5년 이상의 보험료 납입 기간을 가져야 함</li>
+					</ol>
+				</div>
+				<div class="txt-area">
+					<p>보장성과 저축성 보험 모두 보험금 수령 시 발생하는 보험차익을 소득으로 간주하지 않습니다. 그렇기 때문에 보험차익이 발생하더라도 소득세에 대한 과세는 없다는 점은 공통적입니다. </p>
+				</div>
+				
+				<hr class="chick">
+	
+				<div class="txt-area">
+					<p>지금까지 보장성 보험과 저축성 보험의 차이를 다루어보았습니다. 각 보험의 목적과 기능 등이 뚜렷한 차이를 가지지만, 더 나은 내일을 위한 역할을 한다는 공통점 역시 확인해 볼 수 있었습니다. <br><br>
+					보험 가입 시 세부 약관을 자세히 확인하는 것도 중요하지만, 가장 중요한 것은 가입의 목적이라는 것을 꼭 기억하세요. 사고 보장에 초점을 둘 것인지, 재테크와 목돈 마련을 위한 저축상품에 가입할 것인지에 대한 목적을 명확히 해두어야 합리적이고 효과적으로 보험을 설계할 수 있습니다.	
+					<br><br>
+					교보생명은 보험의 가치를 한 번 더 생각합니다. 언제나 소중한 여러분과 가족들의 순간을 단단하게 챙기기 위해, 본질에 충실한 교보생명의 보장성 보험과 저축성 보험을 지금 바로 살펴보세요. 
+					</p>
+				</div>
+
+			</section>
+
+			
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

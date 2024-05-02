@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"상품부가서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page prd add-service btm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents" data-ui-fsize="ctn">	
+			<section class="top-area type2 bg12"> <!-- [D] 2022-08-22 클래스 수정 -->  
+				<div class="top-btn-area">
+					<button type="button" class="btn-fsize" data-ui-fsize="btn"><i class="blind">글자크기 조정하기</i></button>
+					<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+				</div>
+				
+				<h2 class="hd-tit2">교보프레스티지헬스케어서비스</h2>
+				<div class="tit">가족 생활보장상품 (종신보험)</div> <!-- [D] 2022-08-22 컨텐츠 수정 -->
+				<div class="top_cont">				
+					특별한 고객님과 <br>
+					가족에게 제공하는 <br>
+					<strong>교보생명만의 차별화된 서비스 </strong> <!-- [D] 2022-08-22 컨텐츠 수정 -->
+				</div>				
+			</section>
+
+			<section class="sec-wrap">
+				<h3 class="hd-tit4">교보프레스티지헬스케어서비스를 이용해 보세요. </h3> <!-- [D] 2022-08-22 텍스트 수정 -->
+				<div class="btn-set vt">			
+					<button type="button" class="btn f md ico-call-blue ico-r">교보헬스케어서비스 콜센터</button>
+					<button type="button" class="btn md ico-elink ico-r">교보헬스케어서비스 홈페이지</button>
+				</div>
+			</section>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이용방법</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교보프레스티지헬스케어서비스(Plus)</a></li> <!-- [SM] 2023-01-04 텍스트 수정 -->
+				</ul>
+			</div>
+
+			<!-- 이용방법 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				<div class="sec-box">
+					<h4 class="hd-tit2">어디에서 이용하나요?</h4>
+					<p>‘교보프레스티지헬스케어서비스’는 교보헬스케이서비스 콜센터(1588-7524) 또는 교보헬스케어서비스 홈페이지 (<a href="http://www.kyobohealthcare.com" target="_blank">www.kyobohealthcare.com</a>)에서 이용할 수 있습니다. </p> <!-- [D] 2022-08-25 텍스트수정 -->
+
+					<!-- [D] 2022-08-23 주요화면 삭제 -->
+					<!-- <h5 class="hd-tit4">주요화면</h5> 
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_1@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_2@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_3@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_4@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_5@2x.png" alt="이미지"></a></div>
+								</li>
+								<li class="swiper-slide">
+									<div class="pic"><a href="javascript:;"><img class="img" src="../../img/prd/img_screen6104_6@2x.png" alt="이미지"></a></div>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div> 
+					</div>-->
+				</div>
+
+				<div class="sec-box">
+					<h4 class="hd-tit2">누가 이용할 수 있나요?</h4>
+					<div class="balloon-box-wrap">
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">아래 상품에 가입하시면 서비스를 이용할 수 있어요.</span>
+						<div class="balloon-box" id="ball_1">
+							<ul class="un-bullet">
+								<li>교보프레스티지종신보험</li><!-- [D] 2022-08-22 컨텐츠 수정 -->
+							</ul>
+						</div>						
+					</div>
+					<ul class="bullet a lg">
+						<li>교보프레스티지헬스케어서비스는 상품별로 일정 금액 이상을 가입한 고객에게 서비스를 제공합니다. </li> <!-- [D] 2022-08-22 컨텐츠 수정 -->
+						<li>신청서(개인정보 수집·이용·제공 동의서)를 제출하고 서비스 대상자임을 확인받은 후 이용하실 수 있습니다.</li>
+						<li>서비스 이용 가능한 상품 및 금액은 교보생명 FP(재무설계사) 또는 콜센터(1588-1001)로 문의해 주세요. </li>
+					</ul>
+					
+				</div>	
+				
+			</div>
+			<!-- // 이용방법 -->
+
+			
+
+			<!-- 교보프레스티지 헬스케어서비스 -->
+			<!-- 22-05-31 교보프레스티지 헬스케어서비스 전체수정 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				<div class="sec-box tab-cont-wrap">
+					<h4 class="hd-tit2">어떤 혜택을 받나요?</h4>
+					<div class="ut-tabs c lg">
+						<ul class="menu" role="tablist">
+							<li class="active"><a class="bt" data-ui-tab-btn="tab_cl3" aria-controls="tab_cl3_1" href="javascript:;" role="tab" aria-selected="false">혜택 1</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl3" aria-controls="tab_cl3_2" href="javascript:;" role="tab" aria-selected="false">혜택 2</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl3" aria-controls="tab_cl3_3" href="javascript:;" role="tab" aria-selected="false">혜택 3</a></li>
+							<li><a class="bt" data-ui-tab-btn="tab_cl3" aria-controls="tab_cl3_4" href="javascript:;" role="tab" aria-selected="false">혜택 4</a></li> <!-- [SM] 2023-01-04 추가 -->
+						</ul>
+					</div>
+
+					<!-- 혜택 1 -->
+					<div data-ui-tab-ctn="tab_cl3" aria-labelledby="tab_cl3_1" class="active">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3">교보헬스케어서비스</h5>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">평상시 건강관리</h6>
+								<ul class="bullet a lg">
+									<li>건강상담/건강정보 제공</li>
+									<li>고혈압 관리/비만·영양 관리 프로그램</li>
+									<li>안과/치과 주요질환 정보 프로그램</li>
+									<li>간호사 복약 상담</li>
+									<li>당뇨 특화 모바일 웹진 제공</li>
+									<li>주요질환 예방 프로그램</li>
+									<li>건강검진 안내(우대)</li>  <!-- [SM] 2023-01-04 추가 -->
+									<li>암 정보 제공</li>  <!-- [SM] 2023-01-04 추가 -->
+								</ul>
+								
+								<!-- [SM] 2023-01-04 삭제 -->
+								<!--
+								<h6 class="hd-tit4">가족 건강관리</h6>
+								<ul class="bullet a lg">
+									<li>미숙아 방문 간호 컨설팅</li> 
+									<li>건강검진 안내(우대)</li>
+									<li>암 정보 제공</li>
+								</ul>-->
+						
+								<h6 class="hd-tit4">일반 치료지원</h6>
+								<ul class="bullet a lg">
+									<li>병원·의료진 안내 및 예약대행</li>
+									<li>1:1 코칭콜</li>
+									<li>간병인 연결</li>
+									<li>토닥토닥 마음케어</li>
+									<li>당뇨 집중관리 14주 프로그램</li>
+									<li>인공관절수술 자가 재활 프로그램</li>
+								</ul>
+							
+								<h6 class="hd-tit4">중대질환 치료지원</h6>
+								<ul class="bullet a lg">
+									<li>간호사 병원동반/질병관리교육</li>
+									<li>암 재발 예방</li>
+								</ul>
+								<!-- [SM] 2023-01-04 삭제 -->
+								<!-- <h6 class="hd-tit4">건강증진 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>건강관리 및 질병예방을 위한 1:1 맞춤형 건강증진 프로그램</li>
+								</ul> -->
+								<!--// [SM] 2023-01-04 삭제 -->
+							</div>
+							
+						</div>
+					</div>
+					<!-- // 혜택 1 -->
+
+					<!-- 혜택 2 -->
+					<div data-ui-tab-ctn="tab_cl3" aria-labelledby="tab_cl3_2">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3">교보프리미어헬스케어서비스</h5>
+							<div class="cont-box">
+								<h6 class="hd-tit4">건강증진 프로그램</h6>
+								<ul class="bullet a lg">
+									<li>건강관리 및 질병예방을 위한 1:1 맞춤형 건강증진 프로그램</li>
+								</ul>
+							
+								<h6 class="hd-tit4">차량 에스코트</h6>
+								<ul class="bullet a lg">
+									<li>암 및 중대질환 치료와 회복을 위한 전문 간호사 동반 및 병원 간 이송</li>
+								</ul>
+						
+								<h6 class="hd-tit4">방문 심리상담</h6>
+								<ul class="bullet a lg">
+									<li>중대질환 발병 시 정서적 안정감을 드리기 위한 방문 심리 상담 제공</li>
+								</ul>
+						
+								<h6 class="hd-tit4">해외 의료지원</h6>
+								<ul class="bullet a lg">
+									<li>해외체류 중 건강 이상 시 현지 병원 안내, 의료 통역 지원</li>
+								</ul>
+							</div>
+							<!-- [SM] 2023-01-04 삭제 -->
+							<!-- <div class="dw-tit">
+								<h5 class="hd-tit3">교보프레스티지헬스케어서비스</h5>
+							</div>
+
+							<div class="cont-box">
+								<h5 class="hd-tit4 mb24">가족 올케어 건강관리</h5>
+								<h6 class="hd-tit5">가족 중대질환 발병시 간호사 병원 동반</h6>
+								<ul class="bullet a lg">
+									<li>간호사 병원동반/질병관리교육</li>
+								</ul>
+							
+								<h6 class="hd-tit5">차량 에스코트</h6>
+								<ul class="bullet a lg">
+									<li>마음 편하게 종합 건강검진을 받을 수 있도록 자택에서 건강검진센터까지 차량 에스코트 지원</li>
+								</ul>
+						
+								<h6 class="hd-tit5">본인, 가족 중대질환 치료 후 영양 컨설팅</h6> 
+								<ul class="bullet a lg">
+									<li>중대질환 치료 후 사후관리를 위한 건강기능식품 컨설팅</li>
+								</ul>
+							</div> -->
+							<!--// [SM] 2023-01-04 삭제 -->
+						</div>	
+					</div>
+					<!-- // 혜택 2 -->
+
+					<!-- 혜택 3 -->
+					<div data-ui-tab-ctn="tab_cl3" aria-labelledby="tab_cl3_3">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3 ball-tit" id="ball_6">가족 올케어 건강관리</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_6">가족이 건강해야 고객님이 행복합니다.<br>가정의 건강 설계를 지원합니다.</span>
+							
+							<!-- [SM] 2023-01-04 텍스트 수정-->
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">가족 건강상담 · 건강정보</h6>
+								<ul class="bullet a lg">
+									<li>가정의학과 등 14개 진료과 전문의, 영양사, 심리상담사, 건강운동관리사 전화 상담 제공</li>
+									<li>주요질환, 치아 등 건강정보 제공(홈페이지, LMS, E-mail)</li>
+								</ul>
+							
+								<h6 class="hd-tit4">가족 병원 · 의료진 안내 및 진료예약 대행</h6>
+								<ul class="bullet a lg">
+									<li>가족이 질병 발생 시 병원 · 의료진 안내 및 전국 상급종합병원 진료예약 대행</li>
+								</ul>
+								<h6 class="hd-tit4">미숙아 방문간호 컨설팅</h6>
+								<ul class="bullet a lg">
+									<li>본인 또는 배우자가 미숙아 출생 시 신생아 전문 간호사 방문 상담 및 육아 교육서비스 제공(퇴원 후 1개월까지 방문)
+										<ul class="bullet b lg">
+											<li>미숙아 : 임신주수 37주 미만 · 출생체중 2.5k g 이하</li>
+										</ul>
+									</li>
+								</ul>									
+							</div>
+							<!--// [SM] 2023-01-04 텍스트 수정-->
+						</div>
+					</div>
+					<!-- 혜택 3 -->
+
+					<!-- [SM] 2023-01-04 추가 -->
+					<!-- 혜택 4 --> 
+					<div data-ui-tab-ctn="tab_cl3" aria-labelledby="tab_cl3_4">
+						<div class="s-section s-section2">
+							<h5 class="hd-tit3 ball-tit" id="ball_10">간호사 병원동반/질병관리교육 & 헬스홈케어서비스</h5>
+							<span data-ui-balloon="left,top" aria-describedby="ball_10" class="bottom30">암환자에게는 쾌적한 주거환경이 치료만큼 중요해요<br>중대질환 발병 시 주거환경 케어를 도와드려요</span>
+							<p class="explain">교보프레스티지헬스케어서비스 Plus 회원의 경우, 중대질환 진단 후 아래 2가지 서비스 중 고객이 선택한 서비스를 제공합니다.<br>
+								(중대질환별 서비스 제공 횟수 한도 내 제공, 헬스홈케어서비스는 3회 한도 내 이용)</p>
+							<div class="cont-box revise">
+								<h6 class="hd-tit4">간호사 병원동반/질병관리교육</h6>
+								<ul class="bullet a lg">
+									<li>중대질환 치료(수술, 입·퇴원 등) 시 전문간호사 병원동반</li>
+									<li>중대질환 전문간호사 방문교육 서비스</li>
+									<li>중대질환별 건강상담, 건강정보, 심리상담 제공</li>
+								</ul>
+						
+								<h6 class="hd-tit4">헬스홈케어서비스 <img class="img ml10" src="../../img/prd/pro-touch.png" alt="프로터치로고이미지" width="140" height="auto"></h6>
+								<ul class="bullet a lg">
+									<li>중대질환 발병 시 환자의 생활공간(주거환경) 살균 소독 및 청소 대행 서비스 제공
+										<ul class="bullet b lg">
+											<li>중대질환 범위: 암, 심장·뇌혈관 질환, 고혈압성 질환, 당뇨합병증, 원발성 폐동맥 고혈압, 다발성 경화증, 중증세균성 수막염(뇌·척수수막염), 루게릭병(근위축성촉석경화증)</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+					<!-- // 혜택 4 -->
+					<!--// [SM] 2023-01-04 추가 -->
+
+
+					
+				</div>
+			</div>	
+			<!-- // 교보프레스티지 헬스케어서비스 -->
+
+			<!-- [s] 22-05-31 위치수정, 클래스 추가 -->
+			<section class="sec-wrap adds-btn">
+				<h3 class="hd-tit4">다른 상품부가서비스가 궁금하시다면?</h3>
+				<button type="button" class="btn c sm">상품부가서비스 전체보기</button>
+			</section>
+			<!-- // [e] 22-05-31 위치수정, 클래스 추가 -->
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<!-- [D] 2022-08-23 퍼블화면상 내용 일치하게 수정 -->
+					<ul class="bullet a glst">
+						<li>교보프레스티지헬스케어서비스는 교보생명이 정한 서비스 부가기준*을 충족하고, 서비스 신청서(개인정보 수집·이용·제공 동의서)를 제출한 주피보험자(주된 보험대상자)에게 제공합니다.(보험 유지건에 한함)</li>
+						<li><strong>교보프레스티지헬스케어서비스</strong> : 교보프레스티지종신보험(주계약 10억원 이상 가입)
+							<ul class="bullet b">
+								<li>위 내용은 2021년 6월 기준이며 상품별 세부기준은 담당 FP(재무설계사) 또는 담당 FP지점에 문의해 주세요. </li>
+							</ul>
+						</li>
+						<li>고객전용 홈페이지(www.kyobohealthcare.com), 교보헬스케어서비스 콜센터(1588-7524)를 통해  제공합니다.</li>
+						<li>교보프레스티지헬스케어서비스는 회원(주피보험자) 나이 만 70세까지 제공됩니다.(단, 만 50세 이후 가입고객의 경우 최대 20년까지 제공)</li>
+						<li>향후 제공 여건 변화에 따라 서비스 내용 및 제공방법, 제휴회사가 변경되거나 중지될 수 있습니다.</li>
+						<li>보험계약 체결 전 상품설명서와 약관을 읽어 보시기 바랍니다.</li>
+						<li>보험상품을 가입할 때 보험계약의 기본사항(보험상품명, 납입기간, 피보험자 등)을 반드시 확인하시기 바랍니다.</li>
+						<li>교보생명은 보험상품에 대해 충분히 설명할 의무가 있으며 가입에 앞서 이에 대한 충분한 설명을 받으시기 바랍니다.</li>
+					</ul>
+					<!-- [D] 2022-08-23 퍼블화면상 내용 일치하게 수정 -->
+
+				</div>
+			</div>
+			
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+</div>
+
+</body>
+</html>

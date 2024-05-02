@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"신탁신규가입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">7. 기본정보 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">13</b></span>
+								<span class="num"><b class="b">7</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ut-bdgs">
+				<em class="bdg b">정기예금 신탁</em>
+			</div>
+
+			<div class="futr-tit">
+				<h2 class="hd-tit3">신탁계약 가입을 위해<br>고객님 정보를 입력해 주세요.</h2>
+			</div>
+
+			<!-- [D] 2022-04-21 클래스 수정 -->
+			<div class="info-enter">
+				<!-- [D] 2022-05-11 ui 변경 -->
+				<div class="sect">
+					<div class="ut-tbl a">
+						<table class="tbform b" cellpadding="0" cellspacing="0">
+							<!-- [D] 2022-04-14 caption 추가 -->
+							<caption><span class="tit">고객님 정보</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:30%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">이름</th>
+									<td>김*보</td>
+								</tr>
+								<tr>
+									<th scope="row">주민등록번호</th>
+									<td>900101-2******</td>
+								</tr>
+								<!-- [D] 2022-05-11 항목 추가 -->
+								<tr>
+									<th scope="row">휴대폰번호</th>
+									<td>010-1234-5678 </td>
+								</tr>
+								<!--//[D] 2022-05-11 항목 추가 -->
+							</tbody>
+						</table>
+						<!-- [D] 2022-06-24 텍스트 수정 -->
+						<p class="mt10">휴대폰번호 변경은 [개인정보 > 내정보설정 > 개인정보 조회/변경]에서 변경하거나 콜센터(1588-1001)로 문의하시기 바랍니다.</p>
+					</div>
+				</div>
+				<!--//[D] 2022-05-11 ui 변경 -->
+
+				<!-- [D] 2022-05-11 ui 삭제 
+				<div class="sect">
+					<h3 class="hd-tit4">휴대폰번호</h3>
+					<div class="ut-phone">
+						<span class="select tcom">
+							<label class="lb" for="input_id03">통신사</label>
+							<select id="input_id03">
+								<option>SKT</option>
+								<option>KT</option>
+								<option>LGU+</option>
+								<option>SKT알뜰폰</option>
+								<option>KT알뜰폰</option>
+								<option>LGU+알뜰폰</option>
+							</select>
+						</span>
+						<span class="input a tnum"><label class="lb" for="input_id04">전화번호입력</label>
+							<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="input_id04">
+						</span>
+					</div>
+					 [D] 2022-05-10 문구 추가
+					<p class="mt10">휴대전화번호 변경은 [개인정보 > 내정보설정 > 개인정보 조회/변경]에서 변경하시거나 콜센터(1588-1001)로 문의하시길 바랍니다.</p>
+					
+					[D] 2022-05-10 삭제
+					<div class="desc">
+						<p class="txt">문자 안내 서비스에 동의하시면 입출금거래내역 등 금융거래정보를 휴대폰 문자를 통해 실시간으로 확인하실 수 있습니다.</p>
+					</div>
+					<div class="rdos mt16">
+						<label class="radio"><input type="radio" name="radio1"><span class="txt">동의함</span></label>
+						<label class="radio"><input type="radio" name="radio1"><span class="txt">동의안함</span></label>
+					</div>
+				</div>
+				-->
+
+				<!-- [D] 2022-05-10 ui 추가 -->
+				<div class="sect">
+					<h3 class="hd-tit4">문자안내서비스</h3>
+					<div class="desc">
+						<p class="txt">문자메시지 수신에 동의하시면 입출금거래내역 등 금융거래정보를 휴대폰 문자메시지로 실시간 확인하실 수 있습니다.</p>
+					</div>
+					<div class="rdos mt16">
+						<label class="radio"><input type="radio" name="radio1" checked><span class="txt">동의</span></label>
+						<label class="radio"><input type="radio" name="radio1"><span class="txt">동의안함</span></label>
+					</div>
+				</div>
+				<!--//[D] 2022-05-10 ui 추가 -->
+
+				<div class="sect">
+					<h3 class="hd-tit4">주소</h3>
+					<div class="fldset">
+						<div class="fld">
+							<div class="rdos">
+								<label class="radio"><input type="radio" name="radio2" checked><span class="txt">집</span></label>
+								<label class="radio"><input type="radio" name="radio2"><span class="txt">직장</span></label>
+							</div>
+						</div>
+						<div class="fld">
+							<div class="ut-addrs addrs">
+								<span class="input a adr1">
+									<label class="lb" for="adr_id1" role="text">주소</label>
+									<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+									<input id="adr_id1" type="text" placeholder="주소를 입력해주세요" readonly>
+								</span>
+								<span class="input a adr2"><label class="lb" for="adr_id2">상세주소</label><input id="adr_id2" type="text" placeholder="나머지 주소를 입력해주세요"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- [D] 2022-05-23 운용보고서 수령 여부, 이메일 수신동의 위치변경 -->
+				<div class="sect">
+					<!-- [D] 2022-05-10 텍스트 수정 -->
+					<h3 class="hd-tit4">이메일 수신동의</h3>
+					<div class="fldset">
+						<div class="fld">
+							<div class="rdos">
+								<!-- [D] 2022-05-10 텍스트 수정 -->
+								<label class="radio"><input type="radio" name="radio5"><span class="txt">동의</span></label>
+								<label class="radio"><input type="radio" name="radio5"><span class="txt">동의안함</span></label>
+							</div>
+							<div class="ut-email email mt16">
+								<div class="enam">
+									<span class="input a emids"><label class="lb" for="emids_03">이메일<i class="blind">아이디</i></label><input id="emids_03" type="email" placeholder="abcd"></span>
+									<i class="at">@</i>
+									<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+								</div>
+								<!-- 입력하지 않을 경우, 에러메시지  
+								<div class="enam">
+									<span class="input a emids no"><label class="lb" for="emids_03">이메일<i class="blind">아이디</i></label><input id="emids_03" type="email" placeholder="abcd"></span>
+									<i class="at">@</i>
+									<span class="input a emcom no"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+								</div>
+								<div class="vald-msg show no">이메일주소를 입력해 주세요.</div>
+								입력하지 않을 경우, 에러메시지  -->
+								<ul class="ebts">
+									<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+									<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+									<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit4">우편물 수령 여부(운용보고서)</h3><!-- [D] 2022-06-24 텍스트 변경 -->
+					<div class="fldset">
+						<div class="fld">
+							<div class="rdos">
+								<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1"><span class="txt">수령</span></label>
+								<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_2"><span class="txt">수령안함</span></label>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<!-- 수령 선택시 노출  -->
+				<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_1" class="">
+					<div class="sect">
+						<h3 class="hd-tit4">통지방법 선택</h3><!-- [D] 2022-06-24 텍스트 변경 -->
+						<div class="fldset">
+							<div class="fld">
+								<div class="rdos">
+									<!-- [D] 2022-06-24 텍스트 변경 -->
+									<label class="radio"><input type="radio" name="radio4" checked><span class="txt">우편(자택)</span></label>
+									<label class="radio"><input type="radio" name="radio4"><span class="txt">우편(직장)</span></label>
+									<label class="radio"><input type="radio" name="radio4"><span class="txt">이메일</span></label>
+								</div>
+							</div>	
+							<!-- [D] 2022-06-24 텍스트 변경 -->
+							<!-- [D] 2022-05-10 텍스트 수정 -->
+							<!-- 우편(자택) or 우편(직장) 선택했는데 입력한 주소정보가 없을 경우, 에러 노출
+							<div class="vald-msg show no">수령받을 주소(자택)를 입력해 주세요.</div>
+							<div class="vald-msg show no">수령받을 주소(직장)를 입력해 주세요.</div>
+							 -->
+							<!-- 이메일을 선택했는데 입력한 이메일 주소가 없는 경우, 에러 노출
+							<div class="vald-msg show no">수령받을 이메일을 입력해 주세요.</div>
+							-->
+							<!-- 이메일을 선택했는데 이메일 수신여부가 수신안함일 경우, 에러 노출
+							<div class="vald-msg show no">이메일 수신동의를 ‘동의’로 변경해 주세요</div>
+							-->
+						</div>
+					</div>
+				</div>
+				<!-- //수령 선택시 노출  -->
+
+				<!--//[D] 2022-05-23 운용보고서 수령 여부, 이메일 수신동의 위치변경 -->
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- [D] 2022-05-11 클래스 'b' 삭제 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

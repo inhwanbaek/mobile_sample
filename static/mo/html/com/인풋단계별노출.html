@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-smartdoc" id="pop-smartdoc2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">작성</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="sec a">
+						<h2 class="hd-tit3">고객님의 정보를 입력해 주세요.</h2>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a">
+										<label class="lb" for="input_id1">이름ㅁㄴㅇㅁㄴㅇ테스트 2 테스트 3</label>
+										<input id="input_id1" type="text" placeholder="실명입력" data-step="step2" data-step-length="2">
+									</span>
+								</li>
+								<li data-step-section="step2" style="display: none;">
+									<span class="input a nobg ut-rsnum">
+										<label class="lb" for="rsnum_0">생년월일ㅁㄴㅇㅁㄴㅇ</label>
+										<input id="rsnum_0" type="tel" class="fn" pattern="\d*" title="앞 6자리" placeholder="앞 6자리">
+										<i class="ds">-</i>
+										<input type="tel" class="mn int" pattern="\d*" title="0" placeholder="*" data-step="step3" data-step-length="1"> <!-- [D] 2022-07-21 placeholder -->
+										<input type="tel" class="ln" pattern="\d*" title="뒤 2~6자리" value="******" readonly>
+									</span>
+								</li>
+								<li data-step-section="step3" style="display: none;">
+									<div class="ut-phone">
+										<span class="select tcom">
+											<label for="tcom_0" class="lb">통신사ㅁㄴㅇㅁㄴㅇ</label>
+											<select id="tcom_0">
+												<option>SKT</option>
+												<option>KT</option>
+												<option>LGU+</option>
+												<option>SKT알뜰폰</option>
+												<option>KT알뜰폰</option>
+												<option>LGU+알뜰폰</option>
+											</select>
+										</span>
+										<span class="input a tnum"><label class="lb" for="tnum_0">전화번호입력</label>
+											<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="tnum_0" data-step="step4" data-step-length="7">
+										</span>
+									</div>
+								</li>
+								<li data-step-section="step4" style="display: none;">
+									<span class="select a">
+										<label class="lb" for="sel_id0">선택</label>
+										<select id="sel_id0" name="sel_id0" data-step="step5">
+											<option>선택0</option>
+											<option value="1">선택1</option>
+											<option value="2">선택2</option>
+										</select>
+									</span>
+								</li>
+								<li data-step-section="step5" style="display: none;">
+									<label class="radio"><input type="radio" name="radio1" data-step="step6" data-step-type="radio"><span class="txt">라디오1</span></label>
+									<label class="radio"><input type="radio" name="radio1" data-step="step6" data-step-type="radio"><span class="txt">라디오2</span></label>
+								</li>
+								<li data-step-section="step6" style="display: none;">
+									<p>최소 3개 이상 선택</p>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+									<label class="checkbox"><input type="checkbox" data-step="stepLast" data-step-length="3"><span class="txt">체크박스</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</main>
+			</div>
+			<div class="pbt"> 
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="popAgree();" disabled>확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	
+	<script>
+		//커밋테스트
+		//테스트22222222
+		ui.popup.open('pop-smartdoc2');  // 팝업 열기
+
+		$(document).ready(function (){
+			var inputStep = $('[data-step]');
+			inputStep.on('keyup change', function() {
+				if ($(this)[0].localName === 'input') {
+					if($(this).data('step-length').length > 0){
+						var minLength = $(this).data('step-length') - 1;
+						if($(this).val().length > minLength){
+							var stepSection = $(this).data('step');
+							$('[data-step-section="'+stepSection+'"]').show();
+						}
+					} else if ( $(this).data('step-type') === 'radio'){
+
+					} else if ( $(this).data('step-type') === 'checkbox' ){
+
+					}
+					
+				}
+				if ($(this)[0].localName === 'select') {
+					console.log($(this).children("option:selected").attr('value'))
+					if($(this).children("option:selected").attr('value') !== undefined){
+						var stepSection = $(this).data('step');
+						$('[data-step-section="'+stepSection+'"]').show();
+					}
+				}
+				
+			})
+		})
+	</script>
+</div>
+</body>
+</html>

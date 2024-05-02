@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs pens" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">연금저축 가입 유의사항 </h2>
+			</div>
+
+			<section class="sect">
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<h4 class="hd-tit3">연금저축계좌제도 개요 </h4>
+					</div>
+					<div class="opt pr a-bot">
+						<button type="button" class="btn sm ico-down ico-r">연금저축 길라잡이 </button>
+					</div>
+				</div>
+				<div class="ut-tbl a">
+					<table class="tblist" cellspacing="0" cellpadding="0">
+						<caption><span class="tit">연금저축계좌제도 개요</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width: 20%;">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>상품특징</strong></td>
+								<td class="txt-l">
+									<ul class="bullet lg a">
+										<li>「소득세법」 등에서 정한 연금수령 요건에 따라 자금을 인출하는 경우 연금소득으로 과세되며, 연금저축계좌 납입액(연간 한도 최대 400만원)의 12%에 해당하는 금액을 세액공제하는 상품</li>
+										<li>계약을 중도해지하거나 연금수령 외의 방식으로 자금을 인출하는 경우(연금수령한도를 초과한 인출 포함) 기타소득세 납부로 불이익이 있을 수 있음</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>연금수령</strong></td>
+								<td class="txt-l">
+									<p>가입 후 5년 경과 및 만 55세 이후 연금수령개시, 매년 연금수령한도 이내에서 인출</p>
+									<p>예) 2013년 3월 1일 이후 가입한 사람이 만 55세부터 연금을 수령하는 경우 최소 연금지급기간은 10년</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>연금수령한도</strong></td>
+								<td class="txt-l">
+									<p>연금계좌의 평가액 ÷ (11 – 연금수령연차) × 120%</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>연금 외 수령</strong></td>
+								<td class="txt-l">
+									<p>연금수령 요건 외의 자금 인출(연금수령개시 전 중도해지 포함)인 경우</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>가입대상</strong></td>
+								<td class="txt-l">
+									<p>제한 없음</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>중도해지</strong></td>
+								<td class="txt-l">
+									<p>중도해지 시 기타소득세(16.5%, 지방소득세 포함) 부과</p>
+									<p>※ 단, 연금수령한도 이내는 연금소득세(5.5~3.3%, 지방소득세 포함) 부과</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>납입한도</strong></td>
+								<td class="txt-l">
+									<p>모든 금융기관 합산 연간 1,800만원 이내(퇴직연금계좌 및 연금저축계좌 포함)</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>세액공제</strong></td>
+								<td class="txt-l">
+									<p>해당 연도 납입액(연금저축계좌 납입액 400만원 한도)의 12%</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>보수/수수료</strong></td>
+								<td class="txt-l">
+									<p>약관, 해당 금융회사 및 협회 연금저축 공시 사이트에서 확인 가능</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>계좌이체</strong></td>
+								<td class="txt-l">
+									<p>계약자의 요청에 따라 연금수령개시 전의 다른 연금저축계좌로 이체 가능</p>
+								</td>
+							</tr>
+							<tr>
+								<td><strong>계좌승계</strong></td>
+								<td class="txt-l">
+									<p>가입자 사망 시 배우자의 안정적 노후소득 보장을 위해 계좌 승계 가능</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+
+			<section class="sect">
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<h4 class="hd-tit3">금융권역별 상품 특징 </h4>
+					</div>
+					<div class="opt pr a-bot"></div>
+				</div>
+				<div class="ut-tbl a">
+					<table class="tblist" cellspacing="0" cellpadding="0">
+						<caption><span class="tit">금융권역별 상품 특징</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width: 20%;">
+							<col style="width: 20%;">
+							<col style="width: 20%;">
+							<col style="width: 20%;">
+							<col style="width: 20%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">생명보험사</th>
+								<th scope="col">손해보험사</th>
+								<th scope="col">은행</th>
+								<th scope="col">증권사</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>상품</strong></td>
+								<td>연금저축보험</td>
+								<td>연금저축보험</td>
+								<td>연금저축신탁</td>
+								<td>연금저축펀드</td>
+							</tr>
+							<tr>
+								<td><strong>납입방식</strong></td>
+								<td>정기납</td>
+								<td>정기납</td>
+								<td>자유납</td>
+								<td>자유납</td>
+							</tr>
+							<tr>
+								<td><strong>연금형태</strong></td>
+								<td>종신, 확정</td>
+								<td>확정(~25년)</td>
+								<td>확정</td>
+								<td>확정</td>
+							</tr>
+							<tr>
+								<td><strong>예금자보호법</strong></td>
+								<td>적용</td>
+								<td>적용</td>
+								<td>적용</td>
+								<td>적용되지 않음</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="sect">
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<h4 class="hd-tit3">연금저축계좌 세제제도</h4>
+					</div>
+					<div class="opt pr a-bot"></div>
+				</div>
+				<div class="ut-tbl a">
+					<table class="tblist" cellspacing="0" cellpadding="0">
+						<caption><span class="tit">연금저축계좌 세제제도</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width: 25%;">
+							<col style="width: 25%;">
+							<col style="width: 25%;">
+							<col style="width: 25%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">저축액 납입 시</th>
+								<th scope="col">연금 외 수령</th>
+								<th scope="col">연금 수령 시</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>세제종류</strong></td>
+								<td>세액공제 혜택</td>
+								<td>기타소득세 부과 <br>(16.5%, 지방소득세 포함)</td>
+								<td>연금소득세 부과 <br>(5.5~3.3%, 지방소득세 포함)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- [D] 2022-08-01 내용 수정 <ul class="bullet lg a mt40">
+					<li>다만, 사망 등의 사유로 수령하는 경우는 연금소득세(5.5~3.3%, 지방소득세 포함)로 분리과세합니다.</li>
+					<li>매년 납입금액 중 연 400만원을 초과 납입한 금액에서 발생한 운용수익(이자분)도 연금 외 수령 시 기타소득세를 부과합니다.</li>
+					<li>연간 연금소득금액(국민연금 등 제외)이 1,200만원을 초과하면 소득이 발생한 다음 연도에 종합소득 신고를 해야 합니다.</li>
+					<li>계좌 내 퇴직금 등 이연퇴직소득금액을 연금 외 수령하는 경우 퇴직소득세를 부과하며, 연금수령 시에는 해당 퇴직소득을 연금 외 수령할 때 세율의 100분의 70을 적용합니다.</li>
+					<li>위 세제 관련된 사항은 관련 세법 개정 등에 따라 변경될 수 있습니다.</li>
+				</ul> -->
+				<!-- [D] 2022-08-01 내용 수정 -->
+				<ul class="bullet lg a mt40">
+					<li>소득세법에서 정한 의료목적*, 또는 부득이한 사유의 인출**에 해당하는 경우에는 연금소득세를 분리과세합니다. 단, 해당사유가 확인된 날부터 6개월 이내에 신청하는 경우에 한합니다.
+						<ul class="bullet">
+							<li>* 의료목적인출은 금융회사가 의료비 연금계좌의 지정을 동의한 경우만 가능</li>
+							<li>
+								<ul class="bullet multi">
+									<li>**<i class="n">①</i> 천재지변</li>
+									<li><i class="n">②</i> 가입자의 사망 또는 해외이주</li>
+									<li><i class="n">③</i> 가입자 또는 그 부양가족의 3개월 이상의 요양</li>
+									<li><i class="n">④</i> 가입자가 재난으로 15일 이상의 입원 치료</li>
+									<li><i class="n">⑤</i> 가입자의 파산선고/개인회생</li>
+									<li><i class="n">⑥</i> 금융회사의 영업정지, 영업 인·허가 취소, 해산결의, 파산선고</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>매년 불입금중 400만원을 초과하여 납입한 금액에서 발생한 운용수익도 연금외수령시 기타소득세를 부과하고, 세액공제를 받지 않은 납입금액은 기타소득세가 부과되지 않습니다.</li>
+					<li>연간 연금소득금액(의료목적 또는 부득이한 사유의 인출, 국민연금 등은 제외)이 1,200만원을 초과하는 경우에는 소득이 발생한 다음 연도에 종합소득 신고를 해야 합니다.</li>
+					<li>위 세제 관련된 사항은 관련 세법 개정 등에 따라 변경될 수 있습니다.</li>
+				</ul>
+				<!--//[D] 2022-08-01 내용 수정 -->
+			</section>
+
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">가입시 유의사항</div><!-- [D] 2022-08-01 텍스트 수정 -->
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>연금저축은 중도해지 등 연금 외 수령을 하면 기타소득세를 납부해야 하는 불이익이 있을 수 있습니다.</li>
+						<li>교보생명 홈페이지(www.kyobo.co.kr) 및 생명보험협회 홈페이지(www.klia.or.kr)에서 연금저축 수익률, 수수료, 유지율 등을 확인할 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+
+		
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

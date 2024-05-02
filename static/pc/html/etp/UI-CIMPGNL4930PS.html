@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_etp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp tinf" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt mb20">
+				<h2 class="stit hd-tit2">퇴직연금안내</h2>
+			</div>
+		
+
+			<div class="tinf-down">
+				<h2 class="tit">신규 관리자를 위한 안내서 다운로드</h2>
+				<div class="bts">
+					<!-- [웹접근성] 1st 수정 --><button class="btn md ico-down ico-r" title="다운로드">DB 관리자용</button><!--// [웹접근성] 1st 수정 -->
+					<!-- [웹접근성] 1st 수정 --><button class="btn md ico-down ico-r" title="다운로드">DC 관리자용</button><!--// [웹접근성] 1st 수정 -->
+				</div>
+			</div>
+
+
+			<div class="etp-tinf-item">
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">퇴직금 지급</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">가입자가 퇴직 시 퇴직연금사업자(교보생명)에게 퇴직금을 신청하면 접수 후 퇴직금을 가입자 IRP계좌로 지급</p>
+						<p class="tim">발생시기: 상시</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span><span class="bd">DC</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">내역서·보고서 발급</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">퇴직연금가입확인서, 적립금내역서, 재정검증통보서 발급</p>
+						<p class="tim">발생시기: 상시</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span><span class="bd">DC</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">가입자명부 업데이트</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">사업연도 종료 후 3개월 안에 가입자명부 DB 업데이트</p>
+						<p class="tim">발생시기: 1분기</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span><span class="bd">DC</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">재정검증결과 확인</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">교보생명이 제공한 재정검증결과를 확인하고, 적립 부족인 경우에는 후속 조치 의무사항 이행</p>
+						<p class="tim">발생시기: 2분기</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">가입자교육</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">법에서 정한 퇴직연금제도에 대한 교육자료를 수령하여 인트라넷 등에 상시 게시</p>
+						<p class="tim">발생시기: 3분기</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span><span class="bd">DC</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">부담금 납입</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">사업연도 내 재정검증PBO 보고서를 수령하여 법에서 정한 최소적립비율 이상 부담금 납입</p>
+						<p class="tim">발생시기: 4분기</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span><span class="bd">DC</span>
+					</div>
+				</div>
+				<div class="box">
+					<div class="tps">
+						<h3 class="tit">적립금운용위원회</h3>
+					</div>
+					<div class="dsc">
+						<p class="txt">사업연도 내 적립금운용위원회를 개최하여 법에서 정한 적립금운용계획서를 작성 (300인 이상 단체)</p>
+						<p class="tim">발생시기: 4분기</p>
+					</div>
+					<div class="bdg">
+						<span class="bd">DB</span>
+					</div>
+				</div>																								
+			</div>
+
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"같이투자 커뮤니티"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd retire invtm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-ptopbox">			
+				<div class="sets">
+					<div class="full-bg gray2">
+						<div class="top-area">								
+							<div class="home-top">
+								함께하는 쉬운 투자<strong>같이투자</strong>
+							</div>
+
+							<div class="home-top-img" style="display: none;">
+								<div class="bg">
+									<a href="javascript:;" class="link-ar">이용안내</a>
+								</div>
+								<div class="btn-set">
+									<button type="button" class="btn lg rd a">같이투자 등록</button>
+								</div>
+							</div>
+
+							<div class="home-top-btn">
+								<div class="btn-set">
+									<button type="button" class="btn md rd ">이용안내</button>
+									<button type="button" class="btn md rd ">같이투자자 등록</button>
+								</div>
+							</div>
+
+							<button type="button" class="bt share"><i class="blind">공유하기</i></button>
+						</div>				
+					</div>
+
+					<div class="blue-btn-wrap">
+						<button type="button" class="blue-btn"><span>DC</span>한국BBBC제약</button>
+					</div>
+					
+				</div>
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">홈</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">랭킹</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">피드</a></li>
+							</ul>
+						</div>
+						<div class="btn-img"><button type="button" class="btn-tog">열기버튼</button></div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 홈 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+				
+				<div class="tab-inr-sect">
+					<h3 class="hd-tit4">2021년 4분기 <span>(2021.11.01~2011.11.10)</span></h3>		
+					<!-- [D] 2022-07-27 기준일 추가 -->
+					<p class="st-date">2021.10.01 기준</p>		
+					<!--//[D] 2022-07-27 기준일 추가 -->	
+					<div class="ut-gpbar a">
+						<div class="inr">
+							<ul class="lst">
+								<!-- [s] 제도 미가입자 시 삭제 -->
+								<li class="gp a">
+									<i class="tt">나</i>
+									<span class="bb" style="height: 51.42%;">
+										<em class="pt on"><b>51.42</b><i>%</i></em>
+									</span>
+								</li>
+								<!-- //[e] 제도 미가입자 시 삭제 -->
+								<li class="gp b">
+									<i class="tt">같이투자자</i>
+									<span class="bb" style="height: 21.02%;">
+										<em class="pt"><b>21.02</b><i>%</i></em>
+									</span>
+								</li>
+								<li class="gp c">
+									<i class="tt">같이투자자<br>상위 5%</i>
+									<span class="bb" style="height: 34.50%;">
+										<em class="pt"><b>34.50</b><i>%</i></em>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="type-tbl"><!-- [D] 2022-08-16 테이블 스타일 수정 : div.type-tbl 태그 추가 -->
+						<!-- [D] 2022-08-11 차트에 대한 ‘표’ 추가 -->
+						<div class="ut-tbl a mt20" aria-describedby="">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">같이투자자 차트 정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:15%">
+									<col>		
+									<col>
+									<col>					
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">나</th>
+										<th scope="col">같이투자자</th>
+										<th scope="col">같이투자자<br>상위 5%</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">비율</th>
+										<td><strong class="bold">1.97%</strong></td>
+										<td><strong class="bold">0.60%</strong></td>
+										<td><strong class="bold">2.64%</strong></td>
+									</tr>																													
+								</tbody>
+							</table>
+						</div>	
+						<!--//[D] 2022-08-11 차트에 대한 ‘표’ 추가 -->	
+					</div><!--//[D] 2022-08-16 테이블 스타일 수정 : div.type-tbl 태그 추가 -->
+					
+				
+					<div class="ut-slide-dot type-a"><!-- [D] 2022-09-15 클래스 수정 -->
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<!-- [D] 2022-08-16 control 마크업 추가 -->
+							<!-- [D] 2022-09-15 control 마크업 삭제<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div> -->
+							<!--//[D] 2022-08-16 마크업 추가 -->
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box"><img src="../../img/prd/img_banner01@2x.png" alt="[대회/이벤트] 같이투자 수익률 대회 랭킹 확인"></a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box"><img src="../../img/prd/img_banner02@2x.png" alt="[같이투자 이용안내] 같이투자 설명서 확인"></a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="box"><img src="../../img/prd/img_banner03@2x.png" alt="[퇴직연금 관리] 소중한 나의 퇴직연금 IRP 가입하기"></a>
+								</li>
+							</ul>
+							<!-- [D] 2022-09-15 control 마크업 추가--><div class="pagination"></div>
+							<!-- 2022-08-16 pagination 마크업 삭제 <div class="pagination"></div> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- [s] 제도 미가입자 시 삭제 -->
+				<div class="full-bg gray3">
+					<div class="t1">내가 선택한 같이투자자
+						<!-- [D] 2022-08-18 tooltip 추가 -->
+						<div class="ut-tooltip">
+							<button type="button" class="ico help sm bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<p>함께 하고 싶은 같이투자자를 팔로우하면 ‘내가 선택한 같이투자자’로 등록할 수 있습니다.</p>
+								</div>
+							</div>
+						</div>
+						<!--//[D] 2022-08-18 tooltip 추가 -->
+					</div>
+					<div class="t2">수익률 랭킹</div>
+					<div>
+						<span class="input a such">
+							<label class="lb blind" for="adr_id3" role="text">검색</label>
+							<div class="ibts"><button type="button" class="sch-img">검색</button></div>
+							<input id="adr_id3" type="text" placeholder="닉네임 검색">
+						</span>
+					</div>
+				</div>
+				<!-- 22-05-24 이미지url 변경 -->
+				<div class="btm-list-area">
+					<ul class="such-result-list">
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num blue">1</div>
+								
+								<div class="tit"><img src="../../img/prd/img_03@3x.png" alt="프로필사진">대박투자</div>
+								<div class="percent blue">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num blue">2</div>
+								<div class="tit"><img src="../../img/prd/img_01@3x.png" alt="프로필사진">교보대박</div>
+								<div class="percent blue">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num blue">3</div>
+								<div class="tit"><img src="../../img/prd/img_02@3x.png" alt="프로필사진">대박대박</div>
+								<div class="percent blue">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num">4</div>
+								<div class="tit"><img src="../../img/prd/img_04@3x.png" alt="프로필사진">대박대박</div>
+								<div class="percent">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num">5</div>
+								<div class="tit"><img src="../../img/prd/img_05@3x.png" alt="프로필사진">대박대박</div>
+								<div class="percent">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num">10</div>
+								<div class="tit"><img src="../../img/prd/img_06@3x.png" alt="프로필사진">대박대박</div>
+								<div class="percent">51.52%</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="box">
+								<div class="num">11</div>
+								<div class="tit"><img src="../../img/prd/img_03@3x.png" alt="프로필사진">대박대박</div>
+								<div class="percent">51.52%</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="ut-more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>
+
+				<div class="list-empty bd">
+					<p>마음에 드는 같이투자자를 팔로우하면<br>더 가까이 만나실 수 있습니다.</p>
+				</div>
+
+				
+				<!-- //[e] 제도 미가입자 시 삭제 -->
+
+				<!-- [s]] 제도 미가입자 -->
+				<div class="uninsured">
+					<a href="javascript:;">
+						퇴직연금! 아직도 혼자 고민하시나요?<br>함께하면 쉬워지는 투자습관
+						<strong>같이투자</strong>
+					</a>
+				</div>
+				<!-- //[e] 제도 미가입자 -->
+			</div>
+
+			<!-- 랭킹 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+				랭킹
+			</div>
+
+			<!-- 피드 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+				피드
+			</div>
+
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- <nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">같이투자자 신청 취소</button>
+				</div>
+			</div>
+		</nav> -->
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<script>
+
+
+		var ptopbox = {
+			init:function(){
+				this.evt();
+			},
+			evt:function(){
+				var _this = this;
+				$(document).on("click",".ut-ptopbox .btn-tog",function(e){
+					if( $(".ut-ptopbox").is(".open")) {
+						_this.close();
+					}else{
+						_this.open();
+					}
+				});
+				$(window).on("load scroll resize",function(e){
+					var setsHt = $(".ut-ptopbox .sets").outerHeight() || 0;
+					var sctop = ui.viewport.scrollTop();
+					if (setsHt > sctop) {
+						_this.close();
+					}
+				});
+			},
+			open:function(){
+				var setsHt = $(".ut-ptopbox .sets").outerHeight() || 0;
+				$(".ut-ptopbox").addClass("open");
+				$(".ut-topfix>.inr").css("margin-top",setsHt+"rem");
+				$(".ut-ptopbox").css("padding-top",setsHt+"rem");
+			},
+			close:function(){
+				$(".ut-ptopbox").removeClass("open");
+				$(".ut-topfix>.inr").css("margin-top","");
+				$(".ut-ptopbox").css("padding-top","");
+			}
+		}
+		ptopbox.init();
+
+		
+	</script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

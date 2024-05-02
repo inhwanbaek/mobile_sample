@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"class":"is-title","title":"서비스 연결 실패"}'></include>
+	<include class="gnb" src="../inc/gnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page com" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="complate-msg icon2">
+				<div class="msg">
+					<p class="p1">아래 사유로 인해 업무가<br>처리되지 않았습니다.</p>
+					<p class="p2 depth">코드:79087397493</p>
+					<p class="p2 depth">메시지:제도번호(는) 필수 입력항목입니다.</p>
+				</div>
+				<div class="mt30">
+					<p class="tel-text t-blue">혹시 계약이 있으신데 화면이 안보이시나요?</p>
+					<p class="t-blue mt20 box-error">
+						<span class="txt-l" style="display: block;">
+							우측 상단 메뉴에서<br>
+							MY교보 > 나의정보 > 계약정보확인 에서<br>
+							확인해보세요.
+						</span>
+					</p>
+				</div>
+			</div>	            
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">이전 페이지로 이동</button>
+					<button type="button" class="btn rd lg a">메인으로 이동</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

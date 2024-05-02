@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-signature" id="pop-signature">
+		<div class="pbd">
+			<div class="phd">
+				<!-- [D] 2022-02-23 내용수정 -->
+				<div class="phd">
+					<div class="in">
+						<h1 class="hd-tit4">공동인증서</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="author-wrap">
+					<div class="mbl-titp">
+						<div class="hdt"><h2 class="hd-tit2">공동인증서</h2></div>
+						<p class="cdt">인증서를 선택하여<br> 전자서명 또는 본인확인을 해주세요.</p>
+						
+						<ul class="author-area">
+							<li>
+								<a href="javascript:;">
+									<div class="author-box">
+										<h4 class="aut-tit">김교보2</h4>
+										<dl>
+											<dt>발신자</dt>
+											<dd>금융결제원</dd>
+										</dl>
+										<dl>
+											<dt><span>구</span><span>분</span></dt>
+											<dd>은행/신용정보/보험(개인)</dd>
+										</dl>
+										<dl>
+											<dt>만료일</dt>
+											<dd>2021.09.15</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="author-box">
+										<h4 class="aut-tit">김교보2</h4>
+										<dl>
+											<dt>발신자</dt>
+											<dd>금융결제원</dd>
+										</dl>
+										<dl>
+											<dt><span>구</span><span>분</span></dt>
+											<dd>은행/신용정보/보험(개인)</dd>
+										</dl>
+										<dl>
+											<dt class="expiration">만료일</dt>
+											<dd class="expiration">2021.09.15</dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="author-box">
+										<h4 class="aut-tit">김교보2</h4>
+										<button href="javascript:;" role="button" class="btn h xs">만료예정</button>
+										<dl>
+											<dt>발신자</dt>
+											<dd>금융결제원</dd>
+										</dl>
+										<dl>
+											<dt><span>구</span><span>분</span></dt>
+											<dd>은행/신용정보/보험(개인)</dd>
+										</dl>
+										<dl>
+											<dt>만료일</dt>
+											<dd>2021.09.15<span class="d-day">(D-day 30)</span></dd>
+										</dl>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="aling-center">
+						<ul class="link">
+							<li><a href="javascript:;" class="link-ar lk">다른 인증서 선택</a></li>
+						</ul>
+					</div> 
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-signature');
+	</script>
+
+
+
+</div>
+</body>
+</html>

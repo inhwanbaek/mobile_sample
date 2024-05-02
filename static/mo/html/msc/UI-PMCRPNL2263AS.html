@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<article class="pop-layer a pop-etfbg pop-etf3" id="pop-etf3">
+			<div class="pbd bgw"><!--[D]2022-06-23 class='bgw' 추가 수정-->
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">종목 검색</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="bmark-wrp">
+							<div class="inr-white">
+								<div class="radiobox c">
+									<label class="radio">
+										<input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1">
+										<span class="txt">투자유형</span>
+									</label>
+									<label class="radio">
+										<input type="radio" name="radio_b" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2" checked class="active">
+										<span class="txt">운용사</span>
+									</label>
+								</div>
+								<span class="select def no-lb mt08">
+									<label class="lb blind" for="sel_id0">전체</label>
+									<select id="sel_id0" name="sel_id0">
+										<option>전체</option>
+									</select>
+								</span>
+								<span class="input a mt08"><label class="lb blind" for="input-01">종목명 또는 종목코드 입력</label><input type="text" title="입력" placeholder="종목명 또는 종목코드 입력" id="input-01"></span><!-- [웹접근성] 1st 수정 -->
+								<div class="btn-set mt16">
+									<button type="button" class="btn md">조회</button>
+								</div>
+							</div>
+							<div class="lst-bmark-wrp repadding"><!--[D]2022-06-23 class='repadding' 추가 수정-->
+								<div class="ut-optset optset">
+									<div class="opt pl">
+										<span class="tot">총 <i class="n">15</i> 건</span>
+									</div>
+									<div class="opt pr">
+										<span class="select sort"> <!-- .def 클래스 추가하면 기본시스템 select -->
+											<select name="select-4" title="정렬선택">
+												<option>전체</option>
+												<option>수익률 높은순</option>
+												<option>종목명순</option>
+											</select>
+										</span>
+									</div>
+								</div>
+								<!-- 조회 결과 없을 시
+								<div class="list-empty bd">
+									<p>조회 결과가 없습니다.</p>
+								</div>
+								-->
+								<div class="company-box">
+									<a href="javascript:;" class="c-link">
+										<strong class="c-name">KBSTAR ESG사회책임투자<span>(290130)</span></strong>
+										<ul class="fluctuate">
+											<li><span class="color10">69,100</span>원</li><!-- [D] 2022-07-22 텍스트 컬러 적용 -->
+											<li class="up"><span class="blind">상승</span><span>300</span><span>+0.44%</span></li>
+										</ul>
+									</a>
+								</div>
+								<div class="company-box">
+									<a href="javascript:;" class="c-link">
+										<strong class="c-name">KBSTAR 미국S&P원유생산기업(합성 H)<span>(290130)</span></strong>
+										<ul class="fluctuate">
+											<li><span class="color6">69,100</span>원</li><!-- [D] 2022-07-22 텍스트 컬러 적용 -->
+											<li class="down"><span class="blind">하락</span><span>4,000</span><span>-3.42%</span></li>
+										</ul>
+									</a>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-etf3');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-pdmpsell',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+		</script>
+	</div>
+</body>
+</html>

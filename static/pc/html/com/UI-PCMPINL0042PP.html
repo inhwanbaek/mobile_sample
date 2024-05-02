@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	
+	<article class="pop-layer a sm pop-termleak" id="pop-termleak">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">본인확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="sign-txt">
+							고객님의 개인정보유출여부 확인을 위해서 본인확인을 진행합니다. 
+						</div>
+						<div class="certificate-list">
+							<ul class="list">
+								<li class="ics card"><a href="javascript:;" class="lks">카드사 본인확인</a></li>
+								<li class="ics phone"><a href="javascript:;" class="lks">휴대폰 본인확인</a></li>
+								<li class="ics ctcm"><a href="javascript:;" class="lks">공동인증서</a> </li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-second');">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-termleak');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-regcoms" id="pop-regcoms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">기업등록하기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-form a forms">
+						<ul class="form">
+							<li class="name">
+								<span class="input a"><label class="lb" for="input_cname">기업명</label><input id="input_cname" type="text" placeholder="기업명 입력"></span>
+							</li>
+							<li class="nums">
+								<span class="input a"><label class="lb" for="input_cnums">법인번호</label><input id="input_cnums" type="text" placeholder="법인번호 입력"></span>
+							</li>
+							<li class="rnum">
+								<span class="input a"><label class="lb" for="input_crnum">사업자등록번호</label><input id="input_crnum" type="text" placeholder="사업자등록번호 입력"></span>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-regcoms');">기업등록</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-regcoms');
+	</script>
+
+</div>
+</body>
+</html>

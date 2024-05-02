@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/* dcs : 공시실 */
+.ut-updn{display: inline-block;vertical-align: middle;width: 16rem;height: 16rem;position: relative;padding-top: 16rem;font-size: 1rem;overflow: hidden;color: transparent;margin: -2rem 0rem 0rem 0rem;}
+.ut-updn::before{width:8rem;height:8rem;background:url(../img/dcs/ic_sta@2x.png) no-repeat center;background-size:8rem auto;padding-right: 8rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';position: absolute;left: 4rem;top: 4rem;margin: 0rem 0rem 0rem 0rem}
+.ut-updn.up::before{background-image: url(../img/dcs/ic_sta_up@2x.png);}
+.ut-updn.dn::before{background-image: url(../img/dcs/ic_sta_dn@2x.png);}
+
+/* 공시실 메인 */
+.dcs-sky-box+.dcs-sky-box{margin-top: 20rem;}
+.dcs-sky-box.pd{padding: 25rem 40rem 25rem 40rem;}
+.dcs-sky-box{background-color: #f2f7ff;border-radius: 8rem;padding: 35rem 170rem 35rem 40rem;position: relative;min-height: 190rem;}
+.dcs-sky-box .txt{font-size: 18rem;/* margin-top: 11rem; */color: #242424;}
+.dcs-sky-box .ico{position: absolute;right: 40rem;top: 37rem;width:120rem;height:120rem;background: no-repeat center;background-size:120rem auto;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem}
+.dcs-sky-box .ico .img{}
+.dcs-sky-box .hd-tit3{margin-bottom:11rem;}
+.dcs-sky-box .hd-tit .ts{font-size:18rem;font-weight: 600;}
+.dcs-sky-box .dl-box{ display: flex; margin-top: 15rem; font-size: 16rem; word-break: keep-all; }
+.dcs-sky-box .dl-box .dt{ padding-right: 14rem; white-space: nowrap; }
+.dcs-sky-box .dl-box .dd{}
+.dcs-sky-box.no-bdr{border-radius: 0rem;}
+.dcs-sky-box.pension{display: flex;padding: 25rem 30rem 25rem 30rem;justify-content: space-between;border-radius: 0;margin-top: -30rem;min-height: auto;}
+.dcs-sky-box.pension ul.bullet{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;margin-top: -13rem !important;}
+.dcs-sky-box.pension ul.bullet>li{width: calc(50% - 10rem);}
+.dcs-sky-box.pension ul.bullet>li .link{color: #555555;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
+.dcs-sky-box.pension ul.bullet>li.active .link{color: #242424; text-decoration: underline; font-weight: 700;}
+.dcs-sky-box.pension ul.bullet>li:first-child,
+.dcs-sky-box.pension ul.bullet.a.lg > li + li{margin-top:16rem;}
+
+.dcs-sky-box.arate{display: flex;padding: 25rem 30rem 25rem 30rem;justify-content: space-between;/* margin-top: -30rem; */min-height: auto;border-radius: 8rem;}
+.dcs-sky-box.arate ul.bullet{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;margin-top: -13rem !important;}
+.dcs-sky-box.arate ul.bullet>li{width: calc(25% - 10rem);}
+.dcs-sky-box.arate ul.bullet>li .link{color: #555555;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
+.dcs-sky-box.arate ul.bullet>li.active .link{color: #242424; text-decoration: underline; font-weight: 700;}
+.dcs-sky-box.arate ul.bullet>li:first-child,
+.dcs-sky-box.arate ul.bullet.a.lg > li + li{margin-top:16rem;}
+
+.dcs-sky-box2{background-color: #f2f7ff;border-radius: 8rem;padding: 30rem 40rem;position: relative; margin-bottom: 40rem;}
+.dcs-sky-box2 .tit{font-size: 18rem;color: #242424; font-weight: 700;}
+
+.dcs-gray-box{margin: 20rem 0;padding: 30rem 0;border-radius: 8rem;background-color: #f8f8f8;}
+.dcs-gray-box .msg-a{text-align: center;padding: 30rem 0rem 30rem 0rem;}
+.dcs-gray-box .msg-a p{font-size:16rem; font-weight: 600;}
+
+
+.dcs-link-box{display: flex;flex-wrap: wrap;margin: 12rem -10rem 0rem -10rem;}
+.dcs-link-box .link{display: block;width: calc(50% - 20rem);margin: 5rem 10rem;position: relative;border: 1px solid #dddddd;border-radius: 8rem;padding: 25rem 30rem;font-size: 18rem;min-height: 107rem;}
+.dcs-link-box .link::after{width:24rem;height:24rem;background:url(../img/dcs/ic_chevron_up@2x.png) no-repeat center;background-size:24rem auto;padding-right: 24rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 30rem;top: 41rem;}
+.dcs-link-box .link2{display: block;width: calc(50% - 20rem);margin: 5rem 10rem;position: relative;border: 1px solid #dddddd;border-radius: 8rem;padding: 25rem 30rem;font-size: 18rem;min-height: 107rem;}
+.dcs-link-box .link2::after{width:24rem;height:24rem;background:url(../img/dcs/ic_chevron_up2@2x.png) no-repeat center;background-size:24rem auto;padding-right: 24rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 30rem;top: 41rem;}
+.dcs-link-box .link.ext::after{background-image: url(../img/dcs/btn_ic_external_link@2x.png);}
+.dcs-link-box .link .tt,
+.dcs-link-box .link2 .tt{display: block;color:#242424}
+.dcs-link-box .link .ts,
+.dcs-link-box .link2 .ts{display: block;font-weight: 600;color:#242424;}
+
+.dcs-link-set{display: flex;flex-wrap: wrap;margin: 8rem -10rem 0rem -10rem;}
+.dcs-link-set .link{display: flex;align-items: center;flex-wrap: wrap;width: calc(50% - 20rem);margin: 10rem 10rem;position: relative;border: 1px solid #dddddd;border-radius: 8rem;padding: 20rem 40rem 20rem 126rem;font-size: 18rem;min-height: 120rem;}
+.dcs-link-set .link::after{width:24rem;height:24rem;background:url(../img/dcs/ic_chevron_up@2x.png) no-repeat center;background-size:24rem auto;padding-right: 24rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 20rem;top: 47rem;}
+.dcs-link-set .ico{position: absolute;left: 30rem;top: 18rem;width: 80rem;height: 80rem;background: no-repeat center;background-size:120rem auto;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem}
+.dcs-link-set .ico .img{}
+.dcs-link-set .link .publicize{flex-direction: column;}
+.dcs-link-set .link .publicize .tt{display: block;font-size: 18rem;font-weight: 700;}
+.dcs-link-set .link .publicize .ts{display: block; font: var(--font15); color: #767676;word-break: keep-all;margin-top: 8rem;}
+
+
+.dcs-sect{}
+.dcs-sect .sect{margin-top: 60rem;word-break: keep-all;}
+.dcs-sect .sect .hd-tit3{}
+.dcs-sect .sect .hd-tit4{font-size: 18rem;margin-top: 20rem;}
+.dcs-sect .sect .hd-tit5{font-size: 16rem;margin-top: 15rem;}
+.dcs-sect .sect .hd-txt{font-size: 16rem;margin-top: 15rem;color: #555555;}
+.dcs-sect .sect .bullet.a{ margin-top: 15rem; }
+.dcs-sect .sect .bullet.a>li+li{ margin-top: 10rem; }
+.dcs-sect .sect .ut-tbl.a{margin-top: 15rem;}
+.dcs-sect .sect .ut-tbl.a .tblist{}
+.dcs-sect .sect .ut-tbl.a .tblist tbody td{ padding: 21rem 15rem; }
+.dcs-sect .sect .btn-list{margin-top: 20rem;}
+
+
+/* .page.dcs{} */  
+.btn-set+.ut-tbl.a{margin-top: 40rem;}
+.page.dcs .ut-tabs.f{margin-top: 40rem;}
+.sch-upper{margin: 20rem 0;padding: 20rem;border-radius: 8rem;background-color: #f8f8f8;}
+.sch-upper>li{display: flex;width: 100%;margin-top:16rem;}
+.sch-upper>li:first-child{margin-top: 0;}
+.sch-upper .th-tit{padding: 16rem 0 0 15rem;font-weight: 600;font-size: 16rem;color: #242424;line-height: 1.3; width: 80rem;}
+.sch-upper .td-cont{display: flex;flex-wrap: wrap;padding-right: 20rem;width: 100%;}
+.sch-upper .td-cont>*{margin-left: 16rem !important;}
+.sch-upper .td-cont .ut-range{width: 100%;/* margin-top: 16rem; */}
+.sch-upper .td-cont .ut-range.df{display:flex;justify-content: space-between;align-items: center;}
+.sch-upper .td-cont .ut-range .rag .radio{ width: 55rem; }
+.sch-upper .td-cont .sel-group{display: flex; justify-content:space-between; width:100%;}
+.sch-upper .td-cont .sel-group.col3 .select{width:31.5%;}
+.sch-upper.tp-c{}
+.sch-upper.tp-c .th-tit{ white-space: nowrap; }
+.sch-upper.tp-c .td-cont{ flex-wrap: nowrap; width: 100%; align-items: center; }
+.sch-upper.tp-c .td-cont .select{width: 100%;/* display: block; */margin-left: 30rem;}
+
+.sch-upper+.btn-set{margin: 20rem 0 40rem;}
+.ut-gudbox .sum{margin-top: 12rem; font: var(--font12); }
+.ut-tbl.a .tblist .btn.sm{min-width: 70rem;}
+.tbl-view{margin-bottom: 30rem;/* border-top: 1rem solid #242424; */border-bottom: 1px solid #e6e6e6;padding-bottom: 60rem;}
+.tbl-view dt{/* display: flex; */justify-content: space-between;align-items: center;min-height: 59px;padding: 0rem 0rem 30rem 0rem;/* background-color: #f5f5f5; */}
+.tbl-view dt>*{display: block;}
+.tbl-view dt .title{font-weight: 700;color: #242424;font-size: 24rem;}
+.tbl-view dt .date{color: #555555; font: var(--font15); margin-top: 10rem;}
+.tbl-view dd.cont{min-height: 140rem;padding: 30rem 0rem 30rem 0rem;color:#555555;font-size: 16rem;line-height: 1.63;border-top: #cccccc solid 1rem;}
+
+.pop-dcs{}
+.pop-dcs .sky-box{background-color: #f2f7ff;border-radius: 8rem;padding: 25rem 40rem 25rem 40rem;position: relative;}
+.pop-dcs .sky-box.calc{padding: 30rem;}
+.pop-dcs .sky-box.calc .calc-set{}
+.pop-dcs .sky-box.calc .calc-set .week{width:auto}
+.pop-dcs .sky-box.calc .calc-set+.calc-set{margin-top: 12rem;}
+
+.pop-dcs .sect.comp .sky-box{text-align: center;padding: 40rem 0rem 40rem 0rem; position: relative;}
+.pop-dcs .sect.comp .sky-box .btn-copy{width:48rem; height:48rem; background:url(../img/dcs/ic_sns_share_@2x.png) no-repeat center; background-size:48rem auto; padding-right: 48rem; color: transparent; font-size:1rem; white-space: nowrap; overflow:hidden; display:inline-block; vertical-align:middle; content:''; margin: 0rem 0rem 0rem 0rem;position: absolute;right: 20rem;top: 20rem;}
+.pop-dcs .sect.comp .sky-box .tit{font-size:32rem; font-weight: 700;}
+.pop-dcs .sect.comp .sky-box .tit .stt{color: #2a81eb;}
+.pop-dcs .sect.comp .sky-box .tit::before{width:48rem;height:48rem;background:url(../img/dcs/ic_heart@2x.png) no-repeat center;background-size:48rem auto;padding-right: 48rem;color: transparent;font-size:1rem;white-space: nowrap;overflow:hidden;display: block;vertical-align:middle;content:'';margin: 0rem auto 4rem auto;}
+.pop-dcs .sect.comp .sky-box .txt{font-size: 18rem;margin-top: 9rem;}
+.pop-dcs .sect.comp .sky-box .bts{margin-top: 30rem;}
+.pop-dcs .sky-box.comp{}
+
+.pop-dcs .bt-agree{display: flex;align-items: center;justify-content: space-between;width: 358rem;border: #cccccc solid 1rem;border-radius: 8rem;background: #ffffff;position: relative;height: 72rem;padding: 10rem 10rem 10rem 30rem;}
+.pop-dcs .bt-agree .radio{}
+.pop-dcs .bt-agree .radio .txt{ font-size: 18rem; color: #242424; font-weight: 700; line-height: 1.2; }
+.pop-dcs .bt-agree .bt-ar{}
+.pop-dcs .bt-agree .bt-ar{display: block;width: 24rem;height: 24rem;background: url(../img/common/ico_chk_arr.png) no-repeat 50% 50%;background-size: 24rem 24rem;font-size: 1rem;color: transparent;vertical-align: middle;content:'';position: absolute;right: 20rem;top: 22rem;}
+.pop-dcs .sect{ margin-top: 40rem; }
+.pop-dcs .sect .hdts{margin-top: 20rem;}
+.pop-dcs .sect .cdts{margin-top: 15rem;}
+.pop-dcs .sect .hd-tit3{margin-top: 20rem;}
+.pop-dcs .sect .hd-tit4{font-size: 18rem;margin-top: 30rem;margin-bottom: 10rem;}
+.pop-dcs .sect .hd-tit5{font-size: 16rem;margin-top: 15rem;}
+.pop-dcs .sect .hd-txt{font-size: 16rem;margin-top: 15rem;color: #555555;}
+
+.ut-optset>.opt.a-bot .hd-tit4{font-size: 18rem;margin-top: 0;margin-bottom: 0;}
+
+.pop-dcs .sect td .itm{display: flex; justify-content: space-between; align-items: center;}
+.pop-dcs .sect td .itm .select{min-width: 90rem;}
+.pop-dcs .sect td .itm .tt{word-break: keep-all;padding-right: 10rem;line-height: 1.31;}
+.pop-dcs .sect td .itm .ts{}
+.pop-dcs .sect .tbss th{background-color: #ffffff;font-weight: 400;border-left: #e9ebef solid 1rem;word-break: keep-all;padding-right: 0rem;}
+.pop-dcs .sect .tbss th+td{}
+.pop-dcs .sect .tbss td .select{min-width: 90rem;}
+
+.pop-dcs .pro-explain {margin-top:80rem}
+.pop-dcs .pro-explain .tit{margin-bottom:16rem;font-size: 28rem;font-weight:700;}
+.pop-dcs .pro-explain .txt{font-size: 18rem;line-height: 1.4;}
+.pop-dcs .pro-explain .txt{font-size:18rem;line-height:1.6;color:#555555;}
+
+.page.dcs.fund .sect{margin-top: 60rem;word-break: keep-all;}
+.page.dcs.fund .sect .hd-tit3{}
+.page.dcs.fund .sect .hd-tit4{font-size: 18rem;margin-top: 20rem;}
+.page.dcs.fund .sect .hd-txt{font-size: 16rem;margin-top: 15rem;color: #555555;}
+.page.dcs.fund .sect .chart-box{border: 1px solid #e6e6e6;border-radius: 8rem;margin-top: 20rem;}
+.page.dcs.fund .sect .bullet.a{ margin-top: 15rem; }
+.page.dcs.fund .sect .bullet.a>li+li{ margin-top: 10rem; }
+.page.dcs.fund .sect .ut-tbl.a{margin-top: 15rem;}
+.page.dcs.fund .sect .ut-tbl.a .tblist{}
+.page.dcs.fund .sect .ut-tbl.a .tblist tbody td{padding: 20rem 15rem;}
+.page.dcs.fund .sect .ut-tbl.a.pd .tblist tbody td.bh{background-color: #fafafa;}
+.page.dcs.fund .sect .ut-tbl.a.pd .tblist tbody td{ height: 30rem; padding: 10rem 15rem; }
+.page.dcs.fund .sect .btn-list{margin-top: 20rem;}
+
+/* 연금 */
+.page.dcs.pens{}
+.page.dcs.pens .sect{margin-top: 60rem;word-break: keep-all;}
+.page.dcs.pens .sect .hd-tit3{}
+.page.dcs.pens .sect .hd-tit4{font-size: 18rem;margin-top: 20rem;}
+.page.dcs.pens .sect .hd-txt{font-size: 16rem;margin-top: 15rem;color: #555555;}
+.page.dcs.pens .sect .bullet.a{ margin-top: 15rem; }
+.page.dcs.pens .sect td .bullet.a{ margin-top: 0rem; }
+.page.dcs.pens .sect .bullet.a>li+li{ margin-top: 10rem; }
+.page.dcs.pens .sect .ut-tbl.a{margin-top: 15rem;}
+.page.dcs.pens .sect .ut-tbl.a .tblist{}
+.page.dcs.pens .sect .ut-tbl.a .tblist tbody td{ padding: 21rem 15rem; }
+.page.dcs.pens .sect .btn-list{margin-top: 20rem;}
+.page.dcs.pens .bullet.multi>li{padding-left:12rem}
+.page.dcs.pens .bullet.multi>li:first-child{padding-left:0}
+
+.ut-gudbox.dcs{}
+.ut-gudbox.dcs ul.bullet li{ font: var(--font15); }
+.ut-gudbox.dcs ul.bullet li+li{ margin-top: 10rem;}
+.ut-gudbox.dcs ul.bullet ul.bullet{margin-top: 10rem;}
+.dcs-calc-top{margin-bottom: 16rem;}
+.dcs-calc-top .ut-bdgs{margin-bottom: 5rem;}
+.dcs-calc-top .hd{}
+
+.dcs-tbl{}
+.dcs-tbl ul.bullet>li{font-size:16rem; color: #555555;}
+.dcs-tbl ul.bullet>li+li{margin-top: 5rem;}
+.dcs-tbl ul.bullet{margin-top: 10rem;}
+.dcs-tbl .tblist>tbody>tr>td{padding-top: 17rem !important;padding-bottom: 17rem !important;}
+
+.input.a.fix { width: 358rem !important;}
+
+.input.a .inlb-t{vertical-align: baseline;display: block;position: absolute;left: 12rem;top: 16rem;}
+.input.a .inlb-b{vertical-align: baseline;display: block;position: absolute;left: 12rem;bottom: 16rem;}
+
+/* 탭s */
+.ut-tabs.h{padding: 20rem; border-radius: 8rem; background-color: #f2f7fa; margin: 30rem 0 40rem}
+.ut-tabs.h::-webkit-scrollbar{display: none;}
+.ut-tabs.h{padding: 0 0 0 0;}
+.ut-tabs.h .menu{display: flex; flex-wrap: wrap;align-items: flex-start;padding: 20rem;}
+.ut-tabs.h .menu>li{width: 25%;line-height: 2.5;padding-left: 20rem;}
+.ut-tabs.h .menu>li>.bt{font-size: 16rem; color: #555; display: flex; align-items: center;}
+.ut-tabs.h .menu>li>.bt::before{display: block; content:''; width: 5rem; height: 5rem; background: #555; border-radius: 100%; margin-right: 12rem}
+.ut-tabs.h .menu>li>.bt:hover{font-size: 16rem; color: #242424; font-weight: 700; text-decoration: underline;}
+.ut-tabs.h .menu>li.active>.bt{font-size: 16rem; color: #242424; font-weight: 700; text-decoration: underline;}
+
+.container.page.dcs.public .cont-txt {font-size: 16rem; color:#555}
+
+.container.page.dcs.public .blue-box {padding: 20rem; border-radius: 8rem; background-color: #f2f7fa; margin: 60rem 0 60rem}
+.container.page.dcs.public .blue-box >ul{display: flex; flex-wrap: wrap;align-items: flex-start;}
+.container.page.dcs.public .blue-box >ul>li {width: 50%;line-height: 2.5;padding-left: 20rem;}
+.container.page.dcs.public .blue-box >ul>li > a {font-size: 16rem; color: #555; display: flex; align-items: center;}
+.container.page.dcs.public .blue-box >ul>li > a::before {display: block; content:''; width: 5rem; height: 5rem; background: #555; border-radius: 100%; margin-right: 12rem}
+.container.page.dcs.public .blue-box >ul>li.active > a{font-size: 16rem; color: #242424; font-weight: 700; text-decoration: underline;}
+
+.container.page.dcs.public .blue-box.b {margin-top: 40rem;}
+.container.page.dcs.public .blue-box.b >ul>li {width: 25%;line-height: 2.5;padding-left: 20rem;}
+
+.container.page.dcs.public .blue-box.c {padding: 30rem 100rem 30rem; display: flex; justify-content: space-between; align-items: center;}
+.container.page.dcs.public .blue-box.c .txt-box {display: flex; align-items: center;}
+.container.page.dcs.public .blue-box.c .txt-box .ico {width: 80rem; height: 80rem; margin-right: 60rem}
+.container.page.dcs.public .blue-box.c .txt-box .item {}
+.container.page.dcs.public .blue-box.c .txt-box .item .tit{font-size: 24rem; color:#242424}
+.container.page.dcs.public .blue-box.c .txt-box .item .txt{font-size: 18rem; color:#242424}
+
+.container.page.dcs.public .btn-item {display: flex;  justify-content: space-between; margin-top: 20rem;}
+.container.page.dcs.public .btn-item >li:nth-child(odd) {margin-left:0;}
+.container.page.dcs.public .btn-item >li {border-radius: 8rem; border: solid 1rem #ddd; background-color: #fff; width: 50%; margin-left: 20rem;}
+.container.page.dcs.public .btn-item >li>a {display:block; width: 100%; padding: 20rem 20rem 20rem 30rem; display: flex; align-items: center; font-size: 18rem; color:#242424; box-sizing: border-box; position: relative;}
+.container.page.dcs.public .btn-item >li a::after {display: block; content:''; background:url(../img/dcs/ic-chevron-up@2x.png) no-repeat center; background-size:24rem auto; width: 24rem; height: 24rem; position: absolute; right:20rem; top: 50%; margin-top: -12rem}
+.container.page.dcs.public .btn-item >li>a .ico {display:block; width: 80rem; height:80rem; margin-right: 16rem;}
+
+.container.page.dcs.public .public-item > ul {display: flex; justify-content: flex-start; flex-wrap: wrap; margin-top:50rem}
+.container.page.dcs.public .public-item > ul>li:nth-child(n + 4) {margin-top: 50rem}
+.container.page.dcs.public .public-item > ul>li {width: 33.3%; text-align: center;}
+.container.page.dcs.public .public-item > ul>li > .img {width: 160rem; height: 210rem; margin:0 auto 20rem}
+.container.page.dcs.public .public-item > ul>li > .img > img {width:100%; height: 100%;}
+
+.container.page.dcs.public .bullet.c.size { font: var(--font15); margin-top: 16rem;}
+
+/* a태그 랭크 컬러 수정 */
+a.link-ext.blue {
+    color: #2a81eb;
+}
+
+.dcs-img-box{border: 1px solid #e6e6e6; padding: 20rem;width: 100%;border-radius: 8rem;text-align: center;}
+.dcs-img-box img{margin: 0 auto;}
+
+.dcs-ul-tbl{display: block;width: 100%;}
+.dcs-ul-tbl li{display: flex; justify-content: space-between; width: 100%;vertical-align: middle;margin-bottom: 10rem;text-align: right;}
+.dcs-ul-tbl li:last-child{margin-bottom: 0rem;}
+.dcs-ul-tbl li .checkbox{margin-top: 10rem;}
+

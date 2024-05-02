@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a xs pop-signature sign-adds" id="pop-signature">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">본인확인</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="centbox">
+						<div class="mbl-top"><h2 class="hd-tit3"><i class="line">디지털 회원</i>으로 로그인</h2></div>
+
+						<div class="certificate-list">
+							<ul class="list">
+								<!-- [D] 2022-07-06 인증서 정렬순서 변경 -->
+								<li class="ics naver bdcc"><a href="javascript:;" class="lks">네이버인증서</a> </li><!-- [D] 2022-06-16 네이버인증 추가 -->
+								<li class="ics kpay"><a href="javascript:;" class="lks">카카오페이인증서</a> <!--<p class="ubdgs">이용등록</p> --> </li>
+								<li class="ics pass"><a href="javascript:;" class="lks">패스인증서</a></li>
+								<li class="ics toss"><a href="javascript:;" class="lks">토스인증서</a></li>
+								<li class="ics ctfn bdcc"><a href="javascript:;" class="lks">금융인증서</a> </li>
+								<li class="ics ctcm"><a href="javascript:;" class="lks">공동인증서</a></li>
+								<!-- <li class="ics phone bdcc"><a href="javascript:;" class="lks">휴대폰 본인확인</a></li> --> <!-- [D] 2022-07-06 삭제 -->
+								<li class="ics bdcc bdb">
+									<div class="w100p">
+										<h3 class="hd-tit3">비회원 로그인</h3>
+										<div class="btn-set mt20 center">
+											<button type="button" class="btn md">휴대폰 본인확인</button>
+										</div>
+									</div>
+								</li>
+								<!--// [D] 2022-07-06 인증서 정렬순서 변경 -->
+							</ul>
+						</div>
+						<div class="visit-box">
+							<h6 class="tit">처음 오셨나요?</h6>
+							<p class="txt">건강부터 금융까지, 든든한 파트너가 되어 드릴게요!
+								<button type="button" class="mem_arw">회원가입</button>
+							</p>
+						</div>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close" onclick="ui.popup.close('pop-signature');">닫기</button>
+			</div>
+		</article>
+
+
+		<script>
+			ui.popup.open('pop-signature');
+		</script>
+
+	</div>
+</body>
+</html>

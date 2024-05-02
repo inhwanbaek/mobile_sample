@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/etp_main_app.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<!-- <include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-gnb","title":""}'></include> -->
+	<header class="header app main" data-header="set0">
+		<div class="inr">  
+			<div class="ldt">
+				<a href="javascript:;" class="logo">교보생명</a>
+			</div>
+			<div class="cdt"></div>
+			<div class="rdt">
+				<!-- <button type="button" class="bt fav"><span class="nums">5</span><i class="blind">개의 저장된 상품</i></button>
+				<button type="button" class="bt sch"><i class="blind">검색</i></button>
+				<button type="button" class="bt login"><i class="blind">로그인</i></button> -->
+				<!-- <button type="button" class="bt peach"><i class="blind">peach 마이데이터</i></button> -->
+				<!-- <button type="button" class="bt alim"><i class="blind">알림</i></button> -->
+				<!-- <button type="button" class="bt alim2"><i class="blind">알림</i></button> -->
+				<!-- <button type="button" class="bt logout"><i class="blind">로그아웃</i></button> -->
+				<button type="button" class="bt gnb"><i class="blind">메뉴</i></button>
+				<!-- <button type="button" class="bt close"><i class="blind">뒤로</i></button> -->
+			</div>
+		</div>
+	</header>
+	<include class="gnb" src="../inc/gnb_etp.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page main app" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- 컨텐츠영역 -->
+			<section class="panel">			
+				<article class="etp-card-box">
+					<div class="cont">
+						<div class="ut-bdgs center">
+							<em class="bdg u">DC</em>
+						</div>
+						<!-- [D] 2022-05-23 텍스트 수정 -->
+						<span class="tit">교보정보통신</span>
+						<ul class="lst-link">
+							<li>
+								<a href="javascript:;">
+									<span class="tit">납입일</span>
+									<span class="day">2022.04.30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<span class="tit">납입금액</span>
+									<span class="won cost">5,314,7530<i>원</i></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<span class="tit">가입자수</span>
+									<!-- [D] 2022-05-23 클래스 'rate' 삭제 'num' 추가 -->
+									<span class="won num">23<i>명</i></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="">
+					<ul class="choice-mainmenu">
+						<li>
+							<a href="javascript:;">
+								<span class="img ic_menu01">가입자 추가/변경 아이콘</span>
+								<p>가입자 추가/변경</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="img ic_menu04">부담금납입 아이콘</span>
+								<p>부담금 납입</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="img ic_menu03">퇴직금신청 아이콘</span>
+								<p>퇴직금 신청</p>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="etp-notice-box">
+					<div class="cont">
+						<div class="hdt">
+							<h3 class="tit">퇴직연금 공지사항</h3>
+							<button class="more">더보기</button>
+						</div>
+						<ul class="notice-list">
+							<li><a href="javascript:;">2022학년도 교육보험 학자금</a></li>
+							<li><a href="javascript:;">기업은행 서비스 일시중지 안내</a></li>
+						</ul>
+					</div>
+				</article>
+				<!-- 수정: 2022-05-02 -->
+				<article class="etp-banner-box type1">
+					<!-- [D] 2022-06-17 마크업 수정 
+					<div class="cont">
+						[D] 2022-05-23 텍스트 수정
+						<h3 class="tit">다양한 퇴직연금<br>운용상품을 확인해보세요.</h3> 
+						<a href="javascript:;" class="lk">운용상품 보기</a>
+					</div>-->
+					<a href="javascript:;">
+						<h3 class="tit">퇴직연금 운용상품</h3> 
+						<p class="txt">수백개의 다양한<br>운용상품을 확인해 보세요.</p>
+					</a>
+				</article>
+
+				<article class="etp-banner-box type2">
+					<!-- [D] 2022-06-17 마크업 수정 
+					<div class="cont">
+						[D] 2022-05-23 텍스트 수정
+						<h3 class="tit">기업을 위한<br>퇴직연금 서비스를 만나보세요.</h3>
+						<a href="javascript:;" class="lk">퇴직연금서비스 바로가기</a>
+					</div>-->
+					<a href="javascript:;">
+						<h3 class="tit">퇴직연금서비스</h3> 
+						<p class="txt">기업맞춤형<br> 퇴직연금서비스를 만나 보세요.</p>
+					</a>
+				</article>
+				<!--// 수정: 2022-05-02 -->
+			</section>
+			<!--// 컨텐츠영역 -->
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots c no-hide">  <!-- 추가: 2022-05-02  no-hide-->
+				<div class="inr">  
+					<div class="state-wrap ">
+						<div class="state-box">
+							<h2 class="tit">결제 대상건</h2>
+							<a href="javascript:;" class="lk"><strong>4</strong>건</a>
+						</div>
+						<div class="state-box">
+							<h2 class="tit">최근 처리건</h2>
+							<a href="javascript:;" class="lk"><strong>4</strong>건</a>
+						</div>
+						<div class="state-box date">
+							<h2 class="tit">다음 납입일</h2>
+							<a href="javascript:;" class="lk"><strong>2022-05-30</strong></a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!--// 하단 고정영역 -->
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<script>
+	</script>
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

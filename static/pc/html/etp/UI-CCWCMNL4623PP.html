@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">피보험자 상세정보</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="content">
+						<div class="ut-tbl a">
+							<table class="tbform a" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">상세정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: 30%">
+									<col style="width: 20%">
+									<col style="width: 30%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">보험증권번호</th>
+										<td colspan="3" class="txt-l">421****90976</td>
+									</tr>
+									<tr>
+										<th scope="row">최초가입일</th>
+										<td class="txt-l">2021.03.30</td>
+										<th scope="row">만기일</th>
+										<td class="txt-l">2022.03.30</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="ut-tbl a mt20">
+							<table class="tblist a" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">상세정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: 30%">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">피보험자 구분</th>
+										<th scope="col">이름</th>
+										<th scope="col">주민등록번호</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>본인</td>
+										<td>팡*항</td>
+										<td>740309-2</td>
+									</tr>
+									<tr>
+										<td>배우자</td>
+										<td>손*한</td>
+										<td>711105-1</td>
+									</tr>
+									<tr>
+										<td>자녀</td>
+										<td>손*가</td>
+										<td>070504-4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="ut-tbltop">
+							<div class="left">
+								<h3 class="hd-tit4">피보험자별 가입내역</h3>
+							</div>
+							<div class="right">
+								<span class="astar">특약명을 선택하면 상세 보장내역을 확인할 수 있습니다.</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">보험료 가입내역</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width: 8%">
+									<col>
+									<col style="width: 12%">
+									<col style="width: 8%">
+									<col style="width: 8%">
+									<col style="width: 8%">
+									<col style="width: 10%">
+									<col style="width: 8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">특약명</th>
+										<th scope="col">보장금액</th>
+										<th scope="col">만기시수령인</th>
+										<th scope="col">기타시수령인</th>
+										<th scope="col">사망시수령인</th>
+										<th scope="col">추가납입일</th>
+										<th scope="col">탈퇴일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>본인</td>
+										<td>
+											<div class="flex">
+												<a href="javascript:;">주계약</a>
+												<a href="javascript:;" class="ico-plus"><span class="blind">보장내역</span></a>
+											</div>
+										</td>
+										<td class="txt-r">100,000,000원</td>
+										<td>세글자</td>
+										<td>남단최</td>
+										<td>법정상속인</td>
+										<td>2021.03.30</td>
+										<td>2021.03.30</td>
+									</tr>
+									<tr>
+										<td>본인</td>
+										<td>
+											<div class="flex">
+												<a href="javascript:;">주계약</a>
+												<a href="javascript:;" class="ico-plus"><span class="blind">보장내역</span></a>
+											</div>
+										</td>
+										<td class="txt-r">10,000,000원</td>
+										<td></td>
+										<td>최남단</td>
+										<td>법적상속인</td>
+										<td>2021.03.30</td>
+										<td>2021.03.30</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="ut-tbltop">
+						<div class="left">
+							<h3 class="hd-tit4">교보단체암진단특약(개인)</h3>
+						</div>
+						<!-- <div class="right">
+							<span class="astar">특약명을 선택하면 상세 보장내역을 확인할 수 있습니다.</span>
+						</div> -->
+					</div>
+					<div class="ut-tbl a">
+						<table class="tblist a" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">교보단체암진단특약</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 20%">
+								<col>
+								<col style="width: 20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">급부명</th>
+									<th scope="col">보장내역</th>
+									<th scope="col">보장금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="txt-l">암진단자금</td>
+									<td class="txt-l">특약의 보험기간 중 피보험자가 암으로 진단이 확정되었을 경우(다만, 최초 1회에 한하여 지급)</td>
+									<td class="txt-r">10,000,000원</td>
+								</tr>
+								<tr>
+									<td class="txt-l">기타피부함진단자금</td>
+									<td class="txt-l">특약의 보험기간 중 피보험자가 기타피부암으로 진단이 확정되었을 경우(다만, 최초 1회에 한하여 지급)</td>
+									<td class="txt-r">1,000,000원</td>
+								</tr>
+								<tr>
+									<td class="txt-l">대장점막내암진단자금</td>
+									<td class="txt-l">특약의 보험기간중 피보험자가 대장점막내암으로 진단이 확정되었을 경우(다만, 최초 1회에 한하여 지급)</td>
+									<td class="txt-r">1,000,000원</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

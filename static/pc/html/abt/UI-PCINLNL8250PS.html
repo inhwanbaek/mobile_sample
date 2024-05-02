@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">TV광고</h2>
+			</div>
+
+			
+			<section class="box-main">
+				<div class="inner c">
+					<div class="complate-msg ico-renewal tvads">
+						<div class="msg">
+							<p class="p1">등록된 내용이 없습니다.</p>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+
+			<div class="upper-movie">
+				<div class="nail-pic">
+					<span class="mov-poster">
+						<button type="button" class="btn-play">동영상 보기</button>
+						<img src="../../img/abt/mov1-b.png" alt="">
+					</span>
+					<iframe width="424" height="238" src="https://www.youtube.com/embed/Y5oeApYnyN4" title="'이 대회'출신 국가대표만 450명? SINCE 1985, 교보생명컵 꿈나무체육대회｜알교보자 EP.04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="cont-movie">
+					<h3 class="tit">우리나라에 그런 보험이 어딨어요.</h3>
+					<dl class="box-detail">
+						<dt>광고의미</dt>
+						<dd>고객님과 지속적으로 만남을 유지하면서 고객님께서 기대하시는 보장을 제공하기 위해 평생든든서비스를 시작했습니다.</dd>
+						<dt>방영기간</dt>
+						<dd>2012.05 ~ 2012.08</dd>
+					</dl>
+					<div class="subtitle">
+						우리나라에 그런 보험이 어딨어요. 우리나라에도 있습니다. 평생 찾아뵙고 챙겨드리는 보험서비스! 다시 봅니다. 교보생명. 우리나라에 그런 보험이 어딨어요. 우리나라에도 있습니다. 평생 찾아뵙고 챙겨드리는 보험서비스! 다시 봅니다.
+					</div>
+				</div>
+			</div>
+			<div class="lower-movie">
+				<div class="swiper-container movie-swiper">
+					<ul class="list-movie tvad swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-movie">
+									<img src="../../img/abt/mov1.png" alt="">
+								</div>
+								<div class="title">참 고마운 사람</div>
+								<p class="date">방영기간 : 2013.07 ~</p> 
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-movie">
+									<img src="../../img/abt/mov2.png" alt="">
+								</div>
+								<div class="title">우리나라에 그런 보험이 어딨어요</div>
+								<p class="date">방영기간 : 2012.05 ~</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-movie">
+									<img src="../../img/abt/mov3.png" alt="">
+								</div>
+								<div class="title">내가 잘못 알았네요</div>
+								<p class="date">방영기간 : 2012.07 ~</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btn-movie-prev"><span class="blind">이전</span></button>
+				<button type="button" class="btn-movie-next"><span class="blind">다음</span></button>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+	<script>
+		//video
+		$(".btn-play").on("click", function() {
+			$(this).prev("video").trigger("play");
+			$(this).hide();
+		});
+		$("video").on("ended", function() {
+			console.log("Video Finished");
+		});
+		var movieSwiper = new Swiper(".movie-swiper", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".btn-movie-next",
+				prevEl: ".btn-movie-prev",
+			},
+		});
+	</script>
+</div>
+</body>
+</html>

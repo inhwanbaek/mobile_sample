@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-detail-view" id="pop-detail-view">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">매도 상품 상세보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="etpprd-card-wrp">
+						<h2 class="hd-tit4">매도 상품 합계</h2>
+						<div class="ut-dtds f dtds">
+							<ul class="dlist between">
+								<li class="total">
+									<div class="dt">적립금</div>
+									<div class="dd">12,554,766,190원</div>
+								</li>
+								<li>
+									<div class="dt">매도예상금액</div>
+									<div class="dd"><span class="t-blue">30,000,000</span>원</div><!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+								</li>
+								<li>
+									<div class="dt">매도가능금액</div>
+									<div class="dd">12,554,766,190원</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg j">예금형</em><!-- [D] 2022-02-21 클래스.j 변경, 텍스트변경 -->
+									</div>
+									<div class="hdt">
+										<button type="button" class="tit">(무)교보 DB GIC 3년형</button>
+									</div>
+									<div class="line"></div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt">적립금</div>
+													<div class="dd">4,615,704,393</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도비율</div>
+													<div class="dd blue">36.76</div>%<!-- [D] 2022-06-29 '%' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도예상금액</div>
+													<div class="dd blue">11,029,367</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도가능금액</div>
+													<div class="dd">4,615,704,393</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ut-dcard e">
+							<div class="inr">
+								<div class="stds">
+									<div class="ut-bdgs">
+										<em class="bdg j">예금형</em><!-- [D] 2022-02-21 클래스.j 변경, 텍스트변경 -->
+									</div>
+									<div class="hdt">
+										<button type="button" class="tit">교보신탁 (무)롯데손보 DB GIC 1년형</button>
+									</div>
+									<div class="line"></div>
+									<div class="dtds">
+										<ul class="dlt">
+											<li>
+												<div class="dl">
+													<div class="dt">적립금</div>
+													<div class="dd">4,615,704,393</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도비율</div>
+													<div class="dd blue">36.76</div>%<!-- [D] 2022-06-29 '%' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도예상금액</div>
+													<div class="dd blue">11,029,367</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">매도가능금액</div>
+													<div class="dd">4,615,704,393</div>원<!-- [D] 2022-06-29 '원' 텍스트 태그 밖으로 이동 -->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>												
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-detail-view');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

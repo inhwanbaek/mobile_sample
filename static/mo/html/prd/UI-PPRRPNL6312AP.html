@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-jobsch no-focus" id="pop-jobsch">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">추천직원 검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="tctn"><!-- [D]2022-06-23 class tctn1 삭제 -->
+						<section class="forms">
+							<span class="input a name">
+								<label class="lb blind" for="input_kwd">추천직원 검색</label>
+								<div class="ibts"><button type="button" class="btn sm b bt-sch">검색</button></div>
+								<input id="input_kwd" type="search" placeholder="이름 또는 사원번호 입력">
+							</span>
+						</section>
+						<section class="schlist">
+							<ul class="rslist inbd"><!-- [D]2022-06-23 클래스 inbd 삭제 -->
+								<li><button type="button" class="sel">김상담 | 00700***</button></li>
+								<li><button type="button" class="sel">김센터 | 00700***</button></li>
+							</ul>
+							<div class="rndata">
+								<div class="msg"><span class="m">검색 결과가 없습니다.</span></div> <!-- 22-05-17 텍스트 수정 -->
+							</div>
+
+						</section>
+					</div>
+
+
+
+				</main>
+			</div>
+			<div class="pbt" style="display: none;" id="job_bts">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="cate_jobs1()">다시선택</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-jobsch');  // 팝업 열기
+
+		var cate_jobs1 = function(){
+			$("#job1").show();
+			$("#job2").hide();
+			$("#job_bts").hide();
+			$("#pop-jobsch .pct").scrollTop(0);
+			ui.update();
+		}
+		var cate_jobs2 = function(){
+			$("#job1").hide();
+			$("#job2").show();
+			$("#job_bts").show();
+			$("#pop-jobsch .pct").scrollTop(0);
+			ui.update();
+		}
+
+	</script>
+</div>
+</body>
+</html>

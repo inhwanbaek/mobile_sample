@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style_cp.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더 , gnb-->
+	<include class="header" id="header" src="../inc/header_cp.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	
+
+	<main class="container cp page" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="cp-sec">
+				<div class="inr">
+					<div class="ut-tbl a">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>등록자<em class="ast">는 필수항목입니다</em></th>
+									<td>
+										<span class="input a w260"><input type="text" placeholder="등록자명 입력"></span>
+										<span class="input a w260"><input type="text" placeholder="2022-08-21"></span>
+									</td>
+								</tr>
+								<tr>
+									<th>링크<em class="ast">는 필수항목입니다</em></th>
+									<td><span class="input a w-100"><input type="text" placeholder="URL"></span></td>
+								</tr>
+								<tr>
+									<th>이미지</th>
+									<td>
+										<p class="add-file">
+											<label class="btn btn-attach w100">
+												<em class="btx">파일선택</em>
+												<input class="file" type="file" accept="image/*; capture=camera">
+											</label>
+											<span class="input a"><input type="text" value="1111111"></span>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th>제목<em class="ast">는 필수항목입니다</em></th>
+									<td><span class="input a w-100"><input type="text" placeholder="기본"></span></td>
+								</tr>
+								<tr>
+									<th>Iframe 사용</th>
+									<td>
+										<label class="radio"><input type="radio" name="radio1" id="kkk1" checked><span class="txt">사용</span></label>
+										<label class="radio"><input type="radio" name="radio1" id="kkk2"><span class="txt">미사용</span></label>
+									</td>
+								</tr>
+								<tr>
+									<th>Iframe URL</th>
+									<td>
+										<span class="input a w-100"><input type="text" placeholder="URL"></span>
+									</td>
+								</tr>
+								<tr>
+									<th>내용<em class="ast">는 필수항목입니다</em></th>
+									<td>
+										<span class="textarea a">
+											<label for="textarea-1" class="lb blind">내용</label>
+											<textarea placeholder="텍스트에어리어" id="textarea-1"></textarea>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn-list rows-12 mt30">
+						<div class="cols-4"></div>
+						<div class="cols-4 text-center">
+							<button type="button" class="btn lg">임시저장</button>
+						</div>
+						<div class="cols-4 text-right">
+							<button type="button" class="btn lg">목록</button>
+							<button type="button" class="btn a lg">등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer_cp.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">보장내용</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure table-st"><!-- 22-04-28 클래스추가 -->
+						
+
+						<!-- 예상보장내용 -->
+						<h2 class="hd-tit3">주계약</h2>
+						<div class="ut-tbl a" aria-describedby="">
+							<table class="tblist" cellspacing="0" cellpadding="0"><!-- 22-04-28 nl 클래스삭제 -->
+								<caption><span class="tit">주계약</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:80px">
+									<col>
+									<col style="width:120px">
+								</colgroup><!-- 22-07-12 width 수정 -->
+								<thead>
+									<tr>
+										<th scope="col">급부명</th>
+										<th scope="col">보장내용</th>
+										<th scope="col">보장금액<br>(만원)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>진단보험금</td>
+										<td>보험기간(종신) 중 진단보험금 지급사유["주요질병", "중대한 화상 및 부식(화학약품</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>등에 의한 피부 손상)", "일상생활장해상태", "중증치매상태" 진단이 확정되었을 경우</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>기본보험금액의 80%지급(최초 1회 한함)</td>
+										<td>8,000</td><!-- 22-04-28 금액단위수정 -->
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h2 class="hd-tit3">소액암진단특약(갱신형)Ⅲ</h2>
+						<div class="ut-tbl a" aria-describedby="">
+							<table class="tblist" cellspacing="0" cellpadding="0" ><!-- 22-04-28 nl 클래스삭제 -->
+								<caption><span class="tit">소액암진단특약(갱신형)Ⅲ</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:80px">
+									<col>
+									<col style="width:120px">
+								</colgroup><!-- 22-07-12 width 수정 -->
+								<tbody>
+									<tr>
+										<td>뇌혈관질환진단보험금</td>
+										<td>기타피부암으로 진단이 확정될 경우(다만, 최초1회에 한함)</td>
+										<td>200</td><!-- 22-04-28 금액단위수정 -->
+									</tr>
+									<tr>
+										<td></td>
+										<td>경우 갱신일로 합니다. 다만, 부활(효력회복)계약의 경우에는 부활(효력회복)일부터 부활(효력회복)일을 포함하여 90일이</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a glst">
+									<li>이 자료는 요약된 자료이므로 실제 가입시 건강사항, 연령, 직업, 운전, 과거병력, 취미 등에 따라 가입이 제한되거나 보장금액 등이 제한될 수 있습니다.</li>
+									<li>갱신형특약은 갱신할 때마다 피보험자의 나이 증가 및 보험요율의 변동에 따라 보험료가 변동(인상)되고, 계속 갱신할 경우에는 주계약의 납입기간이 종료되더라도 최대갱신가능나이(기간)까지 보험료를 계속 납입하여야 합니다.</li>
+									<li>자세한 사항은 보험약관과 보험증권(보험가입증서)을 통하여 확인하시기 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+						<!-- // 예상보장내용 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">	
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

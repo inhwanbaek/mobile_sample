@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer c pop-dgntype" id="pop-dgntype">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="dgntype-slider">
+							<div class="swiper-container swiper">
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide">
+										<div class="dgntype-item case1">
+											<div class="tit">안정형</div>
+											<div class="desc">원금과 이자가 보장되는 원리금보장형 상품에 투자합니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="dgntype-item case2">
+											<div class="tit">안정추구형</div>
+											<div class="desc">투자 원금 손실을 최소화하면서 이자소득 ±α 수익을 추구합니다. 자산 중 일부는 변동성이 있는 상품에 투자합니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="dgntype-item case3">
+											<div class="tit">중립형</div>
+											<div class="desc">투자 원금의 보존보다는 초과 수익을 추구하므로, 일정 수준의 손실 위험을 감수하여 상품에 투자합니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="dgntype-item case4">
+											<div class="tit">수익추구형</div>
+											<div class="desc">높은 수준의 추자 수익을 위해서는 투자위험도 함께 증가한다는 것을 인지하고 상품에 투자합니다.</div>
+										</div>
+									</li>
+									<li class="swiper-slide">
+										<div class="dgntype-item case5">
+											<div class="tit">고수익추구형</div>
+											<div class="desc">변동성이 높은 위험자산에 자산의 대부분을 투자합니다. 자산가치 변동에 따른 손실위험을 분명히 인지하고 고수익을 추구합니다.</div>
+										</div>
+									</li>
+								</ul>
+								<div class="navigation"><button type="button" class="nav prev">이전으로</button><button type="button" class="nav next">다음으로</button></div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-dgntype');  // 팝업 열기
+
+			var dgntypeSlider = new Swiper('.dgntype-slider .swiper-container', {
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.navigation .nav.next',
+					prevEl: '.navigation .nav.prev'
+				},
+			});
+
+			// slide이동
+			// dgntypeSlider.slideTo(3, 0);
+		</script>
+	</div>
+</body>
+</html>

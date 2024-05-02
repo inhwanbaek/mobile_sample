@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-sample3" id="pop-sample3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">결과보기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire planning">
+					<div class="plan-botpop-cont">
+						<div class="bg-box-sky"><!-- [D] 2022-06-24 클래스 bg-box-gray에서 bg-box-sky로 수정 -->
+							고객님이<br>DC(확정기여형) 제도로 퇴직하실 경우  예상되는 총 세금은 약 <span class="blue">345,483,040원</span>입니다.
+						</div>
+						<div class="plan-sect">
+							<h2 class="hd-tit4">예상 퇴직소득세</h2>
+							<div class="ut-tbl a unline">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">예상 퇴직소득세 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+
+									<tbody>
+										<tr>
+											<td>예상 퇴직소득세</td>
+											<td class="t-right">317,710,990원</td>
+										</tr>
+										<tr>
+											<td>예상 지방소득세</td>
+											<td class="t-right">31,771,090원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h2 class="hd-tit4">예상 기타소득세(운용수익+추가납입)</h2>
+							<div class="ut-tbl a unline">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">예상 기타소득세(운용수익+추가납입) 테이블</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:45%">
+										<col>
+									</colgroup>
+
+									<tbody>
+										<tr>
+											<td>예상 기타소득세</td>
+											<td class="t-right">800원</td>
+										</tr>
+										<tr>
+											<td>예상 지방소득세</td>
+											<td class="t-right">80원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="total">
+								<div>예상 총 세금</div>
+								<div><strong>349,483,040</strong> 원</div>
+							</div>
+
+						</div>
+
+						<div class="plan-sect mt40">
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">유의사항</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>이 결과는 입력하신 정보로 산출한 시뮬레이션 결과입니다. 실제 받는 금액과는 다를 수 있으니 참고자료로만 활용해 주세요.</li>
+										<li>이 금액은 평가금액 변동 및 추가 납입에 대한 수수료 등은 적용하지 않은 예상금액입니다.</li>
+										<li>세액은 현재 산출 시점의 세법을 기준으로 계산한 금액이며, 세법 개정 시 금액이 변동될 수 있습니다. </li>
+										<li>퇴직급여를 연금으로 수령할 경우 퇴직소득세 대신 연금소득세가 부과되며, 퇴직소득세의 70%에 해당하는 금액입니다.  </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-layer');">취소</button>
+					<button type="button" class="btn lg rd a">확인</button>
+				</div>
+			</div> -->
+
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sample3');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

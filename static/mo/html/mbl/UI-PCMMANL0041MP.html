@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-mbl pop-pcert" id="pop-pcert">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">휴대폰 본인인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<section class="pcert-step">
+
+						<div class="mbl-top">
+							<div class="hdt"><h2 class="hd-tit2">문자로 받은 인증번호 6자리를<br> 입력해주세요</h2></div>
+						</div>
+		
+						<div class="ut-form a forms">
+							<ul class="form">
+								<li>
+									<div class="ut-certi">
+										<span class="input a">
+											<label class="lb" for="certi-1">인증번호 확인</label>
+											<input type="number" class="cnm" pattern="\d*" placeholder="인증번호를 입력" id="certi-1">
+											<div class="ctt ibts">
+												<i class="tt">입력시간</i><i class="ts">05:32</i>
+											</div>
+										</span>
+										<div class="ext"><a href="javascript:;" class="link-text">시간연장</a></div><!-- [웹접근성] 1st 수정 -->
+										<div class="bts"><button type="button" class="btn sm b">인증번호 재요청</button></div>
+									</div>
+								</li>
+							</ul>
+							<div class="info-box b">
+								<span>
+									입력 시간이 지났습니다. <br>
+									인증번호를 다시 요청해 주세요.							
+								</span>
+							</div>
+							<div class="info-box b">
+								<span>
+									인증번호를 발송하였습니다. <br> 
+									휴대폰 문자메시지에서<br>
+									인증번호를 확인해 주세요.							
+								</span>
+							</div>
+							<div class="info-box b">
+								<span>
+									인증번호가 일치하지 않습니다.<br> 확인 후 다시 입력해 주세요.
+								</span>
+							</div>
+							<div class="info-box b">
+								<span>
+									인증번호 발송 횟수를 초과하였습니다. <br> 휴대폰번호를 다시 입력해 주세요.
+								</span>
+							</div>
+						</div>
+		
+					</section>
+				</main>
+			</div>
+			<!-- [D] 2022-07-15 휴대폰 다시 입력 버튼 삭제 -->
+			<!-- <div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">휴대폰번호 다시 입력</button>
+				</div>
+			</div> -->
+			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pcert');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#333333">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link href="../../font/Pretendard-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+	<link href="../../font/Pretendard-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<link href="../guide/shCore.css" rel="stylesheet">
+	<script src="../guide/shCore.js"></script>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+		
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-gnb","title":"UI 샘플3"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<button type="button" class="btn-ui"><b>ui</b></button>
+	<nav class="uimenu">
+		<div class="menu">
+			
+			<ul class="list"></ul>
+		</div>
+	</nav>
+	<div id="bar-ht"><i></i></div>
+
+	<main class="container page ui" id="container">
+
+		<div class="contents" id="contents">
+
+			<div class="uisect">
+
+
+
+				<div class="ut-tooltip">
+					<button type="button" class="ico help bt-tooltip">도움말</button>
+					<div class="toolctn">
+						<div class="tpmsg">
+							<p class="tt">기본부과형</p>
+							<p>부담수준 확인 서비스는 가입자별 임금총액을 회사납입금 입력금액과 비교하여 부담금 납입금액이 적정한지 검증하는 서비스로, 이 서비스를 신청하면 부담금 입력 시 모든 가입자의 임금총액을 반드시 입력해야 합니다. </p>
+							<p class="tt">일부면제형</p>
+						</div>
+					</div>
+				</div>
+				<p class="gap"></p>
+				<div class="loading-scan"></div>
+				<p class="gap"></p>
+				<p class="gap"></p>
+				<p class="gap"></p>
+
+				<div class="ut-tooltip">
+					<button type="button" class="ico help bt-tooltip" aria-labelledby="tip_123">도움말</button>
+					<div class="toolctn">
+						<div class="tpmsg">
+							<p class="tt">기본부과형</p>
+							<p>부담수준 확인 서비스는 가입자별 임금총액을 회사납입금 입력금액과 비교하여 부담금 납입금액이 적정한지 검증하는 서비스로, 이 서비스를 신청하면 부담금 입력 시 모든 가입자의 임금총액을 반드시 입력해야 합니다. </p>
+							<p class="tt">일부면제형</p>
+						</div>
+					</div>
+				</div>
+
+				<p class="gap"></p>
+				<p class="gap"></p>
+				<p class="gap"></p>
+			
+
+				<section class="sect" data-sid="ui-tables">
+					<h3 class="hdt">테이블10:51</h3>
+
+					<span class="input a xdel xset"><input type="text" placeholder="내용을 입력하세요." value="roiuuri"></span>
+					<p class="gap"></p>
+					<span class="input a xdel xset"><input type="text" placeholder="내용을 입력하세요." value=""></span>
+					<p class="gap"></p>
+					<span class="input a xdel"><input type="text" placeholder="내용을 입력하세요." value="roiuuri"></span>
+					<p class="gap"></p>
+					<span class="input a xdel"><input type="text" placeholder="내용을 입력하세요."></span>
+					<p class="gap"></p>
+
+					<span class="input a ut-date"><input type="tel" placeholder="YYYY.MM.DD" class="datepicker" id="date_001" title="날짜"></span>
+					<p class="gap"></p>
+
+					<span class="input a ut-date"><input type="tel" placeholder="YYYY.MM.DD" class="datepicker" id="date_002" title="날짜"></span>
+					<p class="gap"></p>
+
+
+					<span class="input a ut-date"><label for="month_1" class="lb">월</label><input type="tel" id="month_1" class="monthpicker" placeholder="YYYY.MM" value="2012.12"  title="날짜"></span>
+					<p class="gap"></p>
+					<span class="input a ut-date"><label for="month_1" class="lb">월</label><input type="tel" id="month_2" class="monthpicker" placeholder="YYYY.MM" value=""  title="날짜"></span>
+					<p class="gap"></p>
+					<span class="input a ut-date"><input type="tel" id="month_5" class="monthpicker" placeholder="YYYY.MM" value=""  title="날짜"></span>
+
+					<p class="gap"></p>
+					<span class="input a ut-date"><input type="tel" id="month_3" class="monthpicker" placeholder="YYYY.MM" value="" data-min="2022.03"  data-max="2024.11" title="날짜"></span>
+
+					<p class="gap"></p>
+
+					<div class="ut-tbl a fixed-x">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:30%">
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="fixed">TH1</th>
+									<th scope="col">TH2</th>
+									<th scope="col">TH3</th>
+									<th scope="col">TH4</th>
+									<th scope="col">TH5</th>
+									<th scope="col">TH6</th>
+									<th scope="col">TH7</th>
+									<th scope="col">TH8</th>
+									<th scope="col">TH9</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>TDTDTDTDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+								<tr>
+									<td>TDTDTDTDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>TDTDTDTDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<p class="gap"></p>
+
+					<div class="ut-tbl a fixed-x">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width:30%">
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="fixed">TH1</th>
+									<th scope="col">TH2</th>
+									<th scope="col">TH3</th>
+									<th scope="col">TH4</th>
+									<th scope="col">TH5</th>
+									<th scope="col">TH6</th>
+									<th scope="col">TH7</th>
+									<th scope="col">TH8</th>
+									<th scope="col">TH9</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>TDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+								<tr>
+									<td>TDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>TDTDTDTD1</td>
+									<td>TDTDTDTD2</td>
+									<td>DTDTD3</td>
+									<td>TDTDTDTD4</td>
+									<td>DTD5</td>
+									<td>TDTDTDTD6</td>
+									<td>TDTD7</td>
+									<td>TDTDTDTD8</td>
+									<td>TDTDTDTD9</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					
+					
+					
+					<!-- 
+
+					<div class="ut-tbl a fixed-x">
+						<div class="tbl-dumy" aria-hidden="true">
+							<table class="tblist" cellspacing="0" cellpadding="0" >
+								<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:30%">
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">TH1</th>
+										<th scope="col">TH2</th>
+										<th scope="col">TH3</th>
+										<th scope="col">TH4</th>
+										<th scope="col">TH5</th>
+										<th scope="col">TH6</th>
+										<th scope="col">TH7</th>
+										<th scope="col">TH8</th>
+										<th scope="col">TH9</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="tbl-real">
+							<table class="tblist" cellspacing="0" cellpadding="0" >
+								<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:30%">
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">TH1</th>
+										<th scope="col">TH2</th>
+										<th scope="col">TH3</th>
+										<th scope="col">TH4</th>
+										<th scope="col">TH5</th>
+										<th scope="col">TH6</th>
+										<th scope="col">TH7</th>
+										<th scope="col">TH8</th>
+										<th scope="col">TH9</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>TDTDTDTDTDTDTD1</td>
+										<td>TDTDTDTD2</td>
+										<td>DTDTD3</td>
+										<td>TDTDTDTD4</td>
+										<td>DTD5</td>
+										<td>TDTDTDTD6</td>
+										<td>TDTD7</td>
+										<td>TDTDTDTD8</td>
+										<td>TDTDTDTD9</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+
+					 -->
+				</section>
+				
+
+
+			</div>
+			
+			<div class="uisect">
+				asd
+			</div>
+		</div>
+		
+	</main>
+
+
+
+	<script>
+
+	</script>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+</body>
+</html>

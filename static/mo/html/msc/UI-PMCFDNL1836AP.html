@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-mscInfo pop-mscDft" id="pop-sellInfo">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">지급계산서</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sec">
+						<p class="refer-date">기준일시: 2020.01.06 10:25:14</p>
+						<h2 class="blind">지급계산서 내역</h2>
+						<div class="ut-dtds c">
+							<ul class="dlist left">
+								<li>
+									<div class="dt">계좌번호</div>
+									<div class="dd">200***-001-00</div>
+								</li>
+								<li>
+									<div class="dt">고객명</div>
+									<div class="dd">김*보</div>
+								</li>
+								<li>
+									<div class="dt">펀드명</div>
+									<div class="dd">교보악사 파워인덱스 증권 자투자신탁 1회[주식] Class A1</div>
+								</li>
+								<li>
+									<div class="dt">입금계좌</div>
+									<div class="dd">200***-001-00  예수금</div>
+								</li>
+								<li>
+									<div class="dt">지급구분</div>
+									<div class="dd">예탁이자</div>
+								</li>
+								<li>
+									<div class="dt">지급일</div>
+									<div class="dd">2009.08.25</div>
+								</li>
+								<li>
+									<div class="dt">기준가적용일</div>
+									<div class="dd">2009.08.23</div>
+								</li>
+								<li>
+									<div class="dt">지급좌수</div>
+									<div class="dd">763,899좌</div>
+								</li>
+								<li>
+									<div class="dt">기준가격</div>
+									<div class="dd">999.98원</div>
+								</li>
+								<li>
+									<div class="dt">투자원금</div>
+									<div class="dd">0원</div>
+								</li>
+								<li>
+									<div class="dt">환매수수료</div>
+									<div class="dd">0원</div>
+								</li>
+								<li>
+									<div class="dt">과표금액</div>
+									<div class="dd">197원</div>
+								</li>
+								<li>
+									<div class="dt">세금합계</div>
+									<div class="dd">0원</div>
+								</li>
+								<li>
+									<div class="dt">수익금</div>
+									<div class="dd">11,271원</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ut-gudbox a open mt40" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>고객님이 선택하신 내역의 지급계산서 내용입니다.</li>
+								<li>이 지급계산서는 고객 편의를 위한 것으로 법적 효력이 없습니다.</li>
+								<li>결산 전 입금분에 대한 수익금 및 과세표준금액 계산은 재투자 시점을 기준으로 합니다.</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">PDF 파일로 저장</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sellInfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

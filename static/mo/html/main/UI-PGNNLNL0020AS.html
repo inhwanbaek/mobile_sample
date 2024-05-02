@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/main_app.css"> <!-- [D] 2022-08-19 추가 -->
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"관심 키워드 설정"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page com interest" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="txt-app-keyword">
+				<span class="has-back">무엇에 </span>
+				<span><em>관심</em>이 많으세요?</span>
+				<span class="sub">관심 키워드에 딱 맞는 꿀팁을 준비했어요 :)</span>
+			</div>
+			<ul class="lst-app-keyword">
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 보험</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 재테크</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 노후준비</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 자산관리</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 건강</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 금융상식</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 문화예술</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 교육정보</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 추천도서</span></label>
+				</li>
+				<li>
+					<label class="checkbox cdot"><input type="checkbox" name="checkbox01"><span class="txt"># 평생보장</span></label>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">설정</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

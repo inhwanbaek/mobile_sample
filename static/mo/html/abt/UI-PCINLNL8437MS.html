@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"대학생 아시아 대장정"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt contribute" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-tit2 upper">
+				<i class="line">넓은 세상에 대한 경험</i>은<br>
+				높은 비전과 넓은 안목을 심어 줍니다.
+			</div>
+			<p>
+				미래의 주역인 대학생들이 아시아 국가를 방문해 역사와 문화를 이해하고 현지교류 프로그램에 참여하며 리더십과 팔로워십을 키울 수 있도록 돕는 대학생 해외탐방 프로그램입니다.
+			</p>
+			<div class="box-pic">
+				<img src="../../img/abt/college_01.png" alt="대학생 아시아 대장정 이미지"><!-- [D] 2022-07-28 alt 수정 -->
+			</div>
+			<h3 class="hd-tit3">주요 프로그램</h3>
+			<p>
+				리더십 및 팔로워십 캠프, 해외 자율탐방 문화체험 및 상호교류 프로그램 등
+			</p>
+			<h3 class="hd-tit3">참여대상</h3>
+			<p>
+				국내외 대학생
+			</p>
+			<h3 class="hd-tit3">신청시기</h3>
+			<p>
+				매년 4~5월
+			</p>
+			<h3 class="hd-tit3">사업파트너</h3>
+			<p>
+				대산문화재단
+			</p>
+			<h3 class="hd-tit3">문의처</h3>
+			<div class="p-tel">
+				<a href="tel:02-721-6340">02-721-6340</a><!-- [D] 2022-07-28 수정 -->
+			</div>
+		</div>
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">신청하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

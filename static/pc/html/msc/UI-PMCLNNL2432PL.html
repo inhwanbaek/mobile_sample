@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a xs pop-confirm pop-cnfrmaptrc" id="pop-cnfrmaptrc">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">근저당권말소비용 안내</h1><!-- [D] 2022-04-07 문구수정 -->
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="confirm-box">
+							<!-- [D] 2022-04-07 문구수정 -->
+							<ul class="bullet a">
+								<li>담보를 해지하면 근저당권이 설정된 건수에 따라 소정의 말소비용이 발생하며, 말소비용은 고객님이 부담하셔야 합니다.</li>
+								<li>담보 해지 업무는 교보생명과 협약한 법무사가 담당합니다. 반드시 채무자 또는 담보물 소유자 명의의 계좌에서 아래 담당 법무사 계좌로 근저당권말소비용을 송금해 주세요.</li>
+							</ul>
+							<ul class="bullet c mt16">
+								<!-- [D]2022-06-28 은행계좌수정-->
+								<li>은행 <span class="fn-point01">{ SC 제일은행 }</span></li>
+								<li>계좌번호 <span class="fn-point01">{ 431-20-424012 }</span></li>
+								<li>예금주 <span class="fn-point01">{ 백지훈 }</span></li>
+							</ul>
+							<!-- //end [D] 2022-04-07 문구수정 -->
+
+							<!-- [D] 2022-04-14 삭제 -->
+							<!-- <div class="line-box">
+								<strong class="qst">이 내용에 동의하십니까?</strong>
+								<p class="text-type2 mt08">※ 입금자는 반드시 채무자 또는 소유자명으로 입금 해주셔야 합니다.</p>
+							</div> -->
+						</div>
+					</main>
+				</div>
+				<div class="pbt b"><!-- [D] 2022-04-14 b클래스 추가 -->
+
+					<!-- [D] 2022-04-14 동의확인 추가 -->
+					<div class="box-set boxbot">
+						<div class="hd-tit5 mb0">이대로 자동이체 정보를 변경하시겠습니까?</div>
+						<p class="text-type2 mt08">※ 입금자는 반드시 채무자 또는 소유자명으로 입금 해주셔야 합니다.</p>
+					</div>
+					<!-- //end [D] 2022-04-14 동의확인 추가 -->
+
+					<div class="btn-set">
+						<!-- <button type="button" class="btn lg rd b" onclick="ui.popup.close('pop-cnfrmaptrc');">동의안 함</button> --><!-- [D] 2022-04-07 삭제 -->
+						<button type="button" class="btn lg rd a">내용을 이해하고 동의함</button><!-- [D] 2022-04-07 문구수정 -->
+					</div>
+				</div>
+				<!-- <button type="button" class="btn-pop-close">닫기</button> -->
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-cnfrmaptrc');
+		</script>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a md pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">특약납입면제대상 상품 해지 시 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<h2 class="hd-tit3 mt0">보험계약 해지(해약)에 대한 유의사항을 확인해 주세요.</h2>
+
+					<div class="text-group type2">
+						<div class="text-box">
+							<p>고객님은 보험료 납입이 면제된 보험계약에 대하여 해지(해약)를 요청하셨습니다. 해지 전 아래 계약내용을 다시 확인해 주시기 바랍니다. </p>
+							<p>고객님이 현재 가입 중인 보험은 보험료 납입이 면제된 상태이며, 앞으로 보험료를 납입하지 않더라도 교보생명이 보험료 납입기간까지 계속 납입하므로 보험계약이 유지됩니다. 따라서 상품 약관 내용에서 정한 보험사고 발생 시 보험금이 지급되고, 만기 시에는 약정된 보험금이 지급됩니다. </p>
+							<p>그러나 고객님(계약자) 요청으로 보험계약을 해지(해약)하는 경우에는 보험계약이 종료되어 보험혜택을 받을 수 없게 됨을 유의하시기 바랍니다.</p>
+
+							<div class="ut-dtds c">
+								<div class="tops">
+									<h3 class="hd-tit4 htit">보험계약 내용 안내</h3>
+								</div>
+								<ul class="dlist left">
+									<li>
+										<div class="dt">보험증권번호</div>
+										<div class="dd">219030014096</div>
+									</li>
+									<li>
+										<div class="dt">상품명</div>
+										<div class="dd">(무)교보가족든든치매보험(보증비용부과형/무해지환급형)(기본형플러스)</div>
+									</li>
+									<li>
+										<div class="dt">계약자</div>
+										<div class="dd">홍길동</div>
+									</li>
+									<li>
+										<div class="dt">계약일</div>
+										<div class="dd">2010.02.10</div>
+									</li>
+									<li>
+										<div class="dt">보험기간</div>
+										<div class="dd">26년</div>
+									</li>
+									<li>
+										<div class="dt">해지환급금<br>
+											(차감지급액)</div>
+										<div class="dd">339,000원</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</main>
+			</div>
+
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots b">
+					<div class="inr">
+						<div class="box-set boxbot">
+							<div class="bot-box">
+								<div class="confirm-box">
+									본인은 위 유의사항(보험료 납입 보장혜택, 만기보험의 지급)에 대해 충분히 설명 들었으나, 개인적인 사정으로 해지환급금을 청구하고, 본인 요청으로 이 계약을 해지(해약) 처리함에 이의가 없음을 확인합니다
+								</div>
+								<div class="hd-tit5">이 내용을 확인하고 동의하십니까?</div>
+							</div>
+						</div>
+						<div class="btn-set b2">
+							<button type="button" class="btn lg rd b">동의안함</button>
+							<button type="button" class="btn lg rd a">동의</button>
+						</div>
+					</div>
+				</nav>
+				<!-- //하단 고정영역 -->
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

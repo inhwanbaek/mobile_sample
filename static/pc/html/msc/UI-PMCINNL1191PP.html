@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a md pop-prmmtrms" id="pop-prmmtrms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 자동이체 약관</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt isbotb">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">보험료 자동이체 약관</h2>
+						<div class="text-box">
+							<ul class="bullet num">
+								<li><i class="n">①</i> 매월 납입을 원하시는 보험료에 대해 별도의 통지없이 지정된 계좌에서 교보생명에서 지정하는 납기일(휴일인 경우 다음영업일)에 출금, 대체 납부되면, 은행의 예금약관이나 약정서의 규정에 불구하고 예금청구서 기타 관련증서 없이 자동이체 처리절차에 의해 출금될 수 있습니다.</li>
+								<li><i class="n">②</i> 해당 이체일 은행 영업시간내에 입금된 예금에 한하여 출금 가능하며 은행예금의 금액부족 / 지급제한 / 약정대출의 연체등으로 대체납부가 불가능한 경우 자동이체 되지 않습니다.</li>
+								<li><i class="n">③</i> 제 <i class="n">②</i>항의 경우 이의를 제기하지 않으며, 이체일 이후부터 표준약관의 보험료납입최고(독촉)기간내에는 상기 <i class="n">①</i>항의 방법으로 지정계좌에서 수시 출금할 수 있습니다. (단, 보험료납입최고(독촉)기간이 경과된 이후는 자동출금되지 아니합니다)</li>
+								<li><i class="n">④</i> 납기일(이체일)에 동일한 수종(카드사 등)의 자동이체 청구가 있는경우의 출금 우선순위는 은행에서 정하는 바에 따릅니다.</li>
+								<li><i class="n">⑤</i> 자동이체 업무를 위해 자동이체와 관련된 납부자 정보(납부자명, 사업자<주민>번호 등)가 금융결제원 및 거래 은행에 제공됩니다.</li>
+								<li><i class="n">⑥</i> 이 자동납입신청을 변경 또는 해지하고자 하는 경우에는 납입응당일 30일 전까지 자동납입변경 또는 해지신청서를 제출하셔야 합니다.</li>
+								<li><i class="n">⑦</i> 자동납입을 위하여 지정계좌의 예금을 출금하는 경우에는 각종 예금약관 또는 약정서의 규정에도 불구하고 예금청구나 수표 없이 은행의 자동계좌 이체 처리 절차에 의하여 출금하여도 이의가 없습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt b no-hide">
+				<div class="box-set">
+					<div class="hd-tit4">위 내용에 동의하십니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-prmmtrms');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

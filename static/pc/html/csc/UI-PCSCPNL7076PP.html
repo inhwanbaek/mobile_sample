@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-ins-choose" id="pop-ins-choose">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험증권번호 선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<h2 class="hd-tit3">보험증권번호와 상품명을 선택해 주세요.</h2>
+					<p class="sub-tit">보험증권번호는 한 건만 선택 가능합니다. <br>
+						다건 접수를 원하시는 경우 내용을 입력하시기 바랍니다.</p>
+					<div class="choose-prd">
+						<div class="ut-dcard a dcard">
+							<div class="stds">
+								<div class="hdt">
+									<div class="chk">
+										<label class="checkbox"><input type="radio" name="rdo-prd"><span class="txt">무배당교보다이렉트건강보험(만기형)</span></label>
+									</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">
+											<strong class="num">
+												100000****023
+											</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ut-dcard a dcard">
+							<div class="stds">
+								<div class="hdt">
+									<div class="chk">
+										<label class="checkbox"><input type="radio" name="rdo-prd"><span class="txt">무배당교보다이렉트건강보험(만기형)</span></label>
+									</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">
+											<strong class="num">
+												100000****023
+											</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ut-dcard a dcard">
+							<div class="stds">
+								<div class="hdt">
+									<div class="chk">
+										<label class="checkbox"><input type="radio" name="rdo-prd"><span class="txt">무배당교보다이렉트건강보험(만기형)</span></label>
+									</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">보험증권번호</div>
+										<div class="dd">
+											<strong class="num">
+												100000****023
+											</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="ut-more">
+						<button type="button" class="btn-more">
+							<span class="tnt">
+								<em class="tm">더보기</em>
+								<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+							</span>
+						</button>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+					<button type="button" class="btn rd lg a" disabled>확인</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-ins-choose');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

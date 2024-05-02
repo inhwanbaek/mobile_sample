@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"설정"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page com userset" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<div class="ver-card">
+				<div class="hdt">
+					<div class="dt"><h2 class="tit">버전정보</h2></div>
+					<div class="dd"><span>최신버전</span> 1.12.00</div>
+				</div>
+				<div class="bd">
+					<ul class="dldt">
+						<li>
+							<div class="dt">현재버전</div>
+							<div class="dd">1.12.00</div>
+						</li>
+						<!--D: 2022-05-13: 추가 -->
+						<li>
+							<div class="dt">최신버전</div>
+							<div class="dd">1.12.00</div>
+						</li>
+						<!--D: 2022-05-13: 추가 -->
+						<li>
+							<div class="dt">모델명</div>
+							<div class="dd">iPhone 14.2</div>
+						</li>
+						<li>
+							<div class="dt">OS버전</div>
+							<div class="dd">iOS 15.0.2</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- [s] 22-06-29 수정 -->
+			<div class="access-set a">
+				<div class="tit-area">
+					<h3 class="hd-tit4">접근권한 설정</h3>
+					<a href="" class="setting">설정</a>
+
+				</div>
+				<ul class="acc-lst">
+					<li>
+						<div class="acc-box ico ico-gps">
+							<div class="dt">
+								<div class="tit">
+									위치정보
+								</div>
+								<div class="txt">
+									고객님의 위치를 기반으로 가까운 교보생명 지점을 찾으실 수 있습니다.
+								</div>
+							</div>
+							<!--[D] 2022-07-21 개밡팀 요청으로 삭제-->
+							<!-- <div class="dd">
+								<label class="ut-chk"><input type="checkbox" checked title="위치정보 접근 설정"><em></em></label>
+							</div> -->
+							<!--// [D] 2022-07-21 개밡팀 요청으로 삭제-->
+						</div>
+						
+					</li>
+					<li>
+						<div class="acc-box ico ico-camera">
+							<div class="dt">
+								<div class="tit">
+									카메라
+								</div>
+								<div class="txt">
+									보험금청구, 대출 등 금융 서비스 이용을 목적으로 필요서류를 촬영하거나 사진갤러리에서 저장된 이미지를 가져옵니다.
+								</div>
+							</div>
+							<!--[D] 2022-07-21 개밡팀 요청으로 삭제-->
+							<!-- <div class="dd">
+								<label class="ut-chk"><input type="checkbox" checked title="카메라 접근 설정"><em></em></label>
+							</div> -->
+							<!--// [D] 2022-07-21 개밡팀 요청으로 삭제-->
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="access-set a">
+				<h3 class="hd-tit4">나의 알림 설정</h3>
+				<ul class="acc-lst">
+					<li>
+						<div class="acc-box ico ico-bell">
+							<div class="dt">
+								<div class="tit">
+									마케팅정보 알림
+								</div>
+								<div class="txt">
+									상품 추천정보 및 이벤트 안내 등 혜택 정보를 받아보실 수 있습니다.
+								</div>
+							</div>
+							<div class="dd">
+								<label class="ut-chk"><input type="checkbox" title="마케팅정보 알림 설정"><em></em></label>
+							</div>
+						</div>
+						
+					</li>
+					<li>
+						<div class="acc-box ico ico-mydata">
+							<div class="dt">
+								<div class="tit">
+									마이데이터 마케팅정보 알림 
+								</div>
+								<div class="txt">
+									마이데이터 상품/부가서비스 및 이벤트 안내를 받아 보실 수 있습니다.
+								</div>
+							</div>
+							<div class="dd">
+								<label class="ut-chk"><input type="checkbox" title="마이데이터 마케팅정보 알림 설정"><em></em></label>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="access-set b">
+				<ul class="acc-lst">
+					<li>
+						<div class="acc-box ico ico-login">
+							<div class="dt">
+								<div class="tit">
+									자동 로그인 설정
+								</div>
+								<div class="txt">
+									별도 로그인 절차 없이 모바일앱에 자동으로 로그인합니다.
+									<p>* 보안을 위해 휴대폰 잠금화면 설정이 되어 있는 경우에만 이용 가능합니다.</p>
+								</div>
+							</div>
+							<div class="dd">
+								<label class="ut-chk"><input type="checkbox" title="자동 로그인 설정"><em></em></label>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+			<!-- // [e] 22-06-29 수정 -->
+			
+		</div>
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+		

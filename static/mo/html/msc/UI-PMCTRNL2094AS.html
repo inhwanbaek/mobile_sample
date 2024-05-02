@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"신탁 추가입금"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc trust" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">1. 입금대상 선택</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">3</b></span>
+								<span class="num"><b class="b">1</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="sect top">
+				<h2 class="hd-tit3">신탁계약내역</h2>
+				<p class="tit-txt">추가 입금할 계약을 선택해 주세요.</p>
+			</section>
+
+			<div class="ut-dcard a account">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="radio" name="rdo-deal" id="rdo-deal01"><span class="txt">수시입출금식신탁(MMT)</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">계약번호</div>
+							<div class="dd">200******106</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">계약잔고</div>
+							<div class="dd">35,000,000원</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">계약일</div>
+							<div class="dd">2022.02.01</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">만기일</div>
+							<div class="dd">2022.02.01</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ut-dcard a account">
+				<div class="stds">
+					<div class="hdt">
+						<div class="chk">
+							<label class="checkbox"><input type="radio" name="rdo-deal" id="rdo-deal02"><span class="txt">수시입출금식신탁(MMT)</span></label>
+						</div>
+					</div>
+					<div class="cdt">
+						<div class="bxs">
+							<div class="dt">계약번호</div>
+							<div class="dd">200******106</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">계약잔고</div>
+							<div class="dd">35,000,000원</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">계약일</div>
+							<div class="dd">2022.02.01</div>
+						</div>
+						<div class="bxs">
+							<div class="dt">만기일</div>
+							<div class="dd">2022.02.01</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set vt">
+					<button type="button" class="btn rd lg a">신청</button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

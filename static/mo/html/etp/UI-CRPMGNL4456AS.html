@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<!-- 헤더-->
+		<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"본인정보 변경"}'></include>
+		<include class="gnb" src="../inc/gnb.html"></include>
+		<!---- 바디 - 여기위로는 템플릿영역 ---->
+		<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+		<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금) -->
+		<main class="container page etp" id="container">
+			<!-- 본문 영역 -->
+			<div class="contents" id="contents">
+				<div class="etp-item">
+					<h2 class="hd-tit3">변경하실 정보를 입력해 주세요.</h2>
+				</div>
+				<div class="ut-dtds c confirm mt16">
+					<p class="amp-inptxt"><em class="ast"></em> 필수입력항목</p>
+					<div class="inp-jinfo">
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">소속부서<em class="ast">필수입력항목</em></h4><!-- [D] 2022-04-05 텍스트 수정 -->
+							</div>
+							<span class="input a">
+								<label class="lb blind" for="input-15">소속부서</label><!-- [D] 2022-04-05 텍스트 수정 -->
+							<input type="text" value="디지털채널통합TF" id="input-15"></span><!-- [D] 2022-05-03 readonly삭제 -->
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">직급<em class="ast">필수입력항목</em></h4>
+							</div>
+							<span class="input a">
+								<label class="lb blind" for="input-12">직급</label>
+							<input type="text" value="과장" id="input-12"></span><!-- [D] 2022-05-03 readonly삭제 -->
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">전화번호<em class="ast">필수입력항목</em></h4>
+							</div>
+
+							<!-- [D] 2022-05-03 인풋박스 변경 -->
+							<div class="ut-phone b">
+								<span class="select tcom">
+									<select title="지역번호선택">
+										<option>선택</option>
+										<option selected>02</option>
+										<option>031</option>
+										<option>0312</option>
+									</select>
+								</span>
+								<i class="ds">-</i>
+								<span class="input a tnum">
+									<input type="tel" pattern="\d*" placeholder="번호 입력" title="앞번호 입력" value="1234">
+								</span>
+								<i class="ds">-</i>
+								<span class="input a tnum">
+									<input type="tel" pattern="\d*" placeholder="번호 입력" title="뒷번호 입력" value="5678">
+								</span>
+							</div>
+
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">팩스번호</h4><!-- [D] 2022-04-05 텍스트 수정 -->
+							</div>
+							<!-- [D] 2022-05-03 인풋박스 변경 -->
+							<div class="ut-phone b">
+								<span class="select tcom">
+									<select title="지역번호선택">
+										<option>선택</option>
+										<option selected>02</option>
+										<option>031</option>
+										<option>0312</option>
+									</select>
+								</span>
+								<i class="ds">-</i>
+								<span class="input a tnum">
+									<input type="tel" pattern="\d*" placeholder="번호 입력" title="앞번호 입력" value="1234">
+								</span>
+								<i class="ds">-</i>
+								<span class="input a tnum">
+									<input type="tel" pattern="\d*" placeholder="번호 입력" title="뒷번호 입력" value="5678">
+								</span>
+							</div>
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">휴대폰번호<em class="ast">필수입력항목</em></h4>
+							</div>
+							<span class="input a">
+								<label class="lb blind" for="input-25">휴대폰번호</label>
+								<input type="text" value="010-1234-5678" id="input-25"><!-- [D] 2022-05-03 readonly삭제 -->
+							</span>
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">문자메시지 수신동의<em class="ast">필수입력항목</em></h4><!-- [D] 2022-04-05 텍스트 붙여쓰기 -->
+							</div>
+							<div class="radiobox c">
+								<label class="radio">
+									<input type="radio" name="radio_md1" checked>
+									<span class="txt">동의</span>
+								</label>
+								<label class="radio">
+									<input type="radio" name="radio_md1">
+									<span class="txt">동의안함</span>
+								</label>
+							</div>
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">이메일<em class="ast">필수입력항목</em></h4>
+							</div>
+							<div class="ut-email email">
+								<div class="enam">
+									<span class="input a emids"><label class="lb" for="emids_0">이메일<i class="blind">아이디</i></label><input id="emids_0" type="email" placeholder="abcd"></span>
+									<i class="at">@</i>
+									<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+								</div>
+								<ul class="ebts">
+									<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+									<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+									<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">이메일 수신동의<em class="ast">필수입력항목</em></h4><!-- [D] 2022-04-05 텍스트 붙여쓰기 -->
+							</div>
+							<div class="radiobox c">
+								<label class="radio">
+									<input type="radio" name="radio_md11" checked>
+									<span class="txt">동의</span>
+								</label>
+								<label class="radio">
+									<input type="radio" name="radio_md11">
+									<span class="txt">동의안함</span>
+								</label>
+							</div>
+						</div>
+						<div class="txt-inp-box">
+							<div class="txt-amp-wrp">
+								<h4 class="hd-tit5">우편물 수신처<em class="ast">필수입력항목</em></h4>
+							</div>
+							<div class="ut-addrs addrs">
+								<span class="input a adr1">
+									<label class="lb" for="adr_id1" role="text">주소</label>
+									<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+									<input id="adr_id1" type="text" placeholder="주소를 입력해주세요" readonly>
+								</span>
+								<!-- [D] 2022-07-01 텍스트 변경 -->
+								<span class="input a adr2"><label class="lb" for="adr_id2">상세주소</label><input id="adr_id2" type="text" placeholder="상세주소를 입력해주세요"></span>
+							</div>
+						</div>
+						<p class="etp-txt2 t-blue mt24">※ 위 정보는 고객님의 관리자 정보이며, 퇴직연금제도 가입자로서의 개인정보는 변경되지 않습니다.</p><!-- [D] 2022-04-13 텍스트수정 -->
+					</div>
+				</div>
+			</div>
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg b">취소</button>
+						<button type="button" class="btn rd lg a">등록</button>
+					</div>
+				</div>
+			</nav>
+		</main>
+		<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+		<!---- 바디 - 여기밑으로 템플릿영역 ---->
+		<!-- 고정메뉴 -->
+		<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+		<!-- 푸터 -->
+		<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+	</div>
+	</body>
+</html>

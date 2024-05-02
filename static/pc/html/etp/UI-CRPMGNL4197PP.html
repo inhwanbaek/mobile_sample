@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer lg a pop-pmodlist" id="pop-pmodlist">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품별매매 예정스케쥴</h1>
+				</div>
+			</div>
+			<div class="pct page etp pmod">
+				<main class="poptents">
+					<!-- [D] 2022-06-08 클래스 'mb20' -> 'mb30' 수정 -->
+					<ul class="bullet a a2 mb30">
+						<li>아래 스케줄은 오늘 신청하실 경우 예상 스케줄이며, 실제 매매스케줄과 다를 수 있습니다. </li>
+						<li>실제 매매스케줄은 변경 완료 후 [퇴직연금 > 관리 > 상품변경내역]에서 확인할 수 있습니다. </li>
+						<li>상품의 매수 스케줄은 자산관리기관에 따라 다를 수 있습니다.</li>
+					</ul>
+					
+
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="date">신청일: 2021.07.09 </span>
+						</div>
+						<div class="opt pr">
+						</div>
+					</div>
+
+					<div class="ut-tbl a">
+						<table class="tblist tstyle" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">상품별매매 예정스케쥴</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 7%;">
+								<col>
+								<col style="width: 11%;">
+								<col style="width: 11%;">
+								<col style="width: 11%;">
+								<col style="width: 11%;">
+								<col style="width: 11%;">
+								<col style="width: 11%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">구분</th>
+									<th scope="col" rowspan="2">상품명</th>
+									<th scope="col" colspan="3">매도</th>
+									<th scope="col" colspan="3">매수</th>
+								</tr>
+								<tr>
+									<th scope="col" class="bdl">매도지시일</th>
+									<th scope="col">매도완료일</th>
+									<th scope="col">가격적용일</th>
+									<th scope="col">매수지시일</th>
+									<th scope="col">매수완료일</th>
+									<th scope="col">가격적용일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>매도</td>
+									<td class="txt-l">(온라인)하이월드에너지증권자투자신탁(주식-재간접형</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+								</tr>
+								<tr>
+									<td>매도</td>
+									<td class="txt-l">(온라인)하이월드에너지증권자투자신탁(주식-재간접형</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+								</tr>
+								<tr>
+									<td>매도</td>
+									<td class="txt-l">(온라인)하이월드에너지증권자투자신탁(주식-재간접형</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+									<td>2021.07.12</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pmodlist');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

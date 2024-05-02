@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-rcmprt" id="pop-rcmprt">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">추천 포트폴리오</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="rcmprt-head">
+							<h2 class="hd-tit3">나에게 맞는 투자성향 별 추천상품으로 <br>간편하게 투자하세요.</h2>
+							<div class="btn-set">
+								<a href="javascript:;" role="button" class="btn md ico-arrow">포트폴리오 추천사유 보기</a>
+							</div>
+						</div>
+
+						<div class="rcmprt-tablist">
+							<div class="ut-tabs rcmprt">
+								<ul class="menu">
+									<li class="m1 active"><button type="button" class="bt" data-ui-tab-btn="tab_rcm" aria-controls="tab_rcm_1">안정추구형</button></li>
+									<li class="m2"><button type="button" class="bt" data-ui-tab-btn="tab_rcm" aria-controls="tab_rcm_2">중립형</button></li>
+									<li class="m3"><button type="button" class="bt" data-ui-tab-btn="tab_rcm" aria-controls="tab_rcm_3">수익추구형</button></li>
+									<li class="m4"><button type="button" class="bt disabled" data-ui-tab-btn="tab_rcm" aria-controls="tab_rcm_4">고수익추구형</button></li><!-- 2022-04-18 disabled탭일시 : disabled클래스 추가 -->
+								</ul>
+							</div>
+						</div>
+
+						<div class="rcmprt-tabcontent">
+							<div class="rcmprt-tabpanel active" data-ui-tab-ctn="tab_rcm" aria-labelledby="tab_rcm_1" role="tabpanel">
+								<h3 class="hd-tit4">안정추구형</h3>
+								<div class="item-card">
+									<div class="tit">수익률</div>
+									<div class="list">
+										<dl>
+											<dt>3개월</dt>
+											<dd>2.15%</dd>
+										</dl>
+										<dl>
+											<dt>1년</dt>
+											<dd>10.13%</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="item-cont">
+									<div class="ut-tbl a">
+										<table class="tblist nl" cellpadding="0" cellspacing="0">
+											<caption>추천상품</caption>
+											<colgroup>
+												<col>
+												<col style="width:30%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">상품명</th>
+													<th scope="col">투자비율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tal">(무)교보 DC GIC 5년형</td>
+													<td>50%</td>
+												</tr>
+												<tr>
+													<td class="tal">교보 IRP개인형 Best컬렉션 (주식형) </td>
+													<td>10%</td>
+												</tr>
+												<tr>
+													<td class="tal">(무)교보 DC 인덱스혼합형</td>
+													<td>10%</td>
+												</tr>
+												<tr>
+													<td class="tal">키움퇴직연금파이어니어증권자1(채권)</td>
+													<td>10%</td>
+												</tr>
+												<tr>
+													<td class="tal">삼성퇴직연금액티브배당증권자1(주식)</td>
+													<td>20%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="txt">부담금 입금 시 상품은 위와 같이 해당 상품의 비율로 투자됨을 확인합니다.</p>
+									<p class="txt st">투자형 상품은 운용성과에 따라 원금에 손실이 발생할 수도 있으며 그 손실은 가입자에게 귀속됩니다.</p>
+								</div>
+							</div>
+
+							<div class="rcmprt-tabpanel" data-ui-tab-ctn="tab_rcm" aria-labelledby="tab_rcm_2" role="tabpanel">
+								<h3 class="hd-tit4">중립형</h3>
+								<div class="item-card">
+									<div class="tit">수익률</div>
+									<div class="list">
+										<dl>
+											<dt>3개월</dt>
+											<dd>2.15%</dd>
+										</dl>
+										<dl>
+											<dt>1년</dt>
+											<dd>10.13%</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="item-cont">
+									<div class="ut-tbl a">
+										<table class="tblist nl" cellpadding="0" cellspacing="0">
+											<caption>추천상품</caption>
+											<colgroup>
+												<col>
+												<col style="width:30%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">상품명</th>
+													<th scope="col">투자비율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tal">중립형 추천상품</td>
+													<td>50%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="txt">부담금 입금 시 상품은 위와 같이 해당 상품의 비율로 투자됨을 확인합니다.</p>
+									<p class="txt st">투자형 상품은 운용성과에 따라 원금에 손실이 발생할 수도 있으며 그 손실은 가입자에게 귀속됩니다.</p>
+								</div>
+							</div>
+
+							<div class="rcmprt-tabpanel" data-ui-tab-ctn="tab_rcm" aria-labelledby="tab_rcm_3" role="tabpanel">
+								<h3 class="hd-tit4">수익추구형</h3>
+								<div class="item-card">
+									<div class="tit">수익률</div>
+									<div class="list">
+										<dl>
+											<dt>3개월</dt>
+											<dd>2.15%</dd>
+										</dl>
+										<dl>
+											<dt>1년</dt>
+											<dd>10.13%</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="item-cont">
+									<div class="ut-tbl a">
+										<table class="tblist nl" cellpadding="0" cellspacing="0">
+											<caption>추천상품</caption>
+											<colgroup>
+												<col>
+												<col style="width:30%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">상품명</th>
+													<th scope="col">투자비율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tal">수익추구형 추천상품</td>
+													<td>50%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="txt">부담금 입금 시 상품은 위와 같이 해당 상품의 비율로 투자됨을 확인합니다.</p>
+									<p class="txt st">투자형 상품은 운용성과에 따라 원금에 손실이 발생할 수도 있으며 그 손실은 가입자에게 귀속됩니다.</p>
+								</div>
+							</div>
+
+							<div class="rcmprt-tabpanel" data-ui-tab-ctn="tab_rcm" aria-labelledby="tab_rcm_4" role="tabpanel">
+								<h3 class="hd-tit4">고수익추구형</h3>
+								<div class="item-card">
+									<div class="tit">수익률</div>
+									<div class="list">
+										<dl>
+											<dt>3개월</dt>
+											<dd>2.15%</dd>
+										</dl>
+										<dl>
+											<dt>1년</dt>
+											<dd>10.13%</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="item-cont">
+									<div class="ut-tbl a">
+										<table class="tblist nl" cellpadding="0" cellspacing="0">
+											<caption>추천상품</caption>
+											<colgroup>
+												<col>
+												<col style="width:30%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">상품명</th>
+													<th scope="col">투자비율</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tal">안전추고수익추구형구형 추천상품</td>
+													<td>50%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="txt">부담금 입금 시 상품은 위와 같이 해당 상품의 비율로 투자됨을 확인합니다.</p>
+									<p class="txt st">투자형 상품은 운용성과에 따라 원금에 손실이 발생할 수도 있으며 그 손실은 가입자에게 귀속됩니다.</p>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-rcmprt');">취소</button>
+						<button type="button" class="btn a rd lg">적용</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-rcmprt');
+
+			// 탭 이동
+			ui.tabs.using($('[data-ui-tab-btn="tab_rcm"]:eq(2)'));
+
+
+			$('[data-ui-tab-btn="tab_rcm"]').on('click', function(e) {
+				// 2022-04-18 disabled탭일시
+				if( $(this).hasClass('disabled') ) {
+					alert("disabled");
+					return false;
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-infoentry" id="pop-infoentry">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<!-- [D] 2022-06-09 텍스트 수정 -->
+					<h1 class="ptit">고객확인정보등록(CDD/EDD)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="infoentry-tit">
+						<!-- [D] 2022-06-01 텍스트 수정 -->
+						<h2 class="hd-tit3">가족 중 에 외국의 정치적 주요 인물정보를 입력 해 주세요</h2>
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">국가</h3>
+						<span class="input a no-lb">
+							<label class="lb blind" for="inp-con">국가</label>
+							<input type="text" title="국가 입력" placeholder="한글로 입력" id="inp-con">
+						</span>
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">이름</h3>
+						<div>
+							<span class="input a no-lb">
+								<label class="lb blind" for="inp-name">이름</label>
+								<input type="text" title="이름 입력" placeholder="실명 입력" id="inp-name">
+							</span>
+						</div>	
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">생년월일</h3>
+						<div>
+							<span class="input a ut-date no-lb">
+								<label class="lb blind" for="inp-birth">생년월일 8자리 입력</label>
+								<input type="tel" id="inp-birth" class="datepicker" placeholder="YYYY.MM.DD" value="">
+							</span>
+						</div>	
+					</div>
+				
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">본인과의 관계</h3>
+						<span class="select">
+							<label class="lb" for="select-4">본인과의 관계 선택</label>
+							<select name="select-4" id="select-4">
+								<option value="s-1" selected>배우자</option>
+								<option value="s-2">부모</option>
+								<option value="s-3">자녀</option>
+								<option value="s-4">형제자매</option>
+								<option value="s-5">친척</option>
+								<option value="s-6">상사</option>
+								<option value="s-7">동료·친구</option>
+								<option value="s-8">기타</option>
+							</select>
+						</span>
+					</div>
+				</main>
+			</div>
+			<!-- [D] 2022-05-31 버튼 수정 -->
+			<div class="pbt">
+				<!-- [D] 2022-06-22 버튼 수정 -->
+				<div class="btn-set">
+					<!-- <button type="button" class="btn b rd lg">이전</button>-->
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+				<!--//[D] 2022-06-22 버튼 수정 -->
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-infoentry');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>
+

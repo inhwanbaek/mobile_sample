@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"퇴직연금 부가서비스"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- [s] 22-05-24 전체수정 -->
+	<main class="container page prd retire irp join-page addservice" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="share-top">
+				<button type="button" class="bt-share"><i class="blind">공유하기</i></button>
+				<h2 class="hd-tit2"><i class="line">평생 든든한 애프터 서비스</i><br>퇴직연금도 역시 교보!</h2>
+				<p class="c-txt16">퇴직연금 고객님을 위한 다양한 혜택을 누리세요.</p>
+			</div>
+
+			<div class="ut-bnr-ico line-img">
+				<a href="javascript:;" class="lk ic_img01">
+					<strong class="tit">전자도서관</strong>
+					<span class="txt">경제/경영, 소설 등 다양한 전자책을 언제 어디서나 볼 수 있습니다.</span>
+				</a>
+				<!-- [s] 22-06-20 문구변경 -->
+				<a href="javascript:;" class="lk ic_img02">
+					<strong class="tit">할인몰</strong>
+					<span class="txt">기차표 할인예약, 온라인 쇼핑 등 다양한 혜택을 받을 수 있습니다.</span>
+				</a>
+				<!-- // [e] 22-06-20 문구변경 -->
+			</div>
+		</div>
+	</main>
+	<!-- // [e] 22-05-24 전체수정 -->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

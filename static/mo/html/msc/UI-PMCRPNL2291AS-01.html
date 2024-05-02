@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- electronic  -->
+	<article class="pop-layer c pop-wal-attach" id="pop-wal-attach">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="blind">전자지갑 서류첨부</h1> 					
+					<div class="ut-tooltip"><span class="ptit">첨부하기</span>
+						<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_addflie">도움말</button>
+						<div class="toolctn">
+							<div class="tptit">첨부하기</div>
+							<div class="tpmsg">
+								내용 미확정
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="attach-item">
+						<div class="btn-set vt">
+							<button type="button" class="btn md">직접 첨부하기</button><!-- [D] 2022-07-22 텍스트 수정 -->
+							<!-- [D] 2022-07-22 삭제 <button type="button" class="btn md">서류 촬영하기</button> -->
+							<button type="button" class="btn md">전자지갑 서류제출</button>
+						</div>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-wal-attach');
+	</script>
+
+</div>
+</body>
+</html>

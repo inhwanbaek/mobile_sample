@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-irpimpnotes" id="pop-irpimpnotes">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">IRP 가져오기 신청 시 가입자 유의사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<ul class="bullet a lg mt32">
+						<li>연금계좌는 세제상 불이익 없이 연금저축계좌에서 IRP(개인형 퇴직연금)로, 또는 IRP에서 연금저축계좌로 이체할 수 있습니다. 다만 연금저축계좌와 IRP 각각의 특성, 차이점, 장단점을 충분히 인지하셔야 합니다.</li>
+						<li>연금저축계좌 상품과 IRP에서 운용되는 상품은 특성에 따라 원금이 손실되는 등 투자위험이 따를 수 있습니다. 따라서 연금계약을 이체할 때 해당 상품의 투자위험에 대해 설명을 충분히 들은 후 결정하시기 바랍니다.</li>
+						<li>연금저축계좌나 IRP의 지급제한 사유로 자금이체가 불가할 수 있습니다.</li>
+						<li>IRP로 이체할 경우 운용관리수수료 및 자산관리수수료가 발생할 수 있으니 관련 수수료를 확인하시기 바랍니다.</li>
+						<li>계좌이체 신청 후 취소는 가입자가 연금계좌 이체신청서에서 선택한 이체의사 확인방법에 따라 전화 또는 이체하는 금융기관 방문을 통해 취소를 요청하시면 됩니다.  </li>
+						<li>계좌이체 후 연금저축계좌와 IRP의 특성에 따라 중도인출, 담보대출 등이 제한될 수 있으니 확인하시기 바랍니다.</li>
+						<li>DC(확정기여형 퇴직연금제도)에 가입하고 2012년 12월 31일 이전에 자기부담금을 추가로 납입한 금액이 이체 전 연금계좌에 포함되어 있을 경우 금융기관의 원천징수 업무가 불가능하여 계좌이체가 제한됩니다.</li>
+						<li>가입자가 자기부담금을 추가로 납부한 금액에 대해 연말 세액공제를 받는 한도는 이체받는 계좌(연금저축계좌와 IRP의 세액공제한도는 다름)를 기준으로 적용됩니다.</li>
+					</ul>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-irpimpnotes');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-irpimpnotes');
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sign-adds" id="sign-adds">
+		<div class="pbd">
+			<div class="phd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">통합로그인</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="centbox">
+						<div class="mbl-top">
+							<div class="hdt"><h2 class="hd-tit2">전자서명 또는 본인확인에 사용할 인증방식을 선택해 주세요. </h2></div>
+						</div>
+			
+						<div class="certificate-list">
+							<ul class="list">
+								<!-- [D] 2022-07-12 순서 정렬 -->
+								<li class="ics simp bdnone"><a href="javascript:;" class="lks">간편비밀번호<p class="ubdgs">이용등록</p></a>  </li>
+								<li class="ics touch"><a href="javascript:;" class="lks">지문인증서<p class="ubdgs">이용등록</p></a></li>
+								<li class="ics face"><a href="javascript:;" class="lks">얼굴인증서<p class="ubdgs">이용등록</p></a></li>
+								<li class="ics naver bdcc"><a href="javascript:;" class="lks">네이버 인증서</a> </li><!-- [D] 2022-06-08 네이버 추가 -->
+								<li class="ics kpay bdnone"><a href="javascript:;" class="lks">카카오페이인증서<p class="ubdgs">이용등록</p></a></li>
+								<li class="ics pass bdnone"><a href="javascript:;" class="lks">패스인증서</a> </li>
+								<li class="ics toss bdnone"><a href="javascript:;" class="lks">토스인증서</a> </li>
+								<li class="ics ctfn bdcc"><a href="javascript:;" class="lks">금융인증서</a> </li>
+								<li class="ics ctcm bdnone"><a href="javascript:;" class="lks">공동인증서<span class="sm-txt">(구 공인인증서)</span></a> </li>
+								<!--// [D] 2022-07-12 순서 정렬 -->
+							</ul>
+						</div>
+						
+					</div>
+				</main>
+			</div>
+		<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+	</div>
+</article>
+
+
+<script>
+	ui.popup.open('sign-adds');
+</script>
+
+</div>
+</body>
+</html>

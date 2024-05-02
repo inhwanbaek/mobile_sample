@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-dotp" id="pop-kpaymsgs">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">디지털 OTP 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<div class="centbox">
+					<div class="txt">
+						<div class="hdt">디지털 OTP 인증 확인</div>
+						<div class="cdt">[확인]을 눌러 인증을 확인하고<br> 다음단계를 진행해주세요.</div>
+						<div class="bt dotp"><i class="blind">디지털 OTP 인증</i></div>
+					</div>
+					
+					<ul class="link-box">
+						<li><a href="javascript:;" class="link-ar lk">앱푸시 재발송</a></li>
+					</ul>
+					
+	
+				</div>	
+				<div class="link-box">
+					<ul class="link">
+						<li><a href="javascript:;" class="link-ar lk">휴대폰 본인확인으로 인증하기</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn lg rd a">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-kpaymsgs');
+	</script>
+
+</div>
+</body>
+</html>

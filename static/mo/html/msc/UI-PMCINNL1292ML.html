@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer c pop-checkbox" id="pop-checkbox">
+		<div class="pbd">
+			<!-- [D] 2022-02-18 문구 변경 -->
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험금 청구 건 조회/보완</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<ul class="link-list">
+						<li><a class="lk" href="javascript:;">보험금 청구진행조회(진행중)</a></li>
+						<li><a class="lk" href="javascript:;">보험금 지급내역조회(완료)</a></li>
+						<li><a class="lk" href="javascript:;">보험금 청구보완(필요서류 등)</a></li>
+					</ul>
+				</main>
+			</div>
+			<!--// [D] 2022-02-18 문구 변경 -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-checkbox');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>

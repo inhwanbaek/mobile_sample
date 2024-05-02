@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer c pop-sendesms" id="pop-sendesms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 문자 보내기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="hdt sms">
+						<h2 class="tit">(무)교보마이핏Fit 건강보험</h2>
+					</div>
+
+					<div class="ut-form a">
+						<div class="tits">설계된 내역을 문자로 보내 드려요.</div>
+						<ul class="form">
+							<li class="phone">
+								<div class="ut-phone">
+									<span class="select tcom def">
+										<label for="tcom_0" class="lb">통신사</label>
+										<select id="tcom_0">
+											<option>통신사</option>
+											<option>SKT</option>
+											<option>KT</option>
+											<option>LGU+</option>
+											<option>SKT알뜰폰</option>
+											<option>KT알뜰폰</option>
+											<option>LGU+알뜰폰</option>
+										</select>
+									</span>
+									<span class="input a tnum"><label class="lb" for="tnum_0">휴대전화번호</label>
+										<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="tnum_0">
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn lg a rd">문자 보내기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sendesms');
+	</script>
+
+</div>
+</body>
+</html>

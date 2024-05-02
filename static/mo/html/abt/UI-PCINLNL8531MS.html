@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/	jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"GFP(Group Financial Planner)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt abt-fp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">GFP 소개</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP지원체계</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP 상담신청</a></li>
+				</ul>
+			</div>
+
+			<ul class="list-tit">
+				<li class="active"><a href="javascript:;">교육지원 시스템</a></li>
+				<li><a href="javascript:;">영업지원 시스템</a></li>
+				<li><a href="javascript:;">차별화된 서비스</a></li>
+			</ul>
+
+			<h2 class="hd-tit2">성장의 속도가 다른<i class="line">전문교육시스템</i></h2>
+			<p class="desc"><!-- [D] 2022-07-26 수정 -->
+				어디에서 시작하는가. 어떤 교육을 받는가에 따라 금융전문가로의 성장 속도는 달라집니다. 보험사관학교, 기업보험 선구자, 교보생명의 교육시스템이 당신의 커리어를 바꿔 놓을 것입니다.
+			</p>
+			<h3 class="hd-tit3">교육지원 프로그램</h3>
+			<ul class="bullet a">
+				<li>금융전문가 양성을 위한 지원과 교육</li>
+				<li>기업컨설팅을 위한 차별화된 육성/개발 지원</li>
+				<li>개개인의 특성에 따라 진행되는 체계적인 교육</li>
+				<li>초기 집중적인 교육을 통한 자신감 부여</li>
+			</ul>
+
+
+			<!-- [D] 2022-07-26 수정 -->
+			<div class="step-list grp">
+				<ul>
+					<li>
+						<strong class="tit"><span>01.</span> GFP 입문과정</strong>
+						<p class="sub-tit">0개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>기업보장과 관련한 기초 이론</li>
+								<li>개인/단체상품 기초</li>
+								<li>산재보험과 민사 배상</li>
+								<li>B2B 영업 우수 사례</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>02.</span> GFP 기본과정</strong>
+						<p class="sub-tit">1개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>고객발굴 기법 및 단체영업 관련 기본 이론</li>
+								<li>개인/단체상품 심화</li>
+								<li>CEO플랜</li>
+								<li>단체보험 판매 우수 사례</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>03.</span> 단체시장개척 기초과정</strong>
+						<p class="sub-tit">2개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>단체 영업을 위한 기초 이론 및 화법</li>
+								<li>단체 시장 확대를 위한 개척 기법 학습</li>
+								<li>단체개척 사례</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>04.</span> 단체시장개척 과정</strong>
+						<p class="sub-tit">3개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>단체고객 발굴 실습</li>
+								<li>매니저 등과의 동반 실습</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>05.</span> B2B 마스터과정Ⅰ</strong>
+						<p class="sub-tit">4~6개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>단체보험 판매 Skill-up</li>
+								<li>기업 재무설계 기본 이론</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>06.</span> B2B 마스터과정Ⅱ</strong>
+						<p class="sub-tit">9~11개월 차</p>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>CEO-PLAN의 기초 이론</li>
+								<li>기업 운영 리스크 및 재무설계 실전 이론</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong class="tit"><span>07.</span> 온라인 상시 학습 시스템</strong>
+						<div class="bx">
+							<ul class="bullet a">
+								<li>M-러닝</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- // [D] 2022-07-26 수정 -->
+
+
+		</div>
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer sm a pop-etfpay" id="pop-etfpay">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">ETF 팔기(매도)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="amp-msg">
+						<strong>아래 내용으로 ETF 매도를 신청하시겠습니까?</strong>		
+					</div>		
+					<div class="ut-tbl b">
+						<table class="tbform" cellpadding="0" cellspacing="0">
+							<caption><span class="tit">ETF 매수 목록 표</span><span class="cap">종목명, 매도 신청 금액, 매도 신청 수량 로 구성된 테이블입니다.</span></caption>
+							<colgroup>
+								<col width="40%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" class="txt-l">종목명</th>
+									<td>KBSTAR ESG사회책임투자</td>
+								</tr>
+								<tr>
+									<th scope="row" class="txt-l">매도 신청 금액</th>
+									<td><span class="t-blue">500,000</span>원</td>
+								</tr>
+								<tr>
+									<th scope="row" class="txt-l">매도 신청 수량</th>
+									<td><span class="t-blue">5</span>주</td>
+								</tr>								
+							</tbody>
+						</table>
+					</div>			
+					<ul class="bullet b f12">
+						<li>ETF 주문 시 체결금액의 0.03%가 매매수수료로 차감됩니다. (운용·자산 수수료와 별도)</li>
+					</ul>							
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">주문신청</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-etfpay');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

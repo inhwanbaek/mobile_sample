@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-gdpartsyst" id="pop-gdpartsyst">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">합산청구(부분이체)제도 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="gdpartsyst-cnt">
+						<h2 class="hd-tit4">합산청구(부분이체) 대상 계약</h2>
+						<ul class="bullet a lg">
+							<li>같은 계좌, 같은 이체일로 2건 이상 등록된 자동이체 계약 중 고객이 동의한 계약 <br>(합산청구 대상 건은 부분이체 가능)</li>
+							<li>합산청구(부분이체)는 SC제일은행, 우리은행, KB국민은행, 광주은행만 시행합니다.</li>
+						</ul>
+
+						<h2 class="hd-tit4">합산청구(부분이체) 예시</h2>
+						<ul class="bullet a lg">
+							<li>AA계좌에 이체일 10일로 자동이체 등록한 계약이 2건 있을 경우 다음과 같이 자동이체됩니다. <br>(종신보험 20,000원, 연금보험 100,000원)
+
+							</li>
+						</ul>
+						<ul class="bullet c">
+							<li>매월 10일에 120,000원으로 합산, 1건으로 이체</li>
+							<li>계좌잔액 110,000원이면 110,000원 부분이체</li>
+						</ul>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-gdpartsyst');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

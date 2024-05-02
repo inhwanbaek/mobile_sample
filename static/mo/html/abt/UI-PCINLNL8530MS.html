@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/	jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"GFP(Group Financial Planner)"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt abt-fp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">GFP 소개</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">교육 및 활동지원 프로그램</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP지원체계</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">GFP 상담신청</a></li>
+				</ul>
+			</div>
+
+			<h2 class="hd-tit2">기업 성장과 임직원 생애설계를 돕는<i class="line">든든한 보험 전문가</i></h2>
+			<p class="desc">
+				GFP(Group Financial Planner)는 단체보험/퇴직연금 컨설팅으로 기업복지를 증진시키고, CEO와 임직원의 보장/은퇴설계를 제안하는 기업보험 컨설팅 전문가입니다.
+			</p>
+
+			<h3 class="hd-tit3">기업재무설계 전문가</h3>
+			<div class="dgm-gf-lst01">
+				<ol class="blind">
+					<li>
+						<dl>
+							<dt>퇴직연금</dt>
+							<dd>
+								<ul>
+									<li>종업원의 안정적인 퇴직금 수급권 확보</li>
+									<li>퇴직 후 노후소득 보장</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>단체보험</dt>
+							<dd>
+								<ul>
+									<li>종업원 복리후생</li>
+									<li>산재사고 시 재무적 리스크 햇지(hedge)</li>
+									<li>법정 외 복리후생 제도</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>CEO PLAN</dt>
+							<dt>종업원 재무설계</dt>
+							<dd>임직원 개인의 보장 및 은퇴설계</dd>
+						</dl>
+					</li>
+				</ol>
+			</div>
+
+			<h3 class="hd-tit3">생애설계 전문가</h3>
+			<div class="dgm-gf-lst02">
+				<ul class="blind">
+					<li>
+						<dl>
+							<dt>보장</dt>
+							<dd>가족의 안정적인
+								미래에 대한
+								보장계획과 위험관리
+								</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>건강</dt>
+							<dd>치명적 질병치료보장 및 소득보상을
+								위한 준비</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>노후</dt>
+							<dd>풍요로운 노후생활 보장과 미래를 위한 전략(연금, 퇴직연금)</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>투자</dt>
+							<dd>보험의 안정성과
+								투자 수익성을
+								동시에 추구하는
+								선진상품(변액, 펀드)
+								</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<ul class="bullet b">
+				<li>이 광고는 GFP를 모집하기 위한 것으로 교보생명 정규직 또는 비정규직 채용과는 무관합니다. GFP는 보험업법상 ‘보험설계사’이며 독립사업자로 분류됩니다.</li>
+			</ul>
+
+			<p class="txt-b">준법감시인확인필 3-2106-2 조직순증지원팀(2021.06.17)</p>
+		</div>
+
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

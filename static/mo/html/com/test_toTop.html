@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#333333">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	<link href="../../font/Pretendard-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+	<link href="../../font/Pretendard-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous" rel="preload">
+
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<link href="../guide/shCore.css" rel="stylesheet">
+	<script src="../guide/shCore.js"></script>
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-title,is-gnb","title":"UI 샘플1"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<button type="button" class="btn-ui"><b>ui</b></button>
+	<nav class="uimenu">
+		<div class="menu">
+			<ul class="list"></ul>
+		</div>
+	</nav>
+	<div id="bar-ht"><i></i></div>
+	
+	<main class="container page ui" id="container">
+
+		<div class="contents" id="contents">
+
+			<div class="uisect">
+				<section class="sect" data-sid="ui-agent">
+					<h3 class="hdt">User-Agent</h3>
+					<div class="device">
+						<div id="userAgent"></div>
+						<div id="cssStatus"></div>
+						<div id="browserStatus"></div>
+						<div id="iosSafe"></div>
+					</div>
+					<table class="tblist a tbdevice" cellpadding="0" cellspacing="0">
+						<caption>테이블설명</caption>
+						<thead>
+							<tr>
+								<th scope="col"><em class="chrome">Chrome</em></th>
+								<th scope="col"><em class="firefox">Firefox</em></th>
+								<th scope="col"><em class="opera">Opera</em></th>
+								<th scope="col"><em class="safari">Safari</em></th>
+								<th scope="col"><em class="edge">Edge</em></th>
+								<th scope="col"><em class="ie">IE</em></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>11+</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<div class="hdt">
+					<h4 class="hd-tit4">상담신청하기</h4>
+					<div class="info-ast"><em class="ast"></em>필수입력항목</div>
+				</div>
+				<ul class="form">
+					<li>
+						<span class="input a">
+							<label class="lb" for="inp-name">이름<em class="ast">필수항목</em></label>
+							<input type="text" title="이름 입력" placeholder="실명 입력" id="inp-name">
+						</span>
+					</li>
+					<li>
+						<span class="input a ut-date"><label class="lb" for="datepick_99">생년월일<em class="ast">필수항목</em></label><input type="tel" placeholder="YYYY.MM.DD" class="datepicker" id="datepick_99"></span>
+					</li>
+					<li>
+						<div class="ut-phone">
+							<span class="input a tnum"><label class="lb" for="phone-3">연락처<em class="ast">필수항목</em></label><input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="phone-3"></span>
+						</div>
+					</li>
+				</ul>
+				<div class="hdt">
+					<h4 class="hd-tit4">이메일<em class="ast">필수항목</em></h4>
+				</div>
+				<ul class="form">
+					<li>
+						<div class="ut-email email">
+							<div class="enam">
+								<span class="input a emids">
+									<label class="lb" for="emids_0">이메일<em class="ast">필수항목</em></label>
+									<input id="emids_0" type="email" placeholder="아이디">
+								</span>
+								<i class="at">@</i>
+								<span class="input a emcom">
+									<label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력">
+								</span>
+							</div>
+							<ul class="ebts">
+								<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+								<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+								<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="hdt">
+					<h4 class="hd-tit4">희망근무지역<em class="ast">필수항목</em></h4>
+				</div>
+				<ul class="form">
+					<li class="select-db">
+						<span class="select def">
+							<select name="select-add1" id="select-add1" title="시/도 선택">
+								<option selected>시/도</option>
+								<option>선택1</option>
+								<option>선택2</option>
+								<option>선택3</option>
+							</select>
+						</span>
+						<span class="select def">
+							<select name="select-add2" id="select-add2" title="시/군/구 선택">
+								<option selected>시/군/구</option>
+								<option>선택1</option>
+								<option>선택2</option>
+								<option>선택3</option>
+							</select>
+						</span>
+					</li>
+				</ul>
+				<div class="hdt">
+					<h4 class="hd-tit4">특기사항<em class="ast">필수항목</em></h4>
+				</div>
+				<ul class="form">
+					<li>
+						<span class="textarea a">
+							<label for="textarea-1" class="lb blind">특기사항</label>
+							<textarea placeholder="내용은 1,500자 이내로 작성하여 주세요." id="textarea-1"></textarea>
+							<span class="num">(<i class="i" title="현재 입력 글자">00</i>/<i class="n" title="최대 입력 글자">1,300</i>자)</span>
+						</span>
+					</li>
+				</ul>
+
+				
+
+<div class="txt-log"></div>
+				<br><br><br>
+				
+				
+
+				
+				<!-- <button type="button" style="position:fixed;right:20rem;bottom:100rem;border:1px solid blue;padding:10rem" id="toTop">Top</button> -->
+				
+
+			</div>
+
+			
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">상담 신청하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<em class="keystat"></em>
+
+
+	<!--// 컨텐츠 끝 -->
+
+
+	<script>
+	$(document).ready(function(){
+		// $("#toTop").on("click",function(){
+		// 	$("body,html").animate({ scrollTop: 0 }, 200);
+		// });
+
+		//if($('body').hasClass('is-keypad')) $('.txt-log').html("body height:"+$('body').innerHeight());
+		$(document).on("click",".input.focus, .textarea.focus",function(){
+			//console.log("click click~");
+			//$("body,html").animate({ scrollTop: 0 }, 200);
+			$("body,html").animate({ scrollTop: $(this).offset().top - $(this).innerHeight() },0);
+		});
+		
+		//if($('body').hasClass('is-keypad')) console.log($('body').innerHeight());
+	});
+	</script>
+	
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+
+<script>
+var html = document.documentElement;
+function showInfo() {
+	$("#cssStatus").html(html.className);
+	var vinfo =
+		'<i>Client Size : ' + ui.viewport.width() + ' x ' + ui.viewport.height() + '</i>' +
+		'<i>docHeight   : ' + ui.viewport.docHeight() + '</i>' +
+		'<i>scrollTop   : ' + ui.viewport.scrollTop() + '</i>' +
+		'<i>Orientation : ' + window.orientation + '</i>' ;
+	$("#browserStatus").html( vinfo );
+	// $('#iosSafe').html( "iosXSafeArea "+JSON.stringify( ui.getSafe ) );
+}
+$(document).ready(function(){
+	$("#userAgent").html(navigator.userAgent);
+	showInfo();
+	$(document.body).on("orientationchange", showInfo);
+	$(window).on("orientationchange", showInfo);
+	$(window).on("load resize scroll", showInfo);
+});
+</script>
+</body>
+</html>

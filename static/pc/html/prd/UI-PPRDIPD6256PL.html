@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a xs pop-insurcalc child-cate bg-a" id="pop-insurcalc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">간편보험료 계산기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="radiobox e">
+						<label class="radio"><input type="radio" name="radio_bb" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">태아</span></label>
+						<label class="radio"><input type="radio" name="radio_bb" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">어린이</span></label>
+					</div>
+
+					<div class="ut-form a active" data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" role="tabpanel">
+						<ul class="form">
+							<li>
+								<span class="input a"><label class="lb" for="input_id1">출산예정일</label><input id="input_id1" type="number" pattern="\d*" placeholder="예:20221001"></span>
+							</li>
+							<li>
+								<!--[D] 2022-04-29 임신주수 일추가-->
+								<span class="input a ut-weekday">
+									<label class="lb" for="weekday">임신주수</label>
+									<input type="tel" class="week" pattern="\d*" title="임신주수 주" placeholder="" value="0" readonly id="weekday">
+									<i class="txt1">주</i>
+									<input type="tel" class="day" pattern="\d*" title="임신주수 일" value="0" readonly>
+									<i class="txt2">일</i>
+								</span>
+							</li>
+							<li>
+								<span class="input a"><label class="lb" for="input_id3">엄마 생년월일</label><input id="input_id3" type="number" pattern="\d*" placeholder="예:19821001"></span>
+							</li>
+							<!-- <li>
+								<div class="radiobox c">
+									<label class="radio"><input type="radio" name="radio_md1"><span class="txt">남성</span></label>
+									<label class="radio"><input type="radio" name="radio_md1"><span class="txt">여성</span></label>
+								</div>
+							</li> -->
+							<li>
+								<div class="box-pcontact">
+									<span class="input a"><label class="lb" for="ipt_name1">엄마 이름</label><input id="ipt_name1" type="text" placeholder="실명을 한글로 입력"></span>
+									<span class="input a"><label class="lb" for="ipt_tel1">엄마 휴대전화번호</label><input id="ipt_tel1" type="number" placeholder="숫자만 입력"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ut-form a" data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2" role="tabpanel">
+						<ul class="form">
+							<li>
+								<span class="input a"><label class="lb" for="input_id5">자녀 생년월일</label><input id="input_id5" type="number" pattern="\d*" placeholder="예:20221001"></span>
+							</li>
+							<li>
+								<div class="radiobox c">
+									<label class="radio"><input type="radio" name="radio_md2"><span class="txt">남아</span></label>
+									<label class="radio"><input type="radio" name="radio_md2"><span class="txt">여아</span></label>
+								</div>
+							</li>
+							<!-- <li>
+								<span class="input a"><label class="lb" for="input_id6">부모 생년월일</label><input id="input_id6" type="number" pattern="\d*" placeholder="예:19821001"></span>
+							</li>
+							<li>
+								<div class="radiobox c">
+									<label class="radio"><input type="radio" name="radio_md3"><span class="txt">남성</span></label>
+									<label class="radio"><input type="radio" name="radio_md3"><span class="txt">여성</span></label>
+								</div>
+							</li> -->
+							<li>
+								<div class="box-pcontact">
+									<span class="input a"><label class="lb" for="ipt_name2">보호자 이름</label><input id="ipt_name2" type="text" placeholder="실명을 한글로 입력"></span>
+									<span class="input a"><label class="lb" for="ipt_tel2">보호자 휴대전화번호</label><input id="ipt_tel2" type="number" placeholder="숫자만 입력"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ut-terms a">
+						<div class="plbox">
+							<ul class="plist">
+								<li><!--[D] 2022-05-13 약관가이드 적용 cr->cd-->
+									<label class="checkbox cd"><input type="checkbox" checked><span class="txt">다이렉트 수집・이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg">내 보험료 확인하기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-insurcalc');  // 팝업 열기
+	</script>
+
+</div>
+</body>
+</html>

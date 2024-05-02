@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page msc default billing" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">부담보동의서</h2>
+				<!-- <div class="ut-topfix step">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">1. 변경내용 확인</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">2</b></span>
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="desc">보험계약의 보장내용 변경 후 유지 신청서</div><!-- [D] 2022-06-30 텍스트수정 --><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+			<p class="hd-chkTxt">보험금 청구내역에 대한 심사과정 중 아래 보험계약 가입(부활 또는 중도특약 부가)시 계약 전 알릴 의무 위반 사실이 확인되었습니다. <br>
+				따라서, 보험계약의 보장내용이 아래와 같이 변경됨을 안내하여 드립니다.<br>
+				단, 기일 내 본 신청서가 접수되지 않는 경우, 해당 보험계약은 해지(또는 특약해지)됨을 알려드립니다.</p>				
+				
+			<h3 class="hd-tit4">계약사항</h3>
+			<!-- 카드리스트 -->
+			<div class="ut-dcard a dcard">
+				<div class="stds border">
+					<div class="hdt">
+						<div class="tit">무배당내사랑어린이보험(출생전가입종피남자15세~30세)</div>
+					</div>
+				</div>
+				<div class="dtds">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21090300468801</div>
+							</div>
+						</li>
+						<!-- [D] 2022-05-17 삭제 -->
+						<!-- <li>
+							<div class="dl">
+								<div class="dt">계약자</div>
+								<div class="dd">인단탕</div>
+							</div>
+						</li> -->
+						<li>
+							<div class="dl">
+								<div class="dt">피보험자</div>
+								<div class="dd">인단탕</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일 </div>
+								<div class="dd">2001.04.24</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">접수번호 </div>
+								<div class="dd">21100800507601</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //카드리스트 -->
+
+			<div class="text-group">
+				<h3 class="hd-tit4">보험가입 전 치료내용 (계약 전 알릴 의무 위반사항)</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>병원명 : 우리병원척추전문</li>
+						<li>병명 : 척수골절디스크</li>
+						<li>치료기간&내용 : 2020년3월부터 2021년 7월까지 통원치료를 받았으며, 꾸준한 물리치료가 필요</li>
+					</ul>
+				</div>
+			</div>
+
+			<h3 class="hd-tit4">보장내용 변경사항</h3>
+			<h4 class="hd-tit5">부담보(보장 제외) 신체부위 또는 질병</h4>
+			<div class="ut-tbl a">
+				<table class="tblist nl" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">보장 제외) 신체부위 또는 질병</span><span class="cap"></span></caption>
+					<colgroup>
+						<col width="20%">
+						<col>
+						<col width="20%">
+					</colgroup>
+					<thead>
+						<tr><!-- [D] 2022-07-14 표텍스트수정 -->
+							<th scope="col">번호</th>
+							<th scope="col">명칭</th>
+							<th scope="col">기간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>01</td>
+							<td>위, 십이지장</td>
+							<td>1년</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>공공장(빈 창자), 회장(돌창자),맹장(충수돌기 포함)</td>
+							<td>2년</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>대장(맹장, 직장 제외)</td>
+							<td>3년</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit4">해지 대상 특약</h3>
+			<div class="ut-tbl a">
+				<table class="tblist nl" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">해지 대상 특약</span><span class="cap"></span></caption>
+					<colgroup>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">특약명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>암보장특약</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="hd-tit4">주 계약 삭감기간: 2년</h3>
+			<div class="text-group">
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>상기 처리결과에 대해 반대 증거가 있는 경우에는
+							이의를 제기할 수 있으며 보다 자세한 안내를
+							원하시거나 이의를 제기하실 경우, 담당자 김승유로 문의하시면 성심성의껏 안내하여 드리겠습니다. </li>
+					</ul>			
+					<div class="sign-warp">
+						<label class="checkbox cr tsm"><input type="checkbox"><span class="txt">상기내용(특별조건부/특정신체부위 질병보장제한부, 인수법 안내문 별도전달)을 확인하였으며, 변경된 조건으로 보험계약 유지를 신청합니다.</span></label>							
+						<div class="sign-box">
+							<div class="sign-box">
+								<p>2021년 10월 14일<br>
+									신청인(대상자) : 팡가호(760621-2******)</p>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg b">이전</button>
+						<button type="button" class="btn rd lg a">제출</button>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

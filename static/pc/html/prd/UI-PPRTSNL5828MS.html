@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a md" id="pop-trust">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">신탁신규가입</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="complate-msg icon1">
+							<div class="msg">
+								<p class="p1">
+									영상통화가 예약되었습니다.
+								</p>
+							</div>
+							<div class="ut-dcard a dcard">
+								<div class="dtds">
+									<ul class="dlt fs">
+										<li>
+											<div class="dl">
+												<div class="dt">영상통화 예약시간</div>
+												<div class="dd">2021.01.01 10:00~11:00</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="line-area">
+								<ul class="bullet d">
+									<li>예약한 시간에 영상통화가 진행되지 않을 경우 신탁상품 가입이 취소되니 예약시간을 꼭 확인해 주세요.</li>
+									<li>영상통화는 반드시 고객님 명의의 휴대폰으로 해 주세요.</li>
+									<li>신분증 인증을 위해 주민등록증 또는 운전면허증을 미리 준비해 주세요.</li>
+								</ul>					
+							</div>
+						</div>
+					</main>
+				</div>
+
+				<div class="pbt">
+					<!-- 하단 고정영역 -->
+					<nav class="floatbots b">
+						<div class="inr">
+							<div class="btn-set">
+								<button type="button" class="btn lg rd a">확인</button>
+							</div>
+						</div>
+					</nav>
+					<!-- //하단 고정영역 -->
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-trust');
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer b pop-msc-process" id="pop-layer">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in"><h1 class="ptit blind">진행과정 자세히보기</h1></div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<ul class="list">
+						<li class="lst01">
+							<p class="txt">청구 방법이 궁금하신가요?</p>
+							<a href="javascript:;" class="link-text">안내해 드릴께요</a>
+						</li>
+						<li class="lst02">
+							<p class="txt">어떤 서류가 필요할까요?</p>
+							<a href="javascript:;" class="link-text">필요서류를 확인해드려요</a>
+						</li>
+						<li class="lst03">
+							<p class="txt">서류가 바로 필요하신가요?</p>
+							<a href="javascript:;" class="link-text">다운로드 받아보세요</a>
+						</li>
+					</ul>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn c" onclick="ui.popup.close('pop-layer');">닫기</button>
+				</div>
+			</div>
+			<!-- <button type="button" class="btn-pop-close"><i class="blind">닫기</i></button> -->
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-layer');
+	</script>
+
+</div>
+</body>
+</html>

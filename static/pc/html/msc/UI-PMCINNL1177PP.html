@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-atmtcnclntc" id="pop-atmtcnclntc">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">자동이체 해지 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt isbotb">
+					<div class="text-group type2">
+					<div class="text-box">
+						<ul class="bullet a lg">
+							<li>자동이체 해지 시, 보험료 납입방법이 직접납입으로 변경됩니다. 유지서비스 영업점 및 고객창구를 방문하여 납입하거나 PC웹, 모바일 앱 또는 콜센터(<a href="tel:1588-1001" title="전화 앱으로 전환됩니다.">1588-1001</a>)를 통해 납입하시기 바랍니다.</li>
+							<li>보험료 및 보험대출이자가 미납되면 보험계약이 해지(실효)될 수 있습니다.</li>
+							<li>유니버셜 기능이 부가된 상품은 자동이체 해지 후 보험료 납입을 하지 않더라도 매월 계약해당일에 보험 유지에 필요한 월대체보험료가 주계약해지환급금에서 자동 차감되어 계약이 유지되며, 유지기간 내 보험사고 발생 시 상품약관에서 정한 보험금을 청구할 수 있습니다.</li><!-- [D] 2022-06-22 텍스트수정 -->	
+							<li>주계약해지환급금에서 월대체보험료를 차감할 수 없는 경우 보험계약이 해지되며, 해지 시 부활은 불가능합니다.(단, 일부 상품은 부활 가능)</li>
+						</ul>
+
+						<p class="sub-txt mt40">위 내용을 모두 확인하셔야 자동이체를 해지할 수 있습니다.</p>
+					</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt b no-hide">
+				<div class="box-set boxbot">
+					<div class="hd-tit4">위 내용을 확인하셨습니까?</div>
+				</div>
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">취소</button>
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-atmtcnclntc');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

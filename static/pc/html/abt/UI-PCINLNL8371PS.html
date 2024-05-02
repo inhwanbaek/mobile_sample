@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">정기경영공시</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">2021년</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">직전 5개년</a></li>
+				</ul>
+			</div>
+
+			<div class="box-rd-bg">
+				이 공시자료는 「보험업법」 제124조, 「보험업법시행령」 제67조, 「보험업감독규정」 제7~44조에 따라 보험회사가 홈페이지에 공시해야 하는 경영사항을 생명보험협회에서 정한 생명보험 경영통일공시기준의 표준화 양식에 맞춰 사실과 다름 없이 작성한 것임을 알려 드립니다.
+			</div>
+
+			<h3 class="hd-tit3">교보생명보험주식회사 현황</h3>
+
+			<div class="period-quater">
+				<span class="select a">
+					<label class="lb blind" for="select-3">분기 선택</label>
+					<select name="select-3" title="분기 선택">
+						<option selected>2021년 3/4분기</option>
+					</select>
+				</span>
+				<button type="button" class="btn md ico-down ico-r">전체 서류 다운로드</button>
+			</div>
+
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">2021년 3/4분기 교보생명보험주식회사 현황</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: 33%;">
+						<col style="width: auto;">
+						<col style="width: 27%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">항목</th>
+							<th scope="col">다운로드</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3">Ⅰ. 영업규모</td>
+							<td>일반계정</td>
+							<td rowspan="3"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>특별계정</td>
+						</tr>
+						<tr>
+							<td>양계정 합계(일반계정+특별계정)</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Ⅱ. 수익성</td>
+							<td>당기순이익</td>
+							<td rowspan="2"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>수익성비율</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Ⅲ. 건전성</td>
+							<td>가중부실자산</td>
+							<td rowspan="4"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>유가증권의 공정가액 및 평가손익</td>
+						</tr>
+						<tr>
+							<td>매도가능증권 평가손익(상세)</td>
+						</tr>
+						<tr>
+							<td>책임준비금</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Ⅳ. 자본의 적정성</td>
+							<td>B/S상 자기자본</td>
+							<td rowspan="3"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>지급여력비율 내용 및 산출방법 개요</td>
+						</tr>
+						<tr>
+							<td>최근 3개 사업년도 동안 당해 지표의 주요 변동 요인</td>
+						</tr>
+						<tr>
+							<td>Ⅴ. 주식매수선택권 부여내용</td>
+							<td>주식매수선택권 부여내용</td>
+							<td><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td rowspan="6">Ⅵ. IFRS 관련 주요 공시사항</td>
+							<td>보험계약과 투자계약 구분</td>
+							<td rowspan="6"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>재보험자산의 손상</td>
+						</tr>
+						<tr>
+							<td>금융상품 현황</td>
+						</tr>
+						<tr>
+							<td>금융상품의 공정가치 서열체계</td>
+						</tr>
+						<tr>
+							<td>금융상품의 공정가치 서열체계</td>
+						</tr>
+						<tr>
+							<td>대손준비금 등 적립</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Ⅶ. 기타 경영현황</td>
+							<td>민원발생건수</td>
+							<td rowspan="2"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>사회공헌활동</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Ⅷ. 재무제표</td>
+							<td>IFRS9 및 IFRS17 시행 관련 사전 공시</td>
+							<td rowspan="3"><button type="button" class="ico file"><span class="blind">다운로드</span></button></td>
+						</tr>
+						<tr>
+							<td>재무상태표(별도)</td>
+						</tr>
+						<tr>
+							<td>손익계산서(별도)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

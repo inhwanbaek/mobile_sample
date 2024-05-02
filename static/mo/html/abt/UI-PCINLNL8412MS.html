@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"사회공헌활동 원칙"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt contribute" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-tit2 upper">
+				교보생명이 사회공헌프로그램을<br>
+				선정하고 운영, 평가하는 원칙입니다.
+			</div>
+			<h3 class="hd-tit3">삶의 역경 극복을 돕는 데 집중</h3>
+			<p>
+				교보생명은 아동·청소년들이 건강한 몸과 마음으로 끊임없이 자기성장의 자리이타를 실천하는 성숙한 인격체로 자라나도록 사회공헌활동에 집중
+			</p>
+			<h3 class="hd-tit3">비영리단체와 장기적인 파트너십</h3>
+			<p>
+				다양한 비영리단체와의 파트너십을 통해 장기적인 관점에서 사회문제를 해결할 수 있는 프로그램을 개발하여 지속 가능한 지원제도를 만드는 데 중점
+			</p>
+			<h3 class="hd-tit3">사회공헌활동 효율성 제고</h3>
+			<p>
+				단순한 시혜적인 도움이 아니라 수혜자의 역량개발을 지원하고, 사회적 일자리를 마련해 주는 등 스스로 역경을 극복할 수 있도록 도와줌으로써 사회적으로 나눔의 재생산을 통한 사회공헌활동의 효율성 제고
+			</p>
+			<h3 class="hd-tit3">사업에 대한 평가 실시</h3>
+			<p>
+				각 사업이 가지는 사회적 가치와 효과성 및 효율성을 평가하여 사업의 장기적인 발전을 도모
+			</p>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

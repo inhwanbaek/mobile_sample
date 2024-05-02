@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-cprdt pop-shares" id="pop-cprdt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품상세</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="cprd-wrp mt0">
+						<div class="cprd-box bg">
+							<!-- [D] 2022-06-22 마크업 수정 <div class="state">
+								<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+								<div class="ut-bdgs">
+									<em class="bdg j">온라인</em>
+									<em class="bdg i">매우높은위험</em>
+								</div>
+							</div>-->
+							<!-- [D] 2022-06-22 마크업 수정 -->
+							<div class="state">
+								<div class="ut-bdgs">
+									<em class="bdg j">온라인</em>
+									<em class="bdg i">매우높은위험</em>
+								</div>
+								<div class="st-r">
+									<button type="button" class="btn-share02"><i class="blind">공유하기</i></button>
+									<label class="checkbox star"><input type="checkbox" checked><span class="txt"><span class="blind">관심상품</span></span></label>
+								</div>
+							</div>
+							<!--//[D] 2022-06-22 마크업 수정 -->
+							
+							<h2 class="hd-tit2">(온라인)하이월드에너지증권사투자신탁(주식-재간접형)</h2>
+							<div class="h-tag">
+								<a href="javascript:;">#전기차</a>
+							</div>
+							<div class="bg-detail">
+								<ul class="lst-detail">
+									<li>
+										<h3>수익률(%)</h3>
+										<span class="t-red">32.98</span>%<!-- [D] 2022-06-30 '%' 텍스트 태그 밖으로 이동 -->
+									</li>
+									<li>
+										<h3>설정액</h3>
+										<span class="bold">471.85억</span>
+									</li>
+									<li>
+										<h3>연간 총보수</h3>
+										<span class="t-blue">70</span>%<!-- [D] 2022-06-30 '%' 텍스트 태그 밖으로 이동 -->
+									</li>
+									<li>
+										<h3>주식편입비율</h3>
+										<span>100%</span>
+									</li>
+									<li>
+										<h3>운용사</h3>
+										<span>하이자산운용</span>
+									</li>																																				
+								</ul>
+								<div class="btn-set">
+									<button type="button" class="btn sm ico-down ico-r">상품설명서</button>
+									<button type="button" class="btn sm ico-down ico-r">투자설명서</button>
+								</div>
+								<div class="btn-set">
+									<button type="button" class="btn sm ico-down ico-r">집합투자규약</button>
+									<!-- [D] 2022-06-22 아이콘 클래스 'ico-down ico-r' 추가 -->
+									<button type="button" class="btn sm ico-down ico-r">자산운영보고서</button>
+								</div>
+							</div>
+						</div>
+						<div class="cprd-box">
+							<div class="tops">
+								<h3 class="hd-tit4 htit">수익률</h3>
+								<a href="javascript:;" class="arr-link">기준가 조회</a>
+							</div>
+							<!-- [D] 2022-06-22 클래스 수정 d -> c -->
+							<div class="radiobox c">
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">1개월<br>13.96%</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">3개월<br>11.01%</span></label>
+								<label class="radio"><input type="radio" name="radio_d2" checked><span class="txt">1년<br>32.98%</span></label>
+								<label class="radio"><input type="radio" name="radio_d2"><span class="txt">3년<br>58.66%</span></label>
+							</div>
+							<!-- 차트 영역 -->
+							<div class="ut-chart">
+								<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+								<!-- [웹접근성] 2st 수정 -->
+								<div class="chart" role="img" aria-label="추익률 추이 그래프, 상세 내용은 다음 표를 참고하세요"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+								<!--// [웹접근성] 2st 수정 -->
+							</div>
+							<!--// 차트 영역 -->
+						</div>
+						<div class="cprd-box mt40">
+							<div class="tops">
+								<h3 class="hd-tit4 htit">자산구성현황</h3>
+								<span class="date">2020.01.21 기준</span>
+							</div>
+							<!-- 차트 영역 -->
+							<div class="ut-chart">
+								<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+								<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+							</div>
+							<!--// 차트 영역 -->		
+							
+							<!-- [D] 2022-08-11 차트에 대한 ‘표’ 추가 -->
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist" cellspacing="0" cellpadding="0">
+									<caption><span class="tit">자산구성현황 차트 정보</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col>
+										<col>	
+										<col>												
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">유형</th>
+											<th scope="col">주식</th>
+											<th scope="col">채권</th>
+											<th scope="col">유동성, 기타</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">비율</th>
+											<td><strong class="bold">99.56%</strong></td>
+											<td><strong class="bold">-</strong></td>
+											<td><strong class="bold">0.44%</strong></td>
+										</tr>																															
+									</tbody>
+								</table>
+							</div>	
+							<!--//[D] 2022-08-11 차트에 대한 ‘표’ 추가 -->	
+						</div>
+						<div class="cprd-box mt40">
+							<h3 class="hd-tit4">업종 TOP</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<!-- [D] 2022-06-22 클래스 'nl' 삭제 -->
+								<table class="tblist" cellspacing="0" cellpadding="0">
+									<caption><span class="tit">업종 TOP 순위 목록 표</span><span class="cap">순위, 업종, 비율(%)로 구성된 목록 표입니다.</span></caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col>
+										<col>										
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">순위</th>
+											<th scope="col">업종</th>
+											<th scope="col">비율(%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>01</td>
+											<td>KOSDAQ</td>
+											<td>33.86</td>
+										</tr>
+										<tr>
+											<td>02</td>
+											<td>화학</td>
+											<td>23.5</td>
+										</tr>
+										<tr>
+											<td>03</td>
+											<td>운수장비</td>
+											<td>11.07</td>
+										</tr>
+										<tr>
+											<td>04</td>
+											<td>금융업</td>
+											<td>7.33</td>
+										</tr>
+										<tr>
+											<td>05</td>
+											<td>비금속 광물제품</td>
+											<td>6.93</td>
+										</tr>																																								
+									</tbody>
+								</table>
+							</div>							
+						</div>
+						<div class="cprd-box mt40">
+							<h3 class="hd-tit4">보유종목 TOP</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<!-- [D] 2022-06-22 클래스 'nl' 삭제 -->
+								<table class="tblist" cellspacing="0" cellpadding="0">
+									<caption><span class="tit">보유종목 TOP 순위 목록 표</span><span class="cap">순위, 종목, 비율(%)로 구성된 목록 표입니다.</span></caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col>
+										<col>										
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">순위</th>
+											<th scope="col">업종</th>
+											<th scope="col">비율(%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>01</td>
+											<td class="txt-l">한솔케미칼</td><!-- [D] 2022-08-05 정렬 클래스'txt-l' 추가 -->
+											<td>8.0</td>
+										</tr>
+										<tr>
+											<td>02</td>
+											<td class="txt-l">엘앤씨바이오</td><!-- [D] 2022-08-05 정렬 클래스'txt-l' 추가 -->
+											<td>7.42</td>
+										</tr>
+										<tr>
+											<td>03</td>
+											<td class="txt-l">메리츠금융지주</td><!-- [D] 2022-08-05 정렬 클래스'txt-l' 추가 -->
+											<td>7.33</td>
+										</tr>
+										<tr>
+											<td>04</td>
+											<td class="txt-l">SKC</td><!-- [D] 2022-08-05 정렬 클래스'txt-l' 추가 -->
+											<td>6.37</td>
+										</tr>
+										<tr>
+											<td>05</td>
+											<td class="txt-l">현대차우</td><!-- [D] 2022-08-05 정렬 클래스'txt-l' 추가 -->
+											<td>5.9</td>
+										</tr>																																								
+									</tbody>
+								</table>
+							</div>							
+						</div>
+						<div class="cprd-box mt40">
+							<h3 class="hd-tit4">이 펀드는 어떠세요?</h3>
+							<div class="card-wrp">
+								<div class="card a">
+									<div class="card-chkbox">
+										<div class="chk-top">
+											<div class="tit">
+												<h3 class="hd-tit4">(온라인)하이월드에너지증권투자신탁(주식-재간접형)</h3>
+											</div>
+											<div class="h-tag">
+												<a href="javascript:;">#전기차</a>
+											</div>
+										</div>
+										<dl class="bg-data">
+											<dt>수익률</dt>
+											<!-- [D] 2022-06-30 마크업 수정 
+											<dd class="t-red">23.26%</dd>-->
+											<dd><span class="t-red">23.26</span>%</dd><!-- t-blue 파란색 -->
+										</dl>
+										<div class="btn-set mt20">
+											<button type="button" class="btn md">비교</button>
+										</div>
+									</div>
+								</div>
+								<div class="card a">
+									<div class="card-chkbox">
+										<div class="chk-top">
+											<div class="tit">
+												<h3 class="hd-tit4">K투자국내전기차투자(주식)</h3>
+											</div>
+											<div class="h-tag">
+												<a href="javascript:;">#전기차</a>
+											</div>
+										</div>
+										<dl class="bg-data">
+											<dt>수익률</dt>
+											<!-- [D] 2022-06-30 마크업 수정 
+											<dd class="t-red">23.26%</dd>-->
+											<dd><span class="t-red">23.26</span>%</dd><!-- t-blue 파란색 -->
+										</dl>
+										<div class="btn-set mt20">
+											<button type="button" class="btn md">비교</button>
+										</div>
+									</div>
+								</div>
+								<div class="card a">
+									<div class="card-chkbox">
+										<div class="chk-top">
+											<div class="tit">
+												<h3 class="hd-tit4">(온라인)하이월드에너지증권투자신탁(주식-재간접형)</h3>
+											</div>
+											<div class="h-tag">
+												<a href="javascript:;">#전기차</a>
+											</div>
+										</div>
+										<dl class="bg-data">
+											<dt>수익률</dt>
+											<!-- [D] 2022-06-30 마크업 수정 
+											<dd class="t-red">23.26%</dd>-->
+											<dd><span class="t-red">23.26</span>%</dd><!-- t-blue 파란색 -->
+										</dl>
+										<div class="btn-set mt20">
+											<button type="button" class="btn md">비교</button>
+										</div>
+									</div>
+								</div>																																
+							</div>
+						</div>
+						<div class="cprd-box mt40">
+							<ul class="ut-accd b" data-accd="tog" data-accd-id="accd_123">
+								<!--[D] 클래스 open 활성 제어 -->
+								<li>
+									<div class="hbox">펀드 기본정보<button type="button" class="btn-tog">버튼</button></div>
+									<div class="cbox">
+										<h4 class="hd-tit4">투자비중</h4>
+										<ul class="bullet a lg">
+											<li>주식: 60%이상 100%이하, 채권: 0% 이상 40% 이하</li>
+										</ul>
+										<h4 class="hd-tit4 mt40"><span class="tt">매매 일정</span>
+											<div class="ut-tooltip">
+												<button type="button" class="ico help sm bt-tooltip">도움말</button>
+												<div class="toolctn">
+													<div class="tpmsg">
+														<p>퇴직연금은 신탁계좌를 통해 거래가 이루어지기 때문에 고객님의 신청일 다음 날 오전에 매매가 시작됩니다.
+														</p>
+														<p class="mt10">따라서 아래의 매매 일정은 투자설명서의 매매 일정과는 차이가 있습니다.
+														</p>
+														<p class="mt10"><span class="t-red">※ 17:00 이전</span> (또는 15:30 이전) 일정에 <span class="t-red">1일씩(영업일 기준)</span> 추가 됩니다.
+														</p>
+														<!-- [D] 2022-04-25 문구 추가 -->
+														<p class="mt10">※ 매수 일정에서 매수 신청일은 부담금 납입일을 의미합니다. 상품변경을 통해 매수하시는 경우, 안내되는 ‘상품별매매 예정스케쥴’을 참고하시기 바랍니다.
+														</p>
+													</div>
+												</div>
+											</div>
+										</h4>
+										<h5 class="hd-tit5">매수</h5>
+										<div class="ut-gpbox">
+											<div class="inr">
+												<p class="day"><i class="s">매수신청</i><em class="t">신청 당일(D)</em></p>
+												<p class="day"><i class="s">기준가 적용 및 완료일</i><em class="t">D +3일 후</em></p>
+											</div>
+										</div>
+										<h5 class="hd-tit5 mt24">매도</h5>
+										<div class="ut-gpbox">
+											<div class="inr">
+												<p class="day"><i class="s">매도신청</i><em class="t">신청 당일(D)</em></p>
+												<p class="day"><i class="s">기준가 적용</i><em class="t">D +3일 후</em></p>
+												<p class="day"><i class="s">완료일</i><em class="t">D +9일 후</em></p>
+											</div>
+										</div>
+										<h4 class="hd-tit4 mt40">환매수수료</h4>
+										<ul class="bullet a lg">
+											<li>수수료 없음</li>
+										</ul>
+										<h4 class="hd-tit4 mt40">총보수</h4>
+										<ul class="bullet a lg">
+											<li>연1.13%(판매사 0.42% / 운용사 0.66% / 수탁사0.025% / 사무수탁사0.025%)</li>
+										</ul>								
+									</div>
+								</li>
+								<li>
+									<div class="hbox">투자전략/펀드분석<button type="button" class="btn-tog">버튼</button></div>
+									<div class="cbox">
+										<h4 class="hd-tit4">투자전략</h4>
+										<p class="etp-txt">이 투자신탁은 블랙록 글로벌펀드에 속한 하위펀드 이면서 에너지 관련 국내외주식에 주로 투자하는 모투자신탁에 신탁재산의 대부분을 투자할 예정입니다.단기대출 및 금융기관에의 예치 등 유통성자산에의 투자는 신탁재산의 10%범위내에서 운용할 계획입니다. 단, 집합투자업자가 수익자들에게 최선의 이익이 된다고 판단하는 경우에는 투자신탁 자산총액의 40%이하의 범위내헤서 10%를 초과할 수 있습니다.</p>
+										<h4 class="hd-tit4 mt20">투자스타일</h4>
+										<div class="cprd-box">
+											<h5 class="hd-tit5">주식 투자스타일</h5>
+											<div class="b-box">
+												<dl class="average">
+													<dt>평균시가총액(억원)</dt>
+													<dd>169.456</dd>
+												</dl>
+												<div class="bg-average">
+													<ul class="lst-inr">
+														<li>
+															<dl>
+																<dt><span class="tt">평균 PER</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>PER이란, 주가수익비율(Price-Earning Ratio)을 의미하며 주가를 1주당 순이익으로 나눈 값으로, 주가가 1주당 수익의 몇 배가 되는 가를 나타내는 지표입니다.  
+																				</p>
+																				<p class="mt10">일반적으로 평균 PER보다 적으면 저평가된 종목, 높으면 고평가된 종목임을 의미합니다. PER는 해당 주식가치 혹은 전체 주식시장의 가치가 어떻게 평가되었는지 가늠해 볼 수 있는 잣대의 역할을 합니다. 
+																				</p>
+																				<p class="mt10">* PER = 주가 ÷ 1주당 순이익</p>
+																			</div>
+																		</div>
+																	</div>
+																</dt>
+																<dd>50.42</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt><span class="tt">평균 PBR</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>PBR이란, 주가순자산비율(Price Book-value Ratio)을 의미하며 주가를 1주당 순자산으로 나눈 값으로서 1주당 1주당 순자산이 주가를 몇 배 창출했느냐를 의미합니다. 
+																				</p>
+																				<p class="mt10">일반적으로 PBR이 높다는 것은 시장에서 높게 평가되고 있기 때문에 성장 가능성이 있다는 것이고, 나머지 조건율이 동일한 경우 시장가치 대 장부 가치비율이 낮은 기업, 즉  PBR이 낮은 기업은 주식 시장에서 저평가되어 있다고 볼 수 있습니다. 
+																				</p>
+																				<p class="mt10">* PBR = 주가 ÷ 1주당 순자산</p>
+																			</div>
+																		</div>
+																	</div>
+																</dt>
+																<dd>3.16</dd>
+															</dl>
+														</li>
+													</ul>												
+												</div>
+												<div class="ut-tbl a">
+													<table class="tblist" cellspacing="0" cellpadding="0">
+														<caption><span class="tit">테이블 제목</span><span class="cap">TH1, TH2, TH3 로 구성된 테이블입니다.</span></caption>
+														<colgroup>
+															<col>
+															<col style="width: 25%">
+															<col style="width: 25%">
+															<col style="width: 25%">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" rowspan="2">시가총액</th>
+																<th scope="col" colspan="3">투자기준</th>
+															</tr>
+															<tr>
+																<th scope="col" class="normal">가치</th>
+																<th scope="col" class="normal">혼합</th>
+																<th scope="col" class="normal">성장</th>
+															</tr>
+														</thead>
+														<tbody><!-- [D] 2022-06-22 클래스 'noline'삭제 -->
+															<tr>
+																<td>대</td>
+																<td>2.7</td>
+																<td class="bold">3.8</td>
+																<td>12.5</td>
+															</tr>
+															<tr>
+																<td>중</td>
+																<td>23.9</td>
+																<td>0.1</td>
+																<td>28.8</td>
+															</tr>
+															<tr>
+																<td>소</td>
+																<td>19.9</td>
+																<td>0.0</td>
+																<td>8.3</td>
+															</tr>																										
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<ul class="bullet b">
+												<li>스타일 박스내 숫자는 자산내비중(%)를 의미합니다.</li>
+											</ul>
+										</div>
+										<div class="cprd-box">
+											<h5 class="hd-tit5 mt20">채권 투자스타일</h5>
+											<div class="b-box">
+												<dl class="average">
+													<dt>평균신용등급</dt>
+													<dd>없음</dd>
+												</dl>
+												<div class="bg-average">
+													<ul class="lst-inr">
+														<li>
+															<dl>
+																<dt><span class="tt">평균듀레이션</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>지속기간’이라는 사전적 의미를 가진 듀레이션(duration)은 채권에 투자된 원금이 회수되는데 걸리는 기간을 뜻합니다.<br>이는 단순히 최종 원금 상환 시점까지 남은 기간을 의미하는 ‘잔존만기‘와 유사하면서도 다른 개념으로, 채권 가격의 금리 민감도를 나타내는 지표로 활용되기도 합니다.</p>
+																				<p class="mt10">기간의 의미를 포함하고 있어 일반적으로 ‘년(年)’을 단위로 사용하지만 별도의 단위 없이 사용하기도 합니다. 
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</dt>
+																<dd>1.95</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt><span class="tt">평균잔존평가</span>
+																	<div class="ut-tooltip">
+																		<button type="button" class="ico help sm bt-tooltip">도움말</button>
+																		<div class="toolctn">
+																			<div class="tpmsg">
+																				<p>채권에 투자된 원금이 최종 원금 상환 시점까지 남은 기간을 의미합니다.</p>
+																			</div>
+																		</div>
+																	</div>
+																</dt>
+																<dd>0.0</dd>
+															</dl>
+														</li>												
+													</ul>
+												</div>
+												<div class="ut-tbl a">
+													<table class="tblist" cellspacing="0" cellpadding="0">
+														<caption><span class="tit">테이블 제목</span><span class="cap">TH1, TH2, TH3 로 구성된 테이블입니다.</span></caption>
+														<colgroup>
+															<col>
+															<col style="width: 25%">
+															<col style="width: 25%">
+															<col style="width: 25%">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" rowspan="2">신용등급</th>
+																<th scope="col" colspan="3">투자기간</th>
+															</tr>
+															<tr>
+																<th scope="col" class="normal">단기</th>
+																<th scope="col" class="normal">중기</th>
+																<th scope="col" class="normal">장기</th>
+															</tr>
+														</thead>
+														<tbody><!-- [D] 2022-06-22 클래스 'noline'삭제 -->
+															<tr>
+																<td>상</td>
+																<td>38.0</td>
+																<td class="bold">62.0</td>
+																<td>0.0</td>
+															</tr>
+															<tr>
+																<td>중</td>
+																<td>0.0</td>
+																<td>0.0</td>
+																<td>0.0</td>
+															</tr>
+															<tr>
+																<td>하</td>
+																<td>0.0</td>
+																<td>0.0</td>
+																<td>0.0</td>
+															</tr>																										
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<ul class="bullet b">
+												<li>스타일 박스내 숫자는 자산내비중(%)를 의미합니다.</li>
+											</ul>
+										</div>		
+										<div class="cprd-box mt40">
+											<h3 class="hd-tit4 htit">위험분석</h3>											
+											<div class="tops">
+												<h4 class="hd-tit5">기간 : 6개월</h4>
+												<!-- <h4 class="hd-tit5">기간 : 1년</h4> -->
+												<span class="date">2020.01.21 기준</span>
+											</div>
+											<div class="ut-tbl a">
+												<!-- [D] 2022-06-22 클래스 'nl'삭제 -->
+												<table class="tblist" cellspacing="0" cellpadding="0">
+													<caption><span class="tit">위험분석</span><span class="cap">구분, 상품, 순위, 동일유형으로 구성된 테이블입니다.</span></caption>
+													<colgroup>
+														<col style="width: 20%">
+														<col style="width: 18%">
+														<col style="width: 18%">
+														<col style="width: 18%">
+														<col>						
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">상품</th>
+															<th scope="col">순위</th>
+															<th scope="col">동일유형</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>표준편차 
+																<div class="ut-tooltip">
+																	<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_1">도움말</button>
+																	<div class="toolctn">
+																		<div class="tpmsg">
+																			<p>펀드의 위험을 나타내는 가장 대표적인 지표로서 특정 구간의 각 수익률이 해당 구간의 평균 수익률과 비교해 떨어져 있는 정도를 측정해 평균한 값을 말합니다. 
+																			</p>
+																			<p class="mt10">표준편차가 작으면, 상대적으로 수익률 변동폭이 작았다는 것을 의미합니다. 따라서 표준편차가 크면 위험성이 크고, 표준편차가 작으면 위험성이 낮습니다.  
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>13.55%</td>
+															<td>26.0%</td>
+															<td>13.41%</td>
+														</tr>
+														<tr>
+															<td>샤프 
+																<div class="ut-tooltip">
+																	<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_2">도움말</button>
+																	<div class="toolctn">
+																		<div class="tpmsg">
+																			<p>샤프지수는 펀드의 성과를 평가할 때 해당 투자의 위험을 조정하여 반영하는 방식으로서 수익률을 위험, 즉 표준편차로 나눠 계산합니다. 이렇게 계산된 값은 수익률의 변동성 대비 수익이 얼마나 높은지를 나타냅니다. 
+																			</p>
+																			<p class="mt10">샤프지수는 한 단위의 위험자산에 대한 수익률을 나타내는 값이므로 값이 높을수록 투자 성과가 성공적이라고 볼 수 있습니다. 
+																			</p>
+																		</div>
+																	</div>
+																</div>																
+															</td>
+															<td>123.0%</td>
+															<td>14.0%</td>
+															<td>101.43%</td>
+														</tr>
+														<tr>
+															<td>베타 
+																<div class="ut-tooltip">
+																	<button type="button" class="ico help sm bt-tooltip" aria-labelledby="tip_3">도움말</button>
+																	<div class="toolctn">
+																		<div class="tpmsg">
+																			<p>펀드 수익률과 기준수익률 간의 상대적인 관계를 파악하는 대표적인 위험지표입니다.
+																			</p>
+																			<p class="mt10">베타는 수익률이 기준수익률의 변동에 대해 어느 정도의 민감도를 가지고 있는가를 나타내는 것으로, 베타가 클수록 시장수익률 변동에 대해 민감하게 반응하는 것입니다. 
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>8.13%</td>
+															<td>22.34%</td>
+															<td>55.32%</td>
+														</tr>																																
+													</tbody>
+												</table>
+											</div>																			
+										</div>								
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- [D] 2022-06-22 공유하기 영역 삭제 <ul class="share mt40">
+							<li class="talk"><button type="button" class="bt"><i class="t">카카오톡</i></button></li>
+							<li class="link"><button type="button" class="bt"><i class="t">링크복사</i></button></li>
+							<li class="link"><button type="button" class="bt"><i class="t">더보기</i></button></li>
+						</ul>-->
+						<div class="cprd-box mt40">
+							<!-- 펼침 상태인 경우 -->
+							<div class="ut-gudbox b" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>투자형 상품의 수익률은 과거 실적을 나타내는 것으로, 미래 수익을 보장하지 않습니다.</li>
+										<li>투자형 상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+										<li>투자형 상품은 운용실적에 따라 원금손실이 발생할 수 있으며, 그 손실은 가입자에게 귀속됩니다.</li>
+										<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+										<!-- [D] 2022-04-25 문구 삭제 처리
+										<li>투자형 상품의 매수·환매 시 기준가 적용일자 및 매수·환매일자는 15:30(17:00 기준 펀드는 17:00) 이전 기준으로 처리되며, 퇴직연금은 신탁계좌를 통해 거래가 이루어지기 때문에 표시된 일정에서 1일(영업일 기준)이 추가로 소요됩니다.</li>
+										-->
+									</ul>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<!-- [D] 2022-04-25 버튼명 변경 -->
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cprdt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

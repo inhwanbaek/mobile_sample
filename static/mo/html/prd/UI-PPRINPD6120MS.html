@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer c pop-sendesms" id="pop-sendesms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 이메일 보내기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="hdt email">
+						<div class="tit">(무)교보실속있는 New건강플러스 종신보험(보증비용부과형)</div>
+					</div>
+
+					<div class="ut-form a">
+						<div class="tits">설계된 내역을 이메일로 보내 드려요.</div>
+						<ul class="form">
+							<li class="name">
+								<span class="input a"><label class="lb" for="input_id0">이름</label><input id="input_id0" type="text" placeholder="이름을 입력해주세요"></span>
+							</li>
+							<li class="email">
+								<div class="ut-email email">
+									<div class="enam">
+										<span class="input a emids"><label class="lb" for="emids_0">이메일<i class="blind">아이디</i></label><input id="emids_0" type="email" placeholder="abcd"></span>
+										<i class="at">@</i>
+										<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+									</div>
+									<ul class="ebts">
+										<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+										<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+										<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn lg a rd">문자 보내기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-sendesms');
+	</script>
+
+</div>
+</body>
+</html>

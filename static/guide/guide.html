@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<link href="../guide/docs/img/favicon_kyobo.ico" rel="shrtcut icon">
+	<link rel="stylesheet" href="./docs/guide.css">
+	<link rel="stylesheet" href="./docs/shCore.css">
+	<script type="text/javascript" src="./docs/jquery-3.4.1.min.js"></script>    
+	<script src="./docs/shCore.js"></script>
+	<script src="./docs/guide.js?v=1"></script>
+	<script>document.title = "교보생명 디지털 채널 통합 WEB STYLE GUIDE";</script>
+</head>
+
+<body class="guide_wrap">
+
+<!-- Header -->
+<!-- 상단 가로 스크롤 -->
+<div class="xscroll">
+	<div class="scroll"></div>
+</div>
+<!-- 상단 가로 스크롤 -->
+<header class="guide_header">
+	<h1>
+		<img src="../guide/docs/img/h1_kyobo.gif" alt="교보생명">
+	</h1>
+	<nav class="gnb-area">
+		<button class="bt open">열기</button>
+		<div class="gnb">
+			<p class="tit">Category</p>
+			<ul class="link">
+				<li><a href="../mo/html/guide/ia.html">MO - IA</a></li>
+				<li><a href="../pc/html/guide/ia.html">PC - IA</a></li>
+				<li><a href="../admin/html/guide/ia.html">ADMIN - IA</a></li>
+			</ul>
+			<div class="link b">
+				<a href="../admin/html/guide/ui1.html" target="_blank" title="어드민 페이지 이동">Admin - GUIDE</a>
+				<a href="../mo/html/guide/ui1.html" target="_blank" title="모바일 페이지 이동">MO - GUIDE1</a>
+				<a href="../mo/html/guide/ui2.html" target="_blank" title="모바일 페이지 이동">MO - GUIDE2</a>
+				<a href="../pc/html/guide/ui1.html" target="_blank" title="피씨 페이지 이동">PC - GUIDE1</a>
+				<a href="../pc/html/guide/ui2.html" target="_blank" title="피씨 페이지 이동">PC - GUIDE2</a>
+				<!-- 작업 완료 후 삭제 예정 -->
+				<!-- <a href="notice.html" target="_blank" title="퍼블 공지 페이지 이동">PUB - NOTICE</a>
+				<a href="page.html" target="_blank" title="퍼블 페이지 리스트">PAGE - LIST</a> -->
+			</div>
+			<button type="button" class="bt close">닫기</button>
+		</div>
+	</nav>
+</header>
+
+<!-- //Header -->
+<!-- 본문 내용 -->
+<div class="guide_container">
+	<h2>
+		교보생명 웹퍼블리싱 가이드
+		<button class="tog-btn"></button>
+	</h2>
+	<div class="box_content" data-show="hide">
+		본 가이드는 <span class="font_color01">교보 디지털 채널 통합 프로젝트</span>의 개발 완료한 파일의 전달을 위하여  <span class="font_color01">HTML마크업</span>을 진행하는 
+		<span class="font_color01">웹 퍼블리셔 혹은 가이드가 필요한 프론트 개발자 들을 대상으로 제공</span> 하며 진행 완료된 파일을 사용 될 수 있는 내용을 정의 한다. 
+		가이드에서 다루는 내용은 <span class="font_color01">HTML, CSS, IMAGE, JS</span> 장애인 차별 보호법에 의한 
+		<span class="font_color01">웹 접근성 및 검색 엔진 최적화를 위한 SEO (Search Engine Optimization) </span> 
+		등의 공통된 내용 및 <span class="font_color01">ISSUE</span> 사항을 다루며 향후 웹사이트의 디자인 관리 및 사이트 유지보수 개발의 지침서로서 배포하여 활용하는 데 그 목적이 있다.
+		개발자는 배포받은 가이드를 준수하여 <span class="font_color01">HTML마크업</span> 을 진행하며 <span class="font_color01">ISSUE</span> 사항이 발생하면 수정 및 프론트 개발자 에게 재배포를 원칙으로 한다.
+	</div>
+	<div class="tab_area">
+		<!--- 메뉴 -->
+		<div class="menu_area">
+			<ul class="tab_menu">
+				<li class="active"><a href="javascript:void(0)">기본 정의</a></li>
+				<li><a href="javascript:void(0)">네이밍 정의</a></li>
+				<li><a href="javascript:void(0)">SEO</a></li>
+				<li style="display: none;"><a href="javascript:void(0)" >WAI-ARIA</a></li>
+				<li><a href="javascript:void(0)">ETC</a></li>
+			</ul>
+		
+		</div>
+		<!--- // 메뉴 -->
+		<div class="box_area">
+			<!-- 기본 GUIDE 정의 1 -->
+			<div class="box">
+				<h3>HTML 정의</h3>
+				<div class="box_content type2">
+					신규 페이지 생성시<span class="font_color01">DOCTYPE</span>은 <span class="font_color01">HTML5</span>이며, 파일<span class="font_color01"> 인코딩은 UTF-8</span>로 생성 하고, 페이지 생성 및 유지보수 진행시 하단 코드를 참고하여 진행한다.<br />
+					검색 엔진 최적화를 위한 <span class="font_color01">SEO (Search Engine Optimization)</span>를 위해 <span class="font_color01">title</span> 태그 <span class="font_color01">meta description 태그</span>를 제공 한다.<br />
+					추가되는 <span class="font_color01">css</span>는 <span class="font_color01">style.css</span> 하단에 추가되는 해당 매뉴의 <span class="font_color01">css</span> 를 위치하며,
+					<span class="font_color01">js</span>파일은 <span class="font_color01">css</span> 보다 하단에 위치한다.
+				</div>
+				<section class="sect">
+					<h3 class="hdt">모바일 기본 레이아웃</h3>
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								&lt;!doctype html&gt;
+								&lt;html lang="ko"&gt;
+								&lt;head&gt;
+									&lt;meta charset="UTF-8"&gt;
+									&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;
+									&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+									&lt;title&gt;UI&lt;/title&gt;
+									&lt;meta name="format-detection" content="telephone=no"&gt;
+									&lt;link href="../../img/common/favicon.ico" rel="shrtcut icon"&gt;
+									&lt;link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed"&gt;
+								
+									&lt;link rel="stylesheet" href="../../css/style.css"&gt;
+									
+									&lt;script src="../../js/jquery-3.4.1.js"&gt;&lt;/script&gt;
+									&lt;script src="../../js/jquery-ui.js"&gt;&lt;/script&gt;
+									&lt;script src="../../js/jquery.ui.touch-punch.js"&gt;&lt;/script&gt;
+									&lt;script src="../../js/swiper.js"&gt;&lt;/script&gt;
+									
+									&lt;script src="../../js/ui.js"&gt;&lt;/script&gt;
+									&lt;script src="../guide/html.js"&gt;&lt;/script&gt;&lt;!-- 개발페이지에서는 html.js 임포트 하지말아주세요. --&gt;
+								&lt;/head&gt;
+								&lt;body class="body"&gt;
+								&lt;div class="wrap" id="wrap"&gt;
+									&lt;!-- 헤더--&gt;
+									&lt;include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-sch,is-gnb","title":"페이지타이틀"}'&gt;&lt;/include&gt;
+									&lt;include class="gnb" src="../inc/gnb.html"&gt;&lt;/include&gt;
+								
+									&lt;!---------------------------- 바디 - 여기위로는 템플릿영역 ----------------------------&gt;
+								
+									&lt;!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 --&gt;
+									&lt;!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 / chp : 협력병원 / csc : 고객센터 --&gt;
+									&lt;main class="container page myp info" id="container"&gt;
+									
+										&lt;!-- 본문 영역 --&gt;
+										&lt;div class="contents" id="contents"&gt;
+											&lt;p&gt;본문&lt;/p&gt;
+										&lt;/div&gt;
+								
+										&lt;!-- 하단 고정영역 --&gt;
+										&lt;nav class="floatbots"&gt;
+											&lt;div class="inr"&gt;
+												&lt;div class="btn-set"&gt;
+													&lt;button type="button" class="btn rd lg b"&gt;이전&lt;/button&gt;
+													&lt;button type="button" class="btn rd lg a"&gt;다음&lt;/button&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/nav&gt;
+										
+									&lt;/main&gt;
+								
+									&lt;!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 --&gt;
+
+									&lt;script&gt;
+										&lt;!--해당페이지 스크립트 위치--&gt;										
+										$(document).ready(function(){
+											console.log('메시지');
+										});
+									&lt;/script&gt;
+
+									&lt;!---------------------------- 바디 - 여기밑으로 템플릿영역 ----------------------------&gt;
+								
+									&lt;!-- 고정메뉴 --&gt;
+									&lt;include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
+								
+									&lt;!-- 푸터 --&gt;
+									&lt;include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'&gt;&lt;/include&gt;
+								
+								&lt;/div&gt;
+								&lt;/body&gt;
+								&lt;/html&gt; </pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+
+				<h3 id="css">CSS 정의</h3>
+				<div class="gtxt-box">
+					CSS는 페이지 로딩시 불필요한 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 <span class="font_color01"> style.css 를 제외한 </span>각 카테고리별 css 를 별도의 css를 생성하여 사용하고 <span class="font_color01"> reset.css 는 style.css 에 @import url(reset.css)</span> 하여 배치한다.
+					<span class="font_color01">Library</span>를 사용 할 경우 <span class="font_color01">Library css</span> 는 <span class="font_color01">style.css 파일보다 위에</span> 위치한다.
+				</div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<h4>CSS import</h4>
+						<div class="code">
+							<pre class="brush: html">
+								&lt;link rel="stylesheet" href="../../css/style.css"&gt;</pre>
+						</div>	
+
+						<div class="code">
+							<pre class="brush: html">
+								// style.css 파일에서 임포트
+								@charset "utf-8";
+								@import url("./font.css");		// 웹폰트
+								@import url("./swiper.css");	// swiper
+								@import url("./jquery-ui.css"); // jqui
+								@import url("./reset.css");		// 초기화
+								@import url("./common.css");	// 공통UI
+								@import url("./layout.css");	// 레이아웃
+								@import url("./com.css");		// 공통페이지
+								@import url("./prd.css");		// 상품
+								@import url("./abt.css");		// 회사소개
+								@import url("./chp.css");		// 협력병원</pre>
+						</div>	
+						<h4>일반페이지 작업 - <a class="lk" href="../guide/docs/img/css_sample2.png" target="_blank">SS</a></h4>
+						<div class="code">
+							<pre class="brush: html">
+								// 일반 페이지는 main.container에  .page.csc.noti" 식으로 class 작명(짧게) 후 상속
+								
+								// 고객센터, 공지사항, 리스트
+								.page.csc.noti.list{} 
+								.page.csc.noti.list .hdt{}
+								.page.csc.noti.list .hdt .tit{}
+
+								// 고객센터, FAQ, 리스트
+								.page.csc.faq.list{} 
+								.page.csc.faq.list .hdt{}
+								.page.csc.faq.list .hdt .tit{}</pre>
+						</div>	
+						<h4>팝업페이지 작업 - <a class="lk" href="../guide/docs/img/css_sample1.png" target="_blank">SS</a></h4>
+						<div class="code">
+							<pre class="brush: html">
+								// 팝업 페이지는 .pop-팝업이름" 으로 class 및 id 작명 후 상속
+								// pop-sample-a.html , pop-sample-b.html , pop-sample-c.html 참고
+								// HTML
+								&lt;article class="pop-layer a pop-adrrsch" id="pop-adrrsch"&gt;
+									... // 예시 주소검색 팝업 
+								&lt;/article&gt;
+
+								&lt;style&gt;
+								// CSS 선언
+								.pop-adrrsch.a {} 
+								.pop-adrrsch.a .schbox{} 
+								&lt;/style&gt;
+
+								&lt;script&gt;
+								// JS 호출은
+								ui.popup.open('pop-adrrsch');
+								&lt;/script&gt;</pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+				<h3>javascript 정의</h3>
+				<div class="gtxt-box">
+					UI 스크립트는 <span class="font_color01">ui.js</span> 파일에 작성하며, 라이브러리 사용의 경우 <span class="font_color01">library.js</span>해당 파일 <span class="font_color01">ui.js 파일보다 위에 위치시킨다. </span>
+					<!-- 공통 js가 아닐 경우 <span class="font_color01">RESOURCE</span>를 줄이기 위해서 해당 페이지에 별도의 <span class="font_color01">function</span>을 생성하도록 해서 제작한다.  -->
+				</div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								&lt;script src="../../js/library.js"&gt;&lt;/script&gt; 
+								&lt;script src="../../js/ui.js"&gt;&lt;/script&gt; 
+								&lt;script src="../guide/html.js"&gt;&lt;/script&gt;&lt;!-- 개발페이지에서는 html.js 임포트 하지말아주세요. --&gt;</pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+				<h3>주석처리</h3>
+				<div class="gtxt-box">
+					<span class="font_color01">마크업</span>진행시 주석처리 정의 : 주석은 HTML 작업시 해당 section 구분마다 주석처리를 해주며, <span class="font_color01">수정및 ISSUE</span>발생시 주석처리를 한다.<br />
+					<span class="font_color01">개발에 전달 해야할 ISSUE 혹은 수정시 </span> 발생시 <span class="font_color01">Develop 약자인 [D] 의 약자</span> 로 해당하는 부분에 내용과 시작 종료일자를 함께 작성 한다.
+				</div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								&lt;!-- [D] 2021-12-31 클래스.sam 추가,문구변경 --&gt;
+								<li class="sam">
+									<span class="input a"><input type="text" placeholder="입력하세요"></span>
+								</li></pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+			</div>
+			<!-- // 기본 GUIDE 정의 1 -->
+			<!-- 네이밍 정의 2 -->
+			<div class="box">
+				<h3>네임 정의</h3>
+				<div class="box_content type2">
+					클래스 네이밍의 2개 이상의 단어를 조합할 경우<span class="font_color01">하이픈" - "</span>으로 지정하고, 이미지 네이밍은 <span class="font_color01">언더스코어" _ "</span>로 지정한다.
+					그이상의 단어 조삽시 최초 하이픈" - " 그 뒤에 단어는 <span class="font_color01">Camel 기법(낙타)</span>으로 진행한다.
+				</div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								네이밍 사용 예시
+								&lt;div class="guide-container"&gt;
+								&lt;div class="guide-contentBox"&gt;
+								&lt;img src="images_images" alt="이미지"&gt; </pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+
+				<h3>예약어 정의</h3>
+				<div class="gtxt-box"><p>예약어 : <span class="font_color01">공통, 레이아웃, 에 사용되는 class의 경우 단톡 정의를 금지하고, 사용할 경우 부모 클래스 하단에 상속을 태우는 방식으로 진행</span></p></div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								예약어 추가될 예정
+								&lt;main class="main"&gt; 메인 &lt;/main&gt;
+							</pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+	
+				<div class="gtxt-box"><p>예약어2 : <span class="font_color01"> 하단의 class는 화면 레이아웃의 class로 사용을 되도록 사용을 금지한다</span></p></div>
+				<section class="sect">
+					<!-- 코드 삽입 -->
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								예약어2
+								&lt;div id="wrap"&gt;
+								&lt;header id="header"&gt;
+								&lt;main id="wrap"&gt;
+								&lt;footer id="footer"&gt; </pre>
+						</div>	
+					</div>
+					<!-- // 코드 삽입 -->
+				</section>
+
+			</div>
+			<!-- // 네이밍 정의 2 -->
+			<!-- SEO 3 -->
+			<div class="box">
+				<h3>SEO 정의 <span class="font_color01">TBWA에서 제공받은 문서 참고 </span></h3>
+				<div class="box_content type2">
+					<span class="font_color01">SEO란</span> 사용자 및 검색엔진에 최적화 된 사이트를 구축하여 자연검색 결과를 통해 트래픽의 양과 질을 극대화 하는 작업
+					자세한 정의는 <span class="font_color01">TBWA에서 제공 받은 문서</span>를 참고 하고 <span class="font_color01">퍼블리싱 에서 적용해야 할 필수 요소</span>를 정의함.
+				</div>
+				
+				<h3>온서프 SEO - 로고</h3>
+				<div class="gtxt-box">
+					<p><span class="font_color01">로고 타입 스키마 마크업</span>적용을 통해 검색 결과에 기업 로고가 표시 될수 있도록 기업에 대한 정보를 검색엔진에 전달한다.
+						<span class="font_color01">해당 코드는 홈페이지에</span>만 적용한다.
+				</p></div>
+				<section class="sect" data-sid="ui-layerpop">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								&lt;head&gt;
+								&lt;title&gt;교보 디지털 채널 통합 : WEB STYLE GUIDE&lt;/title&gt; 
+								&lt;!-- 타이틀은 공백을 포함 한글 최대 32자, 영문 65자 길이를 넘지 않도록 주의 --&gt;
+								&lt;meta name="description" content="교보생명 SEO 최적화를 위한 메타 디스크립션 제공"&gt;
+									&lt;!-- 해당 경로는 제공되는 실제 URL로 변경 처리 --&gt;
+									&lt;script type="application/ld+json"&gt;
+										{
+											"@context":"https://schema.org",
+											"@type":"Organization",
+											"url":"https://kyobo.co.kr",
+											"logo":"https://www.kyobo.co.kr/images/menu/h1_kyobo.gif"
+											"address" : {
+												"@type" : "postalAddress",
+												"addressCountry":"KR",
+												"postalCode":"031544",
+												"streetAddress" : "서울시 종로구 종로1"
+											},
+											"sameAs" :[
+												"http://www.youtube.com/user/kyobolifeblog/videos",
+												"http://www.facebook.com/kyobolife",
+												"http://kyobolifeblog.co.kr",
+												"http://blog.naver.com/kyoboblog",
+												"thhps://www.kyobostory.co.kr"
+											],
+											"contacPoint": [
+												{
+													"@type":"ContactPoint",
+													"telephone" : "+82-1588-1001",
+													"contactType" : "customer service"
+												}
+											]
+										}											
+									&lt;/script&gt;
+								&lt;/head&gt;</pre>
+						</div>	
+					</div>
+				</section>
+
+
+				<h3>Head 태그 속성 최적화</h3>
+				<div class="gtxt-box"><p>Head 태그 속성 : <span class="font_color01"> 문서의 제목을 나타내는 HTML &lt;head&gt;&lt;/head&gt; 사이에 위치한 title 태그 와 meta description 을 수집하여 검색 결과에 표시 </span></p></div>
+				<section class="sect" data-sid="ui-layerpop">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								&lt;head&gt;
+									&lt;meta name="description" content="교보생명 SEO 최적화를 위한 메타 디스크립션 제공"&gt;
+									&lt;title&gt;교보 디지털 채널 통합 : WEB STYLE GUIDE&lt;/title&gt; 
+									&lt;!-- 타이틀은 공백을 포함 한글 최대 32자, 영문 65자 길이를 넘지 않도록 주의 --&gt;
+								&lt;/head&gt;</pre>
+						</div>	
+					</div>
+				
+				</section>
+
+				<h3>이미지</h3>
+				<div class="gtxt-box"><p>이미지 네이밍 : <span class="font_color01"> 검색엔진 로봇에 정보 제공을 위해 이미지 대체 텍스트를 제공</span></p></div>
+				<div class="img_bx">
+					<p class="img"><img src="../guide/docs/img/dog.jpg" alt="멍뭉이"></p>
+					<div class="text">
+						<p>이미지 파일명 최적화</p>
+						<ul>
+							<li>1. IMG_1234.jpg <span class="font_color02">(BAD)</span></li>
+							<li>2. dog.jpg <span class="font_color01">(OKAY)</span></li>
+							<li>3. smile_dog.jpg <span class="font_color03">(BETTER)</span></li>
+						</ul>
+						<p>이미지 대체 텍스트를 구체적으로 작성</p>
+						<ul>
+							<li>1. 대체 텍스트 없음 <span class="font_color02">(BAD)</span></li>
+							<li>2. 강아지 <span class="font_color01">(OKAY)</span></li>
+							<li>3. 웃고 있는 강아지 <span class="font_color03">(OKAY)</span></li>
+						</ul>
+
+					</div>
+				</div>
+				<section class="sect" data-sid="ui-layerpop">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								이미지 대체 텍스트 및 네이밍 예시
+								<!-- <img src="../guide/docs/img/smile_dog.jpg" alt="웃고 있는 강아지"> --></pre>
+						</div>	
+					</div>
+				</section>
+
+			</div>
+			<!-- // SEO 3 -->
+			<!-- WAI-ARIA 4 -->
+			<div class="box" style="display: none;">
+				<h3>웹 접근성 WAI-ARIA사용 예시</h3>
+				<div class="box_content type2">
+					가능한 HTML 마크업을 웹 표준에 맞게 논리적으로 진행하고 상황에 따라 WAI-ARIA사용을 해야하는 경우 하단의 가이드 라인을 참조하여 사용하도록 한다. <br>
+					WAI-ARIA는 스크린리더 및 보조기기 등에서 접근성 및 상호 운용성을 향상시키기 위해 마크업에 <span class="font_color01">역할 (Role), 속성(Property), 상태(State)</span> 정보를 추가할 수 있도록 지원 한다. 
+					이렇게 추가된 정보는 웹 브라우저에 의해 자동으로 해석되어 각각의 운영체제(OS)의 접근성 API로 변환되도록 설계되었다. 
+					스크린리더 및 보조기기는 운영체제(OS)에서 제공하는 접근성 API를 통해 데스크탑 애플리케이션과 동일한 방법으로 자바스크립트 컨트롤을 인식하고 상호 작용을 하게 된다. 이것은 스크린리더 및 보조기기 사용자가 웹 애플리케이션을 사용할 때, 데스크탑 애플리케이션의 동작과 유사하게 인식하고 작동하기 때문에 보다 향상된 UX를 제공하게 된다.
+				</div>
+				<h3>Role (역활)</h3>
+				<section class="sect">
+					<div class="gtxt-box">
+						역할(Role)은 특정 요소(Element)에 기능을 정의 페이지의 검색 영역(Search)인지 내비게이션(Navigation) 요소인지 특정 섹션의 제목(Heading) 인지 등의 명확한 기능을 부여 한다.
+					</div>
+
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								<a href="/" role="button">버튼</a>
+								<!-- 스크린리더는 A태그를 링크라 읽지만 role="button" 을 명시함으로 버튼으로 읽어 준다. --></pre>
+						</div>	
+					</div>
+				</section>
+
+				<h3>Property & State</h3>
+				<div class="gtxt-box">
+					속성(Property)은 요소(Element)가 기본적으로 갖고 있는 특징이나 상황을 의미한다. 폼의 입력 상자가 읽기 전용(Read Only) 인지 또는 필수 항목(Require)인지, 사용자 입력에 대해 자동 완성(Auto Complete)기능을 지원할 지 또는 드래그(Drag)가 가능한지, 팝업(has Popup)이 뜨는지, 업데이트된 (Live) 정보가 있는지 등의 상황을 사용자가 인지할 수 있도록 할 수 있다.
+					<br><br>
+					required로 필수 입력값인지에 대한 정보 제공 aria-required="true"를 지정하면 스크린리더등의 보조기기에서 해당 항목이 필수 항목(Require)임을 알 수 있도록 제공 하며,
+					현재 상태 값을 알려야하는 경우 현재 하위 메뉴가 접힌 상태인지 펼쳐진 상태인지 스크린리더 사용자에게 정보를 제공 해야 할 경우 이때 aria-expanded 속성을 사용하여 접힌 상태라면 false 값을 펼쳐진 상태라면 true 값을 지정 한다.
+				</div>
+				<h3>Property (속성)</h3>
+				<section class="sect">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								<div class="id-area">
+									<label for="user-email">아이디</label>
+									<input type="email" id="user-email" aria-required="true">
+								</div>
+								<div class="pw-area">
+									<label for="user-pw">비밀번호</label>
+									<input type="password" id="user-pw" aria-required="true">
+								</div>
+								<!-- aria-required="true" 로 필수 입력 값 적용  --></pre>
+						</div>	
+					</div>
+				</section>
+
+				<h3>State (상태)</h3>
+				<section class="sect">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								<ul role="tree">
+									<li role="treeitem" aria-expanded="true">
+										<a>MENU 1</a>
+										<ul id="sub-menu" role="group">
+											<li role="treeitem" aria-expanded="false">
+												<a>SUB MENU 1</a>
+											</li>
+										</ul>
+									</li>
+									<li role="treeitem" aria-expanded="false">
+										<a>MENU 2</a>
+									</li>
+								</ul>
+								<!-- aria-expanded="true" 펼침과 접혀있음을 적용 --></pre>
+						</div>	
+					</div>
+				</section>
+
+
+				<h3>HTML요소의 기능 변경 제한</h3>
+				<div class="gtxt-box">
+					ARIA 규칙을 이용하여 요소의 네이티브(Native) 의미를 변경을 금지한다. 
+				</div>
+				<span class="underline">EX : 예를들어 &lt;h1&gt; 요소로 마크업하고 role="button" 으로 지정하는 경우를 금지한다. </span> 
+				<section class="sect">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								<h1 role="button"> 버튼 </h1>  <!-- X : 금지 -->
+								<h1><button> 버튼 </button></h1>  <!-- O : 가능 -->
+								<h1><span role="button" tabindex="0">버튼</span></h1>  <!-- O : 가능 --></pre>
+						</div>	
+					</div>
+				</section>
+
+
+				
+				<h3>키보드 사용보장 </h3>
+				<div class="gtxt-box">
+					사용자와 상호작용이 필요한 대화형 UI의 경우 키보드로도 접근 및 사용이 가능하도록 제공하여야 한다. 
+					여기서 상호작용이 필요한 대화형 UI란 사용자가 클릭할 수 있는 정보나 탭 또는 드래그 앤 드롭, 슬라이드, 스크롤 등의 기능이 필요한 콘텐츠를 의미한다.
+					기본적으로 키보드 포커스를 받지 못하는 HTML 요소의 경우 tabindex 속성을 사용하여 키보드 포커스를 받을 수 있도록 할 수 있다. 
+					이때 tabindex 속성에 0을 지정하면 콘텐츠의 선형화 순서대로 키보드포커스가 진입하게 되고 0보다 작은 값을 지정하면 키보드 포커스를 받을 수 없는 상태가 된다
+				</div>
+				<section class="sect">
+					<div class="codeBox"> 
+						<div class="code">
+							<pre class="brush: html">
+								<span role="button" tabindex="-1">버튼</span> <!-- 키보드 포커스 X -->
+								<span role="button" tabindex="0">버튼</span> <!-- 키보드 포커스 O --></pre>
+						</div>	
+					</div>
+				</section>
+
+
+				<h3>Landmark Roles 종류</h3>
+				<div class="gtxt-box">
+					웹 페이지의 각 영역을 명확하게 구분하는 목적의 Roles. 영역 역할을 지정할 수 있는 8개의 속성이 있다.
+				</div>
+				<table class="guide_table">
+					<colgroup>
+						<col style="width: 20%;">
+						<col style="width: auto;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">Landmark Role</th>
+							<th scope="row">HTML5 섹션 관련 요소</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>role="application"</td>
+							<td>동일한 역할의 요소 없음.<br>주로 &lt;div&gt; 요소와 같이 그룹 역할을 하는 요소로 대체할 수 있다.</td>
+						</tr>
+						<tr>
+							<td>role="banner"</td>
+							<td>동일한 역할의 요소 없음.<br>비슷한 의미로 &lt;header&gt; 요소를 사용할 수 있으나 &lt;header role="banner"&gt;로 사용하였다 면 한 페이지에서 한 개의 &lt;header&gt; 요소만 사용하길 권장한다.</td>
+						</tr>
+						<tr>
+							<td>role="navigation"</td>
+							<td>&lt;nav&gt; 요소.<br>다른 페이지 또는 페이지 내 특정 영역으로 이동하는 링크 콘텐츠 영역으로 주로 메인 메 뉴 및 서브 메뉴 등에 사용할 수 있다</td>
+						</tr>
+						<tr>
+							<td>role="main"</td>
+							<td>&lt;main&gt; 요소.<br>본문의 주요 콘텐츠 영역으로 한 페이지 내에 1개만 사용이 가능하며, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt; 요소의 하위 요소로 사용할 수 없다</td>
+						</tr>
+						<tr>
+							<td>role="complementary"</td>
+							<td>&lt;aside&gt; 요소.<br>주요 콘텐츠와 연관이 적은 의미있는 콘텐츠 영역으로 종종 사이드바로 표현할 수 있다. &lt;aside&gt; 영역에는 현재 날씨, 관련된 기사 또는 주식 정보등의 부가 콘텐츠를 포함 할 수 있다.</td>
+						</tr>
+						<tr>
+							<td>role="form"</td>
+							<td>&lt;form&gt; 요소.<br>폼과 관련된 요소의 모임을 표현하는 영역으로 서버에 전송될 수 있는 콘텐츠를 포함 할 수 있다.</td>
+						</tr>
+						<tr>
+							<td>role="search"</td>
+							<td>동일한 역할의 요소 없음.<br>검색의 역할을 담당하는 서식 영역임을 의미하며 &lt;div&gt; 또는 &lt;form&gt; 요소를 사용하는 것을 권장한다</td>
+						</tr>
+						<tr>
+							<td>role="contentinfo"</td>
+							<td>동일한 역할의 요소 없음.<br>비슷한 의미로 &lt;footer&gt; 요소를 사용할 수 있으나 &lt;footer role="contentinfo"&gt;로 사용하였다면 한 페이지에서 한 개의 &lt;footer&gt; 요소만 사용하길 권장한다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- // WAI-ARIA 4 -->
+			<!-- ETC 5 -->
+			<div class="box">
+				<h3>Devices 검수</h3>
+				<div class="box_content type2">
+					<span class="font_color01 ">Devices 검수</span>는 제공되는 Devices를 대상으로 검수를 진행하도록 하며, 그 이외의 미제공 되는 Devices의 경우 브라우저에서 제공되는 해상도를 포함하여 검수진행한다.
+					<!-- 사파리 브라우저 2012년 08월 21일자로 윈도우 지원 중단 -->
+				</div>
+				<h3>기본폴더 구조</h3>
+				<div class="example box_content type2">
+					<span class="font_color01">폴더구조</span>는 별도 협의된 구조가 없는 관계로 아래의 폴더구조로 제작되었으며, 필요시<span class="font_color01"> 변경 및 추가 </span>될 수 있있다.
+				</div>
+				
+				<h3>교보생명 퍼블리싱 폴더 구조</h3>
+				<div class="example box_content type3">
+					<ul class="jqueryFileTree">
+						<li class="directory">
+							static
+							<ul class="jqueryFileTree">
+								<li class="directory">
+									admin
+									<!-- <ul class="jqueryFileTree">
+										<ul class="jqueryFileTree">
+											<li class="file ext_txt">Library.css</li>
+											<li class="file ext_txt">importFont.css</li>
+											<li class="file ext_txt">reset.css</li>
+											<li class="file ext_txt">style.css</li>
+										</ul>
+									</ul> -->
+								</li>
+								<li class="directory">
+									guide
+									<ul class="jqueryFileTree">
+										<li class="directory">docs</li>
+										<li class="file ext_txt">guide.html</li>
+									</ul>
+								</li>
+								<li class="directory">
+									mo
+									<ul class="jqueryFileTree">
+										<li class="directory">css</li>
+										<li class="directory">font</li>
+										<li class="directory">html</li>
+										<li class="directory">img</li>
+										<li class="directory">js</li>
+									</ul>
+								</li>
+								<li class="directory">
+									pc
+									<ul class="jqueryFileTree">
+										<li class="directory">css</li>
+										<li class="directory">font</li>
+										<li class="directory">html</li>
+										<li class="directory">img</li>
+										<li class="directory">js</li>
+									</ul>
+								</li>
+								<li class="ext_txt">index.html</li>
+
+								<!-- <li class="directory nth-child-3 last-child">js
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">index.js</li>
+										<li class="file ext_txt">jquery-3.4.1.min.js</li>
+										<li class="file ext_txt">ui.js</li>
+									</ul>
+								</li> -->
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<h3>admin 폴더 구조</h3>
+				<!-- admin -->
+				<div class="example box_content type3">
+					<ul class="jqueryFileTree">
+						<li class="directory">
+							admin
+							<ul class="jqueryFileTree">
+								<li class="directory">
+									css
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">style.css (css import 설정)</li>
+										<li class="file ext_txt">font.css (폰트 설정)</li>
+										<li class="file ext_txt">swiper.css (swiper 슬라이드)</li>
+										<li class="file ext_txt">jquery-ui.css (jquery-ui 스타일)</li>
+										<li class="file ext_txt">reset.css (스타일 리셋)</li>
+										<li class="file ext_txt">space.css (마진, 여백 모음)</li>
+										<li class="file ext_txt">common.css (공통 스타일)</li>
+										<li class="file ext_txt">layout.css (페이지 스타일)</li>
+										<li class="file ext_txt">color.css (색상 설정)</li>
+										<li class="file ext_txt">style_cp.css (cp용 스타일)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									html
+									<ul class="jqueryFileTree">
+										<li class="directory">guide (페이지 가이드 및 샘플 모음)</li>
+										<li class="directory">inc (인클루드 페이지 모음)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									js
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">ui.js (공통 ui)</li>
+										<li class="file ext_txt">jquery-3.4.1.js (제이쿼리 라이브러리)</li>
+										<li class="file ext_txt">swiper.js (슬라이드 플러그인)</li>
+										<li class="file ext_txt">jquery-ui.js (플러그인)</li>
+										<li class="file ext_txt">jquery.ui.touch-punch.js (플러그인)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									img
+									<ul class="jqueryFileTree">
+										<li class="directory">common (공통 이미지)</li>
+										<li class="directory">temp (샘플 이미지)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<h3>mobile 폴더 구조</h3>
+				<!-- mobile  -->
+				<div class="example box_content type3">
+					<ul class="jqueryFileTree">
+						<li class="directory">
+							mobile 
+							<ul class="jqueryFileTree">
+								<li class="directory">
+									css
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">style.css (css import 설정)</li>
+										<li class="file ext_txt">font.css(폰트설정)</li>
+										<li class="file ext_txt">swiper.css (swiper 슬라이드)</li>
+										<li class="file ext_txt">jquery-ui.css (제이쿼리UI)</li>
+										<li class="file ext_txt">reset.css (초기화)</li>
+										<li class="file ext_txt">common.css (공통UI - 컴포넌트)</li>
+										<li class="file ext_txt">com.css (공통페이지 - 레이아웃)</li>
+										<li class="file ext_txt">layout.css (레이아웃)</li>
+										<li class="file ext_txt">prd.css (상품 - 다이렉트보험)</li> 
+										<li class="file ext_txt">prd2.css (상품 - 보험)</li>  
+										<li class="file ext_txt">prd3.css (상품 - 대출)</li>  
+										<li class="file ext_txt">prd4.css (상품 - 대출 -보험계약대출신청, 신용대출신청, 주택담보대출)</li>  
+										<li class="file ext_txt">prd6.css (상품 - 펀드)</li>  
+										<li class="file ext_txt">abt.css (회사소개 CSS)</li>
+										<li class="file ext_txt">lif.css (든든라이프 CSS)</li>
+										<li class="file ext_txt">mbl.css (회원,로그인,인증 CSS)</li>
+										<li class="file ext_txt">msc.css (MY교보 - 퇴직연금)</li>
+										<li class="file ext_txt">msc2.css (MY교보 - 보험)</li>
+										<li class="file ext_txt">msc3.css (MY교보 - 나의증명서)</li>
+										<li class="file ext_txt">msc4.css (MY교보 - 든든서비스, MY교보 - 신탁)</li>
+										<li class="file ext_txt">msc5.css (MY교보 - 펀드)</li>
+										<li class="file ext_txt">msc6.css (MY교보 - 나의전자문서지갑)</li>
+										<li class="file ext_txt">msc7.css (MY교보 - 보험금 도래 사전안내 팝업)</li>
+										<li class="file ext_txt">csc.css (고객센터 CSS)</li>
+										<li class="file ext_txt">evt.css (공지/이벤트 CSS)</li>
+										<li class="file ext_txt">pim.css (개인정보 CSS)</li>
+										<li class="file ext_txt">space.css (간격 CSS)</li>
+										<li class="file ext_txt">color.css (컬러CSS)</li>
+										<li class="file ext_txt">etp.css (기업 -퇴직연금 CSS)</li>
+										<li class="file ext_txt">dlk.css (다이렉트링크 CSS)</li>
+										<li class="file ext_txt">main_web.css (메인Web CSS)</li>
+										<li class="file ext_txt">etp_main_app.css (APP_기업메인 CSS)</li>
+										<li class="file ext_txt">main_app.css (메인화면 App CSS)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									html
+									<ul class="jqueryFileTree">
+										<li class="directory">guide	(페이지 가이드 및 샘플 모음)</li>
+										<li class="directory">inc	(인클루드 페이지 모음)</li>
+										<li class="directory">abt	(회사소개/IR)</li>
+										<li class="directory">abte (회사소개/IR 영문)</li>
+										<li class="directory">com	(메인/공통/기타)</li>
+										<li class="directory">csc	(고객센터)</li>
+										<li class="directory">dlk	(다이렉트링크)</li>
+										<li class="directory">etp	(기업 퇴직연금)</li>
+										<li class="directory">evt	(이벤트/공지)</li>
+										<li class="directory">main (메인)</li>
+										<li class="directory">mbl	(회원가입/로그인/인증센터)</li>
+										<li class="directory">msc	(MY교보)</li>
+										<li class="directory">pim	(개인정보)</li>
+										<li class="directory">prd	(상품)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									js
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">ui.js (공통 ui)</li>
+										<li class="file ext_txt">jquery-3.4.1.min (제이쿼리 라이브러리)</li>
+										<li class="file ext_txt">jquery-3.4.1.js (제이쿼리 라이브러리)</li>
+										<li class="file ext_txt">swiper.js (슬라이드 플러그인)</li>
+										<li class="file ext_txt">jquery-ui.js (플러그인)</li>
+										<li class="file ext_txt">jquery.ui.touch-punch.js (플러그인)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									img
+									<ul class="jqueryFileTree">
+										<li class="directory">abt (회사소개 이미지)</li>
+										<li class="directory">bank (은행/주식 아이콘 이미지)</li>
+										<li class="directory">card (카드 아이콘 이미지)</li>
+										<li class="directory">com (공통 이미지)</li>
+										<li class="directory">common (공통 이미지)</li>
+										<li class="directory">csc (고객센터 이미지)</li>
+										<li class="directory">dise (다이렉트링크/상품 - 보험료계산 이미지)</li>
+										<li class="directory">dlk (다이렉트링크 이미지)</li>
+										<li class="directory">etp (기업 퇴직연금 이미지)</li>
+										<li class="directory">main (메인 이미지)</li>
+										<li class="directory">mbl (회원가입/로그인/인증센터 이미지)</li>
+										<li class="directory">msc (MY교보 이미지)</li>
+										<li class="directory">pim (개인정보 이미지)</li>
+										<li class="directory">prd (상품 이미지)</li>
+										<li class="directory">sample (샘플 이미지)</li>
+										<li class="directory">temp (샘플 이미지)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<h3>pc 폴더 구조</h3>
+				<!-- pc -->
+				<div class="example box_content type3">
+					<ul class="jqueryFileTree">
+						<li class="directory">
+							pc
+							<ul class="jqueryFileTree">
+								<li class="directory">
+									css
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">style.css (css import 설정)</li>						
+										<li class="file ext_txt">chp.css (협력병원)</li>
+										<li class="file ext_txt">color.css (색상 설정)</li>
+										<li class="file ext_txt">common.css (공통 - 컴포넌트)</li>
+										<li class="file ext_txt">com.css (공통 - 레이아웃)</li>
+										<li class="file ext_txt">csc.css (고객센터)</li>
+										<li class="file ext_txt">dcs.css (공시실)</li>
+										<li class="file ext_txt">etp.css (기업 - 퇴직금신청)</li>
+										<li class="file ext_txt">evt.css (이벤트/공지)</li>
+										<li class="file ext_txt">font.css (폰트설정)</li>
+										<li class="file ext_txt">grpins.css (기업 - 단체보험)</li>
+										<li class="file ext_txt">jquery-ui.css (제이쿼리UI)</li>
+										<li class="file ext_txt">layout.css (페이지 스타일)</li>
+										<li class="file ext_txt">lif.css (든든라이프)</li>
+										<li class="file ext_txt">main.css (메인)</li>
+										<li class="file ext_txt">mbl.css (멤버/로그인/인증)</li>
+										<!-- <li class="file ext_txt">mbl2.css (멤버/로그인/인증)</li> -->
+										<li class="file ext_txt">msc.css (나의계약)</li>
+										<li class="file ext_txt">msc2.css (나의계약 - 보험, 보험계약변경)</li>
+										<li class="file ext_txt">msc4.css (MY교보 - 신탁, MY교보 - 평생든든서비스)</li>
+										<li class="file ext_txt">msc5.css (MY교보 - 나의펀드)</li>
+										<li class="file ext_txt">msc6.css (MY교보 - 나의증명서)</li>
+										<li class="file ext_txt">msc7.css  (나의전자문서지갑)</li>
+										<li class="file ext_txt">myp.css (마이페이지)</li>
+										<li class="file ext_txt">perfect-scrollbar.css (스크롤바)</li>
+										<li class="file ext_txt">pim.css (개인정보)</li>
+										<li class="file ext_txt">prd.css (보험료계산기)</li>
+										<li class="file ext_txt">prd2.css (상품 - 보험)</li>
+										<li class="file ext_txt">prd3.css (상품 - ATM대출)</li>
+										<li class="file ext_txt">prd4.css (상품 - 보험계약대출, 신용대출신청, 주택담보대출)</li>
+										<li class="file ext_txt">prd6.css (상품 - 펀드/신탁)</li>
+										<li class="file ext_txt">reset.css (스타일 리셋)</li>
+										<li class="file ext_txt">rMateChartH5.css (차트)</li>
+										<li class="file ext_txt">space.css (마진, 여백 모음)</li>
+										<li class="file ext_txt">swiper.css (swiper 슬라이드)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									html
+									<ul class="jqueryFileTree">
+										<li class="directory">abt (회사소개)</li>
+										<li class="directory">abte (회사소개-영문)</li>
+										<li class="directory">chp	(협력병원)</li>
+										<li class="directory">com	(공통)</li>
+										<li class="directory">csc	(고객센터)</li>
+										<li class="directory">dcs	(공시실)</li>
+										<li class="directory">email	(이메일)</li>
+										<li class="directory">etp	(기업 - 퇴직금신청)</li>
+										<li class="directory">evt	(이벤트/공지)</li>
+										<li class="directory">guide	(페이지 가이드 및 샘플 모음)</li>
+										<li class="directory">inc	(인클루드 페이지 모음)</li>
+										<li class="directory">mbl	(멤버/로그인/인증)</li>
+										<li class="directory">msc	(MY교보)</li>
+										<li class="directory">pim	(개인정보)</li>
+										<li class="directory">prd	(상품)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									js
+									<ul class="jqueryFileTree">
+										<li class="file ext_txt">imagesloaded.pkgd.min.js (이미지로딩)</li>
+										<li class="file ext_txt">jquery-3.4.1.js (제이쿼리 라이브러리)</li>
+										<li class="file ext_txt">jquery-3.4.1.min.js (제이쿼리 라이브러리 축소파일)</li>
+										<li class="file ext_txt">jquery-ui.js (제이쿼리 플러그인)</li>
+										<li class="file ext_txt">jquery.ui.touch-punch.js (제이쿼리 UI 터치인식)</li>
+										<li class="file ext_txt">masonry.pkgd.min.js (그리드정렬)</li>
+										<li class="file ext_txt">perfect-scrollbar.js (스크롤바)</li>
+										<li class="file ext_txt">swiper.js (슬라이드 플러그인)</li>
+										<li class="file ext_txt">ui.js (공통 ui)</li>
+									</ul>
+								</li>
+								<li class="directory">
+									img
+									<ul class="jqueryFileTree">
+										<li class="directory">abt (회사소개 이미지)</li>
+										<li class="directory">bank (은행/주식 아이콘 이미지)</li>
+										<li class="directory">card (카드 아이콘 이미지)</li>
+										<li class="directory">chip (협력병원 이미지)</li>
+										<li class="directory">com	(공통 이미지)</li>
+										<li class="directory">common (공통 이미지)</li>
+										<li class="directory">csc	(고객센터 이미지)</li>
+										<li class="directory">dcs	(공시실 이미지)</li>
+										<li class="directory">etp	(기업 퇴직연금 이미지)</li>
+										<li class="directory">mail (이메일 이미지)</li>
+										<li class="directory">main (메인 이미지)</li>
+										<li class="directory">mbl	(회원가입/로그인/인증센터 이미지)</li>
+										<li class="directory">msc	(MY교보 이미지)</li>
+										<li class="directory">pim (개인정보 이미지)</li>
+										<li class="directory">prd	(상품 이미지)</li>
+										<li class="directory">temp (샘플 이미지)</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				
+			</div>
+			<!-- // ETC 5 -->
+		</div>
+	</div>
+	
+</div>
+<!-- // 본문 내용 -->
+<!-- Footer -->
+<footer>
+	<!-- KYOBO LIFE -->
+</footer>
+<!-- //Footer -->
+
+
+
+</body>
+</html>

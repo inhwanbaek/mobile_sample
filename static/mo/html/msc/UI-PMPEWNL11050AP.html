@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"전자문서지갑 변경"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc mdw wdrop" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-05-16 클래스 변경 .icon-wdrop > .icon-newdevice -->
+			<div class="complate-msg icon-newdevice">
+				<div class="msg">
+					<h2 class="hd-tit2">새로운 기기로 접속하였습니다.</h2>
+					<ul class="bullet a">
+						<li>전자문서지갑을 계속 이용하시려면 현재 기기로 변경해 주세요.</li>
+						<li>[확인]을 누르시면 약관동의일이 오늘 날짜로 갱신됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">취소</button>
+					<button type="button" class="btn rd lg a" onclick="delete_alert();">확인</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+<script>
+	var delete_alert = function () {
+		ui.alert("고객님의 전자문서지갑 접속 기기가<br> 현재 기기로 변경되었습니다.");
+	}
+</script>
+</body>
+</html>

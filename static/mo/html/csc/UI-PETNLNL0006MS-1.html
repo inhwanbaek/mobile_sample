@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"false","class":"is-back,is-title,is-gnb","title":"VOC 설문조사"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page csc csat" id="container">
+	
+		<!-- 본문 영영 -->
+		<div class="contents" id="contents">
+			
+			<div class="sect">
+				<div class="csat-tbox">
+					<div class="logo"></div>
+					<h2 class="hd-tit3">고객의 소리 업무 개선을 위한<br> 설문조사에 참여해 주세요.(컨설턴트용)</h2>
+					<div class="sub-desc">컨설턴트님의 소중한 답변은 더 나은 고객서비스를 제공하는 데 사용됩니다.</div>
+				</div>	
+			</div>
+					
+			<div class="sect">
+				<div class="csat-standard">
+					<h3 class="hd-tit3">고객 만족도 평가 기준</h3>
+					<p class="txt">매우 만족(5) / 매우 불만족(1)</p>
+				</div>
+			</div>
+
+			<div class="sect">
+				<div class="csat-qbox">
+					<div class="csat-q">
+						<p class="cate">
+							<span class="fl">
+								1. 커뮤니케이션 <i class="org">*</i>
+							</span>
+							<span class="fr">
+								<i class="org">*</i> 필수입력항목
+							</span>
+						</p>
+						<p class="tit">CS매니저의 민원 처리시 의사소통은 원활하게 이루어졌다고 생각하시나요?</p>
+					</div>
+					<div class="csat-s">
+						<!-- [D] 2022-04-01 .col5 삭제 -->
+						<div class="radiobox c">
+							<label class="radio"><input type="radio" name="radio_1"><span class="txt">5</span></label>
+							<label class="radio"><input type="radio" name="radio_1"><span class="txt">4</span></label>
+							<label class="radio"><input type="radio" name="radio_1"><span class="txt">3</span></label>
+							<label class="radio"><input type="radio" name="radio_1"><span class="txt">2</span></label>
+							<label class="radio"><input type="radio" name="radio_1"><span class="txt">1</span></label>
+						</div>
+						<!-- [D] 2022-04-01 .dtdd 매우만족, 매우불만족 추가 -->
+						<div class="dtdd">
+							<div class="dt">매우 만족(5)</div>
+							<div class="dd">매우 불만족(1)</div>
+						</div>
+					</div>
+				</div>
+				<div class="csat-qbox">
+					<div class="csat-q">
+						<p class="cate">
+							<span class="fl">
+								2. 응대태도 <i class="org">*</i>
+							</span>
+						</p>
+						<p class="tit">CS매니저의 응대태도(공감하는 태도, 해결하기 위한 자세)에 만족하시나요?</p>
+					</div>
+
+					<div class="csat-s">
+						<!-- [D] 2022-04-01 .col5 삭제 -->
+						<div class="radiobox c">
+							<label class="radio"><input type="radio" name="radio_2"><span class="txt">5</span></label>
+							<label class="radio"><input type="radio" name="radio_2"><span class="txt">4</span></label>
+							<label class="radio"><input type="radio" name="radio_2"><span class="txt">3</span></label>
+							<label class="radio"><input type="radio" name="radio_2"><span class="txt">2</span></label>
+							<label class="radio"><input type="radio" name="radio_2"><span class="txt">1</span></label>
+						</div>
+						<!-- [D] 2022-04-01 .dtdd 매우만족, 매우불만족 추가 -->
+						<div class="dtdd">
+							<div class="dt">매우 만족(5)</div>
+							<div class="dd">매우 불만족(1)</div>
+						</div>
+					</div>
+				</div>
+				<div class="csat-qbox">
+					<div class="csat-q">
+						<p class="cate">
+							<span class="fl">
+								3. 적정성 <i class="org">*</i>
+							</span>
+						</p>
+						<p class="tit">CS매니저의 업무처리 결과가 적정했다고 생각하시나요?</p>
+					</div>
+					<div class="csat-s">
+						<!-- [D] 2022-04-01 .col5 삭제 -->
+						<div class="radiobox c">
+							<label class="radio"><input type="radio" name="radio_3"><span class="txt">5</span></label>
+							<label class="radio"><input type="radio" name="radio_3"><span class="txt">4</span></label>
+							<label class="radio"><input type="radio" name="radio_3"><span class="txt">3</span></label>
+							<label class="radio"><input type="radio" name="radio_3"><span class="txt">2</span></label>
+							<label class="radio"><input type="radio" name="radio_3"><span class="txt">1</span></label>
+						</div>
+						<!-- [D] 2022-04-01 .dtdd 매우만족, 매우불만족 추가 -->
+						<div class="dtdd">
+							<div class="dt">매우 만족(5)</div>
+							<div class="dd">매우 불만족(1)</div>
+						</div>
+					</div>
+				</div>
+				<div class="csat-qbox">
+					<div class="csat-q">
+						<p class="cate">
+							<span class="fl">
+								4. 기타
+							</span>
+						</p>
+						<p class="tit">CS매니저의 업무처리 및 민원사항에 대해 추가 의견이 있으시면 작성해 주세요.</p>
+					</div>
+
+					<div class="csat-s">
+						<div class="textarea a">
+							<label class="lb blind" for="textarea-1">Label</label>
+							<textarea id="textarea-1" placeholder="예) OO 점이 개선되었으면 좋겠어요."></textarea>
+							<span class="num"><i class="i">0</i>/<b class="n">1,000</b>자</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">설문제출</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+

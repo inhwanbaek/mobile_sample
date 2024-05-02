@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc default variable" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">변액보험계약조회</h2>
+				<div class="desc">변액보험계약 <i class="line">상세내용</i>을 확인해 보세요.</div><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+			
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">펀드가입내역</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">옵션정보 조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">적립금 및 환급금 조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">누적수익률 조회</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">수수료안내표 조회</a></li>
+				</ul>
+			</div>			
+
+			<h3 class="hd-tit4">프라이스히트보험(기본형)</h3>    
+			<div class="ut-dcard a dcard">  
+				<div class="stds">							
+					<div class="ddt noline">								
+						<div class="bxt">
+							<ul class="lst">
+								<li>
+									<div class="dl">
+										<div class="dt">보험료</div>
+										<div class="dd">158,951원</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>                  
+				<div class="dtds">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd">2012.06.27</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">주피보험자</div>
+								<div class="dd">팡서왕</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd">2014.06</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입횟수</div>
+								<div class="dd">111회</div>
+							</div>
+						</li>															
+					</ul>
+				</div>					
+			</div>					
+
+			<h3 class="hd-tit4">보험관계 비용</h3>  
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">보험관계 비용</span><span class="cap"></span></caption>
+					<colgroup>
+						<col>
+						<col style="width:160rem"><!-- [D] 2022-06-23 태그수정 -->
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">목적</th>
+							<th scope="col">시기</th>
+							<th scope="col">비용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="4">계약체결비용</th>
+							<td rowspan="2">매월</td>
+							<td>7년 이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>6.84%(8,892원)</td>
+						</tr>
+						<tr>							
+							<td rowspan="2">매월</td>
+							<td>7년 초과 10년 이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>4.70%(6,110원)</td>
+						</tr>		
+						<tr>
+							<th scope="rowgroup" rowspan="4">계약관리비용</th>
+							<td rowspan="2">매월</td>
+							<td>납입기간이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>5.00%(6,500 원)</td>
+						</tr>
+						<tr>							
+							<td rowspan="2">매월</td>
+							<td>납입기간 이후</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>2.31%<br>(200~1,009원)</td>
+						</tr>	
+						<tr>
+							<th scope="row">위험보험료</th>
+							<td>매월</td>
+							<td>
+								기본보험료의 <br>
+								0.15385% <br>
+								~0.77615% <br>
+								(200~1,009원)
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+			<!-- [D] 2022-02-22 텍스트추가 -->
+			<p class="sub-txtGroup tbb">&quot;
+				상기 보험관계비용은 주계약에 해당하는 비용으로서 보험계약의 체결, 유지, 관리를 위해 필요한 비용입니다.<br>
+				위험보험료 : 제1보험기간 동안 매월 계약해당일에 계약자적립금에서 차감되며, 연령증가에 따라 상이합니다.&quot;
+			</p>
+			<h3 class="hd-tit4">기타비용 및 추가비용</h3>  
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">기타비용 및 추가비용</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:30%">
+						<col style="width:30%">
+						<col style="width:30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">목적</th>
+							<th scope="col">시기</th>
+							<th scope="col">비용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="3">보증비용</th>
+							<td>최저연금적립금<br>보증</td>
+							<td>매월/적립금의<br>0.05%<br>(연 0.6%)</td> <!-- [D] 2022-02-22 텍스트추가 -->
+						</tr>
+						<tr>
+							<td>최저사망보험금<br>보증</td>
+							<td>매월/적립금의 <br>0.004166667% <br>(연 0.05%)</td>
+						</tr>
+						<tr>
+							<td>실적배당<br>연금보증</td>
+							<td>매월/적립금의<br>0.79166667%<br>(연 0.95%)</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="3">연금수령기간중<br>비용</th>
+							<td>연금수령<br>기간 중의<br>관리비용</td>
+							<td>연금수령시점/<br>연금연액의<br>0.5%</td>
+						</tr>
+						<tr>
+							<td>연금수령<br>기간 중의<br>관리비용</td>
+							<td>매월/적립금의<br>0.0125%<br>(연 0.15%)</td>
+						</tr>
+						<tr>
+							<td>노후자금<br>관리비용</td>
+							<td>매월/노후자금의<br>0.005%</td>
+						</tr>
+						<tr>
+							<th scope="row">연금수령<br>기간 중 비용</th>
+							<td>해지에 따른<br>패널티</td>
+							<td>
+								해지시점/도표참조<br><!-- [D] 2022-06-23 텍스트수정 -->
+								<a href="javascript:;" class="link-ext">보기</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">추가납입보험료</th>
+							<td>계약유지<br>
+								관리비용</td>
+							<td>납입시점/<br>추가납입보험료의<br>2.5%</td>
+						</tr>
+						<tr>
+							<th scope="row">펀드변경수수료</th>
+							<td>펀드변경에<br>
+								따른비용</td>
+							<td>
+								펀드변경시점/<br>
+								1회당 펀드변경<br>적립금의 0.1%<br>범위 이내
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">중도인출수수료</th>
+							<td>중도인출에<br>
+								따른비용</td>
+							<td>
+								중도인출시점/<br>
+								1회당 인출금액<br>의 0.2%와<br> 2,000원 중 <br>
+								적은금액
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+
+
+			<!-- [D] 2022-07-11 특별계정운용비용 추가 -->
+			<h3 class="hd-tit4">특별계정운용비용</h3>  
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">특별계정 운용비용</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:23%">
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">구분</th>
+							<th scope="col" colspan="2">특별계정 운용보수</th>
+							<th scope="col">증권거래비용 및 <br>기타비용</th>
+							<th scope="col">기초펀드의 기타비용</th>
+						</tr>
+						<tr>
+							<th scope="col">(매일)</th>
+							<th scope="col">(연)</th>
+							<th scope="col">(사유발생시, 연기준)</th>
+							<th scope="col">(사유발생시, 연기준)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">D007 채권형</th>
+							<td class="txt-r">0.001054795%</td>
+							<td class="txt-r">0.385%</td>
+							<td class="txt-r">0.007810%</td>
+							<td class="txt-r">없음</td>
+						</tr>
+						<tr>
+							<th scope="row">D008 단기채권형</th>
+							<td class="txt-r">0.000780822%</td>
+							<td class="txt-r">0.285%</td>
+							<td class="txt-r">0.007437%</td>
+							<td class="txt-r">없음</td>
+						</tr>
+						<tr>
+							<th scope="row">F006 일반주식형</th>
+							<td class="txt-r">0.002424658%</td>
+							<td class="txt-r">0.885%</td>
+							<td class="txt-r">0.912317%</td>
+							<td class="txt-r">0.170000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F007 인덱스주식형</th>
+							<td class="txt-r">0.002150685%</td>
+							<td class="txt-r">0.785%</td>
+							<td class="txt-r">0.040034%</td>
+							<td class="txt-r">0.150000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F008 가치주식형</th>
+							<td class="txt-r">0.002424658%</td>
+							<td class="txt-r">0.885%</td>
+							<td class="txt-r">0.537098%</td>
+							<td class="txt-r">0.160000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F009 성장주식형</th>
+							<td class="txt-r">0.002424658%</td>
+							<td class="txt-r">0.885%</td>
+							<td class="txt-r">0.512850%</td>
+							<td class="txt-r">0.170000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F010 글로벌주식형</th>
+							<td class="txt-r">0.001863014%</td>
+							<td class="txt-r">0.680%</td>
+							<td class="txt-r">0.033800%</td>
+							<td class="txt-r">0.180000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F011 글로벌채권형</th>
+							<td class="txt-r">0.001808219%</td>
+							<td class="txt-r">0.660%</td>
+							<td class="txt-r">0.059948%</td>
+							<td class="txt-r">0.310000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F012 K-Selection주식형</th>
+							<td class="txt-r">0.001397260%</td>
+							<td class="txt-r">0.510%</td>
+							<td class="txt-r">0.004541%</td>
+							<td class="txt-r">0.510000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F013 글로벌자산배분형</th>
+							<td class="txt-r">0.001863014%</td>
+							<td class="txt-r">0.680%</td>
+							<td class="txt-r">0.524848%</td>
+							<td class="txt-r">0.360000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F014 K-커버드형</th>
+							<td class="txt-r">0.002095890%</td>
+							<td class="txt-r">0.765%</td>
+							<td class="txt-r">0.072788%</td>
+							<td class="txt-r">0.150000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F015 글로벌배당주식형</th>
+							<td class="txt-r">0.001863014%</td>
+							<td class="txt-r">0.680%</td>
+							<td class="txt-r">0.152697%</td>
+							<td class="txt-r">0.410000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F016 이머징주식형</th>
+							<td class="txt-r">0.001863014%</td>
+							<td class="txt-r">0.680%</td>
+							<td class="txt-r">0.119353%</td>
+							<td class="txt-r">0.510000%</td>
+						</tr>
+						<tr>
+							<th scope="row">F017 글로벌금리연동채권형</th>
+							<td class="txt-r">0.001726027%</td>
+							<td class="txt-r">0.630%</td>
+							<td class="txt-r">0.127613%</td>
+							<td class="txt-r">0.180000%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="bullet a sub-txtGroup">
+				<li>특별계정 운용비용은 펀드적립금에 대한 비용 입니다.</li>
+				<li>특별계정 운용보수는 운명보수, 투자일임보수, 수탁보수 및 사무관리 보수의 합계를 말하며,
+					상기 포함된 비율을 최고한도로 하며 실제 비용이 부과됩니다.</li>
+				<li>
+					<span class="fn-point01">증권거래비용 및 기타비용</span><br>
+					유가증권의 매매수수료 및 예탁 · 결제비용 등 특별계정에서 경상적·반복적으로 지출되는 비용으로
+					직전 회계연도의 사용금액을 기준으로 추정합니다.<br>
+					단, 펀드설정 이후 회계연도가 지나지 않은 경우 설정일로 부터 일정 기간동안(3개월 이상)의 실적을
+					추정치로 사용할 수 있으며, 신규설정 펀드 및 운용기간이 3개월 미만인 경우 투자목적 및 투자전략미
+					유사한 다른 펀드의 실적을 추정치로 기재할 수 있습니다.<br>
+					또한 매년 1/4분기 동안은 전전년도의 회계연도 실적(단, 직전 회계연도 이후 설정된 펀드는
+					직전 회계연도의 1/4~3/4분기 실적)을 사용할 수 있습니다.
+					
+				</li>
+				<li>
+					<span class="fn-point01">기초펀드의 보수ㆍ비용</span><br>
+					특별계정의 자산운용은 투자일임형태 또는 다른 집합투자기구 [수익증권 및 증권투자회사(뮤추얼펀드)]
+					투자형태로 외부위탁할 수 있습니다.<br>
+					다른 집합투자기구에 투자할 경우 해당 집합투자기구에서 정한 수수료가 부과될 수 있고, 투자일임계약
+					또는 집합투자기구 투자로의 위탁운용은 당사의 투자정책에 따라 변경될 수 있습니다.<br>
+					다른 집합투자증권(기초펀드)에 투자하는 경우 부과하는 보수 및 비용은 직전 회계연도의 투자금액을
+					기준으로 추정합니다.
+				</li>
+			</ul>
+
+			<!-- [D] 2022-07-15 꼭 알아두세요 위치변경 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">													
+						<li>펀드변경수수료는 현재 부과하지 않습니다.</li>
+						<li>해지공제비용은 중도해지 시 계약자적립금에서 공제하는 금액으로, 보험가입 시점에서 현재 시점까지 몇 년이 경과했는지에 따라 금액이 다릅니다.   </li>
+						<!-- <li>중도인출금액이 있는 경우 인출금액에 해당하는 추가납입보험료는 추가납입할 총액의 1.0%와 5만원 중 적은 금액을 적용합니다. </li> [D] 2022-07-11 알아두세요 마지막항목삭제 -->
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="btn-set vt btn-group">
+				<button type="button" class="btn md">변액보험공시</button>				
+				<button type="button" class="btn md">로보어드바이저 서비스 신청</button>
+				<button type="button" class="btn md">펀드변경 신청</button>
+			</div>
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg b">이전</button>									
+						<button type="button" class="btn rd lg a">다음</button>									
+					</div>
+				</div>
+			</nav>
+			<!-- //하단 고정영역 -->
+
+			
+			
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

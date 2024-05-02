@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"소비자중심경영(CCM) 운영"}'></include><!-- [D] 2022-08-30 텍스트 변경 -->
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt eth ccm" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">도입선포</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">운영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">인증</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">포상</a></li>
+				</ul>
+			</div>
+			<div class="ept_upper back13">
+				<!-- [D] 2022-05-18 타이틀영역 변경 -->
+				<strong class="hd-tit2">교보생명은 지속적인 <br><i class="line">고객중심경영</i>과 <i class="line">고객권익증진</i>에 <br>기여하는 기업입니다.</strong>
+			</div>
+			<h3 class="hd-tit3">공정거래위원회 위원장 표창</h3>
+			<!-- [D] 2022-06-29 디자인수정 -->
+			<ul class="lst">
+				<li>
+					<p class="h4-tit4">2021년 12월</p>
+					<!-- [D] 2022-07-21 문구 추가 -->
+					<p>소비자보호 권익 신장에 앞장선 모범적인 회사로 <span class="color6">국가 사회 발전에 이바지한 공로를 인정 받아 소비자의 날을 맞아 공정거래위원장 표창을 받았습니다.</span></p>
+					<div class="box-rd pic">
+						<img src="../../img/abt/benefit_03.png" alt="공정거래위원회 위원장 표창">
+					</div>
+				</li>
+				<li>
+					<p>2019년 12월</p>
+					<p>CCM 최초 인증부터 지속적인 CCM 재인증을 거치며 소비자중심경영 우수기업으로 인증받고, 더불어 <span class="color6">소비자 권익증진을 통해 국가 사회 발전에 크게 이바지한 공로를 인정받아 공정거래위원장 표창을 받았습니다.</span></p>
+					<div class="box-rd pic">
+						<img src="../../img/abt/benefit_01.png" alt="2019년 소비자중심경영(CCM) 우수기업 포상 및 인증서 수여식">
+					</div>
+				</li>
+				<li>
+					<p>2017년 12월</p>
+					<p>정부 기념일인 제22회 「소비자의 날」에 <span class="color6">소비자 권익증진을 위해 노력한 기관에게 수여하는 공정거래위원장 표창을 받음</span>으로써 금융소비자보호와 권익 신장에 앞장선 모범적인 금융회사로 인정받았습니다.</p>
+				</li>
+			</ul>
+
+			<h3 class="hd-tit3 mb16">CCM 인증 기업 공로패 수상</h3>
+			<ul class="lst">
+				<li>
+					<div class="box-rd pic">
+						<img src="../../img/abt/benefit_02.png" alt="2017년 하반기 CCM인증서 수여식 및 10주년 기념식 &middot; 세미나 사진"><!-- [D] 2022-07-22 alt 수정 -->
+					</div>
+					<p>지속적인 고객중심경영과 고객권익증진에 기여한 공로를 인정받아 공정거래위원회와 한국소비자원 주최로 열린 <span class="color6">‘2017 하반기 소비자중심경영 인증서 수여식 및 10주년 기념식, 세미나'에서 10년 연속 CCM 인증 기업 공로패를 수상했습니다.</span></p>
+				</li>
+			</ul>
+			<!--// [D] 2022-06-29 디자인수정 -->
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

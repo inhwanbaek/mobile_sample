@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-terms-detail" id="pop-terms-detail">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">접수대상 및 유의사항 확인</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">                    
+					<div class="text-group">
+						<h2 class="hd-tit4">접수대상</h2>
+						<div class="text-box">
+							<p>온라인 접수는 300만원까지 접수할 수 있습니다.<br>
+							(사망보험금은 접수 대상에서 제외)</p>                       
+							<ul class="bullet a">
+								<li>수익자만 청구할 수 있으며, 청구하는 분이 피보험자 본인이 아닌 경우 피보험자의 동의가 필요합니다.(모바일을 통한 정보제공 동의절차 진행) 
+									<ul class="bullet c">
+										<li>다음 영업일 18:00까지 피보험자가 동의해야 접수가 완료되며, 동의하지 않으면 신청이 취소됩니다.</li>
+									</ul>
+								</li>
+								<li>미성년자 청구 시 : 계약자/수익자 동일 또는 피보험자/수익자가 동일하며 피보험자가 미성년자인 계약의 청구건에 한합니다.(계약자 본인청구만 할 수 있습니다.)</li>
+								<li>추가필요서류 : 자녀의 기본증명서 및 가족관계 증명서 (계약자, 수익자 동일건은 제외)</li>
+							</ul>
+							
+						</div>
+						<h2 class="hd-tit4">유의사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>청구서류를 촬영하여 이미지 등록을 하셔야 합니다.</li>
+								<li>사고보험금 접수시간은 08:00 ~23:00입니다. 
+									<ul class="bullet c">
+										<li>18시 이후 청구, 주말 또는 공휴일 청구건의 청구일은 그 다음 영업일 입니다.</li>
+									</ul>
+								</li>                                   
+								<li>상법 제 662조에 따라 보험금 청구권은 3년간 행사하지 아니하면 소멸시효가 완성됩니다. <br>(단, 2015.03.12 이전 청구사유 발생건은 2년)</li>
+								<li>온라인 접수 요건에 해당하지 않는 경우는 접수 후에도 정상적인 지급이 되지 않으므로, 담당 컨설턴트를 통해 FP대리접수 등 가능한 청구방법을 확인 후 접수하셔야 합니다.</li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					
+				</main>
+			</div>	
+			<div class="pbt">
+				<div class="btn-set">					
+					<button type="button" class="btn a rd lg" onclick="location.href='UT0603.html'">확인</button>
+				</div>
+			</div>	
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	
+	<script>
+		ui.popup.open('pop-terms-detail');  // 팝업 열기
+		
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

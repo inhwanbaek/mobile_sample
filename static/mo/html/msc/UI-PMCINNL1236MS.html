@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a pop-ulinsrnpratd2" id="pop-ulinsrnpratd2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">UL자유납입보험료 자동이체납입제도 및 유의사항</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt isbotb">
+					<div class="text-group type2">
+						<h2 class="hd-tit4">UL자유납입보험료 자동이체납입제도 및 유의사항</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>매월 납입해야 하는 유니버셜 상품의 자유납입보험료를 등록한 은행 입출금계좌에서 지정한이체일에 이체하여 자동으로 납입하는 제도입니다. </li>
+								<li>등록 가능한 이체희망일은 5일, 10일, 15일, 20일, 25일입니다.</li>
+								<li>이체희망일에 보험료가 이체되지 않은 경우 해당월 말일까지 5일 단위로 재청구됩니다.</li>
+								<li>UL자유납입보험료 자동이체 신청은 유니버셜 기능이 부가되고 보험료 납입의무기간이 지난 계약만 가능합니다. 유니버셜 기능 부가상품의 보험료 납입의무기간은 가입상품별, 가입날짜별로 다릅니다. (2년, 3년, 4년, 5년, 7년, 10년, 12년 등)</li>
+								<li>신청 시 보험계약 선택 후 원하시는 UL자유납입 보험료 금액을 입력합니다. 입력 가능한 금액은 1만원부터 최대 납입가능 보험료까지입니다.
+									<br>
+									※ 최대 납입가능 보험료는 상품별 세부 납입 기준에 따릅니다. 단, <i class="n">①</i> 월대체보험료 납입 가능 기간이 12개월 미만인 경우 월대체보험료 이상 1만원 단위로 등록할 수 있습니다. <i class="n">②</i> 월대체보험료 공제 재원 부족 시 UL자유납입보험료 자동이체를 신청할 수 없습니다.
+								</li>
+								<li>보험료 합산이체
+									<ul class="bullet c">
+										<li>자동이체가 등록된 계약 중 출금계좌와 이체일이 같은 2건 이상의 계약은 보험료가 합산되어 1건으로 이체됩니다. </li>
+										<li>합산이체 시 고객님의 통장에는 납입보험료 내역이 1건으로 간략하게 표기됩니다. </li>
+										<li>이메일 수신에 동의하시면 합산이체 결과를 이메일로 안내해 드립니다.</li>
+										<li>UL자유납입 자동이체 신청 시, 최초 출금 개시일자는 신청일로부터 유효하며, 처리일이 이체희망일 이전인 경우는 신청하신 해당월부터, 처리일이 이체희망일 이후인 경우에는 신청월의 다음달부터 최초 출금이 개시됩니다. </li>
+									</ul>
+								</li>
+								<li>UL자유납입보험료 자동이체 신청 시, 최초 이체시작일은 신청일로부터 유효합니다. 자동이체 등록일이 이체희망일 이전이면 신청하신 달부터 최초 이체가 시작되고, 자동이체 등록일이 이체희망일 이후면 신청한 다음 달부터 이체가 시작됩니다. </li>
+							</ul>
+						</div>
+
+					</div>
+				</main>
+			</div>
+			<div class="pbt b no-hide">
+				<div class="box-set">
+					<div class="hd-tit4">위 내용을 확인하셨습니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-ulinsrnpratd2');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

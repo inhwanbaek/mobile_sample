@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header_abt.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">연혁 및 수상</h2>
+			</div>
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">2011~현재</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">1997~2010년</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">1981~1996년</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">1958~1980년</a></li>
+				</ul>
+			</div>
+			<div class="upper-pic">
+				<div class="nail-pic">
+					<img src="../../img/abt/history.png" alt="">
+				</div>
+				<div class="cont-pic">
+					<h3 class="tit">'금융소비자보호 우수기관 금융감독원장 표창' 수상</h3>
+					<span class="date">2012.05 ~ 2012.08</span>
+					<div class="box-detail">
+						교보생명이 금융감독원이 실시한 '2019년도 소비자보호 실태평가'에서 생명보험사 중 최우수 기업으로 선정되며 수상의 영예를 안았다.
+						교보생명은 9개 평가 항목에서 '양호' 이상의 등급을 받았다.
+						특히 영업 지속가능성과 금융사고 등 3개 부문에서는 5단계 중 최고 등급인 '우수'를 획득했다.
+					</div>
+				</div>
+			</div>
+			<div class="lower-pic">
+				<div class="swiper-container pic-swiper">
+					<ul class="list-pic tvad swiper-wrapper">
+						<!-- [D] 2022-07-14 썸네일 텍스트 추가 -->
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-pic">
+									<img src="../../img/abt/history_2022.jpg" alt=""><!-- [D] 2022-09-02 이미지 경로 수정 -->
+								</div>
+								<p class="nail-tit">「교보인의 Vision 2025」 선포</p>
+								<p class="nail-date">2021.04.28</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-pic">
+									<img src="../../img/abt/history_2019.jpg" alt=""><!-- [D] 2022-09-02 이미지 경로 수정 -->
+								</div>
+								<p class="nail-tit">'금융소비자보호 우수기관 금융감독원장 표창' 수상</p>
+								<p class="nail-date">2021.04.28</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#link">
+								<div class="nail-pic">
+									<img src="../../img/abt/history_2016.jpg" alt=""><!-- [D] 2022-09-02 이미지 경로 수정 -->
+								</div>
+								<p class="nail-tit">2020 '대한민국 ICT 이노베이션 어워드' 과</p>
+								<p class="nail-date">2021.04.28</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<div class="nail-pic">
+								<img src="../../img/abt/history_2011.jpg" alt=""><!-- [D] 2022-09-02 이미지 경로 수정 -->
+							</div>
+							<p class="nail-tit">「교보인의 Vision 2025」 선포</p>
+							<p class="nail-date">2021.04.28</p>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btn-pic-prev"><span class="blind">이전</span></button>
+				<button type="button" class="btn-pic-next"><span class="blind">다음</span></button>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+</div>
+<script>
+	var picSwiper = new Swiper(".pic-swiper", {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: ".btn-pic-next",
+			prevEl: ".btn-pic-prev",
+		}
+		// [D] 2022-07-14 pagination 삭제
+	});
+</script>
+</body>
+</html>

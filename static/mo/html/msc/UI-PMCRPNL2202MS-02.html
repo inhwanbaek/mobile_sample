@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-pdmpsell" id="pop-pdmpsell">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">매도신청</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="selltents">
+						<div class="sellhdt">
+							<div class="tit">(무)교보 IRP개인형 GIC 1년</div>
+							<div class="tdl">
+								<div class="tdt">적립금액</div>
+								<div class="tdd">
+									<span class="prc">
+										<strong class="p">6,736,104</strong><i class="w">원</i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="selllist">
+							<div class="hinfo">
+								<div class="count">총 <strong>3</strong>개</div>
+								<div class="date">2020.01.01 기준</div>
+							</div>
+
+							<ul class="pmcard-list">
+								<li>
+									<div class="ut-dcard e">
+										<div class="inr">
+											<div class="stds">
+												<div class="dtds">
+													<ul class="dlt">
+														<li>
+															<div class="dl">
+																<div class="dt">매수일</div>
+																<div class="dd">2019-11-19</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">만기일</div>
+																<div class="dd">2020.01.01</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적립 이율</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">1.80</strong><i class="w">%</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">적립 금액</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p">6,736,104</strong><i class="w">원</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt c">매도금액</div>
+																<div class="dd">
+																	<div class="fmset col">
+																		<div class="fm">
+																			<span class="input won a"><input type="tel" pattern="\d*" title="매도금액" placeholder="최대10,736,104" value="6,736,104"><i class="w">원</i></span>
+																		</div>
+																		<div class="bts">
+																			<div class="btn-set"><button type="button" class="btn sm">전액매도</button></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="dl">
+																<div class="dt">중도해지차액</div>
+																<div class="dd st">
+																	<span class="prc">
+																		<strong class="p orange">736,104</strong><i class="w">원</i>
+																	</span>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt b no-hide">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="box-set">
+					<div class="pdmd-ttl">
+						<div class="box">
+							<div class="htit">매도금액</div>
+							<div class="hrlt">
+								<div class="dd b">
+									<span class="prc">
+										<strong class="p">6,736,104</strong><i class="w">원</i><em>(100%)</em>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pdmpsell');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

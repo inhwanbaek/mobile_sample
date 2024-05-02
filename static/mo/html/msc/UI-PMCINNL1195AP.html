@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- [D] 2022-02-25 전체변경 -->	
+	<article class="pop-layer a pop-msc-cetis" id="pop-msc-cetis">
+		<div class="pbd">
+			<!-- [D] 2022-02-18 문구변경 -->			
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">인증서 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">	
+					<div class="centbox">
+						<div class="txt">
+							<div class="bt kko"><i class="blind">카카오 인증</i></div><!-- [D] 2022-08-12 kko 클래스 변경 -->
+							<div class="bt kbpay"><i class="blind">KB모바일 인증</i></div>
+							<div class="bt payco"><i class="blind">페이코 인증</i></div>
+							<div class="bt pass"><i class="blind">패스 인증</i></div>
+							<div class="bt sspass"><i class="blind">삼성패스 인증</i></div>
+							<div class="bt ctcm"><i class="blind">공동인증서</i></div>
+						</div>
+						<div class="hd-tit2">인증을 위해 개인정보를 입력해 주세요.</div>
+					</div>
+
+					<!-- 개인 인증서 -->
+					<div class="ut-form a">
+						<ul class="form">
+							<li>
+								<span class="input a no">
+									<label class="lb" for="input_id1">이름</label>
+									<input id="input_id1" type="text" placeholder="실명 입력" value="김교ㅂ">
+								</span>
+								<div class="vald-msg show no">이름을 정확하게 입력해 주세요.</div>
+							</li>
+							<li>
+								<span class="input a ut-rsnum">
+									<label class="lb" for="rsnum_2">주민(외국인)등록번호</label>
+									<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민(외국인)등록번호 앞 6자리" placeholder="예) 210101"><!-- [웹접근성] 1st 수정 -->
+									<i class="ds">-</i>
+									<input type="tel" class="ln" pattern="\d*" title="주민(외국인)등록번호 뒤 7자리" placeholder="예) 1234567"><!-- [웹접근성] 1st 수정 -->
+								</span>
+							</li>
+							<li>
+								<div class="ut-phone">
+									<span class="input a tnum">
+										<label class="lb" for="phone-0">휴대폰번호</label>
+										<input type="tel" pattern="\d*" placeholder="[-] 없이 입력해주세요" id="phone-0" value="">
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //개인 인증서 -->
+
+					
+					<div class="ut-terms a">						
+						<div class="plbox">
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인정보 이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 서비스 이용약관 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 고유식별번호 처리 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 제3자 정보제공 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+				</main>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">				
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">이전</a>
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+		
+	</article>
+	<script>
+		ui.popup.open('pop-msc-cetis');
+	</script>
+
+</div>
+</body>
+</html>

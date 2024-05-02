@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"전자민원접수"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc cmplaint" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect frm-bunch">
+				<h2 class="hd-tit3">전자민원접수 작성</h2>
+				<div class="ut-form a">
+					<p class="info-ast"><em class="ast"></em>필수입력항목</p>
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<label class="lb" for="inp-name">이름<em class="ast">필수항목</em></label>
+								<input type="text" title="이름 입력" placeholder="실명 입력" value="홍길동" readonly id="inp-name">
+							</span>
+						</li>
+						<!-- [D] 2022-03-23 UI/UX 변경 <li>
+							<span class="input a">
+								<label class="lb" for="inp-num">통합번호<em class="ast">필수항목</em></label>
+								<input type="tel" title="통합번호 입력" placeholder="통합번호 입력" value="1234567890" readonly id="inp-num">
+							</span>
+						</li>-->
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<div class="tit-area">
+					<h3 class="hd-tit4"><label for="input-nm2">보험증권번호<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a no-lb">
+								<input type="tel" pattern="\d*" placeholder="증권번호 입력" value="19405****470" readonly id="input-nm2">
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-set ins pt16 db">
+					<span data-ui-balloon="center,top" aria-describedby="ball_1">버튼을 눌러 보험증권번호를 선택해 주세요.</span>
+					<button type="button" class="btn md ico-nlink ico-r">보험증권번호 선택</button>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch"><!-- [D] 2022-03-23 UI/UX 변경 -->
+				<div class="tit-area">
+					<h3 class="hd-tit4">전화번호<em class="ast">필수항목</em></h3>
+				</div>
+				<div class="ut-form a">
+					<div class="call-wrp">
+						<div class="ut-phone">
+							<span class="input a tnum"><label class="lb" for="tnum_1">전화번호 입력</label>
+								<input type="tel" pattern="\d*" placeholder="- 없이 숫자만 입력" id="tnum_1"><!-- [D] 2022-05-11 UI/UX 변경 -->
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<div class="tit-area">
+					<h3 class="hd-tit4">민원유형(계약유형)<em class="ast">필수항목</em></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<div class="rdo-grp">
+								<label class="radio"><input type="radio" name="rdo-type"><span class="txt">가입</span></label>
+								<label class="radio"><input type="radio" name="rdo-type"><span class="txt">유지</span></label>
+								<label class="radio"><input type="radio" name="rdo-type"><span class="txt">지급</span></label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<div class="tit-area">
+					<h3 class="hd-tit4"><label for="inp-tit">제목<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="input a">
+								<input type="text" title="제목 입력" placeholder="50자 이내로 입력" id="inp-tit">
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<div class="tit-area">
+					<h3 class="hd-tit4"><label for="textarea-1">내용<em class="ast">필수항목</em></label></h3>
+				</div>
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="textarea a">
+								<textarea placeholder="예) 보험 가입 시, 불편한 점이 있었습니다." id="textarea-1"></textarea>
+								<span class="num">(<i class="i" title="현재 입력 글자">00</i>/<i class="n" title="최대 입력 글자">1,300</i>자)</span><!-- [웹접근성] 1st 수정 -->
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="text-box">
+					<ul class="bullet b">
+						<li>고객님의 개인정보를 안전하게 보호하기 위해 상담/문의 내용 입력 시 <span class="point02">불필요한 개인정보는 입력하지 마시고</span> 주위에 유출되지 않도록 주의하시기 바랍니다.</li>
+						<li>로그인 후 일정 시간이 지나면 개인정보 보호를 위해 자동으로 로그아웃됩니다. 내용이 많을 경우 <span class="point02">메모장 등에 미리 작성한 뒤 붙여넣기</span>를 해 주세요.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect frm-bunch">
+				<h3 class="hd-tit4">
+					파일첨부
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<ul class="bullet b">
+									<li>이미지 파일은 10개까지 첨부할 수 있습니다.</li><!-- [D] 2022-05-11 UI/UX 변경 -->
+									<li>글자가 흐리거나 잘 보이지 않는 경우, 다시 파일을 첨부해 달라는 요청을 드릴 수 있습니다.</li>
+									<li>첨부 가능한 이미지 파일 형식은 JPG, JPEG입니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</h3>
+
+				<!-- [D] 2022-05-23 UI/UX 변경 -->
+				<ul class="ut-attachments">
+					<li>
+						<p class="tit">자료첨부</p>
+						<p class="add-btn"><button type="button" class="btn f" href="javascript:;" target="_blank" title="새창열림">첨부하기</button></p>
+					</li>
+					<li>
+						<p class="tit">자료첨부</p>
+						<p class="add-btn"><button type="button" class="btn g" href="javascript:;" target="_blank" title="새창열림">다시첨부</button></p>
+					</li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">접수</button>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+

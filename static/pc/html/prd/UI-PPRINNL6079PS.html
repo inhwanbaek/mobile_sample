@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd detail prd-detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<!-- pc ver -->
+			<section class="sect page-hdt head-top">
+				<h2 class="stit hd-tit2">(무)교보뉴플랜연금보험</h2>
+				<div class="bg-white right">
+					<!-- fnsize -->
+					<div class="ut-tooltip fnsize">
+						<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+							</div>
+						</div>
+					</div><!--// fnsize -->
+					<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+					<button type="button" class="btn-bookmark"><em class="blind">북마크</em></button>
+				</div> 
+			</section>
+
+			<section class="sect hcont bg3"><!-- 22-06-03 클래스명 추가 -->
+				<div class="t1">가입은 자유롭게, 연금은 내게 맞게!</div>
+				<div class="ut-slide-play product">
+					<div class="swiper-container swiper" data-slide-id="banner_1">
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">나만의 맞춤 연금 보험</div>
+									<div class="t3">노후자금마련 계획에 따라 자유롭게<br>보험료를 설계할 수 있어요.</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">유연한 자금운용</div>
+									<div class="t3">중도인출, 추가납입을 통해<br>목돈을 마련할 수 있어요. </div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">다양한 방식으로 연금 수령</div>
+									<div class="t3">지급개시를 앞당길 수도 뒤로 미룰 수도 있어요.</div>
+								</a>
+							</li>
+						</ul>
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- [s] 22-08-04 현행화 -->
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 현행화 -->
+
+			<!-- 모바일 컨버팅 영역 -->
+			<section class="">
+				<!-- 탭 -->
+				<div class="ut-tabs c lg">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이런 점이 좋아요</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이럴 때 필요해요</a></li>
+					</ul>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 이런 점이 좋아요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-area active">
+
+					<div class="cont-sec sec3 sec4">
+						<div class="tit">교보 ‘뉴플랜연금보험’의 장점</div>
+						<div class="txt">가입은 자유롭게, 연금은 내게 맞게!<br>상황에 맞춰 노후 준비를 할 수 있어요.</div>
+						
+						<ul class="box-gray-list flex">
+							<li>
+								<div class="t-m12">짧은 기간 효과적인 준비</div>
+								<div class="t-b16">통합형<br>(일부일시납)</div>
+							</li>
+							<li>
+								<div class="t-m12">장기간 매월 꾸준한 준비</div>
+								<div class="t-b16">적립형<br>(월납)</div>
+							</li>
+						</ul>
+
+						<div class="img-cont">
+							<img src="../../img/prd/img_prod79_1@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								상황에 맞게 일시납+월납 또는 월납 선택 일시납 적립액(일시납+월납) 조기연금지금, 연금지급개시, 연금지급연기
+							</div>
+						</div>
+
+						<dl class="img-account">
+							<dt>조기 연금 지급</dt>
+							<dd>예상치 못한 조기퇴직 등으로 소득을 상실했을 경우 연금지급개시를 앞당길 수 있어요.</dd>
+							<dt>연금 지급 연기</dt>
+							<dd>정년 연장 등으로 연금이 필요하지 않은 경우, 연금을 뒤로 미룰 수 있어요.<br>(최대 10년까지 가능)</dd>
+						</dl>
+
+						<!-- 22-07-25 삭제 <div class="img-cont-sm"><img src="../../img/prd/img_prod79_2@2x.png" alt="종신·상속·확정기간 연금"></div> -->
+					</div>
+
+				</div>
+				<!-- // 이런 점이 좋아요 -->
+
+				<!-- 이럴 때 필요해요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-area ">
+					<div class="cont-sec sec3">
+						<div class="tit">왜 ‘ 연금보험’이 필요할까요?</div>
+						<div class="txt">노후 준비에 너무 늦거나 너무 이른 나이는 없어요. 여유로운 노후를 미리 준비해 보세요!</div>
+						<div class="s-tit">소득 크레바스란?</div>
+						<div class="balloon-txt-bg">
+							<div>직장에서 퇴직한 후 국민연금을 받기 전까지<br>소득이 없는 시기를 말합니다.</div>
+						</div>						
+						
+						<div class="img-cont">
+							<img src="../../img/prd/img_prod79_3@2x.png" alt="은퇴시점에서 국민연금 개시 시점까지 연금 없이 사는 기간 평균 12.5년">
+							<div>출처: 「생애금융보고서」, 하나금융그룹 100년행복연구센터, 2020</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 이럴 때 필요해요 -->
+				<div class="compliance">준법감시인확인필 1-2204-26 디지털채널통합TF(2022.04.13)</div><!-- 22-08-08 준법 추가 -->
+
+				<div class="btn-set vt">
+					<button type="button" class="btn md ico-nlink ico-r">가입 전 반드시 알아야 할 사항</button>
+					<button type="button" class="btn md ico-nlink ico-r">보험약관</button>
+					<button type="button" class="btn md ico-elink ico-r">가격공시실</button>
+				</div>
+				<!-- // 모바일 컨버팅 영역 -->
+
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set">
+							<button type="button" class="btn lg rd a">상담신청</button>
+						</div>
+					</div>
+				</nav><!-- 22-08-08 위치 수정 -->
+
+				<!-- 상세 하단 공통영역 -->
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">예금자보호 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>내용</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="img-banner-wrap btm" id="ball_0">
+					<span data-ui-balloon="left,top" aria-describedby="ball_0">위 보험상품은 추가 혜택을 드려요.</span>
+					<div class="img-banner bn1">교보건강코칭 서비스</div>
+					<div class="img-banner bn2">교보헬스케어 서비스</div>
+				</div>
+
+				<ul class="ut-bnr-lst img">
+					<li>
+						<a href="javascript:;" class="lk b">
+							<strong class="tit">보험료 이렇게 따라하세요</strong>
+							<span class="txt">생년월일만 입력하면! 바로~~~</span>
+						</a>
+					</li>
+				</ul>
+				<!-- // 상세 하단 공통영역 -->
+
+
+				<!-- [D] 2022-08-12 배너추가 -->
+				<div class="banner-box bt">
+					<div class="ut-slide-play type-b">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //end [D] 2022-08-12 배너추가 -->
+
+			</section>
+			
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!-- [웹접근성] 3rd 수정 (가로 스크롤 tabindex="0")-->
+	<article class="pop-layer a sm pop-shares" id="pop-shares">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보험료 및 해지환급금 예시</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents prd insurance-pop">
+					<div class="sect">
+						<h3 class="hd-tit3">주계약 보험료 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약 보험가입금액 1억원, 표준체, 20년납, 월납</div>
+						</div>
+						<div class="ut-tbl a scroll-x" tabindex="0"> <!-- [웹접근성] 3rd 수정 (가로 스크롤 tabindex="0")-->
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">주계약 보험료 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2" colspan="2">구분</th>
+										<th scope="col" colspan="3">남자</th>
+										<th scope="col" colspan="3">여자</th>
+									</tr>
+									<tr>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+										<th scope="col">30세</th>
+										<th scope="col">40세</th>
+										<th scope="col">50세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="6">저해지환급금형</th>
+										<th scope="row">기본형플러스</th>
+										<td class="txt-r">295,000</td>
+										<td class="txt-r">359,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">266,000</td>
+										<td class="txt-r">317,000</td>
+										<td class="txt-r">382,000</td>
+									</tr>
+									<tr>
+										<th scope="row">기본형</th>
+										<td class="txt-r">269,000</td>
+										<td class="txt-r">334,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">241,000</td>
+										<td class="txt-r">291,000</td>
+										<td class="txt-r">356,000</td>
+									</tr>
+									<tr>
+										<th scope="row">보장강화형플러스</th><!-- 22-08-08 -->
+										<td class="txt-r">328,000</td>
+										<td class="txt-r">401,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">296,000</td>
+										<td class="txt-r">353,000</td>
+										<td class="txt-r">-</td>
+									</tr>
+									<tr>
+										<th scope="row">보장강화형</th><!-- 22-08-04 -->
+										<td class="txt-r">299,000</td>
+										<td class="txt-r">372,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">267,000</td>
+										<td class="txt-r">323,000</td>
+										<td class="txt-r">396,000</td>
+									</tr>
+									<tr>
+										<th scope="row">암보장형플러스</th>
+										<td class="txt-r">271,000</td>
+										<td class="txt-r">324,000</td>
+										<td class="txt-r">400,000</td>
+										<td class="txt-r">251,000</td>
+										<td class="txt-r">295,000</td>
+										<td class="txt-r">349,000</td>
+									</tr>
+									<tr>
+										<th scope="row">암보장형</th>
+										<td class="txt-r">245,000</td>
+										<td class="txt-r">299,000</td>
+										<td class="txt-r">374,000</td>
+										<td class="txt-r">225,000</td>
+										<td class="txt-r">269,000</td>
+										<td class="txt-r">323,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="sect">
+						<h3 class="hd-tit3">해지환급금 예시</h3>
+						<div class="t-flex">
+							<div class="tt">기준 :</div>
+							<div class="tc">주계약보험가입금액 1억원, 남자 40세, 표준체, 20년납, 월납, 세전, 계약해당일 기준</div>
+						</div>
+						<div class="t-blue">기본형플러스 저해지환급금형(50%해지지급형)</div>
+						<div class="ut-optset optset">							
+							<div class="opt pr">
+								<span class="unit">(단위:만원)</span>
+							</div>
+						</div>
+						<div class="ut-tbl a scroll-x" tabindex="0"> <!-- [웹접근성] 3rd 수정 (가로 스크롤 tabindex="0")-->
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">해지환급금 예시 테이블</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2">경과기간</th>
+										<th scope="col" rowspan="2">총납입보험료(원)</th>
+										<th scope="col" colspan="2">공시이율 가정(2.30%)</th>
+										<th scope="col" colspan="2">평균공시시율과 공시이율 중<br>낮은 이율 가정(2.25%)</th>
+										<th scope="col" colspan="2">최저해지환급금</th>
+									</tr>
+									<tr>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+										<th scope="col">해지환급금</th>
+										<th scope="col">환급률</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1년</th>
+										<td class="txt-r">4,308,000</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+										<td class="txt-r">-</td>
+										<td class="txt-r">0.0%</td>
+									</tr>
+									<tr>
+										<th scope="row">2년</th>
+										<td class="txt-r">8,616,000</td>
+										<td class="txt-r">164</td>
+										<td class="txt-r">19.1%</td>
+										<td class="txt-r">164</td>
+										<td class="txt-r">19.1%</td>
+										<td class="txt-r">164</td>
+										<td class="txt-r">19.1%</td>
+									</tr>
+									<tr>
+										<th scope="row">3년</th>
+										<td class="txt-r">12,924,000</td>
+										<td class="txt-r">357</td>
+										<td class="txt-r">27.7%</td>
+										<td class="txt-r">357</td>
+										<td class="txt-r">27.7%</td>
+										<td class="txt-r">357</td>
+										<td class="txt-r">27.7%</td>
+										
+									</tr>
+									<tr>
+										<th scope="row">5년</th>
+										<td class="txt-r">21,540,000</td>
+										<td class="txt-r">750</td>
+										<td class="txt-r">34.8%</td>
+										<td class="txt-r">750</td>
+										<td class="txt-r">34.8%</td>
+										<td class="txt-r">750</td>
+										<td class="txt-r">34.8%</td>
+									</tr>
+									<tr>
+										<th scope="row">10년</th>
+										<td class="txt-r">43,080,000</td>
+										<td class="txt-r">1,680</td>
+										<td class="txt-r">39.0%</td>
+										<td class="txt-r">1,680</td>
+										<td class="txt-r">39.0%</td>
+										<td class="txt-r">1,680</td>
+										<td class="txt-r">39.0%</td>
+									</tr>
+									<tr>
+										<th scope="row">19년</th>
+										<td class="txt-r">81,852,000</td>
+										<td class="txt-r">3,448</td>
+										<td class="txt-r">42.1%</td>
+										<td class="txt-r">3,448</td>
+										<td class="txt-r">42.1%</td>
+										<td class="txt-r">3,448</td>
+										<td class="txt-r">42.1%</td>
+									</tr>
+									<tr>
+										<th scope="row">20년</th>
+										<td class="txt-r">86,160,000</td>
+										<td class="txt-r">8,078</td>
+										<td class="txt-r">93.8%</td>
+										<td class="txt-r">8,076</td>
+										<td class="txt-r">93.7%</td>
+										<td class="txt-r">8,019 </td>
+										<td class="txt-r">93.1%</td>
+									</tr>
+									<tr>
+										<th scope="row">30년</th>
+										<td class="txt-r">86,160,000</td>
+										<td class="txt-r">9,410</td>
+										<td class="txt-r">109.2%</td>
+										<td class="txt-r">9,407</td>
+										<td class="txt-r">109.2%</td>
+										<td class="txt-r">9,317</td>
+										<td class="txt-r">108.1%</td>
+									</tr>
+									<tr>
+										<th scope="row">40년</th>
+										<td class="txt-r">86,160,000</td>
+										<td class="txt-r">11,258</td>
+										<td class="txt-r">130.7%</td>
+										<td class="txt-r">11,254</td>
+										<td class="txt-r">130.6%</td>
+										<td class="txt-r">11,129</td>
+										<td class="txt-r">129.2%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="bullet b">
+							<li>위의 예시금액은 세전 기준이며, 예시금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+							<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결비용 및 계약관리비용(해지공제금액 포함), 보험금 보장에 필요한 최저보장보험금 보증비용 및 해지환급금 보장에 필요한 최저해지환급금 보증비용(단, 최저해지환급금을 보증하지 않는 경우는 최저해지환급금 보증비용 제외) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+							<li>위의 해지환급금은 보험료를 계약해당일에 납입하고 중도인출 및 추가납입은 고려하지 않고 산출한 금액으로 보험료를 계약해당일에 납입하지 않았을 때 또는 중도 인출 및 추가납입이 있을 때에는 해지환급금이 변경됩니다.</li>
+							<li>위의 예시금액은 납입완료보너스, 장기유지보너스를 포함한 주계약의 해지환급금을 최저보증이율, 평균공시이율과 공시이율 중 낮은 이율, 2022. 7월 현재 보장성상품에 적용하는 공시이율을 기준으로 계산한 금액이며, 기본형플러스 계약의 경우 「공시이율을 적용한 금액」과 「예정기본적립금 산출이율(2.0%)을 적용한 금액」 중 큰 금액을 해지환급금으로 지급합니다. 다만, 저해지환급금형 계약의 보험료 납입기간 중 해지환급금은 「일반형 계약의 예정기본해지환급금X해지지급률(50%)」에 가산적립금을 더한 금액으로 합니다.</li>
+							<li>위의 해지환급금은 공시이율을 적용하여 계산되며, 공시이율이 변동되는 경우에는 해지환급금도 변동됩니다.</li>
+							<li>예시표의 경과기간은 해당년도 계약해당일 도래기준입니다.(다만, 저해지환급금형의 경우 위의 예시된 해지환급금은 해당년도의 저해지환급금형의 해지지급률의 변동이 반영된 금액입니다.)</li>
+							<li>위의 환급률은 계약자가 납입한 보험료 대비 해지환급금과 생활자금누계약의 비율입니다.</li>
+							<li>공시이율은 매월 1일 회사가 정한 이율로 매월 1일부터 당월의 마지막 날까지 1개월간 확정 적용하며, 회사는 일반계정의 운용자산 이익률과 시장금리를 기준으로 향후 예상수익 등 경영환경을 고려하여 공시이율을 결정합니다.</li>
+							<li>공시이율의 최저보증이율은 연복리 0.75%입니다.</li>
+							<li>평균공시이율은 금융감독원장이 정하는 바에 따라 산정한 전체 보험회사 공시이율의 평균으로, 전년도 9월말 기준 직전 12개월간 보험회사 평균공시이율을 말하며, 이 계약 체결 시점의 평균공시이율은 2.25%입니다.</li>
+							<li>위의 예시금액은 보험기간 중 예시 이율이 변동하지 않는다는 가정 하에 산출된 금액입니다.</li>							
+						</ul><!-- 22-08-08 -->
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<script>
+		ui.popup.open('pop-shares');  // 팝업 열기
+	</script>
+	<!-- [웹접근성] 3rd 수정 (가로 스크롤 tabindex="0")-->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

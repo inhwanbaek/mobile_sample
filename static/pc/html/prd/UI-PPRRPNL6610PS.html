@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd retire invtm" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">같이투자 이용안내</h2>
+			</div>
+			
+			<!-- 22-05-24 ul, li 클래스 추가 -->
+			<ul class="ut-bnr-lst img n-icon">			
+				<li class="ico01">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">같이투자 설명서</strong>
+						<span class="txt">같이투자 쉽게 알아보기</span>
+					</a>
+				</li>
+				<li class="ico02">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">같이투자자 등록</strong>
+						<span class="txt">같이투자자 등록 안내</span>
+					</a>
+				</li>
+				<li class="ico03">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">같이투자자 운영 규정</strong>
+						<span class="txt">같이투자자 운영 및 랭킹 규정 안내</span>
+					</a>
+				</li>
+				<li class="ico04">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">수익률 대회 규정</strong>
+						<span class="txt">대회 관련 규정 안내</span>
+					</a>
+				</li>
+				<li class="ico05">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">피드 작성 규정</strong>
+						<span class="txt">피드 및 댓글 작성 안내</span>
+					</a>
+				</li>
+				<li class="ico06">	
+					<a href="javascript:;" class="lk b">
+						<strong class="tit">자주 하는 질문</strong>
+						<span class="txt">같이투자 관련 자주 하는 질문과 답변</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- 하단 고정영역 -->
+			<!-- <nav class="floatbots">
+				<div class="inr">				
+					<div class="btn-set">
+						<button type="button" class="btn rd lg a">같이투자자 상품 가져오기</button>
+					</div>
+				</div>
+			</nav> -->
+			<!-- //하단 고정영역 -->
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

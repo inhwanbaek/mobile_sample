@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"펀드신규가입"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page prd futr bg-gray" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">5. 펀드 상품 선택</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<!-- [D] 2022-05-27 단계 숫자 변경 -->
+								<span class="tot"><b class="b">12</b></span>
+								<span class="num"><b class="b">7</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="futr-tit">
+				<h2 class="hd-tit2">가입하고 싶은 펀드상품을<br>선택해 주세요.</h2>
+			</div>
+
+			<!-- [D] 2022-04-08 삭제
+			<div class="checkbox-flex">
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">MMF</span></label>
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">채권형</span></label>
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">채권혼합형</span></label>
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">주식혼합형</span></label>
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">주식형</span></label>
+				<label class="checkbox"><input type="checkbox" checked><span class="txt">기타</span></label>
+			</div>
+			<div class="btn-set">
+				<button type="button" class="btn md">조회</button>
+			</div>
+			-->
+
+			<div class="card-product">
+				<div class="result-item">
+					<!-- [D] 2022-03-29 텍스트 수정 -->
+					<p class="total">총 <b>300</b>개</p> 
+					<p class="date">2021.01.01 기준</p> 
+				</div>
+			
+				<div class="ut-dcard a account" data-tog-cls="box">
+					<div class="stds">
+						
+						<div class="ut-bdgs">
+							<em class="bdg">수시입출금식</em>
+							<em class="bdg">정기예금형</em>
+							<em class="bdg">맞춤형</em>
+							<em class="bdg">채권매칭형</em>
+							<em class="bdg">주식매칭형</em>
+							<em class="bdg">원금보장형</em>
+
+							<em class="bdg h">매우낮은위험</em>
+							<em class="bdg k">낮은위험</em>
+							<em class="bdg l">보통위험</em>
+							<em class="bdg m">다소높은위험</em>
+							<em class="bdg i">높은위험</em>
+							<em class="bdg i">매우높은위험</em>
+						</div>
+						
+						<div class="hdt">
+							<div class="chk">
+								<!-- 클릭 시 비교하기 플로팅 버튼 노출 -->
+								<label class="checkbox">
+									<!-- [D] 2022-03-29 운용사명 삭제
+									<input type="checkbox" name="checkbox" id="checkbox"><span class="txt"><p class="top-txt">교보악사자산운용</p>교보악사 파워인덱스 증권 1호[주식-파생형] (A)</span>
+									-->
+									<input type="checkbox" name="checkbox" id="checkbox"><span class="txt">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</span>
+								</label>
+							</div>
+						</div>
+						<div class="cdt">
+							<div class="bxs vt">
+								<div class="dt">기준가(증감)</div>
+								<!-- [D] 2022-03-29 기준가(증감)부분에 증감 표시 추가 -->
+								<div class="dd">
+									<p class="st-pri">1,055.71</p>
+									<span class="flu dw">
+										<span class="var">-2.19%</span>
+										<span class="ico-rate">
+											<em class="blind">기준가(증감) 하락</em>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">12개월 수익률</div>
+								<div class="dd">
+									<span class="flu dw">
+										<span class="var">-2.19%</span>
+										<span class="ico-rate">
+											<em class="blind">수익률 하락</em>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">12개월 수익률</div>
+								<div class="dd">
+									<span class="flu up">
+										<span class="var">0.05%</span>
+										<span class="ico-rate">
+											<em class="blind">수익률 상승</em>
+										</span>
+									</span>
+								</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">설정액</div>
+								<div class="dd">420 억</div>
+							</div>
+							<div class="bxs">
+								<div class="dt">연간 총보수</div>
+								<div class="dd">3.30 %</div>
+							</div>
+							<div class="dtds">
+								<div class="btn-set">
+									<!-- [D] 2022-03-29 버튼 텍스트 수정 -->
+									<a href="javascript:;" role="button" class="btn md">상품정보 보기</a>
+									<a href="javascript:;" role="button" class="btn md">가입하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ut-more more">
+					<button type="button" class="btn-more">
+						<span class="tnt">
+							<em class="tm">더보기</em>
+							<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+						</span>
+					</button>
+				</div>	
+				
+
+				<div class="list-empty bd">
+					<p>검색 내역이 없습니다.</p>
+				</div>
+
+				<!-- 펼침 상태인 경우 -->
+				<div class="ut-gudbox b" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>이 자료는 정보 제공을 목적으로 하며, 펀드의 판매나 권유를 위해 작성되는 것이 아닙니다.</li>
+							<!-- [D] 2022-05-10 텍스트 수정 -->
+							<li><span class="st">이 금융상품은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</span></li>
+							<li>실적배당형 상품이므로 원금 손실이 발생할 수 있습니다.</li>
+							<li>과거 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.</li>
+							<!-- [D] 2022-04-08 삭제
+							<li>위 수익률은 MMF/채권형의 경우 연환산수익률이며, 그 외 펀드는 해당 기간의 실현수익률입니다.</li>
+							<li>당일 기준가는 21:00 이후에 적용되며, 그 이전에는 전날 영업일 기준가로 조회됩니다.</li>
+							-->
+							<li>당일 펀드 결산이 있을 경우 수익률 반영이 늦어질 수 있습니다.</li>
+							<!-- [D] 2022-04-08 삭제
+							<li>총보수는 연단위보수율을 의미하고 선취판매수수료는 매수금 1원당 지급률을 의미합니다.</li>
+							-->
+						</ul>
+					</div>
+				</div>
+
+				<div class="ut-unprotected">
+					<!-- [D] 2022-04-11 텍스트 수정 -->
+					<!-- [D] 2022-06-27 텍스트 수정 -->
+					<p class="txt">예금자보호법상 보호상품 아님. 단, 증권매수 미사용 현금잔액은 5천만원까지(회사별 보호상품 합산) 예금자보호</p>
+				</div>
+			</div>	
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<a href="javascript:;" class="btn lg rd b">이전</a>  
+				</div>
+			</div>
+		</nav>
+
+		<!-- 하단 고정영역 -->
+		<!-- 체크박스 클릭 시 노출 -->
+		<nav class="floatbots fl-otp">
+			<div class="inr">
+				<!-- 하단 버튼 옵션 레이어 영역 -->
+				<div class="pbt opt">
+					<button type="button" class="btn-option"><span class="blind">상세펼침 버튼</span></button>
+					<!-- 스크롤 영역 -->
+					<div class="opt-scrollbox">
+						<div class="cprd-wrp">
+							<div class="bg-box">
+								<p class="txt">비교할 상품을 선택해 주세요(최대 2개)</p>
+							
+							</div>
+						</div>
+					</div>
+					<!--// 스크롤 영역 -->
+					<div class="btn-set">
+						<!-- [D] 2022-05-10 텍스트 수정 -->
+						<button type="button" class="btn a rd lg">비교함 (0개)</button>
+					</div>
+				</div>		
+				<!--// 하단 버튼 옵션 레이어 영역 -->				
+			</div>
+		</nav>
+		<!-- //체크박스 클릭 시 노출 -->	
+
+		<script>
+			$(".btn-option").click(function() {
+				if($(this).hasClass("open") == true) {
+					$(".opt-scrollbox").hide();
+					$(this).removeClass("open");
+				}else {
+					$(".opt-scrollbox").show();
+					$(this).addClass("open");
+				};
+			});		
+		</script>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+	
+</div>
+</body>
+</html>

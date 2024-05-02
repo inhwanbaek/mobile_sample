@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a sm pop-document" id="pop-document"> 
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">같이투자자 상품 가져오기</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire invtm">
+					<div class="pop-cont-sect mt0">
+						<h3 class="hd-tit3">가져올 상품 목록</h3><!-- 22-07-04 수정 -->
+						<div class="box-line">
+							<ul>
+								<li class="col1">삼성퇴직연금인덱스증권자1(주식)<span>43%</span></li>
+								<li class="col2">미래에셋퇴직플랜글로벌다이나믹(채권)<span>20%</span></li>
+								<li class="col3">삼성퇴직연금인덱스증권자1(주식)<span>10%</span></li>
+								<li class="col4">삼성퇴직연금인덱스증권자1(주식)<span>9%</span></li>
+								<li class="col5">삼성퇴직연금인덱스증권자1(주식)<span>8%</span></li>
+								<li class="col6">에셋플러스코리아리치투게더 (주식)C<span>7%</span></li>
+								<li class="col7">키움퇴직연금파이어니어(채권)C<span>3%</span></li>
+							</ul><!-- 22-06-27 컬러추가 -->
+						</div>
+					</div>
+					<div class="pop-cont-sect">
+						<!-- [s] 22-06-22 수정 -->
+						<h3 class="hd-tit3">같이투자자 상품 가져오기 유의사항</h3><!-- 22-07-04 수정 --><!-- [D] 2022-08-12 텍스트 수정 -->
+						<ul class="bullet a lg mt16 mb10"><!-- [D] 2022-08-12 클래스 수정 mb30 -> mb10 -->
+							<li>같이투자자 상품 가져오기로 가져온 상품을 보유상품에 추가하게 됩니다.</li>
+							<li>ETF 상품 등 상품 가져오기 제외 대상 상품은 보유상품으로 추가되지 않습니다.</li>
+							<li>실제 보유상품 변경은 해외 펀드 등 상품 매각에 따른 소요시간으로 인해 최종 완료까지 2주 이상 걸릴 수 있습니다.</li>
+							<!-- [D] 2022-08-12 수정 -->
+							<li>상품 가져오기 제외 대상
+								<ul class="bullet c">
+									<li>투자가능 상품으로 제도에 포함되어 있지 않습니다.</li>
+									<li>타자산관리기관의 상품으로 제도에 해당 자산 관리기관이 포함되어 있지 않습니다.</li>
+									<li>신탁 상품으로 제도에 신탁계약이 체결되어 있지 않습니다.</li>
+									<li>ETF 상품으로 ETF 매매 화면에서 별도 거래 가능합니다.</li>
+									<li>창구전용 상품으로 온라인 거래가 제한되어 있습니다.</li>
+									<li>판매가 중지된 상품으로 신규 매수가 제한되어 있습니다.</li>
+								</ul>
+							</li>
+							<!--//[D] 2022-08-12 수정 -->
+						</ul>
+						<!-- // [e] 22-06-22 수정 -->
+
+						<!-- [D] 2022-08-12 삭제
+						<div class="ut-tbl a">
+							<table class="tblist" cellspacing="0" cellpadding="0">
+								<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제도구분</th>
+										<th scope="col">사유</th>
+									</tr>
+								</thead>
+								<tbody class="noline">
+									<tr>
+										<td>DC/기업형IRP</td>
+										<td class="left">
+											<ul class="bullet a">
+												<li>ETF 상품은 ETF 매매 화면에서 별도 거래</li>
+												<li>귀사의 투자 가능 상품에 포함되어 있지 않음(타자산 포함)</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>개인형IRP</td>
+										<td class="left">
+											<ul class="bullet a">
+												<li>ETF 상품은 ETF 매매 화면에서 별도 거래</li>
+												<li>타자산관리기관의 상품으로, IRP제도에서 운용 불가</li>
+												<li>신탁계약이 체결되어 있지 않음</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						-->
+						<ul class="bullet b lg">
+							<li>제외 대상의 경우 ‘X’로 표시됩니다. </li>
+						</ul>
+						<div class="mt32">
+							<div class="hd-tit4">IRP 신탁을 가입하시면 다양한 펀드에 투자하실 수 있어요.</div>
+							<div class="btn-set vt mt24">
+								<button type="button" class="btn md ico-arrow">IRP 신탁가입하기</button><!-- 22-07-04 수정 -->
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-document');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 대출계약철회 신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng apwt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<!-- [D] 2022-03-02 삭제 -->
+			<!-- <div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">2. 계약철회내용 확인</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">2</b></span>
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3"><i class="line">계약철회내용</i>을 확인해 주세요.</h2><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="msect">
+				<h3 class="hd-tit4">계약철회내용</h3><!-- [D] 2022-04-07 추가 -->
+				<div class="ut-tbl b">
+					<table class="tbform" cellpadding="0" cellspacing="0">
+						<caption><span class="tit">계약철회내용</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width:128rem;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">신청자</th>
+								<td>김교보</td>
+							</tr>
+							<tr>
+								<th scope="row">총 대출신청금액</th><!-- [D] 2022-04-07 문구수정 -->
+								<td>
+									<span class="prc">
+										<strong class="p">1,000,000</strong><i class="w">원</i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상환예정 대출잔액</th>
+								<td>
+									<span class="prc">
+										<strong class="p">158,951</strong><i class="w">원</i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">대출상품</th><!-- [D] 2022-04-07 문구수정 -->
+								<td>교보e프라임신용대출</td>
+							</tr>
+							<tr>
+								<th scope="row">대출금리</th><!-- [D] 2022-04-07 문구수정 -->
+								<td>연 3.7%</td>
+							</tr>
+							<tr>
+								<th scope="row">대출실행일</th>
+								<td>2022.1.1</td>
+							</tr>
+							<tr>
+								<th scope="row">대출기간</th>
+								<td>5년</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

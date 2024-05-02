@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-infodt" id="pop-infodt">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고유식별번호 처리 동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					
+					<div class="ut-termbox">
+						<div class="terms">			
+
+							<h2>1. 수집 및 이용 목적</h2>
+							<p>본인확인 및 전자서명</p>
+							<h2>2. 수집 항목</h2>
+							<p>주민등록번호, 외국인등록번호</p>
+							<h2>3. 고유식별정보의 보유 및 이용기간</h2>
+							<p>민원신청으로부터 10년 보유 후 삭제</p>
+							<h2>4. 수집 근거</h2>
+							<p>국민건강보험법 제 14조(업무 등) 및 법 시행령 제81조제1항(민감정보, 고유식별정보 처리시)<br><br>
+								※ 공단은 원칙적으로 개인정보 보유기간이 경과하거나 처리목적이 달성된 경우에는 지체없이 개인정보를 파기합니다. 다만, 공공기록물 관리에 관한 법률 제 27조(기록물의 폐기)에 따라 달라질 수도 있습니다.
+							</p>
+							<h2>5. 귀하는 고유식별번호 처리에 동의를 거부할 수 있습니다. 다만, 관련 민원 신청 등 이용 목적에 따른 혜택의 제한이 있을 수 있습니다.</h2>
+
+
+						</div>
+					</div>
+
+
+
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">위 사항에 동의하십니까?</div>
+				</div>
+				<div class="btn-set b2">
+					<a href="javascript:;" class="btn lg rd b">동의안함</a>
+					<a href="javascript:;" class="btn lg rd a">동의</a>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+
+
+	</article>
+	<script>
+		ui.popup.open('pop-infodt');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

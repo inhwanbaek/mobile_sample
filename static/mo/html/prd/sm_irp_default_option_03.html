@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+  <!-- pop-layer -->
+	<article class="pop-layer a pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품검색</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents page prd retire irp btm-margin">
+					<!-- ut-tabs -->
+					<div class="ut-tabs a">
+						<ul class="menu" role="tablist">
+							<li><a href="#;" class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1">투자형</a></li>
+							<li><a href="#;" class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2">예금형</a></li>
+							<li class="active"><a href="#;" class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3">디폴트옵션</a></li>
+						</ul>
+					</div>
+          <!-- //ut-tabs -->
+					<!-- tab_a -->
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3" class="active">
+						<div class="tab-cont-wrap default-option">
+							<!-- ut-optset -->
+              <div class="ut-optset">
+                <div class="info opts-btw">
+                  <span class="date">2020.01.01 기준</span>
+                  <span class="select sort">
+                    <select name="select-4" title="정렬선택">
+                      <option>수익률 3개월순</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+              <!-- //ut-optset -->
+              <!-- default-option-wrap -->
+              <div class="default-option-wrap">
+                <!-- ut-dcard -->
+                <div class="ut-dcard a account open" data-tog-cls="box">
+                  <!-- stds -->
+                  <div class="stds">
+                    <div class="ut-bdgs">
+                      <em class="bdg h">투자성향대비 적합</em>
+                      <em class="bdg h">안전자산</em>
+                    </div>
+                    <div class="hdt">
+                      <div class="chk">
+                        <label class="checkbox">
+                          <input type="radio" name="rdo-deal" id="rdo-deal02">
+                          <span class="txt"><p class="top-txt">교보생명 디폴트옵션 고위험 포트폴리오1</p></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="ddt">
+                      <div class="bxt">
+                        <ul class="lst">
+                          <li>
+                            <div class="dl">
+                              <div class="dt">수익률</div>
+                              <div class="dd red">23.26%</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn-set">
+                      <a href="javascript:;" role="button" class="btn sm ico-down ico-r">디폴트옵션 상품 설명서</a>
+                    </div>
+                  </div>
+                  <!-- //stds -->
+                  <!-- dtds -->
+                  <div class="dtds" data-tog-cls="ctn">
+                    <!-- dopt-cont -->
+                    <div class="dopt-cont">
+                      <h3 class="prd-tit">디폴트옵션 DB 차이나바이오헬스케어증권투자</h3>
+                      <ul class="dlt">
+                        <li>
+                          <div class="dl">
+                            <div class="dt">투자비율</div>
+                            <div class="dd">100%</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dl">
+                            <div class="dt">위험도</div>
+                            <div class="dd">고수익추구형</div>
+                          </div>
+                        </li>																			
+                      </ul>
+                      <div class="btn-set">
+                        <a href="javascript:;" role="button" class="btn sm">상세보기</a>
+                      </div>
+                    </div>
+                    <!-- //dopt-cont -->
+                    <!-- dopt-cont -->
+                    <div class="dopt-cont">
+                      <h3 class="prd-tit">디폴트옵션 한국투자글로벌전기차배터리증권투자</h3>
+                      <ul class="dlt">
+                        <li>
+                          <div class="dl">
+                            <div class="dt">투자비율</div>
+                            <div class="dd">100%</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dl">
+                            <div class="dt">위험도</div>
+                            <div class="dd">고수익추구형</div>
+                          </div>
+                        </li>																			
+                      </ul>
+                      <div class="btn-set">
+                        <a href="javascript:;" role="button" class="btn sm">상세보기</a>
+                      </div>
+                    </div>
+                    <!-- //dopt-cont -->
+                  </div>
+                  <!-- //dtds -->
+                  <!-- mores -->
+                  <div class="mores">
+                    <button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+                  </div>
+                  <!-- //mores -->
+                </div>
+                <!-- //ut-dcard -->
+                <!-- ut-dcard -->
+                <div class="ut-dcard a account" data-tog-cls="box">
+                  <!-- stds -->
+                  <div class="stds">
+                    <div class="ut-bdgs">
+                      <em class="bdg i">투자성향대비 부적합</em>
+                      <em class="bdg i">위험자산</em>
+                    </div>
+                    <div class="hdt">
+                      <div class="chk">
+                        <label class="checkbox">
+                          <input type="radio" name="rdo-deal" id="rdo-deal02">
+                          <span class="txt"><p class="top-txt">교보생명 디폴트옵션 고위험 포트폴리오1</p></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="ddt">
+                      <div class="bxt">
+                        <ul class="lst">
+                          <li>
+                            <div class="dl">
+                              <div class="dt">수익률</div>
+                              <div class="dd red">23.26%</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn-set">
+                      <a href="javascript:;" role="button" class="btn sm ico-down ico-r">디폴트옵션 상품 설명서</a>
+                    </div>
+                  </div>
+                  <!-- //stds -->
+                  <!-- dtds -->
+                  <div class="dtds" data-tog-cls="ctn">
+                    <!-- dopt-cont -->
+                    <div class="dopt-cont">
+                      <h3 class="prd-tit">디폴트옵션 DB 차이나바이오헬스케어증권투자</h3>
+                      <ul class="dlt">
+                        <li>
+                          <div class="dl">
+                            <div class="dt">투자비율</div>
+                            <div class="dd">100%</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dl">
+                            <div class="dt">위험도</div>
+                            <div class="dd">고수익추구형</div>
+                          </div>
+                        </li>																			
+                      </ul>
+                      <div class="btn-set">
+                        <a href="javascript:;" role="button" class="btn sm">상세보기</a>
+                      </div>
+                    </div>
+                    <!-- //dopt-cont -->
+                    <!-- dopt-cont -->
+                    <div class="dopt-cont">
+                      <h3 class="prd-tit">디폴트옵션 한국투자글로벌전기차배터리증권투자</h3>
+                      <ul class="dlt">
+                        <li>
+                          <div class="dl">
+                            <div class="dt">투자비율</div>
+                            <div class="dd">100%</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dl">
+                            <div class="dt">위험도</div>
+                            <div class="dd">고수익추구형</div>
+                          </div>
+                        </li>																			
+                      </ul>
+                      <div class="btn-set">
+                        <a href="javascript:;" role="button" class="btn sm">상세보기</a>
+                      </div>
+                    </div>
+                    <!-- //dopt-cont -->
+                  </div>
+                  <!-- //dtds -->
+                  <!-- mores -->
+                  <div class="mores">
+                    <button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+                  </div>
+                  <!-- //mores -->
+                </div>
+                <!-- //ut-dcard -->
+              </div>
+              <!-- //default-option-wrap -->
+              <!-- ut-more -->
+							<div class="ut-more more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+              <!-- //ut-more -->
+              <!-- list-empty -->
+							<div class="list-empty bd">
+								<p>추천상품이 없습니다.</p>
+							</div>
+              <!-- //list-empty -->
+						</div>
+					</div>
+          <!-- //tab_a -->
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<!-- 체크박스 클릭 시 노출 -->
+				<nav class="floatbots fl-otp">
+					<div class="inr">
+						<!-- 하단 버튼 옵션 레이어 영역 -->
+						<div class="pbt opt">
+							<button type="button" class="btn-option"><span class="blind">상세펼침 버튼</span></button>
+							<!-- 스크롤 영역 -->
+							<div class="opt-scrollbox">
+								<div class="cprd-wrp">
+									<div class="bg-box">
+										<p class="txt">비교할 상품을 선택해 주세요(최대 2개)</p>
+									</div>
+								</div>
+							</div>
+							<!--// 스크롤 영역 -->
+							<div class="btn-set">
+								<button type="button" class="btn a rd lg">보유상품변경 (0개)</button>
+							</div>
+						</div>		
+						<!--// 하단 버튼 옵션 레이어 영역 -->
+					</div>
+				</nav>
+				<!-- //체크박스 클릭 시 노출 -->
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+  <!-- pop-layer -->
+
+	<script>
+		ui.popup.open('pop-sample1');
+	</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"아파트담보대출"}'></include>
+	
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan new no-gudbox" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix step">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">4. 계좌 등록</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">7</b></span>
+								<span class="num"><b class="b">4</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="loan-tit">
+				<h2 class="hd-tit3">대출금 입금 및 상환에 사용할 <br> 계좌를 등록해 주세요.</h2>
+			</div>
+
+			<div class="ut-form a">
+				<ul class="form">
+					<li>
+						<div class="add-acc">
+							<div class="hdts">
+								<h3 class="hd-tit4">입출금계좌 등록</h3>
+								<div class="addon">
+									<button type="button" class="ico plus">입출금계좌 신규 등록</button>
+								</div>
+							</div>
+							<div class="pnls">
+								<span class="select a">
+									<label class="lb" for="sel_id01">입출금계좌 선택</label>
+									<select  id="sel_id01" name="sel_id01">
+										<option selected>[농협] 35282*****053 인조우</option>
+										<option>선택2</option>
+										<option>선택3</option>
+									</select>
+								</span>
+							</div>
+							<div class="pnls-b">
+								<span class="tt">등록 가능한 은행</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help sm bt-tooltip">도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<span class="blind">등록 가능한 은행의 도움말</span>
+											<ul class="bullet b">
+												<li>스탠다드차티드, KB국민, 우리, 한국씨티, IBK기업, 농협중앙회, 농협조합, 외환, 대구, 신한(조흥.신한),부산, 하나, 경남, 우체국, 광주, 전북, 수협, 산업, 제주(총19개)
+												</li>
+												<li>
+													가상계좌는 즉시이체 수납 불가한 계좌입니다,(증권사 연계게좌, CMA, MMF, MMDA 등)
+												</li>
+												<li>은행사정에 따라 이용시간에 제한이 있을수 있습니다.
+												</li>
+												<li>IBK기업은행 평생계좌(고객이 전화번호 등 임의 생성한 번호로 입금전용계좌)는 자동이체 및 즉시이체 거래불가
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="select a">
+							<label class="lb" for="sel_id02">자동이체일</label>
+							<select id="sel_id02" name="sel_id02">
+								<option selected>자동이체일 선택</option>
+								<option>5일</option>
+								<option>10일</option>
+								<option>15일</option>
+								<option>20일</option>
+								<option>25일</option>
+								<!-- <option>30일</option> --> <!-- [D] 2022-06-10 30일 삭제 -->
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="input a ut-date"><label class="lb" for="input_11">대출실행일</label><input type="tel" id="input_11"  placeholder="YYYY.MM.DD" value="2020.01.01" class="datepicker" ></span>
+					</li>
+				</ul>	
+			</div>
+			
+			<div class="gbox">
+				<p class="tit">선택 가능한 대출 실행일</p>
+				<p class="date">2020.01.03 ~ 2020.01.31</p>
+			</div>
+		
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot">
+					<div class="hd-tit5">대출금 입금 및 상환을 위한 출금이체에 동의하십니까?</div>
+					<div class="rdos">
+						<label class="radio" for="chk01"><input type="radio" name="radio9" id="chk01" checked><span class="txt">동의</span></label>
+						<label class="radio" for="chk02"><input type="radio" name="radio9" id="chk02"><span class="txt">동의하지 않음</span></label>
+					</div>
+				</div>
+				<div class="btn-set ">
+					<a href="javascript:;" class="btn lg rd a">다음</a>
+				</div>
+			</div>
+		</nav>
+		<!-- //하단 고정영역 -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd detail prd-detail" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<!-- pc ver -->
+			<section class="sect page-hdt head-top">
+				<h2 class="stit hd-tit2">(무)교보간편해요실속있는종신보험 (보증비용부과형)</h2>
+				<div class="bg-white right">
+					<!-- fnsize -->
+					<div class="ut-tooltip fnsize">
+						<button type="button" class="btn-fnsize bt-tooltip"><em class="blind">글자크기 조정하기</em></button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p class="txt">키보드 <em class="crtl">Crtl</em>버튼과 마우스휠 "상하"로 움직이면 <br>"확대" "축소"가 가능합니다.</p>
+							</div>
+						</div>
+					</div><!--// fnsize -->
+					<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+					<button type="button" class="btn-bookmark"><em class="blind">북마크</em></button>
+				</div> 
+			</section>
+
+			<section class="sect hcont bg1"><!-- 22-06-03 클래스명 추가 -->
+				<div class="t1">병력이 있어도, 나이가 많아도 가입 가능한 보험</div>
+				<div class="ut-slide-play product">
+					<div class="swiper-container swiper" data-slide-id="banner_1">
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+							<a href="javascript:;" class="box">
+									<div class="t2">3개월 이내</div>
+									<div class="t3">입원, 수술, 추가 검사 필요 소견이 없다면</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">2년 이내</div>
+									<div class="t3">질병·사고로 입원, 수술 이력이 없다면</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="javascript:;" class="box">
+									<div class="t2">5년 이내</div>
+									<div class="t3">암, 간경화, 투석 중인 만성신장질환, 파킨슨병, 루게릭병으로 진단, 입원,<br>수술 이력이 없다면</div>
+								</a>
+							</li>
+						</ul>
+						<div class="control">
+							<div class="dots"></div>
+							<div class="plys"><button type="button" class="bt play">정지</button></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="sect top-cont">
+				<div class="left">
+					<div class="age">40세 남자, 20년납, 저해지환급금형(50%), 기본형플러스 기준</div><!-- 22-07-29 수정 -->
+					<dl class="insurance">
+						<dt>월 보험료<span>(주계약기준)</span></dt><!-- 22-08-02 결함 수정 -->
+						<dd><strong>308,000</strong>원</dd><!-- 22-07-27 해지환급금 수정사항 -->
+					</dl>
+					<!-- 22-08-09 삭제
+					<div class="btn-set vt">
+						<a href="javascript:;" class="btn md ico-calculator">내 보험료 확인하기</a>
+					</div> 
+					-->
+				</div>
+				<div class="right">
+					<dl class="ensure">
+						<dt>보장내용</dt>
+						<dd>
+							<ul>
+								<li><span>사망보험금</span><span class="right">1억원</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<button type="button" class="btn sm ico-r ico-arrow">보험료 및 해지환급금 예시</button><!-- 22-07-20 추가 -->
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- [s] 22-08-04 추가 case2 -->
+			<section class="sect top-cont">
+				<div class="left">
+					<div class="age">40세 남자, 20년납, 저해지환급금형(50%), 기본형플러스 기준</div>
+					<dl class="insurance">
+						<dt>월 보험료<span>(주계약기준)</span></dt>
+						<dd><strong>308,000</strong>원</dd>
+					</dl>
+				</div>
+				<div class="right">
+					<dl class="ensure">
+						<dt>보장내용</dt>
+						<dd>
+							<ul>
+								<li><span>진단보험금</span><span class="right">8,000만원</span></li>
+								<li><span>사망보험금</span><span class="right">2,000만원</span></li>
+								<li class="none-left">(진단확적 없이 사망 시 사망보험금 1억원)</li>
+							</ul>
+						</dd>
+					</dl>
+					<button type="button" class="btn sm ico-r ico-arrow">보험료 및 해지환급금 예시</button>
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case2 -->
+
+			<!-- [s] 22-08-04 추가 case3 -->
+			<section class="sect top-nobox">
+				<div class="left">
+					<div class="btn-set vt">
+						<a href="javascript:;" class="btn md ico-calculator">내 보험료 확인하기</a>
+					</div>
+				</div>
+				<div class="right">
+					<button type="button" class="btn sm ico-r ico-arrow">보험료 및 해지환급금 예시</button>
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case3 -->
+
+			<!-- [s] 22-08-04 추가 case4 -->
+			<section class="sect top-nobox">
+				<div class="left">
+					
+				</div>
+				<div class="right">
+					<button type="button" class="btn sm ico-r ico-arrow">보험료 및 해지환급금 예시</button>
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case4 -->
+
+			<!-- [s] 22-08-04 추가 case5 -->
+			<section class="sect top-nobox">
+				<div class="left">
+					<div class="btn-set vt">
+						<a href="javascript:;" class="btn md ico-calculator">내 보험료 확인하기</a>
+					</div>
+				</div>
+				<div class="right">
+				
+				</div>
+			</section>
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case5 -->
+
+			<!-- [s] 22-08-04 추가 case6 -->
+			<div class="dw-btn">
+				<button type="button" class="dwld-btn"><span>상품 안내장<span class="blind">다운로드</span></span></button>
+			</div>
+			<!-- // [e] 22-08-04 추가 case6 -->
+
+			<!-- 모바일 컨버팅 영역 -->
+			<section class="">
+				<!-- 탭 -->
+				<div class="ut-tabs c lg">
+					<ul class="menu">
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">이런 점이 좋아요</a></li>
+						<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">이럴 때 필요해요</a></li>
+					</ul>
+				</div>
+				<!-- //탭 -->
+				
+				<!-- 이런 점이 좋아요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="tab-area active">
+
+
+					<div class="cont-sec">
+						<div class="tit balloon" id="ball_1">3·2·5만 없으면 보험 가입 <span class="blue">OK!</span></div>
+						<span data-ui-balloon="left,top" aria-describedby="ball_1">병력이 있어도, 나이가 많아도 이제 가입할 수 있어요!</span>
+						<!-- [s] 22-05-23 상품상세 일괄수정 -->
+						<ul class="disease-cont bic-num"><!-- 22-07-22 상품상세 전체수정 -->
+							<li class="n3">
+								<dl>
+									<dt>3개월 이내</dt>
+									<dd>입원, 수술, 추가 검사 필요 소견이 없다면</dd>
+								</dl>
+							</li>
+							<li class="n2">
+								<dl>
+									<dt>2년 이내</dt>
+									<dd>질병·사고로 입원, 수술(제왕절개 포함) 이력이 없다면</dd>
+								</dl>
+							</li>
+							<li class="n5">
+								<dl>
+									<dt>5년 이내</dt>
+									<dd>암, 간경화, 투석 중인 만성신장질환, 파킨슨병, 루게릭병으로 진단, 입원, 수술 이력이 없다면</dd>
+								</dl>
+							</li>
+						</ul>
+						<!-- // [e] 22-05-23 상품상세 일괄수정 -->						
+						<ul class="bullet b lg">
+							<li>간편심사보험은 과거 병력, 현재 치료 중인 만성질환, 나이 제한 등의 이유로 보험에 가입할 수 없었던 유병력자나 고연령자를 위한 보험입니다.<br>일반심사 보험에 가입이 어려운 피보험자가 대상이므로 일반심사 보험 대비 보험료가 높습니다.</li>
+							<li>신체적/환경적 위험 평가 등 개별 심사 정보에 따라 가입이 거절될 수 있습니다.</li>
+						</ul>
+					</div>
+
+					<div class="cont-sec sec1">
+						<div class="tit mb0" id="ball_9">실속있는 보험료</div>
+						<span data-ui-balloon="left,top" aria-describedby="ball_9" class="bottom50">실속있게 가입하고 든든하게 보장받을 수 있어요!</span>
+						<div class="s-tit">해지환급금 비교 <span>(저해지환급금형 vs. 일반형)</span></div>
+						<div class="img-cont-bg">
+							<img src="../../img/prd/img_graph01_@2x.png" alt="저해지환급금형 vs 일반형 해지환급금 비교 그래프">
+							<!-- 22-07-25 삭제 <ul class="blind">
+								<li>일반형 예정 기본 해지환급금</li>
+								<li>저해지환급금형</li>
+								<li>기본형 플러스</li>
+								<li>기본형</li>
+							</ul> -->
+							<dl class="img-explain">
+								<dt>저해지환급금형 해지환급금</dt>
+								<dd>저해지환급금형은 일반형 계약보다 낮은 보험료로 동일한 보장을 받을 수 있으나, 납입기간 중 계약 해지 시 일반형 계약보다 적은 50% 수준으로 해지환급금을 받는 상품입니다. </dd>
+							</dl>
+						</div>
+						<ul class="box-gray-list">
+							<li>
+								<dl class="type1">
+									<dt>장점</dt>
+									<dd>
+										<ul class="bullet a">
+											<li>동일 보장금액 대비 실속있는 보험료</li>
+											<li>동일 보험료 대비 일반형보다 더 큰 보장 가능</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl class="type2">
+									<dt>단점</dt>
+									<dd>납입기간 중 해지할 경우 일반형 대비 보험 해지환급금이 적음</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- // 이런 점이 좋아요 -->
+
+				<!-- 이럴 때 필요해요 -->
+				<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2" class="tab-area ">
+					<div class="cont-sec sec3">
+						<div class="tit balloon" id="ball_2">왜 ‘종신보험’이 필요할까요?</div>
+						<span data-ui-balloon="left,top" aria-describedby="ball_2">실속있게 가입하고 든든하게 보장받을 수 있어요!</span>
+						<div class="txt">'종신보험'이란 피보험자가 사망하면 보험금을 지급하는 상품이며 피보험자가 사망할 때까지 평생을 보장해드려요</div><!-- 22-08-03 현행화 -->
+						<!-- [s] 22-05-12 수정 -->
+						<div class="s-tit">건강에 자신이 없는 분께 더 필요한 보험이에요.</div>
+						<div class="xs-tit">연령별 질환의심 또는 유질환자 비율</div>
+						<div class="img-cont pd77"><!-- 22-08-08 수정 -->
+							<img src="../../img/prd/img_prod03_1@2x.png" alt="아래내용 참고">
+							<div class="blind">
+								<ul>
+									<li>80세 이상 88.2%</li>
+									<li>70~79세 82.6%</li>
+									<li>60~69세 74%</li>
+									<li>50~59세 58.1%</li>
+									<li>40~49세 47.5%</li>
+									<li>30~39세 36.8%</li>
+									<li>29세 이하 22.4%</li>
+								</ul>
+								<div>46%만 건강검진 정상 </div>
+							</div>
+							<div>출처: 「2019 건강보험통계연보」,국민건강보험공단</div>
+						</div>
+						<!-- // [e] 22-05-12 수정 -->
+					</div>
+				</div>
+				<!-- // 이럴 때 필요해요 -->				
+
+				<!-- 22-07-04 준법수정 -->
+				<div class="compliance">준법감시인확인필 1-2204-26 디지털채널통합TF(2022.04.13)</div>
+
+				<div class="btn-set vt">
+					<button type="button" class="btn md ico-nlink ico-r">가입 전 반드시 알아야 할 사항</button>
+					<button type="button" class="btn md ico-nlink ico-r">보험약관</button>
+					<button type="button" class="btn md ico-elink ico-r">가격공시실</button>
+				</div>
+				<!-- // 모바일 컨버팅 영역 -->
+
+				<!-- 하단 고정영역 -->
+				<nav class="floatbots">
+					<div class="inr">
+						<div class="btn-set">
+							<button type="button" class="btn lg rd a">상담신청</button>
+						</div>
+					</div>
+				</nav><!-- 22-08-08 위치 수정 -->
+
+				<!-- 상세 하단 공통영역 -->
+				<div class="ut-gudbox a" data-tog-cls="box">
+					<div class="gtit">예금자보호 안내</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>내용</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 22-05-27 부가서비스 배너 전체, 하단 배너 수정 -->
+				<div class="additional-service" id="ball_0">
+					<span data-ui-balloon="left,top" aria-describedby="ball_0">위 보험상품은 추가 혜택을 드려요.</span>
+					<!-- [D] 2022-09-02 부가서비스 배너 수정 -->
+					<div class="img-banner bn1"><a href="javascript:;" class="box">교보건강코칭서비스</a></div>
+					<div class="img-banner bn2"><a href="javascript:;" class="box">교보헬스케어서비스</a></div>
+					<div class="img-banner bn12"><a href="javascript:;" class="box">교보프레스티지 헬스케어서비스</a></div>
+					<div class="img-banner bn3"><a href="javascript:;" class="box">교보우먼헬스케어 서비스</a></div>
+					<div class="img-banner bn4"><a href="javascript:;" class="box">교보우먼헬스케어서비스 Basic</a></div>
+					<div class="img-banner bn5"><a href="javascript:;" class="box">교보어린이헬스케어서비스</a></div>
+					<div class="img-banner bn11"><a href="javascript:;" class="box">교보주니어헬스케어서비스</a></div>
+					<div class="img-banner bn6"><a href="javascript:;" class="box">교보에듀케어서비스</a></div>
+					<div class="img-banner bn7"><a href="javascript:;" class="box">교보치매케어서비스</a></div>
+					<div class="img-banner bn8"><a href="javascript:;" class="box">교보실버케어서비스플러스</a></div>
+					<div class="img-banner bn10"><a href="javascript:;" class="box">교보암케어서비스</a></div>
+					<div class="img-banner bn9"><a href="javascript:;" class="box">교보헬스케어 서비스암특화형</a></div>
+					<!--// [D] 2022-09-02 부가서비스 배너 수정 -->
+				</div>
+				
+				<div class="banner-box additional">
+					<div class="ut-slide-dot">
+						<div class="swiper-container swiper" data-slide-id="photo_1">
+							<ul class="swiper-wrapper slide ut-bnr-lst img">
+								<li class="swiper-slide">
+									<a href="javascript:;" class="lk b">
+										<strong class="tit">보험료 이렇게 따라하세요</strong>
+										<span class="txt">생년월일만 입력하면! 바로~~~</span>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="lk b">
+										<strong class="tit">보험료 이렇게 따라하세요</strong>
+										<span class="txt">생년월일만 입력하면! 바로~~~</span>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;" class="lk b">
+										<strong class="tit">보험료 이렇게 따라하세요</strong>
+										<span class="txt">생년월일만 입력하면! 바로~~~</span>
+									</a>
+								</li>
+							</ul>
+							<div class="pagination"></div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- // 상세 하단 공통영역 -->
+
+
+				<!-- [D] 2022-08-12 배너추가 -->
+				<div class="banner-box bt">
+					<div class="ut-slide-play type-b">
+						<div class="swiper-container swiper" data-slide-id="slide-play-b-more">
+							<div class="control">
+								<div class="dots"></div>
+								<div class="plys"><button type="button" class="bt play">정지</button></div>
+							</div>
+							<ul class="swiper-wrapper slide">
+								<li class="swiper-slide color-1">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-2">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+											<p class="txt">지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요지금 새로워진 서비스를 경험하세요</p>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+								<li class="swiper-slide color-3">
+									<a href="javascript:;">
+										<div class="txtbox">
+											<strong class="tit">나의 계약을 안전하고 편리하게!</strong>
+										</div>
+										<div class="imgbox"><img class="img" src="../../img/common/type_b.png" alt=""></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //end [D] 2022-08-12 배너추가 -->
+
+				
+			</section>
+			
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

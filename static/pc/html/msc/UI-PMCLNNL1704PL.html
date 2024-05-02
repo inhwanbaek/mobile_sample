@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+
+	<article class="pop-layer a pop-chdtdtl" id="pop-chdtdtl">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신용/담보대출내역 상세</h1><!-- [D] 2022-04-07 문구수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents msc loan inq">
+
+					<div class="loiq-tbox">
+						<div class="ut-dcard b mltype">
+							<div class="ut-bdgs">
+								<em class="bdg j">신용대출</em>
+							</div>
+							<div class="hdt bdb">
+								<div class="tit">교보e프라임신용대출(A형)</div>
+							</div>
+							<div class="dls">
+								<div class="dl">
+									<div class="dt">대출잔액</div>
+									<div class="dd st">
+										<span class="prc">
+											<strong class="p">100,000,000</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="loiq-ttab">
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">대출계약내용</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">상환내역</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">상환일정</a></li><!-- [D] 2022-04-07 문구수정 -->
+							</ul>
+						</div>
+					</div>
+
+					<div class="loiq-tpnl">
+						<div class="ut-range fit">
+							<div class="rag">
+								<label class="radio"><input type="radio" name="r_range" checked><span class="txt">3개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">6개월</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">2년</span></label>
+								<label class="radio"><input type="radio" name="r_range"><span class="txt">3년</span></label>
+							</div>
+							<div class="rcs">
+								<span class="input a ut-date"><input type="text" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span><!-- [D] 2022-04-15 input type속성 변경 -->
+								<i class="ds">~</i>
+								<span class="input a ut-date"><input type="text" id="date_ed_0" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜"></span><!-- [D] 2022-04-15 input type속성 변경 -->
+							</div>
+							<div class="btn-set">
+								<button type="button" class="btn md ico-search">조회</button>
+							</div>
+						</div>
+
+						<div class="mcardwrp">
+							<div class="mcardlst">
+								<div class="ut-dcard a mltype" data-tog-cls="box">
+									<div class="stds">
+										<div class="cdt">
+											<div class="bxs">
+												<div class="dt">납입일</div>
+												<div class="dd">2021.12.15</div>
+											</div>
+											<div class="bxs">
+												<div class="dt">납입금액</div>
+												<div class="dd">
+													<span class="prc">
+														<strong class="p">158,951</strong><i class="w">원</i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="dtds" data-tog-cls="ctn">
+										<ul class="dlt">
+											<!-- [D] 2022-04-07 삭제 -->
+											<!-- <li>
+												<div class="dl">
+													<div class="dt">총 대출금액</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">120,000,000</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li> -->
+											<li>
+												<div class="dl">
+													<div class="dt">상환 원금</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">140,000</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">이자</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">18,951</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">수수료</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">0</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">기타금액</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">0</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">미결제금액</div>
+													<div class="dd">
+														<span class="prc">
+															<strong class="p">0</strong><i class="w">원</i>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dl">
+													<div class="dt">할부회차</div>
+													<div class="dd">3회/10회</div><!-- [D] 2022-04-07 문구수정 -->
+												</div>
+											</li>
+										</ul>
+										<div class="btn-set vt">
+											<a href="javascript:;" class="btn md ico-arrow" role="button">스마트영수증 발급</a><!-- [D] 2022-04-07 문구수정 --><!-- [D] 2022-05-26 수정 -->
+										</div>
+									</div>
+									<div class="mores">
+										<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+									</div>
+								</div>
+							</div>
+							<div class="ut-more">
+								<button type="button" class="btn-more">
+									<span class="tnt">
+										<em class="tm">더보기</em>
+										<em class="nm" role="img" aria-label="22페이지중 1페이지"><i class="n">1</i><i class="t">22</i></em>
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="list-empty bd">
+							<p>상환 내역이 없습니다.</p>
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chdtdtl');
+	</script>
+
+
+</div>
+</body>
+</html>

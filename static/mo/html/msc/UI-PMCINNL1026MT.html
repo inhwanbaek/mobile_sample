@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"변액보험계약조회"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default variable" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="hd-bilTit2">
+				<h2 class="hd-tit3">변액보험계약 <i class="line">상세내용</i>을<br>확인해 보세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+			</div>
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">펀드가입내역</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">옵션정보 조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">적립금 및 환급금 조회</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">누적수익률 조회</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">수수료안내표 조회</a></li>
+				</ul>
+			</div>
+
+			<h3 class="hd-tit4">프라이스히트보험(기본형)</h3>
+			<div class="ut-dcard a dcard">
+				<div class="stds">
+					<div class="ddt noline">
+						<div class="bxt">
+							<ul class="lst">
+								<li>
+									<div class="dl">
+										<div class="dt">보험료</div>
+										<div class="dd">158,951원</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="dtds">
+					<ul class="dlt">
+						<li>
+							<div class="dl">
+								<div class="dt">보험증권번호</div>
+								<div class="dd">21406****459</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">계약일</div>
+								<div class="dd">2012.06.27</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">주피보험자</div>
+								<div class="dd">팡서왕</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">최종납입연월</div>
+								<div class="dd">2014.06</div>
+							</div>
+						</li>
+						<li>
+							<div class="dl">
+								<div class="dt">납입횟수</div>
+								<div class="dd">111회</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<h3 class="hd-tit4">보험관계 비용</h3>
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">보험관계 비용</span><span class="cap"></span></caption>
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">목적</th>
+							<th scope="col">시기</th>
+							<th scope="col">비용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="4">계약체결비용</th>
+							<td rowspan="2">매월</td>
+							<td>7년 이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>6.84%(8,892원)</td>
+						</tr>
+						<tr>
+							<td rowspan="2">매월</td>
+							<td>7년 초과 10년 이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>4.70%(6,110원)</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="4">계약관리비용</th>
+							<td rowspan="2">매월</td>
+							<td>납입기간이내</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>5.00%(6,500 원)</td>
+						</tr>
+						<tr>
+							<td rowspan="2">매월</td>
+							<td>납입기간 이후</td>
+						</tr>
+						<tr>
+							<td>기본보험료의<br>2.31%<br>(200~1,009원)</td>
+						</tr>
+						<tr>
+							<th scope="row">위험보험료</th>
+							<td>매월</td>
+							<td>
+								기본보험료의 <br>
+								0.15385% <br>
+								~0.77615% <br>
+								(200~1,009원)
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+			<!-- [D] 2022-02-22 텍스트추가 -->
+			<p class="sub-txtGroup tbb">&quot;
+				상기 보험관계비용은 주계약에 해당하는 비용으로서 보험계약의 체결, 유지, 관리를 위해 필요한 비용입니다.<br>
+				위험보험료 : 제1보험기간 동안 매월 계약해당일에 계약자적립금에서 차감되며, 연령증가에 따라 상이합니다.&quot;
+			</p>
+			<h3 class="hd-tit4">기타비용 및 추가비용</h3>
+			<div class="ut-tbl a">
+				<table class="tblist" cellspacing="0" cellpadding="0" >
+					<caption><span class="tit">기타비용 및 추가비용</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width:30%">
+						<col style="width:30%">
+						<col style="width:30%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">목적</th>
+							<th scope="col">시기</th>
+							<th scope="col">비용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="3">보증비용</th>
+							<td>최저연금적립금<br>보증</td>
+							<td>매월/적립금의<br>0.05%<br>(연 0.6%)</td> <!-- [D] 2022-02-22 텍스트추가 -->
+						</tr>
+						<tr>
+							<td>최저사망보험금<br>보증</td>
+							<td>매월/적립금의 <br>0.004166667% <br>(연 0.05%)</td>
+						</tr>
+						<tr>
+							<td>실적배당<br>연금보증</td>
+							<td>매월/적립금의<br>0.79166667%<br>(연 0.95%)</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="3">연금수령기간중<br>비용</th>
+							<td>연금수령<br>기간 중의<br>관리비용</td>
+							<td>연금수령시점/<br>연금연액의<br>0.5%</td>
+						</tr>
+						<tr>
+							<td>연금수령<br>기간 중의<br>관리비용</td>
+							<td>매월/적립금의<br>0.0125%<br>(연 0.15%)</td>
+						</tr>
+						<tr>
+							<td>노후자금<br>관리비용</td>
+							<td>매월/노후자금의<br>0.005%</td>
+						</tr>
+						<tr>
+							<th scope="row">연금수령<br>기간 중 비용</th>
+							<td>해지에 따른<br>패널티</td>
+							<td>해지시점/도표참조<br><!-- [D] 2022-06-23 텍스트수정 -->
+								<a href="javascript:;" class="link-text">보기</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">추가납입보험료</th>
+							<td>계약유지<br>
+								관리비용</td>
+							<td>납입시점/<br>추가납입보험료의<br>2.5%</td>
+						</tr>
+						<tr>
+							<th scope="row">펀드변경수수료</th>
+							<td>펀드변경에<br>
+								따른비용</td>
+							<td>
+								펀드변경시점/<br>
+								1회당 펀드변경<br>적립금의 0.1%<br>범위 이내
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">중도인출수수료</th>
+							<td>중도인출에<br>
+								따른비용</td>
+							<td>
+								중도인출시점/<br>
+								1회당 인출금액<br>의 0.2%와<br> 2,000원 중 <br>
+								적은금액
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- [D] 2022-07-14 꼭 알아두세요 위치변경 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>펀드변경수수료는 현재 부과하지 않습니다.</li>
+						<li>해지공제비용은 중도해지 시 계약자적립금에서 공제하는 금액으로, 보험가입 시점에서 현재 시점까지 몇 년이 경과했는지에 따라 금액이 다릅니다.   </li>
+						<!-- <li>중도인출금액이 있는 경우 인출금액에 해당하는 추가납입보험료는 추가납입할 총액의 1.0%와 5만원 중 적은 금액을 적용합니다. </li> [D] 2022-07-11 알아두세요 마지막항목삭제-->
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="btn-set vt btn-group">
+				<button type="button" class="btn md">변액보험공시</button>
+				<button type="button" class="btn md">로보어드바이저 서비스 신청</button>
+				<button type="button" class="btn md">펀드변경 신청</button>
+			</div>
+
+			
+
+			<!-- 하단 고정영역 -->
+			<nav class="floatbots">
+				<div class="inr">
+					<div class="btn-set b2">
+						<button type="button" class="btn rd lg b">이전</button>
+						<button type="button" class="btn rd lg a">다음</button>
+					</div>
+				</div>
+			</nav>
+			<!-- //하단 고정영역 -->
+
+
+
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+
+
+
+</div>
+
+</body>
+</html>

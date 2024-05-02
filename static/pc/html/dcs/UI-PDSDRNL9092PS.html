@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">상품공시</h2>
+			</div>
+			<!-- search -->
+			<!-- 2022-04-14 수정: 폼내용 수정 -->
+			<ul class="sch-upper tp-c">
+				<li>
+					<span class="th-tit">펀드유형</span>
+					<div class="td-cont">
+						<span class="select a no-lb set">
+							<label class="lb blind" for="select-1" role="text">Label <em class="ast">펀드 유형은 필수항목입니다</em></label>
+							<button class="btsel" type="button" title="선택하기" aria-expanded="false">펀드 유형을 선택하세요.</button><select name="select-1" id="select-1" tabindex="-1" aria-hidden="true">
+								<option selected="">전체</option>
+								<option>MMF</option>
+								<option>채권형</option>
+								<option>채권혼합형</option>
+								<option>주식혼합형</option>
+								<option>주식형</option>
+								<option>기타</option>
+							</select>
+						</span>
+					</div>
+					<span class="th-tit">운용사</span>
+					<div class="td-cont">
+						<span class="select a no-lb set">
+							<label class="lb blind" for="select-1" role="text">Label <em class="ast">펀드 운영사 필수항목입니다</em></label>
+							<button class="btsel" type="button" title="선택하기" aria-expanded="false">펀드 운영사를 선택하세요.</button><select name="select-1" id="select-2" tabindex="-1" aria-hidden="true">
+								<option selected="">전체</option>
+								<option>BNK자산운용</option>
+								<option>DB자산운용</option>
+								<option>HDC자산운용</option>
+								<option>IBK자산운용</option>
+								<option>KB자산운용</option>
+								<option>KDB인프라자산운용</option>
+								<option>KTB자산운용</option>
+								<option>NH-Amundi자산운용</option>
+								<option>SH자산운용</option>
+								<option>골드만삭스자산운용</option>
+								<option>교보자산운용</option>
+								<option>교보증권</option>
+								<option>기타</option>
+								<option>대신자산운용</option>
+								<option>마이다스에셋자산운용</option>
+								<option>멜티에셋자산운용</option>
+								<option>메리츠자산운용</option>
+								<option>미래에셋맵스자산운용</option>
+								<option>미래에셋자산운용</option>
+								<option>미래에셋투신자산운용</option>
+								<option>베어링자산운용</option>
+								<option>브이아이자산운용</option>
+								<option>블랙록자산운용</option>
+								<option>삼성액티브자산운용</option>
+								<option>삼성자산운용</option>
+								<option>삼성헤지자산운용</option>
+								<option>서울자산운용</option>
+								<option>슈로더투자신탁운용</option>
+								<option>신영자산운용</option>
+							</select>
+						</span>
+					</div>
+				</li>
+				<li>
+					<span class="th-tit">검색조건</span>
+					<div class="td-cont">
+						<span class="input a w100p">
+							<label class="lb blind" for="input-01">Label</label><input type="text" title="키워드 또는 상품명 입력" placeholder="키워드 또는 펀드명 입력" id="input-01"> <!-- [D] 2022-05-20 텍스트 수정 / placeholder="키워드 또는 펀드명 입력" -->
+						</span>
+					</div>
+				</li>
+			</ul>
+			<!--// 2022-04-14 수정: 폼내용 수정 -->
+			<div class="btn-set">
+				<button type="button" class="btn md ico-search">검색</button>
+			</div>
+
+			<h3 class="hd-tit3">공시 목록</h3>
+			<div class="ut-optset optset">
+				<div class="opt pl">
+					<span class="tot">전체 <i class="n">718</i> 건</span>
+				</div>
+				<div class="opt pr">
+					<span class="select sort"> <!-- .def 클래스 추가하면 기본시스템 select -->
+						<!-- [웹접근성] 1st 수정 -->
+						<select name="select-4" id="select-quan" title="정렬순서 선택하기"><!-- [D] 2022-08-03 접근성 텍스트 수정 -->
+							<option>작성일순</option>
+						</select>
+						<!--//[웹접근성] 1st 수정 -->
+					</span>
+					<span class="select sort"> <!-- .def 클래스 추가하면 기본시스템 select -->
+						<!-- [웹접근성] 1st 수정 -->
+						<select name="select-4" id="select-quan2" title="목록 개수 선택하기"><!-- [D] 2022-08-03 접근성 텍스트 수정 -->
+							<option>10개씩 보기</option>
+						</select>
+						<!--//[웹접근성] 1st 수정 -->
+					</span>
+				</div>
+			</div>
+
+			<div class="ut-tbl a"><!-- [D] 2022-08-26 클래스 'scroll-x' 삭제-->
+				<!-- 2022-04-14 수정: 테이블 수정 -->
+				<table class="tblist">
+					<caption><span class="tit">공시 목록</span><span class="cap"></span></caption>
+					<!-- [D] 2022-08-26 마크업 추가 -->
+					<colgroup>
+						<col style="width: 300rem">
+						<col style="width: 10%">
+						<col style="width: 12%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+						<col style="width: 10%">
+					</colgroup>
+					<!--//[D] 2022-08-26 마크업 추가 -->
+					<thead>
+						<tr>
+							<th scope="col">펀드명</th>
+							<th scope="col">펀드유형</th>
+							<th scope="col">운용사</th>
+							<th scope="col">판매여부</th>
+							<th scope="col">신탁<br>계약서</th>
+							<th scope="col">투자<br>설명서</th>
+							<th scope="col">간이투자<br>설명서</th>
+							<th scope="col">운용<br>보고서</th>
+							<th scope="col">수탁회사<br>보고서</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt-l"><a href="javascript:;" class="link-text">한국투자 법인용 MMF 2호(국공채) 종류 C</a></td>
+							<td>MMF</td>
+							<td>한국투자신탁</td>
+							<td>판매중</td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+						</tr>
+						<tr>
+							<td class="txt-l"><a href="javascript:;" class="link-text">한국투자 법인용 MMF 2호(국공채) 종류 C</a></td>
+							<td>MMF</td>
+							<td>한국투자신탁</td>
+							<td>판매중</td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+							<td><a href="javascript:;" class="ico file"><span class="blind">다운로드</span></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<!--// 2022-04-14 수정: 테이블 수정 -->
+			</div>
+
+			<include class="ut-paging" src="../inc/paging.html" data-include-opt='{"visible":"true"}'></include>
+			
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

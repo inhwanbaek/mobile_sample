@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.header .logo{display:block;width:75rem;height:22rem;margin-left:24rem;background:url(../img/common/logo_header_kyobo.png) no-repeat left center;font-size:0;background-size: 100%;}
+.page.app.main {padding: 0;overflow-x: hidden;}
+.page.app.main .contents{background: #ffffff;margin-top: 0;padding:0;z-index: 20;position: relative;}
+.page.app.main .section {padding: 0 20rem;}
+.page.app.main .panel {padding: 20rem;}
+
+/* 기업 퇴직연금 card-box */  
+.page.app.main .lk::after {}
+.page.app.main .etp-card-box{border: 1px solid #e0e0e0; position:relative;padding:0;border-radius: 8rem;border-top-right-radius:32rem;box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.1);background-color: #fff;overflow: hidden;text-align: center;margin-top: 14rem;}
+.page.app.main .etp-card-box > .cont{display: block;width:100%;height:100%;padding:20rem}
+.page.app.main .etp-card-box > .cont .ut-bdgs .bdg{margin-bottom: 8rem; padding: 0 10rem;}
+.page.app.main .etp-card-box .tit {display:block;font-size:16rem;font-weight: 600;color:#242424;line-height: 1.33;margin-bottom: 6rem;}
+.page.app.main .etp-card-box > .cont .lst-link{margin-top:16rem; border-top: 1px solid #e0e0e0;padding-top: 8rem;}
+.page.app.main .etp-card-box > .cont .lst-link a{display:flex; align-items:center; justify-content:space-between; height: 48rem;vertical-align: bottom;line-height: 2;}
+.page.app.main .etp-card-box > .cont .lst-link .tit{font-size:15rem;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; margin:0;/*padding-top: 15rem;*/ color: #555555;font-weight: 400;}
+.page.app.main .etp-card-box > .cont .lst-link .day{position:relative; /*padding-top: 13rem;*/ padding-right:9rem; font-weight:500; text-align:right;font-size: 15rem;color: #242424;}
+.page.app.main .etp-card-box > .cont .lst-link .won{position:relative; padding-right:22rem; font-weight:700; text-align:right;font-size:18rem /*24rem;*/}
+.page.app.main .etp-card-box > .cont .lst-link .won i{font-weight:500; font-size: 16rem; color: #242424;}
+.page.app.main .etp-card-box > .cont .lst-link .won.cost{color: #2a81eb;margin-left: 5rem;}
+.page.app.main .etp-card-box > .cont .lst-link .won.rate{color: #e64c2e;margin-left: 5rem;}
+.page.app.main .etp-card-box > .cont .lst-link .won.num{color: #ff3d65;margin-left: 5rem;}
+.page.app.main .etp-card-box > .cont .lst-link .won:after{content: ''; position: absolute; right:0; top: 50%; transform: translateY(-50%); width:18rem; height:18rem; background: url(../img/main/ico_link_ar_02.png) no-repeat center;background-size: 18rem auto;}
+.page.app.main .etp-card-box > .cont .lst-link .won .per{display:block; margin-top:-5rem; font-size:12rem; color:#2a81eb;}
+.page.app.main .etp-card-box > .cont .lst-link .won .per.up{color:#e64c2e;}
+
+.page.app.main .choice-mainmenu{display: flex; justify-content: space-between;width: 100%; flex-direction: row;justify-items: center;margin: 20rem 0;}
+.page.app.main .choice-mainmenu li{text-align: center;width: 100%; }
+.page.app.main .choice-mainmenu li a{padding: 20px;text-align: center;width: 100%; }
+.page.app.main .choice-mainmenu li span.img{width: 32rem;height: 32rem;font-size:0;display: block;margin: 0 auto;}
+.page.app.main .choice-mainmenu li span.img::after{display: block;content: '';width: 32rem; height: 32rem; top: 0;left: 0;}
+.page.app.main .choice-mainmenu li span.img.ic_menu01::after{background:url(../img/etp/ic_menu01@2x.png) no-repeat;background-size: 32rem;}
+.page.app.main .choice-mainmenu li span.img.ic_menu02::after{background:url(../img/etp/ic_menu02@2x.png) no-repeat;background-size: 32rem;}
+.page.app.main .choice-mainmenu li span.img.ic_menu03::after{background:url(../img/etp/ic_menu03@2x.png) no-repeat;background-size: 32rem;}
+.page.app.main .choice-mainmenu li span.img.ic_menu04::after{background:url(../img/etp/ic_menu04@2x.png) no-repeat;background-size: 32rem;}
+.page.app.main .choice-mainmenu li p{width: 100%; font-size: 13rem; color: #242424;margin-top: 16rem;}
+
+.page.app.main .etp-notice-box{position:relative;padding:0;border-radius: 8rem;background-color: #f8f8f8;overflow: hidden;}
+.page.app.main .etp-notice-box > .cont{display: block;width:100%;height:100%;padding:20rem}
+.page.app.main .etp-notice-box > .cont .hdt{display: flex; justify-content:space-between;}
+.page.app.main .etp-notice-box > .cont .hdt h3.tit{font-size: 18rem; font-weight: 700;}
+.page.app.main .etp-notice-box > .cont .hdt button.more{width: 18rem; height: 18rem; background: url(../img/main/ico_link_ar_02.png) no-repeat center;font-size: 0; background-size: 18rem;margin-top: 3rem;}
+
+.page.app.main .etp-notice-box > .cont .notice-list{margin-top:16rem; border-top: 1px solid #e0e0e0;padding-top: 8rem;}
+.page.app.main .etp-notice-box > .cont .notice-list li{position: relative;width: 100%;}
+.page.app.main .etp-notice-box > .cont .notice-list a{display:block; padding:8rem 0;width: 100%;font-size:16rem;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;color: #242424;font-weight: 400;}
+
+.page.app.main .etp-notice-box > .cont .lst-link .day{position:relative; padding-top: 9rem; padding-right:9rem; font-weight:500; text-align:right;font-size: 16rem;color: #242424;}
+.page.app.main .etp-notice-box > .cont .lst-link .won{position:relative; padding-right:28rem; font-weight:700; text-align:right;font-size: 24rem;}
+.page.app.main .etp-notice-box > .cont .lst-link .won i{font-weight:500; font-size: 16rem; color: #242424;}
+.page.app.main .etp-notice-box > .cont .lst-link .won.cost{color: #2a81eb;margin-left: 5rem;}
+.page.app.main .etp-notice-box > .cont .lst-link .won.rate{color: #e64c2e;margin-left: 5rem;}
+.page.app.main .etp-notice-box > .cont .lst-link .won:after{content: ''; position: absolute; right:0; top: 10rem; width:24rem; height:24rem; background: url(../img/main/ico_link_ar.png) no-repeat center;background-size: 24px auto;}
+.page.app.main .etp-notice-box > .cont .lst-link .won .per{display:block; margin-top:-5rem; font-size:12rem; color:#2a81eb;}
+.page.app.main .etp-notice-box > .cont .lst-link .won .per.up{color:#e64c2e;}
+
+.page.app.main .etp-banner-box {margin:24rem 0; position:relative; border-radius: 8px; border-top-right-radius: 32rem; background:#f4f8fc}
+.page.app.main .etp-banner-box::after {display:block; clear:both; content:""; width:96rem; height:96rem; background-size: 96rem auto;  position:absolute; top:20rem; right:20rem}
+.page.app.main .etp-banner-box.type1::after {background-image: url(../img/main/icon_etp01.png);}
+.page.app.main .etp-banner-box.type2::after {background-image: url(../img/main/icon_etp02.png);}
+.page.app.main .etp-banner-box>a {display:block; min-height:140rem; padding:20rem}
+.page.app.main .etp-banner-box .tit {padding-bottom:10rem; font-size: 18rem; font-weight: 700; line-height: 1.33; color:#242424}
+.page.app.main .etp-banner-box .txt {font-size:15rem; line-height:1.4; color:#555;}
+
+
+/* 페이지 하단 고정 버튼 영역  */  
+.floatbots.c>.inr{min-height:93rem; background:rgba(42,129,235,0.97); padding:20rem 20rem 24rem; border-radius: 24rem 24rem 0 0;  box-shadow: 0 -6px 12px 0 rgba(0, 0, 0, 0.07);}
+.floatbots.c .state-wrap {display:flex; align-items:flex-start; min-height:49rem; text-align:center; color:#fff}
+.floatbots.c .state-box {flex:1; position:relative;}
+.floatbots.c .state-box+.state-box::after {display:block; clear:both; content:""; position:absolute; top:0; left:0; width:1px; height:48rem; background:#fff; opacity: 0.2;}  
+.floatbots.c .state-box .tit {margin-bottom:5rem; font-size:12rem; line-height: 1.58;}
+.floatbots.c .state-box .lk {position:relative; display:inline-block; padding-right:11rem; font-size:15rem; line-height: 1.6; color:#fff}
+.floatbots.c .state-box .lk:after {display:block; clear:both; content:""; width:11rem; height:11rem; position:absolute; top:50%; right:0;  transform: translateY(-50%); background: url(../img/main/ico_link_ar-white.png) no-repeat center; background-size: 11rem;}
+.floatbots.c .state-box .lk strong {font-weight: 700; } 
+.floatbots.c .state-wrap .date {flex:1.3}

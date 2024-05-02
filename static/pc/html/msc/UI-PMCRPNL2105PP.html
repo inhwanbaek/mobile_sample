@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-invstrslt" id="pop-invstrslt">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향진단</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="invstrslt-head">
+							<h2 class="hd-tit3 blind">투자성향진단 결과</h2>
+
+							<div class="headbox">
+								<div class="invgraph stage4" aria-hidden="true">
+									<span class="txt blind">수익추구형</span>
+								</div>
+								<div class="rsltbox">
+									<div class="tit">
+										김교보 님의 투자성향은<br>
+										<strong>수익추구형</strong><button type="button" class="ico help">수익추구형 도움말</button> 입니다.
+									</div>
+									<div class="msg">
+										<p class="p2"><span class="st stage1">매우 낮은위험</span> 이하의 상품에 투자할 수 있습니다.</p>
+										<p class="p2"><span class="st stage2">낮은위험</span> 이하의 상품에 투자할 수 있습니다.</p>
+										<p class="p2"><span class="st stage3">보통위험</span> 이하의 상품에 투자할 수 있습니다.</p>
+										<p class="p2"><span class="st stage4">다소 높은위험</span> 이하의 상품에 투자할 수 있습니다.</p>
+										<p class="p2"><span class="st stage5">높은위험</span> 이하의 상품에 투자할 수 있습니다.</p>
+										<p class="p2">모든상품에 투자할 수 있습니다.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">저장</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-invstrslt');
+		</script>
+	</div>
+</body>
+</html>

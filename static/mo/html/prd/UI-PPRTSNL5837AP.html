@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-infoentry" id="pop-infoentry">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고객확인정보등록(CDD/EDD)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="infoentry-tit">
+						<h2 class="hd-tit3">가입자정보를 확인해 주세요. </h2>
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">이름</h3>
+						<div>
+							<span class="input a no-lb">
+								<label class="lb blind" for="inp-name">이름</label>
+								<input type="text" title="이름 입력" value="김교보" id="inp-name">
+							</span>
+						</div>	
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">주민등록번호 </h3>
+						<div>
+							<span class="input a nobg ut-rsnum">
+								<label class="lb" for="rsnum_2">주민등록번호</label>
+								<input id="rsnum_2" type="tel" class="fn" pattern="\d*" title="주민등록번호 앞 6자리" placeholder="900101" value="830000"><!-- [웹접근성] 1st 수정 -->
+								<i class="ds">-</i>
+								<input type="tel" class="mn" pattern="\d*" title="주민등록번호 뒤 1자리" value="1" placeholder="*"> <!-- [웹접근성] 1st 수정 --><!-- [D] 2022-08-02 placeholder 값 수정-->
+								<input type="tel" class="ln" pattern="\d*" title="주민등록번호 뒤 2~6자리" value="******" readonly><!-- [웹접근성] 1st 수정 -->
+							</span>
+						</div>	
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">휴대폰번호</h3>
+						<div>
+							<span class="input a tnum no-lb">
+								<label class="lb blind" for="input_id04">전화번호입력</label>
+								<input type="tel" pattern="\d*" value="010-1234-5678" placeholder="[-] 없이 입력해주세요" id="input_id04">
+							</span>
+						</div>	
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">문자메시지 수신동의</h3>
+						<p>문자메시지 수신에 동의하시면 입출금거래내역 등 금융거래정보를 휴대폰에서 실시간으로 확인하실 수 있습니다.</p>
+						<div class="rdos item">
+							<label class="radio"><input type="radio" name="radio1"><span class="txt">동의함</span></label>
+							<label class="radio"><input type="radio" name="radio1"><span class="txt">동의안함</span></label>
+						</div>
+					</div>
+					
+					<!-- 펼침 상태인 경우 -->
+					<div class="ut-gudbox b open" data-tog-cls="box">
+						<div class="gtit">꼭 알아두세요</div>
+						<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+						<div class="gctn" data-tog-cls="ctn">
+							<ul class="bullet a glst">
+								<li>가입자정보를 마지막으로 입력한 날을 기준으로 90일 이내에 가입신청을 완료하지 않으면 고객정보보호를 위해 입력하신 정보가 삭제됩니다. </li>
+								<li>「특정 금융거래정보의 보고 및 이용 등에 관한 법률」에 따라 고객은 금융기관과 거래 시 가입자정보를 제공해야 하며, 이 정보는 「금융실명거래 및 비밀보장에 관한 법률」 과 「신용정보의 이용 및 보호에 관한 법률」 등에 따라 보호됩니다. 금융기관은 고객 확인 및 검증을 위해 고객에게 추가자료를 요청할 수 있으며, 고객이 정보 제출을 거부하거나 검증이 이루어지지 않을 경우 금융거래가 지연되거나 거절될 수 있습니다.</li>
+								<!-- [D] 2022-05-03 텍스트 추가 -->
+								<li>휴대폰번호 변경은 [개인정보 > 내정보설정 > 개인정보 조회/변경]에서 변경하시거나 콜센터(1588-1001)로 문의하시길 바랍니다.</li>
+							</ul>
+						</div>
+					</div>	
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-infoentry');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>
+

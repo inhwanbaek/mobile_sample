@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer xs a pop-woncert" id="pop-woncert">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계좌 인증</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+
+					<section class="pcert-step">
+						<div class="mbl-top">
+							<div class="hdt">
+								<h2 class="hd-tit3">고객님 <i class="line">계좌가 맞는지 확인</i>하기 위해<br>1원을 보냈어요.</h2>
+							</div>
+							<div class="cdt">입금내역에 표기된 인증번호 3자리를 입력해 주세요.</div>
+						</div>
+
+						<div class="ut-form a forms">
+							<ul class="form">
+								<li>
+									<div class="ut-certi">
+										<span class="input a">
+											<label class="lb" for="certi-1">인증번호 확인</label>
+											<input type="number" class="cnm" pattern="\d*" placeholder="인증번호를 입력" id="certi-1">
+											<div class="ctt ibts">
+												<i class="tt">입력시간</i><i class="ts">05:32</i>
+											</div>
+										</span>
+										<div class="ext"><a href="javascript:;" class="link-text">시간연장</a></div><!-- [웹접근성] 1st 수정 -->
+										<div class="bts"><button type="button" class="btn sm b">인증번호 재요청</button></div><!-- 인증번호 재요청 단어 변경 0207 -->
+									</div>
+								</li>
+							</ul>
+
+							<div class="bankext">
+								<div class="blind">
+									보낸사람 이름의 교보생명 뒤 3자리 숫자
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">계좌정보 다시 입력</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-woncert');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

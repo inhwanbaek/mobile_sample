@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">가입상세안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure">
+						<!-- 탭 -->
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">가입안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보장내용</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">연금액 예시</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">해지환급금예시</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 가입안내 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<h2 class="hd-tit3">가입안내사항</h2>
+							<h3 class="hd-tit4">보험기간</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:40%">
+										<col style="width:40%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">구분</th>
+											<th scope="col">보험기간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="2" class="ver-md">주계약</td>
+											<td>연금개시 전 보험기간</td>
+											<td>보장개시일부터 연금지급개시나이 계약해당일 전일까지</td>
+										</tr>
+										<tr>
+											<td>연금개시 후 보험기간</td>
+											<td>연금개시 전 보험기간 종료 후부터 종신까지</td>
+										</tr>
+										<tr>
+											<td>특약</td>
+											<td colspan="2" class="tl-left">45세~최대 100세 만기 / 갱신형 특약: 5년 만기 갱신형 / 고도장해납입면제특약, 교보플러스보험료납입면제특약: 주계약의 보험료 납입기간<br><span>※ 다만, 개별특약에 따라 보험기간은 달라질 수 있습니다.</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="ut-tbl a mt40">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">납입기간</th>
+											<td>5년·7년·10년·12년·15년·20년·25년·30년납·(연금지급나이-5세)</td>
+										</tr>
+										<tr>
+											<th scope="row">납입주기</th>
+											<td>월납, 일부일시납(월납+일시납)</td>
+										</tr>
+										<tr>
+											<th scope="row">가입나이</th>
+											<td>만 15세~70세</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>가입나이는 보험종류, 보험기간, 납입기간에 따라 달라질 수 있습니다.</li>
+							</ul>
+
+						</div>
+						<!-- // 가입안내 -->
+
+						<!-- 보장내용 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<h2 class="hd-tit3">주계약</h2>
+							<h3 class="hd-tit4">연금개시 전</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:50%">
+										<col style="width:25%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">지급내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="2" class="ver-md">재해 장해급여금</td>
+											<td>월납 계약에 한하여 피보험자가 재해로 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우</td>
+											<td>1,000만원 × 해당 장해지급률</td>
+										</tr>
+										<tr>
+											<td>일시납 계약에 한하여 피보험자가 재해로 장해분류표에서 정한 각 장해지급률에 해당하는 장해상태가 되었을 경우</td>
+											<td>일시납 기본보험료의 10% × 해당 장해지급률</td>
+										</tr>
+										<tr>
+											<td>사망 시 지급액</td>
+											<td>피보험자가 사망하는 경우</td>
+											<td>최저연금기준금액과 계약자적립금 중 큰 금액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h3 class="hd-tit4">연금개시 후</h3>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:50%">
+										<col style="width:25%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">지급내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>사망 시 지급액</td>
+											<td>피보험자가 사망하는 경우</td>
+											<td>(연금기준금액 - 이미 수령한 연금액)과 계약자적립금 중 큰 금액</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<ul class="bullet b lg">
+								<li>다만, 연금개시 후 보험기간에는 「연금기준금액」에서 연금개시 후 보험기간 중 발생한 실적배당 종신연금 월지급액의 합계를 차감한 금액을 최저보증합니다.</li>
+								<li>위 보험상품 관련 내용은 요약된 자료이므로 단순 안내자료로 참고하시기 바라며, 보다 자세한 사항은 약관 및 상품설명서를 참조하시기 바랍니다. </li>
+							</ul>
+							
+						</div>
+						<!-- // 보장내용 -->
+
+						<!-- 연금액 예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+							<h2 class="hd-tit3">주계약 보험료 예시</h2>
+							<p class="c-txt">기준: 남자 40세, 월납 30만원, 20년납, 연금지급개시 65세, 채권형 100%, 세전</p>
+							<div class="tbl-tit-right">
+								<span>(단위:만원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:28%">
+										<col style="width:28%">
+										<col style="width:28%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">투자 수익률 -1.0% 가정<br>(순수익률 -2.3%)</th>
+											<th scope="col">투자 수익률 2.25% 가정<br>(순수익률 1.0%)</th>
+											<th scope="col">투자 익률 3.375% 가정<br>(순수익률 2.1%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>계약자 적립금</td>
+											<td>4,832</td>
+											<td>8,040</td>
+											<td>9,632</td>
+										</tr>
+										<tr>
+											<td>연금기준금액</td>
+											<td>12,255</td>
+											<td>12,255</td>
+											<td>12,255</td>
+										</tr>
+										<tr>
+											<td>기본 지급률</td>
+											<td></td>
+											<td>0.33%</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>투자실적 가산율</td>
+											<td>0%</td>
+											<td>15%</td>
+											<td>15%</td>
+										</tr>
+										<tr>
+											<td>장기유지 가산율</td>
+											<td></td>
+											<td>10%</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>실적배당 종신연금 지급률</td>
+											<td>0.3630%</td>
+											<td>0.4125%</td>
+											<td>0.4125%</td>
+										</tr>
+										<tr>
+											<td>월지급액</td>
+											<td>44</td>
+											<td>50</td>
+											<td>50</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>실적배당 종신연금 월지급액은 연금개시 후 월계약해당일마다 재계산되며, 투자수익률이 높아 연금기준금액보다 계약자적립금이 클 경우에는 계약자적립금을 기준으로 계산한 월지급액을 지급합니다.</li>
+								<li>계약자적립금 변동에 따라 '투자실적 가산율'은 0%, 15%, 30%로 달라질 수 있습니다.</li>
+								<li>예시 금액은 월계약해당일에 기본보험료를 납입하였을 경우의 금액이므로 보험료를 계약해당일에 납입하지 않았을 경우 또는 중도인출 및 추가납입 여부에 따라 예시 금액과 다를 수 있습니다.</li>
+								<li>중도해지하는 경우의 해지환급금은 최저보증이 이루어지지 않습니다.</li>
+								<li>해지환급금은 투자수익률에 따라 변동되므로 원금손실이 발생할 수 있습니다.</li>
+								<li>위의 예시가 미래의 수익을 보장하는 것은 아닙니다.</li>
+							</ul>
+						</div>
+						<!-- // 연금액 예시 -->
+
+						<!-- 해지환급금예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+							<h2 class="hd-tit3">주계약 해지환급금 예시</h2>
+							
+						</div>
+						<!-- // 해지환급금예시 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

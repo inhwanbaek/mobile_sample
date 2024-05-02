@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-document" id="pop-document">
+		<div class="pbd ">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">증빙서류 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="txt-box">
+						<h2 class="hd-tit4">증빙서류 자동제출서비스 안내</h2>
+						<p>공동인증서, 패스 인증서, 토스 인증서 중 하나만 있으면 IRP 가입자격 확인을 위한 증빙서류를 자동으로 제출할 수 있습니다.</p>
+						<p class="info">※ 휴대폰에 공동인증서가 없는 경우 <span>PC에 있는 공동인증서를 복사한 후</span> 진행해 주세요.</p>
+						<a href="javascript:;" class="link-text">공동인증서 가져오기</a>
+					</div>
+					<div class="txt-box">
+						<h2 class="hd-tit4">준비된 인증서가 없다면?</h2>
+						<ul class="bullet a">	
+							<li>다음 서류 중 1가지를 미리 준비해 주세요.
+								<ul class="bullet c">
+									<li>직장인: 재직증명서, 건강보험자격득실확인서,   원천징수영수증 중 <!-- [D] 2022-08-19 텍스트 수정 1가지-->택1</li>
+									<li>자영업자: 사업자등록증 또는 소득금액증명원</li>
+								</ul>
+							</li>
+						</ul>		
+					</div>
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-infodt');">동의</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>			
+		</div>		
+	</article>
+	<script>
+		ui.popup.open('pop-document');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

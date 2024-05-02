@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"노블리에콘서트 신청하기"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<main class="container page dlk cnct" id="container">
+		<div class="sec">
+			<div class="tit-box">
+				<h2 class="hd-tit3">
+					교보 노블리에 광화문 콘서트 <br>씨네마 & 뮤직
+				</h2>
+			</div>
+		</div>
+		<div class="ut-tbl a">
+			<table class="tbform b" cellpadding="0" cellspacing="0">
+				<caption><span class="tit">노블리에 콘서트 상세내용</span><span class="cap"></span></caption>
+				<colgroup>
+					<col>
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">신청기간</th>
+						<td>2021.11.01~2021.12.31</td>
+					</tr>
+					<tr>
+						<th scope="row">당첨자 발표</th>
+						<td>2022.01.01</td>
+					</tr>
+					<tr>
+						<th scope="row">경품</th>
+						<td>콘서트 티켓 2매</td>
+					</tr>
+					<tr>
+						<th scope="row">경품 수령방법</th>
+						<td>당첨자 개별 문자 발송</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="sec b">
+			<h3 class="hd-tit4">고객님의 소중한 개인정보는 이벤트 응모 및 당첨 안내용으로만 활용됩니다.</h3>
+			<div class="chk-arr-wrp">
+				<label class="checkbox ck"><input type="checkbox" name="checkbox01"><span class="txt">개인(신용)정보 수집·이용 동의</span></label><!-- [D] 2022-05-26 radio에서 chechbox로 변경 -->
+				<div class="bcharr"><button type="button" class="ck-arr">개인(신용)정보 수집·이용 동의</button></div>
+			</div>
+			<p class="bullet b">
+				개인(신용)정보 수집 이용에 동의해야 이벤트에 응모하실 수 있습니다. 
+			</p>
+		</div>
+
+		<div class="sec b">
+			<h3 class="hd-tit4">고객님의 정보를 입력해 주세요.</h3>
+			<span class="input a info-inp">
+				<label class="lb" for="input_id1">이름 <span class="color10">(필수입력)</span></label>
+				<input id="input_id1" type="text" placeholder="실명 입력" title="이름 입력">
+			</span>
+			<span class="input a tnum info-inp">
+				<label class="lb" for="tnum_0">휴대폰입력 <span class="color10">(필수입력)</span></label>
+				<input type="number" pattern="\d*" placeholder="- 없이 입력해주세요" id="tnum_0" title="휴대폰 입력">
+			</span>
+			<p class="bullet b">
+				티켓 발송 시 본인확인 수단으로 이름과 휴대폰번호를 활용하므로, 정확히 입력해 주세요.
+			</p>
+		</div>
+
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="alert();">응모</button>
+				</div>
+			</div>
+		</div>		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+<script>
+	var alert = function () {
+		ui.alert("<span class='color10'>응모하셨습니다.</span>당첨되실 경우 개별 연락 드립니다.");
+	}
+</script>
+</body>
+</html>

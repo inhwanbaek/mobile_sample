@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc anno" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">민원공시</h2>
+				<!-- <div class="desc">서브문구</div> -->
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">당분기</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">전분기</a></li>
+				</ul>
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+
+				<section class="sect">
+					<h2 class="blind">민원공시 안내</h2>
+					<div class="text-box">
+						<ul class="bullet a">
+							<li>아래에서 공시하고 있는 민원건수는 방문, 우편, 팩스 및 전자매체(홈페이지, 이메일 등) 등을 통하여 서면으로 민원 의사를 표시한 건을 대상으로 작성되었으며 중복되거나 반복적으로 제기된 민원은 1건으로 처리하였습니다. 또한 금융위원회, 금융감독원, 한국소비자원 등 타기관에서 이첩된 민원도 포함하여 작성되었습니다.
+							</li>
+						</ul>
+					</div>
+					<h3 class="hd-tit4">대상기간</h3>
+					<div class="text-box">
+						<ul class="bullet a">
+							<li>당분기: 2021년 4분기 (2021.10.01 ~ 2021.12.31)</li>
+							<li>전분기: 2021년 3분기 (2021.07.01 ~ 2021.09.30)</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="sect inf-bunch">
+					<h3 class="hd-tit4">민원건수</h3>
+					<div class="ut-tbl a ty01">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">민원건수 </span><span class="cap">- 구분, 민원건수, 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="3" class="b">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">구분</th>
+									<th scope="col" colspan="3">민원건수</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>자체민원</td>
+									<td class="txt-r">236</td>
+									<td class="txt-r">228</td>
+									<td class="txt-r">-3.39</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>대외민원<sup>주2)</sup></td>
+									<td class="txt-r">263</td>
+									<td class="txt-r">244</td>
+									<td class="txt-r">-7.22</td>
+									<td></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>합계</td>
+									<td class="txt-r">499</td>
+									<td class="txt-r">472</td>
+									<td class="txt-r">-5.41</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="ut-tbl a ty01">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">환산건수 표</span><span class="cap">- 구분, 환산건수 주1) (보유계약 10만건 대비), 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="3" class="b">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">구분</th>
+									<th scope="col" colspan="3">환산건수<sup>주1)</sup><br>
+										(보유계약 10만건 대비)</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>자체민원</td>
+									<td class="txt-r">2.66</td>
+									<td class="txt-r">2.54</td>
+									<td class="txt-r">-4.32</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>대외민원<sup>주2)</sup></td>
+									<td class="txt-r">2.96</td>
+									<td class="txt-r">2.72</td>
+									<td class="txt-r">-8.12</td>
+									<td></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>합계</td>
+									<td class="txt-r">5.61</td>
+									<td class="txt-r">5.26</td>
+									<td class="txt-r">-6.32</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="text-box">
+						<ul class="bullet note">
+							<li><i class="t">환산건수 <sup>주1)</sup></i> : 해당 분기 말일 회사 전체 보유계약 건수를 기준으로 항목별 산출</li>
+							<li><i class="t">대외민원 <sup>주2)</sup></i> : 금융감독원 등 타기관에서 접수한 민원 중 이첩된 민원 또는 사실조회 요청한 민원 <br>
+								단, 해당 기관에서 이첩 또는 사실조회 없이 직접 처리한 민원은 제외 <br>
+								<ul class="bullet b">
+									<li>총 민원건수에서 「금감원 즉시연금 전용코너('18.9월 오픈)」를 통해 접수된 즉시연금 민원건수를 제외한 건수</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="sect inf-bunch">
+					<h3 class="hd-tit4">유형별 민원건수</h3>
+					<div class="ut-tbl a ty02">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">유형별 민원건수 </span><span class="cap">구분, 민원건수, 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="1" class="a">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="a">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2" rowspan="2">구분</th>
+									<th scope="col" colspan="3">민원건수</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="4">유형</td>
+									<td>판매</td>
+									<td class="txt-r">89</td>
+									<td class="txt-r">101</td>
+									<td class="txt-r">13.48</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>유지</td>
+									<td class="txt-r">79</td>
+									<td class="txt-r">75</td>
+									<td class="txt-r">-5.06</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>지급</td>
+									<td class="txt-r">322</td>
+									<td class="txt-r">294</td>
+									<td class="txt-r">-8.70</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>기타</td>
+									<td class="txt-r">9</td>
+									<td class="txt-r">2</td>
+									<td class="txt-r">-77.78</td>
+									<td></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">합계</td>
+									<td class="txt-r">499</td>
+									<td class="txt-r">472</td>
+									<td class="txt-r">-5.41</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="ut-tbl a ty02">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">환산건수주1) 민원건수</span><span class="cap">- 구분, 환산건수 주1) (보유계약 10만건 대비), 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="1" class="a">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="a">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2" rowspan="2">구분</th>
+									<th scope="col" colspan="3">환산건수<sup>주1)</sup><br>(보유계약 10만건 대비)</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="4">유형</td>
+									<td>판매</td>
+									<td class="txt-r">1.00</td>
+									<td class="txt-r">1.13</td>
+									<td class="txt-r">12.39</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>유지</td>
+									<td class="txt-r">0.89</td>
+									<td class="txt-r">0.84</td>
+									<td class="txt-r">-5.97</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>지급</td>
+									<td class="txt-r">3.62</td>
+									<td class="txt-r">3.28</td>
+									<td class="txt-r">-9.57</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>기타</td>
+									<td class="txt-r">0.10</td>
+									<td class="txt-r">0.02</td>
+									<td class="txt-r">-77.99</td>
+									<td></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">합계</td>
+									<td class="txt-r">5.61</td>
+									<td class="txt-r">5.26</td>
+									<td class="txt-r">-6.32</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="text-box">
+						<ul class="bullet note">
+							<li><i class="t">환산건수 <sup>주1)</sup></i> : 해당 분기말일 회사 전체 보유계약 건수를 기준으로 항목별 산출
+								<ul class="bullet b">
+									<li>총 민원건수에서 「금감원 즉시연금 전용코너('18.9월 오픈)」를 통해 접수된 즉시연금 민원건수를 제외한 건수</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="sect inf-bunch">
+					<h3 class="hd-tit4">상품별 민원건수</h3>
+					<div class="ut-tbl a ty02">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">상품별 민원건수 표</span><span class="cap">- 구분, 민원건수, 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="1" class="a">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="a">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2" rowspan="2">구분</th>
+									<th scope="col" colspan="3">민원건수</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="5">상품</td>
+									<td>변액<sup>주2)</sup></td>
+									<td class="txt-r">71</td>
+									<td class="txt-r">58</td>
+									<td class="txt-r">-18.31</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>보장성<sup>주3)</sup></td>
+									<td class="txt-r">158</td>
+									<td class="txt-r">150</td>
+									<td class="txt-r">-5.06</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>종신</td>
+									<td class="txt-r">187</td>
+									<td class="txt-r">189</td>
+									<td class="txt-r">1.07</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>연금</td>
+									<td class="txt-r">58</td>
+									<td class="txt-r">55</td>
+									<td class="txt-r">-5.17</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>저축</td>
+									<td class="txt-r">12</td>
+									<td class="txt-r">14</td>
+									<td class="txt-r">16.67</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td colspan="2">기타<sup>주4)</sup></td>
+									<td class="txt-r">13</td>
+									<td class="txt-r">6</td>
+									<td class="txt-r">-53.85</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ut-tbl a ty02">
+						<table class="tblist" cellspacing="0" cellpadding="0" >
+							<caption><span class="tit">환산건수주1) 민원건수 표</span><span class="cap">- 구분, 환산건수 주1) (보유계약 10만건 대비), 비고, 전분기, 당분기, 증감률(%) 로 이루어진 표</span></caption>
+							<colgroup>
+								<col span="1" class="a">
+								<col span="1" class="a">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="b">
+								<col span="1" class="a">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="2" rowspan="2">구분</th>
+									<th scope="col" colspan="3">환산건수<sup>주1)</sup><br>(보유계약 10만건 대비)</th>
+									<th scope="col" rowspan="2">비고</th>
+								</tr>
+								<tr>
+									<th scope="col">전분기</th>
+									<th scope="col">당분기</th>
+									<th scope="col" class="brg">증감률(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="5">상품</td>
+									<td>변액<sup>주2)</sup></td>
+									<td class="txt-r">7.44</td>
+									<td class="txt-r">6.15</td>
+									<td class="txt-r">-17.41</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>보장성<sup>주3)</sup></td>
+									<td class="txt-r">4.71</td>
+									<td class="txt-r">4.45</td>
+									<td class="txt-r">-5.62</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>종신</td>
+									<td class="txt-r">7.45</td>
+									<td class="txt-r">7.52</td>
+									<td class="txt-r">0.94</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>연금</td>
+									<td class="txt-r">5.98</td>
+									<td class="txt-r">5.72</td>
+									<td class="txt-r">-4.35</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>저축</td>
+									<td class="txt-r">6.01</td>
+									<td class="txt-r">7.24</td>
+									<td class="txt-r">20.34</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td colspan="2">기타<sup>주4)</sup></td>
+									<td class="txt-r">-</td>
+									<td class="txt-r">-</td>
+									<td class="txt-r">-</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="text-box">
+						<ul class="bullet note">
+							<li><i class="t">환산건수 <sup>주1)</sup></i> : 해당 분기말일 상품별 보유계약 건수를 기준으로 항목별 산출</li>
+							<li><i class="t">변액 <sup>주2)</sup></i> : 변액종신ㆍ변액연금ㆍ변액저축보험 포함</li>
+							<li><i class="t">보장성 <sup>주3)</sup></i> : 단독실손ㆍ질병ㆍ재해보험 등 포함, 종신보험 제외</li>
+							<li><i class="t">기타 <sup>주4)</sup></i> : 해당 회사의 설계사 및 경영(주가, RBC 등) 관련 등 보험상품과 관계없는 민원 <br>
+								(단, 대출관련 민원 중 보험계약대출 민원은 해당 상품 기준으로 구분하되, 담보ㆍ신용대출 관련 민원은 '기타' 항목으로 구분)
+								<ul class="bullet b">
+									<li>'기타' 항목은 상품 외 민원으로 보유계약을 산정할 수 없으므로 '환산건수'를 표기하지 않음. 이에 따라 '합계'도 별도 표기하지 않으며, '3. 상품별 민원건수'의 합계는 '1. 민원건수', '2. 유형별 민원건수'의 각 합계와 일치
+									</li>
+									<li>총 민원건수에서「금감원 즉시연금 전용코너('18.9월 오픈)」를 통해 접수된 즉시연금 민원건수를 제외한 건수</li>
+								</ul>
+								
+							</li>
+						</ul>
+					</div>
+					<div class="btn-set vt">
+						<a href="https://consumer.insure.or.kr/" role="button" class="btn md ico-elink ico-r" title="새창열림" target="_blank">생명보험협회 민원공시 바로가기</a>
+						<a href="https://consumer.insure.or.kr/disclosure/member/view.do" role="button" class="btn md ico-elink ico-r" title="새창열림" target="_blank">생명보험협회 민원공시(회사별) 바로가기</a>
+					</div>
+				</section>
+
+			</div>
+
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+
+				<div class="board-wrp">
+
+					<div class="ut-optset optset">
+						<div class="opt pl">
+							<span class="tot">총 <i class="n">100</i>개</span>
+						</div>
+					</div><!-- //ut-optset -->
+
+					<ul class="notice-lst">
+						<li>
+							<div class="item">
+								<div class="box">
+									<div class="cont">
+										<strong class="tit">2018년 4분기 민원현황</strong>
+										<span class="add">
+											<em class="t">2020.01.01</em>
+										</span>
+									</div>
+									<div class="atta_file">
+										<a href="javascript:;" class="btn sm ico-r ico-pdf" title="2018년 4분기 민원현황 PDf">다운로드</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="box">
+									<div class="cont">
+										<strong class="tit">문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다.  문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다. 문자 또는 카카오톡 등 메신져를 통해 가족 또는 친구를 사칭하는 보이스피싱에 유의하시기 바랍니다.</strong>
+										<span class="add">
+											<em class="t">2020.01.01</em>
+										</span>
+									</div>
+									<div class="atta_file">
+										<a href="javascript:;" class="btn sm ico-r ico-pdf" title="2018년 4분기 민원현황 PDf">다운로드</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul><!-- //notice-lst -->
+	
+					<div class="ut-paging">
+						<div class="nav prev">
+							<a href="javascript:;" role="button" class="bt prev end"><i class="blind">처음 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt prev"><i class="blind">이전 페이지</i></a>
+						</div>
+						<div class="link">
+							<a href="javascript:;" role="button" class="bt"><i class="n">1</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">2</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">3</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt active"><i class="n">4</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">5</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">6</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">7</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">8</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">9</i> <i class="blind">번째 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt"><i class="n">10</i> <i class="blind">번째 페이지</i></a>
+						</div>
+						<div class="nav next">
+							<a href="javascript:;" role="button" class="bt next"><i class="blind">다음 페이지</i></a>
+							<a href="javascript:;" role="button" class="bt next end"><i class="blind">마지막 페이지</i></a>
+						</div>
+					</div><!-- //ut-paging -->
+	
+				</div><!-- //board-wrp -->
+				
+			</div>
+			
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

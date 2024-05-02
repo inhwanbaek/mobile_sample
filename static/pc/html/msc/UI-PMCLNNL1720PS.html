@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+
+	<main class="container page msc loan inq" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">스마트ATM출금신청조회</h2>
+				<div class="desc">이용이 편리한 스마트ATM출금, <i class="line">신청내역</i>을 확인해보세요.</div><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="loiq-dlist">
+				<ul>
+					<li>
+						<div class="ut-dcard a dcard" data-tog-cls="box">
+							<div class="stds">
+								<div class="hdt">
+									<div class="tit">스마트ATM출금</div>
+								</div>
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">신청금액</div>
+										<div class="dd">
+											<span class="prc">
+												<strong class="p">300,000</strong><i class="w">원</i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dtds" data-tog-cls="ctn">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt">처리사유</div>
+											<div class="dd">보험계약대출</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">예약접수번호</div>
+											<div class="dd">2022011000000001</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">신청일</div>
+											<div class="dd">2020.01.10</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">신청경로</div>
+											<div class="dd">모바일(간편)</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt">수령방법</div>
+											<div class="dd">스마트ATM출금</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-set btnbot">
+									<a href="javascript:;" class="btn md ico-arrow" role="button">신청 취소</a>
+								</div>
+							</div>
+							<div class="mores">
+								<button type="button" data-tog-cls="btn" data-tog-val="open" class="bt-more">상세내용 더보기</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="loiq-gudbox b">
+				<ul class="bullet b md">
+					<li>출금 신청 후 5분 안에 편의점 또는 지하철역 ATM에서 인증번호 입력 후 현금을 수령해 주세요. 5분 안에 출금하지 않으면 신청이 자동 취소됩니다.</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

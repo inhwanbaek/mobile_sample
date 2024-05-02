@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<article class="pop-layer c pop-resultinfo" id="pop-resultinfo">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">지급심사 결과 안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="amp-msg">
+							
+							<strong>지급심사 결과 신청할 수 없습니다.<br>자세한 사항은 법인콜센터(1588-0770)로<!-- [D] 2022-06-29 br 태그 삭제 <br>--> 문의해 주세요.</strong>
+							<p><span class="bold"><!-- [D] 2022-06-29 괄호 추가 -->(신청 불가 사유)</span>부담금 납입 및 적립금운용방법변경 진행 여부 등의 상태를 의미합니다. 부담금 납입 및 적립금운용방법변경 절차가 완료된 후 청구하여야 합니다.</p>
+						</div>
+					</main>				
+				</div>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>			
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-resultinfo');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-sgnsys',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			}); 
+			*/
+		</script>
+	</div>
+</body>
+</html>

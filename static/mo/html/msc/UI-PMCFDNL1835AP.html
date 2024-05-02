@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-period pop-mscDft" id="pop-period">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">조회설정</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="ut-form b">
+						<div class="hdt">
+							<h2 class="tit">조회기간</h2>
+						</div>
+						<div class="panel">
+							<div class="ut-range">
+								<div class="radiobox c col4">
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">당일</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">1주</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">15일</span></label>
+									<label class="radio"><input type="radio" name="r_range" checked><span class="txt">1개월</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">3개월</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">1년</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">2년</span></label>
+									<label class="radio"><input type="radio" name="r_range"><span class="txt">3년</span></label>
+								</div>
+								<div class="rcs">
+									<span class="input a ut-date">
+										<label class="lb blind" for="date_st_0">시작날짜</label>
+										<input type="tel" id="date_st_0" class="datepicker st" placeholder="YYYY.MM.DD" value="2020.01.01" title="시작날짜"></span>
+									<i class="ds">~</i>
+									<span class="input a ut-date">
+										<label class="lb blind" for="date_ed_1">종료날짜</label>
+										<input type="tel" id="date_ed_1" class="datepicker ed" placeholder="YYYY.MM.DD" value="2020.01.01" title="종료날짜">
+									</span>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="hdt">
+							<h2 class="tit">거래구분</h2>
+						</div>
+						<div class="panel">
+							<div class="radiobox c col3">
+								<label class="radio"><input type="radio" name="radio_c2" checked><span class="txt">전체</span></label>
+								<label class="radio"><input type="radio" name="radio_c2"><span class="txt">매수</span></label>
+								<label class="radio"><input type="radio" name="radio_c2"><span class="txt">매도</span></label>
+							</div>
+						</div>
+
+						<div class="hdt">
+							<h2 class="tit">내역정렬</h2>
+						</div>
+						<div class="panel">
+							<div class="radiobox c col2">
+								<label class="radio"><input type="radio" name="radio_c3" checked><span class="txt">최신순</span></label>
+								<label class="radio"><input type="radio" name="radio_c3"><span class="txt">과거순</span></label>
+							</div>
+						</div>
+					</div>
+					
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">조회</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-period');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+
+</div>
+</body>
+</html>

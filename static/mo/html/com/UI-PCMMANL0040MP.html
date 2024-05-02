@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-terms" id="pop-terms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">휴대폰본인확인 개인정보활용 동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<section class="agreeArea">						
+						<div class="scrollBox">
+
+							<div class="agreeBox">
+								<div class="term-doc typeBg">
+									
+									<h2 class="hd-tit2">[필수] 개인(신용)정보 수집·이용 동의</h2>
+									
+									<p>개인(신용)정보의 수집·이용에 관한 동의를 거부하실 수 있습니다. 다만, 본 동의는 휴대폰 본인확인을 위한 필수적인 사항이므로 동의를 거부하시는 경우 업무 수행이 불가능 할 수 있습니다.</p>
+
+									<h3 class="hd-tit4">1. 수집·이용 목적</h3>
+									
+									<ul class="bullet c">
+										<li>홈페이지·모바일 서비스 이용을 위한 휴대폰 본인확인 및 CI값 발급 </li>
+									</ul>
+
+									<h3 class="hd-tit4">2. 보유 및 이용기간 </h3>
+									
+									<p><strong>서비스 목적 달성시 즉시 파기</strong></p>
+
+									<h3 class="hd-tit4">3. 수집·이용 항목</h3>
+									<p><strong>개인(신용)정보</strong></p>
+									<ul class="bullet c">
+										<li>일반 개인정보 : 성명, 생년월일, 성별, 휴대전화번호, 통신사, CI값</li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</main>
+			</div>
+			<nav class="floatbots b">
+				<div class="inr">
+					<div class="box-set boxbot">
+						<div class="hd-tit4">위 개인신용정보 수집·이용에 동의하십니까?</div>
+					</div>
+					<div class="btn-set">
+						<a href="javascript:;" class="btn lg rd b">동의안함</a>
+						<a href="javascript:;" class="btn lg rd a">동의</a>
+					</div>
+				</div>
+			</nav>
+			<!-- <div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-terms');
+	</script>
+
+</div>
+</body>
+</html>

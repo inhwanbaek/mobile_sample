@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-terms terms" id="pop-terms">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">전체동의</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<section class="agreeArea">						
+						<div class="scrollBox">
+
+							<div class="agreeBox">
+								<div class="term-doc typeBg">
+									
+									<h2 class="hd-tit2">고객정보 관리 및 상품제안·보장분석을 위한 동의</h2>
+
+									<p class="mt20">
+										귀하는 개인(신용)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 다만, 본 동의는 ‘상품제안·실손의료보험 중복 확인 및 보장분석’ 서비스를 위한 필수적인 사항이므로 본 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+									</p>
+
+									<h3 class="term_tit">
+										■ 수집·이용에 관한 사항
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">수집·이용<br>목적</th>
+													<td>
+														<ul class="bullet c">
+															<li><strong>보험계약 상담,</strong> 보험계약 인수여부 판단
+																(건강진단 및 계약 적부조사 포함 )</li>
+															<li>실손의료보험 중복확인을 위한 타사보험 가입 조회</li>
+															<li><strong>보장분석서비스 제공</strong></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td><strong>동의일로부터 1년까지</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 수집·이용 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용 항목에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td><strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td><strong>피보험자의 질병·상해에 관한 정보(진료기록, 상병명, 흡연여부 등)</strong></td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td><strong>성명, 주소, 생년월일, 이메일, 유·무선 전화번호, 국적, 직업, 운전여부</strong></td>
+												</tr>
+												<!--[D] 2022-0-17 약관수정 -->
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td><strong>보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금정보(보험금지금사유, 지급금액 등), 계약 전 알릴의무 사항(취미 등)</strong></td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td><strong>소득 및 재산정보, 신용등급, 소득추정등급</strong></td>
+												</tr>
+												<!--//[D] 2022-0-17 약관수정 -->
+											</tbody>
+										</table>
+									</div>
+
+									<p class="bullet b mt20">본 동의는 당사와 모집위탁계약을 체결한 업무수탁자(당사 전속 보험설계사 및 동 계약을 모집한 보험대리점)가 수집이용하는 것을 포함합니다.</p>
+
+									<h3 class="term_tit">
+										■ 제공에 관한 사항
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">제공에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">제공받는자</th>
+													<td>
+														<ul class="bullet c">
+															<li><strong>신청인의 가족구성원</strong></li>
+															<li><strong>신용정보집중기관(신용정보원), 보험요율산출기관</strong></li>
+															<li><strong>신용정보회사(NICE신용평가정보, 코리아크레딧뷰로 등)</strong></li>
+														</ul>
+													</td>
+												</tr>
+												<!--[D] 2022-0-17 약관수정 -->
+												<tr>
+													<th scope="row">제공받는 자의 이용목적</th>
+													<td><strong>본인확인, 보험계약 상담, 실손의료보험 중복확인을 위한 타사보험 가입조회, 보장분석서비스 제공</strong></td>
+												</tr>
+												<!--//[D] 2022-0-17 약관수정 -->
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td><strong>동의일로부터 1년까지</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 제공 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">제공에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 유·무선 전화번호</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="bullet b mt20">업무위탁을 목적으로 개인(신용)정보 처리하는 경우 별도의 동의 없이 업무 수탁자에게 
+										귀하의 정보를 제공할 수 있습니다.
+										(홈페이지 www.kyobo.co.kr 에서 확인 가능)
+									</p>
+
+
+									<h3 class="term_tit">
+										■ 조회에 관한 사항
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">조회에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">조회대상 기관</th>
+													<td>
+														<ul class="bullet c">
+															<li>종합신용정보집중기관(한국신용정보원), 보험요율산출기관</li>
+															<li>신용정보회사(NICE신용평가정보, 코리아크레딧뷰로 등)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">조회 목적</th>
+													<td>본인확인, 보험계약 상담, 보험계약 인수여부 결정을 위한 판단, 실손의료보험 중복확인을 위한 타사보험 가입조회, 보장분석서비스 제공</td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td><strong>동의일로부터 1년까지</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 조회 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">조회 항목에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td>
+														<strong>피보험자의 질병·상해에 관한 정보(진료기록, 상병명, 흡연여부 등)</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 유·무선 전화번호</td>
+												</tr>
+												<!--[D] 2022-0-17 약관수정 -->
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td><strong>보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금정보(보험금지금사유, 지급금액 등), 계약 전 알릴의무 사항(취미 등)</strong></td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td><strong>소득 및 재산정보, 신용등급, 소득추정등급</strong></td>
+												</tr>
+												<!--//[D] 2022-0-17 약관수정 -->
+											</tbody>
+										</table>
+									</div>
+
+									<p class="bullet b mt20">업무위탁을 목적으로 개인(신용)정보 처리하는 경우 별도의 동의 없이 업무 수탁자에게 
+										귀하의 정보를 제공할 수 있습니다.
+										(홈페이지 www.kyobo.co.kr 에서 확인 가능)
+									</p>
+
+									<h2 class="hd-tit2 mt20">계약체결 · 이행 등을 위한 동의</h2>
+									<p class="mt20">
+										귀하는 개인(신용)정보의 수집·이용 및 조회, 제공에 관한 동의를 거부하실 수 있으며, 개인의 신용도 등을 평가기하 위한 목적 이외의 개인(신용)정보 제공 동의는 철회할 수 있습니다. 다만, 본 동의는 ‘보험계약 인수심사·체결·이행·유지·관리’를 위해 필수적인 사항이므로 동의를 거부하시는 경우 관련 업무수행이 불가능합니다.
+									</p>
+									<h3 class="term_tit">
+										■ 수집·이용에 관한 사항
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">수집·이용 목적</th>
+													<td>
+														<ul class="bullet c">
+															<li>보험계약의 인수심사·체결·이행·유지·관리(부활 및 갱신 포함), 보험금 등 지급·심사,
+																보험계약 대출 체결·유지·관리</li>
+															<li>조사연구, 서비스 제공, 순보험료율의 산출·검증</li>
+															<li>민원처리 및 분쟁 대응, 적부 및 사고조사(보험사기 조사 포함), 고객 이력 관리</li>
+															<li>보험계약 및 보험금 청구, 보험계약대출에 이해관계가 있는 자에 대한 법규 및 계약상 의무 이행</li>
+															<li>기존 계약자에 대한 보험계약 및 보험계약대출 상담(당사 및 당사 설계사에 한함)</li>
+															<li>금융거래 관련 업무(보험계약 및 보험계약대출 관련 금융거래 신청, 자동이체 등)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="2">보유 및<br>이용기간</th>
+													<td><strong>수집·이용 동의일로부터 거래 종료 후 5년까지</strong><br>
+														(단, 거래종료 후 5년이 경과한 경우에는 보험금 지급, 금융사고조사, 보험사기 방지· 적발, 민원처리,법령상 의무이행을 위하여 보유·이용하며 별도 보관)
+													</td>
+												</tr>
+												<tr>
+													<td>거래 종료일은 “①보험계약 만기, 해지, 취소, 철회일 또는 소멸일, ②보험금 청구권 소멸시효 완성일(상법 제662조), ③채권·채무 관계 소멸일 등 당사와의 모든 거래가 종료된 날로부터 가장 나중에 도래한 사유를 기준으로 판단합니다. 다만, 만기 등 사유발생일 이후라 하더라도 만기환급금 또는 해지 환급금 등을 수령하지 않았거나, 상환할 금액이 남아 있는 경우, 보험금 지급이나 수사·소송이 진행 중인 경우는 거래종료에 해당하지 않습니다.
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 수집·이용 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td>
+														<strong>피보험자의 질병·상해에 관한 정보(상병명, 진료기록, 기왕증 등)</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 주소, 생년월일, 이메일, 유·무선 전화번호, 국적, 직업, 운전여부</td>
+												</tr>
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td>금융거래 업무 관련 정보(보험료 및 보험금 등 출·수납 등), 보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금 지급 관련 정보(사고정보, 본인의 위임을 받아 취득한 각종 조사서, 판결문, 증명서, 확인서, 진료기록 등), 계약 전 알릴 의무사항(취미 등), 보험계약대출 관련 정보(대출실행일, 대출금, 대출금리, 상환일자, 관리번호 등), 법률 및 국제협약 등의 의무이행을 위한 정보, 대출계약정보, 대출정보, 채무보증
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td>소득 및 재산 정보, 신용등급, 소득추정등급</td>
+												</tr>
+												<tr>
+													<th scope="row">신용도<br>판단정보</th>
+													<td>연체정보, 신용질서문란정보(보험사기 등)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										■ 제공에 관한 사항
+									</h3>
+									<h4 class="hd-tit4">국내 제3자 제공동의</h4>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">제공에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">제공받는자</th>
+													<td>
+														<ul class="bullet c">
+															<li><strong>종합신용정보집중기관 : 한국신용정보원</strong></li>
+															<li><strong>신용정보회사 : NICE평가정보㈜, 코리아크레딧뷰로㈜</strong></li>
+															<li><strong>공공기관 등 : 금융위원회, 금융감독원, 국세청 등 공공기관, 보험개발원, 보험요율 산출기관 등 법령상 업무 수행기관(위탁사업자 포함)</strong></li>
+															<li><strong>보험회사 등 : 생명·손해보험회사, 국내 재보험사, 공제사업자, 체신관서(우체국보험)</strong></li>
+															<li><strong>금융거래기관 : 계좌개설 금융기관, 금융결제원</strong></li>
+															<li><strong>보험협회 등 : 생명·손해보험협회, 건강보험심사평가원, 서울신용정보㈜, 한국예탁결제원, 변호사, 의료기관</strong></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">제공받는 자의 이용목적</th>
+													<td>
+														<ul class="bullet c">
+															<li><strong>종합신용정보집중기관 : 개인(신용)정보 조회, 신용정보의 집중관리 및 활용 등 법령에서 정한 종합신용정보집중기관의 업무 수행</strong></li>
+															<li><strong>공공기관 등 : 법령에 따른 업무 수행(위탁업무 포함)</strong></li>
+															<li><strong>신용정보회사 : 신용도판단, 본인확인, 통계작성, 연구·분석, 정책자료로 활용 등 법령에서 정한 신용정보회사의 업무수행</strong></li>
+															<li><strong>보험회사 등 : 중복보험 확인 및 비례보상, 재보험 가입 및 재보험금 청구, 보험계약 공동인수</strong></li>
+															<li><strong>금융거래기관 : 금융거래업무</strong></li>
+															<li><strong>보험협회 등 : 보험계약 관련 업무지원(휴면보험금 등 포함), 공정경쟁 질서유지에 관한 협정업무</strong></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td><strong>제공받는 자의 이용목적을 달성할 때까지(최대 거래 종료 후 5년까지)</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="bullet b mt20">외국 재보험사의 국내지점이 재보험계약 가입 판단 지원, 보험계약 공동인수 지원 업무를 위탁하기 위한 경우 별의도 동의 없이 외국 소재 본점에 귀하의 정보를 이전할 수 있습니다.
+									</p>
+
+									<h3 class="term_tit">
+										○ 제공 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">제공에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td>
+														<strong>피보험자의 질병·상해에 관한 정보(상병명, 진료기록, 기왕증 등)</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 주소, 생년월일, 이메일, 유·무선 전화번호, 국적, 직업, 운전여부</td>
+												</tr>
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td>금융거래 업무 관련 정보(보험료 및 보험금 등 출·수납 등), 보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금 지급 관련 정보(사고정보, 본인의 위임을 받아 취득한 각종 조사서, 판결문, 증명서, 확인서, 진료기록 등), 계약 전 알릴 의무사항(취미 등), 보험계약대출 관련 정보(대출실행일, 대출금, 대출금리, 상환일자, 관리번호 등), 법률 및 국제협약 등의 의무이행을 위한 정보, 대출계약정보, 대출정보, 채무보증</td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td>소득 및 재산 정보, 신용등급, 소득추정등급</td>
+												</tr>
+												<tr>
+													<th scope="row">신용도<br>판단정보</th>
+													<td>연체정보, 신용질서문란정보(보험사기 등)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="bullet b mt20">업무위탁을 목적으로 개인(신용)정보 처리하는 경우 별도의 동의 없이 업무 수탁자에게
+										귀하의 정보를 제공할 수 있습니다. (홈페이지 www.kyobo.co.kr 에서 확인 가능)
+									</p>
+
+									<h4 class="hd-tit4">국외 제3자 제공동의</h4>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">국외 제3자 제공동의에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">제공받는자</th>
+													<td>
+														<strong>국외 재보험사</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">제공받는 자의 이용목적</th>
+													<td><strong>보험계약의 인수 심사, 보험계약 공동 인수</strong></td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td><strong>제공받는 자의 이용목적을 달성할 때까지(최대 거래 종료 후 5년까지)</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 제공 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">제공에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td>
+														<strong>피보험자의 질병·상해에 관한 정보(상병명, 진료기록, 기왕증 등)</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 주소, 생년월일, 이메일, 유·무선 전화번호, 국적, 직업, 운전여부</td>
+												</tr>
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td>금융거래 업무 관련 정보(보험료 및 보험금 등 출·수납 등), 보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금 지급 관련 정보(사고정보, 본인의 위임을 받아 취득한 각종 조사서, 판결문, 증명서, 확인서, 진료기록 등), 계약 전 알릴 의무사항(취미 등), 보험계약대출 관련 정보(대출실행일, 대출금, 대출금리, 상환일자, 관리번호 등), 법률 및 국제협약 등의 의무이행을 위한 정보, 대출계약정보, 대출정보, 채무보증</td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td>소득 및 재산 정보, 신용등급, 소득추정등급</td>
+												</tr>
+												<tr>
+													<th scope="row">신용도<br>판단정보</th>
+													<td>연체정보, 신용질서문란정보(보험사기 등)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="bullet b mt20">업무위탁을 목적으로 개인(신용)정보 처리하는 경우 별도의 동의 없이 업무 수탁자에게
+										귀하의 정보를 제공할 수 있습니다. (홈페이지 www.kyobo.co.kr 에서 확인 가능)</p>
+
+									<h3 class="term_tit">
+										■ 조회에 관한 사항
+									</h3>
+									
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">조회에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">조회 대상 기관</th>
+													<td>
+														<ul class="bullet c">
+															<li>종합신용정보집중기관</li>
+															<li>신용정보회사 : NICE평가정보㈜</li>
+															<li>통신사, 공공기관(도로교통공단, 정부24 등)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">조회 목적</th>
+													<td>
+														<ul class="bullet c">
+															<li>종합신용정보집중기관 : 보험계약 인수심사, 보험 가입한도 조회, 실제 발생하는 손해를 보상하는 실손형
+																보험의 중복 확인, 보험계약대출 체결·유지·관리, 보험금 등 지급·심사, 보험사고조사(보험사기조사 포함)</li>
+															<li>신용정보회사: 계약체결 및 유지여부 판단, 연체관리, 통계작성, 연구·분석, 민원처리</li>
+															<li>통신사 : 실명인증 및 본인인증</li>
+															<li>공공기관 : 고객 신분증 진위 여부 확인</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="2">조회 동의의<br>효력기간</th>
+													<td><strong>수집·이용 동의일로부터 거래 종료 후 5년까지</strong><br>(단, 거래종료 후 5년이 경과한 경우에는 보험금 지급, 금융사고조사, 보험사기 방지· 적발, 민원처리 ,
+														법령상 의무이행을 위하여 보유·이용하며 별도 보관)</td>
+												</tr>
+												<tr>
+													<td>거래 종료일은 “①보험계약 만기, 해지, 취소, 철회일 또는 소멸일, ②보험금 청구권 소멸시효 완성일(상법
+														제662조), ③채권·채무 관계 소멸일 등 당사와의 모든 거래가 종료된 날로부터 가장 나중에 도래한 사유를
+														기준으로 판단합니다. 다만, 만기 등 사유발생일 이후라 하더라도 만기환급금 또는 해지 환급금 등을 수령
+														하지 않았거나, 상환할 금액이 남아 있는 경우, 보험금 지급이나 수사·소송이 진행 중인 경우는 거래종료에
+														해당하지 않습니다.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h3 class="term_tit">
+										○ 조회 항목
+									</h3>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">조회에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="30%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">고유식별정보</th>
+													<td>
+														<strong>주민등록번호, 외국인등록번호, 여권번호, 운전면허번호</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">민감정보</th>
+													<td>
+														<strong>피보험자의 질병·상해에 관한 정보(상병명, 진료기록 등)</strong>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반개인정보</th>
+													<td>성명, 생년월일, 유·무선 전화번호, 성별, 연락처, 주소, 직장명</td>
+												</tr>
+												<tr>
+													<th scope="row">신용거래정보</th>
+													<td>보험계약정보(상품종류, 기간, 보험가입금액 등), 보험금지급 관련 정보(사고정보 포함) 은행연합회 등
+														금융기관의 연금저축, 비과세, 세금우대종합저축 가입총액 및 내역, 여신거래정보, 상거래정보
+														</td>
+												</tr>
+												<tr>
+													<th scope="row">신용능력정보</th>
+													<td>소득 및 재산 정보, 채무, 납세실적 정보, 신용등급, 소득추정등급, 직업정보</td>
+												</tr>
+												<tr>
+													<th scope="row">신용도<br>판단정보</th>
+													<td>연체정보, 신용질서문란정보(보험사기 등)</td>
+												</tr>
+												<tr>
+													<th scope="row">공공정보</th>
+													<td>체납정보, 채무조정정보, 개인신용평점 및 보험평점, 공적장부 정보, 공공요금 납부정보, 주민등록 변동 정보</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h2 class="hd-tit2 mt20">상품소개를 위한 선택 동의</h2>
+									<p class="mt20">본 동의는 당사 계약 체결에 필수적이지 않으며 동의를 거부하실 수 있습니다. 또한, 동의하시더라도 당사 홈페이지 및 콜센터(1588-1001), 고객PLAZA를 통해 철회하거나 가입 권유 목적의 연락에 대한 중단을 요청하실 수 있으며 연락중지청구시스템(www.donotcall.or.kr)을 통해 언제든지 마케팅활동에 대한 중지를 요청할 수 있습니다. 동의하시는 경우 상품이나 서비스의 홍보 및 판매권유 등의 목적으로 개인정보를 이용하여 연락을 드릴 수 있습니다. </p>
+									<h3 class="term_tit">
+										□ 수집·이용에 관한 사항
+									</h3>
+									<div class="rating-list">
+										<dl class="rating-box stage2"><!--[D]stage1~5에 따른 등급 표시-->
+											<dd class="graph-area" role="img" aria-label="안심, 다소안심, 보통, 신중, 주의 평가등급 중 다소안심 평가등급">
+												<ol class="graph">
+													<li><span>안심</span></li>
+													<li><span>다소안심</span></li>
+													<li><span>보통</span></li>
+													<li><span>신중</span></li>
+													<li><span>주의</span></li>
+												</ol>
+												<strong class="blind"></strong>
+											</dd>
+											<dd class="text-area">위 등급은 사생활 침해 위험, 혜택, 명확성 등을 종합적으로 고려하여 동의 내용의 평가등급을 제공하는 제도입니다.</dd>
+										</dl>                
+									</div>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="26%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row">수집·이용<br>목적</th>
+													<td>
+														당사의 <strong>상품(보험,수익증권,신탁,융자,퇴직연금)·서비스(건강관리서비스,컨설턴트 서비스,세미나서비스 등) 판매 및 제공,</strong> 
+														마케팅 조사, 컨설턴트 Job 소개, 이벤트 안내 및 관리, 경품 제공
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">보유 및<br>이용기간</th>
+													<td>
+														<strong>당사와 계약이 있는 고객: 동의일로부터 5년</strong><br>
+														<strong>당사와 계약이 없는 고객: 동의일로부터 2년</strong><br>
+														<p class="bullet b">계약유무는 당사 홈페이지 및 콜센터(1588-1001)에서 확인가능</p>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">거부 권리 <br>및 불이익</th>
+													<td>
+														귀하는 아래 개인(신용)정보수집•이용에 관한 동의를 거부하실 수 있습니다. 다만 동의하지 않으실 경우 “경품 제공, 컨설턴트 서비스, 세미나 서비스” 혜택을 받지 못할 수 있습니다
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h4 class="hd-tit4">○ 수집·이용 항목</h4>
+									<div class="ut-tbl a tblTypeH">
+										<table class="tblist a" cellpadding="0" cellspacing="0">
+											<caption><span class="tit">수집·이용에 관한 사항</span><span class="cap"></span></caption>
+											<colgroup>
+												<col width="26%">
+												<col>
+											</colgroup>
+										
+											<tbody>
+												<tr>
+													<th scope="row" colspan="2">개인(신용)정보</th>
+												</tr>
+												<tr>
+													<th scope="row">일반<br>개인정보</th>
+													<td>
+														일반식별정보(성명, 생년월일, 주소, 성별, 전화/휴대전화번호, e-mail주소), 가족정보(결혼기념일), 직장정보(직업), 기타개인정보(관심분야)
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">신용<br>거래정보</th>
+													<td>
+														보험거래정보(보험계약관련정보, 퇴직연금정보 등), 여신성거래정보(대출일자, 대출금액, 상품명, 상환방법 등), 그 외 금융거래정보(수익증권/신탁상품 가입정보)
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">신용<br>능력정보</th>
+													<td>
+														소득정보(소득금액 등)
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="bullet b mt20">
+										본 동의는 당사와 모집위탁계약을 체결한 업무수탁자(당사 전속 보험설계사 및 동 계약을 모집한 보험대리점) 및 콜센터가 수집·이용하는 것을 포함합니다. 
+										** <span class="link-text">상기 내용에 동의하시는 경우 당사 임직원 또는 업무수탁자가 상품·서비스 소개 및 판매 안내연락(TM 등)을 드릴 수 있습니다.</span>
+									</p>
+									<h4 class="hd-tit4 mt20">○ 광고성 정보의 수신 동의</h4>
+									<div class="cts-box">                       
+										<p>전자적 전송매체를 통한 광고성 정보의 수신을 동의하시겠습니까?</p>
+				
+										<div class="rdos mt10">
+											<label class="radio"><input type="radio" name="radio9" checked><span class="txt">동의</span></label>
+											<label class="radio"><input type="radio" name="radio9"><span class="txt">동의하지 않음</span></label>
+										</div>
+
+										<p class="mt30">전자적 전송매체 선택</p>
+				
+										<div class="chke mt10">
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">전체</span></label>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">문자메세지</span></label>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">이메일</span></label>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">전화(ARS)</span></label>
+											<label class="checkbox cd"><input type="checkbox"><span class="txt">우편</span></label>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">동의안함</button>
+					<button type="button" class="btn a rd lg">동의</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-terms');
+	</script>
+
+</div>
+</body>
+</html>

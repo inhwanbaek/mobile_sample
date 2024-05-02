@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-infoentry" id="pop-infoentry">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">고객확인정보등록(CDD/EDD)</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="infoentry-tit">
+						<h2 class="hd-tit3">주소와 이메일을 확인해 주세요.</h2>
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">주소</h3>
+						<div class="rdos">
+							<label class="radio"><input type="radio" name="radio2" checked><span class="txt">집</span></label>
+							<label class="radio"><input type="radio" name="radio2"><span class="txt">직장</span></label>
+						</div>
+						<div class="ut-addrs item">  
+							<span class="input a adr1 no-lb">
+								<label class="lb blind" for="adr_id1" role="text">주소</label>
+								<div class="ibts"><button type="button" class="btn sm b sch">검색</button></div>
+								<input id="adr_id1" type="text" placeholder="1234" readonly>
+							</span>
+							<span class="input a adr2  no-lb">
+								<label class="lb blind" for="adr_id2">상세주소</label>
+								<input id="adr_id2" type="text" placeholder="나머지 주소를 입력해주세요" value="서울 종로구 종로 1">
+							</span>
+						</div>
+					</div>
+
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">이메일</h3>
+						<div class="rdos item">
+							<label class="radio"><input type="radio" name="radio5"><span class="txt">수신</span></label>
+							<label class="radio"><input type="radio" name="radio5"><span class="txt">수신안함</span></label>
+						</div>
+						<div class="ut-email email item">
+							<div class="enam">
+								<span class="input a emids"><label class="lb" for="emids_03">이메일<i class="blind">아이디</i></label><input id="emids_03" type="email" placeholder="abcd"></span>
+								<i class="at">@</i>
+								<span class="input a emcom"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+							</div>
+							<ul class="ebts">
+								<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+								<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+								<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+							</ul>
+							<!-- 에러메시지 
+							<div class="enam">
+								<span class="input a emids no"><label class="lb" for="emids_03">이메일<i class="blind">아이디</i></label><input id="emids_03" type="email" placeholder="abcd"></span>
+								<i class="at">@</i>
+								<span class="input a emcom no"><label class="lb" for="emcom_id0">주소입력</label><input id="emcom_id0" type="text" placeholder="직접입력"></span>
+							</div>
+							<ul class="ebts">
+								<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+								<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+								<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+							</ul>
+							<div class="vald-msg show no">이메일을 입력해 주세요.</div> 
+							<div class="vald-msg show no">이메일 형식이 올바르지 않습니다.</div> 
+							-->
+						</div>
+					</div>
+					
+					<div class="infoentry-item">
+						<h3 class="hd-tit4">운용보고서 수령 여부</h3>
+						<div>
+							<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_1"><span class="txt">수령</span></label>
+							<label class="radio"><input type="radio" name="radio3" data-ui-tab-btn="tab_rc" aria-controls="tab_rc_2"><span class="txt">수령안함</span></label>
+						</div>
+					</div>
+
+					<!-- 운용보고서 수령 여부에서 수령 선택 시 운용보고서 수령처 선택 노출 -->
+					<div class="infoentry-item">
+						<div data-ui-tab-ctn="tab_rc" aria-labelledby="tab_rc_1">
+							<div class="infoentry-tit">
+								<h3 class="hd-tit4">운용보고서 수령처</h3>
+								<div>
+									<label class="radio"><input type="radio" name="radio4"><span class="txt">집(우편)</span></label>
+									<label class="radio"><input type="radio" name="radio4"><span class="txt">직장(우편)</span></label>
+									<label class="radio"><input type="radio" name="radio4"><span class="txt">직장(우편)</span></label>
+								</div>
+								<!-- 우편(자택) 선택했는데 입력한 주소정보가 없을 경우, 에러 노출 -->
+								<div class="vald-msg show no">운용보고서를 받을 집주소를 입력해 주세요. </div>
+								<!-- //우편(자택) 선택했는데 입력한 주소정보가 없을 경우, 에러 노출 -->
+
+								<!-- 우편(직장) 선택했는데 입력한 주소정보가 없을 경우, 에러 노출 -->
+								<div class="vald-msg show no">운용보고서를 받을 직장주소를 입력해 주세요</div>
+								<!-- //우편(직장) 선택했는데 입력한 주소정보가 없을 경우, 에러 노출 -->
+
+								<!-- 이메일을 선택했는데 입력한 이메일 주소가 없는 경우, 에러 노출 -->
+								<div class="vald-msg show no">운용보고서를 받을 이메일주소를 입력해 주세요</div>
+								<!-- //이메일을 선택했는데 입력한 이메일 주소가 없는 경우, 에러 노출 -->
+
+								<!-- 이메일을 선택했는데 이메일 수신여부가 수신안함일 경우, 에러 노출 -->
+								<div class="vald-msg show no">이메일 수신 여부를 ‘수신’으로 변경해 주세요</div>
+								<!-- //이메일을 선택했는데 이메일 수신여부가 수신안함일 경우, 에러 노출 -->
+							</div>
+						</div>
+					</div>
+					<!-- //운용보고서 수령 여부에서 수령 선택 시 운용보고서 수령처 선택 노출 -->
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg">이전</button>
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-infoentry');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+	</script>
+
+</div>
+</body>
+</html>
+

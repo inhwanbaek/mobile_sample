@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"금리연동형 보험계약관리 상세"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 -->
+	<main class="container page msc default cti" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-bilTit2">
+				<h2 class="hd-tit3">선택하신 계약의 상세내용입니다.
+				</h2>
+			</div>
+
+			<h3 class="hd-tit4">계약 상세내역</h3>
+			<div class="ut-tbl a row">
+				<table class="tblist" cellpadding="0" cellspacing="0">
+					<caption><span class="tit">계약 상세내역</span><span class="cap"></span></caption>
+					<colgroup>
+						<col width="30%">
+						<col width="30%">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2">기준일</th>
+							<td class="txt-r">2010.08.02</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">주계약 납입보험료 합계(A)</th>
+							<td class="txt-r">41,000,000원</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="2">공시이율 적립건
+								차감금액(B)</th>
+							<th scope="row">사업비</th>
+							<td class="txt-r">2,875,750원<br>(6.6%)</td>
+						</tr>
+						<tr>
+							<th scope="row">위험보험료</th>
+							<td class="txt-r">0원</td>
+						</tr>
+						<tr>
+							<th scope="row" colspan="2">적립대상 금액 (A-B)</th>
+							<td class="txt-r">40,000,000원</td>
+						</tr>
+						<tr>
+							<th scope="rowgroup" rowspan="2">책임준비금</th>
+							<th scope="row">금액(C)</th>
+							<td class="txt-r">2,875,750원</td>
+						</tr>
+						<tr>
+							<th scope="row">적립률<br>
+								(C/A)*100</th>
+							<td class="txt-r">116.7%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 가이드박스 -->
+			<div class="ut-gudbox b open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+				<div class="gtit">꼭 알아두세요</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>납입한 보험료 중 사업비, 위험보험료 및 특약보험료를 차감한 금액이 공시이율로 적립됩니다.</li>
+						<li>적립률은 납입보험료 합계 대비 책임준비금의 비율이며, 중도인출 및 중도자금이 있었던 계약의 적립률은 ‘(책임준비금액(C) + 중도인출 및 중도자금) ÷ 주계약 납입보험료 합계(A)’로 계산된 비율입니다.</li>
+						<li>기준일은 계약의 세부내용에 따라 달라집니다. <br>
+							예) 연금개시가 지난 계약은 연금개시 직전일 기준</li>
+						<li>선납보험료는 주계약 납입보험료 및 책임준비금에 포함되지 않습니다.</li>
+						<li>감액이 있는 경우는 상품에 따른 정산 기준에 따라 계산됩니다.</li>
+						<li>위 내역서 금액은 기준일까지 합산된 금액입니다.</li>
+						<li>실제 해지(해약) 시 책임준비금과 해지환급금은 다를 수 있습니다.</li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- //가이드박스 -->
+
+
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<!-- <nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+			</div>
+		</nav> -->
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+
+
+
+
+</div>
+
+</body>
+</html>

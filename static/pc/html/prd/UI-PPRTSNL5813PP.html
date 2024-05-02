@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a md" id="pop-ipdgn">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">투자성향진단</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="suitability-wrap">
+							<div class="q-section-wrap">
+								<div class="q-section">
+									<h2 class="tit"><i class="num">01.</i> 고객님의 연령대는 어떻게 되십니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q1"><span class="txt">30세 이하</span></label>
+									<label class="checkbox cv"><input type="radio" name="q1"><span class="txt">31세~40세</span></label>
+									<label class="checkbox cv"><input type="radio" name="q1"><span class="txt">41세~50세</span></label>
+									<label class="checkbox cv"><input type="radio" name="q1"><span class="txt">51세~60세</span></label>
+									<label class="checkbox cv"><input type="radio" name="q1"><span class="txt">61세 이상</span></label>
+								</div>
+								<div class="q-section">
+									<h2 class="tit"><i class="num">02.</i> 고객님께서 투자하고자 하는 자금의 투자가능 기간은 얼마나 되십니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q2"><span class="txt">6개월 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q2"><span class="txt">1년 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q2"><span class="txt">2년 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q2"><span class="txt">3년 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q2"><span class="txt">3년 초과</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">03.</i> 다음 중 고객님의 투자경험과 가장 가까운 것은 어느 것입니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q3"><span class="txt">은행 예금,은행 적금,국채,지방채,MMF,CMA 등</span></label>
+									<label class="checkbox cv"><input type="radio" name="q3"><span class="txt">금융채, 신용도가 높은 회사채, 채권형펀드, 원금보장형 ELF 등</span></label>
+									<label class="checkbox cv"><input type="radio" name="q3"><span class="txt">신용도 중간 등급의 회사채, 원금의 일부만 보장되는 ELF, 혼합형펀드 등</span></label>
+									<label class="checkbox cv"><input type="radio" name="q3"><span class="txt">신용도가 낮은 회사채,주식, 원금이 보장되지 않는 ELF, 시장수익율 수준의 수익을 추구하는 주식형 펀드 등</span></label>
+									<label class="checkbox cv"><input type="radio" name="q3"><span class="txt">ELW,선물옵션,시장수익율 이상의 수익을 추구하는 주식형펀드, 파생상품에 투자하는 펀드, 신용거래 등</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">04.</i> 고객님께서는 금융상품 투자에 대한 본인이 수준이 어느정도라고 생각하십니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q4"><span class="txt">금융투자상품(주식,펀드등)에 투자해 본 경험이 없음</span></label>
+									<label class="checkbox cv"><input type="radio" name="q4"><span class="txt">널리 알려진 금융투자상품의 구조 및 위험을 일정부문 이해하고 있음</span></label>
+									<label class="checkbox cv"><input type="radio" name="q4"><span class="txt">널리 알려진 금융투자상품의 구조 및 위험을 깊이 있게 이해하고 있음</span></label>
+									<label class="checkbox cv"><input type="radio" name="q4"><span class="txt">파생상품을 포함한 대부분의 금융투자상품의 구조 및 위험을 이해하고 있음</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">05.</i> 투자원금에 대한 기대 수익률 및 손실 감내수준은 어느 정도입니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q5"><span class="txt">10% 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q5"><span class="txt">20% 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q5"><span class="txt">30% 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q5"><span class="txt">40% 이내</span></label>
+									<label class="checkbox cv"><input type="radio" name="q5"><span class="txt">50% 이내</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">06.</i> 고객님의 수입원을 가장 잘 설명하고 있는 것은 어느것입니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q6"><span class="txt">현재 일정한 수입이 발생하고 있으며,향후 현재 수준을 유지하거나 증가할 것으로 예상</span></label>
+									<label class="checkbox cv"><input type="radio" name="q6"><span class="txt">현재 일정한 수입이 발생하고 있으나, 향후 감소하거나 불안정할 것으로 예상</span></label>
+									<label class="checkbox cv"><input type="radio" name="q6"><span class="txt">현재 일정한 수입이 없으며, 연금이 주수입원임</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">07.</i> 고객님의 소득현황(월)은 어떻게 되십니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q7"><span class="txt">100만원 이하</span></label>
+									<label class="checkbox cv"><input type="radio" name="q7"><span class="txt">300만원 이하</span></label>
+									<label class="checkbox cv"><input type="radio" name="q7"><span class="txt">500만원 이하</span></label>
+									<label class="checkbox cv"><input type="radio" name="q7"><span class="txt">1000만원 이하</span></label>
+									<label class="checkbox cv"><input type="radio" name="q7"><span class="txt">1000만원 이상</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">08.</i> 고객님의 금융투자상품 투자목적은 어떻게 되십니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q8"><span class="txt">적극적 매매를 통한 수익을 원하며 원금을 초과하는 손실위험도 감내 가능</span></label>
+									<label class="checkbox cv"><input type="radio" name="q8"><span class="txt">적극적 매매를 통한 수익 실현 목적</span></label>
+									<label class="checkbox cv"><input type="radio" name="q8"><span class="txt">시장가격 변동 추이와 비슷한 수준의 수익 실현	</span></label>
+									<label class="checkbox cv"><input type="radio" name="q8"><span class="txt">채권이자,주식배당 정도의 수익 실현 목적</span></label>
+									<label class="checkbox cv"><input type="radio" name="q8"><span class="txt">기존 보유자산에 대한 위험 헤지 목적</span></label>
+								</div>
+	
+								<div class="q-section">
+									<h2 class="tit"><i class="num">09.</i> 고객님의 투자원금에 손실이 발생할 경우 다음 중 고객님의 감수할 수 있는 손실 수준은 어느 것입니까?</h2>
+									<label class="checkbox cv"><input type="radio" name="q9"><span class="txt">무슨 일이 있어도 투자 원금은 보전되어야 한다</span></label>
+									<label class="checkbox cv"><input type="radio" name="q9"><span class="txt">10%미만까지는 손실을 감수 할 수 있을 것 같다</span></label>
+									<label class="checkbox cv"><input type="radio" name="q9"><span class="txt">20%미만까지는 손실을 감수 할 수 있을 것 같다</span></label>
+									<label class="checkbox cv"><input type="radio" name="q9"><span class="txt">기대수익이 높다면 위험이 높아도 상관없다.</span></label>
+								</div>
+							</div>
+						</div>
+						
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set b2">
+						<button type="button" class="btn b rd lg">취소</button>
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-ipdgn');  // 팝업 열기
+		</script>
+	</div>
+</body>
+</html>

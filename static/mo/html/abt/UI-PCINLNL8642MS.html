@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"공모 접수"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt ctacc" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ctacc-intro">
+				<h2 class="hd-tit2">공모 접수</h2>				
+				<ul class="ctacc-menu">
+					<li><a href="#">문안 응모</a></li>
+					<li class="active"><a href="#">에세이 공모</a></li><!-- [D] 2022-06-29 태그추가 -->
+					<li><a href="#">디자인 공모</a></li>
+				</ul>
+
+				<ol class="ctacc-step">
+					<li>로그인</li>
+					<li>개인정보수집동의</li>
+					<li>정보입력</li>
+				</ol>
+
+				<ul class="bullet b">
+					<li>비회원은 개인정보 수집 및 이용에 동의하셔야 접수하실 수 있습니다.  </li>
+					<li>접수내역 확인을 위해 이름, 연락처, 비밀번호를 꼭 기억해 주세요.</li>
+				</ul>
+
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">공모 접수 시 유의사항</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">							
+							<li>출품된 작품의 저작권(저작인격권과 저작재산권)은 참가자(창작자)에게 있습니다. </li>
+							<li>입상자는 교보생명이 입상작을 공모전의 취지, 목적을 달성하기 위해 복제, 배포, 전시, 전송, 책자발간 등의 방법으로 독점적으로 이용하는 것을 허락합니다. </li>
+							<li>입상자는 교보생명 이외의 제3자에게 수상작의 저작재산권을 양도하거나 이용허락을 할 수 없으며, 입상자가 이에 위반하여 제3자에게 수상작의 저작재산권을 양도하거나 이용허락을 함으로써 교보생명에게 손해가 발생한 경우에는 이를 배상하여야 합니다. </li>
+							<li>입상자는 교보생명이 위의 목적을 달성하기 위하여 필요한 범위 내에서 입상작을 편집, 형식상 변경 등을 하는 것을 허락합니다. 교보생명은 필요한 경우 입상자와 별도의 협의를 할 수 있습니다.</li>
+							<li>향후 교보생명은 필요한 경우 입상자로부터 저작재산권을 양수할 수 있습니다.</li>
+							<li>응모형식과 규격에 맞지 않는 작품, 다른 공모전에서 입상한 작품 및 표절, 복제 등으로 타인의 저작권 등을 침해한 경우 심사 대상에서 제외됩니다. 수상 후에도 이 사실이 밝혀질 경우 교보생명은 수상을 취소하고 입상자로부터 상장 및 상금 일체를 회수합니다. 이 경우, 저작권 관련 분쟁 등은 해당 참가자가 해결하여야 합니다.</li>
+							<li>출품된 작품의 심사결과 당선작이 없을 경우 시상하지 않으며, 입상하지 않은 작품은 공모전 종료일로부터 3개월 이내에 모두 폐기합니다. 다만, 참가자가 반환을 요구하면 10일 이내에 반환하며, 반환을 위한 비용은 반환을 요구하는 참가자가 부담하여야 합니다.</li>
+							<li>작품의 접수, 심사, 시상 일정 등은 변경될 수 있습니다.</li>
+						</ul>						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg b">비회원 접수</button>
+					<button type="button" class="btn rd lg a">회원 접수</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

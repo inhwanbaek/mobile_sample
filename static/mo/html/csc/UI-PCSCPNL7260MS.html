@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"선제적 보이스피싱 대응"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc pshing" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">교보생명은 소비자보호를 위해 <br>다양한 노력을 기울이고 있습니다.</h2>
+				<p class="tit-txt">
+					보이스피싱이 큰 사회문제가 된 상황에서 소비자의 피해를 막기 위해서는 소비자의 주의도 중요하지만 금융회사의 노력이 더욱 중요하다는 인식을 가지고 보이스피싱 피해 방지 대책을 수립, 추진했습니다.
+					<br><br>
+					2020년 7월경 모든 금융권 비대면 채널을 이용한 보이스피싱 피해 사례 증가에 따라 ‘보이스피싱 이상 징후 고객 업무 프로세스’를 신설 운영함으로써 보이스 피싱으로 인한 소비자 피해를 방지하고 있습니다.
+				</p>
+				<div class="pshing-img">
+					<div class="blind">
+						<p>비대면 시대에 기승 부리는 '메신저 피싱'의 덫, 메신저 피싱 피해발생 건수 (2020.11 1336건, 2020.12 1727건, 2021.01 1988건)</p>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<div class="floatbots"> 
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">홈으로</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

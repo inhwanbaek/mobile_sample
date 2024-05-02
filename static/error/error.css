@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'),
+		 url('./font/Pretendard-SemiBold.woff2') format('woff2'),
+		 url('./font/Pretendard-SemiBold.woff') format('woff'),
+		 url('./font/Pretendard-SemiBold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'),
+		 url('./font/Pretendard-Regular.woff2') format('woff2'),
+		 url('./font/Pretendard-Regular.woff') format('woff'),
+		 url('./font/Pretendard-Regular.otf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #555;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Pretendard', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+.wrap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  height: 60px;
+  background: url(./logo.png) no-repeat center;
+  background-size: contain;
+  display: block;
+  margin-bottom: 10px;
+}
+.error {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); */
+  width: 100%;
+}
+.box {
+  margin: 0 5%;
+}
+.error-msg {
+  border-radius: 10px;
+  padding: 40px 20px 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+  /* word-break: break-all; */
+  word-break: keep-all;
+}
+.error-msg::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url(./ico_error.png);
+}
+.error-msg .msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.error-msg .tit {
+  color: #000;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.33;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.error-msg .text {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+.error-msg + .btn-set {
+  margin-top: 30px;
+}
+.error-msg .text.info a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #242424;
+}
+.error-msg .text.info a::before {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  background: url(./ico_mobile.png) no-repeat center;
+  background-size: 24px auto;
+  content: '';
+}
+.error-msg .tit + .text {
+  margin-top: 30px;
+}
+.error-msg .text + .text {
+  margin-top: 30px;
+}
+.btn-set {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.btn {
+  min-height: 60px;
+  min-width: 200px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #121c72;
+  color: #ffffff;
+  padding: 0 20px;
+}

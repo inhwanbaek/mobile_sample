@@ -1,0 +1,1421 @@
+@charset "utf-8";
+
+/* csc : 고객센터 */
+
+/* 추후 확인 후 정리하기 (개발화면 확인후 삭제, class명 변경되었음) */
+.charge-lst {margin: 40rem 0;}
+.charge-lst > li + li {margin-top: 16rem;}
+.charge-lst a.lk {display: block; position: relative; padding: 20rem 50rem 20rem 20rem; border-radius: 8rem; background-color: #f2f7fa; color: #242424;}
+.charge-lst a.lk.b {background-color: #f5f5f5;}
+.charge-lst a.lk:after {content:""; display:block; position: absolute; right: 20rem; top: 50%; transform: translateY(-50%); width: 18rem; height: 18rem; background: url('../img/csc/bg_arr_counsel.png') no-repeat center top; background-size:18rem;}
+.charge-lst a.lk .tit {display: block; font-size: 16rem; line-height: 1.31; font-weight: 700;}
+.charge-lst a.lk .txt {display: block; margin-top: 4rem; font-size: 14rem; line-height: 1.5; color: #555555;}
+
+
+/** 고객센터 공통 **/
+.page.csc a[href^="tel:"] {color: inherit;}
+.page.csc .ut-hash-box .ut-hash.active {background-color: #3667cd; border-color: #3667cd; color: #fff;}
+.page.csc .point {color: #2a81eb !important;}
+.page.csc .point02 {color: #d65d1c !important;}
+.page.csc .point > a[href^="tel:"] {color: #2a81eb !important;}
+.page.csc .link-text.point {color: #2a81eb;}
+.page.csc em.ast {margin-right: 4rem;}
+.page.csc em.ast::before {width: 6rem;}
+
+/* 버튼 */
+.page.csc .btn-share {display: inline-block; width: 48rem; height: 48rem; vertical-align: middle; background-repeat: no-repeat; background-position: center; background-size: 48rem;}
+.page.csc .btn-share {background-image: url(../img/csc/ic_sns_share@2x.png);}
+.page.csc.nob .btn-share {background-image: url(../img/csc/ic_sns_share02@2x.png);}
+.page.csc.nob .btn-fsize {background-image: url(../img/csc/ic_fnsize02@2x.png);}
+
+/* 완료 */
+.page.csc .complate-msg {margin: 0 21rem 25rem;}
+.page.csc .complate-msg .result-info {margin: 24rem 10rem 16rem; padding:19rem 20rem 16rem; border-radius: 8rem; border: solid 1rem #e6e6e6; line-height: 1.4; font-size: 15rem;}
+.page.csc .complate-msg .result-info .date {display: inline-block; color: #555;}
+.page.csc .complate-msg .result-info .date .val {padding-left: 8rem; color: #242424;}
+.page.csc .complate-msg .add-info {margin: 0;}
+.page.csc .complate-msg .add-info ul > li {text-align: left;}
+.page.csc .complate-msg .add-info .btn-wrp {margin-top: 24rem;}
+.page.csc .complate-msg .add-info .btn-wrp .btn.md {min-width: 160rem;}
+.page.csc .complate-msg .add-info .bullet.a>li {font-size: 15rem;}
+.page.csc .complate-msg .add-info .bullet.a>li:before {width: 5rem; height: 5rem;}
+.page.csc .complate-msg .add-info .bullet.a>li + li {margin-top: 16rem;}
+.page.csc .complate-msg  .msg + .add-info {margin-top: 24rem;}
+
+/* 검색 */
+.page.csc .item-srch {margin-top: 25rem;}
+.page.csc .item-srch .ut-hash-box {margin-top: 16rem;}
+
+/* 아코디언 */
+.page.csc .ut-accd.a>li .hbox .btn-tog {top: 50%; right: 10rem; transform: translateY(-50%); width: 100%; height: 100%;}
+.page.csc .ut-accd.a>li .hbox .btn-tog:before {top: 50%; margin-top: -25rem;background: url(../img/common/ut_accd_b_tog.png) center center no-repeat;background-size: 24rem auto;transition: all ease 0.4s;}
+.page.csc .ut-accd.a>li.open .hbox .btn-tog:before{transform: rotate(180deg);}
+.page.csc .ut-accd.b>li .hbox .btn-tog {top: 50%; right: 0; transform: translateY(-50%); width: 100%; height: 100%;}
+.page.csc .ut-accd.b>li .hbox .btn-tog:before {position: absolute; right: 20rem; top: 50%; margin-top: -12rem;background: url(../img/common/ut_accd_b_tog.png) center center no-repeat;background-size: 24rem auto;transition: all ease 0.4s;}
+
+/* 다운로드 그룹 */
+.page.csc .btn-set.grp {flex-wrap: wrap; justify-content: space-between; text-align: left;}
+.page.csc .btn-set.grp .btn {margin: 16rem 0 0;}
+
+/* 링크 목록 */
+.page.csc .direct-lst {border-bottom: 1rem solid #e6e6e6; margin: 16rem 0 0 0;}
+.page.csc .direct-lst > li {border-top: 1rem solid #e6e6e6;}
+.page.csc .direct-lst > li .btn-go {position: relative; display: block; width: 100%; height: 58rem; padding: 18rem 0 17.5rem 0; font-size: 15rem; color: #242424; text-align: left; word-break: keep-all; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+/* .page.csc .direct-lst > li .btn-go::after {content:''; position: absolute; right: 20rem; top: 50%; transform: translateY(-50%); width:20rem; height:20rem; background:url(../img/common/ic_chevron_sm_right@2x.png) no-repeat center; background-size:20rem auto; display:inline-block;} */
+
+
+/** 기본 게시판 **/
+
+/* 이전글/다음글 */
+.page.detail .page-nav {margin: 23rem -20rem 0 -20rem; border-bottom: 1rem solid #e6e6e6;}
+.page.detail .page-nav .lst > li {height: 48rem; border-top: 1rem solid #e6e6e6;}
+.page.detail .page-nav .lst > li .tit ,
+.page.detail .page-nav .lst > li .txt {display: block ; float: left; height: 100% ; line-height: 48rem;}
+.page.detail .page-nav .lst > li .tit {width: 90rem; padding-left: 20rem; font-weight: 700;}
+.page.detail .page-nav .lst > li .txt {width: calc(100% - 100rem);}
+.page.detail .page-nav .lst > li .txt > button.lk {vertical-align: top; display: block; width: 100%; height: 48rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left; font-size:14rem; color:#242424;}
+.page.detail .page-nav .lst > li::after {content:""; clear: both; display: block; width: 0; height: 0;}
+
+/* 목록 */
+.page.list .board-wrp {padding: 30rem 0 40rem;}
+.page.list .board-wrp .board-lst {overflow: hidden; margin-top: 16rem; background: #fff; border-top: 1rem solid #555;}
+.page.list .board-wrp .board-lst > li {position: relative;}
+.page.list .board-wrp .board-lst .item {display: block; width: 100%; text-align: left; min-height: 58rem; padding: 18rem 0; font-size: 16rem; line-height: 1.4; color: #555;}
+.page.list .board-wrp .board-lst .item .tit,
+.page.list .board-wrp .board-lst .item .txt {display: block; word-break: keep-all; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; height: 21rem;}
+.page.list .board-wrp .board-lst .item .tit + .txt {margin-top: 2rem;}
+.page.list .board-wrp .board-lst > li + li:before {content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1rem; background-color: #e6e6e6;}
+.page.list .board-wrp .board-lst > li:last-child {border-bottom: 1rem solid #e6e6e6;}
+.page.list .board-wrp .list-empty {margin-top: 0;}
+.page.list .board-wrp .list-empty p {line-height: 24rem; letter-spacing: -0.75rem;}
+.page.list .ut-more {margin: 34rem 0 0;}
+
+/* 상세 */
+.page.detail .board-view .tit-area .perform {text-align: right;}
+.page.detail .board-view .tit-area .perform button + button {margin-left: 3rem;}
+.page.detail .board-view .tit-area .perform + .board-tit {margin-top: 8rem;}
+.page.detail .board-view .tit-area {padding-top: 8rem; padding-bottom: 24rem; border-bottom: 1rem solid #e6e6e6;}
+.page.detail .board-view .tit-area .board-tit {font-weight: 700; font-size: 22rem; line-height: 1.31;}
+.page.detail .board-view .tit-area .info { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8rem; position: relative;}
+.qna.detail .board-view .tit-area .info {margin-top: 24rem; margin-bottom: 0;}
+.page.detail .board-view .tit-area .lang {margin-bottom: 25rem; text-align: center; word-break: keep-all; font-weight: 600; font-size: 16rem;}
+.page.detail .board-view .tit-area .info .add > em {display: inline-block; color: #555;}
+.page.detail .board-view .tit-area .info .add > em + em {margin-left: 8rem;}
+.page.detail .board-view .cnt-area {overflow: hidden; padding: 32rem 0 0;}
+.qna.detail .board-view .cnt-area  .cnt .txt {margin-top: 9rem; word-break: break-all;}
+.page.detail .board-view .cnt-area .cnt {font-size: 15rem;line-height: 1.4;color: #555;word-wrap: break-word;}
+.page.detail .board-view .cnt-area .cnt small{margin-top: 8rem;font-size: 11rem;color: #808080;line-height: 1.45;}
+/* .page.detail .board-view .cnt-area .cnt img {width: 100%;} */
+.page.detail .board-view .cnt-area .sub-cnt {margin-top: 8rem;}
+.page.detail .board-view .cnt-area .sub-cnt .bullet.c {margin-top: 10rem;}
+.page.detail .board-view .hash-cnt {margin-top: 40rem;}
+.page.detail .board-view .hash-cnt .tit {margin-top: 16rem; font-weight: 700; font-size: 16rem; line-height: 1.31;}
+.page.detail .board-view .hash-cnt .txt {margin: 16rem -2rem 0; color: #555555;}
+.page.detail .board-view .hash-cnt .txt .it {position: relative; display: inline-block; margin: 0 2rem;font-size: 14rem;}
+
+/* 폰트 조절되는 곳만 */
+.page.csc.qna.detail .board-view .cnt-area .cnt ,
+.page.csc.easy.detail .board-view .cnt-area .cnt {
+	/* font-size: 1.1em !important; */
+    line-height: 1.4;
+    color: #555;
+    word-wrap: break-word;
+}
+
+/* 고객센터 */
+.page.csc.detail .tag-area {margin-top: 40rem;}
+.page.csc.detail .many-view {margin-top: 60rem;}
+.page.csc.detail .promo-area {margin-top: 40rem;}
+.page.csc.detail .many-view .hd-tit4 {line-height: 1.31; padding: 0;}
+.page.csc.detail .dict-detailBanner {margin-bottom: 34rem;}
+.page.csc.dict.detail .board-view .tit-area .board-tit,
+.page.csc.easy.detail .board-view .tit-area .board-tit {margin-bottom: 9rem; font-size: 26rem; line-height: 1.5; text-align: center;}
+.page.csc.dict.detail .board-view .tit-area .info,
+.page.csc.easy.detail .board-view .tit-area .info {justify-content: flex-end;}
+
+/* [kyobo] 금융 QNA 카툰 추가 2022-11-10 */
+.page.csc.detail .board-view .qna-cartoon .img-fit {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.page.csc.detail .board-view .qna-cartoon .btn-set {
+	width: 100%;
+	display: block;
+	margin-top: 40rem;
+}
+.page.csc.detail .board-view .qna-cartoon .btn-set .btn + .btn {
+	margin-top: 8rem;
+}
+.page.csc.detail .board-view .qna-cartoon .sub-text {
+	margin-top: 16rem;
+	font-size: 13rem;
+	color: #767676;
+}
+.page.csc.detail .board-view .qna-cartoon .pc-only {
+	display: none;
+}
+/* [kyobo] 금융 QNA 카툰 추가 2022-11-10 */
+
+
+/** 안내 묶음 **/
+
+/* text-box */
+.page.csc * + .text-box {margin-top: 16rem;}
+.page.csc .info .hd-tit4 + .text-box {margin-top: 16rem;}
+.page.csc .text-box ul + ul,
+.page.csc .text-box ul > li > ul {margin-top: 10rem;}
+.page.csc .text-box .bullet.a>li {font-size: 15rem;}
+/*.page.csc .text-box .bullet.a>li:before {width: 5rem; height: 5rem; top: 8rem;}*//*블릿 수정 테스트 중*/
+.page.csc .text-box .bullet.a>li + li {margin-top: 16rem;}
+.page.csc .text-box .bullet.b>li {font-size: 12rem;}
+.page.csc .text-box .bullet.b>li + li {margin-top: 10rem;}
+.page.csc .text-box .bullet.c>li {color: #555;}
+.page.csc .text-box ul.bullet.a>li>ul.bullet.c {/*margin:8rem 0 0 -12rem;*/margin-top:8rem; font-size: 14rem;}/*블릿 수정 테스트 중*/
+.page.csc .text-box ul.bullet.a>li>ul.bullet.c >li + li {margin-top: 16rem;}
+.page.csc .ut-form.a + .text-box,
+.page.csc .procedure + .text-box {margin-top: 10rem;}
+
+.page.csc .inf-bunch .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.page.csc .inf-bunch + * {margin-top: 40rem;}
+.page.csc .inf-bunch .hd-tit3 + .hd-tit4 {margin-top: 32rem;}
+.page.csc .inf-bunch .hd-tit4 + .hd-tit4 {margin-top: 40rem;}
+.page.csc .inf-bunch .hd-tit4 + .hd-tit5 {margin-top: 24rem;}
+.page.csc .inf-bunch .hd-tit4 {line-height: 1.31; padding: 0;}
+.page.csc .inf-bunch .text-box + .hd-tit4 {margin-top: 40rem;}
+.page.csc .inf-bunch .hd-tit4 + .procedure {margin-top: 16rem;}
+.page.csc .inf-bunch .tit-txt {margin-top: 16rem; font-size: 15rem; word-break: keep-all; color:#555;}
+.page.csc .inf-bunch .tit-txt + .hd-tit4 {margin-top: 32rem;}
+.page.csc .inf-bunch .the10 .btn{width: 100%;}
+.page.csc .inf-bunch .m-service-slide {margin:16rem -20rem -20rem;border-radius: 0;}
+.page.csc .inf-bunch .m-service-slide .tit {margin-top: 30rem;font-size: 22rem; font-weight: 600; color:#242424; text-align: center;}
+.page.csc .inf-bunch .m-service-slide .txt {margin-top: 17rem; font-size: 16rem;color:#242424;text-align: center;}
+.page.csc .inf-bunch .m-service-slide .txt strong {color:#2a81eb}
+.page.csc .inf-bunch .m-service-slide.ut-slide-dot .swiper {padding-bottom: 62rem;}
+.page.csc .inf-bunch .m-service-slide .swiper-wrapper{padding-bottom: 50rem;}
+.page.csc .inf-bunch .m-service-slide .swiper-container .pagination.swiper-pagination-bullets{bottom:0;}
+.page.csc .inf-bunch .m-service-slide .swiper {border-radius: 0;}
+.page.csc .inf-bunch .m-service-slide .swiper .control {top:auto;bottom:0;right:auto;left:0;width:100%; text-align: center;}
+.page.csc .inf-bunch ul > li .txt-def {margin-top: 10rem; font-size: 14rem;}
+.page.csc .inf-bunch .text-box + .hd-tit5 {margin-top: 40rem;}
+.page.csc .inf-bunch .text-box + .ut-form.a {margin-top: 40rem;}
+.page.csc .inf-bunch .btn-wrp {margin-top: 16rem;}
+.page.csc .inf-bunch .btn-set {margin-top: 16rem;}
+.page.csc .inf-bunch .btn-wrp .btn.sm {min-width: 102rem;}
+.page.csc .inf-bunch .btn-wrp .btn.sm + .btn.sm {margin-left: 10rem;}
+.page.csc .inf-bunch .btn-wrp + p {margin-top: 16rem;}
+.page.csc .inf-bunch .info + .ut-gudbox {margin-top: 40rem;}
+.page.csc .inf-bunch .ut-tbl.a + .text-box {margin-top: 8rem;}
+.page.csc .inf-bunch .hd-tit4 + .ut-tbl,
+.page.csc .inf-bunch .hd-tit5 + .ut-tbl {margin-top: 10rem;}
+.page.csc .inf-bunch .ut-tbl.a + .ut-tbl.a {margin-top: 25rem;}
+.page.csc .inf-bunch .text-box + .btn-set.vt {margin-top: 40rem;}
+.page.csc .inf-bunch .btn-set.vt .btn+.btn {margin-top: 8rem;}
+.page.csc .inf-bunch:last-child {margin-bottom: 40rem;}
+
+/* 폼 묶음 */
+.page.csc .frm-bunch .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.page.csc .frm-bunch .hd-tit3 + .ut-form.a {margin-top: 32rem;}
+.page.csc .frm-bunch .hd-tit4 {line-height: 1.31; padding: 0;}
+.page.csc .frm-bunch .hd-tit4 .ut-tooltip {vertical-align: top;}
+.page.csc .frm-bunch .hd-tit4 .ut-tooltip .bt-tooltip {vertical-align: top;}
+.page.csc .frm-bunch .hd-tit4 + .ut-addfile {margin-top: 16rem;}
+.page.csc .frm-bunch + .frm-bunch {margin-top: 40rem;}
+.page.csc .frm-bunch .tit-area {display: flex; align-items: center; justify-content: space-between;}
+.page.csc .frm-bunch .tit-area .hd-tit4 {line-height: 1.31; padding: 0;}
+.page.csc .frm-bunch .ut-form.a {margin-top: 16rem;}
+.page.csc .frm-bunch .ut-form.a .info-ast {text-align: right; color: #808080;}
+.page.csc .frm-bunch .ut-form.a .info-ast + .form {margin-top: 16rem;}
+.page.csc .frm-bunch .ut-form.a .form + .form {margin-top: 40rem;}
+.page.csc .frm-bunch .ut-form.a .rdo-grp .radio + .radio {margin-left: 32rem;}
+.page.csc .frm-bunch .ut-form.a .radio.cu>.txt {padding: 24rem 16rem 24rem 45rem; font-size: 15rem;}
+.page.csc .frm-bunch .ut-form.a .radio.cu>input {top: 22rem;}
+.page.csc .frm-bunch .ut-form.a .radio.cu>.txt::before {top: 21rem;}
+.ut-form.b.round {padding:24rem 20rem; border:1rem solid #ddd;  border-radius: 8rem;font-size: 14rem;color:#555;}
+.ut-form.b.round .form li {display: flex; justify-content: space-between;}
+.ut-form.b.round .form li label.cd {overflow: hidden; width: calc(100% - 24rem); height: 25rem; white-space: nowrap; text-overflow: ellipsis;}
+.ut-form.b.round .form li .go {display: inline-block; width: 24rem; height: 24rem; background: url('../img/common/ico_chk_arr.png') no-repeat 0 0; background-size: 24rem; ;}
+/* .page.csc .frm-bunch .ut-form.a .form.ty02 > li + li {margin-top: 40rem;} */
+.page.csc .frm-bunch:last-child {margin-bottom: 40rem;}
+.page.csc .frm-bunch + .ut-gudbox.a {margin-top: 40rem;}
+.page.csc .frm-bunch + .inf-bunch {margin-top: 40rem;}
+.page.csc .frm-bunch .input.a.ut-date.no {background-image: none;}
+.page.csc .frm-bunch .input.a.ut-date.no input.datepicker + .ui-datepicker-trigger {background-color: transparent;}
+.page.csc .call-wrp .radiobox.c {margin-bottom: 16rem;}
+.page.csc .tit-area + .ut-rsnum.a {margin-top: 16rem;}
+
+
+/** .pop-layer .sect-csc **/
+.pop-layer .call-wrp .radiobox.c {margin-bottom: 16rem;}
+.pop-layer .sect-csc .point {color: #2a81eb !important;}
+
+/* text-box */
+.pop-layer .poptents .sect-csc .bullet {margin-bottom: 0;}
+.pop-layer .sect-csc .hd-tit4 + .text-box {margin-top: 16rem;}
+.pop-layer .sect-csc .hd-tit5 + .text-box {margin-top: 8rem;}
+.pop-layer .sect-csc .ut-form.a + .text-box {margin-top: 10rem;}
+.pop-layer .sect-csc .tit-txt + .text-box {margin-top: 16rem;}
+.pop-layer .sect-csc .text-box ul + ul,
+.pop-layer .sect-csc .text-box ul > li > ul {margin-top: 10rem;}
+.pop-layer .sect-csc .text-box .bullet.a>li {font-size: 15rem;}
+.pop-layer .sect-csc .text-box .bullet.a>li + li {margin-top: 16rem;}
+.pop-layer .sect-csc .text-box .bullet.b>li {font-size: 12rem;}
+.pop-layer .sect-csc .text-box .bullet.b>li + li {margin-top: 10rem;}
+.pop-layer .sect-csc .text-box .bullet.c>li {color: #555;}
+.pop-layer .sect-csc .text-box ul.bullet.a>li>ul.bullet.c {/*margin:8rem 0 0 -12rem;*/margin-top:8rem; font-size: 14rem;}/*블릿 수정 테스트 중*/
+.pop-layer .sect-csc .text-box ul.bullet.a>li>ul.bullet.c li + li {margin-top: 16rem;}
+.pop-layer .sect-csc ul > li .txt-def {margin-top: 10rem; font-size: 14rem;}
+
+.pop-layer .sect-csc .bullet.nm  {margin-top: 16rem;}
+.pop-layer .sect-csc .bullet.nm i {margin-right: 5rem; position: relative;display: inline-block;}
+.pop-layer .sect-csc .bullet.nm i.round{font-size: 12rem;vertical-align: top;padding-top: 1rem;}
+/* .pop-layer .sect-csc .bullet.nm i.one::after{content:"①";position: absolute; width: 14rem; height: 14rem;font-size: 14rem; top: 0;left: 0;} */
+.pop-layer .sect-csc .bullet.nm > li {font-size: 15rem; color: #555555;}
+.pop-layer .sect-csc .bullet.nm > li + li {margin-top: 16rem;}
+
+.pop-layer .sect-csc .bullet.nm02  {margin-left: 12rem; margin-top: 8rem;}
+.pop-layer .sect-csc .bullet.nm02 i {margin-right: 2rem;}
+.pop-layer .sect-csc .bullet.nm02 > li {font-size: 14rem; color: #555555;}
+.pop-layer .sect-csc .bullet.nm02 > li + li {margin-top: 16rem;}
+.pop-layer .sect-csc .revision {margin-top: 16rem;}
+.pop-layer .sect-csc:first-child {margin-top: 32rem;}
+.pop-layer .sect-csc .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.pop-layer .sect-csc .hd-tit4 {line-height: 1.31; padding: 0;font-size: 22rem;}
+.pop-layer .sect-csc + * {margin-top: 40rem;}
+.pop-layer .sect-csc .hd-tit3 + .hd-tit4 {margin-top: 32rem;}
+.pop-layer .sect-csc .hd-tit3 + .ut-form.a {margin-top: 32rem;}
+.pop-layer .sect-csc .hd-tit4 + .hd-tit5 {margin-top: 16rem;}
+.pop-layer .sect-csc .hd-tit4 + .procedure {margin-top: 16rem;}
+.pop-layer .sect-csc .tit-txt {margin-top: 16rem; font-size: 15rem; color: #555555; word-break: keep-all;}
+.pop-layer .sect-csc .tit-txt + .hd-tit4 {margin-top: 32rem;}
+.pop-layer .sect-csc .text-box + .hd-tit5 {margin-top: 24rem;}
+.pop-layer .sect-csc .tit-txt + .btn-set {margin-top: 16rem;}
+.pop-layer .sect-csc .text-box + .ut-form.a {margin-top: 40rem;}
+.pop-layer .sect-csc .ut-form.a {margin-top: 16rem;}
+.pop-layer .sect-csc .ut-form.a .info-ast {text-align: right; color: #808080;}
+.pop-layer .sect-csc .ut-form.a .info-ast + .form {margin-top: 16rem;}
+.pop-layer .sect-csc .btn-wrp {margin-top: 16rem;}
+.pop-layer .sect-csc .btn-wrp .btn.sm {min-width: 102rem;}
+.pop-layer .sect-csc .btn-wrp .btn.sm + .btn.sm {margin-left: 10rem;}
+.pop-layer .sect-csc .btn-wrp + .btn-set {margin-top: 26rem;}
+.pop-layer .sect-csc .info + .ut-gudbox {margin-top: 40rem;}
+.pop-layer .sect-csc .list-empty + .text-box {margin-top: 40rem;}
+.pop-layer .sect-csc .subgrp {margin-top: 24rem;}
+.pop-layer .sect-csc .ut-tbl.a {margin-top: 16rem;}
+.pop-layer .sect-csc .ut-tbl.a + * {margin-top: 10rem;}
+.pop-layer .sect-csc:last-child {margin-bottom: 40rem;}
+
+
+
+/************************
+고객상담
+************************/
+
+/* 장애인을 위한 상담서비스 안내 */
+.pop-handicap {}
+
+/* 추천FP 선택 */
+.pop-consultant .inf-bunch .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.pop-consultant .inf-bunch .tit-text {margin-top: 16rem; font-size: 15rem;}
+.pop-consultant .form-group {margin-top: 32rem;}
+.pop-consultant .fp-data .data {display: flex; align-items: center;}
+.pop-consultant .fp-data .data .name ,
+.pop-consultant .fp-data .data .place {overflow: hidden; max-width: 45%; height: 20rem; word-break:break-all;}
+.pop-consultant .fp-data .data .name {font-weight: 700; font-size: 16rem; line-height: 1.31;}
+.pop-consultant .fp-data .data .place {margin-left: 8rem;}
+.pop-consultant .fp-data .add {display: flex; margin-top: 12rem;}
+.pop-consultant .fp-data .add .t {position: relative; font-size: 14rem; color: #555555;}
+.pop-consultant .fp-data .add .t + .t {margin-left: 12rem; padding-left: 12rem;}
+.pop-consultant .fp-data .add .t + .t:before {content:""; display:block; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1rem; height: 12rem; background: #ddd;}
+.pop-consultant .fp-data .add .t .val {margin-left: 8rem; color: #242424;}
+
+/* 상담신청 */
+.pop-counsel .page.csc a[href^="tel:"] {color: inherit;}
+.pop-counsel .sect .hd-tit3 {margin-top: 32rem; font-size: 22rem;}
+.pop-counsel .form-group {margin-top: 32rem;}
+.pop-counsel .form-group .checkbox.cv>.txt {font-size: 15rem; color: #555;}
+.pop-counsel .form-group .checkbox.cv>input:checked+.txt {color: #242424;}
+
+/* 상담신청 - 입력 */
+.pop-counsel-enter .frm-bunch .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.pop-counsel-enter .frm-bunch + .frm-bunch {margin-top: 40rem;}
+.pop-counsel-enter .frm-bunch .tit-area {display: flex; align-items: center; justify-content: space-between;}
+.pop-counsel-enter .frm-bunch .tit-area .hd-tit3 {font-size: 18rem;}
+.pop-counsel-enter .frm-bunch .tit-area .hd-tit3 .info-ast {display: inline-flex; justify-content: space-between; font-size: 14rem; color:#808080; font-weight: 400;}
+.pop-counsel-enter .frm-bunch .tit-area .hd-tit4 {line-height: 1.31; padding: 0;}
+.pop-counsel-enter .frm-bunch .ut-form.a { margin-top: 16rem;}
+.pop-counsel-enter .frm-bunch .radiobox.c + .form {margin-top: 10rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .info-ast {text-align: right; color: #808080;}
+.pop-counsel-enter .frm-bunch .ut-form.a .info-ast + .radiobox.c,
+.pop-counsel-enter .frm-bunch .ut-form.a .info-ast + .form {margin-top: 16rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .rdo-grp .radio + .radio {margin-left: 32rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .radio.cu>.txt {padding: 24rem 16rem 24rem 45rem; font-size: 15rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .radio.cu>input {top: 22rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .radio.cu>.txt::before {top: 21rem;}
+.pop-counsel-enter .frm-bunch .ut-form.a .input.a + .select.def {margin-top: 8rem;}
+.pop-counsel-enter .frm-bunch:last-child {margin-bottom: 40rem;}
+.pop-counsel-enter .email-wrp {margin-top: 8rem; display: none;}
+.pop-counsel-enter * + .text-box {margin-top: 10rem;}
+.pop-counsel-enter .text-box .bullet.b>li {font-size: 12rem;}
+.pop-counsel-enter .tit-txt {margin-top: 16rem; font-size: 15rem;}
+.pop-counsel-enter .ut-date input.datepicker + .ui-datepicker-trigger {background-color: transparent;}
+.pop-counsel-enter .input.a.ut-date.no {background-image: none;}
+
+/* 상담완료 */
+.pop-counsel-comp .complate-msg {margin: 0 21rem 25rem;}
+.pop-counsel-comp .complate-msg .result-info {margin: 24rem 10rem 16rem; padding:19rem 20rem 16rem; border-radius: 8rem; border: solid 1rem #e6e6e6; line-height: 1.4; font-size: 15rem;}
+.pop-counsel-comp .complate-msg .result-info .date {display: inline-block; color: #555;}
+.pop-counsel-comp .complate-msg .result-info .date .val {padding-left: 8rem; color: #242424;}
+.pop-counsel-comp .complate-msg .add-info {margin: 0;}
+.pop-counsel-comp .complate-msg .add-info .txt-def {margin-top: 16rem; color: #555; font-size: 15rem; line-height: 1.4;}
+.pop-counsel-comp .complate-msg .add-info .txt-def + ul {margin-top: 16rem;}
+.pop-counsel-comp .complate-msg .add-info ul > li {text-align: left;}
+.pop-counsel-comp .complate-msg .add-info .btn-wrp {margin-top: 24rem;}
+.pop-counsel-comp .complate-msg .add-info .btn-wrp .btn.md {min-width: 160rem;}
+.pop-counsel-comp .complate-msg .add-info .bullet.a>li {font-size: 15rem;}
+.pop-counsel-comp .complate-msg .add-info .bullet.a>li:before {width: 5rem; height: 5rem;}
+.pop-counsel-comp .complate-msg .add-info .bullet.a>li + li {margin-top: 16rem;}
+
+/* 채팅상담 */
+.page.csc.counsel.chat {}
+.page.csc .counselor-lst {margin-top: 32rem;}
+.page.csc .counselor-lst > li + li {margin-top: 32rem;}
+.page.csc .counselor-lst a.lk {position: relative; display: block; border-radius: 8rem; padding: 32rem 20rem 32rem 84rem; height: 88rem; font-size: 18rem; font-weight: 600;}
+.page.csc .counselor-lst a.lk.chat{background:#f5f5f5 url('../img/csc/img_chat@2x.png') no-repeat 20rem center; background-size: 48rem; font-size: 16rem;}
+.page.csc .counselor-lst a.lk.remote{background:#f5f5f5 url('../img/csc/img_remote@2x.png') no-repeat 20rem center; background-size: 48rem; font-size: 16rem;}
+.page.csc .counselor-lst a.lk:after {content:""; display:block; position: absolute; right: 20rem; top: 50%; transform: translateY(-50%); width: 18rem; height: 18rem; background: url('../img/csc/bg_arr_counsel.png') no-repeat center top; background-size:18rem;}
+.page.csc .counselor-lst.step-type {}
+.page.csc .counselor-lst.step-type li {position: relative;}
+.page.csc .counselor-lst.step-type li + li::before {content: ''; display: inline-block; width: 16rem; height: 16rem; background: url('../img/common/ico_arrow.png') no-repeat 0 0; background-size: 16rem; position: absolute; top:-24rem; left:calc(50% - 8rem);}
+.page.csc .counselor-lst.step-type li a {padding-left: 27rem; background:#f5f5f5; font-size: 16rem;}
+.page.csc .counselor-lst.step-type li em.point {font-weight: 600;}
+
+
+/* 원격상담신청 */
+.page.csc.counsel.remote {}
+
+/* 자주 하는 질문 */
+.page.csc.faq.list .board-wrp {background: #f5f5f5; margin: 0 -20rem ; padding : 30rem 20rem 40rem;}
+.page.csc.faq.list .ut-tabs.a {margin-bottom: 0; position: sticky; left: 0; top: 48rem; z-index: 10;}
+.page.csc.faq.list .sect.top {padding-bottom: 24rem;}
+.page.csc.faq.list .ut-accd.a {overflow: hidden; border-radius: 8rem; margin-top: 16rem;}
+.page.csc.faq.list .ut-accd.a>li {border: none; border-radius: 0; position: relative; background-color: #fff;}
+.page.csc.faq.list .ut-accd.a>li + li {margin-top: 0;}
+.page.csc.faq.list .ut-accd.a>li + li:before {content:''; position: absolute; left: 20rem; right : 20rem ; top: 0 ; border-top: 1rem solid #e6e6e6; width: calc( 100% - 40rem); display: block;}
+.page.csc.faq.list .ut-accd.a>li .hbox {padding: 20rem;}
+.page.csc.faq.list .ut-accd.a>li .hbox .cate {display: block; color: #808080; font-size: 12rem;}
+.page.csc.faq.list .ut-accd.a>li .hbox .tit {display: block; margin-top: 8rem; font-size: 15rem; line-height: 1.4;}
+.page.csc.faq.list .ut-accd.a>li>.cbox {padding:  0 20rem 20rem; font-size: 15rem; color: #555555;}
+/* .page.csc.faq.list .ut-accd.a>li>.cbox p{font-size: 15rem !important;; color: #555555 !important; padding: 0 !important;}
+.page.csc.faq.list .ut-accd.a>li>.cbox p strong{font-weight: 700 !important;}
+.page.csc.faq.list .ut-accd.a>li>.cbox p img{display: none !important;}
+.page.csc.faq.list .ut-accd.a>li>.cbox ul{margin: 0 !important;}
+.page.csc.faq.list .ut-accd.a>li>.cbox ul li{padding-left: 0 !important; margin-bottom: 0rem !important;} */
+.page.csc.faq.list .ut-accd.a>li>.cbox img {margin-top: 10rem;}
+.page.csc.faq.list .ut-accd.a>li.open .hbox .tit {font-weight: 700;}
+.page.csc.faq.list .list-empty.bd.chatbot {margin: 40rem 0;}
+
+/* 카테고리 선택 */
+.pop-category .form-group {margin-top: 16rem;}
+.pop-category .form-group .checkbox.cv>.txt {font-size: 15rem; color: #555;}
+.pop-category .form-group .checkbox.cv>input:checked+.txt {color: #242424;}
+
+
+
+/************************
+고객지원
+************************/
+
+
+/** 필요서류 안내 **/
+
+/* 보험 관련 */
+.page.csc.reqdoc .lk-def {color: inherit;}
+.page.csc.reqdoc .bullet .unbind {margin-left: -13rem;}
+.page.csc.reqdoc .bullet.b>li {font-size: 12rem;}
+.page.csc.reqdoc .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.page.csc.reqdoc .ut-tabs.a {margin-top: 24rem; margin-bottom: 32rem;}
+.page.csc.reqdoc .brief .hd-tit4 {line-height: 1.31; padding: 0;font-size: 18rem;} /* 디마팀 폰트수정 - 2022.07.04 */
+.page.csc.reqdoc .brief .desc {margin-top: 24rem;}
+.page.csc.reqdoc .brief .desc .hd-tit5{}
+.page.csc.reqdoc .brief .desc .hd-tit5 + .bullet.a>li {margin-top: 16rem;}
+.page.csc.reqdoc .brief .desc .bullet.a>li {font-size: 15rem;}
+.page.csc.reqdoc .brief .desc .bullet.a>li .bullet.c {margin-top: 8rem; margin-left: -13rem;}
+.page.csc.reqdoc .brief .desc .bullet.a>li .bullet.c>li {font-size: 14rem; padding-left: 13rem;}
+.page.csc.reqdoc .brief .desc .bullet.a>li .bullet.b {margin-top: 10rem;}
+.page.csc.reqdoc .brief .desc .bullet.a>li .bullet.b>li {padding-left: 13rem;}
+.page.csc.reqdoc .brief .ut-gudbox {margin: 42rem 0 0;}
+.page.csc.reqdoc .brief .ut-gudbox .bullet.a>li.bullet.a {margin-top: 7rem;}
+.page.csc.reqdoc .brief .ut-gudbox .bullet.a .bullet.c {margin-top: 7rem;}
+.page.csc.reqdoc .brief .ut-gudbox .bullet.a .bullet.c>li+li {margin-top: 15rem;}
+.page.csc.reqdoc .brief .ut-gudbox .bullet.a .bullet.c .bullet.e {margin-top: 7rem;}
+.page.csc.reqdoc .brief .txt-def {color: #555;}
+.page.csc.reqdoc .brief + .brief {margin-top: 40rem;}
+.page.csc.reqdoc .ut-accd.b {margin: -10rem -20rem 0;}
+.page.csc.reqdoc * + .ut-accd.b {border-top: 1rem solid #e6e6e6; margin-top: 16rem;}
+.page.csc.reqdoc .ut-accd.b>li>.cbox {padding: 24rem 20rem; background: #f5f5f5;}
+.page.csc.reqdoc .ut-accd .move-wrp + .data {margin-top: 23rem;}
+.page.csc.reqdoc .ut-accd .data + .data {margin-top: 30rem;}
+.page.csc.reqdoc .ut-accd .data .bullet.a>li {margin-top: 15rem; font-size: 15rem;}
+.page.csc.reqdoc .ut-accd .data .bullet.a>li .unbind {margin-top: 10rem;}
+.page.csc.reqdoc .ut-accd .data .btn-wrp {margin-top: 16rem;}
+.page.csc.reqdoc .ut-accd .data .btn-wrp .btn.sm {min-width: 102rem;}
+.page.csc.reqdoc .ut-accd .data .btn.sm + .btn.sm {margin-left: 10rem;}
+.page.csc.reqdoc .ut-accd + .ut-gudbox {margin-top: 40rem;}
+
+.page.csc.reqdoc .ut-accd * + .hd-tit5 {margin-top: 32rem;}
+.page.csc .btn-set.grp + ul.bullet.b {margin-top: 10rem;}
+.page.csc.reqdoc .hd-tit5 + .sub-tit {margin-top: 16rem; color:#555;font-size: 15rem;}
+
+/* 보험금 지금심사 절차 안내 */
+.pop-ins-process .poptents {margin-bottom: 32rem;}
+.pop-ins-process .poptents .bullet {margin-bottom: 0;}
+/* .pop-ins-process .process-img {margin-top: 32rem; height: 472rem; background: url('../img/csc/img-ins-process.png') no-repeat center top; background-size:auto 472rem;} */
+.pop-ins-process .desc {margin-top: 40rem;}
+.pop-ins-process .desc .hd-tit4 {padding: 0; line-height: 1.31;}
+.pop-ins-process .desc .hd-tit4 + ul {margin-top: 16rem;}
+.pop-ins-process .desc ul.bullet.c>li {color: #555;}
+.pop-ins-process .desc .bullet .unbind {/*margin-left: -13rem;*/margin-left:-14rem }/*블릿 수정 테스트 중*/
+.pop-ins-process .desc .bullet.a>li {font-size: 15rem;}
+.pop-ins-process .desc .bullet.a>li + li {margin-top: 15rem;}
+.pop-ins-process .desc .bullet.a>li .bullet.b {margin-top: 10rem;}
+.pop-ins-process .desc .bullet.a>li .bullet.c>li {font-size: 14rem;}
+.pop-ins-process .desc .bullet.c>li {margin-top: 8rem;}
+.pop-ins-process .desc .bullet.e {margin-top: 6rem;}
+.pop-ins-process .desc .bullet.b>li {font-size: 12rem;}
+.pop-ins-process .lk-def {color: inherit;}
+
+
+/** 이용안내 **/
+
+/* 공통 */
+.page.csc.use a.link-text {color: inherit;}
+.page.csc.use .commandment-csc {margin-top: 32rem;}
+.page.csc.use .commandment-csc .lst > li {position: relative; padding-left: 36rem;}
+.page.csc.use .commandment-csc .lst > li + li {margin-top: 40rem;}
+.page.csc.use .commandment-csc .lst .tit {font-size: 16rem; font-weight: 700; line-height: 1.31; width: 100%;}
+.page.csc.use .commandment-csc .lst .tit > i {position: absolute; left: 0; top: -2rem; font-size: 18rem; line-height: 1.33; color: #2a81eb;}
+.page.csc.use .commandment-csc .lst .txt {margin-top: 16rem;}
+.page.csc.use .commandment-csc .lst .text-box ul.bullet.a>li {font-size: 16rem; line-height: 1.4;}
+.page.csc.use .commandment-csc .lst .text-box ul.bullet.a>li+li {margin-top: 16rem;}
+.page.csc.use .commandment-csc .lst .text-box ul.bullet.a>li>ul.bullet.c li + li {margin-top: 8rem;}
+
+/* MY교보 이용안내 */
+.page.csc.use.mykb {}
+.page.csc.use.mykb .ut-accd.b {margin: 32rem -20rem 40rem;}
+.page.csc.use.mykb .ut-accd.b .inf-bunch:last-child {margin-bottom: 0;}
+.page.csc.use.mykb .ut-accd.b>li>.cbox {padding: 24rem 20rem;}
+.page.csc.use.mykb .tit-txt + ul.bullet.b {margin-top: 8rem;}
+.page.csc.use.mykb .tit-txt + .hd-tit5 {margin-top: 16rem;}
+.page.csc.use.mykb .direct-lst {margin: 16rem 0 0;}
+.page.csc.use.mykb .direct-lst > li:first-child {border-top: 1rem solid #ccc;}
+.page.csc.use.mykb .direct-lst > li .btn-go {padding: 16rem 40rem 16rem 0; height: 50rem;}
+.page.csc.use.mykb .direct-lst > li .btn-go::after {right: 0;}
+.page.csc.use.mykb .guide { background: rgba(0,0,0,0.5); padding: 50rem; text-align: center; color: #fff; margin-top: 16rem;}
+.page.csc.use.mykb .text-box ul.bullet.a>li>ul.bullet.c li + li {margin-top: 6rem;}
+
+/* 모바일앱 이용안내 */
+.page.csc.use {padding: 0 20rem 20rem; overflow-x: visible; background: #fff; background-size: auto;}
+.page.csc.use .round-gray-box {margin-top: 32rem; padding: 20rem; border:1rem solid #e6e6e6; border-radius: 8rem;}
+.page.csc.use .round-gray-box dt h3 {font-size: 18rem; font-weight: 600;}
+.page.csc.use .round-gray-box dt h3 strong.point {color:#2a81eb;}
+.page.csc.use .round-gray-box dd {margin-top: 16rem; font-size: 15rem; color:#555;}
+.page.csc.use .hd-tit3 {font-size: 18rem;}
+.page.csc.use .bg-logo {margin-top: 32rem; padding:27rem 0 28rem 86rem; background:url('../img/common/icon_logo.png') 0 0 no-repeat; background-size: 74rem auto;}
+.page.csc.use .bg-logo-peach {margin-top: 24rem; padding:42rem 0 0 0; background:url('../img/common/logo_peach.png') 0 0 no-repeat; background-size: 103rem auto; font-size: 14rem; font-weight: 600;}
+.page.csc.use .howtouse-mo.ut-slide-play .swiper {padding-bottom: 40rem; margin-top: 32rem;width: 200rem !important;}
+.page.csc.use .howtouse-mo.ut-slide-play .swiper .control {width: 100%; right:auto; top:auto; bottom:0rem; left:0;}
+.page.csc.use .howtouse-mo.ut-slide-play .swiper .swiper-slide {width: 200rem !important;}
+.page.csc.use .deal-inf .btn-set {margin-top: 32rem;}
+.page.csc.use .deal-inf + .procedure {margin-top: 32rem;}
+.page.csc.use .btn-set {margin-top: 32rem; margin-bottom: 40rem;}
+.page.csc.use .btn-set.store .btn{height: 42rem; padding: 6rem 95rem; border-radius: 20rem; background-color: #000; background-repeat: no-repeat; background-position: center; background-size: 110rem auto;}
+.page.csc.use .btn-set.store .btn + .btn { margin-top: 16rem;}
+.page.csc.use .btn-set.store .btn-app {background-image: url('../img/csc/img_applestore@2x.png') ;}
+.page.csc.use .btn-set.store .btn-google {background-image: url('../img/csc/img_googleplay@2x.png') ;}
+.page.csc.use .procedure .img {margin-top: 16rem; height: 120rem; background-color: #ccc;color: #fff ; text-align: center;}
+
+/* 계약정보확인 안내 팝업 */
+.pop-contract-info {}
+.pop-contract-info .m-lst li {display: flex; align-items: center; min-height: 48rem; padding-left: 64rem; font-size: 15rem; color:#555; background-image: url('../img/csc/ic_contract01@2x.png'); background-repeat: no-repeat; background-position: 12rem 12rem; background-size: 24rem auto; position:relative; }
+.pop-contract-info .m-lst li:before {content:''; width: 48rem; height: 48rem; background:#f5f5f5; border-radius: 100%; position:absolute; top:0; left:0; z-index: -1;}
+.pop-contract-info .m-lst li.list02 {background-image: url('../img/csc/ic_contract02@2x.png'); background-size: 20rem auto; background-position: 14rem 15rem;}
+.pop-contract-info .m-lst li + li {margin-top: 24rem;}
+.pop-contract-info .ct-info-lst li a {padding-left: 52rem; background-image: url('../img/csc/ic_confirm@2x.png'); background-repeat: no-repeat; background-position: 20rem 20rem; background-size: 24rem auto; font-size: 18rem; font-weight: 700;}
+.pop-contract-info .ct-info-lst li a::after {width: 24rem; height: 24rem; background-size: 24rem;}
+
+
+/* 스마트폰 금융거래 10계명 */
+.pop-commandments {}
+.pop-commandments .commandment-csc {margin-top: 32rem;}
+.pop-commandments .commandment-csc .lst > li {position: relative; padding-left: 36rem;}
+.pop-commandments .commandment-csc .lst > li + li {margin-top: 40rem;}
+.pop-commandments .commandment-csc .lst .tit {font-size: 16rem; font-weight: 700; line-height: 1.31; width: 100%;}
+.pop-commandments .commandment-csc .lst .tit > i {position: absolute; left: 0; top: -2rem; font-size: 18rem; line-height: 1.33; color: #2a81eb;}
+.pop-commandments .commandment-csc .lst .txt {margin-top: 16rem;}
+.pop-commandments .commandment-csc .lst .text-box ul.bullet.a>li {font-size: 16rem; line-height: 1.4;}
+.pop-commandments .commandment-csc .lst .text-box ul.bullet.a>li+li {margin-top: 16rem;}
+.pop-commandments .commandment-csc .lst .text-box ul.bullet.a>li>ul.bullet.c li + li {margin-top: 8rem;}
+.pop-commandments .commandment-csc .lst .note-txt {margin-top: 16rem;}
+.pop-commandments .commandment-csc .lst .note-txt > li {font-size: 12rem; line-height: 1.5; color: #808080;}
+.pop-commandments .commandment-csc .lst .note-txt .note {color: #242424;}
+.pop-commandments .commandment-csc .lst .note-txt .note sup{font-size: 10rem;}
+
+/* 전자금융거래 이용 가이드 */
+.page.csc.use.elec .direct-lst {margin-top: 32rem;}
+.page.csc.use.elec .direct-lst > li:first-child { border-top: none;}
+.page.csc.use.elec .direct-lst > li .btn-go {font-size: 16rem;}
+.page.csc.use.elec .hd-tit3 + .procedure {margin-top: 16rem;}
+.page.csc.use.elec .procedure .lst > li .tit {word-break: keep-all;}
+.page.csc.use.elec .etc-wrp {margin-top: 8rem;}
+.page.csc.use.elec .text-box ul > li .etc-wrp ul.bullet.e {margin-top: 8rem;}
+.page.csc.use.elec .ut-gudbox + .btn-set {margin-top: 40rem;}
+.page.csc.use.elec .round-box {margin-top: 16rem; border:1rem solid #e6e6e6; padding: 20rem; border-radius: 8rem;}
+
+/* 대출결제 서비스 안내 */
+.page.csc.use.loan {}
+.page.csc.use.loan .ut-gudbox .gctn p.tit {margin-bottom: 6rem;color: #242424;}
+.page.csc.use.loan .text-box.ty02 {margin-top: 0;}
+
+/* 지원가능 O/S 및 브라우저 */
+.page.csc.use.setup {}
+.page.csc.use.setup .ut-tbl.a.ty01 .a {width: 20%;}
+.page.csc.use.setup .ut-tbl.a.ty01 .tblist>tbody>tr>td {padding: 9rem 2rem;}
+.page.csc.use.setup .ut-tbl.a.ty02 .a {width: 50%;}
+
+/* 장애 시 조치 방법 */
+.page.csc.use.problem {}
+
+/* 고객정보확인 */
+.pop-use-client {}
+
+
+/** 다이렉트계약녹취신청 **/
+.page.csc.record {}
+.page.csc.record .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.page.csc.record .ut-tabs.a {margin-bottom: 32rem;}
+.page.csc.record .hd-tit3 + .ut-tabs.a {margin-top: 24rem;}
+.page.csc.record .ut-gudbox.a.open + .btn-set {margin-top: 32rem;}
+.page.csc.record .ut-rsnum.a + .btn-set {margin-top: 16rem;}
+.page.csc.record .ut-rsnum.a + .btn-set + .bullet.b {margin-top: 10rem;}
+.page.csc.record .ut-form.a + .btn-set.ins {margin-top: 16rem; display: block;}
+.page.csc.record * + .floatbots {margin-top: 40rem;}
+.procedure .lst > li .item {min-height: 64rem;}
+.page.csc.record .procedure.record .lst > li .item > div:only-child {}
+.procedure.record .lst > li .item {min-height: 88rem; position: relative; display: flex; align-items: center; flex-direction: column; justify-content: center;}
+/* .page.csc.record .procedure.record .lst > li .item:before {content:""; display: block; position: absolute; left: 20rem; top: 20rem; width: 48rem; height: 48rem; background-repeat: no-repeat; background-position: 0; background-size:48rem;} */
+.page.csc.record .procedure.record .lst > li:nth-child(1) .item:before {background-image: url('../img/csc/ic_record01@2x.png');}
+.page.csc.record .procedure.record .lst > li:nth-child(2) .item:before {background-image: url('../img/csc/ic_record02@2x.png');}
+.page.csc.record .procedure.record .lst > li:nth-child(3) .item:before {background-image: url('../img/csc/ic_record03@2x.png');}
+.page.csc.record .request-lst {margin-top: 16rem;}
+.page.csc.record .request-lst > li + li {margin-top: 16rem;}
+
+.page.csc.record .request-lst a.lk {background:#fff; border: solid 1rem #e6e6e6; position: relative; display: block;  border-radius: 8rem; padding: 20rem 60rem 78rem 20rem; min-height: 174rem; word-break: keep-all;}
+.page.csc.record .request-lst a.lk .ut-bdgs {display: block;}
+.page.csc.record .request-lst a.lk .tit {position: relative; display: block; font-size: 16rem; font-weight: 700; line-height: 1.31; padding-left: 20rem;}
+.page.csc.record .request-lst a.lk * + .tit {margin-top: 6rem;}
+.page.csc.record .request-lst a.lk .tit .num {width: 20rem; position: absolute; left: 0; top: 0;}
+.page.csc.record .request-lst a.lk .tit .t {font: inherit;}
+.page.csc.record .request-lst .new {display: inline-block; width: 18rem; height: 18rem; background: url(../img/common/ico_new.png) no-repeat center top; background-size: 18rem; vertical-align: -4rem; margin-left: 8rem;}
+.page.csc.record .request-lst a.lk:after {content:""; display:block; position: absolute; right: 20rem; top: 50%; transform: translateY(-50%); width: 18rem; height: 18rem; background: url('../img/csc/bg_arr_counsel.png') no-repeat center top; background-size:18rem;}
+.page.csc.record .request-lst a.lk .tit .t {max-width: 100%; max-height: 45rem; overflow : hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: keep-all;}
+.page.csc.record .request-lst a.lk .inf {display: block; color: #555555; position: absolute; left: 20rem; bottom: 20rem}
+.page.csc.record .request-lst a.lk .inf .txt {display: block;}
+.page.csc.record .request-lst a.lk .inf .txt + .txt {margin-top: 8rem;}
+.page.csc.record .request-lst a.lk .inf .txt .val {padding-left: 10rem; color: #242424;}
+.page.csc.record .request-lst + .ut-more {margin: 32rem 0;}
+.page.csc.record .detail .tit-area {border-bottom: 1rem solid #e6e6e6; padding-bottom: 20rem;}
+.page.csc.record .detail .tit-area .date {margin-top: 10rem; font-size: 12rem; color: #808080;}
+.page.csc.record .detail .ut-steps.c {margin-top: 20rem;}
+.page.csc.record .detail .ut-steps.c .cl>li.active .tt {color: #2a81eb;}
+.page.csc.record .detail .ut-dtds.c {margin-top: 40rem;}
+.page.csc.record .detail .ut-dtds.c .dlist {border-top:1rem solid #555;}
+.page.csc.record .detail .ut-dtds.c>.dlist.left>li>.dd p + .btn-set {margin-top: 12rem;}
+.page.csc.record .detail .ut-dtds.c>.dlist.left>li>.dd .btn-set.half {flex-wrap: wrap;}
+.page.csc.record .detail .ut-dtds.c>.dlist.left>li>.dd .btn-set.half .btn {width: calc(50% - 8rem); margin: 4rem;}
+.page.csc.record .detail .ut-dtds.c>.dlist.left>li>.dd .btn-set + .bullet.b {margin-top: 10rem;}
+.page.csc.record .detail .ut-dtds.c>.dlist.left>li>.dd .btn-set + .bullet.b > li {word-break:keep-all;}
+.page.csc.record .list-empty.bd + .ut-gudbox.a {margin-top: 40rem;}
+
+
+/** 전화상담(ARS) 안내 **/
+.page.csc.ars {padding: 0rem 0rem 90rem 0rem;}
+.page.csc.ars .sect {padding: 20rem 20rem;}
+.page.csc.ars .sect a.lk { color: #555555; position: relative; display: inline-block; vertical-align: middle;}
+.page.csc.ars .sect a.lk.un { color: #242424;}
+.page.csc.ars .sect a.lk.un::before {position: absolute; left: 0rem; right: 0rem; bottom: 3rem; height: 1rem; background-color: #555555; content:""; display: block;}
+.page.csc.ars .sect.tels { padding-top: 30rem;}
+.page.csc.ars .sect.tels .hdt {}
+.page.csc.ars .sect.tels .hdt .tit { font-weight: 700; color: #242424; font-size: 22rem;}
+.page.csc.ars .sect.tels .tbox {background: #f5f5f5; border-radius: 8rem; padding: 18rem 20rem 18rem 20rem; margin-top: 24rem; /* text-align: center; */}
+.page.csc.ars .sect.tels .tbox .tit {}
+.page.csc.ars .sect.tels .tbox .dap {font-size: 18rem; font-weight: 700; margin-top: 10rem;}
+.page.csc.ars .sect.tels .tbox .ext { margin-top: 8rem;}
+.page.csc.ars .sect.tels .tbox a.tel {color: #2166d4; display: inline-block; vertical-align: 0; position: relative;}
+.page.csc.ars .sect.tels .tbox a.tel::before {position: absolute; left: 0rem; right: 0rem; bottom: 2rem; height: 2rem; background-color: #2166d4; content:""; display: block;}
+.page.csc.ars .sect.tels .guds { margin-top: 16rem;}
+.page.csc.ars .sect.arsn .hdt { margin-bottom: 18rem;}
+.page.csc.ars .sect.arsn .hdt .tit { font-weight: 700; color: #242424; font-size: 16rem;}
+.page.csc.ars .sect.arsn .accd { margin-left: -20rem; margin-right: -20rem;}
+.page.csc.ars .sect.arsn .accd>li:first-child .hbox {border-top: 1rem #e6e6e6 solid;}
+.page.csc.ars .sect.arsn .accd .hbox {position: relative; padding: 20rem 16rem 20rem 33rem;}
+.page.csc.ars .sect.arsn .accd .hbox .t {display: inline-block; vertical-align: middle; border-radius: 4rem; background-color: #2166d4; min-width: 24rem; text-align: center; font-size: 14rem; font-weight: 700; height: 24rem; line-height: 1; padding: 4rem 2rem; margin: 0rem 8rem 0rem 0rem; position: absolute; left: 0; top: 19rem; color: #fff;}
+.page.csc.ars .sect.arsn .accd .cbox {background-color:#f5f5f5; padding: 24rem 20rem 24rem 20rem;}
+.page.csc.ars .sect.arsn .accd .alst {}
+.page.csc.ars .sect.arsn .accd .alst>li {font-size:15rem; color: #555555; position: relative; padding: 5rem 0rem 5rem 40rem;}
+.page.csc.ars .sect.arsn .accd .alst>li .n {display: inline-block; vertical-align: middle; border-radius: 4rem; border:1rem solid #2166d4; background-color: #ffffff; min-width: 24rem; text-align: center; font-size: 14rem; font-weight: 700; height: 24rem; line-height: 1; padding: 4rem 2rem; margin: 0rem 8rem 0rem 0rem; position: absolute; left: 0; top: 4rem; color: #2166d4;}
+.page.csc.ars .sect.arsn .accd .alst>li+li {margin-top:6rem;}
+.page.csc.ars .sect.guds .hdt { margin-bottom: 16rem;}
+.page.csc.ars .sect.guds .hdt .tit {font-weight: 700; color: #242424; font-size: 16rem;}
+.page.csc.ars .sect.guds .ut-tbl {}
+.page.csc.ars .sect.guds .ut-tbl .tbform {    border-top-width: 0rem;}
+.page.csc.ars .sect.guds .ut-tbl .tbform th {}
+.page.csc.ars .sect.guds .ut-tbl .tbform td {}
+.page.csc.ars .sect.guds .ut-tbl .tbform col:nth-child(1) {width: 36%;}
+.page.csc.ars .gudchat {border-radius: 8rem; padding: 20rem 20rem 20rem 20rem; margin-top: 40rem; text-align: center; background-color: #f5f5f5;}
+.page.csc.ars .gudchat .tit { font-size: 15rem; color: #242424;}
+.page.csc.ars .gudchat .tit::before {width:24rem; height:24rem; background: url(../img/prd/ic_mobile@2x.png) no-repeat center; background-size:24rem auto; font-size: 1rem; color: transparent; display: block; vertical-align:middle; content:''; margin: 0rem auto 12rem auto;}
+.page.csc.ars .gudchat .msg {width:100%; padding: 16rem 10rem 30rem; margin-top: 13rem; border-radius: 4rem; border-top:1rem solid #e6e6e6; font-size: 14rem; color: #2a81eb; font-weight: 700;}
+.page.csc.ars .gudbox {margin-top: 30rem;}
+
+
+/** 지점찾기 **/
+.pop-layer.pop-findpoint .poptents{padding-bottom: 0;}
+.pop-findpoint .ut-tabs.a {margin-bottom: 0;}
+.pop-findpoint .sect-csc.find {flex: 2;margin: 0 -20rem 0; padding:24rem 20rem 0; background: #fff;}
+.pop-findpoint .sect-csc.find .hd-tit3 {margin-top: 0;}
+.pop-findpoint .sect-csc.find * + .btn-set {margin-top: 16rem;}
+.pop-findpoint .ut-form.a li.region {display: flex; margin: 8rem -4rem 0;}
+.pop-findpoint .region .select {width: 100%; margin: 0 4rem;}
+.pop-findpoint .result-wrp {display: none;}
+.pop-findpoint .result-wrp.active {display: block;}
+.pop-findpoint .sect-csc + * {margin-top: 40rem;}
+.pop-findpoint .result-wrp .result-lst {overflow: hidden; margin-top: 16rem; border-top: 1rem solid #555;}
+.pop-findpoint .result-wrp .result-lst > li {position: relative;}
+.pop-findpoint .result-wrp .result-lst .item {text-align: left; min-height: 86rem; padding: 18rem 20rem;  color: #555;}
+.pop-findpoint .result-wrp .result-lst .item .btn-go {display: block; width: 100%; color: inherit; text-align: left;}
+.pop-findpoint .result-wrp .result-lst .item .inf {display: flex; align-items: center; min-height: 22rem;}
+.pop-findpoint .result-wrp .result-lst .item .inf .ut-bdgs {margin-right: 8rem;}
+.pop-findpoint .result-wrp .result-lst .item .loc {display: block; margin-top: 8rem; font-size: 14rem;}
+.pop-findpoint .result-wrp .result-lst .item .btn-set {margin: 16rem 0 0;}
+.pop-findpoint .result-wrp .result-lst .item .btn-set a ,
+.pop-findpoint .result-wrp .result-lst .item .btn-set button {width:auto;}
+.pop-findpoint .result-wrp .result-lst .item .tit {word-break: keep-all; line-height: 1.4; font-size: 15rem; color: #555555;}
+.pop-findpoint .result-wrp .result-lst .item .loc {word-break: keep-all; color: #767676;}
+.pop-findpoint .result-wrp .result-lst .item .link-text {font-size: 14rem;}
+.pop-findpoint .result-wrp .result-lst > li + li .item:before {content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1rem; background-color: #e6e6e6;}
+.pop-findpoint .result-wrp .ut-more {margin: 34rem 0;}
+.pop-findpoint .sect-csc.empty .list-empty {margin-top: 0;}
+.pop-findpoint .sect-csc.empty .list-empty p {line-height: 24rem; letter-spacing: -0.75rem; margin-top: 0;}
+.pop-findpoint .sect-csc.empty .btn-set {margin-top: 24rem;}
+
+/* 본사 오시는 길 */
+.pop-findpoint.main {}
+.pop-findpoint .sect-csc.top .text-box {margin-top: 8rem;}
+.pop-findpoint .sect-csc.top * + .btn-set {margin-top: 16rem;}
+.pop-layer .sect-csc .map-wrp {overflow: hidden;}
+.pop-layer .sect-csc .map-wrp .map {overflow: hidden; position: relative; height: 180rem; background: url(https://t1.daumcdn.net/mapjsapi/images/bg_tile.png);}
+.pop-layer .sect-csc .office-inf {margin-top: 24rem;}
+.pop-layer .sect-csc .office-inf .tit-txt {margin-top: 8rem;}
+.pop-layer .sect-csc .office-inf + .btn-set {margin-top: 16rem;}
+.pop-layer .sect-csc .st-item {margin-top: 16rem;}
+.pop-layer .sect-csc .st-item + .st-item {margin-top: 8rem;}
+.pop-layer .sect-csc .st-item.sales {display: flex; align-items: center;}
+.pop-layer .sect-csc .st-item.sales .date {color: #d65d1c; margin-left: 8rem;}
+.pop-layer .sect-csc .st-item.standby {padding-left: 27rem; background: url(../img/common/ic_user@2x.png) no-repeat left center; background-size:24rem auto; font-size: 15rem; line-height: 1.4;}
+.pop-layer .sect-csc .st-item.standby .count {color: #2a81eb;}
+
+/* 대기인원 */
+.pop-waiting .sect-csc:only-child {margin: 12rem 0 0;}
+.pop-waiting .sta-box {min-height: 69rem; padding: 24rem; border-radius: 8rem; background-color: #f5f5f5;}
+.pop-waiting .sta-box .txt {text-align: center; font-weight: 700; font-size: 18rem; line-height: 1.33;}
+.pop-waiting .sta-box .txt strong {font-weight: 700;}
+.pop-waiting .sta-box + .text-box {margin-top: 10rem;}
+.pop-waiting .btn-set {margin-top: 19rem;}
+
+/* 지점찾기_상세 */
+.pop-office.branch {}
+.pop-office.branch .sect-csc.top .text-box {margin-top: 8rem;}
+.pop-office.branch .sect-csc.top * + .btn-set {margin-top: 16rem;}
+
+/* 처리가능업무 */
+.pop-treat {}
+
+
+
+
+/************************
+금융정보
+************************/
+
+/** 금융QNA **/
+/* .page.csc.qna .hd-tit3 {font-size: 22rem;} */
+/* .page.csc.qna.list .item-lst> li.no-img .cont, */
+.page.csc.qna.list .item-lst> li + li {padding-top: 30rem;}
+.item-lst.chart-style .item {display: block; width: 100%; text-align: left;}
+.page.csc.qna.list .item-lst> li .img{width:100%;height: 0; padding-top: 59.375%; position: relative;background:url(../img/csc/no-img.png) 0 0 no-repeat; background-size: cover;}
+.page.csc.qna.list .item-lst> li .img img{width:100%;height: 100%;position: absolute;left:0;top:0;right:0;bottom:0;border-radius: 16rem 16rem 0 0;object-fit: cover;}
+.item-lst.chart-style .box {overflow: hidden; border-radius: 16rem; background:#f5f5f5;}
+.item-lst.chart-style .box .img {display: block;width:100%;height: 0; padding-top: 59.375%; position: relative;}
+.item-lst.chart-style .box .img img {width:100%;height: 100%;position: absolute;left:0;top:0;right:0;bottom:0;border-radius: 16rem 16rem 0 0;object-fit: cover;}
+.item-lst.chart-style .cont {height: 141rem;position: relative;padding:20rem 20rem 23rem; }
+.page.csc .tag,
+.page.event .tag {display: flex; margin-left: -5rem; margin-top: 9rem; flex-wrap: wrap;}
+.page.csc .tag li,
+.page.event .tag li {margin-left: 5rem;}
+.page.csc .tag li a ,
+.page.csc .tag li button,
+.page.csc .tag li span,
+.page.event .tag li a,
+.page.event .tag li button,
+.page.event .tag li span {color:#555;}
+.item-lst.chart-style .cont .tit {overflow: hidden; max-height:48rem; font-size: 18rem;font-weight: 600;line-height: 1.31;color: #242424;word-break: keep-all; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical}
+.item-lst.chart-style .cont .period {margin-top: 8rem; color:#555; font-size: 14rem;}
+.item-lst.chart-style .cont .view {margin-top: 2rem; text-align: right;}
+.item-lst.chart-style> li.no-img .cont .view {margin-top: 42rem;}
+.item-lst.chart-style .cont .view em {display: inline-block; position: relative; padding-left: 28rem; color:#555;}
+.item-lst.chart-style .cont .view em:before {content:""; display: inline-block; width: 24rem; height: 24rem; background: url(../img/csc/icon_view.png) 0 0 no-repeat; background-size: 24rem; position: absolute; left:0; top:-2rem;}
+
+.page.csc.qna .item-lst .thumb{position: relative; padding-bottom: 80rem; overflow: hidden; display: block; height: 80rem; width: 80rem; min-width: 80rem; margin-left: 10rem;}
+.page.csc.qna .item-lst .thumb .img{display: block; position: absolute; left: 50%;top: 50%; transform: translate(-50% , -50%); width: 100%; object-fit: cover; max-width: inherit; min-width: 100%; height: 100%;}
+.item-lst.chart-style {margin-left: -20rem; margin-right: -20rem;}
+.item-lst.chart-style > li {margin: 16rem 20rem 0;}
+.qna-swiper .item-lst.chart-style > li {padding:0 10rem 0 0 !important; margin:0;}
+.item-lst.chart-style > li:first-child {padding-top: 0;}
+.item-lst.chart-style.active {padding-top: 34rem; padding-bottom: 30rem;}
+.item-lst.chart-style.active .box {background: #fff;}
+.item-lst.chart-style.active > li:first-child {padding-top: 0;}
+.qna-swiper .item-lst {margin-left: 0 !important;}
+@media screen and ( max-width:1024px ) and ( min-width:769px ){
+	.item-lst.chart-style {display: flex; flex-wrap: wrap;}
+	.qna-swiper .item-lst.chart-style {flex-wrap:nowrap;}
+	.item-lst.chart-style > li {width:calc(50% - 40rem);}
+	.item-lst.chart-style > li:nth-child(even) {margin-left: 0 !important;}
+	.qna-swiper .item-lst.chart-style > li:nth-child(even) {padding-left: 0 !important;}
+	.item-lst.chart-style > li:nth-child(2) {padding-top: 0 !important;}
+	.qna-swiper .item-lst.chart-style > li:nth-child(2) {padding:0 10rem 0 0!important;}
+}
+@media screen and ( max-width:768px ) and ( min-width:450px ){
+	.item-lst.chart-style {display: flex; flex-wrap: wrap;}
+	.qna-swiper .item-lst.chart-style {flex-wrap:nowrap;}
+	.item-lst.chart-style > li {width:calc(50% - 30rem);}
+	.item-lst.chart-style > li:nth-child(even) {margin-left: 0 !important;}
+	.qna-swiper .item-lst.chart-style > li:nth-child(even) {padding-left: 0 !important;}
+	.item-lst.chart-style > li:nth-child(2) {padding-top: 0 !important;}
+	.qna-swiper .item-lst.chart-style > li:nth-child(2) {padding: 0 10rem 0 0 !important;}
+ }
+
+
+.page.csc.qna.detail .cnt .img + .txt {margin-top: 25rem; color:#555; font-size: 1.4em;}
+.page.csc.qna.detail .cnt .tag {margin-top: 25rem; }
+.page.csc.qna.detail .cnt .point-area {margin-bottom: 40rem; padding: 20rem; background:#f2f7ff; border-radius: 16rem;}
+.page.csc.qna.detail .cnt .point-area .bullet.a li {font-size: 15rem; color:#242424;}
+
+.page.csc.qna.detail .sect .hd-tit4 { padding-bottom: 0; line-height: 1.31;}
+.page.csc.qna.detail .many-view .qna-swiper .swiper {padding-bottom: 34rem;}
+.page.csc.qna.detail .many-view .item-lst {display: flex; margin: 16rem -10rem -10rem;}
+.page.csc.qna.detail .many-view .item-lst > li {padding: 10rem;}
+.page.csc.qna.detail .many-view .item-lst > li + li {margin-top: 0;}
+.page.csc.qna.detail .many-view .item-lst .box {flex-direction: column-reverse; min-height: 197rem;}
+/* .page.csc.qna.detail .many-view .item-lst .cont {margin-top: 16rem; width: 100%;} */
+.page.csc.qna.detail .many-view .item-lst .cont .tit {overflow : hidden; height:auto; max-height: 60rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-break: keep-all;}
+.page.csc.qna.detail .many-view .item-lst .item > .box > span:only-child {margin-top: 0; width: auto; display: flex; align-items: center; height: 157rem;}
+.page.csc.qna.detail .many-view .item-lst .thumb {margin: 0 auto;}
+
+.page.csc.qna.detail .bg-chk {padding:0 0 12rem 30rem; margin-top: 40rem; text-align: center; color:#0aa622;  font-size: 12rem; font-weight: 600;}
+.page.csc.qna.detail .bg-chk span {position: relative;}
+.page.csc.qna.detail .bg-chk span::before {content:''; width:24rem; height:24rem; position: absolute; left:-30rem; background:url(../img/common/ico_light.png) 0 -4rem no-repeat; background-size:24rem auto; }
+.page.csc.qna.detail .table-area {text-align: center;}
+.page.csc.qna.detail .table-area .exp {text-align: left ;color:#808080; font-size:12rem;}
+.page.csc.qna.detail .txt-area .hd-tit3 {margin-top: 40rem; margin-bottom: 16rem;}
+.page.csc.qna.detail .txt-area .hd-tit4 {margin-top: 32rem; margin-bottom: 10rem;}
+.page.csc.qna.detail .txt-area .hd-tit5 {margin-top: 24rem; margin-bottom: 16rem;}
+.page.csc.qna.detail .txt-area  [class*="img"] {padding-top: 249rem; margin:16rem 0 17rem; font-size: 12rem; color:#808080; background:url(../img/csc/img_qna1.png) center 0 no-repeat; background-size: auto 241rem ;}
+.page.csc.qna.detail .txt-area .img2 {background:url(../img/csc/img_alert1.jpg) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img3 {background:url(../img/csc/img_alert2.jpg) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img4 {background:url(../img/csc/img_alert3.jpg) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img5 {background:url(../img/csc/img_alert4.jpg) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img6 {padding-top: 554rem; background:url(../img/csc/img_qna_1_5.png) center 0 no-repeat; background-size: auto 546rem;}
+.page.csc.qna.detail .txt-area .img7 {background:url(../img/csc/img_alert6.jpg) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img2-1 {background:url(../img/csc/img_qna_2_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img2-2 {background:url(../img/csc/img_qna_2_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img2-3 {background:url(../img/csc/img_qna_2_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img2-4 {background:url(../img/csc/img_qna_2_4.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img3-1 {background:url(../img/csc/img_qna_3_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img3-2 {background:url(../img/csc/img_qna_3_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img3-3 {background:url(../img/csc/img_qna_3_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img3-4 {padding-top: 291rem; background:url(../img/csc/img_qna_3_4.png) center 0 no-repeat; background-size: auto 273rem;}
+.page.csc.qna.detail .txt-area .img3-5 {background:url(../img/csc/img_qna_3_5.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img5-1 {padding-top: 248rem; background:url(../img/csc/img_qna_5_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img5-2 {padding-top: 248rem; background:url(../img/csc/img_qna_5_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img5-3 {padding-top: 345rem; background:url(../img/csc/img_qna_5_3.png) center 0 no-repeat; background-size: auto 338rem;}
+.page.csc.qna.detail .txt-area .img6-1 {background:url(../img/csc/img_qna_6_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img6-2 {background:url(../img/csc/img_qna_6_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img6-3 {background:url(../img/csc/img_qna_6_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img7-1 {padding-top: 291rem; background:url(../img/csc/img_qna_7_1.png) center 0 no-repeat; background-size: auto 284rem;}
+.page.csc.qna.detail .txt-area .img7-2 {background:url(../img/csc/img_qna_7_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img7-3 {background:url(../img/csc/img_qna_7_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img7-4 {background:url(../img/csc/img_qna_7_4.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img8-1 {background:url(../img/csc/img_qna_8_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img8-2 {background:url(../img/csc/img_qna_8_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img8-3 {background:url(../img/csc/img_qna_8_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-1 {background:url(../img/csc/img_qna_9_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-2 {background:url(../img/csc/img_qna_9_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-3 {background:url(../img/csc/img_qna_9_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-4 {background:url(../img/csc/img_qna_9_4.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-5 {background:url(../img/csc/img_qna_9_5.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-6 {background:url(../img/csc/img_qna_9_6.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-7 {background:url(../img/csc/img_qna_9_7.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-8 {background:url(../img/csc/img_qna_9_8.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-9 {background:url(../img/csc/img_qna_9_9.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-10 {background:url(../img/csc/img_qna_9_10.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img9-11 {background:url(../img/csc/img_qna_9_11.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img10-1 {background:url(../img/csc/img_qna_10_1.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img10-2 {background:url(../img/csc/img_qna_10_2.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img10-3 {background:url(../img/csc/img_qna_10_3.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img10-4 {background:url(../img/csc/img_qna_10_4.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area .img10-5 {background:url(../img/csc/img_qna_10_5.png) center 0 no-repeat; background-size: auto 241rem;}
+.page.csc.qna.detail .txt-area p {color:#555; font-size: 15rem; word-break: break-all;}
+.page.csc.qna.detail .txt-area .hd-tit3 em.q,
+.page.csc.qna.detail .txt-area .hd-tit4 em.q {margin-right: 8rem; padding:8rem 11rem; background:url(../img/common/bg_q.png) 0 0 no-repeat; font-size: 14rem; font-weight: 600;}
+.page.csc.qna.detail .txt-area > .bullet.border-type {margin-top: 16rem; border:1rem solid #e6e6e6; padding:14rem 20rem 20rem; border-radius: 16rem;}
+.page.csc.qna.detail .txt-area .bullet.border-type >li {display: inline-block; width: 32%; font-size: 15rem;}
+.page.csc.qna.detail .txt-area > .bullet {margin-top: 16rem;}
+.page.csc.qna.detail .txt-area .bullet >li {font-size: 15rem;}
+.page.csc.qna.detail .txt-area .bullet >li > .bullet > li {margin-top: 9rem;}
+.page.csc.qna.detail .txt-area + .table-area {margin-top: 32rem;}
+.page.csc.qna.detail .table-area + .table-area {margin-top: 32rem;}
+.page.csc.qna.detail .chick {width:61.11111%; margin:40rem auto ; border:0;  position: relative; line-height: 2;}
+.page.csc.qna.detail .chick::before {content:''; display: inline-block; width:100%; height: 1rem; border-bottom:1rem solid #ccc; z-index: 1;}
+.page.csc.qna.detail .chick::after {content:'';width: 60rem; height: 24rem; position: absolute; left:calc(50% - 30rem); top:0;  background:#fff url(../img/csc/ico_chick.png) center 0 no-repeat; background-size: 24rem; z-index: 2;}
+.page.csc.qna.detail .alert-box {margin-left: 76rem; background:#ebf5ff; border-radius: 0 20rem 20rem 20rem; padding:20rem; color:#555; font-size: 15rem; word-break: break-all; position: relative; text-align: left;}
+.page.csc.qna.detail .alert-box::before {content:''; width: 60rem;height: 60rem; background:url(../img/csc/alert-avatar.png) 0 0 no-repeat; background-size: 60rem; position: absolute; left:-76rem; top:0;}
+.page.csc.qna.detail .ut-tbl + .alert-box,
+.page.csc.qna.detail p + .alert-box {margin-top: 16rem;}
+.page.csc.qna.detail p.f12 {font-size: 12rem; color:#808080;}
+.page.csc.qna.detail .blue-box {padding:20rem; background: #f2f7ff; border-radius: 16rem; }
+.page.csc.qna.detail .blue-box .bullet {margin-top: 16rem;}
+.page.csc.qna.detail .blue-box li + li {margin-top: 16rem;}
+.page.csc.qna.detail .blue-box li > dl > dt {font-weight: 600; font-size: 16rem; color:#242424;}
+.page.csc.qna.detail .blue-box + .blue-box {margin-top: 16rem;}
+.page.csc.qna.detail .blue-box p {text-align: center;}
+.page.csc.qna.detail .blue-box p + p {margin-top: 10rem;}
+.page.csc.qna.detail .blue-box strong.importa {font-weight: 600; font-size: 16rem;}
+.page.csc.qna.detail .txt-area + .blue-box {margin-top: 40rem;}
+.page.csc.qna.detail .bullet + .blue-box {margin-top: 8rem;}
+.page.csc.qna.detail .green-box {padding:27rem 15rem 30rem 20rem; background:rgba(235,247,223, 0.5); border:1.2rem dashed #000; border-radius: 8rem; ;}
+.page.csc.qna.detail .green-box .hd-tit4 {text-align: center; padding: 0;}
+.page.csc.qna.detail .green-box ol {margin-top: 24rem; font-size: 15rem; text-align: left;}
+.page.csc.qna.detail .green-box li + li {margin-top: 16rem;}
+.page.csc.qna.detail .green-box li a.line {text-decoration: underline;}
+.page.csc.qna.detail .green-box + .txt-area ,
+.page.csc.qna.detail .txt-area  + .green-box {margin-top: 40rem;}
+.page.csc.qna.detail a.point {text-decoration: underline;}
+.page.csc.qna.detail section > ul.bullet.a li {font-size: 15rem;}
+.page.csc.qna.detail .round-box {padding:20rem; border:1rem solid #e9eaed;border-radius: 8rem;}
+.page.csc.qna.detail .round-box p {color:#555;}
+.page.csc.qna.detail .round-box p + h5,
+.page.csc.qna.detail .round-box h4 + h5 {margin-top: 16rem;}
+.page.csc.qna.detail .round-box h5 + p {margin-top: 8rem;}
+.page.csc.qna.detail .txt-area + .round-box {margin-top: 16rem;}
+.page.csc.qna.detail .round-box.process {margin-bottom: 40rem; position: relative;}
+.page.csc.qna.detail .round-box.process:after {content:'';width: 16rem; height: 16rem; background:url(../img/csc/ico_process.png) 0 0 no-repeat; background-size: 16rem; position: absolute; left:calc(50% - 16rem); bottom:-28rem;}
+.page.csc.qna.detail .round-box .bullet,
+.page.csc.qna.detail .round-box + .blue-box {margin-top: 16rem;}
+
+/* 금융 Q&A 폰트크기 em */
+.page.csc.qna.detail .font-size {font-size: 10px;}
+.page.csc.qna.detail .font-size .cnt .txt {font-size:1em;}
+.page.csc.qna.detail .font-size .txt-area p {font-size:1.5em;}
+.page.csc.qna.detail .font-size .txt-area [class*="img"] {font-size: 1.2em;}
+.page.csc.qna.detail .font-size .bg-chk {font-size:1.2em;}
+.page.csc.qna.detail .font-size .hd-tit3 {font-size: 1.8em;}
+.page.csc.qna.detail .font-size .ut-tbl.a .tblist>thead>tr>th,
+.page.csc.qna.detail .font-size .ut-tbl.a .tblist>tbody>tr>th,
+.page.csc.qna.detail .font-size .ut-tbl.a .tblist>tbody>tr>td {font-size: 1.4em;}
+.page.csc.qna.detail .font-size .ut-tbl.a .tblist>tbody>tr>td ol li {font-size: 1em;}
+.page.csc.qna.detail .font-size .ut-tbl.a ul.bullet.a>li {font-size: 0.875em;}
+.page.csc.qna.detail .font-size ul.bullet.a>li {font-size: 1.4em;}
+.page.csc.qna.detail .font-size ul.bullet.a>li ul.bullet.c li {font-size: 1.0714285714285714em;}
+.page.csc.qna.detail .font-size ul.bullet.b>li {font-size: 0.8571428571428571em;}
+.page.csc.qna.detail .font-size .hd-tit4 {font-size: 1.6em;}
+.page.csc.qna.detail .font-size .green-box {font-size: 1em;}
+.page.csc.qna.detail .font-size .green-box ol {font-size: 1.5em;}
+.page.csc.qna.detail .font-size .green-box ul.bullet.a>li {font-size: 1em;}
+.page.csc.qna.detail .font-size .hd-tit5 {font-size: 1.4em;}
+.page.csc.qna.detail .font-size ul.bullet.a>li p {font-size: 1.0714285714285714em;}
+.page.csc.qna.detail .font-size ul.bullet.a>li p {font-size: 1.0714285714285714em;}
+.page.csc.qna.detail .font-size ul.bullet.a>li [class*="img"] {font-size: 0.8571428571428571em;}
+.page.csc.qna.detail .font-size .round-box p {font-size: 1.5em;}
+.page.csc.qna.detail .font-size .round-box ul.bullet.b>li {font-size: 1.2em;}
+.page.csc.qna.detail .font-size .blue-box li > dl > dt {font-size: 1.1428571428571428em;}
+.page.csc.qna.detail .font-size .alert-box {font-size: 1.5em;}
+
+
+/* 알기 쉬운 보험용어 */
+.page.csc.list .hd-tit3 {font-size: 22rem;}
+.page.csc.list .sect.top {margin: 0 -20rem; padding: 32rem 20rem 0;}
+.page.csc.list .sect.top .tar {text-align: right;}
+.page.csc.list .item-srch {margin-top: 32rem; margin-bottom: 16rem;}
+.page.csc.list .ut-tabs.a {background-color: #fff;}
+.page.csc.list .ut-optset>.opt .tot {color: #242424;}
+.page.csc.easy.detail .board-view .tit-area .lang {margin-top: 8rem; font-size: 16rem; font-weight: 700; text-align: center;}
+.page.csc.easy.detail .board-view .major-desc {padding: 20rem; border-radius: 8rem; background-color: #f5f5f5; margin-bottom: 16rem;  font-size: 1.1em;}
+
+/* 금융용어사전 */
+body.csc.dict.list .sect.top {padding-bottom: 0;}
+body.csc.dict.list .ut-tabs.a {margin-bottom: 0;}
+.page.list .board-wrp .board-lst .txt {display: block;}
+.page.list .board-wrp .btn-select::after {top: 13rem;}
+.page.csc.dict.list .ut-optset + .sort-alphb {margin-top: 16rem;}
+.page.csc.dict.list .sort-alphb .alphb-lst {overflow: hidden; margin-bottom: 24rem; display: none;}
+.page.csc.dict.list .sort-alphb .alphb-lst.active {display: block;}
+.page.csc.dict.list .sort-alphb .alphb-lst .box {overflow: hidden; display: flex; flex-wrap: wrap; margin-bottom: -1rem; border-radius: 4rem; background-color: #f8f8f8;}
+.page.csc.dict.list .sort-alphb .alphb-lst .item {width: 14.28%; min-height: 38rem; margin: 0; border: 0; border-right: 2rem solid #fff; border-bottom: 1rem solid #fff; font-size: 15rem; color: #555;}
+.page.csc.dict.list .sort-alphb .alphb-lst .item:nth-child(7n) {border-right: 0;}
+.page.csc.dict.list .sort-alphb .alphb-lst .item.col2 {width: 28.56%;}
+.page.csc.dict.list .sort-alphb .alphb-lst .item.active {background-color: #ddeeff; font-weight: 600;}
+.page.csc.dict.list .sort-alphb + .board-lst {margin-top: 24rem;}
+.page.csc.dict.list .sort-alphb .alphb-lst.en .item.col2 {border-right: none;}
+.page.csc.dict.list .board-lst {border-top: 1rem solid #555; border-radius: 0;}
+.page.csc.dict.list .board-lst .item {padding-left:0; padding-right:0;}
+.page.csc.dict.list .board-lst .item:before {left:0;}
+.page.csc.dict.list .board-lst li:last-child {border-bottom: 1rem solid #e6e6e6;}
+
+/************************
+고객서비스
+************************/
+
+/* 평생든든서비스 */
+.page.csc.life {}
+
+/* 노블리에서비스 */
+.page.csc.nob .serv-dsc {margin-top: 32rem;}
+.page.csc.nob .serv-dsc .hd-tit2{ font-size: 22rem;}
+.page.csc.nob .serv-dsc .txt {margin-top: 16rem; font-size: 15rem;color:#555;}
+.page.csc.nob .serv-dsc .perform {margin-top: 40rem; text-align: right;}
+.page.csc.nob .serv-dsc .perform button + button {margin-left: 10rem;}
+.page.csc.nob .serv-exp {margin-top: 32rem;}
+.page.csc.nob .serv-exp .hd-tit3{font-size: 18rem;}
+.page.csc.nob .serv-exp .det {margin-top: 16rem;font-size: 15rem;}
+.page.csc.nob .serv-exp .det > li {padding-left:38rem; background: url(../img/csc/icon_cup.png) no-repeat 0 0; background-size: 24rem;}
+.page.csc.nob .serv-exp .det > li+li {padding-top: 23rem; background: url(../img/csc/icon_present.png) no-repeat 0 23rem; background-size: 24rem;}
+.page.csc.nob .serv-exp .about {border-top: 1rem solid #e6e6e6; margin-top: 24rem; padding-top: 24rem;}
+.page.csc.nob .serv-exp .about .hd-tit4 {line-height: 1.31;padding: 0;font-size: 16rem;}
+.page.csc.nob .serv-exp .about .txt {margin-top: 16rem;font-size: 15rem;color: #555555;}
+.page.csc.nob .serv-exp .about .bullet {margin-top: 10rem;}
+.page.csc.nob .serv-intro {margin-top: 40rem;}
+.page.csc.nob .serv-intro .hd-tit3{font-size: 18rem;}
+.page.csc.nob .serv-intro .grp {margin-top: 16rem; padding: 24rem 20rem; border-radius: 8rem; border:1rem solid #e6e6e6;}
+.page.csc.nob .serv-intro .grp .hd-tit4 {line-height: 1.31;padding: 0;font-size: 16rem;}
+.page.csc.nob .serv-intro .grp .bullet.a {margin-top: 23rem;}
+.page.csc.nob .serv-intro .grp .bullet.a > li {font-size: 15rem;}
+.page.csc.nob .serv-intro .grp .bullet.a > li + li {margin-top: 16rem;}
+.page.csc.nob .serv-each {margin-top: 60rem;}
+.page.csc.nob .serv-each .hd-tit3 { font-size: 18rem;}
+.page.csc.nob .serv-each .lst {margin-top: 32rem;}
+.page.csc.nob .serv-each .lst > li + li {margin-top: 40rem;}
+.page.csc.nob .serv-each .lst .hd-tit4  {line-height: 1.31;padding: 0;}
+.page.csc.nob .serv-each .lst .txt {font-size: 15rem;color: #555;margin-top: 16rem;}
+.page.csc.nob .serv-each .lst .pic {margin-top: 16rem; display: flex; flex-direction: column;}
+.page.csc.nob .serv-each .lst .pic::before {content:''; display: block; width: 100%; background: url(../img/csc/pic_nob_serv01_01.png) no-repeat left top; background-size: cover; min-height: 180rem; padding-top: calc(100% / 24 * 9);}
+.page.csc.nob .serv-each .lst .pic .stxt {font-size: 14rem;margin-top: 0;padding-top: 16rem; color:#555;}
+.page.csc.nob .serv-each .lst .pic + .pic {margin-top: 24rem;}
+.page.csc.nob .serv-each .lst .pic.art02::before {background-image: url(../img/csc/pic_nob_serv01_02.png);}
+.page.csc.nob .serv-each .lst .pic.soc01::before {background-image: url(../img/csc/pic_nob_serv02_01.png);}
+.page.csc.nob .serv-each .lst .pic.soc02::before {background-image: url(../img/csc/pic_nob_serv02_02.png);}
+.page.csc.nob .serv-each .lst .pic.rap01::before {background-image: url(../img/csc/pic_nob_serv03_01.png);}
+.page.csc.nob .serv-each + .ut-gudbox {margin: 16rem 0;}
+
+/* 자산관리서비스 */
+.page.csc.assets .serv-dsc {margin-top: 32rem;}
+.page.csc.assets .serv-dsc .hd-tit2{ font-size: 22rem;}
+.page.csc.assets .serv-dsc .txt {font-size: 15rem;margin-top: 24rem; word-break: keep-all;}
+.page.csc.assets .inf-bunch .hd-tit3 {margin-top: 40rem;}
+.page.csc.assets .inf-bunch + .inf-bunch {margin-top: 60rem;}
+.page.csc.assets .assets-lst > li {margin-top: 24rem;}
+.page.csc.assets .assets-lst > li + li {margin-top: 16rem;}
+.page.csc.assets .assets-lst .box {position: relative; padding: 20rem 20rem 20rem 84rem; border-radius: 8rem; border: solid 1rem #e6e6e6;}
+.page.csc.assets .assets-lst .box::before {content:""; display: block; position: absolute; left: 20rem; top: 20rem; width: 48rem; height: 48rem; background: url('../img/csc/ic_dictionary@2x.png') no-repeat left top; background-size: 48rem;}
+.page.csc.assets .assets-lst .box.img2::before {background: url('../img/csc/ic_dictionary@2x2.png') no-repeat left top; background-size: 48rem;}
+.page.csc.assets .assets-lst .box.img3::before {background: url('../img/csc/ic_dictionary@2x3.png') no-repeat left top; background-size: 48rem;}
+.page.csc.assets .assets-lst .box.img4::before {background: url('../img/csc/ic_dictionary@2x4.png') no-repeat left top; background-size: 48rem;}
+.page.csc.assets .assets-lst + .text-box {margin-top: 8rem;}
+.page.csc.assets .assets-img {margin: 24rem auto 0; width: 100%; height: 491rem; background: url('../img/csc/img_assets@2x.png') no-repeat center top; background-size: auto 491rem;}
+
+
+
+/************************
+소비자포털
+************************/
+
+/* 소비자포털 소개 */
+.page.csc.portal .cus-img {margin-top: 32rem; padding-bottom: 252rem; background: url('../img/csc/img_cus_img@2x.png') no-repeat center bottom; background-size: 300rem auto;}
+.page.csc.portal .tit-box {position: relative; height: 280rem; margin-top: 24rem; padding: 30rem 20rem 20rem; border-radius: 8rem; background-color: #f5f5f5;}
+.page.csc.portal .tit-box::after {content:""; position: absolute; right: 20rem; bottom: 20rem; width: 120rem; height: 120rem; background: url('../img/csc/img_portal@2x.png') no-repeat center top; background-size: 100% auto;}
+.page.csc.portal .intro-box {margin-top: 16rem; border-radius: 8rem; padding: 20rem; border: solid 1rem #e6e6e6;}
+.page.csc.portal .intro-box .hd-tit3 {margin-top: 0;}
+.page.csc.portal .intro-box .tit-txt {line-height: 1.4;}
+.page.csc.portal .intro-box .link-lst {margin-top: 16rem; padding-top: 16rem; border-top: 1rem solid #e6e6e6;}
+.page.csc.portal .intro-box .link-lst > li a.link-ar {display: block; position: relative; padding: 9rem 0; font-size: 14rem;}
+.page.csc.portal .intro-box .link-lst > li a.link-ar::after {position: absolute; right : 0; top: 50%; transform: translateY(-50%); margin: 0;}
+
+/* procedure */
+.page.csc .procedure .lst > li,
+.pop-ins-process .procedure .lst > li {position: relative;}
+.page.csc .procedure .lst > li + li,
+.pop-ins-process .procedure .lst > li + li {margin-top: 32rem;}
+.page.csc .procedure .lst > li + li:before,
+.pop-ins-process .procedure .lst > li + li:before {content: ''; display: block; position: absolute; top: -24rem; left: 50%; width: 16rem; height: 16rem; transform: translateX(-50%); background: url('../img/csc/bg_arr_procedure.png') no-repeat 0 0; background-size: 100% auto;}
+.page.csc .procedure .lst > li .item,
+.pop-ins-process .procedure .lst > li .item {overflow: hidden; padding: 20rem; border-radius: 8rem; border: 1rem solid #e9eaed; background: #fff;}
+.page.csc .procedure .lst > li .tit,
+.pop-ins-process .procedure .lst > li .tit {font-size: 16rem; font-weight: 700; line-height: 1.31; width: 100%;}
+.page.csc .procedure .lst > li .item .txt,
+.pop-ins-process .procedure .lst > li .item .txt {width: 100%;}
+.page.csc .procedure .lst > li .tit > i,
+.pop-ins-process .procedure .lst > li .tit > i {color: #2a81eb;}
+.page.csc .procedure .lst > li .txt,
+.pop-ins-process .procedure .lst > li .txt {margin-top: 8rem; font-size: 15rem; line-height: 1.4; color: #555; word-break: keep-all;}
+.page.csc .procedure .lst > li .etc,
+.pop-ins-process .procedure .lst > li .etc {font-size: 12rem; text-align: center; margin-top: 12rem; color: #555555;}
+.page.csc .procedure .lst > li .text-box .bullet.a>li + li,
+.pop-ins-process .procedure .lst > li .text-box .bullet.a>li + li {margin-top: 8rem;}
+.page.csc .procedure .lst > li .text-box ul.bullet.a>li>ul.bullet.c li + li,
+.pop-ins-process .procedure .lst > li .text-box ul.bullet.a>li>ul.bullet.c li + li{margin-top: 8rem;}
+
+
+/** 칭찬/제안/민원 **/
+
+/* 보험증권번호 선택 */
+.pop-ins-choose .hd-tit3 {margin-top: 32rem;font-size: 22rem;}
+.pop-ins-choose p.sub-tit {margin-top: 16rem; color:#555; font-size: 15rem; word-break: break-all;}
+.pop-ins-choose .choose-prd {margin-top: 32rem;}
+.pop-ins-choose .choose-prd .ut-dcard.a .stds .cdt .bxs {padding-bottom: 0;}
+.pop-ins-choose .choose-prd .ut-dcard.a .stds .cdt {line-height: 1.31;}
+.pop-ins-choose .choose-prd .ut-dcard.a .stds .cdt .bxs .dd .num {font-weight: 700; font-size: 16rem;}
+.pop-ins-choose .ut-more {margin: 34rem 0 0;}
+
+/* 전자민원접수 */
+.page.csc.cmplaint .btn-set.db {display: block;}
+
+/* 고객제안 */
+.page.csc.sug .hd-tit3 + .text-box,
+.page.csc.sug .hd-tit4 + .text-box {margin-top: 16rem;}
+
+/* 칭찬한마디 */
+.page.csc.praise .img-praise {padding-bottom: 266rem; background: url('../img/csc/img_praise.png') no-repeat center bottom; background-size: auto 206rem;}
+
+
+/** 소비자보호체계 **/
+
+/* 소비자보호조직도 */
+.page.csc.org .org-img {overflow: hidden; border-radius: 8rem; margin: 24rem auto 0;  height: 597rem; background: url('../img/csc/img_org@2x.png') no-repeat center bottom; background-size: auto 597rem;}
+.page.csc.org .hd-tit3 + .hd-tit5 {margin-top: 24rem;}
+h3 + .inquiries-lst {margin-top: 16rem;}
+.inquiries-lst >li {padding: 20rem; border:1rem solid #e6e6e6; border-radius: 8rem;}
+.inquiries-lst >li + li {margin-top: 16rem;}
+.inquiries-lst >li dl {display: flex;}
+.inquiries-lst >li dt {width: 48rem; height:48rem; padding-top: 15rem; margin-right: 20rem; border-radius: 100%; background:#f5f5f5; font-weight: 600; text-align: center;}
+.inquiries-lst >li dt.cblue {background:#ddeeff;}
+.inquiries-lst >li dd {width:calc(100% - 68rem)}
+
+/* 소비자보호헌장 */
+.page.csc.charter {}
+.page.csc.charter .charter-lst  {margin-top: 32rem;}
+.page.csc.charter .charter-lst > li {display: flex; font-size: 15rem; line-height: 1.4;}
+.page.csc.charter .charter-lst > li + li {margin-top: 16rem;}
+.page.csc.charter .charter-lst .n {font-size: 16rem; font-weight: 700; width: 72rem; flex-shrink: 0;}
+.page.csc.charter .charter-lst .txt {color: #555555; word-break: keep-all;}
+
+/* 소비자보호체계 */
+.page.csc.system {}
+.page.csc.system .system-box {margin-top: 16rem;padding: 20rem;border-radius: 8rem;border: solid 1rem #e6e6e6;}
+.page.csc.system .system-box .text-box .bullet.a>li + li {margin-top: 12rem;}
+.page.csc.system .system-img {margin: 16rem auto 0; width: 100%; height: 703rem; background: url('../img/csc/img_process@2x.png') no-repeat center top; background-size: auto  703rem;}
+
+/* 상품개발 프로세스 */
+.page.csc.dev {}
+.page.csc.dev {}
+
+/* 소비자중심 판매준칙 */
+.page.csc.sales {}
+.page.csc.sales {}
+.page.csc.sales .inf-bunch .hd-tit4 {word-break: keep-all;}
+.page.csc.sales .inf-bunch .hd-tit4 strong.point {font-weight: 700;}
+
+/* 소비자보호 내부통제기준 */
+.page.csc.control {}
+.page.csc.control .ut-accd.b {margin: 32rem -20rem 0;}
+.page.csc.control .ut-accd.b>li>.cbox {padding: 24rem 20rem; background: #f5f5f5;}
+
+
+/** 소비자보호 우수사례 **/
+
+/* 금융소비자보호 사이버교육 */
+.page.csc.cyber {}
+.page.csc.cyber .cyber-img {position: relative; margin: 32rem auto 24rem; width: 320rem; height: 180rem; background:url(../img/csc/img_pshing@2x.png) center bottom no-repeat; background-size: 100% auto;}
+
+/* 금융취약계층 보호 강화 */
+.page.csc.vulner {}
+.page.csc.vulner .vulner-img {margin: 24rem 0 0; width: 290rem; height: 220rem; background: url('../img/csc/img_brochure@2x.png') no-repeat left top; background-size: 100% auto;}
+.page.csc.vulner .process-img {margin-top: 16rem; background: #eee; padding: 50rem 30rem; text-align: center; font-weight: 700;}
+.page.csc.vulner .mutual-box { margin-top: 16rem;}
+.page.csc.vulner .mutual-lst {height: 246rem; margin-top: 16rem;  background: url('../img/csc/img_mutual-lst@2x.png') no-repeat center bottom; background-size: auto 246rem;}
+/* .page.csc.vulner .mutual-lst > li {text-align: center;}
+.page.csc.vulner .mutual-lst .box {padding: 20rem; border-radius: 8rem; background-color: #fafafa; text-align: center;}
+.page.csc.vulner .mutual-lst .box .tit {font-weight: 700;}
+.page.csc.vulner .mutual-lst .box .txt {margin-top: 8rem; color: #555555;}
+.page.csc.vulner .mutual-lst .arr {position: relative; display: inline-block; vertical-align: top; margin: 0 auto; width: 60rem; height: 26rem;}
+.page.csc.vulner .mutual-lst .arr::before,
+.page.csc.vulner .mutual-lst .arr::after {content:''; position: absolute; top: 50%; width: 18rem; height: 18rem; margin-top: -9rem; background-size: 100% auto; background-repeat: no-repeat; background-position: left top;}
+.page.csc.vulner .mutual-lst .arr::before {background-image: url('../img/csc/bg_arr_mutual.png'); left: 0;}
+.page.csc.vulner .mutual-lst .arr::after {background-image: url('../img/csc/bg_arr_mutual02.png') ; right : 0;} */
+
+/* 고객불만 예방 교육 사례 */
+.page.csc.prevent {}
+.page.csc.prevent .tit-txt + .text-box {margin-top: 10rem;}
+.page.csc.prevent .cartoon-area {margin-top: 32rem;}
+.page.csc.prevent .cartoon-wrp {display: none;}
+.page.csc.prevent .cartoon-wrp.active {display: block;}
+.page.csc.prevent .cartoon-lst {margin-top: 40rem;}
+.page.csc.prevent .cartoon-lst > li + li {margin-top: 60rem;}
+.page.csc.prevent .cartoon-lst + .tit-txt {margin-top: 24rem;}
+.page.csc.prevent .cartoon-lst .img { overflow: hidden; width: 250rem; min-height: 208rem; background-size: 100% auto; background-repeat: no-repeat; background-position: center top; margin: 0 auto;}
+.page.csc.prevent .cartoon1_01 {background-image: url('../img/csc/cartoon1_01@2x.png'); height: 208rem;}
+.page.csc.prevent .cartoon1_02 {background-image: url('../img/csc/cartoon1_02@2x.png'); height: 247rem;}
+.page.csc.prevent .cartoon1_03 {background-image: url('../img/csc/cartoon1_03@2x.png'); height: 241rem;}
+.page.csc.prevent .cartoon1_04 {background-image: url('../img/csc/cartoon1_04@2x.png'); height: 238rem;}
+.page.csc.prevent .cartoon1_05 {background-image: url('../img/csc/cartoon1_05@2x.png'); height: 223rem;}
+.page.csc.prevent .cartoon1_06 {background-image: url('../img/csc/cartoon1_06@2x.png'); height: 235rem;}
+.page.csc.prevent .cartoon1_07 {background-image: url('../img/csc/cartoon1_07@2x.png'); height: 252rem;}
+.page.csc.prevent .cartoon1_08 {background-image: url('../img/csc/cartoon1_08@2x.png'); height: 242rem;}
+.page.csc.prevent .cartoon1_09 {background-image: url('../img/csc/cartoon1_09@2x.png'); height: 223rem;}
+.page.csc.prevent .cartoon1_10 {background-image: url('../img/csc/cartoon1_10@2x.png'); height: 244rem;}
+.page.csc.prevent .cartoon1_11 {background-image: url('../img/csc/cartoon1_11@2x.png'); height: 245rem;}
+.page.csc.prevent .cartoon1_12 {background-image: url('../img/csc/cartoon1_12@2x.png'); height: 226rem;}
+.page.csc.prevent .cartoon2_01 {background-image: url('../img/csc/cartoon2_01@2x.png'); height: 230rem;}
+.page.csc.prevent .cartoon2_02 {background-image: url('../img/csc/cartoon2_02@2x.png'); height: 233rem;}
+.page.csc.prevent .cartoon2_03 {background-image: url('../img/csc/cartoon2_03@2x.png'); height: 241rem;}
+.page.csc.prevent .cartoon2_04 {background-image: url('../img/csc/cartoon2_04@2x.png'); height: 238rem;}
+.page.csc.prevent .cartoon2_05 {background-image: url('../img/csc/cartoon2_05@2x.png'); height: 238rem;}
+.page.csc.prevent .cartoon2_06 {background-image: url('../img/csc/cartoon2_06@2x.png'); height: 221rem;}
+.page.csc.prevent .cartoon2_07 {background-image: url('../img/csc/cartoon2_07@2x.png'); height: 248rem;}
+.page.csc.prevent .cartoon2_08 {background-image: url('../img/csc/cartoon2_08@2x.png'); height: 269rem;}
+.page.csc.prevent .cartoon2_09 {background-image: url('../img/csc/cartoon2_09@2x.png'); height: 272rem;}
+.page.csc.prevent .cartoon2_10 {background-image: url('../img/csc/cartoon2_10@2x.png'); height: 259rem;}
+.page.csc.prevent .cartoon2_11 {background-image: url('../img/csc/cartoon2_11@2x.png'); height: 220rem;}
+.page.csc.prevent .cartoon2_12 {background-image: url('../img/csc/cartoon2_12@2x.png'); height: 278rem;}
+.page.csc.prevent .cartoon2_13 {background-image: url('../img/csc/cartoon2_13@2x.png'); height: 228rem;}
+
+/* 주간 voc타운미팅  */
+.procedure-area {height:564rem; margin-top: 16rem; background:url(../img/csc/procedure.png) center bottom no-repeat; background-size: auto 564rem;}
+
+/* 완전가입 실천 다짐 */
+.page.csc.promise {}
+.page.csc.promise .promise-img {overflow: hidden; border-radius: 8rem; margin: 32rem auto 40rem; height: 459rem; padding: 30rem 20rem 20rem 30rem; background: #f5f5f5 url('../img/csc/img_document@2x.png') no-repeat center 30rem; background-size: 277rem auto;}
+
+/* 소비자의 소리 경영에 반영 */
+.page.csc.voice {}
+
+/* 소비자보호문화 선진화 노력 */
+.page.csc.effort {}
+.page.csc.effort .effort-img {margin: 16rem auto; width: 310rem; height: 160rem; background: url('../img/csc/img_effort@2x.png') no-repeat left top; background-size: 100% auto;}
+
+/* 주간 VOC타운미팅 */
+.page.csc.voc {}
+.page.csc.voc .voc-img {margin-top: 16rem; background: #eee; padding: 50rem 30rem; text-align: center; font-weight: 700;}
+
+/* NICE 교보 캠페인 */
+.page.csc.camp {}
+.page.csc.camp .camp-img {margin: 24rem auto 0; width: 310rem; height: 226rem; background: url('../img/csc/img_camp@2x.png') no-repeat left top; background-size: 100% auto;}
+.page.csc.camp .camp-img2 {margin: 24rem auto 0; width: 310rem; height: 200rem; background: url('../img/csc/img_camp2.png') no-repeat left top; background-size: auto 100%; }
+
+/* 완전가입 컨설팅 */
+.page.csc.consulting {}
+.page.csc.consulting .consulting-img {margin: 32rem auto 24rem; min-height: 120rem; background: url('../img/csc/img_consulting@2x.png') no-repeat left top; background-size: 100% auto; padding-top: calc(100% / 24 * 9);}
+
+/* 선제적 보이스피싱 대응 */
+.page.csc.pshing {}
+.page.csc.pshing .pshing-img {position: relative; margin: 24rem auto 0; width: 100%; height: 360rem; background: url('../img/csc/img_pshing@2x2.png') no-repeat left top; background-size: auto 360rem;}
+
+
+/* 금융소비자보호실태평가 */
+.page.csc.protect {}
+.page.csc.protect .hd-tit5 {margin-top:24rem;}
+.page.csc.protect .choice-year {display: flex; margin-top: 16rem;}
+.page.csc.protect .choice-year .select {flex:1;}
+.page.csc.protect .ut-tbl.ty01 col.a {width: auto;}
+.page.csc.protect .ut-tbl.ty01 col.b {width: 22%;}
+.page.csc.protect .ut-tbl.ty02 col.a {width: auto;}
+.page.csc.protect .ut-tbl.ty02 col.b {width: 65%;}
+
+
+/** 민원공시 **/
+
+/* 당분기 */
+.page.csc.anno .ut-tabs.a {margin-bottom: 32rem;}
+.page.csc.anno .ut-tbl.a .tblist sup {font-size: 10rem; vertical-align: top;}
+.page.csc.anno .ut-tbl.a .tblist th sup {font-weight: 500;}
+.page.csc.anno .inf-bunch .hd-tit4 + .ut-tbl {margin-top: 16rem;}
+.page.csc.anno .ut-tbl.ty01 col.a {width: auto;}
+.page.csc.anno .ut-tbl.ty01 col.b {width: 22%;}
+.page.csc.anno .ut-tbl.ty02 col.a {width: auto;}
+.page.csc.anno .ut-tbl.ty02 col.b {width: 19%;}
+.page.csc.anno .ut-tbl.ty02 col.c {width: 22%;}
+
+/* 전분기 */
+.page.csc.anno.list .ut-tabs.a {margin-bottom: 2rem;}
+.page.csc.anno .notice-lst + .ut-more {margin: 32rem 0 0;}
+
+/* 가입자가 알아야 할 사항 */
+.page.csc.know {}
+.page.csc.know .inf-bunch .ut-accd.b {margin: 32rem -20rem 0;}
+.page.csc.know .inf-bunch .ut-accd.b>li>.cbox .btn-wrp {margin-top: 8rem;}
+.page.csc.know .inf-bunch .ut-accd.b>li>.cbox .btn-wrp .link-text {font-size: 14rem;}
+.page.csc.know .ut-more {margin: 32rem 0;}
+.page.csc.know .cbox .text-box .btn-set {margin-top: 16rem;}
+.page.csc.know .cbox .text-box .btn-set.grp {margin-top: 0;}
+.page.csc.know .cbox .text-box .ico-down {height:32rem; font-size: 15rem;}
+.page.csc.know .cbox .text-box h3.hd-tit4 {margin: 40rem 0 16rem;}
+.page.csc.know .cbox .text-box .txt {font-size: 15rem; color:#555;}
+.page.csc.know .cbox .text-box .ut-tbl.a {margin-top: 16rem;}
+.page.csc.know .cbox .text-box .tblist td {background:#fff;}
+.page.csc.know .cbox .text-box .txt-blue {color:#2a81eb}
+
+
+/* 금융소비자보호법 */
+.page.csc.law {}
+.page.csc.law .inf-bunch .hd-tit4 {word-break: keep-all;}
+.page.csc.law .inf-bunch .hd-tit4 strong.point {font-weight: 700;}
+.page.csc.law .inf-bunch .ut-accd.b {margin: 16rem -20rem 0;}
+.page.csc.law .inf-bunch .ut-accd.b>li:first-child .hbox {border-top:#ddd solid 1rem ;}
+.page.csc.law .inf-bunch .ut-accd.b>li>.cbox .btn-wrp {margin-top: 8rem;}
+.page.csc.law .inf-bunch .ut-accd.b>li>.cbox .btn-wrp .link-text {font-size: 14rem;}
+
+/* 금융사고예방안내 */
+.page.csc.accident .notice-lst + .ut-more {margin: 32rem 0 0;}
+
+/* 소비자금융교육 */
+/* .page.csc.edu.list .ut-tabs.a {margin-bottom: 0;} */
+/* .page.csc.edu .notice-lst + .ut-more {margin: 32rem 0 0;} */
+.page.csc.edu.board .board-wrp {padding-top: 0;}
+.page.csc.edu.board .board-wrp .board-lst .btn-set-area {margin-top: 16rem;}
+
+
+
+/************************
+신고센터
+************************/
+
+/* 펀드판매불편신고 */
+.page.csc.fund {}
+
+/* 보험범죄신고 */
+.page.csc.crime .hd-tit3 {font-size: 22rem;}
+.page.csc.crime .ut-tabs.a {margin-bottom: 32rem;}
+.page.csc.crime .inf-bunch:first-child .hd-tit3 ,
+.page.csc.crime .frm-bunch:first-child .hd-tit3 {margin-top: 0;}
+.page.csc.crime .report-box { border-radius: 8rem; border: solid 1rem #e6e6e6; padding: 20rem;}
+.page.csc.crime .report-box .hd-tit5 {font-size: 16rem; padding-top: 5rem; padding-left: 36rem; background-size: 32rem; background-repeat: no-repeat; background-position: left top; min-height: 24rem;}
+.page.csc.crime .report-box .hd-tit5.tel {background-image: url(../img/csc/ic_phone_misscall@2x.png);}
+.page.csc.crime .report-box .hd-tit5.mail {background-image: url(../img/csc/ic_email@2x.png);}
+.page.csc.crime .report-box .hd-tit5.online {background-image: url(../img/csc/ic_desktop@2x.png);}
+.page.csc.crime .report-box .bullet {margin-top: 16rem;}
+.page.csc.crime .ut-bdgs + * {margin-left: 8rem;}
+.page.csc.crime .notice-lst .cont .tit {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 42rem;}
+.page.csc.crime * + .frm-bunch .hd-tit3 {margin-top: 60rem;}
+.page.csc.crime .manager-answer {margin-top: 16rem; padding: 20rem; border-radius: 8rem; background-color: #f2f7ff; word-break: keep-all;}
+.page.csc.crime .manager-answer .tit {line-height: 1.31; display: flex;}
+.page.csc.crime .manager-answer .tit .ic-answer {flex-shrink: 0; background: url(../img/csc/ic_answer_sm@2x.png) no-repeat left top; width: 23rem; height: 26rem; background-size: 100% auto;}
+.page.csc.crime .manager-answer .tit .t {margin-top: 4rem; padding-left: 5rem; font-weight: 700; font-size: 16rem;}
+.page.csc.crime .manager-answer .txt {margin-top: 16rem; font-size: 15rem; line-height: 1.4; color: #555555;}
+
+/* 신고자 포상기준 */
+.pop-reward {}
+.pop-reward .ut-tbl.ty01 col.a {width: auto;}
+.pop-reward .ut-tbl.ty01 col.b {width: 35%;}
+.pop-reward .ut-tbl.ty02 col.a {width: 50%;}
+.pop-reward .ut-tbl.ty03 col.a {width: auto;}
+.pop-reward .ut-tbl.ty03 col.b {width: 33.4%;}
+
+/* 보험범죄신고 */
+.pop-crime-report {}
+
+/* 임직원위법행위신고 */
+.page.csc.employes {}
+
+
+/************************
+약관/정책 안내
+************************/
+.page.csc.policy {}
+.page.csc.policy .sect.top{margin-bottom:20rem;}
+
+/************************
+계약정보확인 안내
+************************/
+
+/* choose-panel */
+.page .choose-sel {
+	margin: 32rem 0 40rem;
+}
+.page .choose-panel {
+	display: none;
+}
+.page .choose-panel.active {
+	display: block;
+}
+
+/************************
+ 배너
+************************/
+.page.csc .inf-bunch .banner-award{
+	width: 100%;
+	border: 1px solid #dddddd;
+    background: #fff;
+    border-radius: 8rem;
+	overflow: hidden;
+    padding: 25rem 20rem 0;
+	margin-top: 50rem;
+	height: 120rem;
+	position: relative;
+}
+.page.csc .inf-bunch .banner-award .txtbox{
+	display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.page.csc .inf-bunch .banner-award .txtbox .tit{
+	overflow: hidden;
+    display: inline-block;
+    max-height: 69rem;
+    font-size: 14rem;
+    line-height: 1.33;
+    font-weight: 600;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+	color: #555555;
+}
+.page.csc .inf-bunch .banner-award .txtbox .txt{
+	overflow: hidden;
+    margin-top: 5rem;
+    font-size: 18rem;
+    color: #1c2d7e;
+    white-space: nowrap;
+	line-height: 24rem;
+	font-weight: 700;
+}
+.page.csc .inf-bunch .banner-award .imgbox{
+	position: absolute;
+    top: 14rem;
+    left: calc(100% - 87rem);
+}
+.page.csc .inf-bunch .banner-award .imgbox img{
+	width: 67rem;
+	height: 90rem;
+}

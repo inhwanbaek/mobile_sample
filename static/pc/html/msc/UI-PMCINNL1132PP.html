@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a xs pop-regStep" id="pop-regStep">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">스마트폰 청약진행현황</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<h2 class="hd-tit3 mt0">스마트폰으로 보험 가입하셨어요?<br><i class="line">청약진행현황</i> 확인해 보세요.</h2><!-- [D] 2022-05-10 태그텍스트변경 -->
+
+					<div class="ut-dtds c bd progress">
+						<ul class="dlist">
+							<li>
+								<div class="dt">URL요청</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">고객확인</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">청약내용확인</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">계약전알릴의무사항</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">청약서류작성및확인</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">청약서류/약관확인및다운로드</div>
+								<div class="dd">완료</div>
+							</li>
+							<li>
+								<div class="dt">청약완료</div>
+								<div class="dd">완료</div>
+							</li>
+						</ul>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">				
+				<div class="btn-set">					
+					<a href="javascript:;" class="btn lg rd a">확인</a>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-regStep');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

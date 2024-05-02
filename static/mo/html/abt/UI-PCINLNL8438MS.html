@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"와우 다솜이 소리빛 사업"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt contribute" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="hd-tit2 upper">
+				<i class="line">들을 수 있는 소리</i>가 희망의 빛이 되고,<br>
+				말하는 자유가 꿈의 시작이 됩니다.
+			</div>
+			<p>
+				교보생명은 선천성 난청을 겪는 아이들이<br>
+				시기적절하게 치료받아 소리를 찾을 수 있도록,<br>
+				‘와우 다솜이 소리빛 지원사업’을 진행하고 있습니다.
+			</p>
+			<!-- [D] 2022-07-28 마크업 변경 -->
+			<div class="box-pic b">
+				<div class="ut-slide-dot">
+					<div class="swiper-container swiper" data-slide-id="photo_1">
+						<ul class="swiper-wrapper slide">
+							<li class="swiper-slide">
+								<div class="pic"><a href="javascript:;"><img class="img" src="../../img/abt/wow_01.png" alt="와우 다솜이 소리빛 사업 첫번째 이미지"></a></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="pic"><a href="javascript:;"><img class="img" src="../../img/abt/wow_02.png" alt="와우 다솜이 소리빛 사업 두번째 이미지"></a></div>
+							</li>
+						</ul>
+						<div class="pagination"></div>
+					</div>
+				</div>
+			</div>
+			<!-- [D] 2022-07-28 마크업 변경 -->
+			<h3 class="hd-tit3">인공와우란?</h3>
+			<p>
+				귀에 난청이 있는 아이가 보청기를 착용해도 청력이 나아지지 않을 때 청각신경을 전기로 자극하는 인공와우를 이식해 소리를 인지할 수 있도록 도와주는 장치입니다.
+			</p>
+			<h3 class="hd-tit3">지원대상</h3>
+			<p>
+				당해연도 기준 중위소득 80% 이하 가정
+			</p>
+			<h3 class="hd-tit3">지원내용</h3>
+				<p>사전 검사비, 인공달팽이관 수술비, 언어재활치료비</p>
+			<h3 class="hd-tit3">사업파트너</h3>
+			<p>
+				사랑의 달팽이
+			</p>
+			<h3 class="hd-tit3">문의처</h3>
+			<div class="p-tel">
+				<a href="tel:070-4322-4141">070-4322-4141</a>
+			</div>
+		</div>
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">신청하기</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

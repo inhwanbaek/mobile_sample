@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">PC 팝업은 .ut-terms.a</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+				
+					<div class="ut-terms a">
+						<div class="ckall">
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">전체 동의</span></label>
+							<a href="javascript:;" class="plink" role="button">보기</a>
+						</div>
+
+						
+						<!-- 상위 레이블 앞에 선택옵션, 보기 버튼 x -->
+						<div class="plbox">
+							<div class="hdt">
+								<div class="tit">
+									<label class="checkbox cr"><input type="checkbox"><span class="txt">수집·이용에 관한 사항</span></label>
+								</div>
+							</div>
+							<ul class="plist">
+								
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<!-- 레이블 없는 타입 -->
+						<div class="plbox">
+							
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<!-- 아무거도 없는거 -->
+						<div class="plbox">
+							
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="plset">
+							<ul class="plist">
+								<li>
+									<label class="checkbox"><input type="checkbox"><span class="txt">전체 </span></label>
+								</li>
+								<li>
+									<label class="checkbox"><input type="checkbox"><span class="txt">전화(ARS)</span></label>
+								</li>
+								<li>
+									<label class="checkbox"><input type="checkbox"><span class="txt">문자메세지</span></label>
+								</li>
+								<li>
+									<label class="checkbox"><input type="checkbox"><span class="txt">이메일</span></label>
+								</li>
+								<li>
+									<label class="checkbox"><input type="checkbox"><span class="txt">우편</span></label>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+
+					<h2 class="hd-tit3 mt40">콘텐츠 내 단독 사용</h2>
+
+					<div class="ut-terms a">
+
+						<div class="plbox">
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="ut-terms a">
+
+						<div class="plbox">
+							<ul class="plist">
+								<li>
+									<label class="checkbox cd"><input type="checkbox"><span class="txt">[필수] 개인(신용)정보 수집·이용 동의</span></label>
+									<a href="javascript:;" class="plink" role="button">보기</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample1');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<article class="pop-layer md a pop-sample1" id="pop-sample2">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업-가로806 .pop-layer.md</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample2');">취소</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample2');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<article class="pop-layer sm a pop-sample1" id="pop-sample3">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업-가로612 .pop-layer.sm</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample3');">취소</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample3');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	
+	<article class="pop-layer xs a pop-sample1" id="pop-sample4">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">팝업-가로418 .pop-layer.xs</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					
+					<p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p><p>내용 내용.</p>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample4');">취소</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample4');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+
+	<article class="pop-layer d pop-sample5" id="pop-sample5">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">이벤트-가로기본 418 .pop-layer.d 타이틀없음 .blind추가</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="imgBox"><img src="../../img/temp/banner_1.png" alt=""></div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<button type="button" class="bt today">오늘은 그만 보기</button>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample5');">닫기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<article class="pop-layer mini d pop-sample6" id="pop-sample6">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">이벤트-가로358 .pop-layer.d.mini 타이틀없음 .blind추가</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="imgBox"><img src="../../img/temp/banner_1.png" alt=""></div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="bot-btn">
+					<button type="button" class="bt today">오늘은 그만 보기</button>
+					<button type="button" class="bt close" onclick="ui.popup.close('pop-sample6');">닫기</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-sample1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>
+

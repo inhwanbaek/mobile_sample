@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-chdtdtl" id="pop-chdtdtl">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">신용/담보대출내역 상세</h1><!-- [D] 2022-04-07 문구수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents msc loan inq">
+
+					<div class="loiq-tbox">
+						<div class="ut-dcard b mltype">
+							<div class="ut-bdgs">
+								<em class="bdg j">신용대출</em>
+							</div>
+							<div class="hdt">
+								<div class="tit">교보e프라임신용대출(A형)</div>
+							</div>
+							<div class="dls">
+								<div class="dl">
+									<div class="dt">대출잔액</div>
+									<div class="dd">
+										<span class="prc">
+											<strong class="p">100,000,000</strong><i class="w">원</i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="loiq-ttab">
+						<div class="ut-tabs a">
+							<!--[D]2022-05-23 aria-controls 속성추가-->
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">대출계약내용</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">상환내역</a></li><!-- [D] 2022-04-07 문구수정 -->
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">상환일정</a></li><!-- [D] 2022-04-07 문구수정 -->
+							</ul>
+						</div>
+					</div>
+
+					<!-- <div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">tab1</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">tab2</div>
+					<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">tab3</div> -->
+
+					<div class="loiq-tpnl">
+						<div class="msect">
+							<h3 class="hd-tit4">대출계약정보</h3><!-- [D] 2022-04-07 문구수정 -->
+							<div class="ut-tbl b">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">대출 계약 정보</span><span class="cap"></span></caption>
+									<colgroup>
+										<col style="width:128rem;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">총 대출금액</th>
+											<td>
+												<span class="prc">
+													<strong class="p">120,000,000</strong><i class="w">원</i>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">대출번호</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>104****29862</td>
+										</tr>
+										<tr>
+											<th scope="row">대출일</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>2021.08.02</td>
+										</tr>
+										<tr>
+											<th scope="row">대출만기일</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>2029.08.01</td>
+										</tr>
+										<tr>
+											<th scope="row">대출금리</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>연 4.89%</td><!-- [D] 2022-04-07 문구수정 -->
+										</tr>
+										<tr>
+											<th scope="row">할부회차</th>
+											<td>1회/10회</td><!-- [D] 2022-04-07 문구수정 -->
+										</tr>
+										<tr>
+											<th scope="row">상환방법</th>
+											<td>원리금균등</td>
+										</tr>
+										<tr>
+											<th scope="row">최종 이자납입일</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>2021.12.14</td>
+										</tr>
+										<tr>
+											<th scope="row">다음 이자납입일</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>2020.01.15</td>
+										</tr>
+										<tr>
+											<th scope="row">중도상환수수료</th>
+											<td>없음</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- [D] 2022-05-26 삭제 -->
+							<!-- <div class="btn-set vt">
+								<a href="javascript:;" class="btn md" role="button">대출상환 입금전용계좌 보기</a>
+							</div> -->
+
+
+							<h3 class="hd-tit4">자동이체정보</h3><!-- [D] 2022-04-07 문구수정 -->
+							<div class="ut-tbl b">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">자동이체정보</span><span class="cap"></span></caption><!-- [D] 2022-04-07 문구수정 -->
+									<colgroup>
+										<col style="width:128rem;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">납입방법</th>
+											<td>자동이체 / 매월 15일</td>
+										</tr>
+										<tr>
+											<th scope="row">은행</th><!-- [D] 2022-04-07 문구수정 -->
+											<td>농협</td>
+										</tr>
+										<tr>
+											<th scope="row">계좌번호</th>
+											<td>35282*****053</td>
+										</tr>
+										<tr>
+											<th scope="row">예금주</th>
+											<td>홍길동</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="btn-set vt">
+								<a href="javascript:;" class="btn md" role="button">자동이체계좌 변경</a><!-- [D] 2022-04-07 문구수정 -->
+							</div>
+
+							<h3 class="hd-tit4">자동이체정보</h3><!-- [D] 2022-04-07 문구수정 -->
+							<div class="list-empty bd m0">
+								<p>등록된 자동이체계좌가 없습니다.</p><!-- [D] 2022-04-07 문구수정 -->
+							</div>
+							<p class="dtxt">※ 자동이체계좌를 등록하면 대출이자가 매월 자동출금되어 편리합니다.</p><!-- [D] 2022-04-07 문구수정 -->
+							<div class="btn-set vt mt24">
+								<a href="javascript:;" class="btn md" role="button">자동이체 신청</a>
+							</div>
+
+
+							<h3 class="hd-tit4">담당융자센터</h3><!-- [D] 2022-04-07 문구수정 -->
+							<div class="ut-tbl b">
+								<table class="tbform" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">담당융자센터</span><span class="cap"></span></caption><!-- [D] 2022-04-07 문구수정 -->
+									<colgroup>
+										<col style="width:128rem;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">센터명</th>
+											<td>구리융자센터</td>
+										</tr>
+										<tr>
+											<th scope="row">전화번호</th>
+											<td>031-049-0058</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- [D] 2022-07-25 버튼 삭제 -->
+						</div>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">상환/이자납입 신청</button><!-- [D] 2022-05-26 수정 -->
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-chdtdtl');
+	</script>
+
+</div>
+</body>
+</html>

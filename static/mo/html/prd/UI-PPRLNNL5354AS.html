@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a pop-vcTestForm" id="pop-vcTestForm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">적합성원칙확인서</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents hdt">
+					<h2 class="hd-tit3">질문에 정확하게 답변해 주세요.</h2>
+
+					<div class="vctest">
+						<ul class="vctest-list">
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">나이를 입력해 주세요.</h2>
+									<div class="list">
+										<ul>
+											<li>
+												<span class="input a age">
+													<label class="lb" for="q1">나이</label>
+													<i class="tx ta">만</i>
+													<input type="tel" pattern="\d*" placeholder="나이입력" value="40" readonly id="q1">
+													<i class="tx tb">세</i>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">다음 중 어디에 해당되시나요?</h2>
+									<ul class="bullet a">
+										<li>‘전문금융소비자’란 금융상품에 관한 전문성 또는 소유자산규모 등에 비추어 금융상품 계약에 따른 위험감수능력이 있는 금융소비자를 말합니다. 국가, 한국은행, 금융회사, 주권상장법인 등이 해당됩니다.</li>
+										<li>‘일반금융소비자’란 전문금융소비자가 아닌 금융소비자를 말합니다.</li>
+									</ul>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">전문금융소비자</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q2"><span class="txt">일반금융소비자</span></label></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">취약금융소비자에 해당되시나요?</h2>
+									<ul class="bullet a">
+										<li>‘취약금융소비자’란 합리적 판단이 곤란해 보호의 필요성이 높은 보험계약자를 말합니다. 고령자(만 65세 이상), 미성년자, 정신적 장애로 일상생활과 사회생활에 제약을 받는 자 등이 해당됩니다.</li>
+									</ul>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">아니요</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">고령자(만 65세 이상)</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">은퇴자</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">주부</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q3"><span class="txt">기타</span></label></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">대출 목적(자금 용도)은 무엇인가요?</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">부동산 구입</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">타기관 대출금상환</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">가계자금</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">경조자금</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">사업자금</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">교육비</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">주택자금</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q4"><span class="txt">의료비</span></label></li>
+											<li>
+												<label class="checkbox cv has-input"><input type="radio" name="q4"><span class="txt">기타</span></label>
+												<span class="input a"><label class="lb blind" for="q4_1">대출 용도 입력</label><input type="text" placeholder="직접 입력" id="q4_1" ></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">순자산의 규모는 어느 정도인가요?</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv has-list"><input type="radio" name="q5"><span class="txt">본인</span></label></li>
+											<li><label class="checkbox cv has-list"><input type="radio" name="q5"><span class="txt">배우자포함</span></label></li>
+										</ul>
+										<div class="list-in">
+											<ul>
+												<li><label class="radio cr"><input type="radio" name="q5_5"><span class="txt">1억원 미만</span></label></li>
+												<li><label class="radio cr"><input type="radio" name="q5_5"><span class="txt">1억원~10억원 미만</span></label></li>
+												<li><label class="radio cr"><input type="radio" name="q5_5"><span class="txt">10억원 이상</span></label></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">연간 소득은 얼마인가요?</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">5천만원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">5천만원~1억원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">1억원~2억원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q6"><span class="txt">2억원 이상</span></label></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">부채가 있나요?</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q7"><span class="txt">5천만원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q7"><span class="txt">5천만원~1억원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q7"><span class="txt">1억원~2억원 미만</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q7"><span class="txt">2억원 이상</span></label></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">연체 사실이 있나요?</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q8"><span class="txt">현재 연체 없음</span></label></li>
+											<li>
+												<label class="checkbox cv has-input"><input type="radio" name="q8"><span class="txt">현재 연체 있음</span></label>
+												<span class="input a age custom ">
+													<label class="lb" for="q8_1">연체 기간</label>
+													<i class="tx ta">약</i>
+													<input type="tel" pattern="\d*" placeholder="개월입력" id="q8_1" >
+													<i class="tx tb">개월</i>
+												</span>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">연간 고정지출은 얼마인가요?</h2>
+									<div class="list">
+										<ul><li><span class="input a won custom"><label class="lb" for="q9">연간</label><input type="tel" pattern="\d* placeholder="숫자로 금액 입력"  id="q9"><i class="w">만원</i></span></li>
+
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">신용점수는 몇 점인가요?</h2>
+									<div class="list">
+										<ul>
+											<li>
+												<label class="checkbox cv has-readonlyInput"><input type="radio" name="q10"><span class="txt">KCB 신용정보회사</span></label>
+												<span class="input a won"><label class="lb blind" for="q10_1">신용점수</label><input type="tel" readonly pattern="\d* placeholder="점수" value="1,300"  id="q10_1"><i class="w">점</i></span>
+											</li>
+											<li>
+												<label class="checkbox cv"><input type="radio" name="q10"><span class="txt">모름(보험회사를 통한 점수 조회에 동의)</span></label>
+
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="vctest-group">
+								<div class="q-section">
+									<h2 class="tit">변제 계획을 선택해 주세요.</h2>
+									<div class="list">
+										<ul>
+											<li><label class="checkbox cv"><input type="radio" name="q11"><span class="txt">근로소득</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q11"><span class="txt">임대소득</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q11"><span class="txt">사업소득</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q11"><span class="txt">연금소득</span></label></li>
+											<li><label class="checkbox cv"><input type="radio" name="q11"><span class="txt">기타소득</span></label></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="text-group mt40">
+						<h2 class="hd-tit4">본인은 교보생명에 제공한 적합성 정보와 관련하여 다음의 내용을 확인합니다.</h2>
+						<div class="text-box">
+							<ul class="bullet a">
+								<li>교보생명에 제공한 적합성 관련 정보는 본인의 자산 규모, 대출 목적 등을 정확히 알린 것입니다.</li>
+								<li>본인이 제공한 정보가 정확하지 않거나, 정보에 변동이 발생한 경우 적합성 판단이 달라질 수 있음을 설명 들었습니다.</li>
+								<li>위 목적을 위해 본인의 개인정보를 수집, 이용, 제공하는 것에 동의합니다.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ut-terms a">
+						<label class="checkbox cr"><input type="checkbox"><span class="txt">위 내용을 모두 확인했습니다.</span></label>
+					</div>
+					<!-- [D] 2022-07-27 준법감시인확인 문구 추가 -->
+					<p class="info-txt">준법감시인확인필 2-2203-1 소매여신마케팅팀(2022.03.08)</p>
+
+
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg" data-qslider="next">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-vcTestForm');  // 팝업 열기
+
+		$(document).ready(function(){
+			var $vcTest = $(".vctest-group"); //각 화면 li 클래스
+			var hasInputCheckbox = $vcTest.find(".checkbox.has-input");
+			var hasListCheckbox = $vcTest.find(".checkbox.has-list");
+			var currentIndex = 0; //현재 보고있는 항목
+			var vcTestCnt = $vcTest.length;
+			var $view = $(".pct");
+			var viewHeight =$view.innerHeight();//실제 화면 높이.
+
+			$vcTest.each(function(i){
+				$(this).find(".checkbox input").change(function(){
+					var _this = $(this);
+					currentIndex = i;
+
+					//모두 완료 시 하단 유의사항 안내 노출
+					if(currentIndex == (vcTestCnt-1)){
+						if($vcTest.eq(currentIndex).hasClass("isChecked")) return;
+						$vcTest.eq(currentIndex).addClass("isChecked");
+						// [D] 2022-07-27 선택자 추가
+						$(".pop-vcTestForm .poptents .text-group, .pop-vcTestForm .poptents .ut-terms,.pop-vcTestForm .poptents .info-txt, .pop-vcTestForm .pbt").show();
+						ui.update();
+						$vcTest.css({"padding-bottom":0});
+						moveScroll($(".text-group"));
+						return;
+					}
+
+					if(_this.parent().hasClass("has-input") || _this.parent().hasClass("has-list")){
+						return;
+					}
+					else if(_this.parent().hasClass("has-readonlyInput")){
+						if(_this.closest(".vctest-group").hasClass("isChecked")) return;
+						nextView(currentIndex);
+						return;
+					}
+					else if(_this.is(':checked') && !$vcTest.eq(currentIndex).hasClass("isChecked")){
+						nextView(currentIndex);
+						moveScroll($vcTest.eq(currentIndex+1));
+					}
+				});
+
+				//list in radio
+				$(this).find(".list-in .radio input").change(function(){
+
+					var _this = $(this);
+					currentIndex = i;
+					if(_this.closest(".vctest-group").hasClass("isChecked")) return;
+					nextView(currentIndex);
+					moveScroll($vcTest.eq(currentIndex+1));
+				});
+
+				//textbox keyup
+				$(this).find(".input input:not([readonly])").on('input', function() {
+					currentIndex = i;
+					if($vcTest.eq(currentIndex).hasClass("isChecked")) return;
+					nextView(currentIndex);
+				});
+			});
+
+			//서브 리스트를 가진 체크박스 클릭
+			hasListCheckbox.find("input").on('change', function() {
+				var _this = $(this);
+				if(_this.is(':checked')){
+					setTimeout(function(){
+						_this.parents("ul").siblings(".list-in").show();
+					},0);
+				}
+			});
+
+			//텍스트 박스를 가진 체크박스 클릭
+			hasInputCheckbox.find("input").on('change', function() {
+				var _this = $(this);
+				if(_this.is(':checked')){
+					setTimeout(function(){
+						_this.parent().siblings(".input").find("input").focus();
+					},0);
+				}
+			});
+
+			function gapHeight(index){
+				var gapHeight = viewHeight - $vcTest.eq((index+1)).outerHeight() - 40;
+				return gapHeight = gapHeight > 0 ? gapHeight : 0;
+			}
+
+			function nextView(index){
+				$vcTest.eq(index).addClass("isChecked");
+				$vcTest.css({"padding-bottom":0}).eq((index+1)).show().css({"padding-bottom": gapHeight(index)});
+
+			}
+
+			function moveScroll(elm) {
+				setTimeout(function(){
+					$view.stop().animate({scrollTop : elm.position().top});
+				},0);
+
+			}
+		});
+	</script>
+</div>
+</body>
+</html>

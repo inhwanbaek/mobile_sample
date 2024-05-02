@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd retire why" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">Why 교보생명</h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">재무건전성</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">자산관리능력</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">퇴직연금케어 서비스</a></li>
+				</ul>
+			</div>
+			
+			<!-- 퇴직연금케어 서비스 -->
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3" class="active">
+				<div class="top-cont">
+					<div class="btn-list">
+						<div class="fr"><a href="javascript:;" class="btn sm ico-nlink ico-r">English</a></div>
+					</div>
+					<div class="sec-txt bg3">
+						<div class="tit24">평생 든든한 애프터서비스</div>
+						<div class="tit32">" 꾸준히 관리해주는 사업자는 교보생명 밖에 없더라고요."</div>
+						<p>평생 든든한 교보생명 퇴직연금의 애프터서비스를 확인해 보세요.</p>
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit3">꾸준히 관리해 주는 애프터서비스</h3>
+					<div class="txt16">퇴직연금은 제도 도입을 시작으로 퇴직연금을 받게 되는 나의 노후까지 지속적으로 운영되기 때문에 도입 후의 애프터서비스가 매우 중요합니다. 그러나 도입 이후 실제 지속적인 서비스를 제공하는 사업자는 찾아보기 힘듭니다.
+						<br>지금 당장은 큰 차이가 없는 것처럼 느껴질 지라도 3년, 5년, 10년, 20년… 
+						<br>시간이 흐를수록 얼마나 잘 관리 했는지에 따라 퇴직연금으로 준비한 노후생활의 풍성함이 큰 차이가 있음을 확인하실 수 있습니다.
+					</div>
+				</div>
+
+				<div class="sect">
+					<h3 class="hd-tit3">어떠한 환경의 서비스가 제공되고 있나요?</h3>
+					<div class="txt16">나의 근무 환경과 특성을 고려한 서비스가 실제 제공되고 있는지 확인해 보세요. 교보생명은 전화, 홈페이지, 모바일, 이메일, 우편, 대면상담, 고객PLAZA 등 다양한 경로로 전문적인 서비스를 실제 꾸준히 제공하고 있습니다.</div>
+					
+					<ul class="flex btw">
+						<li>
+							<div class="tit"><span>퇴직연금 전담 상담팀의 신속정확한</span>전화상담 안내</div>
+							<ul class="bullet a">
+								<li>제도 도입 및 절차상담</li>
+								<li>운용상품 안내 및 상담</li>
+								<li>적립금, 수익률 확인</li>
+								<li>부담금 투자비율/적립금 운용방법 변경지시</li>
+								<li>불편, 문의사항 접수</li>
+							</ul>
+						</li>
+						<li>
+							<div class="tit"><span>전담 컨설턴트가 직접 방문하는 </span>1:1 서비스</div>
+							<ul class="bullet a">
+								<li>포트폴리오 구성 및 투자상품 선정 지원<br><span>개인별 성향에 맞게 지원</span></li>
+								<li>운용보고서 전달 및 성과분석<br><span>3개월마다 진행</span></li>
+								<li>퇴직금을 비롯한 종합적인 생애설계서비스 제공</li>
+								<li>그 외 퇴직연금 관련 상담</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

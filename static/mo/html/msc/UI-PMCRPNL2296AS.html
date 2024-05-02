@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"중도인출신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc rp awd step" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="awd-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">2. 서류제출</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">5</b></span>
+									<span class="num"><b class="b">2</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="awd-tbox">
+				<h2 class="hd-tit3">필요서류를 모두 제출해 주세요.</h2>
+				<p class="stxt">신청상세사유: 가입자 본인의 6개월 이상 요양</p>
+			</div>
+
+			<div class="ut-addfile">
+				<ul class="addfile">
+					<li>
+						<div class="fbox">
+							<div class="hdt"><span class="tit">신분증<br>(주민등록증 또는 운전면허증)</span></div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" title="신분증 정면 사진">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt">
+								<span class="tit">진단서, 소견서, 장기요양 확인서 중 택1<br>(2개월 이내 발급본)</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help sm bt-tooltip">진단서, 소견서, 장기요양 확인서 중 택1(2개월 이내 발급본) 도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>발급 : 병/의원 등 의료기관, 국민건강보험공단 </li>
+												<li>진단서(소견서) 필수 기재사항 : 병명, 병명코드 및 6개월 이상의 치료기간 명시, 의사면허번호 및 의사 서명(날인) </li>
+												<li>진단서(소견서)문구 예시 : 현재부터(발행일로부터) 6개월 이상 요양(치료)이 필요합니다. </li>
+												<li>요양종료일로부터 1개월 이내 신청가능, 진단서에 요양종료일 기재와 치료 및 요양비 지불을 확인할 수 있는 서류 추가 제출</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bts btn2">
+								<button type="button" class="btn sm f comp" title="진단서, 소견서, 장기요양 확인서 중 택1(2개월 이내 발급본)">미리보기</button>
+								<label class="btn sm f comp btn-attach" title="진단서, 소견서, 장기요양 확인서 중 택1(2개월 이내 발급본)">
+									<em class="btx">다시첨부</em>
+									<input class="file" type="file" accept="image/*; capture=camera">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt">
+								<span class="tit">직전년도 근로소득원천징수영수증, 산재보험/고용보험 보수총액 신고서, 급여명세서 중 1개</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help sm bt-tooltip">직전년도 근로소득원천징수영수증, 산재보험/고용보험 보수총액 신고서, 급여명세서 중 1개 도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>직전년도보다 직전 1년간 임금총액이 낮은 경우 신청일로부터 직전 1년간 전체 급여명세서(사용자 확인필수) 가능</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" title="직전년도 근로소득원천징수영수증, 산재보험/고용보험 보수총액 신고서, 급여명세서 중 1개">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt">
+								<span class="tit">의료비신청서, 진료비 영수증, 의료비 납입증명서, 의료기기 구입/임차견적서</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help sm bt-tooltip">의료비신청서, 진료비 영수증, 의료비 납입증명서, 의료기기 구입/임차견적서 도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>발급 : 병원 등 요양기관 </li>
+												<li>의료기기의 구입·임차에 대한 견적서는 장애인보장구 사용이 필요하다는 진단서 또는 건강보험공단에 제출하는 보장구급여비 지급청구서, 보장구 처방전, 보장구 검수확인서 등 필요성 확인서류 추가 제출 </li>
+											</ul>
+											<p>※ ‘향후의료비 추정서‘ 는 치료종료 또는 환자의 잔여생존기간 동안 발생이 예상되는 모든 의료비임으로 증빙서류로 인정되지 않습니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" title="의료비신청서, 진료비 영수증, 의료비 납입증명서, 의료기기 구입/임차견적서">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt">
+								<span class="tit">기타 추가서류</span>
+								<div class="ut-tooltip">
+									<button type="button" class="ico help sm bt-tooltip">기타 추가서류 도움말</button>
+									<div class="toolctn">
+										<div class="tpmsg">
+											<ul class="bullet d">
+												<li>요양종료일로부터 1개월 이내 신청가능, 진단서에 요양종료일 기재와 치료 및 요양비 지불을 확인할 수 있는 서류 추가 제출</li>
+												<li>의료기기의 구입·임차에 대한 견적서는 장애인보장구 사용이 필요하다는 진단서 또는 건강보험공단에 제출하는 보장구급여비 지급청구서, 보장구 처방전, 보장구 검수확인서 등 필요성 확인서류 추가 제출 </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" title="기타 추가서류">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera">
+								</label>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="awd-stepagree">
+				<p class="desc">본인은 「근로자퇴직급여보장법」 시행령 제14조 및 「소득세법」 제50조 제1항 제3호에서 정한 본인 또는 부양가족의 6개월 이상의 치료 및 요양을 위하여 「소득세법」 제118조의5 제1항 및 제2항에 따른 의료비 를 부담하였음을 확인합니다. <br>임금총액과 의료비총액은 관련법규 및 규정, 지침에 따라 기재된 것임을 확인하며 이 법을 위반하여 발생하는 모든 문제에 대하여는 어떠한 불이익에 대해서도 이의를 제기하지 않겠습니다.</p>
+				<div class="chk">
+					<label class="radio"><input type="checkbox"><span class="txt">동의</span></label>
+				</div>
+			</div>
+
+			<div class="awd-gudbox">
+				<div class="ut-gudbox b open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li><span class="bold">중도인출신청 접수 시간은 평일 09:00~16:00입니다.(토,일, 공휴일 제외)</span></li>
+							<li>기업 관리자가 최종결재를 하고, 필요서류를 모두 제출하면 교보생명에 접수됩니다. </li>
+							<li>제출한 서류의 유효기간은 교보생명 서류접수일을 기준으로 역산(날짜를 뒤에서 앞으로 계산)하여 적용됩니다.</li>
+							<li>자세한 사항은 <span class="bold">법인 콜센터(1588-0770)</span>로 문의해 주세요. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots no-hide">  <!-- .no-hide 넣으면 스크롤 내려도 안사라짐 -->
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

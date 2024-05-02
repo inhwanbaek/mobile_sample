@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer md a pop-payApply" id="pop-payApply">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">입사일/중간정산일 날짜 변경</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<!-- [D] 2022-06-08 클래스 'hd-tit5' -> hd-tit4 수정 -->
+					<h2 class="hd-tit4">변경 전</h2>
+					<div class="ut-tbl a mt10">
+						<table class="tbform" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">입사일/중간정산일 변경 전</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 20%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">입사일</th>
+									<td>1996.10.07</td>
+								</tr>
+								<tr>
+									<th scope="row">중간정산일</th>
+									<td>2006.02.19</td>
+								</tr>																													
+							</tbody>
+						</table>
+					</div>
+					<!-- [D] 2022-06-08 클래스 'hd-tit5 mt25' -> hd-tit4 mt40 수정 -->
+					<h2 class="hd-tit4 mt40">변경 후</h2>
+					<div class="ut-tbl a mt10">
+						<table class="tbform" cellspacing="0" cellpadding="0">
+							<caption><span class="tit">입사일/중간정산일 변경 일</span><span class="cap"></span></caption>
+							<colgroup>
+								<col style="width: 20%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="datepick_01">입사일</label></th>
+									<td>
+										<span class="input a ut-date">
+											<input type="tel" id="datepick_01" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" title="날짜입력">
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="datepick_02">중간정산일</label></th>
+									<td>
+										<span class="input a ut-date">
+											<input type="tel" id="datepick_02" class="datepicker" placeholder="YYYY.MM.DD" value="2020.01.01" title="날짜입력">
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>					
+				</main>
+			</div>
+			<div class="pbt">  <!-- no-hide 넣으면 안사라짐-->
+				<div class="btn-set">
+					<button type="button" class="btn b rd lg">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-payApply');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

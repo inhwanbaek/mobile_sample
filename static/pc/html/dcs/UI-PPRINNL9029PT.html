@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs fund" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">펀드 상세</h2>
+			</div>
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">펀드개요</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">자산부채현황</a></li>
+				</ul>
+			</div>
+
+			
+			<section class="sect">
+				<div class="ut-optset">
+					<div class="opt"> </div>
+					<div class="opt"> 단위: 백만원 </div>
+				</div>
+				<div class="ut-tbl a pd">
+					<table class="tblist">
+						<caption><span class="tit">자산부채현황</span><span class="cap"></span></caption>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="3">자산</th>
+								<th scope="col" colspan="3">부채 및 적립 자산</th>
+							</tr>
+							<tr>
+								<th scope="col">계정과목</th>
+								<th scope="col">전월말</th>
+								<th scope="col">전전월말</th>
+								<th scope="col">계정과목</th>
+								<th scope="col">전월말</th>
+								<th scope="col">전전월말</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">I. 유동자산</td>
+								<td class="txt-r">73,150</td>
+								<td class="txt-r">110,141</td>
+								<td class="txt-l">I. 기타부채</td>
+								<td class="txt-r">5,790</td>
+								<td class="txt-r">5,608</td>
+							</tr>
+							<tr>
+								<td class="txt-l">II. 유가증권</td>
+								<td class="txt-r">3,816,964</td>
+								<td class="txt-r">3,668,188</td>
+								<td class="txt-l">II. 일반계정차</td>
+								<td class="txt-r">28</td>
+								<td class="txt-r">27</td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">1. 주식</td>
+								<td class="txt-r">1,227,219</td>
+								<td class="txt-r">1,102,165</td>
+								<td class="txt-l">III. 계약자적립금</td>
+								<td class="txt-r">3,958,723</td>
+								<td class="txt-r">3,876,670</td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">2. 채권</td>
+								<td class="txt-r">1,795,152</td>
+								<td class="txt-r">1,792,953</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">3. 수익증권</td>
+								<td class="txt-r">784,774</td>
+								<td class="txt-r">773,069</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">4. 기타</td>
+								<td class="txt-r">9,818</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">5. 평가손익조정</td>
+								<td class="txt-r">0</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l">III. 대출채권</td>
+								<td class="txt-r">51,100</td>
+								<td class="txt-r">86,500</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">1. 보험계약대출</td>
+								<td class="txt-r">0</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">2. 신용대출</td>
+								<td class="txt-r">0</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l pl30">3. 기타</td>
+								<td class="txt-r">0</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l">IV. 기타자산</td>
+								<td class="txt-r">23,308</td>
+								<td class="txt-r">17,453</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+							<tr>
+								<td class="txt-l">V. 일반계정대</td>
+								<td class="txt-r">0</td>
+								<td class="txt-r">0</td>
+								<td class="txt-l"></td>
+								<td class="txt-r"></td>
+								<td class="txt-r"></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td class="txt-c">자산 총계</td>
+								<td class="txt-r">3,964,542</td>
+								<td class="txt-r">3,882,306</td>
+								<td class="txt-c">부채 및 적립금 총계</td>
+								<td class="txt-r">3,964,542</td>
+								<td class="txt-r">3,882,306</td>
+							</tr>
+						</tfoot>
+
+					</table>
+				</div>
+			</section>
+
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"아파트담보대출 진행상태"}'></include>
+	<include class="gnb" src="../inc/gnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan state t1" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="prd-tbox">
+				<h2 class="hd-tit3">000 님이 신청하신<br>아파트 담보대출 진행상태입니다.</h2>
+			</div>
+
+			<div class="ut-tabs a" id="tab">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">진행상태</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">추가서류제출</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">세대원동의현황</a></li>
+				</ul>
+			</div>
+			
+			<div class="ut-steps c steps">
+				<h2 class="hd-tit4 tit">대출 진행상태</h2>
+				<ol class="cl"> 
+					<li>
+						<em class="sn">1</em><span class="blind">단계</span>
+						<i class="tt">대출상담 <b class="b">완료</b></i>
+						<div class="dd"></div>
+					</li>
+					<li>
+						<em class="sn">2</em><span class="blind">단계</span>
+						<i class="tt">서류제출 <b class="b">전 or 완료</b></i>
+						<div class="dd">
+							<div class="mbox">
+								<p>고객님은 현재 융자센터를 통해 대출상담까지 진행하셨습니다.</p>
+								<p>아래 [아파트담보대출 신청]을 눌러 대출을 신청하고 서류를 제출해 주세요.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<em class="sn">3</em><span class="blind">단계</span>
+						<i class="tt">세대원 동의 <b class="b">중 or 완료</b></i>
+						<div class="dd">
+							<div class="mbox">
+								<p>현재 세대원 동의가 진행 중입니다. </p>
+								<p>세대원 동의는 오늘까지 모두 완료되어야 합니다.</p>
+								<p>모든 세대원이 동의를 완료하면 제출서류 확인 후 심사 신청을 안내해 드릴 예정입니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<em class="sn">4</em><span class="blind">단계</span>
+						<i class="tt">융자센터 확인 <b class="b"> 중 or 완료</b></i>
+						<div class="dd">
+							<div class="mbox">
+								<p>세대원 동의가 완료되었습니다.</p>
+								<p>제출서류와 세대원 동의 현황을 융자센터에서 확인 중입니다. </p>
+								<p>제출서류 확인 후 심사 신청을 안내해 드릴 예정입니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<em class="sn">5</em><span class="blind">단계</span>
+						<i class="tt">대출약정 <b class="b"> 중 or 완료</b></i>
+						<div class="dd">
+							<div class="mbox">
+								<p>고객님의 제출서류 및 세대원 동의 확인이 완료되었습니다.</p>
+								<p>융자센터에서 전달한 URL 혹은 아래 [대출약정 접수]를 눌러 대출약정을 진행해 주세요. </p>
+								<p class="s">*공동소유자가 있을 경우 공동소유자에게 전달된 대출약정이 먼저 진행되어야 합니다.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<em class="sn">6</em><span class="blind">단계</span>
+						<i class="tt">대출심사 <b class="b"> or 중</b></i>
+						<div class="dd">
+							<div class="mbox">
+								<p>현재 대출 심사 중입니다.</p>
+								<p>다음 날까지 전자등기 신청을 모두 완료하셔야 최종적으로 심사가 완료됩니다.</p>
+								<!-- [D] 2022-02-09 폰트 삭제 -->
+								<!-- <p class="s">*다음 날까지 전자등기 신청을 하지 않으면 대출 심사가 취소되므로 이점 유의하시기 바랍니다.</p> -->
+							</div>
+						</div>
+					</li>
+					<li>
+						<em class="sn">7</em><span class="blind">단계</span>
+						<i class="tt">대출지급 <b class="b"></b></i>
+						<div class="dd">
+
+						</div>
+					</li>
+				</ol>
+				<div class="btn-set ct btsbot" id="appinstall"></div>
+			</div>
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots" id="bottom_box">
+			<div class="inr">
+				<div class="btn-set vt">
+					<button type="button" class="btn rd lg a" id="btn_loan">아파트담보대출 신청 바로가기</button>
+					<button type="button" class="btn rd lg a" id="btn_prom">대출 약정 접수 바로가기</button>
+					<button type="button" class="btn rd lg a" id="btn_apps">전자등기 신청 앱 설치하기</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<script>
+		var loanStatActive = function(myIdx){  // loanStatActive(2);
+			console.log("진행상태 = "+myIdx);
+			$(".steps li").each(function(stIdx){
+				$(this).removeClass("comp");
+				if( stIdx+1 < myIdx) {
+					$(this).addClass("comp");
+					// $(this).find(".b").html('완료');
+				}else{
+					// $(this).find(".b").html('');
+				}
+			});
+			$(".steps li:nth-child("+myIdx+")").addClass("active").siblings("li").removeClass("active");
+			// $(".steps li:nth-child("+myIdx+")").find(".b").html('중');
+			// if (myIdx >= 7 ) { $(".steps li:nth-child("+myIdx+")").find(".b").html('완료'); }
+			
+			$("#bottom_box").hide();
+			$("#bottom_box .btn").hide();
+			$("#appinstall").hide();
+			$("#tab").show();
+			switch (myIdx) {
+				case 1: $("#tab").hide(); break;
+				case 2: $("#bottom_box").show(); $("#btn_loan").show(); $("#tab").hide(); break;
+				case 3: $("#bottom_box").show(); $("#btn_loan").show(); break;
+				case 4: $("#bottom_box").show(); $("#btn_loan").show(); break;
+				case 5: $("#bottom_box").show(); $("#btn_prom").show(); break;
+				case 6: $("#bottom_box").show(); $("#btn_apps").show(); break;
+				case 7: break;
+			}
+		}	
+		loanStatActive(2); // 1~7 단계 상태입니다.
+		
+		
+		$(document).on("click",".steps li",function(e){  // 개발시 주석처리 해주세요.
+			var myIdx =  $(this).index()+1;
+			loanStatActive(myIdx);
+		});
+
+	</script>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

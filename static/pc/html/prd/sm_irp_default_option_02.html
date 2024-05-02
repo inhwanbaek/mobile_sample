@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+  <!-- pop-layer -->
+	<article class="pop-layer a sm pop-sample1" id="pop-sample1">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">변경상품 확인</h1>
+				</div>
+			</div>
+
+			<div class="pct">
+				<main class="poptents default-option">
+
+          <!-- ut-dtds -->
+          <div class="ut-dtds">
+						<ul class="dlist">
+							<li>
+								<div class="hdt">
+									<h3 class="hd-tit5">내 디폴트 옵션</h3>
+								</div>
+								<div class="cdt">
+                  <div class="sbtit">교보생명 디폴트옵션 초저위험 GIC</div>
+                  <dl>
+                    <dt>투자성향</dt>
+                    <dd>투자성향대비적합</dd>
+                  </dl>
+                  <dl>
+                    <dt>위험등급</dt>
+                    <dd>안전자산</dd>
+                  </dl>
+                </div>
+							</li>
+							<li>
+								<div class="hdt">
+                  <h3 class="hd-tit5">변경 디폴트 옵션</h3>
+								</div>
+								<div class="cdt">
+                  <div class="sbtit">교보생명 디폴트옵션 고위험 포트폴리오 1</div>
+                  <dl>
+                    <dt>투자성향</dt>
+                    <dd>투자성향대비적합</dd>
+                  </dl>
+                  <dl>
+                    <dt>위험등급</dt>
+                    <dd>안전자산</dd>
+                  </dl>
+                </div>
+							</li>
+						</ul>
+					</div>
+					<!-- //ut-dtds -->
+				</main>
+			</div>			
+		
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">다음</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+  <!-- //pop-layer -->
+
+	<script>
+		ui.popup.open('pop-sample1');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		/* 하단 옵션 레이어 */
+		$(".btn-option").click(function() {
+			if($(this).parents(".opt").hasClass("open") == true) {
+				$(".opt-scrollbox").hide();								
+				$(this).parents(".opt").removeClass("open");
+			}else {
+				$(".opt-scrollbox").show();								
+				$(this).parents(".opt").addClass("open");
+			};
+		});
+		
+	</script>
+
+</div>
+</body>
+</html>

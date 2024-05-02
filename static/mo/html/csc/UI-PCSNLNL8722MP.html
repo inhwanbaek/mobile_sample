@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+	
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"고객권리안내"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc policy" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<!-- [D] 2022-04-27 약관 이력 어드민 연계 추가 / 팝업->바닥페이지로 레이아웃 변경 -->
+			<!-- <section class="sect top">
+				<div class="ut-form a">
+					<ul class="form">
+						<li>
+							<span class="select a">
+								<label class="lb blind" for="sel_id01">약관코드 선택</label>
+								<select id="sel_id01" name="sel_id01">
+									<option>2021.01.01~YYYY.MM.DD</option>
+								</select>
+							</span>
+						</li>
+						<li>
+							<div class="btn-set">
+								<button type="button" class="btn md">조회</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section> -->
+
+			<section class="sect">
+				<div class="ut-termbox">
+					<div class="terms">
+						
+						<p>개인(신용)정보 수집•이용 및 제공에 대한 고객권리 안내문</p>
+
+						<h2>1. 금융서비스 이용 범위</h2>
+						<ol class="nums">
+							<li>(1) 당사는 고객님께서 동의하신 이용 목적 범위 내에서 최소한의 정보만 이용합니다.</li>
+							<li>(2) 고객님은 상품소개 등의 목적을 위한 개인(신용)정보 수집•제공 및 이용 동의 여부와 관계 없이 금융거래를 체결하거나 금융서비스를 이용하실 수 있습니다. 다만, 이러한 동의를 하지 않으신 경우에는 제휴, 부가서비스 및 신상품 정보 등은 제공받지 못할 수도 있습니다.</li>
+						</ol>
+
+						
+						<h2>2.『신용정보의 이용 및 보호에 관한 법률』 상의 고객 권리</h2>
+						<ol class="nums">
+							<li>(1) 본인정보의 제3자 제공 사실 통보 요구 <br> 고객님의 개인(신용)정보를 생명보험협회, 타 금융회사 등 제 3자에게 제공한 경우, 개인(신용)정보를 제공받은 자, 이용 목적, 제공한 날짜, 제공한 개인(신용)정보의 주요 내용 등을 금융회사에 요구할 수 있습니다. </li>
+							<li>(2) 금융거래 거절 근거 신용정보 고지 요구 <br> 고객님은 금융회사가 전국은행연합회 등 신용정보집중기관 및 신용조회회사 등으로부터 제공받은 연체정보 등에 근거하여 금융거래를 거절•중지하는 경우, 거절•중지의 근거가 된 신용정보, 동 정보를 제공한 기관의 명칭, 주소, 연락처 등을 고지해 줄 것을 금융회사에 요구할 수 있습니다.</li>
+							<li>(3) 본인정보의 제3자 제공 동의 철회 및 상품 소개 목적의 전화 등 연락 중지 청구(Do-Not-Call) <br>
+								고객님은 계약체결 3개월 이후부터 본인의 개인(신용) 정보를 신용도 평가 이외의 목적으로 제 3자에게 제공하는 것에 대한 동의를 철회할 수 있으며, 당해 금융회사가 상품을 소개하거나 구매를 권유할 목적으로 본인에게 연락하는 것을 전체 또는 사안별로 중지하도록 청구(Do-Not-Call)할 수 있습니다. 다만, 고객님의 신용도 등을 평가하기 위한 목적으로 신용정보집중기관, 신용정보회사, 업무위탁사 등에 개인(신용)정보를 제공하는 것에 대한 동의는 철회할 수 없습니다. <br>
+								동의 철회 및 연락 중지 청구는 당사 고객PLAZA, 무료 ARS전화(080-400-1001) 또는 당사 홈페이지(www.kyobo.com)를 통해 처리하실 수 있습니다. <br>
+							</li>
+							<li>
+								(4) 본인정보의 열람 ㆍ정정 ㆍ 삭제 요구 <br> 고객님은 신용정보집중기관, 신용정보회사, 금융회사 등이 보유한 본인정보에 대해 열람 청구가 가능하고, 본인의 개인(신용)정보가 사실과 다른 경우에는 정정 및 삭제를 요구할 수 있으며, 그 처리 결과에 이의가 있는 경우에는 금융위원회에 시정을 요구할 수 있습니다. <br>
+								또한 당사와 금융거래 등 상거래가 종료되고 법령에서 정하는 보유 기간이 경과한 경우에 본인의 개인(신용)정보 삭제를 요구할 수 있습니다. <br>
+								개인(신용)정보의 열람 ㆍ정정 ㆍ 삭제 요구는 당사 고객PLAZA, 콜센터(1588-1001)를 통해 신청하실 수 있습니다.
+							</li>
+							<li>
+								(5) 본인정보의 무료 열람 요구 <br>
+								고객님은 본인정보를 신용정보회사를 통하여 연간 일정 범위 내에서 무료로 열람할 수 있습니다.  자세한 사항은 각 신용조회회사에 문의하시기 바랍니다.
+							</li>
+						</ol>
+						<h3>[신용조회회사 및 생명보험협회 연락처]</h3>
+						<ul class="dash">
+							<li>- NICE평가정보㈜ : ☎ 02-2122-4000 (<a href="http://www.niceinfo.co.kr/" target="_blank" title="새창열림">www.niceinfo.co.kr</a>)</li>
+							<li>- SCI평가정보㈜  : ☎ 1577-1006 (<a href="http://www.sci.co.kr/" target="_blank" title="새창열림">www.sci.co.kr</a>)</li>
+							<li>- 코리아크레딧뷰로㈜ : ☎ 02-708-6000 (<a href="http://www.koreacb.com/" target="_blank" title="새창열림">www.koreacb.com</a>)</li>
+						</ul>
+
+						<h2>3. 위의 권리행사와 관련하여 불편함을 느끼시거나 애로가 있으신 경우, 당사의 신용정보관리•보호인 또는 생명보험협회•금융감독원 정보보호담당자 앞으로 연락하여 주시기 바랍니다.</h2>
+						<ol class="nums">
+							<li>(1) 연락처
+								<ul class="dash">
+									<li>- 당사 신용정보관리•보호인 : 02-721-3968</li>
+									<li>- 생명보험협회 : 02-2262-6600</li>
+									<li>- 금융감독원 : 1332(국번없이)</li>
+								</ul>
+							</li>
+						</ol>
+						<p>* 당사의 고의 또는 과실 등 귀책사유로 인한 개인정보 유출로 고객님에게 발생한 손해에 대해 관계 법령 등에 따라 보상받으실 수 있습니다.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>
+

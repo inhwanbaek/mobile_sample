@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs pens" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">연금저축상품별 수익률/수수료율 </h2>
+			</div>
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">2019년 4분기 이후</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">2019년 4분기 이전</a></li>
+				</ul>
+			</div>
+
+
+			<section class="sect">
+				
+				<ul class="sch-upper tp-c">
+					<li>
+						<span class="th-tit">조회기간</span>
+						<div class="td-cont">
+							<span class="select w217">
+								<!-- [웹접근성] 1st 수정 -->
+								<label class="lb blind" for="select-11" role="text">대분류 선택하기</label>
+								<!--// [웹접근성] 1st 수정 -->
+								<select name="select-11" id="select-11">
+									<option selected>2021년</option>
+								</select>
+							</span>
+							<span class="select w217">
+								<!-- [웹접근성] 1st 수정 -->
+								<label class="lb blind" for="select-12" role="text">분기별 선택하기</label>
+								<!--// [웹접근성] 1st 수정 -->
+								<select name="select-12" id="select-12">
+									<option selected>1분기</option>
+								</select>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<div class="btn-set">
+					<button type="button" class="btn md ico-search">조회</button>
+				</div>
+
+			</section>
+
+			
+			<section class="sect">
+				<h3 class="hd-tit3">상품 목록</h3>
+				<div class="ut-optset optset">
+					<div class="opt pl">
+						<span class="tot">전체 <i class="n">728</i> 건</span>
+					</div>
+					<div class="opt pr a-bot">
+						<span class="unit">단위: 백만원, %</span>
+						<button type="button" class="btn sm ico-down ico-r">엑셀 파일로 다운로드</button>
+					</div>
+				</div>
+				<div class="ut-tbl a scroll-x">
+					<table class="tblist" cellspacing="0" cellpadding="0">
+						<caption><span class="tit">상품 목록</span><span class="cap"></span></caption>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">상품명</th>
+								<th scope="col" rowspan="2">상품유형</th>
+								<th scope="col" rowspan="2">최초판매일</th>
+								<th scope="col" rowspan="2">판매중단일</th>
+								<th scope="col" rowspan="2">판매<br>여부</th>
+								<th scope="col" colspan="3">작성기준일 현재(2021년 12월말)</th>
+								<th scope="col" colspan="5">과거1년(2021년)</th>
+								<th scope="col" colspan="5">과거2년(2020년)</th>
+								<th scope="col" colspan="5">과거3년(2019년)</th>
+								<th scope="col" colspan="4">연평균수익률</th>
+								<th scope="col" colspan="4">연평균수수료율</th>
+							</tr>
+							<tr>
+								<th scope="col" class="bdl">납입원금<br>(설정액)잔액</th>
+								<th scope="col">적립금 <br>(평가금액)</th>
+								<th scope="col">소급1년 <br>수익률</th>
+								<th scope="col">납입원금 <br>(설정액)잔액</th>
+								<th scope="col">연도말적립금<br>(평가금액)</th>
+								<th scope="col">연수익률</th>
+								<th scope="col">비교지수 수익률</th>
+								<th scope="col">연수수료율</th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">과거3년 <br>(2021~2019)	</th>
+								<th scope="col">과거5년 <br>(2021~2017)</th>
+								<th scope="col">과거7년 <br>(2021~2015)</th>
+								<th scope="col">과거10년 <br>(2021~2012)</th>
+								<th scope="col">과거3년 <br>(2021~2019)</th>
+								<th scope="col">과거5년 <br>(2021~2017)</th>
+								<th scope="col">과거7년 <br>(2021~2015)</th>
+								<th scope="col">과거10년 <br>(2021~2012)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txt-l">연금저축베스트라이프연금보험</td>
+								<td>금리연동형</td>
+								<td>2001.02.01</td>
+								<td>2001.02.01</td>
+								<td>판매중지</td>
+								<td>22,827</td>
+								<td>24,032</td>
+								<td>3.9</td>
+								<td>22,827</td>
+								<td>24,032</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+							</tr>
+							<tr>
+								<td class="txt-l">연금저축베스트라이프연금보험</td>
+								<td>금리연동형</td>
+								<td>2001.02.01</td>
+								<td>2001.02.01</td>
+								<td>판매중지</td>
+								<td>22,827</td>
+								<td>24,032</td>
+								<td>3.9</td>
+								<td>22,827</td>
+								<td>24,032</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+
+
+			<section class="sect">
+				<h3 class="hd-tit3">산출 기준</h3>
+				<h4 class="hd-tit5 mt30">공시 대상에 제외되는 연금저축상품 </h4>
+				<ul class="bullet lg a">
+					<li>최초판매일로부터 작성기준일까지 1년(365일)이 지나지 않은 상품</li>
+					<li>작성기준일 현재 유지계약 건수(보험사 자체 기준으로 산정)가 100건 미만인 보험상품</li>
+				</ul>
+				<h4 class="hd-tit5 mt30">납입원금(설정액) 잔액</h4>
+				<p class="hd-txt">작성기준일(또는 각 연도 말) 현재 상품별 납입원금(평가금액)</p>
+
+
+				<h4 class="hd-tit5 mt30">적립금</h4>
+				<p class="hd-txt">작성기준일(또는 각 연도 말) 현재 상품별 적립금(평가금액)</p>
+
+				<h4 class="hd-tit5 mt30">소급 1년 수익률</h4>
+				<p class="hd-txt">작성기준일로부터 역산해서 1년이 되는 기간의 수익률(해당 기간의 월 수익률을 기하평균해서 '월평균 수익률'을 산출한 뒤 이를 연환산한 값)</p>
+				
+				<h4 class="hd-tit5 mt30">연 수익률</h4>
+				<p class="hd-txt">월 수익률을 기하평균해서 '월평균 수익률'을 산출한 뒤 이를 연환산한 값</p>
+				<ul class="bullet lg a">
+					<li>월 수익률(r) = [{당월 말 적립금(순자산가액 또는 책임준비금) – 전월 말 적립금(순자산가액 또는 책임준비금) + 당월 해지액 - 당월 납입액} ÷ 당월 말 납입원금 잔액(누계)]</li>
+					<li>월평균 수익률(월 수익률의 기하평균값) = {(1+r1)(1+r2)·····(1+r12)}＾(1÷12)–1</li>
+					<li>연 수익률 = 월평균 수익률 × 12</li>
+				</ul>
+				
+				<h4 class="hd-tit5 mt30">연 수수료율 </h4>
+				<p class="hd-txt">월 수수료율을 기하평균하여 '월평균 수수료율'을 산출한 뒤 이를 연환산한 값</p>
+				<ul class="bullet lg a">
+					<li>월 수수료율(f) = 월 수수료 ÷ 당월 말 납입원금 잔액</li>
+					<li>월평균 수수료율(월 수수료율의 기하평균값) = {(1+f1)(1+f2)·····(1+f12)}＾(1÷12)–1</li>
+					<li>연 수수료율 = 월평균 수수료율 × 12</li>
+				</ul>
+				
+				
+				<h4 class="hd-tit5 mt30">연평균 수익률</h4>
+				<p class="hd-txt">연 수익률을 일정 기간(3년, 5년, 7년, 10년)별로 기하평균해서 산출한 값</p>
+				<ul class="bullet lg a">
+					<li>연 수익률 =  {(1+R1)(1+R2)·····(1+Rn)}＾(1÷n)-1R</li>
+				</ul>
+				
+				
+				<h4 class="hd-tit5 mt30">연평균 수수료율</h4>
+				<p class="hd-txt">연 수수료율을 일정 기간(3년, 5년, 7년, 10년)별로 기하평균해서 산출한 값</p>
+				<ul class="bullet lg a">
+					<li>연 수수료율 = {(1+R1)(1+R2)·····(1+Rn)}＾(1÷n)-1R</li>
+				</ul>
+				
+				
+				<h4 class="hd-tit5 mt30">비교지수 수익률</h4>
+				<p class="hd-txt">해당 상품과 투자 비교 대상이 되는 상품의 수익률. 저축은행중앙회가 과거 1년, 2년, 3년 기간의 매년 1월 1일을 기준일로 공시하고 있는 12개월 만기의 저축은행 정기예금 평균 금리</p>
+				
+				
+				<h4 class="hd-tit5 mt30">문의전화</h4>
+				<p class="hd-txt">교보생명 상품개발2팀 02-721-6319</p>
+
+
+			</section>
+
+		
+
+		</div>
+
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

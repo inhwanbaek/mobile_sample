@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href="../guide/docs/img/favicon_kyobo.ico" rel="shrtcut icon">
+	<link rel="stylesheet" href="./docs/guide.css">
+	<link rel="stylesheet" href="./docs/shCore.css">
+	<script type="text/javascript" src="./docs/jquery-3.4.1.min.js"></script> 
+	<script src="./docs/shCore.js"></script>
+	<script src="./docs/guide.js?v=1"></script>
+	<script>document.title = "퍼블작업 유의사항 Ver1.03";</script>
+</head>
+
+<body class="notice-wrap">
+<!-- 본문 내용 -->
+<div class="pub-noti">
+	<div class="hdts"><h2>퍼블작업 유의사항 Ver1.03</h2> <div class="work">근무시간 : <time>09:00~18:00</time>, 점심시간 : <time>11:30~13:00</time>시 중 (1시간)</div></div>
+	<div class="noti">
+		<div class="list" id="pub_notice">
+			<ul>
+				<li>웹접근성을 준수하여 HTML작성 해야돼요~ 마크딴데요! 
+					<ul>
+						<li>(크롬에 <a href="https://chrome.google.com/webstore/detail/openwax/bfahpbmaknaeohgdklfbobogpdngngoe" target="_blank">'OpenWAX'</a>설치해서 기본적인 문법은 체크하면서 진행해주세요)</li>
+					</ul>
+				</li>
+				<li>이미지는 2배율(Mobile+PC)로 <em>".png"</em> 파일로 해주세요. ( 예:icon_warning.png ) </li>
+				<li><xmp><head>...</head></xmp> 헤드 영역 수정금지입니다.  페이지 작업은 <xmp><main class="container page"></main></xmp> 부터 작성가능 영역입니다.</li>
+				<li>Mobile은 몰것고. PC웹은 <em>"IE11"</em> 에서도 멀쩡히 동작해야 돼요!</li>
+				<li>들여쓰기는 (Tab 1칸) 으로 해주세요. (스페이스바 금지)</li>
+				<li>Mobile웹에 사이즈 단위는 <em>"px"</em> 말고 <em>"rem"</em> 으로 1:1 매칭 하면 됩니다. (예: 24px ⇒ 24rem )</li>
+				<li><em>"space.css"</em>에 있는 mt20 , pr20등의 사용은 제한적으로 사용하여 HTML과 style 을 최대한 분리 해주세요.</li>
+				<li>클래스 네이밍은 <em>"-"</em> dash 로 하기로 했어요. (예: <xmp>class="ico-down"</xmp> )</li>
+				<li>CSS 선택자는 class로만 해주세요 id 선택금지  (예: <xmp>.tabmenu{O}</xmp>  , <xmp>#tabmenu{X}</xmp> ) </li>
+				<li>CSS 선택시 태그선택 보다 클래스명선택을 추천합니다. (예: <xmp>.box .txt{O}</xmp>  , <xmp>.box p{△}</xmp> )</li>
+				<li>사이트전체에 사용 될 공통유닛은. <xmp>"ut-"</xmp> 접두어를 사용중입니다.</li>
+				<li>제플린 상에 font-weight는 
+					<ul>
+						<li><em>font-weight:normal => font-weight:400;</em></li>
+						<li><em>font-weight:medium => font-weight:500;</em></li>
+						<li><em>font-weight:bold => font-weight:700;</em>  로 작성해주세요</li>
+					</ul>
+				</li>
+				<li><xmp><img src="abc.png" /> <input type="text" /></xmp> 닫는 태그 쓰지맙시다.</li>
+				<li>
+					이미지는 모두 background 처리하고, 개발페이지에서 변경될이미지만 <br>
+					<xmp><img class="logo" src="./logo.png" alt="**카드이미지"></xmp> 식으로 박아주세요. 
+				</li>
+				<li>
+					페이지 작업 "완료" 상태가 된 이후(개발시작이후)에 HTML이 수정 될때는 개발자가 검색 할 수 있게. 주석을 넣어주세요. <br>
+					<xmp><!-- [D] 2022-01-16 클래스.sam 추가,문구변경 --></xmp>
+				</li>
+				<li>
+					<strong>[필수 설치유틸입니다]</strong> - 설치파일은 드릴게요 기달려주세요~
+					<ul>
+						<li><em><a href="https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe" target="_blank">Git-2.34.0-64-bit.exe</a></em> [깃클라이언트]</li>
+						<li><em><a href="https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi" target="_blank">node-v16.13.0-x64.msi</a></em> [Node엔진]</li>
+						<li><em><a href="https://osdn.net/projects/tortoisesvn/storage/1.14.1/Application/TortoiseSVN-1.14.1.29085-x64-svn-1.14.1.msi/" target="_blank">TortoiseSVN-1.14.1.msi</a></em> [SVN클라이언트] - [<em>command line client tools</em>] 옵션을 첵크해서 설치해야되요!~</li>
+						<li><em><a href="https://zpl.io/download-windows-64" target="_blank">zeplin-installer-x64.exe</a></em> [제플린] - [<a href="https://zeplin.io/" target="_blank">https://zeplin.io/</a>] 가입하시고 계정(이메일) 알려주세요.</li>
+						<li><em><a href="https://channel.io/download/windows" target="_blank">ChannelSetup.exe</a></em> [채널톡메신져] - [<a href="https://channel.io/" target="_blank">https://channel.io/</a>] 가입하시고 계정(이메일) 알려주세요.</li>
+						<li><em><a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64" target="_blank">VSCodeSetup-x64-1.63.2.exe</a></em> [Extention (svn-scm-2.15.2.vsix, HTMLHint-0.10.0.vsix, LiveServer-5.6.1.vsix)] </li>
+					</ul>
+
+				</li>
+				<li>
+					<p>[작업디렉토리 ] </p>
+					<em>"C:\workspace\kyobo"</em> 경로로 통일해서 작업해주세요~! 
+					<ul>
+						<li><em>"kyobo.code-workspace"</em> 파일 전달해 드릴거임</li>
+					</ul>
+				</li>
+				<li>
+					휴대폰 테스트 URL입니다. ( 각자 작업된 결과물 업로드해서 폰으로 확인해 주세요. ) <br>
+					[<a href="http://kyobo.devtree.co.kr/static/" target="_blank">http://kyobo.devtree.co.kr/static/</a>]
+				</li>
+				<li>우리는 교보생명 "Mobile웹(앱포함)", "PC웹" , "관리자웹" 사이트를 작업해야 된답디다.</li>
+				<li>출근부 작성및 아침,점심 체온체크</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- // 본문 내용 -->
+
+</body>
+</html>

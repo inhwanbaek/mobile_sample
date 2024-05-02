@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"완전가입 실천 다짐"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc promise" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<section class="sect inf-bunch">
+				<h2 class="hd-tit3">교보생명은 소비자보호를 위해 <br>다양한 노력을 기울이고 있습니다.</h2>
+				<h3 class="hd-tit4">“나는 상품 주요 내용과 장단점을 자세하고 정확하게 설명하여 고객이 보장가치를 제대로 알도록 하겠습니다.”</h3>
+				<div class="promise-img">
+					<div class="blind">
+						<dl>
+							<dt>완전가입 실천 다짐</dt>
+							<dd>
+								<ul>
+									<li>나는 상품의 주요 내용 및 유의사항을 정확하게 설명하였습니다.</li>
+									<li>나는 고객이 직접 자필서명과 정확한 고지의무를 이행하도록 안내하겠습니다.</li>
+									<li>나는 청약서 부본 및 약관을 즉시 전달하겠습니다.</li>
+								</ul>
+							</dd>
+							<dd>
+								<p>금소법 6大 영업행위 준수사항</p>
+								<ul>
+									<li>적합성 원칙</li>
+									<li>불공정 영업 금지</li>
+									<li>적정성 원칙</li>
+									<li>부당권유 금지</li>
+									<li>설명 의무</li>
+									<li>광고 준수사항</li>
+								</ul>
+							</dd>
+						</dl>
+						<p>『완전가입 실천 다짐』 중 일부</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="sect inf-bunch">
+				<h3 class="hd-tit4">「완전가입 실천 다짐」은 임직원과 <br>컨설턴트가 매월 첫 영업일에 ‘고객 보장’이라는 고객과의 약속을 반드시 지키겠다는 마음가짐을 전자서명으로 표명하는 것입니다.</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>대상: 임직원 및 컨설턴트</li>
+						<li>시기: 매월 첫 영업일</li>
+						<li>방법: 서약 후 전자서명
+							<ul class="bullet c">
+								<li>전자서명 후 사내 인트라넷 가동</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- 하단 고정영역
+		<div class="floatbots"> 
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">홈으로</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

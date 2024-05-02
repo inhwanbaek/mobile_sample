@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer sm a pop-reconfirm" id="pop-reconfirm">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">입금상품 재확인 안내</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="text-box">
+						<h2 class="hd-tit4">고액의 정산 부담금이 투자형 상품으로 매수되는 가입자가 있습니다.</h2>
+						<ul class="bullet a">
+							<li>시장상황에 따라 원금 손실이 크게 발생할 수 있으므로, 입금상품을 예금형 상품으로 변경 후 수납처리하는 것이 안전합니다.</li>
+							<li>입금상품비율은 가입자가 모바일앱, PC웹, 법인콜센터(1588-0770)에서 변경할 수 있습니다.</li>
+						</ul>
+						<div class="ut-tbl a">
+							<table class="tbform b" cellpadding="0" cellspacing="0">
+								<caption><span class="tit">입금상품 재확인 정보</span><span class="cap"></span></caption>
+								<colgroup>
+									<col style="width:50%">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="txt-c">박생명 (991212-2)</td>
+										<td class="txt-c">박생명 (991212-2)</td>
+									</tr>
+									<tr>
+										<td class="txt-c">박생명 (991212-2)</td>
+										<td class="txt-c">박생명 (991212-2)</td>
+									</tr>
+									<tr>
+										<td class="txt-c">박생명 (991212-2)</td>
+										<td class="txt-c">박생명 (991212-2)</td>
+									</tr>
+									<tr>
+										<td class="txt-c">박생명 (991212-2)</td>
+										<td class="txt-c"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="box-line">
+							<label class="checkbox cr"><input type="checkbox"><span class="txt">가입자와 입금상품비율을 현재 비율대로 적용할 것을 확인하였습니다.</span></label>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt"> 
+				<div class="btn-set">
+					<button type="button" class="btn rd lg">취소</button>
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div> 
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-reconfirm');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a sm pop-rcmprtrsn" id="pop-rcmprtrsn">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">포트폴리오 추천사유 보기</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+
+						<div class="msect">
+							<h3 class="hd-tit4">글로벌 경기</h3>
+							<p>
+								코로나 사태가 정점이던 2020년 4월 이후, 미국의 내구재 신규 주문은 꾸준히 증가하며 제조업 경기의 지속적 회복을 보이고 있음.
+								CPI보다 광범위한 물가를 반영하는 개인 소비 지출(PCE) 지수는 1982년 이후 가장 높은 상승폭을 보이며 미국의 높은 인플레이션을 반영하고 있음.
+								신흥국은 선진국 대비 지연된 경기 회복을 보이고 있으며, 이에 맞추어 선진국 주가 지수와 신흥국 주가 지수의 격차가 벌어지고 있음.
+							</p>
+
+							<h3 class="hd-tit4">자산군 동향</h3>
+							<p>
+								연준은 12월 FOMC에서 테이퍼링 조기 종료와 내년 중 3회의 금리 인상을 시사하였고, 여전히 높은 인플레이션으로 인하여 채권 투자 매력은 하락하고 있음.
+								빨라진 긴축 속도에도 불구하고 S&P 500 지수는 신고가를 갱신하고 있으며, 견고한 실물 경제 성장은 주식의 채권 대비 투자 매력을 지속시킬 것으로 예상.
+							</p>
+
+							<h3 class="hd-tit4">분기별 포트폴리오 전략</h3>
+							<p>
+								채권 시장에는 빨라진 긴축 속도와 높은 인플레이션이 부정적 영향을 줄 것으로 예상됨. 소비자 물가에 연동되는 물가연동채권을 편입하는 것이 유효한 방안으로 판단됨.
+								빨라진 긴축 속도와 높은 달러 가치는 신흥국 투자에 부담스러운 요인으로, 선진국 위주의 인플레이션에 강한 포트폴리오 구성이 필요할 것으로 판단됨.
+							</p>
+						</div>
+
+					</main>
+				</div>
+				<div class="pbt no-hide">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-rcmprtrsn');  // 팝업 열기
+
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-rcmprtrsn',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+
+		</script>
+	</div>
+</body>
+</html>

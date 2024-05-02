@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+
+		<article class="pop-layer a pop-chpro" id="pop-layer">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">변경할 상품 확인하기</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="ut-dtds c">
+							<ul class="dlist pro-lst">
+								<li>
+									<div class="txt">(온라인)하이월드에너지증권자투자신탁(주식-재간접형</div>
+									<span class="ico-poss"><i class="blind">변경 가능</i></span>
+								</li>
+								<li>
+									<div class="txt">삼성에너지트랜지션증권자(주식-재간접형)S-P</div>
+									<span class="ico-poss"><i class="blind">변경 가능</i></span>
+								</li>
+								<li>
+									<div class="txt">(온라인)하이월드하이월드 하이에너지증권자투자신탁(주식-재간접형)</div>
+									<span class="ico-imposs"><i class="blind">변경 불가</i></span>
+								</li>
+								<li>
+									<div class="txt">삼성에너지트랜지션증권자삼성에너지트랜지션증권 삼성에너지트랜지션증권 (주식-재간접형)S-P</div>
+									<span class="ico-poss"><i class="blind">변경 가능</i></span>
+								</li>
+								<li>
+									<div class="txt">(온라인)하이월하이월드 하이월드에너지증권자투자신탁(주식-재간접형)</div>
+									<span class="ico-poss"><i class="blind">변경 가능</i></span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ut-gudbox b open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<p class="tit">(상품 제외 사유)</p>
+								<ul class="bullet a glst">
+									<li>투자가능 상품으로 제도에 포함되어 있지 않습니다.</li>
+									<li>타자산관리기관의 상품으로 제도에 해당 자산 관리기관이 포함되어 있지 않습니다.</li>
+									<li>신탁 상품으로 제도에 신탁계약이 체결되어 있지 않습니다.</li>									
+								</ul>
+								<ul class="bullet b">
+									<li>제외 대상의 경우 ‘ X ‘로 표시됩니다. </li>
+								</ul>
+							</div>
+						</div>
+					</main>
+				</div>
+				<div class="pbt">
+					<div class="btn-set">
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		
+		<script>
+			ui.popup.open('pop-layer');  // 팝업 열기
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"같이투자 운영 규정"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page invtm txt-page" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			
+			<h3 class="hd-tit3">등록부터 해지까지 운영 규정을<br>확인해 보세요.</h3>
+			<h4 class="hd-tit4">‘같이투자자’ 란?</h4>
+			<!-- 2022-08-24 마크업 수정<ul class="bullet a">
+				<li>교보생명 같이투자 커뮤니티에 등록한 고객으로, 같이투자자는 수익률과 포트폴리오를 서로 공유하고 정기적으로 리워드를 받을 수 있습니다.</li>
+			</ul>-->
+			<!-- 2022-08-24 마크업 수정 -->
+			<p class="txt-desc">교보생명 같이투자 커뮤니티에 등록한 고객으로 수익률과 포트폴리오를 공유하게 되며 수익률 대회 등 같이투자자를 위한 이벤트에 참여하게 됩니다.</p>
+			<!--//2022-08-24 마크업 수정 -->
+
+			<h4 class="hd-tit4 top-line">같이투자자 등록 대상</h4>
+			<ul class="bullet a">
+				<li>교보생명 퇴직연금(DC/IRP) 가입자 중 적립금 100만원 이상이면 누구든지 같이투자자로 등록하고 활동할 수 있습니다. </li>
+				<li>같이투자자는 제도별로 등록 가능하며 DC제도와 IRP를 합산하지 않습니다. </li>
+			</ul>
+
+			<h4 class="hd-tit4 top-line">수익률 산출방식</h4>
+			<ul class="bullet a">
+				<li>같이투자자 수익률 산정 시 금융감독원 공시수익률 산출방식과 동일한 ‘시간가중수익률’을 사용합니다.</li>
+				<li>시간가중수익률은 투자기간 동안 유출입을 감안한 평균 투자원금으로 투자수익을 나누어 산출합니다.</li>
+				<li>단, 시간가중수익률은 가입자별 수익률을 공정하게 비교하기 위해 같이투자 커뮤니티에서 사용하는 수익률이므로 적립금현황 등에서 안내하는 단순수익률(납입원금 대비 수익률)과 다를 수 있습니다.</li>
+				<li>수익률은 퇴직연금 적립금이 0원 이상인 시점부터 산출됩니다.</li>
+				<li>수익률은 소수점 이하 2자리로 표기되며, 수익률이 동일할 경우 동률로 처리됩니다. </li>
+				<li>정확한 안내를 위해 수익률은 산출시점 기준으로 5일 후부터 확인할 수 있습니다.</li>
+			</ul>
+
+			<h4 class="hd-tit4 top-line">수익률 산출기간</h4>
+			<ul class="bullet a">
+				<li>수익률은 전일 기준 누적수익률로 산출되며, 가입자별 이슈로 산출이 늦어질 경우 이슈 발생 전일 기준으로 표시됩니다. </li>
+				<li>같이투자 커뮤니티에서 사용하는 수익률은 아래와 같습니다.</li>
+			</ul>
+			<ul class="bullet c mt16">
+				<li>분기수익률: 매 분기 초부터 전일 기준 누적수익률</li>
+				<li>최근 1년 수익률: 전일 기준 직전 1년 누적수익률</li>
+				<li>최근 3년 수익률: 전일 기준 직전 3년 누적수익률</li>
+			</ul>
+
+			<h4 class="hd-tit4 top-line">같이투자자 랭킹 산정</h4>
+			<ul class="bullet a">
+				<li>같이투자자 랭킹은 전일 기준으로 산출된 수익률로 산정됩니다. 단, 가입자별 이슈로 산출이 늦어질 경우 이슈 발생 전일 기준으로 산출된 수익률로 랭킹이 산정됩니다. </li>
+				<li>같이투자자 등록 다음 날부터 랭킹이 산정되며, 같이투자자 등록해지 다음 날부터 랭킹 산정에서 제외됩니다. </li>
+				<li>다음의 경우 랭킹 산정에서 제외됩니다.
+					<ol>
+						<li>1. 전일 적립금이 100만원 미만인 경우 </li>
+						<li>2. 수익률 산출기간 기준을 충족하지 않는 경우
+							<ul class="bullet c">
+								<li>최근 1년 수익률: 수익률 산출기간이 1년 미만</li>
+								<li>최근 3년 수익률: 수익률 산출기간이 3년 미만</li>
+							</ul>
+						</li>						
+					</ol>
+				</li>
+			</ul>
+			<ul class="bullet b lg mt16">
+				<li>같이투자자 랭킹에 들어가더라도 수익률 대회 참가조건에 따라 수익률 대회 랭킹 산정에서 제외될 수 있습니다. </li>
+			</ul>
+
+			<h4 class="hd-tit4 top-line">같이투자자 등록해지</h4>
+			<ul class="bullet a">
+				<li>같이투자자 등록을 해지하면 같이투자 커뮤니티에 기록된 고객님의 정보가 모두 삭제되고, 수익률 대회에서 제외됩니다.</li>
+				<li>참여 중인 이벤트 및 수익률 대회 수상에서 제외될 수 있습니다.</li>
+				<li>등록해지 다음 날부터 랭킹 산정에서 제외됩니다.</li>
+			</ul>
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

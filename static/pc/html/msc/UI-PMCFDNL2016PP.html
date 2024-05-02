@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer sm a pop-mscInfo pop-mscDft" id="pop-sellInfo">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">계좌정보조회</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="sec">
+						<p class="refer-date">기준일시: 2020.01.06 10:25:14</p>
+						<div class="ut-dcard a account">
+							<div class="stds">
+								<div class="ut-bdgs">
+									<em class="bdg h">적립식</em>
+									<em class="bdg">해지</em>
+								</div>
+								<div class="hdt">
+									<div class="tit">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</div>
+								</div>
+
+								<div class="cdt">
+									<div class="bxs">
+										<div class="dt">계좌번호</div>
+										<div class="dd">200***-001-02</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">잔고좌수</div>
+										<div class="dd">164,540,000좌</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">평가금액</div>
+										<div class="dd">20,000,000원</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">수익률</div>
+										<div class="dd">
+											<span class="flu up">
+												<span class="var">0.05%</span>
+												<span class="ico-rate">
+													<em class="blind">수익률 상승</em>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="bxs">
+										<div class="dt">개설일</div>
+										<div class="dd">2009.08.14</div>
+									</div>
+								</div>
+							</div>
+							<div class="dtds">
+								<div class="btn-set vt wrp">
+									<a href="javascript:;" role="button" class="btn md">상세정보</a>
+									<a href="javascript:;" role="button" class="btn md">거래내역조회</a>
+									<a href="javascript:;" role="button" class="btn md">매수신청</a>
+									<a href="javascript:;" role="button" class="btn md">환매신청</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sec">
+						<h2 class="hd-tit4">가입정보</h2>
+						<div class="ut-dtds c">
+							<ul class="dlist left">
+								<li>
+									<div class="dt">계좌상태</div>
+									<div class="dd">정상</div>
+								</li>
+								<li>
+									<div class="dt">계좌개설일</div>
+									<div class="dd">2009.08.14</div>
+								</li>
+								<li>
+									<div class="dt">계좌만기일</div>
+									<div class="dd">2030.07.15</div>
+								</li>
+								<li>
+									<div class="dt">계좌혜지일</div>
+									<div class="dd">2018.04.14</div>
+								</li>
+								<li>
+									<div class="dt">저축유형</div>
+									<div class="dd">적립식</div>
+								</li>
+								<li>
+									<div class="dt">월저축금액</div>
+									<div class="dd">10,000원</div>
+								</li>
+								<li>
+									<div class="dt">저축기간</div>
+									<div class="dd">20개월(이상)</div>
+								</li>
+								<li>
+									<div class="dt">계좌만기일</div>
+									<div class="dd">2030.07.15</div>
+								</li>
+								<li>
+									<div class="dt">세금우대저축종류</div>
+									<div class="dd">장기주식형</div>
+								</li>
+								<li>
+									<div class="dt">세금우대한도</div>
+									<div class="dd">1,800,000원</div>
+								</li>
+								<li>
+									<div class="dt">CMS이체일</div>
+									<div class="dd">5일</div>
+								</li>
+								<li>
+									<div class="dt">CMS이체금액</div>
+									<div class="dd">10,000원</div>
+								</li>
+								<li>
+									<div class="dt">CMS이체은행</div>
+									<div class="dd">국민</div>
+								</li>
+								<li>
+									<div class="dt">CMS계좌번호</div>
+									<div class="dd">75141***124</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="ut-unprotected flx">
+						<p class="txt">예금자보호법상 보호상품 아님. 단, 증권매수 미사용 현금잔액은 5천원만원까지(회사별 보호상품 합산) 예금자보호</p>
+					</div>
+				</main>
+			</div>
+			<!-- <div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn b rd lg" onclick="ui.popup.close('pop-sample1');">취소</button>
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-sample1');">확인</button>
+				</div>
+			</div> -->
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-sellInfo');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

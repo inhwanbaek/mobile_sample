@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"class":"is-title,is-back","title":"아파트담보대출 세대원 동의"}'></include>
+	<include class="gnb" src="../inc/gnb.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page prd loan step s6" id="container">
+		
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-topfix stepfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">6.서류제출</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">7</b></span>
+								<span class="num"><b class="b">6</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="prd-tbox">
+				<h2 class="hd-tit3">대출에 필요한 서류를 모두 제출해 주세요.</h2>
+			</div>
+			
+			<div class="ut-addfile files">
+				<ul class="addfile">
+					<li>
+						<div class="fbox">
+							<div class="hdt"><span class="tit">신분증 앞면</span></div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" for="btn_001" title="신분증 앞면">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera" id="btn_001">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt"><span class="tit">전입세대열람서</span></div>
+							<div class="bts">
+								<button type="button" class="btn sm f comp" title="전입세대열람서">미리보기</button>
+								<label class="btn sm f comp btn-attach" for="btn_002" title="전입세대열람서">
+									<em class="btx">다시첨부</em>
+									<input class="file" type="file" accept="image/*; capture=camera" id="btn_002">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt"><span class="tit">기타소득증빙자료</span></div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" for="btn_003" title="기타소득증빙자료">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera" id="btn_003">
+								</label>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="fbox">
+							<div class="hdt"><span class="tit">계약서 <br> [매매, 분양, 임대차] </span></div>
+							<div class="bts">
+								<label class="btn sm f btn-attach" for="btn_004" title="계약서 [매매, 분양, 임대차]">
+									<em class="btx">첨부하기</em>
+									<input class="file" type="file" accept="image/*; capture=camera" for="btn_004">
+								</label>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="ut-gudbox a gudbox">
+					<div class="gtit">안내사항</div>
+					<button type="button" data-ui-tog="btn" data-ui-tog-val="tog_gudbox1" class="bt-tog">안내문</button>
+					<div class="gctn" data-ui-tog="ctn" data-ui-tog-val="tog_gudbox1">
+						<ul class="bullet a glst">
+							<li>서류는 1개월 이내 발급한 원본을 촬영하여 제출해 주세요.(모니터 또는 사본 촬영 이미지는 등록 불가)</li>
+							<li>글자가 흐리거나 잘 보이지 않는 경우, 고객님께 다시 첨부해 주실 것을 요청할 수 있습니다.</li>
+							<li>서류 1개당 이미지 파일을 OO개까지 첨부할 수 있습니다.</li>
+							<li>첨부 가능한 이미지 파일 형식은 JPG, JPEG, GIF, PNG입니다.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

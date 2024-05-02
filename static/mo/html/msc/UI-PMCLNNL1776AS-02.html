@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"신용/담보대출 상환/이자납입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan pay aprp" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lopay-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">3. 계좌선택</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">3</b></span><!-- [D] 2022-07-21 원복 -->
+									<span class="num"><b class="b">3</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lopay-ttab">
+				<div class="ut-tabs a">
+					<ul class="menu">
+						<li><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">즉시출금</a></li>
+						<li class="active"><a class="bt" data-ui-tab-btn="tab_a" href="javascript:;">가상계좌입금</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="lopay-tbox">
+				<h2 class="hd-tit3"><i class="line">가상계좌입금</i> 계좌정보와 금액을<br> 확인하세요.</h2>
+			</div>
+
+			<div class="msect">
+				<h2 class="hd-tit4">입금전용계좌 정보</h2>
+				<div class="ut-tbl b">
+					<table class="tbform" cellpadding="0" cellspacing="0">
+						<caption><span class="tit">입금전용계좌 정보</span><span class="cap"></span></caption>
+						<colgroup>
+							<col style="width:128rem;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">은행면</th>
+								<td>신한은행(구, 신한)</td>
+							</tr>
+							<tr>
+								<th scope="row">계좌번호</th>
+								<td>274-901-18297274</td>
+							</tr>
+							<tr>
+								<th scope="row">입금하실 금액</th>
+								<td>100,000,000 원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="lopay-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box">
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a glst">
+							<li>입금전용계좌는 교보생명 명의로 개설해 고객에게 부여해 드리는 입금 전용 가상계좌입니다.(통장 실물은 없음)  </li>
+							<li>입금전용계좌로 입금하시면 입금 즉시 납입 처리됩니다. </li>
+							<li>입금전용계좌 입금 가능 시간은 08:00~23:30입니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">알림톡 전송</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

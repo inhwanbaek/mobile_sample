@@ -1,0 +1,548 @@
+@charset "utf-8";
+
+/* 보험계약대출 -------------------------------------------- */
+
+/* 보험계약대출 신청 */
+.page.prd.ins{}
+
+/* 보험계약대출 공통 */
+.page.prd.ins.dft{padding-bottom:40rem;}
+.page.prd.ins .contents .list-empty{padding:0 20rem; margin-top:0; min-height: auto;}
+.page.prd.ins .contents .complate-msg .msg p{word-break: keep-all; }
+.page.prd.ins .contents .ut-gudbox{margin-top:40rem;}
+.page.prd.ins .contents .ut-gudbox ~ .ut-gudbox{margin-top:0;}
+.page.prd.ins.dft .contents .bullet.b li{font-size:12rem; margin-top:10rem;}
+.page.prd.ins.dft .contents .ut-tbl .tbform th[scope="row"] + td{padding-left:9rem;}
+.pop-insConfirm.has-lineBox .poptents{padding-bottom:0}
+.pop-layer.a .poptents.hdt{padding-top:32rem;}
+.pop-layer.a .poptents.hdt > .text-group > [class^="hd-tit"]:first-child,
+.pop-layer.a .poptents.hdt > [class^="hd-tit"]:first-child{font-size:22rem;}
+/* 신청금액입력 */
+.page.prd.ins .contents .ins-tit{margin-bottom: 24rem;}
+.page.prd.ins .contents .ins-tit > [class^="hd-tit"]{font-size:22rem;}
+.page.prd.ins .contents .ut-tabs{margin-bottom: 32rem;}
+.page.prd.ins .contents .tab-a .ut-dcard{margin-bottom:40rem;}
+.page.prd.ins .contents .tab-b .ut-dcard{margin-bottom:16rem;}
+.page.prd.ins .contents .tab-a .hd-tit4{padding:0; line-height: 1.31; margin-bottom:16rem;}
+.page.prd.ins .contents .tab-b .ut-dcard.a .dtds.type2 {padding: 0;border: none;}
+.page.prd.ins .contents .tab-b .ut-dcard.a  .line.b{height: 1px; background:#e6e6e6;margin-bottom:15rem;}
+.page.prd.ins .contents .tab-b .ut-dcard.a .fbx dt {margin-bottom:16rem;font-size: 16rem;font-weight: 700;color: #242424;}
+.page.prd.ins .contents .tab-b .ut-dcard.a .fbx {margin: 0 -20rem 0; padding: 20rem 22rem 0 18rem; background: #f5f5f5;}
+.page.prd.ins .contents .tab-b .ut-dcard.a.open .mores{margin: 0 -20rem -20rem; padding: 16rem 0 8rem; border-radius: 0 0 8rem 8rem; background: #f5f5f5;}
+.page.prd.ins .contents .tab-b .btn-set {margin-top: 16rem;}
+.page.prd.ins .confirm-box .total {display: flex;justify-content: space-between;align-items: center;font-size: 18rem;font-weight: 700;line-height: 1.33;}
+.page.prd.ins .confirm-box .total .prc .p {font-size: 22rem;color: #2166d4;font-weight: 700;}
+/* 대출신청내용확인 */
+.page.prd.ins.result .ut-dcard{margin-bottom:0;}
+.page.prd.ins.result .ins-tit{margin-bottom: 32rem;}
+/* 계좌정보선택 */
+.page.prd.ins.input .ins-tit{margin-bottom: 32rem;}
+.page.prd.ins.input .contents .ins-formGroup .ins-form{margin-top:40rem;}
+.page.prd.ins.input .contents .ins-formGroup .ins-form:first-child{margin:0}
+.page.prd.ins.input .contents .hdts{display: flex; justify-content: space-between; align-items: center;}
+.page.prd.ins.input .contents .ins-form .hdt, .page.prd.ins.input .contents .ins-form .hdts {padding:0; line-height: 1.31; margin-bottom:16rem;}
+.page.prd.ins.input .contents .hd-tit4{line-height: inherit;padding:0}
+.page.prd.ins.input .contents .pnls-b{margin-top:8rem;}
+.page.prd.ins.input .contents .pnls-b span.tt{font-size:14rem;}
+.page.prd.ins.input .contents .pnls-b .ut-tooltip{margin-top:-3rem;}
+
+/* 약정동의 - 인증방식선택 */
+.page.prd.ins.input .certificate-list .list:last-child > li:last-child{border-bottom:none;}
+
+/* 약정동의 */
+.pop-insureChange .hd-tit4{line-height: 1.31;padding:0;margin-top:0;}
+.pop-insureChange .text-group .hd-tit4{margin-top:32rem}
+.pop-insureChange .text-group p{margin-top:16rem;line-height: 1.4; font-size:15rem;}
+.pop-insureChange .ins-formGroup{padding-bottom:40rem;}
+.pop-insureChange .ins-formGroup .ins-form{margin-top:40rem;}
+.pop-insureChange .ins-formGroup .ins-form .hdt{margin-bottom:16rem;}
+.pop-insureChange .ins-formGroup .ins-form .bullet.b{margin-top:8rem;font-size:12rem;margin-bottom:0;}
+/* 4 */
+.page.prd.ins.input .rlbox .sect {border-bottom: 1px solid #ddd;padding-bottom: 15.5rem;}
+.page.prd.ins.input .rlbox .item-box .s-tit {margin-top: 15.5rem;font-size: 14rem;color: #242424;font-weight: 700;}
+.page.prd.ins.input .rlbox .item-box .chk-item>li {margin-top: 15rem;display: flex;justify-content: space-between;color: #555555;}
+.page.prd.ins.input .rlbox .item-box .chk-item>li a {color: #808080;font-size: 12rem;padding-top: 4rem;}
+.pop-insConfirm .p-txt{font-size:15rem;color:#555;padding-top: 10rem;}
+.pop-insConfirm .line-box{margin-top:23rem;padding-top:25rem; border-top:1px solid #e6e6e6;}
+.pop-insConfirm .line-box strong.qst{font-size:16rem;line-height: 1.31; color:#242424; font-weight: 700;}
+/*  */
+.pop-insContract .hd-tit4{padding:0;line-height: 1.31; margin-top:32rem;}
+.pop-insContract .ut-tbl{margin-top:16rem;}
+.pop-insContract .pdf-viewer{margin-top:20rem;}
+.pop-insConfirm  .phd.blind + .pct{padding-top:26rem;}
+
+/* 신용 대출 */
+/* crd */
+.page.prd.crd{}
+.page.prd.crd .contents .crd-tit > [class^="hd-tit"]{font-size:22rem;}
+/* 공통 */
+.page.prd.crd.dft .ut-gudbox{margin-top:40rem;}
+.page.prd.crd.dft.no-gudbox{padding-bottom:20rem;}
+/* 약관동의 */
+/*  비금융정보등록안내 */
+.pop-nonFinancial .bullet.b{padding:8px 0 0 14px;}
+.pop-nonFinancial .bullet.b li{line-height: 1.5; }
+.pop-nonFinancial .bullet li em,
+.pop-nonFinancial .hd-tit4{color: #2a81eb;}
+.pop-nonFinancial .ut-gudbox .gctn .p-txt{margin-bottom:16rem;}
+/* 대출가능여부확인 vctest main */
+/* .page.prd.crd.vc .crd-tit .hd-tit3{position: relative;min-height: 50rem;}
+.page.prd.crd.vc .crd-tit .hd-tit3::after{content: '';position: absolute;right: 0;top: 0;align-self: self-start;overflow: hidden;display: block;width: 50rem;height: 50rem;background: url(../img/msc/icon_dgngud_head@2x.png) no-repeat 0 0;background-size: 100% auto;}
+.page.prd.crd.vc .text-box{margin-top: 32rem;}
+.page.prd.crd.vc .text-box .p-txt{font-size: 15px; line-height: 1.4; color: #555555;}
+.page.prd.crd.vc .text-box .p-txt strong{display: block; padding-top:16rem; color:#2a81eb;} */
+/* 적합성 테스트 */
+.pop-vcTestForm .poptents .vctest{margin:32rem 0;}
+.pop-vcTestForm .poptents .vctest .vctest-group:nth-child(n+3){display:none;}
+.pop-vcTestForm .poptents .vctest .vctest-group ~ .vctest-group{margin-top:40rem;}
+
+.pop-vcTestForm .poptents .vctest .tit{display:flex; margin-right: 24rem; margin-bottom: 24rem; font-size: 18rem; font-weight: 700; line-height: 1.33; color: #242424;}
+.pop-vcTestForm .poptents .vctest .tit::before{flex: 0 0 auto; content: 'Q'; overflow: hidden; display: inline-block; width: 24rem; height: 24rem; margin-right: 12rem; border-radius: 50%; background-color: #2a81eb; font-size: 14rem; font-weight: 700; line-height: 1.79; text-align: center; color: #fff;}
+
+.pop-vcTestForm .poptents .vctest .q-section .list ul > li + li{margin-top:8rem;}
+.pop-vcTestForm .poptents .vctest .q-section .list .list-in{display:none; margin-top:16rem; padding:16rem; background-color: #fafafa;}
+.pop-vcTestForm .poptents .vctest .q-section .list .list-in li + li{margin-top:16rem;}
+.pop-vcTestForm .poptents .vctest .q-section .list li:nth-child(1) .checkbox + .input{margin-bottom:16rem;}
+.pop-vcTestForm .poptents .vctest ul.bullet.b,
+.pop-vcTestForm .poptents .vctest ul.bullet.a{margin-bottom:24rem;}
+.pop-vcTestForm .poptents .vctest ul.bullet.b>li{font-size: 12rem;}
+.pop-vcTestForm .poptents .vctest li .checkbox.has-input + .input,
+.pop-vcTestForm .poptents .vctest li .checkbox.has-readonlyInput + .input{display: none; margin-top:16rem;}
+.pop-vcTestForm .poptents .vctest li .checkbox.has-input[aria-checked="true"] + .input,
+.pop-vcTestForm .poptents .vctest li .checkbox.has-readonlyInput[aria-checked="true"] + .input
+{display: block;}
+.pop-vcTestForm .poptents .vctest .input.age.custom>input{padding-right: 49rem;}
+.pop-vcTestForm .poptents .vctest .input.won.custom>input{padding-right: 49rem;}
+.pop-vcTestForm .poptents .vctest .input.age.custom.disabled i{display: none;}
+.pop-vcTestForm .poptents .text-group,
+.pop-vcTestForm .poptents .ut-terms,
+.pop-vcTestForm .poptents .info-txt,
+.pop-vcTestForm .pbt{display:none;}
+.pop-vcTestForm .poptents .ut-terms .checkbox .txt{font-size:15rem; font-weight: 700; color:#242424;}
+.pop-vcTestForm .info-txt {margin-top: 8rem; text-align: right; font-size: 13rem; color: #767676; line-height: 1.38;}
+
+.pop-prdLoan .poptents .loan { margin-top: 26rem; }
+.pop-prdLoan .poptents .loan .txt { color:#555;}
+.pop-prdLoan .poptents .loan .hd-tit3 { margin-top: 8rem;}
+.pop-prdLoan .poptents .loan .btn-set.vt { margin-top: 32rem;}
+.pop-prdLoan .poptents .loan .ref-tbox { margin-top: 32rem;}
+.page.prd.crd.bn{padding-bottom:40rem;}
+.page.prd.crd.bn .crd-cardList + .bullet.a {margin: 20rem 0;}
+.page.prd.crd.bn .crd-cardList + .bullet.a .fw-b {font-weight: 600;}
+.page.prd.crd.bn .floatbots.b>.inr{}
+.page.prd.crd.bn .floatbots.b .box-set.layer-bn{padding:0rem 20rem 34rem 20rem}
+.page.prd.crd.bn .floatbots.b .box-set .tit{font-size:18rem; line-height: 1.33; color:#242424;}
+.page.prd.crd.bn .floatbots.b .box-set .cont{margin-top:24rem; font-size:15rem; line-height: 1.4; color: #555555;}
+.page.prd.crd.bn .floatbots .ftotal-box .btn-set{padding:0; margin-top:24rem;}
+.page.prd.crd.bn .floatbots .btn-pop-close {position: absolute;right: 28rem;top: 24rem;width: 24rem;height:24rem;text-indent: -9999rem;overflow: hidden;background: url(../img/common/pop_layer_close.png) no-repeat center;background-size: 48rem auto;background-color: transparent;border: none;padding: 0;cursor: pointer;z-index: 100;}
+/*  */
+.page.prd.crd.dft .crd-cardList{margin-top:32rem;}
+.page.prd.crd.dft .crd-cardList li ~ li{margin-top:16rem;}
+.page.prd.crd.dft .ut-dcard.b{margin:32rem 0 24rem 0; }
+.page.prd.crd.dft .acc-group{margin-top:24rem;}
+.page.prd.crd.dft .acc-group .ut-accd.b>li .hbox{margin-left:0;}
+.page.prd.crd.dft .acc-group .ut-accd.b>li>.cbox{width: calc(100% + 40rem); margin:0 -20rem;}
+.page.prd.crd.dft .acc-group .ut-accd .bullet{margin-top:16rem;}
+.page.prd.crd.dft .acc-group .ut-accd .ut-tbl .tbform td,
+.page.prd.crd.dft .acc-group .ut-accd .ut-tbl .tblist td{background: #fff;}
+/*  */
+.pop-crdSearch .poptents .ut-tbl{margin-top:34rem;}
+.pop-crdSearch .poptents .ut-tbl ~ .bullet{margin-top:16rem;}
+/* 대출신청금액 */
+.page.prd.crd.form .form-group{margin-top:32rem;}
+.page.prd.crd.form .form-group ~ .form-group{margin-top:40rem;}
+.page.prd.crd.form .hd-tit4{padding:0; line-height: 1.31; margin-bottom:16rem;}
+.page.prd.crd.form .form-group .won-msg{text-align: right; margin-top:8rem;line-height: 1.31;}
+.page.prd.crd.form .form-group .won-msg.amount>span{padding-right:20rem}
+.page.prd.crd.form .form-group .desc-info{color:#767676; font-size:12rem; line-height: 1.5;}
+.page.prd.crd.form .form-group .desc-info.txt-r{text-align: right;margin-top:8rem;}
+.page.prd.crd.form .form-group .desc-info.txt-r.amount{font-size:13rem; color:#e64c2e; font-weight:700;}
+.page.prd.crd.form .form-group .hd-g .hd-tit4{display:inline-block;}
+.page.prd.crd.form .form-group .hd-g .ut-tooltip{top:-3rem;}
+.page.prd.crd.form .form-group .hd-g .ut-tooltip .tpmsg dt ~ dt{margin-top:8rem;}
+.page.prd.crd.form .form-group .hd-g .ut-tooltip .tpmsg p{margin-top:16rem;}
+.page.prd.crd.form .form-group ul li ~ li{margin-top:8rem;}
+
+/* 계좌등록 */
+.page.prd.crd.has-botBox{padding-bottom:40rem;}
+.page.prd.crd.form .contents > .crd-formGroup{margin-top:32rem;}
+.page.prd.crd.form .contents .crd-formGroup .crd-form ~ .crd-form{margin-top:40rem;}
+.page.prd.crd.form .contents .crd-form .hdts{display: flex; justify-content: space-between; align-items: center;}
+.page.prd.crd.form .contents .crd-form .hdt, .page.prd.crd.form .contents .crd-form .hdts {padding:0; line-height: 1.31; margin-bottom:16rem;}
+.page.prd.crd.form .contents .hdts .hd-tit4{line-height: inherit;padding:0; margin:0;}
+.page.prd.crd.form .contents .pnls-b{margin-top:8rem;}
+.page.prd.crd.form .contents .pnls-b span.tt{font-size:14rem;}
+.page.prd.crd.form .contents .pnls-b .ut-tooltip{margin-top:-3rem;}
+.page.prd.crd.form .contents .agree-box{margin-top:40rem;}
+.page.prd.crd.form .contents .agree-box .agree-txt{font-size:16rem; font-weight: 700; color:#242424;}
+.page.prd.crd.form .contents .agree-box .radio-wrap{margin-top:16rem;}
+.page.prd.crd .confirm-box .total {display: flex;justify-content: space-between;align-items: center;font-size: 18rem;font-weight: 700;line-height: 1.33;}
+.page.prd.crd .confirm-box .total .prc .p {font-size: 22rem;color: #2166d4;font-weight: 700;}
+/* 고객정보확인 */
+.page.prd.crd.form .contents > .ut-dtds{margin-top:32rem;}
+.page.prd.crd.form .contents  > .ut-dtds ~ .crd-formGroup{margin-top:40rem;}
+.page.prd.crd.form .contents  .crd-formGroup .crd-form .form-list > li ~ li{margin-top:16rem;}
+.page.prd.crd.form .contents  .crd-formGroup .crd-form .desc-info{font-size:15rem; color:#555555; line-height: 1.4;margin-bottom:16rem;}
+.page.prd.crd.form .contents .crd-formGroup .bullet{margin-top:16rem;}
+.page.prd.crd.form .contents .crd-formGroup .bullet li{font-size:12rem;}
+/* 계약전 확인 */
+.page.prd.crd.step .rgbox-list{ margin-top:32rem;}
+.page.prd.crd.step .rgbox-list .rgbox {border-radius: 8rem; padding: 20rem; background: #fafafa;}
+.page.prd.crd.step .rgbox-list .list>li{display:none;}
+.page.prd.crd.step .rgbox-list .list>li.active {height: 100%; display: block;}
+.page.prd.crd.step .rgbox-list .list>li+li{margin-top:16rem;}
+.page.prd.crd.step .rgbox-list .list>li .text-type2{font-size:15rem; line-height:21rem;color:#242424;}
+.page.prd.crd.step .rgbox-list .list>li .text-type2 + .text-type2{margin-top:11rem;}
+.page.prd.crd.step .rgbox-list .list>li .text-type2 b{color:#d65d1c;}
+.page.prd.crd.step .rgbox-list .list>li .radio-wrap{margin-top:11rem;}
+/* 고액신용대출 추가약정 사전안내 */
+.pop-advNotice .hd-tit3 + .hd-tit4{margin-top:32rem;}
+.pop-advNotice .bullet{margin:8rem 0 0;}
+.pop-advNotice .bullet.b li{ font-size:12rem;}
+.pop-advNotice .bullet li em{color: #2a81eb;}
+.pop-advNotice .bullet{margin:8rem 0 0;}
+.pop-advNotice .agree-box .agree-txt{font-size:15rem;}
+.pop-advNotice .rbox{background:#fafafa; border-radius: 8rem; padding:20rem;}
+.pop-advNotice .rbox{margin-top:40rem;}
+.pop-advNotice .rbox .radio-wrap{margin-top:16rem;}
+.pop-advNotice .rbox ~ .rbox{margin-top:16rem;}
+/* 약정서 동의 */
+.page.prd.crd .check-list{margin-top:32rem;}
+/* 내역확인 */
+.page.prd.crd .ut-dtds.c{margin-top:32rem;}
+.page.prd.crd .ut-dtds.c + .ut-dtds.c{margin-top:40rem;}
+.page.prd.crd .ut-dtds.c>.dlist {border-top:1rem solid #242424; margin-top:16rem;}
+.page.prd.crd .ut-dtds.c>.tops .hd-tit4{padding:0;line-height: 1.4;}
+.page.prd.crd .ico-arrowR{display:inline-block;overflow:hidden;width:20rem;height:20rem;background:url(../img/common/btn_arrow_left.png) no-repeat center center; background-size:20rem; text-indent:-9999rem;vertical-align:top}
+.page.prd.crd .ut-dtds.c .dlist .dt, .page.prd.crd .ut-dtds.c .dlist .dd{padding-left:5rem;}
+.page.prd.crd .ut-dtds.c .dlist .dlist-foot{background-color:#f3f5f7;}
+.page.prd.crd .ut-dtds.c + .ut-accd{margin-top:40rem;}
+.page.prd.crd .bn-area{margin-top:40rem;}
+
+/* 대출가이드 */
+.page.prd.loan.guide{}
+.page.prd.loan.guide .form .won-msg{text-align: right; margin-top:8rem;line-height: 1.31;}
+.page.prd.loan.guide.no-gudbox{padding-bottom:20rem;}
+.page.prd.loan.guide .guide-tit{margin-top:32rem;}
+.page.prd.loan.guide .guide-tit > [class^="hd-tit"]{font-size:22rem;}
+.page.prd.loan.guide .guide-tit + .text-group{margin-top:16rem;}
+.page.prd.loan.guide .guide-tit + .text-group.type2{margin-top:0;}
+.page.prd.loan.guide .text-group + .ut-tabs{margin-top:24rem;}
+.page.prd.loan.guide .text-group + .ut-form.a,
+.page.prd.loan.guide .text-group + .ut-dtds,
+.page.prd.loan.guide .text-group + h3.hd-tit4{margin-top:32rem;}
+.page.prd.loan.guide  h3.hd-tit4{padding:0; line-height: 1.31;}
+.page.prd.loan.guide  h3.hd-tit4:first-of-type{margin-top:32rem;}
+.page.prd.loan.guide  h3.hd-tit4 + .ut-tbl,
+.page.prd.loan.guide  h3.hd-tit4 + .bullet,
+.page.prd.loan.guide  .text-box + .bullet,
+.page.prd.loan.guide  h3.hd-tit4 + .ut-terms.a{margin-top:16rem;}
+.page.prd.loan.guide  .ut-terms.a .plist li:first-of-type{margin:0;}
+.page.prd.loan.guide  h3.hd-tit4 ~ h3.hd-tit4{margin-top:40rem;}
+.page.prd.loan.guide .tbl-addTxt{font-size:14rem; color:#808080; text-align: right;}
+.page.prd.loan.guide .tbl-addTxt + .ut-tbl{margin-top:8rem;}
+.page.prd.loan.guide .ut-tbl + .bullet{margin-top:16rem;}
+.page.prd.loan.guide .bullet.b li{font-size:12rem;}
+.page.prd.loan.guide .bullet li .bullet dl dt{color:#2a81eb;}
+.page.prd.loan.guide .bullet li dl dd{margin-top:6rem;}
+.page.prd.loan.guide .bullet>li .bullet{margin-top:8rem;}
+.page.prd.loan.guide h4.hd-tit5{font-size:12rem;color:#767676;margin:16rem 0 8rem;}
+.page.prd.loan.guide .ut-form.a .form>li:first-of-type{margin-top:0;}
+.page.prd.loan.guide.fee .ut-dcard.a {margin-top: 16rem;}
+
+.page.prd.loan.guide.fallrate .ut-dcard.a .stds .hdt .tit.blue {color:#2a81eb; font-size: 16rem;}
+.page.prd.loan.guide.fallrate .ut-dcard.a .stds .txt{color:#555; font-size: 15rem; }
+.page.prd.loan.guide.fallrate .procedure + .bullet.note { margin-top: 16rem; }
+.page.prd.loan.guide.fallrate ul.bullet.note>li .t{color: #767676;}
+
+/* .page.prd.loan.guide .ut-form.a .form>li{margin-top:8rem;} */
+.page.prd.loan.guide .ut-form.a .hdt{margin:40rem 0 16rem 0;}
+.page.prd.loan.guide .ut-form.a .hdt .tit{font-size:15rem;}
+.page.prd.loan.guide .ut-gudbox .bullet li strong{color:#2a81eb;}
+.page.prd.loan.guide .text-group.bg{display:flex;flex-direction: column;}
+.page.prd.loan.guide .text-group.bg + .btn-set{margin-top:40rem;}
+/* .page.prd.loan.guide .text-group.bg::after{content:""; margin:80rem auto 40rem auto;width:120rem; height:120rem; background: url(../img/prd/mask_group@2x.png) no-repeat center; background-size:120rem auto;} */
+/* */
+
+/* 주택담보대출 new */
+/* */
+.page.prd.loan.new{}
+.page.prd.loan.new .loan-lst .ut-dcard.a .dtds .ddt .bxm .dt{margin-bottom: 10px; font-weight:700;}
+.page.prd.loan.new .loan-lst .ut-dcard.a .dtds .ddt .bxm.chk {padding: 16px 20px;}
+.page.prd.loan.new .loan-lst .ut-dcard.a .dtds + .btn-set {margin-top: 16px;}
+.page.prd.loan.new .ut-form + .bullet.b{margin-top:16rem;}
+.page.prd.loan.new .ut-tbl + .btn-set{margin-top:40rem;}
+.page.prd.loan.new.intro .loan-tit{margin:0;}
+.page.prd.loan.new .loan-tit > [class^="hd-tit"],
+.page.prd.loan.new .crd-tit > [class^="hd-tit"]{font-size:22rem;}
+.page.prd.loan.new.intro .intro-fst::before{content:""; display:block; margin:24rem 0 30rem;width:75rem; height:22rem; background: url(../img/common/logo_header_kyobo.png) no-repeat center; background-size:75rem 22rem;}
+.page.prd.loan.new.intro .hd-tit2{line-height: 1.45;}
+.page.prd.loan.new.intro .hd-tit2 em{display:block; color:#2a81eb;}
+.page.prd.loan.new.intro .text-group{margin-top:32rem;}
+.page.prd.loan.new .intro-sec{text-align: center;}
+.page.prd.loan.new .intro-sec h3{display:flex; justify-content: center; align-items: center; font-size:16rem; color:#242424;font-weight: 500;}
+.page.prd.loan.new .intro-sec h3::before {width: 24rem;height: 24rem;background: url(../img/common/ic_mobile@2x.png) no-repeat center;background-size: 24px auto;content: '';margin: 0rem 4rem 0rem -5rem;}
+.page.prd.loan.new .intro-sec ul{margin-top:16rem; color:#808080; font-size:12rem;}
+.page.prd.loan.new.no-gudbox{padding-bottom:20rem;}
+.page.prd.loan.new .r-box{padding:20rem; border-radius: 8rem; border:1px solid #e6e6e6;}
+.page.prd.loan.new .loan-tit{margin:32rem 0;}
+.page.prd.loan.new .loan-tit > h2{word-break: keep-all;}
+.page.prd.loan.new .loan-tit h2 + .bullet{margin-top:8rem;}
+.page.prd.loan.new .loan-tit h2 + .bullet li{font-size:12rem;}
+.page.prd.loan.new .ut-topfix.step + .loan-tit{margin-top:0;}
+.page.prd.loan.new .loan-tit + .ut-terms{margin-top:0;}
+.page.prd.loan.new .complate-msg .bullet{display:inline-block; margin-top:32rem; text-align: left;}
+.page.prd.loan.new .complate-msg .bullet .bullet.b{ display:block; margin-top:6rem; text-align: left;}
+.page.prd.loan.new .bullet.b > li{ font-size:12rem;}
+.page.prd.loan.new .won-msg{text-align: right; margin-top:8rem;line-height: 1.31;}
+.page.prd.loan.new .hdt .tt{display:inline-block;}
+.page.prd.loan.new .hdt .tt + .ut-tooltip{top:-3rem;}
+.page.prd.loan.new .panel .v-rdo li + li{margin-top:16rem;}
+.page.prd.loan.new .panel .has-input + .input{display:none; margin-top:16rem;}
+.page.prd.loan.new .ut-tooltip .desc-info + ul,
+.page.prd.loan.new .ut-tooltip ul + .desc-info{margin-top:8rem;}
+.page.prd.loan.new .r-box .apt-reg{font-size:12rem; color:#808080;}
+.page.prd.loan.new .r-box .apt-info{margin-top:16rem;}
+.page.prd.loan.new .r-box .apt-info strong{font-size:18rem; line-height: 1.31; font-weight: 700;}
+.page.prd.loan.new .r-box .apt-info .apt-spec{display:flex; margin-top: 8rem;line-height: 1.4; color:#555555;}
+.page.prd.loan.new .r-box .apt-info .apt-spec li ~ li::before{content: '';position:relative;top:1rem; display: inline-block; width: 1rem; height: 12rem; vertical-align: baseline; background-color: #cccccc; margin: 0 12rem 0;}
+.page.prd.loan.new .r-box .btn-set{margin-top:24rem;}
+.page.prd.loan.new .ut-addfile .addfile>li:first-of-type { border-bottom: #e6e6e6 solid 1rem;}
+.page.prd.loan.new .text-group + .ut-dcard.b{margin-top:40rem;}
+.page.prd.loan.new .info-txt{margin:24rem 0 0; font-size:12rem; color:#767676;}
+.page.prd.loan.new .info-box .txt {font-size: 15rem; color: #555;}
+.page.prd.loan.new .info-box .txt + .btn-set {margin-top: 30rem;}
+.page.prd.loan.new .info-box + .info-box {margin-top: 40rem;}
+
+/* 우측 아이콘 페이지 */
+.page.prd.loan.new.icon{}
+.page.prd.loan.new.icon .text-box .txt{font-size:15rem; color: #555555;}
+.page.prd.loan.new.icon .text-box .txt + .txt{margin-top:16rem;}
+.page.prd.loan.new.icon .bullet.a > li em{color:#2a81eb;}
+.page.prd.loan.new.icon .bullet.a > li{font-size:15rem; color: #555555;}
+.page.prd.loan.new.icon .bullet.a > li + li{margin-top:16rem;}
+.page.prd.loan.new.icon .bullet.a > li .bullet.b {margin-top:10rem;}
+/* .page.prd.loan.new.icon .hd-tit2{display:flex; justify-content:space-between; min-height: 48rem;} */
+/* .page.prd.loan.new.icon .hd-tit2::after{content: '';flex:0 0 48rem; margin-left:40rem; min-height: 48rem; overflow: hidden;display: block;background: url(../img/prd/ic_competition@2x.png) no-repeat 0 0;background-size: 100% auto;} */
+
+.page.prd.loan.new .gbox {margin-top: 16rem; text-align: center;  padding: 20px;border-radius: 8px; background-color: #f5f5f5;}
+.page.prd.loan.new .gbox .txt {font-size: 15rem; color:#242424}
+.page.prd.loan.new .gbox .date,
+.page.prd.loan.new .gbox .txt em{color:#2a81eb; font-weight: 700;}
+
+.pop-fmlagree .poptents .tbox + .btn-set{margin-top:16rem;}
+
+/* 담보제공자 */
+.page.prd.loan.new .dtds.e.dtds{ margin: 32rem 0rem 0rem 0rem; }
+.page.prd.loan.new .dtds.e.dtds .dlist{}
+.page.prd.loan.new .dtds.e.dtds .dlist>li{}
+.page.prd.loan.new .dtds.e.dtds .dlist>li .hdt{border-bottom: 1px solid #e6e6e6;padding-bottom: 12rem;}
+.page.prd.loan.new .dtds.e.dtds .dlist>li .cdt .bts{ margin-top: 6rem; }
+.page.prd.loan.new .dtds.e.dtds .dlist>li .link-text{color: #2a81eb; font-size:14rem;}
+
+/* 정보확인 */
+.page.prd.loan.new .ut-dtds.bd{border-top:1px solid #242424;}
+.page.prd.loan.new .ut-dtds.bd + .ut-form.datas{margin-top:40rem;}
+
+/* 계좌등록 */
+.page.prd.loan.new .add-acc .hdts{display: flex; justify-content: space-between; align-items: center;}
+.page.prd.loan.new .add-acc .hdts h3{padding:0}
+.page.prd.loan.new .add-acc .hdt, .page.prd.loan.new .add-acc .hdts {padding:0; line-height: 1.31; margin-bottom:16rem;}
+.page.prd.loan.new .add-acc .pnls-b{margin-top:8rem;}
+
+/* 전자등기 신청 */
+.page.prd.loan.new.reg .link-wrap{margin-top: 24rem; font-size: 16rem;}
+.page.prd.loan.new.reg .ut-form.a .form>li{margin-top: 24rem}
+.page.prd.loan.new.reg .ut-form.a .form>li span + span{margin-top:8rem;}
+.page.prd.loan.new.reg .ut-form + .btn-set.ct{margin:24rem 0;}
+.page.prd.loan.new.reg .ut-form + .btn-set.ct .btn.wm{padding:0 35rem;}
+.page.prd.loan.new.reg strong{font-weight:700;}
+
+
+
+
+.page.prd.loan.new.reg .form.flex li .input {display: flex;}
+.page.prd.loan.new.reg .form.flex li .input input {flex:1}
+.page.prd.loan.new.reg .form.flex li .input input + input {flex:2}
+/* 계약전 확인 */
+.page.prd.loan.new .rgbox-list{ margin-top:32rem;}
+.page.prd.loan.new .rgbox-list .rgbox {border-radius: 8rem; padding: 20rem; background: #fafafa;}
+.page.prd.loan.new .rgbox-list .list>li{display:none;}
+.page.prd.loan.new .rgbox-list .list>li.active {height: 100%; display: block;}
+.page.prd.loan.new .rgbox-list .list>li+li{margin-top:16rem;}
+.page.prd.loan.new .rgbox-list .list>li .text-type2{font-size:15rem; line-height:21rem;color:#242424;}
+.page.prd.loan.new .rgbox-list .list>li .text-type2 + .text-type2{margin-top:11rem;}
+.page.prd.loan.new .rgbox-list .list>li .text-type2 b{color:#d65d1c;}
+.page.prd.loan.new .rgbox-list .list>li .radio-wrap{margin-top:11rem;}
+
+.page.prd.loan.new .state-item > ul > li + li{margin-top:16rem;}
+.page.prd.loan.new .state-item > ul + ul.bullet{padding-top:16rem;}
+.page.prd.loan.new .state-item  .ut-dtds  .hd-tit4{line-height:1.4;}
+.page.prd.loan.new .state-item  .ut-dtds>.dlist>li > .dt{margin-top:15rem; font-size:16rem;}
+.page.prd.loan.new .state-item  .ut-dtds>.dlist>li > .dd{text-align:right; margin-top:16rem;}
+.page.prd.loan.new .state-item  .ut-dtds>.dlist + ul.bullet{margin-top:16rem;}
+/* 스텝리스트 */
+.page.prd.loan.new .step-list {margin-top: 32rem;}
+.page.prd.loan.new .step-list li {background: #f5f5f5;margin-bottom: 34rem;padding: 16rem 24rem 16rem;position: relative;border-radius: 4rem;}
+.page.prd.loan.new .step-list li .tit {font-size: 16rem; color:#555555; font-weight: 700; margin-bottom: 8rem;}
+.page.prd.loan.new .step-list li .txt {font-size: 12rem; color: #767676}
+.page.prd.loan.new .step-list li::after {display: block; content:''; width: 18rem; height: 18rem; background: url(../img/prd/ic_arrow_18@2x.png) no-repeat center; background-size: 100%; position: absolute; bottom:-26rem; left: 50%; margin: 0 0 0 -9rem  }
+.page.prd.loan.new .step-list li:last-of-type:after {display: none;}
+/* 아파트 찾기 */
+.pop-findApt{}
+.pop-findApt .hd-tit3{margin-bottom:32rem;}
+.pop-findApt .apt-result .apt-reg{font-size:16rem; font-weight: 700; }
+.pop-findApt .apt-result .apt-list{margin-top:16rem;}
+.pop-findApt .apt-result .apt-list li{border-bottom:#e6e6e6 solid 1rem}
+.pop-findApt .apt-result .apt-list li button{padding: 21rem 0rem 20rem; width: 100%; font-size:15rem; color:#555555; text-align: left;}
+.pop-findApt .bg-box{padding:20rem; border-radius: 8rem; background-color: #fafafa;}
+.pop-findApt .bg-box strong{display:block; margin-top:16rem; font-size:18rem; font-weight: 700; line-height: 1.22;}
+.pop-findApt .bg-box + .ut-form.b{margin-top:40rem;}
+.pop-findApt .apt-floor{margin-top:8rem; font-size:15rem; color:#555555;}
+.pop-findApt .apt-floor strong{font-size:16rem; font-weight: 700; color:#242424;}
+.pop-findApt .apt-dongHo{display:flex; grid-gap: 8rem; gap: 8rem;}
+.pop-findApt .apt-dongHo .input + .input{}
+/* vc-test */
+/* .page.prd.vc .hd-tit2, .page.prd.vc .hd-tit3{display:flex; justify-content:space-between; min-height: 50rem; word-break: keep-all;}
+.page.prd.vc .hd-tit2::after, .page.prd.vc .hd-tit3::after{content: '';flex:0 0 50rem; margin-left:40rem; min-height: 50rem; overflow: hidden;display: block;background: url(../img/msc/icon_dgngud_head@2x.png) no-repeat 0 0;background-size: 100% auto;} */
+.page.prd.vc .ut-topfix + .loan-tit .hd-tit3::after{display:none;}
+.page.prd.vc .text-box{margin-top: 32rem;}
+.page.prd.vc .text-box .p-txt{font-size: 15rem; line-height: 1.4; color: #555555;}
+.page.prd.vc .text-box .p-txt strong{display: block; padding-top:16rem; color:#2a81eb;}
+
+.page.prd.vc .vc-tit{margin-top:32rem;}
+.page.prd.vc .ut-topfix + .vc-tit{margin-top:0;}
+.page.prd.vc .complate-msg .p1{word-break:keep-all;}
+
+
+/* 투자가이드 */
+.page.prd {}
+.page.prd .invguide-tbox{padding:32rem 0 24rem;}
+.page.prd .invguide-tbox .hd-tit3{font-size:22rem}
+
+/* 투자가이드 > 펀드가입안내 */
+.page.prd .procedure .lst > li {position: relative; }
+.page.prd .procedure .lst > li + li {margin-top: 32rem; }
+.page.prd .procedure .lst > li + li:before {content: ''; display: block; position: absolute; top: -24rem; left: 50%; width: 16rem; height: 16rem; transform: translateX(-50%); background: url('../img/csc/bg_arr_procedure.png') no-repeat 0 0; background-size: 100% auto; }
+.page.prd .procedure .lst > li .item {overflow: hidden; padding: 20rem; border-radius: 8rem; border: 1rem solid #e9eaed; background: #fff; }
+.page.prd .procedure .lst > li .tit {font-size: 16rem; font-weight: 700; line-height: 1.31; }
+.page.prd .procedure .lst > li .tit > i {color: #2a81eb; }
+.page.prd .procedure .lst > li .txt {margin-top: 5rem; font-size: 15rem; line-height: 1.4; color: #555; word-break: keep-all;}
+.page.prd .procedure .lst > li .etc {font-size: 12rem; text-align: center; margin-top: 12rem; color: #555555;}
+.page.prd .procedure .lst > li .text-box .bullet.a>li + li {margin-top: 8rem;}
+.page.prd .procedure .lst > li .text-box ul.bullet.a>li>ul.bullet.c li + li {margin-top: 8rem;}
+.page.prd .procedure.img .lst > li .inner{position:relative;/*padding-left:60rem; 이미지 삭제*/}
+.page.prd .procedure.img .lst > li .inner::before{/*position:absolute;top:0;left:0;content: '';flex:0 0 48rem; width:48rem; height: 48rem;
+	overflow: hidden;display: block;background: url(../img/prd/ic_competition@2x.png) no-repeat 0 0;background-size: 100% auto;이미지 삭제*/}
+.page.prd .procedure .lst > li .btn-set{margin-top:16rem;}
+
+/* 투자가이드 > 인덱스펀드안내 */
+.ut-dcard.e .hdt .bg-data {display: inline-flex;flex-wrap:wrap; flex-direction: column;justify-content:space-around; margin-left:12rem; padding: 6rem 10rem; background-color: #f5f5f5; box-sizing: border-box; border-radius: 4rem;text-align: center;}
+.ut-dcard.e .hdt .bg-data dt {color: #555; font-weight: 500;font-size: 12rem;}
+.ut-dcard.e .hdt .bg-data dd {font-weight: 700; font-size: 16rem}
+
+.page.prd .bd-img01 {display:block; background: url(../img/prd/img_prdbd_01@2x.png) no-repeat center center; background-size: auto 100%; height:60rem; margin-bottom:20rem;}
+.page.prd .bd-img02 {display:block; width:280rem; height:195rem; margin: 40rem auto 10rem; background: url(../img/prd/img_prdbd_02@2x.png) no-repeat center center; background-size: auto 100%; }
+.page.prd .bd-img03 {display:block; background: url(../img/prd/img_prdbd_03@2x.png) no-repeat center center; background-size:auto 100%; height:159rem; margin:25rem 0 10rem;}
+.page.prd .bd-img04 {display:block; background: url(../img/prd/img_prdbd_04@2x.png) no-repeat center center; background-size:auto 100%; height:230rem; margin:25rem 0 10rem;}
+
+.page.prd .sec-unit + .sec-unit{margin-top:40rem;}
+.page.prd .sec-unit h3{margin-bottom:5rem;}
+.page.prd .sec-unit .ut-tbl{margin-top:20rem;}
+.page.prd .sec-unit .ut-tbl.fixed-x .tblist th,
+.page.prd .sec-unit .ut-tbl.fixed-x .tblist td{padding:8rem 20rem;border-left:0}
+.page.prd .sec-unit .ut-tbl.fixed-x .tbl-dumy{width:88.92rem;}
+.page.prd .sec-unit .parag{font-size:15rem;color:#555}
+.page.prd .sec-unit .ut-slide-dot{margin:15rem 0 40rem}
+
+/* 투자가이드 > 투자고수 놀부 따라잡기 */
+.btn-video{font-size: 14rem; color: #555;display:inline-flex;vertical-align:middle;border:0;padding: 0;}
+.btn-video:after{content:"";display:inline-block;width:28rem;height:24rem;background:url(../img/common/ico_video.png) no-repeat right center;background-size:24rem auto;}
+.btn-play{width:56rem; height:56rem; font-size:0;}
+.btn-play:after{content:"";display:inline-block;width:56rem;height:56rem;background:url(../img/common/ico_video_play.png) no-repeat center center;background-size:56rem auto;}
+
+.page.prd.fund .ut-tabs.d{margin:24rem 0 40rem}
+.page.prd.fund .ut-tabs.d .menu{grid-template-columns:41.3% 36.3% 22.3%;}
+
+.video-box{background-color:#f5f5f5;display:flex;align-items:center;text-align:center;position: relative;}
+.video-box .btn-play{position:absolute;left:50%;transform:translateX(-50%);}
+.video-box video{width:100%;}
+
+.video-desc{border:1px solid #e6e6e6;padding:20rem;margin-top:16rem;height:204rem;overflow-y:scroll;}
+.video-desc .desc-lst li{display:flex;font-size:14rem;color:#555}
+.video-desc .desc-lst li+li{margin-top:10rem;}
+.video-desc .desc-lst li .dt{padding-right:8rem;}
+
+/* 싱글대출신청*/
+.page.prd.loan.single{}
+.page.prd.loan.single .contents .single-msg{
+	text-align: center;
+	margin: 60rem 0rem 25rem 0rem;
+	border-top: transparent 1px solid;
+}
+.page.prd.loan.single .contents .single-msg .logo{
+	width: 75rem;
+    height: 22rem;
+    background: url(../img/common/logo_header_kyobo.png) no-repeat center;
+    background-size: 75rem;
+	position: absolute;
+    right: 20rem;
+	top: 30rem;
+}
+.page.prd.loan.single .contents .single-msg .title-msg{
+	color: #242424; 
+	font-size: 22rem; 
+	font-weight: 600; 
+	line-height: 1.45; 
+	word-break: keep-all;
+	margin-top: 25rem;
+}
+.page.prd.loan.single .contents .single-msg .img-msg::before{
+	content:'';
+	width:126rem;
+	height:126rem;
+	background: url(../img/prd/loan-single@2x.png) no-repeat center !important;
+	background-size:126rem auto;
+	font-size: 1rem; 
+	color: tran
+	sparent;
+	display: block;
+	margin: 30rem auto;
+	vertical-align:middle;
+}
+.page.prd.loan.single .contents .single-msg .msg .p1{ 
+	color: #242424; 
+	font-size: 17rem; 
+	line-height: 1.45; 
+	word-break: keep-all;
+}
+.page.prd.loan.single .contents .single-msg .msg .p1 strong{ 
+	font-weight: 700;
+	color: #111111; 
+}
+.page.prd.loan.single .contents .single-msg .msg .p2{ 
+	display: block;
+	margin: 30rem auto;
+	border: 1px solid #eeeeee;
+	border-radius: 4rem;
+	color: #555555; 
+	font-size: 15rem; 
+	line-height: 1.45; 
+	word-break: keep-all;
+	text-align: left;
+	padding: 15px 20px;
+	width: 280px;
+	height: auto;
+}
+.page.prd.loan.single .contents .single-msg .msg .p2 span{ 
+	display: block;
+	color: #2a81eb; 
+	font-size: 15rem; 
+	line-height: 1.45; 
+	word-break: keep-all;
+	font-weight: 400;
+}
+
+.ut-form.b > .panel .ut-terms.a{
+	padding: 5rem 20rem !important;
+}

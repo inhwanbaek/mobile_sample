@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+	
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">가입상세안내</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents ensure">
+						<!-- 탭 -->
+						<div class="ut-tabs a">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">가입안내</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">보장내용</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">보험료 예시</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">해지환급금예시</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 가입안내 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<h2 class="hd-tit3">가입안내사항</h2>
+							<div class="ut-tbl a">
+								<table class="tbform b" cellpadding="0" cellspacing="0">
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col width="38%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">보험기간</th>
+											<td>100세 만기</td>
+										</tr>
+										<tr>
+											<th scope="row">납입기간</th>
+											<td>5년·10년·15년·20년·25년·30년·40년납</td>
+										</tr>
+										<tr>
+											<th scope="row">납입주기</th>
+											<td>월납</td>
+										</tr>
+										<tr>
+											<th scope="row">가입나이</th>
+											<td>만 15세~최대 70세</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>가입나이는 보험종류, 보험기간, 납입기간에 따라 달라질 수 있습니다.</li>
+							</ul>
+
+						</div>
+						<!-- // 가입안내 -->
+
+						<!-- 보장내용 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<h2 class="hd-tit3">주계약 안내</h2>
+							<div class="tbl-tit-right">
+								<span>(보험가입금액 1,000만원 기준)</span>
+							</div>
+							<div class="ut-tbl a" aria-describedby="">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:50%">
+										<col style="width:25%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">보장명</th>
+											<th scope="col">지급사유</th>
+											<th scope="col">지급금액</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>뇌출혈<br>진단 보험금</td>
+											<td>“뇌출혈”로 진단확정되었을 경우<br>(다만, 최초 1회에 한함)</td>
+											<td>1,000만원<br>※ 1년미만 50% 감액 지급</td>
+										</tr>
+										<tr>
+											<td>급성심근경색증<br>진단 보험금</td>
+											<td>“급성심근경색증”으로 진단확정되었을 경우<br>(다만, 최초 1회에 한함)</td>
+											<td>1,000만원<br>※ 1년미만 50% 감액 지급</td>
+										</tr>
+										<tr>
+											<td>암<br>진단 보험금</td>
+											<td>암보장개시일 이후에 “암[유방암 중 초기유방암(여성에 한함), 전립선암, 기타피부암, 대장점막내암 및 특정갑상선암 제외]” 으로 진단확정되었을 경우<br>(다만, 최초 1회에 한함)</td>
+											<td>1,000만원<br>※ 1년미만 50% 감액 지급</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<ul class="bullet b lg">
+								<li>보험기간 중 피보험자가 사망한 경우에는 사망 당시의 책임준비금을 계약자에게 지급하고 이 계약은 더 이상 효력을 가지지 않습니다.</li>
+								<li>보험료 납입기간 중 피보험자가 장해분류표 중 동일한 재해 또는 재해 이외의 동일한 원인으로 여러 신체부위의 장해지급률을 더하여 50% 이상 장해상태가 되었을 경우 또는 피보험자가 암보장개시일 이후에 “암”으로 진단이 확정되거나, 보험계약일[부활(효력회복)일] 이후 “뇌출혈” 또는 “급성심근경색증”으로 진단이 확정되는 경우에는 다음 회 이후의 보험료 납입을 면제합니다.</li>
+								<li>위 보험상품 관련 내용은 요약된 자료이므로 단순 안내자료로 참고하시기 바라며, 보다 자세한 사항은 약관 및 상품설명서를 참조하시기 바랍니다. </li>
+							</ul>
+							
+						</div>
+						<!-- // 보장내용 -->
+
+						<!-- 보험료 예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_3">
+							<h2 class="hd-tit3">주계약 보험료 예시</h2>
+							<p class="c-txt">기준: 20년납, 월납, 100세 만기, 주계약 보험가입금액 1,000만원    </p>
+							<div class="tbl-tit-right">
+								<span>(단위:만원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:38%">
+										<col style="width:38%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">남자</th>
+											<th scope="col">여자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>20세</td>
+											<td>24,300</td>
+											<td>18,200</td>
+										</tr>
+										<tr>
+											<td>30세</td>
+											<td>28,600</td>
+											<td>21,000</td>
+										</tr>
+										<tr>
+											<td>40세</td>
+											<td>33,900</td>
+											<td>24,100</td>
+										</tr>
+										<tr>
+											<td>50세</td>
+											<td>40,100</td>
+											<td>27,100</td>
+										</tr>
+										<tr>
+											<td>60세</td>
+											<td>46,600</td>
+											<td>30,200</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						
+						</div>
+						<!-- // 보험료 예시 -->
+
+						<!-- 해지환급금예시 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4">
+							<h2 class="hd-tit3">주계약 해지환급금 예시</h2>
+							<p class="c-txt">기준: 40세, 20년납, 월납, 100세 만기, 주계약 보험가입금액 1,000만원, 세전 </p>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">남자</h3>
+								<span>(단위:만원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:28%">
+										<col style="width:28%">
+										<col style="width:28%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">경과<br>기간</th>
+											<th scope="col">총납입<br>보험료</th>
+											<th scope="col">해지<br>환급금</th>
+											<th scope="col">환급률</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1년</td>
+											<td>40</td>
+											<td>-</td>
+											<td>0.0%</td>
+										</tr>
+										<tr>
+											<td>3년</td>
+											<td>122</td>
+											<td>60</td>
+											<td>49.5%</td>
+										</tr>
+										<tr>
+											<td>5년</td>
+											<td>203</td>
+											<td>125</td>
+											<td>61.9%</td>
+										</tr>
+										<tr>
+											<td>10년</td>
+											<td>406</td>
+											<td>278</td>
+											<td>68.4%</td>
+										</tr>
+										<tr>
+											<td>15년</td>
+											<td>610</td>
+											<td>423</td>
+											<td>69.4%</td>
+										</tr>
+										<tr>
+											<td>20년</td>
+											<td>813</td>
+											<td>570</td>
+											<td>70.2%</td>
+										</tr>
+										<tr>
+											<td>30년</td>
+											<td>813</td>
+											<td>566</td>
+											<td>69.6%</td>
+										</tr>
+										<tr>
+											<td>40년</td>
+											<td>813</td>
+											<td>471</td>
+											<td>57.9%</td>
+										</tr>
+										<tr>
+											<td>50년</td>
+											<td>813</td>
+											<td>283</td>
+											<td>34.9%</td>
+										</tr>
+										<tr>
+											<td>60년</td>
+											<td>813</td>
+											<td>-</td>
+											<td>0.0%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tbl-tit">
+								<h3 class="hd-tit4">여자</h3>
+								<span>(단위:만원)</span>
+							</div>
+							<div class="ut-tbl a ver-md">
+								<table class="tblist nl" cellspacing="0" cellpadding="0" >
+									<caption><span class="tit">테이블 제목</span><span class="cap"></span></caption>
+									<colgroup>
+										<col>
+										<col style="width:28%">
+										<col style="width:28%">
+										<col style="width:28%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">경과<br>기간</th>
+											<th scope="col">총납입<br>보험료</th>
+											<th scope="col">해지<br>환급금</th>
+											<th scope="col">환급률</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1년</td>
+											<td>28</td>
+											<td>-</td>
+											<td>0.0%</td>
+										</tr>
+										<tr>
+											<td>3년</td>
+											<td>86</td>
+											<td>39</td>
+											<td>45.1%</td>
+										</tr>
+										<tr>
+											<td>5년</td>
+											<td>144</td>
+											<td>84</td>
+											<td>58.3%</td>
+										</tr>
+										<tr>
+											<td>10년</td>
+											<td>289</td>
+											<td>188</td>
+											<td>65.0%</td>
+										</tr>
+										<tr>
+											<td>15년</td>
+											<td>433</td>
+											<td>288</td>
+											<td>66.5%</td>
+										</tr>
+										<tr>
+											<td>20년</td>
+											<td>578</td>
+											<td>393</td>
+											<td>68.0%</td>
+										</tr>
+										<tr>
+											<td>30년</td>
+											<td>578</td>
+											<td>391</td>
+											<td>67.7%</td>
+										</tr>
+										<tr>
+											<td>40년</td>
+											<td>578</td>
+											<td>321</td>
+											<td>55.5%</td>
+										</tr>
+										<tr>
+											<td>50년</td>
+											<td>578</td>
+											<td>186</td>
+											<td>32.2%</td>
+										</tr>
+										<tr>
+											<td>60년</td>
+											<td>578</td>
+											<td>-</td>
+											<td>0.0%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="bullet b lg">
+								<li>보험계약을 중도에 해지할 경우의 해지환급금은 납입한 보험료에서 경과된 기간의 위험보험료, 계약체결비용 및 계약관리비용(해지공제금액 포함) 등이 차감되므로 납입보험료보다 적거나 없을 수도 있습니다.</li>
+								<li>위 예시표는 고객의 이해를 돕기 위해 주계약 보험금 지급사유가 발생하지 않은 경우를 가정하였습니다.</li>
+								<li>위의 예시 금액이 미래의 수익을 보장하는 것은 아닙니다.</li>
+							</ul>
+						</div>
+						<!-- // 해지환급금예시 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn a rd lg">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+	</div>
+</body>
+</html>

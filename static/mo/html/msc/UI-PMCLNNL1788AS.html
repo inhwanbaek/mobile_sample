@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"보험계약대출 자동이체 신청/변경"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc loan mng atwt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="lomng-steps">
+				<div class="ut-topfix">
+					<div class="inr">
+						<div class="ut-steps d">
+							<div class="tit">4. 계좌정보 입력</div>
+							<div class="box">
+								<div class="gage">
+									<span class="bar"></span>
+								</div>
+								<div class="nums">
+									<span class="tot"><b class="b">5</b></span>
+									<span class="num"><b class="b">4</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-tbox">
+				<h2 class="hd-tit3">자동이체 정보를 <i class="line">변경</i>해 주세요.</h2><!-- [D] 2022-05-12 수정 -->
+				<!-- <h2 class="hd-tit3">자동이체 정보를 <i class="line">등록</i>해 주세요.</h2> --><!-- [D] 2022-05-12 수정 -->
+			</div>
+
+			<div class="lomng-forms">
+				<div class="hdt">
+					<h3 class="tit">출금계좌</h3>
+					<div class="addon">
+						<button type="button" class="ico plus">새로운 출금계좌 등록</button>
+					</div>
+				</div>
+				<div class="fldset">
+					<div class="fld">
+						<span class="select a">
+							<select title="출금계좌선택">
+								<option selected>예금주 : 남약단, 계좌 : (국민은행)927621123123123123</option>
+								<option>선택2</option>
+								<option>선택3</option>
+							</select>
+						</span>
+					</div>
+					<!-- [D] 2022-07-25 변경 -->
+					<div class="lomng-gudbox">
+						<div class="ut-gudbox a open" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+							<div class="gctn" data-tog-cls="ctn">
+								<ul class="bullet a">
+									<li>가상계좌는 즉시이체 수납이 불가한 계좌입니다.(증권사 연계계좌, CMA, MMF, MMDA 등)</li>
+									<li>은행사정에 따라 이용시간에 제한이 있을 수 있습니다.</li>
+									<li>평생계좌는 자동이체 등록이 불가하오니 등록시 유의하시기 바랍니다.</li><!-- [D] 2022-08-12 텍스트변경 -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // [D] 2022-07-25 변경 -->
+				</div>
+
+				<div class="hdt">
+					<h3 class="tit">이자 자동이체일</h3>
+				</div>
+				<div class="fldset">
+					<div class="fld">
+						<span class="select a">
+							<select title="이자자동이체일선택">
+								<option selected>선택</option>
+								<option>5일</option>
+								<option>10일</option>
+								<option>15일</option>
+								<option>20일</option>
+								<option>25일</option>
+								<option>말일</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="hdt">
+					<h3 class="tit">합산여부
+						<div class="ut-tooltip">
+							<button type="button" class="ico help sm bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<ul class="bullet b">
+										<li>자동이체 등록 계약 중 같은 계좌, 같은 이체일로 2건 이상 등록된 계약은 대하여 합산하여 1건으로 간편하게 이체합니다.</li>
+										<li><strong class="bold">SC제일은행, 우리은행, KB국민은행, 광주은행</strong>만 신청 가능합니다.</li>
+										<li>연체계약, 합산청구 후 이체되지 않은 계약은 건별로 따로 청구됩니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</h3>
+				</div>
+				<div class="fldset">
+					<div class="fld">
+						<span class="select a">
+							<select title="합산여부선택">
+								<option>동의</option>
+								<option selected>동의안함</option>
+							</select>
+						</span>
+					</div>
+				</div>
+
+				<div class="hdt">
+					<h3 class="tit">원금분할상환금액<!-- [D] 2022-03-10 문구수정 -->
+						<!-- [D] 2022-03-10 삭제 -->
+						<!-- <div class="ut-tooltip">
+							<button type="button" class="ico help sm bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<p>원금분할상환을 신청하면 매월 보험계약대출이자 자동이체 희망일에 보험계약대출 원금을 분할하여 상환할 수 있으며, 이는 선택 사항입니다.</p>
+									<p class="mt10">※ 자동이체일 당일 잔액을 확인하세요!<br>
+									출금계좌에 합계금액(원금분할상환금액 + 이자)이 충분해야 자동이체(출금)됩니다.</p>
+								</div>
+							</div>
+						</div> -->
+					</h3>
+				</div>
+				<div class="fldset">
+					<!-- [D] 2022-03-10 삭제 -->
+					<!-- <div class="fld">
+						<div class="radiobox">
+							<label class="radio"><input type="radio" name="radio_md" checked><span class="txt">신청</span></label>
+							<label class="radio"><input type="radio" name="radio_md"><span class="txt">신청안함</span></label>
+						</div>
+					</div> -->
+
+					<div class="fld">
+						<span class="input a won no"><input type="tel" pattern="\d*" placeholder="숫자로 입력" title="원금분할상환금액" value="" ><i class="w">원</i></span>
+						<div class="vald-msg show no">대출잔액보다 높은 금액은 입력할 수 없습니다</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lomng-gudbox">
+				<div class="ut-gudbox a open" data-tog-cls="box"><!-- [D] 2022-02-23 open 클래스명 추가 -->
+					<div class="gtit">꼭 알아두세요</div>
+					<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+					<div class="gctn" data-tog-cls="ctn">
+						<ul class="bullet a">
+							<li><strong class="blue">이자 자동이체 청구 중인 경우 변경(해지) 전 자동이체 계좌에서 이체될 수 있습니다.</strong></li>
+							<li>2007년 1월 1일 「전자금융거래법」 개정에 따라 출금 가능한 계좌를 제한하고 있습니다.</li>
+							<li>출금 가능한 계좌는 고객님이 고객PLAZA에서 등록하신 계좌 또는 디지털채널에서 본인인증을 통해 등록하신 계좌입니다.</li>
+							<li>출금 가능한 계좌가 없는 경우 본인인증을 통해  출금계좌를 등록하면 바로 이용할 수 있습니다.</li>
+							<li>출금계좌는 반드시 본인명의 계좌여야 합니다.</li>
+							<li>농협중앙회 또는 농협조합 계좌를 등록하려는 경우, 은행명을 정확하게 선택하시기 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg b">이전</button>
+					<button type="button" class="btn rd lg a">다음</button>
+				</div>
+			</div>
+		</nav>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

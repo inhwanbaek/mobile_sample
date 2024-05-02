@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"경영철학"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">비전경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">고객만족경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_3" href="javascript:;">윤리경영</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_4" href="javascript:;">열린경영</a></li>
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_5" href="javascript:;">나눔경영</a></li>
+				</ul>
+			</div>
+			<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_4" class="active">
+				<strong class="tit-intro">기쁨은 나눌수록 커지고 슬픔은 나눌수록 작아집니다.</strong>
+				<h3>Open management</h3>
+				<p>
+					<strong>
+						추석 연휴를 맞아 귀성길에 오르는 교보 임직원들을 보면, 혼잡한 교통란 속에서 얼마나 고생스러울까 싶은데 정작 본인들은 마냥 싱글벙글 하더군요. 부디 몸 건강히 잘 다녀오세요.
+						며칠간 서울은 제가 지키겠습니다.
+					</strong>
+					신창재 회장은 직원들과의 커뮤니케이션을 매우 중요하게 생각합니다. 새로운 패러다임에 빠르게 대응하기 위해서는 조직의 의사소통과 의사결정이 바르고 빨라야 한다는 판단 때문입니다. 신 회장은 전국에 있는 지점을 순방하거나 조직원들과 함께 산행을 하면서 업무 현장의 건의사항을 듣고, 또 조직원들에게 자신의 경영 철학을 직접 전달하기도 합니다. 또한 서로 칭찬해 주는 화기애애한 직장문화를 만들고, 직원들간의 커뮤니케이션을 장려하기 위해 1999년 11월부터 지금까지 한번도 거르지 않고, 매월 ‘이달의 칭찬대상자’로 선정된 직원들과 오찬을 함께 하고 있습니다.
+
+					“추석 연휴를 맞아 귀성길에 오르는 교보 임직원들을 보면, 혼잡한 교통란 속에서 얼마나 고생스러울까 싶은데 정작 본인들은 마냥 싱글벙글 하더군요. 부디 몸 건강히 잘 다녀오세요. 며칠간 서울은 제가 지키겠습니다.” 추석연휴를 앞두고 신창재 회장이 사내 인트라넷에 올린 메시지입니다.
+
+					직원들을 북돋아주고 격려하기 위한 신 회장의 변신은 끝이 없습니다. 앞치마를 두른 웨이터에서 둥근 요리 모자를 쓴 요리사로 또 기타 치며 노래하는 가수로… 직원들이 마련한 불우이웃돕기 자선행사에서 서빙도 하고 숨겨 놓았던 노래실력과 기타 연주솜씨까지 선보여 주위를 놀라게 하기도 했습니다.
+
+					“사람들 안에 내가 있고 내 안에 사람들이 있다”고 말하는 신창재 회장은 인간 가치를 존중하며 실천하는 마음이 따뜻한 경영자입니다.
+
+				</p>
+			</div>
+		</div>
+
+		<!-- 하단 고정영역 -->
+		<div class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a" onclick="javascript:;">변경</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

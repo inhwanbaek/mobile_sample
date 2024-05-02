@@ -1,0 +1,986 @@
+@charset "utf-8";
+/* mbl : 멤버 */
+.page.mbl {}
+
+.page.mbl .mbl-top{ margin-bottom: 16rem; }
+.page.mbl .mbl-top .hdt{padding-top: 30rem;}
+.page.mbl .mbl-top .hdt+.cdt{margin-top: 16rem;}
+.page.mbl .mbl-top .cdt{ color: #555555; font-size:15rem;}
+
+/* 로그인 */
+.page.mbl.login {}
+.page.mbl.login .botsbox{padding: 30rem 0 30rem 0;}
+.page.mbl.login .botsbox .link{}
+.page.mbl.login .botsbox .link>li{}
+.page.mbl.login .botsbox .link>li+li{margin-top: 10rem;}
+.page.mbl.login .botsbox .link>li>.lk{color: #282828;font-size: 15rem;}
+
+.page.mbl .certi-set{ margin-left: -20rem; margin-right: -20rem; }
+.page.mbl .certi-set .list{border-bottom: 12rem solid #f5f5f5;padding: 0rem 0rem 0rem 20rem;}
+.page.mbl .certi-set .list:last-child{border-bottom-width: 0rem;}
+.page.mbl .certi-set .list>li{ padding-right: 24rem; }
+.page.mbl .certi-set .list>li{border-bottom: #e6e6e6 1rem solid;}
+.page.mbl .certi-set .list>li:last-child{border-bottom-width:0rem;}
+.page.mbl .certi-set .list:last-child>li:last-child{border-bottom-width:1rem;}
+.page.mbl .certi-set .list>li>.lk{display: flex;align-items: center;padding: 16rem 0rem;min-height: 76rem;font-size: 18rem; position: relative;width: 100%;}
+.page.mbl .certi-set .list>li>.lk::after{width:40rem;height:40rem;background:no-repeat center;background-size:40rem auto;font-size: 1rem;color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 0rem;top: 17rem;}
+.page.mbl .certi-set .list>li.bios>.lk::after{background-image: url(../img/mbl/ico_login_bios.png);background-size: 27rem;}
+.page.mbl .certi-set .list>li.simp>.lk::after{background-image: url(../img/mbl/ico_login_simp.png);background-size: 40rem;}
+.page.mbl .certi-set .list>li.ctcm>.lk::after{background-image: url(../img/mbl/ico_applogin_idcd2x.png);}
+.page.mbl .certi-set .list>li.ctfn>.lk::after{background-image: url(../img/mbl/ico_login_ctfn.png);}
+.page.mbl .certi-set .list>li.kpay>.lk::after{background-image: url(../img/mbl/ico_login_kpay.png);background-size: 38rem;}
+.page.mbl .certi-set .list>li.toss>.lk::after{background-image: url(../img/mbl/ico_login_toss.png);background-size: 30rem;}
+.page.mbl .certi-set .list>li.pass>.lk::after{background-image: url(../img/mbl/ico_login_pass.png);background-size: 38rem;}
+.page.mbl .certi-set .list>li.idcd>.lk::after{background-image: url(../img/mbl/ico_login_idcd.png);}
+.page.mbl .certi-set .list>li.port>.lk::after{background-image: url(../img/mbl/ico_login_port.png);}
+
+/* 인증서 */
+.page.mbl.cetis{ display: flex; }
+.page.mbl.cetis.cetis-full{ display: block; }
+/* .page.mbl.cetis .contents{display: flex;width: 100%;justify-content: space-between;flex-wrap: wrap;flex-direction: column;min-height: 100%;}  */
+.page.mbl.cetis .contents {height: 100%;}
+.page.mbl.cetis.faceid .centbox .txt.pt0 {padding-top:0rem; display:inline-block; line-height:24rem;}
+.page.mbl.cetis.faceid .auto-loginBox2 { margin-top:28rem;}
+.page.mbl.cetis.faceid .auto-loginBox2 .checkbox.cr {margin-right:5rem;}
+.page.mbl.cetis.faceid .auto-loginBox2 .ut-tooltip {vertical-align:top;}
+/* .page.mbl.cetis .centbox {padding-bottom: 20rem; min-height: 100%;}  */
+.page.mbl.cetis .centbox .txt{ display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: center; padding-top: 60rem; }
+.page.mbl.cetis .centbox .txt .hdt{ font-size: 22rem; font-weight: 600; }
+.page.mbl.cetis .centbox .txt .cdt{ font-size: 15rem; color: #555555; margin-top: 15rem; text-align: center;}
+.page.mbl.cetis .centbox .txt .bt{width:72rem;height:72rem;background:no-repeat center;background-size:72rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;margin: 27rem 0 0 0;}
+/* .page.mbl.cetis .centbox .txt .bt.fing{ background-image: url(../img/mbl/ico_certi_fing.png);} */
+.page.mbl.cetis .centbox .txt .bt.fing{ background-image: url(../img/mbl/ic_finger_print@2x.png);width:80rem;height:80rem;background-size:80rem auto;}
+/* .page.mbl.cetis .centbox .txt .bt.fing.b{ background-image: url(../img/mbl/ico_certi_fing_b.png);}*/
+/* .page.mbl.cetis .centbox .txt .bt.fingc{ background-image: url(../img/mbl/Group9119@2x.png);} */
+/* .page.mbl.cetis .centbox .txt .bt.face{ background-image: url(../img/mbl/ico_certi_face.png);} */
+.page.mbl.cetis .centbox .txt .bt.faceb {background-image: url(../img/mbl/ic_face_id@2x.png);}  /* 청색 페이스 아이디 아이콘 */
+.page.mbl.cetis .centbox .txt .bt.facew {background-image: url(../img/mbl/ic_face_id@2x.png);}  /* 투명 페이스 아이디 아이콘 */
+.page.mbl.cetis .centbox .txt .bt.simp{ background-image: url(../img/mbl/ico_certi_simp.png);}
+.page.mbl.cetis .centbox .txt .bt.ctcm{ background-image: url(../img/mbl/ico_certi_ctcm.png);}
+.page.mbl.cetis .centbox .txt .bt.ctfn{ background-image: url(../img/mbl/ico_certi_ctfn.png);}
+.page.mbl.cetis .centbox .txt .bt.kpay{ background-image: url(../img/mbl/ico_certi_kpay.png);width:80rem;height:80rem;background-size:80rem auto;}
+.page.mbl.cetis .centbox .txt .bt.naver{ background-image: url(../img/mbl/ico_certi_naver.png);width:80rem;height:80rem;background-size:80rem auto;}
+.page.mbl.cetis .centbox .txt .bt.kbpay{ background-image: url(../img/mbl/ico_certi_kbpay.png);width:80rem;height:80rem;background-size:80rem auto;}
+.page.mbl.cetis .centbox .txt .bt.toss{ background-image: url(../img/mbl/ico_certi_toss.png);width:80rem;height:80rem;background-size:80rem auto;}
+.page.mbl.cetis .centbox .txt .bt.pass{ background-image: url(../img/mbl/ico_certi_pass.png);width:80rem;height:80rem;background-size:80rem auto;}
+.page.mbl.cetis .centbox .txt .bt.dotp{ background-image: url(../img/mbl/ic_otp@2x.png);width:80rem;height:80rem;background-size:90rem auto;}
+.page.mbl.cetis .centbox .txt.tal-fnlist {display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: flex-start; padding-top:35rem;}
+.page.mbl.cetis .centbox .txt.tal-fnlist .tit {margin-top:16rem; margin-bottom:32rem;}
+.page.mbl.cetis .centbox .txt.tal-fnlist .btn-set.ct .btn {padding:0 20rem;}
+.page.mbl.cetis .centbox .txt.tal-fnlist .hdt{text-align: left;}
+.page.mbl.cetis .centbox .txt.tal-fnlist .cdt{text-align: left;}
+.page.mbl.cetis .centbox .txt.tal-fnlist .bdtop {display:block;padding-top:40rem; margin-top:40rem; border-top:solid 2rem #e6e6e6; width:100%;}
+.page.mbl.cetis .centbox .bts{margin-top: 16rem;}
+.page.mbl.cetis .centbox .bts .btn{padding: 0rem 14rem;}
+.page.mbl.cetis .centbox .bts .link-ar {margin-top:28rem;}
+.page.mbl.cetis .centbox .bts .link-ar+.link-ar{margin-top:8rem;}
+.page.mbl.cetis .botsbox{width: 100%; padding-top: 20rem;padding-left: 10rem;min-height: 100rem;position: relative; left:0;top:40rem;}
+.page.mbl.cetis .botsbox .link{/* position: fixed; *//* bottom: 30rem; *//* left: 30rem; */}
+.page.mbl.cetis .botsbox .link>li{}
+.page.mbl.cetis .botsbox .link>li+li{margin-top: 15rem;}
+.page.mbl.cetis .botsbox .link>li>.lk{color: #242424;font-size: 15rem;}
+.page.mbl.cetis .botsbox.center { text-align: center; }
+.page.mbl.cetis .botsbox.center .link {/* left: 0; *//* right: 0; *//* text-align: center; */}
+.page.mbl.cetis .mhinherit .centbox .txt.tal-fnlist .tit {font-size:15rem; line-height:1.4; color:#555555;}
+.page.mbl.cetis .mhinherit .centbox .txt.tal-fnlist .txt.mbbottom {padding-top:0rem; color:#242424; font-size:14rem; line-height:1.4; margin-bottom:24rem;}
+
+/* 인증서가 없습니다. */
+.page.mbl.cetis .nonebox{ padding: 32rem 10rem 20rem 10rem; }
+.page.mbl.cetis .nonebox .hdt{font-size: 22rem;font-weight: 700;}
+.page.mbl.cetis .nonebox .cdt{ font-size: 15rem; color: #555555; margin-top: 15rem; }
+.page.mbl.cetis .nonebox .bts{margin-top: 32rem;}
+.page.mbl.cetis .nonebox .bts .btn{ min-width: 160rem; padding: 0rem 20rem; }
+
+/* 자동로그인 오른쪽 툴팁 */
+.page.mbl.cetis .auto-loginBox {margin-top: 20rem;}
+.page.mbl.cetis .auto-loginBox .label-box {display: flex; align-items: center;justify-content: center;}
+.page.mbl.cetis .auto-loginBox .txt {padding-top: 3rem;align-items: center;}
+
+
+
+/* .auto-loginBox2 {margin-top:0rem;} */
+/* 카카오페이 인증서 아이콘 하단 노출 */
+.page.mbl .kakaopay-icon{ width:90rem;height:90rem;background:no-repeat center;background-size:90rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 27rem 0rem 0rem 0rem; background-image: url(../img/mbl/ico_certi_kpay.png);}
+
+/* 간편비밀번호 등록 */
+.body.mbl.ezpw {background-color: #f5f5f5;}
+.page.mbl.ezpw { padding: 0;}
+.page.mbl.ezpw .contents {min-height: inherit;}
+.page.mbl.ezpw .ezpw-wrap {display: flex; flex-direction: column; min-height: inherit;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-body {flex: 1 0 auto; overflow: hidden; overflow-y: auto; display: flex; flex-direction: column; padding: 0 30rem 30rem 30rem;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-main {flex: 1;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-bottom {}
+.page.mbl.ezpw .ezpw-wrap .ezpw-foot {}
+.page.mbl.ezpw .ezpw-wrap .ezpw-tbox {min-height: 72rem; margin-top: 40rem;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-tbox .hd-tit3 {font-size: 22rem; line-height: 1.33;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-form {min-height: 110rem; text-align: center;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-pass {padding: 25rem 0;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-pass .box {display: flex; align-items: center; justify-content: center;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-pass .box .item {overflow: hidden; width: 16rem; height: 16rem; margin: 0 8rem; border-radius: 50%; border: 1rem solid #447fe4; background-color: transparent; text-indent: -9999rem;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-pass .box .item.active {background-color: #447fe4;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-vald {display: flex; flex-direction: column; align-items: center; margin-top: 7rem; text-align: center;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-vald .msg {display: inline-block; position: relative; padding-left: 16rem; font-size: 12rem; font-weight: 400; line-height: 1.5; text-align: left; vertical-align: top; color: #d65d1c; margin-bottom: 16rem}
+.page.mbl.ezpw .ezpw-wrap .ezpw-vald .msg:before {content: ''; display: inline-block; position: absolute; top: 3rem; left: 0; width: 12rem; height: 12rem; background: url(../img/mbl/ico_ezpw_vald.png) no-repeat 0 0; background-size: 12rem auto;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-opt {text-align: center;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-opt + .ezpw-opt {margin-top: 32rem; }
+.page.mbl.ezpw .ezpw-wrap .ezpw-opt .checkbox>.txt {padding-left: 32rem; font-size: 15rem; color: #555;}
+.page.mbl.ezpw .ezpw-wrap .ezpw-desc {margin-top: 32rem; font-size: 12rem; line-height: 1.5; color: #808080; text-align: left;}
+
+
+/* 생체정보등록 확인팝업 */
+.pop-biocrtcfm {}
+.pop-biocrtcfm .phd {overflow: hidden; height: 24rem; }
+.pop-biocrtcfm .btn-pop-close {display: none;}
+.pop-biocrtcfm .centbox{border-bottom:1rem solid #e6e6e6 !important; padding-bottom: 16rem}
+.pop-biocrtcfm .centbox .txt{ display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: center; }
+.pop-biocrtcfm .centbox .txt .cdt{ font-size: 15rem; color: #555555; text-align: center;}
+/* .pop-biocrtcfm .centbox .txt .bt{width:90rem;height:90rem;background:no-repeat center;background-size:90rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 24rem 0rem;} 
+.pop-biocrtcfm .centbox .txt .bt.fing{background-image: url(../img/mbl/ico_certi_fing_b.png);}
+.pop-biocrtcfm .centbox .txt .bt.face{background-image: url(../img/mbl/ico_certi_face_b.png);}
+.pop-biocrtcfm .centbox .txt .bt.facew{background-image: url(../img/mbl/ico_certi_face_w.png);} */
+.pop-biocrtcfm .btn-set button {background: transparent; border: transparent}
+
+
+/* 앱_지문인증(하단팝업) */
+.pop-appcrt {}
+.pop-appcrt .centbox{padding-bottom: 20rem;}
+.pop-appcrt .centbox .txt{ display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: center; }
+.pop-appcrt .centbox .txt .hdt{ font-size: 22rem; font-weight: 700; }
+.pop-appcrt .centbox .txt .cdt{ font-size: 15rem; color: #555555; margin-top: 15rem; text-align: center;}
+.pop-appcrt .centbox .txt .bt{width:90rem;height:90rem;background:no-repeat center;background-size:90rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 32rem 0rem;}
+/* .pop-appcrt .centbox .txt .bt.fing{background-image: url(../img/mbl/ico_certi_fing_b.png);} */
+
+/* 앱_통합로그인 */
+.page.mbl.sign-adds .gudbox {margin-top: 32rem;}
+.page.mbl.sign-adds .certificate-list { margin-left: -20rem; margin-right: -20rem; }
+.page.mbl.sign-adds .certificate-list .list{padding: 0rem 0rem 0rem 20rem;}
+.page.mbl.sign-adds .certificate-list .list:last-child{border-bottom-width: 0rem;}
+.page.mbl.sign-adds .certificate-list .list>li{ padding-right: 24rem; }
+.page.mbl.sign-adds .certificate-list .list>li+li{border-top: #e6e6e6 1rem solid;}
+.page.mbl.sign-adds .certificate-list .list:last-child > li:last-child {border-bottom: #e6e6e6 1rem solid;}
+.page.mbl.sign-adds .certificate-list .list>li.bdnone{border:0 none !important;}
+.page.mbl.sign-adds .certificate-list .list>li.bdcc {border-top:solid 1rem #e6e6e6;}
+.page.mbl.sign-adds .certificate-list .list>li>.lk{display: flex;align-items: center;padding: 16rem 0rem;min-height: 76rem;font-size: 18rem;font-weight: 400;position: relative;width: 100%;}
+.page.mbl.sign-adds .certificate-list .list>li>.lk::after{width:48rem;height:48rem;background:no-repeat center;background-size:48rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 0rem;top: 50%; transform: translate(0, -50%);}
+/* .page.mbl.sign-adds .certificate-list .list>li.bios>.lk::after{background-image: url(../img/mbl/ico_applogin_bios.png); background-size: 27rem auto;} 
+.page.mbl.sign-adds .certificate-list .list>li.simp>.lk::after{background-image: url(../img/mbl/ico_applogin_simp.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ctcm>.lk::after{background-image: url(../img/mbl/ico_applogin_ctcm.png);} 
+.page.mbl.sign-adds .certificate-list .list>li.ctfn>.lk::after{background-image: url(../img/mbl/ico_applogin_ctfn.png);}
+.page.mbl.sign-adds .certificate-list .list>li.kpay>.lk::after{background-image: url(../img/mbl/ico_applogin_kpay.png);}
+.page.mbl.sign-adds .certificate-list .list>li.naver>.lk::after{background-image: url(../img/mbl/ico_applogin_naver.png);}
+.page.mbl.sign-adds .certificate-list .list>li.toss>.lk::after{background-image: url(../img/mbl/ico_applogin_toss.png); background-size: 48rem auto;}
+.page.mbl.sign-adds .certificate-list .list>li.pass>.lk::after{background-image: url(../img/mbl/ico_applogin_pass.png); background-size: 48rem auto;}*/
+/* 앱통합로그인 디자인 변경 0208 */
+.page.mbl.sign-adds .certificate-list .list>li{ padding-right: 24rem; }
+.page.mbl.sign-adds .certificate-list .list>li.ics{display: flex;align-items: center;min-height:54rem;font-size: 18rem;font-weight:600;position: relative;}
+.page.mbl.sign-adds .certificate-list .list>li.ics.bdcc {border-top:solid 1rem #e6e6e6;}
+
+
+.page.mbl.sign-adds .certificate-list .list>li.ics::after{width:48rem; height:48rem; background:no-repeat center; background-size:48rem auto; font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right:20rem;top: 50%; transform: translate(0, -50%); z-index: -1;}
+
+.page.mbl.sign-adds .certificate-list .list>li.ics.simp::after{background-image: url(../img/mbl/ico_applogin_simp2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.touch::after{background-image: url(../img/mbl/ico_finger_print@2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.face::after{background-image: url(../img/mbl/ic_face@2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.ctcm::after{background-image: url(../img/mbl/ico_applogin_idcd2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.ctfn::after{background-image: url(../img/mbl/ico_applogin_ctfn2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.kpay::after{background-image: url(../img/mbl/ico_applogin_kpay2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.naver::after{background-image: url(../img/mbl/ico_applogin_naver2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.kbpay::after{ background-image: url(../img/mbl/ico_applogin_kbpay2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.toss::after{background-image: url(../img/mbl/ico_applogin_toss2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.pass::after{background-image: url(../img/mbl/ico_applogin_pass2x.png);}
+.page.mbl.sign-adds .certificate-list .list>li.ics.indiv::after{background-image: url();}
+.page.mbl.sign-adds .certificate-list .list>li.ics.corp::after{background-image: url();}
+.page.mbl.sign-adds .certificate-list .list>li.ics .ubdgs {display:inline-block; background-color:#f5f5f5; font-weight:400; width:54rem; height:21rem; padding:3rem 6rem; border-radius:8rem; font-size:12rem; line-height:1.2; color:#808080; margin-left:8rem;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .sm-txt{ font-size: 15rem; }
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks{width: 100%; padding: 16rem 0rem;}
+
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.simp{background-image: url(../img/mbl/ico_applogin_simp2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.touch{background-image: url(../img/mbl/ico_finger_print@2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.face{background-image: url(../img/mbl/ic_face@2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.ctcm{background-image: url(../img/mbl/ico_applogin_idcd2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.ctfn{background-image: url(../img/mbl/ico_applogin_ctfn2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.kpay{background-image: url(../img/mbl/ico_applogin_kpay2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.naver{background-image: url(../img/mbl/ico_applogin_naver2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.kbpay{background-image: url(../img/mbl/ico_applogin_kbpay2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.toss{background-image: url(../img/mbl/ico_applogin_toss2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.pass{background-image: url(../img/mbl/ico_applogin_pass2x.png); background-repeat: no-repeat; background-size: 48rem auto; background-position: 100% 40%;}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.indiv::after{background-image: url();}
+.page.mbl.sign-adds .certificate-list .list>li.ics .lks.corp::after{background-image: url();}
+
+
+
+.pop-layer.sign-adds .gudbox {margin-top: 32rem}
+.pop-layer.sign-adds .certificate-list { margin-left: -20rem; margin-right: -20rem}
+.pop-layer.sign-adds .certificate-list .list{border-bottom: 12rem solid #f5f5f5;padding: 0 0 0 20rem}
+.pop-layer.sign-adds .certificate-list .list>li.bdtop{border-top: 1rem solid #e6e6e6;}
+.pop-layer.sign-adds .certificate-list .list:last-child{border-bottom-width: 0rem}
+.pop-layer.sign-adds .certificate-list .list>li{ padding-right: 24rem}
+.pop-layer.sign-adds .certificate-list .list>li+li{}
+.pop-layer.sign-adds .certificate-list .list:last-child > li:last-child:not(.bdnone) {border-bottom: #e6e6e6 1rem solid;}
+.pop-layer.sign-adds .certificate-list .list>li>.lk{display: flex;align-items: center;padding: 16rem 0rem;min-height: 76rem;font-size: 18rem;font-weight: 400;position: relative;width: 100%;}
+.pop-layer.sign-adds .certificate-list .list>li>.lk::after{width:40rem;height:40rem;background:no-repeat center;background-size:40rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 0rem;top: 50%; transform: translate(0, -50%);}
+
+
+/* .pop-layer.sign-adds .certificate-list .list>li.bios>.lk::after{background-image: url(../img/mbl/ico_applogin_bios.png); background-size: 27rem auto;}
+.pop-layer.sign-adds .certificate-list .list>li.simp>.lk::after{background-image: url(../img/mbl/ico_applogin_simp.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ctcm>.lk::after{background-image: url(../img/mbl/ico_applogin_ctcm.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ctfn>.lk::after{background-image: url(../img/mbl/ico_applogin_ctfn.png);} */
+.pop-layer.sign-adds .certificate-list .list>li.naver>.lk::after{background-image: url(../img/mbl/ico_applogin_naver.png);}
+.pop-layer.sign-adds .certificate-list .list>li.kpay>.lk::after{background-image: url(../img/mbl/ico_applogin_kpay.png);}
+.pop-layer.sign-adds .certificate-list .list>li.naver>.lk::after{background-image: url(../img/mbl/ico_applogin_naver2x.png); background-size: 30rem auto;}
+.pop-layer.sign-adds .certificate-list .list>li.kbpay>.lk::after{ background-image: url(../img/mbl/ico_applogin_kbpay2x.png); background-size: 30rem auto;}
+.pop-layer.sign-adds .certificate-list .list>li.toss>.lk::after{background-image: url(../img/mbl/ico_applogin_toss.png); background-size: 30rem auto;}
+.pop-layer.sign-adds .certificate-list .list>li.pass>.lk::after{background-image: url(../img/mbl/ico_applogin_pass.png); background-size: 38rem auto;}
+
+
+.pop-layer.sign-adds .certificate-list .list>li{ padding-right: 24rem; }
+.pop-layer.sign-adds .certificate-list .list>li.ics{display: flex;align-items: center;min-height:54rem;font-size: 18rem;font-weight:600;position: relative;}
+.pop-layer.sign-adds .certificate-list .list>li.ics.bdcc {border-top:solid 1rem #e6e6e6;}
+.pop-layer.sign-adds .certificate-list .list>li.ics::after{width:48rem;height:48rem;background:no-repeat center;background-size:48rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right:20rem;top: 50%; transform: translate(0, -50%);z-index: -1;}
+.pop-layer.sign-adds .certificate-list .list>li.ics.won::after{background-image: url(../img/mbl/ic_won@2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.simp::after{background-image: url(../img/mbl/ico_applogin_simp2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.touch::after{background-image: url(../img/mbl/ico_finger_print@2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.face::after{background-image: url(../img/mbl/ic_face@2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.phone::after{background-image: url(../img/mbl/ic_phone@2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.card::after{background-image: url(../img/mbl/ic_card@2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.ctcm::after{background-image: url(../img/mbl/ico_applogin_idcd2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.ctfn::after{background-image: url(../img/mbl/ico_applogin_ctfn2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.kpay::after{background-image: url(../img/mbl/ico_applogin_kpay2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.kko::after{background-image: url(../img/mbl/ico_applogin_kko2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.naver::after{background-image: url(../img/mbl/ico_applogin_naver2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.toss::after{background-image: url(../img/mbl/ico_applogin_toss2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.pass::after{background-image: url(../img/mbl/ico_applogin_pass2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.dotp::after{background-image: url(../img/mbl/ico_applogin_dotp2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.securicard::after{background-image: url(../img/mbl/ico_applogin_securicard2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.kbpay::after{background-image: url(../img/mbl/ico_applogin_kbpay2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.payco::after{background-image: url(../img/mbl/ico_applogin_payco2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics.sspass::after{background-image: url(../img/mbl/ico_applogin_sspass2x.png);}
+.pop-layer.sign-adds .certificate-list .list>li.ics .lks{ width: 100%; padding: 0;}
+.pop-layer.sign-adds .certificate-list .list>li.ics .sm-txt{ font-size: 15rem; }
+.pop-layer.sign-adds .certificate-list .list>li.ics .ubdgs {display:inline-block; background-color:#f5f5f5; font-weight:400; min-width:54rem; height:21rem; padding:3rem 6rem; border-radius:8rem; font-size:12rem; line-height:1.2; color:#808080; margin-left:8rem;}
+
+.pop-layer.sign-adds .certificate-list .list>li.ics.nomem{padding-right:20rem;}
+.pop-layer.sign-adds .certificate-list .list>li.ics.nomem .hd-tit2{margin-top: 20rem; margin-bottom: 30rem;}
+
+.pop-layer.pop-case4cert .case4-tit{margin: 16rem 0 30rem 0; padding-right: 20rem;}
+
+/* 인증서등록 */
+.contents .sign-adds .certificate-list { margin-left: -20rem; margin-right: -20rem; }
+.contents .sign-adds .certificate-list .list{border-bottom: 12rem solid #f5f5f5;padding: 0rem 0rem 0rem 20rem;}
+.contents .sign-adds .certificate-list .list:last-child{border-bottom-width: 0rem;}
+.contents .sign-adds .certificate-list .list>li{ padding-right: 24rem; }
+/* .contents .sign-adds .certificate-list .list>li+li{border-top: #e6e6e6 1rem solid;} */
+.contents .sign-adds .certificate-list .list:last-child > li:last-child {border-bottom: #e6e6e6 1rem solid;}
+.contents .sign-adds .certificate-list .list.bdnone:last-child > li:last-child {border-bottom:0 none;}
+.contents .sign-adds .certificate-list .list>li>.lk{display: flex;align-items: center;padding: 16rem 0rem;min-height: 76rem;font-size: 18rem;font-weight: 400;position: relative;width: 100%;}
+.contents .sign-adds .certificate-list .list>li>.lk::after{width:40rem;height:40rem;background:no-repeat center;background-size:40rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right: 0rem;top: 50%; transform: translate(0, -50%);}
+
+/* .contents .sign-adds .certificate-list .list>li.bios>.lk::after{background-image: url(../img/mbl/ico_applogin_bios.png); background-size: 27rem auto;}
+.contents .sign-adds .certificate-list .list>li.simp>.lk::after{background-image: url(../img/mbl/ico_applogin_simp.png);}
+.contents .sign-adds .certificate-list .list>li.ctcm>.lk::after{background-image: url(../img/mbl/ico_applogin_ctcm.png);}
+.contents .sign-adds .certificate-list .list>li.ctfn>.lk::after{background-image: url(../img/mbl/ico_applogin_ctfn.png);} */
+.contents .sign-adds .certificate-list .list>li.kpay>.lk::after{background-image: url(../img/mbl/ico_applogin_kpay.png);}
+.contents .sign-adds .certificate-list .list>li.naver>.lk::after{background-image: url(../img/mbl/ico_applogin_naver.png);}
+.contents .sign-adds .certificate-list .list>li.toss>.lk::after{background-image: url(../img/mbl/ico_applogin_toss.png); background-size: 30rem auto;}
+.contents .sign-adds .certificate-list .list>li.pass>.lk::after{background-image: url(../img/mbl/ico_applogin_pass.png); background-size: 38rem auto;}
+.contents .sign-adds .certificate-list .list>li.kbpay>.lk::after{background-image: url(../img/mbl/ico_applogin_kbpay2x.png);}
+
+
+.contents .sign-adds .certificate-list .list>li{ padding-right: 24rem; }
+.contents .sign-adds .certificate-list .list>li.ics{display: flex;align-items: center;min-height:60rem;font-size: 18rem;font-weight:600;position: relative;}
+.contents .sign-adds .certificate-list .list>li.ics.bdcc {border-top:solid 1rem #ccc;}
+.contents .sign-adds .certificate-list .list>li.ics::after{width:48rem;height:48rem;background:no-repeat center;background-size:48rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right:20rem;top: 50%; transform: translate(0, -50%);z-index: -1;}
+.contents .sign-adds .certificate-list .list>li.ics.won::after{background-image: url(../img/mbl/ic_won@2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.simp::after{background-image: url(../img/mbl/ico_applogin_simp2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.touch::after{background-image: url(../img/mbl/ico_finger_print@2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.face::after{background-image: url(../img/mbl/ic_face@2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.ctcm::after{background-image: url(../img/mbl/ico_applogin_idcd2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.ctfn::after{background-image: url(../img/mbl/ico_applogin_ctfn2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.kpay::after{background-image: url(../img/mbl/ico_applogin_kpay2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.naver::after{background-image: url(../img/mbl/ico_applogin_naver2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.toss::after{background-image: url(../img/mbl/ico_applogin_toss2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.pass::after{background-image: url(../img/mbl/ico_applogin_pass2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.kbpay::after{background-image: url(../img/mbl/ico_applogin_kbpay2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics .ubdgs {display:inline-block; background-color:#f5f5f5; font-weight:400; width:54rem; height:21rem; padding:3rem 6rem; border-radius:8rem; font-size:12rem; line-height:1.2; color:#808080; margin-left:8rem;}
+.contents .sign-adds .certificate-list .list>li.ics.card::after{background-image: url(../img/mbl/ic_card@2x.png);}
+.contents .sign-adds .certificate-list .list>li.ics.dotp::after{background-image: url(../img/mbl/ico_applogin_dotp2x.png);}
+
+.contents .sign-adds .certificate-list .list>li.ics .lks{width: 100%; padding: 16rem 0rem;}
+/* 등록 해지 */
+.page.mbl.deregi .hdt{text-align: center;}
+.page.mbl.deregi .hdt.ico{position: relative;  margin-top: 24rem; }
+.page.mbl.deregi .hdt.ico::after{width:81rem;height:80rem;background:url() no-repeat center; background-image: url(../img/mbl/icon_warning@2x.png); background-size:81rem auto;font-size: 1rem; color: transparent;display: block;margin: 24rem auto;vertical-align:middle;content:'';}
+.page.mbl.deregi .bullet.a > li{font-size: 15rem; line-height: 1.4;}
+
+
+/* .pop-layer.sign-adds .centbox {margin-left:20rem; margin-right:20rem;} */
+.pop-layer.sign-adds .centbox .mbl-top {margin-top:20rem;}
+.pop-layer.sign-adds .centbox .mbl-top p.explain{font-size: 14rem; color: #555555;}
+.pop-layer.sign-adds .centbox .mbl-top + .certificate-list{margin-top:32rem;}
+
+.pop-layer .centbox .visit-box {position:relative; border-radius:8rem; min-height:100rem; padding:20rem 30rem 20rem 20rem; background-color:#fff3e0; margin-top:20rem; margin-right:0rem; margin-bottom:25rem; }
+.pop-layer .centbox .visit-box .tit {font-size:18rem; line-height:18rem; color:#242424; margin-bottom:15rem; font-weight:600;}
+.pop-layer .centbox .visit-box .txt { padding-top:0rem; font-size:15rem; line-height:24rem; color:#242424; display:flex; justify-content:space-between; align-items:flex-end;}
+.pop-layer .centbox .visit-box button.mem_arw {position:absolute; padding-right:20rem;top: 18rem;}
+.pop-layer .centbox .visit-box button.mem_arw::after {content:''; position:absolute; top:0rem; right:0rem; display:inline-block; width:18rem; height:18rem; background:url(../img/common/ico_link_ar.png) left top no-repeat; background-size:auto 18rem;}
+
+.visit-box {position:relative; border-radius:8rem; min-height:100rem; padding:20rem 30rem 20rem 20rem; background-color:#fff3e0; margin-top:33rem; margin-right:0rem; margin-bottom:25rem; }
+.visit-box .tit {font-size:18rem; line-height:18rem; color:#242424; margin-bottom:15rem; font-weight:600;}
+.visit-box .txt { padding-top:0rem; font-size:15rem; line-height:24rem; color:#242424; display:flex; justify-content:space-between; align-items:flex-end;}
+.visit-box button.mem_arw {position:absolute; padding-right:20rem;top: 18rem;right: 20rem;}
+.visit-box button.mem_arw::after {content:''; position:absolute; top:0rem; right:0rem; display:inline-block; width:18rem; height:18rem; background:url(../img/common/ico_link_ar.png) left top no-repeat; background-size:auto 18rem;}
+
+.container.page.mbl.step-byStep .pcert-step .ut-form.a {margin-bottom:25rem;}
+
+/* ===== 앱통합로그인 디자인 변경 0208 */
+.page.mbl.sign-adds .botsbox {margin: 42rem 0 40rem 4rem;}
+.page.mbl.sign-adds .botsbox .link > li + li {margin-top: 16rem;}
+.page.mbl.sign-adds .botsbox .link > li .lk{font-size: 15rem; color: #282828;}
+.page.mbl.sign-adds .ut-terms .plbox .hdt .tit {display: flex; justify-content: space-between;}
+.page.mbl.sign-adds .ut-terms .plbox .hdt .tit .plink {padding: 2rem 0;}
+
+.ut-terms .plbox .plist>li .checkbox .txt strong {font-weight: 700;}
+
+/* 신분증 진위확인 */
+/* .page.mbl.iden{}
+.page.mbl.iden .mbl-top{}
+.page.mbl.iden .mbl-top .hdt{}
+.page.mbl.iden .iden-img{margin-bottom:40rem; padding:30rem;background-color: #f5f5f5; border-radius: 8rem;}
+.page.mbl.iden .iden-img .card{position: relative;padding-bottom: calc( 100% / 320 * 180);background:url(../img/mbl/iden-imgpic2x.png) center no-repeat; background-size:cover;border-radius: 8rem;overflow: hidden;}
+.page.mbl.iden .gudbox{ margin-top: 32rem; } */
+
+
+/* 신분증 진위확인 팝업*/
+.pop-layer.mbl.pop-iden{}
+.pop-layer.mbl.pop-iden .mbl-top{padding-top: 30rem;}
+.pop-layer.mbl.pop-iden .mbl-top .hdt{padding-bottom: 20rem;}
+.pop-layer.mbl.pop-iden .iden-img{margin-bottom:20rem; /*padding:30rem;*/background-color: #f5f5f5; border-radius: 8rem;}
+.pop-layer.mbl.pop-iden .iden-img .card{position: relative;padding-bottom: calc( 100% / 320 * 180);background:url(../img/mbl/iden-imgpic2x.png) center no-repeat; background-size:cover;border-radius: 8rem;overflow: hidden;}
+.pop-layer.mbl.pop-iden .gudbox{ margin-top: 32rem; }
+
+
+
+
+/* 신분증 진위 확인 페이지 */
+.pop-layer.mbl.pop-card .id-cardArea {display:flex;justify-content:center;align-items:center;flex-direction: column;text-align:center;}
+.pop-layer.mbl.pop-card .id-cardBox {margin-bottom:53rem; }
+
+.pop-layer.mbl.pop-card .id-cardArea .id-cardList {font-size:15rem;line-height: 1.4; color:#555;}
+.pop-layer.mbl.pop-card .btn-bottom {position: absolute;bottom: 0rem;left: 0rem;right: 0rem;width:100%;min-height: 32rem;padding: 24rem 20rem 16rem 20rem;z-index: 100;}
+.pop-layer.mbl.pop-card .btn-bottom .btn.w100 {width:100%;}
+
+
+
+
+
+.page.mbl.iden.card{}
+.page.mbl.iden.card .forms{margin-top: 32rem;}
+.page.mbl.iden.card .forms .form>li{ margin-top: 8rem; }
+.page.mbl.iden.card .hd-tit1 {padding-top:32rem;}
+.page.mbl.iden.card .hd-tit2 {padding-top:32rem;}
+.page.mbl.iden.card .iden-img{margin-top:24rem;}
+
+
+.pop-layer.pop-idencard{}
+.pop-layer.pop-idencard .forms{margin-top: 32rem;}
+.pop-layer.pop-idencard .forms .form>li{ margin-top: 8rem; }
+.pop-layer.pop-idencard .hd-tit1 {padding-top:32rem;}
+.pop-layer.pop-idencard .hd-tit2 {padding-top:32rem;}
+.pop-layer.pop-idencard .iden-img{margin-top:24rem;border:1rem solid #e6e6e6;border-radius: 8rem;background-color: #f5f5f5;text-align: center; overflow: hidden;}
+.pop-layer.pop-idencard .iden-img .card{position:relative; display: flex; justify-content: center; align-items: center; min-height:180rem; }
+/* .pop-layer.pop-idencard .iden-img img{position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);} */
+.pop-layer.pop-idencard .mbl-top .cdt{margin-top:20rem;}
+
+.pop-layer.pop-idencard .drive-num .set input{width: calc(25% - 10rem);}
+.pop-layer.pop-idencard .drive-num .set input.c3{width: calc(40% - 10rem);}
+
+.pop-layer.b.idcard-confrim .pct {margin-top:60rem; margin-bottom:24rem; min-height:auto; }
+.pop-layer.b.idcard-confrim .pct .poptents {padding:0rem;}
+.pop-layer.b.idcard-confrim .pct .poptents .msg {text-align:center; line-height:1.4}
+
+/* 휴대폰 명의 */
+.pop-layer.pop-nameconfrimOne .pct {margin-top:16rem; margin-bottom:24rem; min-height:auto;}
+.pop-layer.pop-nameconfrimOne .pct .poptents {padding:0rem 0rem 0rem 16rem; font-size:15rem; line-height:1.4; color:#555;}
+.pop-layer.pop-nameconfrimOne .phd>.in {border-bottom:solid 1rem #cccccc; font-size:18rem; line-height:1.3; margin-left:20rem; margin-right:20rem; padding-left:0rem; height:55rem}
+.pop-layer.pop-nameconfrimTwo .pct .poptents {padding:0rem 0rem 0rem 0rem;}
+.pop-layer.pop-nameconfrimTwo .msg {font-size:18rem; line-height:1.33; font-weight:600; text-align:center;}
+.pop-layer.pop-nameconfrimTwo .msg:before {content:''; width:80rem; height:80rem; display:block; background:url(../img/mbl/ic_exclamation_tri2x.png) left top no-repeat; background-size:80rem auto; margin:0 auto 10rem auto;}
+
+
+.container.page.mbl.pcert .info-box  {background: #fafafa; border-radius: 4rem; margin-top: 16rem; padding: 20rem; font-size: 15rem; color:#555;}
+.container.page.mbl.pcert .info-box .tit {font-size: 14rem; font-weight: 700; color: #242424; margin-bottom: 16rem;}
+.container.page.mbl.pcert .info-box .txt {font-size: 14rem; color: #555; margin-bottom: 16rem;}
+.container.page.mbl.pcert .info-box .list li{font-size: 14rem; color: #242424; margin-bottom: 7rem; display: flex; justify-content: flex-start; align-items: flex-start;}
+.container.page.mbl.pcert .info-box .list li::before{display:block; content:''; width: 24rem; height: 24rem; background: url(../img/mbl/bullet_ic_check@2x.png); background-size: 100% auto; margin-right: 3rem}
+.container.page.mbl.pcert .info-box.b {border-radius: 8rem; margin-top: 40rem;text-align: center; background-color: transparent; border: 1rem solid #e4e4e4;}
+.container.page.mbl.pcert .info-box.b::before{content: ''; display: block; width: 24rem; height: 24rem; margin: 0 auto 16rem auto; background: url('../img/common/ico_excla.png') no-repeat 0 0; background-size: 100% 100%; }
+.container.page.mbl.pcert .info-box.b span {font-size: 15rem; color:#555; }
+
+/* 휴대폰 본인인증 */
+.page.mbl.pcert{}
+.page.mbl.pcert .pcert-step{}
+.page.mbl.pcert .pcert-step .slide{height: auto !important;/* box-sizing: border-box; */}
+.page.mbl.pcert .forms{/* margin-top: 32rem; */padding: 0rem;margin: 0rem;}
+.page.mbl.pcert .forms .form{}
+.page.mbl.pcert .forms .form>li{/* margin-top: 8rem; */}
+.page.mbl.pcert .iden-img{padding-top: 32rem;}
+.page.mbl.pcert .forms .msg{font-size:15rem; color:#555555; margin-top:32rem;}
+
+
+/* 휴대폰 인증 - 팝업 */
+.pop-mbl.pop-pcert .mbl-top{margin-top: 16rem;}
+.pop-mbl.pop-pcert .info-box  {background: #fafafa; border-radius: 4rem; margin-top: 16rem; padding: 20rem; font-size: 15rem; color:#555;}
+.pop-mbl.pop-pcert .info-box .tit {font-size: 14rem; font-weight: 700; color: #242424; margin-bottom: 16rem;}
+.pop-mbl.pop-pcert .info-box .txt {font-size: 14rem; color: #555; margin-bottom: 16rem;}
+.pop-mbl.pop-pcert .info-box .list li{font-size: 14rem; color: #242424; margin-bottom: 7rem; display: flex; justify-content: flex-start; align-items: flex-start;}
+.pop-mbl.pop-pcert .info-box .list li::before{display:block; content:''; width: 24rem; height: 24rem; background: url(../img/mbl/bullet_ic_check@2x.png); background-size: 100% auto; margin-right: 3rem}
+.pop-mbl.pop-pcert .info-box.b {border-radius: 8rem; margin-top: 40rem;text-align: center; background-color: transparent; border: 1rem solid #e4e4e4;}
+.pop-mbl.pop-pcert .info-box.b::before{content: ''; display: block; width: 24rem; height: 24rem; margin: 0 auto 16rem auto; background: url('../img/common/ico_excla.png') no-repeat 0 0; background-size: 100% 100%; }
+.pop-mbl.pop-pcert .info-box.b span {font-size: 15rem; color:#555; }
+
+.pop-mbl.pop-pcert .certi-btn{margin-top: 8rem;}
+.pop-mbl.pop-pcert .certi-btn>.btn{width: 100%;}
+.pop-mbl.pop-pcert .pcert-step .slide{height: auto !important;}
+.pop-mbl.pop-pcert {/* margin-top: 32rem; */padding: 0rem;margin: 0rem;}
+.pop-mbl.pop-pcert .iden-img{padding-top: 32rem;}
+.pop-mbl.pop-pcert .forms .msg{font-size:15rem; color:#555555; margin-top:32rem;}
+.pop-mbl.pop-pcert .pbt .txt-btn{text-align: center; flex:1; display: flex; align-items: flex-end; justify-content: center; margin-bottom:30rem}
+
+/* 휴대폰 본인인증 약관동의 */
+.pop-temsagree{}
+
+/* 휴대폰 본인인증 명의확인 */
+.pop-layer .pop-nameconfrims{}
+.pop-layer .pop-nameconfrims .msg{font-size:15rem;color:#555555;padding-top: 16rem;}
+
+/* 카드사본인확인 목록 */
+.page.mbl .card-list{ padding: 0rem 12rem; }
+.page.mbl .card-list .list{display: flex;flex-wrap: wrap;}
+.page.mbl .card-list .list>li{width: calc(100% / 3);padding: 16rem 0rem 0rem 0rem;text-align: center;}
+.page.mbl .card-list .list>li .bt{border: #e6e6e6 solid 1rem;border-radius: 8rem;padding: 10rem 5rem 10rem 5rem;width: 84rem;height: 84rem;}
+.page.mbl .card-list .list>li .bt .img{ height: 28rem; max-width: 50rem; object-fit: contain; }
+.page.mbl .card-list .list>li .bt .t{font-size:12rem;margin-top: 5rem;display: block;}
+.page.mbl.card{ padding-bottom: 30rem; }
+.page.mbl.card .card-list{}
+.page.mbl.card .card-list .cards{margin-top: 40rem;padding-left: 7rem;}
+
+/* 카드사본인확인 목록 팝업*/
+.pop-layer.pop-cardList { padding-bottom: 30rem; }
+.pop-layer.pop-cardList .mbl-top .hdt {margin-top: 30rem}
+.pop-layer.pop-cardList .card-list{ padding: 0rem 12rem; margin-top: 16rem}
+.pop-layer.pop-cardList .card-list .list{display: flex;flex-wrap: wrap;}
+.pop-layer.pop-cardList .card-list .list>li{width: calc(100% / 3);padding: 16rem 0rem 0rem 0rem;text-align: center;}
+.pop-layer.pop-cardList .card-list .list>li .bt{border: #e6e6e6 solid 1rem;border-radius: 8rem;padding: 10rem 5rem 10rem 5rem;width: 84rem;height: 84rem;}
+.pop-layer.pop-cardList .card-list .list>li .bt .img{ height: 28rem; max-width: 50rem; object-fit: contain; }
+.pop-layer.pop-cardList .card-list .list>li .bt .t{font-size:12rem;margin-top: 5rem;display: block;}
+.pop-layer.pop-cardList .card-list{}
+.pop-layer.pop-cardList .card-list .cards{margin-top: 40rem;padding-left: 7rem;}
+
+/* 카드사본인확인 목록 팝업(page*/
+.cardList { padding-bottom: 30rem; }
+.cardList .mbl-top .hdt {margin-top: 30rem}
+.cardList .card-list{ padding: 0rem 12rem; margin-top: 16rem}
+.cardList .card-list .list{display: flex;flex-wrap: wrap;}
+.cardList .card-list .list>li{width: calc(100% / 3);padding: 16rem 0rem 0rem 0rem;text-align: center;}
+.cardList .card-list .list>li .bt{border: #e6e6e6 solid 1rem;border-radius: 8rem;padding: 10rem 5rem 10rem 5rem;width: 84rem;height: 84rem;}
+.cardList .card-list .list>li .bt .img{ height: 28rem; max-width: 50rem; object-fit: contain; }
+.cardList .card-list .list>li .bt .t{font-size:12rem;margin-top: 5rem;display: block;}
+.cardList .card-list{}
+.cardList .card-list .cards{margin-top: 40rem;padding-left: 7rem;}
+
+/* 카드번호입력 */
+
+/* ASR인증 */
+.page.mbl.card.checkicon{ text-align: center; margin-top: 30rem; }
+
+
+
+/* .page.mbl.card .certi .ico.pw2p{width:90rem; height:90rem; background:url(../img/mbl/ico_ars@2x.png) no-repeat center; background-size:90rem auto; font-size: 1rem; color: transparent; display:inline-block; vertical-align:middle; content:''; margin: 0rem 0rem 0rem 0rem} */
+.page.mbl.card.checkicon .pcert-step:after{width:80rem; height:80rem; background:url(../img/mbl/ico_certi_simp.png) no-repeat center; background-size:80rem auto; font-size: 1rem; color: transparent; display:inline-block; vertical-align:middle; content:''; margin:22rem 0rem 0rem 0rem}
+.page.mbl.card.checkicon .pcert-step h2 {text-align:left;}
+.page.mbl.card.checkicon .mbl-top .hdt {padding-top:0rem;margin-bottom:25rem;}
+.container.page.mbl.bk.one .pcert-step h2 {margin-bottom:25rem;}
+
+.pop-layer.pop-checkicon{ text-align: center;  }
+.pop-layer.pop-checkicon .pcert-step:after{width:80rem; height:80rem; background:url(../img/mbl/ico_certi_simp.png) no-repeat center; background-size:80rem auto; font-size: 1rem; color: transparent; display:block; vertical-align:middle; content:''; margin:22rem auto;}
+.pop-layer.pop-checkicon .pcert-step h2 {text-align:left;}
+.pop-layer.pop-checkicon .mbl-top .hdt {padding-top:30rem;margin-bottom:25rem;}
+
+.checkicon{ text-align: center;  }
+.checkicon .pcert-step:after{width:80rem; height:80rem; background:url(../img/mbl/ico_certi_simp.png) no-repeat center; background-size:80rem auto; font-size: 1rem; color: transparent; display:block; vertical-align:middle; content:''; margin:22rem auto;}
+.checkicon .pcert-step h2 {text-align:left;}
+
+
+/* 카드사 등록정보 확인 */
+.page.mbl.card.info .botlink{ margin-top: 20rem; }
+.pop-layer .botlink{ margin-top: 20rem; }
+
+/* 1원인증 은행목록*/
+.page.mbl.bk.one{}
+.card-list.bk{}
+
+/* 1원입금 인증번호입력 */
+.page.mbl.bk.certi{}
+.page.mbl .bankext{width:227rem;height:147rem;background:url(../img/mbl/img_receipt@2x.png) no-repeat center;background-size:227rem auto;font-size: 1rem;color: transparent;display: block;vertical-align:middle;content:'';margin: 30rem auto 0rem auto;position: relative;}
+
+.pop-layer.pop-idencard .bankext{width:227rem;height:147rem;background:url(../img/mbl/img_receipt@2x.png) no-repeat center;background-size:227rem auto;font-size: 1rem;color: transparent;display: block;vertical-align:middle;content:'';margin: 30rem auto 0rem auto;position: relative;}
+
+.container.page.mbl.iden .custtemp {font-size:15rem; line-height:1.4; letter-spacing: -0.75rem; margin-top:25rem;}
+
+/* mbl : 멤버 */
+.page.mbl {}
+
+/* Welcome */
+.container.page.mbl.join {display: flex;}
+.container.page.mbl.join .contents { width: 100% }
+/* .container.page.mbl.join .welcome-area {padding: 85rem 10rem; min-height: 100%; height: calc(100vh - 22rem); overflow-y: auto; box-sizing: border-box; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; background: url(../img/mbl/img_splash@2x.png) no-repeat 0 0; background-size: 165rem 360rem;  background-position: 50% 181rem;} 서비스 둘러보기 글자 위치 변경으로 flex 수정 */
+.container.page.mbl.join .welcome-area {padding: 66rem 10rem 0 10rem;/* min-height: 100%; *//* height: calc(100vh - 22rem); */overflow-y: auto;box-sizing: border-box;background-size: 165rem 360rem;background-position: 50% 181rem;}
+/* .container.page.mbl.join .welcome-area::after {display:block; content:''; width:165rem ;  }  */
+.container.page.mbl.join .welcome-area .hd-tit3{margin-bottom: 20rem;}
+.container.page.mbl.join .welcome-area .hd-tit1{margin-bottom: 20rem; font-weight:400;font-size:30rem;line-height:36rem;}
+
+/* .container.page.mbl.join .welcome-area .hd-tit1.fnwh-p {}  */
+/* 0207수정*/
+
+.container.page.mbl.join .txt-bottom{text-align: center;margin-top:26rem;padding-bottom: 20rem;}/* 0207수정*/
+.container.page.mbl.join .txt-bottom{}
+
+/* 정보입력 */
+.container.page.mbl.join .join-step {padding-top: 14rem;/*min-height: 100%;*/ height: auto; /*overflow: auto;*/position: relative;box-sizing: border-box;display: flex;flex-direction: column;/* justify-content: space-between; 상하 간격 조정 0209 */}
+.container.page.mbl.join .join-step.full{height: calc(100vh - 204rem);}
+.container.page.mbl.join .join-step .hd-tit2 {margin-bottom:5rem; font-size:32rem; line-height:40rem; color:#242424; line-height:1.25; font-weight:normal; margin-bottom: 40rem}
+.container.page.mbl.join .join-step .hd-tit2 strong {font-weight:600; }
+.container.page.mbl.join .join-step .emoji {margin-bottom: 4rem}
+.container.page.mbl.join .join-step .input.ut-rsnum,
+.container.page.mbl.join .join-step .input.ut-rsnum + .ut-phone {margin-top: 16rem;}
+.container.page.mbl.join .join-step.b .hd-tit2 {margin-bottom: 16rem}
+.container.page.mbl.join .join-step.b .ut-terms .plbox .hdt .tit {display: flex; justify-content: space-between;}
+
+
+
+
+/* 안내 박스 */
+.container.page.mbl.join .info-box  {background: #fafafa; border-radius: 4rem; margin-top: 16rem; padding: 20rem; font-size: 15rem; color:#555;}
+.container.page.mbl.join .info-box .tit {font-size: 14rem; font-weight: 700; color: #242424; margin-bottom: 16rem;}
+.container.page.mbl.join .info-box .txt {font-size: 14rem; color: #555; margin-bottom: 16rem;}
+.container.page.mbl.join .info-box .list li{font-size: 14rem; color: #242424; margin-bottom: 7rem; display: flex; justify-content: flex-start; align-items: flex-start;}
+.container.page.mbl.join .info-box .list li::before{display:block; content:''; width: 24rem; height: 24rem; background: url(../img/mbl/bullet_ic_check@2x.png); background-size: 100% auto; margin-right: 3rem}
+
+.container.page.mbl.join .info-box.b {border-radius: 8rem; margin-top: 40rem;text-align: center; background-color: transparent; border: 1rem solid #e4e4e4;}
+.container.page.mbl.join .info-box.b::before{content: ''; display: block; width: 24rem; height: 24rem; margin: 0 auto 16rem auto; background: url('../img/common/ico_excla.png') no-repeat 0 0; background-size: 100% 100%; }
+.container.page.mbl.join .info-box.b span {font-size: 15rem; color:#555; }
+
+
+
+/* 회원가입 공통  */
+/* .container.page.mbl.join .txt-btn{position: absolute; left: 0; right: 0; bottom: 0rem; text-align: center; } */
+.container.page.mbl.join .txt-btn{text-align: center; flex:1; display: flex; align-items: flex-end; justify-content: center; margin-top: 40rem;}
+.container.page.mbl.pcert .txt-btn{text-align: center; flex:1; display: flex; align-items: flex-end; justify-content: center; margin-bottom:30rem}
+
+
+/*회원가입 완료*/
+.page.mbl.join.fin .complate-msg{margin-bottom: 72rem;}
+.page.mbl.join.fin .complate-msg.icon1::before{width:72rem; height: 72rem; margin: 20rem auto 32rem; background-image: url(../img/mbl/icon_mbl_complete@2x.png); background-size: 72rem;}
+.page.mbl.join.fin .join-fin{padding-top: 40rem; border-top: 2rem solid #e6e6e6;}
+.page.mbl.join.fin .join-fin .bullet.a{margin-top: 16rem; margin-bottom: 40rem;}
+.page.mbl.join.fin .join-fin .bullet.a>li{color: #555; font-size: 15rem; line-height: 1.4;}
+.page.mbl.join.fin .join-fin .bullet.a>li+li{margin-top: 16rem;}
+
+
+
+/* 약관동의 팝업 */
+.pop-jointerms .plbox .hdt {display: flex; justify-content: space-between;}
+.pop-jointerms .plbox .hdt .plink{font-size: 12rem; color: #808080; display: inline-block; padding: 4rem 0 4rem 0rem;}
+
+/* 약관동의 꺽새 */
+.container.page.mbl .plist .plinks { text-indent:-99999rem; position:relative; display:inline-block; margin-right:0rem;width:24rem; height:24rem; }
+.container.page.mbl .plist .plinks:after {content:''; display:block; width:24rem; height:24rem; background: url(../img/common/ic_chevron_right2x.png); background-size: 100% auto; position:absolute; top:50%; right:0rem; transform:translate(0, -50%);}
+.container.page.mbl .plinks-fnno {font-size:0rem; text-indent:-555555rem; position:relative;}
+.container.page.mbl .plinks-fnno:after {content:''; display:none; width:24rem; height:24rem; background: url(../img/common/ic_chevron_right2x.png); background-size: 100% auto; position:absolute; top:50%; right:0rem; transform:translate(0, -50%); }
+.pop-temsagree .plist .plinks {width:24rem; height:24rem;  text-indent:-99999rem; position:relative; display:inline-block; background: url(../img/common/ic_chevron_right2x.png); background-size: 100% auto; position:absolute; top:50%; right:0rem; transform:translate(0, -50%);}
+.pop-temsagree .plinks-fnno {font-size:0rem; text-indent:-555555rem; position:relative; width:24rem; height:24rem; background: url(../img/common/ic_chevron_right2x.png); background-size: 100% auto; position:absolute; top:50%; right:0rem; transform:translate(0, -50%); }
+ /* 아코디언 화살표 가림 처리 */
+
+/* 앱 연결 브릿지 */
+.container.page.mbl .hdt-box {margin-top: 110rem}
+.container .contents.vspace.column-tit {display:flex; flex-direction:column;box-sizing:border-box; justify-content:space-between;height: 100%}
+.container .contents.vspace.column-tit img {width:75rem; height:auto; object-fit:contain;}
+.container.page.mb.iden .custtemp {margin-top:25rem; font-size:15rem; letter-spacing:-0.75rem; color:#242424;}
+.container.page.mbl.iden .bottom-kyobo {position: absolute; bottom: 50rem; width: calc(100% - 40rem); color:#8e8e8e; font-size:12rem; text-align:center; margin-bottom: 10rem;}
+
+/* 공동인증서 리스트 */
+.mbl-titp .hdt{padding-top: 30rem;}
+.mbl-titp .hdt+.cdt{margin-top: 16rem;}
+.mbl-titp .cdt{ color: #555555; font-size:15rem;}
+.pop-layer .author-area {margin-top:32rem;}
+.pop-layer .author-wrap {/*display: flex;justify-content: space-between;flex-wrap: wrap;flex-direction: column;*/margin:0 20rem;  box-sizing:border-box;min-height: 100%;}
+.pop-layer .author-wrap ul.author-area li {margin-bottom:16rem;}
+.pop-layer .author-wrap ul.author-area li a:last-child dl {margin-bottom:8rem;}
+.pop-layer .author-wrap ul.author-area li a:last-child dl:last-child {margin-bottom:0rem;}
+.pop-layer .author-wrap ul.author-area li a {padding:20rem;border:solid 1rem #e6e6e6; border-radius:4rem; position:relative; display:block;}
+.pop-layer .author-wrap ul.author-area li a:before {content:''; display:inline-block; position:absolute; top:0%; left:20rem; width:48rem; height:48rem; background:url('../img/mbl/ic_certificate2x.png') center no-repeat;  background-size:100% auto; margin-top:20rem; }
+.pop-layer .author-wrap ul.author-area li .author-box {margin-left:85rem;position: relative;}
+.pop-layer .author-wrap ul.author-area li a h4.aut-tit {color:#242424; font-weight:600; font-size:16rem; line-height:1.31; margin-bottom:13rem;}
+.pop-layer .author-wrap ul.author-area li a button {right:0; top:-7rem;position: absolute;}
+.pop-layer .author-wrap ul.author-area li a dl {display:flex; justify-content:flex-start; align-items: flex-start; margin-bottom:10rem;}
+.pop-layer .author-wrap ul.author-area li a dl dt {display:flex; justify-content:space-around; align-items:center; width:45rem; margin-right:8rem; color:#555555; font-size:15rem; line-height:1.4;  }
+.pop-layer .author-wrap ul.author-area li a dl dt.expiration {color:#e64c2e;}
+.pop-layer .author-wrap ul.author-area li a dl dd {color:#555555; font-size:15rem; line-height:1.4; text-align:left; word-wrap:break-word; width:calc(100% - 53rem);}
+.pop-layer .author-wrap ul.author-area li a dl dd.expiration {color:#e64c2e;}
+.pop-layer .author-wrap ul.author-area li a dl dd .d-day {color:#d65d1c;margin-left: 10rem;}
+.pop-layer .author-wrap .mbl-titp+.aling-center{padding-bottom: 40rem;}
+.btn.h{border-color: #d65d1c;background-color: #ffffff;color: #d65d1c;}
+.btn.j{background-color: #f5f5f5;}
+.container.page.mbl .author-wrap {margin-top:32rem;}
+.container.page.mbl .author-wrap {/*display: flex;justify-content: space-between;flex-wrap: wrap;flex-direction: column;*/margin:0 20rem; box-sizing:border-box;min-height: 100%;}
+.container.page.mbl .author-wrap.mg-wrap {margin-left:0rem; margin-right:0rem; display:block;}
+.container.page.mbl .author-wrap.mg-wrap ul.author-area {margin-top:32rem;}
+.container.page.mbl .author-wrap ul.author-area li {margin-bottom:16rem;}
+.container.page.mbl .author-wrap ul.author-area li a:last-child dl {margin-bottom:8rem;}
+.container.page.mbl .author-wrap ul.author-area li a:last-child dl:last-child {margin-bottom:0rem;}
+.container.page.mbl .author-wrap ul.author-area li a {padding:20rem;border:solid 1rem #e6e6e6; border-radius:4rem; position:relative; display:block;}
+.container.page.mbl .author-wrap ul.author-area li a:before {content:''; position:absolute; top:20rem; left:20rem; width:48rem; height:48rem; background:url('../img/mbl/ic_certificate2x.png') center no-repeat;  background-size:100% auto;}
+.container.page.mbl .author-wrap ul.author-area li .author-box {margin-left:70rem;}
+.container.page.mbl .author-wrap ul.author-area li a h4.aut-tit {color:#242424; font-weight:600; font-size:16rem; line-height:1.31; margin-bottom:13rem;}
+.container.page.mbl .author-wrap ul.author-area li a dl {display:flex; justify-content:flex-start; align-items: flex-start; margin-bottom:10rem;}
+.container.page.mbl .author-wrap ul.author-area li a dl dt {width:45rem; margin-right:8rem; color:#555555; font-size:15rem; line-height:1.4; display:flex; justify-content:space-around; align-items:center; }
+.container.page.mbl .author-wrap ul.author-area li a dl dd {color:#555555; font-size:15rem; line-height:1.4; text-align:left;word-wrap:break-word; width:calc(100% - 53rem);}
+.container.page.mbl .author-wrap ul.author-area li a dl.dday dt, .container.page.mbl .author-wrap ul.author-area li a dl.dday dd{color:#e64c2e;}
+.container.page.mbl .author-wrap ul.author-area li a > .ut-bdgs{position: absolute; top: 20rem; right: 20rem;}
+
+.container.page.mbl .author-wrap ul.author-area.sel-btn li {margin-bottom:16rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li a {border:0rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li:last-child dl {margin-bottom:8rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li:last-child dl:last-child {margin-bottom:0rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li {padding:20rem;border:solid 1rem #e6e6e6; border-radius:4rem; position:relative; display:block;}
+/* .container.page.mbl .author-wrap ul.author-area.sel-btn li:before {content:''; display:inline-block; width:48rem; height:34rem; background:url('../img/mbl/ic_certificate2x.png') left top no-repeat;  background-size:48rem 34rem; margin-top:24rem; position:absolute; top:25%; left:20rem;} */
+.container.page.mbl .author-wrap ul.author-area.sel-btn li .author-box {margin-left:85rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li h4.aut-tit {color:#242424; font-weight:600; font-size:16rem; line-height:1.31; margin-bottom:13rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li dl {display:flex; justify-content:flex-start; align-items: flex-start; margin-bottom:10rem;}
+.container.page.mbl .author-wrap ul.author-area.sel-btn li dl dt {width:45rem; margin-right:8rem; color:#555555; font-size:15rem; line-height:1.4; display:flex; justify-content:space-around; align-items:center; }
+.container.page.mbl .author-wrap ul.author-area.sel-btn li dl dd {color:#555555; font-size:15rem; line-height:1.4; text-align:left;word-wrap:break-word; width:calc(100% - 53rem);}
+.container.page.mbl .author-wrap ul.author-area.sel-btn .btn-set .btn {border:solid 1px #818181; border-radius:5rem; font-size:17rem; /*padding:0rem 50rem;*/ line-height:45rem; height:45rem; display:block;}
+
+
+.pop-layer.pop-signature .cont_lists, .pop-layer.pop-confirmOne .cont_lists, .pop-layer.pop-confirmTwo .cont_lists   {margin-left:20rem; margin-right:20rem; margin-bottom:20rem;}
+.container.page.mbl .aling-center {text-align:center; margin-bottom:42rem;}
+/* 공동인증서 일반 페이지 */
+.pop-layer .aling-center {text-align:center; margin-bottom:42rem;}
+
+.pop-layer.pop-mhinherit .mbbottom {margin-bottom:25rem !important;}
+.pop-layer.pop-mhinherit .centbox {margin-left:20rem; margin-right:20rem;}
+.pop-layer.pop-mhinherit .centbox .tit {font-size:15rem; line-height:1.4; margin:15rem 0 0rem 0; color:#555;}
+.pop-layer.pop-mhinherit .centbox .tit.bdtop {border-top:solid 2px #e6e6e6; padding-top:40rem; margin-top:40rem;}
+.pop-layer.pop-mhinherit .centbox .btn-set .btn{display:inline-block; width:auto;}
+
+
+/* 인증서 발급  */
+.pop-layer.pop-issuance {}
+.pop-layer.pop-issuance .innr {margin-top: 47rem}
+.pop-layer.pop-issuance .innr .s-tit {font-size: 15rem; color: #555555; margin-top: 16rem;}
+.pop-layer.pop-issuance .innr .txt {font-size: 14rem; color: #242424; margin-top: 32rem}
+.pop-layer.pop-issuance .innr .bts button{margin-top: 24rem; min-width: 196rem; font-size: 15rem; color:#242424}
+.pop-layer.pop-issuance .innr .bts + .txt {border-top: 1rem solid #e6e6e6; padding-top: 40rem}
+
+
+.page.mbl.issuance {}
+.page.mbl.issuance .issuance-wrap {margin-top: 47rem}
+.page.mbl.issuance .issuance-wrap .s-tit {font-size: 15rem; color: #555555; margin-top: 16rem;}
+.page.mbl.issuance .issuance-wrap .txt {font-size: 14rem; color: #242424; margin-top: 32rem}
+.page.mbl.issuance .issuance-wrap .bts button{margin-top: 24rem; min-width: 196rem; font-size: 15rem; color:#242424}
+
+.page.mbl.issuance .issuance-wrap .bts + .txt {border-top: 1rem solid #e6e6e6; padding-top: 40rem}
+
+.page.mbl.issuance .issuance-bottom{margin-top: 50rem;}
+
+/* 아이콘 추가 */
+.pop-layer .pct {display:flex; flex-direction:column; justify-content:space-between}
+.pop-layer .centbox{margin:0; }
+.pop-layer.pop-appcrt .centbox .txt{padding-top:0rem; }
+.pop-layer.pop-facew .poptents .centbox .txt{padding-top:0rem; }
+.pop-layer.c.pop-facew .poptents {padding-bottom:20rem;}
+
+.pop-layer .centbox .txt{ display: flex; justify-content: center; flex-wrap: wrap; flex-direction: column; align-items: center; }
+.pop-layer .centbox .txt.centers {text-align:center}
+.pop-layer .centbox .txt .hdt {color:#242424; font-size:22rem; line-height:1.45; text-align:center; font-weight:600; margin:64rem 0 23rem;}
+.pop-layer .centbox .txt .cdt {color:#555555; font-size:16rem; line-height:1.31; text-align:center; margin-bottom: 26rem}
+.pop-layer .centbox .txt .bt{width:90rem;height:90rem;margin-bottom:16rem; background:no-repeat center;background-size:72rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';}
+/* .pop-layer .centbox .txt .bt.fing{ background-image: url(../img/mbl/ico_certi_fing.png);} */
+.pop-layer .centbox .txt .bt.fing{ background-image: url(../img/mbl/ic_finger_print@2x.png);width:80rem;height:80rem;background-size: 100% auto;}
+.pop-layer .centbox .txt .bt.fing.b{ background-image: url(../img/mbl/ic_finger_print@2x.png); }
+.pop-layer .centbox .txt .bt.face{ background-image: url(../img/mbl/ic_face_id@2x.png);width:80rem;height:80rem;background-size: 100% auto;}
+/* .pop-layer .centbox .txt .bt.face{ background-image: url(../img/mbl/ico_certi_face.png);}  */
+.pop-layer .centbox .txt .bt.faceb {background-image: url(../img/mbl/ic_face_id@2x.png);}  /* 청색 페이스 아이디 아이콘 */
+.pop-layer .centbox .txt .bt.facew {background-image: url(../img/mbl/ic_face_id@2x.png); width:80rem;height:80rem;background-size: 100% auto;}  /* 투명 페이스 아이디 아이콘 */
+.pop-layer .centbox .txt .bt.simp{ background-image: url(../img/mbl/ico_certi_simp.png);}  /*간편비밀번호*/
+.pop-layer .centbox .txt .bt.ctfn{ background-image: url(../img/mbl/ico_certi_ctfn.png);}  /*금융인증서*/
+.pop-layer .centbox .txt .bt.ctcm{ background-image: url(../img/mbl/ico_certi_ctcm.png);}  /*공동인증서*/
+.pop-layer .centbox .txt .bt.kpay{ background-image: url(../img/mbl/ico_certi_kpay.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.kko{ background-image: url(../img/mbl/ico_certi_kko.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.toss{ background-image: url(../img/mbl/ico_certi_toss.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.pass{ background-image: url(../img/mbl/ico_certi_pass.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.naver{ background-image: url(../img/mbl/ico_certi_naver.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.kbpay{ background-image: url(../img/mbl/ico_certi_kbpay.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.payco{ background-image: url(../img/mbl/ico_certi_payco.png);width:80rem;height:80rem;background-size:80rem auto;}
+.pop-layer .centbox .txt .bt.sspass{ background-image: url(../img/mbl/ico_certi_sspass.png);width:80rem;height:80rem;background-size:80rem auto;}
+
+.pop-layer .centbox .txt .bt.dotp{ background-image: url(../img/mbl/ic_otp@2x.png);width:80rem;height:80rem;background-size:90rem auto;}
+.pop-layer .centbox .txt .bt + .cdt {margin-top:0;}
+
+.pop-layer.pop-cetis .centbox{margin-top:60rem}
+
+.pop-layer .link-box {text-align: center;}
+.pop-layer .link-box .link>li+li{margin-top: 15rem;}
+.pop-layer .link-box .link>li>.lk{color: #242424;font-size: 15rem;}
+
+
+.pop-layer.pop-givedic .phone-wrap {margin-left:20rem; margin-right:20rem;}
+.pop-layer.pop-givedic .phone-wrap .phone {background:#f5f5f5; border-radius:8rem; padding:20rem 0; margin-top:15rem; margin-bottom:20rem;}
+.pop-layer.pop-givedic .phone-wrap .phone .bridge {width:159rem; height:72rem; background:url(../img/mbl/pc-phone.png) left top no-repeat; background-size:159rem auto; margin:0 auto;}
+.pop-layer.pop-givedic .phone-wrap .num-titl {font-size:16rem; line-height:1.31; margin-bottom:15rem; font-weight:600;}
+.pop-layer.pop-givedic .phone-wrap .num-inputs {display:flex; justify-content:center; align-items:center; margin-bottom:25rem;}
+.pop-layer.pop-givedic .phone-wrap .num-inputs .num {display:inline-block; width:100%;padding:10rem 0;border:solid 1rem #dddddd; font-size:15rem; line-height:1.6; font-weight:500; text-align:center; border-radius:4rem;}
+.pop-layer.pop-givedic .phone-wrap .num-inputs>span+span {margin-left:10rem; }
+
+.pop-layer .num-plist {margin-bottom:25rem; line-height:1.43; font-size:14rem; color:#555555; font-weight:400;}
+
+.pop-layer.pop-givedic ol.oder-list li {margin-bottom:15rem; line-height:24rem; font-size:14rem; position:relative; padding-left:36rem;color:#555555; font-weight:400;}
+.pop-layer.pop-givedic ol.oder-list li span {display:inline-block; width:24rem; height:24rem; border-radius:50%; background-color:#e6e6e6; color:#242424; position:absolute; top:0rem; left:0rem; text-align:center;}
+
+.pop-layer.pop-givedic .export-txt{margin-top: 32rem;  color:#555; font-size: 15rem;}
+.pop-layer.pop-givedic .export-box{ margin-top: 24rem; margin-bottom: 32rem; padding: 20rem; background-color: #f5f5f5; border-radius: 8rem;}
+.pop-layer.pop-givedic .export-box .ico-lst{ display:flex; justify-content: center; }
+.pop-layer.pop-givedic .export-box .ico-lst>li+li{ position: relative; padding-left: 64rem; }
+.pop-layer.pop-givedic .export-box .ico-lst>li+li::after{ content:""; position: absolute; top:22rem; left: 22rem; width: 23rem; height: 15rem; background-image: url(../img/mbl/ico-rightarrow@2x.png); background-repeat: no-repeat; background-size: 23rem; }
+.pop-layer.pop-givedic .export-box .ico-lst .ico{position: relative; width: 48rem; padding-top: 55rem; text-align: center;}
+.pop-layer.pop-givedic .export-box .ico-lst .ico::before{content:''; position:absolute; top:0; left:0; width: 48rem; height: 48rem; }
+.pop-layer.pop-givedic .export-box .ico-lst .ico-pc::before{background:url(../img/mbl/ic_desktop@2x.png) left top no-repeat; background-size:48rem auto;}
+.pop-layer.pop-givedic .export-box .ico-lst .ico-m::before{background:url(../img/mbl/ic_mobile@2x.png) left top no-repeat; background-size:48rem auto;}
+
+.signs-wrap {margin-left:20rem; margin-right:20rem;}
+
+.page.mbl.cetis .contents.box-height {min-height:inherit}
+.page.mbl.cetis .contents.inherit .botsbox.center {display:flex; justify-content:center; align-items:flex-end}
+
+.pop-layer.pop-signature .signs-wrap .bt-togs {padding-left:25rem; position:relative;}
+.pop-layer.pop-signature .signs-wrap .bt-togs::before {width: 24rem;height: 24rem;background:url(../img/common/ico_info.png) no-repeat center;background-size: 24rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: -3rem 4rem 0rem 0rem;position: absolute;left:0rem;top: 2rem;}
+
+
+/* 앱 복사 인증번호 안내 화면 */
+
+.page.mbl.cetis .givedic .phone-wrap {margin-left:20rem; margin-right:20rem;}
+.page.mbl.cetis .givedic .phone-wrap .phone {background:#f5f5f5; border-radius:8rem; padding:20rem 0; margin-top:15rem; margin-bottom:20rem;}
+.page.mbl.cetis .givedic .phone-wrap .phone .bridge {width:159rem; height:74rem; background:url(../img/mbl/pc-phone.png) left top no-repeat; background-size:159rem auto; margin:0 auto;}
+.page.mbl.cetis .givedic .phone-wrap .num-titl {font-size:16rem; line-height:1.31; margin-bottom:15rem; font-weight:600;}
+.page.mbl.cetis .givedic .phone-wrap .num-inputs {display:flex; justify-content:center; align-items:center; margin-bottom:25rem;}
+.page.mbl.cetis .givedic .phone-wrap .num-inputs span {display:inline-block; width:100%;padding:10rem 0;border:solid 1rem #dddddd; font-size:15rem; line-height:1.6; font-weight:500; text-align:center; border-radius:4rem;}
+.page.mbl.cetis .givedic .phone-wrap .num-inputs span:nth-child(2) {margin-left:10rem; margin-right:10rem;}
+.page.mbl.cetis .givedic ol.oder-list li {margin-bottom:15rem; line-height:24rem; font-size:14rem; position:relative; padding-left:36rem;color:#555555; font-weight:400;}
+.page.mbl.cetis .givedic ol.oder-list li span {display:inline-block; width:24rem; height:24rem; border-radius:50%; background-color:#e6e6e6; color:#242424; position:absolute; top:0rem; left:0rem; text-align:center;}
+.page.mbl.cetis .num-plist {margin-bottom:25rem; line-height:1.43; font-size:14rem; color:#555555; font-weight:400;}
+
+
+/* 카카오페이 인증 전체동의 디자인 변경으로 클래스 변경 */
+.pop-layer.pop-terms .ut-termboxList {}
+.pop-layer.pop-terms .ut-termboxList .terms ul > li {margin-bottom:40rem;}
+.pop-layer.pop-terms .ut-termboxList p{color: #555;margin: 10rem 0rem;font-size: 14rem;}
+.pop-layer.pop-terms .ut-termboxList p .blue-font {color:#2a81eb; font-size:15rem; line-height:1.4}
+.pop-layer.pop-terms .ut-termboxList strong{font-weight: 700;color: #242424;font-size: 16rem; line-height:1.31; word-break: keep-all;}
+.pop-layer.pop-terms .ut-termboxList h2 {font-weight: 700;margin: 15rem 0rem 24rem 0rem;word-break: keep-all;font-size:22rem;}
+.pop-layer.pop-terms .ut-termboxList h3 {font-weight: 700;margin: 24rem 0rem 16rem 0rem;font-size: 16rem; line-height:1.31; word-break: keep-all;}
+.pop-layer.pop-terms .ut-termboxList h3 span.fwght-normal {font-weight:400;}
+.pop-layer.pop-terms .ut-termboxList ul{ margin:24rem 0 5rem 0rem; } /*.ut-terms ul>li{position: relative;margin: 10rem 0;color: #555555;}*/
+.pop-layer.pop-terms .ut-termboxList ul>li>ul{}
+.pop-layer.pop-terms .ut-termboxList ul>li>ul>li{position: relative;margin: 10rem 0;color: #555555;font-size: 13rem;word-break: keep-all;}
+.pop-layer.pop-terms .ut-termboxList ul.dots{margin-top:0rem;}
+.pop-layer.pop-terms .ut-termboxList ul.dots>li{padding-left: 10rem;font-size: 15rem; margin-bottom:16rem;}
+.pop-layer.pop-terms .ut-termboxList ul.dots>li::before{content:"";width:5rem;height:5rem;background: #555555;display:block;position:absolute;left: 0rem;top: 7rem; border-radius:50%;}
+.pop-layer.pop-terms .ut-termboxList ul.dots>li .blue-font {color:#2a81eb; font-size:15rem; line-height:1.4}
+.pop-layer.pop-terms .ut-termboxList ul.dash{margin-top:0rem;}
+.pop-layer.pop-terms .ut-termboxList ul.dash>li{padding-left: 12rem;font-size: 15rem; margin-bottom:0rem;}
+.pop-layer.pop-terms .ut-termboxList ul.dash>li .blue-font {color:#2a81eb; font-size:15rem; line-height:1.4}
+.pop-layer.pop-terms .ut-termboxList ul.dash>li::before{content:"";width: 4rem;height: 1rem;background: #555555;display:block;position:absolute;left: 2rem;top: 9rem; border-radius:50%;}
+.pop-layer.pop-terms .ut-termboxList ol.nums{margin: 5rem 5rem 5rem 16rem;}
+.pop-layer.pop-terms .ut-termboxList ol.nums>li{position: relative;padding-left: 0rem;list-style: decimal;word-break: keep-all;font-size: 14rem;margin: 10rem 0;}
+.pop-layer.pop-terms .ut-termboxList ol.nums>li::before{/* content:""; */width: 4rem;height: 1rem;background: #555555;display: block;position: absolute;left: 2rem;top: 8rem;}
+.pop-layer.pop-terms .ut-termboxList .ut-tbl.a .tblist>thead>tr>th,
+.pop-layer.pop-terms .ut-termboxList .ut-tbl.a .tblist>tbody>tr>td{font-size: 13rem;}
+.pop-layer.pop-terms .ut-termboxList .ut-tbl.a .tblist>tbody>tr>td.txt-left {text-align:left;}
+
+/* 카카오페이 인증서 오류시 노출 */
+.pop-layer.pop-kpaymsgs .complate-msg .msg .p2 span {font-size:15rem; color:#555;}
+.pop-layer.pop-kpaymsgs .complate-msg .msg .p2 strong {font-size:15rem; color:#242424;}
+.pop-layer.pop-kpaymsgs .complate-msg .msg .p2 + .p2{ border:solid 1rem #e6e6e6; color:#242424; padding:20rem 0rem; width:258rem; margin:32rem auto; border-radius:8rem;}
+.pop-layer.pop-toss .complate-msg.icon3::before {background-image: url(../img/mbl/ico_certi_toss.png);}
+.pop-layer.pop-toss .complate-msg .msg .p2 + .p2 { border:solid 1rem #e6e6e6; color:#242424; padding:20rem 0rem; width:258rem; margin:32rem auto; border-radius:8rem;}
+.pop-layer.pop-pass .complate-msg .msg .p2 + .p2 { border:solid 1rem #e6e6e6; color:#242424; padding:20rem 0rem; width:258rem; margin:32rem auto; border-radius:8rem;}
+
+/* 아이콘 리스트 */
+.pop-layer.pop-signature .centbox {margin-left:20rem; margin-right:20rem}
+.pop-layer.pop-signature .sings-icon { margin-left: -20rem; }
+.pop-layer.pop-signature .sings-icon .list{border-bottom: 12rem solid #f5f5f5;padding: 0rem 0rem 0rem 20rem;}
+.pop-layer.pop-signature .sings-icon .list:last-child{border-bottom-width: 0rem;}
+.pop-layer.pop-signature .sings-icon .list>li{ padding-right: 24rem; }
+.pop-layer.pop-signature .sings-icon .list>li+li{border-top: #e6e6e6 1rem solid;}
+.pop-layer.pop-signature .sings-icon .list:last-child > li:last-child {border-bottom: #e6e6e6 1rem solid;}
+.pop-layer.pop-signature .sings-icon .list>li{ padding-right: 24rem; }
+.pop-layer.pop-signature .sings-icon .list>li.ics{display: flex;align-items: center;padding: 16rem 0rem;min-height:60rem;font-size: 18rem;font-weight:600;position: relative;}
+.pop-layer.pop-signature .sings-icon .list>li.ics.bdcc {border-top:solid 1rem #ccc;}
+.pop-layer.pop-signature .sings-icon .list>li.ics.bdnone {border:0rem;}
+.pop-layer.pop-signature .sings-icon .list>li.ics.bdnone {border:0rem;}
+.pop-layer.pop-signature .sings-icon .list>li.ics::after{width:40rem;height:40rem;background:no-repeat center;background-size:48rem auto;font-size: 1rem; color: transparent;display:inline-block;vertical-align:middle;content:'';margin: 0rem 0rem 0rem 0rem;position: absolute;right:0rem;top: 50%; transform: translate(0, -50%);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.bios::after{background-image: url(../img/mbl/ico_login_bios.png);background-size: 27rem;}
+.pop-layer.pop-signature .sings-icon .list>li.ics.number::after{background-image: url(../img/mbl/ic_number_print2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.simp::after{background-image: url(../img/mbl/ico_applogin_simp2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.inface{ background-image: url(../img/mbl/ic_face@2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.ctcm::after{background-image: url(../img/mbl/ico_applogin_idcd2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.ctfn::after{background-image: url(../img/mbl/ico_applogin_ctfn2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.kpay::after{background-image: url(../img/mbl/ico_applogin_kpay2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.toss::after{background-image: url(../img/mbl/ico_applogin_toss2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.touch::after{background-image: url(../img/mbl/ic_face_id@2x.png)}
+.pop-layer.pop-signature .sings-icon .list>li.ics.pass::after{background-image: url(../img/mbl/ico_applogin_pass2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics.kbpay::after{background-image: url(../img/mbl/ico_applogin_kbpay2x.png);}
+.pop-layer.pop-signature .sings-icon .list>li.ics button.ubdgs {display:inline-block; background-color:#f5f5f5; font-weight:400; width:54rem; height:21rem; padding:3rem 6rem; border-radius:8rem; font-size:12rem; line-height:1.2; color:#808080; margin-left:8rem;}
+.pop-layer.pop-confirmOne .botsbox.center { text-align: center; }
+.pop-layer.pop-confirmOne .botsbox.center ul.link li a{display:block;line-height:56rem;}
+.pop-layer .poptents .centbox .mbl-top .txt.wordbreak {word-break:break-all; padding-top:0rem;}
+.pop-layer.pop-cetis .error-msg {color:red; text-align:center; margin:0rem 0 10rem 0;}
+.pop-layer.pop-facew .error-msg {color:red; text-align:center; margin:0rem 0 10rem 0;}
+.pop-layer.a.pop-infodt .text-group.type2 .zoom-red {color:rgb(255, 0, 0);}
+
+
+.pop-mbl-user.pop-layer .desc-box{color:#555555; font-size:16rem; line-height:1.5}
+.pop-mbl-user.pop-layer .desc-box .desc+.desc {margin-top:16rem}
+.pop-mbl-user.pop-layer .hd-tit3{font-size:20rem; line-height: 1.05;}
+.pop-mbl-user.pop-layer .user-info {margin-top:40rem}
+.pop-mbl-user.pop-layer .user-info .ut-form.a{margin-top:16rem}
+
+
+
+
+
+/* 인증서 폐기 안내 */
+.page.mbl.dispose .dispo-tbox {margin-top: 32rem; margin-bottom: 16rem;}
+.page.mbl.dispose .ut-gudbox {margin-top: 40rem;}
+.page.mbl.dispose .dispo-icon {margin-top: 32rem;}
+.page.mbl.dispose .bio-infor {text-align:center; font-size:22rem; line-height:1.45; color:#444444;}
+.page.mbl.dispose .bio-infor::before {content:''; display:block; width:88rem; height:88rem; background:url(../img/mbl/ic_face_id@2x.png) center 50% no-repeat;background-size:88rem 88rem; margin: 0 auto;}
+.page.mbl.dispose .kpay-infor {text-align:center; font-size:22rem; line-height:1.45; color:#444444;}
+.page.mbl.dispose .kpay-infor::before {content:''; display:block; width:88rem; height:88rem; background:url(../img/mbl/ico_certi_kpay.png) center 50% no-repeat;background-size:88rem 88rem; margin: 0 auto;}
+.page.mbl.dispose .pass-infor {text-align:center; font-size:22rem; line-height:1.45; color:#444444;}
+.page.mbl.dispose .pass-infor::before {content:''; display:block; width:88rem; height:88rem; background:url(../img/mbl/ico_certi_pass.png) center 50% no-repeat;background-size:88rem 88rem; margin: 0 auto;}
+.page.mbl.dispose .toss-infor {text-align:center; font-size:22rem; line-height:1.45; color:#444444;}
+.page.mbl.dispose .toss-infor::before {content:''; display:block; width:88rem; height:88rem; background:url(../img/mbl/ico_certi_toss.png) center 50% no-repeat;background-size:88rem 88rem; margin: 0 auto;}
+.page.mbl.dispose .bio-finger {text-align:center; font-size:22rem; line-height:1.45; color:#444444;}
+.page.mbl.dispose .bio-finger::before {content:''; display:block; width:88rem; height:88rem; background:url(../img/mbl/ic_finger_print@2x.png) center 50% no-repeat;background-size:88rem 88rem; margin: 0 auto;}
+.page.mbl.dispose .font-tble {margin-bottom: 0;}
+.page.mbl.dispose .font-tble table th, .page.mbl.dispose-finger .font-tble table td {font-size:15rem; color:#555555; line-height:1.4}
+.page.mbl.dispose .list li{padding-left:13rem;color:#555555;line-height:1.5;word-break:break-all;font-size:15rem;min-height:20rem; position:relative;}
+.page.mbl.dispose .list li::before{width:4rem;height:4rem;background:#555555;border-radius:50%;position:absolute;left:0rem;top:7rem;content:"";}
+
+
+
+
+
+.pop-layer.pop-certification .poptents .txt .cdt { margin: 0rem 0 16rem}
+
+/* 하단 인증 팝업 */
+.pop-layer.certification-btm .poptents .bt{width: 90rem; height: 90rem; color: transparent; background-size: 100% auto; }
+.pop-layer.certification-btm .poptents .bt.ping {background-image: url(../img/mbl/ic_finger_print@2x.png);width: 80rem; height: 80rem; margin-bottom:24rem}
+.pop-layer.certification-btm .poptents .bt.bios {background-image: url(../img/mbl/ico_login_bios.png);}
+
+
+/* 마이데이터 회원안내 */
+.pop-layer.pop-mydatainfo .pct .complate-msg.icon1::before{margin-top: 0; width:167rem; height: 52rem; background-image: url(../img/mbl/img_MyData@2x.png);}
+.pop-layer.pop-mydatainfo .pct .complate-msg.icon1 .p2{padding: 0 30rem; word-break: keep-all; word-wrap: break-word;}
+
+
+
+
+
+/*  디지털 OTP */
+.page.mbl.dotp .desc.a{ margin-top: 24rem; color: #555; font-size: 15rem; line-height: 1.4;}
+.page.mbl.dotp .desc.b{ margin-top: 16rem; color: #555;}
+.page.mbl.dotp .otp-simbol{display: flex; align-items: center; width: 80rem; height: 80rem; margin: 0 auto; background: url(../img/mbl/ic_otp@2x.png) no-repeat 0 0; background-size: 80rem, 100%; }
+/* .page.mbl.dotp .otp-simbol>span{display: block; width: 100%;} */
+
+.page.mbl.dotp .otp-i{position: relative; padding-left: 16rem; font-size: 14rem; line-height: 1.29;}
+.page.mbl.dotp .otp-i>.color{color: #2a81eb;}
+.page.mbl.dotp .otp-i::before{content: ''; display: block; position: absolute; top: 3rem; left: 0; width: 12rem; height: 12rem; background: url(../img/mbl/ic_n@2x.png) no-repeat 0 0; background-size: 100% auto;}
+
+.page.mbl.dotp .otp-step>li{position:relative; padding: 20rem; border: 1rem solid #e9eaed; border-radius: 8rem;}
+.page.mbl.dotp .otp-step>li+li{margin-top: 32rem;}
+.page.mbl.dotp .otp-step>li+li::before{ content: ''; display: block; position: absolute; top: -24rem; left: 50%; width: 16rem; height: 16rem; transform: translateX(-50%); background: url(../img/mbl/ico_gudstep_arr.png) no-repeat 0 0; background-size: 100% auto;}
+.page.mbl.dotp .otp-step>li .tit{ display:block; font-size: 16rem; font-weight: 700;}
+.page.mbl.dotp .otp-step>li .tit .num{color:#2a81eb;}
+.page.mbl.dotp .otp-step>li .txt{ display:block; margin-top: 4rem; color:#555;}
+
+
+
+/* 디지털 OTP 패스워드 변경 */
+.page.mbl.dotp .otp-bullet{margin-top: 10rem;}
+.page.mbl.dotp .otp-bullet>li{position: relative; display: flex; }
+.page.mbl.dotp .otp-bullet>li .num{ display:block; width:30rem; padding-top:12rem; font-size: 18rem; font-weight: 700; word-break: keep-all;}
+.page.mbl.dotp .otp-bullet>li .txt{ width:calc(100% - 30rem); padding: 15rem 15rem 15rem 0; border-top: 1px solid #e4e4e4;  font-size: 16rem; line-height: 1.31; }
+.page.mbl.dotp .otp-bullet>li:first-child .txt{ border-top:0; }
+
+.page.mbl.dotp.otppw .otp-simbol{margin-top: 32rem;}
+.page.mbl.dotp.otppw .hd-tit2{margin-top: 30rem;}
+.page.mbl.dotp.otppw .hd-tit3{margin-top: 30rem;}
+.page.mbl.dotp.otppw .complate-msg.icon1::before{width: 72rem; height: 72rem; margin: 45rem auto 35rem; background-image: url(../img/mbl/icon_mbl_complete@2x.png); background-size: 72rem;}
+.page.mbl.dotp.otppw .complate-msg .line-box>ul.list>li:last-child{margin-bottom: 0;}
+.page.mbl.dotp.otppw .complate-msg.icon1 .line-box{margin-top: 24rem;}
+
+/* 디지털 OTP 정보안내 */
+.page.mbl.otpinfo .hd-tit2{margin-top: 32rem;}
+.page.mbl.otpinfo .otp-i{margin-top: 24rem; margin-bottom: 24rem;}
+.page.mbl.otpinfo .otp-tbl{margin-top: 24rem;}
+.page.mbl.otpinfo .otp-tbl::before{display: none;}
+.page.mbl.otpinfo .ut-tbl.b.otp-tbl .tbform tbody tr:first-child th,
+.page.mbl.otpinfo .ut-tbl.b.otp-tbl .tbform tbody tr:first-child td{border-top: 0;}
+
+/* 디지털 OTP 사고신고 */
+.page.mbl.dotp.accident .otp-simbol{margin-top: 32rem;}
+.page.mbl.dotp.accident .hd-tit2{margin-top: 32rem;}
+.page.mbl.dotp.accident .hd-tit3{margin-top: 32rem;}
+.page.mbl.dotp.accident .complate-msg .line-box>ul.list>li:last-child{margin-bottom: 0;}
+
+.page.mbl.dotp.accident-fin .complate-msg .p1{padding: 0 30rem;}
+.page.mbl.dotp.accident-fin .complate-msg .p2{padding: 0 20rem;}
+
+/* 디지털 OTP 해지 */
+.page.mbl.dotp.cancel .otp-simbol{margin-top: 32rem;}
+.page.mbl.dotp.cancel .hd-tit2{margin-top: 32rem;}
+.page.mbl.dotp.cancel .hd-tit3{margin-top: 32rem;}
+
+.page.mbl.dotp.cancel-fin .complate-msg .p1{padding: 0 30rem;}
+.page.mbl.dotp.cancel-fin .complate-msg .p2{padding: 0 20rem;}
+
+
+/* 상단 32rem*/
+.poptents .mbl-top .hdt .hd-tit2{margin-top: 32rem;}
+
+/* 로그인 */
+.page.mbl.login .page-hdt .stit.ic-login:after {content: ''; display: inline-block; width: 40rem; height: 40rem; margin-top: -6rem; margin-left: 8rem; background: url(../img/mbl/ic_login_hdtit.png) no-repeat 0 0; background-size: 40rem auto; vertical-align: middle;}
+.page.mbl.login .login-txt {padding: 40px 0; margin-bottom: -40rem; background:#fafafa; text-align: center; font-size: 20rem;}
+.page.mbl.login .login-txt em {color:#2a81eb}
+.page.mbl.login .tops {margin-top: 66rem;}
+.mt8 {margin-top: 8rem;}
+
+
+
+/* 인증센터 랜딩페이지 */
+.page.mbl.certi-landing .landing-wrap {}
+.page.mbl.certi-landing .landing-wrap .lnd-hdt{margin-top: 32rem; margin-bottom: 16rem;}
+.page.mbl.certi-landing .landing-wrap .lnd-hdt .hd-tit2{position: relative; padding-left:48rem;}
+.page.mbl.certi-landing .landing-wrap .lnd-hdt .hd-tit2::before{content:''; position: absolute; top: 0; left: 0;  width: 32rem; height: 32rem; background-size: 32rem auto;}
+.page.mbl.certi-landing .landing-wrap .lnd-hdt .hd-tit2.ico-certi::before{background-image: url(../img/mbl/ic_certi@2x.png);}
+.page.mbl.certi-landing .landing-wrap .lnd-hdt .hd-tit2.ico-securi::before{background-image: url(../img/mbl/ic_securi@2x.png);}
+
+.page.mbl.certi-landing .landing-wrap .ut-accd.b>li .hbox{margin-left: 0; font-weight: 700;}
+.page.mbl.certi-landing .landing-wrap .ut-accd.b>li .hbox .btn-tog{right: -10rem;}
+.page.mbl.certi-landing .landing-wrap .ut-accd.b>li .cbox{margin: 0 -20rem; padding: 12rem 20rem; }
+
+.page.mbl.certi-landing .landing-wrap .accd-detail > li+li{border-top: 1px solid #e6e6e6;}
+.page.mbl.certi-landing .landing-wrap .accd-detail .lk{position: relative; display:flex; align-items: center; justify-content: space-between; width: 100%; height: 50rem;}
+.page.mbl.certi-landing .landing-wrap .accd-detail .lk .arrw{width: 24rem; height: 24rem; background: url(../img/common/ic_chevron_right2x.png) 0 0 no-repeat; background-size: 24rem auto;}

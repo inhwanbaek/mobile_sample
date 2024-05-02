@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a UI-PCMSCNL0731MP" id="UI-PCMSCNL0731MP">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">보안카드</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="innr">
+						<h2 class="hd-tit2">보안카드 인증</h2>
+						<p class="s-tit">보안카드 뒷면의 인증번호를 아래에 입력해 주세요.</p>
+						<ul class="sec-card mt40">
+							<li>
+								<label class="lb" for="input-1" role="text"><span>[15]</span> 앞에 두자리</label>
+								<p>
+									<span class="input a no-lb"><input type="number" title="" placeholder="" id="input-1"></span>
+									<span class="star"></span>
+								</p>
+							</li>
+							<li>
+								<label class="lb" for="input-2" role="text"><span>[25]</span> 뒤에 두자리</label>
+								<p>
+									<span class="star"></span> 
+									<span class="input a no-lb"><input type="number" title="" placeholder="" id="input-2"></span>
+								</p>
+							</li>
+						</ul>
+						<ul class="bullet b mt20">
+							<li class="t-red">교보생명은 절대로 보안카드번호 전체 입력을 하지 않습니다.</li>
+						</ul>
+						<div class="mt20">
+							<button type="button" class="btn sm ico-nlink ico-r">전자금융서비스 유의사항</button>
+						</div>
+						<div class="ut-gudbox b open mt40" data-tog-cls="box">
+							<div class="gtit">꼭 알아두세요</div>
+							<button type="button" data-tog-cls="btn" class="bt-tog open" aria-expanded="true">안내문<span class="btxt">닫기</span></button>
+							<div class="gctn open" data-tog-cls="ctn" style="display: block;">
+								<ul class="bullet a glst">
+									<li>전자금융 사기의 피해를 줄이고자 2년간 보안카드 사용내역이 없으면 보안카드 사용이 제한됩니다. </li>
+									<li>보안카드 인증번호 5회 잘못 입력 시 보안카드 사용이 제한됩니다.</li>
+									<li>인증번호 오류를 해제하려면 본인 신분증을 가지고 고객PLAZA를 방문하셔야 합니다.</li>
+									<li>안전한 전자금융거래를 위해 보안카드 관리에 유의해 주세요.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set b2">
+					<button type="button" class="btn rd lg a" onclick="popsample_C();" id="btn-001">확인</button>
+				</div>
+			</div>
+		</nav>
+	</article>
+	<script>
+		ui.popup.open('UI-PCMSCNL0731MP');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+		
+		
+	</script>
+</div>
+</body>
+</html>

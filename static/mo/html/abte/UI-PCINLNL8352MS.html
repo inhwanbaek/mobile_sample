@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"Condensed Financial Statements"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page abt finance" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="ut-tabs a">
+				<ul class="menu">
+					<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">Separate Financial Statements</a></li>
+					<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">Consolidated Financial Statements</a></li>
+				</ul>
+			</div>
+
+			<div class="box-rd-bg">
+				In accordance with the amended ENFORCEMENT OF THE INSURANCE BUSINESS ACT, starting from its fiscal year 2013, the settlement date (Book closing date) of Insurance Company has changed from March 31 to Dec 31. <br> Accordingly, FY2013 performance reflects nine months from April 1 to December 31 of 2013.
+			</div>
+
+			<h3 class="hd-tit4">Consolidated Financial Statements</h3>
+			<h4 class="hd-tit5">Year-on-Year Comparison</h4>
+			<div class="period-year">
+				<span class="select a">
+					<label class="lb blind" for="select-3">Start Year Choice</label>
+					<select name="select-3" title="Start Year Choice">
+						<option selected>2020</option>
+					</select>
+				</span>
+				<i class="ds">~</i>
+				<span class="select a">
+					<label class="lb blind" for="select-3">Last Year Choice</label>
+					<select name="select-3" title="Last Year Choice">
+						<option selected>2019</option>
+					</select>
+				</span>
+			</div>
+			<div class="btn-set">
+				<button type="button" class="btn md">Search</button>
+			</div>
+			<div class="ut-optset optset">
+				<div class="opt pl">
+				</div>
+				<div class="opt pr">
+					<span class="unit">(Unit: KRW billion, %)</span>
+				</div>
+			</div>
+			<div class="ut-tbl a scroll-x">
+				<table class="tblist" cellspacing="0" cellpadding="0">
+					<caption><span class="tit">Consolidated Financial Statements</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: auto;" span="5">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">Financial Year</th>
+							<th scope="col">FY2020</th>
+							<th scope="col">FY2019</th>
+							<th scope="col">Change</th>
+							<th scope="col">In/Decrease Rate</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg">
+							<td>Total assets</td>
+							<td class="txt-r">125,704.7</td>
+							<td class="txt-r">116,053.4</td>
+							<td class="txt-r">9,651.3</td>
+							<td class="txt-r">8.3</td>
+						</tr>
+						<tr>
+							<td>Cash and deposit</td>
+							<td class="txt-r">1,940.6</td>
+							<td class="txt-r">2,649.7</td>
+							<td class="txt-r">-709.1</td>
+							<td class="txt-r">-26.8</td>
+						</tr>
+						<tr>
+							<td>Securities</td>
+							<td class="txt-r">70,837.0</td>
+							<td class="txt-r">66,216.8</td>
+							<td class="txt-r">4,620.2</td>
+							<td class="txt-r">7.0</td>
+						</tr>
+						<tr>
+							<td>Loans</td>
+							<td class="txt-r">22,353.3</td>
+							<td class="txt-r">20,762.6</td>
+							<td class="txt-r">1,590.7</td>
+							<td class="txt-r">7.7</td>
+						</tr>
+						<tr>
+							<td>Investment Property</td>
+							<td class="txt-r">1,094.7</td>
+							<td class="txt-r">1,129.5</td>
+							<td class="txt-r">-34.8</td>
+							<td class="txt-r">-3.1</td>
+						</tr>
+						<tr>
+							<td>Property and equipment</td>
+							<td class="txt-r">1,378.7</td>
+							<td class="txt-r">1,367.7</td>
+							<td class="txt-r">11.0</td>
+							<td class="txt-r">0.8</td>
+						</tr>
+						<tr>
+							<td>Intangible assets</td>
+							<td class="txt-r">296.3</td>
+							<td class="txt-r">328.9</td>
+							<td class="txt-r">-32.6</td>
+							<td class="txt-r">-9.9</td>
+						</tr>
+						<tr>
+							<td>Other assets</td>
+							<td class="txt-r">4,431.1</td>
+							<td class="txt-r">3,323.0</td>
+							<td class="txt-r">1,108.1</td>
+							<td class="txt-r">33.3</td>
+						</tr>
+						<tr>
+							<td>Separate account assets</td>
+							<td class="txt-r">23,373.0</td>
+							<td class="txt-r">20,275.1</td>
+							<td class="txt-r">3,097.9</td>
+							<td class="txt-r">15.3</td>
+						</tr>
+						<tr class="bg">
+							<td>Total liabilities</td>
+							<td class="txt-r">112,812.4</td>
+							<td class="txt-r">103,668.9</td>
+							<td class="txt-r">9,143.5</td>
+							<td class="txt-r">8.8</td>
+						</tr>
+						<tr>
+							<td>Policy reserve</td>
+							<td class="txt-r">75,573.4</td>
+							<td class="txt-r">71,926.1</td>
+							<td class="txt-r">3,647.3</td>
+							<td class="txt-r">5.1</td>
+						</tr>
+						<tr>
+							<td>Percentage of Shareholding</td>
+							<td class="txt-r">1,461.8</td>
+							<td class="txt-r">1,416.5</td>
+							<td class="txt-r">45.3</td>
+							<td class="txt-r">3.2</td>
+						</tr>
+						<tr>
+							<td>Other liabilities</td>
+							<td class="txt-r">11,846.8</td>
+							<td class="txt-r">9,588.2</td>
+							<td class="txt-r">2,258.6</td>
+							<td class="txt-r">23.6</td>
+						</tr>
+						<tr>
+							<td>Separate account liabilities</td>
+							<td class="txt-r">23,930.4</td>
+							<td class="txt-r">20,738.1</td>
+							<td class="txt-r">3,192.3</td>
+							<td class="txt-r">15.4</td>
+						</tr>
+						<tr class="bg">
+							<td>Total equity</td>
+							<td class="txt-r">12,892.3</td>
+							<td class="txt-r">12,384.6</td>
+							<td class="txt-r">507.7</td>
+							<td class="txt-r">4.1</td>
+						</tr>
+						<tr>
+							<td>Non-controlling interests</td>
+							<td class="txt-r">324.7</td>
+							<td class="txt-r">449.4</td>
+							<td class="txt-r">-124.7</td>
+							<td class="txt-r">-27.7</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

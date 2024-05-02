@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"부담금 납입"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<!-- .container.page에 '카테고리명' '하위뎁스2' '하위뎁스3' 클래스 변경 후 작업 -->
+	<!-- com : 메인/공통  / dcs : 공시실 / prd : 상품 / msc: 나의계약 / lif : 든든라이프 / mbl : 로그인/인증센터  / myp : 마이페이지 / abt : 회사소개 ir / chp : 협력병원 / csc : 고객센터 / etp : 기업(퇴직연금)-->
+	<main class="container page etp" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">  
+			<div class="ut-topfix">
+				<div class="inr">
+					<div class="ut-steps d">
+						<div class="tit">2. 부담금 입력</div>
+						<div class="box">
+							<div class="gage">
+								<span class="bar"></span>
+							</div>
+							<div class="nums">
+								<span class="tot"><b class="b">4</b></span>
+								<span class="num"><b class="b">2</b></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="etp-tit-box">
+				<h2 class="hd-tit3">납입하실 부담금을 입력해 주세요.</h2>
+			</div>
+			<div class="etp-item">
+				<h3 class="etp-tit">부담금 납입정보</h3>
+				<h4 class="hd-tit5">납입예정일</h4>
+				<span class="input a coms">
+					<label class="lb blind" for="input-01">납입예정일</label>
+					<input type="text" value="2021.12.22" id="input-01" readonly="">
+				</span>	
+			</div>
+			<div class="etp-item b">
+				<h4 class="hd-tit5">납입방법</h4>
+				<!-- [D] 2022-07-05 마크업 수정 <span class="input a coms">
+					<label class="lb blind" for="input-02">납입방법</label>
+					<input type="text" value="가상계좌 (교보생명 가상계좌로 직접 입금)" id="input-02" readonly="">
+				</span>	-->
+				<!-- [D] 2022-07-05 마크업 수정 -->
+				<div class="ut-dtds c bd">
+					<ul class="dlist">
+						<li>
+							<div class="dt fn-point03">가상계좌 (교보생명 가상계좌로 직접 입금)</div>
+						</li>									
+					</ul>
+				</div>	
+				<!--//[D] 2022-07-05 마크업 수정 -->
+			</div>
+			<div class="etp-item">
+				<div class="txt-amp-wrp2">
+					<h3 class="etp-tit">부담금 입력</h3>
+					<label class="checkbox" role="checkbox" aria-checked="false"><input type="checkbox" aria-hidden="true"><span class="txt">최근 정보 불러오기</span>
+						<div class="ut-tooltip">
+							<button type="button" class="ico help bt-tooltip">도움말</button>
+							<div class="toolctn">
+								<div class="tpmsg">
+									<ul class="bullet d">
+										<li>부담금 입력이 편리하도록 가장 최근에 입력된 가입자별 부담금이 자동 입력됩니다.</li>
+										<li>변경사항이 있는 경우 수정할 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+					</label>
+				</div>
+				<div class="ut-dcard e etpcard">
+					<div class="inr">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">김평생(590328-1)</div>
+							</div>
+							<div class="line b"></div>
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">부담금</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" title="부담금 금액" value="10,000,000"><i class="w">원</i></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>										
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ut-dcard e etpcard">
+					<div class="inr">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">이든든(630725-2)</div>
+							</div>
+							<div class="line b"></div>
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">부담금</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" placeholder="숫자로 입력" title="부담금 금액"><i class="w">원</i></span>
+														<!-- [D] 2022-03-31 placeholder text 변경 -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt b">임금총액</div><!-- [D] 2022-03-31 text 오타 수정 -->
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" title="입금총액" value="10,000,000"><i class="w">원</i></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>			
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ut-dcard e etpcard">
+					<div class="inr">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">홍길동(880328-1)</div>
+							</div>
+							<div class="line b"></div>
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">부담금</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*"  placeholder="숫자로 입력" title="부담금 금액"><i class="w">원</i></span><!-- [D] 2022-03-31 placeholder text 변경 -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ut-dcard e etpcard">
+					<div class="inr">
+						<div class="stds">
+							<div class="hdt">
+								<div class="tit">박보험(930725-2)</div>
+							</div>
+							<div class="line b"></div>
+							<div class="dtds">
+								<ul class="dlt">
+									<li>
+										<div class="dl">
+											<div class="dt b">부담금</div>
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" title="부담금 금액" value="" disabled></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dl">
+											<div class="dt b">임금총액</div><!-- [D] 2022-03-31 text 오타 수정 -->
+											<div class="dd">
+												<div class="fmset">
+													<div class="fm">
+														<span class="input a won"><input type="tel" pattern="\d*" title="입금총액" value="" disabled></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>										
+								</ul>				
+							</div>
+						</div>
+					</div>
+				</div>													
+			</div>
+			<div class="etp-item a">
+				<h3 class="etp-tit">퇴직신청 중인 가입자</h3>
+				<div class="ut-dtds c bd">
+					<ul class="dlist">
+						<li>
+							<div class="dt">박생명(991212-2)</div>
+							<div class="dd">0원</div><!-- [D] 2022-06-29 띄어쓰기 수정 -->
+						</li>
+						<li>
+							<div class="dt">김교보(901012-1)</div>
+							<div class="dd">0원</div><!-- [D] 2022-06-29 띄어쓰기 수정 -->
+						</li>												
+					</ul>
+				</div>
+			</div>								
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots b">
+			<div class="inr">
+				<div class="box-set boxbot ">
+					<div class="ftotal-box">
+						<dl>
+							<dt class="tit">합계</dt>
+							<dd class="cont">
+								<p class="dsc">(납입대상 <strong class="t-red">1</strong>명)</p>
+								<p class="num"><strong class="t-red">10,000,000</strong><span class="won">원</span></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="btn-set b2">
+					<button type="button" class="btn lg rd b">이전</button>
+					<button type="button" class="btn lg rd a">다음</button>
+				</div>
+			</div>
+		</nav>		
+		<!--// 하단 고정영역 -->
+	</main>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+</div>
+</body>
+</html>

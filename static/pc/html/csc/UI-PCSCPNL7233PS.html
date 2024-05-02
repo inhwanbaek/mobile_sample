@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<!-- 헤더-->
+	<include class="header" src="../inc/header.html" data-include-opt='{"visible":"true"}'></include>
+	
+	<!-- LNB 영역 -->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"true"}'></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page csc dev" id="container">
+	
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">상품개발 프로세스</h2>
+				<div class="desc">고객 중심 업무수행을 위해 소비자보호체계를 갖추었습니다.</div>
+			</div>
+
+			<section class="sect">
+				<h3 class="hd-tit3">보험상품 개발</h3>
+				<div class="text-box">
+					<ul class="bullet a">
+						<li>교보생명은 고객의 니즈와 과학적 합리성을 기초로 보험상품을 개발하고 있습니다.</li>
+						<li>새로 개발된 보험상품은 공정한 설계 여부를 금융감독원의 인가를 통해 받고 있습니다.</li>
+						<li>상품 출시 후 일정 기간이 지나면 상품개발 당시의 예정경험률과 실제경험률의 차이 등을 분석해 가격을 재결정(repricing)함으로써 상품설계의 공정성이 유지되도록 하고 있습니다.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="sect">
+				<h3 class="hd-tit3">상품개발관리 프로세스</h3>
+				<div class="procedure">
+					<ol class="lst">
+						<li>
+							<div class="item">
+								<div class="tit"><i>01.</i> 상품 개발계획 수립</div>
+								<div class="txt">고객 니즈 반영</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>02.</i> 상품 디자인</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>03.</i> 가격 결정(pricing)</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>04.</i> 검토</div>
+								<!-- [D] 2022-05-20 UI/UX 변경 -->
+								<div class="txt">보험사기 영향평가, 고객불만 요인 점검, 상품개발관리실무협의회, 리스크관리협의회, 마케팅협의회</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>05.</i> 금융감독원 인가</div>
+								<div class="txt">사업방법서, 보험약관, 보험료 및 책임준비금 산출방법서 등 기초 서류 및 보험사기 영향평가 결과서 제출</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>06.</i> 출시</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>07.</i> 모니터링 및 가격 재결정(repricing)</div>
+								<div class="txt">상품손익관리협의회</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="tit"><i>08.</i> 상품 변경 또는 판매 중지</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+		</div>
+
+		
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

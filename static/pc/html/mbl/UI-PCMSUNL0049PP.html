@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer md a pop-mbl-certicom" id="pop-mbl-certicom">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">ARS 인증</h1><!-- [D] 2022-05-13 수정 -->
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="mbl-gray-box">
+						<div class="tops">
+							<div class="bt-ico ars" aria-hidden="true"></div>
+							<div class="tit">ARS 인증</div>
+							<div class="dsc">카드사에 인증 확인 전화를 요청했습니다.<br> 전화가 오면 <span class="stt">고객님의 카드 정보 입력 후 [인증 완료]를 눌러</span> 주세요.  </div>
+						</div>
+
+
+						<ul class="bullet a mt20">
+							<li>입력하신 카드사 정보가 일치하지 않으면 본인확인을 할 수 없습니다.</li>
+							<li>ARS 전화가 오지 않는 경우 입력하신 휴대폰번호가 정확한지 확인해 주세요.</li>
+						</ul>
+					</div>
+
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set b2">
+					<button type="button" class="btn a rd lg" onclick="ui.popup.close('pop-mbl-certicom');">인증완료</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+
+	<script>
+		ui.popup.open('pop-mbl-certicom');  // 팝업 열기
+	</script>
+</div>
+</body>
+</html>

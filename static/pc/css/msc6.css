@@ -1,0 +1,86 @@
+﻿@charset "utf-8";
+/* 나의 증명서 */
+.container.page.msc.certificate {}
+.container.page.msc.certificate h2.hd-tit3 {margin:32rem 0 24rem;}
+.container.page.msc.certificate h3.hd-tit4 {margin:32rem 0 16rem; padding:0;}
+.container.page.msc.certificate h4.hd-tit4 {margin:24rem 0 16rem; padding:0; font: var(--font15);}
+.container.page.msc.certificate .bg-gray .hd-tit4 {margin-top:0;}
+.container.page.msc.certificate .cont-box {margin-bottom: 24rem;}
+.container.page.msc.certificate .cont-box .txt.a{margin-bottom: 16rem; font: var(--font15);color: #555555;}
+/* .container.page.msc.certificate .cont-box .txt {margin-bottom: 16rem; font-size: 15rem; color: #555555;} */
+.container.page.msc.certificate .cont-box .img {display:block; margin-top: 16rem; width: 100%; }
+.container.page.msc.certificate .cont-box h3.hd-tit5 {margin:24rem 0 15rem}
+.container.page.msc.certificate .cont-box h3.hd-tit5 span {color:#2a81eb}
+
+/* .container.page.msc.certificate .step-list {text-align:center;}  */
+.container.page.msc.certificate .step-list li{position: relative;margin-bottom: 32rem;padding: 20rem;border: 1rem solid #e9eaed;border-radius: 10rem;background: #fff; text-align: center;}
+.container.page.msc.certificate .step-list li .tit{display: block;margin-bottom: 8rem;font-size: 16rem;font-weight: 700;line-height:1.3;}
+.container.page.msc.certificate .step-list li .tit .num{display: inline-block;color: #2a81eb;}
+.container.page.msc.certificate .step-list li .txt{display: block;font: var(--font15);color: #767676;line-height:1.4;}
+.container.page.msc.certificate .step-list li::after {display: block; content:''; position: absolute; bottom:-24rem; left: 50%; width:16rem; height:16rem; margin: 0 0 0 -8rem; background: url(../img/prd/ic_arr_01.png) no-repeat center; background-size: 100%;}
+.container.page.msc.certificate .step-list li:last-of-type:after {display: none;}
+
+.container.page.msc.certificate .ut-accd.b.qna>li .hbox {padding: 20rem 0 20rem; margin:0;display: flex; justify-content: flex-start; align-items: flex-start; padding-right: 40rem; }
+.container.page.msc.certificate .ut-accd.b.qna>li .hbox::before {flex: 0 0 auto; content: 'Q';overflow: hidden;  width: 24rem;height: 24rem;margin-right: 12rem;border-radius: 50%;background-color: #2a81eb;font: var(--font14);font-weight: 700;line-height: 1.79;text-align: center;color: #fff; margin-top:3rem;}
+.container.page.msc.certificate .ut-accd.b.qna>li .hbox .btn-tog {right:0;}
+.container.page.msc.certificate .ut-accd.b.qna>li>.cbox { margin: 0 -20rem 0}
+
+.container.page.msc.certificate  .inqur-box{display: flex; align-items: center;}
+.container.page.msc.certificate  .inqur-box .input{ width: 100%;}
+.container.page.msc.certificate  .inqur-box .btn{ margin-top:16rem; margin-left: 8rem; height: 67rem;}
+
+
+/* 증명서 발급 확인 */
+.container.page.msc.certificate .radio-item {margin: 12rem 0;}
+.container.page.msc.certificate .radio-item > li {margin-bottom: 12rem;}
+.container.page.msc.certificate .bg-gray {margin: 0 -20rem;padding: 32rem 20rem;background: #f5f5f5;}
+.container.page.msc.certificate .ut-dcard.a .dtds .dlt+.dlt{margin-top: 8rem;}
+.container.page.msc.certificate .issue-box-wrap{margin-top:60rem}
+.container.page.msc.certificate .issue-box{margin:16rem 0; padding:32rem 20rem; background:#fff; font-size:16rem; line-height:1.5; text-align:center; border:1rem solid #ddd; border-radius:4px;}
+.container.page.msc.certificate .issue-box>.cont {position:relative; padding-top:64rem;}
+.container.page.msc.certificate .issue-box>.cont::after{display:block;  content:""; width:48rem; height:48rem; position:absolute; top:0; left:50%; transform:translateX(-50%); background-image:url(../img/msc/icon_issue.png); background-repeat:no-repeat center; background-size:48rem auto}
+.container.page.msc.certificate .issue-box .num{font-weight:700; color:#242424}
+.container.page.msc.certificate .issue-box .txt{color:#555}
+.container.page.msc.certificate .issue-box.no-issue>.cont::after{background-image:url(../img/msc/icon_issue_no.png); }
+
+
+/* 팝업 */
+.pop-layer.pop-certificate .hd-tit4 {color:#2a81eb;}
+.pop-layer.pop-certificate .cont-box  {margin-bottom: 20rem; font: var(--font14);}
+.pop-layer.pop-certificate .cont-box .point {color: #d65d1c; font: var(--font13);}
+.pop-layer.pop-certificate .g-box {background: #f5f5f5; border-radius: 8rem; padding: 20rem 20rem 20rem 20rem; margin-top: 16rem}
+.pop-layer.pop-certificate .g-box ul {margin:0}
+
+
+/* 보험계약대출증명서 */
+.container.page.msc.certificate .ut-dcard.a.open .dtds{border-top: 0; padding-top:10rem;}
+.container.page.msc.certificate .ut-dcard.a .stds .cdt .bxs{padding-bottom: 0;}
+.container.page.msc.certificate .card-wrap + .card-wrap {margin-top: 16rem;}
+.container.page.msc.certificate .ut-tbl.a + .hd-tit4 {margin-top: 40rem;}
+.container.page.msc.certificate .ut-range + .btn-set {margin-top: 16rem}
+.container.page.msc.certificate .ut-gudbox.a {margin-top: 16rem}
+.container.page.msc.certificate .select+.select,
+.container.page.msc.certificate .input+.select{margin-top: 16rem}
+.container.page.msc.certificate .ut-range {margin-top: 16rem}
+.container.page.msc.certificate .input {margin-top: 16rem; width:100%}
+.container.page.msc.certificate .rcs .input {margin-top: 0rem; width:100%}
+.container.page.msc.certificate .ut-dcard.a .stds .hdt.line .hd-tit4 {padding:0}
+.container.page.msc.certificate .ut-dcard.a + .ut-tbl.a {margin-top: 16rem}
+/*
+.container.page.msc.certificate .select {margin-top: 16rem}
+.container.page.msc.certificate .select:first-of-type {margin-top:0;}
+.container.page.msc.certificate .select.a + .btn-set {margin-top: 10rem}
+.container.page.msc.certificate .btn-set + .hd-tit4 {margin-top: 16rem}
+*/
+.container.page.msc.certificate .ut-more {margin-top: 16rem}
+
+/* MY교보 메인 >  보험금 도래 사전안내 팝업 */ 
+.pop-insurance .ut-dcard.a .stds .hdt .tit {font-size:16rem}
+.pop-insurance .ut-dcard.a .dtds .dlt>li .dd a {color:#242424}
+.pop-insurance .ut-dcard.a .dtds .bx-tog.bx-tog .hd-tit5 {margin-bottom:12rem}
+.pop-insurance .poptents>.hd-tit3 {margin-bottom:25rem}
+.pop-insurance .ut-dcard+.ut-more {margin:40rem 0}  
+.pop-insurance .bullet {margin:10rem 0 40rem}
+
+/* MY교보(나의증명서) > FAX 번호 입력 팝업 */ 
+.pop-layer.a.pop-fax .pct{min-height:auto}  

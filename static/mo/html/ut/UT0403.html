@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<link rel="stylesheet" href="ut.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+	<script src="ut.js"></script>
+
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<div class="ut-test">
+		<!-- <a href="UT0404.html" class="link"></a> -->
+		<article class="pop-layer a pop-nncprd" id="pop-nncprd">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">다이렉트 수집·이용 동의</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents dir-agr">
+						<!-- 탭 -->
+						<div class="ut-tabs a mt24">
+							<ul class="menu">
+								<li class="active"><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_1" href="javascript:;">상세동의서</a></li>
+								<li><a class="bt" data-ui-tab-btn="tab_a" aria-controls="tab_a_2" href="javascript:;">요약동의서</a></li>
+							</ul>
+						</div>
+						<!-- //탭 -->
+
+						<!-- 상세동의서 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_1" class="active">
+							<p class="t-txt">귀하는 본 동의를 거부하실 수 있습니다. 다만, 본 동의를 거부하시는 경우 보험상품 및 보험가입 안내, 보험 관련 컨설팅 서비스 제공이 제한되며, 동의하시더라도 전화(080-000-0099), 서면등을 통해 동의한 정보의 삭제 및 상담 목적의 연락에 대한 중단 요청을 하실 수 있습니다.</p>
+							<h3 class="hd-tit4">1. 수집·이용 목적</h3>
+							<ul class="bullet a lg">
+								<li>보험료의 계산, 당사의 상품 및 서비스 관련 상담, 재부설계서비스 제공</li>
+							</ul>
+
+							<h3 class="hd-tit4">2. 보유 및 이용 기간</h3>
+							<ul class="bullet a lg">
+								<li><span class="blue">동의일로부터 1년까지 보유·이용</span></li>
+							</ul>
+
+							<h3 class="hd-tit4">3. 수집·이용 항목</h3>
+							<ul class="bullet a lg">
+								<li>개인(신용)정보</li>
+								<li>일반개인정보 : 전화상담 [성명, 성별, 생년월일, 전화번호(일반, 휴대전화번호)]
+									<ul class="bullet c">
+										<li>본 동의는 당사 계약을 체결한 업무 수탁자(당사 전속 보험설계사, (주)브로컬리마켓)가 수집이용하는 것을 포함합니다.</li>
+										<li>상 내용에 동의하시는 경우 당사 임직원 또는 업무수탁자가 상품 서비스 소개 및 판매 안내연락(TM 등)을 드릴 수 있습니다.</li>
+										<li>귀하는 본 동의를 거부하실 수 있습니다. 다만, 본 동의를 거부하시는 경우 보험료의 계산, 당사 상품 및 서비스 관련 상담, 재무설계서비스 제공이 제한될 수 있습니다.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- // 상세동의서 -->
+
+						<!-- 요약동의서 -->
+						<div data-ui-tab-ctn="tab_a" aria-labelledby="tab_a_2">
+							<p class="t-txt">귀하는 본 동의를 거부하실 수 있습니다. 다만, 본 동의를 거부하시는 경우 보험상품 및 보험가입 안내, 보험 관련 컨설팅 서비스 제공이 제한되며, 동의하시더라도 전화(080-000-0099), 서면등을 통해 동의한 정보의 삭제 및 상담 목적의 연락에 대한 중단 요청을 하실 수 있습니다.</p>
+							<h3 class="hd-tit4">1. 수집·이용 목적</h3>
+							<ul class="bullet a lg">
+								<li>보험료의 계산, 당사의 상품 및 서비스 관련 상담, 재부설계서비스 제공</li>
+							</ul>
+
+							<h3 class="hd-tit4">2. 보유 및 이용 기간</h3>
+							<ul class="bullet a lg">
+								<li><span class="blue">동의일로부터 1년까지 보유·이용</span></li>
+							</ul>
+
+							<h3 class="hd-tit4">3. 수집·이용 항목</h3>
+							<ul class="bullet a lg">
+								<li>개인(신용)정보 (4개)    </li>
+								<li>일반개인정보(4개) : 성명, 전화번호 등
+									<ul class="bullet c">
+										<li>본 동의는 당사 계약을 체결한 업무 수탁자(당사 전속 보험설계사, (주)브로컬리마켓)가 수집이용하는 것을 포함합니다.</li>
+										<li>상 내용에 동의하시는 경우 당사 임직원 또는 업무수탁자가 상품 서비스 소개 및 판매 안내연락(TM 등)을 드릴 수 있습니다.</li>
+										<li>귀하는 본 동의를 거부하실 수 있습니다. 다만, 본 동의를 거부하시는 경우 보험료의 계산, 당사 상품 및 서비스 관련 상담, 재무설계서비스 제공이 제한될 수 있습니다.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- // 요약동의서 -->
+
+					</main>
+				</div>
+				
+				<div class="pbt">
+					<div class="btn-set">		
+						<button type="button" class="btn b rd lg">동의하지 않음</button>
+						<button type="button" class="btn a rd lg" onclick="location.href='UT0404.html'">동의</button>
+					</div>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</article>
+		<script>
+			ui.popup.open('pop-nncprd');  // 팝업 열기
+	
+			/* 콜백 필요 할때 팝업 열기
+			ui.popup.open('pop-nncprd',{
+				ocb:function(){
+					console.log("열리고 콜백");
+				},
+				ccb:function(){
+					console.log("닫히고 콜백");
+				}
+			});
+			*/
+			// ui.steps.set();
+			
+		</script>
+		
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- [D] 2022-05-11 <h1 class="htit"> 문구 수정 -->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"실질투자수익률 보고서"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page msc fund chk" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="fund-tit">
+				<!-- [D] 2022-05-11 수정 -->
+				<h2 class="hd-tit3"><i class="line">실질투자수익률 보고서</i>를
+					확인해 보세요.</h2>
+			</div>
+
+			<div class="ut-dcard b">
+				<div class="dls">
+					<div class="hdt">
+						<div class="tit">교보악사 파워인덱스 증권 1호[주식-파생형] (A)</div>
+					</div>
+					<div class="dl left">
+						<div class="dt">계좌번호</div>
+						<div class="dd">200***-001-02</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ratio-current">
+				<div class="ratio-cinr">
+					<h3 class="tit">누적수익률</h3>
+					<p class="num">
+						<!-- 적립비율 count -->
+						<span class="r_count">132.94</span><span class="percent">%</span>
+					</p>
+					<p class="desc">000님이 투자하신 상품의<br>
+						투자평가금액은 <em>12,692,700</em>원 입니다.</p>
+				</div>
+			</div>
+
+			<div class="sec">
+				<p class="refer-date">기준일: 전월 마지막 영업일</p>
+				<h3 class="blind">실질투자수익률 내역</h3>
+				<div class="ut-dtds c bd">
+					<ul class="dlist left">
+						<li>
+							<div class="dt">신규일</div>
+							<div class="dd">2011.16.29</div>
+						</li>
+						<li>
+							<div class="dt">투자원금</div>
+							<div class="dd">5,500,000원</div>
+						</li>
+						<li>
+							<div class="dt">중간환매금</div>
+							<div class="dd">0원</div>
+						</li>
+						<li>
+							<div class="dt">평가금액</div>
+							<div class="dd">9,909,454원</div>
+						</li>
+						<li>
+							<div class="dt">환매예상금액</div>
+							<div class="dd">9,909,454원</div>
+						</li>
+						<li>
+							<div class="dt">누적수익률<br>
+								(연환산수익률)</div>
+							<div class="dd">80.17% (6.06%)</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="bullet a">
+					<li>실질투자수익률 보고서는 전월 마지막 영업일을 기준으로 한 내용입니다. </li>
+					<li>누적수익률은 「자본시장과 금융투자업에 관한 법률 시행령」 제정에 따라 표준화된 산출기준을 적용합니다.</li>
+					<li>환매예상금액은 기준시점에 환매했을 경우 발생할 것으로 예상되는 수수료 및 세금공제 후 금액입니다.</li>
+					<li>중도 환매가 불가능한 폐쇄형 사모펀드의 경우 환매예상금액 및 누적수익률을 제공하지 않습니다.</li>
+					<li>누적수익률이 마이너스(-)일 경우 환산수익률은 ‘0’으로 표기될 수 있습니다.</li>
+				</ul>
+			</div>
+
+			<div class="sec">
+				<h3 class="hd-tit4">참조자료</h3>
+				<div class="btn-set vt">
+					<!-- [D] 2022-05-11 순서변경 -->
+					<a href="javascript:;" role="button" class="btn md ico-down ico-r">간이투자설명서</a>
+					<a href="javascript:;" role="button" class="btn md ico-down ico-r">투자설명서</a>
+					<a href="javascript:;" role="button" class="btn md ico-down ico-r">집합투자규약</a>
+					<a href="javascript:;" role="button" class="btn md ico-down ico-r">운용보고서</a>
+				</div>
+			</div>
+			<div class="ut-gudbox a open mt40" data-tog-cls="box">
+				<div class="gtit">펀드 실질투자수익률 보고서란?</div>
+				<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>2019년 1월 15일 「자본시장과 금융투자업에 관한 법률 시행령」 제70조 및 「금융투자업규정」 제4~35조가 제정되면서 2019년 12월 31일자로 월말펀드투자보고서 통지 업무가 종료되고, 그것을 대신해 2020년 1월부터 새롭게 도입된 보고서입니다.</li>
+						<li>실질투자수익률 보고서에는 펀드에서 발생한 모든 비용(판매수수료, 총보수금액, 세금 등)을 반영하여 계산한 실질투자수익률이 제공되며 투자원금, 환매예상금액, 판매수수료, 총보수에 관한 정보도 함께 제공됩니다.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ut-unprotected flx">
+				<p class="txt">예금자보호법상 보호상품 아님. 단, 증권매수 미사용 현금잔액은 5천원만원까지(회사별 보호상품 합산) 예금자보호</p>
+			</div>
+		</div>
+		<!-- 하단 고정영역 -->
+		<nav class="floatbots">
+			<div class="inr">
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">목록</button>
+				</div>
+			</div>
+		</nav>
+	</main>
+	<script>
+		//수익률 카운트
+		$({ val : 0 }).animate({ val : 155.13 }, {
+		duration: 1000,
+		step: function() {
+			var num = numberWithCommas(this.val.toFixed(2));
+			$(".r_count").text(num);
+		},
+		complete: function() {
+			var num = numberWithCommas(this.val.toFixed(2));
+			$(".r_count").text(num);
+		}
+		});
+
+		function numberWithCommas(x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+	</script>
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

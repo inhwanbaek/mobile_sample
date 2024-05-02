@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* 상품 ATM 대출 -------------------------------------------- */
+
+/* ATM */
+.page.prd.atm .grid {width: 100%; height: 100%; background: rgba(250,58,58, .6); color:#fff;} /* 그리드 */
+.page.prd.atm .atm-tit {margin-bottom: 32rem}
+.page.prd.atm .atm-tit > [class^="hd-tit"]{font-size:22rem;}
+.page.prd.atm .ut-price + .ut-gudbox {margin-top: 40rem}
+
+.page.prd.atm .text-box .txt {font-size: 15rem; color:#555555; line-height: 1.5;}
+.page.prd.atm .text-box .txt + .txt {margin-top: 20rem;}
+
+.page.prd.atm .head-box {display:flex; justify-content:space-between; margin-bottom: 16rem;}
+.page.prd.atm .head-box .ico.plus{font-size:14rem; }
+.page.prd.atm .head-box .ico.plus::before {top: 50%; transform: translateY(-50%);}
+.page.prd.atm .head-box [class^='hd-tit']{margin:0 !important; padding:0;}
+.page.prd.atm .hd-chkTxt{position:relative; font-size:14rem; line-height:24rem; margin:16rem 0 40rem; padding:0 0 0 27rem;}
+
+/* 튤팁 */
+.page.prd.atm .tooltip-area {margin-top: 11px}
+.page.prd.atm .tooltip-area .tt {font-size:14rem; color: #767676;}
+
+
+/* 서비스 가입안됨 오류  */
+.page.prd.atm .list-empty {margin-top:0; padding: 0 20rem 0; min-height: auto;}
+
+
+/* ATM 팝업 */
+.pop-layer.a.pop-atm .hd-tit3 {margin-top: 32rem; font-size: 16rem; margin-bottom: 16rem;}
+.pop-layer.a.pop-atm .hd-tit3 {margin-top: 32rem;}
+.pop-layer.a.pop-atm .poptents > [class^="hd-tit"]:first-child{font-size:22rem;}
+
+/* ATM인증번호 */
+.page.prd.atm .itt {margin-top: 8rem; font-size: 12rem; line-height: 1.5; color: #767676;}
+.page.prd.atm .itt + .itt {margin-top: 8rem;}
+.page.prd.atm .atm-athnmb {margin-bottom: 40rem; padding: 20rem 5rem; background-color: #fafafa; text-align: center;}
+.page.prd.atm .atm-athnmb .athnmb-items {display: inline-flex; align-items: center; justify-content: center;;}
+.page.prd.atm .atm-athnmb .athnmb-items .item {overflow: hidden; display: inline-flex; align-items: center; justify-content: center; width: 32rem; height: 32rem; margin: 0 4rem; border-radius: 50%; background-color: #e6e6e6; font-size: 16rem; font-weight: 700; text-align: center; color: #242424;}
+.page.prd.atm .atm-athnmb .athnmb-desc {margin-top: 10rem; font-size: 12rem; line-height :1.5; text-align: center; color: #767676;}
+.page.prd.atm .atm-athnmb .athnmb-desc strong {font: inherit; color: inherit;}
+
+.page.prd.atm .contents > .hd-tit4{padding:0; margin-bottom:16rem;}
+
+/* 계약내용확인팝업 */
+.pop-atmatck {}
+.pop-atmatck .atmatck-msg {padding-top: 24rem; font-size: 18rem; font-weight: 700; line-height: 1.33; text-align: center;}
+.pop-atmConfirm .poptents{padding-bottom:0 !important;}
+.pop-atmConfirm .phd.blind + .pct{padding-top:26rem;}
+.pop-atmConfirm .confirm-box p{font-size:15rem; color:#555; line-height: 1.4;}
+.pop-atmConfirm .confirm-box .line-box{margin-top:23rem; padding-top:25rem; border-top:1px solid #e6e6e6; font-size:16rem; color:#242424;}
+.pop-atmConfirm .confirm-box .line-box strong{font-weight: 700;}
+.pop-layer.pop-kakaopay .hd-tit4{padding:0; margin-bottom:16rem;}
+/* 상품 대출 각 상세페이지 */
+/* 신용대출 */
+.page.prd.calc.detail{padding-bottom:36rem;}
+.page.prd.calc.detail h2.hd-tit5{color:#555; font-size:1.4em;}
+.page.prd.calc.detail .sect.htop .tbtn > .bts:first-of-type{width:100%; justify-content:flex-end;}
+.page.prd.calc.detail .sect.tab .top-sect{background-color:#f8f8f8;margin:0 -20rem 23rem;padding:20rem;}
+.page.prd.calc.detail .ut-slide-play{border:0 none;border-radius: 0; margin-top:16rem;}
+.page.prd.calc.detail .ut-slide-play .swiper-container{padding-bottom:40rem;}
+.page.prd.calc.detail .ut-slide-play .swiper .control{top:auto;left:auto;right:auto; bottom:0; width:100%; text-align: center;}
+
+.page.prd.calc.detail .top-sect .hd-tit5.t1{font-size:2.6em;color:#2a81eb;line-height:1.46; margin:0;}
+.page.prd.calc.detail .top-sect .hd-tit5.t1 + .sub-txt{font-size:1.6em;color:#242424; font-weight:700;margin:8rem 0 0 0;}
+.page.prd.calc.detail .top-sect .ut-slide-play .tit .t1{font-size:2.6em;color:#2a81eb;line-height:1.46; margin:0;}
+.page.prd.calc.detail .top-sect .ut-slide-play .tit .t2{font-size:1.6em;color:#242424; font-weight:700;margin:8rem 0 0 0;}
+.page.prd.calc.detail .top-sect .box-area{margin-top:16rem;background-color:#e9eaed;border-radius:16rem;padding:20rem;}
+.page.prd.calc.detail .top-sect .box-area > p{margin-bottom:8rem;}
+.page.prd.calc.detail .top-sect .box-area > p strong{font-weight:700; font-size:1.4em; }
+.page.prd.calc.detail .top-sect .box-area dl{display:flex;justify-content:space-between;align-items: baseline;color:#242424;}
+.page.prd.calc.detail .top-sect .box-area dl + dl{margin-top:8rem;}
+.page.prd.calc.detail .top-sect .box-area dl dt{font-size:1.4em; margin-right:20rem}
+.page.prd.calc.detail .top-sect .box-area dl dd{font-size:1.2em; text-align:right;color: #2a81eb;}
+.page.prd.calc.detail .top-sect .box-area dl.st{font-weight:700;}
+.page.prd.calc.detail .top-sect .box-area dl.st dd{font-size:1.8em;}
+.page.prd.calc.detail .top-sect .desc-info{font-size:1.5em; color:#555; line-height: 1.4; margin-top:16rem;}
+
+.page.prd.calc.detail .sect.cont .top-sect + .cont-sect{margin-top:32rem;}
+.page.prd.calc.detail .sect.cont .cont-sect + .cont-sect{margin-top:40rem;}
+.page.prd.calc.detail .sect.cont .cont-sect [class^="hd-tit"]{padding:0; margin-bottom:16rem;}
+.page.prd.calc.detail .sect.cont .cont-sect .hd-tit4{font-size:1.6em;}
+.page.prd.calc.detail .proc .lst > li {position: relative; }
+.page.prd.calc.detail .proc .lst > li + li {margin-top: 32rem; }
+.page.prd.calc.detail .proc .lst > li + li:before {content: ''; display: block; position: absolute; top: -24rem; left: 50%; width: 16rem; height: 16rem; transform: translateX(-50%); background: url('../img/csc/bg_arr_procedure.png') no-repeat 0 0; background-size: 100% auto; }
+.page.prd.calc.detail .proc .lst > li .item {overflow: hidden; padding: 20rem; border-radius: 8rem; border: 1rem solid #e9eaed; background: #fff; }
+.page.prd.calc.detail .proc .lst > li .tit{text-align: center;}
+.page.prd.calc.detail .proc .lst > li .tit {font-size: 1.6em; font-weight: 700; line-height: 1.31; }
+.page.prd.calc.detail .proc .lst > li .tit > i {color: #2a81eb; }
+.page.prd.calc.detail .ut-tabs.a{margin-top:24rem;margin-bottom:32rem;}
+.page.prd.calc.detail .ut-tabs.a .menu{font-size:1em;}
+.page.prd.calc.detail .ut-tabs.a .menu>li>.bt{font-size:1.5em;}
+.page.prd.calc.detail .ut-tabs.c{margin-bottom:22rem;}
+.page.prd.calc.detail .txt-lst > li + li{margin-top:40rem;}
+.page.prd.calc.detail .txt-lst li .txt-p{font-size:1.5em; line-height: 1.4;}
+.page.prd.calc.detail .bullet.a.note li{font-size:1.5em; padding-left:13rem;}
+.page.prd.calc.detail .bullet.b{margin-top:43rem;}
+.page.prd.calc.detail .bullet.b li{font-size:1.2em;}
+.page.prd.calc.detail .txt-lst + .ut-accd.b{margin-top:40rem; margin-left:-20rem;margin-right:-20rem;}
+.page.prd.calc.detail .ut-accd.b .accd-btn{margin-top:24rem;}
+.page.prd.calc.detail .ut-accd.b>li .hbox{font-size:1.5em;}
+.page.prd.calc.detail .ut-accd.b ul.bullet.a>li{font-size:1.4em;}
+.page.prd.calc.detail .ut-accd.b .cbox .cb-hd{font-size:1.4em; margin-bottom:16rem;}
+/* 기업대출상세 */
+.page.prd.calc.detail .cont-sect .hd-tit4 ~ .hd-tit4{margin-top:40rem;}
+.page.prd.calc.detail .cont-sect .lst.img > li{position: relative; display:flex; align-items: center; font-size:1.4em; color:#555;}
+.page.prd.calc.detail .cont-sect .lst.img > li + li{margin-top:16rem;}
+.page.prd.calc.detail .cont-sect .lst.img > li::before{content: '';flex:0 0 80rem; width:80rem; height: 80rem;
+	overflow: hidden;display: block;background-color:#f5f5f5;background-size: 100% auto;margin-right:12rem; border-radius: 100%;}
+
+.page.prd.calc.detail .cont-sect .lst.img > li:first-child::before{background:#f5f5f5 url(../img/prd/ic-comp-01@2x.png) no-repeat center center; background-size:48rem; }
+.page.prd.calc.detail .cont-sect .lst.img > li:nth-child(2)::before{background:#f5f5f5 url(../img/prd/ic-comp-02@2x.png) no-repeat center center; background-size:48rem; }
+.page.prd.calc.detail .cont-sect .lst.img > li:nth-child(3)::before{background:#f5f5f5 url(../img/prd/ic-comp-03@2x.png) no-repeat center center; background-size:49rem 48rem; }
+.page.prd.calc.detail .cont-sect .lst.chk{display:flex;flex-direction: column; align-items: flex-start;}
+.page.prd.calc.detail .cont-sect .lst.chk > li	{position: relative;display:inline-block; border:1px solid #242424; border-radius: 8rem;overflow: hidden;}
+.page.prd.calc.detail .cont-sect .lst.chk > li span{display:inline-block; width:100%; background-color: rgb(240,242,245); padding:8rem 16rem 12rem 49rem; font-size:1.4em; color:#242424; font-weight: 700; border-top:4px solid #fff; border-right:4px solid #fff;border-radius: 8rem; }
+.page.prd.calc.detail .cont-sect .lst.chk > li span::before{width: 11.5rem;height: 9rem;background: url(../img/common/check-blue@2x.png) no-repeat 0 0;background-size: 100% auto;position:absolute;left:26rem;top: 50%; transform: translateY(-50%); content:"";}
+.page.prd.calc.detail .cont-sect .lst.chk > li + li{margin-top:10rem;}
+.page.prd.calc.detail .cont-sect ul.bullet.a>li{font-size:1.4em;}

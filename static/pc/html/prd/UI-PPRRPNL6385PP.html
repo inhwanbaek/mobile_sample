@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UI</title>
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a md pop-cprdt pop-shares" id="pop-cprdt2"><!-- 22-06-28 클래스 수정 -->
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상품상세</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="cprd-wrp mt0">
+						<!-- [s] 22-06-28 수정 --> 
+						<div class="cprd-box bg-w">
+							<div class="state"></div>
+							<h2 class="hd-tit3">(온라인)하이월드에너지증권사투자신탁(주식-재간접형)</h2>
+							<div class="right">
+								<button type="button" class="btn-url-copy"><em class="blind">URL 복사</em></button>
+								<label class="checkbox star"><input type="checkbox" checked><span class="txt"></span></label>
+							</div>
+
+							<div class="bg-detail">
+								<div class="wrap">
+									<div class="left-area">
+										<h3>적용이율</h3>
+										<span class="t-red">32.98%</span>
+									</div>
+									<ul class="lst-detail">
+										<li>
+											<h3>운용사</h3>
+											<span>교보생명</span>
+										</li>																														
+									</ul>
+								</div>
+								
+								<div class="btn-set">
+									<button type="button" class="btn md ico-down ico-r">상품설명서</button>
+									<button type="button" class="btn md ico-down ico-r">상품약관</button>
+								</div>
+							</div>
+						</div>
+						<!-- // [e] 22-06-28 수정 --> 
+						<div class="cprd-box">
+							<h4 class="hd-tit4">상품특징</h4>
+							<ul class="bullet a lg">
+								<li>부담금 납입 시의 확정금리를 계약기간(5년) 동안 보장</li>
+							</ul>
+							<h4 class="hd-tit4 mt30">주요 투자대상</h4>
+							<ul class="bullet a lg">
+								<li>교보생명 자산운용 기준에 맞는 채권, 주식 등</li>
+							</ul>
+							<h4 class="hd-tit4 mt30">이율의 적용</h4>
+							<ul class="bullet a lg">
+								<li>월1회 공시 (매월1월)</li>
+							</ul>
+							<h4 class="hd-tit4 mt30">재예치</h4>
+							<ul class="bullet a lg">
+								<li>만기일 당시 이율로 동일 상품에 자동 재예치</li>
+							</ul>
+							<h4 class="hd-tit4 mt30">중도해지이율</h4>
+							<ul class="bullet a lg">
+								<li>이율보증형 적용이율X50%</li>
+							</ul>																																
+						</div>
+						<div class="cprd-box type2 mt40"><!-- 22-06-28 클래스 수정 -->
+							<div class="tops">
+								<h3 class="hd-tit4 htit">공시이율추이</h3>
+							</div>
+							<!-- 차트 영역 -->
+							<div class="ut-chart">
+								<div class="bts"><button type="button" class="bt-chart"><i class="blind">챠트 내용보기</i></button></div>
+								<div class="chart"><img src="../../img/temp/chart_area.png" alt="rMate Chart 들어갈 자리"></div>
+							</div>
+							<!--// 차트 영역 -->
+						</div>						
+						
+						<!-- 22-06-28 삭제 
+						<ul class="share mt40">
+							<li class="talk"><button type="button" class="bt"><i class="t">카카오톡</i></button></li>
+							<li class="link"><button type="button" class="bt"><i class="t">링크복사</i></button></li>
+							<li class="link"><button type="button" class="bt"><i class="t">더보기</i></button></li>
+						</ul>
+						-->
+
+						<div class="cprd-box mt40">
+							<!-- 펼침 상태인 경우 -->
+							<div class="ut-gudbox b open" data-tog-cls="box">
+								<div class="gtit">꼭 알아두세요</div>
+								<button type="button" data-tog-cls="btn" class="bt-tog">안내문</button>
+								<div class="gctn" data-tog-cls="ctn">
+									<ul class="bullet a glst">
+										<li>이 퇴직연금은 「예금자보호법」에 따라 예금보험공사가 보호하지 않습니다.</li>
+										<li>상품에 가입하기 전 투자대상, 환매방법 및 보수 등에 관하여 약관 및 투자설명서를 읽어 보시기 바랍니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">
+					<button type="button" class="btn a rd lg">확인</button>
+				</div>
+			</div>			
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-cprdt2');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-pdmpsell',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+	</script>
+</div>
+</body>
+</html>

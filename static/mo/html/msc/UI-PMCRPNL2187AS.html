@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title,is-gnb","title":"상품변경안내"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<main class="container page etp msc rp pdmd" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<div class="etp-item prd-change">
+				<h2 class="hd-tit2"><i class="line">퇴직연금 상품</i>을 실속있게,<br>편리하게 운용해 보세요.</h2>
+				<div class="pdmd-tprd mt16">
+					<div class="tit"><span class="i">IRP</span><span class="t">교보정보통신</span></div>
+					<div class="act"><button type="button">제도변경선택</button></div>
+				</div>
+				<p class="etp-txt">위험자산에 해당되는 상품군 운용 시 유의할 점을 꼭 확인하세요.</p>
+				<div class="info-txt">
+					<span class="tt">위험자산 한도 제한적용이란</span>
+					<div class="ut-tooltip">
+						<button type="button" class="ico help sm bt-tooltip">도움말</button>
+						<div class="toolctn">
+							<div class="tpmsg">
+								<p>상품 운용 시 위험자산의 비율이 제한되어 있음을 말합니다. 따라서 상품을 변경할 때 관련법에 따라 위험자산에 해당하는 상품의 적립금 비중은 전체 적립금의 <strong class="bold">70%</strong>를 초과할 수 없습니다.</p>
+								<p class="mt10"><strong class="bold">주식형, 주식혼합형</strong> 등 약관상 주식의 투자한도가 40%를 초과하는 상품이 <strong class="bold">위험자산으로 분류됩니다.</strong></p>
+								<p class="mt10">단, TDF 상품은 은퇴 예상시점까지 남은 기간 등에 따라 위험자산과 안전자산의 비중을 지속적으로 조정하는 펀드로, <strong class="bold">대부분의 TDF 상품</strong>은 주식형, 주식혼합형에 해당하더라도 <strong class="bold">위험자산으로 분류되지 않습니다.</strong></p>
+								<p class="mt10">약관상 투자비적격 채권의 투자한도가 30%를 초과하는 <strong class="bold">일부 채권형 상품도 위험자산으로 분류됩니다.</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="etp-item b">
+				<!-- [sm] 2022-12- 29  <a> 태그 삭제 /  텍스트 수정 / 버튼 추가 / 카드 순서 변경 -->
+				<div class="bd-card">
+					<h3 class="hd-tit4">보유상품 변경하기</h3> 
+					<p class="txt">보유하고 있는 상품을 팔아서 다른 상품을 살 수 있습니다.</p>
+					<div class="bd-img bd-img02"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+				<div class="bd-card">
+					<h3 class="hd-tit4">입금상품 변경하기</h3>
+					<p class="txt">앞으로 납입할 부담금을 어떤 상품으로 운용할지 상품의 비율을 변경할 수 있습니다.</p>
+					<div class="bd-img bd-img01"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+				<div class="bd-card">
+					<h3 class="hd-tit4">ETF 매매하기</h3>
+					<p class="txt">보유하고 있는 현금성 자산으로 ETF를 매매할 수 있습니다.</p>
+					<div class="bd-img bd-img06"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+
+				<div class="bd-card">
+					<h3 class="hd-tit4">추천포트폴리오로 전부 변경하기</h3>
+					<p class="txt">보유상품을 추천포트폴리오에 맞춰 리벨런싱하고 입금하는 상품의 비율도 추천포트폴리오 비율로 변경합니다.</p>
+					<div class="bd-img bd-img05"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+				<div class="bd-card">
+					<h3 class="hd-tit4">만기예정상품 예약변경하기</h3>
+					<p class="txt">만기가 다가오고 있는 상품을 만기일에 맞춰 다른 상품으로 변경할 수 있습니다.</p>
+					<div class="bd-img bd-img03"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+				<!--삭제 <div class="bd-card">
+					<a href="javascript:;">
+						<h3 class="hd-tit4">포트폴리오 변경</h3>
+						<p class="txt">보유상품을 선택한 포트폴리오에 맞춰 리벨런싱하고 입금하는 상품의 비율도 선택한 포트폴리오 비율로 변경합니다.</p>
+						<div class="bd-img bd-img05"></div>
+					</a>
+				</div> -->
+				<div class="bd-card">
+					<h3 class="hd-tit4">자동상품 변경하기</h3>
+					<p class="txt">보유하고 있는 현금성자산이나 금리연동형 상품을 팔아서 주기적으로 펀드 상품을 살 수 있습니다.</p>
+					<div class="bd-img bd-img04"></div>
+					<a href="" title="새창열림" target="_blank" role="button" class="btn md ico-r ico-nowgo">바로가기</a>
+				</div>
+				<!--// [sm] 2022-12- 29  <a> 태그 삭제 /  텍스트 수정 / 버튼 추가 / 카드 순서 변경 -->
+			</div>
+			<div class="btn-set mt24">
+				<button type="button" class="btn md">상품변경 안내서 확인</button>
+			</div>
+
+
+
+		</div>
+
+	</main>
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false","class":"is-chatbot"}'></include>
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</div>
+</body>
+</html>

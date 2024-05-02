@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<!-- 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	<include class="header" src="../inc/header_dcs.html" data-include-opt='{"visible":"true"}'></include>
+	<!--// 헤더 명칭 인쿠르드 파일 변경: header_dcs.html-->
+	
+	<!-- LNB 영역 -->
+	<!-- LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<include class="lnb" src="../inc/lnb.html" data-include-opt='{"visible":"false"}'></include>
+	<!--// LNB 안보이게 변경: data-include-opt='{"visible":"false"}'-->
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+
+	<!-- main태그 안에 모든 페이지를 복사해 넣으시면 풀페이지 화면을 확인 하실수 있습니다. -->
+	<!--:::::::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+	<main class="container page dcs" id="container">
+
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+
+			<div class="page-hdt">
+				<h2 class="stit hd-tit2">직업 및 위험등급분류표</h2>
+			</div>
+			<h3 class="stit hd-tit3">직업을 검색하면 위험등급을 조회하실 수 있습니다.</h3>
+			
+			<!-- search -->
+			<ul class="sch-upper">
+				<li>
+					<span class="th-tit">직업검색</span>
+					<div class="td-cont w100p">
+						<span class="input a w100p">
+							<label class="lb blind" for="input-01">직업검색</label><input type="text" title="직업 또는 직무 입력" placeholder="직업 또는 직무 입력" id="input-01">
+						</span>
+					</div>
+				</li>
+			</ul>
+			<div class="btn-set">
+				<button type="button" class="btn md ico-search">검색</button>
+			</div>
+
+			<h3 class="hd-tit3 mb20 mt30">검색 결과</h3>
+
+			<div class="ut-tbl a">
+				<table class="tblist">
+					<caption><span class="tit">검색목록</span><span class="cap"></span></caption>
+					<colgroup>
+						<col style="width: 70%">
+						<col style="width: auto">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">직업</th>
+							<th scope="col">위험등급</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="nodata">
+							<td colspan="2"><p class="txt">검색한 직업이 없습니다.</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="ut-gudbox b open" data-tog-cls="box">
+				<div class="gtit">꼭 알아두세요</div>
+				<div class="gctn" data-tog-cls="ctn">
+					<ul class="bullet a glst">
+						<li>위험등급은 5가지이며, 각 등급의 위험도는 아래와 같습니다.
+							<ul class="bullet b">
+								<li>A = 비위험 </li>
+								<li>B, C = 중위험</li>
+								<li>D, E = 고위험 </li>
+							</ul>
+						</li>
+						<li>위험등급의 위험도(비위험, 중위험, 고위험)는 보험료 산출 시 차등 적용됩니다.</li>
+						<li>직업 및 위험등급분류표는 상해보험의 통지의무 및 보험료 적용 기준이 됩니다.
+							<ul class="bullet b">
+								<li>질병/상해보험 표준약관 제15조(계약 후 알릴 의무)</li>
+								<li>실손의료보험 표준약관 제12조(상해보험계약 후 알릴 의무)</li>
+							</ul>
+						</li>
+						<li>직업 또는 직무가 바뀌어 위험등급이 변경되면 보험료가 변동될 수 있으며, 남은 기간 보장에 필요한 재원인 해지환급금 정산으로 계약자가 추가 납입하거나 환급받을 금액이 발생할 수 있습니다.
+							<ul class="bullet b">
+								<li>상품에 따라 정산 반영 기준이 다를 수 있습니다.</li>
+							</ul>
+						</li>
+						<li>직업 및 직무 관련 위험등급 검색이 어렵거나 궁금하신 점이 있으면 교보생명 콜센터(1588-1001)로 문의해 주세요.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--// :::::::::::::::::::::::: 이전화면 복사 영역 ::::::::::::::::::::::::::::::-->
+
+	<!-- 개발시 레이어팝업 위치는 .container 바깥으로 넣어주세요 -->
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"true"}'></include>
+
+</div>
+</body>
+</html>

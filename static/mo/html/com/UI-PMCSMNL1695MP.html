@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<!-- 헤더-->
+	<include class="header" id="header" src="../inc/header.html" data-include-opt='{"visible":"true","class":"is-back,is-title","title":"대출신청"}'></include>
+	<include class="gnb" src="../inc/gnb.html"></include>
+
+	<!---- 바디 - 여기위로는 템플릿영역 ---->
+	<main class="container page pop-loan" id="container">
+		<!-- 본문 영역 -->
+		<div class="contents" id="contents">
+			<ul class="page-prd mt32">
+				<li class="loan-box">
+					<a href="javascript:void(0);" onclick="return movePage('/dgt/web/insurance/policy-loan/PCLN_ALL_INTRO'), false" role="button"> 
+						<div class="ut-bdgs">
+							<em class="bdg v"># 보험계약대출</em>
+						</div> 
+						<div class="txtbox">
+							<strong class="tit">긴급자금이 필요할 때</strong>
+							<span class="txt">신속하고 간편하게<br> 이용해보세요</span>
+						</div> 
+						<div class="imgbox">
+							<img class="img" src="../../img/main/ico_pd_01.png" alt="보험계약대출 아이콘 이미지">
+							<!-- 개발은 밑에 소스로 넣어주세요.-->
+							<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_01.png" alt="보험계약대출 아이콘 이미지"> -->
+						</div>
+					</a>
+				</li>
+				<li class="loan-box">
+					<a href="javascript:void(0);" onclick="return movePage('/dgt/web/loan/product/credit/wkrkPlacePerson-text-detail'), false" role="button"> 
+						<div class="ut-bdgs">
+							<em class="bdg b"># 신용대출</em>
+						</div> 
+						<div class="txtbox">
+							<strong class="tit">직장인이라면 <br> 최대 3500만원까지</strong>
+							<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+						</div> 
+						<div class="imgbox">
+							<img class="img" src="../../img/main/ico_pd_03.png" alt="신용대출 아이콘 이미지">
+							<!-- 개발은 밑에 소스로 넣어주세요.-->
+							<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_03.png" alt="신용대출 아이콘 이미지"> -->
+						</div>
+					</a>
+				</li>
+				<li class="loan-box">
+					<a href="javascript:void(0);" onclick="return movePage('/dgt/web/loan/product/house/security/apartment-security-text-detail'), false" role="button"> 
+						<div class="ut-bdgs">
+							<em class="bdg b"># 주택담보대출</em>
+						</div> 
+						<div class="txtbox">
+							<strong class="tit">아파트담보대출<br> 한도, 금리부터 조회!</strong>
+							<span class="txt">비대면으로 <br> 빠르게 확인하세요</span>
+						</div> 
+						<div class="imgbox">
+							<img class="img" src="../../img/main/ico_pd_02.png" alt="주택담보대출 아이콘 이미지">
+							<!-- 개발은 밑에 소스로 넣어주세요.-->
+							<!-- <img class="img" src="/dgt/web/pc/common/img/main/ic_pd_02.png" alt="주택담보대출 아이콘 이미지"> -->
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+</div>
+
+	<!---- 바디 - 여기밑으로 템플릿영역 ---->
+
+	<!-- 고정메뉴 -->
+	<include class="floatnav" src="../inc/floatnav.html" data-include-opt='{"visible":"false"}'></include>
+	<!-- 푸터 -->
+	<include class="footer" src="../inc/footer.html" data-include-opt='{"visible":"false"}'></include>
+
+</body>
+</html>

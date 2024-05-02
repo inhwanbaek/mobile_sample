@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	<article class="pop-layer a sm pop-counsel-futr" id="pop-counsel-futr">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">상담신청</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="sect frm-bunch">
+						<h2 class="hd-tit3">펀드가입 상담에 필요한 기본 정보를 입력해 주세요.</h2>
+						<div class="ut-form a">
+							<p class="info-ast"><em class="ast"></em>필수입력항목</p>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">상담방법<em class="ast">필수항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							<div class="radiobox c">
+								<label class="radio"><input type="radio" name="radio-how" id="radio-how-p" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1"><span class="txt">전화</span></label>
+								<label class="radio"><input type="radio" name="radio-how" id="radio-how-e" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">이메일</span></label>
+							</div>
+							<div class="email-wrp">
+								<div class="ut-email email"><!-- [D] 2022-03-02 UI/UX 변경 -->
+									<div class="enam">
+										<span class="input a emids">
+											<label class="lb" for="emids_0">이메일<em class="ast">필수항목</em></label>
+											<input id="emids_0" type="email" placeholder="아이디">
+										</span>
+										<i class="at">@</i>
+										<span class="input a emcom">
+											<label class="lb" for="emcom_id0">주소입력</label>
+											<input id="emcom_id0" type="text" placeholder="직접입력">
+										</span>
+									</div>
+									<ul class="ebts">
+										<li><button type="button" value="naver.com" class="btn sm bt">Naver</button></li>
+										<li><button type="button" value="daum.net"  class="btn sm bt">Daum</button></li>
+										<li><button type="button" value="gmail.com" class="btn sm bt">Gmail</button></li>
+									</ul>
+								</div><!-- //[D] 2022-03-02 UI/UX 변경 -->
+							</div>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">상담명<em class="ast">필수입력항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							
+						
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">이름<em class="ast">필수입력항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a">
+										<label class="lb" for="inp-name">이름<em class="ast">필수항목</em></label>
+										<input type="text" title="이름 입력" placeholder="실명 입력" id="inp-name">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+
+					<div class="sect frm-bunch">
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<div class="radiobox c">
+										<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1"><span class="txt">남성</span></label>
+										<label class="radio"><input type="radio" name="radio_md" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">여성</span></label>
+									</div>
+								</li>
+								<li>
+									<span class="input a ut-date">
+										<label class="lb" for="inp-birth">생년월일<em class="ast">필수항목</em></label>
+										<input type="tel" id="inp-birth" class="datepicker" placeholder="YYYY.MM.DD" value="">
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">전화번호<em class="ast">필수항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							<div class="call-wrp">
+								<div class="radiobox c">
+									<label class="radio"><input type="radio" name="radio_c1" id="ph-set-1" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_1" checked><span class="txt">휴대폰</span></label>
+									<label class="radio"><input type="radio" name="radio_c1" id="ph-set-2" data-ui-tab-btn="tab_rb" aria-controls="tab_rb_2"><span class="txt">집/직장</span></label>
+								</div>
+								<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_1" class="active">
+									<div class="ut-phone w100p">
+										<span class="select tcom">
+											<label for="tcom_0" class="lb">통신사</label>
+											<select id="tcom_0">
+												<option>SKT</option>
+												<option>KT</option>
+												<option>LGU+</option>
+												<option>SKT알뜰폰</option>
+												<option>KT알뜰폰</option>
+												<option>LGU+알뜰폰</option>
+											</select>
+										</span>
+										<span class="input a tnum"><label class="lb" for="tnum_1">전화번호 입력</label>
+											<input type="tel" pattern="\d*" placeholder="[-] 없이 숫자만 입력" id="tnum_1">
+										</span>
+									</div>
+								</div>
+								<div data-ui-tab-ctn="tab_rb" aria-labelledby="tab_rb_2">
+									<div class="ut-phone">
+										<span class="input a tnum"><label class="lb" for="tnum_2">전화번호 입력</label>
+											<input type="tel" pattern="\d*" placeholder="[-] 없이 숫자만 입력" id="tnum_2">
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">상담시간<em class="ast">필수항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="input a ut-date"><input type="tel" id="inp-date" class="datepicker" placeholder="YYYY.MM.DD" value="" title="날짜입력"></span>
+									<span class="select def w100p">
+										<select name="sel-time" id="sel-time" title="상담시간 선택">
+											<option selected>시간 선택</option>
+											<option>12:00 ~ 12:30</option>
+										</select>
+									</span>  
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">상담시간<em class="ast">필수항목</em></h3>
+						</div>
+						<div class="ut-form a">
+							<label class="radio"><input type="radio" name="rdo-type"><span class="txt">오전(09:00~12:00)</span></label>
+							<label class="radio"><input type="radio" name="rdo-type"><span class="txt">오후(13:00~18:00)</span></label>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4"><label for="textarea-1">내용<em class="ast">필수항목</em></label></h3>
+						</div>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<span class="textarea a">
+										<textarea placeholder="예) 상담하실 내용을 입력해 주세요." id="textarea-1"></textarea>
+										<span class="num">(<i class="i" title="현재 입력 글자">0</i>/<i class="n" title="최대 입력 글자">50</i>자)</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="text-box">
+							<ul class="bullet b">
+								<li>고객정보 보호를 위해 <span class="color10">주민등록번호 등 민감한 개인정보는 제외하고 입력</span>해 주세요.</li>
+								<li>로그인 후 일정 시간이 지나면 개인정보 보호를 위해 자동으로 로그아웃됩니다. 내용이 많을 경우 메모장 등에 미리 작성한 뒤 붙여넣기를 해 주세요.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sect frm-bunch">
+						<div class="tit-area">
+							<h3 class="hd-tit4">고객님의 소중한 개인정보는 상담 목적 외에는 사용되지 않습니다.</h3>
+						</div>
+						<div class="ut-form a">
+							<ul class="form">
+								<li>
+									<label class="radio cu">
+										<input type="radio" name="rdo-must">
+										<span class="txt">
+											<span class="tt">[필수] 개인(신용)정보 수집 &middot; 이용 동의</span>
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="pbt">
+				<!-- 하단 고정영역 -->
+				<div class="btn-set">
+					<button type="button" class="btn rd lg a">확인</button>
+				</div>
+				<!-- //하단 고정영역 -->
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		
+	</article>
+
+
+	<script>
+		ui.popup.open('pop-counsel-futr');  // 팝업 열기
+
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample1',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		});
+		*/
+
+
+	</script>
+</div>
+</body>
+</html>

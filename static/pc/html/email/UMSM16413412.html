@@ -1,0 +1,443 @@
+<!--퇴직연금 취급실적보고서-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<!-- <TBODY> background= -->                           
+</head>    
+<body> 
+<LINK href="http://www.kyobo.co.kr/css/mail/kyobomail_2014.css" type=text/css rel=stylesheet>
+<div class="wrapper">     
+	<div class="conbg">   
+        <!-- 로고 영역 -->
+		<div class="topbg">			
+			<div class="fl_left logo"><a href="https://www.kyobo.co.kr" target="blank"><img src="http://www.kyobo.co.kr/images/mail/attachMail_logo.gif" alt="교보생명 로고"/></a></div> 
+        </div>		
+		<!-- 콘텐츠 영역  --> 
+		<div class="t_center">
+			<img src="http://10.33.3.17:8778/images/co/mail/h2_retirement_treat_20.gif" alt="퇴직연금 취급실적보고서" class="mt50"/>
+		</div>	
+		<!-- 202002 인사말 개정 -->
+		 <div class="greeting_new">
+            <ul>
+                <li class="fs14" style="font-weight:bold;"><span style="color:#006bbe;"><u>{$basImDto.mgr_nm$}</u></span><u>&nbsp;관리자님께</u></li>
+                <li class="mt10 fs12">안녕하세요? 변함없는 관심과 격려를 보내주신 고객님께 진심으로 감사드립니다.
+                <br>저희 교보생명은 고객님과 늘 함께하는 평생 든든한 동반자로서
+                <br>앞으로도 더 나은 서비스와 혜택을 제공해 드리기 위해 최선을 다하겠습니다.
+                </li>
+            </ul>
+        </div> 
+        
+		<!-- 박스 -->       
+        <div class="conbox mt20 ml30 fs12">
+            근로자퇴직급여보장법 제33조에 따라, 퇴직연금 제도의 취급실적을 안내(연1회) 드리오니 참고하시기 바랍니다.
+		</div> 
+        
+        <!-- 기본정보  -->        
+        <div class="mt20" style="height:20px">
+            <span class="fl_left bul_green ml30">기본정보</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+      <table style="width:100%" border="1">
+        <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+        </colgroup>
+      <TBODY>
+        <TR>
+          <th class="bg_bold" style="border-left:0px;">제도</th>
+          <td>{$basImDto.rtp_sst_dv_nm$}</td>
+          <th class="bg_bold">단체명</th>
+          <td>{$basImDto.gp_nm$}</td>
+        </TR>
+        <TR>
+          <th class="bg_bold" style="border-left:0px;">제도번호</th>
+          <td>{$basImDto.sst_no$}</td>
+          <th class="bg_bold">기준연도</th>
+          <td>{$basImDto.bs_yr$}</td>
+        </TR>
+      </TBODY>
+      </table>
+    </div>
+        
+        <!-- 퇴직연금 사업자 등록 내용 및 재무에 관한 사항  -->    
+        <div class="mt20" style="height:20px">
+            <span class="fl_left bul_green ml30">퇴직연금 사업자 등록 내용 및 재무에 관한 사항</span>			
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+        <colgroup>
+            <col style="width:15%">
+            <col style="width:25%">
+            <col style="width:15%">
+            <col style="width:45%">
+        </colgroup>
+        <tr>
+          <th class="bg_bold" style="border-left:0px;">등록번호</th>
+          <td>{$rtpBsmImDto.brno$}</td>
+          <th class="bg_bold">명칭</th>
+          <td>{$rtpBsmImDto.cmy_nm$}</td>
+        </tr>
+        <tr>
+          <th class="bg_bold" style="border-left:0px;">대표자</th>
+          <td>{$rtpBsmImDto.rep_nm$}</td>
+          <th class="bg_bold">주소</th>
+          <td>{$rtpBsmImDto.adr$}</td>
+        </tr>
+           <th colspan="1" class="bg_bold">수행업무</th>
+           <td colspan="3" class="bg_bold">근로자퇴직급여보장법 제28조 제1항에 의한 운용관리업무<br>근로자퇴직급여보장법 제29조 제1항에 의한 자산관리업무</td>
+        </tr>
+        </table>
+        </div>
+        
+        <!-- 가입자 교육 시행 현황  -->  
+        <div class="mt20" style="height:20px">
+    	   <span class="fl_left bul_green ml30">가입자 교육 시행 현황</span>
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+      <table style="width:100%" border="1">
+        <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+        </colgroup>
+          <tr>
+            <th class="bg_bold" style="border-left:0px;">교육시행일</th>
+              <th class="bg_bold">교육방법</th>
+  				</tr>
+                <tr>
+				    <td style="border-left:0px;">{$sbsrEduImDto.snd_dtm$}&nbsp;</td>
+				    <td>{$sbsrEduImDto.rtp_edu_mth_nm$}&nbsp;</td>
+                </tr>
+  			</table>
+		</div>
+        <ul class="guide mt10 ml30" style="width:760px;">
+            <li><strong>※ 교육내용은 다음과 같음</strong></li>
+            <li class="list_bdot"><strong>DB</strong><br>퇴직연금제도 운영, 퇴직급여의 수급권 보호, 퇴직급여의 지급, 퇴직연금 과세체계, 자산·부채관리 원칙과 노후 설계,<br>우리회사의 퇴직연금 제도 기본 정보, 부담금 납입 현황, 급여종류별 표준적인 급여액 수준, 퇴직금 연금 수령 방식 및 매년 연금액 예시,<br>우리회사의 연금자산 적립 현황, 재정안정화계획서에 관한 사항, 적립금 운용 현황, 적립금 운용목표</li>
+            <li class="list_bdot"><strong>DC/IRP기업형</strong><br>퇴직연금제도 운영, 퇴직급여의 수급권 보호, 퇴직급여의 지급, 퇴직연금 과세체계, 자산·부채관리 원칙과 노후 설계</li>
+		</ul>
+    
+        <!-- 부담금 적립 현황  -->  
+        <div class="mt20" style="height:20px">
+    	   <span class="fl_left bul_green ml30">부담금 적립 현황</span>
+           <span class="fl_right fs11  mr40">(단위:명,원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+            <colgroup>
+                <col style="width:15%">
+                <col style="width:15%">
+                <col style="width:14%">
+                <col style="width:14%">
+                <col style="width:14%">
+                <col style="width:14%">
+                <col style="width:14%">
+            </colgroup>
+            <tr>
+                <th class="bg_bold" style="border-left:0px;">계약체결일자</th>
+                <th class="bg_bold">적용기준일자</th>
+                <th class="bg_bold">가입자수</th>
+                <th class="bg_bold">적립금 총액</th>
+                <th class="bg_bold">원리금보장<br>상품 적립액</th>
+                <th class="bg_bold">기타상품<br>적립액</th>
+                <th class="bg_bold">대기성<br>자금 총액</th>
+            </tr>
+<%if("N".equals(record.getString("basImDto.ab_yn"))) {%>
+            <tr>
+                <td colspan=7>가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</td>
+            </tr>
+<%} else {%>
+            <tr>
+                <td style="border-left:0px;">{$cgamAunImDto.fs_cgam_pa_dt$}&nbsp;</td>
+		<td>{$cgamAunImDto.sst_st_dt$}&nbsp;</td>
+                <td>{$cgamAunImDto.sbsr_cnt$}&nbsp;</td>
+                <td>{$cgamAunImDto.evl_amt$}&nbsp;</td>
+                <td>{$cgamAunImDto.evl_amt01$}&nbsp;</td>
+                <td>{$cgamAunImDto.evl_amt02$}&nbsp;</td>
+                <td>{$cgamAunImDto.evl_amt03$}&nbsp;</td>
+            </tr>
+<%}%>
+        </table>
+		</div>
+		<ul class="guide mt10 ml30" style="width:760px;">
+            <li><strong>※ 가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</strong></li>
+		</ul>
+        
+        <!-- 적립금 중도인출 및 급여지급 현황 -->
+        <div class="mt20" style="height:20px">
+    	   <span class="fl_left bul_green ml30">적립금 중도인출 및 급여지급 현황</span>
+           <span class="fl_right fs11  mr40">(단위:명,원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+            <colgroup>
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+            </colgroup>
+            <tr>
+                <th class="bg_bold" style="border-left:0px;">전전 연도말 적립금</th>
+                <th class="bg_bold">납입액</th>
+                <th class="bg_bold">지급액①</th>
+                <th class="bg_bold">운용손익</th>
+                <th class="bg_bold">직전 연도말 적립금</th>
+            </tr>  
+<%if("N".equals(record.getString("basImDto.ab_yn"))) {%>
+            <tr>
+                <td colspan=5>가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</td>
+            </tr>
+<%} else {%>
+            <tr>
+                <td style="border-left:0px;">{$revDlnImDto.ften_evl_amt$}</td>
+				<td>{$revDlnImDto.accu_cgam$}&nbsp;</td>
+                <td>{$revDlnImDto.pn_tot_amt$}&nbsp;</td>
+                <td>{$revDlnImDto.ot_prls_amt$}&nbsp;</td>
+                <td>{$revDlnImDto.tten_evl_amt$}&nbsp;</td>
+            </tr>
+<%}%>
+        </table>
+		</div>
+        <div class="mt20" style="height:20px">
+            <ul class="guide mt20 ml30"><li><strong>① 지급액 상세</strong><span class="fl_right fs11  mr40" style="font-weight:normal">(단위:명,원)</span></li></ul>
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+            <colgroup>
+                <col style="width:13%">
+                <col style="width:18%">
+                <col style="width:13%">
+                <col style="width:18%">
+                <col style="width:18%">
+                <col style="width:18%">
+            </colgroup>
+            <tr>
+              <th class="bg_bold" style="border-left:0px;">중도인출 인원</th>
+              <th class="bg_bold">중도인출 금액</th>
+              <th class="bg_bold">급여 지급 인원</th>
+              <th class="bg_bold">급여 지급액</th>
+              <th class="bg_bold">사용자 반환금</th>
+                <th class="bg_bold">기타</th>
+            </tr>  
+<%if("N".equals(record.getString("basImDto.ab_yn"))) {%>
+            <tr>
+                <td colspan=6>가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</td>
+            </tr>
+<%} else {%>
+            <tr>
+                <td style="border-left:0px;">{$revDlnImDto.mse_dwo_ncn$}</td>
+				<td>{$revDlnImDto.mse_dwo_amt$}</td>
+                <td>{$revDlnImDto.pn_ncn$}</td>
+                <td>{$revDlnImDto.pn_amt$}</td>
+                <td>{$revDlnImDto.usr_rtn_amt$}</td>
+                <td>{$revDlnImDto.etc_amt$}</td>
+            </tr>
+<%}%>
+        </table>
+		</div>
+		<ul class="guide mt10 ml30" style="width:760px;">
+            <li><strong>※ 가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</strong></li>
+		</ul>
+        
+        <!-- 자산관리기관별 적립금 현황  -->  
+        <div class="mt20" style="height:20px">
+    	   <span class="fl_left bul_green ml30">자산관리기관별 적립금 현황</span>
+           <span class="fl_right fs11  mr40">(단위:원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+            <colgroup>
+                <col style="width:17%">
+                <col style="width:17%">
+                <col style="width:17%">
+                <col style="width:17%">
+                <col style="width:16%">
+                <col style="width:16%">
+            </colgroup>
+            <tr>
+                <th class="bg_bold" style="border-left:0px;">자산관리기관</th>
+                <th class="bg_bold">전전연도말 적립금(A)</th>
+                <th class="bg_bold">납입액(B)</th>
+                <th class="bg_bold">지급액(C)</th>
+                <th class="bg_bold">운용손익(D)</th>
+                <th class="bg_bold">직전연도말 적립금(E)</th>
+            </tr>  
+<%if("N".equals(record.getString("basImDto.ab_yn"))) {%>
+            <tr>
+                <td colspan=6>가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</td>
+            </tr>
+<%} else {%>
+            <%int recSize = record.getSize("aseBogzRevImDto");
+              for(int i = 0; i < recSize; i++) {
+                if("합계".equals(record.getString("aseBogzRevImDto["+i+"].rtp_ase_og_nm"))) {
+            %>
+            <tr>
+                <td style="border-left:0px;"><strong>합계</strong></td>
+                <td><strong>{$aseBogzRevImDto[i].ften_evl_amt$}&nbsp;</strong></td>
+                <td><strong>{$aseBogzRevImDto[i].cgam_pa_amt$}&nbsp;</strong></td>
+                <td><strong>{$aseBogzRevImDto[i].pn_amt$}&nbsp;</strong></td>
+                <td><strong>{$aseBogzRevImDto[i].ot_prls_amt$}&nbsp;</strong></td>
+                <td><strong>{$aseBogzRevImDto[i].tten_evl_amt$}&nbsp;</strong></td>
+            </tr>
+            <%  } else {%>
+            <tr>
+                <td style="border-left:0px;">{$aseBogzRevImDto[i].rtp_ase_og_nm$}&nbsp;</td>
+                <td>{$aseBogzRevImDto[i].ften_evl_amt$}&nbsp;</td>
+                <td>{$aseBogzRevImDto[i].cgam_pa_amt$}&nbsp;</td>
+                <td>{$aseBogzRevImDto[i].pn_amt$}&nbsp;</td>
+                <td>{$aseBogzRevImDto[i].ot_prls_amt$}&nbsp;</td>
+                <td>{$aseBogzRevImDto[i].tten_evl_amt$}&nbsp;</td>
+            </tr>
+            <%  }
+              }
+            %>
+<%}%>
+        </table>
+		</div>
+		<ul class="guide mt10 ml30" style="width:760px;">
+            <li>※ 가입자가 1명인 경우 관련법에 근거하여 정보를 제공할 수 없습니다.</li>
+        <li>※ 위 적립금 현황의 납입액과 지급액에는 상품변경 금액이 포함되지 않아 산출 기간 중 자산관리기관간 상품변경이 있는 경우 A+B-C+D=E가 성립하지 않습니다. </li>
+		</ul>
+        
+<%if("DB".equals(record.getString("basImDto.rtp_sst_dv_nm"))) {%>
+        <!-- 적립금 운용방법별 운용지시 현황  -->  
+        <div class="mt20" style="height:20px">
+    	   <span class="fl_left bul_green ml30">적립금 운용방법별 운용지시 현황</span>
+           <span class="fl_right fs11  mr40">(단위:원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+            <colgroup>
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+                <col style="width:20%">
+            </colgroup>
+            <tr>
+                <th class="bg_bold" style="border-left:0px;">자산관리기관</th>
+                <th class="bg_bold">원리금보장 운용방법</th>
+                <th class="bg_bold">기타 운용방법</th>
+                <th class="bg_bold">대기성 자금</th>
+                <th class="bg_bold">합계</th>
+            </tr>  
+            <%int recSize = record.getSize("revOtDnImDto");
+              for(int i = 0; i < recSize; i++) {
+                if("합계".equals(record.getString("revOtDnImDto["+i+"].rtp_ase_og_nm"))) {
+            %>
+            <tr>
+                <td style="border-left:0px;"><strong>합계</strong></td>
+                <td><strong>{$revOtDnImDto[i].evl_amt01$}&nbsp;</strong></td>
+                <td><strong>{$revOtDnImDto[i].evl_amt02$}&nbsp;</strong></td>
+                <td><strong>{$revOtDnImDto[i].evl_amt03$}&nbsp;</strong></td>
+                <td><strong>{$revOtDnImDto[i].evl_amt$}&nbsp;</strong></td>
+            </tr>
+            <%  } else {%>
+            <tr>
+                <td style="border-left:0px;">{$revOtDnImDto[i].rtp_ase_og_nm$}&nbsp;</td>
+                <td>{$revOtDnImDto[i].evl_amt01$}&nbsp;</td>
+                <td>{$revOtDnImDto[i].evl_amt02$}&nbsp;</td>
+                <td>{$revOtDnImDto[i].evl_amt03$}&nbsp;</td>
+                <td>{$revOtDnImDto[i].evl_amt$}&nbsp;</td>
+            </tr>
+            <%  }
+            } %>
+        </table>
+		</div>
+<%}%>
+		
+        
+           
+        <!-- 수수료 납부 현황  -->  
+        <div class="mt20" style="height:20px">
+            <span class="fl_left bul_green ml30">수수료 납부 현황</span>
+            <span class="fl_right fs11  mr40">(단위:원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+        <colgroup>
+            <col style="width:34%">
+            <col style="width:33%">
+            <col style="width:33%">
+        </colgroup>
+            <tr>
+                <th class="bg_bold" style="border-left:0px;">운용관리수수료</th>
+                <th class="bg_bold">자산관리수수료</th>
+                <th class="bg_bold">합계</th>
+            </tr>
+            <tr>
+				<td style="border-left:0px;">{$feeImDto.ot_mgt_fee$}&nbsp;</td>
+				<td>{$feeImDto.ase_mgt_fee$}&nbsp;</td>
+				<td>{$feeImDto.fee$}&nbsp;</td>
+            </tr>
+  		</table>
+		</div>
+	<ul class="guide mt10 ml30" style="width:760px;">
+            <li><strong>※ 자산관리수수료에는 타자산관리기관의 수수료는 제외되었습니다.</strong></li></ul>
+<%if("DB".equals(record.getString("basImDto.rtp_sst_dv_nm"))) {%>
+        <!-- 재정검증 및 재정안정화계획서 미통보 사업자 사후관리 현황-->
+        <div class="mt20" style="height:20px">
+            <span class="fl_left bul_green ml30">재정검증 및 재정안정화계획서 미통보 사업자 사후관리 현황</span>
+            <span class="fl_right fs11  mr40">(단위:원)</span>	
+        </div>
+        <div class="clear mt10 ml30 common_top_basic_box" style="width:760px">
+        <table style="width:100%" border="1">
+        <colgroup>
+            <col style="width:14%">
+            <col style="width:14%">
+            <col style="width:14%">
+            <col style="width:14%">
+            <col style="width:14%">
+            <col style="width:15%">
+            <col style="width:15%">
+        </colgroup>
+            <tr>
+                <th rowspan="2" class="bg_bold" style="border-left:0px;">사업연도</th>
+                <th rowspan="2" class="bg_bold">재정검증<br>기준일자</th>
+                <th rowspan="2" class="bg_bold">최소적립금<br>과부족 여부</th>
+                <th colspan="2" class="bg_bold">재정검증결과 통보일자</th>
+                <th rowspan="2" class="bg_bold">최소적립금<br>부족 금액</th>
+                <th rowspan="2" class="bg_bold">재정안정화계획서<br>통보여부</th>
+            </tr>
+            <tr>
+                <th class="bg_bold">사용자</th>
+                <th class="bg_bold">가입자</th>
+            </tr>
+            <tr>
+              <td style="border-left:0px;">{$fncfVrfImDto.stac_yr$}&nbsp;</td>
+              <td>{$fncfVrfImDto.stac_ym$}&nbsp;</td>
+              <td>{$fncfVrfImDto.fncf_vrf_ca_txt$}&nbsp;</td>
+              <td>{$fncfVrfImDto.fncf_vrf_dspc_snd_dt$}&nbsp;</td>
+              <td>{$fncfVrfImDto.sbsr_all_dspc_dt$}&nbsp;</td>
+              <td>{$fncfVrfImDto.min_rev_lck_amt$}&nbsp;</td>
+              <td>{$fncfVrfImDto.fncf_stbz_pln_snd_dv_nm$}&nbsp;</td>
+            </tr>
+  		</table>
+		</div>
+<ul class="guide mt10 ml30" style="width:760px;">
+            <li><strong>※ 교보생명이 간사기관인 DB제도만 제공하는 정보입니다.</strong></li></ul>
+
+<%}%>
+             
+        <!-- 퇴직연금 모바일창구 서비스 안내 -->
+		<div class="bul_guide mt20 ml30">퇴직연금 모바일창구 서비스 안내</div>
+        <div class="t_center">
+  			<img src="http://www.kyobo.co.kr/images/co/mail/retiement_mobile_img.jpg" alt="퇴직연금 스마트폰 서비스 이용안내. 모바일에서 나의 퇴직연금 운용을 위한 확인 및 신청등의 서비스와 퇴직연금 상품정보를 편리하게 찾아보실수 있습니다. " usemap="#01"/>
+  			<a href="http://pension.kyobo.co.kr/webdocs/view.jsp?screenId=SCSCONLM009&menuId=MN0000895&biztype=rp" target="blank_" title=""><img src="http://www.kyobo.co.kr/images/co/mail/retiement_mobile_btn.gif" alt="모바일창구 이용안내 상세보기" class="mt30"/></a>
+  		</div>
+        <!-- <p class="hs_tit t_right mt10" style="margin-right:40px; margin-bottom:0;">준법감시인확인필 4-1711-1 법인고객지원센터(2017.11.02)</p> -->
+        
+        <!--footer-->
+  		<div class="mt20">
+  		    <img src="http://www.kyobo.co.kr/images/co/mail/RK_Mail_contact_150622.gif" title="" usemap="#website" style="margin-left:1px; border:0px;"/>
+          <map name="website">
+          <area shape="rect" coords="439,32,778,128" href="https://pension.kyobo.co.kr" target="blank()" title="퇴직연금 홈페이지 바로가기 "/>
+          </map>
+        
+    	<img src="https://www.kyobo.co.kr/images/co/mail/retiement_footer.png" title="법인고객상담팀 : 1588-0770  |  https://pension.kyobo.co.kr 대표문의전화 : 1588-1001 교보생명 보험주식회사 대표이사 윤열현 서울특별시 종로구 종로1가 광화문 우체국 사서함 23호  Copyright (C) KYOBO LIFE INSURANCE CO., LTD. all right reserved." />  
+        </div>
+    </div>
+</div>
+</body>
+</html>

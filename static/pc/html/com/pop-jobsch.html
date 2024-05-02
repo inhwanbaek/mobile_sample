@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+
+</head>
+<body class="body">
+	<div class="wrap" id="wrap">
+		<div class="pop-layer a sm pop-jobsch" id="pop-jobsch">
+			<div class="pbd">
+				<div class="phd">
+					<div class="in">
+						<h1 class="ptit">직업 직접 검색</h1>
+					</div>
+				</div>
+				<div class="pct">
+					<main class="poptents">
+						<div class="ut-tabs a tabs">
+							<ul class="menu" role="tablist">
+								<li class="active"><a class="bt active" data-ui-tab-btn="tab_job" aria-controls="tab_job_1" href="javascript:;" role="tab" aria-selected="true">직업명</a></li>
+								<li class=""><a class="bt" data-ui-tab-btn="tab_job" aria-controls="tab_job_2" href="javascript:;" role="tab" aria-selected="false">분류별</a></li>
+							</ul>
+						</div>
+						<div data-ui-tab-ctn="tab_job" aria-labelledby="tab_job_1" role="tabpanel" class="tctn tctn1 active">
+							<section class="forms">
+								<span class="input a name w100p">
+									<label class="lb" for="input_kwd">직장명</label>
+									<div class="ibts"><button type="button" class="btn sm b bt-sch">검색</button></div>
+									<input id="input_kwd" type="search" placeholder="2글자 이상 입력" style="padding-right: 88px;">
+								</span>
+							</section>
+							<section class="schlist">
+								<ul class="rslist">
+									<li><button type="button" class="sel">스포츠 감독 및 코티(격투기 이외)</button></li>
+									<li><button type="button" class="sel">스포츠 강사 및 트레이너</button></li>
+									<li><button type="button" class="sel">스포츠 감독 및 코티(격투기 이외)</button></li>
+									<li><button type="button" class="sel">스포츠 강사 및 트레이너</button></li>
+								</ul>
+								<div class="rndata">
+									<div class="msg"><span class="m">검색결과가 없습니다.</span></div>
+								</div>
+		
+							</section>
+						</div>
+	
+						<div data-ui-tab-ctn="tab_job" aria-labelledby="tab_job_2" role="tabpanel" class="tctn tctn2">
+							<section class="ctlist c1" id="job1">
+								<div class="tit">직업의 분류를 선택하세요</div>
+								<ul class="list">
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+									<li><button type="button" class="sel" onclick="cate_jobs2()">경영 / 사무 / 금융 / 무역직</button></li>
+								</ul>
+							</section>
+	
+							<section class="ctlist c2" id="job2" style="display: none;">
+								<div class="tit">상세직업을 선택해 주세요</div>
+								<ul class="list">
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+									<li><button type="button" class="sel">보험 및 근융 사무직 관리자</button></li>
+								</ul>
+								<!-- <div class="bts-rest">
+									<div class="btn-set">
+										<button type="button" class="btn rd lg a" onclick="cate_jobs1()">다시선택</button>
+									</div>
+								</div> -->
+							</section>
+						</div>
+	
+					</main>
+				</div>
+				<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+			</div>
+		</div>
+		<script>
+			ui.popup.open('pop-jobsch');
+		</script>
+	</div>
+</body>
+</html>

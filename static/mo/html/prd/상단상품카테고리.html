@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer c pop-pselect" id="pop-pselect">
+		<div class="pbd">
+
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit blind">상품선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="plist">
+						<li>
+							<button type="button"  class="box">
+								<div class="bdg"><em class="bd">다이렉트</em></div>
+								<div class="bt">교보e바로받는신용대출</div>
+							</button>
+						</li>
+						<li>
+							<button type="button"  class="box">
+								<div class="bdg"><em class="bd">다이렉트</em></div>
+								<div class="bt">교보e바로받는신용대출(mini)</div>
+							</button>
+						</li>
+						<li>
+							<button type="button"  class="box">
+								<!-- <div class="bdg"><em class="bd">다이렉트</em></div> -->
+								<div class="bt">교보e프라임신용대출</div>
+							</button>
+						</li>
+						<li>
+							<button type="button"  class="box">
+								<!-- <div class="bdg"><em class="bd">다이렉트</em></div> -->
+								<div class="bt">교보e직장인신용대출</div>
+							</button>
+						</li>
+					</div>
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-pselect');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+		
+	</script>
+
+</div>
+</body>
+</html>

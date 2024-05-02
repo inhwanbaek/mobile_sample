@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+	
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+	
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+	
+	<article class="pop-layer a pop-result auto" id="pop-result">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">사고보험금 청구 완료</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+					<div class="complate-msg icon1">
+						<div class="msg">
+							<p class="p1">사고연금이 신청되었습니다.</p>
+						</div>
+						<div class="line-box">
+							<ul class="list">
+								<li>
+									<p class="dt">신청건수</p>
+									<p class="dd">0건</p>
+								</li>
+								<li>
+									<p class="dt">지급금</p>
+									<p class="dd">
+										<span class="prc"> 
+											<strong class="p">7,000</strong><i class="w">원</i>
+										</span>
+									</p>
+								</li>
+								<li>
+									<p class="dt">실수령액</p>
+									<p class="dd">
+										<span class="prc"> 
+											<strong class="p">7,000</strong><i class="w">원</i>
+										</span>
+									</p>
+								</li>
+							</ul>
+						</div>		
+						<div class="btn-set ct">
+							<button type="button" class="btn wm md">건별 상세내역</button>                            
+						</div>                        
+					</div>
+					
+					<div class="banner-box">
+						<div class="ut-slide-play">
+							<div class="swiper-container swiper" data-slide-id="banner_1">
+								<div class="control">
+									<div class="dots"></div>
+									<div class="plys"><button type="button" class="bt play">정지</button></div>
+								</div>
+								<ul class="swiper-wrapper slide">
+									<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+									<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+									<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+									<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+									<li class="swiper-slide"><a href="javascript:;" class="box"><img src="../../img/temp/banner_1.png" alt="지점방문 없이 간편하게 교보생명 보험계약 대출"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>  
+				</main>
+			</div>
+			<div class="pbt">
+				<div class="btn-set">					
+					<button type="button" class="btn rd lg a" onclick="ui.popup.close('pop-result');">확인</button>
+				</div>
+			</div>
+			<button type="button" class="btn-pop-close"><i class="blind">닫기</i></button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-result');  // 팝업 열기
+
+		/* 콜백 필요 할때 팝업 열기
+		ui.popup.open('pop-sample3',{
+			ocb:function(){
+				console.log("열리고 콜백");
+			},
+			ccb:function(){
+				console.log("닫히고 콜백");
+			}
+		}); 
+		*/
+		
+	</script>
+	<!-- //팝업영역 -->
+
+
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1330, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="../../js/jquery-3.4.1.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.js"></script>
+	<script src="../../js/swiper.js"></script>
+
+	<script src="../../js/ui.js"></script>
+	<script src="../guide/html.js"></script><!-- 개발페이지에서는 html.js 임포트 하지말아주세요. -->
+
+</head>
+<body class="body">
+<div class="wrap" id="wrap">
+
+	<article class="pop-layer a xs pop-case4cert sign-adds" id="pop-case4cert">
+		<div class="pbd">
+			<div class="phd">
+				<div class="in">
+					<h1 class="ptit">인증 방식 선택</h1>
+				</div>
+			</div>
+			<div class="pct">
+				<main class="poptents">
+
+					<div class="mbl-top btline">
+						<h2 class="hd-tit3">고객님의 <i class="line">안전한 거래를 위해</i> 본인 확인 인증 방식을 선택해 주세요</h2>
+					</div>
+
+					<div class="certificate-list">
+						<ul class="list">
+							<li class="phone"><a href="javascript:;" class="lk">휴대폰 본인확인</a></li>
+							<li class="dotp"><a href="javascript:;" class="lk">디지털OTP</a></li>
+							<li class="card"><a href="javascript:;" class="lk">보안카드</a></li>
+						</ul>
+					</div>
+
+
+
+				</main>
+			</div>
+			<button type="button" class="btn-pop-close">닫기</button>
+		</div>
+	</article>
+	<script>
+		ui.popup.open('pop-case4cert');
+	</script>
+
+</div>
+</body>
+</html>
